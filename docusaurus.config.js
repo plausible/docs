@@ -1,27 +1,30 @@
 module.exports = {
   title: 'Plausible docs',
-  tagline: 'The tagline of my site',
   url: 'https://docs.plausible.io',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'plausible', // Usually your GitHub org/user name.
-  projectName: 'analytics', // Usually your repo name.
+  organizationName: 'plausible',
+  projectName: 'analytics',
   themeConfig: {
+    disableDarkMode: true,
     navbar: {
-      title: 'Plausible docs',
+      title: 'Plausible analytics',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Plausible logo',
         src: 'img/logo.svg',
+        href: 'https://plausible.io/',
+        target: '_self',
       },
       links: [
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
+          href: '/',
           label: 'Docs',
           position: 'left',
+          target: '_self',
+          activeBasePath: '/'
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/plausible/analytics',
           label: 'GitHub',
           position: 'right',
         },
