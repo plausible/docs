@@ -4,7 +4,7 @@ module.exports = {
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'plausible',
-  projectName: 'analytics',
+  projectName: 'docs',
   themeConfig: {
     disableDarkMode: true,
     navbar: {
@@ -24,7 +24,7 @@ module.exports = {
           activeBasePath: '/'
         },
         {
-          href: 'https://github.com/plausible/analytics',
+          href: 'https://github.com/plausible/docs',
           label: 'GitHub',
           position: 'right',
         },
