@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Plausible docs',
   url: 'https://plausible.github.io',
-  baseUrl: '/docs',
+  baseUrl: '/docs/',
   favicon: 'img/favicon.ico',
   organizationName: 'plausible',
   projectName: 'docs',
