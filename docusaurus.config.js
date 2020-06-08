@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Plausible docs',
-  url: 'https://plausible.github.io',
-  baseUrl: '/docs/',
+  url: 'https://competent-benz-12aade.netlify.app',
+  baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'plausible',
   projectName: 'docs',
