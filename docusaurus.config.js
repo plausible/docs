@@ -8,7 +8,7 @@ module.exports = {
   themeConfig: {
     disableDarkMode: true,
     navbar: {
-      title: 'Plausible analytics',
+      title: 'Plausible Analytics',
       logo: {
         alt: 'Plausible logo',
         src: 'img/logo.svg',
