@@ -1,4 +1,6 @@
-# Get Started
+---
+title: Get started
+---
 
 ## 1. Create your Plausible Analytics account
 
