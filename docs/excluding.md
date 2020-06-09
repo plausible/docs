@@ -1,4 +1,6 @@
-# Excluding yourself from your analytics
+---
+title: Excluding yourself from analytics
+---
 
 By default, Plausible Analytics tracks every visitor to your website. When working on your site, you might not want to record your visits and page views.
 
