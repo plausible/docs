@@ -1,6 +1,8 @@
-# Top Referrers
+---
+title: Top Referrers
+--- 
 
-Your top referrers report shows where the traffic to your website is coming from. You can use it to understand which marketing and promotional activities are working well and are driving the traffic to your site:
+Your "Top Referrers" report shows where the traffic to your website is coming from. You can use it to understand which marketing and promotional activities are working well and are driving the traffic to your site:
 
 ## How it works
 
@@ -16,13 +18,13 @@ You may be familiar with the "(direct)/(none)" referrer source in the Google Ana
 
 Here’s a non-exhaustive list of other problems with the header:
 
-- Whenever someone is moving from `http` to `https` or vice versa, the `referer` header is dropped.
+* Whenever someone is moving from `http` to `https` or vice versa, the `referer` header is dropped.
 
-- Facebook `referer` only includes the fact that the visitor came from Facebook. Facebook never sends the post or comment ID where someone clicked.
+* Facebook `referer` only includes the fact that the visitor came from Facebook. Facebook never sends the post or comment ID where someone clicked.
 
-- Twitter sets the referrer to their link shortener (t.co) so you can see the shortened link but not the actual tweet that brought the traffic.
+* Twitter sets the referrer to their link shortener (t.co) so you can see the shortened link but not the actual tweet that brought the traffic.
 
-- Google does not include the search keywords in the referrer so you can see the visitor is coming from Google search but you cannot see which keyword phrase they used to find you.
+* Google does not include the search keywords in the referrer so you can see the visitor is coming from Google search but you cannot see which keyword phrase they used to find you.
 
 ### 2. Manual by link tagging
 
