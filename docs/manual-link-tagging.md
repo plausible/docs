@@ -1,6 +1,8 @@
-## Manual link tagging
+---
+title: Manual link tagging
+---
 
-To minimize the amount of traffic that falls within the “no referrer” category, you can add special query parameters to your links.
+To minimize the amount of traffic that falls within the “[no referrer](top-referrers.md)” category, you can add special query parameters to your links.
 
 Whenever you post a link online or send it to someone, you can choose to add a special query parameter to the link. When the `?ref=<value>` query parameter is present, Plausible Analytics will show it as the referrer source.
 
