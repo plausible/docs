@@ -1,4 +1,6 @@
-# A guided tour of your Plausible Analytics dashboard
+---
+title: Your dashboard
+--- 
 
 Plausible Analytics is built with simplicity and speed in mind. There is no navigational menu. There are no additional sub-menus. There is no need to create custom reports. You get one simple and useful web analytics dashboard out of the box.
 
