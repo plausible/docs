@@ -1,6 +1,8 @@
-## 4. Verify that the integration is working
+---
+title: Verify that the integration is working
+--- 
 
-After you've added the Plausible Analytics script on your website, it's time to verify that the integration is working.
+After you've added the [Plausible Analytics script](plausible-script.md) to your website, it's time to verify that the integration is working.
 
 In your Plausible Analytics account, click on your website domain name. You should see a blinking green dot which indicates that we’re listening for incoming page views in real-time. 
 
