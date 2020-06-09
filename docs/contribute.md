@@ -1,3 +1,7 @@
+---
+hide_title:true;
+---
+
 # How To Contribute To Plausible Analytics
 
 Thank you for being interested in contributing to Plausible Analytics! We’re very happy that you want to help! Here are some of the ways you can help us build better Plausible:
