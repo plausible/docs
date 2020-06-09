@@ -1,4 +1,6 @@
-# Top Pages
+---
+title: Top Pages
+--- 
 
 Your “Top Pages” report shows which pages your visitors are visiting the most often. You can use it to identify the most popular content on your site.
 
