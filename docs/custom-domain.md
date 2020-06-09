@@ -1,4 +1,6 @@
-# Custom domain
+---
+title: Custom domain
+---
 
 Some browsers and extensions may block all analytics services including privacy-friendly ones like Plausible Analytics.
   
