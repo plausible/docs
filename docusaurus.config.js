@@ -86,7 +86,7 @@ module.exports = {
       {
         docs: {
           routeBasePath: '/', // Set this value to '/'.
-          homePageId: 'doc1',
+          homePageId: 'introduction',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:

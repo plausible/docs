@@ -18,9 +18,9 @@ If you would like to track a subdomain such as `blog.yourdomain.com` then please
 
 For example, if your subdomain is `https://blog.yourdomain.com` then the part to enter in the “Domain” field is `blog.yourdomain.com`.
 
-You need to select your reporting timezone too. This sets the day boundary of your reports regardless of where your traffic is coming from. 
+You need to select your reporting timezone too. This sets the day boundary of your reports regardless of where your traffic is coming from.
 
-For instance, if you select “(GMT+01:00) Amsterdam…” then the beginning and the end of each day of your reporting is calculated based on the time in Amsterdam, even if your visitors come from London or New York. 
+For instance, if you select “(GMT+01:00) Amsterdam…” then the beginning and the end of each day of your reporting is calculated based on the time in Amsterdam, even if your visitors come from London or New York.
 
 The best practice is to set the timezone that reflects the location of your audience or if the audience is very broad and spread across the world to set the timezone of your location.
 
@@ -28,7 +28,9 @@ The best practice is to set the timezone that reflects the location of your audi
 
 On this step, we will display your Plausible Analytics tracking script code. The code will look something like this:
 
+```html
 <script async defer data-domain=”yourdomain.com” src=”https://plausible.io/js/plausible.js”></script>
+```
 
 To integrate your website with Plausible Analytics, you need to be able to update the HTML code of the website you want to track. Paste the tracking script code in the Header (`<head>`) section of your site. Place the tracking script between the `<head>….</head>` tags of your website.
 
@@ -42,10 +44,10 @@ If you followed the previous steps correctly, you should see our tracking code i
 
 After you've added the Plausible Analytics script on your website, it's time to verify that the integration is working.
 
-In your Plausible Analytics account, click on your website domain name. You should see a blinking green dot which indicates that we’re listening for incoming page views in real-time. 
+In your Plausible Analytics account, click on your website domain name. You should see a blinking green dot which indicates that we’re listening for incoming page views in real-time.
 
 Once the first page view comes through, you'll be automatically taken to the stats page. This is an indication that the integration is working, congrats!
 
-If you didn't see the green blinking dot, there's nothing to worry about. It just means that someone visited your site already since you installed the Plausible Analytics script. 
+If you didn't see the green blinking dot, there's nothing to worry about. It just means that someone visited your site already since you installed the Plausible Analytics script.
 
 If you see the dashboard with graphs and numbers, it means everything is working! Plausible Analytics is now tracking your website statistics while preserving the privacy of your visitors.

@@ -28,8 +28,10 @@ If you want to track custom event goals like button clicks or form completions, 
 
 First, make sure your tracking setup includes the second line as shown below
 
+```html
 <script async defer data-domain="<yourdomain.com>" src="https://plausible.io/js/plausible.js"></script>
 <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+```
 
 This snippet creates a global function called `plausible` which can be used to trigger custom events from anywhere in your code.
 
