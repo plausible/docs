@@ -1,4 +1,6 @@
-# Devices
+---
+title: Devices
+---
 
 Your "Devices" report shows the screen size, the browser and the operating system (OS) of your visitors. It helps you identify and understand the type of device your visitors use the most often so you can optimize your website experience to them.
 
