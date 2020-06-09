@@ -1,4 +1,6 @@
-# Goals and Conversions
+---
+title: Goal Conversions
+--- 
 
 Plausible Analytics gives you an option to specify and track goals. Goals are actions that you want your users to take, for example, visit a specific page URL, sign up to a newsletter, click on the "download" button, or complete the checkout form of an e-commerce store.
 
