@@ -1,9 +1,19 @@
 ---
-title: Visibility
+title: Open up your website stats to the public
 ---
 
-Within the "Visibility" section of your website settings you can choose to be transparent and make your website stats public so anyone with your custom link can view them.
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Your website stats are private by default. Making them public will give you access to your public stats URL so you can share it with the world. Some website owners link to their public stats from their footer, or their "About" page. It is really up to you.
+<img alt="Make your website stats public" src={useBaseUrl('img/visibility.png')} />
 
-If you wish to make your website stats private again, click on the "Make stats private" button.
+Within the "**Visibility**" section of your website settings you can choose to be transparent and make your website stats public so anyone with your stats dashboard link can view them.
+
+Your website stats are private by default. Making them public will give you access to your public stats dashboard URL so you can share it with the world. Some website owners link to their public stats dashboard from their footer or their "**About**" page. It is really up to you.
+
+Click on the "**Make stats public**" button to make your website stats public and get access to your public stats dashboard URL.
+
+## Want to make your stats private again?
+
+If you wish to make your website stats private again, click on the "**Make stats private**" button. Your stats dashboard URL will become private again.
+
+<img alt="Make your stats private again" src={useBaseUrl('img/public-visibility.png')} />
