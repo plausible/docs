@@ -62,6 +62,8 @@ Once you’ve selected your property, click on the "**Save**" button. At that po
 
 Look at your site’s "**Top Referrers**" stats in your Plausible Analytics dashboard, click on "**Google**" in the referrers list, and you should see the keywords coming through.
 
+<img alt="Google search query data in Plausible Analytics" src={useBaseUrl('img/google-search-query-referrers.png')} />
+
 Search query data is not live. It is delayed by approximately 24-36 hours even on Google Search Console itself. So if you go back two days in your Plausible Analytics dashboard and click on Google in the referral sources you should be able to see the search queries for that day. We get the search query data directly from Google Search Console so as soon as they show up there they show up in Plausible Analytics too.
 
 Google also samples its keyword data heavily. The sampling is why your keyword visitor numbers don’t add up to the total number of visitors from Google. Unfortunately, there’s nothing we can do about the quality of the keyword data. We show exactly the same data that you see in your Search Console.
