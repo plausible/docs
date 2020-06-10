@@ -1,6 +1,8 @@
-## General
+---
+title: General
+---
 
-In "Reporting Timezone" you can change the timezone for your reports. This sets the day boundary of your reports regardless of where your traffic is coming from. 
+Within the "General" section of your website settings you can change the timezone for your reports in the "Reporting Timezone" field. This sets the day boundary of your reports regardless of where your traffic is coming from. 
 
 For instance, if you select “(GMT+01:00) Amsterdam…” then the beginning and the end of each day of your reporting is calculated based on the time in Amsterdam, even if your visitors come from London or New York. 
 
