@@ -4,13 +4,19 @@ title: Add your website details
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+## Enter the domain name of the website you want to track
+
 Once you have an account, you can enter the domain name of the website you want to track. Please, remove `https` and `www` from the URL, just keep the `hostname` (yourdomain.com).
 
 For example, if your site is `https://www.yourdomain.com` then the part to enter in the “Domain” field is `yourdomain.com`.
 
+### Do you want to track a subdomain?
+
 If you would like to track a subdomain such as `blog.yourdomain.com` then please include the subdomain. Plausible Analytics essentially sees different subdomains as different sites.
 
 For example, if your subdomain is `https://blog.yourdomain.com` then the part to enter in the “Domain” field is `blog.yourdomain.com`.
+
+## Select your reporting timezone
 
 You need to select your reporting timezone too. This sets the day boundary of your reports regardless of where your traffic is coming from.
 
