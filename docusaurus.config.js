@@ -34,15 +34,15 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Study',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
+              label: 'Read our blog',
+              to: 'https://plausible.io/blog',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: 'Study the documentation',
+              to: 'https://docs.plausible.io/',
             },
           ],
         },
@@ -50,34 +50,34 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Give us feedback',
+              href: 'https://plausible.io/feedback',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'On GitHub',
+              href: 'https://github.com/plausible/analytics/',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'On Twitter',
+              href: 'https://twitter.com/plausiblehq',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Explore',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: 'We have a public roadmap',
+              to: 'https://plausible.io/roadmap',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Check out the live demo',
+              href: 'https://plausible.io/plausible.io',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Plausible Analytics. Built with Docusaurus.`,
     },
   },
   presets: [
