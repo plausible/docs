@@ -14,7 +14,7 @@ Here’s how you can add your site to Google Search Console and then integrate t
 
 ## Add your site to the Google Search Console
 
-_If your site is already set up on Google Search Console, you can skip to the "**[Allow Plausible Analytics to access your Search Console](https://docs.plausible.io/google-search-console-integration#allow-plausible-analytics-to-access-your-search-console)**" step._
+_If your site is already set up on Google Search Console, you can skip to the "**[Allow Plausible Analytics to access your Search Console](#allow-plausible-analytics-to-access-your-search-console)**" step._
 
 Head over to [Google Search Console](https://search.google.com/search-console/) and click on the "**Start now**" button. If you don’t have any sites set up on Google Search Console already, you will be taken straight to the form to add a new domain. Otherwise, you can open the drop down on the top left and select "**Add property**".
 
@@ -66,13 +66,13 @@ Look at your site’s "**Top Referrers**" stats in your Plausible Analytics dash
 
 <img alt="Google search query data in Plausible Analytics" src={useBaseUrl('img/google-search-query-referrers.png')} />
 
-### I don't see any Google search query data in my dashboard?
+### I don't see Google search query data in my dashboard
 
 Search query data is not live. It is delayed by approximately 24-36 hours even on Google Search Console itself. 
 
 So if you go back two days in your Plausible Analytics dashboard and click on Google in the referral sources you should be able to see the search queries for that day. We get the search query data directly from Google Search Console so as soon as they show up there they show up in Plausible Analytics too.
 
-### My search query number doesn't add up to the total number of Google visitors
+### Search query number doesn't add up to the total number of Google visitors
 
 Google samples its keyword data heavily. The sampling is why your keyword visitor numbers don’t add up to the total number of visitors from Google. Unfortunately, there’s nothing we can do about the quality of the keyword data. We show exactly the same data that you see in your Search Console.
 
