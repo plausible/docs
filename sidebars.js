@@ -1,6 +1,6 @@
 module.exports = {
   someSidebar: {
-    "Introduction": ['introduction'],
+    "Welcome": ['introduction'],
     "Get Started": ['register-account', 'add-website', 'plausible-script', 'verify-integration'],
     "Website Settings": ['website-settings', 'custom-domain', 'excluding'],
     "Dashboard": ['guided-tour', 'top-referrers', 'top-pages', 'countries', 'devices'],
