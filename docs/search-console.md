@@ -70,6 +70,6 @@ Google also samples its keyword data heavily. The sampling is why your keyword v
 
 ## Plausible Analytics will be listed in your Google account settings
 
-You can always view your Plausible Analytics integration in your Google account within the section "**Third-party apps with account access**.
+You can always view your Plausible Analytics integration in your Google account within the section "**Third-party apps with account access**".
 
 <img alt="Third-party apps with account access" src={useBaseUrl('img/third-party-apps.png')} />
