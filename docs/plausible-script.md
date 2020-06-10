@@ -1,5 +1,5 @@
 ---
-title: Adding Plausible Analytics script to your website
+title: Add the script to your website
 ---
 
 Your Plausible Analytics tracking script code will look something like this:
