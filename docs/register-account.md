@@ -16,6 +16,8 @@ Fill in your full name and your email address and click on the "**Start my free 
 
 We'll send you an email to verify your email address. Look for an email with the subject line "**Activate your Plausible free trial**". Click on the link within that email to verify your email address and activate your Plausible Analytics account.
 
+Don't see this email in your inbox? Please check your spam folder and contact support@plausible.io if the problem persists. 
+
 ## Set up your account password
 
 That will take you to the page where you have to set up your account password. Create a secure password using your password manager and click on the "**Set password**" button.
