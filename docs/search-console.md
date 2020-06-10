@@ -2,40 +2,72 @@
 title: Search Console integration
 --- 
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 In 2012, [Google stopped including](https://webmasters.googleblog.com/2012/03/upcoming-changes-in-googles-http.html) search terms in the `Referer` header when people click through a Google search. They only send Google as the referrer source instead. This means that Plausible Analytics cannot automatically access search terms that lead users to your website.
 
 However, you can still access your search terms by setting up your website on Google Search Console. Once you’ve done that, you can enable the Google Search Console integration in Plausible Analytics to get all of your important search results stats under one roof.
 
-Note that we don’t yet have an integration with Bing Webmaster Tools. You can track the status of the integration [here](https://plausible.nolt.io/26).
+_Note that we don’t yet have an integration with Bing Webmaster Tools. You can track the status of the integration [here](https://plausible.nolt.io/26)._
 
 Here’s how you can add your site to Google Search Console and then integrate the Search Console data into your Plausible Analytics dashboard:
 
-## 1. Add your site to the Google Search Console
+## Add your site to the Google Search Console
 
-If your site is already set up on Google Search Console, you can skip to step 3.
+_If your site is already set up on Google Search Console, you can skip to the "**Allow Plausible Analytics to access your Search Console**" step._
 
-Head over to Google Search Console and click "Start now". If you don’t have any sites already set up on Google Search Console, you will be taken straight to the form to add a new domain. Otherwise, you can open the drop down on the top left and select "Add property".
+Head over to [Google Search Console](https://search.google.com/search-console/) and click on the "**Start now**" button. If you don’t have any sites set up on Google Search Console already, you will be taken straight to the form to add a new domain. Otherwise, you can open the drop down on the top left and select "**Add property**".
 
 You can either create a domain property or a URL prefix property on Google Search Console. Check out [their documentation](https://support.google.com/webmasters/answer/34592?hl=en) to understand the difference between these options. Plausible Analytics works with both options, so it’s completely up to you.
 
-In this example, let’s create a URL prefix property.
+<img alt="Plausible Analytics" src={useBaseUrl('img/select-property-type.png')} />
 
-## 2. Verify your ownership of the website
+## Verify your ownership of the website
 
 You should see several options to verify to Google that you do indeed own this website. You’ll either need to be able to add HTML to your site or alternatively, you can add a DNS record to verify your ownership.
 
 Follow the provided instructions depending on which verification method you’ve chosen. Once you’ve successfully verified the site, head back to the Plausible Analytics website.
 
-## 3. Allow Plausible Analytics to access your Search Console
+<img alt="Plausible Analytics" src={useBaseUrl('img/verify-ownership.png')} />
 
-The next step is to open the settings for your website on your Plausible Analytics account. Scroll down to the section called "Google Integration":
+## Allow Plausible Analytics to access your Search Console
 
-Clicking on "Continue with Google" will take you through Google’s authentication flow to get the necessary permissions. You might notice that we also get the associated email address, this is because some users have multiple Google accounts and it’s useful to remember which one is integrated with the Plausible Analytics site.
+Open the settings for your website on [your Plausible Analytics account](https://plausible.io/sites). Scroll down to the settings section called "**Google Integration**":
 
-## 4. Select property to pull keywords from
+Clicking on the "**Continue with Google**" button will take you through to Google’s authentication flow to get the necessary permissions.
 
-Next up, you should see a select box where you can choose which property from Google Search Console to integrate with. Properties that start with `sc-domain:` represent domain properties and others are URL prefix properties in Search Console.
+<img alt="Continue with Google" src={useBaseUrl('img/continue-with-google.png')} />
 
-Once you’ve selected your property, click on the "Save" button. At that point, the integration should be fully functional. Head over to your site’s "Top Referrers" stats in Plausible Analytics, click on "Google" in the referrers list, and you should see the keywords coming through.
+Choose your Google account to continue with the authentication. Google will share your name, email address, language preference and profile picture with Plausible Analytics. We really only need and use the email address from this. Email address is useful because some Plausible Analytics users have multiple Google accounts so we can remember which one is integrated with the Plausible Analytics site.
 
-Google samples its keyword data heavily and it usually lags by about 24 hours. The sampling is why your keyword visitor numbers don’t add up to the total number of visitors from Google. Unfortunately, there’s nothing we can do about the quality of the keyword data. We show exactly the same data that you see in your Search Console.
+<img alt="Choose your Google account" src={useBaseUrl('img/choose-google-account.png')} />
+
+You also need to grant Plausible Analytics a permission to view your Search Console website data.
+
+<img alt="Grant Plausible Analytics a permission to view your Search Console website data" src={useBaseUrl('img/grant-permission.png')} />
+
+And you also need to confirm all these choices once again.
+
+<img alt="Confirm all the choices once again" src={useBaseUrl('img/confirm-choices.png')} />
+
+## Select property to pull keywords from
+
+Next up, you are back in Plausilbe Analytics settings where you should see a select box where you can choose which property from Google Search Console to integrate your Plausible Analytics dashboard with. Properties that start with `sc-domain:` represent domain properties and others are URL prefix properties in Search Console.
+
+Once you’ve selected your property, click on the "**Save**" button. At that point, the integration should be fully functional.
+
+<img alt="Choose which property from Google Search Console to integrate with" src={useBaseUrl('img/choose-property.png')} />
+
+## Check your search query data in Plausible Analytics
+
+Look at your site’s "**Top Referrers**" stats in your Plausible Analytics dashboard, click on "**Google**" in the referrers list, and you should see the keywords coming through.
+
+Search query data is not live. It is delayed by approximately 24-36 hours even on Google Search Console itself. So if you go back two days in your Plausible Analytics dashboard and click on Google in the referral sources you should be able to see the search queries for that day. We get the search query data directly from Google Search Console so as soon as they show up there they show up in Plausible Analytics too.
+
+Google also samples its keyword data heavily. The sampling is why your keyword visitor numbers don’t add up to the total number of visitors from Google. Unfortunately, there’s nothing we can do about the quality of the keyword data. We show exactly the same data that you see in your Search Console.
+
+## Plausible Analytics will be listed in your Google account settings
+
+You can always view your Plausilbe Analytics integration in your Google account within the section "**Third-party apps with account access**.
+
+<img alt="Third-party apps with account access" src={useBaseUrl('img/third-party-apps.png')} />
