@@ -1,4 +1,6 @@
-## Pageview goals
+---
+title: Pageview goals
+--- 
 
 Pageview goals allow you to measure how many people visit a specific page URL.
 
