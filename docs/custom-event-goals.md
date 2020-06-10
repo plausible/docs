@@ -1,13 +1,17 @@
-## Custom event goals
+---
+title: Custom event goals
+--- 
 
 If you want to track custom event goals like button clicks or form completions, you have to trigger these custom events from your website using JavaScript. Here are the steps you need to take to do that:
 
-### 1. Trigger custom events with JavaScript on your site
+## 1. Trigger custom events with JavaScript on your site
 
 First, make sure your tracking setup includes the second line as shown below
 
+``` 
 <script async defer data-domain="<yourdomain.com>" src="https://plausible.io/js/plausible.js"></script>
-<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script> 
+```
 
 This snippet creates a global function called `plausible` which can be used to trigger custom events from anywhere in your code.
 
@@ -19,7 +23,7 @@ The event name can be anything. As a second parameter, you can also send an obje
 
 This is the whole extent of the API. If you want to trigger form submissions, button clicks etc. you need to implement the code for that yourself.
 
-### 2. Create a custom event goal in your Plausible Analytics account
+## 2. Create a custom event goal in your Plausible Analytics account
 
 When you start sending custom events to Plausible Analytics, they won’t show up automatically. You’ll have to configure the goal for the conversion numbers to show up.
 
