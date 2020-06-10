@@ -1,5 +1,5 @@
 ---
-title: General
+title: Change your reporting timezone
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
