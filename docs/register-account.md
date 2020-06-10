@@ -20,6 +20,6 @@ Don't see this email in your inbox? Please check your spam folder and contact su
 
 ## Set up your account password
 
-That will take you to the page where you have to set up your account password. Create a secure password using your password manager and click on the "**Set password**" button.
+Clicking on the link in the email will take you to the page where you have to set up your account password. Create a secure password using your password manager and click on the "**Set password**" button.
 
 <img alt="Set up your Plausible Analytics account password" src={useBaseUrl('img/set-password.png')} />
