@@ -52,7 +52,7 @@ And you also need to confirm all these choices once again.
 
 ## Select property to pull keywords from
 
-Next up, you are back in Plausilbe Analytics settings where you should see a select box where you can choose which property from Google Search Console to integrate your Plausible Analytics dashboard with. Properties that start with `sc-domain:` represent domain properties and others are URL prefix properties in Search Console.
+Next up, you are back in Plausible Analytics settings where you should see a select box where you can choose which property from Google Search Console to integrate your Plausible Analytics dashboard with. Properties that start with `sc-domain:` represent domain properties and others are URL prefix properties in Search Console.
 
 Once you’ve selected your property, click on the "**Save**" button. At that point, the integration should be fully functional.
 
@@ -68,6 +68,6 @@ Google also samples its keyword data heavily. The sampling is why your keyword v
 
 ## Plausible Analytics will be listed in your Google account settings
 
-You can always view your Plausilbe Analytics integration in your Google account within the section "**Third-party apps with account access**.
+You can always view your Plausible Analytics integration in your Google account within the section "**Third-party apps with account access**.
 
 <img alt="Third-party apps with account access" src={useBaseUrl('img/third-party-apps.png')} />
