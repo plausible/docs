@@ -22,3 +22,11 @@ In a web browser such as Firefox, visit your website, right-click anywhere on th
 You should see the Plausible Analytics tracking script in the source code of your website. If you cannot see the script, please double check if you've inserted it correctly. Contact **hello@plausible.io** if the problem persists.
 
 <img alt="Your Plausible Analytics tracking script" src={useBaseUrl('img/javascript-snippet.png')} />
+
+## Alternatively you can serve the script from your domain as a first-party connection
+
+Some browsers and extensions may block all analytics services including privacy-friendly ones like Plausible Analytics.
+
+If you have issues with blockers, we offer a quick and easy way to serve the Plausible Analytics script from your domain name as a first-party connection. As a result, your stats are never blocked by clients because they are proxied through your subdomain.
+
+See the full instructions on [how to setup a custom subdomain and serve the Plausible Analytics script as a first-party connection](custom-domain.md).
