@@ -4,11 +4,7 @@ title: Serve the script from your domain as a first-party connection
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Some browsers and extensions may block all analytics services including privacy-friendly ones like Plausible Analytics.
-  
-If you have issues with blockers, we offer a quick and easy way to serve the Plausible Analytics script from your domain name as a first-party connection. As a result, your stats are never blocked by clients because they are proxied through your subdomain.
-
-Click on the "**Add custom domain**" button in the "**Custom domain**" section of your website settings to get started.
+We offer a quick and easy way to serve the Plausible Analytics script from your domain name as a first-party connection. Click on the "**Add custom domain**" button in the "**Custom domain**" section of your website settings to get started.
 
 <img alt="Serve the script from your domain as a first-party connection" src={useBaseUrl('img/custom-domain.png')} />
 
