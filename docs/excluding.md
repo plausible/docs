@@ -21,21 +21,21 @@ For this guide, we’ll work with uBlock Origin and it works on all the major br
 * Click the "**uBlock Origin**" icon in your browser
 * Then click the "**Dashboard**" icon in the lower-right corner to open the uBlock Origin dashboard
 
-<img alt="Add your website details to Plausible Analytics" src={useBaseUrl('img/ublock-origin-dashboard.png')} />
+<img alt="The uBlock Origin dashboard" src={useBaseUrl('img/ublock-origin-dashboard.png')} />
 
 * Select the "**My rules**" tab in the top navigation
 
-<img alt="Add your website details to Plausible Analytics" src={useBaseUrl('img/ublock-origin-my-rules.png')} />
+<img alt="My Rules tab in the uBlock Origin dashboard" src={useBaseUrl('img/ublock-origin-my-rules.png')} />
 
 ## Block the Plausible Analytics script on your domain
 
-<img alt="Add your website details to Plausible Analytics" src={useBaseUrl('img/ublock-origin-temporary-rules.png')} />
+<img alt="Add a new rule the uBlock Origin dashboard" src={useBaseUrl('img/ublock-origin-temporary-rules.png')} />
 
 In the "**Temporary rules**" box on the right-hand side of the page insert the following rule. Remember to change `yourdomain.com` with the domain name where you installed Plausible Analytics.
 
 ``` yourdomain.com plausible.io * block ```
 
-Once you’ve entered the correct filter, click on the "**Save**" button and then click on the "**Commit**" button.
+Once you’ve entered the correct rule, click on the "**Save**" button and then click on the "**Commit**" button.
 
 ## Return to your website to ensure it works
 
