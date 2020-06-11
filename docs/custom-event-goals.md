@@ -17,7 +17,7 @@ This snippet creates a global function called `plausible` which can be used to t
 
 Here’s what triggering a custom event looks like
 
-``` <pre class="wp-block-preformatted">plausible('Signup') ```
+``` plausible('Signup') ```
 
 The event name can be anything. As a second parameter, you can also send an object with options. The only supported option at the moment is `callback` – a function that is called once the event is logged successfully.
 
