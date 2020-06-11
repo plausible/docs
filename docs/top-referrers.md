@@ -4,7 +4,7 @@ title: Top Referrers
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Your "Top Referrers" report shows where the traffic to your website is coming from. You can use it to understand which marketing and promotional activities are working well and are driving the traffic to your site:
+Your "**Top Referrers**" report shows where the traffic to your website is coming from. You can use it to understand which marketing and promotional activities are working well and are driving the traffic to your site:
 
 <img alt="Top Referrers" src={useBaseUrl('img/top-referrers.png')} />
 
