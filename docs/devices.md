@@ -6,9 +6,9 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Your "**Devices**" report shows the screen size, the browser and the operating system (OS) of your visitors. It helps you identify and understand the type of device your visitors use the most often so you can optimize your website experience to them.
 	
-## Screen sizes
+## Screen size
 
-Your "**Screen sizes**" report shows the width of the screens used by your website visitors. It's useful to understand whether to optimize more for mobile or desktop visitors. Visitors are categorized into one of four categories based on their device width.
+Your "**Screen size**" report shows the width of the screens used by your website visitors. It's useful to understand whether to optimize more for mobile or desktop visitors. Visitors are categorized into one of four categories based on their device width.
 
 For the most accurate reporting, we use `window.innerWidth` to collect the screen size. It measures the width of the browser window where your website is actually rendered, rather than the full screen width. The actual width of the browser in pixels is discarded.
 
