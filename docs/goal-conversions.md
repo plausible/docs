@@ -2,6 +2,8 @@
 title: Goals, events and conversions
 --- 
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 In the "**Goals**" section of your website settings, Plausible Analytics gives you an option to specify and track goals. 
 
 Goals are actions that you want your users to take, for example, visit a specific page URL, sign up to a newsletter, click on the "**Download**" button, sign up for a trial account or complete the checkout form of an e-commerce store.
@@ -14,3 +16,5 @@ There are two types of goals in Plausible Analytics:
 * [Custom event goals](custom-event-goals.md) which allow you to measure button clicks or form completions
 
 Click on the "**+ Add goal**" button to add your first goal.
+
+<img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
