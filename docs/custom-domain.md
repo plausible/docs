@@ -1,19 +1,31 @@
 ---
-title: Custom domain
+title: Serve the script from your domain as a first-party connection
 ---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Some browsers and extensions may block all analytics services including privacy-friendly ones like Plausible Analytics.
   
-If you have issues with blockers, we offer a quick and easy way to serve the script from your domain name as a first-party connection. As a result, your stats are never blocked by clients because they are proxied through your subdomain.
+If you have issues with blockers, we offer a quick and easy way to serve the Plausible Analytics script from your domain name as a first-party connection. As a result, your stats are never blocked by clients because they are proxied through your subdomain.
 
-1. Click on the "Add custom domain" name to get started.
+1. Click on the "**Add custom domain**" button in the "**Custom domain**" section of your website settings to get started.
 
-2. We recommend using a subdomain of the website you're running Plausible Analytics on. If your site is on `yourdomain.com` you can use `plausible.yourdomain.com`. The name of the subdomain can be anything that you want. Type in your subdomain and click on the "DNS setup" button.
+<img alt="Serve the script from your domain as a first-party connection" src={useBaseUrl('img/custom-domain.png')} />
 
-3. Next, you need to go to your DNS provider’s website and create a new CNAME record for your chosen subdomain. Point the CNAME record to `custom.plausible.io.` (including the last dot) and then click on the "Done" button on the Plausible Analytics website.
+2. We recommend using a subdomain of the website you're running Plausible Analytics on. If your site is on `yourdomain.com` you can use `plausible.yourdomain.com`. The name of the subdomain can be anything that you want. Type in your subdomain in the "**Domain**" field and click on the "**DNS setup**" button.
 
-4. It may take up to 4 hours for DNS changes to propagate and for us to obtain an SSL certificate for your subdomain. The setup is working when your subdomain loads our JavaScript file (plausible.yourdomain.com/js/plausible.js in our example here when the chosen subdomain is "plausible").
+<img alt="Type in your chosen subdomain" src={useBaseUrl('img/setup-custom-domain.png')} />
 
-5. When our JavaScript file loads from your subdomain, you can finish your setup by replacing the tracking snippet on your site with the following code (your custom code will be shown on the confirmation page):
+3. Next, you need to go to your DNS provider’s website and create a new CNAME record for your chosen subdomain. Please check with your DNS provider's documentation on how you can create a new CNAME record.
 
-``` <script async defer data-domain=”yourdomain.com” src=”https://plausible.yourdomain.com/js/index.js”></script> ```
+Point the CNAME record to `custom.plausible.io.` (including the last dot) and then click on the "**Done**" button on the Plausible Analytics website. 
+
+<img alt="Create a new CNAME record for your chosen subdomain" src={useBaseUrl('img/dns-cname-record.png')} />
+
+4. It may take up to 4 hours for the DNS changes to propagate and for us to obtain an SSL certificate for your subdomain. The setup is working when your subdomain loads our JavaScript file (yoursubdomain.yourdomain.com/js/plausible.js).
+
+5. When our JavaScript file loads from your subdomain, you can finish your setup by replacing the tracking code on your site with something that looks like the following code (your custom code will be shown on the confirmation page):
+
+``` <script async defer data-domain=”yourdomain.com” src=”https://yoursubdomain.yourdomain.com/js/index.js”></script> ```
+
+<img alt="Update the tracking code on your site" src={useBaseUrl('img/update-javascript-snippet.png')} />
