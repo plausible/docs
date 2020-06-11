@@ -25,8 +25,4 @@ You should see the Plausible Analytics tracking script in the source code of you
 
 ## Alternatively you can serve the script from your domain as a first-party connection
 
-Some browsers and extensions may block all analytics services including privacy-friendly ones like Plausible Analytics.
-
-If you have issues with blockers, we offer a quick and easy way to serve the Plausible Analytics script from your domain name as a first-party connection. As a result, your stats are never blocked by clients because they are proxied through your subdomain.
-
-See the full instructions on [how to setup a custom subdomain and serve the Plausible Analytics script as a first-party connection](custom-domain.md).
+We offer a quick and easy way to serve the Plausible Analytics script from your domain name as a first-party connection. See the full instructions on [how to setup a custom subdomain and serve the Plausible Analytics script as a first-party connection](custom-domain.md).
