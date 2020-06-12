@@ -16,7 +16,6 @@ module.exports = {
         items: ['pageview-goals', 'custom-event-goals'],
       },
                  ],
-    "Goal Conversions": ['pageview-goals', 'custom-event-goals'],
     "Contribute": ['contribute'],
   },
 };
