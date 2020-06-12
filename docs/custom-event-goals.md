@@ -2,13 +2,15 @@
 title: Custom event goals
 --- 
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 If you want to track custom event goals like button clicks or form completions, you have to trigger these custom events from your website using JavaScript. Here are the steps you need to take to do that:
 
-## 1. Trigger custom events with JavaScript on your site
+## Trigger custom events with JavaScript on your site
 
 First, make sure your tracking setup includes the second line as shown below
 
-``` 
+```
 <script async defer data-domain="<yourdomain.com>" src="https://plausible.io/js/plausible.js"></script>
 <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script> 
 ```
@@ -23,14 +25,18 @@ The event name can be anything. As a second parameter, you can also send an obje
 
 This is the whole extent of the API. If you want to trigger form submissions, button clicks etc. you need to implement the code for that yourself.
 
-## 2. Create a custom event goal in your Plausible Analytics account
+## Create a custom event goal in your Plausible Analytics account
 
 When you start sending custom events to Plausible Analytics, they won’t show up automatically. You’ll have to configure the goal for the conversion numbers to show up.
 
-To configure a goal, go to your website’s settings in your Plausible Analytics account and scroll down to the "Goals" section. You should see an empty list with a prompt to add a goal.
+To configure a goal, go to your website’s settings in your Plausible Analytics account and scroll down to the "**Goals**" section. You should see an empty list with a prompt to add a goal.
 
-Click on the "Add goal" button to go to the goal creation form.
+Click on the "**+ Add goal**" button to go to the goal creation form.
+
+<img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
 
 Select `Custom event` as the goal trigger and enter the name of the custom event you are triggering. The names must be an exact match to the one on your site for the conversions to show up in your analytics dashboard.
 
-Next, click on the "Add goal" button and you’ll be taken back to the Goals page. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who triggered the custom event. Goal conversions are listed at the very bottom of the dashboard.
+<img alt="Add your custom event goal" src={useBaseUrl('img/add-custom-event-goal.png')} />
+
+Next, click on the "**Add goal**" button and you’ll be taken back to the Goals page. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who triggered the custom event. Goal conversions are listed at the very bottom of the dashboard.
