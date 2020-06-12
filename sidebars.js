@@ -9,13 +9,8 @@ module.exports = {
         label: 'Top Referrers',
         items: ['top-referrers', 'manual-link-tagging', 'twitter'],
       },
-                  'top-pages', 'countries', 'devices',
-                 {
-        type: 'category',
-        label: 'Goal Conversions',
-        items: ['pageview-goals', 'custom-event-goals'],
-      },
-                 ],
+                  'top-pages', 'countries', 'devices'],
+    "Goal Conversions": ['pageview-goals', 'custom-event-goals'],
     "Contribute": ['contribute'],
   },
 };
