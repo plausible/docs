@@ -1,5 +1,5 @@
 ---
-title: Excluding yourself from analytics
+title: Exclude yourself from your analytics
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
