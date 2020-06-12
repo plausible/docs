@@ -10,6 +10,8 @@ Once you have an account, you can enter the domain name of the website you want 
 
 For example, if your site is `https://www.yourdomain.com` then the part to enter in the "**Domain**" field is `yourdomain.com`.
 
+<img alt="Add your website details to Plausible Analytics" src={useBaseUrl('img/website-details.png')} />
+
 ### Do you want to track a subdomain?
 
 If you would like to track a subdomain such as `blog.yourdomain.com` then please include the subdomain. Plausible Analytics essentially sees different subdomains as different sites.
@@ -25,5 +27,3 @@ For instance, if you select "**(GMT+01:00) Amsterdam, Berlin…**" then the begi
 The best practice is to set the timezone that reflects the location of your audience or if the audience is very broad and spread across the world to set the timezone of your location.
 
 Click on the "**Add snippet**" button to go to the next step.
-
-<img alt="Add your website details to Plausible Analytics" src={useBaseUrl('img/website-details.png')} />
