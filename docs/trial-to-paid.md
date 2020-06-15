@@ -32,6 +32,6 @@ Next up you need to choose your payment method. You can pay by a credit card or 
 
 <img alt="Choose your payment method" src={useBaseUrl('img/payment-method.png')} />
 
-Fill in your card details and click on the "**Subscribe Now**" button to subscribe to a paid subscription. Your subscription will start right away.
+Fill in your card details and click on the "**Subscribe Now**" button to subscribe to a paid subscription. Your subscription will start right away. Your subscription will be renewed automatically and you can change or cancel your plan at any time.
 
 <img alt="Fill in your payment details" src={useBaseUrl('img/subscribe-now.png')} />
