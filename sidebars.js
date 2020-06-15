@@ -11,7 +11,7 @@ module.exports = {
       },
                   'top-pages', 'countries', 'devices'],
     "Goal Conversions": ['pageview-goals', 'custom-event-goals'],
-    "Account Settings": ['trial-to-paid', 'change-email', 'reset-password', 'change-plan', 'delete-account'],
+    "Account Settings": ['trial-to-paid', 'change-email', 'reset-password', 'change-plan', 'cancel-subscription', 'delete-account'],
     "Contribute": ['contribute'],
   },
 };
