@@ -2,7 +2,7 @@ module.exports = {
   title: 'Plausible docs',
   url: 'https://competent-benz-12aade.netlify.app',
   baseUrl: '/',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
   organizationName: 'plausible',
   projectName: 'docs',
   themeConfig: {
