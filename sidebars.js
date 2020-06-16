@@ -1,7 +1,7 @@
 module.exports = {
   someSidebar: {
     "Welcome": ['introduction'],
-    "Get Started": ['register-account', 'add-website', 'plausible-script', 'verify-integration'],
+    "Get Started": ['register-account', 'add-website', 'plausible-script',  'spa-support', 'verify-integration'],
     "Website Settings": ['website-settings', 'general', 'visibility', 'shared-links', 'goal-conversions', 'google-search-console-integration', 'email-reports', 'custom-domain', 'delete-site-data', 'excluding'],
     "Dashboard": ['guided-tour',
     {
