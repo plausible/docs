@@ -4,11 +4,9 @@ title: Top Referrers
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Your "**Top Referrers**" report shows which referral sources your website traffic is coming from. You can use it to understand which marketing and promotional activities are working well and are driving traffic to your site.
+Your "**Top Referrers**" report shows which referral sources are driving traffic to your website. You can use it to understand which marketing and promotional activities are working well and are driving traffic.
 
-The referral sources are counted only when they start a new session on your site. This means that any visitor on your site that gets redirected to a third-party such as a payment provider and automatically gets returned to your site after a successful payment completion doesn't show that third-party as a referral source. 
-
-Only those visitors that start a new session coming directly from a third-party will be counted in referrals. This helps us show more accurate referral traffic stats and there's no need for you to manually exclude referrals either.
+The referral sources are counted only when they start a new session on your site. This prevents external domains such as a payment gateway that the user is being taken through to show up in the referrers list. No need for you to manually exclude referrers.
 
 <img alt="Top Referrers" src={useBaseUrl('img/top-referrers.png')} />
 
