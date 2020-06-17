@@ -16,6 +16,8 @@ There are two distinct ways that Plausible Analytics collects the referrer sourc
 
 The `referer` header (the HTTP header is misspelled with one r for historical reasons) is the default and automated way of tracking referrer sources of web traffic.
 
+### Traffic without a referrer source
+
 It works well for the majority of cases but there are some limitations and fall-backs with using the `referer` header for various historical and technical reasons. Not every request from a browser will have the referrer specified, and it’s not always accurate.
 
 You may be familiar with the "**(direct)/(none)**" referrer source in the Google Analytics or the term “dark traffic”. This covers all the traffic where the referrer is not passed. These could be clicks from email, clicks from documents, clicks from messengers and other mobile apps, bookmarks, people typing in the URL directly into the browser and more.
