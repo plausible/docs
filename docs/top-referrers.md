@@ -4,7 +4,11 @@ title: Top Referrers
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Your "**Top Referrers**" report shows where the traffic to your website is coming from. You can use it to understand which marketing and promotional activities are working well and are driving the traffic to your site:
+Your "**Top Referrers**" report shows which referral sources your website traffic is coming from. You can use it to understand which marketing and promotional activities are working well and are driving traffic to your site.
+
+The referral sources are counted only when they start a new session on your site. This means that any visitor on your site that gets redirected to a third-party such as a payment provider and automatically gets returned to your site after a successful payment completion doesn't show that third-party as a referral source. 
+
+Only those visitors that start a new session coming directly from a third-party will be counted in referrals. This helps us show more accurate referral traffic stats and there's no need for you to manually exclude referrals either.
 
 <img alt="Top Referrers" src={useBaseUrl('img/top-referrers.png')} />
 
@@ -14,13 +18,13 @@ There are two distinct ways that Plausible Analytics collects the referrer sourc
 
 ### 1. Automatic by the `referer` header
 
-The `referer` header (the HTTP header is misspelled with one r for historical reasons) is the default and automated way of tracking referrer sources of web traffic.
+The `referer` header (the HTTP header is misspelled with one r for historical reasons) is the default and automated way of tracking referrer sources of web traffic. The `referer` header works well for the majority of cases but there are some limitations and fall-backs with using it for various historical and technical reasons. 
 
 ### Traffic without a referrer source
 
-It works well for the majority of cases but there are some limitations and fall-backs with using the `referer` header for various historical and technical reasons. Not every request from a browser will have the referrer specified, and it’s not always accurate.
+Not every request from a browser will have the referrer specified, and the `referer` header is not always accurate.
 
-You may be familiar with the "**(direct)/(none)**" referrer source in the Google Analytics or the term “dark traffic”. This covers all the traffic where the referrer is not passed. These could be clicks from email, clicks from documents, clicks from messengers and other mobile apps, bookmarks, people typing in the URL directly into the browser and more.
+You may be familiar with the "**(direct)/(none)**" referrer source in the Google Analytics or the term "**dark traffic**". This covers all the traffic where the referrer is not passed. These could be clicks from email, clicks from documents, clicks from messengers and other mobile apps, bookmarks, people typing in the URL directly into the browser and more.
 
 Here’s a non-exhaustive list of other problems with the header:
 
