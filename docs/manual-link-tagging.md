@@ -12,7 +12,7 @@ For example, here's what you can do when you want to send a newsletter to your s
 
 But if you link to `yourdomain.com?ref=Newsletter` anyone who clicks on that will show "**Newsletter**" as the referrer source. This will allow you to see how many people have clicked on your link in the newsletter.
 
-Here are examples of links with the different query parameters that are support by Plausible Analytics:
+Here are examples of links with the different query parameters that are supported by Plausible Analytics:
 
 * `yourdomain.com?ref=Newsletter`
 * `yourdomain.com?source=Newsletter`
