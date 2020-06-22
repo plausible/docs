@@ -44,6 +44,19 @@ if (registerForm) {
 }
 ```
 
+And here's an example of the code you need to insert if you're using the Contact Form 7 plugin on WordPress and want to see the number of visitors who use the contact form. In this example, there are two contact forms on two different pages and this is the code you should insert in the `head` section:
+
+```
+<script>
+document.addEventListener( 'wpcf7mailsent', function( event ) {
+  if ( '1174' == event.detail.contactFormId ) {
+    plausible('FormProject')}
+  if ( '464' == event.detail.contactFormId ) {
+    plausible('FormContact')}
+}, false );
+</script>
+```
+
 ## Create a custom event goal in your Plausible Analytics account
 
 When you start sending custom events to Plausible Analytics, they won’t show up automatically. You’ll have to configure the goal for the conversion numbers to show up.
