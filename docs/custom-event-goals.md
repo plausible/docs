@@ -23,7 +23,26 @@ Here’s what triggering a custom event looks like
 
 The event name can be anything. As a second parameter, you can also send an object with options. The only supported option at the moment is `callback` – a function that is called once the event is logged successfully.
 
-This is the whole extent of the API. If you want to trigger form submissions, button clicks etc. you need to implement the code for that yourself.
+This is the whole extent of the API. If you want to trigger form submissions, button clicks etc. you need to implement the code for that yourself. This is an example of code we used to track custom events on our own website:
+
+```
+if (registerForm) {
+  registerForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    setTimeout(submitForm, 1000);
+    var formSubmitted = false;
+
+    function submitForm() {
+      if (!formSubmitted) {
+        formSubmitted = true;
+        registerForm.submit();
+      }
+    }
+
+    plausible('Signup', {callback: submitForm});
+  })
+}
+```
 
 ## Create a custom event goal in your Plausible Analytics account
 
