@@ -51,11 +51,11 @@ module.exports = {
           items: [
             {
               label: 'Give us feedback',
-              href: 'https://plausible.io/feedback',
+              href: 'https://github.com/plausible/analytics/issues',
             },
             {
               label: 'On GitHub',
-              href: 'https://github.com/plausible/analytics/',
+              href: 'https://github.com/plausible/',
             },
             {
               label: 'On Twitter',
@@ -68,7 +68,7 @@ module.exports = {
           items: [
             {
               label: 'We have a public roadmap',
-              to: 'https://plausible.io/roadmap',
+              to: 'https://github.com/plausible/analytics/issues?q=is%3Aopen+is%3Aissue+label%3A%22on+the+roadmap%22+sort%3Areactions-%2B1-desc',
             },
             {
               label: 'Check out the live demo',
