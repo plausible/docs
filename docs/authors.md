@@ -2,7 +2,7 @@
 title: Authors
 --- 
 
-Plausible Analytics is designed, developed and maintained by the following people.
+Plausible Analytics is designed, developed and maintained fully remotely, fully distributed and transparently by the following people:
 
 ## Full-time team
 
@@ -19,4 +19,4 @@ In addition to the full-time team, Plausible Analytics is made possible by an in
 
 * To those who build and maintain Plausible Analytics integrations. [Full list here](community-integrations.md).
 
-Thank you to everyone for contributing to Plausible Analytics! 
+Thank you to everyone for contributing to Plausible Analytics!
