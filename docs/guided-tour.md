@@ -14,7 +14,7 @@ Here’s what you can discover on your Plausible Analytics dashboard:
 
 * Choose the time range that you want to analyze. The visitor numbers are automatically presented on an hourly, daily, or monthly graph. The default time frame is set at the last 30 days.
 
-* See the number of unique visitors, total page views, and the bounce rate. These metrics include a percentage comparison to the previous time period, so you understand if the trends are going up or down.
+* See the number of unique visitors, total page views, and the bounce rate (the percentage of sessions that had one page view only). These metrics include a percentage comparison to the previous time period, so you understand if the trends are going up or down.
 
 * See all the referral sources of traffic and all the most visited pages on your site. Bounce rates of the individual referrals and pages are included too.
 
