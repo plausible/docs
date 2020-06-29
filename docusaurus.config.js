@@ -7,6 +7,10 @@ module.exports = {
   projectName: 'docs',
   themeConfig: {
     disableDarkMode: true,
+        algolia: {
+      apiKey: '6c8274af5bc972f5ca4fad48f08eb4d9',
+      indexName: 'plausible',
+    },
     navbar: {
       title: 'Plausible Analytics',
       logo: {
