@@ -2,7 +2,7 @@
 title: Authors
 --- 
 
-Plausible Analytics is designed, developed and maintained fully remotely, fully distributed and transparently by the following people:
+Plausible Analytics is designed, developed and maintained fully remotely, distributed and transparent by the following people:
 
 ## Full-time team
 
