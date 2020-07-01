@@ -81,3 +81,7 @@ Google samples its keyword data heavily. The sampling is why your keyword visito
 You can always view your Plausible Analytics integration in your Google account within the section "**Third-party apps with account access**". Here's how it looks like.
 
 <img alt="Third-party apps with account access" src={useBaseUrl('img/third-party-apps.png')} />
+
+## Remove the Google Search Console integration
+
+If you'd like to remove the Google Search Console integration, click on the "**Unlink Google account**" button in the "**Google Integration**" section of your website settings.
