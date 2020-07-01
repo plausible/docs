@@ -10,4 +10,6 @@ Thanks to the members of our community, there are now Plausible Analytics integr
 
 * [WordPress](wordpress-integration.md): There's no official Plausible Analytics WordPress plugin right now but [here are two ways](wordpress-integration.md) you can insert the Plausible Analytics script into your site.
 
+* [Ghost](https://ghost.org/integrations/plausible/): Integrate Ghost with Plausible Analytics using a straightforward code injection.
+
 Let us know about any other integrations that you've built and we will feature them. Thanks for your support!
