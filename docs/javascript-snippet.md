@@ -15,6 +15,8 @@ Your Plausible Analytics tracking script code will look something like this (you
 
 If you've lost your JavaScript snippet, you can find it by [logging into your Plausible Analytics account](https://plausible.io/sites). Here you'll find the list of websites you've added to Plausible Analytics.
 
+<img alt="Plausible Analytics" src={useBaseUrl('img/list-of-sites.png')} />
+
 Click on the "**Settings**" button on the right-hand side of the website you'd like to get the snippet for and scroll down to the "**Javascript snippet**" section on the following page.
 
 <img alt="Your Plausible Analytics tracking script" src={useBaseUrl('img/your-javascipt-snippet.png')} />
