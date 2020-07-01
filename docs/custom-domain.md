@@ -35,3 +35,7 @@ When our JavaScript file loads from your subdomain, you can finish your setup by
 ```
 
 <img alt="Update the tracking code on your site" src={useBaseUrl('img/update-javascript-snippet.png')} />
+
+## Remove the custom domain integration
+
+If you'd like to remove the custom domain you have configured, click on the "**Remove custom domain**" button in the "**Custom domain**" section of your website settings.
