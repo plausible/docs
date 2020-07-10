@@ -20,6 +20,10 @@ Next, you need to go to your DNS provider’s website and create a new CNAME rec
 
 Point the CNAME record to `custom.plausible.io.` (including the last dot) and then click on the "**Done**" button on the Plausible Analytics website. 
 
+:::note
+Using GoDaddy? GoDaddy (and some other domain registrars) automatically strip the final dot in their web interface but don't worry as they do the right change on the back end.
+:::
+
 <img alt="Create a new CNAME record for your chosen subdomain" src={useBaseUrl('img/dns-cname-record.png')} />
 
 ## It may take up to 4 hours for the DNS changes to propagate
