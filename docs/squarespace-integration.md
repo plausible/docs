@@ -8,7 +8,7 @@ You can use the "**[Code injection](https://support.squarespace.com/hc/en-us/art
 
 * In the "**Home Menu**", click "**Settings**", then "**Advanced**" and then click "**Code Injection**".
 
-* Add your Plausible Analytics script to the "**Header**" text box. Code added into the "**Header**" field is injected into the <head> tag on every page of your site.
+* Add your Plausible Analytics script to the "**Header**" text box. Code added into the "**Header**" field is injected into the `<head>` tag on every page of your site.
 
 * After adding your code, click on the "**Save**" button.
 
