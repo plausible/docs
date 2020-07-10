@@ -20,6 +20,7 @@ For this guide, we’ll work with uBlock Origin and it works on all the major br
 
 * Click the "**uBlock Origin**" icon in your browser
 * Then click the "**Dashboard**" icon in the lower-right corner to open the uBlock Origin dashboard
+* Tick the "**I am an advanced user**" box
 
 <img alt="The uBlock Origin dashboard" src={useBaseUrl('img/ublock-origin-dashboard.png')} />
 
