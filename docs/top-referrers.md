@@ -30,9 +30,9 @@ Here’s a non-exhaustive list of other problems with the header:
 
 * Facebook `referer` only includes the fact that the visitor came from Facebook. Facebook never sends the post or comment ID where someone clicked.
 
-* Twitter sets the referrer to their link shortener (t.co) so you can see the shortened link but not the actual tweet that brought the traffic. We make the best effort to find the relevant tweets that the visitors came from using the Twitter API [read more about it](twitter.md) and display those tweets in your Plausible Analytics dashboard. Click on "**Twitter**" in the "**Top Referrers**" chart to view these.
+* Twitter sets the referrer to their link shortener (t.co) so you can see the shortened link but not the actual tweet that brought the traffic. We make the best effort to find the relevant tweets that the visitors came from using the Twitter API ([read more about it](twitter.md)) and display those tweets in your dashboard. Click on "**Twitter**" to view these.
 
-* Google does not include the search keywords in the referrer so you can see the visitor is coming from Google search but you cannot see which keyword phrase they used to find you. To fix this, you can integrate your Plausible Analytics account with [your Google Search Console account](google-search-console-integration.md) so the keyword phrases people discover your site with show directly in your Plausible Analytics dashboard. After integrating with Search Console, you can click on "**Google**" in the "**Top Referrers**" chart to view these.
+* Google does not include the search keywords in the referrer so you can see the visitor is coming from Google search but you cannot see which keyword phrase they used to find you. To fix this, you can integrate your Plausible Analytics account with [Google Search Console](google-search-console-integration.md) so the keyword phrases people discover your site with show directly in your Plausible Analytics dashboard. After integrating with Search Console, you can click on "**Google**" to view these.
 
 ### 2. Manual by link tagging
 
