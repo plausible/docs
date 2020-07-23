@@ -41,6 +41,10 @@ module.exports = {
           title: 'Study',
           items: [
             {
+              label: 'About Plausible',
+              to: 'https://plausible.io/about',
+            },
+            {
               label: 'Read our blog',
               to: 'https://plausible.io/blog',
             },
@@ -54,22 +58,26 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Give us feedback',
-              href: 'https://plausible.io/feedback',
-            },
-            {
-              label: 'On GitHub',
+              label: 'GitHub',
               href: 'https://github.com/plausible/',
             },
             {
-              label: 'On Twitter',
+              label: 'Twitter',
               href: 'https://twitter.com/plausiblehq',
+            },
+             {
+              label: 'Mastodon',
+              href: 'https://fosstodon.org/@plausible',
             },
           ],
         },
         {
           title: 'Explore',
           items: [
+            {
+              label: 'Give us feedback',
+              href: 'https://plausible.io/feedback',
+            },
             {
               label: 'We have a public roadmap',
               to: 'https://plausible.io/roadmap',
