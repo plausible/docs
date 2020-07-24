@@ -14,12 +14,18 @@ Here’s what you can discover on your Plausible Analytics dashboard:
 
 * Choose the time range that you want to analyze. The visitor numbers are automatically presented on an hourly, daily, or monthly graph. The default time frame is set at the last 30 days.
 
-* See the number of unique visitors, total page views, and the bounce rate (the percentage of sessions that had one page view only). These metrics include a percentage comparison to the previous time period, so you understand if the trends are going up or down.
+* By clicking on the number of "**current visitors**" or by selecting "**Realtime**" in the date picker in the top right, you can see the realtime dashboard that tells you what's happening on your site live in that moment.
 
-* See all the referral sources of traffic and all the most visited pages on your site. Bounce rates of the individual referrals and pages are included too.
+* See the number of unique visitors, total page views, the bounce rate (the percentage of sessions that had one page view only) and the visit duration. These metrics include a percentage comparison to the previous time period, so you understand if the trends are going up or down.
 
-* See the list of countries your traffic is coming from. You can also see the device, browser, and operating system your visitors are using.
+* See all the top referral sources of traffic ranked by the number of unique visiors. You can click on the "**more**" button to see the full list. Bounce rates and visit duration of the individual referrals are included too.
+
+* See all the most visited pages on your site ranked by pageviews. You can click on the "**more**" button to see the full list. The number of unique visitors and the bounce rates of the individual pages are included too.
+
+* See the list of countries your traffic is coming from. 
+
+* You can also see the device, browser, and operating system your visitors are using.
 
 * Track events and goals to identify the number of converted visitors, the conversion rate, and the referral sites that send the best quality traffic.
 
-Take a look at the [live demo](https://plausible.io/plausible.io) where you can follow the live traffic of the Plausible Analytics website itself.
+Take a look at the [live demo](https://plausible.io/plausible.io) where you can follow the actual traffic of the Plausible Analytics website itself.
