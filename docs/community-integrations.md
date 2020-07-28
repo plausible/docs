@@ -8,7 +8,7 @@ Thanks to the members of our community, there are now Plausible Analytics integr
 
 * [React](https://codeberg.org/resynth1943/react-plausible-analytics): Plausible Analytics as a React component. Built and maintained by Resynth of [https://resynth1943.net/](https://resynth1943.net/).
 
-* [WordPress](wordpress-integration.md): There's no official Plausible Analytics WordPress plugin right now but [here are two ways](wordpress-integration.md) you can insert the Plausible Analytics script into your site. There's also the "**[Unofficial Plausible Analytics Plugin](https://wordpress.org/plugins/unofficial-plausible-analytics)**" built and maintained by Joe Clarke of [TaskBill.io](https://taskbill.io/).
+* [WordPress](wordpress-integration.md): There's no official Plausible Analytics WordPress plugin right now but [here are two ways](wordpress-integration.md) you can insert the Plausible Analytics script into your site. There's also the "**[Unofficial Plausible Analytics Plugin](https://wordpress.org/plugins/unofficial-plausible-analytics)**" built and maintained by Joe Clarke of [TaskBill.io](https://blog.taskbill.io/2020/07/27/plausible-analytics-wordpress-plugin/).
 
 * [Ghost](https://ghost.org/integrations/plausible/): Integrate Ghost with Plausible Analytics using a straightforward code injection.
 
