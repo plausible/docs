@@ -101,7 +101,7 @@ module.exports = {
           homePageId: 'introduction',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/plausible/docs/edit/master/docs/',
+            'https://github.com/plausible/docs/edit/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
