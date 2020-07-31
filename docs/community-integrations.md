@@ -14,4 +14,6 @@ Thanks to the members of our community, there are now Plausible Analytics integr
 
 * [Micro.blog](https://micro.blog): Integrate Micro.blog with Plausible Analytics using a plugin. You can add it under Find Plug-ins in Micro.blog and then use the Settings button to configure it for your Plausible Analytics account. Built and maintained by [Lukas Rosenstock](https://lukasrosenstock.net/2020/07/24/ive-struggled-a.html). Here's [the source code](https://github.com/LukasRos/plugin-plausible).
 
+* [Drupal](https://www.drupal.org/project/plausible): A Drupal module for Plausible Analytics. Allows you to ignore tracking on certain pages and by certain user roles. Built and maintained by Dane Rossenrode of [Touchdreams](https://touchdreams.co.za/).
+
 Let us know about any other integrations that you've built and we will feature them. Thanks for your support!
