@@ -16,4 +16,6 @@ Thanks to the members of our community, there are now Plausible Analytics integr
 
 * [Drupal](https://www.drupal.org/project/plausible): A Drupal module for Plausible Analytics. Allows you to ignore tracking on certain pages and by certain user roles. Built and maintained by Dane Rossenrode of [Touchdreams](https://touchdreams.co.za/).
 
+* [Bridgetown](https://rubygems.org/gems/bridgetown-plausible-tag): A Liquid tag to add Plausible Analytics to your Bridgetown site. Built and maintained by [Andrew Mason](https://www.andrewm.codes/). Here's [the source code](https://github.com/andrewmcodes/bridgetown-plausible-tag). 
+
 Let us know about any other integrations that you've built and we will feature them. Thanks for your support!
