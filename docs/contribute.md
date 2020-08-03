@@ -9,3 +9,5 @@ Thank you for being interested in contributing to Plausible Analytics! We’re v
 2. Reporting bugs or issues or in any other way contributing to the development of the Plausible Analytics on [our GitHub](https://github.com/plausible/analytics/issues). Thanks to our GitHub contributors we were able to reduce our script size, develop the easy self-hosting solution and more.
 
 3. Blogging, tweeting and in any other way sharing with the world what you like about Plausible Analytics, what you use it for and how it helps you solve your challenges.
+
+4. Use our forum on discourse : [https://plausible.discourse.group/](https://plausible.discourse.group/)
