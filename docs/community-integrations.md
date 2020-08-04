@@ -18,4 +18,6 @@ Thanks to the members of our community, there are now Plausible Analytics integr
 
 * [Bridgetown](https://rubygems.org/gems/bridgetown-plausible-tag): A Liquid tag to add Plausible Analytics to your Bridgetown site. Built and maintained by [Andrew Mason](https://www.andrewm.codes/). Here's [the source code](https://github.com/andrewmcodes/bridgetown-plausible-tag). 
 
+* [Hugo](https://github.com/divinerites/plausible-hugo) : A theme component to add Plausible Analytics & custom goals to your [Hugo](https://www.gohugo.io/) site. Built and maintained by Divinerites. Here's the [source code](https://github.com/divinerites/plausible-hugo)
+
 Let us know about any other integrations that you've built and we will feature them. Thanks for your support!
