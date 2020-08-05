@@ -69,6 +69,10 @@ module.exports = {
               label: 'Mastodon',
               href: 'https://fosstodon.org/@plausible',
             },
+            {
+              label: 'Forum',
+              href: 'https://plausible.discourse.group/',
+            },
           ],
         },
         {
@@ -85,6 +89,10 @@ module.exports = {
             {
               label: 'Check out the live demo',
               href: 'https://plausible.io/plausible.io',
+            },
+            {
+              label: 'Status',
+              href: 'https://plausible.instatus.com/',
             },
           ],
         },
