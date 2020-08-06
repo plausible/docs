@@ -14,13 +14,13 @@ Here’s what you can discover on your Plausible Analytics dashboard:
 
 * Choose the time range that you want to analyze. The visitor numbers are automatically presented on an hourly, daily, or monthly graph. The default time frame is set at the last 30 days.
 
-* By clicking on the number of "**current visitors**" or by selecting "**Realtime**" in the date picker in the top right, you can see the realtime dashboard that tells you what's happening on your site live in that moment.
+* By clicking on the number of "**current visitors**" or by selecting "**Realtime**" in the date picker in the top right, you can see the realtime dashboard that tells you what's happening on your site live in that moment. It also includes a pageview graph for the last 30 minutes. The whole dashboard is live so you don’t have to refresh to stay up to date.
 
 * See the number of unique visitors, total page views, the bounce rate (the percentage of sessions that had one page view only) and the visit duration. These metrics include a percentage comparison to the previous time period, so you understand if the trends are going up or down.
 
-* See all the top referral sources of traffic ranked by the number of unique visiors. You can click on the "**more**" button to see the full list. Bounce rates and visit duration of the individual referrals are included too.
+* See all the top referral sources of traffic ranked by the number of unique visiors. You can click on the "**more**" button to see the full list. Bounce rates and visit duration of the individual referrals are included too. You can click on any referral source to drill down into that source.
 
-* See all the most visited pages on your site ranked by pageviews. You can click on the "**more**" button to see the full list. The number of unique visitors and the bounce rates of the individual pages are included too.
+* See all the most visited pages on your site ranked by the number of unique visitors. You can click on the "**more**" button to see the full list. The number of pageviews and the bounce rates of the individual pages are included too.
 
 * See the list of countries your traffic is coming from. 
 
