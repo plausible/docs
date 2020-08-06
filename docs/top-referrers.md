@@ -38,6 +38,6 @@ Take a look at our blog post on the topic of [referrer header](https://plausible
 
 ### 2. Manual by link tagging
 
-To minimize the amount of traffic that falls within the "**nDirect / None**" category, you can add special query parameters to your links. 
+To minimize the amount of traffic that falls within the "**Direct / None**" category, you can add special query parameters to your links. 
 
 See "[Manual link tagging](manual-link-tagging.md)" section of the documentation for the full instructions.
