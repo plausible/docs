@@ -12,7 +12,7 @@ module.exports = {
     "Dashboard": ['guided-tour',
     {
         type: 'category',
-        label: 'Top Referrers',
+        label: 'Top Sources',
         items: ['top-referrers', 'manual-link-tagging', 'twitter'],
       },
                   'top-pages', 'countries', 'devices'],
