@@ -20,13 +20,9 @@ The percentage of visitors with a single page view. A visitor "bounces" away and
 
 How long time visitors spend on your site. It only shows people who visit more than one page. For those who visit one page only we default to 0 seconds.
 
-## Realtime Dashboard
+## Current Visitors
 
-How many people are currently on your site and what are they viewing. It also includes data for the previous 30 minutes.
-
-## Active Visitors
-
-How many people are currently on your site.
+How many people are currently on your site. This includes all visitors who have loaded a page in the last 5 minutes. You can click on the number to see what pages they are viewing.
 
 ## Source
 
