@@ -20,4 +20,6 @@ Thanks to the members of our community, there are now Plausible Analytics integr
 
 * [Hugo](https://github.com/divinerites/plausible-hugo) : A theme component to add Plausible Analytics & custom goals to your [Hugo](https://www.gohugo.io/) site. Allows you to ignore tracking on certain pages. Built and maintained by Divinerites. Here's the [source code](https://github.com/divinerites/plausible-hugo)
 
+* [AUR package for Arch Linux](https://aur.archlinux.org/packages/plausible-git/) : Allows you to install Plausible Analytics as a standard package on your server. You can start it using ``systemctl start plausible``, you can enable it at boot with ``systemctl enable plausible`` and you can change the environment variables by editing ``/etc/plausible.conf``. Built and maintained by [Rhys Perry](https://github.com/plausible/analytics/issues/263). 
+
 Let us know about any other integrations that you've built and we will feature them. Thanks for your support!
