@@ -38,7 +38,7 @@ You can click on any source to drill-down and view the individual pages linking 
 
 ## Direct / None
 
-Includes visitors who typed your URL into their browser or clicked a link in an email. It also includes other visitors who were [missing a referrer header](https://plausible.io/blog/referrer-policy). To minimize the amount of traffic that falls within the "Direct / None" category, you can [add these special query parameters to your links](https://docs.plausible.io/manual-link-tagging/).
+Includes visitors who typed your URL into their browser or clicked a link in an email. It also includes other visitors who were [missing a referrer header](https://plausible.io/blog/referrer-policy). To minimize the amount of traffic that falls within the "Direct / None" category, you can [add these special query parameters to your links](manual-link-tagging.md).
 
 ## Entry Pages
 
@@ -50,7 +50,7 @@ Shows the list of countries your visitors are based in.
 
 ## Goals
 
-You can use goals to track desired actions people take on your site. Goals can be based on people [visiting a particular page](https://docs.plausible.io/pageview-goals/) or [triggering a particular event](https://docs.plausible.io/custom-event-goals/) such as subscribing to a newsletter or signing up for an account.
+You can use goals to track desired actions people take on your site. Goals can be based on people [visiting a particular page](pageview-goals.md) or [triggering a particular event](custom-event-goals.md) such as subscribing to a newsletter or signing up for an account.
 
 ## Converted Visitors
 
