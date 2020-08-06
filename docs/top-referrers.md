@@ -4,7 +4,7 @@ title: Top Sources
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Your "**Top Sources**" report shows which referral sources are driving traffic to your website. You can use it to understand which marketing and promotional activities are working well and are driving traffic.
+Your "**Top Sources**" report shows which referral sources are driving traffic to your website. You can use it to understand which marketing and promotional activities are working well and are driving traffic. Click on any referral sources to see the referral drilldown with further details.
 
 The referral sources are counted only when they start a new session on your site. This prevents external domains such as a payment gateway that the user is being taken through to show up in the referrers list. No need for you to manually exclude referrers.
 
