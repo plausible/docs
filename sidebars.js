@@ -15,7 +15,7 @@ module.exports = {
         label: 'Top Sources',
         items: ['top-referrers', 'manual-link-tagging', 'twitter'],
       },
-                  'top-pages', 'countries', 'devices'],
+                  'top-pages', 'countries', 'devices', 'metrics-definitions'],
     "Goal Conversions": ['pageview-goals', 'custom-event-goals'],
     "Account Settings": ['trial-to-paid', 'change-email', 'reset-password', 'change-plan', 'cancel-subscription', 'delete-account'],
     "Contribute": ['contribute', 'community-integrations', 'authors'],
