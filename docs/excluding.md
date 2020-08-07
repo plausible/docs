@@ -36,7 +36,7 @@ In the "**Temporary rules**" box on the right-hand side of the page insert the f
 
 ``` yourdomain.com plausible.io * block ```
 
-Or in case you're [serving Plausible Analytics script from your domain as a first party connection](custom-domain), use this:
+Or in case you're [serving Plausible Analytics script from your domain as a first party connection](custom-domain.md), use this:
 
 ``` yourdomain.com yoursubdomain.yourdomain.com * block ```
 
