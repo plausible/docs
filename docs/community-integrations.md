@@ -18,7 +18,7 @@ Thanks to the members of our community, there are now Plausible Analytics integr
 
 * [Bridgetown](https://rubygems.org/gems/bridgetown-plausible-tag): A Liquid tag to add Plausible Analytics to your Bridgetown site. Built and maintained by [Andrew Mason](https://www.andrewm.codes/). Here's [the source code](https://github.com/andrewmcodes/bridgetown-plausible-tag). 
 
-* [Hugo](https://github.com/divinerites/plausible-hugo) : A theme component to add Plausible Analytics & custom goals to your [Hugo](https://www.gohugo.io/) site. Allows you to ignore tracking on certain pages. Built and maintained by Divinerites. Here's the [source code](https://github.com/divinerites/plausible-hugo)
+* [Hugo](https://github.com/divinerites/plausible-hugo) : A theme component to add Plausible Analytics & custom goals to your [Hugo](https://www.gohugo.io/) site. Allows you to ignore tracking on certain pages. For Saas or self-hosting. Help manage CSP rules. Built and maintained by Divinerites. Here's the [source code](https://github.com/divinerites/plausible-hugo)
 
 * [AUR package for Arch Linux](https://aur.archlinux.org/packages/plausible-git/) : Start it using ``systemctl start plausible``, enable it at boot with ``systemctl enable plausible`` and change the environment variables by editing ``/etc/plausible.conf``. Built and maintained by [Rhys Perry](https://github.com/plausible/analytics/issues/263). 
 
