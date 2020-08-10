@@ -30,6 +30,10 @@ Some domain registrars such as GoDaddy don't accept CNAME values with a dot at t
 
 It may take up to 4 hours for the DNS changes to propagate and for us to obtain an SSL certificate for your subdomain. The setup is working when your subdomain loads our JavaScript file (yoursubdomain.yourdomain.com/js/plausible.js).
 
+:::note
+Using Cloudflare for DNS and having your sites proxied behind Cloudflare? A proxy in front of your custom domain can override the remote IP which would lead to wrong geolocation data in your stats. Are you seeing some SSL or other errors? Cloudflare proxy may be the culprit because it doesn't allow our server to provision an SSL certificate to you. In both of these cases, removing the proxy and making it just a DNS record in your Cloudflare settings solves the issue.
+:::
+
 ## Replace the tracking code on your website with the new code
 
 When our JavaScript file loads from your subdomain, you can finish your setup by replacing the tracking code on your site with something that looks like the following code (your custom code will be shown on the confirmation page):
