@@ -48,9 +48,13 @@ Shows the list of countries your visitors are based in.
 
 You can use goals to track desired actions people take on your site. Goals can be based on people [visiting a particular page](pageview-goals.md) or [triggering a particular event](custom-event-goals.md) such as subscribing to a newsletter or signing up for an account.
 
-## Converted Visitors
+## Unique Conversions
 
-When a visitor converts for a particular goal they’ll be counted as a converted visitor. If the same goal is completed multiple times by the same visitor, it will only be counted as a single conversion.
+When a visitor converts for a particular goal they’ll be counted as a unique conversion.
+
+## Total Conversions
+
+If the same goal is completed multiple times by the same visitor, all the completed conversions will be counted within the total conversions.
 
 ## Conversion Rate
 
