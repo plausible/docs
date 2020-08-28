@@ -10,8 +10,7 @@ You can add the script directly to your head via "next/head" or react-helmet. Ho
 
 ## Serving the Plausible script
 
-```
-jsx
+```jsx
 import PlausibleProvider from 'next-plausible'
 
 export default Home() {
@@ -26,8 +25,7 @@ export default Home() {
 
 ## Sending custom events
 
-```
-jsx
+```jsx
 import {usePlausible} from 'next-plausible'
 
 export default PlausibleButton() {
