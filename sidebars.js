@@ -18,6 +18,6 @@ module.exports = {
                   'top-pages', 'countries', 'devices', 'metrics-definitions'],
     "Goal Conversions": ['pageview-goals', 'custom-event-goals'],
     "Account Settings": ['trial-to-paid', 'change-email', 'reset-password', 'change-plan', 'cancel-subscription', 'delete-account'],
-    "Contribute": ['contribute', 'community-integrations', 'authors'],
+    "Contribute": ['contribute', 'community-integrations', 'plausible-analytics-reviews', 'authors'],
   },
 };
