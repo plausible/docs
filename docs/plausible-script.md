@@ -29,4 +29,4 @@ We offer a quick and easy way to serve the Plausible Analytics script from your 
 
 ## You can also use our community integrations
 
-Thanks to the members of our community, there are now Plausible Analytics community integrations for several frameworks. See the [full list](https://docs.plausible.io/community-integrations) and choose your framework.
+Thanks to the members of our community, there are now Plausible Analytics community integrations for several frameworks. See the [full list](community-integrations.md) and choose your framework.
