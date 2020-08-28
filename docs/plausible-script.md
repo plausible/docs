@@ -27,8 +27,6 @@ You should see the Plausible Analytics tracking script in the source code of you
 
 We offer a quick and easy way to serve the Plausible Analytics script from your domain name as a first-party connection. See the full instructions on [how to setup a custom subdomain and serve the Plausible Analytics script as a first-party connection](custom-domain.md).
 
-## You also can use some of our Community integrations
+## You can also use our community integrations
 
-Thanks to the members of our community, there are now Plausible Analytics integrations for several frameworks.
-
-See the [full list](https://docs.plausible.io/community-integrations) and choose your framework.
+Thanks to the members of our community, there are now Plausible Analytics community integrations for several fracommunist See the [full list](https://docs.plausible.io/community-integrations) and choose your framework.
