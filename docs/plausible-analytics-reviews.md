@@ -4,7 +4,9 @@ title: Plausible Analytics reviews
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-People that enjoy using Plausible Analytics sharing how it helps them, how they use it and what they find useful is the best way for us to spread the word to even more site owners and to get even more websites to consider removing privacy-invasive analytics. Here's a list of some of the people and organizations who use Plausible Analytics and what they think about it:
+People that enjoy using Plausible Analytics sharing how they use it and what they find useful is the best way for us to spread the word and get even more sites to consider removing privacy-invasive analytics. 
+
+Here's a list of some of the people and organizations who use Plausible Analytics and what they think about it:
 
 * [Migrating away from Google Analytics](https://freshman.tech/google-analytics-to-plausible/) by Ayooluwa Isaiah
 
