@@ -1,5 +1,5 @@
 ---
-title: Plausible Analytics Self-Hosted guides
+title: Self-Hosted guides
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
