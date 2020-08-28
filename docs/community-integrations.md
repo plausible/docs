@@ -18,8 +18,10 @@ Thanks to the members of our community, there are now Plausible Analytics integr
 
 * [Bridgetown](https://rubygems.org/gems/bridgetown-plausible-tag): A Liquid tag to add Plausible Analytics to your Bridgetown site. Built and maintained by [Andrew Mason](https://www.andrewm.codes/). Here's [the source code](https://github.com/andrewmcodes/bridgetown-plausible-tag). 
 
-* [Hugo](https://github.com/divinerites/plausible-hugo) : A theme component to add Plausible Analytics & custom goals to your [Hugo](https://www.gohugo.io/) site. Allows you to ignore tracking on certain pages. For Saas or self-hosting. Help manage CSP rules. Can be used as Hugo Module. Built and maintained by Divinerites. Here's the [source code](https://github.com/divinerites/plausible-hugo)
+* [Hugo](https://github.com/divinerites/plausible-hugo) : A theme component to add Plausible Analytics to your [Hugo](https://www.gohugo.io/) site. You can add custom goals, ignore tracking on certain pages and manage CSP rules. Works for both Plausible Analytics Cloud and Self-Hosted. Can be used as Hugo Module. Built and maintained by Divinerites.
 
-* [AUR package for Arch Linux](https://aur.archlinux.org/packages/plausible-git/) : Start it using ``systemctl start plausible``, enable it at boot with ``systemctl enable plausible`` and change the environment variables by editing ``/etc/plausible.conf``. Built and maintained by [Rhys Perry](https://github.com/plausible/analytics/issues/263). 
+* [AUR package for Arch Linux](https://aur.archlinux.org/packages/plausible-git/) : Start it using ``systemctl start plausible``, enable it at boot with ``systemctl enable plausible`` and change the environment variables by editing ``/etc/plausible.conf``. Built and maintained by [Rhys Perry](https://github.com/plausible/analytics/issues/263).
+
+* [NextJS](nextjs-integration.md): Simple integration for Plausible Aalytics and https://nextjs.org. Provides custom events functionality. Built and maintained by [4lejandrito](https://github.com/4lejandrito).
 
 Let us know about any other integrations that you've built and we will feature them. Thanks for your support!
