@@ -8,6 +8,8 @@ People that enjoy using Plausible Analytics sharing how they use it and what the
 
 Here's a list of some of the people and organizations who use Plausible Analytics and what they think about it:
 
+* [A Plausible Choice: An Ethical Web Analytics Followup](https://mentalpivot.com/pleased-with-plausible-a-followup-on-ethical-web-analytics/) by David Papandrew
+
 * [Migrating away from Google Analytics](https://freshman.tech/google-analytics-to-plausible/) by Ayooluwa Isaiah
 
 * [Plausible Analytics Review](https://www.garron.blog/posts/plausible-review.html) by Guillermo Garron
