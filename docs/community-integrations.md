@@ -28,4 +28,6 @@ Thanks to the members of our community, there are now Plausible Analytics integr
 
 * [Docusaurus](https://github.com/infracost/docusaurus-plugin-plausible): A Docusaurus plugin for Plausible Analytics. Built and maintained by Alistair Scott and the [Abar Team](https://www.abar.tech/).
 
+* [Hybrid native + web app](https://github.com/cassidyjames/plausible): Built and maintained by [Cassidy James Blaede](https://cassidyjames.com/).
+
 Let us know about any other integrations that you've built and we will feature them. Thanks for your support!
