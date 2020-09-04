@@ -4,7 +4,7 @@ title: Plausible Analytics reviews
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-People that enjoy using Plausible Analytics sharing how they use it and what they find useful is the best way for us to spread the word and get even more sites to consider removing privacy-invasive analytics. 
+We don't do any paid ads, retargeting or any other surveillance based marketing. People that enjoy using Plausible Analytics sharing how they use it and what they find useful is the best way for us to spread the word and get even more sites to consider removing privacy-intrusive analytics. 
 
 Here's a list of some of the people and organizations who use Plausible Analytics and what they think about it:
 
