@@ -16,6 +16,8 @@ Here's a list of some of the people and organizations who use Plausible Analytic
 
 * [Leaving Google Analytics is Finally Plausible](https://blog.elementary.io/leaving-google-analytics-is-finally-plausible/) by Daniel Foré
 
+* [Sharing is Caring: Put Cookie-Monster on a Diet](https://koaning.io/posts/caring-means-sharing/) by Vincent Warmerdam
+
 * [Quick comparison: Plausible vs logs](https://yarmo.eu/post/plausible-versus-logs) by Yarmo Mackenbach
 
 Let us know about any other reviews that you've published and we will feature them. Thanks for your support!
