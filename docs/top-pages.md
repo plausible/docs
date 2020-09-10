@@ -4,7 +4,7 @@ title: Top Pages
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Your "**Top Pages**" report shows which pages your visitors are visiting the most often. You can use it to identify the most popular content on your site.
+Your "**Top Pages**" report shows which pages your visitors are visiting the most often. You can use it to identify the most popular content on your site. Click on any page to see the page drilldown with further details.
 
 <img alt="Top Pages" src={useBaseUrl('img/top-pages.png')} />
 
