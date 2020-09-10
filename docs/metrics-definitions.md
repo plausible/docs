@@ -71,3 +71,5 @@ Shows the browsers used by your visitors. We only show the brand of the browser 
 ## Operating System
 
 Shows the operating systems used by your visitors. We only show the brand of the operating system and don’t include the version number or any other details. Metrics are shown as a percentage of all visitors.
+
+You can read more about how you can use these metrics to [measure your website's or startup's progress and make better decisions](https://plausible.io/blog/analytics-metrics-definitions).
