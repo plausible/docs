@@ -5,6 +5,7 @@ module.exports = {
   favicon: 'img/favicon.png',
   organizationName: 'plausible',
   projectName: 'docs',
+  scripts: [{src: 'https://plausible.io/js/plausible.js', async: true, defer: true, 'data-domain': 'docs.plausible.io'}],
   themeConfig: {
     disableDarkMode: true,
         algolia: {
