@@ -26,7 +26,7 @@ Thanks to the members of our community, there are now Plausible Analytics integr
 
 * [VuePress](https://github.com/spekulatius/vuepress-plugin-plausible): A VuePress-plugin allowing you to use Plausible for your documentation website. Built and maintained by [Peter Thaleikis](https://peterthaleikis.com).
 
-* [Docusaurus](https://github.com/infracost/docusaurus-plugin-plausible): A Docusaurus plugin for Plausible Analytics. Built and maintained by Alistair Scott and the [Abar Team](https://www.abar.tech/).
+* Docusaurus: Check out our [Docusaurus integration page](docusaurus-integration.md) for full details on Plausible Analytics Docusaurus community plugin and other ways to integrate Plausible Analytics with your Docusaurus documentation site.
 
 * [Hybrid native + web app](https://github.com/cassidyjames/plausible): Built and maintained by [Cassidy James Blaede](https://cassidyjames.com/).
 
