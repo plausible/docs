@@ -34,7 +34,11 @@ You can click on any source to drill-down and view the individual pages linking 
 
 ## Direct / None
 
-Includes visitors who typed your URL into their browser or clicked a link in an email. It also includes other visitors who were [missing a referrer header](https://plausible.io/blog/referrer-policy). To minimize the amount of traffic that falls within the "Direct / None" category, you can [add these special query parameters to your links](manual-link-tagging.md).
+Includes visitors who typed your URL into their browser or clicked a link in an email. It also includes other visitors who were [missing a referrer header](https://plausible.io/blog/referrer-policy).
+
+## UTM parameters
+
+To minimize the amount of traffic that falls within the "Direct / None" category, you can add special query parameters (UTMs) to your links. UTMs help you better understand where your traffic is coming from. Plausible Analytics supports `utm_source`, `utm_medium` and `utm_campaign`. Read more about [tagging your links](manual-link-tagging.md).
 
 ## Entry Pages
 
