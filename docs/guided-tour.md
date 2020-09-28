@@ -20,6 +20,8 @@ Here’s what you can discover on your Plausible Analytics dashboard:
 
 * See all the top referral sources of traffic ranked by the number of unique visiors. You can click on the "**more**" button to see the full list. Bounce rates and visit duration of the individual referrals are included too. You can click on any referral source to drill down into that source.
 
+* You can also see all the traffic coming from the UTM tags. Click on the "**medium**", "**source**" and "**campaign**" tabs on your top sources report to explore these.
+
 * See all the most visited pages on your site ranked by the number of unique visitors. You can click on the "**more**" button to see the full list. The number of pageviews and the bounce rates of the individual pages are included too. You can click on any page to drill down into that page. 
 
 * Pages and referral sources drill downs can be mixed and matched too so for instance you can see traffic to a specific page from a specific referral source over time.
