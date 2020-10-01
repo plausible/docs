@@ -50,7 +50,7 @@ $ cd hosting-master
 
 In the downloaded directory you'll find two important files:
 * `docker-compose.yml` - installs and orchestrates networking between your Plausible server, Postgres database, Clickhouse database (for stats), and an SMTP server. It comes with sensible defaults that are ready to go, although you're free to tweak the settings if you wish.
-* `plausible-conf.env` - configures the Plausible server itself. Full configuration options are documented [here](asd).
+* `plausible-conf.env` - configures the Plausible server itself. Full configuration options are documented [here](/self-hosting-configuration).
 
 The configuration file has placeholders for required parameters. First, add your admin credentials in `plausible-conf.env`. Next,
 generate a random 32-character secret key which will be used to secure the app. Here's a simple way to generate one:
