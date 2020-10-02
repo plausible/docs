@@ -33,6 +33,8 @@ your server doesn't come with Docker pre-installed, you can follow [their docs](
 
 ### Up and running
 
+#### 1. Clone the hosting repo
+
 To get started quickly, download the [plausible/hosting](https://github.com/plausible/hosting) repo as a starting point. It has everything you need
 to boot up your own Plausible server.
 
@@ -52,6 +54,8 @@ In the downloaded directory you'll find two important files:
 * `docker-compose.yml` - installs and orchestrates networking between your Plausible server, Postgres database, Clickhouse database (for stats), and an SMTP server. It comes with sensible defaults that are ready to go, although you're free to tweak the settings if you wish.
 * `plausible-conf.env` - configures the Plausible server itself. Full configuration options are documented [here](/self-hosting-configuration).
 
+#### 2. Add required configuration
+
 The configuration file has placeholders for required parameters. First, add your admin credentials in `plausible-conf.env`. Next,
 generate a random 64-character secret key which will be used to secure the app. Here's a simple way to generate one:
 
@@ -61,10 +65,12 @@ $ openssl rand -base64 64
 
 The last step is to enter the `BASE_URL` for your app. It should be the base url where this instance is accessible.
 
+### 3. Start the server
+
 Once you've entered your secret key base, base url and admin credentials, you're ready to start up the server:
 
 ```bash
-$ docker-compose up
+$ docker-compose up --detach
 ```
 
 When you run this command for the first time, it does the following:
@@ -76,9 +82,9 @@ When you run this command for the first time, it does the following:
 
 You can now navigate to `http://{hostname}:80` and see the login screen.
 
-The Plausible server itself does not perform SSL termination (yet, feel free to contribute). It only runs on unencrypted HTTP.  If you want to run on HTTPS you also need to set up a reverse proxy in front of the server. We have instructions and examples of how to do that below.
-
 > Something not working? Please reach out on our [forum](https://plausible.discourse.group/) for troubleshooting.
+
+The Plausible server itself does not perform SSL termination (yet, feel free to contribute). It only runs on unencrypted HTTP.  If you want to run on HTTPS you also need to set up a reverse proxy in front of the server. We have instructions and examples of how to do that below.
 
 ### Optional extras
 
