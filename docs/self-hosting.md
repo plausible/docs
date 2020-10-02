@@ -53,13 +53,15 @@ In the downloaded directory you'll find two important files:
 * `plausible-conf.env` - configures the Plausible server itself. Full configuration options are documented [here](/self-hosting-configuration).
 
 The configuration file has placeholders for required parameters. First, add your admin credentials in `plausible-conf.env`. Next,
-generate a random 32-character secret key which will be used to secure the app. Here's a simple way to generate one:
+generate a random 64-character secret key which will be used to secure the app. Here's a simple way to generate one:
 
 ```bash
-$ openssl rand -base64 32
+$ openssl rand -base64 64
 ```
 
-Once you've entered your secret key base and admin credentials, you're ready to start up the server:
+The last step is to enter the `BASE_URL` for your app. This specifies how URLs should be generated.
+
+Once you've entered your secret key base, base url and admin credentials, you're ready to start up the server:
 
 ```bash
 $ docker-compose up
