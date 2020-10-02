@@ -6,7 +6,7 @@ Plausible Analytics is designed to be self-hosted via Docker. You don't have to 
 to launch your own instance of Plausible Analytics. You should have a basic understanding of the command-line
 and networking to succesfully set up your own instance of Plausible Analytics.
 
-> NB: If you hit a snag with the setup, you can reach out to us on the forum. If you think something could be better explained in the docs, please open a PR on Github so the next person has a nicer experience. Happy hosting!
+> NB: If you hit a snag with the setup, you can reach out to us on the [forum](https://plausible.discourse.group/). If you think something could be better explained in the docs, please open a PR on Github so the next person has a nicer experience. Happy hosting!
 
 ### Version management
 
@@ -59,7 +59,7 @@ generate a random 64-character secret key which will be used to secure the app. 
 $ openssl rand -base64 64
 ```
 
-The last step is to enter the `BASE_URL` for your app. This specifies how URLs should be generated.
+The last step is to enter the `BASE_URL` for your app. It should be the base url where this instance is accessible.
 
 Once you've entered your secret key base, base url and admin credentials, you're ready to start up the server:
 
@@ -78,7 +78,7 @@ You can now navigate to `http://{hostname}:80` and see the login screen.
 
 The Plausible server itself does not perform SSL termination (yet, feel free to contribute). It only runs on unencrypted HTTP.  If you want to run on HTTPS you also need to set up a reverse proxy in front of the server. We have instructions and examples of how to do that below.
 
-> Something not working? Please reach out on our forum for troubleshooting.
+> Something not working? Please reach out on our [forum](https://plausible.discourse.group/) for troubleshooting.
 
 ### Optional extras
 
