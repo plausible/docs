@@ -23,8 +23,7 @@ Following are the variables that can be used to configure the availability of th
 
 | Parameter            | Default     | Description                                                                                                                                                                                         |
 |----------------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| HOST                 | localhost   | The hosting address of the server. For running on local system, this can be set to **localhost**. In production systems, this can be your ingress host.                                             |
-| SCHEME               | http        | The scheme of the URL, either `http` or `https`. When using a reverse proxy with https, it'll be required to set this                                                                               |
+| BASE_URL             | http://localhost:8000 | The hosting url of the server, used for URL generation. In production systems, this should be your ingress host.         |
 | PORT                 | 8000        | The port on which the server is available.                                                                                                                                                          |
 | SECRET_KEY_BASE      | --          | An internal secret key used by [Phoenix Framework](https://www.phoenixframework.org/). Follow the [instructions](https://hexdocs.pm/phoenix/Mix.Tasks.Phx.Gen.Secret.html#content) to generate one. |
 | DISABLE_AUTH         | false       | Disables authentication completely, no registration, login will be shown.                                                                                                                           |
