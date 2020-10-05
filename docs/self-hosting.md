@@ -65,7 +65,7 @@ $ openssl rand -base64 64
 
 The last step is to enter the `BASE_URL` for your app. It should be the base url where this instance is accessible.
 
-### 3. Start the server
+#### 3. Start the server
 
 Once you've entered your secret key base, base url and admin credentials, you're ready to start up the server:
 
