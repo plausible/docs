@@ -4,9 +4,9 @@ title: Self-Hosted guides
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-[Plausible Analytics Self-Hosted](https://plausible.io/blog/self-hosted-web-analytics-beta) is our free as in beer and free as in speech version of Plausible Analytics. It’s exactly the same product as our Plausible Analytics Cloud solution, only the self-hosted version you have to install, host and manage yourself.
+[Plausible Analytics Self-Hosted](https://plausible.io/self-hosted-web-analytics) is our free as in beer and free as in speech version of Plausible Analytics. It’s exactly the same product as our Plausible Analytics Cloud solution, only the self-hosted version you have to install, host and manage yourself.
 
-To get started, follow the instructions in [our self-hosting documentation](https://github.com/plausible/analytics/blob/master/HOSTING.md).
+To get started, follow our up-to-date [self-hosting installation instructions](self-hosting.md).
 
 Here are other Plausible Analytics Self-Hosted user guides:
 
