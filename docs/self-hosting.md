@@ -8,7 +8,7 @@ and networking to succesfully set up your own instance of Plausible Analytics.
 
 > NB: If you hit a snag with the setup, you can reach out to us on the [forum](https://plausible.discourse.group/). If you think something could be better explained in the docs, please open a PR on Github so the next person has a nicer experience. Happy hosting!
 
-### Version management
+## Version management
 
 Plausible follows [semantic versioning](https://semver.org/): `MAJOR.MINOR.PATCH`
 
@@ -25,15 +25,15 @@ Version changes are documented in our [Changelog](https://github.com/plausible/a
 Please note that database schema changes require running migrations when you're upgrading. However, we consider the schema
 as an internal API and therefore schema changes are not considered a breaking change.
 
-### Requirements
+## Requirements
 
 The only thing you need to insall Plausible Analytics is a server with Docker installed. For the Plausible Cloud
 instance we use [Digital Ocean](https://m.do.co/c/91569eca0213) (affiliate link) but any hosting provider works. If
 your server doesn't come with Docker pre-installed, you can follow [their docs](https://docs.docker.com/get-docker/) to install it.
 
-### Up and running
+## Up and running
 
-#### 1. Clone the hosting repo
+### 1. Clone the hosting repo
 
 To get started quickly, download the [plausible/hosting](https://github.com/plausible/hosting) repo as a starting point. It has everything you need
 to boot up your own Plausible server.
@@ -54,7 +54,7 @@ In the downloaded directory you'll find two important files:
 * `docker-compose.yml` - installs and orchestrates networking between your Plausible server, Postgres database, Clickhouse database (for stats), and an SMTP server. It comes with sensible defaults that are ready to go, although you're free to tweak the settings if you wish.
 * `plausible-conf.env` - configures the Plausible server itself. Full configuration options are documented [here](/self-hosting-configuration).
 
-#### 2. Add required configuration
+### 2. Add required configuration
 
 The configuration file has placeholders for required parameters. First, add your admin credentials in `plausible-conf.env`. Next,
 generate a random 64-character secret key which will be used to secure the app. Here's a simple way to generate one:
@@ -65,7 +65,7 @@ $ openssl rand -base64 64
 
 The last step is to enter the `BASE_URL` for your app. It should be the base url where this instance is accessible.
 
-#### 3. Start the server
+### 3. Start the server
 
 Once you've entered your secret key base, base url and admin credentials, you're ready to start up the server:
 
@@ -86,12 +86,12 @@ You can now navigate to `http://{hostname}:80` and see the login screen.
 
 The Plausible server itself does not perform SSL termination (yet, feel free to contribute). It only runs on unencrypted HTTP.  If you want to run on HTTPS you also need to set up a reverse proxy in front of the server. We have instructions and examples of how to do that below.
 
-### Optional extras
+## Optional extras
 
 At this stage, you should have a basic installation of Plausible going. With some extra configuration, you can add functionality to
 your instance:
 
-#### 1. MaxMind geolocation database
+### 1. MaxMind geolocation database
 
 Plausible uses the GeoLite2 database created by [MaxMind](https://www.maxmind.com) for enriching analytics data with visitor countries. Their
 end-user license does not make it very easy to just package the database along with an open-source product.
