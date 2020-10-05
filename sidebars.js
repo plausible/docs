@@ -18,6 +18,7 @@ module.exports = {
                   'top-pages', 'countries', 'devices', 'metrics-definitions'],
     "Goal Conversions": ['pageview-goals', 'custom-event-goals'],
     "Account Settings": ['trial-to-paid', 'change-email', 'reset-password', 'change-plan', 'cancel-subscription', 'delete-account'],
+    "Self-hosting": ['self-hosting', 'self-hosting-configuration'],
     "Contribute": ['contribute', 'community-integrations', 'plausible-analytics-reviews', 'plausible-analytics-self-hosted-guides', 'authors'],
   },
 };
