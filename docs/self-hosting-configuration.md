@@ -1,5 +1,5 @@
 ---
-title: Configuratation options
+title: Configuration options
 ---
 
 When running a Plausible release, the following configuration parameters can be supplied as environment variables.
