@@ -6,19 +6,24 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 There are several simple ways to integrate Plausible Analytics with your WordPress website. Let's take a look at them:
 
-## Option 1: Plausible Analytics plugins
+## Option 1: Use one of the Plausible Analytics plugins
 
 This is the recommended way to integrate Plausible Analytics with your WordPress website as it gives you a nice Plausible Analytics configuration page directly in your WordPress dashboard:
 
-* "**[Plausible Analytics plugin](https://wordpress.org/plugins/plausible-analytics/)**" is built and maintained with help by [Mehul Gohil](https://mehulgohil.com). It supports serving the Plausible script as a first party from your custom domain and the ability to exclude admin users from having their visits and page views recorded.
+### Plausible Analytics plugin
+
+* "**[Plausible Analytics plugin](https://wordpress.org/plugins/plausible-analytics/)**" is built and maintained with the help from [Mehul Gohil](https://mehulgohil.com). It supports serving the Plausible script as a first party from your custom domain and the ability to exclude admin users from having their visits and page views recorded.
 
 <img alt="Plausible Analytics plugin" src={useBaseUrl('img/plausible-analytics-wordpress-plugin.png')} />
+
+### Plausible Connector plugin
 
 * "**[Plausible Connector plugin](https://wordpress.org/plugins/plausible-connector/)**" built and maintained by [alyx](https://eq3.net/plausible-wp/). It supports serving the Plausible script from a custom domain, using your self-hosted instance instead of Cloud, custom events and the ability to exclude admin users from having their visits and page views recorded.
 
 <img alt="Plausible Connector plugin" src={useBaseUrl('img/wordpress-plugin-alyx.png')} />
 
-* "**[Unofficial Plausible Analytics Plugin](https://wordpress.org/plugins/unofficial-plausible-analytics)**" built and maintained by Joe Clarke of [TaskBill.io](https://blog.taskbill.io/2020/07/27/plausible-analytics-wordpress-plugin/). It allows you to exclude admin users from having their visits and page views recorded.
+### Unofficial Plausible Analytics plugin
+* "**[Unofficial Plausible Analytics plugin](https://wordpress.org/plugins/unofficial-plausible-analytics)**" built and maintained by Joe Clarke of [TaskBill.io](https://blog.taskbill.io/2020/07/27/plausible-analytics-wordpress-plugin/). It allows you to exclude admin users from having their visits and page views recorded.
 
 <img alt="Unofficial Plausible Analytics Plugin" src={useBaseUrl('img/wordpress-plugin-taskbill.png')} />
 
