@@ -96,7 +96,7 @@ your instance:
 Plausible uses the GeoLite2 database created by [MaxMind](https://www.maxmind.com) for enriching analytics data with visitor countries. Their
 end-user license does not make it very easy to just package the database along with an open-source product.
 
-This is why, get country data for your analytics, you need to create an account [here](https://www.maxmind.com/en/geolite2/signup). Once you have your account details, open the `geoip/geoip.conf` file and enter your `GEOIP_ACCOUNT_KEY` and `GEOIP_LICENSE_KEY`. Then, combine both the base docker-compose file with the one in the geoip folder:
+This is why, to get country data for your analytics, you need to create an account [here](https://www.maxmind.com/en/geolite2/signup). Once you have your account details, open the `geoip/geoip.conf` file and enter your `GEOIP_ACCOUNT_KEY` and `GEOIP_LICENSE_KEY`. Then, combine both the base docker-compose file with the one in the geoip folder:
 
 ```bash
 $ docker-compose -f docker-compose.yml -f geoip/docker-compose.geoip.yml up
