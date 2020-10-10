@@ -27,7 +27,7 @@ as an internal API and therefore schema changes are not considered a breaking ch
 
 ## Requirements
 
-The only thing you need to insall Plausible Analytics is a server with Docker installed. For the Plausible Cloud
+The only thing you need to install Plausible Analytics is a server with Docker installed. For the Plausible Cloud
 instance we use [Digital Ocean](https://m.do.co/c/91569eca0213) (affiliate link) but any hosting provider works. If
 your server doesn't come with Docker pre-installed, you can follow [their docs](https://docs.docker.com/get-docker/) to install it.
 
