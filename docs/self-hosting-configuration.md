@@ -78,3 +78,21 @@ You just need to add your account details, mount the database in the `plausible`
 To run the complete setup including geoip see [`docker-compose-geoip.yml`](https://github.com/plausible/hosting/blob/master/geoip/docker-compose.geoip.yml).
 
 If the Geolite database is not configured, no country data will be captured.
+
+### Google Search Integration
+
+To enable the Google Search Console integration in Plausible Analytics, you need to authorize your self-hosted installation with a Google
+Account. For the OAuth flow, you need to configure the `client_id` and `client_secret`. Visit the
+[Google API Console](https://console.developers.google.com/) to obtain OAuth 2.0 credentials such as a client ID and client secret that are
+known to both Google and your installation. Once on the API Console, create a new project. On the project go to the "Credentials" screen and
+your installation's public URL followed by `/auth/google/callback` as "Authorized redirect URI".
+
+Copy the client ID and Secret into these config values:
+
+| Parameter           | Default   | Description                                                                                          |
+|---------------------|-----------|------------------------------------------------------------------------------------------------------|
+| GOOGLE_CLIENT_ID    | --        | The Client ID from the Google API Console for your Plausible Analytics project                       |
+| GOOGLE_CLIENT_SECRET| --        | The Client Secret from the Google API Console for your Plausible Analytics project                   |
+
+After deploying those values, you can follow [the Search Console Integration docs](https://docs.plausible.io/google-search-console-integration) for
+the rest of the set up. For the final step of choosing a property from the Search Console, you also need to enable the "[Google Search Console API (Legacy)](https://console.developers.google.com/apis/api/webmasters.googleapis.com)" on your Google API project.
