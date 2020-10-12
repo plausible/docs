@@ -95,4 +95,4 @@ Copy the client ID and Secret into these config values:
 | GOOGLE_CLIENT_SECRET| --        | The Client Secret from the Google API Console for your Plausible Analytics project                   |
 
 After deploying those values, you can follow [the Search Console Integration docs](https://docs.plausible.io/google-search-console-integration) for
-the rest of the set up.
+the rest of the set up. For the final step of choosing a property from the Search Console, you also need to enable the "[Google Search Console API (Legacy)](https://console.developers.google.com/apis/api/webmasters.googleapis.com)" on your Google API project.
