@@ -96,3 +96,18 @@ Copy the client ID and Secret into these config values:
 
 After deploying those values, you can follow [the Search Console Integration docs](https://docs.plausible.io/google-search-console-integration) for
 the rest of the set up. For the final step of choosing a property from the Search Console, you also need to enable the "[Google Search Console API (Legacy)](https://console.developers.google.com/apis/api/webmasters.googleapis.com)" on your Google API project.
+
+### Twitter Integration
+
+To automatically display tweets that link to your sites, you need a Twitter API key. You need to first apply for an API key on [Twitter's Developer site](https://developer.twitter.com/en/apply-for-access). It may take a while for them to get back to you.
+
+When the app is created, note down your API key and API key secret. Then, in the Developer Portal, select your project from the sidebar and go to the "Keys and tokens tab". Here you can generate an "Access Token & Secret" which you will also need.
+
+| Parameter                   | Default | Description                                                               |
+|-----------------------------|---------|---------------------------------------------------------------------------|
+| TWITTER_CONSUMER_KEY        | --      | The API key from the Twitter Developer Portal                             |
+| TWITTER_CONSUMER_SECRET     | --      | The API key secret from the Twitter Developer Portal                      |
+| TWITTER_ACCESS_TOKEN        | --      | The access token you generated in the steps above                         |
+| TWITTER_ACCESS_TOKEN_SECRET | --      | The access token secret you generated in the steps above                  |
+
+Once you've added these environment variables and restarted Plausible, you should see the relevant tweets the next day -- they are only fetched once every 24 hours. For more information on the Twitter integration, see [Twitter referrals](/twitter/).
