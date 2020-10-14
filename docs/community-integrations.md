@@ -30,4 +30,6 @@ Thanks to the members of our community, there are now Plausible Analytics integr
 
 * [Hybrid native + web app](https://github.com/cassidyjames/plausible): Built and maintained by [Cassidy James Blaede](https://cassidyjames.com/).
 
+* [NPM package](https://www.npmjs.com/package/plausible-tracker): Unofficial frontend library to interact with Plausible. Same features as the official script, but as an NPM module. Built and maintained by [Gustavo Maronato](https://github.com/Maronato/plausible-tracker).
+
 Let us know about any other integrations that you've built and we will feature them. Thanks for your support!
