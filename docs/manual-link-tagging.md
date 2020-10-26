@@ -29,3 +29,5 @@ For any clicks on the above link, "**Newsletter**" would be listed as a referral
 It is a good practice to tag your links where the referrer header is not sent. Emails, newsletters, chat, messaging applications, particular websites and so on.
 
 When a query parameter is present in the link it takes priority. When someone lands on your website without the special query parameter defined, we fall back to the referrer header.
+
+Read more about "[How to use UTM parameters to track your campaigns and understand the dark traffic](https://plausible.io/blog/utm-tracking-tags)".
