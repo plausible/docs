@@ -80,7 +80,9 @@ Next, click on the "**Add goal**" button and you’ll be taken back to the Goals
 
 ## Using custom props
 
-Custom properties can be attached to events to capture dynamic elements and to further break down goal conversions. You can use custom properties to create your custom metrics to collect and analyze data that Plausible doesn’t automatically track. You can then filter and sort your goals by custom event properties in your Plausible dashboard. For those coming from Google Analytics, custom properties are roughly the same concept as _custom dimensions_ in GA.
+Custom properties can be attached to events to capture dynamic elements and to further break down goal conversions. You can use custom properties to create your custom metrics to collect and analyze data that Plausible doesn’t automatically track. 
+
+You can then filter and sort your goals by custom event properties in your Plausible dashboard. For those coming from Google Analytics, custom properties are roughly the same concept as _custom dimensions_ in GA.
 
 For example, in addition to tracking file downloads you might want to know which supported download method your visitors are using. Instead of creating separate goals for each download method, you can send a custom property instead:
 
@@ -98,7 +100,7 @@ Custom properties only accepts strings as values. Numeric values, objects, array
 
 Custom properties will show up automatically on your dashboard. You don't need to manually configure them in your settings.
 
-Note as per our terms that you must ensure that no personally identifiable information (PII) is sent to Plausible Analytics with custom properties. PII is information that could be used on its own to identify, contact, or precisely locate an individual. This includes:
+Note that you must ensure that no personally identifiable information (PII) is sent to Plausible Analytics with custom properties. PII is information that could be used on its own to identify, contact, or precisely locate an individual. This includes:
 
 * full names or usernames
 * email addresses
