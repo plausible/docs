@@ -34,7 +34,7 @@ WordPress: Check out our [WordPress integration page](wordpress-integration.md) 
 
 ## Hugo
 
-[Hugo](https://github.com/divinerites/plausible-hugo): A theme component to add Plausible Analytics to your [Hugo](https://www.gohugo.io/) site. You can add custom goals, ignore tracking on certain pages and manage CSP rules. Works for both Plausible Analytics Cloud and Self-Hosted. Can be used as Hugo Module. Built and maintained by Divinerites.
+[Hugo](https://github.com/divinerites/plausible-hugo): A theme component to add Plausible Analytics to your [Hugo](https://www.gohugo.io/) site. You can add custom goals, Outbound Link goal, ignore tracking on certain pages and manage CSP rules. Works for both Plausible Analytics Cloud and Self-Hosted. Can be used as Hugo Module. Built and maintained by Divinerites.
 
 ## AUR package for Arch Linux
 
