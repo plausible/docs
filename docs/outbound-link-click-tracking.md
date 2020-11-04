@@ -14,9 +14,9 @@ Outbound link click tracking is essential for many site owners and Plausible hel
 
 "**Outbound Link Click Tracking**" is an enhanced measurement and not included in our default script. This is because we want to keep the default script as simple and lightweight as possible. The additional enhanced measurements you can choose to add depending on your needs.
 
-If you want to track external link clicks, it is simple to do so. Here's what you need to do:
+If you want to track external link clicks, here's what you need to do:
 
-## Step 1: How to enable outbound link click tracking
+## Step 1: Change the Plausible script snippet
 
 Change your Plausible script snippet `src` attribute from `https://plausible.io/js/plausible.js` to `https://plausible.io/js/plausible.outbound-links.js`
 
