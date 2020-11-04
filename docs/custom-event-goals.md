@@ -80,23 +80,32 @@ Next, click on the "**Add goal**" button and you’ll be taken back to the Goals
 
 ## Using custom props
 
-Custom properties can be attached to events to capture dynamic elements and to further break down goal conversions.
-For those coming from Google Analytics, custom properties are roughly the same concept as _custom dimensions_ in GA.
+Custom properties can be attached to events to capture dynamic elements and to further break down goal conversions. You can use custom properties to create your custom metrics to collect and analyze data that Plausible doesn’t automatically track. You can then filter and sort your goals by custom event properties in your Plausible dashboard. For those coming from Google Analytics, custom properties are roughly the same concept as _custom dimensions_ in GA.
 
-For example, in addition to tracking file downloads you might want to know which supported download method
-your visitors are using. Instead of creating separate goals for each download method, you can send
-a custom property instead:
+For example, in addition to tracking file downloads you might want to know which supported download method your visitors are using. Instead of creating separate goals for each download method, you can send a custom property instead:
 
 ```javascript
 plausible('Download', {props: {method: 'HTTP'}})
 ```
 
-This way you can neatly track total downloads and also break them down by the method without cluttering your dashboard. Here's
-how it will look like:
+This way you can neatly track total downloads and also break them down by the method without cluttering your dashboard. Here's how it will look like:
 
 <img alt="Custom property breakdown" src={useBaseUrl('img/custom-property-breakdown.png')} />
 
-You can add multiple custom properties per event. As you can see in this example, there are 4 properties available
-for segmenting: `Version, Region, OS, Method`
+The number of custom properties you can add per event is unlimited. As you can see in this example, there are 4 properties available for segmenting: `Version, Region, OS, Method`. 
 
 Custom properties only accepts strings as values. Numeric values, objects, arrays etc. are not accepted.
+
+Custom properties will show up automatically on your dashboard. You don't need to manually configure them in your settings.
+
+Note as per our terms that you must ensure that no personally identifiable information (PII) is sent to Plausible Analytics with custom properties. PII is information that could be used on its own to identify, contact, or precisely locate an individual. This includes:
+
+* full names or usernames
+* email addresses
+* mailing addresses
+* phone numbers
+* credit card information
+* passport numbers
+* precise locations
+* IP addresses
+* pseudonymous cookie IDs, advertising IDs or other pseudonymous end user identifiers
