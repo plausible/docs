@@ -20,7 +20,7 @@ If you want to track external link clicks, here's what you need to do:
 
 Change your Plausible script snippet `src` attribute from `https://plausible.io/js/plausible.js` to `https://plausible.io/js/plausible.outbound-links.js`
 
-The new snippet will look like this:
+The new snippet will look like this (make sure to change the `data-domain` attribute to the domain you added to Plausible):
 
 ```html
 <script async defer data-domain=”yourdomain.com” src=”https://plausible.io/js/plausible.outbound-links.js”></script>
@@ -36,7 +36,7 @@ If you're serving our script [from your domain as a first-party connection](cust
 
 Change your Plausible script snippet `src` attribute from `https://yoursubdomain.yourdomain.com/js/index.js` to `https://yoursubdomain.yourdomain.com/js/index.outbound-links.js`
 
-The new snippet will look like this:
+The new snippet will look like this (make sure to change the `data-domain` attribute to the domain you added to Plausible):
 
 ```html
 <script async defer data-domain=”yourdomain.com” src=”https://yoursubdomain.yourdomain.com/js/index.outbound-links.js”></script>
