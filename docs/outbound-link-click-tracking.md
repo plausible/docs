@@ -39,7 +39,7 @@ Change your Plausible script snippet `src` attribute from `https://yoursubdomain
 The new snippet will look like this:
 
 ```html
-<script async defer data-domain=”yourdomain.com” src=”https://yoursubdomain.yourdomain.com/js/index.js”></script>
+<script async defer data-domain=”yourdomain.com” src=”https://yoursubdomain.yourdomain.com/js/index.outbound-links.js”></script>
 ```
 
 As usual, you need to place your Plausible Analytics tracking script code into the Header (`<head>`) section of your site. Place the tracking script within the `<head> … </head>` tags.
@@ -50,6 +50,14 @@ Do this for all the websites where you'd like to enable outbound link click trac
 
 After you've added the new snippet to the HTML of your website, all the external link clicks will start being tracked and will be displayed in the "**Goal Conversions**" report of your Plausible Analytics dashboard. You'll see "**Outbound Link: Click**" goal as soon as the first external link click has been tracked.
 
-Click on "**Outbound Link: Click**" to see the full list of all clicks on all external links and have your dashboard filtered by external clicks only. You can see the number of total external link clicks, the number of unique external link clicks and the conversion rate too. You can see the top referral sources that lead to clicks, you can see the top pages that drive the clicks, you can see the countries that click on external links and same for devices (screen size, browser, OS). 
+Click on "**Outbound Link: Click**" to see the full list of all clicks on all external links and have your dashboard filtered by external clicks only. You can see:
+
+* The number of total external link clicks
+* The number of unique external link clicks
+* The conversion rate
+* Top referral sources that lead to clicks
+* Top pages that drive the clicks
+* Countries that click on external links 
+* Devices (screen size, browser, OS) that click on external links
 
 Click on a particular external URL to filter the dashboard by those clicks only and get the full overview of that specific URL.
