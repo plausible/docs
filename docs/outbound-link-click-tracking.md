@@ -6,13 +6,13 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <img alt="Outbound link click tracking" src={useBaseUrl('img/outbound-link-click-tracking.jpeg')} />
 
-Outbound link click tracking is important for many site owners and Plausible helps you automate this process. With our "**Outbound Link Click Tracking**" you can:
+Outbound link click tracking is essential for many site owners and Plausible helps you automate this process. With our "**Outbound Link Click Tracking**" you can:
 
 * See which external URLs are clicked the most
-* See on which pages does the particular outbound link get the clicks
+* See on which of your pages the particular outbound link gets the clicks
 * Filter the dashboard by external URL to see what type of visitors click the most (referral source, country, device, browser, OS)
 
-"**Outbound Link Click Tracking**" is an enhanced measurement and not included in our default script. This is because we want to keep the default script as simple and lightweight as possible. Additional enhanced measurement you can choose to add depending on your needs.
+"**Outbound Link Click Tracking**" is an enhanced measurement and not included in our default script. This is because we want to keep the default script as simple and lightweight as possible. The additional enhanced measurements you can choose to add depending on your needs.
 
 If you want to track external link clicks, it is simple to do so. Here's what you need to do:
 
