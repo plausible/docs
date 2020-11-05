@@ -80,11 +80,11 @@ When you run this command for the first time, it does the following:
 * Creates an admin account (which is just a normal account with a generous 100 years of free trial)
 * Starts the server on port 80
 
-You can now navigate to `http://{hostname}:80` and see the login screen.
+You can now navigate to `http://{hostname}:8000` and see the login screen.
 
 > Something not working? Please reach out on our [forum](https://plausible.discourse.group/) for troubleshooting.
 
-The Plausible server itself does not perform SSL termination (yet, feel free to contribute). It only runs on unencrypted HTTP.  If you want to run on HTTPS you also need to set up a reverse proxy in front of the server. We have instructions and examples of how to do that below.
+The Plausible server itself does not perform SSL termination. It only runs on unencrypted HTTP.  If you want to run on HTTPS you also need to set up a reverse proxy in front of the server. We have instructions and examples of how to do that below.
 
 ## Optional extras
 
@@ -104,3 +104,30 @@ $ docker-compose -f docker-compose.yml -f geoip/docker-compose.geoip.yml up
 
 The `geoip/docker-compose.geoip.yml` file downloads and updates the country database automatically, making it available to the `plausible`
 container.
+
+### 2. Reverse proxy
+
+By default, Plausible runs on unencrypted HTTP on port 8000. We recommend running it on HTTPS behind a reverse proxy of some sort.
+You may or may not already be running a reverse proxy on your host, let's look at both options:
+
+
+#### No existing reverse proxy
+
+If your DNS is managed by a service that offers a proxy option with automatic SSL management, feel free to use that. We've succesfully
+used Cloudflare as a reverse proxy in front of Plausible Self Hosted and it works well. Please note that in this case your solution will not be completely cookie-free as Cloudflare sets cookies on your visitors' devices.
+
+Alternatively, you can run your own Caddy server as a reverse proxy. This way your SSL certificate will be stored on the
+host machine and managed by Let's Encrypt. The Caddy server will expose port 443, terminate SSL traffic and proxy the requests to your
+Plausible server. [Full instructions](https://github.com/plausible/hosting/tree/master/reverse-proxy#no-existing-reverse-proxy).
+
+#### Existing reverse proxy
+
+If you're already running a reverse proxy, the most important things to note are:
+1. Configure the virtual host to match the `BASE_URL` in your plausible configuration
+2. Proxy the traffic to `127.0.0.1:8000` or `{ip-adrress}:8000` if running on a remote machine
+3. Ensure the `X-Forwarded-For` is set correctly
+
+The most important thing to note with an existing reverse proxy is that the `X-Forwarded-For` header is set correctly. If the remote
+client IP is not forwarded to the Plausible server, it cannot detect visitor countries and unique user tracking will be inaccurate.
+
+In our hosting repo, you'll find useful example configurations in case you're already running [Nginx](https://github.com/plausible/hosting/tree/master/reverse-proxy#nginx) or [Traefik 2](https://github.com/plausible/hosting/tree/master/reverse-proxy#traefik-2).
