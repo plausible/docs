@@ -36,4 +36,6 @@ Next up you need to choose your payment method. You can pay by a credit card or 
 
 Fill in your card details and click on the "**Subscribe Now**" button to subscribe to a paid subscription. Your subscription will start right away. Your subscription will be renewed automatically and you can change or cancel your plan at any time.
 
+You will automatically get an email from our payment processor Paddle with your invoice. You will get an automatic invoice sent to you via email for each payment that you make.
+
 <img alt="Fill in your payment details" src={useBaseUrl('img/subscribe-now.png')} />
