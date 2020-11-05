@@ -14,4 +14,8 @@ Once the first page view comes through, you'll be automatically taken to the sta
 
 If you didn't see the green blinking dot, there's nothing to worry about. It just means that someone visited your site already since you installed the Plausible Analytics script.
 
+:::note
+You're running Plausible on localhost? Our script automatically disables itself when running on localhost as the majority of people don't want those stats to be counted.
+:::
+
 If you see the dashboard with graphs and numbers, it means everything is working! Plausible Analytics is now tracking your website statistics while preserving the privacy of your visitors.
