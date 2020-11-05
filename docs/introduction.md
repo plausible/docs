@@ -8,7 +8,7 @@ This is the documentation for [Plausible Analytics](https://plausible.io/), a si
 
 The full-time team is based in the EU and consists of Uku Taht and Marko Saric. We are completely independent, self-funded and bootstrapped. The legal entity is incorporated in Estonia while we work remotely and flexibly. 
 
-While Plausible Analytics software is libre and open source, our cloud product is not free (as in beer) because our business model is subscriptions rather than mining the data of your visitors for advertising purposes. Subscription fees cover our costs and provide us a sustainable business model that allows Plausible Analytics to be 100% self-funded and independent. We do have a free as in beer [self-hosted solution](https://plausible.io/blog/self-hosted-web-analytics-beta).
+While Plausible Analytics software is libre and open source, our cloud product is not free (as in beer) because our business model is subscriptions rather than mining the data of your visitors for advertising purposes. Subscription fees cover our costs and provide us a sustainable business model that allows Plausible Analytics to be 100% self-funded and independent. We do have a free as in beer [self-hosted solution](https://plausible.io/self-hosted-web-analytics) too.
 
 Read more [about Plausible Analytics](https://plausible.io/about).
 
