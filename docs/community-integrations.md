@@ -63,4 +63,8 @@ Docusaurus: Check out our [Docusaurus integration page](docusaurus-integration.m
 
 [Jekyll](https://github.com/hendrikschneider/jekyll-analytics): Webanalytics for Jekyll. Just install the plugin, configure it and you are done. Contribution by [David Schmitt](https://github.com/hendrikschneider/jekyll-analytics/pull/44).
 
+## Gridsome
+
+[Gridsome](https://github.com/svendroid/gridsome-plugin-plausible-analytics): A plugin to add Plausible Analytics to your [Gridsome](https://gridsome.org/) site. Built and maintained by [Sven Adolph](https://svenadolph.net).
+
 Let us know about any other integrations that you've built and we will feature them. Thanks for your support!
