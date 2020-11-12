@@ -9,8 +9,9 @@ To integrate your website with Plausible Analytics, you need to be able to updat
 Your Plausible Analytics tracking script code will look something like this (your exact code will be shown on the JavaScript snippet page):
 
 ```html
-<script async defer data-domain=”yourdomain.com” src=”https://plausible.io/js/plausible.js”></script> 
+<script async defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.js"></script>
 ```
+
 ## Find your JavaScript snippet
 
 If you've lost your JavaScript snippet, you can find it by [logging into your Plausible Analytics account](https://plausible.io/sites). Here you'll find the list of websites you've added to Plausible Analytics.
