@@ -28,8 +28,10 @@ Here’s what you can discover on your Plausible Analytics dashboard:
 
 * See the list of countries your traffic is coming from. 
 
-* You can also see the device, browser, and operating system your visitors are using.
+* You can also see the device, browser (including browser versions), and operating system (including OS versions) your visitors are using.
 
-* Track events and goals to identify the number of unique converted visitors, the total number of conversions, the conversion rate, and the referral sites that send the traffic that converts the best.
+* Track events and goals to identify the number of unique converted visitors, the total number of conversions, the conversion rate, and the referral sites that send the traffic that converts the best. You can even use custom properties to create your own metrics to collect and analyze data that Plausible doesn’t automatically track. 
+
+* You can go granular and click on any of the metrics on your Plausible dashboard to filter the dashboard by it. Drill down into mobile users, Chrome browser users or visitors from France and analyze your stats that way. You can mix and match filters too. 
 
 Take a look at the [live demo](https://plausible.io/plausible.io) where you can follow the actual traffic of the Plausible Analytics website itself.
