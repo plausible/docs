@@ -7,8 +7,9 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 Your Plausible Analytics tracking script code will look something like this (your exact code will be shown on the JavaScript snippet page):
 
 ```html
-<script async defer data-domain=”yourdomain.com” src=”https://plausible.io/js/plausible.js”></script> 
+<script async defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.js"></script>
 ```
+
 ## Paste your Plausible Analytics script into your website header section
 
 To integrate your website with Plausible Analytics, you need to be able to update the HTML code of the website you want to track. Paste your Plausible Analytics tracking script code into the Header (`<head>`) section of your site. Place the tracking script within the `<head> … </head>` tags.
