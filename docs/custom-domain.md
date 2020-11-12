@@ -43,7 +43,7 @@ Using Cloudflare for DNS and having your sites proxied behind Cloudflare? A prox
 When our JavaScript file loads from your subdomain, you can finish your setup by replacing the tracking code on your site with something that looks like the following code (your custom code will be shown on the confirmation page):
 
 ```html
-<script async defer data-domain=”yourdomain.com” src=”https://yoursubdomain.yourdomain.com/js/index.js”></script> 
+<script async defer data-domain="yourdomain.com" src="https://yoursubdomain.yourdomain.com/js/index.js"></script>
 ```
 
 <img alt="Update the tracking code on your site" src={useBaseUrl('img/update-javascript-snippet.png')} />
