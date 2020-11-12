@@ -52,7 +52,7 @@ Shows the list of countries your visitors are based in.
 
 You can use goals to track desired actions people take on your site. Goals can be based on people [visiting a particular page](pageview-goals.md) or [triggering a particular event](custom-event-goals.md) such as subscribing to a newsletter or signing up for an account. You can even use custom properties to create your own metrics to collect and analyze data that Plausible doesn’t automatically track. 
 
-## Outbound link clicks
+## Outbound Link Clicks
 
 Automatically track the number of clicks on the external links. This feature is not enabled by default so you need to [follow these steps](outbound-link-click-tracking.md) to enable it for sites where you want to track clicks on external links
 
