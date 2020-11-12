@@ -50,7 +50,11 @@ Shows the list of countries your visitors are based in.
 
 ## Goals
 
-You can use goals to track desired actions people take on your site. Goals can be based on people [visiting a particular page](pageview-goals.md) or [triggering a particular event](custom-event-goals.md) such as subscribing to a newsletter or signing up for an account.
+You can use goals to track desired actions people take on your site. Goals can be based on people [visiting a particular page](pageview-goals.md) or [triggering a particular event](custom-event-goals.md) such as subscribing to a newsletter or signing up for an account. You can even use custom properties to create your own metrics to collect and analyze data that Plausible doesn’t automatically track. 
+
+## Outbound link clicks
+
+Automatically track the number of clicks on the external links. This feature is not enabled by default so you need to [follow these steps](outbound-link-click-tracking.md) to enable it for sites where you want to track clicks on external links
 
 ## Unique Conversions
 
@@ -66,14 +70,14 @@ The percentage of visitors that take a desired action such as subscribing to a n
 
 ## Screen Size
 
-Shows the width of the screens used by your visitors. We measure the width of the browser window where your site is actually rendered rather than the full screen width. Anything under 576px screen size is considered a mobile device, up to 992px is considered a tablet, up to 1440px is considered a laptop and anything above 1440px is considered a desktop. Metrics are shown as a percentage of all visitors.
+Shows the width of the screens used by your visitors. We measure the width of the browser window where your site is actually rendered rather than the full screen width. Anything under 576px screen size is considered a mobile device, up to 992px is considered a tablet, up to 1440px is considered a laptop and anything above 1440px is considered a desktop. Metrics are shown as the total number of unique visitors and as a percentage of all visitors.
 
 ## Browser
 
-Shows the browsers used by your visitors. We only show the brand of the browser and don’t include the version number or any other details. Metrics are shown as a percentage of all visitors.
+Shows the browsers used by your visitors. We only show the brand of the browser and when you click on the brand you can see the version number too. Metrics are shown as a percentage of all visitors and the total number of unique visitors.
 
 ## Operating System
 
-Shows the operating systems used by your visitors. We only show the brand of the operating system and don’t include the version number or any other details. Metrics are shown as a percentage of all visitors.
+Shows the operating systems used by your visitors. We show the brand of the operating system and when you click on the brand you can see the version numbers too. Metrics are shown as the total number of unique visitors and as a percentage of all visitors.
 
 You can read more about how you can use these metrics to [measure your website's or startup's progress and make better decisions](https://plausible.io/blog/analytics-metrics-definitions).
