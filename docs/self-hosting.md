@@ -2,6 +2,10 @@
 title: Getting started
 ---
 
+:::note
+This section is for self-hosting our analytics on your server and manging your infrastructure (installation, maintenance, upgrades, server capacity, uptime, backup and so on). This is different from Plausible Analytics Cloud (plausible.io) where we manage everything for you for your ease and convenience.  
+:::
+
 Plausible Analytics is designed to be self-hosted via Docker. You don't have to be a Docker expert
 to launch your own instance of Plausible Analytics. You should have a basic understanding of the command-line
 and networking to succesfully set up your own instance of Plausible Analytics.
