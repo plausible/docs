@@ -128,7 +128,7 @@ Here's an example of HTML that tracks all the clicks with the goal name being "*
 <a href="/about" onclick="plausible('About Us', {props: {method: 'Header Menu'}})">About Us</a>
 ```
 
-Here's an example of HTML that tracks all the clicks with the goal name being "**About Us click**" and the clicks from the "**Footer Menu**":
+Here's an example of HTML that tracks all the clicks with the goal name being "**About Us**" and the clicks from the "**Footer Menu**":
 
 ```html
 <a href="/about" onclick="plausible('About Us', {props: {method: 'Footer Menu'}})">About Us</a>
@@ -136,4 +136,4 @@ Here's an example of HTML that tracks all the clicks with the goal name being "*
 
 Now on your Plausible dashboard you will have all the "**About Us**" clicks listed in your goals report and these clicks will be split between the number of clicks in the header menu and in the footer menu. 
 
-This is completely flexible and you can track whatever links you want and name the goals and custom properties whatever you wish. Just remember to always add the main goal in your Plausible account settings as described above for it to start showing up in your dashboard.
+This is completely flexible and you can track whatever links you want and you can name the goals and custom properties whatever you wish. Just remember to always add the main goal in your Plausible account settings as described above for it to start showing up in your dashboard.
