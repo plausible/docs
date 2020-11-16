@@ -94,11 +94,17 @@ This way you can neatly track total downloads and also break them down by the me
 
 <img alt="Custom property breakdown" src={useBaseUrl('img/custom-property-breakdown.png')} />
 
-The number of custom properties you can add per event is unlimited. As you can see in this example, there are 4 properties available for segmenting: `Version, Region, OS, Method`. 
+Want to have multiple custom properties for the same event? You can do it like this:
+
+```javascript
+plausible('Download', {props: {method: 'HTTP', Region: 'Europe'}})
+```
+
+The number of custom properties you can add per event is unlimited. And the names can be anything that you want. In our example, there are 4 properties that have been set up for segmenting: `Version, Region, OS, Method`. 
 
 Custom properties only accepts strings as values. Numeric values, objects, arrays etc. are not accepted.
 
-Custom properties will show up automatically on your dashboard. You don't need to manually configure them in your settings.
+Custom properties will show up automatically on your dashboard as long as you've added the goal itself. You don't need to manually add them in your settings.
 
 Note that you must ensure that no personally identifiable information (PII) is sent to Plausible Analytics with custom properties. PII is information that could be used on its own to identify, contact, or precisely locate an individual. This includes:
 
