@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 If you want to track custom event goals like button clicks or form completions, you have to trigger these custom events from your website using JavaScript. Here are the steps you need to take to do that:
 
-## Trigger custom events with JavaScript on your site
+## 1. Trigger custom events with JavaScript on your site
 
 First, make sure your tracking setup includes the second line as shown below
 
@@ -62,7 +62,7 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 </script>
 ```
 
-## Create a custom event goal in your Plausible Analytics account
+## 2. Create a custom event goal in your Plausible Analytics account
 
 When you start sending custom events to Plausible Analytics, they won’t show up automatically. You’ll have to configure the goal for the conversion numbers to show up.
 
@@ -111,3 +111,29 @@ Note that you must ensure that no personally identifiable information (PII) is s
 * precise locations
 * IP addresses
 * pseudonymous cookie IDs, advertising IDs or other pseudonymous end user identifiers
+
+## How to track internal link clicks
+
+Goals make it easy to track internal links too. Here's an example of HTML that tracks all the clicks with the goal name being "**About Us**":
+
+```html
+<a href="/about" onclick="plausible('About Us')">About Us</a>
+```
+
+And you can use our custom properties to split different clicks. For instance if you have two different links to your about page, you can see which of these makes a bigger difference and gets more clicks. 
+
+Here's an example of HTML that tracks all the clicks with the goal name being "**About Us**" and the clicks from the "**Header Menu**":
+
+```html
+<a href="/about" onclick="plausible('About Us', {props: {method: 'Header Menu'}})">About Us</a>
+```
+
+Here's an example of HTML that tracks all the clicks with the goal name being "**About Us click**" and the clicks from the "**Footer Menu**":
+
+```html
+<a href="/about" onclick="plausible('About Us', {props: {method: 'Footer Menu'}})">About Us</a>
+```
+
+Now on your Plausible dashboard you will have all the "**About Us**" clicks listed in your goals report and these clicks will be split between the number of clicks in the header menu and in the footer menu. 
+
+This is completely flexible and you can track whatever links you want and name the goals and custom properties whatever you wish. Just remember to always add the main goal in your Plausible account settings as described above for it to start showing up in your dashboard.
