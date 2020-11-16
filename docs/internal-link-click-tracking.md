@@ -51,10 +51,16 @@ To configure a goal, go to your website’s settings in your Plausible Analytics
 
 Click on the "**+ Add goal**" button to go to the goal creation form.
 
-Select `Custom event` as the goal trigger and enter the name of the custom event you are triggering. The names must be an exact match to the one in your HTML code for the conversions to show up in your analytics dashboard (in the example above the goal name would be "**About Us**").
+Select `Custom event` as the goal trigger and enter the name of the custom event you are triggering. 
+
+The names must be an exact match to the one in your HTML code for the conversions to show up in your analytics dashboard (in the example above the goal name would be "**About Us**").
+
+You don't need to add all the custom properties themselves (header menu and footer menu in the example above). They will show up in your dashboard automatically as long as you've added the main goal name ("**About Us**" in this example).
 
 <img alt="Add your custom event goal" src={useBaseUrl('img/internal-link-click-tracking.png')} />
 
-Next, click on the "**Add goal**" button and you’ll be taken back to the Goals page. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who triggered the custom event by clicking on the link you're tracking. Goal conversions are listed at the very bottom of the dashboard.
+Next, click on the "**Add goal**" button and you’ll be taken back to the Goals page. 
+
+When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who triggered the custom event by clicking on the link you're tracking. Goal conversions are listed at the very bottom of the dashboard.
 
 By clicking on the goal name itself, you will see the overview with the number of clicks on the different custom properties you have set (header menu and footer menu in the example above).
