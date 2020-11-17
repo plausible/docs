@@ -14,6 +14,14 @@ Your Plausible Analytics tracking script code will look something like this (you
 
 To integrate your website with Plausible Analytics, you need to be able to update the HTML code of the website you want to track. Paste your Plausible Analytics tracking script code into the Header (`<head>`) section of your site. Place the tracking script within the `<head> … </head>` tags.
 
+### You can also use our community integrations
+
+Thanks to the members of our community, there are now Plausible Analytics community integrations for several frameworks. See the [full list](community-integrations.md) and choose your framework.
+
+### Alternatively you can serve the script from your domain as a first-party connection
+
+We offer a quick and easy way to serve the Plausible Analytics script from your domain name as a first-party connection. See the full instructions on [how to setup a custom subdomain and serve the Plausible Analytics script as a first-party connection](custom-domain.md).
+
 ## Verify if the script is installed on your site
 
 After you've added the Plausible Analytics script to the HTML of your website, you should see the script installed on your site. You can verify this by viewing the HTML of your website in your favorite web browser.
@@ -28,10 +36,20 @@ Using CSP? Do not forget to add our domain specifically to your Content Security
 
 <img alt="Your Plausible Analytics tracking script" src={useBaseUrl('img/javascript-snippet.png')} />
 
-## Alternatively you can serve the script from your domain as a first-party connection
+## Verify that the integration is working
 
-We offer a quick and easy way to serve the Plausible Analytics script from your domain name as a first-party connection. See the full instructions on [how to setup a custom subdomain and serve the Plausible Analytics script as a first-party connection](custom-domain.md).
+After you've added the script to your website, it's time to verify that the integration is working.
 
-## You can also use our community integrations
+In your [Plausible Analytics account](https://plausible.io/sites), click on your website domain name. You should see a blinking green dot which indicates that we’re listening for incoming page views in real-time.
 
-Thanks to the members of our community, there are now Plausible Analytics community integrations for several frameworks. See the [full list](community-integrations.md) and choose your framework.
+<img alt="Listening for incoming page views" src={useBaseUrl('img/waiting-for-pageview.png')} />
+
+Once the first page view comes through, you'll be automatically taken to the stats dashboard. This is an indication that the integration is working, congrats!
+
+If you didn't see the green blinking dot, there's nothing to worry about. It just means that someone visited your site already since you installed the Plausible Analytics script.
+
+:::note
+You're running Plausible on localhost? Our script automatically disables itself when running on localhost as the majority of people don't want those stats to be counted.
+:::
+
+If you see the dashboard with graphs and numbers, it means everything is working! Plausible Analytics is now tracking your website statistics while preserving the privacy of your visitors.
