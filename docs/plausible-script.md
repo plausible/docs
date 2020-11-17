@@ -4,23 +4,33 @@ title: Add the script to your website
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+## Paste your Plausible Analytics script into your website header section
+
+To integrate your website with Plausible Analytics, you need to be able to update the HTML code of the website you want to track. Paste your Plausible Analytics tracking script code into the Header (`<head>`) section of your site. Place the tracking script within the `<head> … </head>` tags.
+
 Your Plausible Analytics tracking script code will look something like this (your exact code will be shown on the JavaScript snippet page):
 
 ```html
 <script async defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.js"></script>
 ```
 
-## Paste your Plausible Analytics script into your website header section
+### Where to find your JavaScript snippet
 
-To integrate your website with Plausible Analytics, you need to be able to update the HTML code of the website you want to track. Paste your Plausible Analytics tracking script code into the Header (`<head>`) section of your site. Place the tracking script within the `<head> … </head>` tags.
+You can find your JavaScript snippet by [logging into your Plausible account](https://plausible.io/sites). Here you'll find the list of websites you've added to Plausible Analytics.
+
+<img alt="Plausible Analytics" src={useBaseUrl('img/list-of-sites.png')} />
+
+Click on the "**Settings**" button on the right-hand side of the website you'd like to get the snippet for and scroll down to the "**Javascript snippet**" section on the following page.
+
+<img alt="Your Plausible Analytics tracking script" src={useBaseUrl('img/your-javascipt-snippet.png')} />
 
 ### You can also use our community integrations
 
-Thanks to the members of our community, there are now Plausible Analytics community integrations for several frameworks. See the [full list](community-integrations.md) and choose your framework.
+Thanks to the members of our community, there are now Plausible Analytics community integrations and plugins for several frameworks and content management systems such as WordPress. See the [full list](community-integrations.md).
 
 ### Alternatively you can serve the script from your domain as a first-party connection
 
-We offer a quick and easy way to serve the Plausible Analytics script from your domain name as a first-party connection. See the full instructions on [how to setup a custom subdomain and serve the Plausible Analytics script as a first-party connection](custom-domain.md).
+We offer a quick and easy way to serve the Plausible Analytics script from your domain name as a first-party connection. See the full instructions on how to setup a custom subdomain and [serve the Plausible Analytics script as a first-party connection](custom-domain.md).
 
 ## Verify if the script is installed on your site
 
@@ -30,13 +40,9 @@ In a web browser such as Firefox, visit your website, right-click anywhere on th
 
 You should see the Plausible Analytics tracking script in the source code of your website. If you cannot see the script, please double check if you've inserted it correctly. Contact **hello@plausible.io** if the problem persists.
 
-:::note
-Using CSP? Do not forget to add our domain specifically to your Content Security Policy too.
-:::
-
 <img alt="Your Plausible Analytics tracking script" src={useBaseUrl('img/javascript-snippet.png')} />
 
-## Verify that the integration is working
+## Verify that the stats are being tracked
 
 After you've added the script to your website, it's time to verify that the integration is working.
 
@@ -50,6 +56,10 @@ If you didn't see the green blinking dot, there's nothing to worry about. It jus
 
 :::note
 You're running Plausible on localhost? Our script automatically disables itself when running on localhost as the majority of people don't want those stats to be counted.
+:::
+
+:::note
+Using CSP? Do not forget to add our domain specifically to your Content Security Policy too.
 :::
 
 If you see the dashboard with graphs and numbers, it means everything is working! Plausible Analytics is now tracking your website statistics while preserving the privacy of your visitors.
