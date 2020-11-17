@@ -46,11 +46,11 @@ After you've added the script to your website, it's time to verify that the inte
 
 In your [Plausible Analytics account](https://plausible.io/sites), click on your website domain name. You should see a blinking green dot which indicates that we’re listening for incoming page views in real-time.
 
+If you don't see the green blinking dot, there's nothing to worry about. It just means that someone visited your site already since you installed the Plausible Analytics script.
+
 <img alt="Listening for incoming page views" src={useBaseUrl('img/waiting-for-pageview.png')} />
 
-Once the first page view comes through, you'll be automatically taken to the stats dashboard. This is an indication that the integration is working, congrats!
-
-If you didn't see the green blinking dot, there's nothing to worry about. It just means that someone visited your site already since you installed the Plausible Analytics script.
+Once the first page view comes through, you'll be automatically taken to the stats dashboard with graphs and numbers. This is an indication that the integration is working, congrats! Plausible Analytics is now tracking your website statistics while preserving the privacy of your visitors.
 
 :::note
 You're running Plausible on localhost? Our script automatically disables itself when running on localhost as the majority of people don't want those stats to be counted.
@@ -59,5 +59,3 @@ You're running Plausible on localhost? Our script automatically disables itself 
 :::note
 Using CSP? Do not forget to add our domain specifically to your Content Security Policy too.
 :::
-
-If you see the dashboard with graphs and numbers, it means everything is working! Plausible Analytics is now tracking your website statistics while preserving the privacy of your visitors.
