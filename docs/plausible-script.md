@@ -22,7 +22,7 @@ You can find your JavaScript snippet by [logging into your Plausible account](ht
 
 Click on the "**Settings**" button on the right-hand side of the website you'd like to get the snippet for and scroll down to the "**Javascript snippet**" section on the following page.
 
-<img alt="Your Plausible Analytics tracking script" src={useBaseUrl('img/your-javascipt-snippet.png')} />
+<img alt="Your Plausible Analytics tracking script" src={useBaseUrl('img/javascript-snippet.png')} />
 
 ### You can also use our community integrations
 
@@ -39,8 +39,6 @@ After you've added the Plausible Analytics script to the HTML of your website, y
 In a web browser such as Firefox, visit your website, right-click anywhere on the page and choose "**View Page Source**". Then press `cmd+f` on a Mac or `ctrl+f` on Linux and Windows to search. Type `plausible` to search for the Plausible Analytics script.
 
 You should see the Plausible Analytics tracking script in the source code of your website. If you cannot see the script, please double check if you've inserted it correctly. Contact **hello@plausible.io** if the problem persists.
-
-<img alt="Your Plausible Analytics tracking script" src={useBaseUrl('img/javascript-snippet.png')} />
 
 ## Verify that the stats are being tracked
 
