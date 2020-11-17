@@ -5,7 +5,7 @@ title: Internal link click tracking
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 :::note
-This is an example of a simple JavaScript that you can use to track clicks on internal links. It is experimental and not the most accurate way but we present it here as a easy to use example for those without much JavaScript experience and those that don't have any developer help. It may not track all clicks. For best accuracy, add `target="_blank"` to open the tracked links in new window.
+This is an example of a simple JavaScript that you can use to track clicks on internal links. It is experimental and not the most accurate way but we present it here as an easy to use example for those without much JavaScript experience and those that don't have any developer help. It may not track all clicks. For best accuracy, add `target="_blank"` to open the tracked links in new window.
 :::
 
 Goals make it easy to track internal link clicks. Here's how you can set it up:
