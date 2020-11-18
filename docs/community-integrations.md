@@ -8,10 +8,6 @@ Thanks to the members of our community, there are now Plausible Analytics integr
 
 [GatsbyJS](https://www.gatsbyjs.org/packages/gatsby-plugin-plausible/): A Gatsby plugin for adding Plausible Analytics to your Gatsby site. Built and maintained by Curtis Cummings of [https://aquil.io/](https://aquil.io/).
 
-## React
-
-[React](https://codeberg.org/resynth1943/react-plausible-analytics): Plausible Analytics as a React component. Built and maintained by Resynth of [https://resynth1943.net/](https://resynth1943.net/).
-
 ## WordPress
 
 WordPress: Check out our [WordPress integration page](wordpress-integration.md) for full details on Plausible Analytics WordPress community plugins and other ways to integrate Plausible Analytics with your WordPress site.
