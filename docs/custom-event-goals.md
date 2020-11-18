@@ -102,7 +102,7 @@ plausible('Download', {props: {method: 'HTTP', Region: 'Europe'}})
 
 The number of custom properties you can add per event is unlimited. And the names can be anything that you want. In our example, there are 4 properties that have been set up for segmenting: `Version, Region, OS, Method`. 
 
-Custom properties only accepts strings as values. Numeric values, objects, arrays etc. are not accepted.
+Custom properties only accepts scalar values such as strings, numbers and booleans. Data structures such as objects, arrays etc. are not accepted.
 
 Custom properties will show up automatically on your dashboard as long as you've added the goal itself. You don't need to manually add them in your settings.
 
