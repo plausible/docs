@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Pageview goals allow you to measure how many people visit a specific page URL. Since page views are collected automatically, you don’t need to change your website’s code to measure page URL goals.
 
-To get started with "**Pageview Goals**", go to your website’s settings in Plausible Analytics and scroll down to the "**Goals**" section. You should see an empty list with a prompt to add a goal.
+To get started with "**Pageview Goals**", go to your website’s settings in Plausible Analytics and visit the "**Goals**" section. You should see an empty list with a prompt to add a goal.
 
 <img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
 
