@@ -62,7 +62,9 @@ Once you’ve selected your property, click on the "**Save**" button. At that po
 
 ## Check your search query data in Plausible Analytics
 
-Look at your site’s "**Top Referrers**" stats in your Plausible Analytics dashboard, click on "**Google**" in the referrers list, and you should see the keywords coming through.
+Look at your site’s "**Top Sources**" stats in your Plausible Analytics dashboard, click on "**Google**" in the referrers list, and you should see the keywords coming through.
+
+Note that "**Top Sources**" will only show keywords that have sent visitors to your site. We do not display keywords that have had impressions in Google's search results but no clicks to your site.
 
 <img alt="Google search query data in Plausible Analytics" src={useBaseUrl('img/google-search-query-referrers.png')} />
 
