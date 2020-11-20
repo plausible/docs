@@ -1,5 +1,5 @@
 ---
-title: Exclude yourself from your analytics
+title: Opt out and exclude yourself from the analytics
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -14,7 +14,7 @@ Instead, you can use any standard ad or script-blocking browser extension to fil
 
 To block your page views from your Plausible Analytics stats dashboard, start by installing and activating a standard ad-blocking browser extension. This method has been tested with [Adblock Plus](https://adblockplus.org/), [AdBlock](https://getadblock.com/) and [uBlock Origin](https://github.com/gorhill/uBlock/#installation). 
 
-For this guide, we’ll work with uBlock Origin and it works on all the major browsers.
+Some extensions may automatically opt you out of Plausible tracking as soon as you install them but you can follow these steps to make sure that they do so. For this guide, we’ll work with uBlock Origin and it works on all the major browsers. 
 
 ## Locate the My Rules tab
 
