@@ -10,7 +10,7 @@ Your website stats are private by default. Making them public will give you acce
 
 <img alt="Make your website stats public" src={useBaseUrl('img/visibility.png')} />
 
-Click on the "**Make stats public**" button to make your website stats public and get access to your public stats dashboard URL.
+Switch on to make your website stats public and get access to your public stats dashboard URL.
 
 ## Want to make your stats private again?
 
