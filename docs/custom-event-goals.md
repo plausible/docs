@@ -66,7 +66,7 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 
 When you start sending custom events to Plausible Analytics, they won’t show up automatically. You’ll have to configure the goal for the conversion numbers to show up.
 
-To configure a goal, go to your website’s settings in your Plausible Analytics account and scroll down to the "**Goals**" section. You should see an empty list with a prompt to add a goal.
+To configure a goal, go to your website’s settings in your Plausible Analytics account and visit the "**Goals**" section. You should see an empty list with a prompt to add a goal.
 
 <img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
 
