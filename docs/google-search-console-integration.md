@@ -32,7 +32,7 @@ Follow the provided instructions depending on which verification method you’ve
 
 ## Allow Plausible Analytics to access your Search Console
 
-Open the settings for your website on [your Plausible Analytics account](https://plausible.io/sites). Scroll down to the settings section called "**Google Integration**":
+Open the settings for your website on [your Plausible Analytics account](https://plausible.io/sites) and go into the settings section called "**Search Console**":
 
 Clicking on the "**Continue with Google**" button will take you through to Google’s authentication flow to get the necessary permissions.
 
@@ -84,4 +84,4 @@ You can always view your Plausible Analytics integration in your Google account 
 
 ## Remove the Google Search Console integration
 
-If you'd like to remove the Google Search Console integration, click on the "**Unlink Google account**" button in the "**Google Integration**" section of your website settings.
+If you'd like to remove the Google Search Console integration, click on the "**Unlink Google account**" button in the "**Search Console**" section of your website settings.
