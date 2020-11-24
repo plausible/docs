@@ -117,7 +117,7 @@ You may or may not already be running a reverse proxy on your host, let's look a
 
 #### No existing reverse proxy
 
-If your DNS is managed by a service that offers a proxy option with automatic SSL management, feel free to use that. We've succesfully
+If your DNS is managed by a service that offers a proxy option with automatic SSL management, feel free to use that. We've successfully
 used Cloudflare as a reverse proxy in front of Plausible Self Hosted and it works well. Please note that in this case your solution will not be completely cookie-free as Cloudflare sets cookies on your visitors' devices.
 
 Alternatively, you can run your own Caddy server as a reverse proxy. This way your SSL certificate will be stored on the
