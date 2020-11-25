@@ -53,4 +53,4 @@ This is the alternative option. In the "**Appearance**" section in the left-hand
 
 Paste your Plausible Analytics tracking code between <head>...</head> tags like seen in the screenshot and click on the "**Update File**". In case you do have a caching plugin installed, clear the cache just in case. Note that you will need to do this process every time you update your theme unless you create a child theme.
 
-Now you can go to your website to [verify if the Plausible Analytics script has been added](plausible-script.md#verify-if-the-script-is-installed-on-your-site) and to your Plausible Analytics account to see [whether the stats are being tracked](verify-integration.md).
+Now you can go to your website and verify whether Plausible Analytics script has been added and to your Plausible Analytics account to see whether the stats are being tracked. See here [how to verify the integration](plausible-script.md#verify-if-the-script-is-installed-on-your-site).
