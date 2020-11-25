@@ -8,7 +8,9 @@ There are several simple ways to integrate Plausible Analytics with your WordPre
 
 ## Option 1: Use one of the Plausible Analytics plugins
 
-This is the recommended way to integrate Plausible Analytics with your WordPress website as it gives you a nice Plausible Analytics configuration page directly in your WordPress dashboard:
+This is the way to integrate Plausible Analytics with your WordPress website if you want a nice Plausible Analytics configuration page directly in your WordPress dashboard. 
+
+There are several alternatives thanks to the members of our community. Note that these plugins are community maintained and therefore we take no responsibility for them. Check the individual plugin to see whether it's up to date and supports the features that you need.
 
 ### Plausible Analytics plugin
 
@@ -47,7 +49,7 @@ Now you can go to your website to [verify if the Plausible Analytics script has 
 
 ## Option 3. Modify a file
 
-This is the alternative option. In the "**Appearance**" section in the left-hand side navigation within your WordPress dashboard, click on "**Theme Editor**". Choose your theme in the top right (your current theme should be selected by default) and click on "**Select**". In "**Theme Files**" locate the "**header.php**" file.
+This is the manual option. In the "**Appearance**" section in the left-hand side navigation within your WordPress dashboard, click on "**Theme Editor**". Choose your theme in the top right (your current theme should be selected by default) and click on "**Select**". In "**Theme Files**" locate the "**header.php**" file.
 
 <img alt="Modify your header.php file" src={useBaseUrl('img/modify-a-file.png')} />
 
