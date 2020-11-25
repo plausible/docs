@@ -2,19 +2,11 @@
 title: Community integrations
 ---
 
-Thanks to the members of our community, there are now Plausible Analytics integrations for:
+Thanks to the members of our community, there are now Plausible Analytics integrations for many platforms. Note that these integrations are community maintained and therefore we take no responsibility for them. Check the individual integration to see whether it's up to date and supports the features that you need. Alternatively, you can [integrate Plausible into your site manually](plausible-script.md).
 
 ## GatsbyJS
 
 [GatsbyJS](https://www.gatsbyjs.org/packages/gatsby-plugin-plausible/): A Gatsby plugin for adding Plausible Analytics to your Gatsby site. Built and maintained by Curtis Cummings of [https://aquil.io/](https://aquil.io/).
-
-## WordPress
-
-WordPress: Check out our [WordPress integration page](wordpress-integration.md) for full details on Plausible Analytics WordPress community plugins and other ways to integrate Plausible Analytics with your WordPress site.
-
-## Ghost
-
-[Ghost](https://ghost.org/integrations/plausible/): Integrate Ghost with Plausible Analytics using a straightforward code injection.
 
 ## Micro.blog
 
@@ -53,7 +45,7 @@ Docusaurus: Check out our [Docusaurus integration page](docusaurus-integration.m
 [Hybrid native + web app](https://github.com/cassidyjames/plausible): Built and maintained by [Cassidy James Blaede](https://cassidyjames.com/).
 
 ## NPM package
-[NPM package](https://www.npmjs.com/package/plausible-tracker): Unofficial frontend library to interact with Plausible. Same features as the official script, but as an NPM module. Built and maintained by [Gustavo Maronato](https://github.com/plausible/plausible-tracker).
+[NPM package](https://www.npmjs.com/package/plausible-tracker): Frontend library to interact with Plausible. Same features as the official script, but as an NPM module. Built and maintained by [Gustavo Maronato](https://github.com/plausible/plausible-tracker).
 
 ## Jekyll
 
