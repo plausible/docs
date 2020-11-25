@@ -4,7 +4,9 @@ title: How to add the script to your Squarespace site
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-You can use the "**[Code injection](https://support.squarespace.com/hc/en-us/articles/205815908)**" feature to add Plausible Analytics tracking code to your Squarespace website same way you would add Google Analytics code or any other JavaScript code. Site-wide JavaScript code injection is a premium Squarespace feature on their business and commerce subscription plans.
+You can use the "**[Code injection](https://support.squarespace.com/hc/en-us/articles/205815908)**" feature to add Plausible Analytics tracking code to your Squarespace website same way you would add Google Analytics code or any other JavaScript code. 
+
+Site-wide JavaScript code injection is a premium Squarespace feature on their business and commerce subscription plans.
 
 * In the "**Home Menu**", click "**Settings**", then "**Advanced**" and then click "**Code Injection**".
 
@@ -14,4 +16,4 @@ You can use the "**[Code injection](https://support.squarespace.com/hc/en-us/art
 
 <img alt="Squarespace code injection" src={useBaseUrl('img/squarespace-header.png')} />
 
-Now you can go to your website to [verify if the Plausible Analytics script has been added](plausible-script.md#verify-if-the-script-is-installed-on-your-site) and to your Plausible Analytics account to see [whether the stats are being tracked](verify-integration.md).
+Now you can go to your website and verify whether Plausible Analytics script has been added and to your Plausible Analytics account to see whether the stats are being tracked. See here [how to verify the integration](plausible-script.md#verify-if-the-script-is-installed-on-your-site).
