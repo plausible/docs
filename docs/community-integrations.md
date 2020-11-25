@@ -2,7 +2,11 @@
 title: Community integrations
 ---
 
-Thanks to the members of our community, there are now Plausible Analytics integrations for many platforms. Note that these integrations are community maintained and therefore we take no responsibility for them. Check the individual integration to see whether it's up to date and supports the features that you need. Alternatively, you can [integrate Plausible into your site manually](plausible-script.md).
+Thanks to the members of our community, there are now Plausible Analytics integrations for many platforms. 
+
+Note that these integrations are community maintained and therefore we take no responsibility for them. Check the individual integration to see whether it's up to date and supports the features that you need. 
+
+Alternatively, you can [integrate Plausible into your site manually](plausible-script.md).
 
 ## GatsbyJS
 
