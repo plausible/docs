@@ -14,6 +14,6 @@ Click on your site name in the top left side of your Plausible Analytics dashboa
 
 ## From your Plausible Analytics landing page
 
-Click on the "**Settings**" button on the right hand side of your domain name in your [Plausible Analytics account landing page](https://plausible.io/sites) to enter your website settings section.
+Hover over your website name and click on the "**Settings**" icon on the right hand side of your domain name in your [Plausible Analytics account landing page](https://plausible.io/sites) to enter your website settings section.
 
 <img alt="Plausible Analytics" src={useBaseUrl('img/list-of-sites.png')} />
