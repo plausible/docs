@@ -20,17 +20,17 @@ You can find your JavaScript snippet by [logging into your Plausible account](ht
 
 <img alt="Plausible Analytics" src={useBaseUrl('img/list-of-sites.png')} />
 
-Click on the "**Settings**" button on the right-hand side of the website you'd like to get the snippet for and scroll down to the "**Javascript snippet**" section on the following page.
+Hover over your website name and click on the "**Settings**" icon on the right hand side of the domain name you'd like to get the snippet for. Then scroll down to the "**Javascript snippet**" section on the following page.
 
 <img alt="Your Plausible Analytics tracking script" src={useBaseUrl('img/javascript-snippet.png')} />
-
-### You can also use our community integrations
-
-Thanks to the members of our community, there are now Plausible Analytics community integrations and plugins for several frameworks and content management systems such as WordPress. See the [full list](community-integrations.md).
 
 ### Alternatively you can serve the script from your domain as a first-party connection
 
 We offer a quick and easy way to serve the Plausible Analytics script from your domain name as a first-party connection. See the full instructions on how to setup a custom subdomain and [serve the Plausible Analytics script as a first-party connection](custom-domain.md).
+
+### You can also use our community integrations
+
+Thanks to the members of our community, there are now Plausible Analytics community integrations and plugins for several frameworks and content management systems such as WordPress. See the [full list](community-integrations.md).
 
 ## Verify if the script is installed on your site
 
