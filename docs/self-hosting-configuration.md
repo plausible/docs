@@ -115,3 +115,7 @@ When the app is created, note down your API key and API key secret. Then, in the
 | TWITTER_ACCESS_TOKEN_SECRET | --      | The access token secret you generated in the steps above                  |
 
 Once you've added these environment variables and restarted Plausible, you should see the relevant tweets the next day -- they are only fetched once every 24 hours. For more information on the Twitter integration, see [Twitter referrals](/twitter/).
+
+:::note
+Self-hosting our analytics is free as in beer. You only need to pay for your server and whatever cost there is associated with running a server. You never have to pay any fees to us, only to your cloud provider. If you choose to self-host Plausible you can [become a sponsor](https://github.com/sponsors/plausible) and support Plausible with a donation.
+:::
