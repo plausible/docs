@@ -17,6 +17,10 @@ In addition to the full-time team, Plausible Analytics is made possible by an in
 
 * [Chris Morgan](https://chrismorgan.info/) (chris-morgan) for [the help](https://github.com/plausible/analytics/issues/52) on reducing the Plausible Analytics script to under 1 KB in size.
 
+* [Jake Howard](https://theorangeone.net/) (RealOrangeOne) for the help on the Plausible Analytics Self-Hosted and the ClickHouse configuration improvements.
+
+* [Mehul Gohil](https://mehulgohil.com/) (mehul0810) for the help on building the Plausible Analytics WordPress plugin and keeping it up to date with the latest features.
+
 * To those who build and maintain Plausible Analytics integrations. [Full list here](community-integrations.md).
 
 Thank you to everyone for contributing to Plausible Analytics!
