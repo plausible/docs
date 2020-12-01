@@ -29,7 +29,7 @@ You need to place your Plausible Analytics tracking script code into the Header 
 
 Add this code to your 404 page. For instance, if you're using WordPress, your 404 page template will be called 404.php. It will be located within your theme files.
 
-```javascript
+```html
 <script>plausible("404",{ props: { path: document.location.pathname } });</script>
 ```
 
