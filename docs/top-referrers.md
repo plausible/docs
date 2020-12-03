@@ -22,7 +22,7 @@ The `referer` header (the HTTP header is misspelled with one r for historical re
 
 Not every request from a browser will have the referrer specified, and the `referer` header is not always accurate. Take a look at our blog post on the topic of [referrer header](https://plausible.io/blog/referrer-policy) for further details.
 
-You may have noticed the "**Direct / None**" referrer source or you may be familiar with the term "**dark traffic**". This covers all the traffic where the referrer is not passed. These could be clicks from email, clicks from documents, clicks from messengers and other mobile apps, bookmarks, people typing in the URL directly into the browser and more.
+You can see your "**Direct / None**" referrer source if you click on the "**more**" button. This covers all the traffic where the referrer is not passed. These could be clicks from email, clicks from documents, clicks from messengers and other mobile apps, bookmarks, people typing in the URL directly into the browser and more. You may also know it as "**dark traffic**".
 
 Here’s a non-exhaustive list of other problems with the header:
 
