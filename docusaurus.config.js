@@ -72,7 +72,7 @@ module.exports = {
             },
             {
               label: 'Forum',
-              href: 'https://plausible.discourse.group/',
+              href: 'https://plausible.io/forum',
             },
           ],
         },
