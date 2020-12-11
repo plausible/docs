@@ -63,4 +63,8 @@ Docusaurus: Check out our [Docusaurus integration page](docusaurus-integration.m
 
 [Gridsome](https://github.com/svendroid/gridsome-plugin-plausible-analytics): A plugin to add Plausible Analytics to your [Gridsome](https://gridsome.org/) site. Built and maintained by [Sven Adolph](https://svenadolph.net).
 
+## Grav
+
+[Grav](https://github.com/iainsgillis/grav-plugin-plausible): Add Plausible Analytics to your [Grav CMS](https://getgrav.org/) site and configure it from the admin panel. Built and maintained by [Iain Gillis](https://www.iainsgillis.com).
+
 Let us know about any other integrations that you've built and we will feature them. Thanks for your support!
