@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 There are several simple ways to integrate Plausible Analytics with your WordPress website. Let's take a look at them:
 
-## Option 1: Use the Plausible Analytics plugins
+## Option 1: Use the Plausible Analytics plugin
 
 This is the way to integrate Plausible Analytics with your WordPress website if you want a nice Plausible Analytics configuration page directly in your WordPress dashboard. 
 
