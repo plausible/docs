@@ -55,6 +55,8 @@ Select `Custom event` as the goal trigger and enter this exact name: `Outbound L
 
 Next, click on the "**Add goal**" button and you’ll be taken back to the Goals page. After you've completed this process, all the external link clicks will start being tracked and will be displayed in the "**Goal Conversions**" report of your Plausible Analytics dashboard. You'll see "**Outbound Link: Click**" goal as soon as the first external link click has been tracked.
 
+And that's it. You are now using our WordPress plugin to count your stats including 404 error pages and outbound link clicks. 
+
 ## Option 2: Use one of the alternative Plausible Analytics plugins
 
 There are several alternatives thanks to the members of our community. Note that these plugins are community maintained and therefore we take no responsibility for them. Check the individual plugin to see whether it's up to date and supports the features that you need.
