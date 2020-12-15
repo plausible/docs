@@ -8,18 +8,16 @@ To use Plausible Analytics, you need to [register an account](https://plausible.
 
 ## Register your account
 
-Fill in your full name and your email address and click on the "**Start my free trial**" button.
+Fill in your full name and email address, choose your account password and click on the "**Start my free trial**" button.
 
 <img alt="Register for an account with Plausible Analytics" src={useBaseUrl('img/register-account.png')} />
 
 ## Verify your email address
 
-We'll send you an email to verify your email address. Look for an email with the subject line "**Activate your Plausible free trial**". Click on the link within that email to verify your email address and activate your Plausible Analytics account.
+We'll send you an email to verify your email address. Look for an email with the subject line "**Your Plausible email verification code**". 
+
+Please enter the four digit code that we sent to you via email to activate your Plausible Analytics account.
+
+<img alt="Activate your Plausible Analytics account" src={useBaseUrl('img/activate-your-account.png')} />
 
 Don't see this email in your inbox? Please check your spam folder and contact **hello@plausible.io** if the problem persists. 
-
-## Set up your account password
-
-Clicking on the link in the email will take you to the page where you have to set up your account password. Create a secure password using your password manager and click on the "**Set password**" button.
-
-<img alt="Set up your Plausible Analytics account password" src={useBaseUrl('img/set-password.png')} />
