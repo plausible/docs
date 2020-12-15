@@ -5,7 +5,7 @@ module.exports = {
                     {
         type: 'category',
         label: 'How to add the script to your website',
-        items: ['plausible-script', 'wordpress-integration', 'ghost-integration', 'webflow-integration', 'squarespace-integration', 'wix-integration', 'docusaurus-integration', 'carrd-integration', 'spa-support', 'hash-based-routing', 'community-integrations'],
+        items: ['plausible-script', 'wordpress-integration', 'ghost-integration', 'webflow-integration', 'squarespace-integration', 'wix-integration', 'discourse-integration', 'docusaurus-integration', 'carrd-integration', 'spa-support', 'hash-based-routing', 'community-integrations'],
       },
                 ],
     "Website Settings": ['website-settings', 'general', 'visibility', 'shared-links', 'goal-conversions', 'google-search-console-integration', 'email-reports', 'traffic-spikes', 'custom-domain', 'export-stats', 'reset-site-data', 'delete-site-data', 'excluding'],
