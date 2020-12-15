@@ -16,8 +16,6 @@ Your Plausible Analytics tracking script code will look something like this (you
 
 <img alt="Plausible Analytics script" src={useBaseUrl('img/add-js-snippet.png')} />
 
-Installing Plausible Analytics on a site can be a slightly different process depending on what tools you're using. [We've put together several integration guides](integration-guides.md) that cover popular website builders and content management systems (CMS). These can help you set up and start counting your site visitors in no time.
-
 ### Where to find your JavaScript snippet
 
 You can find your JavaScript snippet by [logging into your Plausible account](https://plausible.io/sites). Here you'll find the list of websites you've added to Plausible Analytics.
@@ -32,9 +30,13 @@ Hover over your website name and click on the "**Settings**" icon on the right h
 
 We offer a quick and easy way to serve the Plausible Analytics script from your domain name as a first-party connection. See the full instructions on how to setup a custom subdomain and [serve the Plausible Analytics script as a first-party connection](custom-domain.md).
 
+### Check out integration guides for popular site builders and CMSs
+
+Installing Plausible Analytics on a site can be a slightly different process depending on what tools you're using. [We've put together several integration guides](integration-guides.md) that cover popular website builders and content management systems (CMS) such as WordPress and Ghost. These can help you set up and start counting your site visitors in no time.
+
 ### You can also use our community integrations
 
-Thanks to the members of our community, there are now Plausible Analytics community integrations and plugins for several frameworks. See the [full list](community-integrations.md).
+Thanks to the members of our community, there are now Plausible Analytics community integrations and plugins for several frameworks such as Hugo and GatsbyJS. See the [full list](community-integrations.md).
 
 ## Verify if the script is installed on your site
 
