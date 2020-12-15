@@ -1,7 +1,7 @@
 module.exports = {
   someSidebar: {
     "Welcome": ['introduction'],
-    "Get Started": ['register-account', 'add-website', 'plausible-script',
+    "Get Started": ['register-account', 'add-website', 'plausible-script', 'your-plausible-experience',
                     {
         type: 'category',
         label: 'Integration guides',
