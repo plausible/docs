@@ -40,6 +40,12 @@ To minimize the amount of traffic that falls within the "direct / none" referral
 
 Read also our guide on [how to use UTM parameters to track your campaigns and understand the dark traffic](https://plausible.io/blog/utm-tracking-tags).
 
+## Share your stats with a private link or open them up to the public
+
+You can share your Plausible stats with (potential) partners or advertisers. Or if you're working for an agency or working as a freelancer, you can share the site stats with your clients by generating a shared private link. The shared link is secure and impossible to guess by default. You can even password protect it. [Learn more here](shared-links.md).
+
+You can also choose to be transparent and make your site stats public so anyone with your stats dashboard link can view them. [Learn here how](visibility.md).
+
 ## Opt out from counting your own visits
 
 When you're working on your site, you might not want to record your own visits and page views. Here's [how to opt out and exclude yourself from your analytics](excluding.md).
