@@ -32,6 +32,14 @@ Plausible allows you to track custom event goals like button clicks, form comple
 
 You can also enable some easy-to-use goals. Here are instructions on how to track [404 error pages](404-error-pages-tracking.md) and how to track [outbound link clicks](outbound-link-click-tracking.md) in your Plausible dashboard.
 
+## Start using UTM tags in your marketing campaigns
+
+To minimize the amount of traffic that falls within the "direct / none" referral source, you can add special query parameters to your links in social media, email newsletters and your advertising campaigns. 
+
+`ref`, `source`, `utm_source`, `utm_medium` and `utm_campaign` query parameters are all valid and supported by Plausible Analytics. [Learn more here](manual-link-tagging.md).
+
+Read also our guide on [how to use UTM parameters to track your campaigns and understand the dark traffic](https://plausible.io/blog/utm-tracking-tags).
+
 ## Opt out from counting your own visits
 
 When you're working on your site, you might not want to record your own visits and page views. Here's [how to opt out and exclude yourself from your analytics](excluding.md).
