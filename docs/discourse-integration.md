@@ -8,7 +8,7 @@ You can add Plausible Analytics tracking code to your Discourse community by add
 
 * Go to Admin > Customize > Themes in your Discourse admin to create a new "**Theme**" component. 
 
-* Paste your Plausible Analytics hash-based script tag into the "**</head> **" section.
+* Paste your Plausible Analytics hash-based script tag into the `<head>` section.
 
 * Here's what the full script tag will look like (make sure to replace your-domain with the domain you've added to Plausible Analytics):
 
