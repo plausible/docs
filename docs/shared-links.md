@@ -4,7 +4,7 @@ title: Share your stats with a private and secure link
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Within the "**Shared links**" section of your website settings you can decide to share your stats privately by generating a shared link. Click on the "**+ new link**" button to do so. The shared link link is secure and impossible to guess by default. 
+Within the "**Shared links**" section of your website settings you can decide to share your stats privately by generating a shared link. Click on the "**+ new link**" button to do so. The shared link is secure and impossible to guess by default. 
 
 This is useful for specific use cases such as if you want to share your website stats with (potential) partners or advertisers. Or if you're working for an agency or working as a freelancer and want to share the website stats [with your clients](https://plausible.io/for-freelancers-agencies).
 
