@@ -21,7 +21,7 @@ In addition to the full-time team, Plausible Analytics is made possible by an in
 
 * [Mehul Gohil](https://mehulgohil.com/) (mehul0810) for the help on building the Plausible Analytics WordPress plugin and keeping it up to date with the latest features.
 
-* [Vignesh Joglekar](https://vigneshjoglekar.com/) (Vigasaurus) for the help on making the Plausible Analytics dark theme come alive, expanding our Top Pages report to include all pages, and more.
+* [Vignesh Joglekar](https://vigneshjoglekar.com/?utm_medium=plug&utm_source=plausible) (Vigasaurus) for the help on making the Plausible Analytics dark theme come alive, expanding our Top Pages report to include all pages, and more.
 
 * To those who build and maintain Plausible Analytics integrations. [Full list here](community-integrations.md).
 
