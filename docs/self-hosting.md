@@ -8,7 +8,7 @@ This section is for self-hosting our analytics on your server and managing your 
 
 Plausible Analytics is designed to be self-hosted via Docker. You don't have to be a Docker expert
 to launch your own instance of Plausible Analytics. You should have a basic understanding of the command-line
-and networking to succesfully set up your own instance of Plausible Analytics.
+and networking to successfully set up your own instance of Plausible Analytics.
 
 > NB: If you hit a snag with the setup, you can reach out to us on the [forum](https://github.com/plausible/analytics/discussions). If you think something could be better explained in the docs, please open a PR on Github so the next person has a nicer experience. Happy hosting!
 
@@ -128,7 +128,7 @@ Plausible server. [Full instructions](https://github.com/plausible/hosting/tree/
 
 If you're already running a reverse proxy, the most important things to note are:
 1. Configure the virtual host to match the `BASE_URL` in your plausible configuration
-2. Proxy the traffic to `127.0.0.1:8000` or `{ip-adrress}:8000` if running on a remote machine
+2. Proxy the traffic to `127.0.0.1:8000` or `{ip-address}:8000` if running on a remote machine
 3. Ensure the `X-Forwarded-For` is set correctly
 
 The most important thing to note with an existing reverse proxy is that the `X-Forwarded-For` header is set correctly. If the remote
