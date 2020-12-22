@@ -51,20 +51,21 @@ As usual, you need to place your Plausible Analytics tracking script code into t
 The page-specific exclusions rely on a script option `data-exclusions`. You add page exclusions in this very similarly to `data-domain`. The format for this field is as follows:
 
 ```
-data-exclude="/blog4, /rule/*, /how_it_works, /*/admin, */priv/*"
+data-exclude="/blog4, /rule/*, /how-to-*, /*/admin, /*/priv/*"
 ```
 
 The new snippet would look like this (make sure to change the `data-domain` attribute to the domain you added to Plausible):
 
 ```html
-<script async defer data-domain="yourdomain.com" src="https://yoursubdomain.yourdomain.com/js/index.exclusions.js" data-exclude="/blog4, /rule/*, /how_it_works, /*/admin, */priv/*"></script>
+<script async defer data-domain="yourdomain.com" src="https://yoursubdomain.yourdomain.com/js/index.exclusions.js" data-exclude="/blog4, /rule/*, /how-to-*, /*/admin, /*/priv/*"></script>
 ```
 
 Any pages listed in this format, comma-separated, with asterisks to indicate unspecified regions of the pathname will not be sent to your Plausible dashboard.
 
 Pages listed here account for trailing slashes (as placed by some browsers). Asterisks expand to any stretch of the page name, and can be on either end or in the middle of any entry.
 
-*See below for examples of common page use cases.*
+## Common use cases and examples
+*See below for examples of common page use cases and how they would function.*
 
 | data-exclude input | Prevents tracking on pages with a URL path of: |
 | ------------- | ------------- |
@@ -74,7 +75,7 @@ Pages listed here account for trailing slashes (as placed by some browsers). Ast
 | `/*/admin` | `/<anything>/admin` - for example, `/sites/2/admin` or `/pages/admin`, but not `/sites/admin/page-2` |
 | `/*/priv/*` | `/<anything>/priv/<anything>` - for example, `/admin/priv/sites/2` or `/pages/priv/2`, but not `/admin/private/` |
 
-**Note**: This method currently does not support filtering out specific page [hash](hash-based-routing.md) exclusion, but may in the future.
+**Note**: This exclusion method currently does not support filtering out specific page [hash](hash-based-routing.md) exclusion, but may in the future.
 
 ## Return to your website to ensure it works
 

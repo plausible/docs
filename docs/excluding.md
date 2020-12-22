@@ -19,7 +19,7 @@ The following method requires you to use a special version of the Plausible trac
 
 To prevent all Plauible Analytics events on your website for your specific browser, you can set a special `localStorage` flag for your specific website (do keep in mind this is unique for every domain, subdomain and browser, so you'd need to do this for any website you'd want to exclude yourself on).
 
-## Updating your Plausible script
+### Updating your Plausible script
 
 Change your Plausible script snippet `src` attribute from `https://plausible.io/js/plausible.js` to `https://plausible.io/js/plausible.exclusions.js`
 
@@ -43,7 +43,7 @@ or any combination of types.
 
 See [outbound link clicks](outbound-link-click-tracking.md) and [hash-based routing](hash-based-routing.md) for more information.
 
-### If you're serving our script from your custom domain
+#### If you're serving our script from your custom domain
 
 If you're serving our script [from your domain as a first-party connection](custom-domain.md):
 
