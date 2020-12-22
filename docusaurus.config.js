@@ -51,7 +51,7 @@ module.exports = {
             },
             {
               label: 'Study the documentation',
-              to: 'https://docs.plausible.io/',
+              to: 'https://plausible.io/docs',
             },
           ],
         },
@@ -93,7 +93,7 @@ module.exports = {
             },
             {
               label: 'Status',
-              href: 'https://plausible.instatus.com/',
+              href: 'https://plausible.io/status',
             },
           ],
         },
