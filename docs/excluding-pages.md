@@ -4,10 +4,9 @@ title: Exclude specific pages from the analytics
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-By default, Plausible Analytics tracks every visitor and pageview to your website. When you're working on your site, you might not want to record your own visits and page views. Or you may want to not count specific pages towards your analytics (e.g. admin pages).
+By default, Plausible Analytics tracks every visitor and pageview to your website. At times, you may want to not count specific pages towards your analytics (e.g. admin pages).
 
 To prevent tracking for your browser for a specific website entirely, see [exclude yourself from the analytics](/excluding).
-
 
 ## Updating your Plausible script
 
