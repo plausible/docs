@@ -34,7 +34,7 @@ Alternatively, you can [integrate Plausible into your site manually](plausible-s
 
 ## NextJS 
 
-[NextJS](nextjs-integration.md): Simple integration for Plausible Aalytics and https://nextjs.org. Provides custom events functionality. Built and maintained by [4lejandrito](https://github.com/4lejandrito).
+[NextJS](nextjs-integration.md): Simple integration for Plausible Analytics and https://nextjs.org. Provides custom events functionality. Built and maintained by [4lejandrito](https://github.com/4lejandrito).
 
 ## Vue.js & Nuxt.js
 
