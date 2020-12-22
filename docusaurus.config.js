@@ -1,11 +1,11 @@
 module.exports = {
   title: 'Plausible docs',
-  url: 'https://competent-benz-12aade.netlify.app',
-  baseUrl: '/',
+  url: 'https://plausible.io',
+  baseUrl: '/docs/',
   favicon: 'img/favicon.png',
   organizationName: 'plausible',
   projectName: 'docs',
-  scripts: [{src: 'https://plausible.io/js/plausible.js', async: true, defer: true, 'data-domain': 'docs.plausible.io'}],
+  scripts: [{src: 'https://plausible.io/js/plausible.js', async: true, defer: true, 'data-domain': 'plausible.io'}],
   themeConfig: {
     disableDarkMode: true,
         algolia: {
@@ -22,11 +22,11 @@ module.exports = {
       },
       links: [
         {
-          href: '/',
+          href: '/docs',
           label: 'Docs',
           position: 'left',
           target: '_self',
-          activeBasePath: '/'
+          activeBasePath: '/docs'
         },
         {
           href: 'https://github.com/plausible/docs',
