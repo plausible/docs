@@ -70,7 +70,7 @@ Pages listed here account for trailing slashes (as placed by some browsers). Ast
 | data-exclude input | Prevents tracking on pages with a URL path of: |
 | ------------- | ------------- |
 | `/blog4` | `/blog4` and exactly `/blog4` with nothing before or after it |
-| `/rule/*` | `/rule/<anything>`, with no limits - for example, both `/rule` as well as `/rule/general/2/4`, but not `/rules/4` |
+| `/rule/*` | `/rule/<anything>`, with no limits - for example, both `/rule/1` as well as `/rule/general/2/4`, but not `/rules/4` |
 | `/how-to-*` | `/how-to-<anything>` - for example, `/how-to-play` or `/how-to-succeed/4`, but not `/how-to-/blog` |
 | `/*/admin` | `/<anything>/admin` - for example, `/sites/2/admin` or `/pages/admin`, but not `/sites/admin/page-2` |
 | `/*/priv/*` | `/<anything>/priv/<anything>` - for example, `/admin/priv/sites/2` or `/pages/priv/2`, but not `/admin/private/` |
