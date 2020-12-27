@@ -56,7 +56,7 @@ $ cd hosting-master
 
 In the downloaded directory you'll find two important files:
 * `docker-compose.yml` - installs and orchestrates networking between your Plausible server, Postgres database, Clickhouse database (for stats), and an SMTP server. It comes with sensible defaults that are ready to go, although you're free to tweak the settings if you wish.
-* `plausible-conf.env` - configures the Plausible server itself. Full configuration options are documented [here](/docs/self-hosting-configuration).
+* `plausible-conf.env` - configures the Plausible server itself. Full configuration options are documented [here](self-hosting-configuration.md).
 
 ### 2. Add required configuration
 
