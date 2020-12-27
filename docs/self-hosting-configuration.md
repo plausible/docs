@@ -98,7 +98,7 @@ Copy the client ID and Secret into these config values:
 | GOOGLE_CLIENT_ID    | --        | The Client ID from the Google API Console for your Plausible Analytics project                       |
 | GOOGLE_CLIENT_SECRET| --        | The Client Secret from the Google API Console for your Plausible Analytics project                   |
 
-After deploying those values, you can follow [the Search Console Integration docs](https://docs.plausible.io/google-search-console-integration) for
+After deploying those values, you can follow [the Search Console Integration docs](google-search-console-integration.md) for
 the rest of the set up. For the final step of choosing a property from the Search Console, you also need to enable the "[Google Search Console API (Legacy)](https://console.developers.google.com/apis/api/webmasters.googleapis.com)" on your Google API project.
 
 ### Twitter Integration
@@ -114,7 +114,7 @@ When the app is created, note down your API key and API key secret. Then, in the
 | TWITTER_ACCESS_TOKEN        | --      | The access token you generated in the steps above                         |
 | TWITTER_ACCESS_TOKEN_SECRET | --      | The access token secret you generated in the steps above                  |
 
-Once you've added these environment variables and restarted Plausible, you should see the relevant tweets the next day -- they are only fetched once every 24 hours. For more information on the Twitter integration, see [Twitter referrals](/twitter/).
+Once you've added these environment variables and restarted Plausible, you should see the relevant tweets the next day -- they are only fetched once every 24 hours. For more information on the Twitter integration, see [Twitter referrals](twitter.md).
 
 :::note
 Self-hosting our analytics is free as in beer. You only need to pay for your server and whatever cost there is associated with running a server. You never have to pay any fees to us, only to your cloud provider. If you choose to self-host Plausible you can [become a sponsor](https://github.com/sponsors/plausible) and support Plausible with a donation.
