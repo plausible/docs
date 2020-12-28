@@ -3,7 +3,7 @@ title: Getting started
 ---
 
 :::note
-This section is for self-hosting our analytics on your server and managing your infrastructure (installation, maintenance, upgrades, server capacity, uptime, backup and so on). This is different from Plausible Analytics Cloud where we manage everything for your ease and convenience.  
+This section is for self-hosting our analytics on your server and managing your infrastructure (installation, maintenance, upgrades, server capacity, uptime, backup and so on). This is different from Plausible Analytics Cloud where we manage everything for your ease and convenience.
 :::
 
 Plausible Analytics is designed to be self-hosted via Docker. You don't have to be a Docker expert
@@ -31,9 +31,9 @@ as an internal API and therefore schema changes are not considered a breaking ch
 
 ## Requirements
 
-The only thing you need to install Plausible Analytics is a server with Docker installed. For the Plausible Cloud
-instance we use [Digital Ocean](https://m.do.co/c/91569eca0213) (affiliate link) but any hosting provider works. If
-your server doesn't come with Docker pre-installed, you can follow [their docs](https://docs.docker.com/get-docker/) to install it.
+The only thing you need to install Plausible Analytics is a server with Docker installed. The server must have a CPU with x86_64 architecture
+and support for SSE 4.2 instructions. For the Plausible Cloud instance we use [Digital Ocean](https://m.do.co/c/91569eca0213) (affiliate link)
+but any hosting provider works. If your server doesn't come with Docker pre-installed, you can follow [their docs](https://docs.docker.com/get-docker/) to install it.
 
 ## Up and running
 
