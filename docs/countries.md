@@ -10,4 +10,5 @@ Your "**Countries**" report shows where in the world your visitors are coming fr
 
 ## How it works
 
-Plausible servers sit behind Cloudflare, which is a global DNS and CDN provider. Their servers tag every request with a special header called `cf-ipcountry` which contains the ISO3166 country code of the visitor. We store this in our database and discard the IP address of the request.
+Plausible uses the [MaxMind GeoIP database](https://www.maxmind.com/en/home) to determine the visitor country based on their IP address. The IP address itself
+is discarded to make sure we do not store any personal data.
