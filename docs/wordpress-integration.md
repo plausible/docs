@@ -6,9 +6,11 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 There are several simple ways to integrate Plausible Analytics with your WordPress website. Let's take a look at them:
 
-## Option 1: Use the Plausible Analytics plugin
+## Recommended option: Use the Plausible Analytics plugin
 
-This is the way to integrate Plausible Analytics with your WordPress website if you want a nice Plausible Analytics configuration page directly in your WordPress dashboard. 
+This is the recommended way to integrate Plausible Analytics with your WordPress website if you want a nice Plausible configuration page directly in your WordPress dashboard.
+
+You can install the plugins in the "**Plugins**" section in the left-hand side navigation within your WordPress dashboard. Click on "**Add New**" and in the search field in the top right, search for the name of the plugin.
 
 <img alt="Plausible Analytics plugin" src={useBaseUrl('img/plausible-analytics-wordpress-plugin.png')} />
 
@@ -57,24 +59,25 @@ Next, click on the "**Add goal**" button and you’ll be taken back to the Goals
 
 And that's it. You are now using our WordPress plugin to count your stats including 404 error pages and outbound link clicks. 
 
-## Option 2: Use one of the alternative Plausible Analytics plugins
+Now you can go to your website and verify whether Plausible Analytics script has been added and to your Plausible account to see whether the stats are being tracked. See here [how to verify the integration](plausible-script.md#verify-if-the-script-is-installed-on-your-site).
+
+## Alternative ways to integrate Plausible with WordPress
 
 There are several alternatives thanks to the members of our community. Note that these plugins are community maintained and therefore we take no responsibility for them. Check the individual plugin to see whether it's up to date and supports the features that you need.
 
 ### Plausible Connector plugin
 
-* "**[Plausible Connector plugin](https://wordpress.org/plugins/plausible-connector/)**" built and maintained by [alyx](https://eq3.net/plausible-wp/). It supports serving the Plausible script from a custom domain, using your self-hosted instance instead of Cloud, custom events and the ability to exclude admin users from having their visits and page views recorded.
-
-<img alt="Plausible Connector plugin" src={useBaseUrl('img/wordpress-plugin-alyx.png')} />
+"**[Plausible Connector plugin](https://wordpress.org/plugins/plausible-connector/)**" built and maintained by [alyx](https://eq3.net/plausible-wp/). It supports serving the Plausible script from a custom domain, using your self-hosted instance instead of Cloud, custom events and the ability to exclude admin users from having their visits and page views recorded.
 
 ### Unofficial Plausible Analytics plugin
-* "**[Unofficial Plausible Analytics plugin](https://wordpress.org/plugins/unofficial-plausible-analytics)**" built and maintained by Joe Clarke of [TaskBill.io](https://blog.taskbill.io/2020/07/27/plausible-analytics-wordpress-plugin/). It allows you to exclude admin users from having their visits and page views recorded.
 
-<img alt="Unofficial Plausible Analytics Plugin" src={useBaseUrl('img/wordpress-plugin-taskbill.png')} />
+"**[Unofficial Plausible Analytics plugin](https://wordpress.org/plugins/unofficial-plausible-analytics)**" built and maintained by Joe Clarke of [TaskBill.io](https://blog.taskbill.io/2020/07/27/plausible-analytics-wordpress-plugin/). It allows you to exclude admin users from having their visits and page views recorded.
 
-You can install these community plugins in the "**Plugins**" section in the left-hand side navigation within your WordPress dashboard. Click on "**Add New**" and in the search field in the top right, search for the name of the plugin.
+### Full Picture plugin
 
-## Option 3. A general plugin
+"**[Full Picture plugin](https://wordpress.org/plugins/full-picture-analytics-cookie-notice/)**" built and maintained by Krzysztof Płaneta. It's very feature-rich and you can see the list of [its features here](https://fullpictureplugin.com/features/plausible-analytics/).
+
+### Insert Headers and Footers plugin
 
 <img alt="Search for and install Insert Headers and Footers plugin" src={useBaseUrl('img/search-for-plugin.png')} /> 
 
@@ -88,14 +91,10 @@ Paste your Plausible Analytics tracking code in the "**Scripts in Header**" fiel
 
 <img alt="Paste your Plausible Analytics tracking code" src={useBaseUrl('img/use-a-plugin.png')} />
 
-Now you can go to your website to [verify if the Plausible Analytics script has been added](plausible-script.md#verify-if-the-script-is-installed-on-your-site) and to your Plausible Analytics account to see [whether the stats are being tracked](verify-integration.md).
-
-## Option 4. Modify a file
+### Manually modify your header.php file
 
 This is the manual option. In the "**Appearance**" section in the left-hand side navigation within your WordPress dashboard, click on "**Theme Editor**". Choose your theme in the top right (your current theme should be selected by default) and click on "**Select**". In "**Theme Files**" locate the "**header.php**" file.
 
 <img alt="Modify your header.php file" src={useBaseUrl('img/modify-a-file.png')} />
 
 Paste your Plausible Analytics tracking code between <head>...</head> tags like seen in the screenshot and click on the "**Update File**". In case you do have a caching plugin installed, clear the cache just in case. Note that you will need to do this process every time you update your theme unless you create a child theme.
-
-Now you can go to your website and verify whether Plausible Analytics script has been added and to your Plausible Analytics account to see whether the stats are being tracked. See here [how to verify the integration](plausible-script.md#verify-if-the-script-is-installed-on-your-site).
