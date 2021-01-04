@@ -51,29 +51,45 @@ As usual, you need to place your Plausible Analytics tracking script code into t
 The page-specific exclusions rely on a script option `data-exclusions`. You add page exclusions in this very similarly to `data-domain`. The format for this field is as follows:
 
 ```
-data-exclude="/blog4, /rule/*, /how-to-*, /*/admin, /*/priv/*"
+data-exclude="/blog4, /rule/*, /how-to-*, /*/admin, /*/priv/*, /more-paths-here"
 ```
 
-The new snippet would look like this (make sure to change the `data-domain` attribute to the domain you added to Plausible):
+The new snippet would look like this (make sure to change the `data-domain` attribute to the domain you added to Plausible, and `yoursubdomain.yourdomain` to your custom domain):
 
 ```html
-<script async defer data-domain="yourdomain.com" src="https://yoursubdomain.yourdomain.com/js/index.exclusions.js" data-exclude="/blog4, /rule/*, /how-to-*, /*/admin, /*/priv/*"></script>
+<script async defer data-domain="yourdomain.com" src="https://yoursubdomain.yourdomain.com/js/index.exclusions.js" data-exclude="/blog4, /rule/*, /how-to-*, /*/admin, /*/priv/*, /more-paths-here"></script>
 ```
 
-Any pages listed in this format, comma-separated, with asterisks to indicate unspecified regions of the pathname will not be sent to your Plausible dashboard.
+Any pages listed in this format, **comma-separated**, with asterisks to indicate unspecified regions of the pathname will **not** be sent to your Plausible dashboard.
 
-Pages listed here account for trailing slashes (as placed by some browsers). Asterisks expand to any stretch of the page name, and can be on either end or in the middle of any entry.
+**Note**: All entries must begin with a `/`, and should **not** include the trailing slash as automatically placed by some browsers, as we account for this automatically.
+
+Asterisks expand to any stretch of the page path and can be on either end or in the middle of any entry, but **cannot** be in the place of slashes.
+*See below for examples of common page use cases and how they would function.*
 
 ## Common use cases and examples
-*See below for examples of common page use cases and how they would function.*
 
 | data-exclude input | Prevents tracking on pages with a URL path of: |
 | ------------- | ------------- |
-| `/blog4` | `/blog4` and exactly `/blog4` with nothing before or after it |
-| `/rule/*` | `/rule/<anything>`, with no limits on the size of `<anything>` - for example, both `/rule/1` as well as `/rule/general/2/4`, but not `/rules` |
-| `/how-to-*` | `/how-to-<anything>` - for example, `/how-to-play` or `/how-to-succeed/4`, and even `/how-to-/blog` |
-| `/*/admin` | `/<anything>/admin` - for example, `/sites/2/admin` or `/pages/admin`, but not `/sites/admin/page-2` |
-| `/*/priv/*` | `/<anything>/priv/<anything>` - for example, `/admin/priv/sites/2` or `/pages/priv/2`, but not `/admin/private/` |
+| `/blog4` | `/blog4` and exactly `/blog4` with nothing before or after it, so not `/blog45` nor `/blog4/new` nor `/blog` |
+| `/rule/*` | `/rule/<anything>`, with `<anything>` being 1 character or longer - for example, both `/rule/1` as well as `/rule/general-rule-14`, but not `/rule` nor `/rule/4/details` |
+| `/how-to-*` | `/how-to-<anything>` - for example, `/how-to-play` or `/how-to-succeed`, but not `how-to-/blog` nor `/how-to-` |
+| `/*/admin` | `/<anything>/admin` - for example, `/sites/admin`, but not `/sites/admin/page-2` nor `/sites/2/admin` nor `/admin` |
+| `/*/priv/*` | `/<anything>/priv/<anything>` - for example, `/admin/priv/sites`, but not `/priv` nor `/priv/page` nor `/admin/priv` |
+| `/rule/*/*` | `/rule/<anything>/<anything>` - for example, `/rule/4/new/` or `/rule/10/edit`, but not `/rule` nor `/rule/10/new/save` |
+*Asterisks must represent at least 1 character, they cannot be of zero-length.*
+
+
+
+| data-exclude input | Expansion | Prevents on pages: | Does *not* prevent on pages:
+| ------------- | ------------- | ------------- | ------------- |
+| `/blog4` | `/blog4` | `/blog4` | `/blog45`, `/blog4/new`, `/blog` |
+| `/rule/*` | `/rule/<anything>` | `/rule/1`, `/rule/general-rule-14` | `/rule`, `/rule/4/details` |
+| `/how-to-*` | `/how-to-<anything>` | `/how-to-play`, `/how-to-succeed`| `how-to-/blog`, `/how-to-` |
+| `/*/admin` | `/<anything>/admin` | `/sites/admin` | `/sites/admin/page-2`, `/sites/2/admin`, `/admin` |
+| `/*/priv/*` | `/<anything>/priv/<anything>` | `/admin/priv/sites` | `/priv`, `/priv/page`, `/admin/priv` |
+| `/rule/*/*` | `/rule/<anything>/<anything>` | `/rule/4/new/`, `/rule/10/edit` | `/rule`, `/rule/10/new/save` |
+*Asterisks must represent at least 1 character, they cannot be of zero-length.*
 
 **Note**: This exclusion method currently does not support filtering out specific page [hash](hash-based-routing.md) exclusion, but may in the future.
 
