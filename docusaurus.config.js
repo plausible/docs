@@ -7,8 +7,8 @@ module.exports = {
   projectName: 'docs',
   scripts: [{src: 'https://plausible.io/js/plausible.js', async: true, defer: true, 'data-domain': 'plausible.io'}],
   themeConfig: {
-    disableDarkMode: true,
-        algolia: {
+    colorMode: {disableSwitch: true},
+    algolia: {
       apiKey: '6c8274af5bc972f5ca4fad48f08eb4d9',
       indexName: 'plausible',
     },
@@ -20,7 +20,7 @@ module.exports = {
         href: 'https://plausible.io/',
         target: '_self',
       },
-      links: [
+      items: [
         {
           href: '/docs',
           label: 'Docs',
@@ -107,7 +107,6 @@ module.exports = {
       {
         docs: {
           routeBasePath: '/',
-          homePageId: 'introduction',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
             'https://github.com/plausible/docs/edit/master/',

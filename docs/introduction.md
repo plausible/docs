@@ -1,6 +1,7 @@
 ---
 title: Introduction
---- 
+slug: /
+---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
