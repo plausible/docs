@@ -8,15 +8,13 @@ By default, Plausible Analytics tracks every visitor to your website. When you'r
 
 Most web analytics tools do this by excluding certain IP addresses from being counted. However, we do not store the visitors’ IP addresses in our database for privacy reasons as we are a [GDPR compliant web analytics](https://plausible.io/data-policy) tool.
 
-Instead, you can use any standard ad or script-blocking browser extension to filter out your traffic. Here’s how.
+To block your page views from your Plausible Analytics stats dashboard, start by installing and activating a standard ad-blocking browser extension. Some extensions may automatically opt you out of Plausible tracking as soon as you install them but you can follow these steps to make sure that they do so. 
+ 
+## uBlock Origin
 
-## Install an adblocker add-on to your browser
+When using [uBlock Origin](https://github.com/gorhill/uBlock/#installation), you can follow these steps to make sure that you exclude yourself from being counted in the stats. 
 
-To block your page views from your Plausible Analytics stats dashboard, start by installing and activating a standard ad-blocking browser extension. This method has been tested with [Adblock Plus](https://adblockplus.org/), [AdBlock](https://getadblock.com/) and [uBlock Origin](https://github.com/gorhill/uBlock/#installation). 
-
-Some extensions may automatically opt you out of Plausible tracking as soon as you install them but you can follow these steps to make sure that they do so. For this guide, we’ll work with uBlock Origin and it works on all the major browsers. 
-
-## Locate the My Rules tab
+### Locate the My Rules tab
 
 * Click the "**uBlock Origin**" icon in your browser
 * Then click the "**Dashboard**" icon in the lower-right corner to open the uBlock Origin dashboard
@@ -28,7 +26,7 @@ Some extensions may automatically opt you out of Plausible tracking as soon as y
 
 <img alt="My Rules tab in the uBlock Origin dashboard" src={useBaseUrl('img/ublock-origin-my-rules.png')} />
 
-## Block the Plausible Analytics script on your domain
+### Block the Plausible Analytics script on your domain
 
 <img alt="Add a new rule the uBlock Origin dashboard" src={useBaseUrl('img/ublock-origin-temporary-rules.png')} />
 
@@ -42,6 +40,20 @@ Or in case you're serving Plausible Analytics script from your domain as a first
 
 Once you’ve entered the correct rule, click on the "**Save**" button and then click on the "**Commit**" button.
 
+## Adblock Plus
+
+When using [Adblock Plus](https://adblockplus.org/), you can follow these steps to make sure that you exclude yourself from being counted in the stats. 
+
+Go into your Adblock Plus settings and click on the "**Advanced**" in the left hand side menu. Scroll down to the "**My Filter List**" section.
+
+Insert the following rule and click on the "**Add**" button. Remember to change `yourdomain.com` with the domain name where you installed Plausible Analytics.
+
+``` ||plausible.io^$script,domain=yourdomain.com ```
+
+Or in case you're serving Plausible Analytics script from your domain as a first party connection, use this:
+
+``` ||yoursubdomain.yourdomain.com^$script,domain=yourdomain.com ```
+
 ## Return to your website to ensure it works
 
 You can test your filter by:
@@ -49,3 +61,5 @@ You can test your filter by:
 * Reloading your website multiple times and making sure that the total page views number in your Plauible Analytics dashboard does not increase. This isn’t very reliable if there are other people visiting your site at the same time.
 
 * Alternatively you can load your website, open the browser inspector (press F12 on Firefox), and ensure that the Plausible Analytics script is not loading in the "**Network**" tab.
+
+* Your adblocker will also show you the number of domains and/or scripts they block when you visit the individual website.
