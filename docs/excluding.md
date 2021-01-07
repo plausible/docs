@@ -44,7 +44,7 @@ Once you’ve entered the correct rule, click on the "**Save**" button and then 
 
 When using [Adblock Plus](https://adblockplus.org/), you can follow these steps to make sure that you exclude yourself from being counted in the stats. 
 
-Go into your Adblock Plus settings and click on the "**Advanced**" in the left hand side menu. Scroll down to the "**My Filter List**" section.
+Go into your Adblock Plus settings and click on "**Advanced**" in the left hand side menu. Scroll down to the "**My Filter List**" section.
 
 Insert the following rule and click on the "**Add**" button. Remember to change `yourdomain.com` with the domain name where you installed Plausible Analytics.
 
