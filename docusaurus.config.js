@@ -22,7 +22,7 @@ module.exports = {
       },
       items: [
         {
-          href: '/docs',
+          href: '/',
           label: 'Docs',
           position: 'left',
           target: '_self',
