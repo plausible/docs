@@ -10,14 +10,14 @@ Plausible gives you great control and flexibility in plans you can subscribe to,
 
 All Plausible Analytics subscription plans are priced according to your monthly traffic levels.
 
-To get your traffic level, we take all the websites you have added to your Plausible account and total the number of page views between them. If you use the "[Custom Events](custom-event-goals.md)" feature, then these count towards your total monthly pageviews too.
+To calculate your traffic level, we take all the websites you have added to your Plausible account and total the number of page views between them. If you use the "[Custom Events](custom-event-goals.md)" feature, then these count towards your total monthly pageviews as well.
 
-The "Custom Events" include any custom goals, custom properties and goals such as external link click tracking and 404 error page tracking. "[Pageview goals](pageview-goals.md)" are not counted towards your usage.
+"Custom Events" are any custom goals including external link click tracking and 404 error page tracking. The act of adding a "[Pageview Goal](pageview-goals.md)" has no effect on your usage.
 
-You can check your usage number in your account settings within the "Subscription Plan" section under the heading "Your usage". This is your page views usage and you should get on a subscription plan that fits these traffic levels.
+You can check your current traffic level in your account settings within the "Subscription Plan" section. Look under the "Your usage" heading. You should get on a subscription plan that fits your traffic levels.
 
 <img alt="Your current subscription plan" src={useBaseUrl('img/current-subscription-plan.png')} />
- 
+
 Our lowest subscription tier is up to 10,000 pageviews per month and it is priced at $6/month if you pay monthly.
 
 There's a 33% discount on all plans for those that want to pay annually. The annual billing discount makes our lowest tier $48 for the full year or $4 per month.
