@@ -17,7 +17,7 @@ module.exports = {
       },
                   'top-pages', 'countries', 'devices', 'metrics-definitions'],
     "Goal Conversions": ['pageview-goals', 'custom-event-goals', 'outbound-link-click-tracking', `404-error-pages-tracking`],
-    "Account Settings": ['trial-to-paid', 'change-email', 'reset-password', 'change-plan', 'dashboard-appearance', 'cancel-subscription', 'delete-account'],
+    "Account Settings": ['trial-to-paid', 'change-email', 'reset-password', 'change-plan', 'subscription-plans', 'dashboard-appearance', 'cancel-subscription', 'delete-account'],
     "Self-Hosting": ['self-hosting', 'self-hosting-configuration'],
     "Contribute": ['contribute', 'plausible-analytics-reviews', 'authors'],
   },
