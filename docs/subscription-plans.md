@@ -8,11 +8,11 @@ Plausible gives you great control and flexibility in plans you can subscribe to,
 
 ## All plans are priced according to your traffic levels
 
-All Plausible Analytics subscription plans are priced according to the traffic levels.
+All Plausible Analytics subscription plans are priced according to your monthly traffic levels.
 
-To get your traffic level, we take all the websites you have added to your Plausible account and total the number of page views between them. If you use the "[Custom Events](custom-event-goals.md)" feature, we add these to your page views too to get the complete number.
+To get your traffic level, we take all the websites you have added to your Plausible account and total the number of page views between them. If you use the "[Custom Events](custom-event-goals.md)" feature, then these count towards your total monthly pageviews too.
 
-The custom events include any custom goals or custom properties, and goals such as external link click tracking and 404 error page tracking. "[Pageview goals](pageview-goals.md)" are not counted towards your usage.
+The "Custom Events" include any custom goals, custom properties and goals such as external link click tracking and 404 error page tracking. "[Pageview goals](pageview-goals.md)" are not counted towards your usage.
 
 You can check your usage number in your account settings within the "Subscription Plan" section under the heading "Your usage". This is your page views usage and you should get on a subscription plan that fits these traffic levels.
 
