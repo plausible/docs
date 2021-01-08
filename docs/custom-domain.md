@@ -28,7 +28,7 @@ Some domain registrars such as GoDaddy don't accept CNAME values with a dot at t
 
 ## It may take up to 4 hours for the DNS changes to propagate
 
-It may take up to 4 hours for the DNS changes to propagate and for us to obtain an SSL certificate for your subdomain. The setup is working when your subdomain loads our JavaScript file (`yoursubdomain.yourdomain.com/js/plausible.js`).
+It may take up to 4 hours for the DNS changes to propagate and for us to obtain an SSL certificate for your subdomain. The setup is working when your subdomain loads our JavaScript file (`yoursubdomain.yourdomain.com/js/index.js`).
 
 :::note
 Do you have a wildcard SSL configuration, so your subdomains automatically get the SSL certificate? Please disable it for the subdomain you want to serve Plausible script from. We will automatically get the SSL certificate from Let's Encrypt for your subdomain. 
