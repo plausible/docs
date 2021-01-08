@@ -1,5 +1,5 @@
 ---
-title: How to choose the right subscription tier
+title: Choose the right subscription tier
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
