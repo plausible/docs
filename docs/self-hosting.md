@@ -86,7 +86,7 @@ When you run this command for the first time, it does the following:
 
 You can now navigate to `http://{hostname}:8000` and see the login screen.
 
-> Something not working? Please reach out on our [forum](https://github.com/plausible/analytics/discussions) for troubleshooting.
+> Something not working? Please reach out on our [forum](https://github.com/plausible/analytics/discussions/categories/self-hosted-support) for troubleshooting.
 
 The Plausible server itself does not perform SSL termination. It only runs on unencrypted HTTP.  If you want to run on HTTPS you also need to set up a reverse proxy in front of the server. We have instructions and examples of how to do that below.
 
