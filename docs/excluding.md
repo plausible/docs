@@ -40,9 +40,9 @@ Or in case you're serving Plausible Analytics script from your domain as a first
 
 Once you’ve entered the correct rule, click on the "**Save**" button and then click on the "**Commit**" button.
 
-## Adblock Plus
+## Adblock Plus and AdGuard
 
-When using [Adblock Plus](https://adblockplus.org/), you can follow these steps to make sure that you exclude yourself from being counted in the stats. 
+When using [Adblock Plus](https://adblockplus.org/) or [Adguard](https://adguard.com), you can follow these steps to make sure that you exclude yourself from being counted in the stats. 
 
 Go into your Adblock Plus settings and click on "**Advanced**" in the left hand side menu. Scroll down to the "**My Filter List**" section.
 
@@ -50,7 +50,7 @@ Insert the following rule and click on the "**Add**" button. Remember to change 
 
 ``` ||plausible.io^$script,domain=yourdomain.com ```
 
-Or in case you're serving Plausible Analytics script from your domain as a first party connection, use this:
+Or in case you're serving Plausible Analytics script from your domain as a first party connection, use this. Remember to change `yoursubdomain.yourdomain.com` with the URL of your subdomain where you're serving the Plausible script from and `yourdomain.com` with the domain name where you installed Plausible Analytics.
 
 ``` ||yoursubdomain.yourdomain.com^$script,domain=yourdomain.com ```
 
