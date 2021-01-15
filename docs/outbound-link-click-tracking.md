@@ -6,6 +6,10 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <img alt="Outbound link click tracking" src={useBaseUrl('img/outbound-link-click-tracking.jpeg')} />
 
+:::note
+If you use the Outbound link click tracking feature, then these count towards your billable monthly pageviews.
+:::
+
 Outbound link click tracking is essential for many site owners and Plausible helps you automate this process. With our "**Outbound Link Click Tracking**" you can:
 
 * See which external URLs are clicked the most
