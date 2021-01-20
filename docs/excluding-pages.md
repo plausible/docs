@@ -64,7 +64,9 @@ Any pages listed in this format, **comma-separated**, with asterisks to indicate
 
 **Note**: All entries must begin with a `/`, and should **not** include the trailing slash as automatically placed by some browsers, as we account for this automatically.
 
-Asterisks expand to any stretch of the page path and can be on either end or in the middle of any entry, but **cannot** be in the place of slashes.
+- Asterisks (`*`) expand to any stretch (of length >=0) of the page path and can be on either end or in the middle of any entry, but **cannot** be in the place of slashes.
+- Double asterisks (`**`) expand to any stretch (of length >=0) of the page path, can be on either end or in the middle of any entry, and can represent **any** characters, even slashes.
+
 *See below for examples of common page use cases and how they would function.*
 
 ## Common use cases and examples
@@ -72,26 +74,14 @@ Asterisks expand to any stretch of the page path and can be on either end or in 
 | data-exclude input | Prevents tracking on pages with a URL path of: |
 | ------------- | ------------- |
 | `/blog4` | `/blog4` and exactly `/blog4` with nothing before or after it, so not `/blog45` nor `/blog4/new` nor `/blog` |
-| `/rule/*` | `/rule/<anything>`, with `<anything>` being 1 character or longer - for example, both `/rule/1` as well as `/rule/general-rule-14`, but not `/rule` nor `/rule/4/details` |
-| `/how-to-*` | `/how-to-<anything>` - for example, `/how-to-play` or `/how-to-succeed`, but not `how-to-/blog` nor `/how-to-` |
+| `/rule/*` | `/rule/<anything>`, with `<anything>` being any set of characters (length >=0), but not a forward slash - for example, both `/rule/1` as well as `/rule/general-rule-14`, but not `/rule/4/details` nor `/rules` |
+| `/how-to-*` | `/how-to-<anything>` - for example, `/how-to-play` or `/how-to-succeed`, but not `how-to-/blog` |
 | `/*/admin` | `/<anything>/admin` - for example, `/sites/admin`, but not `/sites/admin/page-2` nor `/sites/2/admin` nor `/admin` |
 | `/*/priv/*` | `/<anything>/priv/<anything>` - for example, `/admin/priv/sites`, but not `/priv` nor `/priv/page` nor `/admin/priv` |
 | `/rule/*/*` | `/rule/<anything>/<anything>` - for example, `/rule/4/new/` or `/rule/10/edit`, but not `/rule` nor `/rule/10/new/save` |
-*Asterisks must represent at least 1 character, they cannot be of zero-length.*
+| `/wp/**` | `/wp<anything, even slashes>` - for example, `/wp/assets/subdirectory/another/image.png` or `/wp/admin`, and everything in between, but not `/page/wp`
 
-
-
-| data-exclude input | Expansion | Prevents on pages: | Does *not* prevent on pages:
-| ------------- | ------------- | ------------- | ------------- |
-| `/blog4` | `/blog4` | `/blog4` | `/blog45`, `/blog4/new`, `/blog` |
-| `/rule/*` | `/rule/<anything>` | `/rule/1`, `/rule/general-rule-14` | `/rule`, `/rule/4/details` |
-| `/how-to-*` | `/how-to-<anything>` | `/how-to-play`, `/how-to-succeed`| `how-to-/blog`, `/how-to-` |
-| `/*/admin` | `/<anything>/admin` | `/sites/admin` | `/sites/admin/page-2`, `/sites/2/admin`, `/admin` |
-| `/*/priv/*` | `/<anything>/priv/<anything>` | `/admin/priv/sites` | `/priv`, `/priv/page`, `/admin/priv` |
-| `/rule/*/*` | `/rule/<anything>/<anything>` | `/rule/4/new/`, `/rule/10/edit` | `/rule`, `/rule/10/new/save` |
-*Asterisks must represent at least 1 character, they cannot be of zero-length.*
-
-**Note**: This exclusion method currently does not support filtering out specific page [hash](hash-based-routing.md) exclusion, but may in the future.
+**Note**: This exclusion method currently does not support filtering out specific page [hashes](hash-based-routing.md), but may in the future.
 
 ## Return to your website to ensure it works
 
