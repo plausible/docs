@@ -36,7 +36,7 @@ Do this for all the websites where you'd like to use page-tracking exclusions. T
 **Note**: You do not have to use exclusively the `exclusions` script type, you can chain various script types, for example:
 
 ```html
-<script async defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.hash.exclusions.outgoing-links.js"></script>
+<script async defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.hash.exclusions.outbound-links.js"></script>
 ```
 
 or any combination of types.
