@@ -67,4 +67,8 @@ Docusaurus: Check out our [Docusaurus integration page](docusaurus-integration.m
 
 [Grav](https://github.com/iainsgillis/grav-plugin-plausible): Add Plausible Analytics to your [Grav CMS](https://getgrav.org/) site and configure it from the admin panel. Built and maintained by [Iain Gillis](https://www.iainsgillis.com).
 
+## Neos CMS
+
+[Neos CMS](https://github.com/CarbonPackages/Carbon.Plausible): Add Plausible Analytics to your [Neos](https://www.neos.io/) site. Built and maintained by [Jon Uhlmann](https://github.com/jonnitto).
+
 Let us know about any other integrations that you've built and we will feature them. Thanks for your support!
