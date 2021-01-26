@@ -38,9 +38,9 @@ The page-specific exclusions rely on a script option `data-exclude`. You add pag
 data-exclude="/blog4, /rule/*, /how-to-*, /*/admin, /*/priv/*, /more-paths-here"
 ```
 
-Any pages listed in this format, **comma-separated**, with asterisks to indicate unspecified regions of the pathname will **not** be counted in your Plausible dashboard.
+Any pages listed in this format, **comma-separated**, with asterisks to indicate unspecified regions of the pathname, will **not** be counted in your Plausible dashboard.
 
-All entries must begin with a `/`, and should **not** include the trailing slash as automatically placed by some browsers as we account for this automatically.
+All entries must begin with a `/`, and should **not** include the trailing slash as we account for this automatically.
 
 - Asterisks (`*`) expand to any stretch (of length >=0) of the page path and can be on either end or in the middle of any entry, but **cannot** be in the place of slashes.
 - Double asterisks (`**`) expand to any stretch (of length >=0) of the page path, can be on either end or in the middle of any entry, and can represent **any** characters, even slashes.
@@ -94,8 +94,8 @@ This exclusion method currently does not support filtering out specific page [ha
 
 ## Return to your website to ensure it works
 
-You can test your page-specific filter by:
+You can test your page-specific exclusions by:
 
-* Visiting a page of your website that you excluded and ensuring views for it don't reach your Plausible dashboard.
+* Visiting a page on your website that you excluded from tracking and ensuring views for it don't show in your Plausible dashboard.
 
-* Alternatively, after loading a page, you can check the browser console (press F12 on Firefox or Chrome and then click the "Console" tab). If you've entered your pages correctly and are on the excluded page, you should see a message saying "Ignoring event in exclusion". You may need to ensure the "Warnings" filter (in the top right in Firefox and top-center under a dropdown in Chrome) is enabled before this message is visible.
+* Alternatively, after loading a page, you can check the browser console (press F12 on Firefox or Chrome and then click the "Console" tab). If you've excluded your pages and are browsing on the excluded page, you should see a message saying "Ignoring event in exclusion". You may need to ensure the "Warnings" filter (in the top right in Firefox and top-center under a dropdown in Chrome) is enabled before this message is visible.
