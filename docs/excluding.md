@@ -12,7 +12,7 @@ To prevent counting your own visits from your browser, you can set a special `lo
 
 ## To exclude your own visits from being counted
 
-Visit the website you'd like to exclude your visits from and open the web console in your browser (press F12 in Firefox). Then click the "Console" tab. 
+Visit the website you'd like to exclude your visits from and open the web console in your browser (press F12 in Firefox or Chrome). Then click the "Console" tab. 
 
 In Firefox, it looks like this:
 
