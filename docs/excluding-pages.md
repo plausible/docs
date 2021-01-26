@@ -46,7 +46,7 @@ As usual, you need to place your Plausible Analytics tracking script code into t
 
 ## 2. Add the pages you'd like to exclude from being tracked
 
-The page-specific exclusions rely on a script option `data-exclusions`. You add page exclusions very similarly to `data-domain`. The format for this field is as follows:
+The page-specific exclusions rely on a script option `data-exclude`. You add page exclusions very similarly to `data-domain`. The format for this field is as follows:
 
 ```
 data-exclude="/blog4, /rule/*, /how-to-*, /*/admin, /*/priv/*, /more-paths-here"
