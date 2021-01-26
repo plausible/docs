@@ -12,13 +12,25 @@ To prevent counting your own visits from your browser, you can set a special `lo
 
 ## To exclude your own visits from being counted
 
-Visit the website you'd like to exclude your visits from and open the web console in your browser (press F12 on Firefox and then click the "Console" tab). 
+Visit the website you'd like to exclude your visits from and open the web console in your browser (press F12 in Firefox). Then click the "Console" tab. 
 
-Then run the following command:
+In Firefox, it looks like this:
+
+<img alt="Browser web console" src={useBaseUrl('img/browser-console.png')} />
+
+Then paste the following command and hit enter:
 
 ```html
 localStorage.plausible_ignore=true
 ```
+
+It will look something like this when you paste the command:
+
+<img alt="Browser web console enter the command" src={useBaseUrl('img/exclude-yourself.png')} />
+
+And you will get this message when you press enter:
+
+<img alt="Browser web console true" src={useBaseUrl('img/exclude-yourself-true.png')} />
 
 Note that you have to follow this process for every domain and subdomain you'd like to exclude your visits from. You also need to follow the same process for every browser you'd like to exclude your visits from.
 
@@ -30,11 +42,13 @@ There are two ways you can check to ensure that you have excluded your own visit
 
 * Reload your page and open the browser console again. If you have excluded yourself, you should see a message saying "Ignoring Event: localStorage flag". You may need to ensure the "Warnings" filter - in the top right in Firefox, and top-center under a dropdown in Chrome - is enabled before this message is visible.
 
+<img alt="Browser web console check" src={useBaseUrl('img/check-the-exclusion.png')} />
+
 ## To re-enable counting of your own visits
 
 To re-enable counting, visit the website you'd like to enable your visits for and open the web console in your browser (press F12 on Firefox and then click the "Console" tab). 
 
-Then run the following command:
+Then paste the following command and hit enter:
 
 ```html
 delete localStorage.plausible_ignore
