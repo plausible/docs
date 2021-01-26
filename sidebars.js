@@ -14,7 +14,7 @@ module.exports = {
         label: 'Top Sources',
         items: ['top-referrers', 'manual-link-tagging', 'twitter'],
       },
-                  'top-pages', 'countries', 'devices', 'metrics-definitions'],
+                  'top-pages', 'countries', 'devices', 'metrics-definitions', 'keyboard-shortcuts'],
     "Goal Conversions": ['pageview-goals', 'custom-event-goals', 'outbound-link-click-tracking', '404-error-pages-tracking'],
     "Account Settings": ['change-email', 'reset-password', 'dashboard-appearance', 'delete-account'],
     "Manage Subscription": ['trial-to-paid', 'subscription-plans', 'change-plan', 'cancel-subscription'],
