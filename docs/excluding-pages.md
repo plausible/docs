@@ -4,9 +4,11 @@ title: Exclude specific pages from being tracked
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-By default, Plausible Analytics tracks every page your install our snippet on. If you don't want Plausible to track specific pages, do not include our snippet on those pages. Alternatively, you can also manually exclude specific pages on your website from being tracked. Here's how.
+By default, Plausible Analytics tracks every page your install our snippet on. If you don't want Plausible to track specific pages, do not include our snippet on those pages. 
 
-## You need to update the Plausible script on your site
+Alternatively, you can also manually exclude specific pages from being tracked. Here's how.
+
+## 1. Change the Plausible script on your site
 
 In order to manually exclude specific pages from being tracked, you need to change your Plausible script snippet `src` attribute from `https://plausible.io/js/plausible.js` to `https://plausible.io/js/plausible.exclusions.js`
 
@@ -42,18 +44,12 @@ The new snippet will look like this (make sure to change the `data-domain` attri
 
 As usual, you need to place your Plausible Analytics tracking script code into the Header (`<head>`) section of your site. Place the tracking script within the `<head> … </head>` tags.
 
-## Add the pages you'd like to exclude from being tracked
+## 2. Add the pages you'd like to exclude from being tracked
 
 The page-specific exclusions rely on a script option `data-exclusions`. You add page exclusions very similarly to `data-domain`. The format for this field is as follows:
 
 ```
 data-exclude="/blog4, /rule/*, /how-to-*, /*/admin, /*/priv/*, /more-paths-here"
-```
-
-The new snippet would look like this (make sure to change the `data-domain` attribute to the domain you added to Plausible, and `yoursubdomain.yourdomain` to your custom domain):
-
-```html
-<script async defer data-domain="yourdomain.com" src="https://yoursubdomain.yourdomain.com/js/index.exclusions.js" data-exclude="/blog4, /rule/*, /how-to-*, /*/admin, /*/priv/*, /more-paths-here"></script>
 ```
 
 Any pages listed in this format, **comma-separated**, with asterisks to indicate unspecified regions of the pathname will **not** be counted in your Plausible dashboard.
@@ -64,6 +60,22 @@ All entries must begin with a `/`, and should **not** include the trailing slash
 - Double asterisks (`**`) expand to any stretch (of length >=0) of the page path, can be on either end or in the middle of any entry, and can represent **any** characters, even slashes.
 
 See below for examples of common page use cases and how they would function.
+
+## 3. Use the new snippet on your site
+
+The new snippet would look like this (make sure to change the `data-domain` attribute to the domain you added to your Plausible account):
+
+```html
+<script async defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.exclusions.js" data-exclude="/blog4, /rule/*, /how-to-*, /*/admin, /*/priv/*, /more-paths-here"></script>
+```
+
+### If you're serving our script from your custom domain
+
+The new snippet would look like this (make sure to change the `data-domain` attribute to the domain you added to Plausible, and `yoursubdomain.yourdomain` to your custom subdomain):
+
+```html
+<script async defer data-domain="yourdomain.com" src="https://yoursubdomain.yourdomain.com/js/index.exclusions.js" data-exclude="/blog4, /rule/*, /how-to-*, /*/admin, /*/priv/*, /more-paths-here"></script>
+```
 
 ## Common use cases and examples
 
