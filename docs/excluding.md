@@ -12,13 +12,17 @@ To prevent counting your own visits from your browser, you can set a special `lo
 
 To disable counting on your domain, open the web console (F12 on Firefox and then click the "Console" tab) and run the following command: 
 
-`localStorage.plausible_ignore=true`
+```html
+localStorage.plausible_ignore=true
+```
 
 ### Re-enable counting of your own visits
 
 To re-enable counting, you can run:
 
-`delete localStorage.plausible_ignore`.
+```html
+delete localStorage.plausible_ignore
+```
 
 ### Return to your website to ensure it works
 
