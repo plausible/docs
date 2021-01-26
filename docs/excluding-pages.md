@@ -8,7 +8,7 @@ By default, Plausible Analytics tracks every page you install the snippet on. If
 
 Alternatively, you can also manually exclude specific pages from being tracked. Here's how.
 
-## 1. Change the Plausible script on your site
+## 1. You'll need to use a different Plausible script snippet
 
 To manually exclude specific pages from being tracked, you need to change your Plausible script snippet `src` attribute from `https://plausible.io/js/plausible.js` to `https://plausible.io/js/plausible.exclusions.js`
 
@@ -17,18 +17,6 @@ The new snippet will look like this (make sure to change the `data-domain` attri
 ```html
 <script async defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.exclusions.js"></script>
 ```
-
-You need to place your Plausible Analytics tracking script code into the Header (`<head>`) section of your site. Place the tracking script within the `<head> … </head>` tags. Do this for all the websites where you'd like to use page-tracking exclusions. 
-
-This is the only tracking script you need. You don't need to keep the default script. Your stats will keep tracking without interruption and you will not lose any of your old data.
-
-You do not have to use the `exclusions` script type exclusively. You can chain various script types, for example:
-
-```html
-<script async defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.hash.exclusions.outbound-links.js"></script>
-```
-
-The example above includes both [outbound link clicks tracking](outbound-link-click-tracking.md) and [hash-based routing](hash-based-routing.md) in addition to the `exclusions` script type.
 
 ### If you're serving our script from your custom domain
 
@@ -41,8 +29,6 @@ The new snippet will look like this (make sure to change the `data-domain` attri
 ```html
 <script async defer data-domain="yourdomain.com" src="https://yoursubdomain.yourdomain.com/js/index.exclusions.js"></script>
 ```
-
-As usual, you need to place your Plausible Analytics tracking script code into the Header (`<head>`) section of your site. Place the tracking script within the `<head> … </head>` tags.
 
 ## 2. Add the pages you'd like to exclude from being tracked
 
@@ -61,13 +47,25 @@ All entries must begin with a `/`, and should **not** include the trailing slash
 
 See below for examples of common page use cases and how they would function.
 
-## 3. Use the new snippet on your site
+## 3. Change the snippet on your site to the new snippet
 
 The new snippet would look like this (make sure to change the `data-domain` attribute to the domain you added to your Plausible account):
 
 ```html
 <script async defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.exclusions.js" data-exclude="/blog4, /rule/*, /how-to-*, /*/admin, /*/priv/*, /more-paths-here"></script>
 ```
+
+You need to place your new Plausible Analytics tracking script code into the Header (`<head>`) section of your site. Place the tracking script within the `<head> … </head>` tags. Do this for all the websites where you'd like to use page-tracking exclusions. 
+
+This is the only tracking script you need. You don't need to keep the default script. Your stats will keep tracking without interruption and you will not lose any of your old data.
+
+You do not have to use the `exclusions` script type exclusively. You can chain various script types, for example:
+
+```html
+<script async defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.hash.exclusions.outbound-links.js" data-exclude="/blog4, /rule/*, /how-to-*, /*/admin, /*/priv/*, /more-paths-here"></script>
+```
+
+The example above includes both [outbound link clicks tracking](outbound-link-click-tracking.md) and tracking for [hash-based routing pages](hash-based-routing.md) in addition to the `exclusions` script type.
 
 ### If you're serving our script from your custom domain
 
@@ -76,6 +74,9 @@ The new snippet would look like this (make sure to change the `data-domain` attr
 ```html
 <script async defer data-domain="yourdomain.com" src="https://yoursubdomain.yourdomain.com/js/index.exclusions.js" data-exclude="/blog4, /rule/*, /how-to-*, /*/admin, /*/priv/*, /more-paths-here"></script>
 ```
+
+As usual, you need to place your Plausible Analytics tracking script code into the Header (`<head>`) section of your site. Place the tracking script within the `<head> … </head>` tags.
+
 
 ## Common use cases and examples
 
