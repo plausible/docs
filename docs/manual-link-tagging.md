@@ -1,10 +1,10 @@
 ---
-title: Manual link tagging with query parameters
+title: Manual link tagging with UTM tags and other query parameters
 ---
 
-To minimize the amount of traffic that falls within the "[no referrer](top-referrers.md)" category, you can add special query parameters to your links.
+To minimize the amount of traffic that falls within the "[no referrer](top-referrers.md)" category, you can add special query parameters including UTM tags to your links.
 
-Whenever you post a link online or send it to someone, you can choose to add a special query parameter to the link. When the `?ref=<value>` query parameter is present, Plausible Analytics will show it as the referral source.
+Whenever you post a link in social media or send it to someone via email, you can choose to add a special query parameter to the link. When for instance `?ref=<value>` query parameter is present, Plausible Analytics will show it as the referral source.
 
 `ref`, `source`, `utm_source`, `utm_medium` and `utm_campaign` query parameters are all valid and supported.
 
@@ -26,8 +26,10 @@ You can also go a bit deeper and track your links in more detail:
 
 For any clicks on the above link, "**Newsletter**" would be listed as a referral source in your Plausible Analytics dashboard, "**Email**" would be listed as the medium and "**NovemberNewsletter**" would be listed as the campaign. 
 
-It is a good practice to tag your links where the referrer header is not sent. Emails, newsletters, chat, messaging applications, particular websites and so on.
+It is a good practice to tag your links where the referrer header is not sent. Emails, newsletters, chat, messaging applications, social media, paid advertising campaigns and so on.
 
 When a query parameter is present in the link it takes priority. When someone lands on your website without the special query parameter defined, we fall back to the referrer header.
+
+Note that the referral sources including query parameters are counted only when they start a new session on your site.
 
 Read more about "[how to use UTM parameters to track your campaigns and understand the dark traffic](https://plausible.io/blog/utm-tracking-tags)".
