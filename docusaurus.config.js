@@ -1,14 +1,14 @@
 module.exports = {
   title: 'Plausible docs',
-  url: 'https://competent-benz-12aade.netlify.app',
-  baseUrl: '/',
+  url: 'https://plausible.io',
+  baseUrl: '/docs/',
   favicon: 'img/favicon.png',
   organizationName: 'plausible',
   projectName: 'docs',
-  scripts: [{src: 'https://plausible.io/js/plausible.js', async: true, defer: true, 'data-domain': 'docs.plausible.io'}],
+  scripts: [{src: 'https://plausible.io/js/plausible.js', async: true, defer: true, 'data-domain': 'plausible.io'}],
   themeConfig: {
-    disableDarkMode: true,
-        algolia: {
+    colorMode: {disableSwitch: true},
+    algolia: {
       apiKey: '6c8274af5bc972f5ca4fad48f08eb4d9',
       indexName: 'plausible',
     },
@@ -20,13 +20,13 @@ module.exports = {
         href: 'https://plausible.io/',
         target: '_self',
       },
-      links: [
+      items: [
         {
           href: '/',
           label: 'Docs',
           position: 'left',
           target: '_self',
-          activeBasePath: '/'
+          activeBasePath: '/docs'
         },
         {
           href: 'https://github.com/plausible/docs',
@@ -51,7 +51,7 @@ module.exports = {
             },
             {
               label: 'Study the documentation',
-              to: 'https://docs.plausible.io/',
+              to: 'https://plausible.io/docs',
             },
           ],
         },
@@ -93,7 +93,7 @@ module.exports = {
             },
             {
               label: 'Status',
-              href: 'https://plausible.instatus.com/',
+              href: 'https://plausible.io/status',
             },
           ],
         },
@@ -107,7 +107,6 @@ module.exports = {
       {
         docs: {
           routeBasePath: '/',
-          homePageId: 'introduction',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
             'https://github.com/plausible/docs/edit/master/',

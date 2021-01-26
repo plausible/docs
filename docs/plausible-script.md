@@ -40,11 +40,13 @@ Thanks to the members of our community, there are now Plausible Analytics commun
 
 ## Verify if the script is installed on your site
 
-After you've added the Plausible Analytics script to the HTML of your website, you should see the script installed on your site. You can verify this by viewing the HTML of your website in your favorite web browser.
+After you've added the Plausible Analytics script to the HTML of your website, you should see the script installed on your site. 
 
-In a web browser such as Firefox, visit your website, right-click anywhere on the page and choose "**View Page Source**". Then press `cmd+f` on a Mac or `ctrl+f` on Linux and Windows to search. Type `plausible` to search for the Plausible Analytics script.
+You can load your website, open the browser inspector (press F12 on Firefox), and ensure that the Plausible Analytics script is loading in the "Network" tab.
 
-You should see the Plausible Analytics tracking script in the source code of your website. If you cannot see the script, please double check if you've inserted it correctly. Contact **hello@plausible.io** if the problem persists.
+Alternatively, you can verify this by viewing the HTML of your site in your favorite browser. In a browser such as Firefox, visit your website, right-click anywhere on the page and choose "**View Page Source**". Then press `cmd+f` on a Mac or `ctrl+f` on Linux and Windows to search. Type `plausible` to search for the Plausible Analytics script.
+
+You should see the Plausible Analytics tracking script in the source code of your website. If you cannot see the script, please double check if you've inserted it correctly.
 
 ## Verify that the stats are being tracked
 
@@ -57,6 +59,8 @@ If you don't see the green blinking dot, there's nothing to worry about. It just
 <img alt="Listening for incoming page views" src={useBaseUrl('img/waiting-for-pageview.png')} />
 
 Once the first page view comes through, you'll be automatically taken to the stats dashboard with graphs and numbers. This is an indication that the integration is working, congrats! Plausible Analytics is now tracking your website statistics while preserving the privacy of your visitors.
+
+Contact **hello@plausible.io** if you failed to verify that our script has been installed properly or if you cannot see any stats despite having visitors.
 
 :::note
 You're running Plausible on localhost? Our script automatically disables itself when running on localhost as the majority of people don't want those stats to be counted.

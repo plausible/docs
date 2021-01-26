@@ -16,11 +16,13 @@ We offer a quick and easy way to serve the Plausible Analytics script from your 
 
 See [full details on serving the script as a first party connection from your domain name](custom-domain.md).
 
-## Enable email reports and notifications for traffic spikes
+## Enable email/Slack reports and notifications for traffic spikes
 
 You can decide to enable weekly (every Monday) and/or monthly (every 1st day of the month) reports to be sent directly via email. [See instructions here](email-reports.md).
 
 You can also enable traffic spike notifications to be sent directly via email. This will help notify you when your site has an unusually high number of current visitors. [See instructions here](traffic-spikes.md).
+
+And you can get the same reports and traffic spike notifications in Slack too. [See instructions here](slack-reports.md).
 
 ## Integrate with Search Console to get keyword phrases people find your site with
 

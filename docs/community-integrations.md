@@ -34,7 +34,7 @@ Alternatively, you can [integrate Plausible into your site manually](plausible-s
 
 ## NextJS 
 
-[NextJS](nextjs-integration.md): Simple integration for Plausible Aalytics and https://nextjs.org. Provides custom events functionality. Built and maintained by [4lejandrito](https://github.com/4lejandrito).
+[NextJS](nextjs-integration.md): Simple integration for Plausible Analytics and https://nextjs.org. Provides custom events functionality. Built and maintained by [4lejandrito](https://github.com/4lejandrito).
 
 ## Vue.js & Nuxt.js
 
@@ -66,5 +66,9 @@ Docusaurus: Check out our [Docusaurus integration page](docusaurus-integration.m
 ## Grav
 
 [Grav](https://github.com/iainsgillis/grav-plugin-plausible): Add Plausible Analytics to your [Grav CMS](https://getgrav.org/) site and configure it from the admin panel. Built and maintained by [Iain Gillis](https://www.iainsgillis.com).
+
+## Neos CMS
+
+[Neos CMS](https://github.com/CarbonPackages/Carbon.Plausible): Add Plausible Analytics to your [Neos](https://www.neos.io/) site. Built and maintained by [Jon Uhlmann](https://github.com/jonnitto).
 
 Let us know about any other integrations that you've built and we will feature them. Thanks for your support!

@@ -1,0 +1,19 @@
+---
+title: Navigate the dashboard using keyboard shortcuts
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+Plausible Analytics aims to give you easy to understand and quick access to useful insights so you can focus on your website. One way you can navigate and analyze your Plausible dashboard even faster is by using keyboard shortcuts. These are the keyboard shortcuts that we do support.
+
+| Key       | Action     | 
+| :------------- | :----------- | 
+| D | Today | 
+| R | Realtime | 
+| W | Last 7 days | 
+| M | Month to Date | 
+| Y | Last 12 months | 
+| C | Custom range | 
+| Left Arrow | Previous period | 
+| Right Arrow | Following period |
+| Esc | Clear all filters |

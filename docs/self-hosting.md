@@ -3,7 +3,7 @@ title: Getting started
 ---
 
 :::note
-This section is for self-hosting our analytics on your server and managing your infrastructure (installation, maintenance, upgrades, server capacity, uptime, backup and so on). This is different from Plausible Analytics Cloud where we manage everything for your ease and convenience.  
+This section is for self-hosting our analytics on your server and managing your infrastructure (installation, maintenance, upgrades, server capacity, uptime, backup and so on). This is different from Plausible Analytics Cloud where we manage everything for your ease and convenience.
 :::
 
 Plausible Analytics is designed to be self-hosted via Docker. You don't have to be a Docker expert
@@ -31,9 +31,9 @@ as an internal API and therefore schema changes are not considered a breaking ch
 
 ## Requirements
 
-The only thing you need to install Plausible Analytics is a server with Docker installed. For the Plausible Cloud
-instance we use [Digital Ocean](https://m.do.co/c/91569eca0213) (affiliate link) but any hosting provider works. If
-your server doesn't come with Docker pre-installed, you can follow [their docs](https://docs.docker.com/get-docker/) to install it.
+The only thing you need to install Plausible Analytics is a server with Docker installed. The server must have a CPU with x86_64 architecture
+and support for SSE 4.2 instructions. For the Plausible Cloud instance we use [Digital Ocean](https://m.do.co/c/91569eca0213) (affiliate link)
+but any hosting provider works. If your server doesn't come with Docker pre-installed, you can follow [their docs](https://docs.docker.com/get-docker/) to install it.
 
 ## Up and running
 
@@ -56,7 +56,7 @@ $ cd hosting-master
 
 In the downloaded directory you'll find two important files:
 * `docker-compose.yml` - installs and orchestrates networking between your Plausible server, Postgres database, Clickhouse database (for stats), and an SMTP server. It comes with sensible defaults that are ready to go, although you're free to tweak the settings if you wish.
-* `plausible-conf.env` - configures the Plausible server itself. Full configuration options are documented [here](/self-hosting-configuration).
+* `plausible-conf.env` - configures the Plausible server itself. Full configuration options are documented [here](self-hosting-configuration.md).
 
 ### 2. Add required configuration
 
@@ -86,7 +86,7 @@ When you run this command for the first time, it does the following:
 
 You can now navigate to `http://{hostname}:8000` and see the login screen.
 
-> Something not working? Please reach out on our [forum](https://github.com/plausible/analytics/discussions) for troubleshooting.
+> Something not working? Please reach out on our [forum](https://github.com/plausible/analytics/discussions/categories/self-hosted-support) for troubleshooting.
 
 The Plausible server itself does not perform SSL termination. It only runs on unencrypted HTTP.  If you want to run on HTTPS you also need to set up a reverse proxy in front of the server. We have instructions and examples of how to do that below.
 

@@ -4,7 +4,11 @@ title: Custom event goals
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-If you want to track custom event goals like button clicks or form completions, you have to trigger these custom events from your website using JavaScript. Here are the steps you need to take to do that:
+:::note
+If you use the Custom Events feature, then these count towards your billable monthly pageviews.
+:::
+
+If you want to track custom event goals like button clicks or form completions, you have to trigger these custom events from your website using JavaScript. Here are the steps you need to take to do that.
 
 ## 1. Trigger custom events with JavaScript on your site
 

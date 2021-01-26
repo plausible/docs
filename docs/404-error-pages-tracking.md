@@ -6,6 +6,10 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <img alt="How to track 404 error pages" src={useBaseUrl('img/track-404-error-pages.jpg')} />
 
+:::note
+If you use the 404 error pages tracking feature, then these count towards your billable monthly pageviews.
+:::
+
 Tracking 404 error pages is essential for many site owners and Plausible helps you automate this process. With our "**404 Error Pages Tracking**" you can:
 
 * Get an easy overview of which 404 pages are accessed by your visitors
