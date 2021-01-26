@@ -1,5 +1,5 @@
 ---
-title: Opt out and exclude yourself from the analytics
+title: Opt out and exclude your own visits from the analytics
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
