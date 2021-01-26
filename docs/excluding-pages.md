@@ -10,7 +10,7 @@ Alternatively, you can also manually exclude specific pages from being tracked. 
 
 ## 1. Change the Plausible script on your site
 
-In order to manually exclude specific pages from being tracked, you need to change your Plausible script snippet `src` attribute from `https://plausible.io/js/plausible.js` to `https://plausible.io/js/plausible.exclusions.js`
+To manually exclude specific pages from being tracked, you need to change your Plausible script snippet `src` attribute from `https://plausible.io/js/plausible.js` to `https://plausible.io/js/plausible.exclusions.js`
 
 The new snippet will look like this (make sure to change the `data-domain` attribute to the domain you added to your Plausible account):
 
@@ -20,9 +20,9 @@ The new snippet will look like this (make sure to change the `data-domain` attri
 
 You need to place your Plausible Analytics tracking script code into the Header (`<head>`) section of your site. Place the tracking script within the `<head> … </head>` tags. Do this for all the websites where you'd like to use page-tracking exclusions. 
 
-This is the only tracking script you need. You don't need to keep the default script. Your stats will keep tracking without intteruption and you will not lose any of your old data.
+This is the only tracking script you need. You don't need to keep the default script. Your stats will keep tracking without interruption and you will not lose any of your old data.
 
-You do not have to use exclusively the `exclusions` script type. You can chain various script types, for example:
+You do not have to use the `exclusions` script type exclusively. You can chain various script types, for example:
 
 ```html
 <script async defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.hash.exclusions.outbound-links.js"></script>
@@ -95,6 +95,6 @@ This exclusion method currently does not support filtering out specific page [ha
 
 You can test your page-specific filter by:
 
-* Visiting a page of your website that you excluded, and ensuring views for it don't reach your Plausible dashboard.
+* Visiting a page of your website that you excluded and ensuring views for it don't reach your Plausible dashboard.
 
-* Alternatively, after loading a page, you can check the browser console (press F12 on Firefox or Chrome and then click the "Console" tab). If you've entered your pages correctly and are on the excluded page, you should see a message saying "Ignoring event in exclusion". You may need to ensure the "Warnings" filter (in the top right in Firefox, and top-center under a dropdown in Chrome) is enabled before this message is visible.
+* Alternatively, after loading a page, you can check the browser console (press F12 on Firefox or Chrome and then click the "Console" tab). If you've entered your pages correctly and are on the excluded page, you should see a message saying "Ignoring event in exclusion". You may need to ensure the "Warnings" filter (in the top right in Firefox and top-center under a dropdown in Chrome) is enabled before this message is visible.
