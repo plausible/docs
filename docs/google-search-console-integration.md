@@ -8,8 +8,6 @@ In 2012, [Google stopped including](https://webmasters.googleblog.com/2012/03/up
 
 However, you can still access your search terms by setting up your website on Google Search Console. Once you’ve done that, you can enable the Google Search Console integration in Plausible Analytics to get all of your important search results stats under one roof.
 
-_Note that we don’t yet have an integration with Bing Webmaster Tools. You can track the status of the integration [here](https://plausible.nolt.io/26)._
-
 Here’s how you can add your site to Google Search Console and then integrate the Search Console data into your Plausible Analytics dashboard:
 
 ## Add your site to the Google Search Console
@@ -72,7 +70,9 @@ Search query data is not live. It is delayed by approximately 24-36 hours even o
 
 So if you go back two days in your Plausible Analytics dashboard and click on Google in the referral sources you should be able to see the search queries for that day. We get the search query data directly from Google Search Console so as soon as they show up there they show up in Plausible Analytics too.
 
+:::note
 Note that "**Top Sources**" will only show keywords that have sent visitors to your site. We do not display keywords that have had impressions in Google's search results but no clicks to your site. Search phrases and keywords must have at least one click for them to show up in Plausible.
+:::
 
 ### Search query number doesn't add up to the total number of Google visitors
 
