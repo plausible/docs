@@ -17,19 +17,33 @@ Here's how to integrate Plausible Analytics with your WordPress website and get 
 * Excludes admin users from having their visits and page views recorded out of the box (but you can disable this in case you want to track your visits)
 * Full support for [self-hosted instances of Plausible](self-hosting.md)
 
+## Create your Plausible Analytics account
+
+To use our WordPress plugin, you need to have a Plausible Analytics account. [Sign up for an account on our website](register-account.md) and [add the websites you'd like to track](add-website.md). Then you're ready to go to your WordPress dashboard.
+
 ## Install our WordPress plugin
 
 You can install the Plausible Analytics plugin in the "**Plugins**" section in the left-hand side navigation within your WordPress dashboard. 
 
-Click on "**Add New**", in the search field in the top right, search for the name of the plugin and click on the "**Install Now**" button. 
+Click on "**Add New**", in the search field in the top right, search for the name of the plugin ([Plausible Analytics](https://wordpress.org/plugins/plausible-analytics/)) and click on the "**Install Now**" button. 
 
 After the installation is finished, click on the "**Activate**" button.
 
 "**Plausible Analytics**" will now show up in the "**Settings**" section in the left-hand side navigation within your WordPress dashboard. Click on it to explore the different options available.
 
+## Enable the custom domain feature (optional)
+
+If you'd like to serve our script as a first party connection from your subdomain (such as plausible.yourdomain.com or stats.yourdomain.com), you need to enable the custom domain feature in your Plausible Analytics account. You can [see the instructions here](custom-domain.md).
+
+After you've completed the setup process on our website, you can then switch on the custom domain feature in our WordPress plugin too.
+
+## Track analytics for administrator 
+
+By default, our WordPress plugin excludes your own visits from being counted in the stats. However, if you'd like to count your own visits, you can enable the tracking for yourself too.
+
 ## How to track 404 page errors with the WordPress plugin
 
-404 error pages won't show up automatically. You'll have to configure the goal for them to show up on your dashboard.
+404 error pages won't show up automatically in your Plausible dashboard. You'll have to configure the goal for them to show up.
 
 To configure a goal, go to your website's settings in your Plausible Analytics account and visit the "**Goals**" section. You should see a prompt to add a goal.
 
@@ -47,7 +61,7 @@ Click on "**404**" to see the full list of all visits on all error pages and hav
 
 ## How to track outbound link clicks with the WordPress plugin
 
-Outbound link clicks won’t show up automatically. You’ll have to configure the goal for them to show up on your dashboard.
+Outbound link clicks won’t show up automatically in your Plausible dashboard. You’ll have to configure the goal for them to show up.
 
 To configure a goal, go to your website’s settings in your Plausible Analytics account and visit the "**Goals**" section. You should see a prompt to add a goal.
 
