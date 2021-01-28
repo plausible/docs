@@ -6,7 +6,7 @@ Thanks to the members of our community, there are now Plausible Analytics integr
 
 Note that these integrations are community maintained and therefore we take no responsibility for them. Check the individual integration to see whether it's up to date and supports the features that you need. 
 
-Alternatively, you can [integrate Plausible into your site manually](plausible-script.md).
+You can also take a look at our integration guides for [WordPress](wordpress-integration.md), [Ghost](ghost-integration.md) and [other popular platforms](integration-guides.md). Alternatively, you can [integrate Plausible into your site manually](plausible-script.md).
 
 ## GatsbyJS
 
