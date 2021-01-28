@@ -137,5 +137,5 @@ client IP is not forwarded to the Plausible server, it cannot detect visitor cou
 In our hosting repo, you'll find useful example configurations in case you're already running [Nginx](https://github.com/plausible/hosting/tree/master/reverse-proxy#nginx) or [Traefik 2](https://github.com/plausible/hosting/tree/master/reverse-proxy#traefik-2).
 
 :::note
-Self-hosting our analytics product is free as in beer. You only need to pay for your server and whatever cost there is associated with running a server. You never have to pay any fees to us, only to your cloud server provider. If you choose to self-host Plausible you can [become a sponsor](https://github.com/sponsors/plausible) and support Plausible with a donation.
+Self-hosting our analytics product is free as in beer. You only need to pay for your server and whatever cost there is associated with running a server. You never have to pay any fees to us, only to your cloud server provider. If you choose to self-host Plausible you can [become a sponsor](https://github.com/sponsors/plausible) which is a great way to give back to the community and to contribute to the long-term sustainability of the project. Simply put, we treat sponsors like paying customers which means you can receive guaranteed priority support.
 :::
