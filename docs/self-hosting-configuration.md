@@ -3,7 +3,7 @@ title: Configuration options
 ---
 
 :::note
-This section is for self-hosting our analytics on your server and managing your infrastructure (installation, maintenance, upgrades, server capacity, uptime, backup and so on). This is different from Plausible Analytics Cloud where we manage everything for your ease and convenience.  
+This section is for self-hosting our analytics on your server and managing your infrastructure (installation, maintenance, upgrades, server capacity, uptime, backup and so on). This is different from Plausible Analytics Cloud where we manage everything for your ease and convenience.
 :::
 
 When running a Plausible release, the following configuration parameters can be supplied as environment variables.
@@ -27,7 +27,7 @@ Following are the variables that can be used to configure the availability of th
 
 | Parameter            | Default     | Description                                                                                                                                                                                         |
 |----------------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| BASE_URL             | http://localhost:8000 | The hosting url of the server, used for URL generation. In production systems, this should be your ingress host.         |
+| BASE_URL             | --          | The hosting url of the server, used for URL generation. In production systems, this should be your ingress host. |
 | PORT                 | 8000        | The port on which the server is available.                                                                                                                                                          |
 | SECRET_KEY_BASE      | --          | An internal secret key used by [Phoenix Framework](https://www.phoenixframework.org/). Follow the [instructions](https://hexdocs.pm/phoenix/Mix.Tasks.Phx.Gen.Secret.html#content) to generate one. |
 | DISABLE_AUTH         | false       | Disables authentication completely, no registration, login will be shown.                                                                                                                           |
