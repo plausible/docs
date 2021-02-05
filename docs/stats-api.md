@@ -44,8 +44,7 @@ Calls made over plain HTTP will fail. API requests without authentication will a
 Each request must be authenticated with an API key using the Bearer Token method. You can obtain an API key for your account by going to your user
 settings page [plausible.io/settings](https://plausible.io/settings).
 
-The easiest way to explore the API is by using our Postman collection. Just define your `TOKEN` and `SITE_ID` variables and you'll have an exectuable API reference
-ready to go.
+The easiest way to explore the API is by using our Postman collection. Just define your `TOKEN` and `SITE_ID` variables and you'll have an executable API reference ready to go.
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/32c111c4f6d2cccef9dd)
 
@@ -82,7 +81,7 @@ more depth. Here's the full list of properties we collect automatically:
 | visit:device          | Desktop                       | Device type. Possible values are `Desktop`, `Laptop`, `Tablet` and `Mobile`                                                           |
 | visit:browser         | Chrome                        | Name of the browser vendor. Most popular ones are `Chrome`, `Safari` and `Firefox`                                                    |
 | visit:browser_version | 88.0.4324.146                 | Version number of the browser used by the visitor                                                                                     |
-| visit:os              | Mac                           | Name of the operating system. Most popular ones are `Mac`, `Windows`, `iOS` and `Android`. Linux distrubtions are reported separately |
+| visit:os              | Mac                           | Name of the operating system. Most popular ones are `Mac`, `Windows`, `iOS` and `Android`. Linux distributions are reported separately |
 | visit:os_version      | 10.6                          | Version number of the operating system used by the visitor                                                                            |
 | visit:country         | US                            | ISO 3166-1 alpha-2 code of the visitor country                                                                                        |
 
