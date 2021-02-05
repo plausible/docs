@@ -71,4 +71,9 @@ Docusaurus: Check out our [Docusaurus integration page](docusaurus-integration.m
 
 [Neos CMS](https://github.com/CarbonPackages/Carbon.Plausible): Add Plausible Analytics to your [Neos](https://www.neos.io/) site. Built and maintained by [Jon Uhlmann](https://github.com/jonnitto).
 
+## Statamic
+
+[Statamic](https://statamic.com/addons/visuellverstehen/plausible): Let your [Statamic](https://statamic.com) users easily navigate to their shared Plausible link from inside the control panel. Built and maintained by [visuellverstehen](https://visuellverstehen.de).
+
+
 Let us know about any other integrations that you've built and we will feature them. Thanks for your support!
