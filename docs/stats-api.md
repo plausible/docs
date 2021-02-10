@@ -59,7 +59,7 @@ settings in Plausible and grab the value of the `domain` field.
 ### Time periods
 
 The options are identical for each endpoint that supports configurable time periods. Each period
-is relative to a `date` parameter. When not specified, the `date` field defaults to `today(site.timezone)`.
+is relative to a `date` parameter. The date should follow the standard ISO-8601 format. When not specified, the `date` field defaults to `today(site.timezone)`.
 All time calculations on our backend are done in the timezone that the site is configured in.
 
 * `12mo,6mo` - Last n calendar months relative to `date`
