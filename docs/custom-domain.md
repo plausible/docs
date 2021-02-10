@@ -28,7 +28,9 @@ Some domain registrars such as GoDaddy don't accept CNAME values with a dot at t
 
 ## It may take up to 4 hours for the DNS changes to propagate
 
-In most cases this process takes a few minutes but it may take up to 4 hours for the DNS changes to propagate and for us to obtain an SSL certificate for your subdomain. 
+In most cases this process takes a few minutes but it may take up to 4 hours for the DNS changes to propagate and for us to obtain an SSL certificate for your subdomain.
+
+You can check whether the CNAME record is set up correctly by entering your subdomain (`yoursubdomain.yourdomain.com`) in an [online CNAME lookup tool](https://www.nslookup.io/cname-lookup/).
 
 The setup is completed and ready to use when your subdomain loads our JavaScript file (`yoursubdomain.yourdomain.com/js/index.js`). Keep using the default snippet on your site until your subdomain loads the JavaScript file.
 
