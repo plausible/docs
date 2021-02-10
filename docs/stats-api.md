@@ -53,6 +53,9 @@ The easiest way to explore the API is by using our Postman collection. Just defi
 Querying the Plausible API will feel familiar if you have used time-series databases before. You cannot query individual records from
 our stats database. You can only request aggregated metrics over a certain time period.
 
+Each request requires a `site_id` parameter which is the domain of your site as configured in Plausible. If you're unsure, navigate to your site
+settings in Plausible and grab the value of the `domain` field.
+
 ### Time periods
 
 The options are identical for each endpoint that supports configurable time periods. Each period
@@ -87,7 +90,7 @@ more depth. Here's the full list of properties we collect automatically:
 
 ### Filtering
 
-Most endpoints support a `filter` query parameter to drill down into your data. Currently, only simple equality filters are supported.
+Most endpoints support a `filters` query parameter to drill down into your data. Currently, only simple equality filters are supported.
 
 An equality filter can be specified with url-encoded `==`. Filters can be joined together with `;` which applies a logical
 `AND` operator to the filters. Here's a filter expression combining two filters:
@@ -98,7 +101,7 @@ visit:browser==Firefox;visit:country==Estonia
 
 ## Endpoints
 
-### GET /api/v1/realtime/visitors
+### GET /api/v1/stats/realtime/visitors
 
 This endpoint returns the number of current visitors on your site. A current visitor is defined as a visitor who triggered a pageview on your site
 in the last 5 minutes.
@@ -112,7 +115,13 @@ curl https://plausible.io/api/v1/realtime/visitors?site_id=$SITE_ID
 21
 ```
 
-This endpoint is very simplistic. There are no options or filters you can provide.
+#### Parameters
+<hr / >
+
+**site_id** <Required />
+
+Domain of your site on Plausible.
+<hr / >
 
 ### GET /api/v1/stats/aggregate
 
@@ -145,6 +154,12 @@ curl https://plausible.io/api/v1/stats/aggregate?site_id=$SITE_ID&period=6mo&met
 
 
 #### Parameters
+<hr / >
+
+**site_id** <Required />
+
+Domain of your site on Plausible.
+
 <hr / >
 
 **period** <Required />
@@ -212,6 +227,12 @@ curl https://plausible.io/api/v1/stats/timeseries?site_id=$SITE_ID&period=6mo
 
 
 #### Parameters
+<hr / >
+
+**site_id** <Required />
+
+Domain of your site on Plausible.
+
 <hr / >
 
 **period** <Required />
