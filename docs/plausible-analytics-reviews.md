@@ -16,6 +16,8 @@ Here's a list of some of the people and organizations who use Plausible Analytic
 
 * [Migrating away from Google Analytics](https://freshman.tech/google-analytics-to-plausible/) by Ayooluwa Isaiah
 
+* [Plausible Analytics on RubyApks](https://rubyapks.blogspot.com/2021/02/plausible-analytics.html) by Dan Tunmibi
+
 * [Plausible Analytics Review](https://www.garron.blog/posts/plausible-review.html) by Guillermo Garron
 
 * [Leaving Google Analytics is Finally Plausible](https://blog.elementary.io/leaving-google-analytics-is-finally-plausible/) by Daniel Foré
