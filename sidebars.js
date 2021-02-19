@@ -1,12 +1,7 @@
 module.exports = {
   someSidebar: {
     "Welcome": ['introduction'],
-    "Get Started": ['register-account', 'add-website', 'plausible-script', 'your-plausible-experience',
-                    {
-        type: 'category',
-        label: 'Integration guides',
-        items: ['integration-guides', 'wordpress-integration', 'ghost-integration', 'webflow-integration', 'squarespace-integration', 'wix-integration', 'discourse-integration', 'docusaurus-integration', 'carrd-integration', 'shopify-integration', 'hugo-integration', 'spa-support', 'hash-based-routing', 'community-integrations'],      },
-                ],
+    "Get Started": ['register-account', 'add-website', 'plausible-script', 'your-plausible-experience', 'integration-guides'],
     "Website Settings": ['website-settings', 'general', 'visibility', 'shared-links', 'goal-conversions', 'google-search-console-integration', 'email-reports', 'traffic-spikes', 'slack-reports', 'custom-domain', 'excluding-pages', 'export-stats', 'reset-site-data', 'delete-site-data', 'excluding'],
     "Dashboard": ['guided-tour',
     {
