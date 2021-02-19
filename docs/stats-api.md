@@ -107,7 +107,7 @@ This endpoint returns the number of current visitors on your site. A current vis
 in the last 5 minutes.
 
 ```bash title="Try it yourself"
-curl https://plausible.io/api/v1/realtime/visitors?site_id=$SITE_ID
+curl https://plausible.io/api/v1/stats/realtime/visitors?site_id=$SITE_ID
   -H "Authorization: Bearer ${TOKEN}"
 ```
 
