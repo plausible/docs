@@ -32,11 +32,11 @@ We offer a quick and easy way to serve the Plausible Analytics script from your 
 
 ### Check out integration guides for popular site builders and CMSs
 
-Installing Plausible Analytics on a site can be a slightly different process depending on what tools you're using. [We've put together several integration guides](integration-guides.md) that cover popular website builders and content management systems (CMS) such as WordPress and Ghost. These can help you set up and start counting your site visitors in no time.
+Installing Plausible on a site can be a slightly different process depending on what tools you're using. 
 
-### You can also use our community integrations
+We've put together several integration guides that cover popular website builders and content management systems (CMS) such as WordPress and Ghost. Thanks to the members of our community, there are also community integrations and plugins for several frameworks such as Hugo and GatsbyJS. These can help you set up and start counting your site visitors in no time. 
 
-Thanks to the members of our community, there are now Plausible Analytics community integrations and plugins for several frameworks such as Hugo and GatsbyJS. See the [full list](community-integrations.md).
+Here's [the full list of all integrations and guides](integration-guides.md).
 
 ## Verify if the script is installed on your site
 
