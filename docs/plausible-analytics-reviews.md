@@ -14,6 +14,8 @@ Plausible Analytics is trusted by 2,000+ subscribers to deliver their website an
 
 * [Why choose Plausible for an open source alternative to Google Analytics](https://opensource.com/article/21/2/plausible) by Ben Rometsch on Opensource.com
 
+* [Taking on the Major Players, Plausible Analytics Offers an Alternative, Privacy-Conscious Stats Service](https://wptavern.com/taking-on-the-major-players-plausible-analytics-offers-an-alternative-privacy-conscious-stats-service) by Justin Tadlock of WordPress Tavern
+
 * [Everyday Rails now uses Plausible for analytics](https://everydayrails.com/2020/12/03/plausible-analytics.html) by Aaron Sumner of Everyday Rails
 
 * [Getting Started with Plausible](https://www.mattmcadams.com/thoughts/get-started-with-plausible/) by Matthew McAdams
