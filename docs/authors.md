@@ -23,6 +23,6 @@ In addition to the full-time team, Plausible Analytics is made possible by an in
 
 * [Vignesh Joglekar](https://vigneshjoglekar.com/?utm_medium=plug&utm_source=plausible) (Vigasaurus) for the help on making the Plausible Analytics dark theme come alive, implementing client-side exclusions, expanding the top pages report, and much more.
 
-* To those who build and maintain Plausible Analytics integrations. [Full list here](community-integrations.md).
+* To those who build and maintain Plausible Analytics integrations with various frameworks. [Full list here](integration-guides.md).
 
 Thank you to everyone for contributing to Plausible Analytics!
