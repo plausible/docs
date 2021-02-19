@@ -12,7 +12,9 @@ Alternatively, you can [integrate Plausible into your site manually](plausible-s
 
 ## WordPress
 
-[How to add the script to your WordPress site](wordpress-integration.md)
+We have a WordPress plugin that makes the integration with WordPress nice and easy.
+
+[Here's how to get started with our WordPress plugin](https://plausible.io/wordpress-analytics-plugin)
 
 ## Ghost
 
