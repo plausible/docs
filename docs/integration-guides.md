@@ -2,13 +2,11 @@
 title: Integration guides
 ---
 
-Learn how to get Plausible Analytics up and running on your site.
+Installing Plausible on a site can be a slightly different process depending on what tools you're using. We've put together several guides that cover popular website builders and content management systems (CMS). These can help you set up and start counting your site visitors in no time.
 
-Installing Plausible Analytics on a site can be a slightly different process depending on what tools you're using. We've put together several guides that cover popular website builders and content management systems (CMS). These can help you set up and start counting your site visitors in no time.
+Thanks to the members of our community, there are also integrations and plugins for various frameworks. Let us know about any other integrations that you've built and we will feature them. Thanks for your support!
 
-## Paste the script into the header section
-
-Alternatively, you can [integrate Plausible into your site manually](plausible-script.md) by pasting the Plausible Analytics tracking script code into the Header (`<head>`) section of your site.
+Here's how to get Plausible Analytics up and running on your site.
 
 ## WordPress
 
@@ -55,14 +53,6 @@ We have a WordPress plugin that makes the integration with WordPress nice and ea
 ## Hash-based routing
 
 [Hash-based routing](hash-based-routing.md)
-
-## You can also use our community integrations
-
-Thanks to the members of our community, there are now Plausible Analytics community integrations and plugins for several frameworks. 
-
-Note that these integrations are community maintained and therefore we take no responsibility for them. Check the individual integration to see whether it's up to date and supports the features that you need. 
-
-Let us know about any other integrations that you've built and we will feature them. Thanks for your support!
 
 ## GatsbyJS
 
@@ -130,5 +120,9 @@ Docusaurus: Check out our [Docusaurus integration page](docusaurus-integration.m
 ## Statamic
 
 [Statamic](https://statamic.com/addons/visuellverstehen/plausible): Let your [Statamic](https://statamic.com) users easily navigate to their shared Plausible link from inside the control panel. Built and maintained by [visuellverstehen](https://visuellverstehen.de).
+
+## Paste the script into the header section
+
+Alternatively, you can [integrate Plausible into your site manually](plausible-script.md) by pasting the Plausible Analytics tracking script code into the Header (`<head>`) section of your site.
 
 Don't see your favorite tool in this list? We're always working on new guides so please [add a request](https://github.com/plausible/docs/issues/new) or contribute to this list with the guide to your favorite tool. Thanks!
