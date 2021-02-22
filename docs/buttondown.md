@@ -20,7 +20,9 @@ Select `Custom event` as the goal trigger and enter this exact name: `Subscribe`
 
 <img alt="Add Subscribe goal" src={useBaseUrl('img/add-a-subscribe-goal.png')} />
 
-Next, click on the "**Add goal**" button and you’ll be taken back to the Goals page. After you've completed this process, all the newsletter signups will start being tracked and will be displayed in the "**Goal Conversions**" report of your Plausible Analytics dashboard. You'll see "**Subscribe**" goal as soon as the first subscriber has been tracked.
+Next, click on the "**Add goal**" button and you’ll be taken back to the Goals page. After you've completed this process, all the newsletter signups will start being tracked and will be displayed in the "**Goal Conversions**" report of your Plausible Analytics dashboard. 
+
+You'll see "**Subscribe**" goal as soon as the first subscriber has been tracked. That's all you need to do. Plausible will automatically record new goals (including which page your subscriber is on) whenever you get a new subscriber.
 
 ## How to track outbound link clicks
 
@@ -32,10 +34,16 @@ Select `Custom event` as the goal trigger and enter this exact name: `Outbound L
 
 <img alt="Add Outbound Link Click goal" src={useBaseUrl('img/outbound-link-click-goal.png')} />
 
-Next, click on the "**Add goal**" button and you’ll be taken back to the Goals page. After you've completed this process, all the external link clicks will start being tracked and will be displayed in the "**Goal Conversions**" report of your Plausible Analytics dashboard. You'll see "**Outbound Link: Click**" goal as soon as the first external link click has been tracked.
+Next, click on the "**Add goal**" button and you’ll be taken back to the Goals page. After you've completed this process, all the external link clicks will start being tracked and will be displayed in the "**Goal Conversions**" report of your Plausible Analytics dashboard. 
+
+You'll see "**Outbound Link: Click**" goal as soon as the first external link click has been tracked. That's all you need to do. Plausible will automatically record new external link clicks.
 
 ## Verify that the stats are being tracked
 
 And that's it. You are now using Plausible Analytics to count your Buttondown archive stats including outbound link clicks and new subscribers. 
 
 Now you can go to your Buttondown site and verify whether Plausible Analytics script has been added and to your Plausible account to see whether the stats are being tracked. See here [how to verify the integration](plausible-script.md#verify-if-the-script-is-installed-on-your-site).
+
+The stats will look like this:
+
+<img alt="Plausible dashboard for your Buttondown newsletter" src={useBaseUrl('img/buttondown-dashboard.png')} />
