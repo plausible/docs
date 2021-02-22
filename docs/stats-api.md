@@ -66,6 +66,10 @@ All time calculations on our backend are done in the timezone that the site is c
 * `month` - The calendar month that `date` falls into
 * `30d,7d` - Last n days relative to `date`
 * `day` - Stats for the full day specified in `date`
+* `custom` - Provide a custom range in the `date` parameter.
+
+When using a custom range, the `date` parameter expects two ISO-8601 formatted dates joined with a comma as follows `?period=custom&date=2021-01-01,2021-01-31`.
+Stats will be returned for the whole date range inclusive of the start and end dates.
 
 ### Properties
 
@@ -197,32 +201,34 @@ curl https://plausible.io/api/v1/stats/timeseries?site_id=$SITE_ID&period=6mo
 ```
 
 ```json title="Response"
-[
+{
+  "results": [
     {
-        "date": "2020-08-01",
-        "value": 36085
+      "date": "2020-08-01",
+      "visitors": 36085
     },
     {
-        "date": "2020-09-01",
-        "value": 27688
+      "date": "2020-09-01",
+      "visitors": 27688
     },
     {
-        "date": "2020-10-01",
-        "value": 71615
+      "date": "2020-10-01",
+      "visitors": 71615
     },
     {
-        "date": "2020-11-01",
-        "value": 31440
+      "date": "2020-11-01",
+      "visitors": 31440
     },
     {
-        "date": "2020-12-01",
-        "value": 35804
+      "date": "2020-12-01",
+      "visitors": 35804
     },
     {
-        "date": "2021-01-01",
-        "value": 0
+      "date": "2021-01-01",
+      "visitors": 0
     }
-]
+  ]
+}
 ```
 
 
@@ -252,7 +258,133 @@ See [filtering](#filtering)
 Choose your reporting interval. Valid options are `date` (always) and `month` (when specified period is longer than one calendar month). Defaults to
 `month` for `6mo` and `12mo`, otherwise falls back to `date`.
 
+### GET /api/v1/stats/breakdown
+
+This endpoint allows you to breakdown your stats by some property. If you are familiar with SQL family databases, this endpoint corresponds to
+running `GROUP BY` on a certain property in your stats.
+
+Check out the [properties](#properties) section for a reference of all the properties you can use in this query.
+
+This endpoint can be used to fetch data for `Top sources`, `Top pages`, `Top countries` and similar reports.
+
+
+```bash title="Try it yourself"
+curl https://plausible.io/api/v1/stats/breakdown?site_id=$SITE_ID&period=6mo&property=visit:source&metrics=visitors,bounce_rate&limit=5 \
+  -H "Authorization: Bearer ${TOKEN}"
+```
+
+```json title="Response"
+{
+  "results": [
+    {
+        "bounce_rate": 49.0,
+        "source": "(Direct / None)",
+        "visitors": 94932
+    },
+    {
+        "bounce_rate": 75.0,
+        "source": "Hacker News",
+        "visitors": 22540
+    },
+    {
+        "bounce_rate": 58.0,
+        "source": "Google",
+        "visitors": 16909
+    },
+    {
+        "bounce_rate": 62.0,
+        "source": "Twitter",
+        "visitors": 7477
+    },
+    {
+        "bounce_rate": 56.0,
+        "source": "indiehackers.com",
+        "visitors": 4518
+    }
+  ]
+}
+```
+
+
+#### Parameters
+<hr / >
+
+**site_id** <Required />
+
+Domain of your site on Plausible.
+
+<hr / >
+
+**property** <Required />
+
+Which property to break down the stats by. Valid options are listed in the [properties](#properties) section above.
+
+<hr / >
+
+**period** <Required />
+
+See [time periods](#time-periods)
+
+<hr / >
+
+**metrics** <Optional />
+
+List of metrics to show for each item in breakdown. Valid options are `visitors`, `pageviews`, `bounce_rate` and `visit_duration`. If not
+specified, it will default to `visitors`.
+
+<hr / >
+
+**limit** <Optional />
+
+Limit the number of results. Defaults to 100.
+
+**page** <Optional />
+
+Number of the page, used to paginate results. Importantly, the page numbers start from 1 not 0.
+
+**filters** <Optional />
+
+See [filtering](#filtering)
+
+
 ## Examples of common queries
+
+### Top pages
+
+Let's say you want to show a similar report to the `Top pages` report in the Plausible UI. You can do this by calling the
+`/api/v1/stats/breakdown` endpoint and specify `event:page` as the property to group by.
+
+```bash title="Top pages"
+curl https://plausible.io/api/v1/stats/breakdown?site_id=$SITE_ID&period=6mo&property=event:page&limit=5
+  -H "Authorization: Bearer ${TOKEN}"
+```
+
+```json title="Response"
+{
+  "results": [
+    {
+      "page": "/",
+      "visitors": 94298
+    },
+    {
+      "page": "/blog/open-source-licenses",
+      "visitors": 18803
+    },
+    {
+      "page": "/plausible.io",
+      "visitors": 20485
+    },
+    {
+      "page": "/self-hosted-web-analytics",
+      "visitors": 22236
+    },
+    {
+      "page": "/sites",
+      "visitors": 32386
+    }
+  ]
+}
+```
 
 ### Number of visitors to a specific page
 
@@ -274,18 +406,45 @@ curl https://plausible.io/api/v1/stats/aggregate?site_id=$SITE_ID&period=6mo&fil
 
 ### Monthly traffic from Google
 
-As a second example, let's imagine we want to analyze our SEO efforts for the last year.
-To graph your traffic from Google over time, you can use the `timeseries` endpoint with a time period `12mo` and
+As a second example, let's imagine we want to analyze our SEO efforts for the last half year.
+To graph your traffic from Google over time, you can use the `timeseries` endpoint with a time period `6mo` and
 filter expression `visit:source==Google`.
 
 
 ```bash title="Monthly traffic from Google"
-curl https://plausible.io/api/v1/stats/timeseries?site_id=$SITE_ID&period=12mo&filters=visit:browser%3D%3DChrome \
+curl https://plausible.io/api/v1/stats/timeseries?site_id=$SITE_ID&period=6mo&filters=visit:browser%3D%3DChrome \
   -H "Authorization: Bearer ${TOKEN}"
 ```
 
 ```json title="Response"
-// response
+{
+  "response": [
+    {
+        "date": "2020-09-01",
+        "visitors": 2962
+    },
+    {
+        "date": "2020-10-01",
+        "visitors": 4974
+    },
+    {
+        "date": "2020-11-01",
+        "visitors": 5119
+    },
+    {
+        "date": "2020-12-01",
+        "visitors": 5397
+    },
+    {
+        "date": "2021-01-01",
+        "visitors": 7167
+    },
+    {
+        "date": "2021-02-01",
+        "visitors": 5802
+    }
+]
+}
 ```
 
 
