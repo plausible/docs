@@ -4,7 +4,7 @@ title: How to add the script to Buttondown
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-[Buttondown](https://buttondown.email/) is a minimal and elegant tool for producing newsletters. There's an easy integration with Plausible Analytics so you can track your Buttondown archives to see the traffic numbers, external link clicks and newsletter signups. 
+[Buttondown](https://buttondown.email/) is a minimal and elegant tool for producing newsletters. There's an easy integration with Plausible Analytics so you can track your Buttondown newsletter to see the traffic numbers of your archives, external link clicks and which of your archive pages drive the most new subscribers. 
 
 ## How to track newsletter signups
 
