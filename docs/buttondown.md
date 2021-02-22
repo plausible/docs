@@ -12,13 +12,13 @@ Newsletter signups won’t show up automatically in your Plausible dashboard. Yo
 
 To configure a goal, go to your website’s settings in your Plausible Analytics account and visit the "**Goals**" section. You should see a prompt to add a goal.
 
-<img alt="Add your first goal" src={useBaseUrl('img/add-a-subscribe-goal.png')} />
+<img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
 
 Click on the "**+ Add goal**" button to go to the goal creation form.
 
 Select `Custom event` as the goal trigger and enter this exact name: `Subscribe`.
 
-<img alt="Add Outbound Link Click goal" src={useBaseUrl('img/outbound-link-click-goal.png')} />
+<img alt="Add Subscribe goal" src={useBaseUrl('img/add-a-subscribe-goal.png')} />
 
 Next, click on the "**Add goal**" button and you’ll be taken back to the Goals page. After you've completed this process, all the newsletter signups will start being tracked and will be displayed in the "**Goal Conversions**" report of your Plausible Analytics dashboard. You'll see "**Subscribe**" goal as soon as the first subscriber has been tracked.
 
@@ -26,11 +26,7 @@ Next, click on the "**Add goal**" button and you’ll be taken back to the Goals
 
 Outbound link clicks won’t show up automatically in your Plausible dashboard. You’ll have to configure the goal for them to show up.
 
-To configure a goal, go to your website’s settings in your Plausible Analytics account and visit the "**Goals**" section. You should see a prompt to add a goal.
-
-<img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
-
-Click on the "**+ Add goal**" button to go to the goal creation form.
+To configure a goal, go to your website’s settings in your Plausible Analytics account and visit the "**Goals**" section like you just did above. Click on the "**+ Add goal**" button to go to the goal creation form.
 
 Select `Custom event` as the goal trigger and enter this exact name: `Outbound Link: Click`.
 
