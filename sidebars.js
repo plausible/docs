@@ -11,6 +11,7 @@ module.exports = {
       },
                   'top-pages', 'countries', 'devices', 'metrics-definitions', 'keyboard-shortcuts'],
     "Goal Conversions": ['pageview-goals', 'custom-event-goals', 'outbound-link-click-tracking', '404-error-pages-tracking'],
+    "API": ['stats-api'],
     "Account Settings": ['change-email', 'reset-password', 'dashboard-appearance', 'delete-account'],
     "Manage Subscription": ['trial-to-paid', 'subscription-plans', 'change-plan', 'cancel-subscription'],
     "Self-Hosting": ['self-hosting', 'self-hosting-configuration'],
