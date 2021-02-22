@@ -22,6 +22,10 @@ We have a WordPress plugin that makes the integration with WordPress nice and ea
 
 [How to add the script to your Webflow site](webflow-integration.md)
 
+## Buttondown
+
+[How to add the script to your Buttondown site](buttondown.md)
+
 ## Squarespace
 
 [How to add the script to your Squarespace site](squarespace-integration.md)
