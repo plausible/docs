@@ -123,7 +123,17 @@ Docusaurus: Check out our [Docusaurus integration page](docusaurus-integration.m
 
 ## Statamic
 
-[Statamic](https://statamic.com/addons/visuellverstehen/plausible): Let your [Statamic](https://statamic.com) users easily navigate to their shared Plausible link from inside the control panel. Built and maintained by [visuellverstehen](https://visuellverstehen.de).
+* [Statamic](https://statamic.com/addons/visuellverstehen/plausible): Let your [Statamic](https://statamic.com) users easily navigate to their shared Plausible link from inside the control panel. Built and maintained by [visuellverstehen](https://visuellverstehen.de).
+
+* [Plausible Wrapper](https://statamic.com/addons/jack-whiting/plausible): A wrapper around the Plausible API that fetches the analytics into your dashboard in a pretty way. Built and maintained by [Jack Whiting](https://jackwhiting.co.uk/).
+
+## Ruby
+
+* [Plausible API Ruby Gem](https://github.com/dailytics/plausible_api): This is a simple wrapper to read the Plausible API with Ruby. Built and maintained by [Dailytics](https://dailytics.com/).
+
+## Flatpak
+
+[Plausible Flatpak App](https://flathub.org/apps/details/com.cassidyjames.plausible): Linux app for Plausible. Built and maintained by [Cassidy James Blaede](https://cassidyjames.com/).
 
 ## Paste the script into the header section
 
