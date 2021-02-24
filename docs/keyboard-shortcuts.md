@@ -11,11 +11,12 @@ Plausible Analytics aims to give you easy to understand and quick access to usef
 | D | Today |
 | R | Realtime |
 | W | Last 7 days |
-| 3 | Last 30 days |
+| T | Last 30 days |
 | M | Month to Date |
-| 6 | Last 6 months |
+| S | Last 6 months |
 | Y | Last 12 months |
 | C | Custom range |
+| 1-9 | Swap to site #1-9 |
 | Left Arrow | Previous period |
 | Right Arrow | Following period |
 | Esc | Clear all filters |
