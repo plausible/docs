@@ -129,7 +129,7 @@ Docusaurus: Check out our [Docusaurus integration page](docusaurus-integration.m
 
 ## Ruby
 
-* [Plausible API Ruby Gem](https://github.com/dailytics/plausible_api): This is a simple wrapper to read the Plausible API with Ruby. Built and maintained by [Dailytics](https://dailytics.com/).
+[Plausible API Ruby Gem](https://github.com/dailytics/plausible_api): This is a simple wrapper to read the Plausible API with Ruby. Built and maintained by [Dailytics](https://dailytics.com/).
 
 ## Flatpak
 
