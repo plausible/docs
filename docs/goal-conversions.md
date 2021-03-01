@@ -10,11 +10,12 @@ Goals are actions that you want your users to take, for example, visit a specifi
 
 With this feature, you’ll be able to track the number of goals completed, the number of conversion and other statistics including referrer sources that are driving conversions.
 
-There are three types of goals in Plausible Analytics: 
+There are four types of goals in Plausible Analytics: 
 
 * [Pageview goals](pageview-goals.md) which allow you to measure how many people visit a specific page URL
 * [Custom event goals](custom-event-goals.md) which allow you to measure button clicks or form completions
 * [Outbound link clicks](outbound-link-click-tracking.md) which allow you to measure clicks on external links
+* [404 error pages tracking](404-error-pages-tracking.md) which allow you to measure page not found errors
 
 Click on the "**+ Add goal**" button to add your first goal.
 
