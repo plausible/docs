@@ -44,6 +44,14 @@ To minimize the amount of traffic that falls within the "Direct / None" category
 
 Shows the first page people view on your site.
 
+## Exit Pages
+
+Shows the last page people view on your site.
+
+## Exit Rate
+
+Shows how often people exit from a specific page. It's calculated as the number of exits divided by the number of total pageviews for that specific page.
+
 ## Countries
 
 Shows the list of countries your visitors are based in.
@@ -54,7 +62,11 @@ You can use goals to track desired actions people take on your site. Goals can b
 
 ## Outbound Link Clicks
 
-Automatically track the number of clicks on the external links. This feature is not enabled by default so you need to [follow these steps](outbound-link-click-tracking.md) to enable it for sites where you want to track clicks on external links
+Automatically track the number of clicks on the external links. This feature is not enabled by default so you need to [follow these steps](outbound-link-click-tracking.md) to enable it for sites where you want to track clicks on external links.
+
+## 404 Error Pages
+
+Automatically track the 404 error pages on your site. This feature is not enabled by default so you need to [follow these steps](404-error-pages-tracking.md) to enable it for sites where you want to track 404 error pages.
 
 ## Unique Conversions
 
