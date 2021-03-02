@@ -30,7 +30,7 @@ Here’s what you can discover on your Plausible Analytics dashboard:
 
 * See all the most visited pages on your site ranked by the number of unique visitors. You can click on the "**details**" button to see the full list with additional details. The number of pageviews and the bounce rates of the individual pages are included too. You can click on any page to drill down into that page. 
 
-* You can also see the traffic flow by looking at tne "**entry pages**" and "**exit pages**" reports. You can click on the "**details**" button to see the full list with additional details. For "**Entry pages**" details include visit duration for visits that started on a specific page and for "**Exit pages**" details include the exit rate percentage.
+* You can also see the traffic flow by looking at the "**entry pages**" and "**exit pages**" reports. You can click on the "**details**" button to see the full list with additional details. For "**Entry pages**" details include visit duration for visits that started on a specific page and for "**Exit pages**" details include the exit rate percentage.
 
 ## Countries
 
