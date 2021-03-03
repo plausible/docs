@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 In the "**Goals**" section of your website settings, Plausible Analytics gives you an option to specify and track goals. 
 
-Goals are actions that you want your users to take, for example, visit a specific page URL, sign up to a newsletter, click on the "**Download**" button, sign up for a trial account, click on an external link or complete the checkout form of your ecommerce store.
+Goals are actions that you want your users to take such as sign up to a newsletter, click on the "**Download**" button, sign up for a trial account, click on an external link or complete the checkout form of your ecommerce store.
 
 With this feature, you’ll be able to track the number of goals completed, the number of conversion and other statistics including referrer sources that are driving conversions.
 
