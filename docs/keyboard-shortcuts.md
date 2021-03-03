@@ -4,7 +4,9 @@ title: Navigate the dashboard using keyboard shortcuts
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Plausible Analytics aims to give you easy to understand and quick access to useful insights so you can focus on your website. One way you can navigate and analyze your Plausible dashboard even faster is by using keyboard shortcuts. These are the keyboard shortcuts that we do support.
+Plausible Analytics aims to give you easy to understand and quick access to useful insights so you can focus on your website. One way you can navigate and analyze your Plausible dashboard even faster is by using keyboard shortcuts. 
+
+We've tried to make Plausible as usable and accessibile as possible with just a keyboard. These are the keyboard shortcuts that we do support:
 
 | Key       | Action     |
 | :------------- | :----------- |
