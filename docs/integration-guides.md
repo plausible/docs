@@ -58,6 +58,10 @@ We have a WordPress plugin that makes the integration with WordPress nice and ea
 
 [Hash-based routing](hash-based-routing.md)
 
+## Google Tag Manager (GTM)
+
+Plausible can even be integrated using the Google Tag Manager. Add the Plausible snippet to the "**Custom HTML Tag**" and set the trigger to be "**All Pages**" if you want to count traffic on all of your pages. 
+
 ## GatsbyJS
 
 [GatsbyJS](https://www.gatsbyjs.org/packages/gatsby-plugin-plausible/): A Gatsby plugin for adding Plausible Analytics to your Gatsby site. Built and maintained by Curtis Cummings of [https://aquil.io/](https://aquil.io/).
