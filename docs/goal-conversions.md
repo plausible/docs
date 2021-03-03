@@ -8,7 +8,7 @@ In the "**Goals**" section of your website settings, Plausible Analytics gives y
 
 Goals are actions that you want your users to take such as sign up to a newsletter, click on the "**Download**" button, sign up for a trial account, click on an external link or complete the checkout form of your ecommerce store.
 
-With this feature, you’ll be able to track the number of goals completed, the number of conversion and other statistics including referrer sources that are driving conversions.
+With this feature, you’ll be able to track the number of conversions, conversion rate and other statistics including referrer sources that are driving conversions.
 
 There are four types of goals in Plausible Analytics: 
 
