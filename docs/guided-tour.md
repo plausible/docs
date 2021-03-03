@@ -45,7 +45,7 @@ See all the most visited pages on your site ranked by the number of unique visit
 You can also get insights into the visitor flow by looking at the "**Entry pages**" and "**Exit pages**". Click on the "**details**" button to see the full list with additional metrics. For "**Entry pages**" details include visit duration for visits that started on a specific page and for "**Exit pages**" details include the exit rate percentage.
 
 :::note
-Looking for the definitons of the metrics you have access to? [See this list](definitions.md).
+Looking for the definitons of the metrics you have access to? [See this list](metrics-definitions.md).
 :::
 
 ## Countries
