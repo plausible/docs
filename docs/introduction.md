@@ -1,5 +1,5 @@
 ---
-title: Plausible Analytics Documentation
+title: Welcome
 slug: /
 ---
 
