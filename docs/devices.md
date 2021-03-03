@@ -14,14 +14,14 @@ For the most accurate reporting, we use `window.innerWidth` to collect the scree
 
 <img alt="Screen sizes" src={useBaseUrl('img/devices-size.png')} />
 
-## Operating system
-
-Your "**Operating system**" report shows what operating systems people use when visiting your website. We show the brand of the operating system and when you click on the brand you can see the version numbers too. This is derived from the User-Agent HTTP header. The full User-Agent is discarded.
-
-<img alt="Operating system" src={useBaseUrl('img/devices-os.png')} />
-
 ## Browser
 
 Your "**Browser**" report shows what browsers people use when visiting your website. We only show the brand of the browser and when you click on the brand you can see the version number too. This is derived from the User-Agent HTTP header. The full User-Agent is discarded.
 
 <img alt="Browser" src={useBaseUrl('img/devices-browser.png')} />
+
+## Operating system
+
+Your "**Operating system**" report shows what operating systems people use when visiting your website. We show the brand of the operating system and when you click on the brand you can see the version numbers too. This is derived from the User-Agent HTTP header. The full User-Agent is discarded.
+
+<img alt="Operating system" src={useBaseUrl('img/devices-os.png')} />
