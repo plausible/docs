@@ -60,7 +60,7 @@ Want a quicker way to navigate the dashboard? You can use the keyboard shortcuts
 
 ## Devices
 
-<img alt="Devices" src={useBaseUrl('img/devices.png')} />
+<img alt="Devices" src={useBaseUrl('img/devices-size.png')} />
 
 You can see the device, browser and operating system your visitors are using. Click on the individual browser or operating system to drill down and see browser versions and OS versions too.
 
