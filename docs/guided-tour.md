@@ -66,6 +66,6 @@ You can see the device, browser and operating system your visitors are using. Cl
 
 ## Goal Conversions
 
-<img alt="Goal Conversions" src={useBaseUrl('img/goal-conversions.png')} />
+<img alt="Goal Conversions" src={useBaseUrl('img/dashboard-goal-conversions.png')} />
 
 Track events and goals to identify the number of unique converted visitors, the total number of conversions, the conversion rate, and the referral sites that send the traffic that converts the best. We have a very flexible support for goals which allows you to create your own metrics to collect and analyze data that Plausible doesn’t automatically track. [Read more here](goal-conversions.md).
