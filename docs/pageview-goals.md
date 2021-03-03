@@ -4,7 +4,7 @@ title: Pageview goals
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Pageview goals allow you to measure how many people visit a specific section of your site (a checkout page for ecommerce for instance) and get referral sources and other details for those conversions. 
+Pageview goals allow you to measure how many people visit a specific section of your site (for instance dynamically created checkout pages for ecommerce) and get referral sources and other details for those conversions. 
 
 Since page views are collected automatically, you don’t need to change your website’s code to measure page URL goals.
 
