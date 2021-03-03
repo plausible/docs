@@ -1,6 +1,6 @@
 ---
 title: Pageview goals
---- 
+---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -12,9 +12,14 @@ To get started with "**Pageview Goals**", go to your website’s settings in Pla
 
 Click on the "**+ Add goal**" button to go to the goal creation form.
 
-Select `Pageview` as the goal trigger and enter the pathname of the page you would like your visitors to hit. The pathname must match the page path you can see in your Plausible Analytics dashboard. 
+Select `Pageview` as the goal trigger and enter the pathname of the page you would like your visitors to hit. The pathname must match the page path you can see in your Plausible Analytics dashboard.
 
-You can use the following rules to group different pages or to create goals for dynamic URLs. You can for instance track all the blog posts by using `/blog/**` (if your blog subdirectory is named `blog`) or track Woocommerce checkout pages for your ecommerce (`/checkout/order-received/*/`).
+Pageview goals support wildcards in the following format:
+
+- Asterisks (`*`) expand to any stretch (of length >=0) of the page path and can be on either end or in the middle of any entry, but **cannot** be in the place of slashes.
+- Double asterisks (`**`) expand to any stretch (of length >=0) of the page path, can be on either end or in the middle of any entry, and can represent **any** characters, even slashes.
+
+You can use pageview rules in this format to group different pages or to create goals for dynamic URLs. You can for instance track all the blog posts by using `/blog/**` (if your blog subdirectory is named `blog`) or track Woocommerce checkout pages for your ecommerce (`/checkout/order-received/*`). See below for more examples of common use cases and how they would function.
 
 | Input | Includes pages with a URL path of: |
 | ------------- | ------------- |
@@ -24,7 +29,9 @@ You can use the following rules to group different pages or to create goals for 
 | `/*/admin` | `/<anything>/admin` - for example, `/sites/admin`, but not `/sites/admin/page-2` nor `/sites/2/admin` nor `/admin` |
 | `/*/priv/*` | `/<anything>/priv/<anything>` - for example, `/admin/priv/sites`, but not `/priv` nor `/priv/page` nor `/admin/priv` |
 | `/rule/*/*` | `/rule/<anything>/<anything>` - for example, `/rule/4/new/` or `/rule/10/edit`, but not `/rule` nor `/rule/10/new/save` |
-| `/wp/**` | `/wp<anything, even slashes>` - for example, `/wp/assets/subdirectory/another/image.png` or `/wp/admin`, and everything in between, but not `/page/wp`
+| `/wp/**` | `/wp/<anything, even slashes>` - for example, `/wp/assets/subdirectory/another/image.png` or `/wp/admin`, and everything in between, but not `/page/wp`
+
+<br />
 
 <img alt="Add your pageview goal" src={useBaseUrl('img/add-pageview-goal.png')} />
 
