@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Your "**Top Pages**" report shows which pages your visitors are visiting the most often. You can use it to identify the most popular content on your site. Click on any page to see the page drilldown with further details.
 
-You can also see the traffic flow by looking at the "entry pages" and "exit pages" reports. You can click on the "details" button to see the full list with additional details. For "Entry pages" details include visit duration for visits that started on a specific page and for "Exit pages" details include the exit rate percentage.
+You can also see the traffic flow by looking at the "**Entry Pages**" and "**Exit Pages**" reports. You can click on the "**details**" button to see the full list with additional details. For entry pages details include visit duration for visits that started on a specific page and for exit pages details include the exit rate percentage.
 
 <img alt="Top Pages" src={useBaseUrl('img/top-pages.png')} />
 
