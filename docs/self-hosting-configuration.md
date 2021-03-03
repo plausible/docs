@@ -3,7 +3,7 @@ title: Configuration options
 ---
 
 :::note
-This section is for self-hosting our analytics on your server and managing your infrastructure (installation, maintenance, upgrades, server capacity, uptime, backup and so on). This is different from Plausible Analytics Cloud where we manage everything for your ease and convenience.
+This section is for self-hosting our analytics on your server and managing your infrastructure (installation, maintenance, upgrades, server capacity, uptime, backup and so on). This is different from Plausible Analytics Cloud where we manage everything for your ease and convenience. [Take a look at the differences between Plausible Cloud and Self-Hosted](https://plausible.io/self-hosted-web-analytics).
 :::
 
 When running a Plausible release, the following configuration parameters can be supplied as environment variables.
