@@ -4,7 +4,7 @@ title: Pageview goals
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Pageview goals allow you to measure how many people visit a specific page URL. Since page views are collected automatically, you don’t need to change your website’s code to measure page URL goals.
+Pageview goals allow you to measure how many people visit a specific section of your site (a checkout page for ecommerce for instance) and get referral sources and other details for those conversions. Since page views are collected automatically, you don’t need to change your website’s code to measure page URL goals.
 
 To get started with "**Pageview Goals**", go to your website’s settings in Plausible Analytics and visit the "**Goals**" section. You should see an empty list with a prompt to add a goal.
 
@@ -14,7 +14,7 @@ Click on the "**+ Add goal**" button to go to the goal creation form.
 
 Select `Pageview` as the goal trigger and enter the pathname of the page you would like your visitors to hit. The pathname must match the page path you can see in your Plausible Analytics dashboard. 
 
-You can use the following rules to group different pages or directories together in one Pageview goal to for instance track all the blog posts as one goal.
+You can use the following rules to group different pages or to create goals for dynamic URLs. You can for instance track all the blog posts by using `/blog/**` (if your blog subdirectory is named `blog`) or track Woocommerce checkout pages for your ecommerce (`/checkout/order-received/*/`).
 
 | Input | Includes pages with a URL path of: |
 | ------------- | ------------- |
