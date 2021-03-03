@@ -16,7 +16,3 @@ There are four types of goals in Plausible Analytics:
 * [Custom event goals](custom-event-goals.md) which allow you to measure button clicks or form completions
 * [Outbound link clicks](outbound-link-click-tracking.md) which allow you to measure clicks on external links
 * [404 error pages tracking](404-error-pages-tracking.md) which allow you to measure page not found errors
-
-Click on the "**+ Add goal**" button to add your first goal.
-
-<img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
