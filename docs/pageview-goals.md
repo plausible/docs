@@ -27,7 +27,7 @@ Pageview goals support wildcards in the following format:
 - Asterisks (`*`) expand to any stretch (of length >=0) of the page path and can be on either end or in the middle of any entry, but **cannot** be in the place of slashes.
 - Double asterisks (`**`) expand to any stretch (of length >=0) of the page path, can be on either end or in the middle of any entry, and can represent **any** characters, even slashes.
 
-You can use pageview rules in this format to group different pages or to create goals for dynamic URLs. You can for instance track all the blog posts by using `/blog/**` (if your blog subdirectory is named `blog`) or track Woocommerce checkout pages for your ecommerce (`/checkout/order-received/*`). See below for more examples of common use cases and how they would function.
+You can use pageview rules in this format to group different pages or to create goals for dynamic URLs. You can for instance track all the blog posts by using `/blog**` (if your blog subdirectory is named `blog`) or track Woocommerce checkout pages for your ecommerce (`/checkout/order-received/*`). See below for more examples of common use cases and how they would function.
 
 | Input | Includes pages with a URL path of: |
 | ------------- | ------------- |
