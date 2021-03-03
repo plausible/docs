@@ -10,7 +10,7 @@ module.exports = {
         items: ['top-referrers', 'manual-link-tagging', 'twitter'],
       },
                   'top-pages', 'countries', 'devices', 'metrics-definitions', 'keyboard-shortcuts'],
-    "Goal Conversions": ['pageview-goals', 'custom-event-goals', 'outbound-link-click-tracking', '404-error-pages-tracking'],
+    "Goal Conversions": ['goal-conversions', 'pageview-goals', 'custom-event-goals', 'outbound-link-click-tracking', '404-error-pages-tracking'],
     "API": ['stats-api'],
     "Account Settings": ['change-email', 'reset-password', 'dashboard-appearance', 'delete-account'],
     "Manage Subscription": ['trial-to-paid', 'subscription-plans', 'change-plan', 'cancel-subscription'],
