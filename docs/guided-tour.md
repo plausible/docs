@@ -10,8 +10,6 @@ Rather than tracking every metric imaginable, many of them that you will never f
 
 Here’s what you can discover on your Plausible Analytics dashboard. Take a look at the [live demo](https://plausible.io/plausible.io) where you can follow the actual traffic of the Plausible Analytics website itself.
 
-Note that you can go granular and click on any of the metrics on your Plausible dashboard to filter the dashboard by it. Drill down into mobile users, Chrome browser users or visitors from France and analyze your stats that way. You can mix and match filters too. For instance you can drill down to see traffic to a specific page from a specific referral source over time.
-
 ## Top Graph
 
 <img alt="Top Graph" src={useBaseUrl('img/top-graph.png')} />
@@ -26,17 +24,21 @@ By clicking on the number of "**current visitors**" or by selecting "**Realtime*
 
 <img alt="Top Sources" src={useBaseUrl('img/top-sources.png')} />
 
-See all the top referral sources of traffic ranked by the number of unique visitors. You can click on the "**details**" button to see the full list with additional details. Bounce rates and visit duration of the individual referrals are included too. You can click on any referral source to drill down into that source.
+See all the top referral sources of traffic ranked by the number of unique visitors. You can click on the "**details**" button to see the full list which also includes the "**Direct/None**" traffic. Additional metrics such as bounce rates and visit duration of the individual referral are included too.
+ 
+You can also see all the traffic coming from the UTM tagged links. Click on the "**Medium**", "**Source**" and "**Campaign**" tabs on your top sources report to explore these.
 
-You can also see all the traffic coming from the UTM tags. Click on the "**medium**", "**source**" and "**campaign**" tabs on your top sources report to explore these.
+:::note
+You can go granular and click on any of the metrics on your Plausible dashboard to filter the dashboard by it. You can mix and match filters too. For instance you can drill down to see traffic coming from a specific referral source to a specific page over time.
+:::
 
 ## Top Pages
 
 <img alt="Top Pages" src={useBaseUrl('img/top-pages.png')} />
 
-See all the most visited pages on your site ranked by the number of unique visitors. You can click on the "**details**" button to see the full list with additional details. The number of pageviews and the bounce rates of the individual pages are included too. You can click on any page to drill down into that page. 
+See all the most visited pages on your site ranked by the number of unique visitors. You can click on the "**details**" button to see the full list with additional metrics. The number of pageviews and the bounce rates of the individual pages are included too.
 
-You can also see the traffic flow by looking at the "**entry pages**" and "**exit pages**" reports. You can click on the "**details**" button to see the full list with additional details. For "**Entry pages**" details include visit duration for visits that started on a specific page and for "**Exit pages**" details include the exit rate percentage.
+You can also get insights into the visitor flow by looking at the "**Entry pages**" and "**Exit pages**". Click on the "**details**" button to see the full list with additional metrics. For "**Entry pages**" details include visit duration for visits that started on a specific page and for "**Exit pages**" details include the exit rate percentage.
 
 ## Countries
 
@@ -48,10 +50,10 @@ See the list of countries your traffic is coming from.
 
 <img alt="Devices" src={useBaseUrl('img/devices.png')} />
 
-You can also see the device, browser (including browser versions), and operating system (including OS versions) your visitors are using.
+You can see the device, browser (including browser versions), and operating system (including OS versions) your visitors are using.
 
 ## Goal Conversions
 
 <img alt="Goal Conversions" src={useBaseUrl('img/goal-conversions.png')} />
 
-Track events and goals to identify the number of unique converted visitors, the total number of conversions, the conversion rate, and the referral sites that send the traffic that converts the best. You can even use custom properties to create your own metrics to collect and analyze data that Plausible doesn’t automatically track. 
+Track events and goals to identify the number of unique converted visitors, the total number of conversions, the conversion rate, and the referral sites that send the traffic that converts the best. We have a very flexible support for goals which allows you to create your own metrics to collect and analyze data that Plausible doesn’t automatically track. [Read more here](goal-conversions.md).
