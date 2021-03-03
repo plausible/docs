@@ -1,10 +1,10 @@
 ---
-title: Introduction to goals and custom events
+title: Introduction to goals
 --- 
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Plausible Analytics has a very flexible support for goals and custom events which allows you to track pretty much what you want. 
+Plausible Analytics has a very flexible support for goals which allows you to track pretty much what you want. 
 
 Goals are actions that you want your users to take such as sign up to a newsletter, click on the "**Download**" button, sign up for a trial account, click on an external link or complete the checkout form of your ecommerce store.
 
