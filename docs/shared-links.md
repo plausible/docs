@@ -8,7 +8,7 @@ Within the "**Shared links**" section of your website settings you can decide to
 
 This is useful for specific use cases such as if you want to share your website stats with (potential) partners or advertisers. Or if you're working for an agency or working as a freelancer and want to share the website stats [with your clients](https://plausible.io/for-freelancers-agencies).
 
-People that you send your shared link to can view the stats dashboard without having a Plausible Analytics account and without needing to log in.
+People that you send your shared link to can view the stats dashboard without having a Plausible Analytics account and without needing to log in. They can only view the specific dashboard that you shared and cannot see any other sites that you have added to your Plausible account.
 
 <img alt="Plausible Analytics" src={useBaseUrl('img/shared-stats.png')} />
 
