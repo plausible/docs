@@ -38,12 +38,12 @@ Do this for all the websites where you'd like to enable outbound link click trac
 
 If you're serving our script [from your domain as a first-party connection](custom-domain.md):
 
-Change your Plausible script snippet `src` attribute from `https://yoursubdomain.yourdomain.com/js/index.js` to `https://yoursubdomain.yourdomain.com/js/index.outbound-links.js`
+Change your Plausible script snippet `src` attribute from `https://yoursubdomain.yourdomain.com/js/plausible.js` to `https://yoursubdomain.yourdomain.com/js/plausible.outbound-links.js`
 
 The new snippet will look like this (make sure to change the `data-domain` attribute to the domain you added to Plausible):
 
 ```html
-<script async defer data-domain="yourdomain.com" src="https://yoursubdomain.yourdomain.com/js/index.outbound-links.js"></script>
+<script async defer data-domain="yourdomain.com" src="https://yoursubdomain.yourdomain.com/js/plausible.outbound-links.js"></script>
 ```
 
 As usual, you need to place your Plausible Analytics tracking script code into the Header (`<head>`) section of your site. Place the tracking script within the `<head> … </head>` tags.
