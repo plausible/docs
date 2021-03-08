@@ -32,6 +32,8 @@ Plausible Analytics is trusted by 2,000+ subscribers to deliver their website an
  
 * [Sharing is Caring: Put Cookie-Monster on a Diet](https://koaning.io/posts/caring-means-sharing/) by Vincent Warmerdam
 
+* [Plausible Analytics: 10 Reasons it's the Best Web Analytics Tool](https://www.derpycoder.com/plausible-analytics-10-reasons-its-the-best-web-analytics-tool/) by Abhijit Kar
+
 * [Impact of Adblockers on Google Analytics (vs. Plausible)](https://savjee.be/2020/10/impact-adblockers-on-google-analytics-vs-plausible/) by Xavier Decuyper
 
 * [Quick comparison: Plausible vs logs](https://yarmo.eu/post/plausible-versus-logs) by Yarmo Mackenbach
