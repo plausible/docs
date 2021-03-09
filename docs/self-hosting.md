@@ -86,6 +86,13 @@ When you run this command for the first time, it does the following:
 
 You can now navigate to `http://{hostname}:8000` and see the login screen.
 
+When you first log in with your admin credentials, you will be prompted to
+enter a verification code which has been sent to your email. Please configure your
+server for SMTP to receive this email. [Here are Plausible's SMTP configuration
+options](https://plausible.io/docs/self-hosting-configuration#mailersmtp-setup).
+Otherwise, run this command to verify all users in the database:
+`docker exec hosting_plausible_db_1 psql -U postgres -d plausible_db -c "UPDATE users SET email_verified = true;"`
+
 > Something not working? Please reach out on our [forum](https://github.com/plausible/analytics/discussions/categories/self-hosted-support) for troubleshooting.
 
 The Plausible server itself does not perform SSL termination. It only runs on unencrypted HTTP.  If you want to run on HTTPS you also need to set up a reverse proxy in front of the server. We have instructions and examples of how to do that below.
