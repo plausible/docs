@@ -60,7 +60,9 @@ We have a WordPress plugin that makes the integration with WordPress nice and ea
 
 ## Google Tag Manager (GTM)
 
-Plausible can even be integrated using the Google Tag Manager. Add the Plausible snippet to the "**Custom HTML Tag**" and set the trigger to be "**All Pages**" if you want to count traffic on all of your pages. 
+Plausible can even be integrated using the Google Tag Manager. Add the Plausible snippet to the "**Custom HTML Tag**" and set the trigger to be "**All Pages**" if you want to count traffic on all of your pages.
+
+Note that you cannot use Google Tag Manager if you want to track a subfolder. Only naked domain (yoursite.com) or subdomain (subdomain.yoursite.com) will work as the data-domain attribute while a subfolder (yoursite.com/subfolder) will not.
 
 ## GatsbyJS
 
