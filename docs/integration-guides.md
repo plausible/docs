@@ -149,6 +149,10 @@ Docusaurus: Check out our [Docusaurus integration page](docusaurus-integration.m
 
 [Hego plugin](https://github.com/maaaaarco/hexo-plausible-analytics): A simple Hexo plugin to inject Plausible script into your pages. Built and maintained by [Marco](https://spaghetti.dev/).
 
+## MediaWiki
+
+[MediaWiki Extension](https://github.com/octfx/mediawiki-extension-Plausible): MediaWiki extension to enable Plausible Analytics. Built and maintained by [Octfx](https://github.com/octfx).
+
 ## Paste the script into the header section
 
 Alternatively, you can [integrate Plausible into your site manually](plausible-script.md) by pasting the Plausible Analytics tracking script code into the Header (`<head>`) section of your site.
