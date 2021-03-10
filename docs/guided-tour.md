@@ -24,6 +24,8 @@ By clicking on the number of "**current visitors**" or by selecting "**Realtime*
 Click on your site name in the top left side of your dashboard. It allows you to select "[Site Settings](website-settings.md)" in the dropdown menu but also switch to a different site you have added to your Plausible account.
 :::
 
+We get all the favicons (your site favicon and the favicons of all the referral sources) directly from the DuckDuckGo API. We display the same icon that DuckDuckGo shows in their search results.
+
 ## Top Sources
 
 <img alt="Top Sources" src={useBaseUrl('img/top-sources.png')} />
