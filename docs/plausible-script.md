@@ -38,6 +38,14 @@ We've put together several integration guides that cover popular website builder
 
 Here's [the full list of all integrations and guides](integration-guides.md).
 
+### Can I use the same snippet across my domain and subdomain?
+
+You can use the same Plausible snippet on multiple sites and subdomains. There are two negatives with this:
+
+1. You will have one dashboard with all the stats combined. You won't be able to see individual dashboard of the individual site separated from others.
+
+2. If you have pages with identical page paths between the different sites (say `yourdomain.com/best-page/` and `subdomain.yourdomain.com/best-page/`), these identical page paths will be listed under one entry (`/best-page/` in the "**Top Pages**" report with the stats combined into that one entry.
+
 ## Verify if the script is installed on your site
 
 After you've added the Plausible Analytics script to the HTML of your website, you should see the script installed on your site. 
