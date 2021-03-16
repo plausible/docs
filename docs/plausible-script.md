@@ -40,7 +40,9 @@ Here's [the full list of all integrations and guides](integration-guides.md).
 
 ### Can I use the same snippet across my domain and subdomain?
 
-You can use the same Plausible snippet on multiple sites and subdomains. There are two negatives with this:
+You can use the same Plausible snippet on multiple sites and subdomains. Or you can add them all as individual sites to your Plausible account with their own unique snippets and separate dashboards. Which option to use depends on your preference.
+
+There are two negatives of using the same Plausible snippet on multiple sites and subdomains:
 
 1. You will have one dashboard with all the stats combined. You won't be able to see individual dashboard of the individual site separated from others.
 
