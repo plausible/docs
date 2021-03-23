@@ -153,6 +153,10 @@ Docusaurus: Check out our [Docusaurus integration page](docusaurus-integration.m
 
 [MediaWiki Extension](https://github.com/octfx/mediawiki-extension-Plausible): MediaWiki extension to enable Plausible Analytics. Built and maintained by [Octfx](https://github.com/octfx).
 
+## Podcastpage.io
+
+Add Plausible Analytics to your [Podcastpage.io](https://podcastpage.io/) website. Just enable the Plausible Analytic script via the "Integrations" page of your dashboard to add the tracking script to all pages.
+
 ## Paste the script into the header section
 
 Alternatively, you can [integrate Plausible into your site manually](plausible-script.md) by pasting the Plausible Analytics tracking script code into the Header (`<head>`) section of your site.
