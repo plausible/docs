@@ -77,20 +77,27 @@ Each pageview and custom event in our database has some predefined _properties_ 
 are often referred to as _dimensions_ as well. Properties can be used for filtering and breaking down your stats to drill into
 more depth. Here's the full list of properties we collect automatically:
 
-| Property              | Example                       | Description                                                                                                                           |
-|-----------------------|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| event:page            | /blog/remove-google-analytics | Pathname of the page where the event is triggered                                                                                     |
-| visit:source          | Twitter                       | Visit source, populated from an url query parameter tag (`utm_source`, `source` or `ref`) or the `Referer` HTTP header.               |
-| visit:referrer        | t.co/fzWTE9OTPt               | Raw `Referer` header without `http://`, `http://` or `www.`                                                                           |
-| visit:utm_medium      | social                        | Raw value of the `utm_medium` query param on the entry page                                                                           |
-| visit:utm_source      | twitter                       | Raw value of the `utm_source` query param on the entry page                                                                           |
-| visit:utm_campaign    | profile                       | Raw value of the `utm_campaign` query param on the entry page                                                                         |
-| visit:device          | Desktop                       | Device type. Possible values are `Desktop`, `Laptop`, `Tablet` and `Mobile`                                                           |
-| visit:browser         | Chrome                        | Name of the browser vendor. Most popular ones are `Chrome`, `Safari` and `Firefox`                                                    |
-| visit:browser_version | 88.0.4324.146                 | Version number of the browser used by the visitor                                                                                     |
-| visit:os              | Mac                           | Name of the operating system. Most popular ones are `Mac`, `Windows`, `iOS` and `Android`. Linux distributions are reported separately |
-| visit:os_version      | 10.6                          | Version number of the operating system used by the visitor                                                                            |
-| visit:country         | US                            | ISO 3166-1 alpha-2 code of the visitor country                                                                                        |
+| Property                   | Example                       | Description                                                                                                                           |
+|----------------------------|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| event:name                 | pageview                      | Name of the event triggered. `pageview` is a reserved event name but custom events can be named anything.                             |
+| event:page                 | /blog/remove-google-analytics | Pathname of the page where the event is triggered                                                                                     |
+| visit:source               | Twitter                       | Visit source, populated from an url query parameter tag (`utm_source`, `source` or `ref`) or the `Referer` HTTP header.               |
+| visit:referrer             | t.co/fzWTE9OTPt               | Raw `Referer` header without `http://`, `http://` or `www.`                                                                           |
+| visit:utm_medium           | social                        | Raw value of the `utm_medium` query param on the entry page                                                                           |
+| visit:utm_source           | twitter                       | Raw value of the `utm_source` query param on the entry page                                                                           |
+| visit:utm_campaign         | profile                       | Raw value of the `utm_campaign` query param on the entry page                                                                         |
+| visit:device               | Desktop                       | Device type. Possible values are `Desktop`, `Laptop`, `Tablet` and `Mobile`                                                           |
+| visit:browser              | Chrome                        | Name of the browser vendor. Most popular ones are `Chrome`, `Safari` and `Firefox`                                                    |
+| visit:browser_version      | 88.0.4324.146                 | Version number of the browser used by the visitor                                                                                     |
+| visit:os                   | Mac                           | Name of the operating system. Most popular ones are `Mac`, `Windows`, `iOS` and `Android`. Linux distributions are reported separately |
+| visit:os_version           | 10.6                          | Version number of the operating system used by the visitor                                                                            |
+| visit:country              | US                            | ISO 3166-1 alpha-2 code of the visitor country                                                                                        |
+
+
+#### Custom props
+
+In addition to props that are collected automatically, you can also query for [custom properties](/custom-event-goals#using-custom-props).
+To filter or break down by a custom property, use the key `event:props:<custom_prop_name>`. [See example](#breakdown-custom-event-by-custom-props) for how to use it.
 
 ### Filtering
 
@@ -398,9 +405,11 @@ curl https://plausible.io/api/v1/stats/aggregate?site_id=$SITE_ID&period=6mo&fil
 
 ```json title="Response"
 {
+  "results": {
     "visitors": {
         "value": 1480
     }
+  }
 }
 ```
 
@@ -447,4 +456,28 @@ curl https://plausible.io/api/v1/stats/timeseries?site_id=$SITE_ID&period=6mo&fi
 }
 ```
 
+### Breakdown custom event by custom props
+
+A more advanced use-case where custom events are used along with custom props. Let's say you have a `Download` custom event along with
+a custom property called `method`. You can get a breakdown of download methods with the following query:
+
+```bash title="Breakdown of download methods"
+curl https://plausible.io/api/v1/stats/breakdown?site_id=$SITE_ID&period=6mo&property=event:props:method&filters=event:name%3D%3D%2Download
+  -H "Authorization: Bearer ${TOKEN}"
+```
+
+```json title="Response"
+{
+    "results": [
+        {
+            "method": "HTTP",
+            "visitors": 1477
+        },
+        {
+            "method": "Magnet",
+            "visitors": 370
+        }
+    ]
+}
+```
 
