@@ -4,11 +4,21 @@ title: Troubleshoot your integration
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-After you've added the Plausible Analytics script to your site, you can visit your site and the dashboard should update instantly with your visit. There are no delays in the data. The dashboard goes live and displays the data as soon as the first visitor is counted.
+After you've added the Plausible Analytics script to your website, it's time to verify that the integration is working.
 
-## Verify if the script is installed on your site
+In your Plausible Analytics account, click on your website domain name. You should see a blinking green dot which indicates that we’re listening for incoming page views in real-time. You can visit your site and the dashboard will update instantly with your visit. 
 
-After you've added the Plausible Analytics script to the HTML of your website, you should be able to see the script installed. 
+<img alt="Listening for incoming page views" src={useBaseUrl('img/waiting-for-pageview.png')} />
+
+Once the first page view comes through, you'll be automatically taken to the stats dashboard. There are no delays in the data. The dashboard goes live and displays the data as soon as the first visitor is counted.
+
+If you didn't see the green blinking dot, there's nothing to worry about. It just means that someone visited your site already since you installed the Plausible Analytics script.
+
+If you see the dashboard with graphs and numbers, it means everything is working! Congrats! Plausible Analytics is now tracking your website statistics while preserving the privacy of your visitors.
+
+## Keep seeing a blinking green dot?
+
+Do you keep seeing a blinking green dot screen despite having visitors on your site? Please verify if our script is installed correctly. 
 
 You can load your website, open the browser inspector (press F12 on Firefox or Chrome), and ensure that the Plausible Analytics script is loading in the "Network" tab.
 
@@ -16,7 +26,7 @@ You can load your website, open the browser inspector (press F12 on Firefox or C
 
 Alternatively, you can verify this by viewing the HTML of your site in your browser. Visit your site, right-click anywhere on the page and choose "**View Page Source**". Then press `cmd+f` on a Mac or `ctrl+f` on Linux and Windows to search. Type `plausible` to search for the Plausible Analytics script.
 
-## Is Plausible script not installed on your site? 
+### Is Plausible script not installed on your site? 
 
 You should see the Plausible Analytics tracking script in the source code of your website. If you cannot see the script, please double check if you've inserted it correctly. Installing Plausible on a site can be a slightly different process depending on what tools you're using. 
 
@@ -24,11 +34,11 @@ We've put together several integration guides that cover popular website builder
 
 Here's [the full list of all integrations and guides](integration-guides.md).
 
-## Plausible script is on your site but no stats on your dashboard?
+### Plausible script is on your site but still seeing the green blinking dot and no stats?
 
 * Are you using a Content Security Policy? Do not forget to add our domain specifically to your CSP.
 
-* Running on localhost? Our script automatically disables itself when running on localhost.
+* Running on localhost? Our script automatically disables itself when running on localhost as the majority of people don't want those stats to be counted.
 
 * Using cache? Do purge the cache just in case.
 
