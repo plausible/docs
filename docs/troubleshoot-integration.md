@@ -36,6 +36,8 @@ Here's [the full list of all integrations and guides](integration-guides.md).
 
 ### Plausible script is on your site but still seeing the green blinking dot and no stats?
 
+* Please ensure that the script you use is exactly the same script as listed in your website settings. You can find your JavaScript snippet by [logging into your Plausible account](https://plausible.io/sites). Here you'll find the list of sites you've added to Plausible. Hover over your site name and click on the "**Settings**" icon on the right hand side of the domain name you'd like to get the snippet for. Then scroll down to the "**Javascript snippet**" section on the following page.
+
 * Are you using a Content Security Policy? Do not forget to add our domain specifically to your CSP.
 
 * Running on localhost? Our script automatically disables itself when running on localhost as the majority of people don't want those stats to be counted.
