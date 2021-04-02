@@ -46,6 +46,12 @@ Here's [the full list of all integrations and guides](integration-guides.md).
 
 You can do so by following the instructions [in this guide](excluding.md).
 
+On WordPress? [Our Wordpress plugin](https://plausible.io/wordpress-analytics-plugin) excludes admin visits by default.
+
 ## Running an adblocker that blocks the Plausible script from being loaded?
 
 You can enable our custom domain integration which allows you to run the Plausible script as a first-party connection from your domain name. [See the instructions here](custom-domain.md).
+
+## Do you see wrong data in your countries report?
+
+Are you using Cloudflare and having your sites proxied? A proxy can override the remote IP which would lead to wrong geolocation data in your stats. Remove the proxy and make it just a DNS record in your Cloudflare settings to solve the issue.
