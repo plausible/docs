@@ -157,6 +157,11 @@ Docusaurus: Check out our [Docusaurus integration page](docusaurus-integration.m
 
 Add Plausible Analytics to your [Podcastpage.io](https://podcastpage.io/) website. Just enable the Plausible Analytic script via the "Integrations" page of your dashboard to add the tracking script to all pages.
 
+## PHP
+
+Add Plausible Analytics to your [PHP page](https://plausible.io/docs/p[php-integration) website.
+
+
 ## Paste the script into the header section
 
 Alternatively, you can [integrate Plausible into your site manually](plausible-script.md) by pasting the Plausible Analytics tracking script code into the Header (`<head>`) section of your site.
