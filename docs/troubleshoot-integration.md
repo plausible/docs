@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 After you've added the Plausible Analytics script to your website, it's time to verify that the integration is working.
 
-In your Plausible Analytics account, click on your website domain name. You should see a blinking green dot which indicates that we’re listening for incoming page views in real-time. You can visit your site and the dashboard will update instantly with your visit. 
+In your Plausible Analytics account, click on your site domain name. You should see a blinking green dot which indicates that we’re listening for incoming page views in real-time. You can visit your site and the dashboard will update instantly with your visit. 
 
 <img alt="Listening for incoming page views" src={useBaseUrl('img/waiting-for-pageview.png')} />
 
