@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 After you've added the Plausible Analytics script to your website, it's time to verify that the integration is working.
 
-In your Plausible Analytics account, click on your site domain name. You should see a blinking green dot which indicates that we’re listening for incoming page views in real-time. You can visit your site and the dashboard will update instantly with your visit. 
+In your Plausible Analytics account, click on your site domain name. You should see a blinking green dot which indicates that we’re listening for incoming page views in real-time. You can visit your site and the dashboard will update instantly with your visit.
 
 <img alt="Listening for incoming page views" src={useBaseUrl('img/waiting-for-pageview.png')} />
 
@@ -18,19 +18,19 @@ If you see the dashboard with graphs and numbers, it means everything is working
 
 ## Keep seeing a blinking green dot?
 
-Do you keep seeing a blinking green dot screen despite having visitors on your site? Please verify if our script is installed correctly. 
+Do you keep seeing a blinking green dot screen despite having visitors on your site? Please verify if our script is installed correctly.
 
 You can load your website, open the browser inspector (press F12 on Firefox or Chrome), and ensure that the Plausible Analytics script is loading in the "Network" tab.
 
-<img alt="Ensure that the Plausible Analytics script is loading in the "Network" tab" src={useBaseUrl('img/dev-tools-troubleshoot.png')} />
+<img alt="Ensure that the Plausible Analytics script is loading in the 'Network' tab" src={useBaseUrl('img/dev-tools-troubleshoot.png')} />
 
 Alternatively, you can verify this by viewing the HTML of your site in your browser. Visit your site, right-click anywhere on the page and choose "**View Page Source**". Then press `cmd+f` on a Mac or `ctrl+f` on Linux and Windows to search. Type `plausible` to search for the Plausible Analytics script.
 
-### Is Plausible script not installed on your site? 
+### Is Plausible script not installed on your site?
 
-You should see the Plausible Analytics tracking script in the source code of your website. If you cannot see the script, please double check if you've inserted it correctly. Installing Plausible on a site can be a slightly different process depending on what tools you're using. 
+You should see the Plausible Analytics tracking script in the source code of your website. If you cannot see the script, please double check if you've inserted it correctly. Installing Plausible on a site can be a slightly different process depending on what tools you're using.
 
-We've put together several integration guides that cover popular website builders and content management systems (CMS) such as WordPress and Ghost. Thanks to the members of our community, there are also community integrations and plugins for several frameworks such as Hugo and GatsbyJS. These can help you set up and start counting your site visitors in no time. 
+We've put together several integration guides that cover popular website builders and content management systems (CMS) such as WordPress and Ghost. Thanks to the members of our community, there are also community integrations and plugins for several frameworks such as Hugo and GatsbyJS. These can help you set up and start counting your site visitors in no time.
 
 Here's [the full list of all integrations and guides](integration-guides.md).
 
