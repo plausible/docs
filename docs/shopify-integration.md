@@ -12,4 +12,4 @@ You can add Plausible Analytics tracking code to your Shopify website by editing
 
 * Paste your Plausible Analytics script tag before the closing ```</head>``` tag of the ```theme.liquid``` file and save it.
 
-Now you can go to your website and verify whether Plausible Analytics script has been added and to your Plausible Analytics account to see whether the stats are being tracked. See here [how to verify the integration](plausible-script.md#verify-if-the-script-is-installed-on-your-site).
+Now you can go to your website and verify whether Plausible Analytics script has been added and to your Plausible Analytics account to see whether the stats are being tracked. See here [how to verify the integration](integration-guides.md).
