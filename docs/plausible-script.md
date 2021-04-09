@@ -70,8 +70,6 @@ If you don't see the green blinking dot, there's nothing to worry about. It just
 
 Once the first page view comes through, you'll be automatically taken to the stats dashboard with graphs and numbers. This is an indication that the integration is working, congrats! Plausible Analytics is now tracking your website statistics while preserving the privacy of your visitors.
 
-Contact **hello@plausible.io** if you failed to verify that our script has been installed properly or if you cannot see any stats despite having visitors.
-
 :::note
 You're running Plausible on localhost? Our script automatically disables itself when running on localhost as the majority of people don't want those stats to be counted.
 :::
@@ -79,3 +77,5 @@ You're running Plausible on localhost? Our script automatically disables itself 
 :::note
 Using CSP? Do not forget to add our domain specifically to your Content Security Policy too.
 :::
+
+Still no luck and no stats are counted? Take a look at [our guide to troubleshooting your Plausible Analytics integration](troubleshoot-integration.md).
