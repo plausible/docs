@@ -100,10 +100,6 @@ Note that you cannot use Google Tag Manager if you want to track a subfolder. On
 
 [VuePress](https://github.com/spekulatius/vuepress-plugin-plausible): A VuePress-plugin allowing you to use Plausible for your documentation website. Built and maintained by [Peter Thaleikis](https://peterthaleikis.com).
 
-## Docusaurus
-
-Docusaurus: Check out our [Docusaurus integration page](docusaurus-integration.md) for full details on Plausible Analytics Docusaurus community plugin and other ways to integrate Plausible Analytics with your Docusaurus documentation site.
-
 ## Hybrid native + web app
 
 [Hybrid native + web app](https://github.com/cassidyjames/plausible): Built and maintained by [Cassidy James Blaede](https://cassidyjames.com/).
