@@ -1,12 +1,12 @@
 ---
-title: Plausible Analytics reviews
+title: Plausible Analytics reviews and in media
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 We don't do any paid ads, retargeting or any other surveillance based marketing. People that enjoy using Plausible Analytics sharing how they use it and what they find useful is the best way for us to spread the word and get even more sites to consider removing privacy-intrusive analytics. 
 
-Plausible Analytics is trusted by 2,000+ subscribers to deliver their website and business insights. Here's a list of some of the people and organizations who use Plausible Analytics and what they think about it:
+Plausible Analytics is trusted by 2,000+ subscribers to deliver their website and business insights. Here's a list of some of the people and organizations who use Plausible Analytics and what they think about it along some other Plausible mentions in the media:
 
 * [We've put together a list of people tweeting about using Plausible](https://twitter.com/PlausibleHQ/timelines/1311218983912308736)
 
@@ -14,7 +14,11 @@ Plausible Analytics is trusted by 2,000+ subscribers to deliver their website an
 
 * [Why choose Plausible for an open source alternative to Google Analytics](https://opensource.com/article/21/2/plausible) by Ben Rometsch on Opensource.com
 
+* [Leaving Google Analytics is Finally Plausible](https://blog.elementary.io/leaving-google-analytics-is-finally-plausible/) by Daniel Foré of elementary OS
+
 * [Taking on the Major Players, Plausible Analytics Offers an Alternative, Privacy-Conscious Stats Service](https://wptavern.com/taking-on-the-major-players-plausible-analytics-offers-an-alternative-privacy-conscious-stats-service) by Justin Tadlock of WordPress Tavern
+
+* [Let's talk about the importance of ethical website analytics (Why I switched from Google Analytics to Plausible)](https://www.calibratedconcepts.com/blog/the-importance-of-ethical-website-analytics) by Ellie McBride of Calibrated Concepts
 
 * [Everyday Rails now uses Plausible for analytics](https://everydayrails.com/2020/12/03/plausible-analytics.html) by Aaron Sumner of Everyday Rails
 
@@ -26,7 +30,7 @@ Plausible Analytics is trusted by 2,000+ subscribers to deliver their website an
 
 * [Plausible Analytics Review](https://www.garron.blog/posts/plausible-review.html) by Guillermo Garron
 
-* [Leaving Google Analytics is Finally Plausible](https://blog.elementary.io/leaving-google-analytics-is-finally-plausible/) by Daniel Foré of elementary OS
+* [Plausible.io and why you are going to love it!](https://forgetwp.com/blog/plausible-io-and-why-you-are-going-to-love-it/) by ForgetWP
 
 * [Lightweight alternatives to Google Analytics](https://lwn.net/Articles/822568/) by Ben Hoyt on LWN.net
  
@@ -37,5 +41,9 @@ Plausible Analytics is trusted by 2,000+ subscribers to deliver their website an
 * [Impact of Adblockers on Google Analytics (vs. Plausible)](https://savjee.be/2020/10/impact-adblockers-on-google-analytics-vs-plausible/) by Xavier Decuyper
 
 * [Quick comparison: Plausible vs logs](https://yarmo.eu/post/plausible-versus-logs) by Yarmo Mackenbach
+
+* [Plausible judged to be the fastest-growing open-source startup](https://techcrunch.com/2020/10/21/study-finds-most-big-open-source-startups-outside-bay-area-many-european-and-avoiding-vc/) by TechCrunch 
+
+* [De-Google-ing your website analytics](https://changelog.com/podcast/396) by The Changelog podcast
 
 Let us know about any other reviews that you've published and we will feature them. Thanks for your support!
