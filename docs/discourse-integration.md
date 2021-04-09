@@ -20,6 +20,6 @@ You can add Plausible Analytics tracking code to your Discourse community by add
 
 * After adding your code, click on the "**Save**" button.
 
-Now you can go to your Discourse community and verify whether Plausible Analytics script has been added and then to your Plausible Analytics account to see whether the stats are being tracked. See here [how to verify the integration](plausible-script.md#verify-if-the-script-is-installed-on-your-site).
+Now you can go to your Discourse community and verify whether Plausible Analytics script has been added and to your Plausible Analytics account to see whether the stats are being tracked. See here [how to verify the integration](integration-guides.md).
 
 Thanks to Justin DiRose from the Discourse team for contributing [these instructions](https://meta.discourse.org/t/add-plausible-analytics-tracking-to-discourse/173310)!
