@@ -50,6 +50,10 @@ There are two negatives of using the same Plausible snippet on multiple sites an
 
 After you've added the Plausible Analytics script to the HTML of your website, you should see the script installed on your site and can verify that the integration is working.
 
-In your [Plausible Analytics account](https://plausible.io/sites), click on your website domain name. You should see a blinking green dot which indicates that we’re listening for incoming page views in real-time. Once the first page view comes through, you'll be automatically taken to the stats dashboard with graphs and numbers. This is an indication that the integration is working, congrats! Plausible Analytics is now tracking your website statistics while preserving the privacy of your visitors.
+In your [Plausible Analytics account](https://plausible.io/sites), click on your website domain name. You should see a blinking green dot which indicates that we’re listening for incoming page views in real-time. 
+
+There are no delays in stats with Plausible. Everything is live. Once the first page view comes through, you'll be automatically taken to the stats dashboard with graphs and numbers. 
+
+This is an indication that the integration is working, congrats! Plausible Analytics is now tracking your website statistics while preserving the privacy of your visitors.
 
 Have some issues with the integration? Take a look at [our guide to troubleshooting your Plausible Analytics integration](troubleshoot-integration.md).
