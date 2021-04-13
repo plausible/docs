@@ -39,8 +39,8 @@ Plausible uses [PostgreSQL](https://www.tutorialspoint.com/postgresql/postgresql
 
 | Parameter            | Default                                  | Description                                                                                                               |
 |----------------------|-----------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| DATABASE_URL            | postgres://localhost:5432/plausible_dev | The database URL as dictated [here](https://hexdocs.pm/ecto/Ecto.Repo.html#module-urls)                                   |
-| CLICKHOUSE_DATABASE_URL | http://localhost:8123/plausible_dev     | Connection string for Clickhouse in the same format |
+| DATABASE_URL            | postgres://localhost:5432/plausible_dev | The database URL as dictated [here](https://hexdocs.pm/ecto/Ecto.Repo.html#module-urls), i.e. for external db server postgres://user:password@ip.or.domain.to.server/database_name                                  |
+| CLICKHOUSE_DATABASE_URL | http://localhost:8123/plausible_dev     | Connection string for Clickhouse in the same format, i.e. for docker-compose setup http://plausible_events_db:8123/plausible_events_db |
 
 
 ### Mailer/SMTP Setup
