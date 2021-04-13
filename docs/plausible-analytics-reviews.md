@@ -18,6 +18,8 @@ Plausible Analytics is trusted by 2,000+ subscribers to deliver their website an
 
 * [Taking on the Major Players, Plausible Analytics Offers an Alternative, Privacy-Conscious Stats Service](https://wptavern.com/taking-on-the-major-players-plausible-analytics-offers-an-alternative-privacy-conscious-stats-service) by Justin Tadlock of WordPress Tavern
 
+* [Featured in the Tech Radar by ThoughtWorks: "An opinionated guide to technology frontiers"](https://www.thoughtworks.com/radar/techniques/privacy-focused-web-analytics) 
+
 * [Let's talk about the importance of ethical website analytics (Why I switched from Google Analytics to Plausible)](https://www.calibratedconcepts.com/blog/the-importance-of-ethical-website-analytics) by Ellie McBride of Calibrated Concepts
 
 * [Everyday Rails now uses Plausible for analytics](https://everydayrails.com/2020/12/03/plausible-analytics.html) by Aaron Sumner of Everyday Rails
