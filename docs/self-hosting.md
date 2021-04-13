@@ -143,6 +143,21 @@ client IP is not forwarded to the Plausible server, it cannot detect visitor cou
 
 In our hosting repo, you'll find useful example configurations in case you're already running [Nginx](https://github.com/plausible/hosting/tree/master/reverse-proxy#nginx) or [Traefik 2](https://github.com/plausible/hosting/tree/master/reverse-proxy#traefik-2).
 
+
+### 3. External Databases
+
+There are some cavaets to consider when running your own databases:
+
+##### Postgres
+The user needs the role superuser for setting up certain modules on the database
+If the database already exists prior to running docker-compose up, please remove `&& /entrypoint.sh db createdb` in the command of the plausible service section inside docker-compose.yml. However, this will also prevent the Clickhouse database from being created, see below.
+
+##### Clickhouse
+If you receive an error upon startup that for some reason the database does not exist, you can create it 'manually' via this docker run:
+make sure that --link, --net, --host, and the name of the db  receive the right parameter values according to the running setup
+
+`docker run -it --net plausible_default --rm --link plausible_events_db_1:clickhouse-server yandex/clickhouse-client --host plausible_plausible_events_db_1  --query "CREATE DATABASE IF NOT EXISTS plausible_events_db"`
+
 :::note
 Self-hosting our analytics product is free as in beer. You only need to pay for your server and whatever cost there is associated with running a server. You never have to pay any fees to us, only to your cloud server provider. If you choose to self-host Plausible you can [become a sponsor](https://github.com/sponsors/plausible) which is a great way to give back to the community and to contribute to the long-term sustainability of the project. Simply put, we treat sponsors like paying customers which means you can receive guaranteed priority support.
 :::
