@@ -6,7 +6,11 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 By default, Plausible Analytics tracks every page you install the snippet on. If you don't want Plausible to track specific pages, do not include the snippet on those pages. 
 
-Alternatively, you can also manually exclude specific pages from being tracked. When excluding manually, the exclusion means that pageviews on the excluded page won't be counted any more. Outbound link clicks and other custom events on the excluded page will still track like normal. Here's how to exclude pages manually.
+Alternatively, you can also manually exclude specific pages from being tracked. When excluding pages manually, the exclusion means that pageviews on the excluded page won't be counted any more from the moment of exclusion. The historical stats will be kept and will stay the same.
+
+Outbound link clicks and other custom events on the excluded page will still track like normal. Only the pageviews will be excluded.
+
+Here's how to exclude pages manually.
 
 ## 1. You'll need to use a different Plausible script snippet
 
