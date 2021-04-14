@@ -26,9 +26,9 @@ Some domain registrars such as GoDaddy don't accept CNAME values with a dot at t
 
 <img alt="Create a new CNAME record for your chosen subdomain" src={useBaseUrl('img/dns-cname-record.png')} />
 
-## It may take up to 24 hours for the DNS changes to propagate
+## It may take up to 4 hours for the DNS changes to propagate
 
-In most cases this process takes a few minutes but it may take up to 24 hours for the DNS changes to propagate and for us to obtain an SSL certificate for your subdomain.
+In most cases this process takes a few minutes but it may take up to 4 hours for the DNS changes to propagate and for us to obtain an SSL certificate for your subdomain.
 
 You can check whether the CNAME record is set up correctly by entering your subdomain (`yoursubdomain.yourdomain.com`) in an [online CNAME lookup tool](https://www.nslookup.io/cname-lookup/).
 
