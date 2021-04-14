@@ -29,11 +29,6 @@ export const Optional = ({children, color}) => (
 );
 
 
-:::caution Beta warning
-The API feature is in early access beta. Feel free to use it, but we do not guarantee the stability of the API. We might
-make some breaking changes based on the feedback we receive from beta users.
-:::
-
 The Plausible Stats API offers a way to retrieve your stats programmatically. It is a read-only interface to present historical
 and real-time stats only. At the moment there is no API to send pageviews or custom events to our backend nor can you manage your sites through
 the API.
