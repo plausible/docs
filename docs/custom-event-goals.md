@@ -110,6 +110,8 @@ Custom properties only accepts scalar values such as strings, numbers and boolea
 
 Custom properties will show up automatically on your dashboard as long as you've added the goal itself. You don't need to manually add them in your settings.
 
+Plausible will display `(none)` in your dashboard when you send a custom property key with no value, or `null`/`undefined` as a value.
+
 Note that you must ensure that no personally identifiable information (PII) is sent to Plausible Analytics with custom properties. PII is information that could be used on its own to identify, contact, or precisely locate an individual. This includes:
 
 * full names or usernames
