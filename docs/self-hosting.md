@@ -74,7 +74,7 @@ The last step is to enter the `BASE_URL` for your app. It should be the base url
 Once you've entered your secret key base, base url and admin credentials, you're ready to start up the server:
 
 ```bash
-$ docker-compose up --detach
+$ docker-compose up -d
 ```
 
 When you run this command for the first time, it does the following:
