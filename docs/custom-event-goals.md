@@ -34,7 +34,7 @@ The event name can be anything. As a second parameter, you can also send an obje
 
 This is the whole extent of the API. It's intentionally very slim so as to keep the SDK small and quick to load.
 
-If you want to trigger form submissions, button clicks etc. you need to implement the code for that yourself. This is an example of code we use to track custom events (trial signups) on our own website:
+If you want to trigger form submissions, button clicks etc. you need to implement the code for that yourself. This is an example of code we use to track custom events (trial signups) on our own website. We have listed few other code examples further down this page.
 
 ```javascript
 registerForm.addEventListener('submit', function(e) {
@@ -51,19 +51,6 @@ registerForm.addEventListener('submit', function(e) {
 
   plausible('Signup', {callback: submitForm});
 })
-```
-
-And here's an example of the code you need to insert if you're using the Contact Form 7 plugin on WordPress and want to see the number of visitors who use the contact form. In this example, there are two contact forms on two different pages and this is the code you should insert in the `head` section:
-
-```html
-<script>
-document.addEventListener( 'wpcf7mailsent', function( event ) {
-  if ( '1174' == event.detail.contactFormId ) {
-    plausible('FormProject')}
-  if ( '464' == event.detail.contactFormId ) {
-    plausible('FormContact')}
-}, false );
-</script>
 ```
 
 ## 2. Create a custom event goal in your Plausible Analytics account
@@ -124,7 +111,7 @@ Note that you must ensure that no personally identifiable information (PII) is s
 * IP addresses
 * pseudonymous cookie IDs, advertising IDs or other pseudonymous end user identifiers
 
-## 3. Tracking Links and Form buttons from HTML
+## Code examples for tracking links and form buttons
 
 Register events in the HTML with the use of an attribute tag `data-analytics`.  Then add the javascript below and it will keep track of any tags that include the `data-analytics` attribute.
 
@@ -223,4 +210,17 @@ function registerEvent(data) {
 
     plausible(...events);
 }
+```
+
+And here's an example of the code you need to insert if you're using the Contact Form 7 plugin on WordPress and want to see the number of visitors who use the contact form. In this example, there are two contact forms on two different pages and this is the code you should insert in the `head` section:
+
+```html
+<script>
+document.addEventListener( 'wpcf7mailsent', function( event ) {
+  if ( '1174' == event.detail.contactFormId ) {
+    plausible('FormProject')}
+  if ( '464' == event.detail.contactFormId ) {
+    plausible('FormContact')}
+}, false );
+</script>
 ```
