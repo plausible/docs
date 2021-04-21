@@ -15,3 +15,7 @@ You can also see the traffic flow by looking at the "**Entry Pages**" and "**Exi
 Plausible Analytics records the URL path of each page view as the visitors are browsing your site. Query parameters are discarded from the path to make sure they don't show up as different pages in Plausible Analytics.
 
 If your website is a single-page application with `pushState` routing, Plausible Analytics will track page views automatically with no extra work.
+
+:::note
+Would you like to aggregate your visitors per path to get a breakdown of visits to a specific section of your site such as your blog posts? You can do that using [our pageview goals](pageview-goals.md).
+:::
