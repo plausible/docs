@@ -259,6 +259,13 @@ See [filtering](#filtering)
 
 <hr / >
 
+**metrics** <Optional />
+
+Comma-separated list of metrics to show for each time bucket. Valid options are `visitors`, `pageviews`, `bounce_rate` and `visit_duration`. If not
+specified, it will default to `visitors`.
+
+<hr / >
+
 **interval** <Optional />
 
 Choose your reporting interval. Valid options are `date` (always) and `month` (when specified period is longer than one calendar month). Defaults to
@@ -335,7 +342,7 @@ See [time periods](#time-periods)
 
 **metrics** <Optional />
 
-List of metrics to show for each item in breakdown. Valid options are `visitors`, `pageviews`, `bounce_rate` and `visit_duration`. If not
+Comma-separated list of metrics to show for each item in breakdown. Valid options are `visitors`, `pageviews`, `bounce_rate` and `visit_duration`. If not
 specified, it will default to `visitors`.
 
 <hr / >
