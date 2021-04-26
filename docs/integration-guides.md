@@ -153,8 +153,20 @@ Note that you cannot use Google Tag Manager if you want to track a subfolder. On
 
 Add Plausible Analytics to your [Podcastpage.io](https://podcastpage.io/) website. Just enable the Plausible Analytic script via the "Integrations" page of your dashboard to add the tracking script to all pages.
 
+## iOS widget for quick overview of your stats
+
+[iOS widget](https://gist.github.com/linuz90/ac969cdfe9bd92af0b306c43caee8d0c) to display the total visitors count for today and the live visitors count with Plausible and Scriptable. Built and maintained by [Fabrizio Rinaldi](https://gist.github.com/linuz90).
+
+## Analytics Plausible Plugin that adds DNT and offline functionality 
+
+You can now use Plausible with [the analytics library](https://github.com/ian/analytics/tree/main/packages/plausible). Combine privacy first analytics with a tiny middleware layer to add features such as DNT (Do Not Track) and offline functionality. Built and maintained by [David Wells](https://github.com/DavidWells).
+ 
 ## Paste the script into the header section
 
 Alternatively, you can [integrate Plausible into your site manually](plausible-script.md) by pasting the Plausible Analytics tracking script code into the Header (`<head>`) section of your site.
+
+:::note
+Plausible by default doesn't take DNT into consideration as we're a privacy first analytics tool and [DNT allows](https://www.eff.org/issues/do-not-track) data analysis techniques that protect the anonymity of the users
+:::
 
 Don't see your favorite tool in this list? We're always working on new guides so please [add a request](https://github.com/plausible/docs/issues/new) or contribute to this list with the guide to your favorite tool. Thanks!
