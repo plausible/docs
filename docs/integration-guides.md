@@ -161,12 +161,12 @@ Add Plausible Analytics to your [Podcastpage.io](https://podcastpage.io/) websit
 
 You can now use Plausible with [the analytics library](https://github.com/ian/analytics/tree/main/packages/plausible). Combine privacy first analytics with a tiny middleware layer to add features such as DNT (Do Not Track) and offline functionality. Built and maintained by [David Wells](https://github.com/DavidWells).
  
-## Paste the script into the header section
-
-Alternatively, you can [integrate Plausible into your site manually](plausible-script.md) by pasting the Plausible Analytics tracking script code into the Header (`<head>`) section of your site.
-
 :::note
 Plausible by default doesn't take DNT into consideration as we're a privacy first analytics tool and [DNT allows](https://www.eff.org/issues/do-not-track) data analysis techniques that protect the anonymity of the users
 :::
+
+## Paste the script into the header section
+
+Alternatively, you can [integrate Plausible into your site manually](plausible-script.md) by pasting the Plausible Analytics tracking script code into the Header (`<head>`) section of your site.
 
 Don't see your favorite tool in this list? We're always working on new guides so please [add a request](https://github.com/plausible/docs/issues/new) or contribute to this list with the guide to your favorite tool. Thanks!
