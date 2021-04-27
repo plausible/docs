@@ -46,6 +46,14 @@ There are two negatives of using the same Plausible snippet on multiple sites an
 
 2. If you have pages with identical page paths between the different sites (say `yourdomain.com/best-page/` and `subdomain.yourdomain.com/best-page/`), these identical page paths will be listed under one entry (`/best-page/` in the "**Top Pages**" report with the stats combined into that one entry.
 
+## Can I send stats to multiple dashboards at the same time?
+
+You can send stats to multiple Plausible dashboards by configuring the data-domain as a comma-separated list:
+
+```html
+<script async defer data-domain="test1.yourdomain.com,test2.yourdomain.com" src="https://plausible.io/js/plausible.js"></script>
+```
+
 ## How to verify if the script is installed on your site
 
 After you've added the Plausible Analytics script to the HTML of your website, you should see the script installed on your site and can verify that the integration is working.
