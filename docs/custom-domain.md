@@ -58,6 +58,14 @@ When our JavaScript file loads from your subdomain, you can finish your setup by
 Using CSP? Do not forget to add this new subdomain specifically to your Content Security Policy too.
 :::
 
+## Should I create a custom domain for each of the sites that I want to track?
+
+This is not necessary. You could use one custom domain for all your sites. 
+
+This is convenient if you're running several sites as subdomains. In that case you could create plausible.yourdomain.com as your custom domain and use that for all the different subdomains you have as part of yourdomain.com (subdomain1.yourdomain.com, subdomain2.yourdomain.com etc).
+
+You can use the same custom domain on your other domains too. The only difference is that in those cases you'll be making a call to plausible.yourdomain.com from yourotherdomain.com rather than having it all under the same domain. The functionality remains the same and everything still works fine.
+
 ## Remove the custom domain integration
 
 If you'd like to remove the custom domain you have configured, click on the "**Remove custom domain**" button in the "**Custom domain**" section of your website settings.
