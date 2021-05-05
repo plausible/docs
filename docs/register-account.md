@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 To use Plausible Analytics, you need to [register an account](https://plausible.io/register). 
 
-To explore the product, we offer you a free 30-day trial. There are no restrictions on your usage during the free trial. You can add as many websites as you want to the same account too. No credit card is required to sign up for the trial either.
+To explore the product, we offer you a free 30-day trial. There are no restrictions on your usage during the free trial. You can test Plausible on multiple websites using the same account too. No credit card is required to sign up for the trial either.
 
 ## Register your account
 
