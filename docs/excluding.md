@@ -32,11 +32,15 @@ When using [uBlock Origin](https://github.com/gorhill/uBlock/#installation), you
 
 In the "**Temporary rules**" box on the right-hand side of the page insert the following rule. Remember to change `yourdomain.com` with the domain name where you installed Plausible Analytics.
 
-``` yourdomain.com plausible.io * block ```
+```html 
+yourdomain.com plausible.io * block 
+```
 
 Or in case you're serving Plausible Analytics script from your domain as a first party connection, use this:
 
-``` yourdomain.com yoursubdomain.yourdomain.com * block ```
+```html
+yourdomain.com yoursubdomain.yourdomain.com * block 
+```
 
 Once you’ve entered the correct rule, click on the "**Save**" button and then click on the "**Commit**" button.
 
@@ -48,11 +52,15 @@ Go into your Adblock Plus settings and click on "**Advanced**" in the left hand 
 
 Insert the following rule and click on the "**Add**" button. Remember to change `yourdomain.com` with the domain name where you installed Plausible Analytics.
 
-``` ||plausible.io^$script,domain=yourdomain.com ```
+```html
+||plausible.io^$script,domain=yourdomain.com 
+```
 
 Or in case you're serving Plausible Analytics script from your domain as a first party connection, use this. Remember to change `yoursubdomain.yourdomain.com` with the URL of your subdomain where you're serving the Plausible script from and `yourdomain.com` with the domain name where you installed Plausible Analytics.
 
-``` ||yoursubdomain.yourdomain.com^$script,domain=yourdomain.com ```
+```html
+||yoursubdomain.yourdomain.com^$script,domain=yourdomain.com 
+```
 
 ## Return to your website to ensure it works
 
