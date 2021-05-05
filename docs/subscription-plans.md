@@ -34,9 +34,7 @@ If you don't do that, we will contact you to remind you to upgrade to a higher p
 
 ## Features that are available on every plan
 
-There are no differences in terms of features available on the different subscription plans. All the features are available on every plan. 
-
-There are no restrictions in features and no data retention limits either. You can add an unlimited number of websites to the same Plausible account too.
+There are no differences in terms of features available on the different subscription plans. All the features are available on every plan. There are no data retention limits either.
 
 Same works for our 30-day free trial. There are no restrictions on features or usage limits within the trial month either.
  
