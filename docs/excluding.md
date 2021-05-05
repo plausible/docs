@@ -1,74 +1,67 @@
 ---
-title: Opt out and exclude your visits from the analytics
+title: Opt out and exclude yourself from the analytics
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-By default, Plausible counts every visitor to your website. When you are working on your site, you might not want to record your visits and page views.
+By default, Plausible Analytics tracks every visitor to your website. When you're working on your site, you might not want to record your own visits and page views.
 
-Most analytics tools do this by excluding specific IP addresses from being counted. However, we do not store the visitors' IP addresses in our database for privacy reasons as we are a [GDPR compliant web analytics](https://plausible.io/data-policy) tool.
+Most web analytics tools do this by excluding certain IP addresses from being counted. However, we do not store the visitors’ IP addresses in our database for privacy reasons as we are a [GDPR compliant web analytics](https://plausible.io/data-policy) tool.
 
-To prevent counting your visits, you can set a special `localStorage` flag in the browser. Here's how.
+To block your page views from your Plausible Analytics stats dashboard, start by installing and activating a standard ad-blocking browser extension. Some extensions may automatically opt you out of Plausible tracking as soon as you install them but you can follow these steps to make sure that they do so. 
+ 
+## uBlock Origin
 
-## To exclude your visits from being counted
+When using [uBlock Origin](https://github.com/gorhill/uBlock/#installation), you can follow these steps to make sure that you exclude yourself from being counted in the stats. 
 
-Visit the website you'd like to exclude your visits from and open the web console in your browser (press F12 in Firefox or Chrome). Then click the "Console" tab.
+### Locate the My Rules tab
 
-In Firefox, it looks like this:
+* Click the "**uBlock Origin**" icon in your browser
+* Then click the "**Dashboard**" icon in the lower-right corner to open the uBlock Origin dashboard
+* Tick the "**I am an advanced user**" box
 
-<img alt="Browser web console" src={useBaseUrl('img/browser-console.png')} />
+<img alt="The uBlock Origin dashboard" src={useBaseUrl('img/ublock-origin-dashboard.png')} />
 
-Then paste the following command and hit enter:
+* Select the "**My rules**" tab in the top navigation
 
-```html
-localStorage.plausible_ignore=true
-```
+<img alt="My Rules tab in the uBlock Origin dashboard" src={useBaseUrl('img/ublock-origin-my-rules.png')} />
 
-It will look something like this when you paste the command:
+### Block the Plausible Analytics script on your domain
 
-<img alt="Browser web console enter the command" src={useBaseUrl('img/exclude-yourself.png')} />
+<img alt="Add a new rule the uBlock Origin dashboard" src={useBaseUrl('img/ublock-origin-temporary-rules.png')} />
 
-And you will get this message when you hit enter:
+In the "**Temporary rules**" box on the right-hand side of the page insert the following rule. Remember to change `yourdomain.com` with the domain name where you installed Plausible Analytics.
 
-<img alt="Browser web console true" src={useBaseUrl('img/exclude-yourself-true.png')} />
+``` yourdomain.com plausible.io * block ```
 
-Note that you have to follow this process for every domain and subdomain you'd like to exclude your visits from. If you use multiple browsers, you also need to follow the same process on every browser you'd like not to be counted.
+Or in case you're serving Plausible Analytics script from your domain as a first party connection, use this:
 
-## Return to your site to ensure the exclusion works
+``` yourdomain.com yoursubdomain.yourdomain.com * block ```
 
-There are two ways you can check to ensure that you have excluded your visits:
+Once you’ve entered the correct rule, click on the "**Save**" button and then click on the "**Commit**" button.
 
-* 1: Reload your site multiple times and make sure that the total page views number in your Plausible dashboard does not increase. This isn't very reliable if there are other people visiting your site at the same time.
+## Adblock Plus and AdGuard
 
-* 2: Reload your site and open the browser console again. If you have excluded yourself, you should see a message saying "Ignoring Event: localStorage flag". You may need to ensure the "Warnings" filter (in the top right in Firefox and top-center under a dropdown in Chrome) is enabled before this message is visible.
+When using [Adblock Plus](https://adblockplus.org/) or [Adguard](https://adguard.com), you can follow these steps to make sure that you exclude yourself from being counted in the stats. 
+
+Go into your Adblock Plus settings and click on "**Advanced**" in the left hand side menu. Scroll down to the "**My Filter List**" section.
+
+Insert the following rule and click on the "**Add**" button. Remember to change `yourdomain.com` with the domain name where you installed Plausible Analytics.
+
+``` ||plausible.io^$script,domain=yourdomain.com ```
+
+Or in case you're serving Plausible Analytics script from your domain as a first party connection, use this. Remember to change `yoursubdomain.yourdomain.com` with the URL of your subdomain where you're serving the Plausible script from and `yourdomain.com` with the domain name where you installed Plausible Analytics.
+
+``` ||yoursubdomain.yourdomain.com^$script,domain=yourdomain.com ```
+
+## Return to your website to ensure it works
+
+You can test your filter by:
+
+* Reloading your website multiple times and making sure that the total page views number in your Plauible Analytics dashboard does not increase. This isn’t very reliable if there are other people visiting your site at the same time.
+
+* Alternatively you can load your website, open the browser inspector (press F12 on Firefox), and ensure that the Plausible Analytics script is not loading in the "**Network**" tab.
+
+* Your adblocker will also show you the number of domains and/or scripts they block when you visit the individual website.
 
 <img alt="Browser web console check" src={useBaseUrl('img/check-the-exclusion.png')} />
-
-## To re-enable counting of your visits
-
-To re-enable counting of your visits, you need to visit the website you'd like to enable the counting of your visits for. Open the web console in your browser and then click the "Console" tab.
-
-Then paste the following command and hit enter:
-
-```html
-delete localStorage.plausible_ignore
-```
-
-## Allow anyone on your site to exclude themselves
-
-To allow anyone on your site (usually beta testers or internal users) to exclude themselves from analytics, you could have them follow the steps above on every device, or you could provide a page on your website to do this automatically.
-
-We have created a downloadable version of such a page for you to use freely on your site. There are two versions of this example, one with a CSS stylesheet included if you want to use our style, and another without any styling if you'd like to bring your own.
-
-*Note*: With this method, similar to above, the page would need to be visited and enabled per domain and per browser, for every user. (And the page must be made available on the same domain as that which you wish to exclude analytics for)
-### Preview
-
-<img alt="Exclusion page screenshot" src={useBaseUrl('img/exclusion-page-example.png')} />
-
-### Download and Deploy
-
-For the styled version of this page, you'll need to download a <a target="_blank" download="index.html" href="/exclusion-examples/exclude.html">HTML file</a> and a <a target="_blank" download="plausible-exclusion.css" href="/exclusion-examples/plausible-exclusion.css">CSS file</a> and make both available together on your website.
-
-(If you'd prefer a light-theme for this page, you can delete the `dark` class from line 1 of the above HTML file)
-
-For the unstyled/bare version, you'll just need to download a <a target="_blank" download="index.html" href="/exclusion-examples/exclude-bare.html">HTML file</a>, and make it available on your website with any CSS you choose to add.
