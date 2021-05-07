@@ -90,7 +90,7 @@ Note that you cannot use Google Tag Manager if you want to track a subfolder. On
 
 ## NextJS 
 
-[NextJS](nextjs-integration.md): Simple integration for Plausible Analytics and https://nextjs.org. Provides custom events functionality. Built and maintained by [4lejandrito](https://github.com/4lejandrito).
+[NextJS](nextjs-integration.md): Simple integration for Plausible Analytics and [NextJS](https://nextjs.org). Provides custom events functionality. Built and maintained by [4lejandrito](https://github.com/4lejandrito).
 
 ## Vue.js & Nuxt.js
 
