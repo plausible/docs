@@ -8,7 +8,7 @@ Plausible gives you great control and flexibility in plans you can subscribe to,
 
 ## All plans are priced according to your traffic levels
 
-All Plausible Analytics subscription plans are priced according to your monthly traffic levels.
+All Plausible Analytics subscription plans are priced according to your monthly traffic levels. The billing is based on the total number of pageviews between all of the sites you have added to your account. 
 
 To calculate your traffic level, we take all the websites you have added to your Plausible account and total the number of page views between them. If you use the "[Custom Events](custom-event-goals.md)" feature, then these count towards your total monthly pageviews as well.
 
@@ -18,11 +18,7 @@ You can check your current traffic level in your account settings within the "Su
 
 <img alt="Your current subscription plan" src={useBaseUrl('img/current-subscription-plan.png')} />
 
-Our lowest subscription tier is up to 10,000 pageviews per month and it is priced at $6/month if you pay monthly.
-
-There's a 33% discount on all plans for those that want to pay annually. The annual billing discount makes our lowest tier $48 for the full year or $4 per month.
-
-You can see all of [our subscription plans and pricing](https://plausible.io/#pricing) on our website or within your Plausible account.
+You can get 2 months free if you subscribe to a yearly plan and pay annually. You can see all of [our subscription plans and pricing](https://plausible.io/#pricing) on our website or within your Plausible account.
 
 ## What happens if I go over my monthly page views limit?
 
