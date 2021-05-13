@@ -22,8 +22,6 @@ Choose your subscription tier according to the number of monthly page views and 
 
 Click on the "**Pay securely via Paddle**" button. The payment process is handled by a third-party payment provider. The billing information and the payment process is handled by Paddle.
 
-<img alt="Choose your subscription tier" src={useBaseUrl('img/choose-a-plan.png')} />
-
 ## Choose your payment method and subscribe
 
 Choose your location and click on the "**Continue**" button.
@@ -32,10 +30,6 @@ Choose your location and click on the "**Continue**" button.
 
 Next up you need to choose your payment method. You can pay by a credit card or with a PayPal account.
 
-<img alt="Choose your payment method" src={useBaseUrl('img/payment-method.png')} />
-
 Fill in your card details and click on the "**Subscribe Now**" button to subscribe to a paid subscription. Your subscription will start right away. Your subscription will be renewed automatically and you can change or cancel your plan at any time.
 
 You will automatically get an email from our payment processor Paddle with your invoice. You will get an automatic invoice sent to you via email for each payment that you make.
-
-<img alt="Fill in your payment details" src={useBaseUrl('img/subscribe-now.png')} />
