@@ -16,8 +16,6 @@ To calculate your traffic level, we take all the websites you have added to your
 
 You can check your current traffic level in your account settings within the "Subscription Plan" section. Look under the "Your usage" heading. You should get on a subscription plan that fits your traffic levels.
 
-<img alt="Your current subscription plan" src={useBaseUrl('img/current-subscription-plan.png')} />
-
 You can get 2 months free if you subscribe to a yearly plan and pay annually. You can see all of [our subscription plans and pricing](https://plausible.io/#pricing) on our website or within your Plausible account.
 
 ## What happens if I go over my monthly page views limit?
