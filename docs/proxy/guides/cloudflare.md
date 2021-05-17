@@ -2,7 +2,8 @@
 title: Proxying Plausible Analytics through Cloudflare
 ---
 
-You can use Cloudflare Workers to proxy your Plausible Analytics requests.
+You can use Cloudflare Workers to proxy your Plausible Analytics requests. Cloudflare Workers offers free service for up to 100,000 requests per day.
+All you need to set it up is a free Cloudflare account.
 
 Step 0: Sign up if you already haven't
 
