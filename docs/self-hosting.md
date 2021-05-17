@@ -104,10 +104,11 @@ your instance:
 
 ### 1. MaxMind geolocation database
 
-Plausible uses the GeoLite2 database created by [MaxMind](https://www.maxmind.com) for enriching analytics data with visitor countries. Their
-end-user license does not make it very easy to just package the database along with an open-source product.
+Plausible uses the country database created by [dbip](https://db-ip.com/) for enriching analytics data with visitor countries. The database is shipped with Plausible and country data collection happens automatically.
 
-This is why, to get country data for your analytics, you need to create an account [here](https://www.maxmind.com/en/geolite2/signup). Once you have your account details, open the `geoip/geoip.conf` file and enter your `GEOIPUPDATE_ACCOUNT_ID` and `GEOIPUPDATE_LICENSE_KEY`. Then, combine both the base docker-compose file with the one in the geoip folder:
+Optionally, you can provide different database. For example, you can use [MaxMind](https://www.maxmind.com) services. Their end-user license does not make it very easy to just package the database along with an open-source product.
+
+This is why, to use MaxMind, you need to create an account [here](https://www.maxmind.com/en/geolite2/signup). Once you have your account details, open the `geoip/geoip.conf` file and enter your `GEOIPUPDATE_ACCOUNT_ID` and `GEOIPUPDATE_LICENSE_KEY`. Then, combine both the base docker-compose file with the one in the geoip folder:
 
 ```bash
 $ docker-compose -f docker-compose.yml -f geoip/docker-compose.geoip.yml up
@@ -120,7 +121,6 @@ container.
 
 By default, Plausible runs on unencrypted HTTP on port 8000. We recommend running it on HTTPS behind a reverse proxy of some sort.
 You may or may not already be running a reverse proxy on your host, let's look at both options:
-
 
 #### No existing reverse proxy
 
@@ -142,7 +142,6 @@ The most important thing to note with an existing reverse proxy is that the `X-F
 client IP is not forwarded to the Plausible server, it cannot detect visitor countries and unique user tracking will be inaccurate.
 
 In our hosting repo, you'll find useful example configurations in case you're already running [Nginx](https://github.com/plausible/hosting/tree/master/reverse-proxy#nginx) or [Traefik 2](https://github.com/plausible/hosting/tree/master/reverse-proxy#traefik-2).
-
 
 ### 3. External Databases
 
