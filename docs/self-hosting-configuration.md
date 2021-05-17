@@ -67,21 +67,21 @@ Alternatively, you can use Postmark to send transactional emails. In this case, 
 
 ### IP Geolocation
 
-Plausible uses the GeoLite2 database created by [MaxMind](https://www.maxmind.com) for enriching analytics data with visitor countries. Their
-end-user license does not make it very easy to just package the database along with an open-source product. This is why, if you want
-to get country data for your analytics, you need to create an account and download their **GeoLite2 Country** database.
+Plausible uses the country database created by [dbip](https://db-ip.com/) for enriching analytics data with visitor countries. The
+database is shipped with Plausible and country data collection happens automatically.
+
+Optionally, you can provide different database. For example, you can use [MaxMind](https://www.maxmind.com) services.
+You need to create an account and download their **GeoLite2 Country** database.
 
 Once you have the database, mount it on the Plausible docker image and configure the path of the database file:
 
 | Parameter           | Default   | Description                                                                                          |
 |---------------------|-----------|------------------------------------------------------------------------------------------------------|
-| GEOLITE2_COUNTRY_DB | --        | Path to your IP geolocation database in MaxMind's format  |
+| GEOLITE2_COUNTRY_DB | -- (internal database) | Path to your IP geolocation database in MaxMind's format  |
 
 To make this as easy as possible you can use the [`maxmindinc/geoipupdate`](https://hub.docker.com/r/maxmindinc/geoipupdate) Docker image.
 You just need to add your account details, mount the database in the `plausible` container and let the image update the database automatically.
 To run the complete setup including geoip see [`docker-compose-geoip.yml`](https://github.com/plausible/hosting/blob/master/geoip/docker-compose.geoip.yml).
-
-If the Geolite database is not configured, no country data will be captured.
 
 ### Google Search Integration
 
