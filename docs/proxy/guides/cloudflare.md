@@ -13,8 +13,10 @@ In you Cloudflare account, click the dropdown on the top left and choose 'Worker
 start configuring your proxy. Next, you'll see a page where you can edit the code for your edge worker. Paste the following code:
 
 ```js
-const ScriptName = "/js/script.js";
-const Endpoint = "/api/event";
+const ScriptName = '/js/script.js';
+const Endpoint = '/api/event';
+
+const ScriptWithoutExtension = ScriptName.replace('.js', '')
 
 addEventListener('fetch', event => {
     event.passThroughOnException();
@@ -22,20 +24,20 @@ addEventListener('fetch', event => {
 })
 
 async function handleRequest(event) {
-  switch (new URL(event.request.url).pathname) {
-    case ScriptName:
-      return getScript(event)
-    case Endpoint:
+  const pathname = new URL(event.request.url).pathname
+  const [baseUri, ...extensions] = pathname.split('.')
+
+  if (baseUri === ScriptWithoutExtension) {
+      return getScript(event, extensions)
+  } else if (pathname === Endpoint) {
       return postData(event)
-    default:
-      return new Response(null, { status: 404 })
   }
 }
 
-async function getScript(event) {
+async function getScript(event, extensions) {
     let response = await caches.default.match(event.request);
     if (!response) {
-        response = await fetch("https://plausible.io/js/plausible.js");
+        response = await fetch("https://plausible.io/js/plausible." + extensions.join("."));
         event.waitUntil(caches.default.put(event.request, response.clone()));
     }
     return response;
