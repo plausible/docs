@@ -52,7 +52,7 @@ On WordPress? [Our Wordpress plugin](https://plausible.io/wordpress-analytics-pl
 
 ## Running an adblocker that blocks the Plausible script from being loaded?
 
-If you're running an adblocker or if you're concerned about adblockers, you can enable our custom domain integration which allows you to run the Plausible script as a first-party connection from your domain name. [See the instructions here](custom-domain.md).
+If you're concerned about adblockers and their impact on the accuracy of your stats, we offer a way to proxy our script. See [full details here](/proxy/introduction.md).
 
 ## Do you see wrong data in your countries report?
 
