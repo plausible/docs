@@ -32,7 +32,7 @@ In [our testing](https://markosaric.com/google-analytics-blocking/), between 6% 
 
 ### Are you worried about adblockers? Here's how proxying works
 
-Proxy our script. This is the option for those that want to avoid the script being blocked by any adblocker including Brave, Firefox when used with uBlock Origin and others. With our step-by-step instructions, the setup is straightforward even for those who don't have any coding experience.
+Proxy our script. This is the option for those that want to avoid the script being blocked by any adblocker including Brave browser, uBlock Origin and others. With our step-by-step instructions, the setup is straightforward even for those who don't have any coding experience.
 
 A proxy basically maps certain URLs from your domain to the Plausible domain:
 
