@@ -1,7 +1,7 @@
 module.exports = {
   someSidebar: {
     "Get Started": ['introduction', 'register-account', 'add-website', 'plausible-script', 'integration-guides', 'troubleshoot-integration', 'your-plausible-experience'],
-    "Website Settings": ['website-settings', 'general', 'visibility', 'shared-links', 'embed-dashboard', 'google-search-console-integration', 'email-reports', 'traffic-spikes', 'slack-reports', 'custom-domain', 'excluding-pages', 'export-stats', 'reset-site-data', 'delete-site-data', 'excluding'],
+    "Website Settings": ['website-settings', 'general', 'visibility', 'shared-links', 'embed-dashboard', 'google-search-console-integration', 'email-reports', 'traffic-spikes', 'slack-reports', 'excluding-pages', 'export-stats', 'reset-site-data', 'delete-site-data', 'excluding'],
     "Dashboard": ['guided-tour',
     {
         type: 'category',
@@ -10,6 +10,7 @@ module.exports = {
       },
                   'top-pages', 'countries', 'devices', 'metrics-definitions', 'keyboard-shortcuts'],
     "Goal Conversions": ['goal-conversions', 'pageview-goals', 'custom-event-goals', 'outbound-link-click-tracking', '404-error-pages-tracking'],
+    "Proxy": ['/proxy/introduction', '/proxy/guides/cloudflare', '/proxy/guides/netlify'],
     "API": ['stats-api', 'sites-api'],
     "Account Settings": ['change-email', 'reset-password', 'dashboard-appearance', 'delete-account'],
     "Manage Subscription": ['trial-to-paid', 'subscription-plans', 'change-plan', 'cancel-subscription'],
