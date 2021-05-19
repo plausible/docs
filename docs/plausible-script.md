@@ -24,9 +24,9 @@ Hover over your website name and click on the "**Settings**" icon on the right h
 
 <img alt="Your Plausible Analytics tracking script" src={useBaseUrl('img/javascript-snippet.png')} />
 
-## Alternatively you can serve the script from your domain as a first-party connection
+## Alternatively you can proxy our script
 
-We offer a quick and easy way to serve the Plausible Analytics script from your domain name as a first-party connection. See the full instructions on how to setup a custom subdomain and [serve the Plausible Analytics script as a first-party connection](custom-domain.md).
+If you're concerned about adblockers and their impact on the accuracy of your stats, we offer a way to proxy our script. See [full details here](/proxy/introduction.md).
 
 ## Check out integration guides for popular site builders and CMSs
 
