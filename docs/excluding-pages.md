@@ -22,18 +22,6 @@ The new snippet will look like this (make sure to change the `data-domain` attri
 <script async defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.exclusions.js"></script>
 ```
 
-### If you're serving our script from your custom domain
-
-If you're serving our script [from your domain as a first-party connection](custom-domain.md):
-
-Change your Plausible script snippet `src` attribute from `https://yoursubdomain.yourdomain.com/js/index.js` to `https://yoursubdomain.yourdomain.com/js/index.exclusions.js`
-
-The new snippet will look like this (make sure to change the `data-domain` attribute to the domain you added to Plausible):
-
-```html
-<script async defer data-domain="yourdomain.com" src="https://yoursubdomain.yourdomain.com/js/index.exclusions.js"></script>
-```
-
 ## 2. Add the pages you'd like to exclude from being tracked
 
 The page-specific exclusions rely on a script option `data-exclude`. You add page exclusions very similarly to `data-domain`. The format for this field is as follows:
@@ -70,17 +58,6 @@ You do not have to use the `exclusions` script type exclusively. You can chain v
 ```
 
 The example above includes both [outbound link clicks tracking](outbound-link-click-tracking.md) and tracking for [hash-based routing pages](hash-based-routing.md) in addition to the `exclusions` script type.
-
-### If you're serving our script from your custom domain
-
-The new snippet would look like this (make sure to change the `data-domain` attribute to the domain you added to Plausible, and `yoursubdomain.yourdomain` to your custom subdomain):
-
-```html
-<script async defer data-domain="yourdomain.com" src="https://yoursubdomain.yourdomain.com/js/index.exclusions.js" data-exclude="/blog4, /rule/*, /how-to-*, /*/admin, /*/priv/*, /more-paths-here"></script>
-```
-
-As usual, you need to place your Plausible Analytics tracking script code into the Header (`<head>`) section of your site. Place the tracking script within the `<head> … </head>` tags.
-
 
 ## Common use cases and examples
 
