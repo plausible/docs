@@ -14,7 +14,7 @@ Site owners feel unfairly targeted and an innocent casualty of this arms race be
 
 Plausible is not tracking people in the way that Google Analytics is so it's important not to confuse the two. We've put a lot of effort into giving site owners some actionable data in a [privacy-friendly way](https://plausible.io/privacy-focused-web-analytics). Plausible is simply doing web analytics the way it was at the start before surveillance capitalism became the default business model of the web.
 
-This section has been introduced after hearing from so many site owners who expect privacy-first analytics not to be blocked. We wanted to give a choice to people that use Plausible Analytics. 
+This section has been introduced after hearing from so many site owners who expect privacy-first analytics not to be blocked. We wanted to give a choice to people that use Plausible Analytics.
 
 ## Options for dealing with adblockers as a site owner
 
@@ -26,7 +26,7 @@ Simply run our default script. The easiest way to get started with Plausible Ana
 <script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.js"></script>
 ```
 
-This is the simplest way to install Plausible Analytics but it will also be blocked by a significant portion of your visitors. It will be counting all the major browsers fine but the Brave browser will block it by default. It will also be blocked by those visitors that run adblocker extensions that use the EasyPrivacy blocklist such as uBlock Origin. 
+This is the simplest way to install Plausible Analytics but it will also be blocked by a significant portion of your visitors. It will be counting all the major browsers fine but the Brave browser will block it by default. It will also be blocked by those visitors that run adblocker extensions that use the EasyPrivacy blocklist such as uBlock Origin.
 
 In [our testing](https://markosaric.com/google-analytics-blocking/), between 6% and 26% of people use adblockers all depending on the type of the site and the audience.
 
@@ -34,16 +34,14 @@ In [our testing](https://markosaric.com/google-analytics-blocking/), between 6% 
 
 Proxy our script. This is the option for those that want to avoid the script being blocked by any adblocker including Brave, Firefox when used with uBlock Origin and others. With our step-by-step instructions, the setup is straightforward even for those who don't have any coding experience.
 
-In order to see all of your traffic, you can set up a proxy in your infrastructure. A proxy basically maps certain URLs from your domain to the Plausible domain:
+A proxy basically maps certain URLs from your domain to the Plausible domain:
 
 ```
 https://<yourdomain.com>/js/script.js -> https://plausible.io/js/plausible.js
 https://<yourdomain.com>/api/event    -> https://plausible.io/api/event
 ```
 
-In this example, when the browser request a file at `https://yourdomain.com/js/script.js` it will actually be fetched from `https://plausible.io/js/plausible.js`. The analytics will work exactly the same but since your domain most likely is not on any adblocker's list, it will not be blocked by any visitors.
-
-Setting up your proxy takes a bit of work to but it ensures that you're seeing the full picture in your Plausible Dashboard.
+When the browser request a file at `https://yourdomain.com/js/script.js` it will actually be fetched from `https://plausible.io/js/plausible.js`. The analytics will work exactly the same but since your domain most likely is not on any adblocker's list, it will not be blocked by any visitors.
 
 There are many ways you can proxy requests to Plausible depending on your hosting situation. We've divided our guides to *standalone* and *integrated* proxies. A standalone proxy can be set up on its own and it does not matter what hosting provider or tech stack you are using. Integrated proxy setups are dependent on how you've deployed your app.
 
