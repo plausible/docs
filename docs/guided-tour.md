@@ -42,7 +42,7 @@ You can go granular and click on any of the metrics on your Plausible dashboard 
 
 <img alt="Top Pages" src={useBaseUrl('img/top-pages.png')} />
 
-See all the most visited pages on your site ranked by the number of unique visitors. You can click on the "**details**" button to see the full list with additional metrics. The number of pageviews and the bounce rates of the individual pages are included too.
+See all the most visited pages on your site ranked by the number of unique visitors. You can click on the "**details**" button to see the full list with additional metrics. The number of pageviews, bounce rate, and time on page for the individual pages are included too.
 
 You can also get insights into the visitor flow by looking at the "**Entry pages**" and "**Exit pages**". Click on the "**details**" button to see the full list with additional metrics. For "**Entry pages**" details include visit duration for visits that started on a specific page and for "**Exit pages**" details include the exit rate percentage.
 
