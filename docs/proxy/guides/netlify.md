@@ -1,5 +1,5 @@
 ---
-title: Proxying Plausible Analytics through Netlify
+title: Proxying Plausible through Netlify
 ---
 
 ## Step 1: Add URL rewrite rules
