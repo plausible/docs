@@ -4,7 +4,7 @@ title: Adblockers and using a proxy for analytics
 
 A frequently asked question we get is "why do adblockers block Plausible?". People think that by being privacy-first we would not be put in the same category as Google Analytics, Facebook Pixel and other surveillance capitalism tools.
 
-It's a good question. We're blocked because some blocklist maintainers have taken the stance that they want to block every tracking script and don't want to have the responsibility to judge what's good and what's bad.
+It's a good question. We're not blocked to the same extent as Google Analytics (neither Firefox nor Safari blocks Plausible) but we're blocked by some blocklist maintainers who have taken the stance that they want to block every tracking script and don't want to have the responsibility to judge what's good and what's bad.
 
 We have great respect for open source contributors and blocklist maintainers who in most cases offer their free time and coding skills to do something for the common good. We believe we're on the same side and have started a dialogue hoping that they will have a change of heart.
 
