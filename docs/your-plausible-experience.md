@@ -46,7 +46,7 @@ You can also choose to be transparent and make your site stats public so anyone 
 
 When you're working on your site, you might not want to record your own visits and page views. Here's [how to opt out and exclude yourself from your analytics](excluding.md).
 
-## Serve the script as a first party connection from your domain name
+## You can proxy our script
 
 If you're concerned about adblockers and their impact on the accuracy of your stats, we offer a way to proxy our script. See [full details here](/proxy/introduction.md).
 
