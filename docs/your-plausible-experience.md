@@ -10,12 +10,6 @@ To explore the product, we offer you a free 30-day trial. There are no restricti
 
 Here are the steps you can take to get the most out of your Plausible experience:
 
-## Serve the script as a first party connection from your domain name
-
-We offer a quick and easy way to serve the Plausible Analytics script from your domain name as a first-party connection. If your site is on `yourdomain.com` you can use `plausible.yourdomain.com`. The name of the subdomain can be anything that you want.
-
-See [full details on serving the script as a first party connection from your domain name](custom-domain.md).
-
 ## Enable email/Slack reports and notifications for traffic spikes
 
 You can decide to enable weekly (every Monday) and/or monthly (every 1st day of the month) reports to be sent directly via email. [See instructions here](email-reports.md).
@@ -51,5 +45,9 @@ You can also choose to be transparent and make your site stats public so anyone 
 ## Opt out from counting your own visits
 
 When you're working on your site, you might not want to record your own visits and page views. Here's [how to opt out and exclude yourself from your analytics](excluding.md).
+
+## Serve the script as a first party connection from your domain name
+
+If you're concerned about adblockers and their impact on the accuracy of your stats, we offer a way to proxy our script. See [full details here](/proxy/introduction.md).
 
 Now you're ready to start exploring your [fast loading, ethical and actionable Plausible Analytics dashboard](https://plausible.io/sites).
