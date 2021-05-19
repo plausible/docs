@@ -10,15 +10,19 @@ It's a good question. We're blocked because some blocklist maintainers have take
 
 We have great respect for open source contributors and blocklist maintainers who in most cases offer their free time and coding skills to do something for the common good. We believe we're on the same side and have started a dialogue hoping that they will have a change of heart.
 
+## Giving site owners a choice
+
 Site owners feel unfairly targeted and an innocent casualty of this arms race between blocklist maintainers and the adtech industry. Site owners want some data to figure out what's going on and learn what they can do to improve. It's unfortunate for them to lose valuable, privacy-friendly insights that help them create a better user experience.
 
 Plausible is not tracking people in the way that Google Analytics is so it's important not to confuse the two. We've put a lot of effort into giving site owners some actionable data in a [privacy-friendly way](https://plausible.io/privacy-focused-web-analytics). Plausible is simply doing web analytics the way it was at the start before surveillance capitalism became the default business model of the web.
 
-This section has been introduced after hearing from so many site owners who expect privacy-first analytics not to be blocked. We wanted to give a choice to people that use Plausible Analytics. Here it is:
+This section has been introduced after hearing from so many site owners who expect privacy-first analytics not to be blocked. We wanted to give a choice to people that use Plausible Analytics. 
 
-* Are you not concerned about adblockers at all? Simply run our default script. It will be counting all the major browsers fine but the Brave browser will block it by default. It will also be blocked by those visitors that run adblocker extensions that use the EasyPrivacy blocklist such as uBlock Origin. In [our testing](https://markosaric.com/google-analytics-blocking/), between 6% and 26% of people use adblockers all depending on the type of the site and the audience.
+## Options for dealing with adblockers as a site owner
 
-* Are you worried about adblockers and want more accurate stats? Proxy our script. This is the option for those that want to avoid the script being blocked by any adblocker including Brave, Firefox when used with uBlock Origin and others. With our step-by-step instructions, the setup is straightforward even for those who don't have any coding experience.
+**Are you not concerned about adblockers at all? Simply run our default script.** It will be counting all the major browsers fine but the Brave browser will block it by default. It will also be blocked by those visitors that run adblocker extensions that use the EasyPrivacy blocklist such as uBlock Origin. In [our testing](https://markosaric.com/google-analytics-blocking/), between 6% and 26% of people use adblockers all depending on the type of the site and the audience.
+
+**Are you worried about adblockers and want more accurate stats? Proxy our script.** This is the option for those that want to avoid the script being blocked by any adblocker including Brave, Firefox when used with uBlock Origin and others. With our step-by-step instructions, the setup is straightforward even for those who don't have any coding experience.
 
 * Proxy instructions for Cloudflare
 
