@@ -30,7 +30,7 @@ This is the simplest way to install Plausible Analytics but it will also be bloc
 
 In [our testing](https://markosaric.com/google-analytics-blocking/), between 6% and 26% of people use adblockers all depending on the type of the site and the audience.
 
-## Are you worried about adblockers? Here's how proxying works
+### Are you worried about adblockers? Here's how proxying works
 
 Proxy our script. This is the option for those that want to avoid the script being blocked by any adblocker including Brave, Firefox when used with uBlock Origin and others. With our step-by-step instructions, the setup is straightforward even for those who don't have any coding experience.
 
