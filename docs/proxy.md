@@ -20,6 +20,14 @@ This section has been introduced after hearing from so many site owners who expe
 
 * Are you worried about adblockers and want more accurate stats? Proxy our script. This is the option for those that want to avoid the script being blocked by any adblocker including Brave, Firefox when used with uBlock Origin and others. With our step-by-step instructions, the setup is straightforward even for those who don't have any coding experience.
 
+* Proxy instructions for Cloudflare
+
+* Proxy instructions for Netlify
+
+:::note
+Are you using a different framework? Please do help us crowdsource the proxy instructions by submitting the step-by-step process for the framework that you are familiar with. We're also looking for help to enable the proxy on the different [community created plugins and extensions](integration-guides.md). Thank you for your contribution!
+:::
+
 :::note
 Our CNAME custom domains are now in legacy mode. They still work but we recommend those who use the custom domain to proxy the script instead. Custom domain is blocked by Brave and it is also blocked by people that use Firefox with uBlock Origin enabled. In addition to this, adblockers are manually crawling the web for connections and may put your custom domain on their lists if/when discovered which would also block it on Chrome and other browsers.
 :::
