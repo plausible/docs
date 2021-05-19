@@ -34,20 +34,6 @@ As usual, you need to place your Plausible Analytics tracking script code into t
 
 Do this for all the websites where you'd like to enable outbound link click tracking. This is the only tracking script you need. You don't need to keep the old script. Your stats will keep tracking without intteruption and you will not lose any of your old data.
 
-### If you're serving our script from your custom domain
-
-If you're serving our script [from your domain as a first-party connection](custom-domain.md):
-
-Change your Plausible script snippet `src` attribute from `https://yoursubdomain.yourdomain.com/js/plausible.js` to `https://yoursubdomain.yourdomain.com/js/plausible.outbound-links.js`
-
-The new snippet will look like this (make sure to change the `data-domain` attribute to the domain you added to Plausible):
-
-```html
-<script async defer data-domain="yourdomain.com" src="https://yoursubdomain.yourdomain.com/js/plausible.outbound-links.js"></script>
-```
-
-As usual, you need to place your Plausible Analytics tracking script code into the Header (`<head>`) section of your site. Place the tracking script within the `<head> … </head>` tags.
-
 ## Step 2: Create a custom event goal in your Plausible Analytics account
 
 Outbound link clicks won’t show up automatically. You’ll have to configure the goal for them to show up on your dashboard.
