@@ -36,10 +36,10 @@ In the "**Temporary rules**" box on the right-hand side of the page insert the f
 yourdomain.com plausible.io * block 
 ```
 
-Or in case you're serving Plausible Analytics script from your domain as a first party connection, use this:
+Or in case you're proxying our script, use this. Remember to change `yourproxy.com` with location where you're serving the Plausible script from and `yourdomain.com` with the domain name where you installed Plausible Analytics.
 
 ```html
-yourdomain.com yoursubdomain.yourdomain.com * block 
+yourdomain.com yourproxy.com * block 
 ```
 
 Once you’ve entered the correct rule, click on the "**Save**" button and then click on the "**Commit**" button.
@@ -56,10 +56,10 @@ Insert the following rule and click on the "**Add**" button. Remember to change 
 ||plausible.io^$script,domain=yourdomain.com 
 ```
 
-Or in case you're serving Plausible Analytics script from your domain as a first party connection, use this. Remember to change `yoursubdomain.yourdomain.com` with the URL of your subdomain where you're serving the Plausible script from and `yourdomain.com` with the domain name where you installed Plausible Analytics.
+Or in case you're proxying our script, use this. Remember to change `yourproxy.com` with location where you're serving the Plausible script from and `yourdomain.com` with the domain name where you installed Plausible Analytics.
 
 ```html
-||yoursubdomain.yourdomain.com^$script,domain=yourdomain.com 
+||yourproxy.com^$script,domain=yourdomain.com 
 ```
 
 ## Return to your website to ensure it works
