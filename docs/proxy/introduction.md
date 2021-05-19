@@ -47,16 +47,14 @@ There are many ways you can proxy requests to Plausible depending on your hostin
 
 Standalone proxy setups:
 * [Cloudflare Workers](/docs/proxy/guides/cloudflare)
-* Using something else? [Contribute to this guide](https://github.com/plausible/docs/)
 
 Integrated proxy setups:
 * [Netlify](/docs/proxy/guides/netlify)
-* Using something else? [Contribute to this guide](https://github.com/plausible/docs/)
 
 :::note
-Are you using a different framework? Please do help us crowdsource the proxy instructions by submitting the step-by-step process for the framework that you are familiar with. We're also looking for help to enable the proxy on the different [community created plugins and extensions](integration-guides.md). Thank you for your contribution!
+Are you using something else? Please do help us crowdsource the proxy instructions by submitting the step-by-step process for the framework that you are familiar with. We're also looking for help to enable the proxy on the different [community-built plugins and extensions](integration-guides.md). Thanks for your contribution!
 :::
 
 :::note
-Our CNAME custom domains are now in legacy mode. They still work but we recommend those who use the custom domain to proxy the script instead. Custom domain is blocked by Brave and it is also blocked by people that use Firefox with uBlock Origin enabled. In addition to this, adblockers are manually crawling the web for connections and may put your custom domain on their lists if/when discovered which would also block it on Chrome and other browsers.
+Our CNAME custom domains are now in legacy mode. They still work but we recommend those who use the custom domain to proxy the script instead. Custom domain is blocked by Brave and by people that use Firefox with uBlock Origin enabled. In addition to this, adblockers are manually crawling the web for connections and may put your custom domain on their lists if/when discovered which would also block it on Chrome and other browsers.
 :::
