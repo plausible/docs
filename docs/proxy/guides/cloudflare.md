@@ -32,6 +32,7 @@ async function handleRequest(event) {
   } else if (pathname === Endpoint) {
       return postData(event)
   }
+  return new Response(null, { status: 404 })
 }
 
 async function getScript(event, extensions) {
