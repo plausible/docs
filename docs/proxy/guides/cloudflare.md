@@ -5,12 +5,11 @@ title: Proxying Plausible through Cloudflare
 You can use Cloudflare Workers to proxy your Plausible Analytics requests. Cloudflare Workers offers free service for up to 100,000 requests per day.
 All you need to set it up is a free Cloudflare account.
 
-Step 0: Sign up if you already haven't
+Step 0: Sign up for a free Cloudflare account if you don't have an account already
 
 ## Step 1: Create a worker
 
-In you Cloudflare account, click the dropdown on the top left and choose 'Workers'. On the workers page, click on 'Create a Worker' to
-start configuring your proxy. Next, you'll see a page where you can edit the code for your edge worker. Paste the following code:
+In you Cloudflare account, click the dropdown on the top left and choose '[Workers](https://workers.cloudflare.com/)'. On the workers page, click on 'Create a Worker' to start configuring your proxy. Next, you'll see a page where you can edit the code for your edge worker. Remove the default code and paste the following code instead:
 
 ```js
 const ScriptName = '/js/script.js';
@@ -49,11 +48,13 @@ async function postData(event) {
 }
 ```
 
+Once you've added the code for the worker, you can click on the 'Save and Deploy' button.
+
 ## Step 2: Make sure the script is accessible
 
-Once you've added the code for the worker, you can save and deploy the worker. At this point, you can click 'Rename' in the Workers' dashboard to
-give your worker a meaningful name (avoid words like 'analytics', 'tracking', etc.). Now, the Plausible script should be accessible at the following
-url:
+At this point, you can click 'Rename' in the Workers' dashboard to give your worker a meaningful name (avoid words like 'analytics', 'tracking', 'stats', etc.). 
+
+Now, the Plausible script should be accessible at the following url:
 
 ```
 <your-worker-name>.<your-cloudflare-username>.workers.dev/js/script.js
@@ -63,8 +64,10 @@ If you can load this URL and see some Javascript code, you should be good to go 
 
 ## Step 3: Install your proxy script
 
-Once you have the URL for your script, you can replace your Plausible Analytics script tag with the proxied one instead:
+Once you have the URL for your script, you can replace your Plausible Analytics script tag in the Header (`<head>`) section of your site with the proxied one instead:
 
 ```html
-<script async data-domain="yourdomain.com" src="<project>.<username>.workers.dev/js/script.js"></script>
+<script async data-domain="yourdomain.com" src="<your-worker-name>.<your-cloudflare-username>.workers.dev/js/script.js"></script>
 ```
+
+That's it! You're now counting your website stats using a proxy.
