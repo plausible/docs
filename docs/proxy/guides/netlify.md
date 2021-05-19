@@ -29,7 +29,7 @@ it might get blocked in the future.
 With the URL rewrites in place, you can change your script tag as follows:
 
 ```html
-<script async data-domain="yourdomain.com" data-api="/api/event" src="/js/script.js"></script>
+<script defer data-domain="yourdomain.com" data-api="/api/event" src="/js/script.js"></script>
 ```
 
 Deploy these changes to your Netlify site. You can verify the proxy is working by opening your network tab. You should see a request to
