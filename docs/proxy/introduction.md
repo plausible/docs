@@ -18,19 +18,21 @@ This section has been introduced after hearing from so many site owners who expe
 
 ## Options for dealing with adblockers as a site owner
 
-### Are you not concerned about adblockers?
+### Not concerned about adblockers?
 
-**Are you not concerned about adblockers at all? Simply run our default script.** The easiest way to get started with Plausible Analytics is to install the script from our main domain as follows:
+Simply run our default script. The easiest way to get started with Plausible Analytics is to install the script from our main domain as follows:
 
 ```html
 <script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.js"></script>
 ```
 
-This is the simplest way to install Plausible Analytics but it will also be blocked by a significant portion of your visitors. It will be counting all the major browsers fine but the Brave browser will block it by default. It will also be blocked by those visitors that run adblocker extensions that use the EasyPrivacy blocklist such as uBlock Origin. In [our testing](https://markosaric.com/google-analytics-blocking/), between 6% and 26% of people use adblockers all depending on the type of the site and the audience.
+This is the simplest way to install Plausible Analytics but it will also be blocked by a significant portion of your visitors. It will be counting all the major browsers fine but the Brave browser will block it by default. It will also be blocked by those visitors that run adblocker extensions that use the EasyPrivacy blocklist such as uBlock Origin. 
 
-## Are you worried about adblockers? here's how proxying works
+In [our testing](https://markosaric.com/google-analytics-blocking/), between 6% and 26% of people use adblockers all depending on the type of the site and the audience.
 
-**Are you worried about adblockers and want more accurate stats? Proxy our script.** This is the option for those that want to avoid the script being blocked by any adblocker including Brave, Firefox when used with uBlock Origin and others. With our step-by-step instructions, the setup is straightforward even for those who don't have any coding experience.
+## Are you worried about adblockers? Here's how proxying works
+
+Proxy our script. This is the option for those that want to avoid the script being blocked by any adblocker including Brave, Firefox when used with uBlock Origin and others. With our step-by-step instructions, the setup is straightforward even for those who don't have any coding experience.
 
 In order to see all of your traffic, you can set up a proxy in your infrastructure. A proxy basically maps certain URLs from your domain to the Plausible domain:
 
