@@ -29,8 +29,16 @@ it might get blocked in the future.
 With the URL rewrites in place, you can change your script tag as follows:
 
 ```html
-<script defer data-domain="yourdomain.com" data-api="/api/event" src="/js/script.js"></script>
+<script defer data-domain="yourdomain.com" src="/js/script.js"></script>
 ```
+
+In case of a subdirectory installation, you'll also need to add a `data-api` attribute to tell the script where
+the data should be sent.
+
+```html
+<script defer data-domain="yourdomain.com" data-api="/subdirectory/api/event" src="/subdirectory/js/script.js"></script>
+```
+
 
 Deploy these changes to your Netlify site. You can verify the proxy is working by opening your network tab. You should see a request to
 `https://yourdomain.com.com/js/script.js` with status 200 and another one to `https://yourdomain.com.com/api/event` with status 202.
