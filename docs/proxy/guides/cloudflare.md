@@ -37,14 +37,14 @@ async function handleRequest(event) {
 async function getScript(event, extensions) {
     let response = await caches.default.match(event.request);
     if (!response) {
-        response = await fetch("https://staging.plausible.io/js/plausible." + extensions.join("."));
+        response = await fetch("https://plausible.io/js/plausible." + extensions.join("."));
         event.waitUntil(caches.default.put(event.request, response.clone()));
     }
     return response;
 }
 
 async function postData(event) {
-    return await fetch("https://staging.plausible.io/api/event", event.request);
+    return await fetch("https://plausible.io/api/event", event.request);
 }
 ```
 
