@@ -5,7 +5,7 @@ title: Proxying Plausible through Netlify
 ## Step 1: Add URL rewrite rules
 
 If you don't already a `_redirects` file at the root of your repository, create one. You can learn
-more about netlify redirects and rewrites [here](https://docs.netlify.com/routing/redirects/). Here's
+more about Netlify redirects and rewrites [here](https://docs.netlify.com/routing/redirects/). Here's
 the setup for proxying Plausible Analytics:
 
 ``` title="_redirects"
@@ -23,6 +23,10 @@ that you may already have in your application:
 
 Choose a generic or irrelevant name for the subdirectory. If you choose something like `analytics` or `plausible`,
 it might get blocked in the future.
+
+:::note
+Using our extensions such as hash-based routing, page exclusions or outbound link click tracking? Edit your `_redirects` and change the name from `script.js` to the script you want to use: `script.hash.js`, `script.exclusions.js` or `script.outbound-links.js`. Want to use more than one extension? You can chain them like this: `script.hash.exclusions.outbound-links.js`
+:::
 
 ## Step 2: Adjust your deployed script
 
