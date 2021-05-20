@@ -96,5 +96,5 @@ change your Plausible script tag to reference the new URL. It's also important t
 Notice that since the script tag is installed on the same domain as the website itself, there's no need to specify the hostname in `src` and `data-api` attributes. A relative path will work just fine.
 
 :::note
-Want to count [outbound link clicks](outbound-link-click-tracking/md)? Change the file name from 'script.js' to 'script.outbound-links.js'
+Want to count [outbound link clicks](outbound-link-click-tracking.md)? Change the file name from 'script.js' to 'script.outbound-links.js'
 :::
