@@ -53,7 +53,3 @@ On WordPress? [Our Wordpress plugin](https://plausible.io/wordpress-analytics-pl
 ## Running an adblocker that blocks the Plausible script from being loaded?
 
 If you're concerned about adblockers and their impact on the accuracy of your stats, we offer a way to proxy our script. See [full details here](/proxy/introduction.md).
-
-## Do you see wrong data in your countries report?
-
-Are you using Cloudflare and having your sites proxied? A proxy can override the remote IP which would lead to wrong geolocation data in your stats. Remove the proxy and make it just a DNS record in your Cloudflare settings to solve the issue.
