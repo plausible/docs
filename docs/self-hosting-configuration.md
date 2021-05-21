@@ -40,6 +40,8 @@ Plausible uses [PostgreSQL](https://www.tutorialspoint.com/postgresql/postgresql
 | Parameter            | Default                                  | Description                                                                                                               |
 |----------------------|-----------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
 | DATABASE_URL            | postgres://localhost:5432/plausible_dev | The database URL as dictated [here](https://hexdocs.pm/ecto/Ecto.Repo.html#module-urls), i.e. for external db server postgres://user:password@ip.or.domain.to.server/database_name                                  |
+| DATABASE_SOCKET_DIR | -- | Directory where a UNIX socket of postgresql is available. Mutually exclusive with `DATABASE_URL`, can only be used with `DATABASE_NAME` |
+| DATABASE_NAME | -- | Name of the database in PostgreSQL to use. Only applicable in conjunction with `DATABASE_SOCKET_DIR` |
 | CLICKHOUSE_DATABASE_URL | http://localhost:8123/plausible_dev     | Connection string for Clickhouse in the same format, i.e. for docker-compose setup http://plausible_events_db:8123/plausible_events_db |
 
 
