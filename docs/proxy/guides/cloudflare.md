@@ -44,7 +44,9 @@ async function getScript(event, extensions) {
 }
 
 async function postData(event) {
-    return await fetch("https://plausible.io/api/event", event.request);
+    const request = new Request(event.request);
+    request.headers.delete('cookie');
+    return await fetch("https://plausible.io/api/event", request);
 }
 ```
 
