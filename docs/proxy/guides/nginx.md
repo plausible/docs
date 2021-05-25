@@ -1,0 +1,56 @@
+---
+title: Proxying Plausible through Nginx
+---
+
+## Step 1: In the Nginx config
+
+```
+# Only needed if you cache the plausible script. Speeds things up.
+proxy_cache_path /var/run/nginx-cache/jscache levels=1:2 keys_zone=jscache:100m inactive=30d  use_temp_path=off max_size=100m;
+
+server {
+    ...
+    location = /whoisthere.js {
+        # Change this if you use a different variant of the script
+        proxy_pass https://plausible.io/js/plausible.outbound-links.js;
+
+        # Tiny, negligible performance improvement. Very optional.
+        proxy_buffering on;
+
+        # Cache the script for 6 hours, as long as plausible.io returns a valid response
+        proxy_cache jscache;
+        proxy_cache_valid 200 6h;
+        proxy_cache_use_stale updating error timeout invalid_header http_500;
+
+        proxy_set_header Host plausible.io;
+        proxy_ssl_name plausible.io;
+        proxy_ssl_server_name on;
+        proxy_ssl_session_reuse off;
+
+        # Optional. Adds a header to tell if you got a cache hit or miss
+        add_header X-Cache $upstream_cache_status;
+    }
+
+    location = /whoisthere/event {
+        proxy_pass https://plausible.io/api/event;
+        proxy_buffering on;
+        proxy_http_version 1.1;
+
+        proxy_set_header Host plausible.io;
+        proxy_ssl_name plausible.io;
+        proxy_ssl_server_name on;
+        proxy_ssl_session_reuse off;
+
+        proxy_set_header X-Forwarded-For   $remote_addr;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-Host  $host;
+    }
+```
+
+## Step 2: Adjust your deployed script
+
+With the above config in place, you can change the script tag on your site as follows:
+
+```html
+<script async defer data-api="https://website.com/whoisthere/event" data-domain="website.com" src="https://website.com/whoisthere.js"></script>
+```
