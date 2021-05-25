@@ -10,7 +10,7 @@ the setup for proxying Plausible Analytics:
 
 ``` title="_redirects"
 /js/script.js https://plausible.io/js/plausible.js 200
-/api/event https://plausible.io/api/event 200
+/api/event https://plausible.io/api/event 202
 ```
 
 You can also choose a subdirectory to install Plausible under to make sure it doesn't shadow any routes
@@ -18,7 +18,7 @@ that you may already have in your application:
 
 ``` title="_redirects"
 /your-subdirectory/js/script.js https://plausible.io/js/plausible.js 200
-/your-subdirectory/api/event https://plausible.io/api/event 200
+/your-subdirectory/api/event https://plausible.io/api/event 202
 ```
 
 Choose a generic or irrelevant name for the subdirectory. If you choose something like `analytics` or `plausible`,
