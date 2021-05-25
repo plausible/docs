@@ -9,7 +9,7 @@ Step 0: Sign up for a free Cloudflare account if you don't have an account alrea
 
 ## Step 1: Create a worker
 
-In you Cloudflare account, click the dropdown on the top left and choose '[Workers](https://workers.cloudflare.com/)'. On the workers page, click on 'Create a Worker' to start configuring your proxy. Next, you'll see a page where you can edit the code for your edge worker. Remove the default code and paste the following code instead:
+In your Cloudflare account, click the dropdown on the top left and choose '[Workers](https://workers.cloudflare.com/)'. On the workers page, click on 'Create a Worker' to start configuring your proxy. Next, you'll see a page where you can edit the code for your edge worker. Remove the default code and paste the following code instead:
 
 ```js
 const ScriptName = '/js/script.js';
