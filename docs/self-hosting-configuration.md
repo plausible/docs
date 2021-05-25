@@ -41,6 +41,8 @@ Plausible uses [PostgreSQL](https://www.tutorialspoint.com/postgresql/postgresql
 |----------------------|-----------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
 | DATABASE_URL            | postgres://localhost:5432/plausible_dev | The database URL as dictated [here](https://hexdocs.pm/ecto/Ecto.Repo.html#module-urls), i.e. for external db server postgres://user:password@ip.or.domain.to.server/database_name                                  |
 | CLICKHOUSE_DATABASE_URL | http://localhost:8123/plausible_dev     | Connection string for Clickhouse in the same format, i.e. for docker-compose setup http://plausible_events_db:8123/plausible_events_db |
+| CLICKHOUSE_FLUSH_INTERVAL_MS | 5000 | Interval (in milliseconds) between flushing events and sessions data to Clickhouse. Consult [Clickhouse docs](https://clickhouse.tech/docs/en/introduction/performance/#performance-when-inserting-data) before changing it. |
+| CLICKHOUSE_MAX_BUFFER_SIZE | 10000 | Maximum size of the buffer of events or sessions. Consult [Clickhouse docs](https://clickhouse.tech/docs/en/introduction/performance/#performance-when-inserting-data) before changing it. |
 
 
 ### Mailer/SMTP Setup
