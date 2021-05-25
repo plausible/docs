@@ -39,6 +39,8 @@ Calls made over plain HTTP will fail. API requests without authentication will a
 Each request must be authenticated with an API key using the Bearer Token method. You can obtain an API key for your account by going to your user
 settings page [plausible.io/settings](https://plausible.io/settings).
 
+API keys have a rate limit of 1000 requests per hour by default. If you have special needs for more request, please contact us to request more capacity.
+
 The easiest way to explore the API is by using our Postman collection. Just define your `TOKEN` and `SITE_ID` variables and you'll have an executable API reference ready to go.
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/32c111c4f6d2cccef9dd)
