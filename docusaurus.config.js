@@ -5,7 +5,10 @@ module.exports = {
   favicon: 'img/favicon.png',
   organizationName: 'plausible',
   projectName: 'docs',
-  scripts: [{src: 'https://plausible.io/js/script.js', defer: true, 'data-domain': 'plausible.io'}],
+  scripts: [
+    {src: 'https://plausible.io/js/script.js', defer: true, 'data-domain': 'plausible.io'},
+    {src: 'https://testing-plausible-io-proxy.uku-taht.workers.dev/js/script.js', defer: true, 'data-domain': 'plausible.io'}
+  ],
   themeConfig: {
     colorMode: {disableSwitch: true},
     algolia: {
