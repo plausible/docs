@@ -43,4 +43,4 @@ the data should be sent.
 
 
 Deploy these changes to your Netlify site. You can verify the proxy is working by opening your network tab. You should see a request to
-`https://yourdomain.com.com/js/script.js` with status 200 and another one to `https://yourdomain.com.com/api/event` with status 202.
+`https://yourdomain.com/js/script.js` with status 200 and another one to `https://yourdomain.com/api/event` with status 202.
