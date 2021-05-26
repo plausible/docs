@@ -10,9 +10,9 @@ proxy_cache_path /var/run/nginx-cache/jscache levels=1:2 keys_zone=jscache:100m 
 
 server {
     ...
-    location = /whoisthere.js {
+    location = /js/script.js {
         # Change this if you use a different variant of the script
-        proxy_pass https://plausible.io/js/plausible.outbound-links.js;
+        proxy_pass https://plausible.io/js/plausible.js;
 
         # Tiny, negligible performance improvement. Very optional.
         proxy_buffering on;
@@ -31,7 +31,7 @@ server {
         add_header X-Cache $upstream_cache_status;
     }
 
-    location = /whoisthere/event {
+    location = /api/event {
         proxy_pass https://plausible.io/api/event;
         proxy_buffering on;
         proxy_http_version 1.1;
@@ -41,7 +41,7 @@ server {
         proxy_ssl_server_name on;
         proxy_ssl_session_reuse off;
 
-        proxy_set_header X-Forwarded-For   $remote_addr;
+        proxy_set_header X-Forwarded-For   $proxy_add_x_forwarded_for;
         proxy_set_header X-Forwarded-Proto $scheme;
         proxy_set_header X-Forwarded-Host  $host;
     }
@@ -52,5 +52,5 @@ server {
 With the above config in place, you can change the script tag on your site as follows:
 
 ```html
-<script async defer data-api="https://website.com/whoisthere/event" data-domain="website.com" src="https://website.com/whoisthere.js"></script>
+<script async defer data-api="https://website.com/api/event" data-domain="website.com" src="https://website.com/js/script.js"></script>
 ```
