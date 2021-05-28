@@ -4,7 +4,7 @@ title: Proxying Plausible through Next.js / Vercel
 
 ## Step 1: Add URL rewrite rules
 
-If you don't already a `next.config.js` file at the root of your repository, create one. You can learn
+If you don't already have a `next.config.js` file at the root of your repository, create one. You can learn
 more about Next.js rewrites [here](https://nextjs.org/docs/api-reference/next.config.js/rewrites). Here's
 the setup for proxying Plausible Analytics:
 
