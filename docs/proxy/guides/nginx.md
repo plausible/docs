@@ -22,11 +22,6 @@ server {
         proxy_cache_valid 200 6h;
         proxy_cache_use_stale updating error timeout invalid_header http_500;
 
-        proxy_set_header Host plausible.io;
-        proxy_ssl_name plausible.io;
-        proxy_ssl_server_name on;
-        proxy_ssl_session_reuse off;
-
         # Optional. Adds a header to tell if you got a cache hit or miss
         add_header X-Cache $upstream_cache_status;
     }
@@ -35,11 +30,6 @@ server {
         proxy_pass https://plausible.io/api/event;
         proxy_buffering on;
         proxy_http_version 1.1;
-
-        proxy_set_header Host plausible.io;
-        proxy_ssl_name plausible.io;
-        proxy_ssl_server_name on;
-        proxy_ssl_session_reuse off;
 
         proxy_set_header X-Forwarded-For   $proxy_add_x_forwarded_for;
         proxy_set_header X-Forwarded-Proto $scheme;
