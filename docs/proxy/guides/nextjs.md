@@ -1,5 +1,5 @@
 ---
-title: Proxying Plausible through Next.js
+title: Proxying Plausible through Next.js / Vercel
 ---
 
 ## Step 1: Add URL rewrite rules
@@ -68,3 +68,5 @@ the data should be sent.
 
 Deploy these changes to your Next.js site. You can verify the proxy is working by opening your network tab. You should see a request to
 `https://yourdomain.com/js/script.js` with status 200 and another one to `https://yourdomain.com/api/event` with status 202.
+
+Thanks to [sp3n](https://github.com/sp3n) for contributing these instructions! 
