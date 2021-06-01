@@ -11,7 +11,7 @@ It's a work in progress but currently it allows 2 basic operations:
 * Find or create a shared link by name
 
 Each request must be authenticated with an API key using the Bearer Token method. Currently, this API is in private preview and therefore it's not
-possible to acquire an API key through the dashboard. Please contact uku@plausible.io to get an API key with permissions for the endpoints listed in this document.
+possible to acquire an API key through the dashboard. Please contact hello@plausible.io to get an API key with permissions for the endpoints listed in this document.
 
 Please also let us know what features you're missing. Some possible additions to the API include:
 
