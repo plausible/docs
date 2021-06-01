@@ -120,3 +120,5 @@ the data should be sent.
 ```html
 <script defer data-domain="yourdomain.com" data-api="/stats/api/event" src="/stats/js/script.js"></script>
 ```
+
+Thanks to [rjgamer](https://github.com/rjgamer) for contributing these instructions! 
