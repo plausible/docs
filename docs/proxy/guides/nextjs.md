@@ -8,7 +8,7 @@ If you don't already have a `next.config.js` file at the root of your repository
 more about Next.js rewrites [here](https://nextjs.org/docs/api-reference/next.config.js/rewrites). Here's
 the setup for proxying Plausible Analytics:
 
-``` title="next.config.js"
+```js title="next.config.js"
 module.exports = {
   async rewrites() {
       return [
@@ -28,7 +28,7 @@ module.exports = {
 You can also choose a subdirectory to install Plausible under to make sure it doesn't shadow any routes
 that you may already have in your application:
 
-``` title="next.config.js"
+```js title="next.config.js"
 module.exports = {
   async rewrites() {
       return [
@@ -69,4 +69,4 @@ the data should be sent.
 Deploy these changes to your Next.js site. You can verify the proxy is working by opening your network tab. You should see a request to
 `https://yourdomain.com/js/script.js` with status 200 and another one to `https://yourdomain.com/api/event` with status 202.
 
-Thanks to [sp3n](https://github.com/sp3n) for contributing these instructions! 
+Thanks to [sp3n](https://github.com/sp3n) for contributing these instructions!
