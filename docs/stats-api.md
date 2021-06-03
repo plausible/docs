@@ -108,8 +108,17 @@ An equality filter can be specified with url-encoded `==`. Filters can be joined
 `AND` operator to the filters. Here's a filter expression combining two filters:
 
 ```
-visit:browser==Firefox;visit:country==Estonia
+visit:browser==Firefox;visit:country==France
 ```
+
+You can join values together with a `|` to express an IN filter. The filter will match if the key is
+in any of the values. For example, the followign filter:
+
+```
+visit:country==France|Germany
+```
+
+Would match both visitors from both France and Germany.
 
 ## Endpoints
 
