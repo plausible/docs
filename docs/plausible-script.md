@@ -9,7 +9,7 @@ To integrate your website with Plausible Analytics, you need to be able to updat
 Your Plausible Analytics tracking script code will look something like this (your exact code will be shown on the JavaScript snippet page):
 
 ```html
-<script async defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.js"></script>
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.js"></script>
 ```
 
 <img alt="Plausible Analytics script" src={useBaseUrl('img/add-js-snippet.png')} />
@@ -51,7 +51,7 @@ There are two negatives of using the same Plausible snippet on multiple sites an
 You can send stats to multiple Plausible dashboards by configuring the data-domain as a comma-separated list:
 
 ```html
-<script async defer data-domain="test1.yourdomain.com,test2.yourdomain.com" src="https://plausible.io/js/plausible.js"></script>
+<script defer data-domain="test1.yourdomain.com,test2.yourdomain.com" src="https://plausible.io/js/plausible.js"></script>
 ```
 
 ## How to verify if the script is installed on your site
