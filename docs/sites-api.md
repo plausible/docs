@@ -85,6 +85,6 @@ Id of your site in Plausible.
 
 **name** <Required />
 
-See [time periods](#time-periods)
+Name of the shared link.
 
 <hr / >
