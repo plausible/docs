@@ -15,7 +15,7 @@ Goals make it easy to track internal link clicks. Here's how you can set it up:
 First, make sure to add the second line as shown below to the tracking snippet in the `<head>` section of your site:
 
 ```html
-<script async defer data-domain="<yourdomain.com>" src="https://plausible.io/js/plausible.js"></script>
+<script defer data-domain="<yourdomain.com>" src="https://plausible.io/js/plausible.js"></script>
 <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 ```
 
@@ -29,7 +29,7 @@ Here's an example of HTML that tracks all the clicks on a link with the goal nam
 <a href="/about" onclick="plausible('About Us')">learn more about us</a>
 ```
 
-And you can use our custom properties to split different clicks. For instance if you have two different links to your about page, you can see which of these makes a bigger difference and gets more clicks. 
+And you can use our custom properties to split different clicks. For instance if you have two different links to your about page, you can see which of these makes a bigger difference and gets more clicks.
 
 Here's an example of HTML that tracks all the clicks with the goal name being "**About Us**" and the clicks from the "**Header Menu**":
 
@@ -55,7 +55,7 @@ To configure a goal, go to your website’s settings in your Plausible Analytics
 
 Click on the "**+ Add goal**" button to go to the goal creation form.
 
-Select `Custom event` as the goal trigger and enter the name of the custom event you are triggering. 
+Select `Custom event` as the goal trigger and enter the name of the custom event you are triggering.
 
 The names must be an exact match to the one in your HTML code for the conversions to show up in your analytics dashboard (in the example above the goal name would be "**About Us**").
 
@@ -63,7 +63,7 @@ You don't need to add all the custom properties themselves (header menu and foot
 
 <img alt="Add your custom event goal" src={useBaseUrl('img/internal-link-click-tracking.png')} />
 
-Next, click on the "**Add goal**" button and you’ll be taken back to the Goals page. 
+Next, click on the "**Add goal**" button and you’ll be taken back to the Goals page.
 
 When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who triggered the custom event by clicking on the link you're tracking. Goal conversions are listed at the very bottom of the dashboard.
 

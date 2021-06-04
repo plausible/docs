@@ -4,7 +4,7 @@ title: Serve the script from your domain as a first-party connection
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-:::note 
+:::note
 Custom domains are depreciated. They still work but we recommend those who use the custom domain to proxy the script instead. New to Plausible? Use the proxy instead of the custom domain. [Here are the proxy instructions](/proxy/introduction.md)
 :::
 
@@ -22,7 +22,7 @@ We recommend using a subdomain of the website you're running Plausible Analytics
 
 Next, you need to go to your DNS provider’s website and create a new CNAME record for your chosen subdomain. Please check with your DNS provider's documentation on how you can create a new CNAME record.
 
-Point the CNAME record to `custom.plausible.io.` (including the last dot) and then click on the "**Done**" button on the Plausible Analytics website. 
+Point the CNAME record to `custom.plausible.io.` (including the last dot) and then click on the "**Done**" button on the Plausible Analytics website.
 
 :::note
 Some domain registrars such as GoDaddy don't accept CNAME values with a dot at the end while others require it. If your registrar doesn't accept your CNAME records, please delete the dot at the end and try again.
@@ -41,7 +41,7 @@ The setup is completed and ready to use when your subdomain loads our JavaScript
 Don't worry if your subdomain (`yoursubdomain.yourdomain.com`) shows a 404 error. That's expected behaviour. The important part is that the script itself loads from your subdomain (`yoursubdomain.yourdomain.com/js/index.js`). That's when you can replace the snippet on your site.
 
 :::note
-Do you have a wildcard SSL configuration, so your subdomains automatically get the SSL certificate? Please disable it for the subdomain you want to serve Plausible script from. We will automatically get the SSL certificate from Let's Encrypt for your subdomain. 
+Do you have a wildcard SSL configuration, so your subdomains automatically get the SSL certificate? Please disable it for the subdomain you want to serve Plausible script from. We will automatically get the SSL certificate from Let's Encrypt for your subdomain.
 :::
 
 :::note
@@ -53,7 +53,7 @@ Using Cloudflare for DNS and having your sites proxied behind Cloudflare? A prox
 When our JavaScript file loads from your subdomain, you can finish your setup by replacing the tracking code on your site with something that looks like the following code (your custom code will be shown on the confirmation page):
 
 ```html
-<script async defer data-domain="yourdomain.com" src="https://yoursubdomain.yourdomain.com/js/index.js"></script>
+<script defer data-domain="yourdomain.com" src="https://yoursubdomain.yourdomain.com/js/index.js"></script>
 ```
 
 <img alt="Update the tracking code on your site" src={useBaseUrl('img/update-javascript-snippet.png')} />
@@ -64,7 +64,7 @@ Using CSP? Do not forget to add this new subdomain specifically to your Content 
 
 ## Should I create a custom domain for each of the sites that I want to track?
 
-This is not necessary. You could use one custom domain for all your sites. 
+This is not necessary. You could use one custom domain for all your sites.
 
 This is convenient if you're running several sites as subdomains. In that case you could create plausible.yourdomain.com as your custom domain and use that for all the different subdomains you have as part of yourdomain.com (subdomain1.yourdomain.com, subdomain2.yourdomain.com etc).
 
