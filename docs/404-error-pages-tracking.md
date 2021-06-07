@@ -13,7 +13,7 @@ If you use the 404 error pages tracking feature, then these count towards your b
 Tracking 404 error pages is essential for many site owners and Plausible helps you automate this process. With our "**404 Error Pages Tracking**" you can:
 
 * Get an easy overview of which 404 pages are accessed by your visitors
-* See where visitors find broken links to your 404 error pages 
+* See where visitors find broken links to your 404 error pages
 * Then you can manually fix broken links and redirect error pages
 
 If you want to track 404 error pages on your site, here's what you need to do:
@@ -23,7 +23,7 @@ If you want to track 404 error pages on your site, here's what you need to do:
 First, make sure your tracking setup for Plausible Analytics includes the second line as shown below:
 
 ```html
-<script async defer data-domain="<yourdomain.com>" src="https://plausible.io/js/plausible.js"></script>
+<script defer data-domain="<yourdomain.com>" src="https://plausible.io/js/plausible.js"></script>
 <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 ```
 

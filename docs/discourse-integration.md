@@ -1,19 +1,19 @@
 ---
-title: How to add the script to your Discourse community 
+title: How to add the script to your Discourse community
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 You can add Plausible Analytics tracking code to your Discourse community by adding a "**Theme**" component. You need to use [our special hash-based script](hash-based-routing.md) on Discourse forums.
 
-* Go to Admin > Customize > Themes in your Discourse admin to create a new "**Theme**" component. 
+* Go to Admin > Customize > Themes in your Discourse admin to create a new "**Theme**" component.
 
 * Paste your Plausible Analytics hash-based script tag into the `<head>` section.
 
 * Here's what the full script tag will look like (make sure to replace your-domain with the domain you've added to Plausible Analytics):
 
 ```html
-<script async defer data-domain="<your-domain>" src="https://plausible.io/js/plausible.hash.js"></script>
+<script defer data-domain="<your-domain>" src="https://plausible.io/js/plausible.hash.js"></script>
 ```
 
 * If you're using [a custom domain](custom-domain.md) for your Plausible account, you can add the `.hash.js` as follows: `https://your.custom-domain.com/js/index.hash.js`

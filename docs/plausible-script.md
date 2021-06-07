@@ -9,7 +9,7 @@ To integrate your website with Plausible Analytics, you need to be able to updat
 Your Plausible Analytics tracking script code will look something like this (your exact code will be shown on the JavaScript snippet page):
 
 ```html
-<script async defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.js"></script>
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.js"></script>
 ```
 
 <img alt="Plausible Analytics script" src={useBaseUrl('img/add-js-snippet.png')} />
@@ -30,11 +30,11 @@ If you're concerned about adblockers and their impact on the accuracy of your st
 
 ## Check out integration guides for popular site builders and CMSs
 
-Installing Plausible on a site can be a slightly different process depending on what tools you're using. 
+Installing Plausible on a site can be a slightly different process depending on what tools you're using.
 
-We've put together several guides that cover popular website builders and content management systems (CMS) such as WordPress and Ghost. Thanks to the members of our community, there are also integrations and plugins for several frameworks such as Hugo and GatsbyJS. We also have guides for single-page applications. 
+We've put together several guides that cover popular website builders and content management systems (CMS) such as WordPress and Ghost. Thanks to the members of our community, there are also integrations and plugins for several frameworks such as Hugo and GatsbyJS. We also have guides for single-page applications.
 
-Here's [the full list of all integrations and guides](integration-guides.md). These can help you set up and start counting your site visitors in no time. 
+Here's [the full list of all integrations and guides](integration-guides.md). These can help you set up and start counting your site visitors in no time.
 
 ## Can I use the same snippet across my domain and subdomain?
 
@@ -51,16 +51,16 @@ There are two negatives of using the same Plausible snippet on multiple sites an
 You can send stats to multiple Plausible dashboards by configuring the data-domain as a comma-separated list:
 
 ```html
-<script async defer data-domain="test1.yourdomain.com,test2.yourdomain.com" src="https://plausible.io/js/plausible.js"></script>
+<script defer data-domain="test1.yourdomain.com,test2.yourdomain.com" src="https://plausible.io/js/plausible.js"></script>
 ```
 
 ## How to verify if the script is installed on your site
 
 After you've added the Plausible Analytics script to the HTML of your website, you should see the script installed on your site and can verify that the integration is working.
 
-In your [Plausible Analytics account](https://plausible.io/sites), click on your website domain name. You should see a blinking green dot which indicates that we’re listening for incoming page views in real-time. 
+In your [Plausible Analytics account](https://plausible.io/sites), click on your website domain name. You should see a blinking green dot which indicates that we’re listening for incoming page views in real-time.
 
-There are no delays in stats with Plausible. Everything is live. Once the first page view comes through, you'll be automatically taken to the stats dashboard with graphs and numbers. 
+There are no delays in stats with Plausible. Everything is live. Once the first page view comes through, you'll be automatically taken to the stats dashboard with graphs and numbers.
 
 This is an indication that the integration is working, congrats! Plausible Analytics is now tracking your website statistics while preserving the privacy of your visitors.
 

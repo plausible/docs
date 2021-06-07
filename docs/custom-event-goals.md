@@ -15,7 +15,7 @@ If you want to track custom event goals like button clicks or form completions, 
 First, make sure your tracking setup includes the second line as shown below
 
 ```html
-<script async defer data-domain="<yourdomain.com>" src="https://plausible.io/js/plausible.js"></script>
+<script defer data-domain="<yourdomain.com>" src="https://plausible.io/js/plausible.js"></script>
 <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 ```
 
@@ -71,7 +71,7 @@ Next, click on the "**Add goal**" button and you’ll be taken back to the Goals
 
 ## Using custom props
 
-Custom properties can be attached to events to capture dynamic elements and to further break down goal conversions. You can use custom properties to create your custom metrics to collect and analyze data that Plausible doesn’t automatically track. 
+Custom properties can be attached to events to capture dynamic elements and to further break down goal conversions. You can use custom properties to create your custom metrics to collect and analyze data that Plausible doesn’t automatically track.
 
 You can then filter and sort your goals by custom event properties in your Plausible dashboard. For those coming from Google Analytics, custom properties are roughly the same concept as _custom dimensions_ in GA.
 
@@ -91,7 +91,7 @@ Want to have multiple custom properties for the same event? You can do it like t
 plausible('Download', {props: {method: 'HTTP', Region: 'Europe'}})
 ```
 
-The number of custom properties you can add per event is unlimited. And the names can be anything that you want. In our example, there are 4 properties that have been set up for segmenting: `Version, Region, OS, Method`. 
+The number of custom properties you can add per event is unlimited. And the names can be anything that you want. In our example, there are 4 properties that have been set up for segmenting: `Version, Region, OS, Method`.
 
 Custom properties only accepts scalar values such as strings, numbers and booleans. Data structures such as objects, arrays etc. are not accepted.
 
