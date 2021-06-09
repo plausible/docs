@@ -44,12 +44,10 @@ Here's [the full list of all integrations and guides](integration-guides.md).
 
 * Using cache? Do purge the cache just in case.
 
+* Are you running a browser extension that may be blocking our script? Do disable the extension or whitelist our script within the settings of the extension you are using
+
 ## Would you like to exclude your own visits from being tracked?
 
 You can do so by following the instructions [in this guide](excluding.md).
 
 On WordPress? [Our Wordpress plugin](https://plausible.io/wordpress-analytics-plugin) excludes admin visits by default.
-
-## Running an adblocker that blocks the Plausible script from being loaded?
-
-If you're concerned about adblockers and their impact on the accuracy of your stats, we offer a way to proxy our script. See [full details here](/proxy/introduction.md).
