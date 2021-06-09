@@ -47,6 +47,7 @@ There are many ways you can proxy requests to Plausible depending on your hostin
 
 Standalone proxy setups:
 * [Cloudflare Workers](/docs/proxy/guides/cloudflare)
+* [CloudFront](/docs/proxy/guides/cloudfront)
 
 Integrated proxy setups:
 * [Netlify](/docs/proxy/guides/netlify)
