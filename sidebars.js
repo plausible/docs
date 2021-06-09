@@ -10,7 +10,7 @@ module.exports = {
       },
                   'top-pages', 'countries', 'devices', 'metrics-definitions', 'keyboard-shortcuts'],
     "Goal Conversions": ['goal-conversions', 'pageview-goals', 'custom-event-goals', 'outbound-link-click-tracking', '404-error-pages-tracking'],
-    "Adblockers": ['proxy/introduction', 'proxy/guides/cloudflare', 'proxy/guides/netlify', 'proxy/guides/nextjs'],
+    "Adblockers": ['proxy/introduction', 'proxy/guides/cloudflare', 'proxy/guides/netlify', 'proxy/guides/nextjs', 'proxy/guides/cloudfront'],
     "API": ['stats-api', 'sites-api'],
     "Account Settings": ['change-email', 'reset-password', 'dashboard-appearance', 'delete-account'],
     "Manage Subscription": ['trial-to-paid', 'subscription-plans', 'change-plan', 'cancel-subscription'],
