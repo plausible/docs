@@ -48,6 +48,6 @@ When you're working on your site, you might not want to record your own visits a
 
 ## You can proxy our script
 
-If you're concerned about adblockers and their impact on the accuracy of your stats, we offer a way to proxy our script. See [full details here](/proxy/introduction.md).
+If you'd like to serve the script as a first-party connection from your domain name, we offer a way to proxy our script. See [full details here](/proxy/introduction.md).
 
 Now you're ready to start exploring your [fast loading, ethical and actionable Plausible Analytics dashboard](https://plausible.io/sites).
