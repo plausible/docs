@@ -438,7 +438,7 @@ filter expression `visit:source==Google`.
 
 
 ```bash title="Monthly traffic from Google"
-curl https://plausible.io/api/v1/stats/timeseries?site_id=$SITE_ID&period=6mo&filters=visit:browser%3D%3DChrome \
+curl https://plausible.io/api/v1/stats/timeseries?site_id=$SITE_ID&period=6mo&filters=visit:source%3D%3DGoogle \
   -H "Authorization: Bearer ${TOKEN}"
 ```
 
