@@ -12,7 +12,15 @@ We have great respect for open source contributors and blocklist maintainers who
 
 Site owners feel unfairly targeted and an innocent casualty of this arms race between blocklist maintainers and the adtech industry. Site owners want some data to figure out what's going on and learn what they can do to improve. It's unfortunate for them to lose valuable, privacy-friendly insights that help them create a better user experience.
 
-Plausible is not tracking people in the way that Google Analytics is so it's important not to confuse the two. We've put a lot of effort into giving site owners some actionable data in a [privacy-friendly way](https://plausible.io/privacy-focused-web-analytics). Plausible is simply doing web analytics the way it was at the start before surveillance capitalism became the default business model of the web.
+Plausible is not tracking people in the way that Google Analytics is so it's important not to confuse the two. We've put a lot of effort into giving site owners some actionable data in a [privacy-friendly way](https://plausible.io/privacy-focused-web-analytics). Plausible is simply doing web analytics the way it was at the start before surveillance capitalism became the default business model of the web:
+
+* No cookies and other persistent identifiers
+* No connection to the adtech and surveillance capitalism
+* No personal data is collected and all stats are in aggregate only
+* No cross-site or cross-device tracking
+* You 100% own your website data and it is not sent to, shared with or sold to any third-parties
+* Fully open source web analytics software that can be self-hosted
+* You can see [how the dashboard looks like](https://plausible.io/plausible.io)
 
 ## Options for dealing with missing data as a site owner
 
