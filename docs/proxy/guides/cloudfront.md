@@ -44,3 +44,5 @@ In case of a subdirectory installation, you'll also need to add a `data-api` att
 
 Deploy these changes to your CloudFront site. You can verify the proxy is working by opening your network tab. You should see a request to
 `https://yourdomain.com/js/script.js` with status 200 and another one to `https://yourdomain.com/api/event` with status 202.
+
+Thanks to [@thomasjsn](https://github.com/thomasjsn) for contributing these instructions!
