@@ -26,7 +26,7 @@ Hover over your website name and click on the "**Settings**" icon on the right h
 
 ## Alternatively you can proxy our script
 
-If you're concerned about adblockers and their impact on the accuracy of your stats, we offer a way to proxy our script. See [full details here](/proxy/introduction.md).
+If you'd like to serve the script as a first-party connection from your domain name, we offer a way to proxy our script. See [full details here](/proxy/introduction.md).
 
 ## Check out integration guides for popular site builders and CMSs
 
