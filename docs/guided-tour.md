@@ -32,7 +32,9 @@ We get all the favicons (your site favicon and the favicons of all the referral 
 
 See all the top referral sources of traffic ranked by the number of unique visitors. You can click on the "**details**" button to see the full list which also includes the "**Direct/None**" traffic. Additional metrics such as bounce rates and visit duration of the individual referral are included too.
  
-You can also see all the visitors coming from the UTM tagged links such as links in your emails, social media or in your paid campaigns. Click on the "**Medium**", "**Source**" and "**Campaign**" tabs on your top sources report to explore these.
+You can also see all the visitors coming from the UTM tagged links such as links in your emails, social media or in your paid campaigns. Click on the "**Medium**", "**Source**" and "**Campaign**" tabs on your top sources report to explore these. You can learn more about [link tagging here](manual-link-tagging.md).
+
+Note that the referral sources including UTM and other query parameters are counted only when they start a new session on your site.
 
 :::note
 You can go granular and click on any of the metrics on your Plausible dashboard to filter the dashboard by it. You can mix and match filters too. For instance you can drill down to see traffic coming from a specific referral source to a specific page over time.
