@@ -10,7 +10,9 @@ Most web analytics tools do this by excluding certain IP addresses from being co
 
 To block your page views from your Plausible Analytics stats dashboard, you can use a standard ad-blocking browser extension. Some extensions may automatically opt you out of Plausible tracking as soon as you activate them but you can follow these steps to make sure that they do so. 
  
-:::note On WordPress? You can use our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) which excludes views coming from admins by default.:::
+:::note 
+On WordPress? You can use our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) which excludes views coming from admins by default.
+:::
 
 ## uBlock Origin
 
