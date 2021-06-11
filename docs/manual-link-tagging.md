@@ -26,10 +26,18 @@ You can also go a bit deeper and track your links in more detail:
 
 For any clicks on the above link, "**Newsletter**" would be listed as a referral source in your Plausible Analytics dashboard, "**Email**" would be listed as the medium and "**NovemberNewsletter**" would be listed as the campaign. 
 
+:::note 
+UTM and other tags are case-sensitive so utm_source=Twitter and utm_source=twitter will show separately in your analytics dashboard.
+:::
+
 It is a good practice to tag your links where the referrer header is not sent. Emails, newsletters, chat, messaging applications, social media, paid advertising campaigns and so on.
 
 When a query parameter is present in the link it takes priority. When someone lands on your website without the special query parameter defined, we fall back to the referrer header.
 
-Note that the referral sources including query parameters are counted only when they start a new session on your site.
+We merge all the identical sources in the "All" tab of the "Top Sources" report. For instance, clicks that you get from Facebook which are not tagged by UTMs are labeled with a referral source "**Facebook**" by Facebook itself. If you tag some links that you share on Facebook such as your paid ads with the utm_source=Facebook, clicks on those will be merged alongside organic Facebook clicks in the "All" tab. Then you can see combined number of clicks between organic and UTM-tagged clicks in the "All" tab and you can segment by UTM tagged clicks only in the "Medium", "Source" and "Campaign" tabs.
+
+:::note 
+All referral sources including UTM and other query parameters are counted only when they start a new session on your site.
+:::
 
 Read more about "[how to use UTM parameters to track your campaigns and understand the dark traffic](https://plausible.io/blog/utm-tracking-tags)".
