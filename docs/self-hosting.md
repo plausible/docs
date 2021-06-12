@@ -82,7 +82,7 @@ When you run this command for the first time, it does the following:
 * Creates a Clickhouse database for stats
 * Runs migrations on both databases to prepare the schema
 * Creates an admin account (which is just a normal account with a generous 100 years of free trial)
-* Starts the server on port 80
+* Starts the server on port 8000
 
 You can now navigate to `http://{hostname}:8000` and see the login screen.
 
@@ -91,7 +91,10 @@ enter a verification code which has been sent to your email. Please configure yo
 server for SMTP to receive this email. [Here are Plausible's SMTP configuration
 options](https://plausible.io/docs/self-hosting-configuration#mailersmtp-setup).
 Otherwise, run this command to verify all users in the database:
-`docker exec hosting_plausible_db_1 psql -U postgres -d plausible_db -c "UPDATE users SET email_verified = true;"`
+
+```bash
+$ docker exec hosting_plausible_db_1 psql -U postgres -d plausible_db -c "UPDATE users SET email_verified = true;"
+```
 
 > Something not working? Please reach out on our [forum](https://github.com/plausible/analytics/discussions/categories/self-hosted-support) for troubleshooting.
 
@@ -155,7 +158,9 @@ If the database already exists prior to running docker-compose up, please remove
 If you receive an error upon startup that for some reason the database does not exist, you can create it 'manually' via this docker run:
 make sure that --link, --net, --host, and the name of the db  receive the right parameter values according to the running setup
 
-`docker run -it --net plausible_default --rm --link plausible_events_db_1:clickhouse-server yandex/clickhouse-client --host plausible_plausible_events_db_1  --query "CREATE DATABASE IF NOT EXISTS plausible_events_db"`
+```bash
+$ docker run -it --net plausible_default --rm --link plausible_events_db_1:clickhouse-server yandex/clickhouse-client --host plausible_plausible_events_db_1  --query "CREATE DATABASE IF NOT EXISTS plausible_events_db"
+```
 
 :::note
 Self-hosting our analytics product is free as in beer. You only need to pay for your server and whatever cost there is associated with running a server. You never have to pay any fees to us, only to your cloud server provider. If you choose to self-host Plausible you can [become a sponsor](https://github.com/sponsors/plausible) which is a great way to give back to the community and to contribute to the long-term sustainability of the project. Simply put, we treat sponsors like paying customers which means you can receive guaranteed priority support.
