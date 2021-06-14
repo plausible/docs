@@ -14,9 +14,7 @@ You need to create a shared link in order to embed your dashboard into another w
 
 In the "**Visibility**" area of your website settings there's a "**Shared links**" section where you can create your shared link. Click on the "**+ new link**" button to do so. 
 
-You can optionally password protect the shared link if you want people to type in your chosen password first before being able to view the embedded dashboard.
-
-If you prefer to share your stats without the password protection you can keep the password field blank. Click the "**Create shared link**" button and your new shared link will be displayed.
+Do keep the password field blank as it's not possible to embed a password-protected dashboard. Click the "**Create shared link**" button and your new shared link will be displayed.
 
 ## 2. Generate the embed code
 
@@ -32,4 +30,4 @@ You can set the background color as `transparent` in the embed code. It's much m
 
 ## 3. Paste the embed code into your website
 
-Copy the embed code that's been generated and paste it wherever you want your Plausible stats dashboard to be embedded. If you've password protected your shared link, people will need to type the password before being able to view the embedded dashboard.
+Copy the embed code that's been generated and paste it wherever you want your Plausible stats dashboard to be embedded.
