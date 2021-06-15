@@ -4,29 +4,28 @@ title: Invite users, assign roles and remove users
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Plausible allows you to invite your team members to view the stats and manage sites you have added to your Plausible account. Here's how.
+Plausible allows you to invite your team members to view the stats and manage sites you have added to your Plausible account.
+
+You can invite any email address. It doesn't necessarily need to be an email address from your company. You can invite existing Plausible users and invite people who don't have a Plausible account. 
 
 ### How to invite users
 
-Go into [the site settings](website-settings.md) of the website you'd like to invite users to.
+* Go into [the site settings](website-settings.md) of the website you'd like to invite users to.
+* Click on the "**People**" section on the left-hand sidebar.
+* Click on the "**Invite**" button.
+* Enter the email address of the person you'd like to invite. If you invite a new person to Plausible, they will get an email and need to register for a Plausible account. 
+* Assign the role for the invited user. You can choose between two different roles:
 
-Click on the "**People**" section on the left-hand sidebar.
+"**Admin**" gets access to the stats dashboard and can also change the site settings
+"**Viewer**" gets access to the stats dashboard
 
-Click on the "**Invite**" button.
+Viewers and admins do not need to have a Plausible subscription. As long as they are not the owner of any site added to Plausible, they can continue accessing stats with a free account
 
-Enter the email address of the person you'd like to invite. 
+* Click on the "**Invite**" button. We will send an email to the invited person to notify them about your invitation. They will need to register for a Plausible account (or log in to their existing Plausible account) and accept your invitation.
 
-* You can invite any email address. It doesn't necessarily need to be an email address from your company. 
-* You can invite existing Plausible users and invite people who don't have a Plausible account. 
-* If you invite a new person to Plausible, they will get an email and need to register for a Plausible account. 
-* Viewers and admins do not need to have a Plausible subscription. As long as they are not the owner of any site added to Plausible, they can continue accessing stats with a free account
-
-Assign the role for the invited user. You can choose between two different roles:
-
-* "**Admin**" gets access to the stats dashboard and can also change the site settings
-* "**Viewer**" gets access to the stats dashboard
-
-Click on the "**Invite**" button. We will send an email to the invited person to notify them about your invitation. They will need to register for a Plausible account (or log in to their existing Plausible account) and accept your invitation.
+:::note
+Want to share a single dashboard with someone without them needing a Plausible account? Our [private and secure shared links](shared-links.md) are a great way to share the stats so the person can view the dashboard without needing a Plausible account.
+:::
 
 ### How to modify the user roles
 
@@ -53,7 +52,3 @@ You can remove a user from having access to a site at any time:
 That's it. The user has now been removed from the specific site.
 
 Note that you need to be an owner or an admin of a site in order to remove users. 
-
-:::note
-Want to share a single dashboard with someone without them needing an account? Our [private and secure shared links](shared-links.md) are a great way to share the stats so the viewer can simply view the dashboard without needing a Plausible account.
-:::
