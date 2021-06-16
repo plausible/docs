@@ -18,7 +18,7 @@ You can invite any email address. It doesn't necessarily need to be an email add
 * Enter the email address of the person you'd like to invite. If you invite a new person to Plausible, they will need to register for a Plausible account
 * Assign the role for the invited user. You can choose between two different roles:
 
-1. "**Admin**" gets access to the stats dashboard and can also change the site settings
+1. "**Admin**" gets access to the stats dashboard, can change the site settings and invite other members
 2. "**Viewer**" gets access to the stats dashboard
 
 :::note
