@@ -56,3 +56,7 @@ You can remove a user from having access to a site at any time:
 That's it. The user has now been removed from the specific site.
 
 Note that you need to be an owner or an admin of a site in order to remove users. 
+
+:::note
+Want to transfer the ownership of a site to someone else? [Take a look here](transfer-ownership.md)
+:::
