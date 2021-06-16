@@ -6,27 +6,29 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Plausible allows you to invite your team members to view the stats and manage sites you have added to your Plausible account.
 
-You can invite any email address. It doesn't necessarily need to be an email address from your company. You can invite existing Plausible users and invite people who don't have a Plausible account. 
+You can invite any email address. It doesn't necessarily need to be an email address from your company. You can invite existing Plausible users or people who don't have a Plausible account. 
+
+<img alt="Invite users, assign roles and remove users" src={useBaseUrl('img/invite-team-member.png')} />
 
 ### How to invite users
 
-* Go into [the site settings](website-settings.md) of the website you'd like to invite users to.
-* Click on the "**People**" section on the left-hand sidebar.
-* Click on the "**Invite**" button.
-* Enter the email address of the person you'd like to invite. If you invite a new person to Plausible, they will get an email and need to register for a Plausible account. 
+* Go into [the site settings](website-settings.md) of the website you'd like to invite users to
+* Click on the "**People**" section on the left-hand sidebar
+* Click on the "**Invite**" button
+* Enter the email address of the person you'd like to invite. If you invite a new person to Plausible, they will need to register for a Plausible account
 * Assign the role for the invited user. You can choose between two different roles:
 
 1. "**Admin**" gets access to the stats dashboard and can also change the site settings
 2. "**Viewer**" gets access to the stats dashboard
 
 :::note
-Viewers and admins do not need to have a Plausible subscription. As long as they are not the owner of any site added to Plausible, they can continue accessing stats with a free account
+Viewers and admins do not need to have a paid subscription. As long as they are not the owner of any site added to Plausible, they can continue accessing stats with a free account
 :::
 
-* Click on the "**Invite**" button. We will send an email to the invited person to notify them about your invitation. They will need to register for a Plausible account (or log in to their existing Plausible account) and accept your invitation.
+* Click on the "**Invite**" button. We will send an email to the invited person to notify them about your invitation. They will need to register for a Plausible account (or log in to their existing Plausible account) and accept your invitation
 
 :::note
-Want to share a single dashboard with someone without them needing a Plausible account? Our [private and secure shared links](shared-links.md) are a great way to share the stats so the person can view the dashboard without needing a Plausible account.
+Want to share a single dashboard with someone without them needing a Plausible account? Our [private and secure shared links](shared-links.md) are a great way to share the stats
 :::
 
 ### How to modify the user roles
