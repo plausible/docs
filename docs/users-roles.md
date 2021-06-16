@@ -1,5 +1,5 @@
 ---
-title: Invite users, assign roles and remove users
+title: Invite team members, assign roles and remove users
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -32,6 +32,8 @@ Want to share a single dashboard with someone without them needing a Plausible a
 :::
 
 ### How to modify the user roles
+
+<img alt="Change user roles or remove users" src={useBaseUrl('img/change-roles-remove-users.png')} />
 
 You can change the user role at any time:
 
