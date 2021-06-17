@@ -1,7 +1,7 @@
 module.exports = {
   someSidebar: {
     "Get Started": ['introduction', 'register-account', 'add-website', 'plausible-script', 'integration-guides', 'troubleshoot-integration', 'your-plausible-experience'],
-    "Website Settings": ['website-settings', 'general', 'visibility', 'shared-links', 'embed-dashboard', 'google-search-console-integration', 'email-reports', 'traffic-spikes', 'slack-reports', 'excluding-pages', 'export-stats', 'reset-site-data', 'delete-site-data', 'excluding'],
+    "Website Settings": ['website-settings', 'general', 'users-roles', 'visibility', 'shared-links', 'embed-dashboard', 'google-search-console-integration', 'email-reports', 'traffic-spikes', 'slack-reports', 'excluding-pages', 'export-stats', 'transfer-ownership', 'reset-site-data', 'delete-site-data', 'excluding'],
     "Dashboard": ['guided-tour',
     {
         type: 'category',
