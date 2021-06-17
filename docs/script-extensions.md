@@ -16,9 +16,9 @@ of dead Javascript code on every pageload which degrades the user experience and
 
 | Extension                   | Explanation                                                             |
 |-----------------------------|-------------------------------------------------------------------------|
-| plausible.hash.js           | Automatically follow frontend navigation when using hash-based routing  |
-| plausible.outbound-links.js | Automatically track clicks on outbound links from your website          |
-| plausible.exclusions.js     | Exclude certain pages from being tracked                                |
+| plausible.hash.js           | Automatically follow frontend navigation when using [hash-based routing](hash-based-routing.md)  |
+| plausible.outbound-links.js | Automatically [track clicks on outbound links](outbound-link-click-tracking.md) from your website          |
+| plausible.exclusions.js     | [Exclude certain pages from being tracked](excluding-pages.md)                                |
 | plausible.compat.js         | Compatibility mode for tracking users on Internet Explorer              |
 
 ### plausible.compat.js
