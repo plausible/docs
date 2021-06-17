@@ -59,7 +59,7 @@ At this point, you can click 'Rename' in the Workers' dashboard to give your wor
 Now, the Plausible script should be accessible at the following url:
 
 ```
-<your-worker-name>.<your-cloudflare-username>.workers.dev/js/script.js
+https://your-worker-name.your-cloudflare-username.workers.dev/js/script.js
 ```
 
 If you can load this URL and see some Javascript code, you should be good to go to the following step.
@@ -69,7 +69,7 @@ If you can load this URL and see some Javascript code, you should be good to go 
 Once you have the URL for your script, you can replace your Plausible Analytics script tag in the Header (`<head>`) section of your site with the proxied one instead:
 
 ```html
-<script defer data-domain="yourdomain.com" src="<your-worker-name>.<your-cloudflare-username>.workers.dev/js/script.js"></script>
+<script defer data-domain="yourdomain.com" src="https://your-worker-name.your-cloudflare-username.workers.dev/js/script.js"></script>
 ```
 
 That's it! You're now counting your website stats using a proxy.
