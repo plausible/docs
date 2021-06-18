@@ -42,6 +42,12 @@ You can share your Plausible stats with (potential) partners or advertisers. Or 
 
 You can also choose to be transparent and make your site stats public so anyone with your stats dashboard link can view them. [Learn here how](visibility.md).
 
+## Invite team members and other collaborators
+
+Plausible makes it easy to invite team members, clients and other collaborators. You can invite team members and also assign their roles. You can choose to give people access to the stats dashboard only or give them the permission to edit site settings and invite other collaborators.  
+
+You can learn more about [user accounts and levels](users-roles.md).
+
 ## Opt out from counting your own visits
 
 When you're working on your site, you might not want to record your own visits and page views. Here's [how to opt out and exclude yourself from your analytics](excluding.md).
