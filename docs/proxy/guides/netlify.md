@@ -4,7 +4,7 @@ title: Proxying Plausible through Netlify
 
 ## Step 1: Add URL rewrite rules
 
-If you don't already have a `_redirects` file at the root of your repository, create one. You can learn
+If you don't already have a `_redirects` file at the publish directory of your site, create one. You can learn
 more about Netlify redirects and rewrites [here](https://docs.netlify.com/routing/redirects/). Here's
 the setup for proxying Plausible Analytics:
 
