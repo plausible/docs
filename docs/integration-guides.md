@@ -64,6 +64,10 @@ Plausible can even be integrated using the Google Tag Manager. Add the Plausible
 
 Note that you cannot use Google Tag Manager if you want to track a subfolder. Only naked domain (yoursite.com) or subdomain (subdomain.yoursite.com) will work as the data-domain attribute while a subfolder (yoursite.com/subfolder) will not.
 
+## Google AMP Pages
+
+To track Google AMP pages with Plausible, you need to declare an AMP-analytics object on your AMP pages. [See the instructions here](https://github.com/plausible/analytics/discussions/220#discussioncomment-904022).
+
 ## GatsbyJS
 
 [GatsbyJS](https://www.gatsbyjs.org/packages/gatsby-plugin-plausible/): A Gatsby plugin for adding Plausible Analytics to your Gatsby site. Built and maintained by Curtis Cummings of [https://aquil.io/](https://aquil.io/).
