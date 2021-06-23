@@ -27,6 +27,14 @@ You cannot use Google Tag Manager if you have added a subfolder as your site in 
 
 There are a couple of concerns when using Plausible with Google Tag Manager:
 
-* Google Tag Manager adds extra complexity and additional ways things can go wrong. Plausible is very simple and we've made it so it's easy to integrate and start counting visitors to your site. If you follow the above steps, Plausible will work fine even with Google Tag Manager but please do make sure to verify and test the tracking before selecting any other options that GTM gives you access to. GTM allows you to select tag firing priority, tag firing options, tag sequencing and so much more. Deviating from the default setup by adding any of the extras may affect the way the Plausible script loads and counts your traffic so please do test things before choosing any extras
+### GTM adds extra complexity 
 
-* Google Tag Manager script is blocked (or shimmed) by several browsers including Brave, Firefox and [Safari](https://plausible.io/blog/safari-privacy-report) and many browser extensions. This means that any scripts you're using with Google Tag Manager will be blocked too by a certain percentage of your visitors. Plausible integrated without GTM or by using [our proxy](/proxy/introduction.md) will be blocked by fewer people which means you will get more accurate stats if you use Plausible without GTM
+Google Tag Manager adds extra complexity and additional ways things can go wrong. Plausible is very simple and we've made it so it's easy to integrate and start counting visitors to your site. If you follow the above steps, Plausible will work fine even with Google Tag Manager but please do make sure to verify and test the tracking before selecting any other options that GTM gives you access to. 
+
+GTM allows you to select tag firing priority, tag firing options, tag sequencing and so much more. Deviating from the default setup by adding any of the extras may affect the way the Plausible script loads and counts your traffic so please do test things before choosing any extras
+
+### GTM is blocked by many browsers and extensions 
+
+Google Tag Manager script is blocked (or shimmed) by several browsers including Brave, Firefox and [Safari](https://plausible.io/blog/safari-privacy-report) and many browser extensions. This means that any scripts you're using with Google Tag Manager will be blocked too by a certain percentage of your visitors. 
+
+Plausible integrated without GTM or by using [our proxy](/proxy/introduction.md) will be blocked by fewer people which means you will get more accurate stats if you use Plausible without GTM
