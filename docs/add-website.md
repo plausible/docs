@@ -10,6 +10,8 @@ Once you have an account, you can enter the domain name of the website you want 
 
 For example, if your site is `https://www.yourdomain.com` then the part to enter in the "**Domain**" field is `yourdomain.com`.
 
+If you'd like to track a specific subfolder only, you can also add a subfolder (yourdomain.com/subfolder).
+
 <img alt="Add your website details to Plausible Analytics" src={useBaseUrl('img/website-details.png')} />
 
 ### Do you want to track a subdomain?
@@ -17,6 +19,10 @@ For example, if your site is `https://www.yourdomain.com` then the part to enter
 If you would like to track a subdomain such as `blog.yourdomain.com` then please include the subdomain. Plausible Analytics essentially sees different subdomains as different sites.
 
 For example, if your subdomain is `https://blog.yourdomain.com` then the part to enter in the "**Domain**" field is `blog.yourdomain.com`.
+
+:::note
+You don't necessarily need to install the script on the same domain as the domain you have added to your Plausible account. This allows you more flexibility in your setup all depending on your situation. It also means that Plausible can work with domains that feature special characters. Just spell out the domain without using special characters when adding it to Plausible
+:::
 
 ## Select your reporting timezone
 
