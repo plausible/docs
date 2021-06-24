@@ -44,3 +44,10 @@ the data should be sent.
 
 Deploy these changes to your Netlify site. You can verify the proxy is working by opening your network tab. You should see a request to
 `https://yourdomain.com/js/script.js` with status 200 and another one to `https://yourdomain.com/api/event` with status 202.
+
+## Troubleshooting
+
+If your `<script>` tag's `src` attribute is being manipulated to some unrecognised CDN URL,
+it's because you have the `Asset optimization` JS settings enabled in Netlify.
+Both the `Bundle JS` and `Minify JS` options must be de-selected in order to
+avoid interference with the proxied Plausible URL.
