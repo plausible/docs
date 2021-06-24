@@ -2,7 +2,34 @@
 title: Proxying Plausible through Next.js / Vercel
 ---
 
-## Step 1: Add URL rewrite rules
+## Using next-plausible
+
+[next-plausible](https://github.com/4lejandrito/next-plausible) is an npm package that makes it easier to include Plausible analytics in your NextJS site.
+
+It provides [out of the box support for proxying the script](https://github.com/4lejandrito/next-plausible#proxy-the-analytics-script), you just need to wrap your `next.config.js` with the `withPlausibleProxy` function:
+
+```js
+const { withPlausibleProxy } = require('next-plausible')
+
+module.exports = withPlausibleProxy()({
+  // ...your next js config, if any
+})
+```
+
+This will set up the necessary rewrites as described [here](https://plausible.io/docs/proxy/guides/nextjs) and configure `PlausibleProvider` to use the local URLs so you can keep using it like this:
+
+```jsx
+  <PlausibleProvider domain="example.com">
+    ...
+  </PlausibleProvider>
+}
+```
+
+Read more in [the official documentation](https://github.com/4lejandrito/next-plausible#proxy-the-analytics-script).
+
+## Using raw NextJS config
+
+### Step 1: Add URL rewrite rules
 
 If you don't already have a `next.config.js` file at the root of your repository, create one. You can learn
 more about Next.js rewrites [here](https://nextjs.org/docs/api-reference/next.config.js/rewrites). Here's
@@ -50,7 +77,7 @@ it might get blocked in the future.
 
 Using our extensions such as hash-based routing, page exclusions or outbound link click tracking? Edit your `next.config.js` and change the name from `plausible.js` to the script you want to use: `plausible.hash.js`, `plausible.exclusions.js` or `plausible.outbound-links.js`. Want to use more than one extension? You can chain them like this: `plausible.hash.exclusions.outbound-links.js`
 
-## Step 2: Adjust your deployed script
+### Step 2: Adjust your deployed script
 
 With the URL rewrites in place, you can change your script tag as follows:
 
