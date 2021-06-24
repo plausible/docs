@@ -66,6 +66,25 @@ Or in case you're proxying our script, use this. Remember to change `yourproxy.c
 ||yourproxy.com^$script,domain=yourdomain.com 
 ```
 
+## Pi-hole
+
+When using [Pi-hole](https://pi-hole.net), you can follow these steps to make sure that you exclude yourself from being counted in the stats. For this to work you must be using Pi-hole's "**Local DNS**" feature on your network.
+
+:::note 
+This method works best if you're self-hosting Plausible via a custom domain/subdomain. If you're using Plausible's hosted service, and you're using the standard Plausible tracking domain, implementing this method will exclude your visits from **every** website that uses Plausible's standard tracking domain, not just your own.
+:::
+
+- Login to the Pi-hole GUI and click on "**Local DNS**", then "**DNS Records**"
+- In the "**Add a new domain/IP combination**" section:
+  - Enter the domain or subdomain that you use for your Plausible tracking, such as `stats.example.com`
+  - Enter an IP Address of 0.0.0.0
+  - Click the "**Add**" button to add the new local DNS record
+  - That's it! Your visits will now be excluded.
+
+One of the issues with this method is that it will block **all** traffic to the tracking domain, including traffic in your web browser, so if you use the same URL to access the Plausible Analytics GUI as you do to track statistics, you will no longer be able to access the GUI to view your statistics.
+
+The fix for this is to setup a secondary subdomain and point it to the same location, so that you can use this new URL to access the Plausible Analytics GUI. For example, you could track statistics via `stats.example.com`, and access the GUI via `stats-admin.example.com`.
+
 ## Return to your website to ensure it works
 
 You can test your filter by:
