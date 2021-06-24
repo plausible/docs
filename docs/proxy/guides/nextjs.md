@@ -4,7 +4,7 @@ title: Proxying Plausible through Next.js / Vercel
 
 ## Using next-plausible
 
-[next-plausible](https://github.com/4lejandrito/next-plausible) is an npm package that makes it easier to include Plausible analytics in your NextJS site.
+[next-plausible](https://github.com/4lejandrito/next-plausible) is an npm package that makes it easier to include Plausible Analytics in your NextJS site.
 
 It provides [out of the box support for proxying the script](https://github.com/4lejandrito/next-plausible#proxy-the-analytics-script), you just need to wrap your `next.config.js` with the `withPlausibleProxy` function:
 
