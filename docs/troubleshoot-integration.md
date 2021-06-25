@@ -42,7 +42,7 @@ Here's [the full list of all integrations and guides](integration-guides.md).
 
 * Running on localhost? Our script automatically disables itself when running on localhost as the majority of people don't want those stats to be counted.
 
-* On WordPress and using WP Rocket or another performance optimization plugin? These may affect our script. We recommend you use [our official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) to avoid these issues or to manually whitelist our script in WP Rocket settings.
+* On WordPress and using WP Rocket or another performance optimization plugin? These may affect our script. We recommend you use our official WordPress plugin to avoid these issues or to manually whitelist our script in WP Rocket settings. [Learn more here](https://plausible.io/wordpress-analytics-plugin#troubleshoot-conflict-with-wp-rocket-or-other-performance-optimization-plugins).
 
 * Using cache? Do purge the cache just in case.
 
