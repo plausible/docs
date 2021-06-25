@@ -141,6 +141,10 @@ It works for both Plausible Analytics Cloud and Self-Hosted. Debug mode availabl
 
 [go-plausible](https://github.com/andrerfcsantos/go-plausible): Golang wrapper for the Plausible API. Built and maintained by [André Santos](https://github.com/andrerfcsantos).
 
+## R
+
+[plausibler](https://github.com/giocomai/plausibler): R wrapper for the Plausible API. Built and maintained by [Giorgio Comai](https://github.com/giocomai/).
+
 ## Flatpak
 
 [Plausible Flatpak App](https://flathub.org/apps/details/com.cassidyjames.plausible): Linux app for Plausible. Built and maintained by [Cassidy James Blaede](https://cassidyjames.com/).
