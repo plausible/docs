@@ -4,7 +4,7 @@ title: Proxying Plausible through CloudFront
 
 ## Step 1: Create new origin
 
-First we need to create a new origin poiting to the Plausible server. In the CloudFront console, under your distribution; create a new origin:
+First we need to create a new origin pointing to the Plausible server. In the CloudFront console, under your distribution; create a new origin:
 
 -   Origin Domain Name: `plausible.io`
 -   Origin Protocol Policy: `HTTPS Only`
