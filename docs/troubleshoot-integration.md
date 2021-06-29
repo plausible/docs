@@ -46,7 +46,11 @@ Here's [the full list of all integrations and guides](integration-guides.md).
 
 * Using cache? Do purge the cache just in case.
 
+* Are you running an AMP page? To track Google AMP pages with Plausible, you need to declare an AMP-analytics object on your AMP pages. [See the instructions here](https://github.com/plausible/analytics/discussions/220#discussioncomment-904022).
+
 * Are you running a browser extension that may be blocking our script? Do disable the extension or whitelist our script within the settings of the extension you are using
+
+* Seeing the "Can't find variable: ResizeObserver" error in Safari? ResizeObserver element that we use is not supported on older browser versions. We recommend you update to the latest browser version where it works out of the box. 
 
 ## Would you like to exclude your own visits from being tracked?
 
