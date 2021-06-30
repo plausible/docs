@@ -16,4 +16,4 @@ In Ghost you can inject code across your entire site or on an individual post or
 
 * After adding your code, click on the "**Save**" button.
 
-Now you can go to your website and verify whether Plausible Analytics script has been added and to your Plausible Analytics account to see whether the stats are being tracked. See here [how to verify the integration](integration-guides.md).
+Now you can go to your website and verify whether Plausible Analytics script has been added and to your Plausible Analytics account to see whether the stats are being tracked. See here [how to verify the integration](troubleshoot-integration.md).
