@@ -42,7 +42,7 @@ You'll see "**Outbound Link: Click**" goal as soon as the first external link cl
 
 And that's it. You are now using Plausible Analytics to count your Buttondown archive stats including outbound link clicks and new subscribers. 
 
-Now you can go to your Buttondown site and verify whether Plausible Analytics script has been added and to your Plausible Analytics account to see whether the stats are being tracked. See here [how to verify the integration](integration-guides.md).
+Now you can go to your Buttondown site and verify whether Plausible Analytics script has been added and to your Plausible Analytics account to see whether the stats are being tracked. See here [how to verify the integration](troubleshoot-integration.md).
 
 The stats will look like this:
 
