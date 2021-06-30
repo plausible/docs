@@ -29,7 +29,7 @@ Viewers and admins do not need to have a paid subscription. As long as they are 
 
 All invited users can use Plausible free of charge even without having a subscription. It is also free of charge for you to invite as many users as you want.
 
-All the invited users will see the trial message in their top navigation and this message will go away after the 30 days of trial. They will continue having access to any sites you have given them access to after the trial expires even without having their own subscription. 
+All the invited users will see the trial message in the top menu bar and this message will go away after the 30 days of trial. They will continue having access to any sites you have given them access to after the trial expires even without having their own subscription. 
 
 If the invited user adds a brand new site and becomes an owner of that site, then the trial comes into effect and they'll need to subscribe to a plan to continue viewing the stats of the site they own after the trial expires.
 
