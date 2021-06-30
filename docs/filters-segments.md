@@ -26,6 +26,8 @@ Using the custom filter allows you to do even more, such as to exclude specific 
 
 Using the custom filter also allows you more functionality in the filtering of your pages and other content. You can segment all the traffic that has visited any of your blog posts. Or you can exclude any of the traffic that has visited a specific section of your site.
 
+Using the custom filter also allows you to search for any metric such as a particular country or a specific page on your site.
+
 ### Custom filter for pages supports wildcards
 
 Custom filter for pages supports wildcards in the following format:
