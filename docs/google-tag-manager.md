@@ -18,7 +18,7 @@ You can use "**Google Tag Manager**" to add Plausible Analytics tracking code to
 * Click "**Submit**" to submit your changes
 * Then click on the "**Publish**" button
 
-That's it! Now you can go to your website and verify whether Plausible Analytics script has been added and to your Plausible Analytics account to see whether the stats are being tracked. See here [how to verify the integration](integration-guides.md).
+That's it! Now you can go to your website and verify whether Plausible Analytics script has been added and to your Plausible Analytics account to see whether the stats are being tracked. See here [how to verify the integration](troubleshoot-integration.md).
 
 :::note
 You cannot use Google Tag Manager if you have added a subfolder as your site in Plausible. Only naked domain (yoursite.com) or subdomain (subdomain.yoursite.com) will work as the data-domain attribute in our snippet while a subfolder (yoursite.com/subfolder) will not. When using a subfolder as the data-domain, Google Tag Manager strips the subfolder and sends the traffic to yoursite.com instead
