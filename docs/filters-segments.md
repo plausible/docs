@@ -14,7 +14,9 @@ This ease of use of filtering and segmenting is one of the things people love th
 
 ## Using the custom filter 
 
-We also allow you to quickly add filters without clicking on any specific metric in your dashboard. Click on the "Filter" button on the top right of your dashboard to add filters using our custom filter functionality.
+<img alt="Using the custom filter" src={useBaseUrl('img/custom-filter.png')} />
+
+We also allow you to quickly add filters without clicking on any specific metric in your dashboard. Click on the "Filter" button on the top right of your dashboard to add filters using our custom filter functionality. You can also hit the F key on your keyboard to get to the custom filter.
 
 Using the custom filter allows you to do even more, such as to exclude specific segments of your audience. For example, you can exclude traffic from the United States so your dashboard only displays the traffic coming to your site outside the USA.
 
