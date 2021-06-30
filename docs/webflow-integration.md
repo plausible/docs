@@ -14,4 +14,4 @@ Site-wide JavaScript code injection is a premium Webflow feature so you need to 
 
 * Paste your Plausible tracking code in the "**Head code**" section and save changes.
 
-Now you can go to your website and verify whether Plausible Analytics script has been added and to your Plausible Analytics account to see whether the stats are being tracked. See here [how to verify the integration](integration-guides.md).
+Now you can go to your website and verify whether Plausible Analytics script has been added and to your Plausible Analytics account to see whether the stats are being tracked. See here [how to verify the integration](troubleshoot-integration.md).
