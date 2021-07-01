@@ -15,7 +15,7 @@ Your Plausible Analytics tracking script code will look something like this (you
 <img alt="Plausible Analytics script" src={useBaseUrl('img/add-js-snippet.png')} />
 
 :::note
-On WordPress? We recommend you use our plugin. It is very lightweight, excludes admin visits by default and allows you to see the stats in your WP dashboard. It also avoids conflicts with WP Rocket and similar plugins that can happen to our snippet. [See more here](https://plausible.io/wordpress-analytics-plugin).
+On WordPress? We recommend you use our plugin. It is very lightweight, excludes admin visits by default and allows you to see the stats in your WP dashboard. It also avoids conflicts with WP Rocket and similar plugins that can happen with our snippet. [See more here](https://plausible.io/wordpress-analytics-plugin).
 :::
 
 ## Where to find your JavaScript snippet
