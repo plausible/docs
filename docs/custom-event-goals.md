@@ -121,7 +121,7 @@ Register events in the HTML with the use of an attribute tag `data-analytics`.  
 <!-- Tracking a form -->
 <form>
     ...
-    <button type="submit" data-analytics="Contact">Send Message...</button>
+    <button type="submit" data-analytics='"Contact"'>Send Message...</button>
 </form>
 
 <!-- Tracking a link -->
