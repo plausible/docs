@@ -1,4 +1,6 @@
-# Proxying Plausible through Caddy
+---
+title: Proxying Plausible through Caddy
+---
 
 If you're already running Caddy as your main web server or reverse
 proxy, you can also configure it to proxy your analytics. Start by adjusting your
