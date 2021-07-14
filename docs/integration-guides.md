@@ -50,6 +50,10 @@ We have a WordPress plugin that makes the integration with WordPress nice and ea
 
 [How to add the script to your Shopify store](shopify-integration.md)
 
+## Hugo
+
+[How to add the script to your Hugo site](hugo-integration.md)
+
 ## Single-page applications
 
 [Single-page applications](spa-support.md)
@@ -57,10 +61,6 @@ We have a WordPress plugin that makes the integration with WordPress nice and ea
 ## Hash-based routing
 
 [Hash-based routing](hash-based-routing.md)
-
-## Hugo
-
-[How to add the script to your Hugo site](hugo-integration.md)
 
 ## Google Tag Manager (GTM)
 
