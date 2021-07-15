@@ -22,6 +22,10 @@ Plausible Analytics is trusted by 2,000+ subscribers to deliver their website an
 
 * [Featured in the Tech Radar by ThoughtWorks: "An opinionated guide to technology frontiers"](https://www.thoughtworks.com/radar/techniques/privacy-focused-web-analytics) 
 
+* [Migrating all analytics to Plausible across your websites](https://gingeleski.com/plausible-analytics/) by Randy Gingeleski, a senior staff security engineer for HBO Max
+
+* [Why we removed third-party trackers and Google Analytics from our website](https://hide.me/en/blog/why-we-removed-third-party-trackers-and-google-analytics-from-our-website/) by hide.me
+
 * [Let's talk about the importance of ethical website analytics (Why I switched from Google Analytics to Plausible)](https://www.calibratedconcepts.com/blog/the-importance-of-ethical-website-analytics) by Ellie McBride of Calibrated Concepts
 
 * [Everyday Rails now uses Plausible for analytics](https://everydayrails.com/2020/12/03/plausible-analytics.html) by Aaron Sumner of Everyday Rails
