@@ -19,7 +19,7 @@ module.exports = {
     ],
     "API": ['stats-api', 'sites-api'],
     "Account Settings": ['change-email', 'reset-password', 'dashboard-appearance', 'delete-account'],
-    "Manage Subscription": ['trial-to-paid', 'subscription-plans', 'change-plan', 'cancel-subscription'],
+    "Manage Subscription": ['trial-to-paid', 'subscription-plans', 'change-plan', 'cancel-subscription', 'billing'],
     "Self-Hosting": ['self-hosting', 'self-hosting-configuration'],
     "Contribute": ['contribute', 'plausible-analytics-reviews', 'authors'],
   },
