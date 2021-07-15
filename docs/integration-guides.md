@@ -50,6 +50,10 @@ We have a WordPress plugin that makes the integration with WordPress nice and ea
 
 [How to add the script to your Shopify store](shopify-integration.md)
 
+## Hugo
+
+[How to add the script to your Hugo site](hugo-integration.md)
+
 ## Single-page applications
 
 [Single-page applications](spa-support.md)
@@ -82,17 +86,11 @@ To track Google AMP pages with Plausible, you need to declare an AMP-analytics o
 
 [Bridgetown](https://rubygems.org/gems/bridgetown-plausible-tag): A Liquid tag to add Plausible Analytics to your Bridgetown site. Built and maintained by [Andrew Mason](https://www.andrewm.codes/). Here's [the source code](https://github.com/andrewmcodes/bridgetown-plausible-tag).
 
-## Hugo
-
-[Hugo](https://github.com/divinerites/plausible-hugo): Plausible-Hugo is a theme component to easily add Plausible Analytics to your [Hugo](https://www.gohugo.io/) site. You can add custom goals, outbound link custom goals, 404 custom goal, ignore tracking on certain pages and manage CSP rules. 
-You can proxy the script for adblockers (or use deprecated custom cname). You also can embed your dashboard with 1 line of code. 
-It works for both Plausible Analytics Cloud and Self-Hosted. Debug mode available. Can be used as Hugo Module. Built and maintained by Divinerites.
-
 ## AUR package for Arch Linux
 
 [AUR package for Arch Linux](https://aur.archlinux.org/packages/plausible-git/): Start it using ``systemctl start plausible``, enable it at boot with ``systemctl enable plausible`` and change the environment variables by editing ``/etc/plausible.conf``. Built and maintained by [Rhys Perry](https://github.com/plausible/analytics/issues/263).
 
-## NextJS 
+## NextJS
 
 [NextJS](nextjs-integration.md): Simple integration for Plausible Analytics and [NextJS](https://nextjs.org). Provides custom events functionality. Built and maintained by [4lejandrito](https://github.com/4lejandrito).
 
@@ -169,10 +167,10 @@ Add Plausible Analytics to your [Podcastpage.io](https://podcastpage.io/) websit
 
 [iOS widget](https://gist.github.com/linuz90/ac969cdfe9bd92af0b306c43caee8d0c) to display the total visitors count for today and the live visitors count with Plausible and Scriptable. Built and maintained by [Fabrizio Rinaldi](https://gist.github.com/linuz90).
 
-## Plugin that adds DNT and offline functionality 
+## Plugin that adds DNT and offline functionality
 
 You can now use Plausible with [the analytics library](https://github.com/ian/analytics/tree/main/packages/plausible). Combine privacy first analytics with a tiny middleware layer to add features such as DNT (Do Not Track) and offline functionality. Built and maintained by [David Wells](https://github.com/DavidWells).
- 
+
 :::note
 Plausible by default doesn't take DNT (Do Not Track) into consideration as we're a privacy first analytics tool and [DNT allows](https://www.eff.org/issues/do-not-track) "data analysis techniques that protect the anonymity of the users".
 :::
