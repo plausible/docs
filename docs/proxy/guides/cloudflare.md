@@ -80,9 +80,9 @@ If you're hosting your site on the Cloudflare CDN, you can run the proxy as a su
 request to the `workers.dev` domain. This is completely optional but it can make your URLs look much cleaner and avoid third-party
 requests.
 
-First, open your site dashboard in Cloudflare and go to the 'Workers' tab. Then, click the 'Add route' button on the right hand side.
-Next, enter the URL prefix where you would like to install Plausible. In this example, we'll install the proxy on the `example.com` domain and we'll
-use `qwerty` as the subdirectory name. You can choose any name for the subdirectory but it's a good idea to avoid words like 'analytics' and 'tracking'.
+First, open your site dashboard in Cloudflare and [go to the 'Workers' tab](https://dash.cloudflare.com/?to=/workers). Then, click the 'Add route' button on the right hand side. Next, enter the URL prefix where you would like to install Plausible. 
+
+In this example, we'll install the proxy on the `example.com` domain and we'll use `qwerty` as the subdirectory name. You can choose any name for the subdirectory but it's a good idea to avoid words like 'analytics' and 'tracking'.
 
 * Route: `*example.com/qwerty/*`
 * Worker: Choose the worker you created in Step 1
