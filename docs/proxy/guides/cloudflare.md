@@ -9,7 +9,7 @@ Step 0: Sign up for a free Cloudflare account if you don't have an account alrea
 
 ## Step 1: Create a worker
 
-In your Cloudflare account, go into the ['Workers' section](https://dash.cloudflare.com/?to=/:account/workers). On the workers page, click on 'Create a Worker' to start configuring your proxy. Next, you'll see a page where you can edit the code for your edge worker. Remove the default code and paste the following code instead:
+In your Cloudflare account, go into the ['Workers' section](https://dash.cloudflare.com/?to=/:account/workers). On the workers page, click on 'Create a Worker' to start configuring your proxy. Next, you'll see a page where you can edit the code for your edge worker. Remove the default code that Cloudflare presents and paste the following code instead. You do not need to make any edits to this code.
 
 ```js
 const ScriptName = '/js/script.js';
@@ -64,9 +64,9 @@ https://your-worker-name.your-cloudflare-username.workers.dev/js/script.js
 
 If you can load this URL and see some Javascript code, you should be good to go to the following step.
 
-## Step 3: Install your proxy script
+## Step 3: Integrate a new snippet into your site header
 
-Once you have the URL for your script, you can replace your Plausible Analytics script tag in the Header (`<head>`) section of your site with the proxied one instead:
+Once you have the URL for your script, you can replace your Plausible Analytics script tag in the Header (`<head>`) section of your site with the proxied snippet. This is how the new snippet should look like (make sure to edit it to have the correct domain name and the correct URL to the proxied file):
 
 ```html
 <script defer data-domain="yourdomain.com" src="https://your-worker-name.your-cloudflare-username.workers.dev/js/script.js"></script>
@@ -80,15 +80,14 @@ If you're hosting your site on the Cloudflare CDN, you can run the proxy as a su
 request to the `workers.dev` domain. This is completely optional but it can make your URLs look much cleaner and avoid third-party
 requests.
 
-First, open your site dashboard in Cloudflare and [go to the 'Workers' tab](https://dash.cloudflare.com/?to=/workers). Then, click the 'Add route' button on the right hand side. Next, enter the URL prefix where you would like to install Plausible. 
+First, open your site dashboard in Cloudflare and [go to the 'Workers' tab](https://dash.cloudflare.com/?to=/workers). Then, click the 'Add route' button on the right hand side. 
 
-In this example, we'll install the proxy on the `example.com` domain and we'll use `qwerty` as the subdirectory name. You can choose any name for the subdirectory but it's a good idea to avoid words like 'analytics' and 'tracking'.
+Next, enter the URL prefix where you would like to install Plausible. In this example, we'll install the proxy on the `example.com` domain and we'll use `qwerty` as the subdirectory name. You can choose any name for the subdirectory but it's a good idea to avoid words like 'analytics' and 'tracking'.
 
 * Route: `*example.com/qwerty/*`
 * Worker: Choose the worker you created in Step 1
 
-After clicking 'Save', the script should be accessible at the subdirectory URL of your site: `https://example.com/qwerty/js/script.js`. At this point you can
-change your Plausible script tag to reference the new URL. It's also important to specify the `data-api` attribute to make sure data is sent through the worker as well:
+Click on the 'Save' button. After clicking 'Save', the script should be accessible at the subdirectory URL of your site: `https://example.com/qwerty/js/script.js`. At this point you can change your Plausible script tag in your site header to reference the new URL. It's also important to specify the `data-api` attribute to make sure data is sent through the worker as well. The new snippet in your site header should look like this:
 
 
 ```html
