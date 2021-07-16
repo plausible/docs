@@ -17,7 +17,11 @@ In your Cloudflare account, go into the ['Workers' section](https://dash.cloudfl
 
 <img alt="Workers section of your Cloudflare account" src={useBaseUrl('img/cloudflare-workers.png')} />
 
-Next, you'll see a page where you can edit the code for your worker. Remove the default code that Cloudflare presents and paste the following code instead. You do not need to make any edits to this code:
+Next, you'll see a page where you can edit the code for your worker:
+
+<img alt="Paste the code" src={useBaseUrl('img/cloudflare-paste-code.png')} />
+
+Remove the default code that Cloudflare presents in the 'Script' section on the left side of the screen and paste the following code instead. You do not need to make any edits to this code. You do not need to make any other changes either.
 
 ```js
 const ScriptName = '/js/script.js';
@@ -59,8 +63,6 @@ async function postData(event) {
 ```
 
 Once you've added the above code to the worker, you can click on the 'Save and Deploy' button.
-
-<img alt="Paste the code" src={useBaseUrl('img/cloudflare-paste-code.png')} />
 
 ## Step 2: You can rename your worker if you want
 
