@@ -5,11 +5,11 @@ title: Proxying Plausible through Cloudflare
 You can use Cloudflare Workers to proxy your Plausible Analytics requests. Cloudflare Workers offers free service for up to 100,000 requests per day.
 All you need to set it up is a free Cloudflare account.
 
-Step 0: Sign up for a free Cloudflare account if you don't have an account already
+Step 0: Sign up for a free Cloudflare account if you don't have an account already and add your site
 
 ## Step 1: Create a worker
 
-In your Cloudflare account, click the dropdown on the top left and choose '[Workers](https://workers.cloudflare.com/)'. On the workers page, click on 'Create a Worker' to start configuring your proxy. Next, you'll see a page where you can edit the code for your edge worker. Remove the default code and paste the following code instead:
+In your Cloudflare account, go into the ['Workers' section](https://dash.cloudflare.com/?to=/:account/workers). On the workers page, click on 'Create a Worker' to start configuring your proxy. Next, you'll see a page where you can edit the code for your edge worker. Remove the default code and paste the following code instead:
 
 ```js
 const ScriptName = '/js/script.js';
@@ -54,9 +54,9 @@ Once you've added the code for the worker, you can click on the 'Save and Deploy
 
 ## Step 2: Make sure the script is accessible
 
-At this point, you can click 'Rename' in the Workers' dashboard to give your worker a meaningful name (avoid words like 'analytics', 'tracking', 'stats', etc.).
+At this point, you can click 'Rename' in the Workers' dashboard to give your worker a meaningful name (avoid words like 'analytics', 'tracking', 'stats', etc. as they may be blocked).
 
-Now, the Plausible script should be accessible at the following url:
+Now, the Plausible script should be accessible at the following URL:
 
 ```
 https://your-worker-name.your-cloudflare-username.workers.dev/js/script.js
