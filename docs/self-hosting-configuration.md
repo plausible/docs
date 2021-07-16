@@ -29,9 +29,21 @@ Following are the variables that can be used to configure the availability of th
 |----------------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | BASE_URL             | --          | The hosting url of the server, used for URL generation. In production systems, this should be your ingress host. |
 | PORT                 | 8000        | The port on which the server is available.                                                                                                                                                          |
+| LISTEN_IP            | 0.0.0.0     | The IP address on which the server is listening. `0.0.0.0` means all interfaces, `127.0.0.1` means localhost. Also see the related section **Erlang platform ports** below. |
 | SECRET_KEY_BASE      | --          | An internal secret key used by [Phoenix Framework](https://www.phoenixframework.org/). Follow the [instructions](https://hexdocs.pm/phoenix/Mix.Tasks.Phx.Gen.Secret.html#content) to generate one. |
 | DISABLE_AUTH         | false       | Disables authentication completely, no registration, login will be shown.                                                                                                                           |
 | DISABLE_REGISTRATION | false       | Disables registration of new users, keep your admin credentials handy ;)                                                                                                                            |
+
+#### Erlang platform ports
+
+When changing the `LISTEN_IP` of the Plausible HTTP server, you may also wish to change the listen IPs of the Erlang VM and Port Mapper Daemon (`epmd`) normally started by Plausible. They allow remote code execution and are listening on all interfaces by default. You can change that by setting the environment variables:
+
+* [`RELEASE_VM_ARGS`](https://hexdocs.pm/mix/Mix.Tasks.Release.html#module-environment-variables), to e.g. `-kernel inet_dist_use_interface "{127,0,0,1}"`
+* [`ERL_EPMD_ADDRESS`](https://erlang.org/doc/man/epmd.html#environment-variables) to e.g. `127.0.0.1`
+
+Alternatively, if you are running on a single machine and do not need any of Erlang's multi-node distribution features, you turn them off entirely by setting environment variable:
+
+* [`RELEASE_DISTRIBUTION`](https://hexdocs.pm/mix/Mix.Tasks.Release.html#module-environment-variables) to `none`
 
 ### Database
 
