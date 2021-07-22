@@ -4,7 +4,7 @@ title: Using filters to segment your audience
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Plausible Analytics allows you to easily segment your audience to better analyze and understand the different trends. A segment is made up of one or more filters. 
+Plausible Analytics allows you to easily segment your audience to analyze and understand the different trends. A segment is made up of one or more filters. 
 
 <img alt="Using filters to segment your audience" src={useBaseUrl('img/segmenting-your-audience.png')} />
 
@@ -12,7 +12,7 @@ Plausible Analytics allows you to easily segment your audience to better analyze
 
 Any metric you click on in your dashboard creates a new filter. Click on any referral source, any of your pages or on any country, device or goal and your dashboard will then show only the traffic for the metric you have selected.
 
-You can mix and match filters too. So you can click on a referral source, then click on a country and then a goal to see all the traffic sent by the chosen referral source, that is based in the selected country and that has converted on the selected goal.
+You can mix and match filters too. So you can click on a referral source, then click on a country and then a goal to see all the traffic sent by the chosen referral source that is based in the selected country and that has converted on the selected goal.
 
 Your current filters will be displayed on the top of your dashboard. You can click on the name of the existing filter to edit it or on the `x` icon to remove it. 
 
@@ -26,11 +26,11 @@ We also allow you to add filters without clicking on any specific metric in the 
 
 ### Search for any metric
 
-You can search for any metric such as a particular country, referral source or page on your site. Simply start typing to discover the specific page (or other metric) you're looking for. No need to scroll through the long list of countries or pages.
+You can search for any metric such as a particular country, referral source or page on your site. Start typing to discover the specific page (or another metric) you're looking for. No need to scroll through the long list of countries or pages.
 
-### Exclude certain segments of traffic
+### Exclude specific segments of traffic
 
-You can exclude certain segments of traffic and only display the traffic that is not part of the excluded segment. You can for instance exclude traffic from the United States so your dashboard only displays the visitors that are not based in the USA. 
+You can exclude specific segments of traffic and only display the traffic that is not part of the excluded segment. You can, for instance, exclude traffic from the United States so your dashboard only shows the visitors that are not based in the USA. 
 
 Click on "Add filter", then select "Country" as your metric, choose "Is Not" and then select (or type) the name of the country you want to exclude. You can do the same for referral sources or any of the other metrics.
 
