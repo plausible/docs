@@ -1,5 +1,5 @@
 ---
-title: Using a proxy
+title: Adblockers and using a proxy for analytics
 ---
 
 A frequently asked question we get is "why do adblockers block Plausible?". People think that by being privacy-first we would not be put in the same category as Google Analytics, Facebook Pixel and other surveillance capitalism tools.
