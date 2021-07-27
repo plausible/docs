@@ -10,7 +10,7 @@ module.exports = {
       },
                   'top-pages', 'countries', 'devices', 'metrics-definitions', 'keyboard-shortcuts'],
     "Goal Conversions": ['goal-conversions', 'pageview-goals', 'custom-event-goals', 'outbound-link-click-tracking', '404-error-pages-tracking'],
-    "Proxy": ['proxy/introduction',
+    "Adblockers": ['proxy/introduction',
       {
         type: 'category',
         label: 'Guides',
