@@ -39,6 +39,15 @@ server {
         proxy_set_header X-Forwarded-Host  $host;
     }
 ```
+### Step 2.5: In case you host a plausible instance
+
+Add the following configuration instructions at both `location`s
+```
+    proxy_set_header Host <your>.<plausible>.<instance>;
+    proxy_ssl_name <your>.<plausible>.<instance>;
+    proxy_ssl_server_name on;
+    proxy_ssl_session_reuse off;
+```
 
 ## Step 2: Adjust your deployed script
 
@@ -47,3 +56,4 @@ With the above config in place, you can change the script tag on your site as fo
 ```html
 <script defer data-api="https://website.com/api/event" data-domain="website.com" src="https://website.com/js/script.js"></script>
 ```
+
