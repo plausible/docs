@@ -26,6 +26,8 @@ You can change the billing address yourself by opening your invoice and clicking
 
 During the upgrade process, you have the option to add your company address and VAT ID. Our payment processor Paddle handles all the VAT and other sales taxes, so if you're eligible no VAT will be charged on your subscription.
 
+If you haven't added your company details during the subscription process, you can open the invoice that Paddle sent you and click on the "Add address & VAT Number" link to do so.
+
 ## What happens if I go over my monthly page views limit?
 
 You will never be charged extra for an occasional traffic spike. We will not stop counting your stats and you will keep having access to your dashboard. There are no surprise fees and your card will never be charged unexpectedly. Suppose new higher traffic levels become your new standard and your page views exceed your subscription plan for two consecutive months. In that case, we kindly ask you to upgrade your subscription plan to accommodate your new traffic levels using our self-serve platform.
