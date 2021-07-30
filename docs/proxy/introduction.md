@@ -62,6 +62,9 @@ Integrated proxy setups:
 * [Caddy](/docs/proxy/guides/caddy)
 * [Shared hosting on Apache](https://github.com/Neoflow/ReverseProxy-PlausibleAnalytics)
 
+NPM package as an alternative to proxy:
+* [NPM standalone package](https://github.com/plausible/plausible-tracker)
+
 :::note
 Are you using something else? Please do help us crowdsource the proxy instructions by [submitting the step-by-step process](https://github.com/plausible/docs/) for the framework that you are familiar with. We're also looking for help to enable the proxy on the different [community-built plugins and extensions](integration-guides.md). Thanks for your contribution!
 :::
