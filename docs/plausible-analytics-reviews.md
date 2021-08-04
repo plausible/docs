@@ -22,7 +22,7 @@ Plausible Analytics is trusted by 2,000+ subscribers to deliver their website an
 
 * [Featured in the Tech Radar by ThoughtWorks: "An opinionated guide to technology frontiers"](https://www.thoughtworks.com/radar/techniques/privacy-focused-web-analytics) 
 
-* [We recommend Plausible because it's privacy-focused, provides more reliable data compared to Google Analytics, and it's extremely lightweight, so it doesn't harm your site performance](https://ghost.org/blog/subscription-business-metrics/) by David Ramos of Ghost
+* ["We recommend Plausible because it's privacy-focused, provides more reliable data compared to Google Analytics, and it's extremely lightweight, so it doesn't harm your site performance"](https://ghost.org/blog/subscription-business-metrics/) by David Ramos of Ghost
 
 * [Migrating all analytics to Plausible across your websites](https://gingeleski.com/plausible-analytics/) by Randy Gingeleski, a senior staff security engineer for HBO Max
 
