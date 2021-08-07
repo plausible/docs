@@ -2,11 +2,13 @@
 title: Proxying Plausible through Next.js / Vercel
 ---
 
+There are two ways you can proxy Plausible through Next.js / Vercel. One is using the next-plausible npm package and the other is using the raw Next.js config. Here are the instructions:
+
 ## Using next-plausible
 
 [next-plausible](https://github.com/4lejandrito/next-plausible) is an npm package that makes it easier to include Plausible Analytics in your Next.js site.
 
-It provides [out of the box support for proxying the script](https://github.com/4lejandrito/next-plausible#proxy-the-analytics-script), you just need to wrap your `next.config.js` with the `withPlausibleProxy` function:
+It provides out of the box support for proxying the script, you just need to wrap your `next.config.js` with the `withPlausibleProxy` function:
 
 ```js
 const { withPlausibleProxy } = require('next-plausible')
@@ -16,7 +18,7 @@ module.exports = withPlausibleProxy()({
 })
 ```
 
-This will set up the necessary rewrites as described [here](https://plausible.io/docs/proxy/guides/nextjs) and configure `PlausibleProvider` to use the local URLs so you can keep using it like this:
+This will set up the necessary rewrites and configure `PlausibleProvider` to use the local URLs so you can keep using it like this:
 
 ```jsx
   <PlausibleProvider domain="example.com">
@@ -25,7 +27,7 @@ This will set up the necessary rewrites as described [here](https://plausible.io
 }
 ```
 
-Read more in [the official documentation](https://github.com/4lejandrito/next-plausible#proxy-the-analytics-script).
+Read more in [the next-plausible documentation](https://github.com/4lejandrito/next-plausible#proxy-the-analytics-script).
 
 ## Using raw Next.js config
 
