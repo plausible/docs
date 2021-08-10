@@ -199,7 +199,7 @@ function handleFormEvent(event) {
 * Parse data and call plausible
 * Using data attribute in html eg. data-analytics='"Register", {"props":{"plan":"Starter"}}'
 *
-* @param {sting} data - plausible event "Register", {"props":{"plan":"Starter"}}
+* @param {string} data - plausible event "Register", {"props":{"plan":"Starter"}}
 */
 function registerEvent(data) {
     // break into array
