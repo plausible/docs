@@ -20,6 +20,7 @@ of dead Javascript code on every pageload which degrades the user experience and
 | plausible.outbound-links.js | Automatically [track clicks on outbound links](outbound-link-click-tracking.md) from your website          |
 | plausible.exclusions.js     | [Exclude certain pages from being tracked](excluding-pages.md)                                |
 | plausible.compat.js         | Compatibility mode for tracking users on Internet Explorer              |
+| plausible.local.js.         | Allow analytics on all host, usefull in hybrid apps.                    |
 
 ### plausible.compat.js
 
