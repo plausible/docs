@@ -17,5 +17,5 @@ Plausible Analytics records the URL path of each page view as the visitors are b
 If your website is a single-page application with `pushState` routing, Plausible Analytics will track page views automatically with no extra work. If you're using a frontend framework that uses the URL hash for routing, we also have a special [hash-based script](hash-based-routing.md).
 
 :::note
-Would you like to aggregate your visitors per path to get a breakdown of visits to a specific section of your site such as your blog posts? You can do that using [our pageview goals](pageview-goals.md).
+Would you like to aggregate your visitors per path to get a breakdown of visits to a specific section of your site such as your blog posts? You can do that using [our pageview goals](pageview-goals.md) or by [filtering the dashboard](filters-segments.md).
 :::
