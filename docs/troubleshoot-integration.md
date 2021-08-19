@@ -40,7 +40,7 @@ Here's [the full list of all integrations and guides](integration-guides.md).
 
 * Are you using a Content Security Policy? Do not forget to add our domain specifically to your CSP.
 
-* Running on localhost? Our script automatically disables itself when running on localhost as the majority of people don't want those stats to be counted.
+* Running on localhost? Our script automatically disables itself when running on localhost as the majority of people don't want those stats to be counted. If you do want to track stats on localhost, you can [use our extension](script-extensions.md).
 
 * On WordPress and using WP Rocket or another performance optimization plugin? These may affect our script. We recommend you use our official WordPress plugin to avoid these issues or to manually whitelist our script in WP Rocket settings. [Learn more here](https://plausible.io/wordpress-analytics-plugin#troubleshoot-conflict-with-wp-rocket-or-other-performance-optimization-plugins).
 
