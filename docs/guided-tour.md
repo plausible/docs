@@ -37,7 +37,7 @@ You can also see all the visitors coming from the UTM tagged links such as links
 Note that the referral sources including UTM and other query parameters are counted only when they start a new session on your site.
 
 :::note
-You can go granular and click on any of the metrics on your Plausible dashboard to filter the dashboard by it. You can mix and match filters too. For instance you can drill down to see traffic coming from a specific referral source to a specific page over time.
+You can go granular and click on any of the metrics on your Plausible dashboard to filter the dashboard by it. You can mix and match filters too. For instance you can drill down to see traffic coming from a specific referral source to a specific page over time. [Learn more about filtering here](filters-segments.md)
 :::
 
 ## Top Pages
