@@ -18,7 +18,9 @@ The percentage of visitors with a single page view. A visitor "bounces" away and
 
 ## Visit Duration
 
-How long time visitors spend on your site. It only shows people who visit more than one page. For those who visit one page only we default to 0 seconds.
+How long time visitors spend on your site. It only shows people who visit more than one page. For those who visit one page only we default to 0 seconds. Average visit duration is the sum of all session lengths divided by the number of sessions, which includes the 0 second visits (bounces).
+
+Session is a set of actions that a user takes on your site. A session is started when a visitor first lands on your page and ended when no action is taken on your site for 30 minutes.
 
 ## Current Visitors
 
