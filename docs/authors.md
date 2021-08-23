@@ -23,7 +23,7 @@ In addition to the full-time team, Plausible Analytics is made possible by an in
 
 * [Vignesh Joglekar](https://vigneshjoglekar.com/?utm_medium=plug&utm_source=plausible) (Vigasaurus) for the help on making the Plausible Analytics dark theme come alive, implementing client-side exclusions, expanding the top pages report, and much more.
 
-* [Ru Singh](https://github.com/hirusi) (hirusi) for the help on making the Plausible Analytics dashboard look well on all the mobile devices and other enhancements.
+* [Ru Singh](https://rusingh.com/) (hirusi) for the help on making the Plausible Analytics dashboard look well on all the mobile devices and other enhancements.
 
 * To those who build and maintain Plausible Analytics integrations with various frameworks. [Full list here](integration-guides.md).
 
