@@ -8,7 +8,7 @@ module.exports = {
         label: 'Top Sources',
         items: ['top-referrers', 'manual-link-tagging', 'twitter'],
       },
-                  'top-pages', 'countries', 'devices', 'filters-segments', 'metrics-definitions', 'keyboard-shortcuts'],
+                  'top-pages', 'countries', 'devices', 'filters-segments', 'metrics-definitions', 'keyboard-shortcuts', 'dashboard-faq'],
     "Goal Conversions": ['goal-conversions', 'pageview-goals', 'custom-event-goals', 'outbound-link-click-tracking', '404-error-pages-tracking'],
     "Adblockers": ['proxy/introduction',
       {
