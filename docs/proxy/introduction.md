@@ -34,7 +34,7 @@ Simply run our default script. The easiest way to get started with Plausible Ana
 <script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.js"></script>
 ```
 
-This is the simplest way to install Plausible Analytics but it will also be blocked by a portion of your visitors. In [our testing](https://markosaric.com/google-analytics-blocking/), between 6% and 26% of people block scripts all depending on the type of the site and the audience.
+This is the simplest way to install Plausible Analytics but it will also be blocked by a portion of your visitors. In [our testing](https://markosaric.com/google-analytics-blocking/), between 6% and 26% of people block scripts all depending on the type of the site and the audience. In more extreme cases, with very tech-savvy referral sources these numbers can get [up to 60%](https://plausible.io/blog/google-analytics-adblockers-missing-data).
 
 ### Are you concerned about missing data?
 
