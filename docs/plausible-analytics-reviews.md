@@ -30,6 +30,8 @@ Plausible Analytics is trusted by 2,000+ subscribers to deliver their website an
 
 * [Let's talk about the importance of ethical website analytics (Why I switched from Google Analytics to Plausible)](https://www.calibratedconcepts.com/blog/the-importance-of-ethical-website-analytics) by Ellie McBride of Calibrated Concepts
 
+* [Plausible Review | A Google Analytics Alternative?](https://nicklafferty.com/reviews/plausible/) by Nick Lafferty, growth marketing lead at Loom
+
 * [Everyday Rails now uses Plausible for analytics](https://everydayrails.com/2020/12/03/plausible-analytics.html) by Aaron Sumner of Everyday Rails
 
 * [Getting Started with Plausible](https://www.mattmcadams.com/thoughts/get-started-with-plausible/) by Matthew McAdams
