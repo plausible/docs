@@ -27,7 +27,7 @@ handle @plausible {
 With the above config in place, you can change the script tag on your site as follows:
 
 ```html
-<script defer data-api="https://website.com/api/event" data-domain="website.com" src="https://website.com/js/script.js"></script>
+<script defer data-api="/api/event" data-domain="website.com" src="/js/script.js"></script>
 ```
 
 Courtesy: [Francis Lavoie](https://caddy.community/u/francislavoie/summary) (@francislavoie) on a [Caddy Community post](https://caddy.community/t/how-to-proxy-plausible-analytics/12679/5).
