@@ -56,6 +56,5 @@ Add the following configuration instructions at both `location`s
 With the above config in place, you can change the script tag on your site as follows:
 
 ```html
-<script defer data-api="https://website.com/api/event" data-domain="website.com" src="https://website.com/js/script.js"></script>
+<script defer data-api="/api/event" data-domain="website.com" src="/js/script.js"></script>
 ```
-
