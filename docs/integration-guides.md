@@ -82,6 +82,10 @@ To track Google AMP pages with Plausible, you need to declare an AMP-analytics o
 
 [Drupal](https://www.drupal.org/project/plausible): A Drupal module for Plausible Analytics. Allows you to ignore tracking on certain pages and by certain user roles. Built and maintained by Dane Rossenrode of [Touchdreams](https://touchdreams.co.za/).
 
+## Django / Wagtail
+
+[Django-Plausible](https://pypi.org/project/django-plausible/): Django module to provide easy Plausible integration, with Wagtail support. Built and maintained by [Jake Howard](https://pypi.org/user/TheOrangeOne/).
+
 ## Bridgetown
 
 [Bridgetown](https://rubygems.org/gems/bridgetown-plausible-tag): A Liquid tag to add Plausible Analytics to your Bridgetown site. Built and maintained by [Andrew Mason](https://www.andrewm.codes/). Here's [the source code](https://github.com/andrewmcodes/bridgetown-plausible-tag).
