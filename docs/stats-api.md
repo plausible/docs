@@ -2,7 +2,7 @@
 title: Stats API reference
 ---
 
-import {Required, Optional} from '../../src/js/api-helpers.js';
+import {Required, Optional} from '../src/js/api-helpers.js';
 
 
 The Plausible Stats API offers a way to retrieve your stats programmatically. It is a read-only interface to present historical

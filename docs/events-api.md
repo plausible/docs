@@ -2,7 +2,7 @@
 title: Events API reference
 ---
 
-import {Required, Optional} from '../../src/js/api-helpers.js';
+import {Required, Optional} from '../src/js/api-helpers.js';
 
 The Plausible Events API can be used to record pageviews and custom events.
 
