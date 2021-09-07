@@ -17,7 +17,7 @@ module.exports = {
         items: ['proxy/guides/cloudflare', 'proxy/guides/netlify', 'proxy/guides/nextjs', 'proxy/guides/cloudfront', 'proxy/guides/nginx', 'proxy/guides/caddy'],
       }
     ],
-    "API": ['stats-api', 'sites-api'],
+    "API": ['api/stats-api',  'api/events-api', 'api/sites-api'],
     "Account Settings": ['change-email', 'reset-password', 'dashboard-appearance', 'delete-account'],
     "Manage Subscription": ['trial-to-paid', 'subscription-plans', 'change-plan', 'cancel-subscription', 'billing'],
     "Self-Hosting": ['self-hosting', 'self-hosting-configuration'],

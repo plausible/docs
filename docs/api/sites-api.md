@@ -2,7 +2,7 @@
 title: Site provisioning API reference
 ---
 
-import {Required, Optional} from '../src/js/api-helpers.js';
+import {Required, Optional} from '../../src/js/api-helpers.js';
 
 The Plausible Site provisioning API offers a way to create and manage your sites in your Plausible account programmatically.
 It's a work in progress but currently it allows 2 basic operations:
