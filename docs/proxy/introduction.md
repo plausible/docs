@@ -62,7 +62,10 @@ Integrated proxy setups:
 * [Caddy](/docs/proxy/guides/caddy)
 * [Shared hosting on Apache](https://github.com/Neoflow/ReverseProxy-PlausibleAnalytics)
 
-NPM package as an alternative to proxy:
+Events API as a server side alternative:
+* [How to send events directly to our API](/docs/events-api)
+
+NPM package as another alternative:
 * [NPM standalone package](https://github.com/plausible/plausible-tracker)
 
 :::note
