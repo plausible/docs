@@ -4,7 +4,7 @@ title: Events API reference
 
 import {Required, Optional} from '../src/js/api-helpers.js';
 
-The Plausible Events API can be used to record pageviews and custom events.
+The Plausible Events API can be used to record pageviews and custom events. This is useful when tracking mobile apps or for server side tracking.
 
 In most cases we recommend installing Plausible via our provided [script](/docs/plausible-script) or one of the many
 ingeration packages listed [here](/docs/integration-guides). However, if there's no easy way for you to integrate with Plausible, you can still do so by sending events directly to our API.
