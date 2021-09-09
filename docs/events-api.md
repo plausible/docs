@@ -29,7 +29,7 @@ curl -i -X POST https://plausible.io/api/event \
   --data '{"name":"pageview","url":"http://dummy.site","domain":"dummy.site","width":1666}'
 ```
 
-```json title="Response 202 OK"
+```json title="Response 202 Accepted"
 {}
 ```
 
