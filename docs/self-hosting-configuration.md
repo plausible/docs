@@ -103,7 +103,9 @@ Copy the client ID and Secret into these config values:
 | GOOGLE_CLIENT_SECRET| --        | The Client Secret from the Google API Console for your Plausible Analytics project                   |
 
 After deploying those values, you can follow [the Search Console Integration docs](google-search-console-integration.md) for
-the rest of the set up. For the final step of choosing a property from the Search Console, you also need to enable the "[Google Search Console API](https://console.developers.google.com/apis/api/searchconsole.googleapis.com)" on your Google API project.
+the rest of the set up. 
+
+For the final step of choosing a property from the Search Console, you also need to enable the "[Google Search Console API](https://console.developers.google.com/apis/api/searchconsole.googleapis.com)" on your Google API project.
 
 ### Twitter Integration
 
