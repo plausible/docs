@@ -5,7 +5,7 @@ title: Serve the script from your domain as a first-party connection
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 :::note
-Custom domains are depreciated. They still work but we recommend those who use the custom domain to proxy the script instead. New to Plausible? Use the proxy instead of the custom domain. [Here are the proxy instructions](/proxy/introduction.md)
+Custom domains are deprecated. They still work but we recommend those who use the custom domain to proxy the script instead. New to Plausible? Use the proxy instead of the custom domain. [Here are the proxy instructions](/proxy/introduction.md)
 :::
 
 We offer a quick and easy way to serve the Plausible Analytics script from your domain name as a first-party connection. Click on the "**Add custom domain**" button in the "**Custom domain**" section of your website settings to get started.
