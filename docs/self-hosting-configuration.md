@@ -90,12 +90,25 @@ To run the complete setup including geoip see [`docker-compose-geoip.yml`](https
 ### Google Search Integration
 
 To enable the Google Search Console integration in Plausible Analytics, you need to authorize your self-hosted installation with a Google
-Account. For the OAuth flow, you need to configure the `client_id` and `client_secret`. Visit the
-[Google API Console](https://console.developers.google.com/) to obtain OAuth 2.0 credentials such as a client ID and client secret that are
-known to both Google and your installation. Once on the API Console, create a new project. On the project go to the "Credentials" screen and
-your installation's public URL followed by `/auth/google/callback` as "Authorized redirect URI".
+Account. For the OAuth flow, you need to configure the `client_id` and `client_secret`. 
 
-Copy the client ID and Secret into these config values:
+#### Steps to Integrage Google Search Console
+
+1. Visit the
+[Google API Console](https://console.developers.google.com/) to obtain OAuth 2.0 credentials such as a Client ID and Client Secret key that are
+known to both Google and your installation. Once on the API Console, create a new project. 
+
+![google1](https://user-images.githubusercontent.com/85956139/132954658-2d5bc2c3-22c2-4300-b9c6-cbe4f8f8987e.png)
+
+2. On the project, go to the "Credentials" screen and get your Client ID and Client Secret key.
+
+![google2](https://user-images.githubusercontent.com/85956139/132954742-bb9c3477-b84a-40a5-a2eb-f9fa683804cf.png)
+
+![google3](https://user-images.githubusercontent.com/85956139/132954858-ef951349-20b0-4675-bf9c-ead8d4bc292b.jpg)
+
+3. Go to your Plausible installation's public URL followed by `/auth/google/callback` as "Authorized redirect URI".
+
+4. Copy the Client ID and Client Secret key from your project in Google API Console into these config values:
 
 | Parameter           | Default   | Description                                                                                          |
 |---------------------|-----------|------------------------------------------------------------------------------------------------------|
@@ -105,7 +118,23 @@ Copy the client ID and Secret into these config values:
 After deploying those values, you can follow [the Search Console Integration docs](google-search-console-integration.md) for
 the rest of the set up. 
 
-For the final step of choosing a property from the Search Console, you also need to enable the "[Google Search Console API](https://console.developers.google.com/apis/api/searchconsole.googleapis.com)" on your Google API project.
+5. For the final step of choosing a property from the Search Console, you also need to enable the "[Google Search Console API](https://console.developers.google.com/apis/api/searchconsole.googleapis.com)" on your Google API project.
+
+#### Enable Google Search Console API
+
+1. Click on "Enable APIs and Services."
+
+![google_enable_1](https://user-images.githubusercontent.com/85956139/132954489-34071ab3-dd96-44ab-83be-02431a888df9.jpg)
+
+2. Search for "Google Search Console API" in the search bar of the API Library.
+
+![google_enable2](https://user-images.githubusercontent.com/85956139/132954499-bc96eb44-d94b-4413-8e0e-c2008fc60242.png)
+
+3. Click on "Google Search Console API" and the button to enable.
+
+![google_enable3](https://user-images.githubusercontent.com/85956139/132954503-df8caff9-8654-4ec0-87eb-4d76363ebc75.png)
+
+![google_enable4](https://user-images.githubusercontent.com/85956139/132954508-290bda57-47cf-4cda-bb6d-77a1c8baa485.png)
 
 ### Twitter Integration
 
