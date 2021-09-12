@@ -92,7 +92,7 @@ To run the complete setup including geoip see [`docker-compose-geoip.yml`](https
 To enable the Google Search Console integration in Plausible Analytics, you need to authorize your self-hosted installation with a Google
 Account. For the OAuth flow, you need to configure the `client_id` and `client_secret`. 
 
-#### Steps to Integrage Google Search Console
+#### Steps to Integrate Google Search Console
 
 1. Visit the
 [Google API Console](https://console.developers.google.com/) to obtain OAuth 2.0 credentials such as a Client ID and Client Secret key that are
