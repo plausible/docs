@@ -62,3 +62,8 @@ Referrer for this event. When using the script, this is set to `document.referre
 
 Width of the screen. When using the script, this is set to `window.innerWidth`
 <hr / >
+
+**props** <Optional />
+
+Custom properties for the event. See: https://plausible.io/docs/custom-event-goals#using-custom-props
+<hr / >
