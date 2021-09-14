@@ -15,7 +15,7 @@ You can invite any email address. It doesn't necessarily need to be an email add
 * Go into [the site settings](website-settings.md) of the website you'd like to invite users to
 * Click on the "**People**" section on the left-hand sidebar
 * Click on the "**Invite**" button
-* Enter the email address of the person you'd like to invite. If you invite a new person to Plausible, they will need to register for a Plausible account
+* Enter the email address of the person you'd like to invite. If you invite a new person to Plausible, they will need to register for a Plausible account with the exact email address that you invited
 * Assign the role for the invited user. You can choose between two different roles:
 
 1. "**Admin**" gets access to the stats dashboard, can change the site settings and invite other members
@@ -27,11 +27,9 @@ The owner of a site needs to have an active subscription. Viewers and admins do 
 
 * Click on the "**Invite**" button. We will send an email to the invited person to notify them about your invitation. They will need to register for a Plausible account with the email address that was invited (or log in to their existing Plausible account registered with that email address) and accept your invitation. All invitations expire after 48 hours.
 
-All invited users can use Plausible free of charge even without having a subscription. It is also free of charge for you to invite as many users as you want.
+All invited users can use Plausible and view stats from sites they were invited to free of charge even without having their own subscription. It is also free of charge for you to invite as many users as you want.
 
-All the invited users will see the trial message in the top menu bar and this message will go away after the 30 days of trial. They will continue having access to any sites you have given them access to after the trial expires even without having their own subscription. 
-
-If the invited user adds a brand new site and becomes an owner of that site, then the trial comes into effect and they'll need to subscribe to a plan to continue viewing the stats of the site they own after the trial expires.
+If the invited user adds a brand new site to Plausible and becomes an owner of that site, then the trial comes into effect and they'll need to subscribe to a plan to continue viewing the stats of the site they own after the trial expires.
 
 :::note
 Want to share a single dashboard with someone without them needing a Plausible account? Our [private and secure shared links](shared-links.md) are a great way to share the stats
