@@ -1,14 +1,12 @@
 ---
-title: Introduction to goals
+title: Introduction to goals and events
 --- 
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Plausible Analytics has a very flexible support for goals which allows you to track pretty much what you want. 
+Plausible Analytics has a very flexible support for goals and events. Goals are actions that you want your users to take such as sign up to a newsletter, click on the "**Download**" button, sign up for a trial account, click on an external link or complete the checkout form of your ecommerce store.
 
-Goals are actions that you want your users to take such as sign up to a newsletter, click on the "**Download**" button, sign up for a trial account, click on an external link or complete the checkout form of your ecommerce store.
-
-With this feature, you’ll be able to track the number of conversions, conversion rate and other statistics including referrer sources that are driving conversions.
+By setting up goals and events, you can track the number of conversions, conversion rate, referrer sources and entry pages that are driving conversions and the top pages that people convert on.
 
 There are four types of goals in Plausible Analytics: 
 
