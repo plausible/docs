@@ -16,6 +16,8 @@ Tracking 404 error pages is essential for many site owners and Plausible helps y
 * See where visitors find broken links to your 404 error pages
 * Then you can manually fix broken links and redirect error pages
 
+Check out this blog post for more details on the value of [tracking 404 error pages](https://plausible.io/blog/track-404-errors).
+
 If you want to track 404 error pages on your site, here's what you need to do:
 
 ## 1. Make sure your tracking setup includes the second line
@@ -57,4 +59,4 @@ Next, click on the "**Add goal**" button and you'll be taken back to the Goals p
 
 Click on "**404**" to see the full list of all visits on all error pages and have your dashboard filtered by error pages only. Click on a particular error page URL to filter the dashboard by those clicks only and get the full overview of that specific URL. Then you can figure out how your visitors discover the broken links and fix them.
 
-Thanks to [Jeremiah Lee](https://www.jeremiahlee.com/) for contributing this to the Plausible Analytics community! We do plan to support 404 error pages tracking out of the box in the future but this is a great alternative you can use in the meantime.
+Thanks to [Jeremiah Lee](https://www.jeremiahlee.com/) for contributing this to the Plausible Analytics community!
