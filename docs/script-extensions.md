@@ -1,5 +1,5 @@
 ---
-title: Script extensions
+title: Script extensions for enhanced measurement
 ---
 
 We're proud to have one of the most [lightweight Javascript snippets](https://plausible.io/lightweight-web-analytics) in the analytics industry. Clocking in at less than 1KB, our script
