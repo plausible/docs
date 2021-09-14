@@ -16,6 +16,8 @@ Outbound link click tracking is essential for many site owners and Plausible hel
 * See on which of your pages the particular outbound link gets the clicks
 * Filter the dashboard by external URL to see what type of visitors click the most (referral source, country, device, browser, OS)
 
+Check out this blog post for more details on the value of [tracking outbound link clicks](https://plausible.io/blog/track-outbound-link-clicks).
+
 "**Outbound Link Click Tracking**" is an enhanced measurement and not included in our default script. This is because we want to keep the default script as simple and lightweight as possible. The additional enhanced measurements you can choose to add depending on your needs.
 
 If you want to track external link clicks, here's what you need to do:
