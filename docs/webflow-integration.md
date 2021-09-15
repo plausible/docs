@@ -26,7 +26,8 @@ Here's an example of how you can start sending simple form submission events fro
 2. Your form element should already have an id attribute by default. Look up the value of this from the Designer view, by selecting the form element:
 
 <img alt="Form element settings" src={useBaseUrl('img/webflow-form-elem-settings.png')} />
- 
+
+
 3. In this code
 
 ```html
