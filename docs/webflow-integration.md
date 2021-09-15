@@ -20,7 +20,7 @@ Now you can go to your website and verify whether Plausible Analytics script has
 
 ## How to track a form submission in Webflow
 
-Here's an example of how you can track form submissions on your Webflow site, using our [custom events](https://plausible.io/docs/custom-event-goals).
+Here's an example of how you can track form submissions on your Webflow site using our [custom events](https://plausible.io/docs/custom-event-goals).
 
 ### 1. Trigger custom events with JavaScript on your site
  
@@ -31,7 +31,7 @@ First, make sure your tracking setup includes the second line as shown below. Fo
 <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 ```
 
-## 2. Find the ID attribute of your form element
+### 2. Find the ID attribute of your form element
 
 Your form element should already have an ID attribute by default. Look up the value of this from the Designer view, by selecting the form element:
 
