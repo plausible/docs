@@ -15,3 +15,49 @@ Site-wide JavaScript code injection is a premium Webflow feature so you need to 
 * Paste your Plausible tracking code in the "**Head code**" section and save changes.
 
 Now you can go to your website and verify whether Plausible Analytics script has been added and to your Plausible Analytics account to see whether the stats are being tracked. See here [how to verify the integration](troubleshoot-integration.md).
+
+
+## Track a form submission using Custom Events in Webflow
+
+Here's an example of how you can start sending simple form submission events from your Webflow site, using [Custom Events](https://plausible.io/docs/custom-event-goals).
+
+1. Insert the additional custom event snippet on your site, as shown in the first step [here](https://plausible.io/docs/custom-event-goals#1-trigger-custom-events-with-javascript-on-your-site). For this, follow the same steps you took on inserting the default Plausible snippet.
+
+2. Your form element should already have an id attribute by default. Look up the value of this from the Designer view, by selecting the form element:
+
+<img alt="Form element settings" src={useBaseUrl('img/webflow-form-elem-settings.png')} />
+ 
+3. In this code
+
+```html
+<script>
+const plausibleGoalForm = document.getElementById('<my-form-id>');
+
+plausibleGoalForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    setTimeout(submitForm, 1000);
+    var formSubmitted = false;
+  
+    function submitForm() {
+      if (!formSubmitted) {
+        formSubmitted = true;
+        plausibleGoalForm.submit();
+      }
+    }
+  
+    plausible('<my-event-name>', {callback: submitForm});
+  })
+</script>
+```
+
+replace the following:
+
+- `<my-form-id>` with the id value from the previous step
+- `<my-event-name>` with the custom event name you want to be shown on your Plausible dashboard (use this same name in step 5)
+
+
+4. Using the [custom code](https://university.webflow.com/lesson/custom-code-in-the-head-and-body-tags) feature once again, insert the modified JavaScript code, this time in the footer section of the corresponding page.
+
+5. Add the custom event with the same name in your Plausible dashboard as shown [here](https://plausible.io/docs/custom-event-goals#2-create-a-custom-event-goal-in-your-plausible-analytics-account)
+
+6. Your goal should now be set up. It will show up in your dashboard once it has been completed at least once.
