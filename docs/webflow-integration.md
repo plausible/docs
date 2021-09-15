@@ -16,19 +16,22 @@ Site-wide JavaScript code injection is a premium Webflow feature so you need to 
 
 Now you can go to your website and verify whether Plausible Analytics script has been added and to your Plausible Analytics account to see whether the stats are being tracked. See here [how to verify the integration](troubleshoot-integration.md).
 
+## Track a form submission using custom events in Webflow
 
-## Track a form submission using Custom Events in Webflow
+Here's an example of how you can start sending simple form submission events from your Webflow site, using our [custom events](https://plausible.io/docs/custom-event-goals).
 
-Here's an example of how you can start sending simple form submission events from your Webflow site, using [Custom Events](https://plausible.io/docs/custom-event-goals).
+1. First, make sure your tracking setup includes the second line as shown below. For this, follow the same steps you took when inserting the default Plausible snippet.
 
-1. Insert the additional custom event snippet on your site, as shown in the first step [here](https://plausible.io/docs/custom-event-goals#1-trigger-custom-events-with-javascript-on-your-site). For this, follow the same steps you took on inserting the default Plausible snippet.
+```html
+<script defer data-domain="<yourdomain.com>" src="https://plausible.io/js/plausible.js"></script>
+<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+```
 
-2. Your form element should already have an id attribute by default. Look up the value of this from the Designer view, by selecting the form element:
+2. Your form element should already have an ID attribute by default. Look up the value of this from the Designer view, by selecting the form element:
 
 <img alt="Form element settings" src={useBaseUrl('img/webflow-form-elem-settings.png')} />
-
-
-3. In this code
+ 
+3. Look for this part of the code:
 
 ```html
 <script>
@@ -51,14 +54,27 @@ plausibleGoalForm.addEventListener('submit', function(e) {
 </script>
 ```
 
-replace the following:
+In the above code, you need to replace the following:
 
 - `<my-form-id>` with the id value from the previous step
 - `<my-event-name>` with the custom event name you want to be shown on your Plausible dashboard (use this same name in step 5)
 
-
 4. Using the [custom code](https://university.webflow.com/lesson/custom-code-in-the-head-and-body-tags) feature once again, insert the modified JavaScript code, this time in the footer section of the corresponding page.
 
-5. Add the custom event with the same name in your Plausible dashboard as shown [here](https://plausible.io/docs/custom-event-goals#2-create-a-custom-event-goal-in-your-plausible-analytics-account)
+5. Create a custom event goal with the same name in your Plausible Analytics account.
 
-6. Your goal should now be set up. It will show up in your dashboard once it has been completed at least once.
+When you start sending custom events to Plausible Analytics, they won’t show up automatically. You’ll have to configure the goal for the conversion numbers to show up.
+
+To configure a goal, go to your website’s settings in your Plausible Analytics account and visit the "**Goals**" section. You should see an empty list with a prompt to add a goal.
+
+<img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
+
+Click on the "**+ Add goal**" button to go to the goal creation form.
+
+Select `Custom event` as the goal trigger and enter the name of the custom event you are triggering. The names must be an exact match to the one on your site for the conversions to show up in your analytics dashboard.
+
+<img alt="Add your custom event goal" src={useBaseUrl('img/add-custom-event-goal.png')} />
+
+Next, click on the "**Add goal**" button and you’ll be taken back to the Goals page. 
+
+6. Your goal should now be set up. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who triggered the custom event. Goal conversions are listed at the very bottom of the dashboard. The goal will show up in your dashboard once it has been completed at least once.
