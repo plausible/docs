@@ -70,6 +70,10 @@ We have a WordPress plugin that makes the integration with WordPress nice and ea
 
 To track Google AMP pages with Plausible, you need to declare an AMP-analytics object on your AMP pages. [See the instructions here](https://github.com/plausible/analytics/discussions/220#discussioncomment-904022).
 
+## Google Chrome extensions 
+
+To track Google Chrome browser extensions with Plausible, you can [follow these instructions](https://gist.github.com/Joelkw/31b798f69c714c00e9e097b1fd4bb3c8).
+
 ## GatsbyJS
 
 [GatsbyJS](https://www.gatsbyjs.org/packages/gatsby-plugin-plausible/): A Gatsby plugin for adding Plausible Analytics to your Gatsby site. Built and maintained by Curtis Cummings of [https://aquil.io/](https://aquil.io/).
