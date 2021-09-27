@@ -41,7 +41,7 @@ curl -i -X POST https://plausible.io/api/event \
 Domain name of the site in Plausible
 
 :::note
-This is the domain name you used when you added your site to your Plausible account. It doesn't necessarily have to be the same domain name as your app.
+This is the domain name you used when you added your site to your Plausible account. It doesn't actually need to be a domain name so for example when adding your mobile app to Plausible you can add the mobile app name in the domain name field
 :::
 <hr / >
 
@@ -60,7 +60,6 @@ this is set to `window.location.href`
 The URL parameter will feel strange in a mobile app but you can manufacture something that looks like a web URL. If you name your mobile app screens like page URLs, Plausible will know how to handle it. So for example, on your login screen you could send something like:  
 
 event: pageview  
-
 url: app://localhost/login  
 
 The pathname (/login) is what will be shown as the page value in the Plausible dashboard.  
