@@ -39,11 +39,11 @@ curl -i -X POST https://plausible.io/api/event \
 **domain** <Required />
 
 Domain name of the site in Plausible
-<hr / >
 
 :::note
 This is the domain name you used when you added your site to your Plausible account. It doesn't necessarily have to be the same domain name as your app.
 :::
+<hr / >
 
 **name** <Required />
 
@@ -55,15 +55,15 @@ custom events.
 
 URL of the page where the event was triggered. If the URL contains UTM parameters, they will be extracted and stored. When using the script,
 this is set to `window.location.href`
-<hr / >
 
 :::note
-The URL parameter will feel strange in a mobile app but you can manufacture something that sort of looks like a web URL even though it's running in an app. If you name your screens sort of like page URLs on websites, Plausible will know how to handle it. So for example, on your login screen you could send something like:
-event: pageview
-url: app://localhost/login
-The pathname (/login) is what will be shown as the page value in the Plausible dashboard. 
+The URL parameter will feel strange in a mobile app but you can manufacture something that sort of looks like a web URL even though it's running in an app. If you name your screens sort of like page URLs on websites, Plausible will know how to handle it. So for example, on your login screen you could send something like:\
+event: pageview\
+url: app://localhost/login\
+The pathname (/login) is what will be shown as the page value in the Plausible dashboard.\
 Make sure when you use the pageview name for events that represent a page or screen view in your app. The pageview event is treated in a special way in Plausible and the dashboard won't really work well if you name them differently. You can still use any custom name for other events like Register, Purchase or whatever custom events you might want to track.
 :::
+<hr / >
 
 **referrer** <Optional />
 
