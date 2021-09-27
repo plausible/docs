@@ -58,6 +58,15 @@ Once you’ve selected your property, click on the "**Save**" button. At that po
 
 <img alt="Choose which property from Google Search Console to integrate with" src={useBaseUrl('img/choose-property.png')} />
 
+### I get the "Invalid Grant" error
+
+Google may return the "**invalid_grant**" error message for several reasons:
+
+* Google has a limit of 50 live tokens. When you try to add the 51st site, the site you added first will be disconnected from your Plausible account and so on. This is a limitation on Google's side so if you have more than 50 different sites in your Search Console, you will need to split them between different Google accounts in order to get them into Plausible at the same time
+* Your permissions for the specific site may have been changed or revoked in your Google account. Please check your Search Console account and make sure you still have the user permission to the site in question
+* Your token is inactive as your account has expired or your site is not active. Please check your Search Console account and make sure you still have the account and are still tracking the site in question correctly
+* You may have changed the permissions or the password in your Google account since you gave us the access. Please make sure to reconnect your Google account again to Plausible with the correct account details
+
 ## Check your search query data in Plausible Analytics
 
 Look at your site’s "**Top Sources**" stats in your Plausible Analytics dashboard, click on "**Google**" in the referrers list, and you should see the keywords coming through.
