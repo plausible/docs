@@ -57,11 +57,13 @@ URL of the page where the event was triggered. If the URL contains UTM parameter
 this is set to `window.location.href`
 
 :::note
-The URL parameter will feel strange in a mobile app but you can manufacture something that sort of looks like a web URL even though it's running in an app. If you name your screens sort of like page URLs on websites, Plausible will know how to handle it. So for example, on your login screen you could send something like:\
-event: pageview\
-url: app://localhost/login\
-The pathname (/login) is what will be shown as the page value in the Plausible dashboard.\
-Make sure when you use the pageview name for events that represent a page or screen view in your app. The pageview event is treated in a special way in Plausible and the dashboard won't really work well if you name them differently. You can still use any custom name for other events like Register, Purchase or whatever custom events you might want to track.
+The URL parameter will feel strange in a mobile app but you can manufacture something that looks like a web URL. If you name your mobile app screens like page URLs, Plausible will know how to handle it. So for example, on your login screen you could send something like:  
+
+event: pageview  
+
+url: app://localhost/login  
+
+The pathname (/login) is what will be shown as the page value in the Plausible dashboard.  
 :::
 <hr / >
 
