@@ -41,7 +41,7 @@ curl -i -X POST https://plausible.io/api/event \
 Domain name of the site in Plausible
 
 :::note
-This is the domain name you used when you added your site to your Plausible account. It doesn't actually need to be a domain name so for example when adding your mobile app to Plausible you can add the mobile app name in the domain name field
+This is the domain name you used when you added your site to your Plausible account. It doesn't need to be an actual domain name, so when adding your mobile app to Plausible, you could insert the mobile app name in the domain name field
 :::
 <hr / >
 
