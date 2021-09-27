@@ -4,7 +4,7 @@ title: Events API reference
 
 import {Required, Optional} from '../src/js/api-helpers.js';
 
-The Plausible Events API can be used to record pageviews and custom events. This is useful when tracking mobile apps or for server side tracking.
+The Plausible Events API can be used to record pageviews and custom events. This is useful when tracking Android or iOS mobile apps, or for server side tracking.
 
 In most cases we recommend installing Plausible via our provided [script](/docs/plausible-script) or one of the many
 interation packages listed [here](/docs/integration-guides). However, if there's no easy way for you to integrate with Plausible, you can still do so by sending events directly to our API.
@@ -41,6 +41,10 @@ curl -i -X POST https://plausible.io/api/event \
 Domain name of the site in Plausible
 <hr / >
 
+:::note
+This is the domain name you used when you added your site to your Plausible account. It doesn't necessarily have to be the same domain name as your app.
+:::
+
 **name** <Required />
 
 Name of the event. Can specify `pageview` which is a special type of event in Plausible. All other names will be treated as
@@ -52,6 +56,14 @@ custom events.
 URL of the page where the event was triggered. If the URL contains UTM parameters, they will be extracted and stored. When using the script,
 this is set to `window.location.href`
 <hr / >
+
+:::note
+The URL parameter will feel strange in a mobile app but you can manufacture something that sort of looks like a web URL even though it's running in an app. If you name your screens sort of like page URLs on websites, Plausible will know how to handle it. So for example, on your login screen you could send something like:
+event: pageview
+url: app://localhost/login
+The pathname (/login) is what will be shown as the page value in the Plausible dashboard. 
+Make sure when you use the pageview name for events that represent a page or screen view in your app. The pageview event is treated in a special way in Plausible and the dashboard won't really work well if you name them differently. You can still use any custom name for other events like Register, Purchase or whatever custom events you might want to track.
+:::
 
 **referrer** <Optional />
 
