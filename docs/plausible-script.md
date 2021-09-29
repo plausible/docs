@@ -40,23 +40,43 @@ We've put together several guides that cover popular website builders and conten
 
 Here's [the full list of all integrations and guides](integration-guides.md). These can help you set up and start counting your site visitors in no time.
 
-## Can I use the same snippet across my domain and subdomain?
-
-You can use the same Plausible snippet on multiple sites and subdomains. Or you can add them all as individual sites to your Plausible account with their own unique snippets and separate dashboards. Which option to use depends on your preference.
-
-There are two negatives of using the same Plausible snippet on multiple sites and subdomains:
-
-1. You will have one dashboard with all the stats combined. You won't be able to see individual dashboard of the individual site separated from others.
-
-2. If you have pages with identical page paths between the different sites (say `yourdomain.com/best-page/` and `subdomain.yourdomain.com/best-page/`), these identical page paths will be listed under one entry (`/best-page/` in the "**Top Pages**" report with the stats combined into that one entry.
-
 ## Can I send stats to multiple dashboards at the same time?
 
-You can send stats to multiple Plausible dashboards by configuring the data-domain as a comma-separated list:
+Yes, you can send your visitor stats to multiple Plausible dashboards at the same time. To do this, you need to configure the data-domain attribute as a comma-separated list in the Plausible snippet that you insert into your site. Here's an example:
 
 ```html
-<script defer data-domain="test1.yourdomain.com,test2.yourdomain.com" src="https://plausible.io/js/plausible.js"></script>
+<script defer data-domain="domain1.com,domain2.com,subdomain.yourdomain.com" src="https://plausible.io/js/plausible.js"></script>
 ```
+
+## Can I use the same snippet across my domain and subdomain?
+
+Yes, you can use the same Plausible snippet on multiple sites and subdomains. There are two drawbacks with this approach:
+
+1. You will have one dashboard with all the stats combined. You won't be able to see individual dashboard of the individual site separated from the other sites.
+
+2. If you have pages with identical page paths on the different sites (say `yourdomain.com/best-page/` and `subdomain.yourdomain.com/best-page/`), these identical page paths will be listed under one entry (`/best-page/`) in the "**Top Pages**" report with the stats combined into that one entry.
+
+We do have a rollup view reporting which avoids these drawbacks. Here's how to use it:
+
+## Is there a roll-up view?
+
+Rollup reporting allows you to aggregate stats from multiple sites and see them all together in one dashboard while still keeping the individual site stats on their own separate dashboards. Here's how you can use it:
+
+* Say you have first.com and second.com sites that have their own Plausible dashboards
+* Then you could add a third site to your Plausible account called for example rollup.first-second.com
+* On the first.com site, add the new site name to the data-domain attribute in your Plausible snippet like this:
+
+```html
+<script defer data-domain="first.com,rollup.first-second.com" src="https://plausible.io/js/plausible.js"></script>
+```
+
+* Add the new site name to the data-domain attribute in your Plausible snippet on the second.com site too. Like this:
+
+```html
+<script defer data-domain="second.com,rollup.first-second.com" src="https://plausible.io/js/plausible.js"></script>
+```
+
+This will send pageviews from your sites to their individual dashboards so you can still see their separate stats but it will also send their stats to a grouped dashboard which means you'll be able to see the combined stats too in a roll-up view. 
 
 ## How to verify if the script is installed on your site
 
