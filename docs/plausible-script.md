@@ -63,7 +63,7 @@ We do have a rollup view reporting which avoids these drawbacks. Here's how to u
 Rollup reporting allows you to aggregate stats from multiple sites and see them all together in one dashboard while still keeping the individual site stats on their own separate dashboards. Here's how you can use it:
 
 * Say you have first.com and second.com sites that have their own Plausible dashboards
-* Then you could add a third site to your Plausible account called for example rollup.first-second.com
+* Then you could add a third site to your Plausible account called for example rollup.first-second.com (you can come up with any name that you want for this, it doesn't need to be an actual website)
 * On the first.com site, add the new site name to the data-domain attribute in your Plausible snippet like this:
 
 ```html
