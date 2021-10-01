@@ -71,7 +71,7 @@ The pathname (/login) is what will be shown as the page value in the Plausible d
 Referrer for this event. When using the script, this is set to `document.referrer`
 <hr / >
 
-**screen_width** <Optional />
+**width** <Optional />
 
 Width of the screen. When using the script, this is set to `window.innerWidth`
 <hr / >
