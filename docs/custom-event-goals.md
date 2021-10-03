@@ -12,7 +12,7 @@ If you want to track custom event goals like button clicks or form completions, 
 
 ## 1. Trigger custom events with JavaScript on your site
 
-First, make sure your tracking setup includes the second line as shown below
+First, make sure your tracking setup includes the second line as shown below:
 
 ```html
 <script defer data-domain="<yourdomain.com>" src="https://plausible.io/js/plausible.js"></script>
@@ -21,7 +21,7 @@ First, make sure your tracking setup includes the second line as shown below
 
 This snippet creates a global function called `plausible` which can be used to trigger custom events from anywhere in your code.
 
-Here’s what triggering a custom event looks like
+Here’s what triggering a custom event looks like:
 
 ```javascript
 plausible('Signup')
@@ -128,7 +128,7 @@ Register events in the HTML with the use of an attribute tag `data-analytics`.  
 <a href="/register" data-analytics='"Register", {"props":{"plan":"Navigation"}}'>Register</a>
 ```
 
-To be able to read the `data-analytics` you need to add the javascript below.
+To be able to read the `data-analytics` you need to add the javascript below. You should insert this before the closing `</body>` tag:
 
 ```javascript
 // Handle link events - those that have data-analytics
