@@ -134,6 +134,7 @@ curl https://plausible.io/api/v1/stats/aggregate?site_id=$SITE_ID&period=6mo&met
 
 ```json title="Response"
 {
+  "results": {
     "bounce_rate": {
         "value": 53.0
     },
@@ -146,6 +147,7 @@ curl https://plausible.io/api/v1/stats/aggregate?site_id=$SITE_ID&period=6mo&met
     "visitors": {
         "value": 201524
     }
+  }
 }
 ```
 
