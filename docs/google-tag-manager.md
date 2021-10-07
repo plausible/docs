@@ -24,6 +24,20 @@ That's it! Now you can go to your website and verify whether Plausible Analytics
 You cannot use Google Tag Manager if you have added a subfolder as your site in Plausible. Only naked domain (yoursite.com) or subdomain (subdomain.yoursite.com) will work as the data-domain attribute in our snippet while a subfolder (yoursite.com/subfolder) will not. When using a subfolder as the data-domain, Google Tag Manager strips the subfolder and sends the traffic to yoursite.com instead
 :::
 
+### Do you want to use a custom script such as the ability to send stats to multiple dashboards at the same time?
+
+Google Tag Manager strips all `data-` attributes from custom scripts. This means data-domain has no effect through the Google Tag Manager. There is a workaround you can use instead. The snippet you need to insert should look like this:
+
+```html
+<script>
+  var script = document.createElement('script');
+  script.defer = true;
+  script.dataset.domain = "yourfirstsite.com,secondsite.com";
+  script.src = "https://plausible.io/js/plausible.js";
+  document.getElementsByTagName('head')[0].appendChild(script);
+</script>
+```
+
 ## Concerns about using Google Tag Manager
 
 There are a couple of concerns when using Plausible with Google Tag Manager:
