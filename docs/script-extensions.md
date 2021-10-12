@@ -14,13 +14,14 @@ outbound links on your website, you can load `plausible.outbound-links.js`. And 
 This approach makes sure that you only load code that will actually be used on your website. Websites should not have to load dozens or hundreds of kilobytes
 of dead Javascript code on every pageload which degrades the user experience and causes unnecessary network traffic.
 
-| Extension                   | Explanation                                                             |
-|-----------------------------|-------------------------------------------------------------------------|
-| plausible.hash.js           | Automatically follow frontend navigation when using [hash-based routing](hash-based-routing.md)  |
-| plausible.outbound-links.js | Automatically [track clicks on outbound links](outbound-link-click-tracking.md) from your website          |
-| plausible.exclusions.js     | [Exclude certain pages from being tracked](excluding-pages.md)                                |
-| plausible.compat.js         | Compatibility mode for tracking users on Internet Explorer              |
-| plausible.local.js          | Allow analytics to track on localhost too which is useful in hybrid apps               |
+| Extension                   | Explanation                                                                                        |
+|-----------------------------|----------------------------------------------------------------------------------------------------|
+| plausible.hash.js           | Automatically follow frontend navigation when using [hash-based routing](hash-based-routing.md)    |
+| plausible.outbound-links.js | Automatically [track clicks on outbound links](outbound-link-click-tracking.md) from your website  |
+| plausible.exclusions.js     | [Exclude certain pages from being tracked](excluding-pages.md)                                     |
+| plausible.compat.js         | Compatibility mode for tracking users on Internet Explorer                                         |
+| plausible.local.js          | Allow analytics to track on localhost too which is useful in hybrid apps                           |
+| plausible.manual.js         | Do not trigger pageviews automatically.                                                            |
 
 ### plausible.compat.js
 
@@ -31,3 +32,30 @@ how it should look like:
 ```html
 <script id="plausible" defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.compat.js"></script>
 ```
+
+### plausible.manual.js
+
+By default, the Plausible script triggers a pageview when it is first loaded. It also attaches listeners to the History API and will automatically trigger pageviews
+when you use `history.pushState`. This is useful for most websites but we also offer a manual mode in case you want full control over when pageviews are triggered
+on your website.
+
+The most common use-case for this is when you use [Turbo](https://turbo.hotwired.dev/) (formerly [Turbolinks](https://github.com/turbolinks/turbolinks)). In that case,
+you want to manually trigger Plausible pageviews on the `turbo:load` or `turbolinks:load` browser event depending which library you use. Here's how you can do that:
+
+
+```html
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.manual.js"></script>
+<!-- define the `plausible` function to manually trigger events -->
+<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+<!-- trigger pageviews on turbolinks navigation -->
+<script>
+document.addEventListener("turbo:load", function() {
+  plausible('pageview')
+})
+</script>
+```
+
+:::note
+When using turbolinks, make sure that the Plausible script isn't loaded and executed during turbo navigation. You may need to move the script to the `<head>` section
+of your website or use the `data-turbo-eval="false"` attribute.
+:::

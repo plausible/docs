@@ -2346,13 +2346,6 @@
   "resolved" "https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.0.0.tgz"
   "version" "2.0.0"
 
-"bindings@^1.5.0":
-  "integrity" "sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ=="
-  "resolved" "https://registry.npmjs.org/bindings/-/bindings-1.5.0.tgz"
-  "version" "1.5.0"
-  dependencies:
-    "file-uri-to-path" "1.0.0"
-
 "bluebird@^3.5.5", "bluebird@^3.7.1":
   "integrity" "sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg=="
   "resolved" "https://registry.npmjs.org/bluebird/-/bluebird-3.7.2.tgz"
@@ -2866,7 +2859,6 @@
     "anymatch" "^2.0.0"
     "async-each" "^1.0.1"
     "braces" "^2.3.2"
-    "fsevents" "^1.2.7"
     "glob-parent" "^3.1.0"
     "inherits" "^2.0.3"
     "is-binary-path" "^1.0.0"
@@ -2885,7 +2877,6 @@
   dependencies:
     "anymatch" "~3.1.1"
     "braces" "~3.0.2"
-    "fsevents" "~2.3.1"
     "glob-parent" "~5.1.0"
     "is-binary-path" "~2.1.0"
     "is-glob" "~4.0.1"
@@ -4636,19 +4627,6 @@
   "resolved" "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   "version" "1.0.0"
 
-"fsevents@^1.2.7":
-  "integrity" "sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw=="
-  "resolved" "https://registry.npmjs.org/fsevents/-/fsevents-1.2.13.tgz"
-  "version" "1.2.13"
-  dependencies:
-    "bindings" "^1.5.0"
-    "nan" "^2.12.1"
-
-"fsevents@~2.3.1":
-  "integrity" "sha512-YR47Eg4hChJGAB1O3yEAOkGO+rlzutoICGqGo9EZ4lKWokzZRSyIW1QmTzqjtw8MJdj9srP869CuWw/hyzSiBw=="
-  "resolved" "https://registry.npmjs.org/fsevents/-/fsevents-2.3.1.tgz"
-  "version" "2.3.1"
-
 "function-bind@^1.1.1":
   "integrity" "sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A=="
   "resolved" "https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz"
@@ -5920,7 +5898,6 @@
   "resolved" "https://registry.npmjs.org/jsonfile/-/jsonfile-6.1.0.tgz"
   "version" "6.1.0"
   dependencies:
-    "graceful-fs" "^4.1.6"
     "universalify" "^2.0.0"
   optionalDependencies:
     "graceful-fs" "^4.1.6"
@@ -6682,11 +6659,6 @@
   "integrity" "sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA=="
   "resolved" "https://registry.npmjs.org/mute-stream/-/mute-stream-0.0.8.tgz"
   "version" "0.0.8"
-
-"nan@^2.12.1":
-  "integrity" "sha512-isWHgVjnFjh2x2yuJ/tj3JbwoHu3UC2dX5G/88Cm24yB6YopVgxvBObDY7n5xW6ExmFhJpSEQqFPvq9zaXc8Jw=="
-  "resolved" "https://registry.npmjs.org/nan/-/nan-2.14.1.tgz"
-  "version" "2.14.1"
 
 "nanomatch@^1.2.9":
   "integrity" "sha512-fpoe2T0RbHwBTBUOftAfBPaDEi06ufaUai0mE6Yn1kacc3SnTErfb/h+X94VXzI64rKFHYImXSvdwGGCmwOqCA=="
@@ -8073,8 +8045,6 @@
   "integrity" "sha512-c29LVsqOaLbBHuIbsTxaKENh1N2EQBOHaWv7gkHN4dgRbxSREqDnDbtFJYdpPauS4YCplMSNCABQ6Eeor69bAA=="
   "resolved" "https://registry.npmjs.org/prismjs/-/prismjs-1.23.0.tgz"
   "version" "1.23.0"
-  dependencies:
-    "clipboard" "^2.0.0"
   optionalDependencies:
     "clipboard" "^2.0.0"
 
@@ -10318,10 +10288,8 @@
   "resolved" "https://registry.npmjs.org/watchpack/-/watchpack-1.7.5.tgz"
   "version" "1.7.5"
   dependencies:
-    "chokidar" "^3.4.1"
     "graceful-fs" "^4.1.2"
     "neo-async" "^2.5.0"
-    "watchpack-chokidar2" "^2.0.1"
   optionalDependencies:
     "chokidar" "^3.4.1"
     "watchpack-chokidar2" "^2.0.1"
