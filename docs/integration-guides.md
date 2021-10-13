@@ -4,67 +4,63 @@ title: Integration guides
 
 Installing Plausible on a site can be a slightly different process depending on what tools you're using. We've put together several guides that cover popular website builders and content management systems (CMS). These can help you set up and start counting your site visitors in no time.
 
-Thanks to the members of our community, there are also integrations and plugins for various frameworks. Let us know about any other integrations that you've built and we will feature them. Thanks for your support!
+Thanks to the members of our community, there are also integrations and plugins for various frameworks. Here's the full list in alphabetical order:
 
-Here's how to get Plausible Analytics up and running on your site.
+## Bridgetown
 
-## WordPress
-
-We have a WordPress plugin that makes the integration with WordPress nice and easy.
-
-[Here's how to get started with our WordPress plugin](https://plausible.io/wordpress-analytics-plugin)
-
-## Ghost
-
-[How to add the script to your Ghost site](ghost-integration.md)
-
-## Webflow
-
-[How to add the script to your Webflow site](webflow-integration.md)
+[Bridgetown](https://rubygems.org/gems/bridgetown-plausible-tag): A Liquid tag to add Plausible to your Bridgetown site. Built and maintained by [Andrew Mason](https://www.andrewm.codes/). Here's [the source code](https://github.com/andrewmcodes/bridgetown-plausible-tag).
 
 ## Buttondown
 
 [How to add the script to your Buttondown site](buttondown.md)
 
-## Squarespace
+## Carrd
 
-[How to add the script to your Squarespace site](squarespace-integration.md)
+[How to add the script to your Carrd site](carrd-integration.md)
 
-## Wix
+## Craft CMS
 
-[How to add the script to your Wix site](wix-integration.md)
+[Craft CMS plugin](https://plugins.craftcms.com/plausible): Gives you handy dashboard widgets to display analytics data from Plausible. Built and maintained by [Shorn](https://shorn.co.uk/).
+
+## DNT and offline functionality
+
+You can use Plausible with [the analytics library](https://github.com/ian/analytics/tree/main/packages/plausible). Combine privacy first analytics with a tiny middleware layer to add features such as DNT (Do Not Track) and offline functionality. Built and maintained by [David Wells](https://github.com/DavidWells).
+
+:::note
+Plausible by default doesn't take DNT (Do Not Track) into consideration as we're a privacy first analytics tool and [DNT allows](https://www.eff.org/issues/do-not-track) "data analysis techniques that protect the anonymity of the users".
+:::
 
 ## Discourse
 
 [How to add the script to your Discourse community](discourse-integration.md)
 
+## Django / Wagtail
+
+[Django-Plausible](https://pypi.org/project/django-plausible/): Django module to provide easy Plausible integration, with Wagtail support. Built and maintained by [Jake Howard](https://pypi.org/user/TheOrangeOne/).
+
 ## Docusaurus
 
 [How to add the script to your Docusaurus site](docusaurus-integration.md)
 
-## Carrd
+## Drupal
 
-[How to add the script to your Carrd site](carrd-integration.md)
+[Drupal](https://www.drupal.org/project/plausible): A Drupal module for Plausible. Allows you to ignore tracking on certain pages and by certain user roles. Built and maintained by Dane Rossenrode of [Touchdreams](https://touchdreams.co.za/).
 
-## Shopify
+## Flatpak
 
-[How to add the script to your Shopify store](shopify-integration.md)
+[Plausible Flatpak App](https://flathub.org/apps/details/com.cassidyjames.plausible): Linux app for Plausible. Built and maintained by [Cassidy James Blaede](https://cassidyjames.com/).
 
-## Hugo
+## GatsbyJS
 
-[How to add the script to your Hugo site](hugo-integration.md)
+[GatsbyJS](https://www.gatsbyjs.org/packages/gatsby-plugin-plausible/): A Gatsby plugin for adding Plausible Analytics to your Gatsby site. Built and maintained by Curtis Cummings of [https://aquil.io/](https://aquil.io/).
 
-## Single-page applications
+## Ghost
 
-[Single-page applications](spa-support.md)
+[How to add the script to your Ghost site](ghost-integration.md)
 
-## Hash-based routing
+## Go
 
-[Hash-based routing](hash-based-routing.md)
-
-## Google Tag Manager (GTM)
-
-[Google Tag Manager](google-tag-manager.md)
+[go-plausible](https://github.com/andrerfcsantos/go-plausible): Golang wrapper for the Plausible API. Built and maintained by [André Santos](https://github.com/andrerfcsantos).
 
 ## Google AMP Pages
 
@@ -74,48 +70,33 @@ To track Google AMP pages with Plausible, you need to declare an AMP-analytics o
 
 To track Google Chrome browser extensions with Plausible, you can [follow these instructions](https://gist.github.com/Joelkw/31b798f69c714c00e9e097b1fd4bb3c8).
 
-## GatsbyJS
+## Google Tag Manager (GTM)
 
-[GatsbyJS](https://www.gatsbyjs.org/packages/gatsby-plugin-plausible/): A Gatsby plugin for adding Plausible Analytics to your Gatsby site. Built and maintained by Curtis Cummings of [https://aquil.io/](https://aquil.io/).
+[Google Tag Manager](google-tag-manager.md)
 
-## Micro.blog
+## Grav
 
-[Micro.blog](https://micro.blog): Integrate Micro.blog with Plausible Analytics using a plugin. You can add it under Find Plug-ins in Micro.blog and then use the Settings button to configure it for your Plausible Analytics account. Built and maintained by [Lukas Rosenstock](https://lukasrosenstock.net/2020/07/24/ive-struggled-a.html). Here's [the source code](https://github.com/LukasRos/plugin-plausible).
+[Grav](https://github.com/iainsgillis/grav-plugin-plausible): Add Plausible Analytics to your [Grav CMS](https://getgrav.org/) site and configure it from the admin panel. Built and maintained by [Iain Gillis](https://www.iainsgillis.com).
 
-## Drupal
+## Gridsome
 
-[Drupal](https://www.drupal.org/project/plausible): A Drupal module for Plausible Analytics. Allows you to ignore tracking on certain pages and by certain user roles. Built and maintained by Dane Rossenrode of [Touchdreams](https://touchdreams.co.za/).
+[Gridsome](https://github.com/svendroid/gridsome-plugin-plausible-analytics): A plugin to add Plausible Analytics to your [Gridsome](https://gridsome.org/) site. Built and maintained by [Sven Adolph](https://svenadolph.net).
 
-## Django / Wagtail
+## Hash-based routing
 
-[Django-Plausible](https://pypi.org/project/django-plausible/): Django module to provide easy Plausible integration, with Wagtail support. Built and maintained by [Jake Howard](https://pypi.org/user/TheOrangeOne/).
+[Hash-based routing](hash-based-routing.md)
 
-## Bridgetown
+## Hexo
 
-[Bridgetown](https://rubygems.org/gems/bridgetown-plausible-tag): A Liquid tag to add Plausible Analytics to your Bridgetown site. Built and maintained by [Andrew Mason](https://www.andrewm.codes/). Here's [the source code](https://github.com/andrewmcodes/bridgetown-plausible-tag).
+[Hego plugin](https://github.com/maaaaarco/hexo-plausible-analytics): A simple Hexo plugin to inject Plausible script into your pages. Built and maintained by [Marco](https://spaghetti.dev/).
 
-## AUR package for Arch Linux
+## Hugo
 
-[AUR package for Arch Linux](https://aur.archlinux.org/packages/plausible-git/): Start it using ``systemctl start plausible``, enable it at boot with ``systemctl enable plausible`` and change the environment variables by editing ``/etc/plausible.conf``. Built and maintained by [Rhys Perry](https://github.com/plausible/analytics/issues/263).
-
-## NextJS
-
-[NextJS](nextjs-integration.md): Simple integration for Plausible Analytics and [NextJS](https://nextjs.org). Provides custom events functionality. Built and maintained by [4lejandrito](https://github.com/4lejandrito).
-
-## Vue.js & Nuxt.js
-
-[Vue.js & Nuxt.js](https://github.com/moritzsternemann/vue-plausible): A Vue.js plugin and NuxtJS module for Plausible Analytics. Exposes the functionality of [plausible-tracker](https://github.com/plausible/plausible-tracker) to Vue and Nuxt instances, Vue components, and Vuex stores. Built and maintained by [Moritz Sternemann](https://github.com/moritzsternemann).
-
-## VuePress
-
-[VuePress](https://github.com/spekulatius/vuepress-plugin-plausible): A VuePress-plugin allowing you to use Plausible for your documentation website. Built and maintained by [Peter Thaleikis](https://peterthaleikis.com).
+[How to add the script to your Hugo site](hugo-integration.md)
 
 ## Hybrid native + web app
 
 [Hybrid native + web app](https://github.com/cassidyjames/plausible): Built and maintained by [Cassidy James Blaede](https://cassidyjames.com/).
-
-## NPM package
-[NPM package](https://www.npmjs.com/package/plausible-tracker): Frontend library to interact with Plausible. Same features as the official script, but as an NPM module. Works with React. Built and maintained by [Gustavo Maronato](https://github.com/plausible/plausible-tracker).
 
 ## Jekyll
 
@@ -125,17 +106,49 @@ To track Google Chrome browser extensions with Plausible, you can [follow these 
 
 [Kirby 3 Plausible](https://github.com/rowdyrabouw/kirby3-plausible): Frontend snippet and Kirby panel. Contribution by [Rowdy Rabouw](https://github.com/rowdyrabouw).
 
-## Gridsome
+## MediaWiki
 
-[Gridsome](https://github.com/svendroid/gridsome-plugin-plausible-analytics): A plugin to add Plausible Analytics to your [Gridsome](https://gridsome.org/) site. Built and maintained by [Sven Adolph](https://svenadolph.net).
+[MediaWiki Extension](https://github.com/octfx/mediawiki-extension-Plausible): MediaWiki extension to enable Plausible Analytics. Built and maintained by [Octfx](https://github.com/octfx).
 
-## Grav
+## Micro.blog
 
-[Grav](https://github.com/iainsgillis/grav-plugin-plausible): Add Plausible Analytics to your [Grav CMS](https://getgrav.org/) site and configure it from the admin panel. Built and maintained by [Iain Gillis](https://www.iainsgillis.com).
+[Micro.blog](https://micro.blog): Integrate Micro.blog with Plausible Analytics using a plugin. You can add it under Find Plug-ins in Micro.blog and then use the Settings button to configure it for your Plausible account. Built and maintained by [Lukas Rosenstock](https://lukasrosenstock.net/2020/07/24/ive-struggled-a.html). Here's [the source code](https://github.com/LukasRos/plugin-plausible).
+
+## NPM package
+
+[NPM package](https://www.npmjs.com/package/plausible-tracker): Frontend library to interact with Plausible. Same features as the official script, but as an NPM module. Works with React. Built and maintained by [Gustavo Maronato](https://github.com/plausible/plausible-tracker).
 
 ## Neos CMS
 
 [Neos CMS](https://github.com/CarbonPackages/Carbon.Plausible): Add Plausible Analytics to your [Neos](https://www.neos.io/) site. Built and maintained by [Jon Uhlmann](https://github.com/jonnitto).
+
+## NextJS
+
+[NextJS](nextjs-integration.md): Simple integration for Plausible Analytics and [NextJS](https://nextjs.org). Provides custom events functionality. Built and maintained by [4lejandrito](https://github.com/4lejandrito).
+
+## Podcastpage.io
+
+Add Plausible to your [Podcastpage.io](https://podcastpage.io/) website. Just enable the Plausible script via the "Integrations" page of your dashboard to add the tracking script to all pages.
+
+## R
+
+[plausibler](https://github.com/giocomai/plausibler): R wrapper for the Plausible API. Built and maintained by [Giorgio Comai](https://github.com/giocomai/).
+
+## Ruby
+
+[Plausible API Ruby Gem](https://github.com/dailytics/plausible_api): This is a simple wrapper to read the Plausible API with Ruby. Built and maintained by [Dailytics](https://dailytics.com/).
+
+## Shopify
+
+[How to add the script to your Shopify store](shopify-integration.md)
+
+## Single-page applications
+
+[Single-page applications](spa-support.md)
+
+## Squarespace
+
+[How to add the script to your Squarespace site](squarespace-integration.md)
 
 ## Statamic
 
@@ -143,52 +156,34 @@ To track Google Chrome browser extensions with Plausible, you can [follow these 
 
 * [Plausible Wrapper](https://statamic.com/addons/jack-whiting/plausible): A wrapper around the Plausible API that fetches the analytics into your dashboard in a pretty way. Built and maintained by [Jack Whiting](https://jackwhiting.co.uk/).
 
-## Ruby
+## TYPO3
 
-[Plausible API Ruby Gem](https://github.com/dailytics/plausible_api): This is a simple wrapper to read the Plausible API with Ruby. Built and maintained by [Dailytics](https://dailytics.com/).
+* [TYPO3](https://extensions.typo3.org/extension/plausibleio) extension for Plausible. Built and maintained by Susanne Moog
 
-## Go
+## Vue.js & Nuxt.js
 
-[go-plausible](https://github.com/andrerfcsantos/go-plausible): Golang wrapper for the Plausible API. Built and maintained by [André Santos](https://github.com/andrerfcsantos).
+[Vue.js & Nuxt.js](https://github.com/moritzsternemann/vue-plausible): A Vue.js plugin and NuxtJS module for Plausible. Exposes the functionality of [plausible-tracker](https://github.com/plausible/plausible-tracker) to Vue and Nuxt instances, Vue components, and Vuex stores. Built and maintained by [Moritz Sternemann](https://github.com/moritzsternemann).
 
-## R
+## VuePress
 
-[plausibler](https://github.com/giocomai/plausibler): R wrapper for the Plausible API. Built and maintained by [Giorgio Comai](https://github.com/giocomai/).
+[VuePress](https://github.com/spekulatius/vuepress-plugin-plausible): A VuePress-plugin allowing you to use Plausible for your documentation website. Built and maintained by [Peter Thaleikis](https://peterthaleikis.com).
 
-## Flatpak
+## Webflow
 
-[Plausible Flatpak App](https://flathub.org/apps/details/com.cassidyjames.plausible): Linux app for Plausible. Built and maintained by [Cassidy James Blaede](https://cassidyjames.com/).
+[How to add the script to your Webflow site](webflow-integration.md)
 
-## Craft CMS
+## Wix
 
-[Craft CMS plugin](https://plugins.craftcms.com/plausible): Gives you handy dashboard widgets to display analytics data from Plausible. Built and maintained by [Shorn](https://shorn.co.uk/).
+[How to add the script to your Wix site](wix-integration.md)
 
-## Hexo
+## WordPress
 
-[Hego plugin](https://github.com/maaaaarco/hexo-plausible-analytics): A simple Hexo plugin to inject Plausible script into your pages. Built and maintained by [Marco](https://spaghetti.dev/).
+We have a WordPress plugin that makes the integration with WordPress nice and easy.
 
-## MediaWiki
-
-[MediaWiki Extension](https://github.com/octfx/mediawiki-extension-Plausible): MediaWiki extension to enable Plausible Analytics. Built and maintained by [Octfx](https://github.com/octfx).
-
-## Podcastpage.io
-
-Add Plausible Analytics to your [Podcastpage.io](https://podcastpage.io/) website. Just enable the Plausible Analytic script via the "Integrations" page of your dashboard to add the tracking script to all pages.
+[Here's how to get started with our WordPress plugin](https://plausible.io/wordpress-analytics-plugin)
 
 ## iOS widget for quick overview of your stats
 
 [iOS widget](https://gist.github.com/linuz90/ac969cdfe9bd92af0b306c43caee8d0c) to display the total visitors count for today and the live visitors count with Plausible and Scriptable. Built and maintained by [Fabrizio Rinaldi](https://gist.github.com/linuz90).
 
-## Plugin that adds DNT and offline functionality
-
-You can now use Plausible with [the analytics library](https://github.com/ian/analytics/tree/main/packages/plausible). Combine privacy first analytics with a tiny middleware layer to add features such as DNT (Do Not Track) and offline functionality. Built and maintained by [David Wells](https://github.com/DavidWells).
-
-:::note
-Plausible by default doesn't take DNT (Do Not Track) into consideration as we're a privacy first analytics tool and [DNT allows](https://www.eff.org/issues/do-not-track) "data analysis techniques that protect the anonymity of the users".
-:::
-
-## Paste the script into the header section
-
-Alternatively, you can [integrate Plausible into your site manually](plausible-script.md) by pasting the Plausible Analytics tracking script code into the Header (`<head>`) section of your site.
-
-Don't see your favorite tool in this list? We're always working on new guides so please [add a request](https://github.com/plausible/docs/issues/new) or contribute to this list with the guide to your favorite tool. Thanks!
+Let us know about any other integrations that you've built and we will feature them in this list. Thanks for your support!
