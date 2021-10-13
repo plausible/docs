@@ -158,7 +158,7 @@ Add Plausible to your [Podcastpage.io](https://podcastpage.io/) website. Just en
 
 ## TYPO3
 
-* [TYPO3](https://extensions.typo3.org/extension/plausibleio) extension for Plausible. Built and maintained by Susanne Moog
+[TYPO3](https://extensions.typo3.org/extension/plausibleio) extension for Plausible. Built and maintained by Susanne Moog
 
 ## Vue.js & Nuxt.js
 
