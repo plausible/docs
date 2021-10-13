@@ -4,9 +4,9 @@ title: Troubleshoot your integration
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-After you've added the Plausible Analytics script to your website, it's time to verify that the integration is working.
+After you've added the Plausible script to your website, it's time to verify that the integration is working.
 
-In your Plausible Analytics account, click on your site domain name. You should see a blinking green dot which indicates that we’re listening for incoming page views in real-time. You can visit your site and the dashboard will update instantly with your visit.
+In your Plausible account, click on your site domain name. You should see a blinking green dot which indicates that we’re listening for incoming page views in real-time. You can visit your site and the dashboard will update instantly with your visit.
 
 <img alt="Listening for incoming page views" src={useBaseUrl('img/waiting-for-pageview.png')} />
 
@@ -28,7 +28,7 @@ Alternatively, you can verify this by viewing the HTML of your site in your brow
 
 ### Is Plausible script not installed on your site?
 
-You should see the Plausible Analytics tracking script in the source code of your website. If you cannot see the script, please double check if you've inserted it correctly. Installing Plausible on a site can be a slightly different process depending on what tools you're using.
+You should see the Plausible Analytics tracking script in the "Network" tab or in the source code of your website. If you cannot see the script, please double check if you've inserted it correctly. Installing Plausible on a site can be a slightly different process depending on what tools you're using.
 
 We've put together several integration guides that cover popular website builders and content management systems (CMS) such as WordPress and Ghost. Thanks to the members of our community, there are also community integrations and plugins for several frameworks such as Hugo and GatsbyJS. These can help you set up and start counting your site visitors in no time.
 
@@ -36,9 +36,9 @@ Here's [the full list of all integrations and guides](integration-guides.md).
 
 ### Plausible script is on your site but still seeing the green blinking dot and no stats?
 
-* Please ensure that the script you use is exactly the same script as listed in your website settings. You can find your JavaScript snippet by [logging into your Plausible account](https://plausible.io/sites). Here you'll find the list of sites you've added to Plausible. Hover over your site name and click on the "**Settings**" icon on the right hand side of the domain name you'd like to get the snippet for. Then scroll down to the "**Javascript snippet**" section on the following page.
+* Please ensure that the script you use is exactly the same script as listed in your Plausible website settings. You can find your JavaScript snippet by [logging into your Plausible account](https://plausible.io/sites). Here you'll find the list of sites you've added to Plausible. Hover over your site name and click on the "**Settings**" icon on the right hand side of the domain name you'd like to get the snippet for. Then scroll down to the "**Javascript snippet**" section on the following page.
 
-* Are you using a Content Security Policy? Do not forget to add our domain specifically to your CSP.
+* Does your site use a Content Security Policy (CSP)? If it does, you need to add plausible.io specifically to the allowed domains.
 
 * Running on localhost? Our script automatically disables itself when running on localhost as the majority of people don't want those stats to be counted. If you do want to track stats on localhost, you can [use our extension](script-extensions.md).
 
@@ -51,8 +51,6 @@ Here's [the full list of all integrations and guides](integration-guides.md).
 * Are you running an AMP page? To track Google AMP pages with Plausible, you need to declare an AMP-analytics object on your AMP pages. [See the instructions here](https://github.com/plausible/analytics/discussions/220#discussioncomment-904022).
 
 * Are you running a browser extension that may be blocking our script? Do disable the extension or whitelist our script within the settings of the extension you are using
-
-* Seeing the "Can't find variable: ResizeObserver" error in Safari? ResizeObserver element that we use is not supported on older browser versions. We recommend you update to the latest browser version where it works out of the box. 
 
 ## Would you like to exclude your own visits from being tracked?
 
