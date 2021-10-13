@@ -110,6 +110,10 @@ To track Google Chrome browser extensions with Plausible, you can [follow these 
 
 [Kirby 3 Plausible](https://github.com/rowdyrabouw/kirby3-plausible): Frontend snippet and Kirby panel. Contribution by [Rowdy Rabouw](https://github.com/rowdyrabouw).
 
+## Localhost for hybrid apps
+
+You can enable Plausible to count visitors on localhost which is useful in hybrid apps. [Learn more here](script-extensions.md)
+
 ## MediaWiki
 
 [MediaWiki Extension](https://github.com/octfx/mediawiki-extension-Plausible): MediaWiki extension to enable Plausible Analytics. Built and maintained by [Octfx](https://github.com/octfx).
@@ -117,6 +121,10 @@ To track Google Chrome browser extensions with Plausible, you can [follow these 
 ## Micro.blog
 
 [Micro.blog](https://micro.blog): Integrate Micro.blog with Plausible Analytics using a plugin. You can add it under Find Plug-ins in Micro.blog and then use the Settings button to configure it for your Plausible account. Built and maintained by [Lukas Rosenstock](https://lukasrosenstock.net/2020/07/24/ive-struggled-a.html). Here's [the source code](https://github.com/LukasRos/plugin-plausible).
+
+## Mobile apps for Android and iOS
+
+If you'd like to count users on your Android and/or iOS mobile apps, you can use our events API to record views and custom events. [Learn more here](events-api.md)
 
 ## NPM package
 
@@ -163,6 +171,10 @@ We have the Plausible events API which can be used to record pageviews and custo
 * [Statamic](https://statamic.com/addons/visuellverstehen/plausible): Let your [Statamic](https://statamic.com) users easily navigate to their shared Plausible link from inside the control panel. Built and maintained by [visuellverstehen](https://visuellverstehen.de).
 
 * [Plausible Wrapper](https://statamic.com/addons/jack-whiting/plausible): A wrapper around the Plausible API that fetches the analytics into your dashboard in a pretty way. Built and maintained by [Jack Whiting](https://jackwhiting.co.uk/).
+
+## Turbo / Turbolinks
+
+We offer a manual mode in case you want full control over when pageviews are triggered on your website. The most common use-case for this is when you use Turbo (formerly Turbolinks). [Learn more here](script-extensions.md#plausiblemanualjs)
 
 ## TYPO3
 
