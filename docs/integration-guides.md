@@ -52,7 +52,7 @@ Plausible by default doesn't take DNT (Do Not Track) into consideration as we're
 
 ## First party connection (proxy)
 
-You can run Plasible as a first party connection from your domain name. [Learn more here](/proxy/introduction.md).
+You can run Plausible as a first party connection from your domain name. [Learn more here](/proxy/introduction.md).
 
 ## Flatpak
 
