@@ -2,9 +2,13 @@
 title: Integration guides
 ---
 
-Installing Plausible on a site can be a slightly different process depending on what tools you're using. We've put together several guides that cover popular website builders and content management systems (CMS). These can help you set up and start counting your site visitors in no time.
+Installing Plausible on a site can be a slightly different process depending on what tools you're using. 
 
-Thanks to the members of our community, there are also integrations and plugins for various frameworks. Here's the full list in alphabetical order:
+We've put together several guides that cover popular website builders and content management systems (CMS). These can help you set up and start counting your site visitors in no time.
+
+Thanks to the members of our community, there are also integrations and plugins for various frameworks. 
+
+Here's the full list in alphabetical order:
 
 ## Bridgetown
 
