@@ -46,6 +46,10 @@ Plausible by default doesn't take DNT (Do Not Track) into consideration as we're
 
 [Drupal](https://www.drupal.org/project/plausible): A Drupal module for Plausible. Allows you to ignore tracking on certain pages and by certain user roles. Built and maintained by Dane Rossenrode of [Touchdreams](https://touchdreams.co.za/).
 
+## First party connection (proxy)
+
+You can run Plasible as a first party connection from your domain name. [Learn more here](/proxy/introduction.md).
+
 ## Flatpak
 
 [Plausible Flatpak App](https://flathub.org/apps/details/com.cassidyjames.plausible): Linux app for Plausible. Built and maintained by [Cassidy James Blaede](https://cassidyjames.com/).
@@ -137,6 +141,10 @@ Add Plausible to your [Podcastpage.io](https://podcastpage.io/) website. Just en
 ## Ruby
 
 [Plausible API Ruby Gem](https://github.com/dailytics/plausible_api): This is a simple wrapper to read the Plausible API with Ruby. Built and maintained by [Dailytics](https://dailytics.com/).
+
+## Server side tracking
+
+We have the Plausible events API which can be used to record pageviews and custom events server side without the use of JavaScript. [Learn more here](events-api.md). 
 
 ## Shopify
 
