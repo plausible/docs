@@ -98,10 +98,6 @@ To track Google Chrome browser extensions with Plausible, you can [follow these 
 
 [How to add the script to your Hugo site](hugo-integration.md)
 
-## Hybrid native + web app
-
-[Hybrid native + web app](https://github.com/cassidyjames/plausible): Built and maintained by [Cassidy James Blaede](https://cassidyjames.com/).
-
 ## Jekyll
 
 [Jekyll](https://github.com/hendrikschneider/jekyll-analytics): Webanalytics for Jekyll. Just install the plugin, configure it and you are done. Contribution by [David Schmitt](https://github.com/hendrikschneider/jekyll-analytics/pull/44).
@@ -112,7 +108,7 @@ To track Google Chrome browser extensions with Plausible, you can [follow these 
 
 ## Localhost for hybrid apps
 
-You can enable Plausible to count visitors on localhost which is useful in hybrid apps. [Learn more here](script-extensions.md)
+You can enable Plausible to count visitors on localhost which is useful in Cordova, Capacitor and other hybrid apps. [Learn more here](script-extensions.md)
 
 ## MediaWiki
 
