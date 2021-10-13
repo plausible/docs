@@ -76,7 +76,7 @@ To track Google Chrome browser extensions with Plausible, you can [follow these 
 
 ## Google Tag Manager (GTM)
 
-[Google Tag Manager](google-tag-manager.md)
+You can integrate Plausible into your site by using [Google Tag Manager](google-tag-manager.md).
 
 ## Grav
 
@@ -88,7 +88,7 @@ To track Google Chrome browser extensions with Plausible, you can [follow these 
 
 ## Hash-based routing
 
-[Hash-based routing](hash-based-routing.md)
+If you're using a frontend framework that uses the URL hash for routing, you need to use our hash-based tracker instead of the default one. [See more here](hash-based-routing.md)
 
 ## Hexo
 
@@ -156,7 +156,7 @@ We have the Plausible events API which can be used to record pageviews and custo
 
 ## Single-page applications
 
-[Single-page applications](spa-support.md)
+Plausible integrates automatically with modern pushState based frontend routers. If you're running a single-page application with React, Angular, Vue or similar frameworks, you don't need to add any extra configuration to make analytics work. [Learn more here](spa-support.md).
 
 ## Squarespace
 
