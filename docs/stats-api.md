@@ -54,7 +54,9 @@ more depth. Here's the full list of properties we collect automatically:
 |----------------------------|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | event:name                 | pageview                      | Name of the event triggered. `pageview` is a reserved event name but custom events can be named anything.                             |
 | event:page                 | /blog/remove-google-analytics | Pathname of the page where the event is triggered                                                                                     |
-| visit:source               | Twitter                       | Visit source, populated from an url query parameter tag (`utm_source`, `source` or `ref`) or the `Referer` HTTP header.               |
+| visit:entry_page           | /home                         | Page on which the visit session started (landing page)                                                                               |
+| visit:exit_page            | /home                         | Page on which the visit session ended (last page viewed)                                                                             |
+| visit:source               | Twitter                       | Visit source, populated from an url query parameter tag (`utm_source`, `source` or `ref`) or the `Referer` HTTP header.            |
 | visit:referrer             | t.co/fzWTE9OTPt               | Raw `Referer` header without `http://`, `http://` or `www.`                                                                           |
 | visit:utm_medium           | social                        | Raw value of the `utm_medium` query param on the entry page                                                                           |
 | visit:utm_source           | twitter                       | Raw value of the `utm_source` query param on the entry page                                                                           |
