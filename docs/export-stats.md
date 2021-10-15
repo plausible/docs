@@ -8,7 +8,9 @@ On the main chart on the top of your dashboard you can export your website stats
 
 Select your date range in the top right to view the specific time period. Then click on the "**Download**" icon on the right hand side of the main graph to download your stats. 
 
-The data export includes daily stats for the number of visitors, the number of pageviews, bounce rate percentage and visit duration in seconds. It can be exported to a CSV file. The format is like this:
+The data is exported as a zip file containing CSV files for each of the metrics displayed on the dashboard.
+
+For example, **visitors.csv** includes daily stats for the number of visitors, the number of pageviews, bounce rate percentage and visit duration in seconds. The format is like this:
 
 | Date       | Visitors | Pageviews | Bounce Rate | Visit Duration |
 |------------|----------| --------- | ----------- | -------------- |
