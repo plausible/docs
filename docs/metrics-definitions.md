@@ -84,7 +84,7 @@ If the same goal is completed multiple times by the same visitor, all the comple
 
 ## Conversion Rate
 
-The percentage of visitors that take a desired action such as subscribing to a newsletter or signing up for an account.
+The percentage of visitors that take a desired action such as subscribing to a newsletter or signing up for an account (calculation: unique conversions for a goal divided by total unique visitors).
 
 ## Screen Size
 
