@@ -61,6 +61,8 @@ more depth. Here's the full list of properties we collect automatically:
 | visit:utm_medium           | social                        | Raw value of the `utm_medium` query param on the entry page                                                                           |
 | visit:utm_source           | twitter                       | Raw value of the `utm_source` query param on the entry page                                                                           |
 | visit:utm_campaign         | profile                       | Raw value of the `utm_campaign` query param on the entry page                                                                         |
+| visit:utm_content         | banner                       | Raw value of the `utm_content` query param on the entry page                                                                         |
+| visit:utm_term         | keyword                       | Raw value of the `utm_term` query param on the entry page                                                                         |
 | visit:device               | Desktop                       | Device type. Possible values are `Desktop`, `Laptop`, `Tablet` and `Mobile`                                                           |
 | visit:browser              | Chrome                        | Name of the browser vendor. Most popular ones are `Chrome`, `Safari` and `Firefox`                                                    |
 | visit:browser_version      | 88.0.4324.146                 | Version number of the browser used by the visitor                                                                                     |

@@ -6,7 +6,7 @@ To minimize the amount of traffic that falls within the "[no referrer](top-refer
 
 Whenever you post a link in social media or send it to someone via email, you can choose to add a special query parameter to the link. When for instance `?ref=<value>` query parameter is present, Plausible Analytics will show it as the referral source.
 
-`ref`, `source`, `utm_source`, `utm_medium` and `utm_campaign` query parameters are all valid and supported.
+`ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term` query parameters are all valid and supported.
 
 For example, here's what you can do when you want to send a newsletter to your subscribers. If you simply link to your site with `yourdomain.com`, anyone who clicks on it would fall within the "**no referrer**" category. 
 
@@ -22,9 +22,9 @@ For any clicks on any of the above links, "**Newsletter**" would be listed as a 
 
 You can also go a bit deeper and track your links in more detail:
 
-* `yourdomain.com?utm_source=Newsletter&utm_medium=Email&utm_campaign=NovemberNewsletter`
+* `yourdomain.com?utm_source=Newsletter&utm_medium=Email&utm_campaign=NovemberNewsletter&utm_content=Link`
 
-For any clicks on the above link, "**Newsletter**" would be listed as a referral source in your Plausible Analytics dashboard, "**Email**" would be listed as the medium and "**NovemberNewsletter**" would be listed as the campaign. 
+For any clicks on the above link, "**Newsletter**" would be listed as a referral source in your Plausible Analytics dashboard, "**Email**" would be listed as the medium, "**NovemberNewsletter**" would be listed as the campaign and "**Link**" would be listed as the content. 
 
 :::note 
 UTM and other tags are case-sensitive so utm_source=Twitter and utm_source=twitter will show separately in your analytics dashboard.
