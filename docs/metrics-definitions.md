@@ -10,7 +10,7 @@ Automatically track the 404 error pages on your site. This feature is not enable
 
 ## Bounce Rate
 
-The percentage of visitors with a single page view. A visitor "bounces" away and leaves your site after only viewing a single page. 
+The percentage of visitors with a single page view. A visitor "bounces" away and leaves your site after only viewing a single page.
 
 ## Browser
 
@@ -19,7 +19,7 @@ Shows the browsers used by your visitors. We only show the brand of the browser 
 ## Conversion Rate
 
 The percentage of visitors that take a desired action such as subscribing to a newsletter or signing up for an account. Calculated as follows:
-unique conversions for a goal / unique visitors, where both values depend on the filters applied to the dashboard. 
+unique conversions for a goal / unique visitors, where both values depend on the filters applied to the dashboard.
 
 ## Countries
 
@@ -47,7 +47,7 @@ Shows how often people exit from a specific page. It's calculated as the number 
 
 ## Goals
 
-You can use goals to track desired actions people take on your site. Goals can be based on people [visiting a particular page](pageview-goals.md) or [triggering a particular event](custom-event-goals.md) such as subscribing to a newsletter or signing up for an account. You can even use custom properties to create your own metrics to collect and analyze data that Plausible doesn’t automatically track. 
+You can use goals to track desired actions people take on your site. Goals can be based on people [visiting a particular page](pageview-goals.md) or [triggering a particular event](custom-event-goals.md) such as subscribing to a newsletter or signing up for an account. You can even use custom properties to create your own metrics to collect and analyze data that Plausible doesn’t automatically track.
 
 ## Operating System
 
@@ -83,7 +83,7 @@ The total number of times your pages were loaded by your visitors.
 
 ## UTM parameters
 
-To minimize the amount of traffic that falls within the "Direct / None" category, you can add special query parameters (UTMs) to your links. UTMs help you better understand where your traffic is coming from. Plausible Analytics supports `utm_source`, `utm_medium` and `utm_campaign`. Read more about [tagging your links](manual-link-tagging.md).
+To minimize the amount of traffic that falls within the "Direct / None" category, you can add special query parameters (UTMs) to your links. UTMs help you better understand where your traffic is coming from. Plausible Analytics supports `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term`. Read more about [tagging your links](manual-link-tagging.md).
 
 ## Unique Conversions
 

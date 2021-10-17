@@ -42,6 +42,6 @@ Here’s a non-exhaustive list of other problems with the header:
 
 ### 2. Manual by link tagging
 
-To minimize the amount of traffic that falls within the "**Direct / None**" category, you can add special query parameters such as UTM tags to your links. `ref`, `source`, `utm_source`, `utm_medium` and `utm_campaign` query parameters are all valid and supported by Plausible Analytics.
+To minimize the amount of traffic that falls within the "**Direct / None**" category, you can add special query parameters such as UTM tags to your links. `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term` query parameters are all valid and supported by Plausible Analytics.
 
 See "[Manual link tagging](manual-link-tagging.md)" section of the documentation for the full instructions.

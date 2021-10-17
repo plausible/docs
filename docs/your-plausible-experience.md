@@ -32,7 +32,7 @@ You can also enable some easy-to-use goals. Here are instructions on how to trac
 
 To minimize the amount of traffic that falls within the "direct / none" referral source, you can add special query parameters to your links in social media, email newsletters and your advertising campaigns. 
 
-`ref`, `source`, `utm_source`, `utm_medium` and `utm_campaign` query parameters are all valid and supported by Plausible Analytics. [Learn more here](manual-link-tagging.md).
+`ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term` query parameters are all valid and supported by Plausible Analytics. [Learn more here](manual-link-tagging.md).
 
 Read also our guide on [how to use UTM parameters to track your campaigns and understand the dark traffic](https://plausible.io/blog/utm-tracking-tags).
 
