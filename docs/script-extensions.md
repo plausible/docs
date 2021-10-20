@@ -17,6 +17,12 @@ In the case above, the snippet you need to insert into your site is as follows:
 <script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.hash.outbound-links.js"></script>
 ```
 
+And say you want to use our `plausible.exclusions.js` extension to exclude certain pages from being tracked and our `plausible.local.js` extension to track localhost traffic, your snippet should look like this:
+
+```html
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.exclusions.local.js"></script>
+```
+
 You can mix and match, and combine extensions any way that you wish. And you only need to insert that one snippet into your site, no need for anything else.
 
 This approach makes sure that you only load code that will actually be used on your website. Websites should not have to load dozens or hundreds of kilobytes
