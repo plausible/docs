@@ -4,7 +4,7 @@ title: Specify a custom location for your page
 
 By default, Plausible Analytics tracks pages using their full URL.
 
-In some cases, you might want to provide Plausible with a a custom URL to use instead of the page's real URL. This is especially helpful to redact and aggregate multiple pages whose URL contain identifiers. 
+In some cases, you might want to provide Plausible with a custom URL to use instead of the page's real URL. This is especially helpful to redact and aggregate multiple pages whose URL contain identifiers. 
 
 When you specify a custom location URL for a page, all events for that page will be counted under the custom location's URL. As long as the custom location is present, there won't be any new events for the page's real URL. The historical stats will be kept and will stay the same.
 
@@ -51,7 +51,7 @@ If you prefer, you can provide a function that Plausible can call to obtain the 
 
 This is done by adding the `data-get-location` attribute to your Plausible script. 
 
-The value of that attribute should be the name of the function. The function must be defined in the global namespace, so that it is accessible on the `window` object. If the function is not defined, Plausible will fallback on using the current page's URL.
+The value of that attribute should be the name of the function. The function must be defined in the global namespace, so that it is accessible on the `window` object. If the function is not defined, Plausible will fall back on using the current page's URL.
 
 Here is an example:
 
