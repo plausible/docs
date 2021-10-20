@@ -50,7 +50,7 @@ $ cd hosting
 Alternatively, you can download and extract the repo as a tarball
 
 ```bash
-$ curl -L https://github.com/plausible/hosting/archive/master.tar.gz | tar -x
+$ curl -L https://github.com/plausible/hosting/archive/master.tar.gz | tar -xz
 $ cd hosting-master
 ```
 
