@@ -8,7 +8,11 @@ Your "**Top Sources**" report shows which referral sources are driving traffic t
 
 The Top Sources report also includes all the traffic tagged with UTM tags such as `utm_source`, `utm_medium` and `utm_campaign`. You can use UTM tags to understand which marketing and promotional activities are working well and are driving traffic. 
 
-The referral sources are counted only when they start a new session on your site. This prevents external domains such as a payment gateway that the user is being taken through to show up in the referrers list. No need for you to manually exclude referrers.
+:::note 
+All referral sources are counted only when they start a new session on your site. This is why you don't see all of your own visits if you click to test several different UTM tagged links at the same time
+:::
+
+The fact that the referral sources are counted only when they start a new session on your site prevents external domains such as a payment gateway that the user is being taken through to show up in the referrers list. No need for you to manually exclude referrers.
 
 <img alt="Top Referrers" src={useBaseUrl('img/top-sources.png')} />
 
