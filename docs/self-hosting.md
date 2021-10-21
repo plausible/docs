@@ -50,7 +50,7 @@ $ cd hosting
 Alternatively, you can download and extract the repo as a tarball
 
 ```bash
-$ curl -L https://github.com/plausible/hosting/archive/master.tar.gz | tar -x
+$ curl -L https://github.com/plausible/hosting/archive/master.tar.gz | tar -xz
 $ cd hosting-master
 ```
 
@@ -60,14 +60,17 @@ In the downloaded directory you'll find two important files:
 
 ### 2. Add required configuration
 
-The configuration file has placeholders for required parameters. First, add your admin credentials in `plausible-conf.env`. Next,
-generate a random 64-character secret key which will be used to secure the app. Here's a simple way to generate one:
+The configuration file, `plausible-conf.env`, has placeholders for the required parameters. To set the parameters you'll first need random 64-character secret key which will be used to secure the app. Here's a simple way to generate one:
 
 ```bash
-$ openssl rand -base64 64
+$ openssl rand -base64 64 | tr -d '\n' ; echo
 ```
 
-The last step is to enter the `BASE_URL` for your app. It should be the base url where this instance is accessible.
+Now edit `plausible-conf.env` and set `SECRET_KEY_BASE` to your secret key.
+
+Next, set your `ADMIN_USER` credentials to your own choices.
+
+Finally, enter the `BASE_URL` for your app. It should be the base url where this instance is accessible, including the scheme (eg. `http://` or `https://`), the domain name, and optionally a port. If no port is specified the default `8000` will be used. Paths in the url are currently ignored.
 
 ### 3. Start the server
 
