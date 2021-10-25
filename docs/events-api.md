@@ -7,23 +7,23 @@ import {Required, Optional} from '../src/js/api-helpers.js';
 The Plausible Events API can be used to record pageviews and custom events. This is useful when tracking Android or iOS mobile apps, or for server side tracking.
 
 In most cases we recommend installing Plausible via our provided [script](/docs/plausible-script) or one of the many
-interation packages listed [here](/docs/integration-guides). However, if there's no easy way for you to integrate with Plausible, you can still do so by sending events directly to our API.
+integration packages listed [here](/docs/integration-guides). However, if there's no easy way for you to integrate with Plausible, you can still do so by sending events directly to our API.
 
 ## Endpoints
 ### POST /api/event
 
 Records a pageview or custom event. When using this endpoint, make sure you're sending the correct headers:
 
-**User-agent** is used to determine the user's device<br />
+**User-Agent** is used to determine the user's device<br />
 **X-Forwarded-For** is used to determine the client's IP address<br />
 **Content-Type** must be either *application/json* or *text/plain*
 
 In combination, these two values are used for unique user counting. If you have problems with uniqueness counting, please make sure you are sending
-**User Agent** and **X-Forwarded-For** correctly.
+**User-Agent** and **X-Forwarded-For** correctly.
 
 ```bash title="Try it yourself"
 curl -i -X POST https://plausible.io/api/event \
-  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.284' \
+  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.284' \
   -H 'X-Forwarded-For: 127.0.0.1' \
   -H 'Content-Type: application/json' \
   --data '{"name":"pageview","url":"http://dummy.site","domain":"dummy.site","screen_width":1666}'
