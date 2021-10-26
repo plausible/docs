@@ -18,7 +18,7 @@ This Rule Group serves incoming requests matching ``/js/script.js`` directly fro
 
 In Akamai Property Manager add a new Rule Group ``Plausible (Script)`` with these settings:
 
-<img alt="Screenshot of the Propert Manager Rule to proxy the Analytics Script" src={useBaseUrl('img/akamai-script-sureroute.jpg')} />
+<img alt="In Akamai Property Manager add a new Rule Group" src={useBaseUrl('img/akamai-script-pm.jpg')} />
 
 ### Set Criteria
 
@@ -88,4 +88,6 @@ In Akamai Property Manager add a new Rule Group ``Plausible (Event API)`` with t
 
 ### Optional: 
 
-In case you are using SureRoute, please disable it
+In case you are using SureRoute, please disable it:
+
+<img alt="In case you are using SureRoute, please disable it" src={useBaseUrl('img/akamai-script-sureroute.jpg')} />
