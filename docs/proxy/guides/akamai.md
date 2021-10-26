@@ -6,25 +6,32 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Proxying Plausible via your own property on Akamai is easy, fast and privacy friendly. 
 
-> Note: The instructions assume you use the default paths ``/js/script.js`` and ``/api/event``. You can change these based on your preferences.
+:::note
+The instructions assume you use the default paths ``/js/script.js`` and ``/api/event``. You can change these based on your preferences.
+:::
 
 ## Step 1: Proxy Analytics Script
+
 This Rule Group serves incoming requests matching ``/js/script.js`` directly from the Akamai edge caches. In case of a cache miss the request is forwarded to ``plausible.io`` in a privacy friendly way.
 
-#### Add new Rule Group 
+### Add new Rule Group 
+
 In Akamai Property Manager add a new Rule Group ``Plausible (Script)`` with these settings:
 
-<img style={{maxWidth: "500px"}} alt="Screenshot of the Propert Manager Rule to proxy the Analytics Script" src={useBaseUrl('img/akamai-script-pm.jpg')} />
+<img alt="Screenshot of the Propert Manager Rule to proxy the Analytics Script" src={useBaseUrl('img/akamai-script-sureroute.jpg')} />
 
-#### Set Criteria
+### Set Criteria
+
 - Path matches one off: ``/js/script.js``
 
-#### Add Behaviour: Caching
+### Add Behaviour: Caching
+
 - Caching Option: **Cache**
 - Force revalidation of stale objects: **Serve stale if unable to validate**
 - Maxage: ``6 hours``
 
-#### Add Behaviour: Origin Server
+### Add Behaviour: Origin Server
+
 - Origin Type: **Your origin**
 - Origin Server Hostname: ``plausible.io``
 - Forward Host Header: **Origin Hostname**
@@ -35,17 +42,21 @@ In Akamai Property Manager add a new Rule Group ``Plausible (Script)`` with thes
 - ... _(Other settings can be left as is)_
 
 ## Step 2: Proxy Event API
+
 This Rule Group forwards incoming requests matching ``/api/event`` to plausible.io. It adds extra headers (``X-Forwarded-Proto``, ``X-Forwarded-Host`` and ``X-Forwarded-For``) to the outgoing request so your Plausible statistics are complete. For privacy & security reasons incoming cookies are removed before sending to ``plausible.io``.
 
-#### Add new Rule Group 
+### Add new Rule Group 
+
 In Akamai Property Manager add a new Rule Group ``Plausible (Event API)`` with these settings:
 
-<img style={{maxWidth: "500px"}} alt="Propert Manager Rule to proxy the Event API" src={useBaseUrl('img/akamai-api-pm.jpg')} />
+<img alt="Property Manager Rule to proxy the Event API" src={useBaseUrl('img/akamai-api-pm.jpg')} />
 
-##### Set Criteria
+### Set Criteria
+
 - Path matches one off: ``/api/event``
 
-##### Add Behaviour: Origin Server
+### Add Behaviour: Origin Server
+
 - Origin Type: **Your origin**
 - Origin Server Hostname: ``plausible.io``
 - Forward Host Header: **Origin Hostname**
@@ -56,24 +67,25 @@ In Akamai Property Manager add a new Rule Group ``Plausible (Event API)`` with t
 - Verification Settings: **Choose your own**
 - ... _(Other settings can be left as is)_
 
-<img style={{maxWidth: "500px"}} alt="Propert Manager Rules to remove outgoing request headers and cookies" src={useBaseUrl('img/akamai-api-pm-headers.jpg')} />
+<img alt="Property Manager Rules to remove outgoing request headers and cookies" src={useBaseUrl('img/akamai-api-pm-headers.jpg')} />
 
-##### Add Behaviour: Modify Outgoing Request Header
+### Add Behaviour: Modify Outgoing Request Header
+
 - Action: **Add**
 - Header Name: ``X-Forwarded-Proto``
 - Header Value: ``{{builtin.AK_SCHEME}}``
 
-##### Add Behaviour: Modify Outgoing Request Header
+### Add Behaviour: Modify Outgoing Request Header
+
 - Action: **Add**
 - Header Name: ``X-Forwarded-Host``
 - Header Value: ``{{builtin.AK_HOST}}``
 
-##### Add Behaviour: Modify Outgoing Request Header
+### Add Behaviour: Modify Outgoing Request Header
+
 - Action: **Remove**
 - Header Name: ``cookie`` _(Privacy: No need to expose cookies to origin servers)_
 
-##### Optional: 
+### Optional: 
+
 In case you are using SureRoute, please disable it
-
-
-
