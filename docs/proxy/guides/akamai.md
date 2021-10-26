@@ -14,7 +14,7 @@ This Rule Group serves incoming requests matching ``/js/script.js`` directly fro
 #### Add new Rule Group 
 In Akamai Property Manager add a new Rule Group ``Plausible (Script)`` with these settings:
 
-<img style="max-width:500px" alt="Screenshot of the Propert Manager Rule to proxy the Analytics Script" src={useBaseUrl('img/akamai-script-pm.jpg')} />
+<img style={{maxWidth: "500px"}} alt="Screenshot of the Propert Manager Rule to proxy the Analytics Script" src={useBaseUrl('img/akamai-script-pm.jpg')} />
 
 #### Set Criteria
 - Path matches one off: ``/js/script.js``
@@ -40,7 +40,7 @@ This Rule Group forwards incoming requests matching ``/api/event`` to plausible.
 #### Add new Rule Group 
 In Akamai Property Manager add a new Rule Group ``Plausible (Event API)`` with these settings:
 
-<img style="max-width:500px" alt="Propert Manager Rule to proxy the Event API" src={useBaseUrl('img/akamai-api-pm.jpg')} />
+<img style={{maxWidth: "500px"}} alt="Propert Manager Rule to proxy the Event API" src={useBaseUrl('img/akamai-api-pm.jpg')} />
 
 ##### Set Criteria
 - Path matches one off: ``/api/event``
@@ -56,7 +56,7 @@ In Akamai Property Manager add a new Rule Group ``Plausible (Event API)`` with t
 - Verification Settings: **Choose your own**
 - ... _(Other settings can be left as is)_
 
-<img style="max-width:500px" alt="Propert Manager Rules to remove outgoing request headers and cookies" src={useBaseUrl('img/akamai-api-pm-headers.jpg')} />
+<img style={{maxWidth: "500px"}} alt="Propert Manager Rules to remove outgoing request headers and cookies" src={useBaseUrl('img/akamai-api-pm-headers.jpg')} />
 
 ##### Add Behaviour: Modify Outgoing Request Header
 - Action: **Add**
