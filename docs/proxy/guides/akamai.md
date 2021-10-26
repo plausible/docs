@@ -91,3 +91,5 @@ In Akamai Property Manager add a new Rule Group ``Plausible (Event API)`` with t
 In case you are using SureRoute, please disable it:
 
 <img alt="In case you are using SureRoute, please disable it" src={useBaseUrl('img/akamai-script-sureroute.jpg')} />
+
+Thanks to [Tim Vereecke](https://www.scalemates.com/), Akamai's web performance architect, for these instructions!  
