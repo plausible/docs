@@ -30,25 +30,9 @@ Follow the provided instructions depending on which verification method you’ve
 
 ## Allow Plausible Analytics to access your Search Console
 
-Open the settings for your website on [your Plausible Analytics account](https://plausible.io/sites) and go into the settings section called "**Search Console**":
+Open the settings for your website on [your Plausible Analytics account](https://plausible.io/sites) and go into the settings section called "**Google Integration**":
 
-Clicking on the "**Continue with Google**" button will take you through to Google’s authentication flow to get the necessary permissions.
-
-<img alt="Continue with Google" src={useBaseUrl('img/continue-with-google.png')} />
-
-Choose your Google account to continue with the authentication. Google will share your name, email address, language preference and profile picture with Plausible Analytics. We've set it so we get the absolutely minimum amount of information possible that Google allows us. 
-
-We really only need and use the email address from this. Email address is useful because some Plausible Analytics users have multiple Google accounts so we can remember which one is integrated with the Plausible Analytics site.
-
-<img alt="Choose your Google account" src={useBaseUrl('img/choose-google-account.png')} />
-
-You also need to grant Plausible Analytics a permission to view your Search Console website data.
-
-<img alt="Grant Plausible Analytics a permission to view your Search Console website data" src={useBaseUrl('img/grant-permission.png')} />
-
-And you also need to confirm all these choices once again.
-
-<img alt="Confirm all the choices once again" src={useBaseUrl('img/confirm-choices.png')} />
+If you haven't already, connect your Google account to your Plausible website following the steps outlined on the [Google Integration](google-integration.md) page.
 
 ## Select property to pull keywords from
 

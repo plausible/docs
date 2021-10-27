@@ -87,12 +87,11 @@ To make this as easy as possible you can use the [`maxmindinc/geoipupdate`](http
 You just need to add your account details, mount the database in the `plausible` container and let the image update the database automatically.
 To run the complete setup including geoip see [`docker-compose-geoip.yml`](https://github.com/plausible/hosting/blob/master/geoip/docker-compose.geoip.yml).
 
-### Google Search Integration
+### Google Integration
 
-To enable the Google Search Console integration in Plausible Analytics, you need to authorize your self-hosted installation with a Google
-Account. For the OAuth flow, you need to configure the `client_id` and `client_secret`. 
+To integrate your Plausible instance with Google Search Console or Google Analytics, you need to authorize your self-hosted installation with a Google Account. For the OAuth flow, you need to configure the `client_id` and `client_secret`.
 
-#### Steps to Integrate Google Search Console
+#### Steps to set up Google Authorization
 
 1. Visit the
 [Google API Console](https://console.developers.google.com/) to obtain OAuth 2.0 credentials such as a Client ID and Client Secret key that are
@@ -115,26 +114,28 @@ known to both Google and your installation. Once on the API Console, create a ne
 | GOOGLE_CLIENT_ID    | --        | The Client ID from the Google API Console for your Plausible Analytics project                       |
 | GOOGLE_CLIENT_SECRET| --        | The Client Secret from the Google API Console for your Plausible Analytics project                   |
 
-After deploying those values, you can follow [the Search Console Integration docs](google-search-console-integration.md) for
-the rest of the set up. 
+#### Steps to Integrate Google Search Console and/or Google Analytics
 
-5. For the final step of choosing a property from the Search Console, you also need to enable the "[Google Search Console API](https://console.developers.google.com/apis/api/searchconsole.googleapis.com)" on your Google API project.
+After setting up Google authorization, you also need to enable some APIs on your Google API project:
 
-#### Enable Google Search Console API
+- "[Google Search Console API](https://console.developers.google.com/apis/api/searchconsole.googleapis.com)" for Search Console integration
+- "[Google Analytics Reporting API](https://console.developers.google.com/apis/api/analyticsreporting.googleapis.com)" for Google Analytics integration
 
 1. Click on "Enable APIs and Services."
 
 ![google_enable_1](https://user-images.githubusercontent.com/85956139/132954489-34071ab3-dd96-44ab-83be-02431a888df9.jpg)
 
-2. Search for "Google Search Console API" in the search bar of the API Library.
+2. Search for "Google Search Console API" or "Google Analytics Reporting API" in the search bar of the API Library.
 
 ![google_enable2](https://user-images.githubusercontent.com/85956139/132954499-bc96eb44-d94b-4413-8e0e-c2008fc60242.png)
 
-3. Click on "Google Search Console API" and the button to enable.
+3. Click on the API and the button to enable.
 
 ![google_enable3](https://user-images.githubusercontent.com/85956139/132954503-df8caff9-8654-4ec0-87eb-4d76363ebc75.png)
 
 ![google_enable4](https://user-images.githubusercontent.com/85956139/132954508-290bda57-47cf-4cda-bb6d-77a1c8baa485.png)
+
+Lastly, see [the Search Console Integration](google-search-console-integration.md) and [Google Analytics Integration](google-analytics-integration.md) docs for the rest of the set up. 
 
 ### Twitter Integration
 
