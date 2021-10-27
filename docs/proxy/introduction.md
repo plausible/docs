@@ -55,6 +55,7 @@ Standalone proxy setups:
 * [Akamai](/docs/proxy/guides/akamai)
 * [Cloudflare Workers](/docs/proxy/guides/cloudflare)
 * [CloudFront](/docs/proxy/guides/cloudfront)
+* [Google Cloud Platform](https://github.com/mtlynch/plausible-proxy)
 
 Integrated proxy setups:
 * [Netlify](/docs/proxy/guides/netlify)
