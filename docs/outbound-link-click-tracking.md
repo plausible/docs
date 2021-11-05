@@ -10,10 +10,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 If you use the Outbound link click tracking feature, then these count towards your billable monthly pageviews.
 :::
 
-:::caution
-Enabling this feature may break some features on your site if you're using links that open new tabs or have special event handling. See [this GitHub issue](https://github.com/plausible/plausible-tracker/issues/12) for more information.
-:::
-
 Outbound link click tracking is essential for many site owners and Plausible helps you automate this process. With our "**Outbound Link Click Tracking**" you can:
 
 * See which external URLs are clicked the most
@@ -25,6 +21,10 @@ Check out this blog post for more details on the value of [tracking outbound lin
 "**Outbound Link Click Tracking**" is an enhanced measurement and not included in our default script. This is because we want to keep the default script as simple and lightweight as possible. The additional enhanced measurements you can choose to add depending on your needs.
 
 If you want to track external link clicks, here's what you need to do:
+
+:::note
+Enabling this feature may break some features on your site if you're using links that open new tabs or have special event handling. See [this GitHub issue](https://github.com/plausible/plausible-tracker/issues/12) for more information.
+:::
 
 ## Step 1: Change the Plausible script snippet
 
