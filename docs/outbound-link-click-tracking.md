@@ -10,6 +10,10 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 If you use the Outbound link click tracking feature, then these count towards your billable monthly pageviews.
 :::
 
+:::caution
+Enabling this feature may break some features on your site if you're using links that open new tabs or have special event handling. See [this GitHub issue](https://github.com/plausible/plausible-tracker/issues/12) for more information.
+:::
+
 Outbound link click tracking is essential for many site owners and Plausible helps you automate this process. With our "**Outbound Link Click Tracking**" you can:
 
 * See which external URLs are clicked the most
