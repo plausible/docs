@@ -1,5 +1,5 @@
 ---
-title: Manual link tagging with UTM tags and other query parameters
+title: UTM tags and other query parameters
 ---
 
 To minimize the amount of traffic that falls within the "[no referrer](top-referrers.md)" category, you can add special query parameters including UTM tags to your links.
