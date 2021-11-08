@@ -36,8 +36,6 @@ Here’s a non-exhaustive list of other problems with the header:
 
 * Facebook `referer` only includes the fact that the visitor came from Facebook. Facebook never sends the post or comment ID where someone clicked.
 
-* Twitter sets the referrer to their link shortener (t.co) so you can see the shortened link but not the actual tweet that brought the traffic. [We make the best effort](twitter.md) to find the tweets that visitors came from using the Twitter API and display those tweets in your dashboard. Click on "**Twitter**" to view these.
-
 * Google does not include the search keywords in the referrer so you can see that the visitor is coming from Google search but you cannot see which keyword phrase they used to find you. To fix this, you can [integrate your account](google-search-console-integration.md) with Google Search Console so the keyword phrases people discover your site with show in your Plausible Analytics dashboard. After integrating with Search Console, you can click on "**Google**" to view these.
 
 ### 2. Manual by link tagging
