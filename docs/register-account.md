@@ -4,9 +4,9 @@ title: Register for an account
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-To use Plausible Analytics, you need to [register an account](https://plausible.io/register). 
+To use Plausible Analytics, you need to [register an account](https://plausible.io/register). To explore the product, we offer you a free 30-day trial. No credit card is required to sign up for the trial.
 
-To explore the product, we offer you a free 30-day trial. There are no restrictions on your usage during the free trial. You can test Plausible on multiple websites using the same account too. No credit card is required to sign up for the trial either.
+There are no restrictions on your usage during the free trial. You can test Plausible on multiple sites using the same trial too. Plausible is so lightweight that you can run it alongside Google Analytics without any negative impact on your site's performance. 
 
 ## Register your account
 
@@ -22,4 +22,4 @@ Please enter the four digit code that we sent to you via email to activate your 
 
 <img alt="Activate your Plausible Analytics account" src={useBaseUrl('img/activate-your-account.png')} />
 
-Don't see this email in your inbox? Please check your spam folder and contact **hello@plausible.io** if the problem persists. 
+Don't see this email in your inbox? Please check your spam folder and wheter you've typed in the correct email address. [Contact us](https://plausible.io/contact) if the problem persists. 
