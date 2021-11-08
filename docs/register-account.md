@@ -22,4 +22,4 @@ Please enter the four digit code that we sent to you via email to activate your 
 
 <img alt="Activate your Plausible Analytics account" src={useBaseUrl('img/activate-your-account.png')} />
 
-Don't see this email in your inbox? Please check your spam folder and wheter you've typed in the correct email address. [Contact us](https://plausible.io/contact) if the problem persists. 
+Don't see this email in your inbox? Please check your spam folder and whether you've typed in the correct email address. [Contact us](https://plausible.io/contact) if the problem persists. 
