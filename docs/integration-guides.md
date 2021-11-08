@@ -58,6 +58,10 @@ You can run Plausible as a first party connection from your domain name. [Learn 
 
 [Plausible Flatpak App](https://flathub.org/apps/details/com.cassidyjames.plausible): Linux app for Plausible. Built and maintained by [Cassidy James Blaede](https://cassidyjames.com/).
 
+## Flutter
+
+[Flutter plugin](https://pub.dev/packages/plausible_analytics): Send pageviews and custom events to Plausible. Built and maintained by [Eric Trenkel](https://erictrenkel.com/).
+
 ## GatsbyJS
 
 [GatsbyJS](https://www.gatsbyjs.org/packages/gatsby-plugin-plausible/): A Gatsby plugin for adding Plausible Analytics to your Gatsby site. Built and maintained by Curtis Cummings of [https://aquil.io/](https://aquil.io/).
