@@ -103,6 +103,20 @@ $ docker exec hosting_plausible_db_1 psql -U postgres -d plausible_db -c "UPDATE
 
 The Plausible server itself does not perform SSL termination. It only runs on unencrypted HTTP.  If you want to run on HTTPS you also need to set up a reverse proxy in front of the server. We have instructions and examples of how to do that below.
 
+### 3. Updating Plausible
+
+Plausible is updated regularly, but it is up to you to apply these updates on your server.  
+By virtue of using Docker, these upates are safe and easy to apply.
+
+```bash
+$ docker-compose down --remove-orphans
+$ docker-compose pull plausible
+$ docker-compose up -d
+```
+
+The self-hosted version is somewhat of a LTS, only getting the changes after they have been battle tested on the hosted version.
+If you want features as soon as they are available, consider becoming a hosted customer.
+
 ## Optional extras
 
 At this stage, you should have a basic installation of Plausible going. With some extra configuration, you can add functionality to
