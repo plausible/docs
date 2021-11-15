@@ -6,9 +6,9 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 On the main chart on the top of your Plausible dashboard you can export your website stats.
 
-You can even export [a filtered view](filters-segments.md). Filter your dashboard by any metric and click on the download icon to get an export of that particular view. Segment the dashboard by any goal such as external link clicks, 404 error pages or custom events to download those metrics.
-
 Select the date range in the top right to view the specific time period. Then click on the "**Download**" icon on the right hand side of the main graph to download your stats. 
+
+You can even export [a filtered view](filters-segments.md). Filter your dashboard by any metric and click on the download icon to get an export of that particular view. Segment the dashboard by any goal such as external link clicks, 404 error pages or custom events to download those metrics.
 
 <img alt="Exporting your website stats" src={useBaseUrl('img/download-website-stats.png')} />
 
