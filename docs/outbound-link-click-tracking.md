@@ -23,7 +23,7 @@ Check out this blog post for more details on the value of [tracking outbound lin
 If you want to track external link clicks, here's what you need to do:
 
 :::note
-Enabling this feature may break some features on your site if you're using links that open new tabs or have special event handling. See [this GitHub issue](https://github.com/plausible/plausible-tracker/issues/12) for more information.
+Enabling this feature may break some features on your site if you're using links that open new tabs or have special event handling. See [this GitHub message](https://github.com/plausible/plausible-tracker/issues/12#issuecomment-970490192) for a workaround.
 :::
 
 ## Step 1: Change the Plausible script snippet
