@@ -32,7 +32,7 @@ as an internal API and therefore schema changes are not considered a breaking ch
 ## Requirements
 
 The only thing you need to install Plausible Analytics is a server with Docker installed. The server must have a CPU with x86_64 architecture
-and support for SSE 4.2 instructions. For the Plausible Cloud instance we use [Digital Ocean](https://m.do.co/c/91569eca0213) (affiliate link)
+and support for SSE 4.2 instructions. We've tested this on [Digital Ocean](https://m.do.co/c/91569eca0213) (affiliate link)
 but any hosting provider works. If your server doesn't come with Docker pre-installed, you can follow [their docs](https://docs.docker.com/get-docker/) to install it.
 
 ## Up and running
