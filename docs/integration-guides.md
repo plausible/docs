@@ -154,6 +154,10 @@ Add Plausible to your [Podcastpage.io](https://podcastpage.io/) website. Just en
 
 [Plausible API Ruby Gem](https://github.com/dailytics/plausible_api): This is a simple wrapper to read the Plausible API with Ruby. Built and maintained by [Dailytics](https://dailytics.com/).
 
+## Sanity.io
+
+[Plausible iframe dashboard widget](https://www.sanity.io/plugins/plausible-iframe): Simple plugin to show Plausible as an iframe inside of the Sanity dashboard. Built and maintained by [Ole Svennevig](https://olesvennevig.no/).
+
 ## Server side tracking
 
 We have the Plausible events API which can be used to record pageviews and custom events server side without the use of JavaScript. [Learn more here](events-api.md). 
