@@ -5,21 +5,13 @@ title: Site provisioning API reference
 import {Required, Optional} from '../src/js/api-helpers.js';
 
 The Plausible Site provisioning API offers a way to create and manage your sites in your Plausible account programmatically.
-It's a work in progress but currently it allows 2 basic operations:
+It currently allows 2 operations:
 
 * Create a new site
 * Find or create a shared link by name
 
 Each request must be authenticated with an API key using the Bearer Token method. Currently, this API is in private preview and therefore it's not
-possible to acquire an API key through the dashboard. Please contact hello@plausible.io to get an API key with permissions for the endpoints listed in this document.
-
-Please also let us know what features you're missing. Some possible additions to the API include:
-
-* Configure weekly and monthly email reports
-* Configure custom domain for a site
-* Configure spike notification
-* Update site (change domain and/or timezone)
-* Delete site
+possible to acquire an API key through the dashboard. Please [contact us](https://plausible.io/contact) to get an API key with permissions for the endpoints listed in this document.
 
 ## Endpoints
 
