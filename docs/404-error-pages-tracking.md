@@ -45,7 +45,7 @@ You need to place this code on your 404 page below the header section (place it 
 
 404 error pages won't show up automatically. You'll have to configure the goal for them to show up on your dashboard.
 
-To configure a goal, go to your website's settings in your Plausible Analytics account and visit the "**Goals**" section. You should see a prompt to add a goal.
+To configure a goal, go to [your website's settings](website-settings.md) in your Plausible Analytics account and visit the "**Goals**" section. You should see a prompt to add a goal.
 
 <img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
 

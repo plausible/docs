@@ -22,6 +22,10 @@ Check out this blog post for more details on the value of [tracking outbound lin
 
 If you want to track external link clicks, here's what you need to do:
 
+:::note
+Enabling this feature may break some features on your site if you're using links that open new tabs or have special event handling. See [this GitHub message](https://github.com/plausible/plausible-tracker/issues/12#issuecomment-970490192) for a workaround.
+:::
+
 ## Step 1: Change the Plausible script snippet
 
 Change your Plausible script snippet `src` attribute from `https://plausible.io/js/plausible.js` to `https://plausible.io/js/plausible.outbound-links.js`
@@ -40,7 +44,7 @@ Do this for all the websites where you'd like to enable outbound link click trac
 
 Outbound link clicks won’t show up automatically. You’ll have to configure the goal for them to show up on your dashboard.
 
-To configure a goal, go to your website’s settings in your Plausible Analytics account and visit the "**Goals**" section. You should see a prompt to add a goal.
+To configure a goal, go to [your website’s settings](website-settings.md) in your Plausible Analytics account and visit the "**Goals**" section. You should see a prompt to add a goal.
 
 <img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
 

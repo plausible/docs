@@ -24,7 +24,7 @@ Session is a set of actions that a user takes on your site. A session is started
 
 ## Current Visitors
 
-How many people are currently on your site. This includes all visitors who have loaded a page in the last 5 minutes. You can click on the number to see what pages they are viewing.
+How many people are currently on your site. This metric does not depend on the filters applied to the dashboard. It includes all visitors who have loaded a page in the last 5 minutes. You can click on the number to see what pages they are viewing.
 
 ## Source
 

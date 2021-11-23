@@ -31,6 +31,8 @@ In addition to this, Plausible Analytics is made possible by an incredible commu
 
 * [Gustavo Maronato](https://github.com/Maronato) (Maronato) for all the help on the plausible-tracker NPM package.
 
+* [Matt Colligan](https://github.com/m-col) (m-col) for all the help on the export / import functionality.
+
 * To those who build and maintain Plausible Analytics integrations with various frameworks. [Full list here](integration-guides.md).
 
 Thank you to everyone for contributing to Plausible Analytics!

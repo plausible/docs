@@ -58,6 +58,10 @@ You can run Plausible as a first party connection from your domain name. [Learn 
 
 [Plausible Flatpak App](https://flathub.org/apps/details/com.cassidyjames.plausible): Linux app for Plausible. Built and maintained by [Cassidy James Blaede](https://cassidyjames.com/).
 
+## Flutter
+
+[Flutter plugin](https://pub.dev/packages/plausible_analytics): Send pageviews and custom events to Plausible. Built and maintained by [Eric Trenkel](https://erictrenkel.com/).
+
 ## GatsbyJS
 
 [GatsbyJS](https://www.gatsbyjs.org/packages/gatsby-plugin-plausible/): A Gatsby plugin for adding Plausible Analytics to your Gatsby site. Built and maintained by Curtis Cummings of [https://aquil.io/](https://aquil.io/).
@@ -150,6 +154,10 @@ Add Plausible to your [Podcastpage.io](https://podcastpage.io/) website. Just en
 
 [Plausible API Ruby Gem](https://github.com/dailytics/plausible_api): This is a simple wrapper to read the Plausible API with Ruby. Built and maintained by [Dailytics](https://dailytics.com/).
 
+## Sanity.io
+
+[Plausible iframe dashboard widget](https://www.sanity.io/plugins/plausible-iframe): Simple plugin to show Plausible as an iframe inside of the Sanity dashboard. Built and maintained by [Ole Svennevig](https://olesvennevig.no/).
+
 ## Server side tracking
 
 We have the Plausible events API which can be used to record pageviews and custom events server side without the use of JavaScript. [Learn more here](events-api.md). 
@@ -204,6 +212,8 @@ We have a WordPress plugin that makes the integration with WordPress nice and ea
 
 ## iOS widget for quick overview of your stats
 
-[iOS widget](https://gist.github.com/linuz90/ac969cdfe9bd92af0b306c43caee8d0c) to display the total visitors count for today and the live visitors count with Plausible and Scriptable. Built and maintained by [Fabrizio Rinaldi](https://gist.github.com/linuz90).
+* [iOS widget](https://gist.github.com/linuz90/ac969cdfe9bd92af0b306c43caee8d0c) to display the total visitors count for today and the live visitors count with Plausible and Scriptable. Built and maintained by [Fabrizio Rinaldi](https://gist.github.com/linuz90).
+
+* [Metrics iOS Widget](https://santiviquez.gumroad.com/l/xLrcq) by Santiago Víquez
 
 Let us know about any other integrations that you've built and we will feature them in this list. Thanks for your support!

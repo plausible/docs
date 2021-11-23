@@ -32,7 +32,7 @@ as an internal API and therefore schema changes are not considered a breaking ch
 ## Requirements
 
 The only thing you need to install Plausible Analytics is a server with Docker installed. The server must have a CPU with x86_64 architecture
-and support for SSE 4.2 instructions. For the Plausible Cloud instance we use [Digital Ocean](https://m.do.co/c/91569eca0213) (affiliate link)
+and support for SSE 4.2 instructions. We've tested this on [Digital Ocean](https://m.do.co/c/91569eca0213) (affiliate link)
 but any hosting provider works. If your server doesn't come with Docker pre-installed, you can follow [their docs](https://docs.docker.com/get-docker/) to install it.
 
 ## Up and running
@@ -50,7 +50,7 @@ $ cd hosting
 Alternatively, you can download and extract the repo as a tarball
 
 ```bash
-$ curl -L https://github.com/plausible/hosting/archive/master.tar.gz | tar -x
+$ curl -L https://github.com/plausible/hosting/archive/master.tar.gz | tar -xz
 $ cd hosting-master
 ```
 
@@ -60,14 +60,17 @@ In the downloaded directory you'll find two important files:
 
 ### 2. Add required configuration
 
-The configuration file has placeholders for required parameters. First, add your admin credentials in `plausible-conf.env`. Next,
-generate a random 64-character secret key which will be used to secure the app. Here's a simple way to generate one:
+The configuration file, `plausible-conf.env`, has placeholders for the required parameters. To set the parameters you'll first need random 64-character secret key which will be used to secure the app. Here's a simple way to generate one:
 
 ```bash
-$ openssl rand -base64 64
+$ openssl rand -base64 64 | tr -d '\n' ; echo
 ```
 
-The last step is to enter the `BASE_URL` for your app. It should be the base url where this instance is accessible.
+Now edit `plausible-conf.env` and set `SECRET_KEY_BASE` to your secret key.
+
+Next, set your `ADMIN_USER` credentials to your own choices.
+
+Finally, enter the `BASE_URL` for your app. It should be the base url where this instance is accessible, including the scheme (eg. `http://` or `https://`), the domain name, and optionally a port. If no port is specified the default `8000` will be used. Paths in the url are currently ignored.
 
 ### 3. Start the server
 
@@ -99,6 +102,20 @@ $ docker exec hosting_plausible_db_1 psql -U postgres -d plausible_db -c "UPDATE
 > Something not working? Please reach out on our [forum](https://github.com/plausible/analytics/discussions/categories/self-hosted-support) for troubleshooting.
 
 The Plausible server itself does not perform SSL termination. It only runs on unencrypted HTTP.  If you want to run on HTTPS you also need to set up a reverse proxy in front of the server. We have instructions and examples of how to do that below.
+
+### 3. Updating Plausible
+
+Plausible is updated regularly, but it is up to you to apply these updates on your server.  
+By virtue of using Docker, these upates are safe and easy to apply.
+
+```bash
+$ docker-compose down --remove-orphans
+$ docker-compose pull plausible
+$ docker-compose up -d
+```
+
+The self-hosted version is somewhat of a LTS, only getting the changes after they have been battle tested on the hosted version.
+If you want features as soon as they are available, consider becoming a hosted customer.
 
 ## Optional extras
 

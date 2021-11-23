@@ -8,7 +8,11 @@ Your "**Top Sources**" report shows which referral sources are driving traffic t
 
 The Top Sources report also includes all the traffic tagged with UTM tags such as `utm_source`, `utm_medium` and `utm_campaign`. You can use UTM tags to understand which marketing and promotional activities are working well and are driving traffic. 
 
-The referral sources are counted only when they start a new session on your site. This prevents external domains such as a payment gateway that the user is being taken through to show up in the referrers list. No need for you to manually exclude referrers.
+:::note 
+All referral sources are counted only when they start a new session on your site. This is why you don't see all of your own visits if you click to test several different UTM tagged links at the same time
+:::
+
+The fact that the referral sources are counted only when they start a new session on your site prevents external domains such as a payment gateway that the user is being taken through to show up in the referrers list. No need for you to manually exclude referrers.
 
 <img alt="Top Referrers" src={useBaseUrl('img/top-sources.png')} />
 
@@ -31,8 +35,6 @@ Here’s a non-exhaustive list of other problems with the header:
 * Whenever someone is moving from `http` to `https` or vice versa, the `referer` header is dropped.
 
 * Facebook `referer` only includes the fact that the visitor came from Facebook. Facebook never sends the post or comment ID where someone clicked.
-
-* Twitter sets the referrer to their link shortener (t.co) so you can see the shortened link but not the actual tweet that brought the traffic. [We make the best effort](twitter.md) to find the tweets that visitors came from using the Twitter API and display those tweets in your dashboard. Click on "**Twitter**" to view these.
 
 * Google does not include the search keywords in the referrer so you can see that the visitor is coming from Google search but you cannot see which keyword phrase they used to find you. To fix this, you can [integrate your account](google-search-console-integration.md) with Google Search Console so the keyword phrases people discover your site with show in your Plausible Analytics dashboard. After integrating with Search Console, you can click on "**Google**" to view these.
 

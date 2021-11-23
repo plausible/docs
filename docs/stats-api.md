@@ -6,8 +6,7 @@ import {Required, Optional} from '../src/js/api-helpers.js';
 
 
 The Plausible Stats API offers a way to retrieve your stats programmatically. It is a read-only interface to present historical
-and real-time stats only. At the moment there is no API to send pageviews or custom events to our backend nor can you manage your sites through
-the API.
+and real-time stats only. Take a look at our [events API](events-api.md) if you want to send pageviews or custom events to our backend and our [sites API](sites-api.md) if you want to manage your sites through the API.
 
 The API accepts GET requests with query parameters and returns standard HTTP responses along with a JSON-encoded body. All API requests must be made over HTTPS.
 Calls made over plain HTTP will fail. API requests without authentication will also fail.
@@ -15,7 +14,7 @@ Calls made over plain HTTP will fail. API requests without authentication will a
 Each request must be authenticated with an API key using the Bearer Token method. You can obtain an API key for your account by going to your user
 settings page [plausible.io/settings](https://plausible.io/settings).
 
-API keys have a rate limit of 1000 requests per hour by default. If you have special needs for more request, please contact us to request more capacity.
+API keys have a rate limit of 600 requests per hour by default. If you have special needs for more request, please contact us to request more capacity.
 
 The easiest way to explore the API is by using our Postman collection. Just define your `TOKEN` and `SITE_ID` variables and you'll have an executable API reference ready to go.
 
@@ -478,3 +477,6 @@ curl https://plausible.io/api/v1/stats/breakdown?site_id=$SITE_ID&period=6mo&pro
 }
 ```
 
+:::note
+You can can use GET https://plausible.io/api/health endpoint to monitor the status of our API
+:::

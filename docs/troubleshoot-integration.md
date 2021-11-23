@@ -40,7 +40,7 @@ Here's [the full list of all integrations and guides](integration-guides.md).
 
 * Does your site use a Content Security Policy (CSP)? If it does, you need to add plausible.io specifically to the allowed domains.
 
-* Running on localhost? Our script automatically disables itself when running on localhost as the majority of people don't want those stats to be counted. If you do want to track stats on localhost, you can [use our extension](script-extensions.md).
+* Running on localhost? Our script automatically disables itself when running on localhost as the majority of people don't want those stats to be counted. In the plausible.js script, `window.location.hostname` is used to verify that. If you do want to track stats on localhost, you can [use our extension](script-extensions.md).
 
 * On WordPress and using WP Rocket plugin? It may affect our script. We recommend you use our official WordPress plugin to avoid these issues or to manually whitelist our script in WP Rocket settings. [Learn more here](https://plausible.io/wordpress-analytics-plugin#troubleshoot-conflict-with-wp-rocket-or-other-performance-optimization-plugins). 
 
