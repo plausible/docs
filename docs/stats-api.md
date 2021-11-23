@@ -477,3 +477,6 @@ curl https://plausible.io/api/v1/stats/breakdown?site_id=$SITE_ID&period=6mo&pro
 }
 ```
 
+:::note
+You can can use GET https://plausible.io/api/health endpoint to monitor the status of our API
+:::
