@@ -80,3 +80,7 @@ Width of the screen. When using the script, this is set to `window.innerWidth`
 
 Custom properties for the event. See: https://plausible.io/docs/custom-event-goals#using-custom-props
 <hr / >
+
+:::note
+You can can use GET https://plausible.io/api/health endpoint to monitor the status of our API
+:::
