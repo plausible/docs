@@ -38,7 +38,7 @@ Here's the list of all the available extensions at this time:
 | plausible.exclusions.js     | [Exclude certain pages from being tracked](excluding-pages.md)                                     |
 | plausible.compat.js         | Compatibility mode for [tracking users on Internet Explorer](#plausiblecompatjs)                   |
 | plausible.local.js          | Allow analytics to track on localhost too which is useful in hybrid apps                           |
-| plausible.manual.js         | [Do not trigger pageviews automatically](#plausiblemanualjs). Allows you to [specify custom locations too](custom-locations.md).|
+| plausible.manual.js         | [Do not trigger pageviews automatically](#plausiblemanualjs). Also allows you to [specify custom locations](custom-locations.md) to redact URLs with identifiers.|
 
 ### plausible.compat.js
 
@@ -70,7 +70,7 @@ document.addEventListener("turbo:load", function() {
 When using turbolinks, make sure that the Plausible script isn't loaded and executed during turbo navigation. You may need to move the script to the `<head>` section of your website or use the `data-turbo-eval="false"` attribute.
 :::
 
-#### Specify custom locations for your oage URLs
+#### Specify custom locations for your page URLs
 
 Additionally, the manual script extension allows you to provide a special option named `u` with your events. This allows you to specify the URL of the page and can be used to specify custom locations. 
 
