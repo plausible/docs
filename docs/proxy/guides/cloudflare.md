@@ -27,7 +27,7 @@ We recommend you change the folder name in the first two lines in the code below
 
 In the **ScriptName** line, change the `/js/` to whatever you wish. Say `/your-folder-name/`. Then the location in the code would be `/your-folder-name/script.js`. 
 
-In the **Endpoint** line, change the `/api/` to whatever you want. It can be the same as above but you can also choose something different. If you choose `/your-folder-name/`, then the full location would be `/bye/event`. 
+In the **Endpoint** line, change the `/api/` to whatever you want. It can be the same as above but you can also choose something different. If you choose `/your-folder-name/`, then the full location would be `/your-folder-name/event`. 
 
 Do avoid words like 'plausible', 'analytics', 'tracking', 'stats', etc. as they may be blocked.
 
