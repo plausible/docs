@@ -1,12 +1,12 @@
 ---
-title: Specify a custom location for your page
+title: Specify a custom location to aggregate pages that contain PII and other UUIDs
 ---
 
-By default, Plausible Analytics tracks pages using their full URL.
+By default, Plausible tracks pages using their full URLs as they are on your website.
 
-In some cases, you might want to provide Plausible with a custom URL to use instead of the page's real URL. This is especially helpful to redact and aggregate multiple pages whose URL contain identifiers. 
+In some cases, you might want to provide Plausible with a custom URL to use instead of the real URL of a page. This is especially helpful to redact and aggregate multiple pages whose URLs contain identifiers, personally identifiable information (PII) and other universally unique identifiers (UUID) that are specific to users. This is helpful both from the privacy and analytics perspective.
 
-Follow the steps below to learn how you can specify custom location on your website.
+Follow the steps below to learn how you can specify custom location for your pages to aggregate page URLs that contain identifiers:
 
 ## 1. Add the `manual` script extension
 To specify a custom location for your event, you must use [Plausible's manual script extension](script-extensions.md#plausiblemanualjs). 
@@ -71,17 +71,13 @@ You can specify the `u` option in your other events as well if you wish to do so
 
 In a real-world scenario, the URL you provide to Plausible would likely be dynamic, changing depending on the current page and context. The URL can be provided by a Javascript variable or function, or rendered by the server when generating the page. You can take a look at the examples below to see how URLs can be provided dynamically in common use cases.
 
-
-:::caution
-**Be extremely careful when using this feature!** 
-If you specify the same URL in all of your website's pages, all of your pages will be tracked as if they were the same. 
-You should implement this with caution and test exhaustively to ensure that you do not accidentally ruin your future data.
-:::
-
-
 ## 4. Visit your website to ensure it works
 
 You can test your custom location by visiting a page for which you specified a custom location, and ensuring pageviews events show up under the provided custom URL in your Plausible dashboard.
+
+:::note
+If you specify the same URL in all of your website's pages, all of your pages will be tracked as if they were the same. You should implement this feature with caution and test exhaustively to ensure that you are tracking the data correctly.
+:::
 
 ---
 
@@ -147,3 +143,5 @@ And just like that, your pageviews will start being tracked as `https://yourapp.
 If your identifiers aren't entirely numerical, or if you only want to redact some identifiers but keep others, you can update the regular expression to match your format.
 
 With all of the different identifiers being aggregated under the same URL, it's suddenly much easier to see which pages and features your visitors use the most!
+
+Thanks to [Émile Perron](https://github.com/EmilePerron) for the contribution! 
