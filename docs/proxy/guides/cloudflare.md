@@ -25,8 +25,10 @@ Remove the default code that Cloudflare presents in the 'Script' section on the 
 
 We recommend you change the folder name in the first two lines in the code below. This makes your proxy more difficult to discover and block. We especially recommend you change the folder name in the two lines if you're not hosting your site on the Cloudflare CDN.
 
-In the ScriptName line, change the '/js/' to whatever you wish. Say '/your-folder-name/'. Then the location in the code would be '/your-folder-name/script.js'. 
-In the Endpoint line, change the '/api/' to whatever you want. It can be the same as above but you can also choose something different. If you choose '/your-folder-name/', then the full location would be '/bye/event'. 
+In the ScriptName line, change the `/js/` to whatever you wish. Say `/your-folder-name/`. Then the location in the code would be `/your-folder-name/script.js`. 
+In the Endpoint line, change the `/api/` to whatever you want. It can be the same as above but you can also choose something different. If you choose `/your-folder-name/`, then the full location would be `/bye/event`. 
+
+Do avoid words like 'plausible', 'analytics', 'tracking', 'stats', etc. as they may be blocked.
 
 ```js
 const ScriptName = '/js/script.js';
@@ -71,7 +73,7 @@ Once you've added the above code to the worker, you can click on the 'Save and D
 
 ## Step 2: You can rename your worker if you want
 
-This is optional but you can click 'Rename' in the Workers' dashboard to give your worker a more meaningful name. Do avoid words like 'analytics', 'tracking', 'stats', etc. as they may be blocked.
+This is optional but you can click 'Rename' in the Workers' dashboard to give your worker a more meaningful name. Do avoid words like 'plausible', 'analytics', 'tracking', 'stats', etc. as they may be blocked.
 
 <img alt="Rename your worker" src={useBaseUrl('img/cloudflare-rename-work-dash.png')} />
 
