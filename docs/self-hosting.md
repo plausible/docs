@@ -35,6 +35,9 @@ The only thing you need to install Plausible Analytics is a server with Docker i
 and support for SSE 4.2 instructions. We've tested this on [Digital Ocean](https://m.do.co/c/91569eca0213) (affiliate link)
 but any hosting provider works. If your server doesn't come with Docker pre-installed, you can follow [their docs](https://docs.docker.com/get-docker/) to install it.
 
+To make your Plausible instance accessible on a (sub)domain, you also need to be able to edit your DNS. Plausible is not currently
+designed for subfolder installations.
+
 ## Up and running
 
 ### 1. Clone the hosting repo
@@ -70,7 +73,7 @@ Now edit `plausible-conf.env` and set `SECRET_KEY_BASE` to your secret key.
 
 Next, set your `ADMIN_USER` credentials to your own choices.
 
-Finally, enter the `BASE_URL` for your app. It should be the base url where this instance is accessible, including the scheme (eg. `http://` or `https://`), the domain name, and optionally a port. If no port is specified the default `8000` will be used. Paths in the url are currently ignored.
+Finally, enter the `BASE_URL` for your app. It should be the base url where this instance is accessible, including the scheme (eg. `http://` or `https://`), the domain name, and optionally a port. If no port is specified the default `8000` will be used. Plausible is not currently designed for subfolder installations so please do not add a path component to the base url.
 
 ### 3. Start the server
 
@@ -105,7 +108,7 @@ The Plausible server itself does not perform SSL termination. It only runs on un
 
 ### 3. Updating Plausible
 
-Plausible is updated regularly, but it is up to you to apply these updates on your server.  
+Plausible is updated regularly, but it is up to you to apply these updates on your server.
 By virtue of using Docker, these upates are safe and easy to apply.
 
 ```bash
