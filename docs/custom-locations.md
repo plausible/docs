@@ -2,9 +2,9 @@
 title: Specify a custom location to aggregate pages that contain identifiers
 ---
 
-By default, Plausible tracks pages using their complete URLs as they are on your website.
+By default, Plausible tracks pages using their complete URLs as they are on your website. In some cases, you might want to provide Plausible with a custom URL to use instead of the actual URL of a page. 
 
-In some cases, you might want to provide Plausible with a custom URL to use instead of the actual URL of a page. This is especially helpful to redact and aggregate multiple pages whose URLs contain identifiers, personally identifiable information (PII) and other universally unique identifiers (UUID) specific to users. This is helpful both from the privacy and analytics perspective.
+This is especially helpful to redact and aggregate multiple pages whose URLs contain identifiers, personally identifiable information (PII) and other universally unique identifiers (UUID) specific to users. This is helpful both from the privacy and analytics perspective.
 
 Follow the steps below to learn how you can specify a custom location for your pages and aggregate page URLs that contain identifiers:
 
@@ -116,11 +116,9 @@ Plus, if you trigger other events on the page, you can reuse the `url` variable 
 
 ### Redacting identifiers from URLs
 
-If you have a web application, you likely have URLs with identifiers in them, such as `https://yourapp.com/project/123456/settings`. 
+If you have a web application, you likely have URLs with identifiers in them, such as `https://yourapp.com/project/123456/settings`. This is great for your users as they can easily bookmark pages within your app. 
 
-This is great for your users as they can easily bookmark pages within your app. 
-However, having the dashboard page of every project appear as individual pages in your analytics may not be all that great. 
-In fact, it can rapidly make your data really hard to analyze: imagine seeing 100 different URLs in your analytics for the same route, instead of seeing a single URL with 100 pageviews.
+However, having the dashboard page of every project appear as individual pages in your analytics may not be all that great. In fact, it can rapidly make your data really hard to analyze: imagine seeing 100 different URLs in your analytics for the same route, instead of seeing a single URL with 100 pageviews.
 
 In situations like these, redacting identifiers from URLs can make things much more manageable, and only takes a few minutes to implement.
 
