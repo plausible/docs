@@ -21,7 +21,12 @@ Next, you'll see a page where you can edit the code for your worker:
 
 <img alt="Paste the code" src={useBaseUrl('img/cloudflare-paste-code.png')} />
 
-Remove the default code that Cloudflare presents in the 'Script' section on the left side of the screen and paste the following code instead. You do not need to make any edits to this code. You do not need to make any other changes either.
+Remove the default code that Cloudflare presents in the 'Script' section on the left side of the screen and paste the following code instead.
+
+We recommend you change the folder name in the first two lines in the code below. This makes your proxy more difficult to discover and block. We especially recommend you change the folder name in the two lines if you're not hosting your site on the Cloudflare CDN.
+
+In the ScriptName line, change the '/js/' to whatever you wish. Say '/your-folder-name/'. Then the location in the code would be '/your-folder-name/script.js'. 
+In the Endpoint line, change the '/api/' to whatever you want. It can be the same as above but you can also choose something different. If you choose '/your-folder-name/', then the full location would be '/bye/event'. 
 
 ```js
 const ScriptName = '/js/script.js';
@@ -75,17 +80,17 @@ This is optional but you can click 'Rename' in the Workers' dashboard to give yo
 Now, the Plausible script should be accessible at the following URL:
 
 ```
-https://your-worker-name.your-cloudflare-username.workers.dev/js/script.js
+https://your-worker-name.your-cloudflare-username.workers.dev/your-folder-name/script.js
 ```
 
 If you can load this URL and see some Javascript code, you should be good to go to the following step.
 
 ## Step 4: Integrate a new snippet into your site header
 
-Once you have the URL for your script, you can replace your Plausible Analytics script tag in the Header (`<head>`) section of your site with the proxied snippet. This is how the new snippet should look like (make sure to edit it to have the correct domain name and the correct URL to the proxied file):
+Once you have the URL for your script, you can replace your Plausible Analytics script tag in the Header (`<head>`) section of your site with the proxied snippet. This is how the new snippet should look like (make sure to edit it to have the correct domain name of your site and the correct URL to the proxied file):
 
 ```html
-<script defer data-domain="yourdomain.com" src="https://your-worker-name.your-cloudflare-username.workers.dev/js/script.js"></script>
+<script defer data-domain="yourdomain.com" data-api="https://your-worker-name.your-cloudflare-username.workers.dev/your-folder-name/event" src="https://your-worker-name.your-cloudflare-username.workers.dev/your-folder-name/script.js"></script>
 ```
 
 Are you using our extensions such as hash-based routing, page exclusions or outbound link click tracking? Change the file name from `script.js` to the script you want to use: `script.hash.js`, `script.exclusions.js` or `script.outbound-links.js`. Want to use more than one extension? You can chain them like this: `script.hash.exclusions.outbound-links.js`. You just need to change the script name in the snippet that you insert into your site, no need to change the code for the worker.
@@ -112,7 +117,6 @@ Next, enter the URL prefix where you would like to install Plausible. In this ex
 Click on the 'Save' button. After clicking 'Save', the script should be accessible at the subdirectory URL of your site: `https://example.com/qwerty/js/script.js`. 
 
 At this point you can change your Plausible script tag in your site header to reference the new URL. It's also important to specify the `data-api` attribute to make sure data is sent through the worker as well. The new snippet in your site header should look like this:
-
 
 ```html
 <script defer data-domain="yourdomain.com" data-api="/qwerty/api/event" src="/qwerty/js/script.js"></script>
