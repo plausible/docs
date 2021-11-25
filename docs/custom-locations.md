@@ -1,12 +1,12 @@
 ---
-title: Specify a custom location to aggregate pages that contain PII and other UUIDs
+title: Specify a custom location to aggregate pages that contain identifiers
 ---
 
-By default, Plausible tracks pages using their full URLs as they are on your website.
+By default, Plausible tracks pages using their complete URLs as they are on your website.
 
-In some cases, you might want to provide Plausible with a custom URL to use instead of the real URL of a page. This is especially helpful to redact and aggregate multiple pages whose URLs contain identifiers, personally identifiable information (PII) and other universally unique identifiers (UUID) that are specific to users. This is helpful both from the privacy and analytics perspective.
+In some cases, you might want to provide Plausible with a custom URL to use instead of the actual URL of a page. This is especially helpful to redact and aggregate multiple pages whose URLs contain identifiers, personally identifiable information (PII) and other universally unique identifiers (UUID) specific to users. This is helpful both from the privacy and analytics perspective.
 
-Follow the steps below to learn how you can specify custom location for your pages to aggregate page URLs that contain identifiers:
+Follow the steps below to learn how you can specify a custom location for your pages and aggregate page URLs that contain identifiers:
 
 ## 1. Add the `manual` script extension
 To specify a custom location for your event, you must use [Plausible's manual script extension](script-extensions.md#plausiblemanualjs). 
@@ -76,7 +76,7 @@ In a real-world scenario, the URL you provide to Plausible would likely be dynam
 You can test your custom location by visiting a page for which you specified a custom location, and ensuring pageviews events show up under the provided custom URL in your Plausible dashboard.
 
 :::note
-If you specify the same URL in all of your website's pages, all of your pages will be tracked as if they were the same. You should implement this feature with caution and test exhaustively to ensure that you are tracking the data correctly.
+If you specify the same custom URL in all of your website's pages, all of your pages will be tracked as if they were the same. You should implement this feature with caution and test exhaustively to ensure that you are correctly tracking the data.
 :::
 
 ---
@@ -93,7 +93,7 @@ Let's say you have multiple URLs that link to the same pages, such as:
 - `https://yourdomain.com/products/clothes/shoes/banana-leather-shoe`
 - `https://yourdomain.com/products/clothes/men/shoes/banana-leather-shoe`
 
-Perhaps you would like to combine all of the pageview for these pages so they all appear in Plausible as the canonical URL for this product (which might be `https://yourdomain.com/products/banana-leather-shoe`, for example).
+Perhaps you would like to combine all of the pageviews for these pages so they all appear in Plausible as the canonical URL for this product (which might be `https://yourdomain.com/products/banana-leather-shoe`, for example).
 
 To do so, you could write a Javascript function that gets the canonical URL and that provides it to Plausible's pageview event:
 
