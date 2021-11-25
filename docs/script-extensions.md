@@ -2,8 +2,9 @@
 title: Script extensions for enhanced measurement
 ---
 
-We're proud to have one of the most [lightweight Javascript snippets](https://plausible.io/lightweight-web-analytics) in the analytics industry. Clocking in at less than 1KB, our script will not add any bloat to your website or cause performance issues. One of the ways we achieve that is by radically limiting the
-amount of options in the default script. Instead, we provide separate script files based on how you might want to use Plausible.
+We're proud to have one of the most [lightweight Javascript snippets](https://plausible.io/lightweight-web-analytics) in the analytics industry. Clocking in at less than 1KB, our script will not add any bloat to your website or cause performance issues. 
+
+One of the ways we achieve that is by radically limiting the amount of options in the default script. Instead, we provide separate script files based on how you might want to use Plausible.
 
 For example, the default `plausible.js` script will automatically work with [pushState](https://developer.mozilla.org/en-US/docs/Web/API/History_API) based frontend routing which is the most common.
 
@@ -69,5 +70,8 @@ document.addEventListener("turbo:load", function() {
 When using turbolinks, make sure that the Plausible script isn't loaded and executed during turbo navigation. You may need to move the script to the `<head>` section of your website or use the `data-turbo-eval="false"` attribute.
 :::
 
-Additionally, the manual script extension allows you to provide a special option named `u` with your events, which allows you to specify the URL of the page. 
-This can be used to specify custom locations. It is especially helpful to redact and aggregate multiple pages whose URLs contain identifiers, personally identifiable information (PII) and other universally unique identifiers (UUID) that are specific to users. [Learn more about specifying custom URLs in your events](custom-locations.md).
+#### Specify custom locations for your oage URLs
+
+Additionally, the manual script extension allows you to provide a special option named `u` with your events. This allows you to specify the URL of the page and can be used to specify custom locations. 
+
+It is especially helpful to redact and aggregate multiple pages whose URLs contain identifiers that are specific to users. [Learn more about specifying custom URLs in your events](custom-locations.md).
