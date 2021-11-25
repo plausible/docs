@@ -6,86 +6,144 @@ By default, Plausible Analytics tracks pages using their full URL.
 
 In some cases, you might want to provide Plausible with a custom URL to use instead of the page's real URL. This is especially helpful to redact and aggregate multiple pages whose URL contain identifiers. 
 
-When you specify a custom location URL for a page, all events for that page will be counted under the custom location's URL. As long as the custom location is present, there won't be any new events for the page's real URL. The historical stats will be kept and will stay the same.
+Follow the steps below to learn how you can specify custom location on your website.
 
-Here's how to specify a custom location.
+## 1. Add the `manual` script extension
+To specify a custom location for your event, you must use [Plausible's manual script extension](script-extensions.md#plausiblemanualjs). 
 
-## 1. You'll need to use a different Plausible script snippet
-
-To manually specify a location, you need to change your Plausible script snippet `src` attribute from `https://plausible.io/js/plausible.js` to `https://plausible.io/js/plausible.custom-location.js`
+To do so, change your Plausible script snippet `src` attribute from `https://plausible.io/js/plausible.js` to `https://plausible.io/js/plausible.manual.js`.
 
 The new snippet will look like this (make sure to change the `data-domain` attribute to the domain you added to your Plausible account):
 
 ```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.custom-location.js"></script>
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.manual.js"></script>
 ```
 
-## 2. Specify the custom location
 
-There are two ways to define a custom location. 
+## 2. Trigger the pageview event
 
-### Option 1: specifying a URL directly
+Once you've added the manual extension, the `pageview` event won't be sent automatically anymore: you'll have to trigger it manually.
 
-You can specify a custom location URL by adding the `data-location` attribute to your Plausible script. The value of that attribute should be a fully-fledged URL. 
-
-With that in place, all traffic and events will then be tracked as if they came from the provided URL.
-
-Here is an example:
+To trigger events manually, you need to add the following script after your regular Plausible tracking script:
 
 ```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.custom-location.js" data-location="https://yourdomain.com/my-custom-location"></script>
+<!-- define the `plausible` function to manually trigger events -->
+<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 ```
 
+Once that's done, you can create another script in which you will trigger your pageview event:
+
+```html
+<!-- trigger pageview -->
+<script>
+  plausible('pageview');
+</script>
+```
+
+At this point, your pageview events are being triggered just like before, but you haven't defined a custom location yet. 
+This is what we'll do in the next step.
+
+## 3. Specify a custom location
+The `plausible` function in the `manual` script extension allows you to provide an option named `u`. 
+This option allows you to specify the URL of the page you're on.
+
+To make use of it, you can update your `pageview` trigger code to add the `u` option as the second parameter, like so:
+
+```js
+plausible('pageview', { u: "https://yourdomain.com/my-custom-location" });
+```
+
+At this point, your entire setup should look like this:
+
+```html
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.manual.js"></script>
+<!-- define the `plausible` function to manually trigger events -->
+<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+<!-- trigger pageview -->
+<script>
+  plausible('pageview', { u: "https://yourdomain.com/my-custom-location" });
+</script>
+```
+
+Once you have specified an URL via the `u` option, all of the pageview events triggered from that script will be sent as if they came from that URL. In this case, all the pageview events will appear as if they came from `https://yourdomain.com/my-custom-location`).
+
+You can specify the `u` option in your other events as well if you wish to do so. 
+
+In a real-world scenario, the URL you provide to Plausible would likely be dynamic, changing depending on the current page and context. The URL can be provided by a Javascript variable or function, or rendered by the server when generating the page. You can take a look at the examples below to see how URLs can be provided dynamically in common use cases.
+
+
 :::caution
-**Be extremely careful when using this technique!** 
-
-You must make sure that you only add the `data-location` attribute to your Plausible script on the pages where that custom URL must be used instead of the default one. 
-
-If you were to add the same `data-location` to all of your website's pages, all of your pages will be tracked as if they were the same.
+**Be extremely careful when using this feature!** 
+If you specify the same URL in all of your website's pages, all of your pages will be tracked as if they were the same. 
+You should implement this with caution and test exhaustively to ensure that you do not accidentally ruin your future data.
 :::
 
 
-### Option 2: specifying a function that provides the location
-
-If you prefer, you can provide a function that Plausible can call to obtain the current location. 
-
-This is done by adding the `data-get-location` attribute to your Plausible script. 
-
-The value of that attribute should be the name of the function. The function must be defined in the global namespace, so that it is accessible on the `window` object. If the function is not defined, Plausible will fall back on using the current page's URL.
-
-Here is an example:
-
-```html
-<script>window.myLocationGetter = function() { return location.href.replace(/\/\d+\//, '/id/');  }</script>
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.custom-location.js" data-get-location="myLocationGetter"></script>
-```
-
-
-All entries must begin with a `/`, and should **not** include the trailing slash as we account for this automatically.
-
-- Asterisks (`*`) expand to any stretch (of length >=0) of the page path and can be on either end or in the middle of any entry, but **cannot** be in the place of slashes.
-- Double asterisks (`**`) expand to any stretch (of length >=0) of the page path, can be on either end or in the middle of any entry, and can represent **any** characters, even slashes.
-
-See below for examples of common page use cases and how they would function.
-
-## 3. Change the snippet on your target pages to the new snippet
-
-You need to place your new Plausible Analytics tracking script code, which you obtained in the previous step, into the `<head>` section of your site. Place the tracking script within the `<head> … </head>` tags. 
-
-If you are using the `data-location` option, you should only change the script in pages where you must define a custom URL.
-
-If you are using the `data-get-location` option, where you should change the script will depend on your implementation.
-
-This is the only tracking script you need. You don't need to keep the default script. Your stats will keep tracking without interruption and you will not lose any of your old data.
-
-You do not have to use the `custom-location` script type exclusively. You can chain various script types, for example:
-
-```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.hash.custom-location.outbound-links.js" data-get-location="myLocationGetter"></script>
-```
-
-The example above includes both [outbound link clicks tracking](outbound-link-click-tracking.md) and tracking for [hash-based routing pages](hash-based-routing.md) in addition to the `custom-location` script type.
-
-## Return to your website to ensure it works
+## 4. Visit your website to ensure it works
 
 You can test your custom location by visiting a page for which you specified a custom location, and ensuring pageviews events show up under the provided custom URL in your Plausible dashboard.
+
+---
+
+## Common usage examples
+
+Here are a few examples of scenarios in which specifying custom locations might be useful.
+### Combining data for multiple pages based on canonical URL
+
+Let's say you have multiple URLs that link to the same pages, such as:
+
+- `https://yourdomain.com/products/banana-leather-shoe`
+- `https://yourdomain.com/products/clothes/banana-leather-shoe`
+- `https://yourdomain.com/products/clothes/shoes/banana-leather-shoe`
+- `https://yourdomain.com/products/clothes/men/shoes/banana-leather-shoe`
+
+Perhaps you would like to combine all of the pageview for these pages so they all appear in Plausible as the canonical URL for this product (which might be `https://yourdomain.com/products/banana-leather-shoe`, for example).
+
+To do so, you could write a Javascript function that gets the canonical URL and that provides it to Plausible's pageview event:
+
+```html
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.manual.js"></script>
+<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+<script>
+  // Get the canonical URL element
+  var canonicalMeta = document.querySelector('linl[rel="canonical"]');
+  // Use the canonical URL if it exists, falling back on the regular URL when it doesn't.
+  var url = canonicalMeta ? canonicalMeta.href : window.location.href;
+  // Send the pageview event to Plausible
+  plausible('pageview', { u: url });
+</script>
+```
+
+_Et voilà!_ From now on, your pageviews will automatically appear as coming from the canonical URL (`https://yourdomain.com/products/banana-leather-shoe` for the product we used in our example).
+
+Plus, if you trigger other events on the page, you can reuse the `url` variable we generated in order to keep your data consistent!
+
+### Redacting identifiers from URLs
+
+If you have a web application, you likely have URLs with identifiers in them, such as `https://yourapp.com/project/123456/settings`. 
+
+This is great for your users as they can easily bookmark pages within your app. 
+However, having the dashboard page of every project appear as individual pages in your analytics may not be all that great. 
+In fact, it can rapidly make your data really hard to analyze: imagine seeing 100 different URLs in your analytics for the same route, instead of seeing a single URL with 100 pageviews.
+
+In situations like these, redacting identifiers from URLs can make things much more manageable, and only takes a few minutes to implement.
+
+For example, you could write a Javascript function that uses a regular expression to remove numerical identifiers from the URLs that Plausible receives:
+
+```html
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.manual.js"></script>
+<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+<script>
+  var url = window.location.href;
+  // Replace every all-numeric sequences located between two slashes by "_ID_"
+  var redactedUrl = url.replace(/\/\d+\//g, "/_ID_/");
+  // Send the pageview event to Plausible
+  plausible('pageview', { u: redactedUrl });
+</script>
+```
+
+And just like that, your pageviews will start being tracked as `https://yourapp.com/project/_ID_/settings`. 
+
+If your identifiers aren't entirely numerical, or if you only want to redact some identifiers but keep others, you can update the regular expression to match your format.
+
+With all of the different identifiers being aggregated under the same URL, it's suddenly much easier to see which pages and features your visitors use the most!
