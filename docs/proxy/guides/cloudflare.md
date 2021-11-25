@@ -25,8 +25,9 @@ Remove the default code that Cloudflare presents in the 'Script' section on the 
 
 We recommend you change the folder name in the first two lines in the code below. This makes your proxy more difficult to discover and block. We especially recommend you change the folder name in the two lines if you're not hosting your site on the Cloudflare CDN.
 
-In the ScriptName line, change the `/js/` to whatever you wish. Say `/your-folder-name/`. Then the location in the code would be `/your-folder-name/script.js`. 
-In the Endpoint line, change the `/api/` to whatever you want. It can be the same as above but you can also choose something different. If you choose `/your-folder-name/`, then the full location would be `/bye/event`. 
+In the **ScriptName** line, change the `/js/` to whatever you wish. Say `/your-folder-name/`. Then the location in the code would be `/your-folder-name/script.js`. 
+
+In the **Endpoint** line, change the `/api/` to whatever you want. It can be the same as above but you can also choose something different. If you choose `/your-folder-name/`, then the full location would be `/bye/event`. 
 
 Do avoid words like 'plausible', 'analytics', 'tracking', 'stats', etc. as they may be blocked.
 
