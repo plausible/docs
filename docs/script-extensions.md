@@ -35,9 +35,9 @@ Here's the list of all the available extensions at this time:
 | plausible.hash.js           | Automatically follow frontend navigation when using [hash-based routing](hash-based-routing.md)    |
 | plausible.outbound-links.js | Automatically [track clicks on outbound links](outbound-link-click-tracking.md) from your website  |
 | plausible.exclusions.js     | [Exclude certain pages from being tracked](excluding-pages.md)                                     |
-| plausible.compat.js         | Compatibility mode for tracking users on Internet Explorer                                         |
+| plausible.compat.js         | Compatibility mode for [tracking users on Internet Explorer](#plausiblecompatjs)                   |
 | plausible.local.js          | Allow analytics to track on localhost too which is useful in hybrid apps                           |
-| plausible.manual.js         | Do not trigger pageviews automatically. Allow you to specify custom locations.                     |
+| plausible.manual.js         | [Do not trigger pageviews automatically](#plausiblemanualjs). Allows you to [specify custom locations too](custom-locations.md).|
 
 ### plausible.compat.js
 
@@ -70,4 +70,4 @@ When using turbolinks, make sure that the Plausible script isn't loaded and exec
 :::
 
 Additionally, the manual script extension allows you to provide a special option named `u` with your events, which allows you to specify the URL of the page. 
-This can be used to specify custom locations. [Learn more about specifying custom URLs in your events](custom-locations.md).
+This can be used to specify custom locations. It is especially helpful to redact and aggregate multiple pages whose URLs contain identifiers, personally identifiable information (PII) and other universally unique identifiers (UUID) that are specific to users. [Learn more about specifying custom URLs in your events](custom-locations.md).
