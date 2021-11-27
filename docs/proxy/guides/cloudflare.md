@@ -58,6 +58,11 @@ async function getScript(event, extensions) {
     let response = await caches.default.match(event.request);
     if (!response) {
         response = await fetch("https://plausible.io/js/plausible." + extensions.join("."));
+        // Make a mutable copy of the (currently immutable) response object.
+        response = new Response(response.body, response);
+        // Overwrite the `Cache-Control` header to allow caching on intermediate proxies (in this case, Cloudflare), as well as on the browser.
+        response.headers.set('Cache-Control', `public, max-age=${CACHE_TTL_BROWSER}, s-maxage=${CACHE_TTL_PROXY}`);
+        // Store the fetched response (this method is non-blocking).
         event.waitUntil(caches.default.put(event.request, response.clone()));
     }
     return response;
