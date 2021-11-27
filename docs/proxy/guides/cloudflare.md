@@ -35,7 +35,10 @@ Do avoid words like 'plausible', 'analytics', 'tracking', 'stats', etc. as they 
 const ScriptName = '/js/script.js';
 const Endpoint = '/api/event';
 
-const ScriptWithoutExtension = ScriptName.replace('.js', '')
+const CACHE_TTL_BROWSER = 86400 * 30; // 30 days
+const CACHE_TTL_PROXY = 86400 * 90; // 90 days
+
+const ScriptWithoutExtension = ScriptName.replace('.js', '');
 
 addEventListener('fetch', event => {
     event.passThroughOnException();
