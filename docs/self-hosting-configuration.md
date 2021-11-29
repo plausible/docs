@@ -3,7 +3,7 @@ title: Configuration options
 ---
 
 :::note
-This section is for self-hosting our analytics on your server and managing your infrastructure (installation, maintenance, upgrades, server capacity, uptime, backup and so on). This is different from Plausible Analytics Cloud where we manage everything for your ease and convenience. [Take a look at the differences between Plausible Cloud and Self-Hosted](https://plausible.io/self-hosted-web-analytics).
+The easiest way to get started with Plausible is with [our official managed service in the Cloud](https://plausible.io/#pricing). It takes 2 minutes to start counting your stats with a worldwide CDN, high availability, backups, security and maintenance all done for you by us. Our managed hosting can save a substantial amount of developer time and resources. For most sites this ends up being the best value option and the revenue goes to funding the maintenance and further development of Plausible. So you’ll be supporting open source software and getting a great service! The section below is for self-hosting our analytics on your server and managing your infrastructure. 
 :::
 
 When running a Plausible release, the following configuration parameters can be supplied as environment variables.
@@ -168,5 +168,5 @@ When the app is created, note down your API key and API key secret. Then, in the
 Once you've added these environment variables and restarted Plausible, you should see the relevant tweets the next day -- they are only fetched once every 24 hours. For more information on the Twitter integration, see [Twitter referrals](twitter.md).
 
 :::note
-Self-hosting our analytics product is free as in beer. You only need to pay for your server and whatever cost there is associated with running a server. You never have to pay any fees to us, only to your cloud server provider. If you choose to self-host Plausible you can [become a sponsor](https://github.com/sponsors/plausible) which is a great way to give back to the community and to contribute to the long-term sustainability of the project. Simply put, we treat sponsors like paying customers which means you can receive guaranteed priority support.
+Our only source of funding is our premium, managed service for running Plausible in the cloud. If you're looking for an alternative way to support the project, we've put together some sponsorship packages. Maintaining open source software is a thankless, time-consuming job. We released our code on GitHub and made it easy to self-host on principle, not because it's good business. If you're self-hosting Plausible, [sponsoring us](https://github.com/sponsors/plausible) is a great way to give back to the community and to contribute to the long-term sustainability of the project. Thank you for supporting independent creators of Free Open Source Software!
 :::
