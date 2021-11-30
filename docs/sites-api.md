@@ -5,9 +5,10 @@ title: Site provisioning API reference
 import {Required, Optional} from '../src/js/api-helpers.js';
 
 The Plausible Site provisioning API offers a way to create and manage your sites in your Plausible account programmatically.
-It currently allows 2 operations:
+It currently allows 3 operations:
 
 * Create a new site
+* Delete an existing site
 * Find or create a shared link by name
 
 Each request must be authenticated with an API key using the Bearer Token method. Currently, this API is in private preview and therefore it's not
@@ -45,6 +46,21 @@ Domain of the site to be created in Plausible. Must be a globally unique, the re
 
 Timezone name according to the [IANA](https://www.iana.org/time-zones) database. Defaults to `Etc/UTC` when left blank.
 <hr / >
+
+### DELETE /api/v1/sites/:site_id
+
+Deletes a site from your Plausible account along with all of it's data and configuration. The API key must belong to the owner of the site.
+
+```bash title="Try it yourself"
+curl -X DELETE https://plausible.io/api/v1/sites/test-domain.com \
+  -H "Authorization: Bearer ${TOKEN}"
+```
+
+```json title="Response 200 OK"
+{
+    "deleted": "true"
+}
+```
 
 ### PUT /api/v1/sites/shared-links
 
