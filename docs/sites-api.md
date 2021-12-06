@@ -149,7 +149,7 @@ Updates a goal from your Plausible account. The API key must belong to the owner
 ```bash title="Try it yourself"
 curl -X PUT https://plausible.io/api/v1/sites/goals/1 \
   -H "Authorization: Bearer ${TOKEN}" \
-  -F 'site_id="test-domain.com"'
+  -F 'site_id="test-domain.com"' \
   -F 'goal_type="event"' \
   -F 'goal_value="Signin"'
 ```
