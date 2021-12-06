@@ -142,6 +142,24 @@ Actual value of your goal, also accepts wildcards for type `page`
 
 <hr / >
 
+### PUT /api/v1/sites/goals/:goal_id
+
+Updates a goal from your Plausible account. The API key must belong to the owner of the site. The site must owned by the current user.
+
+```bash title="Try it yourself"
+curl -X PUT https://plausible.io/api/v1/sites/goals/1 \
+  -H "Authorization: Bearer ${TOKEN}" \
+  -F 'site_id="test-domain.com"'
+  -F 'goal_type="event"' \
+  -F 'goal_value="Signin"'
+```
+
+```json title="Response 200 OK"
+{
+    "updated": "true"
+}
+```
+
 ### DELETE /api/v1/sites/goals/:goal_id
 
 Deletes a goal from your Plausible account. The API key must belong to the owner of the site. The site must owned by the current user.
