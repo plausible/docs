@@ -110,13 +110,14 @@ curl -X PUT https://plausible.io/api/v1/sites/goals \
   -H "Authorization: Bearer ${TOKEN}" \
   -F 'site_id="test-domain.com"' \
   -F 'goal_type="event"' \
-  -F 'goal_value="Signup"'
+  -F 'event_name="Signup"'
 ```
 
 ```json title="Response 200 OK"
 {
     "domain": "test-domain.com",
     "goal_id": "1",
+    "goal_type": "event",
     "event_name": "Signup"
 }
 ```
@@ -136,29 +137,17 @@ Type of your goal, accepts only one of teh following values: `event` or `page`
 
 <hr / >
 
-**goal_value** <Required />
+**event_name** <Required /> only if _goal_type_ is set to `event`
 
-Actual value of your goal, also accepts wildcards for type `page` 
+Actual value of your the event name of your goal 
 
 <hr / >
 
-### PUT /api/v1/sites/goals/:goal_id
+**page_type** <Required /> only if _goal_type_ is set to `page`
 
-Updates a goal from your Plausible account. The API key must belong to the owner of the site. The site must owned by the current user.
+Actual value of the page path of your goal, also accepts wildcards for type `page` 
 
-```bash title="Try it yourself"
-curl -X PUT https://plausible.io/api/v1/sites/goals/1 \
-  -H "Authorization: Bearer ${TOKEN}" \
-  -F 'site_id="test-domain.com"' \
-  -F 'goal_type="event"' \
-  -F 'goal_value="Signin"'
-```
-
-```json title="Response 200 OK"
-{
-    "updated": "true"
-}
-```
+<hr / >
 
 ### DELETE /api/v1/sites/goals/:goal_id
 
@@ -175,3 +164,12 @@ curl -X DELETE https://plausible.io/api/v1/sites/goals/1 \
     "deleted": "true"
 }
 ```
+
+#### Body parameters
+<hr / >
+
+**site_id** <Required />
+
+Id of your site in Plausible.
+
+<hr / >
