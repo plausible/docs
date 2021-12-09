@@ -22,7 +22,9 @@ There are two distinct ways that Plausible Analytics collects the referrer sourc
 
 ### 1. Automatic by the `referer` header
 
-The `referer` header (the HTTP header is misspelled with one r for historical reasons) is the default and automated way of tracking referrer sources of web traffic. The `referer` header works well for the majority of cases but there are some limitations and fall-backs with using it for various historical and technical reasons. 
+The `referer` header (the HTTP header is misspelled with one r for historical reasons) is the default and automated way of tracking referrer sources of web traffic. The `referer` header works well for the majority of cases but there are some limitations and fall-backs with using it for various historical and technical reasons.
+
+Note that all the major browsers have stopped sending the detailed info on [referral sources](https://plausible.io/blog/referrer-policy). Chrome, Safari and Firefox now only send the full domain name of the referrer and not the actual URL. This affects all analytics services including Plausible. It means that if `thatblog.com/one-post/` sends you visitors, you will see `thatblog.com` in your referral sources list but won’t be able to see the exact post URL itself.
 
 ### "Direct / None" traffic without a referrer source
 
