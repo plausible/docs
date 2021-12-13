@@ -168,7 +168,7 @@ In our hosting repo, you'll find useful example configurations in case you're al
 
 ### 3. External Databases
 
-There are some cavaets to consider when running your own databases:
+There are some caveats to consider when running your own databases:
 
 ##### Postgres
 The user needs the role superuser for setting up certain modules on the database
