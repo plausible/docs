@@ -4,11 +4,13 @@ title: Search Console integration
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-In 2012, [Google stopped including](https://webmasters.googleblog.com/2012/03/upcoming-changes-in-googles-http.html) search terms in the `Referer` header when people click through a Google search. They only send Google as the referrer source instead. This means that Plausible Analytics cannot automatically access search terms that lead users to your website.
+In 2012, [Google stopped including](https://webmasters.googleblog.com/2012/03/upcoming-changes-in-googles-http.html) search terms in the `Referer` header when people click on a Google search. They only send Google as the referrer source instead. This means that Plausible cannot automatically access search terms that lead users to your site.
 
-However, you can still access your search terms by setting up your website on Google Search Console. Once you’ve done that, you can enable the Google Search Console integration in Plausible Analytics to get all of your important search results stats under one roof.
+However, you can still access your search terms by setting up your site on Google Search Console. Once you’ve done that, you can enable the Search Console integration in Plausible to get all of your important search results stats under one roof.
 
-Here’s how you can add your site to Google Search Console and then integrate the Search Console data into your Plausible Analytics dashboard:
+This integration is privacy-friendly and requires no Google code to be placed on your site. Google is basically just sending us the information they've already collected on their search results.
+
+Here’s how you can add your site to Search Console and then integrate the Search Console data into your Plausible dashboard:
 
 ## Add your site to the Google Search Console
 
