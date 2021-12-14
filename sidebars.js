@@ -1,8 +1,8 @@
 module.exports = {
   someSidebar: {
     "Get Started": ['introduction', 'register-account', 'add-website', 'plausible-script', 'script-extensions', 'integration-guides', 'troubleshoot-integration', 'your-plausible-experience'],
-    "Website Settings": ['website-settings', 'general', 'users-roles', 'visibility', 'shared-links', 'embed-dashboard', 'google-search-console-integration', 'email-reports', 'traffic-spikes', 'slack-reports', 'excluding-pages', 'transfer-ownership', 'reset-site-data', 'delete-site-data', 'excluding'],
-    "Dashboard": ['guided-tour', 'top-referrers', 'manual-link-tagging', 'top-pages', 'countries', 'devices', 'filters-segments', 'export-stats', 'metrics-definitions', 'keyboard-shortcuts', 'dashboard-faq'],
+    "Website Settings": ['website-settings', 'general', 'users-roles', 'visibility', 'shared-links', 'embed-dashboard', 'email-reports', 'traffic-spikes', 'slack-reports', 'excluding-pages', 'transfer-ownership', 'reset-site-data', 'delete-site-data', 'excluding'],
+    "Dashboard": ['guided-tour', 'top-referrers', 'manual-link-tagging', 'google-search-console-integration', 'top-pages', 'countries', 'devices', 'filters-segments', 'export-stats', 'metrics-definitions', 'keyboard-shortcuts', 'dashboard-faq'],
     "Goal Conversions": ['goal-conversions', 'pageview-goals', 'custom-event-goals', 'outbound-link-click-tracking', '404-error-pages-tracking'],
     "Adblockers": ['proxy/introduction',
       {
