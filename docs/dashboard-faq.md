@@ -19,3 +19,13 @@ This is why adding up unique visitor numbers and comparing them to the total is 
 Plausible excludes bots, crawlers and other known non-human activity by default. In [a test we ran](https://plausible.io/blog/server-log-analysis), we saw 18x more page views with server side tracking than with Plausible Analytics which shows the volume of spam traffic that Plausible excludes. 
 
 Most of this difference comes from the fact that client-side analytics such as Plausible only count visitors that run JavaScript. This is a decent proxy for "this is probably a real human using a web browser". In addition to this, we also exclude bots by the User-Agent header.
+
+## Does Plausible do data sampling?
+
+Data sampling is the practice of analyzing a subset of all data in order to uncover the meaningful information in the larger data set. Most analytics tools including Google Analytics do data sampling for all their reports.
+
+Plausible does not do any data sampling by default. The stats in your dashboard show 100% accurate data of what happens on your site.
+
+On some dashboard views that have a lot of data such as those with more than 20 million pageviews, we do limited data sampling to make the dashboard load as fast as possible. There will be a clear note in your dashboard when you're viewing a report with sampled data.
+
+Note that we do collect and store 100% of the data no matter how many page views you have. Our stats API is completely unsampled so if you need 100% unsampled data for longer time ranges, you can use [our stats API](stats-api.md).
