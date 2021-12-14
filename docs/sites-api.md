@@ -116,9 +116,10 @@ curl -X PUT https://plausible.io/api/v1/sites/goals \
 ```json title="Response 200 OK"
 {
     "domain": "test-domain.com",
-    "goal_id": "1",
+    "id": "1",
     "goal_type": "event",
-    "event_name": "Signup"
+    "event_name": "Signup",
+    "page_path": null
 }
 ```
 
