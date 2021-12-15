@@ -12,7 +12,7 @@ The billing is based on the total number of pageviews between all of the sites y
 
 ## How do I get an invoice?
 
-Our payment processor Paddle sends an invoice to you via email automatically upon each payment. You can click on a link within this email to download your invoice.
+Our payment processor Paddle sends an invoice to you via email automatically upon each payment. You can click on a link within this email to download your invoice. You can also download invoices in your Plausible account settings. [See here](download-invoices.md).
 
 ## Do you support any alternative payment methods?
 
@@ -30,7 +30,11 @@ If you haven't added your company details during the subscription process, you c
 
 ## What happens if I go over my monthly page views limit?
 
-You will never be charged extra for an occasional traffic spike. We will not stop counting your stats and you will keep having access to your dashboard. There are no surprise fees and your card will never be charged unexpectedly. Suppose new higher traffic levels become your new standard and your page views exceed your subscription plan for two consecutive months. In that case, we kindly ask you to upgrade your subscription plan to accommodate your new traffic levels using our self-serve platform.
+You will never be charged extra for an occasional traffic spike. We will not stop counting your stats either. There are no surprise fees and your card will never be charged unexpectedly. 
+
+Suppose new higher traffic levels become your new standard and your page views exceed your subscription plan for two consecutive months. In that case, we kindly ask you to upgrade your subscription plan to accommodate your new traffic levels using our self-serve platform. 
+
+We will send you an email and an alert in app if your traffic levels exceed your subscription plan two months in a row.
 
 ## How does the billing work if I upgrade my subscription to a higher tier?
 
