@@ -14,7 +14,9 @@ Plausible Analytics is trusted by 2,000+ subscribers to deliver their website an
 
 * [Why choose Plausible for an open source alternative to Google Analytics](https://opensource.com/article/21/2/plausible) by Ben Rometsch on Opensource.com
 
-* [Leaving Google Analytics is Finally Plausible](https://blog.elementary.io/leaving-google-analytics-is-finally-plausible/) by Daniel Foré of elementary OS
+* [Leaving Google Analytics is Finally Plausible](https://blog.elementary.io/leaving-google-analytics-is-finally-plausible/) by Danielle Foré of elementary OS
+
+* [Is it Plausible to stop using Google Analytics?](https://www.wholegraindigital.com/blog/plausible-vs-google-analytics/) by Tom Greenwood of Wholegrain Digital
 
 * [Taking on the Major Players, Plausible Analytics Offers an Alternative, Privacy-Conscious Stats Service](https://wptavern.com/taking-on-the-major-players-plausible-analytics-offers-an-alternative-privacy-conscious-stats-service) by Justin Tadlock of WordPress Tavern
 
