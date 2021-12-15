@@ -13,7 +13,7 @@ module.exports = {
     ],
     "API": ['stats-api',  'events-api', 'sites-api'],
     "Account Settings": ['change-email', 'reset-password', 'dashboard-appearance', 'delete-account'],
-    "Manage Subscription": ['trial-to-paid', 'subscription-plans', 'change-plan', 'cancel-subscription', 'billing'],
+    "Manage Subscription": ['trial-to-paid', 'subscription-plans', 'change-plan', 'cancel-subscription', 'download-invoices', 'billing'],
     "Self-Hosting": ['self-hosting', 'self-hosting-configuration'],
     "Contribute": ['contribute', 'plausible-analytics-reviews', 'authors'],
   },
