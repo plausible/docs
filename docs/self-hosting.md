@@ -63,7 +63,7 @@ In the downloaded directory you'll find two important files:
 
 ### 2. Add required configuration
 
-The configuration file, `plausible-conf.env`, has placeholders for the required parameters. To set the parameters you'll first need random 64-character secret key which will be used to secure the app. Here's a simple way to generate one:
+The configuration file, `plausible-conf.env`, has placeholders for the required parameters. To set the parameters you'll first need a random 64-character secret key which will be used to secure the app. Here's a simple way to generate one:
 
 ```bash
 $ openssl rand -base64 64 | tr -d '\n' ; echo
@@ -109,7 +109,7 @@ The Plausible server itself does not perform SSL termination. It only runs on un
 ### 3. Updating Plausible
 
 Plausible is updated regularly, but it is up to you to apply these updates on your server.
-By virtue of using Docker, these upates are safe and easy to apply.
+By virtue of using Docker, these updates are safe and easy to apply.
 
 ```bash
 $ docker-compose down --remove-orphans
@@ -129,7 +129,7 @@ your instance:
 
 Plausible uses the country database created by [dbip](https://db-ip.com/) for enriching analytics data with visitor countries. The database is shipped with Plausible and country data collection happens automatically.
 
-Optionally, you can provide different database. For example, you can use [MaxMind](https://www.maxmind.com) services. Their end-user license does not make it very easy to just package the database along with an open-source product.
+Optionally, you can provide a different database. For example, you can use [MaxMind](https://www.maxmind.com) services. Their end-user license does not make it very easy to just package the database along with an open-source product.
 
 This is why, to use MaxMind, you need to create an account [here](https://www.maxmind.com/en/geolite2/signup). Once you have your account details, open the `geoip/geoip.conf` file and enter your `GEOIPUPDATE_ACCOUNT_ID` and `GEOIPUPDATE_LICENSE_KEY`. Then, combine both the base docker-compose file with the one in the geoip folder:
 
