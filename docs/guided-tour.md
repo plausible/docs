@@ -49,7 +49,7 @@ See all the most visited pages on your site ranked by the number of unique visit
 You can also get insights into the visitor flow by looking at the "**Entry pages**" and "**Exit pages**". Click on the "**details**" button to see the full list with additional metrics. For "**Entry pages**" details include visit duration for visits that started on a specific page and for "**Exit pages**" details include the exit rate percentage.
 
 :::note
-Looking for the definitons of the metrics you have access to? [See this list](metrics-definitions.md).
+Looking for the definitions of the metrics you have access to? [See this list](metrics-definitions.md).
 :::
 
 ## Countries
@@ -59,7 +59,7 @@ Looking for the definitons of the metrics you have access to? [See this list](me
 See the list of countries your traffic is coming from. You can click on the "**details**" button to see the full list of countries ranked by the number of visitors. There you can also see the percentage of your total traffic the individual country stands for.
 
 :::note
-Want a quicker way to navigate the dashboard? You can use the keyboard shortcuts to do so. Here's [the full list of shotcuts we support](keyboard-shortcuts.md).
+Want a quicker way to navigate the dashboard? You can use the keyboard shortcuts to do so. Here's [the full list of shortcuts we support](keyboard-shortcuts.md).
 :::
 
 ## Devices
