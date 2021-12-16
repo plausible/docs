@@ -74,7 +74,7 @@ Alternatively, you can use Postmark to send transactional emails. In this case, 
 Plausible uses the country database created by [dbip](https://db-ip.com/) for enriching analytics data with visitor countries. The
 database is shipped with Plausible and country data collection happens automatically.
 
-Optionally, you can provide different database. For example, you can use [MaxMind](https://www.maxmind.com) services.
+Optionally, you can provide a different database. For example, you can use [MaxMind](https://www.maxmind.com) services.
 You need to create an account and download their **GeoLite2 Country** database.
 
 Once you have the database, mount it on the Plausible docker image and configure the path of the database file:
@@ -128,7 +128,7 @@ To enable the Google Search Console integration, as is described elsewhere in th
 
 1. Click "SAVE AND CONTINUE". No "Scopes" are required, so click "SAVE AND CONTINUE" again.
 
-1. The "app" will be created with status set to "Testing". To avoid having to verify it with Google, you must enter the email address of your Google Account as a "Test user". Add the email address and then click "SAVE AND CONTNUE" and the OAuth Consent Screen configuration is complete.
+1. The "app" will be created with status set to "Testing". To avoid having to verify it with Google, you must enter the email address of your Google Account as a "Test user". Add the email address and then click "SAVE AND CONTINUE" and the OAuth Consent Screen configuration is complete.
 
 #### Task Three: Enable Google Search Console API
 
@@ -150,7 +150,7 @@ Although you can now grant your Plausible installation access to your Google acc
 
 4. Finally, return to APIs & Services, and select "Domain verification". If you can't see the "Domain verification" menu item, open the navigation ("hamburger") menu in the top left corner and select "APIs & Services". "Domain verification" is a menu item below that.
 
-5. Add the same domain you used in Step 2 above. You will prompted to go to Google Search Console to finish configuration, which coincidentally is exactly where you need to be to start the [Google Search Console Integration](google-search-console-integration.md) instructions.
+5. Add the same domain you used in Step 2 above. You will be prompted to go to Google Search Console to finish configuration, which coincidentally is exactly where you need to be to start the [Google Search Console Integration](google-search-console-integration.md) instructions.
 
 ### Twitter Integration
 
