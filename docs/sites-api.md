@@ -134,7 +134,7 @@ Id of your site in Plausible.
 
 **goal_type** <Required />
 
-Type of your goal, accepts only one of teh following values: `event` or `page` 
+Type of your goal, accepts only one of the following values: `event` or `page` 
 
 <hr / >
 
