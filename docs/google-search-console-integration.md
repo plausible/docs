@@ -91,7 +91,7 @@ Google samples its keyword data heavily. The sampling is why your keyword visito
 
 ## Plausible Analytics will be listed in your Google account settings
 
-You can always view your Plausible Analytics integration in your Google account within the section "**Third-party apps with account access**". Here's how it looks like.
+You can always view your Plausible Analytics integration in your Google account within the section "**Third-party apps with account access**". Here's how it looks.
 
 <img alt="Third-party apps with account access" src={useBaseUrl('img/third-party-apps.png')} />
 
