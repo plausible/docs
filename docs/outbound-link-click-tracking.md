@@ -34,7 +34,7 @@ The new snippet will look like this (make sure to change the `data-domain` attri
 
 As usual, you need to place your Plausible Analytics tracking script code into the Header (`<head>`) section of your site. Place the tracking script within the `<head> … </head>` tags.
 
-Do this for all the websites where you'd like to enable outbound link click tracking. This is the only tracking script you need. You don't need to keep the old script. Your stats will keep tracking without intteruption and you will not lose any of your old data.
+Do this for all the websites where you'd like to enable outbound link click tracking. This is the only tracking script you need. You don't need to keep the old script. Your stats will keep tracking without interuption and you will not lose any of your old data.
 
 ## Step 2: Create a custom event goal in your Plausible Analytics account
 
@@ -50,7 +50,7 @@ Select `Custom event` as the goal trigger and enter this exact name: `Outbound L
 
 <img alt="Add Outbound Link Click goal" src={useBaseUrl('img/outbound-link-click-goal.png')} />
 
-Next, click on the "**Add goal**" button and you’ll be taken back to the Goals page. After you've completed this process, all the external link clicks will start being tracked and will be displayed in the "**Goal Conversions**" report of your Plausible Analytics dashboard. You'll see "**Outbound Link: Click**" goal as soon as the first external link click has been tracked.
+Next, click on the "**Add goal**" button and you’ll be taken back to the Goals page. After you've completed this process, all the external link clicks will start being tracked and will be displayed in the "**Goal Conversions**" report of your Plausible Analytics dashboard. You'll see the "**Outbound Link: Click**" goal as soon as the first external link click has been tracked.
 
 ## See all the outbound link clicks in your dashboard
 
