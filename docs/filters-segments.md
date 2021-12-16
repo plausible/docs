@@ -36,7 +36,7 @@ Click on "Add filter", then select "Country" as your metric, choose "Is Not" and
 
 ### Group your pages
 
-Want to group all of your blog posts and analyse the traffic to the blog separately from the rest of your site? Or exclude traffic that has visited a specific section of your site such as your logged in pages or your order confirmation page?
+Want to group all of your blog posts and analyze the traffic to the blog separately from the rest of your site? Or exclude traffic that has visited a specific section of your site such as your logged in pages or your order confirmation page?
 
 When searching for pages, you can use double asterisks to match any character (e.g. `/blog**`). Filter for pages supports wildcards in the following format:
 
