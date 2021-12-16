@@ -70,7 +70,7 @@ Or in case you're proxying our script, use this. Remember to change `yourproxy.c
 
 You can test your filter by:
 
-* Reloading your website multiple times and making sure that the total page views number in your Plauible Analytics dashboard does not increase. This isn’t very reliable if there are other people visiting your site at the same time.
+* Reloading your website multiple times and making sure that the total page views number in your Plausible Analytics dashboard does not increase. This isn’t very reliable if there are other people visiting your site at the same time.
 
 * Alternatively you can load your website, open the browser inspector (press F12 in Firefox or Chrome), and ensure that the Plausible Analytics script is not loading in the "**Network**" tab.
 
