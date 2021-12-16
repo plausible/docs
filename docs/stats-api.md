@@ -14,7 +14,7 @@ Calls made over plain HTTP will fail. API requests without authentication will a
 Each request must be authenticated with an API key using the Bearer Token method. You can obtain an API key for your account by going to your user
 settings page [plausible.io/settings](https://plausible.io/settings).
 
-API keys have a rate limit of 600 requests per hour by default. If you have special needs for more request, please contact us to request more capacity.
+API keys have a rate limit of 600 requests per hour by default. If you have special needs for more requests, please contact us to request more capacity.
 
 The easiest way to explore the API is by using our Postman collection. Just define your `TOKEN` and `SITE_ID` variables and you'll have an executable API reference ready to go.
 
@@ -32,7 +32,7 @@ settings in Plausible and grab the value of the `domain` field.
 
 The options are identical for each endpoint that supports configurable time periods. Each period
 is relative to a `date` parameter. The date should follow the standard ISO-8601 format. When not specified, the `date` field defaults to `today(site.timezone)`.
-All time calculations on our backend are done in the timezone that the site is configured in.
+All time calculations on our backend are done in the time zone that the site is configured in.
 
 * `12mo,6mo` - Last n calendar months relative to `date`
 * `month` - The calendar month that `date` falls into
@@ -89,7 +89,7 @@ visit:browser==Firefox;visit:country==France
 ```
 
 You can join values together with a `|` to express an IN filter. The filter will match if the key is
-in any of the values. For example, the followign filter:
+in any of the values. For example, the following filter:
 
 ```
 visit:country==France|Germany
@@ -263,7 +263,7 @@ Choose your reporting interval. Valid options are `date` (always) and `month` (w
 
 ### GET /api/v1/stats/breakdown
 
-This endpoint allows you to breakdown your stats by some property. If you are familiar with SQL family databases, this endpoint corresponds to
+This endpoint allows you to break down your stats by some property. If you are familiar with SQL family databases, this endpoint corresponds to
 running `GROUP BY` on a certain property in your stats.
 
 Check out the [properties](#properties) section for a reference of all the properties you can use in this query.
