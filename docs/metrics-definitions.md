@@ -18,13 +18,13 @@ The percentage of visitors with a single page view. A visitor "bounces" away and
 
 ## Visit Duration
 
-How long time visitors spend on your site. It only shows people who visit more than one page. For those who visit one page only we default to 0 seconds. Average visit duration is the sum of all session lengths divided by the number of sessions, which includes the 0 second visits (bounces).
+The amount of time visitors spend on your site. It only shows people who visit more than one page. For those who visit one page only we default to 0 seconds. Average visit duration is the sum of all session lengths divided by the number of sessions, which includes the 0 second visits (bounces).
 
-Session is a set of actions that a user takes on your site. A session is started when a visitor first lands on your page and ended when no action is taken on your site for 30 minutes.
+Session is a set of actions that a user takes on your site. A session is started when a visitor first lands on your page and ends when no action is taken on your site for 30 minutes.
 
 ## Current Visitors
 
-How many people are currently on your site. This metric does not depend on the filters applied to the dashboard. It includes all visitors who have loaded a page in the last 5 minutes. You can click on the number to see what pages they are viewing.
+The number of people currently on your site. This metric does not depend on the filters applied to the dashboard. It includes all visitors who have loaded a page in the last 5 minutes. You can click on the number to see what pages they are viewing.
 
 ## Source
 
@@ -44,7 +44,7 @@ To minimize the amount of traffic that falls within the "Direct / None" category
 
 ## Time on Page
 
-Time on Page shows the time people spend on average on a particular page on your site. Time on page is calculated as the difference between the point when a person lands on a particular page and when they move on to the next page.
+The average time people spend on a particular page on your site. This is calculated as the difference between the point when a person lands on a particular page and when they move on to the next page.
 
 ## Entry Pages
 
