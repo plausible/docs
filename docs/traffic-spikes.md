@@ -14,7 +14,7 @@ All the stats are embedded directly into the email and there's no need to go to 
 
 ## Set the current visitor threshold for the traffic spike notifications
 
-You need to set the "**Current visitor threshold**" for your traffic spike notifications and click on the "**Save threshold**" button. The default treshold is at 10 current visitors but you can set it as low or as high as you want depending on your usual traffic numbers. 
+You need to set the "**Current visitor threshold**" for your traffic spike notifications and click on the "**Save threshold**" button. The default threshold is at 10 current visitors but you can set it as low or as high as you want depending on your usual traffic numbers. 
 
 You will get the traffic spike notification when your site reaches the threshold you've set. You'll get the notification for an individual website no more than twice in a 24 hour period.
 
