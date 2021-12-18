@@ -9,6 +9,8 @@ The Plausible Events API can be used to record pageviews and custom events. This
 In most cases we recommend installing Plausible via our provided [script](/docs/plausible-script) or one of the many
 integration packages listed [here](/docs/integration-guides). However, if there's no easy way for you to integrate with Plausible, you can still do so by sending events directly to our API.
 
+In addition, the Plausible Stats API offers a way to retrieve all defined goals/events with their properties.
+
 ## Endpoints
 ### POST /api/event
 
@@ -79,6 +81,71 @@ Width of the screen. When using the script, this is set to `window.innerWidth`
 **props** <Optional />
 
 Custom properties for the event. See: https://plausible.io/docs/custom-event-goals#using-custom-props
+<hr / >
+
+### GET /api/v1/events/
+
+This endpoint returns all defined goals/events for a specific site with their properties. See: https://plausible.io/docs/custom-event-goals#using-custom-props
+
+```bash title="Try it yourself"
+curl "https://plausible.io/api/v1/events/?site_id=$SITE_ID"
+  -H "Authorization: Bearer ${TOKEN}"
+```
+
+```json title="Response"
+[
+  {
+    "event_type": "custom",
+    "id": 1,
+    "name": "404",
+    "props": [
+      "path",
+      "method",
+      "version"
+    ]
+  },
+  {
+    "event_type": "pageview",
+    "id": 2,
+    "name": "Visit /x",
+    "props": []
+  },
+  {
+    "event_type": "custom",
+    "id": 3,
+    "name": "Signup",
+    "props": []
+  }
+]
+```
+
+#### Parameters
+<hr / >
+
+**site_id** <Required />
+
+Domain of your site on Plausible.
+<hr / >
+
+### GET /api/v1/events/:event_id/properties
+
+This endpoint returns all properties for a single goal/event. See: https://plausible.io/docs/custom-event-goals#using-custom-props
+
+```bash title="Try it yourself"
+curl "https://plausible.io/api/v1/events/1/properties?site_id=$SITE_ID"
+  -H "Authorization: Bearer ${TOKEN}"
+```
+
+```json title="Response"
+["path", "method", "version"]
+```
+
+#### Parameters
+<hr / >
+
+**site_id** <Required />
+
+Domain of your site on Plausible.
 <hr / >
 
 :::note
