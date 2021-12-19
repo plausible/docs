@@ -93,30 +93,32 @@ curl "https://plausible.io/api/v1/events/?site_id=$SITE_ID"
 ```
 
 ```json title="Response"
-[
-  {
-    "event_type": "custom",
-    "id": 1,
-    "name": "404",
-    "props": [
-      "path",
-      "method",
-      "version"
-    ]
-  },
-  {
-    "event_type": "pageview",
-    "id": 2,
-    "name": "Visit /x",
-    "props": []
-  },
-  {
-    "event_type": "custom",
-    "id": 3,
-    "name": "Signup",
-    "props": []
-  }
-]
+{
+  "results": [
+    {
+      "event_type": "custom",
+      "id": 1,
+      "name": "404",
+      "props": [
+        "path",
+        "method",
+        "version"
+      ]
+    },
+    {
+      "event_type": "pageview",
+      "id": 2,
+      "name": "Visit /x",
+      "props": []
+    },
+    {
+      "event_type": "custom",
+      "id": 3,
+      "name": "Signup",
+      "props": []
+    }
+  ]
+}
 ```
 
 #### Parameters
@@ -137,7 +139,9 @@ curl "https://plausible.io/api/v1/events/1/properties?site_id=$SITE_ID"
 ```
 
 ```json title="Response"
-["path", "method", "version"]
+{
+  "results": ["path", "method", "version"]
+}
 ```
 
 #### Parameters
