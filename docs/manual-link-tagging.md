@@ -40,7 +40,7 @@ We merge all the identical sources in the "All" tab of the "Top Sources" report.
 
 If you tag some links that you share on Facebook such as your paid ads with the utm_source=Facebook, clicks on those will be merged alongside organic Facebook clicks in the "All" tab. 
 
-Then you can see combined number of clicks between organic and UTM-tagged clicks in the "All" tab and you can segment by UTM tagged clicks only in the "Medium", "Source" and "Campaign" tabs.
+Then you can see combined number of clicks between organic and UTM-tagged clicks in the "All" tab and you can segment by UTM tagged clicks only in the "Medium", "Source", "Campaign", "Term" and "Content" sections.
 
 :::note 
 UTM and other tags are case-sensitive so utm_source=Twitter and utm_source=twitter will show separately in your analytics dashboard.
