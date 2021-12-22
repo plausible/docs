@@ -2,8 +2,9 @@
 title: Tracking custom query parameters
 ---
 
-By default Plausible strips all query parameters except `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term`.
-This means that pages like `yoursite.com/blog/index.php?article=some_article&page=11` will be reported to your dashboard as `yoursite.com/blog/index.php`.
+By default, Plausible strips all query parameters for privacy purposes [except](manual-link-tagging.md) `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term`. 
+
+This means that pages like `yoursite.com/blog/index.php?article=some_article&page=11` will be reported as `yoursite.com/blog/index.php` in the Top Pages report of your Plausible dashboard.
 
 If you still want some pages to be reported with the complete URL that includes the query part, here's what you should do:
 
@@ -22,9 +23,9 @@ Do this on all the pages where you want to track the custom query parameters.
 
 ## 2. Trigger the pageview event with a custom `u` attribute
 
-Once you've added the manual extension, the `pageview` event won't be sent automatically anymore: you'll have to trigger it manually.
+Once you've started using the manual extension, the `pageview` event won't be sent automatically. This means that the stats won't be tracked anymore by default. You'll have to trigger the events to be counted manually.
 
-To trigger events manually, you need to add the following script after your regular Plausible tracking script:
+To trigger events manually, you need to add the following script after your regular Plausible tracking snippet:
 
 ```html
 <!-- define the `plausible` function to manually trigger events -->
@@ -57,7 +58,7 @@ For example, for `yoursite.com/blog/index.php?article=some_article&page=11` you 
 plausible('pageview', { u: prepareUrl(["article", "page"]) });
 ```
 
-and the page path will be reported to your dashboard as `blog/inex.php/some_article/11`
+and the page path will be reported to your dashboard as `blog/index.php/some_article/11`
 
 At this point, your entire setup should look like this:
 
