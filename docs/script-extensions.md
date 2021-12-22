@@ -29,6 +29,8 @@ You can mix and match, and combine extensions any way that you wish. And you onl
 This approach makes sure that you only load code that will actually be used on your website. Websites should not have to load dozens or hundreds of kilobytes
 of dead Javascript code on every pageload which degrades the user experience and causes unnecessary network traffic.
 
+## All our script extensions 
+
 Here's the list of all the available extensions at this time:
 
 | Extension                   | Explanation                                                                                        |
@@ -40,7 +42,7 @@ Here's the list of all the available extensions at this time:
 | plausible.local.js          | Allow analytics to track on localhost too which is useful in hybrid apps                           |
 | plausible.manual.js         | [Do not trigger pageviews automatically](#plausiblemanualjs). Also allows you to [specify custom locations](custom-locations.md) to redact URLs with identifiers. You can also use it to track [custom query parameters](custom-query-params.md)|
 
-### plausible.compat.js
+## plausible.compat.js
 
 The default Plausible script will not work on Internet Explorer because it uses the [document.currentScript](https://caniuse.com/document-currentscript) API to read configuration options. You can run Plausible in compatibility mode by including the `plausible.compat.js` extension and defining `id="plausible"` on the script tag so that it can find itself. Here's how it should look like:
 
@@ -48,7 +50,7 @@ The default Plausible script will not work on Internet Explorer because it uses 
 <script id="plausible" defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.compat.js"></script>
 ```
 
-### plausible.manual.js
+## plausible.manual.js
 
 By default, the Plausible script triggers a pageview when it is first loaded. It also attaches listeners to the History API and will automatically trigger pageviews when you use `history.pushState`. This is useful for most websites but we also offer a manual mode in case you want full control over when pageviews are triggered on your website.
 
@@ -70,13 +72,13 @@ document.addEventListener("turbo:load", function() {
 When using turbolinks, make sure that the Plausible script isn't loaded and executed during turbo navigation. You may need to move the script to the `<head>` section of your website or use the `data-turbo-eval="false"` attribute.
 :::
 
-#### Specify custom locations for your page URLs
+### Specify custom locations for your page URLs
 
 Additionally, the manual script extension allows you to provide a special option named `u` with your events. This allows you to specify the URL of the page and can be used to specify custom locations. 
 
 It is especially helpful to redact and aggregate multiple pages whose URLs contain identifiers that are specific to users. [Learn more about specifying custom URLs in your events](custom-locations.md).
 
-#### Track custom query parameters for complete page URLs
+### Track custom query parameters for complete page URLs
 
 By default, Plausible strips all query parameters for privacy purposes [except](manual-link-tagging.md) `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term`. 
 
