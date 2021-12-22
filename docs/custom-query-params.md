@@ -3,9 +3,9 @@ title: Tracking custom query parameters
 ---
 
 By default Plausible strips all query parameters except `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term`.
-This means that pages like `yoursite.com/blog?article=some_article&page=11` will be reported to your dashboard as `yoursite.com/blog`.
+This means that pages like `yoursite.com/blog/index.php?article=some_article&page=11` will be reported to your dashboard as `yoursite.com/blog/index.php`.
 
-If you still want some pages to be reported with that query part of the URL, here's what you should do:
+If you still want some pages to be reported with the complete URL that includes the query part, here's what you should do:
 
 ## 1. Add the `manual` script extension
 
@@ -51,13 +51,13 @@ make the query part of the URL look like a standard subfolder. To do so, add the
 </script>
 ```
 Make sure to replace `CUSTOM_PARAM_X` with your query parameter names. You can define as many as you want.
-For example, for `yoursite.com/blog?article=some_article&page=11` you could write the last line as
+For example, for `yoursite.com/blog/index.php?article=some_article&page=11` you could write the last line as
 
 ```javascript
 plausible('pageview', { u: prepareUrl(["article", "page"]) });
 ```
 
-and the page path will be reported to your dashboard as `blog/some_article/11`
+and the page path will be reported to your dashboard as `blog/inex.php/some_article/11`
 
 At this point, your entire setup should look like this:
 
@@ -80,3 +80,5 @@ At this point, your entire setup should look like this:
   plausible('pageview', { u: prepareUrl(["CUSTOM_PARAM_1", "CUSTOM_PARAM_2", ... ]) })
 </script>
 ```
+
+That's it! You're now tracking the complete URLs of the pages that include custom parameters. 
