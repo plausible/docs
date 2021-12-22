@@ -38,7 +38,7 @@ Here's the list of all the available extensions at this time:
 | plausible.exclusions.js     | [Exclude certain pages from being tracked](excluding-pages.md)                                     |
 | plausible.compat.js         | Compatibility mode for [tracking users on Internet Explorer](#plausiblecompatjs)                   |
 | plausible.local.js          | Allow analytics to track on localhost too which is useful in hybrid apps                           |
-| plausible.manual.js         | [Do not trigger pageviews automatically](#plausiblemanualjs). Also allows you to [specify custom locations](custom-locations.md) to redact URLs with identifiers.|
+| plausible.manual.js         | [Do not trigger pageviews automatically](#plausiblemanualjs). Also allows you to [specify custom locations](custom-locations.md) to redact URLs with identifiers. You can also use it to track [custom query parameters](custom-query-params.md)|
 
 ### plausible.compat.js
 
@@ -75,3 +75,11 @@ When using turbolinks, make sure that the Plausible script isn't loaded and exec
 Additionally, the manual script extension allows you to provide a special option named `u` with your events. This allows you to specify the URL of the page and can be used to specify custom locations. 
 
 It is especially helpful to redact and aggregate multiple pages whose URLs contain identifiers that are specific to users. [Learn more about specifying custom URLs in your events](custom-locations.md).
+
+#### Track custom query parameters for complete page URLs
+
+By default, Plausible strips all query parameters for privacy purposes [except](manual-link-tagging.md) `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term`. 
+
+This means that pages like `yoursite.com/blog/index.php?article=some_article&page=11` will be reported as `yoursite.com/blog/index.php` in the Top Pages report of your Plausible dashboard.
+
+By using the manual script extension, you can also track custom query parameters and get the complete page URLs in your Top Pages report. Learn here [how to do that](custom-query-params.md).
