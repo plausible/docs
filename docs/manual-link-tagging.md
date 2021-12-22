@@ -47,3 +47,7 @@ UTM and other tags are case-sensitive so utm_source=Twitter and utm_source=twitt
 :::
 
 Read more about "[how to use UTM parameters to track your campaigns and understand the dark traffic](https://plausible.io/blog/utm-tracking-tags)".
+
+:::note 
+Does your site use page URLs like `yoursite.com/blog/index.php?article=some_article&page=11`? They will be reported as `yoursite.com/blog/index.php` in the Top Pages report of your Plausible dashboard as we strip custom parameters. You can manually enable these custom parameters to be tracked. [See how here](custom-query-params.md).
+:::
