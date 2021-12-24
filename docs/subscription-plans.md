@@ -20,11 +20,11 @@ You can get 2 months free if you subscribe to a yearly plan and pay annually. Yo
 
 ## What happens if I go over my monthly page views limit?
 
-You will never be charged extra for an occasional traffic spike. We will never stop counting your stats because of an occasional traffic spike and you will keep having access to your dashboard. There are no surprise fees and your card will never be charged unexpectedly. 
+You will never be charged extra for an occasional traffic spike. We will never stop counting your stats because of an occasional traffic spike. There are no surprise fees and your card will never be charged unexpectedly. 
 
-Suppose new higher traffic levels become your new standard and your page views exceed your subscription plan for two consecutive months. In that case, we kindly ask you to upgrade your subscription plan to accommodate your new traffic levels using our self-serve platform. The new charge will be prorated to reflect the amount you have already paid and the time until your current subscription is supposed to expire. 
+Suppose new higher traffic levels become your new standard and your page views exceed your subscription plan for two consecutive months. In that case, we will contact you and ask you to upgrade your subscription plan to accommodate your new traffic levels using our self-serve platform. The new charge will be prorated to reflect the amount you have already paid and the time until your current subscription is supposed to expire. 
 
-If you don't do that, we will contact you to remind you to upgrade to a higher plan. After we contact you, you will have two weeks to make a decision. You can decide to continue with a higher plan or to cancel your account at that point.
+After we contact you, you will have a week to make a decision. You can decide to continue with a higher plan or to cancel your account at that point.
 
 ## Features that are available on every plan
 
