@@ -21,10 +21,6 @@ Shows the browsers used by your visitors. We only show the brand of the browser 
 The percentage of visitors that take a desired action such as subscribing to a newsletter or signing up for an account. Calculated as follows:
 unique conversions for a goal / unique visitors, where both values depend on the filters applied to the dashboard.
 
-## Countries
-
-Shows the list of countries your visitors are based in.
-
 ## Current Visitors
 
 The number of people currently on your site. This metric does not depend on the filters applied to the dashboard. It includes all visitors who have loaded a page in the last 5 minutes. You can click on the number to see what pages they are viewing.
@@ -48,6 +44,10 @@ Shows how often people exit from a specific page. It's calculated as the number 
 ## Goals
 
 You can use goals to track desired actions people take on your site. Goals can be based on people [visiting a particular page](pageview-goals.md) or [triggering a particular event](custom-event-goals.md) such as subscribing to a newsletter or signing up for an account. You can even use custom properties to create your own metrics to collect and analyze data that Plausible doesn’t automatically track.
+
+## Locations
+
+Shows the list of countries, regions and cities your visitors are based in.
 
 ## Operating System
 
