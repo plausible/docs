@@ -52,11 +52,11 @@ You can also get insights into the visitor flow by looking at the "**Entry pages
 Looking for the definitions of the metrics you have access to? [See this list](metrics-definitions.md).
 :::
 
-## Countries
+## Locations
 
 <img alt="Countries" src={useBaseUrl('img/countries.png')} />
 
-See the list of countries your traffic is coming from. You can click on the "**details**" button to see the full list of countries ranked by the number of visitors. There you can also see the percentage of your total traffic the individual country stands for.
+See the list of countries, regions and cities your traffic is coming from. You can click on the "**details**" button to see the full list ranked by the number of visitors.
 
 :::note
 Want a quicker way to navigate the dashboard? You can use the keyboard shortcuts to do so. Here's [the full list of shortcuts we support](keyboard-shortcuts.md).
