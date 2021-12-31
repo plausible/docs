@@ -3,7 +3,7 @@ title: Configuration options
 ---
 
 :::note
-The easiest way to get started with Plausible is with [our official managed service in the Cloud](https://plausible.io/#pricing). It takes 2 minutes to start counting your stats with a worldwide CDN, high availability, backups, security and maintenance all done for you by us. Our managed hosting can save a substantial amount of developer time and resources. For most sites this ends up being the best value option and the revenue goes to funding the maintenance and further development of Plausible. So you’ll be supporting open source software and getting a great service! The section below is for self-hosting our analytics on your server and managing your infrastructure. 
+The easiest way to get started with Plausible is with [our official managed service in the Cloud](https://plausible.io/#pricing). It takes 2 minutes to start counting your stats with a worldwide CDN, high availability, backups, security and maintenance all done for you by us. Our managed hosting can save a substantial amount of developer time and resources. For most sites this ends up being the best value option and the revenue goes to funding the maintenance and further development of Plausible. So you’ll be supporting open source software and getting a great service! The section below is for self-hosting our analytics on your server and managing your infrastructure.
 :::
 
 When running a Plausible release, the following configuration parameters can be supplied as environment variables.
@@ -116,7 +116,7 @@ To enable the Google Search Console integration, as is described elsewhere in th
 | GOOGLE_CLIENT_ID    | --        | The Client ID from the Google API Console for your Plausible Analytics project                       |
 | GOOGLE_CLIENT_SECRET| --        | The Client Secret from the Google API Console for your Plausible Analytics project                   |
 
-7. Force the new config values to take effect by restarting your Plausible site (eg. with the command `docker-compose restart`).
+7. Force the new config values to take effect by restarting your Plausible site (eg. with the command `docker-compose down --remove-orphans && docker-compose up -d`).
 
 #### Task Two: Configure the OAuth Consent Screen
 
