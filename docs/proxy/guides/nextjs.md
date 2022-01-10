@@ -1,5 +1,5 @@
 ---
-title: Proxying Plausible through Next.js / Vercel
+title: Proxying Plausible through Vercel with Next.js
 ---
 
 There are two ways you can proxy Plausible through Next.js / Vercel. One is using the next-plausible npm package and the other is using the raw Next.js config. Here are the instructions:
