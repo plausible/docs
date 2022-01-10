@@ -2,21 +2,15 @@
 title: Proxying Plausible through Vercel
 ---
 
-## Intro
-
 Redirecting an application in [Vercel](https://vercel.com/) is straightforward:
 
 1. add a special Vercel project configuration file
 2. configure the file to rewrite script location and API calls
 3. add a specially-attributed script tag to your application's HTML
 
-If you are hosting a **Next.js** application, see:
+If you are hosting a **Next.js** application, see [Proxying Plausible through Next.js / Vercel](https://plausible.io/docs/proxy/guides/nextjs).
 
-- [Proxying Plausible through Next.js / Vercel](https://plausible.io/docs/proxy/guides/nextjs)
-
-## Steps
-
-### Add a configuration file
+## Step 1: Add configuration file
 
 > See Vercel's [project configuration](https://vercel.com/docs/cli#project-configuration) docs
 
@@ -26,7 +20,7 @@ Add a special `vercel.json` file in your application root:
 /vercel.json
 ```
 
-### Configure rewrites
+## Step 2: Configure rewrites
 
 >  See Vercel's [rewrites](https://vercel.com/docs/cli#project-configuration/rewrites) docs
 
@@ -52,7 +46,7 @@ Note that:
 - the source paths identified here **must be** used when configuring the HTML script tag in the next section
 - you can use whatever paths you like here (for example, here prefixing with  `/stats/`)
 
-### Add the script tag
+## Step 3: Add the script tag
 
 > See Plausible's [script tag](https://plausible.io/docs/plausible-script) docs 
 
