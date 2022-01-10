@@ -18,7 +18,7 @@ See the number of unique visitors, total page views, the bounce rate (the percen
 
 Choose the time range that you want to analyze in the date picker in the top right. The visitor numbers are automatically presented on an hourly, daily, or monthly graph. The default time frame is set at the last 30 days.
 
-By clicking on the number of "**current visitors**" or by selecting "**Realtime**" in the date picker in the top right, you can see the realtime dashboard that tells you what's happening on your site live in that moment. It also includes a pageview graph for the last 30 minutes. The realtime dashboard is live so you don’t have to refresh it to stay up to date.
+By clicking on the number of "**current visitors**" (defined as those that visited the site in the last 5 minutes) or by selecting "**Realtime**" in the date picker in the top right, you can see the realtime dashboard that tells you what's happening on your site live in that moment. It also includes a pageview graph for the last 30 minutes. The realtime dashboard is updated every 30 seconds so you don’t have to refresh it to stay up to date.
 
 :::note
 Click on your site name in the top left side of your dashboard. It allows you to select "[Site Settings](website-settings.md)" in the dropdown menu but also switch to a different site you have added to your Plausible account.
