@@ -59,7 +59,8 @@ Standalone proxy setups:
 
 Integrated proxy setups:
 * [Netlify](/docs/proxy/guides/netlify)
-* [Next.JS / Vercel](/docs/proxy/guides/nextjs)
+* [Vercel](/docs/proxy/guides/vercel)
+* [Vercel with Next.JS](/docs/proxy/guides/nextjs)
 * [Nginx](/docs/proxy/guides/nginx)
 * [Caddy](/docs/proxy/guides/caddy)
 * [Shared hosting on Apache](https://github.com/Neoflow/ReverseProxy-PlausibleAnalytics)

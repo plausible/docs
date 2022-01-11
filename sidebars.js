@@ -8,7 +8,7 @@ module.exports = {
       {
         type: 'category',
         label: 'Guides',
-        items: ['proxy/guides/cloudflare', 'proxy/guides/akamai', 'proxy/guides/netlify', 'proxy/guides/nextjs', 'proxy/guides/cloudfront', 'proxy/guides/nginx', 'proxy/guides/caddy'],
+        items: ['proxy/guides/cloudflare', 'proxy/guides/akamai', 'proxy/guides/netlify', 'proxy/guides/vercel', 'proxy/guides/nextjs', 'proxy/guides/cloudfront', 'proxy/guides/nginx', 'proxy/guides/caddy'],
       }
     ],
     "API": ['stats-api',  'events-api', 'sites-api'],
