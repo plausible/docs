@@ -2,7 +2,7 @@
 title: Proxying Plausible through Vercel
 ---
 
-If you are hosting a **Next.js** application, see [Proxying Plausible through Next.js / Vercel](https://plausible.io/docs/proxy/guides/nextjs).
+If you are hosting a **Next.js** application, see [Proxying Plausible through Next.js / Vercel](/proxy/guides/nextjs.md).
 
 ## Step 1: Add configuration file
 
@@ -42,7 +42,7 @@ Note that:
 
 ## Step 3: Add the script tag
 
-> See Plausible's [script tag](https://plausible.io/docs/plausible-script) docs 
+> See Plausible's [script tag](plausible-script.md) docs 
 
 Add a script tag to your application's HTML page, passing the values configured above as attributes:
 
@@ -56,3 +56,4 @@ Add a script tag to your application's HTML page, passing the values configured 
 
 Note that the `src` and `data-api` attributes **must match** the `source` values in the `vercel.json` file.
 
+Thanks to [davestewart](https://github.com/davestewart) for contributing these instructions!
