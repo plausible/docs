@@ -20,9 +20,9 @@ You can use "**Google Tag Manager**" to add Plausible Analytics tracking code to
 
 That's it! Now you can go to your website and verify whether Plausible Analytics script has been added and to your Plausible Analytics account to see whether the stats are being tracked. See here [how to verify the integration](troubleshoot-integration.md).
 
-## Tracking a subfolder or reporting to multiple dashboards
+## Track a subfolder or report to multiple dashboards
 
-If you'd like to track a subfolder (yourdomain.com/subfolder), the snippet you need to insert in the HTML field within the Custom HTML section should look like this:
+If you'd like to track a subfolder (yourdomain.com/subfolder) or report to [multiple dashboards at the same time](plausible-script.md#can-i-send-stats-to-multiple-dashboards-at-the-same-time), the snippet you need to insert in the HTML field within the Custom HTML section should look like this:
 
 ```html
 <script>
@@ -34,7 +34,7 @@ If you'd like to track a subfolder (yourdomain.com/subfolder), the snippet you n
 </script>
 ```
 
-If you want to report to multiple dashboards at the same time, set the data-domain value to "firstsite.com,secondsite.com". In case your Plausible site is a subfolder, use "yoursite.com/subfolder" instead.
+In case your Plausible site is a subfolder, enter "yoursite.com/subfolder" as the "**script.dataset.domain**" value. If you want to report to multiple dashboards at the same time, set the "**script.dataset.domain**" value to "firstsite.com,secondsite.com". 
 
 ## Concerns about using Google Tag Manager
 
