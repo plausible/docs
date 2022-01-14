@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## 404 Error Pages
 
-Automatically track the 404 error pages on your site. This feature is not enabled by default so you need to [follow these steps](404-error-pages-tracking.md) to enable it for sites where you want to track 404 error pages.
+Automatically track the 404 error pages on your site. This feature is not enabled by default so you need to [follow these steps](error-pages-tracking-404.md) to enable it for sites where you want to track 404 error pages.
 
 ## Bounce Rate
 
