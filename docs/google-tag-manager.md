@@ -21,22 +21,24 @@ You can use "**Google Tag Manager**" to add Plausible Analytics tracking code to
 That's it! Now you can go to your website and verify whether Plausible Analytics script has been added and to your Plausible Analytics account to see whether the stats are being tracked. See here [how to verify the integration](troubleshoot-integration.md).
 
 :::note
-You cannot use Google Tag Manager if you have added a subfolder as your site in Plausible. Only naked domain (yoursite.com) or subdomain (subdomain.yoursite.com) will work as the data-domain attribute in our snippet while a subfolder (yoursite.com/subfolder) will not. When using a subfolder as the data-domain, Google Tag Manager strips the subfolder and sends the traffic to yoursite.com instead
+Google Tag Manager strips all `data-` attributes from custom scripts. This means data-domain has no effect through the Google Tag Manager.
 :::
 
-### Do you want to use a custom script such as the ability to send stats to multiple dashboards at the same time?
+### Want to track a subfolder or report to multiple dashboards with Google Tag Manager?
 
-Google Tag Manager strips all `data-` attributes from custom scripts. This means data-domain has no effect through the Google Tag Manager. There is a workaround you can use instead. The snippet you need to insert should look like this:
+There is a workaround you can use to still define your custom data-domain attribute. The snippet you need to insert should look like this:
 
 ```html
 <script>
   var script = document.createElement('script');
   script.defer = true;
-  script.dataset.domain = "yourfirstsite.com,secondsite.com";
+  script.dataset.domain = "YOUR-CUSTOM-DATA-DOMAIN";
   script.src = "https://plausible.io/js/plausible.js";
   document.getElementsByTagName('head')[0].appendChild(script);
 </script>
 ```
+
+Id you want to report to multiple dashboards at the same time, set the custom data-domain value to "firstsite.com,secondsite.com". In case your Plausible site is a subfolder, use "yoursite.com/subfolder" instead.
 
 ## Concerns about using Google Tag Manager
 
