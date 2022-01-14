@@ -4,7 +4,7 @@ title: How to add the script to your site using Google Tag Manager
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-You can use "**Google Tag Manager**" to add Plausible Analytics tracking code to your website. Here's the process:
+You can use "**Google Tag Manager**" to add Plausible Analytics tracking code to your website. Here's the process if you're tracking a domain name or subdomain (see the note below if you'd like to track a subfolder using GTM):
 
 * In your Google Tag Manager account, click on "**Add a new tag**"
 * Click on the "**Choose a tag type to begin setup**"
@@ -20,25 +20,21 @@ You can use "**Google Tag Manager**" to add Plausible Analytics tracking code to
 
 That's it! Now you can go to your website and verify whether Plausible Analytics script has been added and to your Plausible Analytics account to see whether the stats are being tracked. See here [how to verify the integration](troubleshoot-integration.md).
 
-:::note
-Google Tag Manager strips all `data-` attributes from custom scripts. This means data-domain has no effect through the Google Tag Manager.
-:::
+## Tracking a subfolder or reporting to multiple dashboards
 
-### Want to track a subfolder or report to multiple dashboards with Google Tag Manager?
-
-There is a workaround you can use to still define your custom data-domain attribute. The snippet you need to insert should look like this:
+If you'd like to track a subfolder (yourdomain.com/subfolder), the snippet you need to insert in the HTML field within the Custom HTML section should look like this:
 
 ```html
 <script>
   var script = document.createElement('script');
   script.defer = true;
-  script.dataset.domain = "YOUR-CUSTOM-DATA-DOMAIN";
+  script.dataset.domain = "YOUR-DATA-DOMAIN";
   script.src = "https://plausible.io/js/plausible.js";
   document.getElementsByTagName('head')[0].appendChild(script);
 </script>
 ```
 
-Id you want to report to multiple dashboards at the same time, set the custom data-domain value to "firstsite.com,secondsite.com". In case your Plausible site is a subfolder, use "yoursite.com/subfolder" instead.
+If you want to report to multiple dashboards at the same time, set the data-domain value to "firstsite.com,secondsite.com". In case your Plausible site is a subfolder, use "yoursite.com/subfolder" instead.
 
 ## Concerns about using Google Tag Manager
 
