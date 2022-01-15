@@ -2,7 +2,7 @@ name: Docusaurus site CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, upgrade ]
 
 jobs:
   build:
