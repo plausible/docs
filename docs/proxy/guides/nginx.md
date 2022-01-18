@@ -40,6 +40,7 @@ server {
         proxy_set_header X-Forwarded-Proto $scheme;
         proxy_set_header X-Forwarded-Host  $host;
     }
+}
 ```
 ### Step 1.5: In case you host a plausible instance(self-hosting setup, doesn't apply to the cloud version)
 
