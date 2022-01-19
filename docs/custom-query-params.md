@@ -1,5 +1,6 @@
 ---
-title: Tracking custom query parameters
+title: Tracking custom que<script defer data-domain="gen.xyz" src="https://plausible.io/js/plausible.js"></script>
+ry parameters
 ---
 
 By default, Plausible strips all query parameters for privacy purposes [except](manual-link-tagging.md) `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term`. 
