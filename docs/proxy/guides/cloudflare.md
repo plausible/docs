@@ -13,15 +13,25 @@ Step 0: Sign up for a free Cloudflare account if you don't have an account alrea
 
 ## Step 1: Create a worker
 
-In your Cloudflare account, go into the ['Workers' section](https://dash.cloudflare.com/?to=/:account/workers). Click on 'Create a Worker' to start configuring your proxy. 
+In your Cloudflare account, click on the 'Workers' section in the sidebar. Then click on the 'Create a Service' button to start configuring your proxy. 
 
 <img alt="Workers section of your Cloudflare account" src={useBaseUrl('img/cloudflare-workers.png')} />
 
-Next, you'll see a page where you can edit the code for your worker:
+## Step 2 (Optional): You can change your service name
+
+This is optional but you can change the service name to give your worker a more meaningful name. Do avoid words like 'plausible', 'analytics', 'tracking', 'stats', etc. as they may be blocked. It's also fine to keep the random name that Cloudflare generates by default. 
+
+<img alt="Rename your worker" src={useBaseUrl('img/cloudflare-rename-work-dash.png')} />
+
+Then click on the 'Create service' button.
+
+## Step 3: Quick edit the worker
+
+Click on the 'Quick edit' where you can edit the code for your worker:
 
 <img alt="Paste the code" src={useBaseUrl('img/cloudflare-paste-code.png')} />
 
-Remove the default code that Cloudflare presents in the 'Script' section on the left side of the screen and paste the following code instead.
+Remove the default code that Cloudflare presents in on the left side of the screen and paste the following code instead.
 
 We recommend you change the folder name in the first two lines in the code below. This makes your proxy more difficult to discover and block. We especially recommend you change the folder name in the two lines if you're not hosting your site on the Cloudflare CDN.
 
@@ -72,13 +82,7 @@ async function postData(event) {
 
 Once you've added the above code to the worker, you can click on the 'Save and Deploy' button.
 
-## Step 2: You can rename your worker if you want
-
-This is optional but you can click 'Rename' in the Workers' dashboard to give your worker a more meaningful name. Do avoid words like 'plausible', 'analytics', 'tracking', 'stats', etc. as they may be blocked.
-
-<img alt="Rename your worker" src={useBaseUrl('img/cloudflare-rename-work-dash.png')} />
-
-## Step 3: Make sure the script is accessible
+## Step 4: Make sure the script is accessible
 
 Now, the Plausible script should be accessible at the following URL:
 
@@ -88,7 +92,7 @@ https://your-worker-name.your-cloudflare-username.workers.dev/your-folder-name/s
 
 If you can load this URL and see some Javascript code, you should be good to go to the following step.
 
-## Step 4: Integrate a new snippet into your site header
+## Step 5: Integrate a new snippet into your site header
 
 Once you have the URL for your script, you can replace your Plausible Analytics script tag in the Header (`<head>`) section of your site with the proxied snippet. This is how the new snippet should look like (make sure to edit it to have the correct domain name of your site and the correct URL to the proxied file):
 
@@ -100,29 +104,28 @@ Are you using our extensions such as hash-based routing, page exclusions or outb
 
 That's it! You're now counting your website stats using a proxy.
 
-## Step 5 (Optional): Run proxy as a subdirectory
+## Step 6 (Optional): Run proxy as a subdirectory
 
 If you're hosting your site on the Cloudflare CDN, you can run the proxy as a subdirectory installation to avoid a third-party
 request to the `workers.dev` domain. This is completely optional but it can make your URLs look much cleaner and avoid third-party
 requests.
 
-First, open your site dashboard in Cloudflare and [go to the 'Workers' tab](https://dash.cloudflare.com/?to=/workers). Then, click the 'Add route' button on the right hand side. 
+In your Cloudflare account, click on the 'Workers' section in the sidebar. Then, click on the worker that you have just created and in the 'Triggers' tab, click the 'Add route' button. 
 
 <img alt="Adding a route in your Cloudflare account" src={useBaseUrl('img/cloudflare-workers-dash.png')} />
 
 Next, enter the URL prefix where you would like to install Plausible. In this example, we'll install the proxy on the `example.com` domain and we'll use `qwerty` as the subdirectory name. You can choose any name for the subdirectory but it's a good idea to avoid words like 'analytics' and 'tracking'.
 
 * Route: `*example.com/qwerty/*`
-* Worker: Choose the worker you created in Step 1
 
 <img alt="A new route" src={useBaseUrl('img/cloudflare-add-route.png')} />
 
-Click on the 'Save' button. After clicking 'Save', the script should be accessible at the subdirectory URL of your site: `https://example.com/qwerty/js/script.js`. 
+Click on the 'Add route' button. After clicking 'Add route', the script should be accessible at the subdirectory URL of your site: `https://example.com/qwerty/your-folder-name/script.js`. 
 
 At this point you can change your Plausible script tag in your site header to reference the new URL. It's also important to specify the `data-api` attribute to make sure data is sent through the worker as well. The new snippet in your site header should look like this:
 
 ```html
-<script defer data-domain="yourdomain.com" data-api="/qwerty/api/event" src="/qwerty/js/script.js"></script>
+<script defer data-domain="yourdomain.com" data-api="/qwerty/your-folder-name/event" src="/qwerty/your-folder-name/script.js"></script>
 ```
 
 Notice that since the script tag is installed on the same domain as the website itself, there's no need to specify the hostname in `src` and `data-api` attributes. A relative path will work just fine.
