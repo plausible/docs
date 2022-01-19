@@ -4,6 +4,7 @@ module.exports = {
   baseUrl: '/docs/',
   favicon: 'img/favicon.png',
   organizationName: 'plausible',
+  trailingSlash: false,
   projectName: 'docs',
   scripts: [
     {src: 'https://plausible.io/js/script.js', defer: true, 'data-domain': 'plausible.io'},

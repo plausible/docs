@@ -1,6 +1,6 @@
 ---
 title: Introduction to goals and events
---- 
+---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -10,9 +10,9 @@ By setting up goals and events, you can track the number of conversions, convers
 
 After setting up a goal, it will show up in the "**Goal Conversions**" section of your dashboard when we record the first conversion. Then you can click on the particular goal to filter the dashboard by it and get all the insights.
 
-There are four types of goals in Plausible Analytics: 
+There are four types of goals in Plausible Analytics:
 
 * [Pageview goals](pageview-goals.md) allow you to measure how many people visit a specific section of your site (for instance dynamically created ecommerce checkout pages)
 * [Custom event goals](custom-event-goals.md) allow you to measure button clicks or form completions
 * [Outbound link clicks](outbound-link-click-tracking.md) allow you to measure clicks on external links
-* [404 error pages](404-error-pages-tracking.md) allow you to measure page not found errors
+* [404 error pages](error-pages-tracking-404.md) allow you to measure page not found errors
