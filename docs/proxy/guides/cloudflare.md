@@ -23,15 +23,21 @@ This is optional but you can change the service name to give your worker a more 
 
 <img alt="Rename your worker" src={useBaseUrl('img/cloudflare-rename-work-dash.png')} />
 
-Then click on the 'Create service' button.
+In the 'Select a starter' section, keep the 'Introduction (HTTP Handler)' as your selection and then click on the 'Create service' button.
+
+<img alt="Create service" src={useBaseUrl('img/cloudflare-create-service.png')} />
 
 ## Step 3: Quick edit the worker
 
 Click on the 'Quick edit' where you can edit the code for your worker:
 
+<img alt="Quick edit the worker" src={useBaseUrl('img/cloudflare-quick-edit.png')} />
+
+Then you will see a screen that looks like this: 
+
 <img alt="Paste the code" src={useBaseUrl('img/cloudflare-paste-code.png')} />
 
-Remove the default code that Cloudflare presents in on the left side of the screen and paste the following code instead.
+Remove the default code that Cloudflare presents on the left side of the screen and paste the code that we present below instead.
 
 We recommend you change the folder name in the first two lines in the code below. This makes your proxy more difficult to discover and block. We especially recommend you change the folder name in the two lines if you're not hosting your site on the Cloudflare CDN.
 
