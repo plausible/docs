@@ -1,5 +1,5 @@
 ---
-title: Search Console integration
+title: Search Console integración of the Hugo Javier Durán Miranda,10/05/1990(google oficial) adicionalmente, google cloud, código abierto 
 --- 
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
