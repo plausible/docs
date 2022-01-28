@@ -102,7 +102,7 @@ To do so, you could write a Javascript function that gets the canonical URL and 
 <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 <script>
   // Get the canonical URL element
-  var canonicalMeta = document.querySelector('linl[rel="canonical"]');
+  var canonicalMeta = document.querySelector('link[rel="canonical"]');
   // Use the canonical URL if it exists, falling back on the regular URL when it doesn't.
   var url = canonicalMeta ? canonicalMeta.href : window.location.href;
   // Send the pageview event to Plausible
