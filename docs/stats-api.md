@@ -164,15 +164,15 @@ Domain of your site on Plausible.
 
 <hr / >
 
-**period** <Required />
+**period** <Optional />
 
-See [time periods](#time-periods)
+See [time periods](#time-periods). If not specified, it will default to `30d`.
 
 <hr / >
 
-**metrics** <Required />
+**metrics** <Optional />
 
-List of metrics to aggregate. Valid options are `visitors`, `pageviews`, `bounce_rate` and `visit_duration`.
+List of metrics to aggregate. Valid options are `visitors`, `pageviews`, `bounce_rate` and `visit_duration`. If not specified, it will default to `visitors`.
 
 <hr / >
 
@@ -239,9 +239,9 @@ Domain of your site on Plausible.
 
 <hr / >
 
-**period** <Required />
+**period** <Optional />
 
-See [time periods](#time-periods)
+See [time periods](#time-periods). If not specified, it will default to `30d`.
 
 <hr / >
 
@@ -326,9 +326,9 @@ Which property to break down the stats by. Valid options are listed in the [prop
 
 <hr / >
 
-**period** <Required />
+**period** <Optional />
 
-See [time periods](#time-periods)
+See [time periods](#time-periods). If not specified, it will default to `30d`.
 
 <hr / >
 
