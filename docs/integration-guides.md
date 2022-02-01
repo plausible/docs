@@ -82,6 +82,10 @@ To track Google AMP pages with Plausible, you need to declare an AMP-analytics o
 
 To track Google Chrome browser extensions with Plausible, you can [follow these instructions](https://gist.github.com/Joelkw/31b798f69c714c00e9e097b1fd4bb3c8).
 
+## Google Data Studio
+
+There is a Plausible connector for Google Data Studio. It's community built and a paid product, but for those that require GDS, it's [worth checking out](https://www.epilocal.com/products/plausible-data-studio-connector/).
+
 ## Google Tag Manager (GTM)
 
 You can integrate Plausible into your site by using [Google Tag Manager](google-tag-manager.md).
@@ -157,6 +161,10 @@ Add Plausible to your [Podcastpage.io](https://podcastpage.io/) website. Just en
 ## Sanity.io
 
 [Plausible iframe dashboard widget](https://www.sanity.io/plugins/plausible-iframe): Simple plugin to show Plausible as an iframe inside of the Sanity dashboard. Built and maintained by [Ole Svennevig](https://olesvennevig.no/).
+
+## Segment
+
+There's no official Plausible integration with Segment but Segment allows you to integrate with Google Tag Manager. So you could integrate Plausible with Segment via Google Tag Manager. Here's how to use [Google Tag Manager](google-tag-manager.md).
 
 ## Server side tracking
 
