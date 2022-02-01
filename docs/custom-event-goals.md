@@ -117,11 +117,15 @@ Note that you must ensure that no personally identifiable information (PII) is s
 
 **Note: Watch your quotes!** Especially in the props as we want to be able to create an object.
 
-```html
-<!-- Tracking a simple link click -->
-<a href="/register" data-analytics='"Register"'>Register</a>
+When you want to track a simple link click:
 
-<!-- Tracking a link click with custom properties-->
+```html
+<a href="/register" data-analytics='"Register"'>Register</a>
+```
+
+Or if you want to track a link click with custom properties:
+
+```html
 <a href="/register" data-analytics='"Register", {"props":{"plan":"Navigation","location":"footer"}}'>Register</a>
 ```
 
@@ -167,14 +171,18 @@ To be able to make use of the `data-analytics` tags and track the link clicks, y
 
 **Note: Watch your quotes!** Especially in the props as we want to be able to create an object.
 
+When you want to track a simple form submit event:
+
 ```html
-<!-- Tracking a simple form submit event -->
 <form>
     ...
     <button type="submit" data-analytics='"Contact"'>Send Message...</button>
 </form>
+```
 
-<!-- Tracking a form submit event with custom properties -->
+Or if you want to track a form submit event with custom properties:
+
+```html
 <form>
     ...
     <button type="submit" data-analytics='"Contact", {"props":{"page":"home"}}'>Send Message...</button>
