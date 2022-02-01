@@ -111,108 +111,103 @@ Note that you must ensure that no personally identifiable information (PII) is s
 * IP addresses
 * pseudonymous cookie IDs, advertising IDs or other pseudonymous end user identifiers
 
-## Code examples for tracking links and form buttons
+## Code example for tracking link clicks
 
-Register events in the HTML with the use of an attribute tag `data-analytics`.  Then add the javascript below and it will keep track of any tags that include the `data-analytics` attribute.
+### 1. Add a `data-analytics` attribute tag on the link you want to track
 
 **Note: Watch your quotes!** Especially in the props as we want to be able to create an object.
 
 ```html
-<!-- Tracking a form -->
+<!-- Tracking a simple link click -->
+<a href="/register" data-analytics='"Register"'>Register</a>
+
+<!-- Tracking a link click with custom properties-->
+<a href="/register" data-analytics='"Register", {"props":{"plan":"Navigation","location":"footer"}}'>Register</a>
+```
+
+### 2. Add the JavaScript that will be sending the link click events to Plausible
+
+To be able to make use of the `data-analytics` tags and track the link clicks, you need to add the code below. You should insert this just before the closing `</body>` tag:
+
+```html
+<script>
+  let links = document.querySelectorAll("a[data-analytics]");
+  for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener('click', handleLinkEvent);
+      links[i].addEventListener('auxclick', handleLinkEvent);
+  }
+
+  function handleLinkEvent(event) {
+      var link = event.target;
+      var middle = event.type == "auxclick" && event.which == 2;
+      var click = event.type == "click";
+      while (link && (typeof link.tagName == 'undefined' || link.tagName.toLowerCase() != 'a' || !link.href)) {
+          link = link.parentNode;
+      }
+      if (middle || click) {
+          let attributes = link.getAttribute('data-analytics').split(/,(.+)/);
+          let events = [JSON.parse(attributes[0]), JSON.parse(attributes[1] || '{}')];
+          plausible(...events);
+      }
+      if (!link.target) {
+          if (!(event.ctrlKey || event.metaKey || event.shiftKey) && click) {
+              setTimeout(function () {
+                  location.href = link.href;
+              }, 150);
+              event.preventDefault();
+          }
+      }
+  }
+</script>
+```
+
+## Code example for tracking form button submit events
+
+### 1. Add a `data-analytics` attribute tag on a submit button inside a form
+
+**Note: Watch your quotes!** Especially in the props as we want to be able to create an object.
+
+```html
+<!-- Tracking a simple form submit event -->
 <form>
     ...
     <button type="submit" data-analytics='"Contact"'>Send Message...</button>
 </form>
 
-<!-- Tracking a link -->
-<a href="/register" data-analytics='"Register", {"props":{"plan":"Navigation"}}'>Register</a>
+<!-- Tracking a form submit event with custom properties -->
+<form>
+    ...
+    <button type="submit" data-analytics='"Contact", {"props":{"page":"home"}}'>Send Message...</button>
+</form>
 ```
 
-To be able to read the `data-analytics` you need to add the javascript below. You should insert this before the closing `</body>` tag:
+### 2. Add the JavaScript that will be sending the form submit events to Plausible
 
-```javascript
-// Handle link events - those that have data-analytics
-let elements = document.querySelectorAll("a[data-analytics]");
-registerAnalyticsEvents(elements, handleLinkEvent);
+To be able to make use of the `data-analytics` tag and track the form submit events, you need to add the code below. You should insert this just before the closing `</body>` tag:
 
-// Handle button form events - those that have data-analytics
-elements = document.querySelectorAll("button[data-analytics]");
-registerAnalyticsEvents(elements, handleFormEvent);
+```html
+<script>
+  let buttons = document.querySelectorAll("button[data-analytics]");
+  for (var i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener('click', handleFormEvent);
+      buttons[i].addEventListener('auxclick', handleFormEvent);
+  }
 
-/**
-* Iterate Elements and add event listener
-*
-* @param {NodeList} Array of elements
-* @param {string} callback function name
-*/
-function registerAnalyticsEvents(elements, callback) {
-    for (var i = 0; i < elements.length; i++) {
-        elements[i].addEventListener('click', callback);
-        elements[i].addEventListener('auxclick', callback);
-    }
-}
-
-/**
-* Handle Link Events with plausible
-* https://github.com/plausible/analytics/blob/e1bb4368460ebb3a0bb86151b143176797b686cc/tracker/src/plausible.js#L74
-*
-* @param {Event} click
-*/
-function handleLinkEvent(event) {
-    var link = event.target;
-    var middle = event.type == "auxclick" && event.which == 2;
-    var click = event.type == "click";
-    while (link && (typeof link.tagName == 'undefined' || link.tagName.toLowerCase() != 'a' || !link.href)) {
-        link = link.parentNode;
-    }
-
-    if (middle || click)
-        registerEvent(link.getAttribute('data-analytics'));
-
-    // Delay navigation so that Plausible is notified of the click
-    if (!link.target) {
-        if (!(event.ctrlKey || event.metaKey || event.shiftKey) && click) {
-            setTimeout(function () {
-                location.href = link.href;
-            }, 150);
-            event.preventDefault();
-        }
-    }
-}
-
-/**
-* Handle form button submit events with plausible
-*
-* @param {Event} click
-*/
-function handleFormEvent(event) {
-    event.preventDefault();
-
-    registerEvent(event.target.getAttribute('data-analytics'));
-
-    setTimeout(function () {
-        event.target.form.submit();
-    }, 150);
-}
-
-/**
-* Parse data and call plausible
-* Using data attribute in html eg. data-analytics='"Register", {"props":{"plan":"Starter"}}'
-*
-* @param {string} data - plausible event "Register", {"props":{"plan":"Starter"}}
-*/
-function registerEvent(data) {
-    // break into array
-    let attributes = data.split(/,(.+)/);
-
-    // Parse it to object
-    let events = [JSON.parse(attributes[0]), JSON.parse(attributes[1] || '{}')];
-
-    plausible(...events);
-}
+  function handleFormEvent(event) {
+      event.preventDefault();
+      let attributes = event.target.getAttribute('data-analytics').split(/,(.+)/);
+      let events = [JSON.parse(attributes[0]), JSON.parse(attributes[1] || '{}')];
+      plausible(...events);
+      setTimeout(function () {
+          event.target.form.submit();
+      }, 150);
+  }
+</script>
 ```
 
-And here's an example of the code you need to insert if you're using the Contact Form 7 plugin on WordPress and want to see the number of visitors who use the contact form. In this example, there are two contact forms on two different pages and this is the code you should insert in the `head` section:
+## Contact Form 7 plugin on WordPress
+
+Here's an example of the code you need to insert if you're using the Contact Form 7 plugin on WordPress and want to see the number of visitors who use the contact form. In this example, there are two contact forms on two different pages and this is the code you should insert in the `head` section:
 
 ```html
 <script>
