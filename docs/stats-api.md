@@ -460,7 +460,7 @@ A more advanced use-case where custom events are used along with custom props. L
 a custom property called `method`. You can get a breakdown of download methods with the following query:
 
 ```bash title="Breakdown of download methods"
-curl https://plausible.io/api/v1/stats/breakdown?site_id=$SITE_ID&period=6mo&property=event:props:method&filters=event:name%3D%3D%2Download
+curl https://plausible.io/api/v1/stats/breakdown?site_id=$SITE_ID&period=6mo&property=event:props:method&filters=event:name%3D%3DDownload
   -H "Authorization: Bearer ${TOKEN}"
 ```
 
