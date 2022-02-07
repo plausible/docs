@@ -152,21 +152,6 @@ Although you can now grant your Plausible installation access to your Google acc
 
 5. Add the same domain you used in Step 2 above. You will be prompted to go to Google Search Console to finish configuration, which coincidentally is exactly where you need to be to start the [Google Search Console Integration](google-search-console-integration.md) instructions.
 
-### Twitter Integration
-
-To automatically display tweets that link to your sites, you need a Twitter API key. You need to first apply for an API key on [Twitter's Developer site](https://developer.twitter.com/en/apply-for-access). It may take a while for them to get back to you.
-
-When the app is created, note down your API key and API key secret. Then, in the Developer Portal, select your project from the sidebar and go to the "Keys and tokens tab". Here you can generate an "Access Token & Secret" which you will also need.
-
-| Parameter                   | Default | Description                                                               |
-|-----------------------------|---------|---------------------------------------------------------------------------|
-| TWITTER_CONSUMER_KEY        | --      | The API key from the Twitter Developer Portal                             |
-| TWITTER_CONSUMER_SECRET     | --      | The API key secret from the Twitter Developer Portal                      |
-| TWITTER_ACCESS_TOKEN        | --      | The access token you generated in the steps above                         |
-| TWITTER_ACCESS_TOKEN_SECRET | --      | The access token secret you generated in the steps above                  |
-
-Once you've added these environment variables and restarted Plausible, you should see the relevant tweets the next day -- they are only fetched once every 24 hours. For more information on the Twitter integration, see [Twitter referrals](twitter.md).
-
 :::note
 Our only source of funding is our premium, managed service for running Plausible in the cloud. If you're looking for an alternative way to support the project, we've put together some sponsorship packages. Maintaining open source software is a thankless, time-consuming job. We released our code on GitHub and made it easy to self-host on principle, not because it's good business. If you're self-hosting Plausible, [sponsoring us](https://github.com/sponsors/plausible) is a great way to give back to the community and to contribute to the long-term sustainability of the project. Thank you for supporting independent creators of Free Open Source Software!
 :::
