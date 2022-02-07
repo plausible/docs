@@ -16,7 +16,7 @@ You can add Plausible Analytics tracking code to your Discourse community by add
 <script defer data-domain="<your-domain>" src="https://plausible.io/js/plausible.hash.js"></script>
 ```
 
-* If you're using [a custom domain](custom-domain.md) for your Plausible account, you can add the `.hash.js` as follows: `https://your.custom-domain.com/js/index.hash.js`
+* If you're using [a proxy](/proxy/introduction.md) for your Plausible account, you can add the `.hash.js` as follows: `https://yourproxylocation.com/js/index.hash.js`
 
 * After adding your code, click on the "**Save**" button.
 
