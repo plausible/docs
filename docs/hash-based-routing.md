@@ -11,7 +11,7 @@ the default `https://plausible.io/js/plausible.js`.
 Here's what the full script tag will look like:
 
 ```html
-<script defer data-domain="<your-domain>" src="https://plausible.io/js/plausible.hash.js"></script>
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.hash.js"></script>
 ```
 
 If you're using [a proxy](/proxy/introduction.md), you can add the `.hash.js` as follows: `https://yourproxylocation.com/js/index.hash.js`
