@@ -88,9 +88,9 @@ To make this as easy as possible you can use the [`maxmindinc/geoipupdate`](http
 You just need to add your account details, mount the database in the `plausible` container and let the image update the database automatically.
 To run the complete setup including geoip see [`docker-compose-geoip.yml`](https://github.com/plausible/hosting/blob/master/geoip/docker-compose.geoip.yml).
 
-### Google Search Integration
+### Google Integration
 
-To enable the Google Search Console integration, as is described elsewhere in the [docs](google-search-console-integration.md), you first need to authorize your self-hosted installation with a Google Account. Complete the following three tasks to do so.
+Plausible supports integration with [Google Search Console](google-search-console-integration.md) and importing data from [Google Analytics](google-analytics-import.md). Both of these features require your self-hosted installation be authorized with a Google account. Complete the following three tasks to do so.
 
 #### Task One: Create an OAuth Client
 
@@ -123,7 +123,7 @@ To enable the Google Search Console integration, as is described elsewhere in th
 
 1. Follow the prompts or select "OAuth consent screen" from the left side menu to configure the consent screen. If you can't see the "OAuth consent screen" menu item, open the navigation ("hamburger") menu in the top left corner and select "APIs & Services". "OAuth consent screen" is a menu item below that.
 
-1. Enter an "App name" and a "User support email". Again, to help with naming, remember that the "app" is your self-hosted Plausible site which will be requesting access to the Search Console API using your Google Account, so you are probably the only user.
+1. Enter an "App name" and a "User support email". Again, to help with naming, remember that the "app" is your self-hosted Plausible site which will be requesting access to the Search Console API and/or Analytics Reporting API using your Google Account, so you are probably the only user.
 
 1. Apart from the mandatory "Developer contact information" fields, the only other necessary setting is the "Authorized domains" which must include the domain used for the earlier "Authorized Redirect URIs" setting. That is, add the domain (eg. `example.com`) of your Plausible installation's public URL. All subdomains will be authorized automatically.
 
@@ -131,27 +131,29 @@ To enable the Google Search Console integration, as is described elsewhere in th
 
 1. The "app" will be created with status set to "Testing". To avoid having to verify it with Google, you must enter the email address of your Google Account as a "Test user". Add the email address and then click "SAVE AND CONTINUE" and the OAuth Consent Screen configuration is complete.
 
-#### Task Three: Enable Google Search Console API
+#### Task Three: Enable Google APIs
 
-Although you can now grant your Plausible installation access to your Google account, you still will not be able to choose a property from the Search Console as described in [Google Search Console Integration](google-search-console-integration.md), until you enable the "[Google Search Console API](https://console.developers.google.com/apis/api/searchconsole.googleapis.com)" on your Google API project.
+Although you can now grant your Plausible installation access to your Google account, you still will not be able to use the search console integration or data import features until you enable the "[Google Search Console API](https://console.developers.google.com/apis/api/searchconsole.googleapis.com)" and/or "[Analytics Reporting API](https://console.developers.google.com/apis/api/analyticsreporting.googleapis.com)" on your Google API project.
 
 1. Click on "Enable APIs and Services."
 
 ![google_enable_1](https://user-images.githubusercontent.com/85956139/132954489-34071ab3-dd96-44ab-83be-02431a888df9.jpg)
 
-2. Search for "Google Search Console API" in the search bar of the API Library.
+2. Search for "Google Search Console API" or "Analytics Reporting API"in the search bar of the API Library.
 
 ![google_enable2](https://user-images.githubusercontent.com/85956139/132954499-bc96eb44-d94b-4413-8e0e-c2008fc60242.png)
 
-3. Click on "Google Search Console API" and the button to enable.
+3. Click on the API and enable it.
 
 ![google_enable3](https://user-images.githubusercontent.com/85956139/132954503-df8caff9-8654-4ec0-87eb-4d76363ebc75.png)
 
 ![google_enable4](https://user-images.githubusercontent.com/85956139/132954508-290bda57-47cf-4cda-bb6d-77a1c8baa485.png)
 
+To enable Search Console integration, continue with the following 2 steps. These are not necessary if you only require support for importing data from Google Analytics.
+
 4. Finally, return to APIs & Services, and select "Domain verification". If you can't see the "Domain verification" menu item, open the navigation ("hamburger") menu in the top left corner and select "APIs & Services". "Domain verification" is a menu item below that.
 
-5. Add the same domain you used in Step 2 above. You will be prompted to go to Google Search Console to finish configuration, which coincidentally is exactly where you need to be to start the [Google Search Console Integration](google-search-console-integration.md) instructions.
+5. Add the same domain you used in task 2 above. You will be prompted to go to Google Search Console to finish configuration, which coincidentally is exactly where you need to be to start the [Google Search Console Integration](google-search-console-integration.md) instructions.
 
 :::note
 Our only source of funding is our premium, managed service for running Plausible in the cloud. If you're looking for an alternative way to support the project, we've put together some sponsorship packages. Maintaining open source software is a thankless, time-consuming job. We released our code on GitHub and made it easy to self-host on principle, not because it's good business. If you're self-hosting Plausible, [sponsoring us](https://github.com/sponsors/plausible) is a great way to give back to the community and to contribute to the long-term sustainability of the project. Thank you for supporting independent creators of Free Open Source Software!

@@ -20,6 +20,10 @@ The easiest way to explore the API is by using our Postman collection. Just defi
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/32c111c4f6d2cccef9dd)
 
+:::note
+Any data imported from Google Analytics is not included in results returned via the Stats API.
+:::
+
 ## Concepts
 
 Querying the Plausible API will feel familiar if you have used time-series databases before. You cannot query individual records from

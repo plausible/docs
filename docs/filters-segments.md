@@ -18,6 +18,10 @@ Your current filters will be displayed on the top of your dashboard. You can cli
 
 You can remove all of your filters by hitting the `Esc` key on your keyboard or by selecting `Clear all filters` in the filters menu that shows up when you're using multiple filters.
 
+:::note
+Imported data cannot be filtered and is excluded from the dashboard when a filter is enabled. See for [here](google-analytics-import.md#what-is-imported) more details.
+:::
+
 ## Using the "Add filter" menu for extra functionality 
 
 <img alt="Using the custom filter" src={useBaseUrl('img/custom-filter.png')} />
