@@ -28,6 +28,8 @@ During the upgrade process, you have the option to add your company address and 
 
 If you haven't added your company details during the subscription process, you can open the invoice that Paddle sent you and click on the "Add address & VAT Number" link to do so.
 
+More information about Paddle and the sales taxes or VAT can be found [here](https://paddle.com/support/which-countries-does-paddle-charge-vat-for/).
+
 ## What happens if I go over my monthly page views limit?
 
 You will never be charged extra for an occasional traffic spike. We will not stop counting your stats either. There are no surprise fees and your card will never be charged unexpectedly. 
