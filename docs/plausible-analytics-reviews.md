@@ -60,4 +60,6 @@ Plausible Analytics is trusted by 2,000+ subscribers to deliver their website an
 
 * [De-Google-ing your website analytics](https://changelog.com/podcast/396) by The Changelog podcast
 
+* [Using Deferred Static Generation with Plausible Analytics](https://www.lekoarts.de/gatsby/using-deferred-static-generation-with-analytics-tools) by Lennart Jörgens on lekoarts.de
+
 Let us know about any other reviews that you've published and we will feature them. Thanks for your support!
