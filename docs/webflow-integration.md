@@ -1,5 +1,5 @@
 ---
-title: How to add the script to your Webflow site
+title: How to add Plausible Analytics to your Webflow site
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
