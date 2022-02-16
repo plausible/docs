@@ -134,7 +134,7 @@ Optionally, you can provide a different database. For example, you can use [MaxM
 This is why, to use MaxMind, you need to create an account [here](https://www.maxmind.com/en/geolite2/signup). Once you have your account details, open the `geoip/geoip.conf` file and enter your `GEOIPUPDATE_ACCOUNT_ID` and `GEOIPUPDATE_LICENSE_KEY`. Then, combine both the base docker-compose file with the one in the geoip folder:
 
 ```bash
-$ docker-compose -f docker-compose.yml -f geoip/docker-compose.geoip.yml up
+$ docker-compose -f docker-compose.yml -f geoip/docker-compose.geoip.yml up -d
 ```
 
 The `geoip/docker-compose.geoip.yml` file downloads and updates the country database automatically, making it available to the `plausible`
