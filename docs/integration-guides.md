@@ -28,7 +28,7 @@ Here's the full list in alphabetical order:
 
 ## DatoCMS
 
-[DatoCMS plugin](https://www.datocms.com/marketplace/plugins/i/datocms-plugin-plausible): Provides a link to Plausible for the current record on the sidebar. Built and maintenaned by [Odd Camp](https://www.oddcamp.com).
+[DatoCMS plugin](https://www.datocms.com/marketplace/plugins/i/datocms-plugin-plausible): Provides a link to Plausible for the current record on the sidebar.  Built and maintained by [Odd Camp](https://www.oddcamp.com).
 
 ## DNT and offline functionality
 
