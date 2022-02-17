@@ -156,6 +156,10 @@ If you'd like to count users on your Android and/or iOS mobile apps, you can use
 
 Add Plausible to your [Podcastpage.io](https://podcastpage.io/) website. Just enable the Plausible script via the "Integrations" page of your dashboard to add the tracking script to all pages.
 
+## Qt6 / QML
+
+[Qt6 QML plugin](https://gitlab.com/kelteseth/qml-plausible) for Plausible. Built and maintained by [Elias Steurer](https://gitlab.com/kelteseth).
+
 ## R
 
 [plausibler](https://github.com/giocomai/plausibler): R wrapper for the Plausible API. Built and maintained by [Giorgio Comai](https://github.com/giocomai/).
