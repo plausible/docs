@@ -115,8 +115,6 @@ Note that you must ensure that no personally identifiable information (PII) is s
 
 ### 1. Add a `data-analytics` attribute tag on the link you want to track
 
-**Note: Watch your quotes!** Especially in the props as we want to be able to create an object.
-
 When you want to track a simple link click:
 
 ```html
@@ -128,6 +126,10 @@ Or if you want to track a link click with custom properties:
 ```html
 <a href="/register" data-analytics='"Register", {"props":{"plan":"Navigation","location":"footer"}}'>Register</a>
 ```
+
+:::note
+Do watch the quotes! The `data-analytics` tag value should have both **single and double quotes** as shown above.
+:::
 
 ### 2. Add the JavaScript that will be sending the link click events to Plausible
 
@@ -169,8 +171,6 @@ To be able to make use of the `data-analytics` tags and track the link clicks, y
 
 ### 1. Add a `data-analytics` attribute tag on a submit button inside a form
 
-**Note: Watch your quotes!** Especially in the props as we want to be able to create an object.
-
 When you want to track a simple form submit event:
 
 ```html
@@ -188,6 +188,10 @@ Or if you want to track a form submit event with custom properties:
     <button type="submit" data-analytics='"Contact", {"props":{"page":"home"}}'>Send Message...</button>
 </form>
 ```
+
+:::note
+Do watch the quotes! The `data-analytics` tag value should have both **single and double quotes** as shown above.
+:::
 
 ### 2. Add the JavaScript that will be sending the form submit events to Plausible
 
