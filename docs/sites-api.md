@@ -5,7 +5,7 @@ title: Site provisioning API reference
 import {Required, Optional} from '../src/js/api-helpers.js';
 
 The Plausible Site provisioning API offers a way to create and manage your sites in your Plausible account programmatically.
-It currently allows 3 operations:
+It currently allows these operations:
 
 * Create a new site
 * Delete an existing site
