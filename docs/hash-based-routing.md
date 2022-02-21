@@ -3,7 +3,7 @@ title: Hash-based routing
 ---
 
 Plausible Analytics integrates automatically with `pushState` based frontend routers. However, if you're using a frontend
-framework that uses the URL hash for routing, you need to take an extra step to install the hash-based tracker instead of the default one. Same process you need to follow with [Carrd](carrd-integration.md) and other website builders that don't support normal navigation.
+framework that uses the URL hash for routing, you need to take an extra step to install the hash-based tracker instead of the default one. This is the same process you need to follow with [Carrd](carrd-integration.md) and other website builders that don't support normal navigation.
 
 The hash-based tracker is available by changing your script to load `https://plausible.io/js/plausible.hash.js` instead of
 the default `https://plausible.io/js/plausible.js`.
