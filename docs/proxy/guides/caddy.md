@@ -8,19 +8,23 @@ configuration as shown in the next step.
 
 ## Step 1: Update your Caddyfile
 
-Add the following block to your Caddyfile
+Add the following to your Caddyfile:
 
 ```
 @plausible path /js/script.js /api/event
 handle @plausible {
-  # Change this if you use a different variant of the script
-  # e.g. rewrite /js/script.js /js/plausible.outbound-links.js
-  rewrite /js/script.js /js/plausible.js
-  reverse_proxy https://plausible.io {
-    header_up Host {http.reverse_proxy.upstream.hostport}
-  }
+	# Change this if you use a different variant of the script
+	# e.g. rewrite /js/script.js /js/plausible.outbound-links.js
+	rewrite /js/script.js /js/plausible.js
+	reverse_proxy https://plausible.io {
+		header_up Host {http.reverse_proxy.upstream.hostport}
+	}
 }
 ```
+
+:::note 
+Add it to the the block of the site you want to capture analytics from, e.g. to `website.com { }`. _Not_ your self-hosted plausible instance, like `plausible.website.com { }`.
+:::
 
 ## Step 2: Adjust your deployed script
 
