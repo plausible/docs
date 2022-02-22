@@ -22,10 +22,6 @@ handle @plausible {
 }
 ```
 
-:::note 
-Add it to the the block of the site you want to capture analytics from, e.g. to `website.com { }`. _Not_ your self-hosted plausible instance, like `plausible.website.com { }`.
-:::
-
 ## Step 2: Adjust your deployed script
 
 With the above config in place, you can change the script tag on your site as follows:
