@@ -8,7 +8,7 @@ module.exports = {
   projectName: 'docs',
   scripts: [
     {src: 'https://plausible.io/js/script.js', defer: true, 'data-domain': 'plausible.io'},
-    {src: 'https://testing-plausible-io-proxy.uku-taht.workers.dev/qwerty/script.js', defer: true, 'data-domain': 'plausible.io', 'data-api': 'https://testing-plausible-io-proxy.uku-taht.workers.dev/qwerty/event'}
+    {src: 'https://plausible.io/test/js/script.beacon.local.js', defer: true, 'data-domain': 'plausible.io', 'data-api': 'https://plausible.io/test/api/event'}
   ],
   themeConfig: {
     colorMode: {disableSwitch: true},
