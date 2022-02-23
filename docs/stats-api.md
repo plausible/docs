@@ -178,7 +178,7 @@ List of metrics to aggregate. Valid options are `visitors`, `pageviews`, `bounce
 
 **compare** <Optional />
 
-Off by default. You can specify `previous_period` to calculate percent difference with previous period for each metric.
+Off by default. You can specify `compare=previous_period` to calculate the percent difference with the previous period for each metric. The previous period will be of the exact same length as specified in the `period` parameter.
 
 <hr / >
 
