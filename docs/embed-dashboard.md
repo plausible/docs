@@ -28,6 +28,12 @@ You can set the background color as `transparent` in the embed code. It's much m
 
 <img alt="Generate embed code" src={useBaseUrl('img/embed-dashboard-code.png')} />
 
+### Want your embed to have default filters or time period?
+
+Instead of using a simple shared link URL for generating the embed, you can open the shared link, apply filters to your dashboard and use the URL with the applied filters. Those filters will then be automatically added to your embed dashboard every time it is loaded.
+
+Do note that these are just basic filters and can be removed or changed to view other stats as well. 
+
 ## 3. Paste the embed code into your website
 
 Copy the embed code that's been generated and paste it wherever you want your Plausible stats dashboard to be embedded.
