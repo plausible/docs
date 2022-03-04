@@ -172,7 +172,7 @@ See [time periods](#time-periods). If not specified, it will default to `30d`.
 
 **metrics** <Optional />
 
-List of metrics to aggregate. Valid options are `visitors`, `pageviews`, `bounce_rate` and `visit_duration`. If not specified, it will default to `visitors`.
+List of metrics to aggregate. Valid options are `visitors`, `pageviews`, `bounce_rate`, `visit_duration` and `events`. If not specified, it will default to `visitors`.
 
 <hr / >
 
