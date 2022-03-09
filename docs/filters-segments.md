@@ -22,7 +22,7 @@ You can remove all of your filters by hitting the `Esc` key on your keyboard or 
 
 <img alt="Using the custom filter" src={useBaseUrl('img/custom-filter.png')} />
 
-We also allow you to add filters without clicking on any specific metric in the dashboard. Click on the "Add filter" button on the top right of your dashboard to start adding filters. Using the "Add filter" menu makes filtering even more powerful:
+We also allow you to add filters without clicking on any specific metric in the dashboard. Click on the "Filter" button on the top right of your dashboard to start adding filters. Using the "Filter" menu makes filtering even more powerful:
 
 ### Search for any metric
 
@@ -32,7 +32,7 @@ You can search for any metric such as a particular country, referral source or p
 
 You can exclude specific segments of traffic and only display the traffic that is not part of the excluded segment. You can, for instance, exclude traffic from the United States so your dashboard only shows the visitors that are not based in the USA. 
 
-Click on "Add filter", then select "Country" as your metric, choose "Is Not" and then select (or type) the name of the country you want to exclude. You can do the same for referral sources or any of the other metrics.
+Click on the "Filter" button, then select "Country" as your metric, choose "Is Not" and then select (or type) the name of the country you want to exclude. You can do the same for referral sources or any of the other metrics.
 
 ### Group your pages
 
