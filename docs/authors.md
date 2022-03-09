@@ -6,12 +6,13 @@ Plausible Analytics is designed, developed and maintained fully remotely, distri
 
 ## Full-time team
 
-* Uku Taht
-* Marko Saric
+* Uku Taht - Design and development 
+* Marko Saric - Marketing and communication 
 
 ## Part-time team
 
-* Robert Joonas
+* Robert - Development and technical support
+* Cenk - Infrastructure and security
 
 ## Contributors
 
