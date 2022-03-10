@@ -112,6 +112,10 @@ If you're using a frontend framework that uses the URL hash for routing, you nee
 
 [Hego plugin](https://github.com/maaaaarco/hexo-plausible-analytics): A simple Hexo plugin to inject Plausible script into your pages. Built and maintained by [Marco](https://spaghetti.dev/).
 
+## HubSpot
+
+[How to add the script to your HubSpot site](hubspot-analytics.md).
+
 ## Hugo
 
 [How to add the script to your Hugo site](hugo-integration.md)
