@@ -425,7 +425,7 @@ curl https://plausible.io/api/v1/stats/timeseries?site_id=$SITE_ID&period=6mo&fi
 
 ```json title="Response"
 {
-  "response": [
+  "results": [
     {
         "date": "2020-09-01",
         "visitors": 2962
