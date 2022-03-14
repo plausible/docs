@@ -172,7 +172,7 @@ See [time periods](#time-periods). If not specified, it will default to `30d`.
 
 **metrics** <Optional />
 
-List of metrics to aggregate. Valid options are `visitors`, `pageviews`, `bounce_rate`, `visit_duration` and `events`. If not specified, it will default to `visitors`.
+List of metrics to aggregate. Valid options are `visitors`, `pageviews`, `bounce_rate`, `visit_duration`, `visits` and `events`. If not specified, it will default to `visitors`.
 
 <hr / >
 
@@ -253,7 +253,7 @@ See [filtering](#filtering)
 
 **metrics** <Optional />
 
-Comma-separated list of metrics to show for each time bucket. Valid options are `visitors`, `pageviews`, `bounce_rate` and `visit_duration`. If not
+Comma-separated list of metrics to show for each time bucket. Valid options are `visitors`, `pageviews`, `bounce_rate`, `visit_duration` and `visits`. If not
 specified, it will default to `visitors`.
 
 <hr / >
@@ -334,7 +334,7 @@ See [time periods](#time-periods). If not specified, it will default to `30d`.
 
 **metrics** <Optional />
 
-Comma-separated list of metrics to show for each item in breakdown. Valid options are `visitors`, `pageviews`, `events`, `bounce_rate` and `visit_duration`. If not
+Comma-separated list of metrics to show for each item in breakdown. Valid options are `visitors`, `pageviews`, `bounce_rate`, `visit_duration`, `visits` and `events`. If not
 specified, it will default to `visitors`.
 
 <hr / >
