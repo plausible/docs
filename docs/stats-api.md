@@ -131,9 +131,7 @@ of these metrics in one request.
 
 
 ```bash title="Try it yourself"
-
-
-https://plausible.io/api/v1/stats/aggregate?site_id=$SITE_ID&period=6mo&metrics=visitors,pageviews,bounce_rate,visit_duration \
+curl 'https://plausible.io/api/v1/stats/aggregate?site_id=$SITE_ID&period=6mo&metrics=visitors,pageviews,bounce_rate,visit_duration' \
   -H "Authorization: Bearer ${TOKEN}"
 ```
 
