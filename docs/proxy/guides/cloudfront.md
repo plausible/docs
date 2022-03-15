@@ -15,7 +15,7 @@ Now we need to define some custom behaviour for when to use our new origin. In t
 
 First for the analytics script:
 
-- Path Pattern: `/js/script.js`
+- Path Pattern: `/js/script.*`
 - Origin or Origin Group: The origin we created in step 1
 - Viewer Protocol Policy: `HTTPS Only`
 - Allowed HTTP Methods: `GET, HEAD`
