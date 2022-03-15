@@ -41,7 +41,7 @@ Add this code to your 404 page. For instance, if you're using WordPress, your 40
 
 You need to place this code on your 404 page below the header section (place it somewhere after the closing `</head>` tag).
 
-## Step 3: Create a custom event goal in your Plausible Analytics account
+## 3: Create a custom event goal in your Plausible Analytics account
 
 404 error pages won't show up automatically. You'll have to configure the goal for them to show up on your dashboard.
 
