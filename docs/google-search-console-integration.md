@@ -44,13 +44,9 @@ We really only need and use the email address from this. Email address is useful
 
 <img alt="Choose your Google account" src={useBaseUrl('img/choose-google-account.png')} />
 
-You also need to grant Plausible Analytics a permission to view your Search Console website data.
+You then need to grant Plausible Analytics a permission to view your Search Console website data by ticking the "View Search Console data for your verified sites" box in the "Plausible Analytics wants access to your Google account" screen.
 
-<img alt="Grant Plausible Analytics a permission to view your Search Console website data" src={useBaseUrl('img/grant-permission.png')} />
-
-And you also need to confirm all these choices once again.
-
-<img alt="Confirm all the choices once again" src={useBaseUrl('img/confirm-choices.png')} />
+<img alt="Tick the View Search Console data for your verified sites box" src={useBaseUrl('img/confirm-choices.png')} />
 
 ## Select property to pull keywords from
 
@@ -68,6 +64,10 @@ Google may return the "**invalid_grant**" error message for several reasons:
 * Your permissions for the specific site may have been changed or revoked in your Google account. Please check your Search Console account and make sure you still have the user permission to the site in question
 * Your token is inactive as your account has expired or your site is not active. Please check your Search Console account and make sure you still have the account and are still tracking the site in question correctly
 * You may have changed the permissions or the password in your Google account since you gave us the access. Please make sure to reconnect your Google account again to Plausible with the correct account details
+
+### I see no Search Console properties in my Plausible account
+
+Please make sure you tick the "View Search Console data for your verified sites" box on the "Plausible Analytics wants access to your Google account" screen. If you don't tick that box, Google will not give us permission to access any of your Search Console properties. 
 
 ## Check your search query data in Plausible Analytics
 
@@ -91,7 +91,7 @@ Google samples its keyword data heavily. The sampling is why your keyword visito
 
 ## Plausible Analytics will be listed in your Google account settings
 
-You can always view your Plausible Analytics integration in your Google account within the section "**Third-party apps with account access**". Here's how it looks.
+You can check if Plausible Analytics is integrated with and has the right permissions to your Search Console properties in your Google account within the section "**Apps with access to your account**". Here's the [direct link to that section](https://myaccount.google.com/permissions). Here's how it looks.
 
 <img alt="Third-party apps with account access" src={useBaseUrl('img/third-party-apps.png')} />
 
