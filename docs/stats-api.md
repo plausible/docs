@@ -68,6 +68,7 @@ more depth. Here's the full list of properties we collect automatically:
 | visit:os                   | Mac                           | Name of the operating system. Most popular ones are `Mac`, `Windows`, `iOS` and `Android`. Linux distributions are reported separately |
 | visit:os_version           | 10.6                          | Version number of the operating system used by the visitor                                                                            |
 | visit:country              | US                            | ISO 3166-1 alpha-2 code of the visitor country                                                                                        |
+| visit:region               | US-MD                         | ISO 3166-2 code of the visitor region                                                                                                  |
 
 
 #### Custom props
