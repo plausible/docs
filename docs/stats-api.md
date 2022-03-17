@@ -28,6 +28,21 @@ our stats database. You can only request aggregated metrics over a certain time 
 Each request requires a `site_id` parameter which is the domain of your site as configured in Plausible. If you're unsure, navigate to your site
 settings in Plausible and grab the value of the `domain` field.
 
+### Metrics
+
+You can specify a `metrics` option in the query, to choose the metrics for each instance returned. See here for a full overview of [metrics and their definitions](/metrics-definitions). The metrics currently supported in Stats API are:
+
+* `visitors` - The number of unique visitors
+* `pageviews` - The number of pageview events
+* `bounce_rate` - Bounce rate percentage
+* `visit_duration` - Visit duration in seconds
+* `events` - The number of events (pageviews + custom events)
+* `visits` - The number of visits/sessions
+
+:::note
+The number of visits/sessions is currently exclusive in the Stats API. It is not displayed in your Plausible dashboard. 
+:::
+
 ### Time periods
 
 The options are identical for each endpoint that supports configurable time periods. Each period
