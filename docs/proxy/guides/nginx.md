@@ -17,7 +17,7 @@ server {
     ...
     location = /js/script.js {
         # Change this if you use a different variant of the script
-        proxy_pass https://plausible.io/js/plausible.js;
+        proxy_pass https://plausible.io/js/script.js;
 
         # Tiny, negligible performance improvement. Very optional.
         proxy_buffering on;

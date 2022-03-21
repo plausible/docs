@@ -15,7 +15,7 @@ You can add Plausible Analytics tracking code to your Carrd website by adding an
 * Here's what the full script tag will look like (make sure to replace your-domain with the domain you've added to Plausible Analytics):
 
 ```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.hash.js"></script>
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.hash.js"></script>
 ```
 
 * After adding your code, click on the "**Save**" button.

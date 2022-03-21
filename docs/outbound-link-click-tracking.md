@@ -24,12 +24,12 @@ If you want to track external link clicks, here's what you need to do:
 
 ## Step 1: Change the Plausible script snippet
 
-Change your Plausible script snippet `src` attribute from `https://plausible.io/js/plausible.js` to `https://plausible.io/js/plausible.outbound-links.js`
+Change your Plausible script snippet `src` attribute from `https://plausible.io/js/script.js` to `https://plausible.io/js/script.outbound-links.js`
 
 The new snippet will look like this (make sure to change the `data-domain` attribute to the domain you added to Plausible):
 
 ```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.outbound-links.js"></script>
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.outbound-links.js"></script>
 ```
 
 As usual, you need to place your Plausible Analytics tracking script code into the Header (`<head>`) section of your site. Place the tracking script within the `<head> … </head>` tags.

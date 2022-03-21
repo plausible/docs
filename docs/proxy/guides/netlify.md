@@ -9,7 +9,7 @@ more about Netlify redirects and rewrites [here](https://docs.netlify.com/routin
 the setup for proxying Plausible Analytics:
 
 ``` title="_redirects"
-/js/script.js https://plausible.io/js/plausible.js 200
+/js/script.js https://plausible.io/js/script.js 200
 /api/event https://plausible.io/api/event 200
 ```
 
@@ -17,14 +17,14 @@ You can also choose a subdirectory to install Plausible under to make sure it do
 that you may already have in your application:
 
 ``` title="_redirects"
-/your-subdirectory/js/script.js https://plausible.io/js/plausible.js 200
+/your-subdirectory/js/script.js https://plausible.io/js/script.js 200
 /your-subdirectory/api/event https://plausible.io/api/event 200
 ```
 
 Choose a generic or irrelevant name for the subdirectory. If you choose something like `analytics` or `plausible`,
 it might get blocked in the future.
 
-Using our extensions such as hash-based routing, page exclusions or outbound link click tracking? Edit your `_redirects` and change the name from `plausible.js` to the script you want to use: `plausible.hash.js`, `plausible.exclusions.js` or `plausible.outbound-links.js`. Want to use more than one extension? You can chain them like this: `plausible.hash.exclusions.outbound-links.js`
+Using our extensions such as hash-based routing, page exclusions or outbound link click tracking? Edit your `_redirects` and change the name from `script.js` to the script you want to use: `script.hash.js`, `script.exclusions.js` or `script.outbound-links.js`. Want to use more than one extension? You can chain them like this: `script.hash.exclusions.outbound-links.js`
 
 ## Step 2: Adjust your deployed script
 

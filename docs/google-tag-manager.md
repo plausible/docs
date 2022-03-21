@@ -29,7 +29,7 @@ If you'd like to track a subfolder (yourdomain.com/subfolder) or report to [mult
   var script = document.createElement('script');
   script.defer = true;
   script.dataset.domain = "YOUR-DATA-DOMAIN";
-  script.src = "https://plausible.io/js/plausible.js";
+  script.src = "https://plausible.io/js/script.js";
   document.getElementsByTagName('head')[0].appendChild(script);
 </script>
 ```

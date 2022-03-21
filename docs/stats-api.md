@@ -28,6 +28,21 @@ our stats database. You can only request aggregated metrics over a certain time 
 Each request requires a `site_id` parameter which is the domain of your site as configured in Plausible. If you're unsure, navigate to your site
 settings in Plausible and grab the value of the `domain` field.
 
+### Metrics
+
+You can specify a `metrics` option in the query, to choose the metrics for each instance returned. See here for a full overview of [metrics and their definitions](/metrics-definitions). The metrics currently supported in Stats API are:
+
+* `visitors` - The number of unique visitors
+* `pageviews` - The number of pageview events
+* `bounce_rate` - Bounce rate percentage
+* `visit_duration` - Visit duration in seconds
+* `events` - The number of events (pageviews + custom events)
+* `visits` - The number of visits/sessions
+
+:::note
+The number of visits/sessions is currently exclusive in the Stats API. It is not displayed in your Plausible dashboard. 
+:::
+
 ### Time periods
 
 The options are identical for each endpoint that supports configurable time periods. Each period
@@ -108,7 +123,7 @@ This endpoint returns the number of current visitors on your site. A current vis
 in the last 5 minutes.
 
 ```bash title="Try it yourself"
-curl https://plausible.io/api/v1/stats/realtime/visitors?site_id=$SITE_ID
+curl 'https://plausible.io/api/v1/stats/realtime/visitors?site_id=$SITE_ID'
   -H "Authorization: Bearer ${TOKEN}"
 ```
 
@@ -132,7 +147,7 @@ of these metrics in one request.
 
 
 ```bash title="Try it yourself"
-curl https://plausible.io/api/v1/stats/aggregate?site_id=$SITE_ID&period=6mo&metrics=visitors,pageviews,bounce_rate,visit_duration \
+curl 'https://plausible.io/api/v1/stats/aggregate?site_id=$SITE_ID&period=6mo&metrics=visitors,pageviews,bounce_rate,visit_duration' \
   -H "Authorization: Bearer ${TOKEN}"
 ```
 
@@ -195,7 +210,7 @@ the main visitor graph.
 
 
 ```bash title="Try it yourself"
-curl https://plausible.io/api/v1/stats/timeseries?site_id=$SITE_ID&period=6mo
+curl 'https://plausible.io/api/v1/stats/timeseries?site_id=$SITE_ID&period=6mo'
   -H "Authorization: Bearer ${TOKEN}"
 ```
 
@@ -267,7 +282,7 @@ Choose your reporting interval. Valid options are `date` (always) and `month` (w
 ### GET /api/v1/stats/breakdown
 
 This endpoint allows you to break down your stats by some property. If you are familiar with SQL family databases, this endpoint corresponds to
-running `GROUP BY` on a certain property in your stats.
+running `GROUP BY` on a certain property in your stats, then ordering by the count.
 
 Check out the [properties](#properties) section for a reference of all the properties you can use in this query.
 
@@ -275,7 +290,7 @@ This endpoint can be used to fetch data for `Top sources`, `Top pages`, `Top cou
 
 
 ```bash title="Try it yourself"
-curl https://plausible.io/api/v1/stats/breakdown?site_id=$SITE_ID&period=6mo&property=visit:source&metrics=visitors,bounce_rate&limit=5 \
+curl 'https://plausible.io/api/v1/stats/breakdown?site_id=$SITE_ID&period=6mo&property=visit:source&metrics=visitors,bounce_rate&limit=5' \
   -H "Authorization: Bearer ${TOKEN}"
 ```
 
@@ -361,7 +376,7 @@ Let's say you want to show a similar report to the `Top pages` report in the Pla
 `/api/v1/stats/breakdown` endpoint and specify `event:page` as the property to group by.
 
 ```bash title="Top pages"
-curl https://plausible.io/api/v1/stats/breakdown?site_id=$SITE_ID&period=6mo&property=event:page&limit=5
+curl 'https://plausible.io/api/v1/stats/breakdown?site_id=$SITE_ID&period=6mo&property=event:page&limit=5'
   -H "Authorization: Bearer ${TOKEN}"
 ```
 
@@ -398,7 +413,7 @@ Let's say you want to get the number of visitors to a specific page on your webs
 filtering your stats on the `event:page` property:
 
 ```bash title="Visitors to /order/confirmation"
-curl https://plausible.io/api/v1/stats/aggregate?site_id=$SITE_ID&period=6mo&filters=event:page%3D%3D%2Forder%2Fconfirmation
+curl 'https://plausible.io/api/v1/stats/aggregate?site_id=$SITE_ID&period=6mo&filters=event:page%3D%3D%2Forder%2Fconfirmation'
   -H "Authorization: Bearer ${TOKEN}"
 ```
 
@@ -420,7 +435,7 @@ filter expression `visit:source==Google`.
 
 
 ```bash title="Monthly traffic from Google"
-curl https://plausible.io/api/v1/stats/timeseries?site_id=$SITE_ID&period=6mo&filters=visit:source%3D%3DGoogle \
+curl 'https://plausible.io/api/v1/stats/timeseries?site_id=$SITE_ID&period=6mo&filters=visit:source%3D%3DGoogle' \
   -H "Authorization: Bearer ${TOKEN}"
 ```
 
@@ -461,7 +476,7 @@ A more advanced use-case where custom events are used along with custom props. L
 a custom property called `method`. You can get a breakdown of download methods with the following query:
 
 ```bash title="Breakdown of download methods"
-curl https://plausible.io/api/v1/stats/breakdown?site_id=$SITE_ID&period=6mo&property=event:props:method&filters=event:name%3D%3DDownload
+curl 'https://plausible.io/api/v1/stats/breakdown?site_id=$SITE_ID&period=6mo&property=event:props:method&filters=event:name%3D%3DDownload'
   -H "Authorization: Bearer ${TOKEN}"
 ```
 
