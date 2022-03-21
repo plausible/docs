@@ -15,7 +15,7 @@ Goals make it easy to track internal link clicks. Here's how you can set it up:
 First, make sure to add the second line as shown below to the tracking snippet in the `<head>` section of your site:
 
 ```html
-<script defer data-domain="<yourdomain.com>" src="https://plausible.io/js/plausible.js"></script>
+<script defer data-domain="<yourdomain.com>" src="https://plausible.io/js/script.js"></script>
 <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 ```
 

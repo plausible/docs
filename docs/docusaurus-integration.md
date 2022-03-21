@@ -14,7 +14,7 @@ This is how [we've integrated Plausible](https://github.com/plausible/docs/commi
 
 ```
 module.exports = {
-  scripts: [{src: 'https://plausible.io/js/plausible.js', defer: true, 'data-domain': 'yourdomain.com'}],
+  scripts: [{src: 'https://plausible.io/js/script.js', defer: true, 'data-domain': 'yourdomain.com'}],
 };
 ```
 

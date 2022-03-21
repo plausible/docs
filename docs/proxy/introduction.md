@@ -31,7 +31,7 @@ This section has been introduced after hearing from so many site owners who expe
 Simply run our default script. The easiest way to get started with Plausible Analytics is to install the script from our main domain as follows:
 
 ```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.js"></script>
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.js"></script>
 ```
 
 This is the simplest way to install Plausible Analytics but it will also be blocked by a portion of your visitors. In [our testing](https://markosaric.com/google-analytics-blocking/), between 6% and 26% of people block scripts all depending on the type of the site and the audience. In more extreme cases, with very tech-savvy referral sources these numbers can get [up to 60%](https://plausible.io/blog/google-analytics-adblockers-missing-data).
@@ -43,11 +43,11 @@ Proxy our script. This is the option for those who want to get more accurate sta
 A proxy basically maps certain URLs from your domain to the Plausible domain:
 
 ```
-https://<yourdomain.com>/js/script.js -> https://plausible.io/js/plausible.js
+https://<yourdomain.com>/js/script.js -> https://plausible.io/js/script.js
 https://<yourdomain.com>/api/event    -> https://plausible.io/api/event
 ```
 
-When the browser requests a file at `https://yourdomain.com/js/script.js` it will actually be fetched from `https://plausible.io/js/plausible.js`. The analytics will work exactly the same but the script will be served without being flagged.
+When the browser requests a file at `https://yourdomain.com/js/script.js` it will actually be fetched from `https://plausible.io/js/script.js`. The analytics will work exactly the same but the script will be served without being flagged.
 
 There are many ways you can proxy requests to Plausible depending on your hosting situation. We've divided our guides to *standalone* and *integrated* proxies. A standalone proxy can be set up on its own and it does not matter what hosting provider or tech stack you are using. Integrated proxy setups are dependent on how you've deployed your app.
 

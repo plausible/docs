@@ -12,12 +12,12 @@ If you still want some pages to be reported with the complete URL that includes 
 
 You can use [Plausible's manual script extension](script-extensions.md#plausiblemanualjs) and define a custom location for all such pageviews. 
 
-To do so, change your Plausible script snippet `src` attribute from `https://plausible.io/js/plausible.js` to `https://plausible.io/js/plausible.manual.js`.
+To do so, change your Plausible script snippet `src` attribute from `https://plausible.io/js/script.js` to `https://plausible.io/js/script.manual.js`.
 
 The new snippet will look like this (make sure to change the `data-domain` attribute to the domain you added to your Plausible account):
 
 ```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.manual.js"></script>
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.manual.js"></script>
 ```
 Do this on all the pages where you want to track the custom query parameters.
 
@@ -63,7 +63,7 @@ and the page path will be reported to your dashboard as `blog/index.php/some_art
 At this point, your entire setup should look like this:
 
 ```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.manual.js"></script>
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.manual.js"></script>
 <!-- define the `plausible` function to manually trigger events -->
 <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 <!-- trigger pageview -->

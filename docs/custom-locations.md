@@ -11,12 +11,12 @@ Follow the steps below to learn how you can specify a custom location for your p
 ## 1. Add the `manual` script extension
 To specify a custom location for your event, you must use [Plausible's manual script extension](script-extensions.md#plausiblemanualjs). 
 
-To do so, change your Plausible script snippet `src` attribute from `https://plausible.io/js/plausible.js` to `https://plausible.io/js/plausible.manual.js`.
+To do so, change your Plausible script snippet `src` attribute from `https://plausible.io/js/script.js` to `https://plausible.io/js/script.manual.js`.
 
 The new snippet will look like this (make sure to change the `data-domain` attribute to the domain you added to your Plausible account):
 
 ```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.manual.js"></script>
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.manual.js"></script>
 ```
 
 
@@ -56,7 +56,7 @@ plausible('pageview', { u: "https://yourdomain.com/my-custom-location" });
 At this point, your entire setup should look like this:
 
 ```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.manual.js"></script>
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.manual.js"></script>
 <!-- define the `plausible` function to manually trigger events -->
 <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 <!-- trigger pageview -->
@@ -98,7 +98,7 @@ Perhaps you would like to combine all of the pageviews for these pages so they a
 To do so, you could write a Javascript function that gets the canonical URL and that provides it to Plausible's pageview event:
 
 ```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.manual.js"></script>
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.manual.js"></script>
 <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 <script>
   // Get the canonical URL element
@@ -125,7 +125,7 @@ In situations like these, redacting identifiers from URLs can make things much m
 For example, you could write a Javascript function that uses a regular expression to remove numerical identifiers from the URLs that Plausible receives:
 
 ```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.manual.js"></script>
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.manual.js"></script>
 <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 <script>
   var url = window.location.href;

@@ -15,7 +15,7 @@ If you want to track custom event goals like button clicks or form completions, 
 First, make sure your tracking setup includes the second line as shown below:
 
 ```html
-<script defer data-domain="<yourdomain.com>" src="https://plausible.io/js/plausible.js"></script>
+<script defer data-domain="<yourdomain.com>" src="https://plausible.io/js/script.js"></script>
 <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 ```
 
