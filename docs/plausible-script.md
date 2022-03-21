@@ -9,7 +9,7 @@ To integrate your website with Plausible Analytics, you need to be able to updat
 Your Plausible Analytics tracking script code will look something like this (your exact code will be shown on the JavaScript snippet page):
 
 ```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.js"></script>
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.js"></script>
 ```
 
 <img alt="Plausible Analytics script" src={useBaseUrl('img/add-js-snippet.png')} />
@@ -45,7 +45,7 @@ Here's [the full list of all integrations and guides](integration-guides.md). Th
 Yes, you can send your visitor stats to multiple Plausible dashboards at the same time. To do this, you need to configure the data-domain attribute as a comma-separated list in the Plausible snippet that you insert into your site. Here's an example:
 
 ```html
-<script defer data-domain="domain1.com,domain2.com,subdomain.yourdomain.com" src="https://plausible.io/js/plausible.js"></script>
+<script defer data-domain="domain1.com,domain2.com,subdomain.yourdomain.com" src="https://plausible.io/js/script.js"></script>
 ```
 
 ## Can I use the same snippet across my domain and subdomain?
@@ -67,13 +67,13 @@ Rollup reporting allows you to aggregate stats from multiple sites and see them 
 * On the first.com site, add the new site name to the data-domain attribute in your Plausible snippet like this:
 
 ```html
-<script defer data-domain="first.com,rollup.first-second.com" src="https://plausible.io/js/plausible.js"></script>
+<script defer data-domain="first.com,rollup.first-second.com" src="https://plausible.io/js/script.js"></script>
 ```
 
 * Add the new site name to the data-domain attribute in your Plausible snippet on the second.com site too. Like this:
 
 ```html
-<script defer data-domain="second.com,rollup.first-second.com" src="https://plausible.io/js/plausible.js"></script>
+<script defer data-domain="second.com,rollup.first-second.com" src="https://plausible.io/js/script.js"></script>
 ```
 
 This will send pageviews from your sites to their individual dashboards so you can still see their separate stats but it will also send their stats to a grouped dashboard which means you'll be able to see the combined stats too in a roll-up view. 

@@ -27,7 +27,7 @@ Here's an example of how you can track form submissions on your Webflow site usi
 First, make sure your tracking setup includes the second line as shown below. For this, follow the same steps you took when inserting the default Plausible snippet.
 
 ```html
-<script defer data-domain="<yourdomain.com>" src="https://plausible.io/js/plausible.js"></script>
+<script defer data-domain="<yourdomain.com>" src="https://plausible.io/js/script.js"></script>
 <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 ```
 

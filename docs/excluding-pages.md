@@ -14,12 +14,12 @@ Here's how to exclude pages manually.
 
 ## 1. You'll need to use a different Plausible script snippet
 
-To manually exclude specific pages from being tracked, you need to change your Plausible script snippet `src` attribute from `https://plausible.io/js/plausible.js` to `https://plausible.io/js/plausible.exclusions.js`
+To manually exclude specific pages from being tracked, you need to change your Plausible script snippet `src` attribute from `https://plausible.io/js/script.js` to `https://plausible.io/js/script.exclusions.js`
 
 The new snippet will look like this (make sure to change the `data-domain` attribute to the domain you added to your Plausible account):
 
 ```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.exclusions.js"></script>
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.exclusions.js"></script>
 ```
 
 ## 2. Add the pages you'd like to exclude from being tracked
@@ -44,7 +44,7 @@ See below for examples of common page use cases and how they would function.
 The new snippet would look like this (make sure to change the `data-domain` attribute to the domain you added to your Plausible account):
 
 ```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.exclusions.js" data-exclude="/blog4, /rule/*, /how-to-*, /*/admin, /*/priv/*, /more-paths-here"></script>
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.exclusions.js" data-exclude="/blog4, /rule/*, /how-to-*, /*/admin, /*/priv/*, /more-paths-here"></script>
 ```
 
 You need to place your new Plausible Analytics tracking script code into the Header (`<head>`) section of your site. Place the tracking script within the `<head> … </head>` tags. Do this for all the websites where you'd like to use page-tracking exclusions.
@@ -54,7 +54,7 @@ This is the only tracking script you need. You don't need to keep the default sc
 You do not have to use the `exclusions` script type exclusively. You can chain various script types, for example:
 
 ```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/plausible.hash.exclusions.outbound-links.js" data-exclude="/blog4, /rule/*, /how-to-*, /*/admin, /*/priv/*, /more-paths-here"></script>
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.hash.exclusions.outbound-links.js" data-exclude="/blog4, /rule/*, /how-to-*, /*/admin, /*/priv/*, /more-paths-here"></script>
 ```
 
 The example above includes both [outbound link clicks tracking](outbound-link-click-tracking.md) and tracking for [hash-based routing pages](hash-based-routing.md) in addition to the `exclusions` script type.

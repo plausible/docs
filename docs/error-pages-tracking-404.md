@@ -25,7 +25,7 @@ If you want to track 404 error pages on your site, here's what you need to do:
 First, make sure your tracking setup for Plausible Analytics includes the second line as shown below:
 
 ```html
-<script defer data-domain="<yourdomain.com>" src="https://plausible.io/js/plausible.js"></script>
+<script defer data-domain="<yourdomain.com>" src="https://plausible.io/js/script.js"></script>
 <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 ```
 

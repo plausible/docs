@@ -25,7 +25,7 @@ Add the following JSON to rewrite calls within your application to Plausible's r
   "rewrites": [
     {
       "source": "/stats/js/script.js",
-      "destination": "https://plausible.io/js/plausible.js"
+      "destination": "https://plausible.io/js/script.js"
     },
     {
       "source": "/stats/api/event",
