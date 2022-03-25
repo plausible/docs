@@ -48,11 +48,15 @@ You can check the data retention limit you have set for your Google Analytics pr
 
 Do you have strict data retention limits in place in your Google Analytics? We can only show the metrics in the top chart of your Plausible dashboard for periods outside of your data retention limit as Google automatically deletes all the other stats.
 
+## Can I delete my Google Analytics account after a successful import?
+
+We no longer need access to your Google Analytics account after the import has been completed succesfully. If you're happy with the way your old Google Analytics stats look in Plausible Analytics, you can safely delete your Google Analytics account. Your imported data will stay in your Plausible account. 
+
 ## How does imported data differ from Plausible native data?
 
 We have taken many steps to make the imported data feel as fast, as easy and as straightforward as the native data that is collected by Plausible directly. But it is important to note that imported data will not be as flexible as the native data that we collect using our script. Here are the differences:
 
-### No filtering 
+### Filtering 
 
 The Google Analytics data is imported using Google's Reporting API v4 which has limits on the number of dimensions that can be fetched in a single query. This means we cannot fetch entries that contain all of the dimensions we are interested in and instead need to fetch data for each dimension individually. 
 
@@ -74,7 +78,7 @@ The same is the case for browser and OS versions. We can import your traffic spl
 
 It is also not possible to import your goal data.
 
-### Day view graph has no hourly overview
+### Day view graph
 
 Another restriction of the imported data compared to the native data is that we cannot display hourly graphs on the daily view.
 
