@@ -11,6 +11,8 @@ proxy, you can also configure it to proxy your analytics. Start by adjusting you
 # Only needed if you cache the plausible script. Speeds things up.
 # Note: to use the `proxy_cache` setup, you'll need to make sure the `/var/run/nginx-cache`
 # directory exists (e.g. creating it in a build step with `mkdir -p /var/run/nginx-cache`)
+# To make `/var/run/nginx-cache` persist during reboots of your server
+# make sure to run `echo "D /run/nginx-cache 0755 root root -" > /usr/lib/tmpfiles.d/nginx-cache.conf`
 proxy_cache_path /var/run/nginx-cache/jscache levels=1:2 keys_zone=jscache:100m inactive=30d  use_temp_path=off max_size=100m;
 
 server {
