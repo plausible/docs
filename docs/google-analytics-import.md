@@ -62,6 +62,12 @@ The Google Analytics data is imported using Google's Reporting API v4 which has 
 
 Unfortunately, this means we are unable to look at how dimensions interact. For example, it is not possible to use [our filters](filters-segments.md) with the imported data.
 
+### Unique visitors
+
+When you're looking at a longer period of time, you may see a discrepancy in the number of total unique visitors in your data in Google Analytics and in the Google Analytics data you imported to Plausible. This happens because we only import day-level aggregated data. 
+
+To get the number of unique visitors in a longer period of time (say one month) we just sum up the daily unique visitor numbers. We cannot do the proper unique visitors calculation that uses cookies and other data like Google Analytics is doing. 
+
 ### UTM traffic
 
 Google Analytics aggregates multiple dimensions under the name "**source**", including referral sources and the value of the UTM source parameter if that was present during a visit. 
