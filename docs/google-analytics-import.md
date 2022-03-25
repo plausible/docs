@@ -66,7 +66,7 @@ Unfortunately, this means we are unable to look at how dimensions interact. For 
 
 When you're looking at a longer period of time, you may see a discrepancy in the number of total unique visitors in your data in Google Analytics and in the Google Analytics data you imported to Plausible. This happens because we only import day-level aggregated data. 
 
-To get the number of unique visitors in a longer period of time (say one month) we just sum up the daily unique visitor numbers. We cannot do the proper unique visitors calculation that uses cookies and other data like Google Analytics is doing. 
+To get the number of unique visitors in a longer period of time (say one month) we just sum up the daily unique visitor numbers. We cannot do the proper unique visitors calculation like Google Analytics is doing. 
 
 ### UTM traffic
 
