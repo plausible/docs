@@ -4,9 +4,11 @@ title: Importing stats from Google Analytics
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Universal Analytics, the current version of Google Analytics, will be sunset and [will stop counting stats](https://plausible.io/blog/universal-google-analytics-is-dead) on July 1st 2023. There’s no way to import your historical Universal Analytics stats into the new Google Analytics 4 edition. 
+Universal Analytics, the current version of Google Analytics, will be sunset and [will stop counting stats](https://plausible.io/blog/universal-google-analytics-is-dead) on July 1st 2023. There’s no way to import your historical Universal Analytics stats into the new Google Analytics 4 edition so we've put a lot of effort into making a Google Analytics stats import tool ourselves. 
 
-Google may not want you to keep your old stats so we've put a lot of work into making a Google Analytics stats import tool ourselves. Here's how to import your historical Google Analytics (Universal Analytics) stats into your Plausible Analytics account.
+## How to import your historical stats from Google Analytics to Plausible Analytics 
+
+Here's how to import your historical Google Analytics (Universal Analytics) stats into your Plausible Analytics account.
 
 1. Go to the your Plausible Analytics [site settings](website-settings.md) for the website you'd like to import the data for.
 
@@ -17,8 +19,6 @@ Google may not want you to keep your old stats so we've put a lot of work into m
 :::note
 If you do not have a property for your domain name with those permissions, for example, if your Google Account only has access to view another account's data, you may need to obtain greater permissions for your Google account.
 :::
-
-<img alt="Select GA profile" src={useBaseUrl('img/import-select-profile.png')} />
 
 4. Clicking "**Import**" will start the data import process. Depending on the amount of data you have, this may take some time. This is run in the background, so you will receive an email when the import has been completed. It should take no more than a couple of minutes for the majority of sites.
 
