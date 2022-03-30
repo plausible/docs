@@ -12,7 +12,7 @@ Unfortunately, it is not possible for you to edit the domain name of an existing
 
 3. Once you start collecting the stats on the new dashboard, please [contact us](https://plausible.io/contact) with your information (account email address, old domain name, and new domain name)
 
-We will then manually backfill your new dashboard with the data from the old dashboard. Don't worry. You won't lose any of the old stats in this process. After we migrate the data, you can safely delete the old dashboard from your Plausible account.
+We will then manually backfill your new dashboard with the data from the old dashboard. Don't worry. You won't lose any of the old stats in this process. After we migrate the data, you can safely [delete the old site](delete-site-data.md) from your Plausible account.
 
 :::note
 Are you looking to transfer a site from your account to a different account such as an account owned by your client? Use our [site ownership transfer functionality](transfer-ownership.md)
