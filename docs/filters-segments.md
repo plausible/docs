@@ -42,6 +42,7 @@ When searching for pages, you can use double asterisks to match any character (e
 
 - Asterisks (`*`) expand to any stretch (of length >=0) of the page path and can be on either end or in the middle of any entry, but **cannot** be in the place of slashes.
 - Double asterisks (`**`) expand to any stretch (of length >=0) of the page path, can be on either end or in the middle of any entry, and can represent **any** characters, even slashes.
+- For page-based metrics, "contains" is also available as a filter type. This has the same effect of adding double asterisks (`**`) before and after your entry.
 
 You can use rules in this format to group different pages or dynamic URLs. You can track all the blog posts by using `/blog**` (if your blog subdirectory is named `blog`) or track Woocommerce checkout pages for your ecommerce (`/checkout/order-received/*`). 
 
