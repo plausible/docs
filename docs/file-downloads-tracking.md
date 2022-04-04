@@ -8,7 +8,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 If you use the File downloads tracking feature, then these count towards your billable monthly pageviews.
 :::
 
-File downloads tracking is essential for many site owners and Plausible helps you automate this process. With our "**File Downloads Tracking**" you can:
+File downloads tracking is essential for many site owners and Plausible helps you automate this process. Plausible tracks when a visitor clicks a link leading to a file. All the most common file extensions are tracked by default but you can also specify a custom list of file types to track. With our "**File Downloads Tracking**" you can:
 
 * See which files are clicked the most
 * See on which of your pages the particular file gets the clicks
@@ -34,7 +34,7 @@ Do this for all the websites where you'd like to enable file downloads tracking.
 
 ## Step 2: Create a custom event goal in your Plausible Analytics account
 
-File downloads clicks won’t show up automatically. You’ll have to configure the goal for them to show up on your dashboard.
+File download clicks won’t show up automatically. You’ll have to configure the goal for them to show up on your dashboard.
 
 To configure a goal, go to [your website’s settings](website-settings.md) in your Plausible Analytics account and visit the "**Goals**" section. You should see a prompt to add a goal.
 
@@ -62,20 +62,18 @@ Click on "**File Download**" to see the full list of all clicks on all files and
 
 Click on a particular file URL to filter the dashboard by those clicks only and get the full overview of that specific file.
 
-## Which file formats are tracked?
+## Which file types are tracked?
 
-Our "**File Downloads Tracking**" captures a file download event each time a link is clicked with a document, presentation, text file, compressed file, video, audio or other common file format. These file types are tracked by default: 
+Our "**File Downloads Tracking**" captures a file download event each time a link is clicked with a document, presentation, text file, compressed file, video, audio or other common file type. Both internal and external files downloads are tracked. These file extensions are tracked by default: 
 
 `.pdf`, `.xlsx`, `.docx`, `.txt`, `.rtf`, `.csv`, `.exe`, `.key`, `.pps`, `.ppt`, `.pptx`, `.7z`, `.pkg`, `.rar`, `.gz`, `.zip`, `.avi`, `.mov`, `.mp4`, `.mpeg`, `.wmv`, `.midi`, `.mp3`, `.wav`, `.wma`
 
-Both internal and external files downloads are tracked.
+## What if I want to track a different file type?
 
-## What if I want to track a file format that you don't support by default?
-
-You can also specify a custom list of file types to track with a `file-types` attribute tag. With this, you can also track other downloads not present in the default list. Say you only want to track `.js` and `.py` files, you can use a snippet like this:
+You can also specify a custom list of file types to track with a `file-types` attribute tag. With this, you can track other downloads not present in the default list. Say you only want to track `.js` and `.py` files, you can use a snippet like this:
 
 ```html
 <script defer file-types="js,py" data-domain="yourdomain.com" src="https://plausible.io/js/script.file-downloads.js"></script>
 ```
 
-Using the `file-types` attribute will override the default list and only the custom file-type downloads will be tracked.
+Using the `file-types` attribute will override our default list and only your custom file type downloads will be tracked.
