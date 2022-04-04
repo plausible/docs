@@ -11,12 +11,15 @@ We've tried to make Plausible as usable and accessible as possible with just a k
 | Key       | Action     |
 | :------------- | :----------- |
 | D | Today |
+| E | Yesterday |
 | R | Realtime |
 | W | Last 7 days |
 | T | Last 30 days |
 | M | Month to Date |
+| Y | Year to Date |
 | S | Last 6 months |
-| Y | Last 12 months |
+| L | Last 12 months |
+| A | All time |
 | C | Custom range |
 | 1-9 | Swap to site #1-9 |
 | Left Arrow | Previous period |
