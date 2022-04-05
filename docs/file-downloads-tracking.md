@@ -14,7 +14,7 @@ File downloads tracking is essential for many site owners and Plausible helps yo
 * See on which of your pages the particular file gets the clicks
 * Filter the dashboard by a file URL to see what type of visitors click the most (referral source, location, device, browser, OS)
 
-"**File Downloads Tracking**" is an enhanced measurement and not included in our default script. This is because we want to keep the default script as simple and lightweight as possible. The additional enhanced measurements you can choose to add depending on your needs.
+"**File Downloads Tracking**" is an enhanced measurement and not included in our default script. This is because we want to keep the default script as simple and lightweight as possible. The [additional enhanced measurements](script-extensions.md) you can choose to add depending on your needs.
 
 If you want to track file downloads, here's what you need to do:
 
@@ -31,6 +31,10 @@ The new snippet will look like this (make sure to change the `data-domain` attri
 As usual, you need to place your Plausible Analytics tracking script code into the Header (`<head>`) section of your site. Place the tracking script within the `<head> … </head>` tags.
 
 Do this for all the websites where you'd like to enable file downloads tracking. This is the only tracking script you need. You don't need to keep the old script. Your stats will keep tracking without interruption and you will not lose any of your old data.
+
+:::note
+Do you want to use the file downloads feature alongside the [outbound link clicks tracking](outbound-link-click-tracking.md)? You can combine any of our extensions by changing the `src` attribute in the snippet. In this case, change it to `script.file-downloads.outbound-links.js`.
+:::
 
 ## Step 2: Create a custom event goal in your Plausible Analytics account
 
