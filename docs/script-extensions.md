@@ -2,32 +2,27 @@
 title: Script extensions for enhanced measurement
 ---
 
-We're proud to have one of the most [lightweight Javascript snippets](https://plausible.io/lightweight-web-analytics) in the analytics industry. Clocking in at less than 1KB, our script will not add any bloat to your website or cause performance issues. 
+We're proud to have one of the most [lightweight JavaScript snippets](https://plausible.io/lightweight-web-analytics) in the analytics industry. Clocking in at less than 1KB, our script will not add any bloat to your website or cause performance issues. 
 
-One of the ways we achieve that is by radically limiting the amount of options in the default script. Instead, we provide separate script files based on how you might want to use Plausible.
+One of the ways we achieve that is by radically limiting the number of options in the default script. Instead, we provide separate script files based on how you might want to use Plausible.
 
-For example, the default `script.js` script will automatically work with [pushState](https://developer.mozilla.org/en-US/docs/Web/API/History_API) based frontend routing which is the most common.
+For example, the default `script.js` script will automatically work with [pushState](https://developer.mozilla.org/en-US/docs/Web/API/History_API) based frontend routing which is the most common. If your website uses [hash-based routing](https://krasimirtsonev.com/blog/article/deep-dive-into-client-side-routing-navigo-pushstate-hash#hash-based-routing) instead, you have the option of loading the script with a different extension: `script.hash.js`. 
 
-If your website uses [hash-based routing](https://krasimirtsonev.com/blog/article/deep-dive-into-client-side-routing-navigo-pushstate-hash#hash-based-routing) instead, you have the option of loading the script with a different extension: `script.hash.js`. If you want to automatically track
-outbound links on your website, you can load `script.outbound-links.js`. And if you want both, these extensions can be combined as follows:
-`script.hash.outbound-links.js`.
-
-In the case above, the snippet you need to insert into your site is as follows:
+In this case, the snippet you need to insert into your site is as follows (make sure to change the data-domain attribute to the domain you added to Plausible):
 
 ```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.hash.outbound-links.js"></script>
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.hash.js"></script>
 ```
 
-And say you want to use our `script.exclusions.js` extension to exclude certain pages from being tracked and our `script.local.js` extension to track localhost traffic, your snippet should look like this:
+Another example: If you want to track clicks on outbound links on your site, you can use the `script.outbound-links.js` extension.
+
+In this case, the snippet you need to insert into your site is as follows:
 
 ```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.exclusions.local.js"></script>
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.outbound-links.js"></script>
 ```
 
-You can mix and match, and combine extensions any way that you wish. And you only need to insert that one snippet into your site, no need for anything else.
-
-This approach makes sure that you only load code that will actually be used on your website. Websites should not have to load dozens or hundreds of kilobytes
-of dead Javascript code on every pageload which degrades the user experience and causes unnecessary network traffic.
+This approach makes sure that you only load the code that will actually be used on your website. Websites should not have to load dozens or hundreds of kilobytes of dead JavaScript code on every page load which degrades the user experience and causes unnecessary network traffic.
 
 ## All our script extensions 
 
@@ -43,6 +38,25 @@ Here's the list of all the available extensions at this time:
 | script.local.js          | Allow analytics to track on localhost too which is useful in hybrid apps                           |
 | script.manual.js         | [Do not trigger pageviews automatically](#plausiblemanualjs). Also allows you to [specify custom locations](custom-locations.md) to redact URLs with identifiers. You can also use it to track [custom query parameters](custom-query-params.md)|
 
+## You can combine extensions according to your needs
+
+If you want to use both our hash-based routing extension and our outbound link click extension, you can combine them as follows:
+`script.hash.outbound-links.js`.
+
+In this case, the snippet you need to insert into your site is as follows (make sure to change the data-domain attribute to the domain you added to Plausible):
+
+```html
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.hash.outbound-links.js"></script>
+```
+
+Or say you want to use our `script.exclusions.js` extension to exclude certain pages from being tracked and our `script.local.js` extension to track localhost traffic, your snippet should look like this:
+
+```html
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.exclusions.local.js"></script>
+```
+
+You can mix and match, and combine extensions any way that you wish. And you only need to insert that one snippet into your site, no need for anything else.
+
 ## script.compat.js
 
 The default Plausible script will not work on Internet Explorer because it uses the [document.currentScript](https://caniuse.com/document-currentscript) API to read configuration options. You can run Plausible in compatibility mode by including the `script.compat.js` extension and defining `id="plausible"` on the script tag so that it can find itself. Here's how it should look like:
@@ -55,7 +69,7 @@ The default Plausible script will not work on Internet Explorer because it uses 
 
 By default, the Plausible script triggers a pageview when it is first loaded. It also attaches listeners to the History API and will automatically trigger pageviews when you use `history.pushState`. This is useful for most websites but we also offer a manual mode in case you want full control over when pageviews are triggered on your website.
 
-The most common use-case for this is when you use [Turbo](https://turbo.hotwired.dev/) (formerly [Turbolinks](https://github.com/turbolinks/turbolinks)). In that case, you want to manually trigger Plausible pageviews on the `turbo:load` or `turbolinks:load` browser event depending which library you use. Here's how you can do that:
+One of the use-cases for this is when you use [Turbo](https://turbo.hotwired.dev/) (formerly [Turbolinks](https://github.com/turbolinks/turbolinks)). In that case, you want to manually trigger Plausible pageviews on the `turbo:load` or `turbolinks:load` browser event depending which library you use. Here's how you can do that:
 
 ```html
 <script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.manual.js"></script>
