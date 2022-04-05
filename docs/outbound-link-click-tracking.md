@@ -18,7 +18,7 @@ Outbound link click tracking is essential for many site owners and Plausible hel
 
 Check out this blog post for more details on the value of [tracking outbound link clicks](https://plausible.io/blog/track-outbound-link-clicks).
 
-"**Outbound Link Click Tracking**" is an enhanced measurement and not included in our default script. This is because we want to keep the default script as simple and lightweight as possible. The additional enhanced measurements you can choose to add depending on your needs.
+"**Outbound Link Click Tracking**" is an enhanced measurement and not included in our default script. This is because we want to keep the default script as simple and lightweight as possible. The [additional enhanced measurements](script-extensions.md) you can choose to add depending on your needs.
 
 If you want to track external link clicks, here's what you need to do:
 
@@ -35,6 +35,10 @@ The new snippet will look like this (make sure to change the `data-domain` attri
 As usual, you need to place your Plausible Analytics tracking script code into the Header (`<head>`) section of your site. Place the tracking script within the `<head> … </head>` tags.
 
 Do this for all the websites where you'd like to enable outbound link click tracking. This is the only tracking script you need. You don't need to keep the old script. Your stats will keep tracking without interruption and you will not lose any of your old data.
+
+:::note
+Do you want to use the outbound link clicks feature alongside the [file downloads feature](file-downloads-tracking.md)? You can combine any of our extensions by changing the `src` attribute in the snippet. In this case, change it to `script.outbound-links.file-downloads.js`.
+:::
 
 ## Step 2: Create a custom event goal in your Plausible Analytics account
 
