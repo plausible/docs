@@ -24,7 +24,7 @@ that you may already have in your application:
 Choose a generic or irrelevant name for the subdirectory. If you choose something like `analytics` or `plausible`,
 it might get blocked in the future.
 
-Using our extensions such as hash-based routing, page exclusions or outbound link click tracking? Edit your `_redirects` and change the name from `script.js` to the script you want to use: `script.hash.js`, `script.exclusions.js` or `script.outbound-links.js`. Want to use more than one extension? You can chain them like this: `script.hash.exclusions.outbound-links.js`
+Using our [script extensions](script-extensions.md) such as hash-based routing, page exclusions or outbound link click tracking? Edit your `_redirects` and change the name from `script.js` to the script you want to use: `script.hash.js`, `script.exclusions.js` or `script.outbound-links.js`. Want to use more than one extension? You can chain them like this: `script.hash.exclusions.outbound-links.js`
 
 ## Step 2: Adjust your deployed script
 
@@ -41,7 +41,6 @@ the data should be sent.
 <script defer data-domain="yourdomain.com" data-api="/subdirectory/api/event" src="/subdirectory/js/script.js"></script>
 ```
 
-
 Deploy these changes to your Netlify site. You can verify the proxy is working by opening your network tab. You should see a request to
 `https://yourdomain.com/js/script.js` with status 200 and another one to `https://yourdomain.com/api/event` with status 202.
 
@@ -49,4 +48,4 @@ Deploy these changes to your Netlify site. You can verify the proxy is working b
 
 If your `<script>` tag's `src` attribute is being manipulated to some unrecognised CDN URL, it's because you have the `Asset optimization` JS settings enabled in Netlify. Both the `Bundle JS` and `Minify JS` options must be de-selected in order to avoid interference with the proxied Plausible URL. 
 
-Prefer not to disable the `Asset optimization`? Try to use the absolute URL in the `src` attribute of your `<script>`.
+Prefer not to disable the `Asset optimization`? Try to use the absolute URL in the `src` attribute of your `<script>` (`https://yourdomain.com/js/script.js`).
