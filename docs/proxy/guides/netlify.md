@@ -47,7 +47,6 @@ Deploy these changes to your Netlify site. You can verify the proxy is working b
 
 ## Troubleshooting
 
-If your `<script>` tag's `src` attribute is being manipulated to some unrecognised CDN URL,
-it's because you have the `Asset optimization` JS settings enabled in Netlify.
-Both the `Bundle JS` and `Minify JS` options must be de-selected in order to
-avoid interference with the proxied Plausible URL.
+If your `<script>` tag's `src` attribute is being manipulated to some unrecognised CDN URL, it's because you have the `Asset optimization` JS settings enabled in Netlify. Both the `Bundle JS` and `Minify JS` options must be de-selected in order to avoid interference with the proxied Plausible URL. 
+
+Prefer not to disable the `Asset optimization`? Try to use the absolute URL in the `src` attribute of your `<script>`.
