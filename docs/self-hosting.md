@@ -10,7 +10,7 @@ Plausible Analytics is designed to be self-hosted via Docker. You don't have to 
 to launch your own instance of Plausible Analytics. You should have a basic understanding of the command-line
 and networking to successfully set up your own instance of Plausible Analytics.
 
-> NB: If you hit a snag with the setup, you can reach out to us on the [forum](https://github.com/plausible/analytics/discussions). If you think something could be better explained in the docs, please open a PR on Github so the next person has a nicer experience. Happy hosting!
+> NB: If you hit a snag with the setup, you can reach out to us on the [forum](https://github.com/plausible/analytics/discussions). If you think something could be better explained in the docs, please open a PR on GitHub so the next person has a nicer experience. Happy hosting!
 
 ## Version management
 
