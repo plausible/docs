@@ -1,5 +1,5 @@
 ---
-title: Importing stats from Google Analytics
+title: Import stats from Google Analytics
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
