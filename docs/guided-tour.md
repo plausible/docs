@@ -28,19 +28,21 @@ Click on your site name in the top left side of your dashboard. It allows you to
 
 We get all the favicons (your site favicon and the favicons of all the referral sources) directly from the DuckDuckGo API. We display the same icon that DuckDuckGo shows in their search results.
 
+## Filtering
+
+You can go granular and click on any of the metrics in your Plausible dashboard to filter the dashboard by it. You can mix and match filters too. This is an easy way for you to segment your audience. For instance you can drill down to see traffic coming from a specific marketing campaign to a specific landing page over time.
+
+You can also use the "**Filter**" button on the top of your dashboard which gives you extra functionality such as the ability to search for any metric, exclude segments of your audience and group pages. [Learn more about filtering here](filters-segments.md).
+
 ## Top Sources
 
 <img alt="Top Sources" src={useBaseUrl('img/top-sources.png')} />
 
 See all the top referral sources of traffic ranked by the number of unique visitors. You can click on the "**details**" button to see the full list which also includes the "**Direct/None**" traffic. Additional metrics such as bounce rates and visit duration of the individual referral are included too.
  
-You can also see all the visitors coming from the UTM tagged links such as links in your emails, social media or in your paid campaigns. Click on the "**Medium**", "**Source**" and "**Campaign**" tabs on your top sources report to explore these. You can learn more about [link tagging here](manual-link-tagging.md).
+You can click into the "**Campaign**" tabs of the Top Sources report to see your campaigns isolated from other traffic sources. These are visitors coming from UTM tagged links such as those in your emails, social media or in your paid advertising campaigns. Click on "**Medium**", "**Source**", "**Campaign**", "**Term**" and "**Content**" to explore these. You can learn more about [link tagging here](manual-link-tagging.md).
 
 Note that the referral sources including UTM and other query parameters are counted only when they start a new session on your site.
-
-:::note
-You can go granular and click on any of the metrics on your Plausible dashboard to filter the dashboard by it. You can mix and match filters too. For instance you can drill down to see traffic coming from a specific referral source to a specific page over time. [Learn more about filtering here](filters-segments.md)
-:::
 
 ## Top Pages
 
@@ -74,4 +76,4 @@ You can see the device, browser and operating system your visitors are using. Cl
 
 <img alt="Goal Conversions" src={useBaseUrl('img/dashboard-goal-conversions.png')} />
 
-Track events and goals to identify the number of unique converted visitors, the total number of conversions, the conversion rate, and the referral sites that send the traffic that converts the best. We have a very flexible support for goals which allows you to create your own metrics to collect and analyze data that Plausible doesn’t automatically track. [Read more here](goal-conversions.md).
+Track events and goals to identify the number of unique converted visitors, the total number of conversions, the conversion rate, and the referral sites that send the traffic that converts the best. We have a very flexible support for goals which allows you to create your own metrics to collect and analyze data that Plausible doesn’t automatically track. We also have an automated way to track 404 error pages, external link clicks and file downloads. [Read more here](goal-conversions.md).
