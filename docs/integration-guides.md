@@ -202,8 +202,6 @@ Plausible integrates automatically with modern pushState based frontend routers.
 
 ## Statamic
 
-* [Statamic](https://statamic.com/addons/visuellverstehen/plausible): Let your [Statamic](https://statamic.com) users easily navigate to their shared Plausible link from inside the control panel. Built and maintained by [visuellverstehen](https://visuellverstehen.de).
-
 * [Plausible Wrapper](https://statamic.com/addons/jack-whiting/plausible): A wrapper around the Plausible API that fetches the analytics into your dashboard in a pretty way. Built and maintained by [Jack Whiting](https://jackwhiting.co.uk/).
 
 ## Turbo / Turbolinks
