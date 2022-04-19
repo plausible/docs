@@ -56,4 +56,8 @@ When you're working on your site, you might not want to record your own visits a
 
 If you'd like to serve the script as a first-party connection from your domain name, we offer a way to proxy our script. See [full details here](/proxy/introduction.md).
 
+## Import your historical Google Analytics stats
+
+You can import your historical Google Analytics (Universal Analytics) stats into your Plausible dashboard. See [how our GA importer works](google-analytics-import.md).
+
 Now you're ready to start exploring your [fast loading, ethical and actionable Plausible Analytics dashboard](https://plausible.io/sites).
