@@ -144,9 +144,9 @@ You can enable Plausible to count visitors on localhost which is useful in Cordo
 
 If you'd like to count users on your Android and/or iOS mobile apps, you can use our events API to record views and custom events. [Learn more here](events-api.md)
 
-## NPM package
+## npm package
 
-[NPM package](https://www.npmjs.com/package/plausible-tracker): Frontend library to interact with Plausible. Same features as the official script, but as an NPM module. Works with React. Built and maintained by [Gustavo Maronato](https://github.com/plausible/plausible-tracker).
+[npm package](https://www.npmjs.com/package/plausible-tracker): Frontend library to interact with Plausible. Same features as the official script, but as an npm module. Works with React. Built and maintained by [Gustavo Maronato](https://github.com/plausible/plausible-tracker).
 
 ## Neos CMS
 
