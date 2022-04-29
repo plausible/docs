@@ -63,6 +63,7 @@ Integrated proxy setups:
 * [Vercel with Next.JS](/docs/proxy/guides/nextjs)
 * [Nginx](/docs/proxy/guides/nginx)
 * [Caddy](/docs/proxy/guides/caddy)
+* [Django](https://github.com/imankulov/django-plausible-proxy)
 * [Shared hosting on Apache](https://github.com/Neoflow/ReverseProxy-PlausibleAnalytics)
 
 Events API as a server side alternative:

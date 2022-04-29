@@ -42,9 +42,10 @@ Plausible by default doesn't take DNT (Do Not Track) into consideration as we're
 
 [How to add the script to your Discourse community](discourse-integration.md)
 
-## Django / Wagtail
+## Django
 
-[Django-Plausible](https://pypi.org/project/django-plausible/): Django module to provide easy Plausible integration, with Wagtail support. Built and maintained by [Jake Howard](https://pypi.org/user/TheOrangeOne/).
+- [Django-Plausible](https://pypi.org/project/django-plausible/): Django module to provide easy Plausible integration, with Wagtail support. Built and maintained by [Jake Howard](https://pypi.org/user/TheOrangeOne/).
+- [Django-plausible-proxy](https://github.com/imankulov/django-plausible-proxy) is a module to proxy requests and send server-side events to Plausible Analytics. 
 
 ## Docusaurus
 
