@@ -28,15 +28,15 @@ This approach makes sure that you only load the code that will actually be used 
 
 Here's the list of all the available extensions at this time:
 
-| Extension                   | Explanation                                                                                        |
-|-----------------------------|----------------------------------------------------------------------------------------------------|
+| Extension                | Explanation                                                                                        |
+|--------------------------|----------------------------------------------------------------------------------------------------|
 | script.hash.js           | Automatically follow frontend navigation when using [hash-based routing](hash-based-routing.md)    |
 | script.outbound-links.js | Automatically [track clicks on outbound links](outbound-link-click-tracking.md) from your website  |
-| script.file-downloads.js | Automatically [track file downloads](file-downloads-tracking.md) |
+| script.file-downloads.js | Automatically [track file downloads](file-downloads-tracking.md)                                   |
 | script.exclusions.js     | [Exclude certain pages from being tracked](excluding-pages.md)                                     |
-| script.compat.js         | Compatibility mode for [tracking users on Internet Explorer](#plausiblecompatjs)                   |
+| script.compat.js         | Compatibility mode for [tracking users on Internet Explorer](#scriptcompatjs)                      |
 | script.local.js          | Allow analytics to track on localhost too which is useful in hybrid apps                           |
-| script.manual.js         | [Do not trigger pageviews automatically](#plausiblemanualjs). Also allows you to [specify custom locations](custom-locations.md) to redact URLs with identifiers. You can also use it to track [custom query parameters](custom-query-params.md)|
+| script.manual.js         | [Do not trigger pageviews automatically](#scriptmanualjs). Also allows you to [specify custom locations](custom-locations.md) to redact URLs with identifiers. You can also use it to track [custom query parameters](custom-query-params.md)|
 
 ## You can combine extensions according to your needs
 
