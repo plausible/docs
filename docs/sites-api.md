@@ -169,8 +169,8 @@ curl -X DELETE https://plausible.io/api/v1/sites/goals/1 \
 #### Body parameters
 <hr / >
 
-**site_id** <Required />
+**goal_id** <Required />
 
-Id of your site in Plausible.
+Id of your goal in Plausible.
 
 <hr / >
