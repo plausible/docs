@@ -22,6 +22,8 @@ Credit card and PayPal are the only supported payment methods. We cannot accept 
 
 You can change the billing address yourself by opening your invoice and clicking the "Edit business address".
 
+Unfortunately, changing a country associated with a subscription is not possible due to legal and tax reasons. Suppose you wish to link the service to a company registered in a different country. You can wait until the current subscription expires, then cancel the subscription and resubscribe again from the same account with the address in the new country. You will not lose any of the data in this process.
+
 ## How do I get a VAT refund?
 
 During the upgrade process, you have the option to add your company address and VAT ID. Our payment processor Paddle handles all the VAT and other sales taxes, so if you're eligible no VAT will be charged on your subscription.
