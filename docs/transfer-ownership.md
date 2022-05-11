@@ -21,7 +21,7 @@ As the new owner of the site, your client is then responsible for paying for [th
 * Enter the email address of the person you'd like to transfer the ownership to. If you transfer the ownership to a person that doesn't have an existing Plausible account, they will get an email and will need to register an account
 * Click on the "**Request transfer**" button. We will send an email to the person you want to transfer the ownership to and notify them about your transfer request. They will need to register for a Plausible account (or log in to their existing Plausible account) and accept the transfer request. All requests expire after 48 hours.
 
-They will immediately become the new owner of the site after they accept the transfer request. The new owner is then responsible for the billing.
+They will immediately become the new owner of the site after they accept the transfer request. The new owner is then responsible for the billing. If the new owner doesn't have an active subscription, they are required to upgrade their account in order to view the stats.
 
 After the transfer of the ownership has been completed, you still keep the "**Admin**" role to the site so you can view the stats and edit the site settings. The new owner can choose to change your role or altogether remove you from having access to the site at any time.
 
