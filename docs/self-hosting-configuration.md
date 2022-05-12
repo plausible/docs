@@ -50,7 +50,7 @@ Plausible uses [PostgreSQL](https://www.tutorialspoint.com/postgresql/postgresql
 
 ### Mailer/SMTP Setup
 
-Plausible uses a SMTP server to send transactional emails e.g. account activation, password reset, weekly reports, etc.
+Plausible uses a SMTP server to send transactional emails e.g. account activation, password reset. In addition, it sends non-transactional emails like weekly or monthly reports.
 
 | Parameter             | Default   | Description                                      |
 |-----------------------|-----------|--------------------------------------------------|
