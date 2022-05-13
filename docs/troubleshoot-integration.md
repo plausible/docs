@@ -38,7 +38,7 @@ Here's [the full list of all integrations and guides](integration-guides.md).
 
 * Please ensure that the script you use is exactly the same script as listed in your Plausible website settings. You can find your JavaScript snippet by [logging into your Plausible account](https://plausible.io/sites). Here you'll find the list of sites you've added to Plausible. Hover over your site name and click on the "**Settings**" icon on the right hand side of the domain name you'd like to get the snippet for. Then scroll down to the "**Javascript snippet**" section on the following page.
 
-* Does your site use a Content Security Policy (CSP)? If it does, you need to add plausible.io specifically to the allowed domains.
+* Does your site use a Content Security Policy (CSP)? If it does, you need to add plausible.io specifically to the allowed domains. [More info here](https://github.com/plausible/docs/issues/20).
 
 * Running on localhost? Our script automatically disables itself when running on localhost as the majority of people don't want those stats to be counted. In the `script.js` script, `window.location.hostname` is used to verify that. If you do want to track stats on localhost, you can [use our extension](script-extensions.md).
 
