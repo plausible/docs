@@ -69,6 +69,7 @@ Alternatively, you can use Postmark to send transactional emails. In this case, 
 | MAILER_ADAPTER     | Bamboo.SMTPAdapter | Instead of the default, replace this with `Bamboo.PostmarkAdapter`  |
 | POSTMARK_API_KEY   | --                 | Enter your API key.                                                 |
 
+In case you are using postmark, you have to set the MAILER_EMAIL variable which needs to be configured in PostmarkApps sender signatures.
 
 ### IP Geolocation
 
