@@ -88,7 +88,7 @@ more depth. Here's the full list of properties we collect automatically:
 | visit:os_version           | 10.6                          | Version number of the operating system used by the visitor                                                                            |
 | visit:country              | US                            | ISO 3166-1 alpha-2 code of the visitor country                                                                                        |
 | visit:region               | US-MD                         | ISO 3166-2 code of the visitor region                                                                                                  |
-| visit:city                 | 4347778                       | [GeoName ID](http://download.geonames.org/export) of the visitor city                                                                |
+| visit:city                 | 4347778                       | [GeoName ID](https://www.geonames.org/) of the visitor city                                                                |
 
 #### Custom props
 
