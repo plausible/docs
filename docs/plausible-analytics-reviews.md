@@ -12,7 +12,7 @@ Plausible Analytics is trusted by 2,000+ subscribers to deliver their website an
 
 * [Plausible Analytics reviews on Product Hunt](https://www.producthunt.com/posts/plausible-analytics)
 
-* [Why choose Plausible for an open source alternative to Google Analytics](https://opensource.com/article/21/2/plausible) by Ben Rometsch on Opensource.com
+* [5 benefits of switching from Google Analytics to Plausible](https://opensource.com/article/22/5/plausible-analytics) by Tom Greenwood on Opensource.com
 
 * [Leaving Google Analytics is Finally Plausible](https://blog.elementary.io/leaving-google-analytics-is-finally-plausible/) by Danielle Foré of elementary OS
 
@@ -37,6 +37,8 @@ Plausible Analytics is trusted by 2,000+ subscribers to deliver their website an
 * [Everyday Rails now uses Plausible for analytics](https://everydayrails.com/2020/12/03/plausible-analytics.html) by Aaron Sumner of Everyday Rails
 
 * [Getting Started with Plausible](https://www.mattmcadams.com/thoughts/get-started-with-plausible/) by Matthew McAdams
+
+* [Why choose Plausible for an open source alternative to Google Analytics](https://opensource.com/article/21/2/plausible) by Ben Rometsch on Opensource.com
 
 * [A Plausible Choice: An Ethical Web Analytics Followup](https://mentalpivot.com/pleased-with-plausible-a-followup-on-ethical-web-analytics/) by David Papandrew
 
