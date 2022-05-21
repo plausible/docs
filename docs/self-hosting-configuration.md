@@ -130,7 +130,7 @@ To enable the Google Search Console integration, as is described elsewhere in th
 | GOOGLE_CLIENT_ID    | --        | The Client ID from the Google API Console for your Plausible Analytics project                       |
 | GOOGLE_CLIENT_SECRET| --        | The Client Secret from the Google API Console for your Plausible Analytics project                   |
 
-7. Force the new config values to take effect by restarting your Plausible site (eg. with the command `docker-compose down --remove-orphans && docker-compose up -d`).
+7. Force the new config values to take effect by restarting your Plausible site (eg. with the command `docker compose down --remove-orphans && docker compose up -d`).
 
 #### Task Two: Configure the OAuth Consent Screen
 
