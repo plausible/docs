@@ -61,3 +61,7 @@ See below for more examples of common use cases and how they would function.
 | `/wp/**` | `/wp/<anything, even slashes>` - for example, `/wp/assets/subdirectory/another/image.png` or `/wp/admin`, and everything in between, but not `/page/wp`
 
 <br />
+
+:::note
+Would you like your grouped pages to be permanently displayed in your dashboard? You can do so by using [pageview goals](pageview-goals.md).
+:::
