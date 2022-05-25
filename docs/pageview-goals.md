@@ -46,3 +46,7 @@ See below for more examples of common use cases and how they would function.
 | `/wp/**` | `/wp/<anything, even slashes>` - for example, `/wp/assets/subdirectory/another/image.png` or `/wp/admin`, and everything in between, but not `/page/wp`
 
 <br />
+
+:::note
+Would you like to group your pages at any time without using pageview goals? You can do so by using [the "Filter" button](filters-segments.md) on the top of your dashboard.
+:::
