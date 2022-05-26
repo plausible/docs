@@ -22,17 +22,27 @@ The new snippet will look like this (make sure to change the `data-domain` attri
 <script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.exclusions.js"></script>
 ```
 
-## 2. Add the pages you'd like to exclude from being tracked
+## 2. Add the pages you'd like to exclude or include
 
-The page-specific exclusions rely on a script option `data-exclude`. You add page exclusions very similarly to `data-domain`. The format for this field is as follows:
+The page-specific exclusions rely on two script options: `data-exclude` and `data-include`. To exclude certain pages from being tracked, use the `data-exclude` attribute as follows:
 
 ```
 data-exclude="/blog4, /rule/*, /how-to-*, /*/admin, /*/priv/*, /more-paths-here"
 ```
 
-Any pages listed in this format, **comma-separated**, with asterisks to indicate unspecified regions of the pathname, will **not** be counted in your Plausible dashboard.
+To exclude **everything except** for some specific pages, use the `data-include` attribute in the exact same way, specifying the only pages you want to track:
 
-All entries must begin with a `/`, and should **not** include the trailing slash as we account for this automatically.
+```
+data-include="/en**, /es**"
+```
+
+You can also use a combination of `data-include` and `data-exclude` options. Do note that when using the two options together, any page path that matches both the exclusion and inclusion rule, is **excluded** from being tracked. For example, the following combination will not track the page `/en/user/*/settings` (even though it matches the inclusion rule).
+
+```
+data-include="/en**" data-exclude="/en/user/*/settings"
+```
+
+Any pages listed in this format should be **comma-separated**, with asterisks to indicate unspecified regions of the pathname. All entries must begin with a `/`, and should **not** include the trailing slash as we account for this automatically.
 
 - Asterisks (`*`) expand to any stretch (of length >=0) of the page path and can be on either end or in the middle of any entry, but **cannot** be in the place of slashes.
 - Double asterisks (`**`) expand to any stretch (of length >=0) of the page path, can be on either end or in the middle of any entry, and can represent **any** characters, even slashes.
@@ -47,6 +57,12 @@ The new snippet would look like this (make sure to change the `data-domain` attr
 <script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.exclusions.js" data-exclude="/blog4, /rule/*, /how-to-*, /*/admin, /*/priv/*, /more-paths-here"></script>
 ```
 
+You can also use `data-include` instead of `data-exclude`, and using both options together, the snippet would look like this:
+
+```html
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.exclusions.js" data-include="/en**" data-exclude="/en/user/*/settings"></script>
+```
+
 You need to place your new Plausible Analytics tracking script code into the Header (`<head>`) section of your site. Place the tracking script within the `<head> … </head>` tags. Do this for all the websites where you'd like to use page-tracking exclusions.
 
 This is the only tracking script you need. You don't need to keep the default script. Your stats will keep tracking without interruption and you will not lose any of your old data.
@@ -54,14 +70,14 @@ This is the only tracking script you need. You don't need to keep the default sc
 You do not have to use the `exclusions` script type exclusively. You can chain various script types, for example:
 
 ```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.hash.exclusions.outbound-links.js" data-exclude="/blog4, /rule/*, /how-to-*, /*/admin, /*/priv/*, /more-paths-here"></script>
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.hash.exclusions.outbound-links.js" data-include="/en**"></script>
 ```
 
 The example above includes both [outbound link clicks tracking](outbound-link-click-tracking.md) and tracking for [hash-based routing pages](hash-based-routing.md) in addition to the `exclusions` script type.
 
 ## Common use cases and examples
 
-| data-exclude input | Prevents tracking on pages with a URL path of: |
+| inclusion or exclusion rule | pages that will match |
 | ------------- | ------------- |
 | `/blog4` | `/blog4` and exactly `/blog4` with nothing before or after it, so not `/blog45` nor `/blog4/new` nor `/blog` |
 | `/rule/*` | `/rule/<anything>`, with `<anything>` being any set of characters (length >=0), but not a forward slash - for example, both `/rule/1` as well as `/rule/general-rule-14`, but not `/rule/4/details` nor `/rules` |
