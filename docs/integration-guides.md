@@ -165,6 +165,10 @@ Add Plausible to your [Podcastpage.io](https://podcastpage.io/) website. Just en
 
 [Plausible plugin](https://marketplace.getpublii.com/plugins/plausible-analytics/) for Publii. Built and maintained by [TidyCustom](https://tidycustoms.net/).
 
+## Prestashop
+
+[Plausible module](https://github.com/mrdotb/prestashop_plausible/) for [prestashop](https://www.prestashop.com/). Built and maintained by [mrdotb](https://mrdotb.com/).
+
 ## Qt6 / QML
 
 [Qt6 QML plugin](https://gitlab.com/kelteseth/qml-plausible) for Plausible. Built and maintained by [Elias Steurer](https://gitlab.com/kelteseth).
