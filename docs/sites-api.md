@@ -9,6 +9,7 @@ It currently allows these operations:
 
 * Create a new site
 * Delete an existing site
+* Get a site by domain
 * Find or create a shared link by name
 * Find or create a goal by type and value
 * Delete an existing goal
@@ -61,6 +62,22 @@ curl -X DELETE https://plausible.io/api/v1/sites/test-domain.com \
 ```json title="Response 200 OK"
 {
     "deleted": "true"
+}
+```
+
+### GET /api/v1/sites/:site_id
+
+Gets a site from your Plausible account. The API key must belong to the owner of the site.
+
+```bash title="Try it yourself"
+curl -X GET https://plausible.io/api/v1/sites/test-domain.com \
+  -H "Authorization: Bearer ${TOKEN}"
+```
+
+```json title="Response 200 OK"
+{
+    "domain": "test-domain.com",
+    "timezone": "Europe/London"
 }
 ```
 
