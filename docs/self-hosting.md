@@ -3,7 +3,7 @@ title: Getting started
 ---
 
 :::note
-The easiest way to get started with Plausible is with [our official managed service in the Cloud](https://plausible.io/#pricing). It takes 2 minutes to start counting your stats with a worldwide CDN, high availability, backups, security and maintenance all done for you by us. Our managed hosting can save a substantial amount of developer time and resources. For most sites this ends up being the best value option and the revenue goes to funding the maintenance and further development of Plausible. So you’ll be supporting open source software and getting a great service! The section below is for self-hosting our analytics on your server and managing your infrastructure. 
+The easiest way to get started with Plausible is with [our official managed service in the Cloud](https://plausible.io/#pricing). It takes 2 minutes to start counting your stats with a worldwide CDN, high availability, backups, security and maintenance all done for you by us. Our managed hosting can save a substantial amount of developer time and resources. For most sites this ends up being the best value option and the revenue goes to funding the maintenance and further development of Plausible. So you’ll be supporting open source software and getting a great service! The section below is for self-hosting our analytics on your server and managing your infrastructure.
 :::
 
 Plausible Analytics is designed to be self-hosted via Docker. You don't have to be a Docker expert
@@ -32,7 +32,7 @@ as an internal API and therefore schema changes are not considered a breaking ch
 ## Requirements
 
 The only thing you need to install Plausible Analytics is a server with Docker installed. The server must have a CPU with x86_64 architecture
-and support for SSE 4.2 instructions. We recommend using a minimum of 4GB of RAM but the requirements will depend on your site traffic. 
+and support for SSE 4.2 instructions. We recommend using a minimum of 4GB of RAM but the requirements will depend on your site traffic.
 
 We've tested this on [Digital Ocean](https://m.do.co/c/91569eca0213) (affiliate link)
 but any hosting provider works. If your server doesn't come with Docker pre-installed, you can follow [their docs](https://docs.docker.com/get-docker/) to install it.
@@ -73,8 +73,6 @@ $ openssl rand -base64 64 | tr -d '\n' ; echo
 
 Now edit `plausible-conf.env` and set `SECRET_KEY_BASE` to your secret key.
 
-Next, set your `ADMIN_USER` credentials to your own choices.
-
 Finally, enter the `BASE_URL` for your app. It should be the base url where this instance is accessible, including the scheme (eg. `http://` or `https://`), the domain name, and optionally a port. If no port is specified the default `8000` will be used. Plausible is not currently designed for subfolder installations so please do not add a path component to the base url.
 
 ### 3. Start the server
@@ -108,7 +106,17 @@ $ docker exec hosting_plausible_db_1 psql -U postgres -d plausible_db -c "UPDATE
 
 The Plausible server itself does not perform SSL termination. It only runs on unencrypted HTTP.  If you want to run on HTTPS you also need to set up a reverse proxy in front of the server. We have instructions and examples of how to do that below.
 
-### 3. Updating Plausible
+### 4. Create admin user
+
+By default, there are no users. To create an admin user, run the following, replacing `ADMIN_USER` variables as necessary.
+
+```bash
+$ docker-compose run plausible sh -c "ADMIN_USER_EMAIL='you@example.com' ADMIN_USER_PASS='hunter2' ADMIN_USER_NAME='Your Name' /app/init-admin.sh"
+```
+
+This command works regardless of whether `$DISABLE_REGISTRATION` is set.
+
+### 5. Updating Plausible
 
 Plausible is updated regularly, but it is up to you to apply these updates on your server.
 By virtue of using Docker, these updates are safe and easy to apply.
@@ -150,7 +158,7 @@ You may or may not already be running a reverse proxy on your host, let's look a
 #### No existing reverse proxy
 
 If your DNS is managed by a service that offers a proxy option with automatic SSL management, feel free to use that. We've successfully
-used Cloudflare as a reverse proxy in front of Plausible Self Hosted and it works well. 
+used Cloudflare as a reverse proxy in front of Plausible Self Hosted and it works well.
 
 Alternatively, you can run your own Caddy server as a reverse proxy. This way your SSL certificate will be stored on the
 host machine and managed by Let's Encrypt. The Caddy server will expose port 443, terminate SSL traffic and proxy the requests to your
@@ -171,10 +179,6 @@ In our hosting repo, you'll find useful example configurations in case you're al
 ### 3. External Databases
 
 There are some caveats to consider when running your own databases:
-
-##### Postgres
-The user needs the role superuser for setting up certain modules on the database
-If the database already exists prior to running docker-compose up, please remove `&& /entrypoint.sh db createdb` in the command of the plausible service section inside docker-compose.yml. However, this will also prevent the Clickhouse database from being created, see below.
 
 ##### Clickhouse
 If you receive an error upon startup that for some reason the database does not exist, you can create it 'manually' via this docker run:
