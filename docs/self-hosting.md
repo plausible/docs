@@ -179,7 +179,7 @@ If you receive an error upon startup that for some reason the database does not 
 make sure that --link, --net, --host, and the name of the db  receive the right parameter values according to the running setup
 
 ```bash
-$ docker run -it --net plausible_default --rm --link plausible_events_db_1:clickhouse-server yandex/clickhouse-client --host plausible_plausible_events_db_1  --query "CREATE DATABASE IF NOT EXISTS plausible_events_db"
+docker compose exec plausible_events_db clickhouse-client --host plausible_events_db --query "CREATE DATABASE IF NOT EXISTS plausible_events_db"
 ```
 
 :::note
