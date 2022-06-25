@@ -16,7 +16,7 @@ You can mix and match filters too. So you can click on a referral source, then c
 
 Your current filters will be displayed on the top of your dashboard. You can click on the name of the existing filter to edit it or on the `x` icon to remove it. 
 
-You can remove all of your filters by hitting the `Esc` key on your keyboard or by selecting `Clear all filters` in the filters menu that shows up when you're using multiple filters.
+You can remove all your filters by hitting the `Esc` key on your keyboard or by selecting `Clear all filters` in the filters menu that shows up when you're using multiple filters.
 
 ## Using the "Add filter" menu for extra functionality 
 
@@ -30,13 +30,13 @@ You can search for any metric such as a particular country, referral source or p
 
 ### Exclude specific segments of traffic
 
-You can exclude specific segments of traffic and only display the traffic that is not part of the excluded segment. You can, for instance, exclude traffic from the United States so your dashboard only shows the visitors that are not based in the USA. 
+You can exclude specific segments of traffic and only display the traffic that isn't part of the excluded segment. You can, for instance, exclude traffic from the United States so your dashboard only shows the visitors that aren't based in the USA. 
 
 Click on the "Filter" button, then select "Country" as your metric, choose "Is Not" and then select (or type) the name of the country you want to exclude. You can do the same for referral sources or any of the other metrics.
 
 ### Group your pages
 
-Want to group all of your blog posts and analyze the traffic to the blog separately from the rest of your site? Or exclude traffic that has visited a specific section of your site such as your logged in pages or your order confirmation page?
+Want to group all your blog posts and analyze the traffic to the blog separately from the rest of your site? Or exclude traffic that has visited a specific section of your site such as your logged in pages or your order confirmation page?
 
 When searching for pages, you can use double asterisks to match any character (e.g. `/blog**`). Filter for pages supports wildcards in the following format:
 
@@ -51,7 +51,7 @@ See below for more examples of common use cases and how they would function.
 | Input | Includes pages with a URL path of: |
 | ------------- | ------------- |
 | `**keyword**` | use double asterisks in front and back in the same way that you would use "contain". It finds any URL containing a specific keyword |
-| `/blog**` | use this to for instance group all of your blog posts |
+| `/blog**` | use this to for instance group all your blog posts |
 | `/blog4` | `/blog4` and exactly `/blog4` with nothing before or after it, so not `/blog45` nor `/blog4/new` nor `/blog` |
 | `/rule/*` | `/rule/<anything>`, with `<anything>` being any set of characters (length >=0), but not a forward slash - for example, both `/rule/1` as well as `/rule/general-rule-14`, but not `/rule/4/details` nor `/rules` |
 | `/how-to-*` | `/how-to-<anything>` - for example, `/how-to-play` or `/how-to-succeed`, but not `how-to-/blog` |

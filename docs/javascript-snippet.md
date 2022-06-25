@@ -18,7 +18,7 @@ If you've lost your JavaScript snippet, you can find it by [logging into your Pl
 
 <img alt="Plausible Analytics" src={useBaseUrl('img/list-of-sites.png')} />
 
-Click on the "**Settings**" button on the right-hand side of the website you'd like to get the snippet for and scroll down to the "**Javascript snippet**" section on the following page.
+Click on the "**Settings**" button on the right-hand side of the website you'd like to get the snippet for and scroll down to the "**JavaScript snippet**" section on the following page.
 
 <img alt="Your Plausible Analytics tracking script" src={useBaseUrl('img/your-javascipt-snippet.png')} />
 

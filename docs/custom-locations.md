@@ -47,7 +47,7 @@ This is what we'll do in the next step.
 The `plausible` function in the `manual` script extension allows you to provide an option named `u`. 
 This option allows you to specify the URL of the page you're on.
 
-To make use of it, you can update your `pageview` trigger code to add the `u` option as the second parameter, like so:
+To use it, you can update your `pageview` trigger code to add the `u` option as the second parameter, like so:
 
 ```js
 plausible('pageview', { u: "https://yourdomain.com/my-custom-location" });
@@ -65,18 +65,18 @@ At this point, your entire setup should look like this:
 </script>
 ```
 
-Once you have specified an URL via the `u` option, all of the pageview events triggered from that script will be sent as if they came from that URL. In this case, all the pageview events will appear as if they came from `https://yourdomain.com/my-custom-location`).
+Once you have specified an URL through the `u` option, all the pageview events triggered from that script will be sent as if they came from that URL. In this case, all the pageview events will appear as if they came from `https://yourdomain.com/my-custom-location`).
 
 You can specify the `u` option in your other events as well if you wish to do so. 
 
-In a real-world scenario, the URL you provide to Plausible would likely be dynamic, changing depending on the current page and context. The URL can be provided by a Javascript variable or function, or rendered by the server when generating the page. You can take a look at the examples below to see how URLs can be provided dynamically in common use cases.
+In a real-world scenario, the URL you provide to Plausible would likely be dynamic, changing depending on the current page and context. The URL can be provided by a JavaScript variable or function, or rendered by the server when generating the page. You can take a look at the examples below to see how URLs can be provided dynamically in common use cases.
 
 ## 4. Visit your website to ensure it works
 
 You can test your custom location by visiting a page for which you specified a custom location, and ensuring pageviews events show up under the provided custom URL in your Plausible dashboard.
 
 :::note
-If you specify the same custom URL in all of your website's pages, all of your pages will be tracked as if they were the same. You should implement this feature with caution and test exhaustively to ensure that you are correctly tracking the data.
+If you specify the same custom URL in all your website's pages, all your pages will be tracked as if they were the same. You should implement this feature with caution and test exhaustively to ensure that you are correctly tracking the data.
 :::
 
 ---
@@ -93,9 +93,9 @@ Let's say you have multiple URLs that link to the same pages, such as:
 - `https://yourdomain.com/products/clothes/shoes/banana-leather-shoe`
 - `https://yourdomain.com/products/clothes/men/shoes/banana-leather-shoe`
 
-Perhaps you would like to combine all of the pageviews for these pages so they all appear in Plausible as the canonical URL for this product (which might be `https://yourdomain.com/products/banana-leather-shoe`, for example).
+Perhaps you would like to combine all the pageviews for these pages so they all appear in Plausible as the canonical URL for this product (which might be `https://yourdomain.com/products/banana-leather-shoe`, for example).
 
-To do so, you could write a Javascript function that gets the canonical URL and that provides it to Plausible's pageview event:
+To do so, you could write a JavaScript function that gets the canonical URL and that provides it to Plausible's pageview event:
 
 ```html
 <script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.manual.js"></script>
@@ -112,7 +112,7 @@ To do so, you could write a Javascript function that gets the canonical URL and 
 
 _Et voilà!_ From now on, your pageviews will automatically appear as coming from the canonical URL (`https://yourdomain.com/products/banana-leather-shoe` for the product we used in our example).
 
-Plus, if you trigger other events on the page, you can reuse the `url` variable we generated in order to keep your data consistent!
+Plus, if you trigger other events on the page, you can reuse the `url` variable we generated to keep your data consistent!
 
 ### Redacting identifiers from URLs
 
@@ -122,7 +122,7 @@ However, having the dashboard page of every project appear as individual pages i
 
 In situations like these, redacting identifiers from URLs can make things much more manageable, and only takes a few minutes to implement.
 
-For example, you could write a Javascript function that uses a regular expression to remove numerical identifiers from the URLs that Plausible receives:
+For example, you could write a JavaScript function that uses a regular expression to remove numerical identifiers from the URLs that Plausible receives:
 
 ```html
 <script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.manual.js"></script>
@@ -140,6 +140,6 @@ And just like that, your pageviews will start being tracked as `https://yourapp.
 
 If your identifiers aren't entirely numerical, or if you only want to redact some identifiers but keep others, you can update the regular expression to match your format.
 
-With all of the different identifiers being aggregated under the same URL, it's suddenly much easier to see which pages and features your visitors use the most!
+With all the different identifiers being aggregated under the same URL, it's suddenly much easier to see which pages and features your visitors use the most!
 
 Thanks to [Émile Perron](https://github.com/EmilePerron) for the contribution! 

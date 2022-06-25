@@ -5,7 +5,7 @@ title: Stats API reference
 import {Required, Optional} from '../src/js/api-helpers.js';
 
 
-The Plausible Stats API offers a way to retrieve your stats programmatically. It is a read-only interface to present historical
+The Plausible Stats API offers a way to retrieve your stats programmatically. It'sa read-only interface to present historical
 and real-time stats only. Take a look at our [events API](events-api.md) if you want to send pageviews or custom events to our backend and our [sites API](sites-api.md) if you want to manage your sites through the API.
 
 The API accepts GET requests with query parameters and returns standard HTTP responses along with a JSON-encoded body. All API requests must be made over HTTPS.
@@ -16,7 +16,7 @@ settings page [plausible.io/settings](https://plausible.io/settings).
 
 API keys have a rate limit of 600 requests per hour by default. If you have special needs for more requests, please contact us to request more capacity.
 
-The easiest way to explore the API is by using our Postman collection. Just define your `TOKEN` and `SITE_ID` variables and you'll have an executable API reference ready to go.
+The easiest way to explore the API is by using our Postman collection. Just define your `TOKEN` and `SITE_ID` variables, and you'll have an executable API reference ready to go.
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/32c111c4f6d2cccef9dd)
 
@@ -26,7 +26,7 @@ New to Postman? We have [a step-by-step guide to set up the authorization and ru
 
 ## Concepts
 
-Querying the Plausible API will feel familiar if you have used time-series databases before. You cannot query individual records from
+Querying the Plausible API will feel familiar if you have used time-series databases before. You can't query individual records from
 our stats database. You can only request aggregated metrics over a certain time period.
 
 Each request requires a `site_id` parameter which is the domain of your site as configured in Plausible. If you're unsure, navigate to your site
@@ -36,27 +36,26 @@ settings in Plausible and grab the value of the `domain` field.
 
 You can specify a `metrics` option in the query, to choose the metrics for each instance returned. See here for a full overview of [metrics and their definitions](/metrics-definitions). The metrics currently supported in Stats API are:
 
-* `visitors` - The number of unique visitors
-* `pageviews` - The number of pageview events
-* `bounce_rate` - Bounce rate percentage
-* `visit_duration` - Visit duration in seconds
-* `events` - The number of events (pageviews + custom events)
-* `visits` - The number of visits/sessions
+* `visitors` - The number of unique visitors.
+* `pageviews` - The number of pageview events.
+* `bounce_rate` - Bounce rate percentage.
+* `visit_duration` - Visit duration in seconds.
+* `events` - The number of events (pageviews + custom events).
+* `visits` - The number of visits/sessions.
 
 :::note
-The number of visits/sessions is currently exclusive in the Stats API. It is not displayed in your Plausible dashboard. 
+The number of visits/sessions is currently exclusive in the Stats API. It isn't displayed in your Plausible dashboard. 
 :::
 
 ### Time periods
 
-The options are identical for each endpoint that supports configurable time periods. Each period
-is relative to a `date` parameter. The date should follow the standard ISO-8601 format. When not specified, the `date` field defaults to `today(site.timezone)`.
+The options are identical for each endpoint that supports configurable time periods. Each period is relative to a `date` parameter. The date should follow the standard ISO-8601 format. When not specified, the `date` field defaults to `today(site.timezone)`.
 All time calculations on our backend are done in the time zone that the site is configured in.
 
-* `12mo,6mo` - Last n calendar months relative to `date`
-* `month` - The calendar month that `date` falls into
-* `30d,7d` - Last n days relative to `date`
-* `day` - Stats for the full day specified in `date`
+* `12mo,6mo` - Last n calendar months relative to `date`.
+* `month` - The calendar month that `date` falls into.
+* `30d,7d` - Last n days relative to `date`.
+* `day` - Stats for the full day specified in `date`.
 * `custom` - Provide a custom range in the `date` parameter.
 
 When using a custom range, the `date` parameter expects two ISO-8601 formatted dates joined with a comma as follows `?period=custom&date=2021-01-01,2021-01-31`.
@@ -68,36 +67,34 @@ Each pageview and custom event in our database has some predefined _properties_ 
 are often referred to as _dimensions_ as well. Properties can be used for filtering and breaking down your stats to drill into
 more depth. Here's the full list of properties we collect automatically:
 
-| Property                   | Example                       | Description                                                                                                                           |
-|----------------------------|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| event:name                 | pageview                      | Name of the event triggered. `pageview` is a reserved event name but custom events can be named anything.                             |
-| event:page                 | /blog/remove-google-analytics | Pathname of the page where the event is triggered                                                                                     |
-| visit:entry_page           | /home                         | Page on which the visit session started (landing page)                                                                               |
-| visit:exit_page            | /home                         | Page on which the visit session ended (last page viewed)                                                                             |
-| visit:source               | Twitter                       | Visit source, populated from an url query parameter tag (`utm_source`, `source` or `ref`) or the `Referer` HTTP header.            |
-| visit:referrer             | t.co/fzWTE9OTPt               | Raw `Referer` header without `http://`, `http://` or `www.`                                                                           |
-| visit:utm_medium           | social                        | Raw value of the `utm_medium` query param on the entry page                                                                           |
-| visit:utm_source           | twitter                       | Raw value of the `utm_source` query param on the entry page                                                                           |
-| visit:utm_campaign         | profile                       | Raw value of the `utm_campaign` query param on the entry page                                                                         |
-| visit:utm_content         | banner                       | Raw value of the `utm_content` query param on the entry page                                                                         |
-| visit:utm_term         | keyword                       | Raw value of the `utm_term` query param on the entry page                                                                         |
-| visit:device               | Desktop                       | Device type. Possible values are `Desktop`, `Laptop`, `Tablet` and `Mobile`                                                           |
-| visit:browser              | Chrome                        | Name of the browser vendor. Most popular ones are `Chrome`, `Safari` and `Firefox`                                                    |
-| visit:browser_version      | 88.0.4324.146                 | Version number of the browser used by the visitor                                                                                     |
-| visit:os                   | Mac                           | Name of the operating system. Most popular ones are `Mac`, `Windows`, `iOS` and `Android`. Linux distributions are reported separately |
-| visit:os_version           | 10.6                          | Version number of the operating system used by the visitor                                                                            |
-| visit:country              | US                            | ISO 3166-1 alpha-2 code of the visitor country                                                                                        |
-| visit:region               | US-MD                         | ISO 3166-2 code of the visitor region                                                                                                  |
-| visit:city                 | 4347778                       | [GeoName ID](https://www.geonames.org/) of the visitor city                                                                |
+| Property              | Example                       | Description                                                                                                                             |
+| --------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| event:name            | pageview                      | Name of the event triggered. `pageview` is a reserved event name but custom events can be named anything.                               |
+| event:page            | /blog/remove-google-analytics | Pathname of the page where the event is triggered.                                                                                      |
+| visit:entry_page      | /home                         | Page on which the visit session started (landing page).                                                                                 |
+| visit:exit_page       | /home                         | Page on which the visit session ended (last page viewed).                                                                               |
+| visit:source          | Twitter                       | Visit source, populated from an url query parameter tag (`utm_source`, `source` or `ref`) or the `Referer` HTTP header.                 |
+| visit:referrer        | t.co/fzWTE9OTPt               | Raw `Referer` header without `http://`, `http://` or `www.`.                                                                            |
+| visit:utm_medium      | social                        | Raw value of the `utm_medium` query param on the entry page.                                                                            |
+| visit:utm_source      | twitter                       | Raw value of the `utm_source` query param on the entry page.                                                                            |
+| visit:utm_campaign    | profile                       | Raw value of the `utm_campaign` query param on the entry page.                                                                          |
+| visit:utm_content     | banner                        | Raw value of the `utm_content` query param on the entry page.                                                                           |
+| visit:utm_term        | keyword                       | Raw value of the `utm_term` query param on the entry page.                                                                              |
+| visit:device          | Desktop                       | Device type. Possible values are `Desktop`, `Laptop`, `Tablet` and `Mobile`.                                                            |
+| visit:browser         | Chrome                        | Name of the browser vendor. Most popular ones are `Chrome`, `Safari` and `Firefox`.                                                     |
+| visit:browser_version | 88.0.4324.146                 | Version number of the browser used by the visitor.                                                                                      |
+| visit:os              | Mac                           | Name of the operating system. Most popular ones are `Mac`, `Windows`, `iOS` and `Android`. Linux distributions are reported separately. |
+| visit:os_version      | 10.6                          | Version number of the operating system used by the visitor.                                                                             |
+| visit:country         | US                            | ISO 3166-1 alpha-2 code of the visitor country.                                                                                         |
+| visit:region          | US-MD                         | ISO 3166-2 code of the visitor region.                                                                                                  |
+| visit:city            | 4347778                       | [GeoName ID](https://www.geonames.org/) of the visitor city.                                                                            |
 
 #### Custom props
 
 In addition to props that are collected automatically, you can also query for [custom properties](/custom-event-goals#using-custom-props).
 To filter or break down by a custom property, use the key `event:props:<custom_prop_name>`. [See example](#breakdown-custom-event-by-custom-props) for how to use it.
 
-Currently clients are limited to filtering or breaking down on just one custom property at a time. Custom prop filters and breakdowns
-cannot be combined arbitrarily. We are aware of this issue and we have plans to fix it, but we rely on our database to support some
-new features to fix this issue.
+Currently clients are limited to filtering or breaking down on just one custom property at a time. Custom prop filters and breakdowns can't be combined arbitrarily. We are aware of this issue and we have plans to fix it, but we rely on our database to support some new features to fix this issue.
 
 ### Filtering
 
@@ -145,9 +142,7 @@ Domain of your site on Plausible.
 
 ### GET /api/v1/stats/aggregate
 
-This endpoint aggregates metrics over a certain time period. If you are familiar with the Plausible dashboard, this endpoint corresponds to
-the top row of stats that include `Unique Visitors`, `Pageviews`, `Bounce rate` and `Visit duration`. You can retrieve any number and combination
-of these metrics in one request.
+This endpoint aggregates metrics over a certain time period. If you are familiar with the Plausible dashboard, this endpoint corresponds to the top row of stats that include `Unique Visitors` Pageviews, `Bounce rate` and `Visit duration`. You can retrieve any number and combination of these metrics in one request.
 
 
 ```bash title="Try it yourself"
@@ -500,5 +495,5 @@ curl 'https://plausible.io/api/v1/stats/breakdown?site_id=$SITE_ID&period=6mo&pr
 ```
 
 :::note
-You can can use GET https://plausible.io/api/health endpoint to monitor the status of our API
+You can use GET https://plausible.io/api/health endpoint to monitor the status of our API
 :::

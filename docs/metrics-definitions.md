@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## 404 Error Pages
 
-Automatically track the 404 error pages on your site. This feature is not enabled by default so you need to [follow these steps](error-pages-tracking-404.md) to enable it for sites where you want to track 404 error pages.
+Automatically track the 404 error pages on your site. This feature isn't enabled by default so you need to [follow these steps](error-pages-tracking-404.md) to enable it for sites where you want to track 404 error pages.
 
 ## Bounce Rate
 
@@ -55,7 +55,7 @@ Shows the operating systems used by your visitors. We show the brand of the oper
 
 ## Outbound Link Clicks
 
-Automatically track the number of clicks on the external links. This feature is not enabled by default so you need to [follow these steps](outbound-link-click-tracking.md) to enable it for sites where you want to track clicks on external links.
+Automatically track the number of clicks on the external links. This feature isn't enabled by default so you need to [follow these steps](outbound-link-click-tracking.md) to enable it for sites where you want to track clicks on external links.
 
 ## Referrer Drilldown
 
@@ -95,7 +95,7 @@ When a visitor converts for a particular goal they’ll be counted as a unique c
 
 ## Unique Visitors
 
-The number of people who visited your site. We are privacy friendly so we don't use cookies and other persistent identifiers. If a person visits from multiple devices or on multiple days, they are counted as separate visitors. You can learn more about [how we count unique visitors](https://plausible.io/data-policy).
+The number of people who visited your site. We are privacy-friendly so we don't use cookies and other persistent identifiers. If a person visits from multiple devices or on multiple days, they are counted as separate visitors. You can learn more about [how we count unique visitors](https://plausible.io/data-policy).
 
 ## Visit Duration
 

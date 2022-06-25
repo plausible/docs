@@ -10,7 +10,7 @@ You can embed your Plausible stats dashboard into any other website using an iFr
 
 <img alt="Plausible Analytics" src={useBaseUrl('img/shared-stats.png')} />
 
-You need to create a shared link in order to embed your dashboard into another website. The shared link is secure and impossible to guess. 
+You need to create a shared link to embed your dashboard into another website. The shared link is secure and impossible to guess. 
 
 In the "**Visibility**" area of your website settings there's a "**Shared links**" section where you can create your shared link. Click on the "**+ new link**" button to do so. 
 
@@ -30,10 +30,10 @@ You can set the background color as `transparent` in the embed code. It's much m
 
 ### Want your embed to have default filters or time period?
 
-Instead of using a simple shared link URL for generating the embed, you can open the shared link, apply filters to your dashboard and use the URL with the applied filters. Those filters will then be automatically added to your embed dashboard every time it is loaded.
-
-Do note that these are just basic filters and can be removed or changed to view other stats as well. 
-
+Instead of using a simple shared link URL for generating the embed, you can open the shared link, apply filters to your dashboard and use the URL with the applied filters. Those filters will then be automatically added to your embed dashboard every time it's loaded.
+:::note
+These are just basic filters and can be removed or changed to view other stats as well. 
+:::
 ## 3. Paste the embed code into your website
 
 Copy the embed code that's been generated and paste it wherever you want your Plausible stats dashboard to be embedded.

@@ -2,25 +2,25 @@
 title: Adblockers and using a proxy for analytics
 ---
 
-A frequently asked question we get is "why do adblockers block Plausible?". People think that by being privacy-first we would not be put in the same category as Google Analytics, Facebook Pixel and other surveillance capitalism tools.
+A frequently asked question we get is, "why do adblockers block Plausible?". It's assumed that by being privacy-first, we would not be placed in the same category as Google Analytics, Facebook Pixel, or other _surveillance capitalism_ tools.
 
-It's a good question. We're not blocked to the same extent as Google Analytics (neither Firefox nor Safari blocks Plausible) but we're blocked by some blocklist maintainers who have taken the stance that they want to block every tracking script and don't want to have the responsibility to judge what's good and what's bad.
+It's a good question. We're not blocked to the same extent as Google Analytics (neither Firefox nor Safari blocks Plausible), but we're blocked by some blocklist maintainers who have taken the stance that they want to block every tracking script and don't want to have the responsibility to judge what's good and what's bad.
 
-We have great respect for open source contributors and blocklist maintainers who in most cases offer their free time and coding skills to do something for the common good. We believe we're on the same side and have started a dialogue hoping that they will have a change of heart.
+We have great respect for open source contributors and blocklist maintainers who usually offer their free time and coding skills to do something for the common good. We believe we're on the same side and have started a dialogue hoping that they will have a change of heart.
 
 ## Giving site owners a choice
 
 Site owners feel unfairly targeted and an innocent casualty of this arms race between blocklist maintainers and the adtech industry. Site owners want some data to figure out what's going on and learn what they can do to improve. It's unfortunate for them to lose valuable, privacy-friendly insights that help them create a better user experience.
 
-Plausible is not tracking people in the way that Google Analytics is so it's important not to confuse the two. We've put a lot of effort into giving site owners some actionable data in a [privacy-friendly way](https://plausible.io/privacy-focused-web-analytics). Plausible is simply doing web analytics the way it was at the start before surveillance capitalism became the default business model of the web:
+Plausible isn't tracking people in the way that Google Analytics is, so it's important not to confuse the two. We've put a lot of effort into giving site owners some actionable data in a [privacy-friendly way](https://plausible.io/privacy-focused-web-analytics). Plausible is simply doing web analytics the way it was at the start before surveillance capitalism became the default business model of the web:
 
-* No cookies and other persistent identifiers
-* No connection to the adtech and surveillance capitalism
-* No personal data is collected and all stats are in aggregate only
-* No cross-site or cross-device tracking
-* You 100% own your website data and it is not sent to, shared with or sold to any third-parties
-* Fully open source web analytics software that can be self-hosted
-* You can see [how the dashboard looks like](https://plausible.io/plausible.io)
+* No cookies and other persistent identifiers.
+* No connection to the adtech, and surveillance capitalism.
+* No personal data is collected, and all stats are in aggregate only.
+* No cross-site or cross-device tracking.
+* You 100% own your website data, and it isn't sent to, shared with or sold to any third-parties.
+* Fully open source web analytics software that can be self-hosted.
+* You can see [how the dashboard looks like](https://plausible.io/plausible.io).
 
 ## Options for dealing with missing data as a site owner
 
@@ -70,8 +70,8 @@ Events API as a server side alternative:
 * [How to send events directly to our API](/docs/events-api)
 
 NPM package as another alternative:
-* [NPM standalone package](https://github.com/plausible/plausible-tracker)
+* [NPM standalone package](https://github.com/plausible/plausible-tracker).
 
 :::note
-Are you using something else? Please do help us crowdsource the proxy instructions by [submitting the step-by-step process](https://github.com/plausible/docs/) for the framework that you are familiar with. We're also looking for help to enable the proxy on the different [community-built plugins and extensions](integration-guides.md). Thanks for your contribution!
+Are you using something else? Please help us crowdsource the proxy instructions by [submitting the step-by-step process](https://github.com/plausible/docs/) for the framework that you are familiar with. We're also looking for help to enable the proxy on the different [community-built plugins and extensions](integration-guides.md). Thanks for your contribution!
 :::

@@ -6,7 +6,7 @@ import {Required, Optional} from '../src/js/api-helpers.js';
 
 The Plausible Events API can be used to record pageviews and custom events. This is useful when tracking Android or iOS mobile apps, or for server side tracking.
 
-In most cases we recommend installing Plausible via our provided [script](/docs/plausible-script) or one of the many
+In most cases we recommend installing Plausible through our provided [script](/docs/plausible-script) or one of the many
 integration packages listed [here](/docs/integration-guides). However, if there's no easy way for you to integrate with Plausible, you can still do so by sending events directly to our API.
 
 ## Endpoints
@@ -53,8 +53,7 @@ custom events.
 
 **url** <Required />
 
-URL of the page where the event was triggered. If the URL contains UTM parameters, they will be extracted and stored. When using the script,
-this is set to `window.location.href`
+URL of the page where the event was triggered. If the URL contains UTM parameters, they will be extracted and stored. When using the script, this is set to `window.location.href`.
 
 :::note
 The URL parameter will feel strange in a mobile app but you can manufacture something that looks like a web URL. If you name your mobile app screens like page URLs, Plausible will know how to handle it. So for example, on your login screen you could send something like:  

@@ -38,7 +38,7 @@ You can also use your browser's developer tools to look for the Plausible script
 
 ## Is the Plausible script not installed on your site?
 
-You should see the Plausible Analytics tracking script in the "**Network**" tab of developer tools or your website's source code. If you cannot see the script, please double check if you've inserted it correctly. Installing Plausible on a site can be a slightly different process depending on what tools you're using.
+You should see the Plausible Analytics tracking script in the "**Network**" tab of developer tools or your website's source code. If you can't see the script, please double check if you've inserted it correctly. Installing Plausible on a site can be a slightly different process depending on what tools you're using.
 
 We've put together several integration guides that cover popular website builders and content management systems (CMS) such as WordPress and Ghost. Thanks to the members of our community, there are also community integrations and plugins for several frameworks such as Hugo and GatsbyJS. These can help you set up and start counting your site visitors in no time.
 
@@ -48,7 +48,7 @@ Here's [the full list of all integrations and guides](integration-guides.md).
 
 * Your browser's developer tools "**Console**" tab may give you some insights through the error code it provides. Make sure to check for any errors in the "**Console**" tab. 
 
-* Please ensure that the script you use is exactly the same script as listed in your Plausible website settings. You can find your JavaScript snippet by [logging into your Plausible account](https://plausible.io/sites). Here you'll find the list of sites you've added to Plausible. Click on the "**Settings**" icon on the right-hand side of the domain name you'd like to get the snippet for. Then scroll down to the "**Javascript snippet**" section on the following page.
+* Please ensure that the script you use is exactly the same script as listed in your Plausible website settings. You can find your JavaScript snippet by [logging into your Plausible account](https://plausible.io/sites). Here you'll find the list of sites you've added to Plausible. Click on the "**Settings**" icon on the right-hand side of the domain name you'd like to get the snippet for. Then scroll down to the "**JavaScript snippet**" section on the following page.
 
 * Does your site use a Content Security Policy (CSP)? If it does, you need to add plausible.io specifically to the allowed domains. [More info here](https://github.com/plausible/docs/issues/20).
 

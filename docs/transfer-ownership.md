@@ -14,14 +14,14 @@ As the new owner of the site, your client is then responsible for paying for [th
 
 ### How to transfer the ownership of a site
 
-* Go into [the site settings](website-settings.md) of the website you'd like to transfer the ownership of
-* Click on the "**People**" section on the left-hand sidebar
-* Click on the "**Owner**" role next to the name of the current owner
-* Click on the "**Transfer ownership**" button
-* Enter the email address of the person you'd like to transfer the ownership to. If you transfer the ownership to a person that doesn't have an existing Plausible account, they will get an email and will need to register an account
+* Go into [the site settings](website-settings.md) of the website you'd like to transfer the ownership of.
+* Click on the "**People**" section on the left-hand sidebar.
+* Click on the "**Owner**" role next to the name of the current owner.
+* Click on the "**Transfer ownership**" button.
+* Enter the email address of the person you'd like to transfer the ownership to. If you transfer the ownership to a person that doesn't have an existing Plausible account, they will get an email and will need to register an account.
 * Click on the "**Request transfer**" button. We will send an email to the person you want to transfer the ownership to and notify them about your transfer request. They will need to register for a Plausible account (or log in to their existing Plausible account) and accept the transfer request. All requests expire after 48 hours.
 
-They will immediately become the new owner of the site after they accept the transfer request. The new owner is then responsible for the billing. If the new owner doesn't have an active subscription, they are required to upgrade their account in order to view the stats.
+They will immediately become the new owner of the site after they accept the transfer request. The new owner is then responsible for the billing. If the new owner doesn't have an active subscription, they are required to upgrade their account to view the stats.
 
 After the transfer of the ownership has been completed, you still keep the "**Admin**" role to the site so you can view the stats and edit the site settings. The new owner can choose to change your role or altogether remove you from having access to the site at any time.
 
@@ -29,24 +29,24 @@ After the transfer of the ownership has been completed, you still keep the "**Ad
 
 You can change the user role at any time:
 
-* Go into the site settings of the website you'd like to modify the roles for
-* Click on the "**People**" section on the left-hand sidebar. That's where you can get an overview of the current team members and their existing roles
-* Click on the current role next to the name of the person you'd like to change the role for
-* Choose a new role for the user
+* Go into the site settings of the website you'd like to modify the roles for.
+* Click on the "**People**" section on the left-hand sidebar. That's where you can get an overview of the current team members and their existing roles.
+* Click on the current role next to the name of the person you'd like to change the role for.
+* Choose a new role for the user.
 
 That's it. The user now has a different role.
 
-Note that you need to be an owner or an admin of a site in order to change user roles.
+Note that you need to be an owner or an admin of a site to change user roles.
 
 ### How to remove a user
 
 You can remove a user from having access to a site at any time:
 
-* Go into the site settings of the website you'd like to remove a user for
-* Click on the "**People**" section on the left-hand sidebar
-* Click on the current role next to the name of the person you'd like to remove
-* Click "**Remove member**" 
+* Go into the site settings of the website you'd like to remove a user for.
+* Click on the "**People**" section on the left-hand sidebar.
+* Click on the current role next to the name of the person you'd like to remove.
+* Click "**Remove member**" .
 
 That's it. The user has now been removed from the specific site.
 
-Note that you need to be an owner or an admin of a site in order to remove users. 
+Note that you need to be an owner or an admin of a site to remove users. 

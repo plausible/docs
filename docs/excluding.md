@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 By default, Plausible Analytics tracks every visitor to your website. When you're working on your site, you might not want to record your own visits and page views.
 
-Most web analytics tools do this by excluding certain IP addresses from being counted. However, we do not store the visitors’ IP addresses in our database for privacy reasons as we are a [GDPR compliant web analytics](https://plausible.io/data-policy) tool.
+Most web analytics tools do this by excluding certain IP addresses from being counted. However, we don't store the visitors’ IP addresses in our database for privacy reasons as we are a [GDPR compliant web analytics](https://plausible.io/data-policy) tool.
 
 To block your page views from your Plausible Analytics stats dashboard, you can use a standard ad-blocking browser extension. Some extensions may automatically opt you out of Plausible tracking as soon as you activate them but you can follow these steps to make sure that they do so. 
  
@@ -72,7 +72,7 @@ You can test your filter by:
 
 * Reloading your website multiple times and making sure that the total page views number in your Plausible Analytics dashboard does not increase. This isn’t very reliable if there are other people visiting your site at the same time.
 
-* Alternatively you can load your website, open the browser inspector (press F12 in Firefox or Chrome), and ensure that the Plausible Analytics script is not loading in the "**Network**" tab.
+* Alternatively you can load your website, open the browser inspector (press F12 in Firefox or Chrome), and ensure that the Plausible Analytics script isn't loading in the "**Network**" tab.
 
 * Your adblocker will also show you the number of domains and/or scripts they block when you visit the individual website.
 

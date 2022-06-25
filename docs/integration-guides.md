@@ -159,7 +159,7 @@ If you'd like to count users on your Android and/or iOS mobile apps, you can use
 
 ## Podcastpage.io
 
-Add Plausible to your [Podcastpage.io](https://podcastpage.io/) website. Just enable the Plausible script via the "Integrations" page of your dashboard to add the tracking script to all pages.
+Add Plausible to your [Podcastpage.io](https://podcastpage.io/) website. Just enable the Plausible script through the "Integrations" page of your dashboard to add the tracking script to all pages.
 
 ## Publii
 
@@ -187,7 +187,7 @@ Add Plausible to your [Podcastpage.io](https://podcastpage.io/) website. Just en
 
 ## Segment
 
-There's no official Plausible integration with Segment but Segment allows you to integrate with Google Tag Manager. So you could integrate Plausible with Segment via Google Tag Manager. Here's how to use [Google Tag Manager](google-tag-manager.md).
+There's no official Plausible integration with Segment but Segment allows you to integrate with Google Tag Manager. So you could integrate Plausible with Segment through Google Tag Manager. Here's how to use [Google Tag Manager](google-tag-manager.md).
 
 ## Server side tracking
 

@@ -8,7 +8,7 @@ Plausible gives you great control and flexibility in plans you can subscribe to,
 
 ## All plans are priced according to your traffic levels
 
-All Plausible Analytics subscription plans are priced according to your monthly traffic levels. The billing is based on the total number of pageviews between all of the sites you have added to your account. 
+All Plausible Analytics subscription plans are priced according to your monthly traffic levels. The billing is based on the total number of pageviews between all the sites you have added to your account. 
 
 To calculate your traffic level, we take all the websites you have added to your Plausible account and total the number of page views between them. If you use the "[Custom Events](custom-event-goals.md)" feature, then these count towards your total monthly pageviews as well.
 
@@ -16,7 +16,7 @@ To calculate your traffic level, we take all the websites you have added to your
 
 You can check your current traffic level in your account settings within the "Subscription Plan" section. Look under the "Your usage" heading. You should get on a subscription plan that fits your traffic levels.
 
-You can get 2 months free if you subscribe to a yearly plan and pay annually. You can see all of [our subscription plans and pricing](https://plausible.io/#pricing) on our website or within your Plausible account.
+You can get 2 months free if you subscribe to a yearly plan and pay annually. You can see all [our subscription plans and pricing](https://plausible.io/#pricing) on our website or within your Plausible account.
 
 ## What happens if I go over my monthly page views limit?
 
@@ -34,6 +34,6 @@ Same works for our 30-day free trial. There are no restrictions on features or u
  
 ## How do I manage my subscription?
 
-Everything is self-serve within your account settings. There are no long term contracts and you can change your subscription tier or cancel your plan at any time. You do not need to call or contact us.
+Everything is self-serve within your account settings. There are no long term contracts and you can change your subscription tier or cancel your plan at any time. You don't need to call or contact us.
 
 Need any help or have a question about our subscription plans or your subscription? [Contact us](https://plausible.io/contact).

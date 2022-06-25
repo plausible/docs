@@ -36,9 +36,8 @@ Add the following JSON to rewrite calls within your application to Plausible's r
 ```
 
 Note that:
-
-- the source paths identified here **must be** used when configuring the HTML script tag in the next section
-- you can use whatever paths you like here (for example, here prefixing with  `/stats/`)
+- the source paths identified here **must be** used when configuring the HTML script tag in the next section.
+- you can use whatever paths you like here (for example, here prefixing with `/stats/`).
 
 ## Step 3: Add the script tag
 
@@ -53,7 +52,8 @@ Add a script tag to your application's HTML page, passing the values configured 
   data-domain="<your-domain>"
 ></script>
 ```
-
-Note that the `src` and `data-api` attributes **must match** the `source` values in the `vercel.json` file.
+:::note
+The `src` and `data-api` attributes **must match** the `source` values in the `vercel.json` file.
+:::
 
 Thanks to [davestewart](https://github.com/davestewart) for contributing these instructions!

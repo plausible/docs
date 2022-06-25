@@ -59,12 +59,12 @@ When our JavaScript file loads from your subdomain, you can finish your setup by
 <img alt="Update the tracking code on your site" src={useBaseUrl('img/update-javascript-snippet.png')} />
 
 :::note
-Using CSP? Do not forget to add this new subdomain specifically to your Content Security Policy too.
+Using CSP? don't forget to add this new subdomain specifically to your Content Security Policy too.
 :::
 
 ## Should I create a custom domain for each of the sites that I want to track?
 
-This is not necessary. You could use one custom domain for all your sites.
+This isn't necessary. You could use one custom domain for all your sites.
 
 This is convenient if you're running several sites as subdomains. In that case you could create plausible.yourdomain.com as your custom domain and use that for all the different subdomains you have as part of yourdomain.com (subdomain1.yourdomain.com, subdomain2.yourdomain.com etc).
 

@@ -32,14 +32,14 @@ Clicking this icon will stop the imported data from being displayed and the icon
 
 ## How do I delete the imported data?
 
-Data you have imported can be deleted by returning to your site's general settings page and clicking the "**Clear imported pageviews**" button in the "**Data Import from Google Analytics**" panel. This action will not affect the native data you have collected using our script directly.
+Data you have imported can be deleted by returning to your site's general settings page and clicking the "**Clear imported pageviews**" button in the "**Data Import from Google Analytics**" panel. This action won't affect the native data you have collected using our script directly.
 
 ## How much data is imported?
 
 Data is imported in aggregate for each date, from your first Google Analytics visitor until your first Plausible Analytics visitor. This is to avoid double-counting visits. 
 
 :::note
-Do you want your imported Google Analytics data to replace the native Plausible Analytics data up to today? This is not recommended as the native data is superior to the imported data but it is possible if you wish to do so. You can [reset the Plausible stats](reset-site-data.md) first and make the import after that.
+Do you want your imported Google Analytics data to replace the native Plausible Analytics data up to today? This isn't recommended as the native data is superior to the imported data, but it's possible if you wish to do so. You can [reset the Plausible stats](reset-site-data.md) first and make the import after that.
 :::
 
 How long time frame we can import the data for depends on your data retention limits in your Google Analytics settings. If you haven't set any data retention limits in your Google Analytics settings, we can import all the data from when you started using Google Analytics for the particular website.
@@ -54,19 +54,19 @@ We no longer need access to your Google Analytics account after the import has b
 
 ## How does imported data differ from Plausible native data?
 
-We have taken many steps to make the imported data feel as fast, easy, and straightforward as the native data collected by Plausible directly. But it is important to note that imported data will not be as flexible as the native data that we collect using our script. Here are the differences:
+We have taken many steps to make the imported data feel as fast, easy, and straightforward as the native data collected by Plausible directly. But it's important to note that imported data won't be as flexible as the native data that we collect using our script. Here are the differences:
 
 ### Filtering 
 
-The Google Analytics data is imported using Google's Reporting API v4 which has limits on the number of dimensions that can be fetched in a single query. This means we cannot fetch entries that contain all of the dimensions we are interested in and instead need to fetch data for each dimension individually. 
+The Google Analytics data is imported using Google's Reporting API v4 which has limits on the number of dimensions that can be fetched in a single query. This means we can't fetch entries that contain all the dimensions we are interested in and instead need to fetch data for each dimension individually. 
 
-Unfortunately, this means we are unable to look at how dimensions interact. For example, it is not possible to use [our filters](filters-segments.md) with the imported data.
+Unfortunately, this means we are unable to look at how dimensions interact. For example, it isn't possible to use [our filters](filters-segments.md) with the imported data.
 
 ### Unique visitors
 
 When you're looking at a longer period of time, you may see a discrepancy in the number of total unique visitors in your data in Google Analytics and in the Google Analytics data you imported to Plausible. This happens because we only import day-level aggregated data. 
 
-To get the number of unique visitors in a longer period of time (say one month) we just sum up the daily unique visitor numbers. We cannot do the proper unique visitors calculation like Google Analytics is doing. 
+To get the number of unique visitors in a longer period of time (say one month) we just sum up the daily unique visitor numbers. We can't do the proper unique visitors calculation like Google Analytics is doing. 
 
 ### UTM traffic
 
@@ -80,14 +80,14 @@ In the case of AdWords tracking, this is saved as a "**UTM source**" with the va
 
 While the Reporting API lets us fetch data about which countries visitors connect from, it does not give us access to region and city location data in a standard format. For each visit recorded by Google Analytics, we will have the country, but that visit will have an unknown region and city.
 
-The same is the case for browser and OS versions. We can import your traffic split between the different browsers and operating systems, but you cannot drill down to see the imported data's exact browser versions and OS versions.
+The same is the case for browser and OS versions. We can import your traffic split between the different browsers and operating systems, but you can't drill down to see the imported data's exact browser versions and OS versions.
 
-It is also not possible to import your goal data.
+It's also not possible to import your goal data.
 
 ### Day view graph
 
-Another restriction of the imported data compared to the native data is that we cannot display hourly graphs on the daily view.
+Another restriction of the imported data compared to the native data is that we can't display hourly graphs on the daily view.
 
 ### Export
 
-It is not possible to export the data imported from Google Analytics using our usual methods, such as the [CSV export](export-stats.md) and the [stats API](stats-api.md).
+It isn't possible to export the data imported from Google Analytics using our usual methods, such as the [CSV export](export-stats.md) and the [stats API](stats-api.md).

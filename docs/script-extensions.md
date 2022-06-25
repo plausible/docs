@@ -2,7 +2,7 @@
 title: Script extensions for enhanced measurement
 ---
 
-We're proud to have one of the most [lightweight JavaScript snippets](https://plausible.io/lightweight-web-analytics) in the analytics industry. Clocking in at less than 1KB, our script will not add any bloat to your website or cause performance issues. 
+We're proud to have one of the most [lightweight JavaScript snippets](https://plausible.io/lightweight-web-analytics) in the analytics industry. Clocking in at less than 1KB, our script won't add any bloat to your website or cause performance issues. 
 
 One of the ways we achieve that is by radically limiting the number of options in the default script. Instead, we provide separate script files based on how you might want to use Plausible.
 
@@ -22,7 +22,7 @@ In this case, the snippet you need to insert into your site is as follows:
 <script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.outbound-links.js"></script>
 ```
 
-This approach makes sure that you only load the code that will actually be used on your website. Websites should not have to load dozens or hundreds of kilobytes of dead JavaScript code on every page load which degrades the user experience and causes unnecessary network traffic.
+This approach makes sure that you only load the code that will actually be used on your website. Websites shouldn't have to load dozens or hundreds of kilobytes of dead JavaScript code on every page load which degrades the user experience and causes unnecessary network traffic.
 
 ## All our script extensions 
 
@@ -36,7 +36,7 @@ Here's the list of all the available extensions at this time:
 | script.exclusions.js     | [Exclude certain pages from being tracked](excluding-pages.md)                                     |
 | script.compat.js         | Compatibility mode for [tracking users on Internet Explorer](#scriptcompatjs)                      |
 | script.local.js          | Allow analytics to track on localhost too which is useful in hybrid apps                           |
-| script.manual.js         | [Do not trigger pageviews automatically](#scriptmanualjs). Also allows you to [specify custom locations](custom-locations.md) to redact URLs with identifiers. You can also use it to track [custom query parameters](custom-query-params.md)|
+| script.manual.js         | [Don't trigger pageviews automatically](#scriptmanualjs). Also allows you to [specify custom locations](custom-locations.md) to redact URLs with identifiers. You can also use it to track [custom query parameters](custom-query-params.md)|
 
 ## You can combine extensions according to your needs
 
@@ -59,7 +59,7 @@ You can mix and match, and combine extensions any way that you wish. And you onl
 
 ## script.compat.js
 
-The default Plausible script will not work on Internet Explorer because it uses the [document.currentScript](https://caniuse.com/document-currentscript) API to read configuration options. You can run Plausible in compatibility mode by including the `script.compat.js` extension and defining `id="plausible"` on the script tag so that it can find itself. Here's how it should look like:
+The default Plausible script won't work on Internet Explorer because it uses the [document.currentScript](https://caniuse.com/document-currentscript) API to read configuration options. You can run Plausible in compatibility mode by including the `script.compat.js` extension and defining `id="plausible"` on the script tag so that it can find itself. Here's how it should look like:
 
 ```html
 <script id="plausible" defer data-domain="yourdomain.com" src="https://plausible.io/js/script.compat.js"></script>
@@ -67,7 +67,7 @@ The default Plausible script will not work on Internet Explorer because it uses 
 
 ## script.manual.js
 
-By default, the Plausible script triggers a pageview when it is first loaded. It also attaches listeners to the History API and will automatically trigger pageviews when you use `history.pushState`. This is useful for most websites but we also offer a manual mode in case you want full control over when pageviews are triggered on your website.
+By default, the Plausible script triggers a pageview when it's first loaded. It also attaches listeners to the History API and will automatically trigger pageviews when you use `history.pushState`. This is useful for most websites but we also offer a manual mode in case you want full control over when pageviews are triggered on your website.
 
 One of the use-cases for this is when you use [Turbo](https://turbo.hotwired.dev/) (formerly [Turbolinks](https://github.com/turbolinks/turbolinks)). In that case, you want to manually trigger Plausible pageviews on the `turbo:load` or `turbolinks:load` browser event depending which library you use. Here's how you can do that:
 
@@ -91,7 +91,7 @@ When using turbolinks, make sure that the Plausible script isn't loaded and exec
 
 Additionally, the manual script extension allows you to provide a special option named `u` with your events. This allows you to specify the URL of the page and can be used to specify custom locations. 
 
-It is especially helpful to redact and aggregate multiple pages whose URLs contain identifiers that are specific to users. [Learn more about specifying custom URLs in your events](custom-locations.md).
+It's especially helpful to redact and aggregate multiple pages whose URLs contain identifiers that are specific to users. [Learn more about specifying custom URLs in your events](custom-locations.md).
 
 ### Track custom query parameters for complete page URLs
 

@@ -13,4 +13,4 @@ Click on any country to see the list of regions within that country where your v
 ## How it works
 
 Plausible uses the [DB-IP database](https://db-ip.com/) to determine the visitor location based on their IP address. The IP address itself
-is discarded to make sure we do not store any personal data. We never store IP addresses in our database, logs or anywhere on disk at all. Read more in [our data policy](https://plausible.io/data-policy).
+is discarded to make sure we don't store any personal data. We never store IP addresses in our database, logs or anywhere on disk at all. Read more in [our data policy](https://plausible.io/data-policy).

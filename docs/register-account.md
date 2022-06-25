@@ -16,9 +16,9 @@ Fill in your full name and email address, choose your account password and click
 
 ## Verify your email address
 
-We'll send you an email to verify your email address. Look for an email with the subject line "**Your Plausible email verification code**". 
+We'll email to verify your email address. Look for an email with the subject line "**Your Plausible email verification code**". 
 
-Please enter the four digit code that we sent to you via email to activate your Plausible Analytics account.
+Please enter the four digit code that we sent to you through email to activate your Plausible Analytics account.
 
 <img alt="Activate your Plausible Analytics account" src={useBaseUrl('img/activate-your-account.png')} />
 
