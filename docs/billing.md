@@ -38,7 +38,7 @@ You will never be charged extra for an occasional traffic spike. We won't stop c
 
 Suppose new higher traffic levels become your new standard and your page views exceed your subscription plan for two consecutive months. In that case, we kindly ask you to upgrade your subscription plan to accommodate your new traffic levels using our self-serve platform. 
 
-We will email and an alert in app if your traffic levels exceed your subscription plan two months in a row.
+We will email and send an alert in app if your traffic levels exceed your subscription plan two months in a row.
 
 ## How does the billing work if I upgrade my subscription to a higher tier?
 
