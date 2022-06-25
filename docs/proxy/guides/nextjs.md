@@ -18,7 +18,7 @@ module.exports = withPlausibleProxy()({
 })
 ```
 
-This will set up the necessary rewrites and configure `PlausibleProvider` to use the local URLs so you can keep using it like this:
+This will set up the necessary rewrites and configure `PlausibleProvider` to use the local URLs, so you can keep using it like this:
 
 ```jsx
   <PlausibleProvider domain="example.com">

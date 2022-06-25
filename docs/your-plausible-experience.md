@@ -12,9 +12,9 @@ Here are the steps you can take to get the most out of your Plausible experience
 
 ## Enable email/Slack reports and notifications for traffic spikes
 
-You can decide to enable weekly (every Monday) and/or monthly (every 1st day of the month) reports to be sent directly via email. [See instructions here](email-reports.md).
+You can decide to enable weekly (every Monday) and/or monthly (every 1st day of the month) reports to be sent directly through email. [See instructions here](email-reports.md).
 
-You can also enable traffic spike notifications to be sent directly via email. This will help notify you when your site has an unusually high number of current visitors. [See instructions here](traffic-spikes.md).
+You can also enable traffic spike notifications to be sent directly through email. This will help notify you when your site has an unusually high number of current visitors. [See instructions here](traffic-spikes.md).
 
 And you can get the same reports and traffic spike notifications in Slack too. [See instructions here](slack-reports.md).
 

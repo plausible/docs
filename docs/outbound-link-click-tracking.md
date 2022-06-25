@@ -34,7 +34,7 @@ The new snippet will look like this (make sure to change the `data-domain` attri
 
 As usual, you need to place your Plausible Analytics tracking script code into the Header (`<head>`) section of your site. Place the tracking script within the `<head> … </head>` tags.
 
-Do this for all the websites where you'd like to enable outbound link click tracking. This is the only tracking script you need. You don't need to keep the old script. Your stats will keep tracking without interruption and you will not lose any of your old data.
+Do this for all the websites where you'd like to enable outbound link click tracking. This is the only tracking script you need. You don't need to keep the old script. Your stats will keep tracking without interruption, and you won't lose any of your old data.
 
 :::note
 Do you want to use the outbound link clicks feature alongside the [file downloads feature](file-downloads-tracking.md)? You can combine any of our extensions by changing the `src` attribute in the snippet. In this case, change it to `script.outbound-links.file-downloads.js`.

@@ -52,7 +52,7 @@ Timezone name according to the [IANA](https://www.iana.org/time-zones) database.
 
 ### DELETE /api/v1/sites/:site_id
 
-Deletes a site from your Plausible account along with all of it's data and configuration. The API key must belong to the owner of the site.
+Deletes a site from your Plausible account along with all it's data and configuration. The API key must belong to the owner of the site.
 
 ```bash title="Try it yourself"
 curl -X DELETE https://plausible.io/api/v1/sites/test-domain.com \
@@ -83,8 +83,7 @@ curl -X GET https://plausible.io/api/v1/sites/test-domain.com \
 
 ### PUT /api/v1/sites/shared-links
 
-Finds or creates a shared link for a given `site_id` (use the site domain as the ID). This endpoint is idempotent, it will not fail
-if a shared link with the provided name already exists.
+Finds or creates a shared link for a given `site_id` (use the site domain as the ID). This endpoint is idempotent, it won't fail if a shared link with the provided name already exists.
 
 
 ```bash title="Try it yourself"
@@ -118,8 +117,7 @@ Name of the shared link.
 
 ### PUT /api/v1/sites/goals
 
-Finds or creates a goal for a given `site_id` (use the site domain as the ID). This endpoint is idempotent, it will not fail
-if a goal with the provided name already exists.
+Finds or creates a goal for a given `site_id` (use the site domain as the ID). This endpoint is idempotent, it won't fail if a goal with the provided name already exists.
 
 
 ```bash title="Try it yourself"

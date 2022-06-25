@@ -4,12 +4,12 @@ title: UTM tags and other query parameters
 
 To minimize the amount of traffic that falls within the "[no referrer](top-referrers.md)" category, you can add special query parameters including UTM tags to your links.
 
-Whenever you post a link in social media or send it to someone via email, you can choose to add a special query parameter to the link. When for instance `?ref=<value>` query parameter is present, Plausible Analytics will show it as the referral source.
+Whenever you post a link in social media or send it to someone through email, you can choose to add a special query parameter to the link. When for instance `?ref=<value>` query parameter is present, Plausible Analytics will show it as the referral source.
 
 `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term` query parameters are all valid and supported.
 
 :::note 
-All referral sources including UTM and other query parameters are counted only when they start a new session on your site. This is why you don't see all of your own visits if you click to test several different UTM tagged links at the same time
+All referral sources including UTM and other query parameters are counted only when they start a new session on your site. This is why you don't see all your own visits if you click to test several different UTM tagged links at the same time
 :::
 
 For example, here's what you can do when you want to send a newsletter to your subscribers. If you simply link to your site with `yourdomain.com`, anyone who clicks on it would fall within the "**no referrer**" category. 
@@ -32,15 +32,15 @@ For any clicks on the above link, "**Newsletter**" would be listed as a referral
 
 ## Merging organic traffic and paid campaigns 
 
-It is a good practice to tag your links where the referrer header is not sent. Emails, newsletters, chat, messaging applications, social media, paid advertising campaigns and so on.
+It's a good practice to tag your links where the referrer header isn't sent. Emails, newsletters, chat, messaging applications, social media, paid advertising campaigns and so on.
 
 When a query parameter is present in the link it takes priority. When someone lands on your website without the special query parameter defined, we fall back to the referrer header.
 
-We merge all the identical sources in the "All" tab of the "Top Sources" report. For instance, clicks that you get from Facebook which are not tagged by UTMs are labeled with a referral source "**Facebook**" by Facebook itself. 
+We merge all the identical sources in the "All" tab of the "Top Sources" report. For instance, clicks that you get from Facebook which aren't tagged by UTMs are labeled with a referral source "**Facebook**" by Facebook itself. 
 
 If you tag some links that you share on Facebook such as your paid ads with the utm_source=Facebook, clicks on those will be merged alongside organic Facebook clicks in the "All" tab. 
 
-Then you can see combined number of clicks between organic and UTM-tagged clicks in the "All" tab and you can segment by UTM tagged clicks only in the "Medium", "Source", "Campaign", "Term" and "Content" sections.
+Then you can see combined number of clicks between organic and UTM-tagged clicks in the "All" tab, and you can segment by UTM tagged clicks only in the "Medium", "Source", "Campaign", "Term" and "Content" sections.
 
 :::note 
 UTM and other tags are case-sensitive so utm_source=Twitter and utm_source=twitter will show separately in your analytics dashboard.

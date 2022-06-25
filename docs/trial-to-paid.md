@@ -8,7 +8,7 @@ Log in to your Plausible Analytics account and in the top right, click on the "*
 
 Under "**Subscription Plan**", your "**Current plan**" should list "**Free Trial**". Click on "**Upgrade**" to upgrade your trial account to a paid subscription.
 
-Note that you will keep all the stats you have collected during the trial when you upgrade your account. We do not reset any data collected in the trial.
+Note that you will keep all the stats you have collected during the trial when you upgrade your account. We don't reset any data collected in the trial.
 
 <img alt="Upgrade your trial account to a paid subscription" src={useBaseUrl('img/subscription-plan.png')} />
 
@@ -30,6 +30,6 @@ Choose your location and click on the "**Continue**" button.
 
 Next up you need to choose your payment method. You can pay by a credit card or with a PayPal account.
 
-Fill in your card details and click on the "**Subscribe Now**" button to subscribe to a paid subscription. Your subscription will start right away. Your subscription will be renewed automatically and you can change or cancel your plan at any time.
+Fill in your card details and click on the "**Subscribe Now**" button to subscribe to a paid subscription. Your subscription will start right away. Your subscription will be renewed automatically, and you can change or cancel your plan at any time.
 
-You will automatically get an email from our payment processor Paddle with your invoice. You will get an automatic invoice sent to you via email for each payment that you make.
+You will automatically get an email from our payment processor Paddle with your invoice. You will get an automatic invoice sent to you through email for each payment that you make.

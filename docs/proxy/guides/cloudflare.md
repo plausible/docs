@@ -9,7 +9,7 @@ All you need to set it up is a free Cloudflare account.
 
 Here's the step-by-step process for creating a proxy. It takes only a few minutes and requires no tech know-how or prior experience.
 
-Step 0: Sign up for a free Cloudflare account if you don't have an account already and add your site
+Step 0: Sign up for a free Cloudflare account if you don't have an account already and add your site.
 
 ## Step 1: Create a worker
 
@@ -96,7 +96,7 @@ Now, the Plausible script should be accessible at the following URL:
 https://your-worker-name.your-cloudflare-username.workers.dev/your-folder-name/script.js
 ```
 
-If you can load this URL and see some Javascript code, you should be good to go to the following step.
+If you can load this URL and see some JavaScript code, you should be good to go to the following step.
 
 ## Step 5: Integrate a new snippet into your site header
 
@@ -120,7 +120,7 @@ In your Cloudflare account, click on the 'Workers' section in the sidebar. Then,
 
 <img alt="Adding a route in your Cloudflare account" src={useBaseUrl('img/cloudflare-workers-dash.png')} />
 
-Next, enter the URL prefix where you would like to install Plausible. In this example, we'll install the proxy on the `example.com` domain and we'll use `qwerty` as the subdirectory name. You can choose any name for the subdirectory but it's a good idea to avoid words like 'analytics' and 'tracking'.
+Next, enter the URL prefix where you would like to install Plausible. In this example, we'll install the proxy on the `example.com` domain, and we'll use `qwerty` as the subdirectory name. You can choose any name for the subdirectory, but it's a good idea to avoid words like 'analytics' and 'tracking'.
 
 * Route: `*example.com/qwerty/*`
 

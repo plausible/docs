@@ -6,7 +6,7 @@ title: Getting started
 The easiest way to get started with Plausible is with [our official managed service in the Cloud](https://plausible.io/#pricing). It takes 2 minutes to start counting your stats with a worldwide CDN, high availability, backups, security and maintenance all done for you by us. Our managed hosting can save a substantial amount of developer time and resources. For most sites this ends up being the best value option and the revenue goes to funding the maintenance and further development of Plausible. So you’ll be supporting open source software and getting a great service! The section below is for self-hosting our analytics on your server and managing your infrastructure. 
 :::
 
-Plausible Analytics is designed to be self-hosted via Docker. You don't have to be a Docker expert
+Plausible Analytics is designed to be self-hosted through Docker. You don't have to be a Docker expert
 to launch your own instance of Plausible Analytics. You should have a basic understanding of the command-line
 and networking to successfully set up your own instance of Plausible Analytics.
 
@@ -27,7 +27,7 @@ updates you need to upgrade to a newer version.
 
 Version changes are documented in our [Changelog](https://github.com/plausible/analytics/blob/master/CHANGELOG.md).
 Please note that database schema changes require running migrations when you're upgrading. However, we consider the schema
-as an internal API and therefore schema changes are not considered a breaking change.
+as an internal API and therefore schema changes aren't considered a breaking change.
 
 ## Requirements
 
@@ -37,8 +37,7 @@ and support for SSE 4.2 instructions. We recommend using a minimum of 4GB of RAM
 We've tested this on [Digital Ocean](https://m.do.co/c/91569eca0213) (affiliate link)
 but any hosting provider works. If your server doesn't come with Docker pre-installed, you can follow [their docs](https://docs.docker.com/get-docker/) to install it.
 
-To make your Plausible instance accessible on a (sub)domain, you also need to be able to edit your DNS. Plausible is not currently
-designed for subfolder installations.
+To make your Plausible instance accessible on a (sub)domain, you also need to be able to edit your DNS. Plausible isn't currently designed for subfolder installations.
 
 ## Up and running
 
@@ -52,7 +51,7 @@ $ git clone https://github.com/plausible/hosting
 $ cd hosting
 ```
 
-Alternatively, you can download and extract the repo as a tarball
+Alternatively, you can download and remove the repo as a tarball
 
 ```bash
 $ curl -L https://github.com/plausible/hosting/archive/master.tar.gz | tar -xz
@@ -75,22 +74,22 @@ Now edit `plausible-conf.env` and set `SECRET_KEY_BASE` to your secret key.
 
 Next, set your `ADMIN_USER` credentials to your own choices.
 
-Finally, enter the `BASE_URL` for your app. It should be the base url where this instance is accessible, including the scheme (eg. `http://` or `https://`), the domain name, and optionally a port. If no port is specified the default `8000` will be used. Plausible is not currently designed for subfolder installations so please do not add a path component to the base url.
+Finally, enter the `BASE_URL` for your app. It should be the base url where this instance is accessible, including the scheme (eg. `http://` or `https://`), the domain name, and optionally a port. If no port is specified the default `8000` will be used. Plausible isn't currently designed for subfolder installations, so please don't add a path component to the base URL.
 
 ### 3. Start the server
 
-Once you've entered your secret key base, base url and admin credentials, you're ready to start up the server:
+Once you've entered your secret key base, base URL and admin credentials, you're ready to start up the server:
 
 ```bash
 $ docker-compose up -d
 ```
 
 When you run this command for the first time, it does the following:
-* Creates a Postgres database for user data
-* Creates a Clickhouse database for stats
-* Runs migrations on both databases to prepare the schema
-* Creates an admin account (which is just a normal account with a generous 100 years of free trial)
-* Starts the server on port 8000
+* Creates a Postgres database for user data.
+* Creates a Clickhouse database for stats.
+* Runs migrations on both databases to prepare the schema.
+* Creates an admin account (which is just a normal account with a generous 100 years of free trial).
+* Starts the server on port 8000.
 
 You can now navigate to `http://{hostname}:8000` and see the login screen.
 
@@ -110,7 +109,7 @@ The Plausible server itself does not perform SSL termination. It only runs on un
 
 ### 3. Updating Plausible
 
-Plausible is updated regularly, but it is up to you to apply these updates on your server.
+Plausible is updated regularly, but it's up to you to apply these updates on your server.
 By virtue of using Docker, these updates are safe and easy to apply.
 
 ```bash
@@ -150,7 +149,7 @@ You may or may not already be running a reverse proxy on your host, let's look a
 #### No existing reverse proxy
 
 If your DNS is managed by a service that offers a proxy option with automatic SSL management, feel free to use that. We've successfully
-used Cloudflare as a reverse proxy in front of Plausible Self Hosted and it works well. 
+used Cloudflare as a reverse proxy in front of Plausible Self Hosted, and it works well. 
 
 Alternatively, you can run your own Caddy server as a reverse proxy. This way your SSL certificate will be stored on the
 host machine and managed by Let's Encrypt. The Caddy server will expose port 443, terminate SSL traffic and proxy the requests to your
@@ -159,12 +158,11 @@ Plausible server. [Full instructions](https://github.com/plausible/hosting/tree/
 #### Existing reverse proxy
 
 If you're already running a reverse proxy, the most important things to note are:
-1. Configure the virtual host to match the `BASE_URL` in your plausible configuration
-2. Proxy the traffic to `127.0.0.1:8000` or `{ip-address}:8000` if running on a remote machine
-3. Ensure the `X-Forwarded-For` is set correctly
+1. Configure the virtual host to match the `BASE_URL` in your plausible configuration.
+1. Proxy the traffic to `127.0.0.1:8000` or `{ip-address}:8000` if running on a remote machine.
+1. Ensure the `X-Forwarded-For` is set correctly.
 
-The most important thing to note with an existing reverse proxy is that the `X-Forwarded-For` header is set correctly. If the remote
-client IP is not forwarded to the Plausible server, it cannot detect visitor countries and unique user tracking will be inaccurate.
+The most important thing to note with an existing reverse proxy is that the `X-Forwarded-For` header is set correctly. If the remote client IP isn't forwarded to the Plausible server, it can't detect visitor countries and unique user tracking will be inaccurate.
 
 In our hosting repo, you'll find useful example configurations in case you're already running [Nginx](https://github.com/plausible/hosting/tree/master/reverse-proxy#nginx) or [Traefik 2](https://github.com/plausible/hosting/tree/master/reverse-proxy#traefik-2).
 
@@ -177,7 +175,7 @@ The user needs the role superuser for setting up certain modules on the database
 If the database already exists prior to running docker-compose up, please remove `&& /entrypoint.sh db createdb` in the command of the plausible service section inside docker-compose.yml. However, this will also prevent the Clickhouse database from being created, see below.
 
 ##### Clickhouse
-If you receive an error upon startup that for some reason the database does not exist, you can create it 'manually' via this docker run:
+If you receive an error upon startup that for some reason the database does not exist, you can create it 'manually' through this docker run:
 make sure that --link, --net, --host, and the name of the db  receive the right parameter values according to the running setup
 
 ```bash

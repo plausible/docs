@@ -24,7 +24,7 @@ In addition to this, we exclude known bots by the User-Agent header and we filte
 
 ## Does Plausible do data sampling?
 
-Data sampling is the practice of analyzing a subset of all data in order to uncover the meaningful information in the larger data set. Most analytics tools including Google Analytics do data sampling for all their reports.
+Data sampling is the practice of analyzing a subset of all data To uncover the meaningful information in the larger data set. Most analytics tools including Google Analytics do data sampling for all their reports.
 
 Plausible does not do any data sampling by default. The stats in your dashboard show 100% accurate data of what happens on your site.
 

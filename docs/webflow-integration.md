@@ -70,7 +70,7 @@ plausibleGoalForm.addEventListener('submit', function(e) {
  
 Using the [custom code](https://university.webflow.com/lesson/custom-code-in-the-head-and-body-tags) feature once again, insert the modified JavaScript code, this time in the footer section of the page where the form is located.
 
-### 5. Create a custom event goal with the same name in your Plausible Analytics account.
+### 5. Create a custom event goal with the same name in your Plausible Analytics account
 
 When you start sending custom events to Plausible Analytics, they won’t show up automatically. You’ll have to configure the goal for the conversion numbers to show up.
 

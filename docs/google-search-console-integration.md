@@ -4,9 +4,9 @@ title: Search Console integration
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-In 2012, [Google stopped including](https://webmasters.googleblog.com/2012/03/upcoming-changes-in-googles-http.html) search terms in the `Referer` header when people click on a Google search. They only send Google as the referrer source instead. This means that Plausible cannot automatically access search terms that lead users to your site.
+In 2012, [Google stopped including](https://webmasters.googleblog.com/2012/03/upcoming-changes-in-googles-http.html) search terms in the `Referer` header when people click on a Google search. They only send Google as the referrer source instead. This means that Plausible can't automatically access search terms that lead users to your site.
 
-However, you can still access your search terms by setting up your site on Google Search Console. Once you’ve done that, you can enable the Search Console integration in Plausible to get all of your important search results stats under one roof.
+However, you can still access your search terms by setting up your site on Google Search Console. Once you’ve done that, you can enable the Search Console integration in Plausible to get all your important search results stats under one roof.
 
 This integration is privacy-friendly and requires no Google code to be placed on your site. Google is basically just sending us the information they've already collected on their search results.
 
@@ -47,7 +47,7 @@ We really only need and use the email address from this. Email address is useful
 You then need to grant Plausible Analytics a permission to view your Search Console website data by ticking the "View Search Console data for your verified sites" box in the "Plausible Analytics wants access to your Google account" screen.
 
 :::note
-If Google presents a permission to "See and download your Google analytics data" do not tick it as it may cause issues with this integration. We only need the Search Console data permission to import your Search Console data.
+If Google presents a permission to "See and download your Google analytics data" don't tick it as it may cause issues with this integration. We only need the Search Console data permission to import your Search Console data.
 :::
 
 <img alt="Tick the View Search Console data for your verified sites box" src={useBaseUrl('img/confirm-choices.png')} />
@@ -64,14 +64,14 @@ Once you’ve selected your property, click on the "**Save**" button. At that po
 
 Google may return the "**invalid_grant**" error message for several reasons:
 
-* Google has a limit of 50 live tokens. When you try to add the 51st site, the site you added first will be disconnected from your Plausible account and so on. This is a limitation on Google's side so if you have more than 50 different sites in your Search Console, you will need to split them between different Google accounts in order to get them into Plausible at the same time
+* Google has a limit of 50 live tokens. When you try to add the 51st site, the site you added first will be disconnected from your Plausible account and so on. This is a limitation on Google's side so if you have more than 50 different sites in your Search Console, you will need to split them between different Google accounts to get them into Plausible at the same time
 * Your permissions for the specific site may have been changed or revoked in your Google account. Please check your Search Console account and make sure you still have the user permission to the site in question
-* Your token is inactive as your account has expired or your site is not active. Please check your Search Console account and make sure you still have the account and are still tracking the site in question correctly
-* You may have changed the permissions or the password in your Google account since you gave us the access. Please make sure to reconnect your Google account again to Plausible with the correct account details
+* Your token is inactive as your account has expired or your site isn't active. Please check your Search Console account and make sure you still have the account and are still tracking the site in question correctly
+* You may have changed the permissions or the password in your Google account because you gave us the access. Please make sure to reconnect your Google account again to Plausible with the correct account details
 
 ### I see no Search Console properties in my Plausible account
 
-Please make sure you tick the "View Search Console data for your verified sites" box on the "Plausible Analytics wants access to your Google account" screen. If you don't tick that box, Google will not give us permission to access any of your Search Console properties. 
+Please make sure you tick the "View Search Console data for your verified sites" box on the "Plausible Analytics wants access to your Google account" screen. If you don't tick that box, Google won't give us permission to access any of your Search Console properties. 
 
 ## Check your search query data in Plausible Analytics
 
@@ -81,12 +81,12 @@ Look at your site’s "**Top Sources**" stats in your Plausible Analytics dashbo
 
 ### I don't see Google search query data in my dashboard
 
-Search query data is not live. It is delayed by approximately 24-36 hours even on Google Search Console itself. 
+Search query data isn't live. It's delayed by approximately 24-36 hours even on Google Search Console itself. 
 
 So if you go back two days in your Plausible Analytics dashboard and click on Google in the referral sources you should be able to see the search queries for that day. We get the search query data directly from Google Search Console so as soon as they show up there they show up in Plausible Analytics too.
 
 :::note
-Note that "**Top Sources**" will only show keywords that have sent visitors to your site. We do not display keywords that have had impressions in Google's search results but no clicks to your site. Search phrases and keywords must have at least one click for them to show up in Plausible.
+Note that "**Top Sources**" will only show keywords that have sent visitors to your site. We don't display keywords that have had impressions in Google's search results but no clicks to your site. Search phrases and keywords must have at least one click for them to show up in Plausible.
 :::
 
 ### Search query number doesn't add up to the total number of Google visitors

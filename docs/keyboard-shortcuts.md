@@ -8,20 +8,20 @@ Plausible Analytics aims to give you easy to understand and quick access to usef
 
 We've tried to make Plausible as usable and accessible as possible with just a keyboard. These are the keyboard shortcuts that we do support:
 
-| Key       | Action     |
-| :------------- | :----------- |
-| D | Today |
-| E | Yesterday |
-| R | Realtime |
-| W | Last 7 days |
-| T | Last 30 days |
-| M | Month to Date |
-| Y | Year to Date |
-| S | Last 6 months |
-| L | Last 12 months |
-| A | All time |
-| C | Custom range |
-| 1-9 | Swap to site #1-9 |
-| Left Arrow | Previous period |
-| Right Arrow | Following period |
-| Esc | Clear all filters |
+| Key         | Action            |
+| :---------- | :---------------- |
+| D           | Today             |
+| E           | Yesterday         |
+| R           | Realtime          |
+| W           | Last 7 days       |
+| T           | Last 30 days      |
+| M           | Month to Date     |
+| Y           | Year to Date      |
+| S           | Last 6 months     |
+| L           | Last 12 months    |
+| A           | All time          |
+| C           | Custom range      |
+| 1-9         | Swap to site #1-9 |
+| Left Arrow  | Previous period   |
+| Right Arrow | Following period  |
+| Esc         | Clear all filters |

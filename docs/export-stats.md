@@ -17,7 +17,7 @@ It will export a ZIP file which includes CSV files of the individual reports. Yo
 For example, **visitors.csv** exports the metrics from the top chart and includes daily stats for the number of visitors, the number of pageviews, bounce rate percentage and visit duration in seconds. The format is like this:
 
 | Date       | Visitors | Pageviews | Bounce Rate | Visit Duration |
-|------------|----------| --------- | ----------- | -------------- |
+| ---------- | -------- | --------- | ----------- | -------------- |
 | 2020-05-31 | 149      | 218       | 79          | 68             |
 | 2020-06-01 | 140      | 194       | 83          | 52             |
 | 2020-06-02 | 171      | 225       | 82          | 43             |

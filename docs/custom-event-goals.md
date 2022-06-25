@@ -93,7 +93,7 @@ plausible('Download', {props: {method: 'HTTP', Region: 'Europe'}})
 
 The number of custom properties you can add per event is unlimited. And the names can be anything that you want. In our example, there are 4 properties that have been set up for segmenting: `Version, Region, OS, Method`.
 
-Custom properties only accepts scalar values such as strings, numbers and booleans. Data structures such as objects, arrays etc. are not accepted.
+Custom properties only accepts scalar values such as strings, numbers and booleans. Data structures such as objects, arrays etc. aren't accepted.
 
 Custom properties will show up automatically on your dashboard as long as you've added the goal itself. You don't need to manually add them in your settings.
 
@@ -133,7 +133,7 @@ Do watch the quotes! The `data-analytics` tag value should have both **single an
 
 ### 2. Add the JavaScript that will be sending the link click events to Plausible
 
-To be able to make use of the `data-analytics` tags and track the link clicks, you need to add the code below. You should insert this just before the closing `</body>` tag:
+To be able to use the `data-analytics` tags and track the link clicks, you need to add the code below. You should insert this just before the closing `</body>` tag:
 
 ```html
 <script>
@@ -195,7 +195,7 @@ Do watch the quotes! The `data-analytics` tag value should have both **single an
 
 ### 2. Add the JavaScript that will be sending the form submit events to Plausible
 
-To be able to make use of the `data-analytics` tag and track the form submit events, you need to add the code below. You should insert this just before the closing `</body>` tag:
+To be able to use the `data-analytics` tag and track the form submit events, you need to add the code below. You should insert this just before the closing `</body>` tag:
 
 ```html
 <script>

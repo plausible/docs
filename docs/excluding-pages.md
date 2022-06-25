@@ -4,7 +4,7 @@ title: Exclude specific pages from being tracked
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-By default, Plausible Analytics tracks every page you install the snippet on. If you don't want Plausible to track specific pages, do not include the snippet on those pages.
+By default, Plausible Analytics tracks every page you install the snippet on. If you don't want Plausible to track specific pages, don't include the snippet on those pages.
 
 Alternatively, you can also manually exclude specific pages from being tracked. When excluding pages manually, the exclusion means that pageviews on the excluded page won't be counted any more from the moment of exclusion. The historical stats will be kept and will stay the same.
 
@@ -36,7 +36,7 @@ To exclude **everything except** for some specific pages, use the `data-include`
 data-include="/en**, /es**"
 ```
 
-You can also use a combination of `data-include` and `data-exclude` options. Do note that when using the two options together, any page path that matches both the exclusion and inclusion rule, is **excluded** from being tracked. For example, the following combination will not track the page `/en/user/*/settings` (even though it matches the inclusion rule).
+You can also use a combination of `data-include` and `data-exclude` options. Do note that when using the two options together, any page path that matches both the exclusion and inclusion rule, is **excluded** from being tracked. For example, the following combination won't track the page `/en/user/*/settings` (even though it matches the inclusion rule).
 
 ```
 data-include="/en**" data-exclude="/en/user/*/settings"
@@ -44,7 +44,7 @@ data-include="/en**" data-exclude="/en/user/*/settings"
 
 Any pages listed in this format should be **comma-separated**, with asterisks to indicate unspecified regions of the pathname. All entries must begin with a `/`, and should **not** include the trailing slash as we account for this automatically.
 
-- Asterisks (`*`) expand to any stretch (of length >=0) of the page path and can be on either end or in the middle of any entry, but **cannot** be in the place of slashes.
+- Asterisks (`*`) expand to any stretch (of length >=0) of the page path and can be on either end or in the middle of any entry, but **can't** be in the place of slashes.
 - Double asterisks (`**`) expand to any stretch (of length >=0) of the page path, can be on either end or in the middle of any entry, and can represent **any** characters, even slashes.
 
 See below for examples of common page use cases and how they would function.
@@ -65,9 +65,9 @@ You can also use `data-include` instead of `data-exclude`, and using both option
 
 You need to place your new Plausible Analytics tracking script code into the Header (`<head>`) section of your site. Place the tracking script within the `<head> … </head>` tags. Do this for all the websites where you'd like to use page-tracking exclusions.
 
-This is the only tracking script you need. You don't need to keep the default script. Your stats will keep tracking without interruption and you will not lose any of your old data.
+This is the only tracking script you need. You don't need to keep the default script. Your stats will keep tracking without interruption and you won't lose any of your old data.
 
-You do not have to use the `exclusions` script type exclusively. You can chain various script types, for example:
+You don't have to use the `exclusions` script type exclusively. You can chain various script types, for example:
 
 ```html
 <script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.hash.exclusions.outbound-links.js" data-include="/en**"></script>

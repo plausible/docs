@@ -12,7 +12,7 @@ You can use "**Google Tag Manager**" to add Plausible Analytics tracking code to
 * In the HTML field within the Custom HTML section, paste [your Plausible snippet](plausible-script.md)
 * Be careful about extras you enable such as tag firing priority, tag sequencing, consent checks etc as they all may affect when and how our script loads
 * Then click to "**Choose a trigger to make this tag fire**"
-* Select the "**All Pages**" and filter "**Page View**" as the trigger if you want to count all of your pages
+* Select the "**All Pages**" and filter "**Page View**" as the trigger if you want to count all your pages
 * Give your tag a name
 * Click on the "**Save**" button
 * Click "**Submit**" to submit your changes

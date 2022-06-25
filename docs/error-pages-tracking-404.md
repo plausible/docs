@@ -33,7 +33,7 @@ You need to place your Plausible Analytics tracking script code into the Header 
 
 ## 2. Paste this piece of code to your 404 page template
 
-Add this code to your 404 page. For instance, if you're using WordPress, your 404 page template will be called 404.php. It will be located within your theme files.
+Add this code to your 404 page. For instance, if you're using WordPress, your 404 page template will be called `404.php`. It will be located within your theme files.
 
 ```html
 <script>plausible("404",{ props: { path: document.location.pathname } });</script>
@@ -55,7 +55,7 @@ Select `Custom event` as the goal trigger and enter this exact name: `404`.
 
 <img alt="Add 404 error pages goal" src={useBaseUrl('img/404-error-pages-goal.png')} />
 
-Next, click on the "**Add goal**" button and you'll be taken back to the Goals page. After you've completed this process, all the 404 error pages will start being tracked and will be displayed in the "**Goal Conversions**" report of your Plausible Analytics dashboard. You'll see "**404**" goal as soon as the first visit on an error page has been tracked.
+Next, click on the "**Add goal**" button, and you'll be taken back to the Goals page. After you've completed this process, all the 404 error pages will start being tracked and will be displayed in the "**Goal Conversions**" report of your Plausible Analytics dashboard. You'll see "**404**" goal as soon as the first visit on an error page has been tracked.
 
 Click on "**404**" to see the full list of all visits on all error pages and have your dashboard filtered by error pages only. Click on a particular error page URL to filter the dashboard by those clicks only and get the full overview of that specific URL. Then you can figure out how your visitors discover the broken links and fix them.
 

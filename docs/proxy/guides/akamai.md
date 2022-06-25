@@ -4,7 +4,7 @@ title: Proxying Plausible through Akamai
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Proxying Plausible via your own property on Akamai is easy, fast and privacy friendly. 
+Proxying Plausible through your own property on Akamai is easy, fast and privacy-friendly. 
 
 :::note
 The instructions assume you use the default paths ``/js/script.js`` and ``/api/event``. You can change these based on your preferences.
@@ -12,7 +12,7 @@ The instructions assume you use the default paths ``/js/script.js`` and ``/api/e
 
 ## Step 1: Proxy Analytics Script
 
-This Rule Group serves incoming requests matching ``/js/script.js`` directly from the Akamai edge caches. In case of a cache miss the request is forwarded to ``plausible.io`` in a privacy friendly way.
+This Rule Group serves incoming requests matching ``/js/script.js`` directly from the Akamai edge caches. In case of a cache miss the request is forwarded to ``plausible.io`` in a privacy-friendly way.
 
 ### Add new Rule Group 
 
@@ -43,7 +43,7 @@ In Akamai Property Manager add a new Rule Group ``Plausible (Script)`` with thes
 
 ## Step 2: Proxy Event API
 
-This Rule Group forwards incoming requests matching ``/api/event`` to plausible.io. It adds extra headers (``X-Forwarded-Proto``, ``X-Forwarded-Host`` and ``X-Forwarded-For``) to the outgoing request so your Plausible statistics are complete. For privacy & security reasons incoming cookies are removed before sending to ``plausible.io``.
+This Rule Group forwards incoming requests matching ``/api/event`` to plausible.io. It adds extra headers (``X-Forwarded-Proto``, ``X-Forwarded-Host`` and ``X-Forwarded-For``) to the outgoing request, so your Plausible statistics are complete. For privacy & security reasons incoming cookies are removed before sending to ``plausible.io``.
 
 ### Add new Rule Group 
 

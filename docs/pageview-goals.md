@@ -36,7 +36,7 @@ See below for more examples of common use cases and how they would function.
 | Input | Includes pages with a URL path of: |
 | ------------- | ------------- |
 | `**keyword**` | use double asterisks in front and back in the same way that you would use "contain". It finds any URL containing a specific keyword |
-| `/blog**` | use this to for instance group all of your blog posts |
+| `/blog**` | use this to for instance group all your blog posts |
 | `/blog4` | `/blog4` and exactly `/blog4` with nothing before or after it, so not `/blog45` nor `/blog4/new` nor `/blog` |
 | `/rule/*` | `/rule/<anything>`, with `<anything>` being any set of characters (length >=0), but not a forward slash - for example, both `/rule/1` as well as `/rule/general-rule-14`, but not `/rule/4/details` nor `/rules` |
 | `/how-to-*` | `/how-to-<anything>` - for example, `/how-to-play` or `/how-to-succeed`, but not `how-to-/blog` |

@@ -10,5 +10,5 @@ You can verify this by installing the Plausible Analytics script and checking th
 If you're using a frontend framework that uses the URL hash for routing, you need to take an extra step to install the hash-based tracker instead of the default one. [See details here](hash-based-routing.md).
 
 :::note
-Using Next.js or Gatsby.js? Next.js has [a bug](https://github.com/zeit/next.js/issues/9070) that loads async scripts twice, causing double counting in Plausible. Gatsby.js exhibits the same behavior. Use [workarounds](https://github.com/zeit/next.js/issues/9070#issuecomment-552981178) mentioned in the Github issue to load the Plausible script just once.
+Using Next.js or Gatsby.js? Next.js has [a bug](https://github.com/zeit/next.js/issues/9070) that loads async scripts twice, causing double counting in Plausible. Gatsby.js exhibits the same behaviour. Use [workarounds](https://github.com/zeit/next.js/issues/9070#issuecomment-552981178) mentioned in the Github issue to load the Plausible script just once.
 :::

@@ -21,7 +21,7 @@ If you would like to track a subdomain such as `blog.yourdomain.com` then please
 For example, if your subdomain is `https://blog.yourdomain.com` then the part to enter in the "**Domain**" field is `blog.yourdomain.com`.
 
 :::note
-You don't necessarily need to install the script on the same domain as the domain you have added to your Plausible account. This allows you more flexibility in your setup all depending on your situation. It also means that Plausible can work with domains that feature special characters. Just spell out the domain without using special characters when adding it to Plausible
+You don't necessarily need to install the script on the same domain as the domain you have added to your Plausible account. This allows you more flexibility in your setup all depending on your situation. It also means that Plausible can work with domains that feature special characters. Just spell out the domain without using special characters when adding it to Plausible.
 :::
 
 ## Select your reporting timezone
