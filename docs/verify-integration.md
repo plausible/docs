@@ -12,7 +12,7 @@ In your [Plausible Analytics account](https://plausible.io/sites), click on your
 
 Once the first page view comes through, you'll be automatically taken to the stats dashboard. This is an indication that the integration is working, congrats!
 
-If you didn't see the green blinking dot, there's nothing to worry about. It just means that someone visited your site already because you installed the Plausible Analytics script.
+If you didn't see the green blinking dot, there's nothing to worry about. It just means that someone visited your site already since you installed the Plausible Analytics script.
 
 :::note
 You're running Plausible on localhost? Our script automatically disables itself when running on localhost as the majority of people don't want those stats to be counted.
