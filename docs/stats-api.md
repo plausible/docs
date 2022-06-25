@@ -5,11 +5,9 @@ title: Stats API reference
 import {Required, Optional} from '../src/js/api-helpers.js';
 
 
-The Plausible Stats API offers a way to retrieve your stats programmatically. It'sa read-only interface to present historical
-and real-time stats only. Take a look at our [events API](events-api.md) if you want to send pageviews or custom events to our backend and our [sites API](sites-api.md) if you want to manage your sites through the API.
+The Plausible Stats API offers a way to retrieve your stats programmatically. It's a read-only interface to present historical and real-time stats only. Take a look at our [events API](events-api.md) if you want to send pageviews or custom events to our backend and our [sites API](sites-api.md) if you want to manage your sites through the API.
 
-The API accepts GET requests with query parameters and returns standard HTTP responses along with a JSON-encoded body. All API requests must be made over HTTPS.
-Calls made over plain HTTP will fail. API requests without authentication will also fail.
+The API accepts GET requests with query parameters and returns standard HTTP responses along with a JSON-encoded body. All API requests must be made over HTTPS. Calls made over plain HTTP will fail. API requests without authentication will also fail.
 
 Each request must be authenticated with an API key using the Bearer Token method. You can obtain an API key for your account by going to your user
 settings page [plausible.io/settings](https://plausible.io/settings).
