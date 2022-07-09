@@ -100,7 +100,7 @@ options](https://plausible.io/docs/self-hosting-configuration#mailersmtp-setup).
 Otherwise, run this command to verify all users in the database:
 
 ```bash
-$ docker exec hosting_plausible_db_1 psql -U postgres -d plausible_db -c "UPDATE users SET email_verified = true;"
+$ docker-compose exec plausible_db psql -U postgres -d plausible_db -c "UPDATE users SET email_verified = true;"
 ```
 
 > Something not working? Please reach out on our [forum](https://github.com/plausible/analytics/discussions/categories/self-hosted-support) for troubleshooting.
