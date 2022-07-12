@@ -17,3 +17,5 @@ There are several types of goals in Plausible Analytics:
 * [Outbound link clicks](outbound-link-click-tracking.md) allow you to measure clicks on external links
 * [File downloads](file-downloads-tracking.md) allow you to track when a visitor clicks a link leading to a file
 * [404 error pages](error-pages-tracking-404.md) allow you to measure page not found errors
+
+If you need to delete all events related to a goal, navigate to Site > Settings > Goals > Reset stats. This will wipe all stats related to that goal specifically. This is helpful when you just finished setting up your goal and you want to start fresh without test data.
