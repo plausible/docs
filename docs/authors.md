@@ -11,6 +11,7 @@ Plausible Analytics is designed, developed and maintained fully remotely, distri
 * Robert - Development and technical support
 * Cenk - Infrastructure and security
 * Manu - Product and infrastructure
+* Vini - Product engineer
 
 ## Contributors
 
