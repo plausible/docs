@@ -201,6 +201,12 @@ We have the Plausible events API which can be used to record pageviews and custo
 
 Plausible integrates automatically with modern pushState based frontend routers. If you're running a single-page application with React, Angular, Vue or similar frameworks, you don't need to add any extra configuration to make analytics work. [Learn more here](spa-support.md).
 
+## Sphinx / Read The Docs
+
+To add Plausible to a Sphinx documentation build, you need to use the `block extrahead` template instruction.
+
+First, update the `conf.py` to include your `templates_path`.  Then create a template (e.g. `_templates\layout,html`) and include the block in the template: `{% block extrahead %}<script ... >{% endblock %}`.  See [Sphinx teamplate](https://www.sphinx-doc.org/en/master/templating.html) documentation.
+
 ## Squarespace
 
 [How to add the script to your Squarespace site](squarespace-integration.md)
