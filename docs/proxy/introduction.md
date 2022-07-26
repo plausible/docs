@@ -61,6 +61,7 @@ Integrated proxy setups:
 * [Netlify](/docs/proxy/guides/netlify)
 * [Vercel](/docs/proxy/guides/vercel)
 * [Vercel with Next.JS](/docs/proxy/guides/nextjs)
+* [Fresh](/docs/proxy/guides/fresh)
 * [Nginx](/docs/proxy/guides/nginx)
 * [Caddy](/docs/proxy/guides/caddy)
 * [Django](https://github.com/imankulov/django-plausible-proxy)
