@@ -2,7 +2,7 @@
 title: Tracking custom query parameters
 ---
 
-By default, Plausible strips all query parameters for privacy purposes [except](manual-link-tagging.md) `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term`. 
+By default, Plausible strips all query parameters for privacy purposes. Even though [some query parameters](manual-link-tagging.md) like `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term`, are used for source attribution, they are still stripped from the URL and will not show up in the page paths. 
 
 This means that pages like `yoursite.com/blog/index.php?article=some_article&page=11` will be reported as `yoursite.com/blog/index.php` in the Top Pages report of your Plausible dashboard.
 
