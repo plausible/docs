@@ -4,8 +4,8 @@ title: Import stats from Google Analytics
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-:::note
-Update June 28th 2022: We had to temporarily disable the Google Analytics import functionality due to its popularity and impact on our service. We're working on a fix and will try to enable the functionality again as soon as possible. Stay tuned and thanks for your patience! 
+:::caution
+We had to temporarily disable the Google Analytics import functionality due to its popularity and impact on our service. We're working on a fix and will enable the functionality again as soon as possible. Stay tuned and thanks for your patience! 
 :::
 
 Universal Analytics, the current version of Google Analytics, will be sunset and [will stop counting stats](https://plausible.io/blog/universal-google-analytics-is-dead) on July 1st 2023. There’s no way to import your historical Universal Analytics stats into the new Google Analytics 4, so we've put a lot of effort into making a Google Analytics stats import tool ourselves. 
