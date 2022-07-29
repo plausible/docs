@@ -46,7 +46,7 @@ We really only need and use the email address from this. Email address is useful
 
 You then need to grant Plausible Analytics a permission to view your Search Console website data by ticking the "View Search Console data for your verified sites" box in the "Plausible Analytics wants access to your Google account" screen.
 
-:::note
+:::caution
 If Google presents a permission to "See and download your Google analytics data" don't tick it as it may cause issues with this integration. We only need the Search Console data permission to import your Search Console data.
 :::
 
