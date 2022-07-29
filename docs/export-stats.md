@@ -22,4 +22,6 @@ For example, **visitors.csv** exports the metrics from the top chart and include
 | 2020-06-01 | 140      | 194       | 83          | 52             |
 | 2020-06-02 | 171      | 225       | 82          | 43             |
 
+:::note
 Note that the individual CSV files are limited to 300 entries each while page reports are limited to 100 entries each. If you want an even more granular way to export your stats, please take a look at our [stats API](stats-api.md).
+:::
