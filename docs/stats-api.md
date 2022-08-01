@@ -92,7 +92,9 @@ more depth. Here's the full list of properties we collect automatically:
 In addition to props that are collected automatically, you can also query for [custom properties](/custom-event-goals#using-custom-props).
 To filter or break down by a custom property, use the key `event:props:<custom_prop_name>`. [See example](#breakdown-custom-event-by-custom-props) for how to use it.
 
+:::note
 Currently clients are limited to filtering or breaking down on just one custom property at a time. Custom prop filters and breakdowns can't be combined arbitrarily. We are aware of this issue and we have plans to fix it, but we rely on our database to support some new features to fix this issue.
+:::
 
 ### Filtering
 
@@ -113,6 +115,18 @@ visit:country==France|Germany
 ```
 
 Would match both visitors from both France and Germany.
+
+You can also exclude by a specific property, using a `!=` filter:
+
+```
+visit:country!=France
+```
+
+It is currently only possible to exclude one value at a time.
+
+#### Filtering by pageview goals
+
+Pageview goals are a convenient way to see pageviews for a specific page path in the Plausible dashboard. To filter by a pageview goal in Stats API, use a filter like this: `event:page==/your-page`. Do note that this will also match with custom events completed on the specified page path. If you only want pageviews, you should also add a `event:name==pageview` filter to your query. 
 
 ## Endpoints
 
@@ -323,7 +337,6 @@ curl 'https://plausible.io/api/v1/stats/breakdown?site_id=$SITE_ID&period=6mo&pr
 }
 ```
 
-
 #### Parameters
 <hr / >
 
@@ -364,6 +377,9 @@ Number of the page, used to paginate results. Importantly, the page numbers star
 
 See [filtering](#filtering)
 
+#### Breaking down by multiple properties at the same time
+
+Currently, it is only possible to break down on one property at a time. Using a list of properties with one query is not supported. So if you want a breakdown by both `event:page` and `visit:source` for example, you would have to make multiple queries (break down on one property and fiter on another) and then manually/programmatically group the results together in one report. This also applies for breaking down by time periods. To get a daily breakdown for every page, you would have to break down on `event:page` and make multiple queries for each date. For a simple time period breakdown, have a look at the Timeseries endpoint.
 
 ## Examples of common queries
 
