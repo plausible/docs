@@ -30,7 +30,7 @@ Following are the variables that can be used to configure the availability of th
 | BASE_URL             | --      | The hosting URL of the server, used for URL generation. In production systems, this should be your ingress host.                                                                                    |
 | PORT                 | 8000    | The port on which the server is available.                                                                                                                                                          |
 | LISTEN_IP            | 0.0.0.0 | The IP address on which the server is listening. `0.0.0.0` means all interfaces, `127.0.0.1` means localhost. Also see the related section **Erlang platform ports** below.                         |
-| SECRET_KEY_BASE      | --      | An internal secret key used by [Phoenix Framework](https://www.phoenixframework.org/). Follow the [instructions](https://hexdocs.pm/phoenix/Mix.Tasks.Phx.Gen.Secret.html#content) to generate one. |
+| SECRET_KEY_BASE      | --      | An internal secret key used by [Phoenix Framework](https://www.phoenixframework.org/). Follow the [instructions](https://hexdocs.pm/phoenix/Mix.Tasks.Phx.Gen.Secret.html#content) or use `openssl rand -hex 64` to generate one. |
 | DISABLE_AUTH         | false   | Disables authentication completely, no registration, login will be shown.                                                                                                                           |
 | DISABLE_REGISTRATION | false   | Disables registration of new users, keep your admin credentials handy ;)                                                                                                                            |
 
