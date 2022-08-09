@@ -76,7 +76,11 @@ Rollup reporting allows you to aggregate stats from multiple sites and see them 
 <script defer data-domain="second.com,rollup.first-second.com" src="https://plausible.io/js/script.js"></script>
 ```
 
-This will send pageviews from your sites to their individual dashboards so you can still see their separate stats but it will also send their stats to a grouped dashboard which means you'll be able to see the combined stats too in a roll-up view. 
+This will send pageviews from your sites to their individual dashboards so you can still see their separate stats but it will also send their stats to a grouped dashboard which means you'll be able to see the combined stats too in a roll-up view.
+
+:::note
+Using a roll-up view will double the amount of monthly billable pageviews.
+:::
 
 ## How to verify if the script is installed on your site
 
