@@ -33,5 +33,4 @@ Make sure to replace `YOUR_DOMAIN` with your actual Plausible site name, and `YO
 
 2. Click on the "Network" tab in the developer tools. It will be empty, so you would need to reload the page. After you refresh the browser, you will start seeing some data in the "Network" tab. Go ahead and search for the script extension filename that you added in step 2. You should now see the request for the desired script with status 200.
 
-
-Thanks to Brett Batie for providing these instructions!
+Thanks to Brett Batie, the founder of [Clean Drive](https://cleandrive.app), for providing these instructions!
