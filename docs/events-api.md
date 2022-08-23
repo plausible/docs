@@ -12,14 +12,7 @@ integration packages listed [here](/docs/integration-guides). However, if there'
 ## Endpoints
 ### POST /api/event
 
-Records a pageview or custom event. When using this endpoint, make sure you're sending the correct headers:
-
-**User-Agent** is used to determine the user's device<br />
-**X-Forwarded-For** is used to determine the client's IP address<br />
-**Content-Type** must be either *application/json* or *text/plain*
-
-In combination, these two values are used for unique user counting. If you have problems with uniqueness counting, please make sure you are sending
-**User-Agent** and **X-Forwarded-For** correctly.
+Records a pageview or custom event. When using this endpoint, it's crucial to send the HTTP headers correctly, since these are used for [unique user counting](https://plausible.io/data-policy#how-we-count-unique-users-without-cookies).
 
 ```bash title="Try it yourself"
 curl -i -X POST https://plausible.io/api/event \
@@ -33,7 +26,33 @@ curl -i -X POST https://plausible.io/api/event \
 {}
 ```
 
-#### Post body JSON parameters
+### Request headers
+
+<hr / >
+
+**User-Agent** <Required />
+
+The raw value of User-Agent is used to calculate the *user_id* which identifies a [unique visitor](https://plausible.io/data-policy#how-we-count-unique-users-without-cookies)
+in Plausible.
+
+User-Agent is also used to populate the _Devices_ report in your Plausible dashboard. The device data is derived from the open source database [device-detector](https://github.com/matomo-org/device-detector). If your User-Agent is not showing up in your dashboard, it's probably because it is not recognized as one in the _device-detector_ database.
+
+<hr / >
+
+**X-Forwadred-For** <Required />
+
+Used to get the IP address of the client. The IP address is used to calculate the *user_id* which identifies a [unique visitor](https://plausible.io/data-policy#how-we-count-unique-users-without-cookies) in Plausible. The raw value is anonymized and not stored. If the header contains a comma-separated list (as it should if the request is sent through a chain of proxies), then the first valid IP address from the list is used.
+
+More information can be found on [MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Forwarded-For).
+
+<hr / >
+
+**Content-Type** <Required />
+
+Must be either *application/json* or *text/plain*. In case of *text/plain*, the request body is still interpreted as JSON.
+
+
+### Request body JSON parameters
 <hr / >
 
 **domain** <Required />
@@ -67,7 +86,17 @@ The pathname (/login) is what will be shown as the page value in the Plausible d
 
 **referrer** <Optional />
 
-Referrer for this event. When using the script, this is set to `document.referrer`
+Referrer for this event. When using the standard tracker script, this is set to `document.referrer`
+
+Referrer values are processed heavily for better usability. Consider referrer
+URLS like `m.facebook.com/some-path` and `facebook.com/some-other-path`. It's intuitive to think of both of these as coming from a single source: Facebook. In the first example the `referrer` value would be split into `visit:source == Facebook` and `visit:referrer == m.facebook.com/some-path`.
+
+Plausible uses the open source [referer-parser](https://github.com/snowplow-referer-parser/referer-parser) database to parse referrers and assign these source categories.
+
+When no match has been found, the value of the `referrer` field will be parsed as an URL. The hostname will be used as the `visit:source` and the full URL as the `visit:referrer`.
+So if you send `https://some.domain.com/example-path`, it will be parsed as follows:
+`visit:source == some.domain.com`
+`visit:referrer == some.domain.com/example-path`
 <hr / >
 
 **screen_width** <Optional />
