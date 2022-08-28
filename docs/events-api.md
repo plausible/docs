@@ -39,7 +39,7 @@ User-Agent is also used to populate the _Devices_ report in your Plausible dashb
 
 <hr / >
 
-**X-Forwadred-For** <Required />
+**X-Forwarded-For** <Required />
 
 Used to get the IP address of the client. The IP address is used to calculate the *user_id* which identifies a [unique visitor](https://plausible.io/data-policy#how-we-count-unique-users-without-cookies) in Plausible. The raw value is anonymized and not stored. If the header contains a comma-separated list (as it should if the request is sent through a chain of proxies), then the first valid IP address from the list is used.
 
