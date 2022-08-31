@@ -18,6 +18,8 @@ Plausible Analytics is trusted by 2,000+ subscribers to deliver their website an
 
 * [Is it Plausible to stop using Google Analytics?](https://www.wholegraindigital.com/blog/plausible-vs-google-analytics/) by Tom Greenwood of Wholegrain Digital
 
+* [Meet your new analytics dashboard](https://www.prezly.com/news/meet-your-new-analytics-dashboard) by Kate Bystrova of Prezly
+
 * [Why we use Plausible.io Web Analytics](https://www.sanechoice.cloud/why-we-use-plausible-io-web-analytics/) by Bradley Porter of SaneChoice
 
 * [Taking on the Major Players, Plausible Analytics Offers an Alternative, Privacy-Conscious Stats Service](https://wptavern.com/taking-on-the-major-players-plausible-analytics-offers-an-alternative-privacy-conscious-stats-service) by Justin Tadlock of WordPress Tavern
