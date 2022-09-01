@@ -12,6 +12,8 @@ Automatically track the 404 error pages on your site. This feature isn't enabled
 
 The percentage of visitors with a single page view. A visitor "bounces" away and leaves your site after only viewing a single page.
 
+If you have issues with high bounce rates on your site, you can try to set up some [custom events](custom-event-goals.md). All custom events are considered interactive so any clicks on those events will count towards the bounce rate.
+
 ## Browser
 
 Shows the browsers used by your visitors. We only show the brand of the browser and when you click on the brand you can see the version number too. Metrics are shown as a percentage of all visitors and the total number of unique visitors.
@@ -40,6 +42,10 @@ Shows the last page people view on your site.
 ## Exit Rate
 
 Shows how often people exit from a specific page. It's calculated as the number of exits divided by the number of total pageviews for that specific page.
+
+## File Downloads
+
+Automatically track the number of file downloads. This feature isn't enabled by default so you need to [follow these steps](file-downloads-tracking.md) to enable it for sites where you want to track clicks on files.
 
 ## Goals
 
@@ -102,5 +108,7 @@ The number of people who visited your site. We are privacy-friendly so we don't 
 The amount of time visitors spend on your site. It only shows people who visit more than one page. For those who visit one page only we default to 0 seconds. Average visit duration is the sum of all session lengths divided by the number of sessions, which includes the 0 second visits (bounces).
 
 Session is a set of actions that a user takes on your site. A session is started when a visitor first lands on your page and ends when no action is taken on your site for 30 minutes.
+
+If you have issues with high bounce rates on your site, you can try to set up some [custom events](custom-event-goals.md). All custom events are considered interactive so any clicks on those events will count towards the bounce rate and visit duration too.
 
 You can read more about how you can use these metrics to [measure your website's or startup's progress and make better decisions](https://plausible.io/blog/analytics-metrics-definitions).
