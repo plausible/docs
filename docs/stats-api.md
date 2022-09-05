@@ -379,7 +379,7 @@ See [filtering](#filtering)
 
 #### Breaking down by multiple properties at the same time
 
-Currently, it is only possible to break down on one property at a time. Using a list of properties with one query is not supported. So if you want a breakdown by both `event:page` and `visit:source` for example, you would have to make multiple queries (break down on one property and fiter on another) and then manually/programmatically group the results together in one report. This also applies for breaking down by time periods. To get a daily breakdown for every page, you would have to break down on `event:page` and make multiple queries for each date. For a simple time period breakdown, have a look at the Timeseries endpoint.
+Currently, it is only possible to break down on one property at a time. Using a list of properties with one query is not supported. So if you want a breakdown by both `event:page` and `visit:source` for example, you would have to make multiple queries (break down on one property and filter on another) and then manually/programmatically group the results together in one report. This also applies for breaking down by time periods. To get a daily breakdown for every page, you would have to break down on `event:page` and make multiple queries for each date. For a simple time period breakdown, have a look at the Timeseries endpoint.
 
 ## Examples of common queries
 
