@@ -205,7 +205,7 @@ Plausible integrates automatically with modern pushState based frontend routers.
 
 To add Plausible to a Sphinx documentation build, you need to use the `block extrahead` template instruction.
 
-First, update the `conf.py` to include your `templates_path`.  Then create a template (e.g. `_templates\layout,html`) and include the block in the template: `{% block extrahead %}<script ... >{% endblock %}`.  See [Sphinx teamplate](https://www.sphinx-doc.org/en/master/templating.html) documentation.
+First, update the `conf.py` to include your `templates_path`.  Then create a template (e.g. `_templates\layout,html`) and include the block in the template: `{% block extrahead %}<script ... >{% endblock %}`.  See [Sphinx template](https://www.sphinx-doc.org/en/master/templating.html) documentation.
 
 ## Squarespace
 

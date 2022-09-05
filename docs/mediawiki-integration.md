@@ -16,4 +16,4 @@ Add `wfLoadExtension( 'Plausible' );` to your `LocalSettings.php`.
 
 Configure as needed.
 
-A more expanded integration document can be found at the extenions [README.md](https://github.com/octfx/mediawiki-extension-Plausible/blob/master/README.md)
+A more expanded integration document can be found at the extensions [README.md](https://github.com/octfx/mediawiki-extension-Plausible/blob/master/README.md)
