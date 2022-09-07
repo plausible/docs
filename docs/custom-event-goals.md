@@ -231,3 +231,39 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 }, false );
 </script>
 ```
+
+## Tracking audio and video elements
+
+1. Give your audio or video element an `id` attribute to use it with JavaScript. If it already has an `id`, feel free to use that instead of `trackedMedia` in this example.
+
+```html
+<audio id="trackedMedia" controls src="your_audio.mp3">
+    Your browser doesn't support this audio element
+</audio>
+```
+
+2. Add the below script to your HTML page with the media element. In order to be able to use the media element with JavaScript, the script should be inserted **after** the media element itself. It is safe to insert it at the end of the `<body>` section, just before the closing `</body>` tag.
+
+```html
+<script>
+    var mediaElement = document.getElementById('trackedMedia')
+    
+    // Set a flag to ignore the case where playing has already started and is resumed from paused state
+    var mediaAlreadyStarted = false
+
+    // Listen to the 'play' event on the media element. Ignore if already started playing and not finished yet
+    mediaElement.addEventListener('play', function (e) {
+        if (!mediaAlreadyStarted) {
+            mediaAlreadyStarted = true
+            plausible('Media Played')
+        }
+    })
+
+    // Listen to the 'ended' event on the media element to reset the flag and start listening again
+    mediaElement.addEventListener('ended', function (e) {
+        mediaAlreadyStarted = false
+    })
+</script>
+```
+
+Feel free to replace `Media Played` with a more suitable name for your custom event.
