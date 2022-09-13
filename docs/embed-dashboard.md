@@ -14,7 +14,11 @@ You need to create a shared link to embed your dashboard into another website. T
 
 In the "**Visibility**" area of your website settings there's a "**Shared links**" section where you can create your shared link. Click on the "**+ new link**" button to do so. 
 
-Do keep the password field blank as it's not possible to embed a password-protected dashboard. Click the "**Create shared link**" button and your new shared link will be displayed.
+Click the "**Create shared link**" button and your new shared link will be displayed.
+
+:::note
+Make sure to keep the password field blank as it's technically not possible to embed a password-protected dashboard. When you try to embed a password-protected dashboard, the browser will show a "refused to connect" error message.
+:::
 
 ### 2. Generate the embed code
 
