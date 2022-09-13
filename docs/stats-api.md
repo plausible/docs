@@ -104,14 +104,14 @@ An equality filter can be specified with url-encoded `==`. Filters can be joined
 `AND` operator to the filters. Here's a filter expression combining two filters:
 
 ```
-visit:browser==Firefox;visit:country==France
+visit:browser==Firefox;visit:country==FR
 ```
 
 You can join values together with a `|` to express an IN filter. The filter will match if the key is
 in any of the values. For example, the following filter:
 
 ```
-visit:country==France|Germany
+visit:country==FR|DE
 ```
 
 Would match both visitors from both France and Germany.
@@ -119,7 +119,7 @@ Would match both visitors from both France and Germany.
 You can also exclude by a specific property, using a `!=` filter:
 
 ```
-visit:country!=France
+visit:country!=FR
 ```
 
 It is currently only possible to exclude one value at a time.
