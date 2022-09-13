@@ -25,3 +25,7 @@ Your "**Browser**" report shows what browsers people use when visiting your webs
 Your "**Operating system**" report shows what operating systems people use when visiting your website. We show the brand of the operating system and when you click on the brand you can see the version numbers too. This is derived from the User-Agent HTTP header. The full User-Agent is discarded.
 
 <img alt="Operating system" src={useBaseUrl('img/devices-os.png')} />
+
+:::note
+Windows and macOS have recently stopped reporting their latest versions in the user-agent string. This means that Plausible is not able to report their latest versions, which for Windows are above 10, and for macOS are above 10.15
+:::
