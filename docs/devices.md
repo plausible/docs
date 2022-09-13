@@ -27,5 +27,5 @@ Your "**Operating system**" report shows what operating systems people use when 
 <img alt="Operating system" src={useBaseUrl('img/devices-os.png')} />
 
 :::note
-Windows and macOS have recently stopped reporting their latest versions in the user-agent string. This means that Plausible is not able to report their latest versions, which for Windows are above 10, and for macOS are above 10.15.
+Windows and macOS have recently stopped reporting their latest versions in the user-agent string. This means that Plausible and other analytics tools are not able to report their latest versions, which for Windows are above 10, and for macOS above 10.15. Visitors with the new versions will be grouped in the last known version.
 :::
