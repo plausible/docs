@@ -81,7 +81,7 @@ Finally, enter the `BASE_URL` for your app. It should be the base url where this
 Once you've entered your secret key base, base URL and admin credentials, you're ready to start up the server:
 
 ```bash
-$ docker-compose up -d
+$ docker compose up -d
 ```
 
 When you run this command for the first time, it does the following:
@@ -100,7 +100,7 @@ options](https://plausible.io/docs/self-hosting-configuration#mailersmtp-setup).
 Otherwise, run this command to verify all users in the database:
 
 ```bash
-$ docker-compose exec plausible_db psql -U postgres -d plausible_db -c "UPDATE users SET email_verified = true;"
+$ docker compose exec plausible_db psql -U postgres -d plausible_db -c "UPDATE users SET email_verified = true;"
 ```
 
 > Something not working? Please reach out on our [forum](https://github.com/plausible/analytics/discussions/categories/self-hosted-support) for troubleshooting.
@@ -113,9 +113,9 @@ Plausible is updated regularly, but it's up to you to apply these updates on you
 By virtue of using Docker, these updates are safe and easy to apply.
 
 ```bash
-$ docker-compose down --remove-orphans
-$ docker-compose pull plausible
-$ docker-compose up -d
+$ docker compose down --remove-orphans
+$ docker compose pull plausible
+$ docker compose up -d
 ```
 
 The self-hosted version is somewhat of a LTS, only getting the changes after they have been battle tested on the hosted version.
@@ -135,7 +135,7 @@ Optionally, you can provide a different database. For example, you can use [MaxM
 This is why, to use MaxMind, you need to create an account [here](https://www.maxmind.com/en/geolite2/signup). Once you have your account details, open the `geoip/geoip.conf` file and enter your `GEOIPUPDATE_ACCOUNT_ID` and `GEOIPUPDATE_LICENSE_KEY`. Then, combine both the base docker-compose file with the one in the geoip folder:
 
 ```bash
-$ docker-compose -f docker-compose.yml -f geoip/docker-compose.geoip.yml up -d
+$ docker compose -f docker-compose.yml -f geoip/docker-compose.geoip.yml up -d
 ```
 
 The `geoip/docker-compose.geoip.yml` file downloads and updates the country database automatically, making it available to the `plausible`
@@ -172,7 +172,7 @@ There are some caveats to consider when running your own databases:
 
 ##### Postgres
 The user needs the role superuser for setting up certain modules on the database
-If the database already exists prior to running docker-compose up, please remove `&& /entrypoint.sh db createdb` in the command of the plausible service section inside docker-compose.yml. However, this will also prevent the Clickhouse database from being created, see below.
+If the database already exists prior to running `docker compose up`, please remove `&& /entrypoint.sh db createdb` in the command of the plausible service section inside docker-compose.yml. However, this will also prevent the Clickhouse database from being created, see below.
 
 ##### Clickhouse
 If you receive an error upon startup that for some reason the database does not exist, you can create it 'manually' through this docker run:
