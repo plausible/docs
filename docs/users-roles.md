@@ -22,7 +22,7 @@ You can invite any email address. It doesn't necessarily need to be an email add
 2. "**Viewer**" gets access to the stats dashboard.
 
 :::note
-The owner of a site needs to have an active subscription. Viewers and admins don't need to have a paid subscription. As long as they aren't the owner of any site added to Plausible, they can continue accessing stats with a free account
+Owner of a site needs to have an active subscription with Plausible. Viewers and admins don't need to have a paid subscription and can access the stats even without it. Want to transfer the ownership of a site to the account that has a paid subscription? [Take a look here](transfer-ownership.md)
 :::
 
 * Click on the "**Invite**" button. We will email the invited person to notify them about your invitation. They will need to register for a Plausible account with the email address that was invited (or log in to their existing Plausible account registered with that email address) and accept your invitation. All invitations expire after 48 hours.
