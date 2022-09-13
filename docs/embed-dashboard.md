@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 You can embed your Plausible stats dashboard into any other website using an iFrame. This is useful in case you want to showcase your stats on your own website or if you want to integrate Plausible into your custom built client area.
 
-### 1. Create a shared link
+## 1. Create a shared link
 
 <img alt="Plausible Analytics" src={useBaseUrl('img/shared-stats.png')} />
 
@@ -20,7 +20,7 @@ Click the "**Create shared link**" button and your new shared link will be displ
 Make sure to keep the password field blank as it's technically not possible to embed a password-protected dashboard. When you try to embed a password-protected dashboard, the browser will show a "refused to connect" error message.
 :::
 
-### 2. Generate the embed code
+## 2. Generate the embed code
 
 In the "**Visibility**" area of your website settings there's the "**Embed dashboard**" section where you can generate the embed code. 
 
@@ -32,13 +32,15 @@ You can set the background color as `transparent` in the embed code. It's much m
 
 <img alt="Generate embed code" src={useBaseUrl('img/embed-dashboard-code.png')} />
 
-#### Want your embed to have default filters or time period?
+### Want your embed to have default filters or time period?
 
-Instead of using a simple shared link URL for generating the embed, you can open the shared link, apply filters to your dashboard and use the URL with the applied filters. Those filters will then be automatically added to your embed dashboard every time it's loaded.
+Instead of using the default shared link URL for generating the embed, you can open the shared link, apply filters to your dashboard and use the URL with the applied filters. Those filters will then be automatically added to your embed dashboard every time it's loaded.
+
 :::note
-These are just basic filters and can be removed or changed to view other stats as well. 
+These are [our regular filters](filters-segments.md) and the visitor can remove or change them to view other stats as well. 
 :::
-### 3. Paste the embed code into your website
+
+## 3. Paste the embed code into your website
 
 Copy the embed code that's been generated and paste it wherever you want your Plausible stats dashboard to be embedded.
 
