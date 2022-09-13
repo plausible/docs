@@ -144,6 +144,11 @@ container.
 ### 2. Reverse proxy
 
 By default, Plausible runs on unencrypted HTTP on port 8000. We recommend running it on HTTPS behind a reverse proxy of some sort.
+
+:::note
+After setting up a reverse proxy be sure to change this line `- 8000:8000` to `- 127.0.0.1:8000:8000` in `docker-compose.yml` file and restart the container for it to apply changes. This prevents Plausible from being accessed remotely using HTTP on port 8000 which is a security consern.
+:::
+
 You may or may not already be running a reverse proxy on your host, let's look at both options:
 
 #### No existing reverse proxy
