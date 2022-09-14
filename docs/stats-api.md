@@ -68,7 +68,7 @@ more depth. Here's the full list of properties we collect automatically:
 | Property              | Example                       | Description                                                                                                                             |
 | --------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | event:name            | pageview                      | Name of the event triggered. `pageview` is a reserved event name but custom events can be named anything.                               |
-| event:page            | /blog/remove-google-analytics | Pathname of the page where the event is triggered.                                                                                      |
+| event:page            | /blog/remove-google-analytics | Pathname of the page where the event is triggered. You can also use wildcards to match with multiple paths. See [here](/pageview-goals#pageview-goals-support-wildcards) for examples.  |
 | visit:entry_page      | /home                         | Page on which the visit session started (landing page).                                                                                 |
 | visit:exit_page       | /home                         | Page on which the visit session ended (last page viewed).                                                                               |
 | visit:source          | Twitter                       | Visit source, populated from an url query parameter tag (`utm_source`, `source` or `ref`) or the `Referer` HTTP header.                 |
@@ -126,7 +126,7 @@ It is currently only possible to exclude one value at a time.
 
 #### Filtering by pageview goals
 
-Pageview goals are a convenient way to see pageviews for a specific page path in the Plausible dashboard. To filter by a pageview goal in Stats API, use a filter like this: `event:page==/your-page`. Do note that this will also match with custom events completed on the specified page path. If you only want pageviews, you should also add a `event:name==pageview` filter to your query. 
+[Pageview goals](/pageview-goals) are a convenient way to see pageviews for a specific page path in the Plausible dashboard. To filter by a pageview goal in Stats API, simply use a filter like this: `event:page==/your-page`. As in your dashboard, you can use [wildcards](/pageview-goals#pageview-goals-support-wildcards) like `event:page==/blog**` to represent pageview goals that match with multiple paths.  
 
 ## Endpoints
 
