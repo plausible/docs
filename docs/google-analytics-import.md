@@ -16,10 +16,6 @@ Here's how to import your historical Google Analytics (Universal Analytics) stat
 
 3. You will now see a drop-down selection menu listing Google Analytics properties associated with your Google account. Select the appropriate property. This will generally be the property with the same domain name as your Plausible site. Then click on the "**Continue**" button.
 
-:::note
-If your chosen Google Analytics property includes data from before 23rd August 2016, you will have to take an extra step to make sure we can import the data smoothly. The instructions will be shown directly in our user interface for the relevant properties. For those properties, you will need to navigate to your Google Analytics admin, and in the "**Property Settings**", go to "**User Analysis**". In that section, you'll need to make sure that "**Enable Users Metric in Reporting**" is OFF
-:::
-
 4. On the next screen, you can click on the "**Confirm import**" button to start the data import process. Depending on the amount of data you have, this may take some time. This is run in the background, so you will receive an email when the import has been completed. It should take no more than a couple of minutes for most sites.
 
 5. Once you have received the email, the imported data will be visible in your Plausible dashboard. 
@@ -51,6 +47,12 @@ How long time frame we can import the data for depends on your data retention li
 You can check the data retention limit you have set for your Google Analytics property in your Google Analytics admin settings by visiting the "**Tracking Info**" section and clicking on "**Data Retention**". 
 
 Do you have strict data retention limits in place in your Google Analytics? We can only show the metrics in the top chart of your Plausible dashboard for periods outside of your data retention limit as Google automatically deletes all the other stats.
+
+## My import has failed
+
+This may be due to the user metric setting in your Google Analytics account. We found out that for some accounts changing the user metric settings is necessary to get correct data out of the Google API.
+
+You will have to take an extra step to make sure we can import the data smoothly. Please navigate to your Google Analytics admin, and in the "**Property Settings**", go to "**User Analysis**". In that section, you'll need to make sure that "**Enable Users Metric in Reporting**" is OFF. Then please try to do the import once again.
 
 ## Can I delete my Google Analytics account after a successful import?
 
