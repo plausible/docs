@@ -367,7 +367,7 @@ specified, it will default to `visitors`.
 
 **limit** <Optional />
 
-Limit the number of results. Defaults to 100.
+Limit the number of results. Maximum value is 1000. Defaults to 100. If you want to get more than 1000 results, you can make multiple requests and paginate the results by specifying the `page` parameter (e.g. make the same request with `page=1`, then `page=2`, etc)
 
 **page** <Optional />
 
