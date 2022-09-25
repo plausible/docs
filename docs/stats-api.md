@@ -116,6 +116,10 @@ visit:country==FR|DE
 
 Would match both visitors from both France and Germany.
 
+:::note
+Want to use the `|` character in a filter value? You can escape it with a backslash. For example, `visit:utm_campaign==campaign\|one` will let you filter by the literal `campaign|one` value.
+:::
+
 You can also exclude by a specific property, using a `!=` filter:
 
 ```
