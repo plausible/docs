@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Enter the domain name of the website you want to track
 
-Once you have an account, you can enter the domain name of the website you want to track. Please, remove `https` and `www` from the URL, just keep the `hostname` (yourdomain.com).
+Once you have an account, you can enter the domain name of the website you want to track. Umlauts and other special characters (including numbers, dots and slashes) are supported so you can add international domain names too. Please, remove `https` and `www` from the URL, just keep the `hostname` (yourdomain.com).
 
 For example, if your site is `https://www.yourdomain.com` then the part to enter in the "**Domain**" field is `yourdomain.com`.
 
@@ -21,7 +21,7 @@ If you would like to track a subdomain such as `blog.yourdomain.com` then please
 For example, if your subdomain is `https://blog.yourdomain.com` then the part to enter in the "**Domain**" field is `blog.yourdomain.com`.
 
 :::note
-You don't necessarily need to install the script on the same domain as the domain you have added to your Plausible account. This allows you more flexibility in your setup all depending on your situation. It also means that Plausible can work with domains that feature special characters. Just spell out the domain without using special characters when adding it to Plausible.
+You don't necessarily need to install the script on the same domain as the domain you have added to your Plausible account. Think of it more like a site ID rather than an exact match. This allows you more flexibility in your setup all depending on your situation. 
 :::
 
 ## Select your reporting timezone
