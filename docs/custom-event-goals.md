@@ -131,6 +131,10 @@ Or if you want to track a link click with custom properties:
 Do watch the quotes! The `data-analytics` tag value should have both **single and double quotes** as shown above.
 :::
 
+:::note
+If you are using a website builder (e.g. Webflow, Shopify, Wix, etc.) you might not be able to add double quotes to the `data-analytics` tag value. Read below how to use custom events in this scenario.
+:::
+
 ### 2. Add the JavaScript that will be sending the link click events to Plausible
 
 To be able to use the `data-analytics` tags and track the link clicks, you need to add the code below. You should insert this just before the closing `</body>` tag:
@@ -267,3 +271,57 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 ```
 
 Feel free to replace `Media Played` with a more suitable name for your custom event.
+
+## Code example for user of websuite builders
+
+Some websuite builders will impose limitations on adding custom attributes to html elements. One such limitation is the inability to add double quotes to attribute values. Since valid JSON requires double quotes, the above presented examples will not work in these cases. 
+
+Use the following workaround to be able to track custom events in case double quotes are not allowed attribute values in your WYSIWYG websuite builder. *This does only work when you do not intend to use custom properties.*
+
+### 1. Add a `data-analytics` attribute tag on the link you want to track
+
+When you want to track a simple link click:
+
+```html
+<a href="/register" data-analytics="Register">Register</a>
+```
+
+:::note
+In your websuite builder this translates into providing the `Register` value **without quotes**.
+:::
+
+
+### 2. Add the JavaScript that will be sending the link click events to Plausible
+
+To be able to use the `data-analytics` tags and track the link clicks, you need to add the code below.  You should insert this just before the closing `</body>` tag:
+
+```html
+<script>
+  let links = document.querySelectorAll("a[data-analytics]");
+  for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener('click', handleLinkEvent);
+      links[i].addEventListener('auxclick', handleLinkEvent);
+  }
+
+  function handleLinkEvent(event) {
+      var link = event.target;
+      var middle = event.type == "auxclick" && event.which == 2;
+      var click = event.type == "click";
+      while (link && (typeof link.tagName == 'undefined' || link.tagName.toLowerCase() != 'a' || !link.href)) {
+          link = link.parentNode;
+      }
+      if (middle || click) {
+          let attributeValue = link.getAttribute('data-analytics');
+          plausible(attributeValue);
+      }
+      if (!link.target) {
+          if (!(event.ctrlKey || event.metaKey || event.shiftKey) && click) {
+              setTimeout(function () {
+                  location.href = link.href;
+              }, 150);
+              event.preventDefault();
+          }
+      }
+  }
+</script>
+```
