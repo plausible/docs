@@ -272,11 +272,11 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 
 Feel free to replace `Media Played` with a more suitable name for your custom event.
 
-## Code example for user of websuite builders
+## Code example for users of website builders such as Webflow, Shopify and Wix,
 
-Some websuite builders will impose limitations on adding custom attributes to html elements. One such limitation is the inability to add double quotes to attribute values. Since valid JSON requires double quotes, the above presented examples will not work in these cases. 
+Some website builders will impose limitations on adding custom attributes to HTML elements. One such limitation is the inability to add double quotes to attribute values. Since valid JSON requires double quotes, the above-presented examples will not work in these cases. 
 
-Use the following workaround to be able to track custom events in case double quotes are not allowed attribute values in your WYSIWYG websuite builder. *This does only work when you do not intend to use custom properties.*
+Use the following workaround to track custom events in case double quotes are not allowed attribute values in your WYSIWYG website builder. *This does only work when you do not intend to use custom properties.*
 
 ### 1. Add a `data-analytics` attribute tag on the link you want to track
 
@@ -287,7 +287,7 @@ When you want to track a simple link click:
 ```
 
 :::note
-In your websuite builder this translates into providing the `Register` value **without quotes**.
+In your website builder this translates into providing the `Register` value **without quotes**.
 :::
 
 
