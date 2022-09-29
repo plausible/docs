@@ -272,11 +272,9 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 
 Feel free to replace `Media Played` with a more suitable name for your custom event.
 
-## Code example for users of website builders such as Webflow, Shopify and Wix,
+## Code examples for website builders such as Webflow, Shopify and Wix
 
-Some website builders will impose limitations on adding custom attributes to HTML elements. One such limitation is the inability to add double quotes to attribute values. Since valid JSON requires double quotes, the above-presented examples will not work in these cases. 
-
-Use the following workaround to track custom events in case double quotes are not allowed attribute values in your WYSIWYG website builder. *This does only work when you do not intend to use custom properties.*
+Some website builders do not allow you to add double quotes to attribute values. The above-presented examples will not work in those cases. Use the following workaround to track custom events in case double quotes are not allowed attribute values in your website builder. *This works only when you do not intend to send custom properties.*
 
 ### 1. Add a `data-analytics` attribute tag on the link you want to track
 
