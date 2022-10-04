@@ -67,7 +67,7 @@ more depth. Here's the full list of properties we collect automatically:
 
 | Property              | Example                       | Description                                                                                                                             |
 | --------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| event:name            | pageview                      | Name of the event triggered. `pageview` is a reserved event name but custom events can be named anything.                               |
+| event:name            | pageview                      | Name of the event triggered. `pageview` is a reserved event name but custom events can be named anything. Use this property to represent a custom event goal.                             |
 | event:page            | /blog/remove-google-analytics | Pathname of the page where the event is triggered. You can also use wildcards to match with multiple paths. See [here](/pageview-goals#pageview-goals-support-wildcards) for examples.  |
 | visit:entry_page      | /home                         | Page on which the visit session started (landing page).                                                                                 |
 | visit:exit_page       | /home                         | Page on which the visit session ended (last page viewed).                                                                               |
