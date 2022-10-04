@@ -12,6 +12,8 @@ The API accepts GET requests with query parameters and returns standard HTTP res
 Each request must be authenticated with an API key using the Bearer Token method. You can obtain an API key for your account by going to your user
 settings page [plausible.io/settings](https://plausible.io/settings).
 
+Active [subscription](subscription-plans.md) is a prerequisite for using the Stats API.
+
 API keys have a rate limit of 600 requests per hour by default. If you have special needs for more requests, please contact us to request more capacity.
 
 The easiest way to explore the API is by using our Postman collection. Just define your `TOKEN` and `SITE_ID` variables, and you'll have an executable API reference ready to go.
