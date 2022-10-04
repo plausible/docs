@@ -42,7 +42,12 @@ You can specify a `metrics` option in the query, to choose the metrics for each 
 * `visits` - The number of visits/sessions.
 
 :::note
-The number of visits/sessions is currently exclusive in the Stats API. It isn't displayed in your Plausible dashboard. 
+The number of visits/sessions is currently exclusive in the Stats API. It isn't displayed in your Plausible dashboard. Below is an example command that returns this number from the last 30 days (default time period). Make sure to fill in your Plausible site name and API key.
+
+```bash title="Get the number of visits"
+curl 'https://plausible.io/api/v1/stats/aggregate?metrics=visits&site_id=YOUR_SITE_NAME' \
+  -H "Authorization: Bearer YOUR_API_KEY"
+```
 :::
 
 ### Time periods
