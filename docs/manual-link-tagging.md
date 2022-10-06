@@ -30,6 +30,10 @@ You can also go a bit deeper and track your links in more detail:
 
 For any clicks on the above link, "**Newsletter**" would be listed as a referral source in your Plausible Analytics dashboard, "**Email**" would be listed as the medium, "**NovemberNewsletter**" would be listed as the campaign and "**Link**" would be listed as the content. 
 
+:::note 
+Do you prefer to completely stop tracking UTM tags and other query parameters on your site? Please [follow these instructions](stop-tracking-utm-tags.md)
+:::
+
 ## Merging organic traffic and paid campaigns 
 
 It's a good practice to tag your links where the referrer header isn't sent. Emails, newsletters, chat, messaging applications, social media, paid advertising campaigns and so on.
