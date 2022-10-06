@@ -1,14 +1,16 @@
 ---
-title: Affiliate link cloaking click tracking
+title: Track clicks on cloaked affiliate links
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 :::note
-If you use the affiliate link cloaking click tracking feature, then these count towards your billable monthly pageviews.
+If you track clicks on cloaked affiliate links, then these count towards your billable monthly pageviews.
 :::
 
-Many websites use affiliate link cloacking to make their affiliate links cleaner and easier to manage. So rather than linking to `youraffiliatepartner.com/youraffiliateid` you would be linking to a page on your own domain name such as `yourdomain.com/go/youraffiliatepartner`. If you're using affiliate link cloacking on your website, here are the steps you need to take to automatically track clicks on cloaked affiliate links.
+Many websites use link cloaking to make their affiliate links cleaner and easier to manage. So rather than linking to `affiliatepartner.com/affiliateid` you would link to a page on your domain name such as `yourdomain.com/go/affiliatepartner`. 
+
+If you're using affiliate link cloaking on your site, here are the steps you need to take to automatically track clicks on cloaked affiliate links.
 
 ## 1. Trigger custom events with JavaScript on your site
 
@@ -20,7 +22,9 @@ First, make sure your tracking setup includes the second line as shown below:
 ```
 ## 2. Add the JavaScript that will be sending the link click events to Plausible
 
-You need to add the code below to all of the pages where you want to track cloaked affiliate link clicks. Make sure to change the script in the line that says `var urlStringToMatch = '/go/'`. Replace `/go/` with whatever is the name of the subfolder that you use to cloak your links. You should insert the code below on your HTML page. The script will work nicely in both `<body>` and `<head>` sections.
+You need to add the code below to all of the pages where you want to track cloaked affiliate link clicks. Make sure to change the script in the line that says `var urlStringToMatch = '/go/'`. Replace `/go/` with whatever is the name of the subfolder that you use to cloak your links. 
+
+You should insert the code below on your HTML page. The script will work nicely in both `<body>` and `<head>` sections.
 
 ```html
 <script>
