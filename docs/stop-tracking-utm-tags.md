@@ -55,4 +55,4 @@ At this point, your entire setup should look like this:
 </script>
 ```
 
-That's it! You're now no longer tracking any UTM tags. 
+That's it! You're now no longer tracking any UTM tags. We will use the referrer header to display the sources of the traffic instead. If the site doesn't send any referrer header, the traffic will fall within the "Direct / None" source.
