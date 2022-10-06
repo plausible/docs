@@ -28,23 +28,15 @@ To trigger events manually, you need to add the following script after your regu
 <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 ```
 
-Once that's done, you can create another script in which you will trigger your pageview event. This is where you can also define a custom location and
-make the query part of the URL look like a standard subfolder. To do so, add the following snippet:
+Once that's done, you can create another script in which you will trigger your pageview event. This is where you can override the URL property sent to Plausible and prevent tracking UTM tags. To do so, add the following snippet:
 
 ```html
 <!-- trigger pageview -->
 <script>
-  function prepareUrl(params) {
-    const url = new URL(location.href)
-    const queryParams = new URLSearchParams(location.search)
-    let customUrl = url.protocol + "//" + url.hostname + url.pathname
-    for (const paramName of params) {
-      const paramValue = queryParams.get(paramName)
-      if (paramValue) customUrl = customUrl + '/' + paramValue
-    }
-    return customUrl
+  function queryStrippedUrl() {
+    return location.href.split('?')[0]
   }
-  plausible('pageview', { u: prepareUrl([]) })
+  plausible('pageview', { u: queryStrippedURL() })
 </script>
 ```
 
@@ -56,18 +48,11 @@ At this point, your entire setup should look like this:
 <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 <!-- trigger pageview -->
 <script>
-  function prepareUrl(params) {
-    const url = new URL(location.href)
-    const queryParams = new URLSearchParams(location.search)
-    let customUrl = url.protocol + "//" + url.hostname + url.pathname
-    for (const paramName of params) {
-      const paramValue = queryParams.get(paramName)
-      if (paramValue) customUrl = customUrl + '/' + paramValue
-    }
-    return customUrl
+  function queryStrippedUrl() {
+    return location.href.split('?')[0]
   }
-  plausible('pageview', { u: prepareUrl([]) })
+  plausible('pageview', { u: queryStrippedURL() })
 </script>
 ```
 
-That's it! You're now no longer tracking any UTM tags or any other custom parameters. 
+That's it! You're now no longer tracking any UTM tags. 

@@ -20,7 +20,7 @@ First, make sure your tracking setup includes the second line as shown below:
 ```
 ## 2. Add the JavaScript that will be sending the link click events to Plausible
 
-You need to add the code below to all of the pages where you want to track cloaked affiliate link clicks. Make sure to change the script in the line that says `return link && link.href.includes('/go/')`. Replace `/go/` with whatever is the name of the subfolder that you use to cloak your links. You should insert the code below just before the closing `</body>` tag:
+You need to add the code below to all of the pages where you want to track cloaked affiliate link clicks. Make sure to change the script in the line that says `var urlStringToMatch = '/go/'`. Replace `/go/` with whatever is the name of the subfolder that you use to cloak your links. You should insert the code below on your HTML page. The script will work nicely in both `<body>` and `<head>` sections.
 
 ```html
 <script>
@@ -74,7 +74,8 @@ You need to add the code below to all of the pages where you want to track cloak
     }
 
     function isAffiliateLink(link) {
-        return link && link.href.includes('/go/')
+        var urlStringToMatch = '/go/'
+        return link && link.href.includes(urlStringToMatch)
     }
 
     document.addEventListener('click', handleAffiliateLinkClick)
@@ -82,7 +83,7 @@ You need to add the code below to all of the pages where you want to track cloak
 </script>
 ```
 :::note
-To keep things cleaner in your code, you can also copy the code above into a new `.js` file and load it onto every page via `<script src="the_file.js"></script>`
+To keep things cleaner in your code, you can also copy the code above into a new `.js` file and load it onto every page via `<script src="the_file.js"></script>`. If you do this, make sure to copy the code into the `.js` file without the surrounding `<script>` tags.
 :::
 
 ## 3. Create a custom event goal in your Plausible Analytics account
