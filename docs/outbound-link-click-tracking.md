@@ -69,3 +69,7 @@ Click on "**Outbound Link: Click**" to see the full list of all clicks on all ex
 * Devices (screen size, browser, OS) that click on external links
 
 Click on a particular external URL to filter the dashboard by those clicks only and get the full overview of that specific URL.
+
+:::note
+Are you using cloaked affiliate links on your site? Here's how to automatically [track clicks on cloaked affiliate links](tracking-cloaked-affiliate-links.md)
+:::
