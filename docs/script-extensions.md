@@ -38,6 +38,10 @@ Here's the list of all the available extensions at this time:
 | script.local.js          | Allow analytics to track on localhost too which is useful in hybrid apps                           |
 | script.manual.js         | [Don't trigger pageviews automatically](#scriptmanualjs). Also allows you to [specify custom locations](custom-locations.md) to redact URLs with identifiers. You can also use it to track [custom query parameters](custom-query-params.md)|
 
+:::note
+Want to track outbound link clicks or downloads cloaked with pretty URLs? See the [step by step instructions](custom-automatic-link-tracking) and add the JavaScript code to your site.
+:::
+
 ## You can combine extensions according to your needs
 
 If you want to use both our hash-based routing extension and our outbound link click extension, you can combine them as follows:
