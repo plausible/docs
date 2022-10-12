@@ -1,5 +1,5 @@
 ---
-title: Automatic link click tracking with URL matching constraints
+title: Tracking clicks on cloaked affiliate links and other pretty URLs
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -8,7 +8,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 If you track link clicks, then these count towards your billable monthly pageviews.
 :::
 
-These instructions can be used to start tracking every `<a>` (i.e. link) element on your site with some specified rules. It is very similar to tracking outbound and file download links, but you can choose based on the link URL (`href` attribute), which links are tracked. Below are some example use cases, and the steps you need to take to start automatically tracking link clicks with your own rules.
+These instructions can be used to start tracking every `<a>` (i.e. link) element on your site with some specified rules. It's very similar to tracking of outbound links and file downloads, but you can choose based on the link URL (`href` attribute) which links to track. Below are some example use cases and the steps you need to take to start automatically tracking link clicks with your own rules.
 
 ## Example use cases
 
@@ -20,6 +20,8 @@ Many websites use link cloaking to make their affiliate links cleaner and easier
 
 Say you have many links to `yoursite.com/product/download` that actually redirect to `yoursite.com/123456/Product2.3.exe`. Our [file-downloads](file-downloads-tracking) extension is unable to detect these downloads, but you can still track them using these instructions.
 
+Here's how to automatically track clicks on cloaked affiliate links and other pretty URLs:
+
 ## 1. Trigger custom events with JavaScript on your site
 
 First, make sure your tracking setup includes the second line as shown below:
@@ -30,10 +32,10 @@ First, make sure your tracking setup includes the second line as shown below:
 ```
 ## 2. Add the JavaScript that will be sending the link click events to Plausible
 
-You need to add the following code to all of the pages where you want to track your links. You should insert the code below into your HTML page `<head>` section, just under the custom event snippet. Here are the changes you will have make in the code:
+You need to add the following code to all of the pages where you want to track your links. You should insert the code below into your HTML page `<head>` section just under the custom event snippet. Here are the changes you will have to make in the code:
 
 - On the line that says `var toBeTracked = '/example/123'` change `/example/123` to what you want to match with. With this example, any link with a URL that contains `/example/123` will be tracked. If simply containing a string value is not enough, see [more flexible URL matching below](#more-flexible-url-matching). 
-- (Optional) Give your custom event a new name (`var eventName = 'Cloaked Link: Click'`). The default event name is `Cloaked Link: Click`. Feel free to change it. This will be showing up on your Plausible dashboard later.
+- (Optional) Give your custom event a new name (`var eventName = 'Cloaked Link: Click'`). The default event name is `Cloaked Link: Click`. Feel free to change it. This is the name that will show up in your Plausible dashboard.
 
 ```html
 <script>
@@ -112,16 +114,16 @@ where `\/` stands for a forward slash (escaped with `\`) and `.*` will match any
 
 ## 3. Create a custom event goal in your Plausible Analytics account
 
-You’ll have to configure the goal for the click numbers to show up in your Plausible dashboard. To configure a goal, go to [your website’s settings](website-settings.md) in your Plausible Analytics account and visit the "**Goals**" section. You should see an empty list with a prompt to add a goal.
+You'll have to configure the goal for the click numbers to show up in your Plausible dashboard. To configure a goal, go to [your website's settings](website-settings.md) in your Plausible Analytics account and visit the "**Goals**" section. You should see an empty list with a prompt to add a goal.
 
 <img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
 
 Click on the "**+ Add goal**" button to go to the goal creation form.
 
-Select `Custom event` as the goal trigger and enter your custom event name (or the default `Cloaked Link: Click` if you didn't change it in step 2)
+Select `Custom event` as the goal trigger and enter your custom event name (or the default `Cloaked Link: Click` if you didn't change it in step 2).
 
 <img alt="Add your custom event goal" src={useBaseUrl('img/add-custom-event-goal.png')} />
 
-Next, click on the "**Add goal**" button and you’ll be taken back to the Goals page. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who have completed your new custom event. Goal conversions are listed at the very bottom of the dashboard. Note that at least one click is required for this to show in your dashboard. 
+Next, click on the "**Add goal**" button and you'll be taken back to the Goals page. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who have completed your new custom event. Goal conversions are listed at the very bottom of the dashboard. Note that at least one click is required for this to show in your dashboard. 
 
 That's it. You're now tracking all link clicks on your site with custom URL matching rules!
