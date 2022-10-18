@@ -229,6 +229,8 @@ We offer a manual mode in case you want full control over when pageviews are tri
 
 Support for Vue 3 ([plausible-vue](https://github.com/huntersofbook/huntersofbook/tree/main/packages/plausible-vue)) and for Nuxt 3 ([plausible-nuxt](https://github.com/huntersofbook/huntersofbook/tree/main/packages/plausible-nuxt)).
 
+There's also this [nuxt-plausible](https://github.com/johannschopplich/nuxt-plausible) Nuxt 3 module. 
+
 ## VuePress
 
 [VuePress](https://github.com/spekulatius/vuepress-plugin-plausible): A VuePress-plugin allowing you to use Plausible for your documentation website. Built and maintained by [Peter Thaleikis](https://peterthaleikis.com).
