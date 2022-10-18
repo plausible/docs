@@ -76,8 +76,8 @@ module.exports = {
               href: 'https://fosstodon.org/@plausible',
             },
             {
-              label: 'Forum',
-              href: 'https://plausible.io/forum',
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/company/plausible-analytics/',
             },
           ],
         },
