@@ -13,7 +13,7 @@ After setting up a goal, it will show up in the "**Goal Conversions**" section o
 There are several types of goals in Plausible Analytics:
 
 * [Pageview goals](pageview-goals.md) allow you to measure how many people visit a specific section of your site (for instance dynamically created ecommerce checkout pages can be grouped into one goal using this feature)
-* [Custom event goals](custom-event-goals.md) allow you to measure button clicks, purchases, subscriptions, form completions and pretty much any other action that you wish (you can also send custom dimensions alongside custom events for extra insights)
+* [Custom event goals](custom-event-goals.md) allow you to measure button clicks, purchases, subscriptions, form completions, clicks on video or audio elements and pretty much any other action that you wish (you can also send custom dimensions alongside custom events for extra insights)
 * [Outbound link clicks](outbound-link-click-tracking.md) allow you to automatically measure clicks on external links
 * [File downloads](file-downloads-tracking.md) allow you to automatically track when a visitor clicks a link leading to a file
 * [404 error pages](error-pages-tracking-404.md) allow you to automatically measure page not found errors
