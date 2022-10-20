@@ -155,7 +155,7 @@ Type of your goal, accepts only one of the following values: `event` or `page`
 
 **event_name** <Required /> only if _goal_type_ is set to `event`
 
-Actual value of your the event name of your goal 
+Actual value of the event name of your goal 
 
 <hr / >
 
