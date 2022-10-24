@@ -53,6 +53,10 @@ We used to have a CNAME/DNS custom domain approach in the past, but it's no long
 
 There are many ways you can proxy requests to Plausible depending on your hosting situation. We've divided our guides to *standalone* and *integrated* proxies. A standalone proxy can be set up on its own and it does not matter what hosting provider or tech stack you are using. Integrated proxy setups are dependent on how you've deployed your app.
 
+> In all proxy setups, please ensure that you have correct headers set,
+> and filter out sensitive data such as cookies, authentication headers.
+> See [Events API](events-api.md) for more details.
+
 Standalone proxy setups:
 * [Akamai](/docs/proxy/guides/akamai)
 * [Cloudflare Workers](/docs/proxy/guides/cloudflare)
