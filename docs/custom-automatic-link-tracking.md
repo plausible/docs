@@ -8,17 +8,9 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 If you track link clicks, then these count towards your billable monthly pageviews.
 :::
 
-These instructions can be used to start tracking every `<a>` (i.e. link) element on your site with some specified rules. It's very similar to tracking of outbound links and file downloads, but you can choose based on the link URL (`href` attribute) which links to track. Below are some example use cases and the steps you need to take to start automatically tracking link clicks with your own rules.
+Many sites use link cloaking to make their affiliate links and other links cleaner and easier to manage. So rather than linking to `affiliatepartner.com/affiliateid` you would link to a page on your domain name such as `yourdomain.com/go/affiliatepartner`. The same system is used to make pretty URLs for file names. You have links to `yourdomain.com/product/download/productname` that actually redirect to `yourdomain.com/123456/Product2.3.exe`. 
 
-## Example use cases
-
-### Tracking cloaked affiliate links
-
-Many websites use link cloaking to make their affiliate links cleaner and easier to manage. So rather than linking to `affiliatepartner.com/affiliateid` you would link to a page on your domain name such as `yourdomain.com/go/affiliatepartner`. As these links cannot be tracked with our [outbound-links](outbound-link-click-tracking) extension, you can use these instructions instead.
-
-### Tracking downloads with pretty URLs
-
-Say you have many links to `yoursite.com/product/download/productname` that actually redirect to `yoursite.com/123456/Product2.3.exe`. Our [file-downloads](file-downloads-tracking) extension is unable to detect these downloads, but you can still track them using these instructions.
+These instructions can be used to start tracking every `<a>` (i.e. link) element on your site with some specified rules. It's very similar to our automated tracking of [outbound link clicks](outbound-link-click-tracking.md) and [file downloads](file-downloads-tracking.md), but you can choose based on the link URL (`href` attribute) which links to track.
 
 Here's how to automatically track clicks on cloaked affiliate links and other pretty URLs:
 
@@ -105,7 +97,7 @@ To keep things cleaner in your code, you can also copy the code above into a new
 
 ### More flexible URL matching
 
-If simply containing a substring is not enough to differentiate between links you want and do not want to track, you can also use a [JavaScript regular expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) as the `toBeTracked` value. For example, say you want to track links like `yoursite.com/products/123/details`, but not links like `yoursite.com/123/details`. In this case, you can do:
+If simply containing a substring is not enough to differentiate between links you want and do not want to track, you can also use a [JavaScript regular expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) as the `toBeTracked` value. For example, say you want to track links like `yourdomain.com/products/123/details`, but not links like `yourdomain.com/123/details`. In this case, you can do:
 
 ```javascript
   var toBeTracked = /products\/.*\/details/
