@@ -18,7 +18,7 @@ Many websites use link cloaking to make their affiliate links cleaner and easier
 
 ### Tracking downloads with pretty URLs
 
-Say you have many links to `yoursite.com/product/download` that actually redirect to `yoursite.com/123456/Product2.3.exe`. Our [file-downloads](file-downloads-tracking) extension is unable to detect these downloads, but you can still track them using these instructions.
+Say you have many links to `yoursite.com/product/download/productname` that actually redirect to `yoursite.com/123456/Product2.3.exe`. Our [file-downloads](file-downloads-tracking) extension is unable to detect these downloads, but you can still track them using these instructions.
 
 Here's how to automatically track clicks on cloaked affiliate links and other pretty URLs:
 
@@ -34,7 +34,8 @@ First, make sure your tracking setup includes the second line as shown below:
 
 You need to add the following code to all of the pages where you want to track your links. You should insert the code below into your HTML page `<head>` section just under the custom event snippet. Here are the changes you will have to make in the code:
 
-- On the line that says `var toBeTracked = '/example/123'` change `/example/123` to what you want to match with. With this example, any link with a URL that contains `/example/123` will be tracked. If simply containing a string value is not enough, see [more flexible URL matching below](#more-flexible-url-matching). 
+- On the line that says `var toBeTracked = '/go/'` change `/go/` to what you want to match with. With this example, any link with a URL that contains `/go/` will be tracked. If simply containing a string value is not enough, see [more flexible URL matching below](#more-flexible-url-matching). 
+
 - (Optional) Give your custom event a new name (`var eventName = 'Cloaked Link: Click'`). The default event name is `Cloaked Link: Click`. Feel free to change it. This is the name that will show up in your Plausible dashboard.
 
 ```html
@@ -89,7 +90,7 @@ You need to add the following code to all of the pages where you want to track y
     }
 
     function shouldTrackLink(link) {
-        var toBeTracked = '/example/123'
+        var toBeTracked = '/go/'
         return !!link.href.match(toBeTracked)
     }
 
