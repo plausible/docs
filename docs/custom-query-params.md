@@ -41,7 +41,7 @@ make the query part of the URL look like a standard subfolder. To do so, add the
   function prepareUrl(params) {
     const url = new URL(location.href)
     const queryParams = new URLSearchParams(location.search)
-    let customUrl = url.protocol + "//" + url.hostname + url.pathname
+    let customUrl = url.protocol + "//" + url.hostname + url.pathname.replace(/\/$/, '')
     for (const paramName of params) {
       const paramValue = queryParams.get(paramName)
       if (paramValue) customUrl = customUrl + '/' + paramValue
@@ -71,7 +71,7 @@ At this point, your entire setup should look like this:
   function prepareUrl(params) {
     const url = new URL(location.href)
     const queryParams = new URLSearchParams(location.search)
-    let customUrl = url.protocol + "//" + url.hostname + url.pathname
+    let customUrl = url.protocol + "//" + url.hostname + url.pathname.replace(/\/$/, '')
     for (const paramName of params) {
       const paramValue = queryParams.get(paramName)
       if (paramValue) customUrl = customUrl + '/' + paramValue
