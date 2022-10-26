@@ -8,9 +8,11 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 If you track link clicks, then these count towards your billable monthly pageviews.
 :::
 
-Many sites use link cloaking to make their affiliate links and other links cleaner and easier to manage. So rather than linking to `affiliatepartner.com/affiliateid` you would link to a page on your domain name such as `yourdomain.com/go/affiliatepartner`. The same system is used to make pretty URLs for file names. You have links to `yourdomain.com/product/download/productname` that actually redirect to `yourdomain.com/123456/Product2.3.exe`. 
+Many sites use link cloaking to make affiliate links cleaner and easier to manage. So rather than linking to `affiliatepartner.com/affiliateid` you link to a page on your domain name such as `yourdomain.com/go/affiliatepartner` and the visitor gets redirected to the actual affiliate link after clicking.
 
-These instructions can be used to start tracking every `<a>` (i.e. link) element on your site with some specified rules. It's very similar to our automated tracking of [outbound link clicks](outbound-link-click-tracking.md) and [file downloads](file-downloads-tracking.md), but you can choose based on the link URL (`href` attribute) which links to track.
+The same system is used to make pretty URLs for file names. You have links to `yourdomain.com/product/download/productname` that actually redirect to `yourdomain.com/123456/Product2.3.exe`. 
+
+Instructions below can be used to start tracking every `<a>` (i.e. link) element on your site with some specified rules. It's very similar to our automated tracking of [outbound link clicks](outbound-link-click-tracking.md) and [file downloads](file-downloads-tracking.md) but you can choose based on the link URL (`href` attribute) which links to track.
 
 Here's how to automatically track clicks on cloaked affiliate links and other pretty URLs:
 
