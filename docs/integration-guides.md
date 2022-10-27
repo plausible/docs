@@ -157,6 +157,9 @@ If you'd like to count users on your Android and/or iOS mobile apps, you can use
 
 [NextJS](nextjs-integration.md): Simple integration for Plausible Analytics and [NextJS](https://nextjs.org). Provides custom events functionality. Built and maintained by [4lejandrito](https://github.com/4lejandrito).
 
+## Notion website
+To integrate Plausible Analytics into your Notion website, you'll need to use a third party serivice like Potion or Super ( both paid ) that will allow you add custom code to your website. 
+
 ## Podcastpage.io
 
 Add Plausible to your [Podcastpage.io](https://podcastpage.io/) website. Just enable the Plausible script through the "Integrations" page of your dashboard to add the tracking script to all pages.
@@ -256,3 +259,4 @@ We have a WordPress plugin that makes the integration with WordPress nice and ea
 * [Metrics iOS Widget](https://santiviquez.gumroad.com/l/xLrcq) by Santiago Víquez
 
 Let us know about any other integrations that you've built and we will feature them in this list. Thanks for your support!
+
