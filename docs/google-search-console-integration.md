@@ -48,10 +48,6 @@ You then need to grant Plausible Analytics a permission to view your Search Cons
 
 <img alt="Tick the View Search Console data for your verified sites box" src={useBaseUrl('img/confirm-choices.png')} />
 
-:::caution
-If Google presents a permission to "See and download your Google analytics data" don't tick it as it may cause issues with this integration. We only need the Search Console data permission to import your Search Console data.
-:::
-
 ## Select property to pull keywords from
 
 Next up, you are back in Plausible Analytics settings where you should see a select box where you can choose which property from Google Search Console to integrate your Plausible Analytics dashboard with. Properties that start with `sc-domain:` represent domain properties and others are URL prefix properties in Search Console.
