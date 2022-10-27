@@ -132,7 +132,7 @@ Do watch the quotes! The `data-analytics` tag value should have both **single an
 :::
 
 :::note
-If you are using a website builder (e.g. Webflow, Shopify, Wix, etc.) you might not be able to add double quotes to the `data-analytics` tag value. Read below how to use custom events in this scenario.
+If you are using a website builder (e.g. Webflow, Shopify, Wix, etc.) you might not be able to add double quotes to the `data-analytics` tag value. [Click here to read](#code-example-for-tracking-form-button-submit-events) how to use custom events in this scenario.
 :::
 
 ### 2. Add the JavaScript that will be sending the link click events to Plausible
