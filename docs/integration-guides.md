@@ -211,6 +211,9 @@ To add Plausible to a Sphinx documentation build, you need to use the `block ext
 
 First, update the `conf.py` to include your `templates_path`.  Then create a template (e.g. `_templates\layout,html`) and include the block in the template: `{% block extrahead %}<script ... >{% endblock %}`.  See [Sphinx template](https://www.sphinx-doc.org/en/master/templating.html) documentation.
 
+
+[Plausible Sphinx extension](https://pypi.org/project/sphinx-plausible/), built and mainted by [rkdarst](https://pypi.org/user/rkdarst/)
+
 ## Squarespace
 
 [How to add the script to your Squarespace site](squarespace-integration.md)
