@@ -94,7 +94,7 @@ You need to add the following code to all of the pages where you want to track y
 ```
 
 :::note
-To keep things cleaner in your code, you can also copy the code above into a new `.js` file and load it onto every page via `<script src="the-file.js"></script>`. If you do this, make sure to copy the code into the `.js` file without the surrounding `<script>` tags.
+To keep things cleaner in your code, you can also copy the code above into a new `.js` file and load it onto every page via the script `src` attribute. `<script src="path/to/your/file.js"></script>`. If you do this, make sure to copy the code into the `.js` file without the surrounding `<script>` tags.
 :::
 
 ### More flexible URL matching
