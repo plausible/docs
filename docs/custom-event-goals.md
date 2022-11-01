@@ -186,25 +186,6 @@ The event name can be anything. As a second parameter, you can also send an obje
 
 This is the whole extent of the API. It's intentionally very slim so as to keep the SDK small and quick to load.
 
-If you want to trigger form submissions, button clicks etc. you need to implement the code for that yourself. This is an example of code we use to track custom events (trial signups) on our own website. We have listed few other code examples further down this page.
-
-```javascript
-registerForm.addEventListener('submit', function(e) {
-  e.preventDefault();
-  setTimeout(submitForm, 1000);
-  var formSubmitted = false;
-
-  function submitForm() {
-    if (!formSubmitted) {
-      formSubmitted = true;
-      registerForm.submit();
-    }
-  }
-
-  plausible('Signup', {callback: submitForm});
-})
-```
-
 ## Using custom props
 
 Custom properties can be attached to events to capture dynamic elements and to further break down goal conversions. You can use custom properties to create your custom metrics to collect and analyze data that Plausible doesn’t automatically track.
@@ -248,6 +229,27 @@ Note that you must ensure that no personally identifiable information (PII) is s
 * pseudonymous cookie IDs, advertising IDs or other pseudonymous end user identifiers
 
 ## Code examples
+
+### Tracking form submits
+
+This is an example of code we use to track custom events (trial signups) on our own website:
+
+```javascript
+registerForm.addEventListener('submit', function(e) {
+  e.preventDefault();
+  setTimeout(submitForm, 1000);
+  var formSubmitted = false;
+
+  function submitForm() {
+    if (!formSubmitted) {
+      formSubmitted = true;
+      registerForm.submit();
+    }
+  }
+
+  plausible('Signup', {callback: submitForm});
+})
+```
 
 ### Contact Form 7 plugin on WordPress
 
@@ -298,6 +300,6 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 </script>
 ```
 
-Feel free to replace `Media Played` with a more suitable name for your custom event.
+The same code also applies for `<video>` elements. Feel free to replace `Media Played` with a more suitable name for your custom event.
 
 </details>
