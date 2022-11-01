@@ -154,7 +154,13 @@ Next, click on the "**Add goal**" button and you’ll be taken back to the Goals
 
 - Triggers events when the element is clicked/middle-clicked with a mouse, or touched on mobile.
 
-# Trigger custom events manually with custom JavaScript
+<br />
+<details>
+<summary>
+
+## Want to trigger events manually with custom JavaScript?
+
+</summary>
 
 ## Triggering events
 
@@ -293,3 +299,5 @@ document.addEventListener( 'wpcf7mailsent', function( event ) {
 ```
 
 Feel free to replace `Media Played` with a more suitable name for your custom event.
+
+</details>
