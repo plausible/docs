@@ -10,6 +10,10 @@ Thanks to the members of our community, there are also integrations and plugins 
 
 Here's the full list in alphabetical order:
 
+## Android SDK
+
+[Android SDK](https://github.com/wbrawner/plausible-android): An Android SDK for Plausible Analytics. Built and maintained by [William Brawner](https://github.com/wbrawner).
+
 ## Bridgetown
 
 [Bridgetown](https://rubygems.org/gems/bridgetown-plausible-tag): A Liquid tag to add Plausible to your Bridgetown site. Built and maintained by [Andrew Mason](https://www.andrewm.codes/). Here's [the source code](https://github.com/andrewmcodes/bridgetown-plausible-tag).
