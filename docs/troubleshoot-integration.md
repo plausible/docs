@@ -29,7 +29,7 @@ A simple way to verify if Plausible is working is to view the source code of you
 
 If you see our snippet in your source code, it means Plausible is installed. If you see the snippet, you can try to open the realtime report in your Plausible dashboard and see if your visit was counted correctly.
 
-<img alt="Ensure that the Plausible Analytics script is loading by checking the source code" src={useBaseUrl('img/check-if-plausible-is-working-source-code.webp')} />
+<img alt="Ensure that the Plausible Analytics script is loading by checking the source code" src={useBaseUrl('img/data-domain-plausible-analytics-script.png')} />
 
 ## Check for the Plausible script in your browser's developer tools
 
