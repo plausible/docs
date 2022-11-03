@@ -14,6 +14,8 @@ If you see your visit and the dashboard with graphs and numbers, it means everyt
 
 Do you keep seeing a blinking green dot screen? Is your visit not being counted? Read further for how you can verify if our script is installed correctly.
 
+<img alt="Ensure that the Plausible Analytics script is loading by checking the blinking dot and realtime view" src={useBaseUrl('img/check-if-plausible-is-working.webp')} />
+
 ## Check for the Plausible snippet in your source code
 
 A simple way to verify if Plausible is working is to view the source code of your site and look for the Plausible snippet. Here's how:
@@ -24,6 +26,8 @@ A simple way to verify if Plausible is working is to view the source code of you
 4. Do you see our snippet? Ensure that the snippet is correct and that there are no unintended modifications compared to the snippet [we provided you with](plausible-script.md)?
 
 If you see our snippet in your source code, it means Plausible is installed. If you see the snippet, you can try to open the realtime report in your Plausible dashboard and see if your visit was counted correctly.
+
+<img alt="Ensure that the Plausible Analytics script is loading by checking the source code" src={useBaseUrl('img/check-if-plausible-is-working-source-code.webp')} />
 
 ## Check for the Plausible script in your browser's developer tools
 
