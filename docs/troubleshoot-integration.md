@@ -12,11 +12,11 @@ You can visit your website and your Plausible dashboard will update instantly wi
 
 If you see your visit and the dashboard with graphs and numbers, it means everything is working! Congrats! Plausible Analytics is now tracking your website statistics while preserving the privacy of your visitors.
 
-<img alt="Ensure that the Plausible Analytics script is loading by checking realtime view" src={useBaseUrl('img/check-if-plausible-is-working-realtime.webp')} />
+<img alt="Ensure that the Plausible Analytics script is loading by checking realtime view" src={useBaseUrl('img/check-if-plausible-is-working.png')} />
 
 Do you keep seeing a blinking green dot screen? Is your visit not being counted? Read further for how you can verify if our script is installed correctly.
 
-<img alt="Ensure that the Plausible Analytics script is loading by checking the blinking dot" src={useBaseUrl('img/check-if-plausible-is-working-blinking-green-dot.png')} />
+<img alt="Ensure that the Plausible Analytics script is loading by checking the blinking dot" src={useBaseUrl('img/blinking-green-dot-check-if-plausible-is-working.png')} />
 
 ## Check for the Plausible snippet in your source code
 
@@ -40,7 +40,7 @@ You can also use your browser's developer tools to look for the Plausible script
 3. Look into the "**Console**" tab in the developer tools for any errors related to Plausible. If you see an error related to the Plausible script, it means that something's not right with your implementation. We have some troubleshooting options further down this article.
 4. Then click on the "**Network**" tab in the developer tools. It will be empty, so you would need to reload the page. After you refresh the browser, you will start seeing some data in the "**Network**" tab. You should see the `script.js` from Plausible in the list. The Plausible script should display status 200.
 
-<img alt="Ensure that the Plausible Analytics script is loading in the 'Network' tab" src={useBaseUrl('img/dev-tools-troubleshoot.png')} />
+<img alt="Ensure that the Plausible Analytics script is loading in the 'Network' tab" src={useBaseUrl('img/network-check-if-plausible-is-working.png')} />
 
 ## Is the Plausible script not installed on your site?
 
