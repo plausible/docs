@@ -16,7 +16,7 @@ If you see your visit and the dashboard with graphs and numbers, it means everyt
 
 Do you keep seeing a blinking green dot screen? Is your visit not being counted? Read further for how you can verify if our script is installed correctly.
 
-<img alt="Ensure that the Plausible Analytics script is loading by checking the blinking dot" src={useBaseUrl('img/check-if-plausible-is-working-blinking-green-dot.webp')} />
+<img alt="Ensure that the Plausible Analytics script is loading by checking the blinking dot" src={useBaseUrl('img/check-if-plausible-is-working-blinking-green-dot.png')} />
 
 ## Check for the Plausible snippet in your source code
 
