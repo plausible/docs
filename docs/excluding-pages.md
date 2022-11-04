@@ -75,6 +75,10 @@ You don't have to use the `exclusions` script type exclusively. You can chain va
 
 The example above includes both [outbound link clicks tracking](outbound-link-click-tracking.md) and tracking for [hash-based routing pages](hash-based-routing.md) in addition to the `exclusions` script type.
 
+:::note
+In case you are [tracking custom events](goal-conversions.md) on pages excluded with this script extension, the URLs of these pages will still be getting into your dashboard through custom events. If you want to track custom events on these pages, you can prevent the URLs from showing on the dashboard by using [our manual script extension](custom-locations.md) and overriding the URLs that are being reported.
+:::
+
 ## Common use cases and examples
 
 | inclusion or exclusion rule | pages that will match |
