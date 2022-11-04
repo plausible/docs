@@ -10,4 +10,4 @@ For instance, if you select "**(GMT+01:00) Amsterdam, Berlin…**" then the begi
 
 The best practice is to set the timezone that reflects the location of your audience or if the audience is very broad and spread across the world to set the timezone of your location.
 
-<img alt="Plausible Analytics" src={useBaseUrl('img/general-settings.png')} />
+<img alt="Plausible Analytics" src={useBaseUrl('img/reporting-timezone.png')} />
