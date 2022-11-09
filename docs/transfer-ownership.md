@@ -25,6 +25,8 @@ They will immediately become the new owner of the site after they accept the tra
 
 After the transfer of the ownership has been completed, you still keep the "**Admin**" role to the site so you can view the stats and edit the site settings. The new owner can choose to change your role or altogether remove you from having access to the site at any time.
 
+<img alt="modify user roles or delete user" src={useBaseUrl('img/change-role-remove-user.png')} />
+
 ### How to modify the user roles
 
 You can change the user role at any time:
