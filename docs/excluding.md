@@ -21,18 +21,23 @@ When using [uBlock Origin](https://github.com/gorhill/uBlock/#installation), you
 ### Locate the My Rules tab
 
 * Click the "**uBlock Origin**" icon in your browser
+
+<img alt="The uBlock Origin browse icon" src={useBaseUrl('img/ublock-origin-exclude-own-visits.png')} />
+
 * Then click the "**Dashboard**" icon in the lower-right corner to open the uBlock Origin dashboard
+
+<center><img alt="The uBlock Origin dashboard icon" src={useBaseUrl('img/ublock-origin-exclude-own-visits-settings.png')} /></center>
+
 * Tick the "**I am an advanced user**" box
 
-<img alt="The uBlock Origin dashboard" src={useBaseUrl('img/ublock-origin-dashboard.png')} />
+<img alt="The uBlock Origin advanced user" src={useBaseUrl('img/ublock-origin-exclude-own-visits-advanced-user.png')} />
 
 * Select the "**My rules**" tab in the top navigation
 
-<img alt="My Rules tab in the uBlock Origin dashboard" src={useBaseUrl('img/ublock-origin-my-rules.png')} />
+<img alt="My Rules tab in the uBlock Origin dashboard" src={useBaseUrl('img/ublock-origin-exclude-own-visits-my-rules.png')} />
 
 ### Block the Plausible Analytics script on your domain
 
-<img alt="Add a new rule the uBlock Origin dashboard" src={useBaseUrl('img/ublock-origin-temporary-rules.png')} />
 
 In the "**Temporary rules**" box on the right-hand side of the page insert the following rule. Remember to change `yourdomain.com` with the domain name where you installed Plausible Analytics.
 
@@ -46,7 +51,11 @@ Or in case you're proxying our script, use this. Remember to change `yourproxy.c
 yourdomain.com yourproxy.com * block 
 ```
 
+<img alt="Add a new rule the uBlock Origin dashboard" src={useBaseUrl('img/ublock-origin-exclude-own-visits-add-rule.png')} />
+
 Once you’ve entered the correct rule, click on the "**Save**" button and then click on the "**Commit**" button.
+
+<img alt="Save and commit your new rule the uBlock Origin dashboard" src={useBaseUrl('img/ublock-origin-exclude-own-visits-save-commit.png')} />
 
 ## Adblock Plus and AdGuard
 
