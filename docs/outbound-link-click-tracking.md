@@ -4,7 +4,7 @@ title: Outbound link click tracking
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-<img alt="Outbound link click tracking" src={useBaseUrl('img/outbound-link-click-tracking.jpeg')} />
+<img alt="Outbound link click tracking" src={useBaseUrl('img/outbound-link-click-tracking.png')} />
 
 :::note
 If you use the Outbound link click tracking feature, then these count towards your billable monthly pageviews.
