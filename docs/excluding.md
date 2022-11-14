@@ -61,9 +61,15 @@ Once you’ve entered the correct rule, click on the "**Save**" button and then 
 
 When using [Adblock Plus](https://adblockplus.org/) or [Adguard](https://adguard.com), you can follow these steps to make sure that you exclude yourself from being counted in the stats. 
 
-Go into your Adblock Plus settings and click on "**Advanced**" in the left hand side menu. Scroll down to the "**My Filter List**" section.
 
-Insert the following rule and click on the "**Add**" button. Remember to change `yourdomain.com` with the domain name where you installed Plausible Analytics.
+Go into your Adblock Plus or Adguard settings and click on "**Advanced**" (Adblock Plus) or "**User Rules**" ( Adguard ) in the left hand side menu. 
+
+<center><img alt="Adguard and Adblock Plus dashboard icon" src={useBaseUrl('img/adblock-plus-adguard-origin-exclude-own-visits.png')} /></center>
+
+Insert the following rule and click on the "**Add**"/"**Save**" button. Remember to change `yourdomain.com` with the domain name where you installed Plausible Analytics.
+
+<img alt="Save and commit your new rule Adguard and Adblock Plus dashboard" src={useBaseUrl('img/adblock-plus-adguard-origin-exclude-own-visits-settings.png')} />
+
 
 ```html
 ||plausible.io^$script,domain=yourdomain.com 
