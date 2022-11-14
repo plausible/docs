@@ -20,6 +20,8 @@ server {
     location = /js/script.js {
         # Change this if you use a different variant of the script
         proxy_pass https://plausible.io/js/script.js;
+        proxy_set_header Host plausible.io;
+
 
         # Tiny, negligible performance improvement. Very optional.
         proxy_buffering on;
@@ -35,6 +37,7 @@ server {
 
     location = /api/event {
         proxy_pass https://plausible.io/api/event;
+        proxy_set_header Host plausible.io;
         proxy_buffering on;
         proxy_http_version 1.1;
 
