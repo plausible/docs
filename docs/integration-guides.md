@@ -18,6 +18,10 @@ Here's the full list in alphabetical order:
 
 [Bridgetown](https://rubygems.org/gems/bridgetown-plausible-tag): A Liquid tag to add Plausible to your Bridgetown site. Built and maintained by [Andrew Mason](https://www.andrewm.codes/). Here's [the source code](https://github.com/andrewmcodes/bridgetown-plausible-tag).
 
+## Bubble.io
+
+[This simple plugin](https://bubble.io/plugin/plausible-analytics-1609143980013x318025391610265600) just adds the Plausible JS script loading to the header. You only need to provide your site url. Built and maintained by [Balthazar](https://bubble.io/contributor/balthazar-1608993775771x115633308365631340)
+
 ## Buttondown
 
 [How to add the script to your Buttondown site](buttondown.md)
