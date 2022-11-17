@@ -9,6 +9,15 @@ The Plausible Events API can be used to record pageviews and custom events. This
 In most cases we recommend installing Plausible through our provided [script](/docs/plausible-script) or one of the many
 integration packages listed [here](/docs/integration-guides). However, if there's no easy way for you to integrate with Plausible, you can still do so by sending events directly to our API.
 
+### Unique visitor tracking
+
+**Important!** Special care should be taken with two key headers which are used for [unique visitor counting](https://plausible.io/data-policy#how-we-count-unique-users-without-cookies):
+1. The _User-Agent_ header
+2. The _X-Forwarded-For_ header
+
+If these headers are not sent exactly as required, unique visitor counting will not work as intended. Please refer to the [Request headers](#request-headers) section below for more in-depth documentation on each header separately.
+
+
 ## Endpoints
 ### POST /api/event
 
