@@ -10,7 +10,12 @@ You can also download your invoices in your Plausible account. Log in to your Pl
 
 To download your invoices, find the "**Invoices**" section. You'll see the list of your invoices and you can download the individual invoice by clicking on the link button.
 
+<img alt="Download Plausible invoice" src={useBaseUrl('img/download-invoice.png')} />
+
+
 You can change the billing address by opening your invoice and clicking the "Edit business address". 
+
+
 
 Unfortunately, changing a country associated with a subscription isn't possible due to legal and tax reasons. Suppose you wish to link the service to a company registered in a different country. You can wait until the current subscription expires, then cancel the subscription and resubscribe again from the same account with the address in the new country. You won't lose any of the data in this process.
 
