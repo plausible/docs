@@ -4,7 +4,7 @@ title: 404 error pages tracking
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-<img alt="How to track 404 error pages" src={useBaseUrl('img/track-404-error-pages.jpg')} />
+<img alt="How to track 404 error pages" src={useBaseUrl('img/track-404-error-pages.png')} />
 
 :::note
 If you use the 404 error pages tracking feature, then these count towards your billable monthly pageviews.
