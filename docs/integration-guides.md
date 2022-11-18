@@ -215,12 +215,20 @@ Plausible integrates automatically with modern pushState based frontend routers.
 
 ## Sphinx / Read The Docs
 
-To add Plausible to a Sphinx documentation build, you need to use the `block extrahead` template instruction.
+As long as you use a properly-designed theme (and most are), this
+should place the script in the right place:
+```python
+html_js_files = [
+    ('https://plausible.io/js/script.js', {"data-domain": "yourdomain.com", "defer": "defer"}),
+]
+```
 
-First, update the `conf.py` to include your `templates_path`.  Then create a template (e.g. `_templates\layout,html`) and include the block in the template: `{% block extrahead %}<script ... >{% endblock %}`.  See [Sphinx template](https://www.sphinx-doc.org/en/master/templating.html) documentation.
+Or, if you need to override your theme, you need to use the `block
+extrahead` template instruction.  First, update the `conf.py` to include your `templates_path`.  Then create a template (e.g. `_templates/layout.html`) and include the block in the template: `{% block extrahead %}<script ... >{% endblock %}`.  See [Sphinx template](https://www.sphinx-doc.org/en/master/templating.html) documentation.
 
-
-[Plausible Sphinx extension](https://pypi.org/project/sphinx-plausible/), built and maintained by [rkdarst](https://pypi.org/user/rkdarst/)
+Or, finally, there is a [Plausible Sphinx
+extension](https://pypi.org/project/sphinx-plausible/) but there are
+few cases you would need it compared to the first option.
 
 ## Squarespace
 
