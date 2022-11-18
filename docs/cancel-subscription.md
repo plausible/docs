@@ -9,3 +9,7 @@ Log in to your Plausible Analytics account and in the top right menu, click on y
 To cancel your subscription plan, find the "**Subscription Plan**" section and click on "**Cancel my subscription**".
 
 After canceling, the stats will keep being counted, and you will have access to your stats until the end of your subscription period.
+
+<img alt="Cancel your Plausible subscription" src={useBaseUrl('img/cancel-subscription.png')} />
+
+
