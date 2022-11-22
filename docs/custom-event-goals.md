@@ -27,7 +27,7 @@ You will need to use the `tagged-events` script extension. All you have to do is
 
 ## 2. Add special classes to the elements you want to track
 
-In order to hook up a custom event to your chosen element, you will need to tag it with some special class names. In addition to telling Plausible that the element should be tracked, these class names also determine the name and properties of your custom event.
+In order to hook up a custom event to your chosen element, you will need to tag it with special class names. In addition to telling Plausible that the element should be tracked, these class names also determine the name and properties of your custom event.
 
 ### Options for class names
 
@@ -77,7 +77,7 @@ In this case, you can just add the necessary classes to the element you want to 
 
 In some cases, the tracking classes might be added to a wrapper `<div>` element (parent to the element you want to track), but don't worry, Plausible will still be able to track clicks on the child element if its parent has the necessary classes. 
 
-If the class name format has been changed by your CMS, Plausible will most likely not be able to track it. If that's the case, please keep reading the below instructions.
+If your CMS overrides the format of your class names, Plausible will most likely not be able to track it. If that's the case, please keep reading the below instructions.
 
 #### Does the element you want to track have an `id` attribute, or can you add one?
 
@@ -229,42 +229,6 @@ Note that you must ensure that no personally identifiable information (PII) is s
 * pseudonymous cookie IDs, advertising IDs or other pseudonymous end user identifiers
 
 ## Code examples
-
-### Tracking form submits
-
-This is an example of code we use to track custom events (trial signups) on our own website:
-
-```javascript
-registerForm.addEventListener('submit', function(e) {
-  e.preventDefault();
-  setTimeout(submitForm, 1000);
-  var formSubmitted = false;
-
-  function submitForm() {
-    if (!formSubmitted) {
-      formSubmitted = true;
-      registerForm.submit();
-    }
-  }
-
-  plausible('Signup', {callback: submitForm});
-})
-```
-
-### Contact Form 7 plugin on WordPress
-
-Here's an example of the code you need to insert if you're using the Contact Form 7 plugin on WordPress and want to see the number of visitors who use the contact form. In this example, there are two contact forms on two different pages and this is the code you should insert in the `head` section:
-
-```html
-<script>
-document.addEventListener( 'wpcf7mailsent', function( event ) {
-  if ( '1174' == event.detail.contactFormId ) {
-    plausible('FormProject')}
-  if ( '464' == event.detail.contactFormId ) {
-    plausible('FormContact')}
-}, false );
-</script>
-```
 
 ### Tracking audio and video elements
 
