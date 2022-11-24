@@ -34,7 +34,7 @@ Tag the site element that you want to track with a CSS class name. How to do thi
 
 For instance, if you're using WordPress, you can click on any block element you want to track such as a button. This will open up the block menu on the right-hand side of your screen. You can click on "Advanced" and add a CSS class name in the "Additional CSS class(es)" field.
 
-Add the CSS class name in this format: `plausible-event-name=custom-event`. For instance, if you want to track form submissions on your contact form, you could use: `plausible-event-name=form-submit`.
+Add the CSS class name in this format: `plausible-event-name=MyEventName`. For instance, if you want to track form submissions on your contact form, you could use: `plausible-event-name=Form+Submit`.
 
 :::note
 To represent a space character in the event names, you can use a `+` sign. For example: `plausible-event-name=Subscribe+Newsletter`
@@ -45,11 +45,11 @@ To represent a space character in the event names, you can use a `+` sign. For e
 <details>
 <summary>
 
-### You can also add class names using HTLM
+### You can also add class names directly in HTML
 
 </summary>
 
-You can also add the classes to the elements you want to track using HTLM. For example:
+If you're able to edit the raw HTML code of the element you want to track, you can also add the classes directly in HTML. For example:
 
 ```html
 <!-- before -->
@@ -81,7 +81,7 @@ To configure a goal, go to [your website’s settings](website-settings.md) in y
 
 Click on the "**+ Add goal**" button to go to the goal creation form.
 
-Select `Custom event` as the goal trigger and enter the name of the custom event you are triggering. The name must match the one you added as a CSS class name on your site for conversions to show up in your analytics dashboard. So in our example where you added a CSS class name `plausible-event-name=form-submit`, the goal to add to your Plausible account is `form-submit`.
+Select `Custom event` as the goal trigger and enter the name of the custom event you are triggering. The name must match the one you added as a CSS class name on your site for conversions to show up in your analytics dashboard. So in our example where you added a CSS class name `plausible-event-name=Form+Submit`, the goal to add to your Plausible account is `Form Submit` (plus is replaced by a space in the end).
 
 <img alt="Add your custom event goal" src={useBaseUrl('img/add-custom-event-goal.png')} />
 
@@ -93,11 +93,11 @@ Custom properties can be attached to events to capture dynamic elements and to f
 
 You can then filter and sort your goals by custom event properties in your Plausible dashboard. For those coming from Google Analytics, custom properties are roughly the same concept as _custom dimensions_ in GA.
 
-Let's say you the contact form both in the header and footer of your site. In addition to tracking submissions, you might want to know which section of your site the form was submitted on. Instead of creating separate goals for each form, you can send a custom property instead:
+Let's say you have a contact form both in the header and footer of your site. In addition to tracking submissions, you might want to know which section of your site the form was submitted on. Instead of creating separate goals for each form, you can send a custom property instead:
 
 `plausible-event-<property>=<value>` allows you to define custom properties that are sent with your custom event. For example `plausible-event-position=footer`. The full CSS class name would look like this:
 
-`plausible-event-name=form-submit plausible-event-position=footer` 
+`plausible-event-name=Form+Submit plausible-event-position=footer`
 
 :::note
 To represent a space character in property values, you can use a `+` sign. For example: `plausible-event-author=John+Doe`. Spaces in custom property names (`author` in this example) are not allowed.
