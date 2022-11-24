@@ -50,8 +50,12 @@ This option allows you to specify the URL of the page you're on.
 To use it, you can update your `pageview` trigger code to add the `u` option as the second parameter, like so:
 
 ```js
-plausible('pageview', { u: "https://yourdomain.com/my-custom-location" });
+plausible('pageview', { u: "https://yourdomain.com/my-custom-location" + window.location.search });
 ```
+
+:::note
+The `+ window.location.search` is needed to persist query parameters from your actual URL. Plausible uses `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term` query parameters for source acquisition. [Learn more here](manual-link-tagging.md).
+:::
 
 At this point, your entire setup should look like this:
 
@@ -61,7 +65,7 @@ At this point, your entire setup should look like this:
 <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 <!-- trigger pageview -->
 <script>
-  plausible('pageview', { u: "https://yourdomain.com/my-custom-location" });
+  plausible('pageview', { u: "https://yourdomain.com/my-custom-location" + window.location.search});
 </script>
 ```
 
@@ -106,7 +110,7 @@ To do so, you could write a JavaScript function that gets the canonical URL and 
   // Use the canonical URL if it exists, falling back on the regular URL when it doesn't.
   var url = canonicalMeta ? canonicalMeta.href : window.location.href;
   // Send the pageview event to Plausible
-  plausible('pageview', { u: url });
+  plausible('pageview', { u: url + window.location.search});
 </script>
 ```
 
@@ -132,7 +136,7 @@ For example, you could write a JavaScript function that uses a regular expressio
   // Replace every all-numeric sequences located between two slashes by "_ID_"
   var redactedUrl = url.replace(/\/\d+\//g, "/_ID_/");
   // Send the pageview event to Plausible
-  plausible('pageview', { u: redactedUrl });
+  plausible('pageview', { u: redactedUrl + window.location.search});
 </script>
 ```
 
