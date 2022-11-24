@@ -32,9 +32,13 @@ If you're using outbound link clicks, file downloads or any of our other script 
 
 Tag the site element that you want to track with a CSS class name. How to do this varies depending on the site builder, CMS or framework you've used to build your site. 
 
-For instance, if you're using WordPress, you can click on any block element you want to track such as a button. This will open up the block menu on the right-hand side of your screen. You can click on "Advanced" and add a CSS class name in the "Additional CSS class(es)" field.
+For instance, if you're using WordPress, you can click on any block element you want to track such as a button. This will open up the block menu on the right-hand side of your screen. 
 
-Add the CSS class name in this format: `plausible-event-name=MyEventName`. For instance, if you want to track form submissions on your contact form, you could use: `plausible-event-name=Form+Submit`.
+<img alt="Click on any WordPress block element you want to track such as a button" src={useBaseUrl('img/wordpress-button-css-class-name.png')} />
+
+You can then click on "Advanced" and add a CSS class name in the "Additional CSS class(es)" field. Add the CSS class name in this format: `plausible-event-name=MyEventName`. For instance, if you want to track form submissions on your contact form, you could use: `plausible-event-name=Form+Submit`.
+
+<img alt="Add a CSS class name in the "Additional CSS class(es)" field" src={useBaseUrl('img/wordpress-css-class-name.png')} />
 
 :::note
 To represent a space character in the event names, you can use a `+` sign. For example: `plausible-event-name=Subscribe+Newsletter`
