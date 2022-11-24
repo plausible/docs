@@ -8,57 +8,55 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 If you use the Custom Events feature, then these count towards your billable monthly pageviews.
 :::
 
-# Out-of-the-box custom event tracking
+Here are the steps you need to take to track custom events such as purchases, signups, button clicks or form submissions.
 
-Plausible provides an easy way to track custom events such as:
+## 1. Change the Plausible snippet on your site
 
-- Link clicks
-- Form submits
-- Any other HTML element (`<button>`, `<div>`, etc...) clicks
+Please change the file name in the `src` attribute of your Plausible snippet from `script.js` to `script.tagged-events.js`. It should look like this:
 
-through CSS classes. For a quick overview of how these elements are tracked, see the [Tracking behavior depends on the element type](#tracking-behavior-depends-on-the-element-type) section. To start tracking any of the above custom events on your site, please go through the steps below.
+```html
+<script defer data-domain="<yourdomain.com>" src="https://plausible.io/js/script.tagged-events.js"></script>
+```
 
-## 1. Change your Plausible snippet
+Or if you're using [a proxy](/proxy/introduction.md):
 
-You will need to use the `tagged-events` script extension. All you have to do is change the JavaScript filename in the `src` attribute of your Plausible snippet. For example:
-
-- `https://plausible.io/js/script.js` &rarr; `https://plausible.io/js/script.tagged-events.js`, or
-- `https://yourproxy.com/script.manual.js` &rarr; `https://yourproxy.com/script.manual.tagged-events.js` (if you're using a proxy)
-
-## 2. Add special classes to the elements you want to track
-
-In order to hook up a custom event to your chosen element, you will need to tag it with special class names. In addition to telling Plausible that the element should be tracked, these class names also determine the name and properties of your custom event.
-
-### Options for class names
-
-| Class name                           | Description                                                                                                                                            |
-|:-------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `plausible-event-name=<event_name>`  | **Required** for Plausible to track the element, as you cannot have a custom event without a name. Example: `plausible-event-name=Signup`                               |
-| `plausible-event-<property>=<value>` | **Optional**. It allows you to define custom properties that are sent with your custom event. For example `plausible-event-position=footer`. <br /><br />You can add as many of these classes as you want. All the properties will then be added to your custom event. |
+```html
+<script defer data-domain="<yourdomain.com>" src="https://yourproxy.com/script.tagged-events.js"></script>
+```
 
 :::note
-To represent a space character in event names or property values, you can use a `+` sign. For example:
-
-- `plausible-event-name=Subscribe+Newsletter`
-- `plausible-event-author=John+Doe`
-
-Spaces in custom property names (`author` in the above example) are not allowed.
+If you're using outbound link clicks, file downloads or any of our other script extensions, you can [combine them](script-extensions.md#you-can-combine-extensions-according-to-your-needs) according to your needs by changing the `src` attribute in the snippet. If you want to track custom events and outbound link clicks simultaneously, change the script name to `script.tagged-events.outbound-links.js`.
 :::
 
-### Adding classes to HTML elements
+## 2. Add a CSS class name to the element you want to track on your site
 
-Depending on the technologies your site is built with, the process of adding classes to elements is different. 
+Tag the site element that you want to track with a CSS class name. How to do this varies depending on the site builder, CMS or framework you've used to build your site. 
 
-#### Can you change the HTML code?
+For instance, if you're using WordPress, you can click on any block element you want to track such as a button. This will open up the block menu on the right-hand side of your screen. You can click on "Advanced" and add a CSS class name in the "Additional CSS class(es)" field.
 
-If you can, just add the classes to the elements you want to track. For example:
+Add the CSS class name in this format: `plausible-event-name=custom-event`. For instance, if you want to track form submissions on your contact form, you could use: `plausible-event-name=form-submit`.
+
+:::note
+To represent a space character in the event names, you can use a `+` sign. For example: `plausible-event-name=Subscribe+Newsletter`
+:::
+
+<br />
+
+<details>
+<summary>
+
+### You can also add class names using HTLM
+
+</summary>
+
+You can also add the classes to the elements you want to track using HTLM. For example:
 
 ```html
 <!-- before -->
 <button>Click Me</button>
 
 <!-- after -->
-<button class="plausible-event-name=Button+Click plausible-event-position=Footer">Click Me</button>
+<button class="plausible-event-name=Button+Click">Click Me</button>
 ```
 
 Or if your element already has a class attribute, just separate the new ones with a space:
@@ -68,97 +66,77 @@ Or if your element already has a class attribute, just separate the new ones wit
 <button class="some-existing-class">Click Me</button>
 
 <!-- after -->
-<button class="some-existing-class plausible-event-name=Button+Click plausible-event-position=Footer">Click Me</button>
+<button class="some-existing-class plausible-event-name=Button+Click">Click Me</button>
 ```
 
-#### Can you add custom (CSS) classes from your CMS page editor?
+</details>
 
-In this case, you can just add the necessary classes to the element you want to track. After adding the class, please go back to your site, and verify that the class attribute got added with the exact required format. You can check it by right-clicking the element and inspecting it. This will show you the HTML code of the element.
+## 3. Create a custom event goal in your Plausible account
 
-In some cases, the tracking classes might be added to a wrapper `<div>` element (parent to the element you want to track), but don't worry, Plausible will still be able to track clicks on the child element if its parent has the necessary classes. 
+When you send custom events to Plausible, they won't show up in your dashboard automatically. You’ll have to configure the goal for the conversion numbers to show up.
 
-If your CMS overrides the format of your class names, Plausible will most likely not be able to track it. If that's the case, please keep reading the below instructions.
-
-#### Does the element you want to track have an `id` attribute, or can you add one?
-
-If the element already has an `id` you can use that. If it doesn't, go ahead and add a unique `id` attribute.
-
-You can use this `id` to add the class names to your element dynamically with JavaScript. Here's the code you will have to insert in the `<head>` section of the page with the element you want to track:
-
-```html
-<script>
-    var toTag = [
-        {
-            elementId: 'my-custom-event-element',
-            classes: 'plausible-event-name=<event_name> plausible-event-<property>=<value>'
-        }
-    ]
-
-    document.addEventListener('DOMContentLoaded', function (_e) {
-        toTag.forEach(function (tagObject) {
-            var element = document.getElementById(tagObject.elementId)
-            tagObject.classes.split(' ').forEach(function (className) {
-                element.classList.add(className)
-            })
-        })
-    })
-</script>
-```
-
-In this code, you will have to change the `elementId` and `classes` keys in the `toTag` variable. If you want to track multiple elements on one page, you can do it like this:
-
-```javascript
-var toTag = [
-    {
-        elementId: 'my-custom-event-element',
-        classes: 'plausible-event-name=<event_name> plausible-event-<property>=<value>'
-    },
-    {
-        elementId: 'another-custom-event-element',
-        classes: 'plausible-event-name=<event_name> plausible-event-<property>=<value>'
-    },
-    // ...
-]
-```
-
-Once you have this script running on your site, it will add your class names as soon as the HTML content is loaded on the page, and Plausible will be able to track your element.
-
-## 3. Create a custom event goal in your Plausible Analytics account
-
-When you start sending custom events to Plausible Analytics, they won’t show up automatically. You’ll have to configure the goal for the conversion numbers to show up.
-
-To configure a goal, go to [your website’s settings](website-settings.md) in your Plausible Analytics account and visit the "**Goals**" section. You should see an empty list with a prompt to add a goal.
+To configure a goal, go to [your website’s settings](website-settings.md) in your Plausible account and visit the "**Goals**" section. You should see an empty list with a prompt to add a goal.
 
 <img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
 
 Click on the "**+ Add goal**" button to go to the goal creation form.
 
-Select `Custom event` as the goal trigger and enter the name of the custom event you are triggering. The names must be an exact match to the one on your site for the conversions to show up in your analytics dashboard.
+Select `Custom event` as the goal trigger and enter the name of the custom event you are triggering. The name must match the one you added as a CSS class name on your site for conversions to show up in your analytics dashboard. So in our example where you added a CSS class name `plausible-event-name=form-submit`, the goal to add to your Plausible account is `form-submit`.
 
 <img alt="Add your custom event goal" src={useBaseUrl('img/add-custom-event-goal.png')} />
 
-Next, click on the "**Add goal**" button and you’ll be taken back to the Goals page. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who triggered the custom event. Goal conversions are listed at the very bottom of the dashboard and they will show up automatically as soon as there has been at least one goal completion.
+Next, click on the "**Add goal**" button and you’ll be taken back to the Goals page. When you navigate back to your Plausible dashboard, you should see the number of visitors who triggered the custom event. Goal conversions are listed at the very bottom of the dashboard and they will show up automatically as soon as there has been at least one goal completion.
 
-## Tracking behavior depends on the element type
+## Using custom props
 
-#### Link - `<a>`
+Custom properties can be attached to events to capture dynamic elements and to further break down goal conversions. You can use custom properties to create your custom metrics to collect and analyze data that Plausible doesn't automatically track.
 
-- Triggers events when the link is clicked/middle-clicked with a mouse, or touched on mobile.
-- A property called `url` is automatically added as a custom event property with the `href` value of the link (that is the URL where the link points to.
+You can then filter and sort your goals by custom event properties in your Plausible dashboard. For those coming from Google Analytics, custom properties are roughly the same concept as _custom dimensions_ in GA.
 
-#### Form - `<form>`
+Let's say you the contact form both in the header and footer of your site. In addition to tracking submissions, you might want to know which section of your site the form was submitted on. Instead of creating separate goals for each form, you can send a custom property instead:
 
-- Triggers events when a `submit` event happens on the `<form>` element. This means that Plausible captures not only clicking a submit button, but also pressing the `enter` key to submit the form.
+`plausible-event-<property>=<value>` allows you to define custom properties that are sent with your custom event. For example `plausible-event-position=footer`. The full CSS class name would look like this:
 
-#### All other elements - `<div>`, `<button>`, `<h1>`, `<span>`, ...
+`plausible-event-name=form-submit plausible-event-position=footer` 
 
-- Triggers events when the element is clicked/middle-clicked with a mouse, or touched on mobile.
+:::note
+To represent a space character in property values, you can use a `+` sign. For example: `plausible-event-author=John+Doe`. Spaces in custom property names (`author` in this example) are not allowed.
+:::
+
+You can add as many of these classes as you want. All the properties will then be added to your custom event. The number of custom properties you can add per event is unlimited. And the names can be anything that you want.
+
+Custom properties only accept scalar values such as strings, numbers and booleans. Data structures such as objects, arrays etc. aren't accepted.
+
+Custom properties will show up automatically on your dashboard as long as you've added the goal itself. You don't need to manually add them in your settings.
+
+Plausible will display `(none)` in your dashboard when you send a custom property key with no value, or `null`/`undefined` as a value.
+
+Note that you must ensure that no personally identifiable information (PII) is sent to Plausible with custom properties. PII is information that could be used on its own to identify, contact, or precisely locate an individual. This includes:
+
+* full names or usernames
+* email addresses
+* mailing addresses
+* phone numbers
+* credit card information
+* passport numbers
+* precise locations
+* IP addresses
+* pseudonymous cookie IDs, advertising IDs or other pseudonymous end user identifiers
+
+## Verify that the CSS class has been added correctly
+
+After adding the class, please go back to your site, and verify that the class attribute got added with the exact required format. You can check it by right-clicking the element and inspecting it. This will show you the HTML code of the element.
+
+In some cases, the tracking classes might be added to a wrapper `<div>` element (parent to the element you want to track), but don't worry, Plausible will still be able to track clicks on the child element if its parent has the necessary classes. 
+
+If your CMS doesn't cuspport CSS class names or if it overrides the format of your class names, Plausible will most likely not be able to track it. If that's the case, you would need to either trigger custom events manually with custom JavaScript or see our instructions for setting up custom events on Squarespace and Webflow.
 
 <br />
+
 <details>
 <summary>
 
-## Want to trigger events manually with custom JavaScript?
+## Want to trigger custom events manually with custom JavaScript?
 
 </summary>
 
@@ -184,53 +162,15 @@ The event name can be anything. As a second parameter, you can also send an obje
 * `callback` – a function that is called once the event is logged successfully.
 * `props` – an object with custom properties for the event
 
-This is the whole extent of the API. It's intentionally very slim so as to keep the SDK small and quick to load.
-
-## Using custom props
-
-Custom properties can be attached to events to capture dynamic elements and to further break down goal conversions. You can use custom properties to create your custom metrics to collect and analyze data that Plausible doesn’t automatically track.
-
-You can then filter and sort your goals by custom event properties in your Plausible dashboard. For those coming from Google Analytics, custom properties are roughly the same concept as _custom dimensions_ in GA.
-
-For example, in addition to tracking file downloads you might want to know which supported download method your visitors are using. Instead of creating separate goals for each download method, you can send a custom property instead:
-
-```javascript
-plausible('Download', {props: {method: 'HTTP'}})
-```
-
-This way you can neatly track total downloads and also break them down by the method without cluttering your dashboard. Here's how it will look like:
-
-<img alt="Custom property breakdown" src={useBaseUrl('img/custom-property-breakdown.png')} />
-
-Want to have multiple custom properties for the same event? You can do it like this:
+Here's what trigger a custom event with custom properties looks like:
 
 ```javascript
 plausible('Download', {props: {method: 'HTTP', Region: 'Europe'}})
 ```
 
-The number of custom properties you can add per event is unlimited. And the names can be anything that you want. In our example, there are 4 properties that have been set up for segmenting: `Version, Region, OS, Method`.
+This is the whole extent of the API. It's intentionally very slim so as to keep the SDK small and quick to load.
 
-Custom properties only accepts scalar values such as strings, numbers and booleans. Data structures such as objects, arrays etc. aren't accepted.
-
-Custom properties will show up automatically on your dashboard as long as you've added the goal itself. You don't need to manually add them in your settings.
-
-Plausible will display `(none)` in your dashboard when you send a custom property key with no value, or `null`/`undefined` as a value.
-
-Note that you must ensure that no personally identifiable information (PII) is sent to Plausible Analytics with custom properties. PII is information that could be used on its own to identify, contact, or precisely locate an individual. This includes:
-
-* full names or usernames
-* email addresses
-* mailing addresses
-* phone numbers
-* credit card information
-* passport numbers
-* precise locations
-* IP addresses
-* pseudonymous cookie IDs, advertising IDs or other pseudonymous end user identifiers
-
-## Code examples
-
-### Tracking audio and video elements
+## Tracking audio and video elements
 
 1. Give your audio or video element an `id` attribute to use it with JavaScript. If it already has an `id`, feel free to use that instead of `trackedMedia` in this example.
 
