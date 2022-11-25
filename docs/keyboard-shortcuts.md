@@ -21,6 +21,7 @@ We've tried to make Plausible as usable and accessible as possible with just a k
 | L           | Last 12 months    |
 | A           | All time          |
 | C           | Custom range      |
+| I           | Set interval      |
 | 1-9         | Swap to site #1-9 |
 | Left Arrow  | Previous period   |
 | Right Arrow | Following period  |
