@@ -245,6 +245,31 @@ We offer a manual mode in case you want full control over when pageviews are tri
 
 ## Vue.js & Nuxt.js
 
+No plugin is needed for full plausible features with Nuxt. Simply edit the head property in your [nuxt.config.js](https://nuxtjs.org/docs/configuration-glossary/configuration-head/) file to include the script from [your dashboard](https://plausible.io/docs/plausible-script). Example:
+
+```
+export default {
+    head: {
+        titleTemplate: '%s - Nuxt',
+        meta: [
+            { charset: 'utf-8' },
+            { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+
+            // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+            { hid: 'description', name: 'description', content: 'Meta description' }
+        ],
+        script: [
+            // plausible script tag
+            {
+                'data-domain': 'example.com',
+                src: 'https://plausible.io/js/plausible.js',
+                defer: true
+            }
+        ]
+    }
+}
+```
+
 [Vue.js & Nuxt.js](https://github.com/moritzsternemann/vue-plausible): A Vue.js plugin and NuxtJS module for Plausible. Exposes the functionality of [plausible-tracker](https://github.com/plausible/plausible-tracker) to Vue and Nuxt instances, Vue components, and Vuex stores. Built and maintained by [Moritz Sternemann](https://github.com/moritzsternemann).
 
 Support for Vue 3 ([plausible-vue](https://github.com/huntersofbook/huntersofbook/tree/main/packages/plausible-vue)) and for Nuxt 3 ([plausible-nuxt](https://github.com/huntersofbook/huntersofbook/tree/main/packages/plausible-nuxt)).
