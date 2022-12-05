@@ -20,16 +20,13 @@ Select `Pageview` as the goal trigger and enter the pathname of the page you wou
 
 Next, click on the "**Add goal**" button and you’ll be taken back to the goals page. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who reached the specified page or group of pages. Goal conversions are listed at the very bottom of the dashboard.
 
-## Pageview goals support wildcards
+## Group your pages using wildcards
 
-Pageview goals support wildcards in the following format:
+Do you want to analyze the total traffic to specific sections of your site or to group your dynamically created pages? You can use wildcards to match patterns in your page path URLs.
 
-- Asterisks (`*`) expand to any stretch (of length >=0) of the page path and can be on either end or in the middle of any entry, but **cannot** be in the place of slashes.
-- Double asterisks (`**`) expand to any stretch (of length >=0) of the page path, can be on either end or in the middle of any entry, and can represent **any** characters, even slashes.
+You can use one asterisk (`*`) to represent any number of characters within the same directory or you can use double asterisks (`**`) to represent any number of characters even forward slashes. Asterisks can be placed on either end or in the middle of any page path URL.
 
-You can use pageview rules in this format to group different pages or to create goals for dynamic URLs. 
-
-You can for instance track all the blog posts by using `/blog**` (if your blog subdirectory is named `blog`) or track Woocommerce checkout pages for your ecommerce (`/checkout/order-received/*`). 
+You can for instance group all of your blog posts by creating a pageview goal `/blog**` (if your blog subdirectory is named `blog`) or track Woocommerce checkout pages for your ecommerce by creating a pageview goal `/checkout/order-received/**`. Or you could use double asterisks in front and back (`**keyword**`) to group any URLs containing a specific keyword.
 
 See below for more examples of common use cases and how they would function.
 
