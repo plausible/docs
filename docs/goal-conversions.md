@@ -4,7 +4,7 @@ title: Introduction to goals and custom events
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Plausible Analytics has very flexible support for tracking goal conversions and custom events. These are the actions that you want your visitors to take on your site. Actions such as signing up to a newsletter, clicking on a "**Download**" button, signing up for a trial account, purchasing a product, clicking on an external link, downloading a file or completing a checkout form of an ecommerce store.
+Goals and custom events are the actions that you want your visitors to take on your site. Actions such as signing up to a newsletter, clicking on a "**Download**" button, registering for a trial account, purchasing a product, clicking on an external link, downloading a file or completing a checkout form of an ecommerce store.
 
 By setting up goals and custom events, you can track the number of conversions, conversion rate, referrer sources and entry pages that are driving conversions and the top pages that people convert on.
 
