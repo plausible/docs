@@ -33,6 +33,7 @@ Here's the list of all the available extensions at this time:
 | script.hash.js           | Automatically follow frontend navigation when using [hash-based routing](hash-based-routing.md)    |
 | script.outbound-links.js | Automatically [track clicks on outbound links](outbound-link-click-tracking.md) from your website  |
 | script.file-downloads.js | Automatically [track file downloads](file-downloads-tracking.md)                                   |
+| script.tagged-events.js  | Allows you to [track standard custom events](custom-event-goals.md) such as link clicks, form submits, and any other HTML element clicks            |
 | script.exclusions.js     | [Exclude certain pages from being tracked](excluding-pages.md)                                     |
 | script.compat.js         | Compatibility mode for [tracking users on Internet Explorer](#scriptcompatjs)                      |
 | script.local.js          | Allow analytics to track on localhost too which is useful in hybrid apps                           |
