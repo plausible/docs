@@ -38,7 +38,7 @@ For instance, if you're using WordPress, you can click on any block element you 
 
 You can then click on "Advanced" and add a CSS class name in the "Additional CSS class(es)" field. Add the CSS class name in this format: `plausible-event-name=MyEventName`. For instance, if you want to track form submissions on your contact form, you could use: `plausible-event-name=Form+Submit`.
 
-<img alt="Add a CSS class name in the "Additional CSS class(es)" field" src={useBaseUrl('img/wordpress-css-class-name.png')} />
+<img alt="Add a CSS class name in the 'Additional CSS class(es)' field" src={useBaseUrl('img/wordpress-css-class-name.png')} />
 
 :::note
 To represent a space character in the event names, you can use a `+` sign. For example: `plausible-event-name=Subscribe+Newsletter`
@@ -133,7 +133,10 @@ After adding the class, please go back to your site, and verify that the class a
 
 In some cases, the tracking classes might be added to a wrapper `<div>` element (parent to the element you want to track), but don't worry, Plausible will still be able to track clicks on the child element if its parent has the necessary classes. 
 
-If your CMS doesn't cuspport CSS class names or if it overrides the format of your class names, Plausible will most likely not be able to track it. If that's the case, you would need to either trigger custom events manually with custom JavaScript or see our instructions for setting up custom events on Squarespace and Webflow.
+If your CMS doesn't cuspport CSS class names or if it overrides the format of your class names, Plausible will most likely not be able to track it. If that's the case, you would need to use custom JavaScript code to either:
+
+- trigger custom events manually, or
+- attach the class names to your element dynamically
 
 <br />
 
