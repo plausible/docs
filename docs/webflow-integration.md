@@ -14,7 +14,7 @@ Here's how to add Plausible to your Webflow website:
 
 <img alt="Add custom code to Webflow" src={useBaseUrl('img/add-custom-code-to-webflow.png')} />
 
-* You can use the "**[Custom Code](https://university.webflow.com/lesson/custom-code-in-the-head-and-body-tags)**" feature in Webflow to add Plausible tracking code to your Webflow website. Site-wide JavaScript code injection is a premium Webflow feature so you need to upgrade your Webflow account to a paid subscription plan.
+* You can use the "**[Custom Code](https://university.webflow.com/lesson/custom-code-in-the-head-and-body-tags)**" feature in Webflow to add Plausible tracking code to your website. Site-wide JavaScript code injection is a premium Webflow feature so you need to upgrade your Webflow account to a paid subscription plan.
 
 * Choose "**Custom Code**" from the menu and [paste your Plausible snippet](https://plausible.io/docs/plausible-script) in the "**Head Code**" section. Your Plausible tracking script code will look something like this (your exact code will be shown on the JavaScript snippet page in your Plausible account):
 
@@ -24,7 +24,7 @@ Here's how to add Plausible to your Webflow website:
 
 <img alt="Add Plausible Analytics script to Webflow" src={useBaseUrl('img/add-plausible-script-to-webflow.png')} />
 
-* Then publish your changes.
+* Do click on the "**Save Changes**" button and then "**Publish**" your changes.
 
 Now you can go to your Webflow website and verify that Plausible script has been added and to your Plausible account to see whether the stats are being tracked. See here [how to verify the integration](troubleshoot-integration.md).
 
@@ -54,11 +54,11 @@ In the "**Designer View**" you'll be able to see the assigned ID. You can also c
 
 ### 3. Trigger custom events with JavaScript on your site
 
-Here's the code you will need to insert in the `<head>` section of the page where the element ID that you want to track is placed. You can use the "**Custom Code**" feature to do this similarly to how you've inserted the Plausible snippet into your site.
+Here's the code you will need to insert in the `<head>` section of the page where the element ID that you want to track is located. You can use the "**Custom Code**" feature to do this similarly to how you've inserted the Plausible snippet into your site.
 
 Make sure to change the `elementId` line in the code below to include the ID attribute of the element you want to track (we've used `email-form` in our example). 
 
-Also make sure to change the `classes` line to include your goal name in this format: `plausible-event-name=Goal+Name`. The goal name is completely up to you and it's how the goal conversions will be diplayed in your Plausible dashboard. We've used `Form+Submit` goal name in our example.
+Also make sure to change the `classes` line to include the goal name in this format: `plausible-event-name=Goal+Name`. The goal name is completely up to you and it's the name under which goal conversions will appear in your Plausible dashboard. We've used `Form+Submit` goal name in our example.
 
 :::note
 To represent a space character in the goal names, you can use a `+` sign. For example: `plausible-event-name=Form+Submit` will display as `Form Submit` in your dashboard
@@ -94,7 +94,7 @@ When you send custom events to Plausible, they won't show up in your dashboard a
 
 To configure a goal, go to [your website's settings](website-settings.md) in your Plausible account and visit the "**Goals**" section. You should see an empty list with a prompt to add a goal.
 
-<img alt="add goal webflow" src={useBaseUrl('img/add-goal-webflow.png')} />
+<img alt="Add your first Webflow goal" src={useBaseUrl('img/add-goal-webflow')} />
 
 Click on the "**+ Add goal**" button to go to the goal creation form. Select `Custom event` as the goal trigger and enter the name of the custom event you are triggering. The names must be an exact match to the one on your site for the conversions to show up in your analytics dashboard.
 
