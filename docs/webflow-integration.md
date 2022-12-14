@@ -4,7 +4,7 @@ title: How to add Plausible Analytics to your Webflow site
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Here's how to add Plausible Analytics to your Webflow site and set up tracking of custom events such as button clicks and form submissions.
+Here's how to add Plausible Analytics to your Webflow site and set up the tracking of custom events such as button clicks and form submissions.
 
 ## How to add Plausible to your Webflow website 
 
@@ -16,7 +16,7 @@ Here's how to add Plausible to your Webflow website:
 
 * You can use the "**[Custom Code](https://university.webflow.com/lesson/custom-code-in-the-head-and-body-tags)**" feature in Webflow to add Plausible tracking code to your Webflow website. Site-wide JavaScript code injection is a premium Webflow feature so you need to upgrade your Webflow account to a paid subscription plan.
 
-* Choose "**Custom Code**" from the menu and [paste your Plausible snippet](https://plausible.io/docs/plausible-script) in the "**Head code**" section. Your Plausible tracking script code will look something like this (your exact code will be shown on the JavaScript snippet page in your Plausible account):
+* Choose "**Custom Code**" from the menu and [paste your Plausible snippet](https://plausible.io/docs/plausible-script) in the "**Head Code**" section. Your Plausible tracking script code will look something like this (your exact code will be shown on the JavaScript snippet page in your Plausible account):
 
 ```html
 <script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.js"></script>
