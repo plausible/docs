@@ -29,7 +29,7 @@ Your form element should already have an ID attribute by default. You can see th
 <img alt="Webflow form ID" src={useBaseUrl('img/webflow-form-id.png')} />
 
 :::note
-The default assigned ID can be changed. If you change it make sure you include the correct ID in step 2 
+Please make sure you select your form element, and not just the "submit" button. Also, the default assigned ID can be changed. If you change it, make sure you include the correct ID in step 2 
 :::
 
 ### 2. Change the Plausible snippet on your site
@@ -58,7 +58,7 @@ You can use the `id` attribute to add the class names to your element dynamicall
 <script>
     var toTag = [
         {
-            elementId: 'form-submission',
+            elementId: 'email-form',
             classes: 'plausible-event-name=Form+Submission>'
         }
     ]
