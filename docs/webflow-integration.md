@@ -47,7 +47,7 @@ You can use this `id` to add the class names to your element dynamically with Ja
 <script>
     var toTag = [
         {
-            elementId: 'form-submission',
+            elementId: 'email-form',
             classes: 'plausible-event-name=Form+Submission>'
         }
     ]
