@@ -10,11 +10,13 @@ Site-wide JavaScript code injection is a premium Webflow feature so you need to 
 
 ## How to add Plausible to your Webflow website
 
-* In your "**Project settings**" click on "**Custom code**".
+* On your project's page, click on the webflow logo ( "**W**") in the left hand side menu and then choose "**Project Settings**"
 
-* Find the "**Head code**" section.
+<img alt="add custom code to webflow" src={useBaseUrl('img/add-custom-code-to-webflow.png')} />
 
-* Paste your Plausible tracking code in the "**Head code**" section and save changes.
+* Choose "**Custom Code**" from the menu and then [copy-paste your Plausible script](https://plausible.io/docs/plausible-script) in the "**Head code**" section. Make sure you publish your changes. 
+
+<img alt="add Plausible script to webflow" src={useBaseUrl('img/add-plausible-script-to-webflow.png')} />
 
 Now you can go to your website and verify whether Plausible Analytics script has been added and to your Plausible Analytics account to see whether the stats are being tracked. See here [how to verify the integration](troubleshoot-integration.md).
 
@@ -22,53 +24,50 @@ Now you can go to your website and verify whether Plausible Analytics script has
 
 Here's an example of how you can track form submissions on your Webflow site using our [custom events](https://plausible.io/docs/custom-event-goals).
 
-### 1. Trigger custom events with JavaScript on your site
+### 1. Find the ID attribute of your form element 
+
+Your form element should already have an ID attribute by default. You can see the ID value by selecting the form element on your page and clicking on the settings gear. In the Designer View you'll be able to see the default assigned ID. 
+
+<img alt="webflow form ID" src={useBaseUrl('img/webflow-form-id.png')} />
+
+:::note The default assigned ID can be changed. If you change it make sure you include the correct ID in step 2 :::
  
-First, make sure your tracking setup includes the second line as shown below. For this, follow the same steps you took when inserting the default Plausible snippet.
 
-```html
-<script defer data-domain="<yourdomain.com>" src="https://plausible.io/js/script.js"></script>
-<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-```
+### 2. Change your Plausible snippet and trigger custom events with JavaScript on your site
 
-### 2. Find the ID attribute of your form element
 
-Your form element should already have an ID attribute by default. Look up the value of this from the Designer view, by selecting the form element:
+You will need to use the `tagged-events` script extension. All you have to do is change the JavaScript filename in the `src` attribute of your Plausible snippet. For example:
 
-<img alt="Form element settings" src={useBaseUrl('img/webflow-form-elem-settings.png')} />
+- `https://plausible.io/js/script.js` &rarr; `https://plausible.io/js/script.tagged-events.js`, or
+- `https://yourproxy.com/script.manual.js` &rarr; `https://yourproxy.com/script.manual.tagged-events.js` (if you're using a proxy)
 
-### 3. Implement the code
- 
-If you want to trigger form submissions, button clicks etc. you need to implement the code for that yourself. This is how the code should look like to track form submissions on Webflow. In the below code, you need to replace the following:
-
-- `<my-form-id>` with the id value from the previous step
-- `<my-event-name>` with the custom event name you want to be shown on your Plausible dashboard (use this same name in step 5)
-
+You can use this `id` to add the class names to your element dynamically with JavaScript. Here's the code you will have to insert in the `<head>` section of the page with the element you want to track:
 
 ```html
 <script>
-const plausibleGoalForm = document.getElementById('<my-form-id>');
+    var toTag = [
+        {
+            elementId: 'form-submission',
+            classes: 'plausible-event-name=Form+Submission>'
+        }
+    ]
 
-plausibleGoalForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    setTimeout(submitForm, 1000);
-    var formSubmitted = false;
-  
-    function submitForm() {
-      if (!formSubmitted) {
-        formSubmitted = true;
-        plausibleGoalForm.submit();
-      }
-    }
-  
-    plausible('<my-event-name>', {callback: submitForm});
-  })
+    document.addEventListener('DOMContentLoaded', function (_e) {
+        toTag.forEach(function (tagObject) {
+            var element = document.getElementById(tagObject.elementId)
+            tagObject.classes.split(' ').forEach(function (className) {
+                element.classList.add(className)
+            })
+        })
+    })
 </script>
 ```
 
-### 4. Insert the modified JavaScript code in the footer section of your page
- 
-Using the [custom code](https://university.webflow.com/lesson/custom-code-in-the-head-and-body-tags) feature once again, insert the modified JavaScript code, this time in the footer section of the page where the form is located.
+<img alt="modify Plausible script webflow" src={useBaseUrl('img/modify-plausible-script-webflow.png')} />
+
+Once you have this script running on your site, it will add your class names as soon as the HTML content is loaded on the page, and Plausible will be able to track your element.
+
+:::note Make sure to publish your changes! :::
 
 ### 5. Create a custom event goal with the same name in your Plausible Analytics account
 
@@ -82,7 +81,7 @@ Click on the "**+ Add goal**" button to go to the goal creation form.
 
 Select `Custom event` as the goal trigger and enter the name of the custom event you are triggering. The names must be an exact match to the one on your site for the conversions to show up in your analytics dashboard.
 
-<img alt="Add your custom event goal" src={useBaseUrl('img/add-custom-event-goal.png')} />
+<img alt="Add your custom event goal" src={useBaseUrl('img/form-submission-custom-event-goal-webflow.png')} />
 
 Next, click on the "**Add goal**" button and you’ll be taken back to the Goals page. 
 
