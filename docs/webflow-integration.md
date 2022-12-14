@@ -30,7 +30,7 @@ Your form element should already have an ID attribute by default. You can see th
 
 <img alt="webflow form ID" src={useBaseUrl('img/webflow-form-id.png')} />
 
-:::note The default assigned ID can be changed. If you change it make sure you include the correct ID in step 2 :::
+:::note Make sure to select the form element and not just the "submit" button. Also, the default assigned ID can be changed. If you change it make sure you include the correct ID in step 2:::
  
 
 ### 2. Change your Plausible snippet and trigger custom events with JavaScript on your site
@@ -67,9 +67,9 @@ You can use this `id` to add the class names to your element dynamically with Ja
 
 Once you have this script running on your site, it will add your class names as soon as the HTML content is loaded on the page, and Plausible will be able to track your element.
 
-:::note Make sure to publish your changes! :::
+:::note Make sure to publish your changes!:::
 
-### 5. Create a custom event goal with the same name in your Plausible Analytics account
+### 3. Create a custom event goal with the same name in your Plausible Analytics account
 
 When you start sending custom events to Plausible Analytics, they won’t show up automatically. You’ll have to configure the goal for the conversion numbers to show up.
 
@@ -85,6 +85,6 @@ Select `Custom event` as the goal trigger and enter the name of the custom event
 
 Next, click on the "**Add goal**" button and you’ll be taken back to the Goals page. 
 
-## 6. Your goal should now be ready and tracking
+## 4. Your goal should now be ready and tracking
 
 Your goal should now be set up. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who triggered the custom event. Goal conversions are listed at the very bottom of the dashboard. The goal will show up in your dashboard once it has been completed at least once.
