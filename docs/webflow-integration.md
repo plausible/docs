@@ -94,7 +94,7 @@ When you send custom events to Plausible, they won't show up in your dashboard a
 
 To configure a goal, go to [your website's settings](website-settings.md) in your Plausible account and visit the "**Goals**" section. You should see an empty list with a prompt to add a goal.
 
-<img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
+<img alt="add goal webflow" src={useBaseUrl('img/add-goal-webflow.png')} />
 
 Click on the "**+ Add goal**" button to go to the goal creation form. Select `Custom event` as the goal trigger and enter the name of the custom event you are triggering. The names must be an exact match to the one on your site for the conversions to show up in your analytics dashboard.
 
