@@ -171,7 +171,7 @@ Although you can now grant your Plausible installation access to your Google acc
 
 To be able to [import data from Google Analytics,](google-analytics-import.md) you need to enable [Analytics Reporting API](https://console.developers.google.com/apis/api/analyticsreporting.googleapis.com) and [Google Analytics API.](https://console.developers.google.com/apis/api/analytics.googleapis.com)
 
-Once those services are enabled, follow the instructions outpined in [Import stats from Google Analytics.](google-analytics-import.md) Note that when going through Google Auth, you need to make sure the "See and download your Google Analytics data." checkbox is selected.
+Once those services are enabled, follow the instructions outlined in [Import stats from Google Analytics.](google-analytics-import.md) Note that when going through Google Auth, you need to make sure the "See and download your Google Analytics data." checkbox is selected.
 
 :::note
 Our only source of funding is our premium, managed service for running Plausible in the cloud. If you're looking for an alternative way to support the project, we've put together some sponsorship packages. Maintaining open source software is a thankless, time-consuming job. We released our code on GitHub and made it easy to self-host on principle, not because it's good business. If you're self-hosting Plausible, [sponsoring us](https://github.com/sponsors/plausible) is a great way to give back to the community and to contribute to the long-term sustainability of the project. Thank you for supporting independent creators of Free Open Source Software!
