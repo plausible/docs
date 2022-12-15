@@ -6,7 +6,7 @@ module.exports = {
     "Goal Conversions": ['goal-conversions', 'pageview-goals', 'custom-event-goals', 'outbound-link-click-tracking', 'file-downloads-tracking', 'error-pages-tracking-404',
                          {
         type: 'category',
-        label: 'CMS guides',
+        label: 'Custom events CMS guides',
         items: ['webflow-integration'],
       }
     ],
