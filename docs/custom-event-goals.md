@@ -44,8 +44,6 @@ You can then click on "Advanced" and add a CSS class name in the "Additional CSS
 To represent a space character in the event names, you can use a `+` sign. For example: `plausible-event-name=Form+Submit` will display as `Form Submit` in your dashboard
 :::
 
-<br />
-
 <details>
 <summary>
 
@@ -138,8 +136,6 @@ Note that you must ensure that no personally identifiable information (PII) is s
 * precise locations
 * IP addresses
 * pseudonymous cookie IDs, advertising IDs or other pseudonymous end user identifiers
-
-<br />
 
 <details>
 <summary>
