@@ -14,13 +14,13 @@ The billing is based on the total number of pageviews between all the sites you 
 
 Our payment processor Paddle sends an invoice to you through email automatically upon each payment. You can click on a link within this email to download your invoice. You can also download invoices in your Plausible account settings. [See here](download-invoices.md).
 
+Would you like to change your Paddle email address to get your invoices sent to a different email? [Do contact us](https://plausible.io/contact) and tell us your current Paddle email and the new email address where you'd like to get invoices in the future.
+
 ## Do you support any alternative payment methods?
 
 Credit/debit card and PayPal are the only supported payment methods. We can't accept payments by wire transfer, invoicing or cryptocurrency unfortunately. All our payment processing is done by Paddle. We're a small team with limited resources so can't deal with billing ourselves.
 
-:::note
 Please make sure that there's a valid credit/debit card added to your PayPal account. It is not possible to pay for subscriptions via PayPal balance as all recurring payments must be associated with a card.
-::: 
 
 ## How do I change my billing address?
 
