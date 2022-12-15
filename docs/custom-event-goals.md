@@ -91,6 +91,18 @@ Select `Custom event` as the goal trigger and enter the name of the custom event
 
 Next, click on the "**Add goal**" button and you'll be taken back to the Goals page. When you navigate back to your Plausible dashboard, you should see the number of visitors who triggered the custom event. Custom events are listed at the bottom of your dashboard and will appear as soon as the first conversion has been tracked.
 
+## 4. Verify that the CSS class has been added correctly
+
+After adding the class, please go back to your site, and verify that the class attribute got added with the exact required format. You can check it by right-clicking the element and inspecting it. This will show you the HTML code of the element.
+
+In some cases, the tracking classes might be added to a wrapper `<div>` element (parent to the element you want to track), but don't worry, Plausible will still be able to track clicks on the child element if its parent has the necessary classes. 
+
+If your CMS doesn't support CSS class names or if it overrides the format of your class names, you would need to use custom JavaScript code to either trigger custom events manually or to attach the class names to your element dynamically.
+
+Are you using Webflow? Here's our guide for how to set up [custom events for form submissions and button clicks on Webflow](webflow-integration.md).
+
+And here's how to [trigger custom events manually using JavaScript](custom-event-goals.md#want-to-trigger-custom-events-manually-with-custom-javascript).
+
 ## Using custom props
 
 Custom properties can be attached to events to capture dynamic elements and to further break down goal conversions. You can use custom properties to create your custom metrics to collect and analyze data that Plausible doesn't automatically track.
@@ -126,14 +138,6 @@ Note that you must ensure that no personally identifiable information (PII) is s
 * precise locations
 * IP addresses
 * pseudonymous cookie IDs, advertising IDs or other pseudonymous end user identifiers
-
-## Verify that the CSS class has been added correctly
-
-After adding the class, please go back to your site, and verify that the class attribute got added with the exact required format. You can check it by right-clicking the element and inspecting it. This will show you the HTML code of the element.
-
-In some cases, the tracking classes might be added to a wrapper `<div>` element (parent to the element you want to track), but don't worry, Plausible will still be able to track clicks on the child element if its parent has the necessary classes. 
-
-If your CMS doesn't support CSS class names or if it overrides the format of your class names, you would need to use custom JavaScript code to either trigger custom events manually or to attach the class names to your element dynamically.
 
 <br />
 
