@@ -1,5 +1,5 @@
 ---
-title: How to add Plausible Analytics and track custom events on Webflow
+title: Adding Plausible to Webflow (and tracking custom events)
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
