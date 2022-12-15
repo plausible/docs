@@ -34,6 +34,10 @@ Choose your location and click on the "**Continue**" button.
 
 Next up you need to choose your payment method. You can pay by a credit card or with a PayPal account.
 
-Fill in your card details and click on the "**Subscribe Now**" button to subscribe to a paid subscription. Your subscription will start right away. Your subscription will be renewed automatically, and you can change or cancel your plan at any time.
+Fill in your card details and click on the "**Subscribe Now**" button to subscribe to a paid subscription. 
+
+During the upgrade process, you have the option to add your company address and VAT ID. Our payment processor Paddle handles all the VAT and other sales taxes, so if you're eligible no VAT will be charged on your subscription.
+
+Your subscription will start right away. Your subscription will be renewed automatically, and you can change or cancel your plan at any time.
 
 You will automatically get an email from our payment processor Paddle with your invoice. You will get an automatic invoice sent to you through email for each payment that you make.
