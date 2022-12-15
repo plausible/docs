@@ -105,3 +105,45 @@ Next, click on the "**Add goal**" button and you'll be taken back to the Goals p
 ### 5. Your goal should now be ready and tracking
 
 Your goal should now be set up. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who triggered the custom event. Goal conversions are listed at the very bottom of the dashboard. The goal will show up in your dashboard as soon as it has been completed at least once.
+
+## Tracking button clicks and other links on your Webflow site
+
+In Webflow, link and button elements don't have a default ID. You'll need to assign an ID by selecting the element and clicking on the settings gear. In the **"Designer View"**, you'll be able to set the ID. 
+
+<img alt="Add an ID to link and button elements in Webflow" src={useBaseUrl('img/add-id-to-link-and-button-webflow.png')} />
+
+When you've set the ID to the button or link element that you want to track, you can follow the instructions for how to track form submissions to set up the custom event. The process is the same.
+
+## Triggering multiple custom events on the same page
+
+If you want to trigger multiple custom events on the same site, you don't need to add the script for each element that you want to track. Simply add all the elements in the same code. Make sure to **only add** the elements that already exist on your site. For example, if you want to track a form, a link and a button, the code will look like this:
+
+```html
+<script>
+    var toTag = [
+        {
+            elementId: 'email-form',
+            classes: 'plausible-event-name=Form+Submit'
+        },
+		{
+      		elementId: 'link-click',
+            classes: 'plausible-event-name=Link+Click'   
+   		},
+		{
+      		elementId: 'button-click',
+            classes: 'plausible-event-name=Button+Click'   
+   		}
+    ]
+
+    document.addEventListener('DOMContentLoaded', function (_e) {
+        toTag.forEach(function (tagObject) {
+            var element = document.getElementById(tagObject.elementId)
+            tagObject.classes.split(' ').forEach(function (className) {
+                element.classList.add(className)
+            })
+        })
+    })
+</script>
+```
+
+<img alt="track multiple elements in Webflow" src={useBaseUrl('img/track-multiple-elements-webflow.png')} />
