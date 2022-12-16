@@ -28,6 +28,8 @@ You can search for pages, exclude pages and group pages by using the "**Filter**
 
 You can use rules in this format to group different pages or dynamic URLs. You can track all the blog posts by using `/blog**` (if your blog subdirectory is named `blog`) or track Woocommerce checkout pages for your ecommerce (`/checkout/order-received/*`). 
 
+<img alt="Group pages" src={useBaseUrl('img/group-pages-filter.png')} />
+
 See below for more examples of common use cases and how they would function.
 
 | Input | Includes pages with a URL path of: |
