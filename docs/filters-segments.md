@@ -14,6 +14,8 @@ Any metric you click on in your dashboard creates a new filter. Click on any ref
 
 You can mix and match filters too. So you can click on a referral source, then click on a country and then a goal to see all the traffic sent by the chosen referral source that is based in the selected country and that has converted on the selected goal.
 
+<img alt="Mix and match filters" src={useBaseUrl('img/filter-by-source-and-country.png')} />
+
 Your current filters will be displayed on the top of your dashboard. You can click on the name of the existing filter to edit it or on the `x` icon to remove it. 
 
 You can remove all your filters by hitting the `Esc` key on your keyboard or by selecting `Clear all filters` in the filters menu that shows up when you're using multiple filters.
@@ -28,11 +30,15 @@ We also allow you to add filters without clicking on any specific metric in the 
 
 You can search for any metric such as a particular country, referral source or page on your site. Start typing to discover the specific page (or another metric) you're looking for. No need to scroll through the long list of countries or pages.
 
+<img alt="Search for any metric" src={useBaseUrl('img/filter-typing.png')} />
+
 ### Exclude specific segments of traffic
 
 You can exclude specific segments of traffic and only display the traffic that isn't part of the excluded segment. You can, for instance, exclude traffic from the United States so your dashboard only shows the visitors that aren't based in the USA. 
 
 Click on the "Filter" button, then select "Country" as your metric, choose "Is Not" and then select (or type) the name of the country you want to exclude. You can do the same for referral sources or any of the other metrics.
+
+<img alt="Exclude traffic" src={useBaseUrl('img/exclude-traffic.png')} />
 
 ### Group your pages
 
@@ -43,6 +49,8 @@ When searching for pages, you can use double asterisks to match any character (e
 - Asterisks (`*`) expand to any stretch (of length >=0) of the page path and can be on either end or in the middle of any entry, but **cannot** be in the place of slashes.
 - Double asterisks (`**`) expand to any stretch (of length >=0) of the page path, can be on either end or in the middle of any entry, and can represent **any** characters, even slashes.
 - For page-based metrics, "contains" is also available as a filter type. This has the same effect of adding double asterisks (`**`) before and after your entry.
+
+<img alt="Group pages" src={useBaseUrl('img/group-pages-filter.png')} />
 
 You can use rules in this format to group different pages or dynamic URLs. You can track all the blog posts by using `/blog**` (if your blog subdirectory is named `blog`) or track Woocommerce checkout pages for your ecommerce (`/checkout/order-received/*`). 
 
