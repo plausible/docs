@@ -76,7 +76,7 @@ Next, enter the `BASE_URL` for your app. It should be the base url where this in
 
 ### 3. Start the server
 
-Once you've entered your secret key base, base URL and admin credentials, you're ready to start up the server:
+Once you've entered your secret key base and base URL, you're ready to start up the server:
 
 ```bash
 $ docker-compose up -d
@@ -88,12 +88,12 @@ When you run this command for the first time, it does the following:
 * Runs migrations on both databases to prepare the schema.
 * Starts the server on port 8000.
 
-You can now navigate to `http://{hostname}:8000` and see the registration screen.
+You can now navigate to `http://{hostname}:8000` and see the registration screen for the admin user.
 
-When you register and first log in, you will be prompted to
-enter a verification code which has been sent to your email. Please configure your
-server for SMTP to receive this email. [Here are Plausible's SMTP configuration
-options](https://plausible.io/docs/self-hosting-configuration#mailersmtp-setup).
+### 4. (Optional) 
+
+If you've enabled email verification with `ENABLE_EMAIL_VERIFICATION=true`, you'd be prompted to enter a verification code which has been sent to your email. Please configure your server for SMTP to receive this email. [Here are Plausible's SMTP configuration options](https://plausible.io/docs/self-hosting-configuration#mailersmtp-setup).
+
 Otherwise, run this command to verify all users in the database:
 
 ```bash
