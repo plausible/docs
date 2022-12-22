@@ -83,6 +83,8 @@ custom events.
 
 URL of the page where the event was triggered. If the URL contains UTM parameters, they will be extracted and stored. When using the script, this is set to `window.location.href`.
 
+The maximum size of the URL, excluding the domain and the query string, is 2,000 characters. Additionally, URLs using the [data URI scheme](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URLs) are not supported by the API.
+
 :::note
 The URL parameter will feel strange in a mobile app but you can manufacture something that looks like a web URL. If you name your mobile app screens like page URLs, Plausible will know how to handle it. So for example, on your login screen you could send something like:  
 
