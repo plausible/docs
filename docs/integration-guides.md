@@ -10,6 +10,10 @@ Thanks to the members of our community, there are also integrations and plugins 
 
 Here's the full list in alphabetical order:
 
+## Airbyte connector
+
+[Airbyte connector](https://docs.airbyte.com/integrations/sources/plausible/): A Plausible API connector for Airbyte, an open-source data integration platform. Built and maintained by [Scott Lee Chua](https://github.com/scottleechua).
+
 ## Android SDK
 
 [Android SDK](https://github.com/wbrawner/plausible-android): An Android SDK for Plausible Analytics. Built and maintained by [William Brawner](https://github.com/wbrawner).
