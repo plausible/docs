@@ -34,10 +34,10 @@ You can set the background color as `transparent` in the embed code. It's much m
 
 ### Want your embed to have default filters or time period?
 
-Instead of using the default shared link URL for generating the embed, you can open the shared link, apply filters to your dashboard and use the URL with the applied filters. Those filters will then be automatically added to your embed dashboard every time it's loaded.
+Instead of using the default shared link URL for generating the embed, you can open the shared link, apply filters to your dashboard and use the URL with the applied filters. Those filters will then be automatically added to your embed dashboard every time it's loaded. Note that these are [our regular filters](filters-segments.md) and your visitors can remove or change them to view other stats as well.
 
 :::note
-These are [our regular filters](filters-segments.md) and the visitor can remove or change them to view other stats as well. 
+Do you prefer to build a custom dashboard with only a selection of metrics accessible to your visitors? [Our stats API](stats-api.md) allows you to take individual metrics and create a custom-built dashboard within your UI in whichever shape or form you want. This requires more development time from your side but you get full flexibility.
 :::
 
 ## 3. Paste the embed code into your website
