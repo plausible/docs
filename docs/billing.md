@@ -37,7 +37,7 @@ During the upgrade process, you have the option to add your company address and 
 
 If you haven't added your company details during the subscription process, you can open the invoice that Paddle sent you and click on the "Add address & VAT Number" link to do so.
 
-<img alt="Edit invoice to add business details" src={useBaseUrl('img/edit-invoice-to-add-business-details')} />
+<img alt="Edit invoice to add business details" src={useBaseUrl('img/edit-invoice-to-add-business-details.png')} />
 
 More information about Paddle and the sales taxes or VAT can be found [here](https://paddle.com/support/which-countries-does-paddle-charge-vat-for/).
 
