@@ -4,7 +4,7 @@ title: Paid campaigns, UTM tags and conversion attribution
 
 Whenever you post a link in social media, paid advertising or send it in an email newsletter, you can choose to add a special query parameter to the link. When for instance `?ref=<value>` query parameter is present, Plausible Analytics will show it as the referral source.
 
-Tagging your links helps you minimize the amount of traffic that falls within the "[**Direct / None**]([top-referrers.md](https://plausible.io/blog/utm-tracking-tags))" category. It also helps you better track your marketing campaigns and see which campaigns are responsible for most conversions. 
+Tagging your links helps you minimize the amount of traffic that falls within the "[**Direct / None**](https://plausible.io/blog/utm-tracking-tags)" category. It also helps you better track your marketing campaigns and see which campaigns are responsible for most conversions. 
 
 `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term` query parameters are all valid and supported.
 
