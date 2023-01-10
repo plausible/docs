@@ -60,11 +60,11 @@ Does your site use page URLs like `yoursite.com/blog/index.php?article=some_arti
 
 Goals and custom events allow you to track actions that you want your visitors to take on your site. Actions such as registering for a trial account, purchasing a product or completing a checkout form of an ecommerce store.
 
-<img alt="conversion rate" src={useBaseUrl('img/CR2.png')} />
+<img alt="conversion rate" src={useBaseUrl('img/CR2.png')}/>
 
 By [setting up goals and custom events](goal-conversions.md), you can track the number of conversions, conversion rate, referrer sources and entry pages that are driving conversions and the top pages that people convert on. 
 
-<img alt="Custom goal conversion rate" src={useBaseUrl('img/CR.png')} />
+<img alt="Custom goal conversion rate" src={useBaseUrl('img/CR.png')}/>
 
 Click on any specific referral source in your dashboard to see the number of conversions and the conversion rate (CR) of that referral source for any of your goals. You can also click on any goal in your dashboard to see the number of conversions and the conversion rate of that specific goal coming from any referral source or any landing page.
 
