@@ -44,6 +44,10 @@ You can then click on "Advanced" and add a CSS class name in the "Additional CSS
 To represent a space character in the event names, you can use a `+` sign. For example: `plausible-event-name=Form+Submit` will display as `Form Submit` in your dashboard
 :::
 
+:::note
+When tracking form submits, it is important to tag the `<form>` element itself with the `plausible-event-name=...` class (not the `input` or `button` element inside the form). Normally, Plausible can track button clicks, but if a button is inside a form, it will navigate to the next page often leaving not enough time for the event to finish.
+:::
+
 <details>
 <summary>
 
