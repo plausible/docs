@@ -153,6 +153,10 @@ You can enable Plausible to count visitors on localhost which is useful in Cordo
 
 [Micro.blog](https://micro.blog): Integrate Micro.blog with Plausible Analytics using a plugin. You can add it under Find Plug-ins in Micro.blog and then use the Settings button to configure it for your Plausible account. Built and maintained by [Lukas Rosenstock](https://lukasrosenstock.net/2020/07/24/ive-struggled-a.html). Here's [the source code](https://github.com/LukasRos/plugin-plausible).
 
+## MkDocs
+
+[Plausible Analytics for Material](https://material-plausible-plugin.ale.sh/): This plugin implements Plausible Analytics support in Material for MkDocs. Built and maintained by [Alexander Pushkov](https://github.com/notpushkin).
+
 ## Mobile apps for Android and iOS
 
 If you'd like to count users on your Android and/or iOS mobile apps, you can use our events API to record views and custom events. [Learn more here](events-api.md)
