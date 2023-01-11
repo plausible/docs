@@ -62,9 +62,11 @@ Goals and custom events allow you to track actions that you want your visitors t
 
 <img alt="Conversion rate" src={useBaseUrl('img/conversion-rate.png')} />
 
+
 By [setting up goals and custom events](goal-conversions.md), you can track the number of conversions, conversion rate, referrer sources and entry pages that are driving conversions and the top pages that people convert on. 
 
 <img alt="Custom goal conversion rate" src={useBaseUrl('img/custom-goal-conversion-rate.png')} />
+
 
 Click on any specific referral source in your dashboard to see the number of conversions and the conversion rate (CR) of that referral source for any of your goals. You can also click on any goal in your dashboard to see the number of conversions and the conversion rate of that specific goal coming from any referral source or any landing page.
 
