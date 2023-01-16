@@ -20,7 +20,7 @@ You can find available Plausible versions on [DockerHub](https://hub.docker.com/
 `latest` tag refers to the latest stable release tag. You can also pin your version:
 
 * `plausible/analytics:v1` pins the major version to `1` but allows minor and patch version upgrades
-* `plausible/analytics:v1.2` pins the minor version to `1.2` but allows only patch upgrades
+* `plausible/analytics:v1.5` pins the minor version to `1.5` but allows only patch upgrades
 
 None of the functionality is backported to older versions. If you wish to get the latest bug fixes and security
 updates you need to upgrade to a newer version.
@@ -72,13 +72,11 @@ $ openssl rand -base64 64 | tr -d '\n' ; echo
 
 Now edit `plausible-conf.env` and set `SECRET_KEY_BASE` to your secret key.
 
-Next, set your `ADMIN_USER` credentials to your own choices.
-
-Finally, enter the `BASE_URL` for your app. It should be the base url where this instance is accessible, including the scheme (eg. `http://` or `https://`), the domain name, and optionally a port. If no port is specified the default `8000` will be used. Plausible isn't currently designed for subfolder installations, so please don't add a path component to the base URL.
+Next, enter the `BASE_URL` for your app. It should be the base url where this instance is accessible, including the scheme (eg. `http://` or `https://`), the domain name, and optionally a port. If no port is specified the default `8000` will be used. Plausible isn't currently designed for subfolder installations, so please don't add a path component to the base URL.
 
 ### 3. Start the server
 
-Once you've entered your secret key base, base URL and admin credentials, you're ready to start up the server:
+Once you've entered your secret key base and base URL, you're ready to start up the server:
 
 ```bash
 $ docker-compose up -d
@@ -88,15 +86,14 @@ When you run this command for the first time, it does the following:
 * Creates a Postgres database for user data.
 * Creates a Clickhouse database for stats.
 * Runs migrations on both databases to prepare the schema.
-* Creates an admin account (which is just a normal account with a generous 100 years of free trial).
 * Starts the server on port 8000.
 
-You can now navigate to `http://{hostname}:8000` and see the login screen.
+You can now navigate to `http://{hostname}:8000` and see the registration screen for the admin user.
 
-When you first log in with your admin credentials, you will be prompted to
-enter a verification code which has been sent to your email. Please configure your
-server for SMTP to receive this email. [Here are Plausible's SMTP configuration
-options](https://plausible.io/docs/self-hosting-configuration#mailersmtp-setup).
+### 4. (Optional) 
+
+If you've enabled email verification with `ENABLE_EMAIL_VERIFICATION=true`, you'd be prompted to enter a verification code which has been sent to your email. Please configure your server for SMTP to receive this email. [Here are Plausible's SMTP configuration options](https://plausible.io/docs/self-hosting-configuration#mailersmtp-setup).
+
 Otherwise, run this command to verify all users in the database:
 
 ```bash
