@@ -176,6 +176,25 @@ plausible('Download', {props: {method: 'HTTP', Region: 'Europe'}})
 
 This is the whole extent of the API. It's intentionally very slim so as to keep the SDK small and quick to load.
 
+If you want to trigger form submissions, button clicks etc. you need to implement the code for that yourself. This is an example of code we use to track custom events (trial signups) on our own website.
+    
+```javascript
+registerForm.addEventListener('submit', function(e) {
+  e.preventDefault();
+  setTimeout(submitForm, 1000);
+  var formSubmitted = false;
+
+  function submitForm() {
+    if (!formSubmitted) {
+      formSubmitted = true;
+      registerForm.submit();
+    }
+  }
+
+  plausible('Signup', {callback: submitForm});
+})
+```
+
 ## Tracking audio and video elements
 
 1. Give your audio or video element an `id` attribute to use it with JavaScript. If it already has an `id`, feel free to use that instead of `trackedMedia` in this example.
