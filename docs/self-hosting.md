@@ -90,7 +90,7 @@ When you run this command for the first time, it does the following:
 
 You can now navigate to `http://{hostname}:8000` and see the registration screen for the admin user.
 
-### 4. (Optional) 
+### 4. (Optional) Email verification
 
 If you've enabled email verification with `ENABLE_EMAIL_VERIFICATION=true`, you'd be prompted to enter a verification code which has been sent to your email. Please configure your server for SMTP to receive this email. [Here are Plausible's SMTP configuration options](https://plausible.io/docs/self-hosting-configuration#mailersmtp-setup).
 
@@ -104,7 +104,7 @@ $ docker-compose exec plausible_db psql -U postgres -d plausible_db -c "UPDATE u
 
 The Plausible server itself does not perform SSL termination. It only runs on unencrypted HTTP.  If you want to run on HTTPS you also need to set up a reverse proxy in front of the server. We have instructions and examples of how to do that below.
 
-### 3. Updating Plausible
+## Updating Plausible
 
 Plausible is updated regularly, but it's up to you to apply these updates on your server.
 By virtue of using Docker, these updates are safe and easy to apply.
