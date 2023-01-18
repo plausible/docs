@@ -10,7 +10,7 @@ You can enable your Plausible Analytics weekly and/or monthly reports and traffi
 
 Slack allows you to create email addresses for channels in your workspace and send emails to those channels whenever you'd like. 
 
-In Slack, click on the "**i**" details icon in the top right, then click on "**More**", select "**Send emails to channel**" and click "**Get channel email address**". Slack will then automatically generate an email address for your channel. 
+In Slack, click on the channel name in the conversation header, then click on the "**Integrations**" tab. Select "**Send emails to this channel**" and click on "**Get email address**". Slack will then automatically generate an email address for your channel. 
 
 You can read about additional options [Slack gives you for your email here](https://slack.com/intl/en-gb/help/articles/206819278-Send-emails-to-Slack).
 
