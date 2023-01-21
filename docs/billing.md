@@ -30,10 +30,9 @@ Unfortunately, changing a country associated with a subscription isn't possible 
 
 ## How do I get a VAT refund?
 
-During the upgrade process, you have the option to add your company address and VAT ID. Our payment processor Paddle handles all the VAT and other sales taxes, so if you're eligible no VAT will be charged on your subscription.
+On the "**Payment**" screen in the upgrade process, you have the option to add your company address and VAT ID. Our payment processor Paddle handles all the VAT and other sales taxes, so if you're eligible no VAT will be charged on your subscription.
 
 <img alt="Add VAT number at checkout" src={useBaseUrl('img/add-vat-number-during-checkout.png')} />
-
 
 If you haven't added your company details during the subscription process, you can open the invoice that Paddle sent you and click on the "Add address & VAT Number" link to do so.
 
