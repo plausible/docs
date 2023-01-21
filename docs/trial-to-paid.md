@@ -36,8 +36,18 @@ Next up you need to choose your payment method. You can pay by a credit card or 
 
 Fill in your card details and click on the "**Subscribe Now**" button to subscribe to a paid subscription. 
 
-During the upgrade process, you have the option to add your company address and VAT ID. Our payment processor Paddle handles all the VAT and other sales taxes, so if you're eligible no VAT will be charged on your subscription.
+## Add your company address and VAT number
+
+On the "**Payment**" screen in the upgrade process, you have the option to add your company address and VAT ID. Our payment processor Paddle handles all the VAT and other sales taxes, so if you're eligible no VAT will be charged on your subscription.
+
+<img alt="Add VAT number at checkout" src={useBaseUrl('img/add-vat-number-during-checkout.png')} />
 
 Your subscription will start right away. Your subscription will be renewed automatically, and you can change or cancel your plan at any time.
 
-You will automatically get an email from our payment processor Paddle with your invoice. You will get an automatic invoice sent to you through email for each payment that you make.
+You will automatically get an email from Paddle with your invoice. You will get an automatic invoice sent to you through email for each payment that you make. You can also [download your invoices](download-invoices.md) in your Plausible account settings.
+
+If you haven't added your company details and VAT number during the subscription process, you can open the invoice that Paddle sent you and click on the "**Add address & VAT Number**" link to do so.
+
+<img alt="Edit invoice to add business details" src={useBaseUrl('img/edit-invoice-to-add-business-details.png')} />
+
+More information about Paddle and the sales taxes or VAT can be found [here](https://paddle.com/support/which-countries-does-paddle-charge-vat-for/).
