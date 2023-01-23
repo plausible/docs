@@ -18,6 +18,10 @@ Here's the full list in alphabetical order:
 
 [Android SDK](https://github.com/wbrawner/plausible-android): An Android SDK for Plausible Analytics. Built and maintained by [William Brawner](https://github.com/wbrawner).
 
+## BigQuery
+
+[CloudQuery Plausible plugin](https://www.cloudquery.io/docs/plugins/sources/plausible/overview) extracts stats from Plausible stats API and loads them into BigQuery.
+
 ## Bridgetown
 
 [Bridgetown](https://rubygems.org/gems/bridgetown-plausible-tag): A Liquid tag to add Plausible to your Bridgetown site. Built and maintained by [Andrew Mason](https://www.andrewm.codes/). Here's [the source code](https://github.com/andrewmcodes/bridgetown-plausible-tag).
@@ -33,6 +37,10 @@ Here's the full list in alphabetical order:
 ## Carrd
 
 [How to add the script to your Carrd site](carrd-integration.md)
+
+## CloudQuery
+
+[CloudQuery Plausible plugin](https://www.cloudquery.io/docs/plugins/sources/plausible/overview) extracts stats from Plausible and loads them into any supported CloudQuery destination (PostgreSQL, Snowflake, BigQuery, S3...).
 
 ## Craft CMS
 
@@ -201,6 +209,10 @@ Add Plausible to your [Podcastpage.io](https://podcastpage.io/) website. Just en
 
 [Plausible API Ruby Gem](https://github.com/dailytics/plausible_api): This is a simple wrapper to read the Plausible API with Ruby. Built and maintained by [Dailytics](https://dailytics.com/).
 
+## S3
+
+[CloudQuery Plausible plugin](https://www.cloudquery.io/docs/plugins/sources/plausible/overview) extracts stats from Plausible stats API and loads them into S3.
+
 ## Sanity.io
 
 [Plausible iframe dashboard widget](https://www.sanity.io/plugins/plausible-iframe): Simple plugin to show Plausible as an iframe inside of the Sanity dashboard. Built and maintained by [Ole Svennevig](https://olesvennevig.no/).
@@ -220,6 +232,10 @@ We have the Plausible events API which can be used to record pageviews and custo
 ## Single-page applications
 
 Plausible integrates automatically with modern pushState based frontend routers. If you're running a single-page application with React, Angular, Vue or similar frameworks, you don't need to add any extra configuration to make analytics work. [Learn more here](spa-support.md).
+
+## Snowflake
+
+[CloudQuery Plausible plugin](https://www.cloudquery.io/docs/plugins/sources/plausible/overview) extracts stats from Plausible stats API and loads them into Snowflake.
 
 ## Sphinx / Read The Docs
 
@@ -286,4 +302,3 @@ We have a WordPress plugin that makes the integration with WordPress nice and ea
 * [Metrics iOS Widget](https://santiviquez.gumroad.com/l/xLrcq) by Santiago Víquez
 
 Let us know about any other integrations that you've built and we will feature them in this list. Thanks for your support!
-
