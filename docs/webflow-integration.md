@@ -75,7 +75,7 @@ To represent a space character in goal names, you can use a `+` sign. For exampl
         toTag.forEach(function (tagObject) {
             var element = document.getElementById(tagObject.elementId)
             tagObject.classes.split(' ').forEach(function (className) {
-                element.classList.add(className)
+                if (element) { element.classList.add(className) }
             })
         })
     })
@@ -139,7 +139,7 @@ If you want to trigger multiple custom events on the same site, you don't need t
         toTag.forEach(function (tagObject) {
             var element = document.getElementById(tagObject.elementId)
             tagObject.classes.split(' ').forEach(function (className) {
-                element.classList.add(className)
+                if (element) { element.classList.add(className) }
             })
         })
     })
