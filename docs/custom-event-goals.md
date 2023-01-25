@@ -89,7 +89,7 @@ You can use this `id` to add the class names to your element dynamically with Ja
         toTag.forEach(function (tagObject) {
             var element = document.getElementById(tagObject.elementId)
             tagObject.classes.split(' ').forEach(function (className) {
-                element.classList.add(className)
+                if (element) { element.classList.add(className) }
             })
         })
     })
