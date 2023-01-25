@@ -40,20 +40,13 @@ You can then click on "Advanced" and add a CSS class name in the "Additional CSS
 
 <img alt="Add a CSS class name in the 'Additional CSS class(es)' field" src={useBaseUrl('img/wordpress-css-class-name.png')} />
 
+When tracking form submits, it is important to tag the `<form>` element itself with the `plausible-event-name=...` class (not the `input` or `button` element inside the form). Normally, Plausible can track button clicks, but if a button is inside a form, it will navigate to the next page often leaving not enough time for the event to finish.
+
 :::note
 To represent a space character in the event names, you can use a `+` sign. For example: `plausible-event-name=Form+Submit` will display as `Form Submit` in your dashboard
 :::
 
-:::note
-When tracking form submits, it is important to tag the `<form>` element itself with the `plausible-event-name=...` class (not the `input` or `button` element inside the form). Normally, Plausible can track button clicks, but if a button is inside a form, it will navigate to the next page often leaving not enough time for the event to finish.
-:::
-
-<details>
-<summary>
-
 ### You can also add class names directly in HTML
-
-</summary>
 
 If you can edit the raw HTML code of the element you want to track, you can also add the classes directly in HTML. For example:
 
@@ -75,7 +68,51 @@ Or if your element already has a class attribute, just separate the new ones wit
 <button class="some-existing-class plausible-event-name=Button+Click">Click Me</button>
 ```
 
-</details>
+If your CMS overrides the format of your class names, Plausible will most likely not be able to track it. If that's the case, please keep reading the below instructions.
+
+### Does the element you want to track have an `id` attribute, or can you add one?
+
+If the element already has an `id` you can use that. If it doesn't, go ahead and add a unique `id` attribute.
+
+You can use this `id` to add the class names to your element dynamically with JavaScript. Here's the code you will have to insert in the `<head>` section of the page with the element you want to track:
+
+```html
+<script>
+    var toTag = [
+        {
+            elementId: 'my-custom-event-element',
+            classes: 'plausible-event-name=<event_name> plausible-event-<property>=<value>'
+        }
+    ]
+
+    document.addEventListener('DOMContentLoaded', function (_e) {
+        toTag.forEach(function (tagObject) {
+            var element = document.getElementById(tagObject.elementId)
+            tagObject.classes.split(' ').forEach(function (className) {
+                element.classList.add(className)
+            })
+        })
+    })
+</script>
+```
+
+In this code, you will have to change the `elementId` and `classes` keys in the `toTag` variable. If you want to track multiple elements on one page, you can do it like this:
+
+```javascript
+var toTag = [
+    {
+        elementId: 'my-custom-event-element',
+        classes: 'plausible-event-name=<event_name> plausible-event-<property>=<value>'
+    },
+    {
+        elementId: 'another-custom-event-element',
+        classes: 'plausible-event-name=<event_name> plausible-event-<property>=<value>'
+    },
+    // ...
+]
+```
+
+Once you have this script running on your site, it will add your class names as soon as the HTML content is loaded on the page, and Plausible will be able to track your element.
 
 ## 3. Create a custom event goal in your Plausible account
 
