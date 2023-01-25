@@ -141,12 +141,7 @@ Note that you must ensure that no personally identifiable information (PII) is s
 * IP addresses
 * pseudonymous cookie IDs, advertising IDs or other pseudonymous end user identifiers
 
-<details>
-<summary>
-
 ## Want to trigger custom events manually with custom JavaScript?
-
-</summary>
 
 First, make sure your tracking setup includes the second line as shown below:
 
@@ -195,9 +190,9 @@ registerForm.addEventListener('submit', function(e) {
 })
 ```
     
-## Code example for tracking link clicks
+### Code example for tracking link clicks
 
-### 1. Add a `data-analytics` attribute tag on the link you want to track
+#### 1. Add a `data-analytics` attribute tag on the link you want to track
 
 When you want to track a simple link click:
 
@@ -219,7 +214,7 @@ Do watch the quotes! The `data-analytics` tag value should have both **single an
 If you are using a website builder (e.g. Webflow, Shopify, Wix, etc.) you might not be able to add double quotes to the `data-analytics` tag value. [Click here to read](#code-example-for-tracking-form-button-submit-events) how to use custom events in this scenario.
 :::
 
-### 2. Add the JavaScript that will be sending the link click events to Plausible
+#### 2. Add the JavaScript that will be sending the link click events to Plausible
 
 To be able to use the `data-analytics` tags and track the link clicks, you need to add the code below. You should insert this just before the closing `</body>` tag:
 
@@ -255,9 +250,9 @@ To be able to use the `data-analytics` tags and track the link clicks, you need 
 </script>
 ```
 
-## Code example for tracking form button submit events
+### Code example for tracking form button submit events
 
-### 1. Add a `data-analytics` attribute tag on a submit button inside a form
+#### 1. Add a `data-analytics` attribute tag on a submit button inside a form
 
 When you want to track a simple form submit event:
 
@@ -281,7 +276,7 @@ Or if you want to track a form submit event with custom properties:
 Do watch the quotes! The `data-analytics` tag value should have both **single and double quotes** as shown above.
 :::
 
-### 2. Add the JavaScript that will be sending the form submit events to Plausible
+#### 2. Add the JavaScript that will be sending the form submit events to Plausible
 
 To be able to use the `data-analytics` tag and track the form submit events, you need to add the code below. You should insert this just before the closing `</body>` tag:
 
@@ -305,7 +300,7 @@ To be able to use the `data-analytics` tag and track the form submit events, you
 </script>
 ```
 
-## Tracking audio and video elements
+### Tracking audio and video elements
 
 1. Give your audio or video element an `id` attribute to use it with JavaScript. If it already has an `id`, feel free to use that instead of `trackedMedia` in this example.
 
@@ -341,11 +336,11 @@ To be able to use the `data-analytics` tag and track the form submit events, you
 
 The same code also applies for `<video>` elements. Feel free to replace `Media Played` with a more suitable name for your custom event.
 
-## Code examples for website builders such as Shopify and Wix
+### Code examples for website builders such as Shopify and Wix
 
 Some website builders do not allow you to add double quotes to attribute values. The above-presented examples will not work in those cases. Use the following workaround to track custom events in case double quotes are not allowed attribute values in your website builder. *This works only when you do not intend to send custom properties.*
 
-### 1. Add a `data-analytics` attribute tag on the link you want to track
+#### 1. Add a `data-analytics` attribute tag on the link you want to track
 
 When you want to track a simple link click:
 
@@ -358,7 +353,7 @@ In your website builder this translates into providing the `Register` value **wi
 :::
 
 
-### 2. Add the JavaScript that will be sending the link click events to Plausible
+#### 2. Add the JavaScript that will be sending the link click events to Plausible
 
 To be able to use the `data-analytics` tags and track the link clicks, you need to add the code below.  You should insert this just before the closing `</body>` tag:
 
@@ -392,5 +387,3 @@ To be able to use the `data-analytics` tags and track the link clicks, you need 
   }
 </script>
 ```
-
-</details>
