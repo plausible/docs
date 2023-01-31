@@ -64,8 +64,9 @@ Plausible by default doesn't take DNT (Do Not Track) into consideration as we're
 
 ## Django
 
-- [Django-Plausible](https://pypi.org/project/django-plausible/): Django module to provide easy Plausible integration, with Wagtail support. Built and maintained by [Jake Howard](https://pypi.org/user/TheOrangeOne/).
-- [Django-plausible-proxy](https://github.com/imankulov/django-plausible-proxy) is a module to proxy requests and send server-side events to Plausible Analytics. 
+* [Django-Plausible](https://pypi.org/project/django-plausible/): Django module to provide easy Plausible integration, with Wagtail support. Built and maintained by [Jake Howard](https://pypi.org/user/TheOrangeOne/).
+
+* [Django-plausible-proxy](https://github.com/imankulov/django-plausible-proxy) is a module to proxy requests and send server-side events to Plausible Analytics. 
 
 ## Docusaurus
 
@@ -195,7 +196,9 @@ Add Plausible to your [Podcastpage.io](https://podcastpage.io/) website. Just en
 
 ## Prestashop
 
-[Plausible module](https://github.com/mrdotb/prestashop_plausible/) for [prestashop](https://www.prestashop.com/). Built and maintained by [mrdotb](https://mrdotb.com/).
+* [Plausible module](https://github.com/mrdotb/prestashop_plausible/) for [Prestashop](https://www.prestashop.com/). Built and maintained by [mrdotb](https://mrdotb.com/).
+
+* [Prestashop Plausible](https://pixel-open.org/projects/prestashop-plausible/): Add Plausible in Prestashop. Built and maintained by [PIXEL Open](https://pixel-open.org).
 
 ## Qt6 / QML
 
@@ -257,7 +260,7 @@ There is also a [Plausible Sphinx extension](https://pypi.org/project/sphinx-pla
 
 ## Statamic
 
-* [Plausible Wrapper](https://statamic.com/addons/jack-whiting/plausible): A wrapper around the Plausible API that fetches the analytics into your dashboard in a pretty way. Built and maintained by [Jack Whiting](https://jackwhiting.co.uk/).
+[Plausible Wrapper](https://statamic.com/addons/jack-whiting/plausible): A wrapper around the Plausible API that fetches the analytics into your dashboard in a pretty way. Built and maintained by [Jack Whiting](https://jackwhiting.co.uk/).
 
 ## Turbo / Turbolinks
 
@@ -269,11 +272,11 @@ We offer a manual mode in case you want full control over when pageviews are tri
 
 ## Vue.js & Nuxt.js
 
-[Vue.js & Nuxt.js](https://github.com/moritzsternemann/vue-plausible): A Vue.js plugin and NuxtJS module for Plausible. Exposes the functionality of [plausible-tracker](https://github.com/plausible/plausible-tracker) to Vue and Nuxt instances, Vue components, and Vuex stores. Built and maintained by [Moritz Sternemann](https://github.com/moritzsternemann).
+* [Vue.js & Nuxt.js](https://github.com/moritzsternemann/vue-plausible): A Vue.js plugin and NuxtJS module for Plausible. Exposes the functionality of [plausible-tracker](https://github.com/plausible/plausible-tracker) to Vue and Nuxt instances, Vue components, and Vuex stores. Built and maintained by [Moritz Sternemann](https://github.com/moritzsternemann).
 
-Support for Vue 3 ([plausible-vue](https://github.com/huntersofbook/huntersofbook/tree/main/packages/plausible-vue)) and for Nuxt 3 ([plausible-nuxt](https://github.com/huntersofbook/huntersofbook/tree/main/packages/plausible-nuxt)).
+* Support for Vue 3 ([plausible-vue](https://github.com/huntersofbook/huntersofbook/tree/main/packages/plausible-vue)) and for Nuxt 3 ([plausible-nuxt](https://github.com/huntersofbook/huntersofbook/tree/main/packages/plausible-nuxt)).
 
-There's also this [nuxt-plausible](https://github.com/johannschopplich/nuxt-plausible) Nuxt 3 module. 
+* There's also this [nuxt-plausible](https://github.com/johannschopplich/nuxt-plausible) Nuxt 3 module. 
 
 ## VuePress
 
