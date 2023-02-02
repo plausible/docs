@@ -1,16 +1,16 @@
 ---
-title: Adding Plausible to Shopify (and tracking checkouts and orders)
+title: Adding Plausible to Shopify and tracking checkout pages and order confirmations
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Here's how to add Plausible Analytics to your Shopify site and set up the tracking of events such as button clicks, form submissions and purchase confirmations.
+Here's how to add Plausible Analytics to your Shopify site and set up the tracking of events such as button clicks, form submissions and order confirmations.
 
 ## How to add Plausible to your Shopify website 
 
-* Login into your Shopify account and click on Sales Channels > Online Store > Themes in the left hand side menu.  
+* Log in to your Shopify account and click on Sales Channels > Online Store > Themes in the left-hand side menu.  
 
-* Click the hamburger menu icon next to your current theme and from the drop-down menu choose "Edit code". 
+* Click on the hamburger menu icon next to your current theme and choose "Edit code" from the drop-down menu.
 
 <img alt="Add Plausible to Shopify" src={useBaseUrl('img/add-custom-code-to-shopify.png')} />
 
@@ -28,17 +28,17 @@ Now you can go to your Shopify website and verify that Plausible script has been
 
 ## How to track checkouts and order confirmations
 
-To track your overall checkouts and order confirmations, you will have to add your tracking script into the "checkout.liquid" file if you're on Shopify Plus. If you're not a Shopify Plus merchant, you can go to "Settings" and in "Checkout and accounts" add the Plausible script into the "Order status page additional scripts" box.
+To track your overall checkouts and order confirmations, you will have to add your tracking script to the "checkout.liquid" file if you're on Shopify Plus. If you're not a Shopify Plus merchant, you can go to "Settings" and in "Checkout and accounts" add the Plausible script into the "Order status page additional scripts" box.
 
 <img alt="Track orders in shopify" src={useBaseUrl('img/order-status-page-shopify.png')} />
 
-After doing that, you will start seeing pageviews for page paths that include "/checkouts/" and "/thank_you" in the "**Top Pages**" report of your Plausible Analytics dashboard. You can group all checkouts (or all orders confirmations) into one set of pages in your Plausible dashboard to analyze your marketing campaigns and performance better.
+After doing that, you will start seeing pageviews for page paths that include "/checkouts/" and "/thank_you" in the "**Top Pages**" report of your Plausible Analytics dashboard. You can group all visits to checkout pages (or all order confirmations) into one set of pages in your Plausible dashboard to better analyze your marketing campaigns and performance.
 
 Click on the "Filter" button on the top right of your dashboard and then choose "Page". Here you can combine URLs to analyze them as one group. Filter by `/**thank_you**"` to combine all the purchase confirmations or by `/**checkouts**"` to group all the checkouts. 
 
-By doing this, you'll segment your dashboard by the traffic that went through the checkout process and placed orders. You'll be able to see the referral sources and landing pages that drove the most conversions. You'll also be able to see location and device details of the buyers.
+Doing this will segment your dashboard by the traffic that went through the checkout process and successfully placed orders. You'll be able to see the referral sources and landing pages that drove the most conversions. You'll also be able to see the location and device details of the buyers too.
 
-If you'd like to see these grouped orders and checkouts permanenetly in your dashboard, you can add them as [pageview goals](pageview-goals.md).
+If you'd like to see these grouped order confirmations or checkout page visits permanently in your dashboard, you can add them as [pageview goals](pageview-goals.md).
 
 ## How to track forms and buttons on your Shopify site
 
