@@ -42,6 +42,9 @@ Doing this will segment your dashboard by the traffic that went through the chec
 
 If you'd like to see these grouped order confirmations or checkout page visits permanently in your dashboard, you can add them as [pageview goals](pageview-goals.md).
 
+<img alt="Shopify thank you page tracking" src={useBaseUrl('img/shopify-thank-you-page-goal.png')} />
+
+
 ## How to track form submissions and button clicks on Shopify
 
 Here's how you can track particular form submissions and button clicks on your Shopify site:
