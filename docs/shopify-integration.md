@@ -28,7 +28,9 @@ Now you can go to your Shopify website and verify that Plausible script has been
 
 ## How to track checkouts and order confirmations
 
-To track your overall checkouts and order confirmations, you will have to add your tracking script to the "checkout.liquid" file if you're on Shopify Plus. If you're not a Shopify Plus merchant, you can go to "Settings" and in "Checkout and accounts" add the Plausible script into the "Order status page additional scripts" box.
+To track your overall checkouts and order confirmations, you will have to add your tracking script to the "checkout.liquid" file if you're on Shopify Plus.
+
+If you're not a Shopify Plus merchant, you can go to "Settings" and "Checkout and accounts". You can add the Plausible script in the "Additional scripts" text field of the "Order status page" section.
 
 <img alt="Track orders in shopify" src={useBaseUrl('img/order-status-page-shopify.png')} />
 
