@@ -1,12 +1,12 @@
 ---
-title: Adding Plausible to Shopify and tracking checkout pages and order confirmations
+title: Adding Plausible to Shopify (and tracking checkouts and order confirmations)
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Here's how to add Plausible Analytics to your Shopify site and set up the tracking of events such as button clicks, form submissions and order confirmations.
+Here's how to add Plausible Analytics to your Shopify store and set up the tracking of events such as button clicks, form submissions and order confirmations.
 
-## How to add Plausible to your Shopify website 
+## How to add Plausible to your Shopify store 
 
 * Log in to your Shopify account and click on Sales Channels > Online Store > Themes in the left-hand side menu.  
 
@@ -40,7 +40,7 @@ Doing this will segment your dashboard by the traffic that went through the chec
 
 If you'd like to see these grouped order confirmations or checkout page visits permanently in your dashboard, you can add them as [pageview goals](pageview-goals.md).
 
-## How to track forms and buttons on your Shopify site
+## How to track form submissions and button clicks on Shopify
 
 Here's how you can track particular form submissions and button clicks on your Shopify site:
 
