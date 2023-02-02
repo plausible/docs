@@ -26,10 +26,17 @@ Here's how to add Plausible Analytics to your Shopify site and set up the tracki
 
 Now you can go to your Shopify website and verify that Plausible script has been added and to your Plausible account to see whether the stats are being tracked. See here [how to verify the integration](troubleshoot-integration.md).
 
-To track your orders you will also have to add your tracking script into checkout.liquid if you're on Shopify Plus.  Non-Shopify Plus users can go to Settings > Checkout and accounts > and add the Plausible script into the "Order status page additional scripts" box. 
+## How to track checkouts and orders
+
+To track your checkouts and orders you will have to add your tracking script into the "checkout.liquid" file if you're on Shopify Plus. If you're not a Shopify Plus user, you can go to "Settings" and in "Checkout and accounts" add the Plausible script into the "Order status page additional scripts" box. 
 
 <img alt="Track orders in shopify" src={useBaseUrl('img/order-status-page-shopify.png')} />
 
+After doing that, you will start seeing pageviews for page paths that include "/checkouts/" and "/orders/" in the "**Top Pages**" report of your Plausible Analytics dashboard. You can group all checkouts (or all orders) into one set of pages in your Plausible dashboard to analyze your marketing campaigns and performance better.
+
+Click on the "Filter" button on the top right of your dashboard and then choose "Page". Here you can combine URLs to analyze them as one group. Filter by `/**orders**"` to combine all your orders or by `/**checkouts**"` to group all the checkouts. By doing this, you'll segment your dashboard by the traffic that went through the checkout process and placed orders. You'll be able to see the referral sources and landing pages that drove the most conversions. You'll also be able to see location and device details of the buyers.
+
+If you'd like to see these grouped orders and checkouts permanenetly in your dashboard, you can add them as [pageview goals](pageview-goals.md).
 
 ## How to track form submissions and buttons on your Shopify site
 
