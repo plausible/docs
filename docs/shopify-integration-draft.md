@@ -33,7 +33,7 @@ To track your orders you will also have to add your tracking script into checkou
 
 ## How to track form submissions and buttons on your Shopify site
 
-Here's how you can track form submissions on your Shopify site ( same process buttons, they all have IDs ):
+Here's how you can track form submissions on your Shopify site ( same process buttons, they all should have IDs ):
 
 ### 1. Change the Plausible snippet on your site
 
