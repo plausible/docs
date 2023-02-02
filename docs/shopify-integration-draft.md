@@ -65,7 +65,7 @@ To represent a space character in goal names, you can use a `+` sign. For exampl
 <script>
     var toTag = [
         {
-            elementId: 'email-form',
+            elementId: 'ContactForm',
             classes: 'plausible-event-name=Form+Submit'
         }
     ]
