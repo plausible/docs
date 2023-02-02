@@ -34,7 +34,7 @@ To track your overall checkouts and order confirmations, you will have to add yo
 
 After doing that, you will start seeing pageviews for page paths that include "/checkouts/" and "/thank_you" in the "**Top Pages**" report of your Plausible Analytics dashboard. You can group all visits to checkout pages (or all order confirmations) into one set of pages in your Plausible dashboard to better analyze your marketing campaigns and performance.
 
-Click on the "Filter" button on the top right of your dashboard and then choose "Page". Here you can combine URLs to analyze them as one group. Filter by `/**thank_you**"` to combine all the purchase confirmations or by `/**checkouts**"` to group all the checkouts. 
+Click on the "Filter" button on the top right of your dashboard and then choose "Page". Here you can combine URLs to analyze them as one group. Filter by `/**thank_you**` to combine all the purchase confirmations or by `/**checkouts**` to group all the checkouts. 
 
 Doing this will segment your dashboard by the traffic that went through the checkout process and successfully placed orders. You'll be able to see the referral sources and landing pages that drove the most conversions. You'll also be able to see the location and device details of the buyers too.
 
