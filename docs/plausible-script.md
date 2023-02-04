@@ -56,6 +56,10 @@ We do have a rollup view reporting which avoids these drawbacks. Here's how to u
 
 ## Is there a roll-up view?
 
+:::note
+Pageviews tracked using the roll-up view will count towards your billable monthly pageviews.
+:::
+
 Rollup reporting allows you to aggregate stats from multiple sites and see them all together in one dashboard while still keeping the individual site stats on their own separate dashboards. Here's how you can use it:
 
 * Say you have first.com and second.com sites that have their own Plausible dashboards
@@ -73,10 +77,6 @@ Rollup reporting allows you to aggregate stats from multiple sites and see them 
 ```
 
 This will send pageviews from your sites to their individual dashboards so you can still see their separate stats but it will also send their stats to a grouped dashboard which means you'll be able to see the combined stats too in a roll-up view.
-
-:::note
-Pageviews tracked using the roll-up view will count towards your billable monthly pageviews.
-:::
 
 ## How to verify if the script is installed on your site
 
