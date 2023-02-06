@@ -53,6 +53,7 @@ Timezone name according to the [IANA](https://www.iana.org/time-zones) database.
 ### DELETE /api/v1/sites/:site_id
 
 Deletes a site from your Plausible account along with all it's data and configuration. The API key must belong to the owner of the site.
+Permanently deleting all your data may take up to 48 hours and you won't be able to immediately register the same site again until the process is complete.
 
 ```bash title="Try it yourself"
 curl -X DELETE https://plausible.io/api/v1/sites/test-domain.com \
