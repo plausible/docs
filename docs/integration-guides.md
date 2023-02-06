@@ -190,6 +190,10 @@ To integrate Plausible Analytics into your Notion website, you'll need to use a 
 
 Add Plausible to your [Podcastpage.io](https://podcastpage.io/) website. Just enable the Plausible script through the "Integrations" page of your dashboard to add the tracking script to all pages.
 
+## Power BI
+
+[CloudQuery Plausible plugin](https://www.cloudquery.io/docs/plugins/sources/plausible/overview) extracts stats from Plausible stats API and loads them into Power BI.
+
 ## Publii
 
 [Plausible plugin](https://marketplace.getpublii.com/plugins/plausible-analytics/) for Publii. Built and maintained by [TidyCustom](https://tidycustoms.net/).
