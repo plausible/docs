@@ -18,7 +18,7 @@ Following are the variables that can be used to configure the availability of th
 | PORT                 | 8000    | The port on which the server is available.                                                                                                                                                          |
 | LISTEN_IP            | 0.0.0.0 | The IP address on which the server is listening. `0.0.0.0` means all interfaces, `127.0.0.1` means localhost. Also see the related section **Erlang platform ports** below.                         |
 | SECRET_KEY_BASE      | --      | An internal secret key used by [Phoenix Framework](https://www.phoenixframework.org/). Follow the [instructions](https://hexdocs.pm/phoenix/Mix.Tasks.Phx.Gen.Secret.html#content) or use `openssl rand -hex 64` to generate one. |
-| DISABLE_REGISTRATION | false   | Disables registration of new users, except for the very first one                                                                                                                            |
+| DISABLE_REGISTRATION | false   | Restricts registration of new users. Possible values are `true` (full restriction), `false` (no restriction), and `invite_only` (only the invited users can register).                                                                                                                            |
 
 #### Erlang platform ports
 
