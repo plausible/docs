@@ -7,7 +7,7 @@ module.exports = {
       {
         type: 'category',
         label: 'Custom events CMS guides',
-        items: ['webflow-integration', 'shopify-integration'],
+        items: ['shopify-integration'],
       }
     ],
     "API": ['stats-api',  'events-api', 'sites-api'],
