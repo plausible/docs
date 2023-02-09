@@ -28,7 +28,38 @@ Now you can go to your Webflow website and verify that Plausible script has been
 
 ## How to track form submissions on your Webflow site
 
-Here's how you can track form submissions on your Webflow site:
+The easiest way to track form submissions on your Webflow site is to track the "thank you" page by set a [pageview goal](https://plausible.io/docs/pageview-goals).
+
+### 1. Create a "Thank you" page
+
+First you'll need to create a "thank you" page by clicking on the "Pages" panel and creating the page by clicking on the "Create New Page" button.
+
+<img alt="Create the form submission thank you page in Webflow" src={useBaseUrl('img/create-a-thank-you-page-in-webflow.png')} />
+
+### 2. Set the redirect URL on form submission
+
+Go to the page that contains your form, select the form and click on the gear icon to access the form settings. In the "Redirect URL" field type in the path to the thank you page ( i.e. **/thank-you** )
+
+<img alt="Add redirect URL to your form in Webflow" src={useBaseUrl('img/add-redirect-url-to-form-in-webflow.png')} />
+
+### 3. Create a pageview goal in your Plausible account
+
+When you send custom events to Plausible, they won't show up in your dashboard automatically. You'll have to configure the goal for the conversion numbers to show up.
+
+To configure a goal, go to [your website's settings](website-settings.md) in your Plausible account and visit the "**Goals**" section. You should see an empty list with a prompt to add a goal.
+
+<img alt="Add your first Webflow goal" src={useBaseUrl('img/add-goal-webflow.png')} />
+
+Click on the "**+ Add goal**" button to go to the goal creation form. Select `Pageview` as the goal trigger and enter the and enter the page path that you want to track ( i.e. **/thank-you**)
+
+<img alt="Thank you pageview goal in Webflow" src={useBaseUrl('img/thank-you-pageview-goal-webflow.png')} />
+
+### 4. Your goal should now be ready and tracking
+
+Your goal should now be set up. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who completed the form submission. Goal conversions are listed at the very bottom of the dashboard. The goal will show up in your dashboard as soon as it has been completed at least once.
+
+
+## Tracking button clicks and other links on your Webflow site
 
 ### 1. Change the Plausible snippet on your site
 
@@ -42,21 +73,20 @@ Please change the file name in the `src` attribute of your Plausible snippet fro
 If you're using outbound link clicks, file downloads or any of our other script extensions, you can [combine them](script-extensions.md#you-can-combine-extensions-according-to-your-needs) by changing the `src` attribute in the snippet. If you want to track custom events and outbound link clicks simultaneously, change the script name to `script.tagged-events.outbound-links.js`.
 :::
 
-### 2. Find the ID attribute of the form element you want to track
+### 3. Set an ID to the element you want to track
 
-Your form element should have an ID attribute assigned by default. You can find this ID by selecting the form element you want to track (do make sure you select your form element and not just the "Submit" button) and clicking on the settings gear.
+In Webflow, link and button elements don't have a default ID. You'll need to assign an ID by selecting the element and clicking on the settings gear. In the **"Designer View"**, you'll be able to set the ID. 
 
-In the "**Designer View**" you'll be able to see the assigned ID. You can also change the default assigned ID there if you wish to do so.
+<img alt="Add an ID to link and button elements in Webflow" src={useBaseUrl('img/add-id-to-link-and-button-webflow.png')} />
 
-<img alt="Webflow form ID" src={useBaseUrl('img/webflow-form-id.png')} />
 
 ### 3. Trigger custom events with JavaScript on your site
 
 Here's the code you will need to insert in the `<head>` section of the page where the element ID that you want to track is located. You can use the "**Custom Code**" feature to do this similarly to how you've inserted the Plausible snippet into your site.
 
-Make sure to change the `elementId` line in the code below to include the ID attribute of the element you want to track (`email-form` in our example). 
+Make sure to change the `elementId` line in the code below to include the ID attribute of the element you want to track (`button-click` in our example). 
 
-Also do change the `classes` line to include the goal name in this format: `plausible-event-name=Goal+Name`. The goal name is completely up to you. It's the name under which the goal conversions will appear in your Plausible dashboard. We've used `Form+Submit` goal name in our example.
+Also do change the `classes` line to include the goal name in this format: `plausible-event-name=Goal+Name`. The goal name is completely up to you. It's the name under which the goal conversions will appear in your Plausible dashboard. We've used `Button+Click` goal name in our example.
 
 :::note
 To represent a space character in goal names, you can use a `+` sign. For example: `plausible-event-name=Form+Submit` will display as `Form Submit` in your Plausible dashboard
@@ -66,8 +96,8 @@ To represent a space character in goal names, you can use a `+` sign. For exampl
 <script>
     var toTag = [
         {
-            elementId: 'email-form',
-            classes: 'plausible-event-name=Form+Submit'
+            elementId: 'button-click',
+            classes: 'plausible-event-name=Button+Click'
         }
     ]
 
@@ -90,15 +120,13 @@ Do click on the "**Save Changes**" button and then "**Publish**" your changes.
 
 When you send custom events to Plausible, they won't show up in your dashboard automatically. You'll have to configure the goal for the conversion numbers to show up.
 
-To configure a goal, go to [your website's settings](website-settings.md) in your Plausible account and visit the "**Goals**" section. You should see an empty list with a prompt to add a goal.
-
-<img alt="Add your first Webflow goal" src={useBaseUrl('img/add-goal-webflow.png')} />
+To configure a goal, go to [your website's settings](website-settings.md) in your Plausible account and visit the "**Goals**" section.  
 
 Click on the "**+ Add goal**" button to go to the goal creation form. Select `Custom event` as the goal trigger and enter the name of the custom event you are triggering. The name must be an exact match to the one you added to your site for the conversions to show up in your dashboard.
 
-So in our example where we added a goal name `plausible-event-name=Form+Submit` to the Webflow site, the goal to add in the Plausible account is `Form Submit` (plus is replaced by a space).
+So in our example where we added a goal name `plausible-event-name=Button+Click` to the Webflow site, the goal to add in the Plausible account is `Button Click` (plus is replaced by a space).
 
-<img alt="Add your custom event goal" src={useBaseUrl('img/form-submission-custom-event-goal-webflow.png')} />
+<img alt="Add your custom event goal" src={useBaseUrl('img/button-click-custom-event-goal-webflow.png')} />
 
 Next, click on the "**Add goal**" button and you'll be taken back to the Goals page. 
 
@@ -106,13 +134,7 @@ Next, click on the "**Add goal**" button and you'll be taken back to the Goals p
 
 Your goal should now be set up. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who triggered the custom event. Goal conversions are listed at the very bottom of the dashboard. The goal will show up in your dashboard as soon as it has been completed at least once.
 
-## Tracking button clicks and other links on your Webflow site
 
-In Webflow, link and button elements don't have a default ID. You'll need to assign an ID by selecting the element and clicking on the settings gear. In the **"Designer View"**, you'll be able to set the ID. 
-
-<img alt="Add an ID to link and button elements in Webflow" src={useBaseUrl('img/add-id-to-link-and-button-webflow.png')} />
-
-When you've set the ID to the button or link element that you want to track, you can follow the instructions for how to track form submissions to set up the custom event. The process is the same.
 
 ## Triggering multiple custom events on the same page
 
@@ -121,10 +143,6 @@ If you want to trigger multiple custom events on the same site, you don't need t
 ```html
 <script>
     var toTag = [
-        {
-            elementId: 'email-form',
-            classes: 'plausible-event-name=Form+Submit'
-        },
 		{
       		elementId: 'link-click',
             classes: 'plausible-event-name=Link+Click'   
