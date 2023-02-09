@@ -28,7 +28,7 @@ Now you can go to your Webflow website and verify that Plausible script has been
 
 ## How to track form submissions on your Webflow site
 
-The easiest way to track form submissions on your Webflow site is to track the "thank you" page by set a [pageview goal](https://plausible.io/docs/pageview-goals).
+The easiest way to track form submissions on your Webflow site is to track the "thank you" page by setting a [pageview goal](https://plausible.io/docs/pageview-goals).
 
 ### 1. Create a "Thank you" page
 
@@ -138,7 +138,7 @@ Your goal should now be set up. When you navigate back to your Plausible Analyti
 
 ## Triggering multiple custom events on the same page
 
-If you want to trigger multiple custom events on the same site, you don't need to add the script for each element that you want to track. Simply add all the elements in the same code. Make sure to **only add** the elements that already exist on your site. For example, if you want to track a form, a link and a button, the code will look like this:
+If you want to trigger multiple custom events on the same site, you don't need to add the script for each element that you want to track. Simply add all the elements in the same code. Make sure to **only add** the elements that already exist on your site. For example, if you want to track a link and a button, the code will look like this:
 
 ```html
 <script>
