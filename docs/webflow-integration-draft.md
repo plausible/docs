@@ -34,13 +34,13 @@ The easiest way to track form submissions on your Webflow site is to track the "
 
 First you'll need to create a "thank you" page by clicking on the "Pages" panel and creating the page by clicking on the "Create New Page" button.
 
-<img alt="Create the form submission thank you page in Webflow" src={useBaseUrl('create-a-thank-you-page-in-webflow.png')} />
+<img alt="Create the form submission thank you page in Webflow" src={useBaseUrl('img/create-a-thank-you-page-in-webflow.png')} />
 
 ### 2. Set the redirect URL on form submission
 
 Go to the page that contains your form, select the form and click on the gear icon to access the form settings. In the "Redirect URL" field type in the path to the thank you page ( i.e. **/thank-you** )
 
-<img alt="Add redirect URL to your form in Webflow" src={useBaseUrl('add-redirect-url-to-form-in-webflow.png')} />
+<img alt="Add redirect URL to your form in Webflow" src={useBaseUrl('img/add-redirect-url-to-form-in-webflow.png')} />
 
 ### 3. Create a pageview goal in your Plausible account
 
