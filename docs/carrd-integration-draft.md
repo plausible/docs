@@ -104,7 +104,7 @@ Click on the "**+ Add goal**" button to go to the goal creation form. Select `Cu
 
 So in our example where we added a goal name `plausible-event-name=Button+Click` to the Webflow site, the goal to add in the Plausible account is `Button Click` (plus is replaced by a space).
 
-<img alt="Add your custom event goal" src={useBaseUrl('img/button-click-custom-event-goal-webflow.png')} />
+<img alt="Add your custom event goal" src={useBaseUrl('img/button-click-custom-event-goal-carrd.png')} />
 
 Next, click on the "**Add goal**" button and you'll be taken back to the Goals page. 
 
