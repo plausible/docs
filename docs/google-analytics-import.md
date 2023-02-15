@@ -32,7 +32,6 @@ The imported data will be displayed alongside your native Plausible data in the 
 
 <img alt="View Google Analytics data into Plausible" src={useBaseUrl('img/stats-with-google-import.png')} />
 
-
 Clicking this icon will stop the imported data from being displayed and the icon will then appear with a strike-through.
 
 <img alt="Hide Google Analytics data into Plausible" src={useBaseUrl('img/stats-without-google-import.png')} />
@@ -91,13 +90,11 @@ If AdWords auto-tagging was enabled for a visit, then this takes the value "**go
 
 In the case of AdWords tracking, this is saved as a "**UTM source**" with the value "**adwords**".
 
-### Goals, regions, cities and browser/OS versions
+### Goals and browser/OS versions
 
-While the Reporting API lets us fetch data about which countries visitors connect from, it does not give us access to region and city location data in a standard format. For each visit recorded by Google Analytics, we will have the country, but that visit will have an unknown region and city.
+We can import your traffic split between the different browsers and operating systems, but you can't drill down to see the imported data's exact browser versions and OS versions. 
 
-The same is the case for browser and OS versions. We can import your traffic split between the different browsers and operating systems, but you can't drill down to see the imported data's exact browser versions and OS versions.
-
-It's also not possible to import your goal data.
+It's also not possible to import your goals and custom event data.
 
 ### Day view graph
 
