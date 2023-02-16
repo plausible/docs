@@ -18,15 +18,19 @@ See the number of unique visitors, total page views, the bounce rate (the percen
 
 You can choose a different time range that you want to analyze in the date picker in the top right. The visitor numbers are automatically presented on the graph and you can set a different interval. The time format (24-hour or 12-hour am/pm) for the top graph timelines is displayed automatically based on your browser's defined language.
 
-By clicking on the number of "**current visitors**" (defined as those that visited the site in the last 5 minutes) or by selecting "**Realtime**" in the date picker in the top right, you can see the realtime dashboard that tells you what's happening on your site live in that moment. 
-
-The realtime dashboard also includes a pageview graph for the last 30 minutes. It's updated every 30 seconds so you don’t have to refresh it to stay up to date.
-
 :::note
 Click on your site name in the top left side of your dashboard. It allows you to select "[Site Settings](website-settings.md)" in the dropdown menu but also switch to a different site you have added to your Plausible account.
 :::
 
 We get all the favicons (your site favicon and the favicons of all the referral sources) directly from the DuckDuckGo API. We display the same icon that DuckDuckGo shows in their search results.
+
+## Realtime dashboard
+
+By clicking on the number of "**current visitors**" (defined as those that visited the site in the last 5 minutes) or by selecting "**Realtime**" in the date picker in the top right, you can see the realtime dashboard that tells you what's happening on your site live in that moment. 
+
+The realtime dashboard also includes a pageview graph for the last 30 minutes. It's updated every 30 seconds so you don’t have to refresh it to stay up to date.
+
+[Learn more about the realtime dashboard here](realtime-dashboard.md).
 
 ## Filtering
 
