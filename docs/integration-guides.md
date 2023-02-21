@@ -90,7 +90,7 @@ You can run Plausible as a first party connection from your domain name. [Learn 
 
 ## Gatsby
 
-* [Gatsby](https://www.gatsbyjs.com/plugins/gatsby-plugin-plausible/): A Gatsby plugin for adding Plausible Analytics to your Gatsby site. Built and maintained by Curtis Cummings of [https://aquil.io/](https://aquil.io/).
+* [Gatsby](https://www.gatsbyjs.com/plugins/gatsby-plugin-plausible/): A Gatsby plugin for adding Plausible Analytics to your Gatsby site. Built and maintained by [Curtis Cummings](https://curtiscummings.me).
 
 * In the post [Using Deferred Static Generation with Plausible Analytics](https://www.lekoarts.de/gatsby/using-deferred-static-generation-with-analytics-tools) you can learn how to build a source plugin for Plausible's API and use it together with Deferred Static Generation in Gatsby.
 
