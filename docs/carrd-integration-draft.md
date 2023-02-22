@@ -1,12 +1,12 @@
 ---
-title: Adding Plausible to Webflow (and tracking custom events)
+title: Adding Plausible to Carrd (and tracking custom events)
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Here's how to add Plausible Analytics to your Carrd site and set up the tracking of custom events such as button clicks and form submissions.
 
-## How to add Plausible to your Webflow website 
+## How to add Plausible to your Carrd website 
 
 * Go to the editor of your Carrd website and add an "**Embed**" component.
 
@@ -27,9 +27,9 @@ And past your tracking script in the **Code** field. Carrd is a one-page website
 
 * Do click on the "**Done**" button and then "**Publish**" your changes.
 
-Now you can go to your Webflow website and verify that Plausible script has been added and to your Plausible account to see whether the stats are being tracked. See here [how to verify the integration](troubleshoot-integration.md).
+Now you can go to your Carrd website and verify that Plausible script has been added and to your Plausible account to see whether the stats are being tracked. See here [how to verify the integration](troubleshoot-integration.md).
 
-## How to track form submissions on your Webflow site
+## How to track form submissions on your Carrd site
 
 In Carrd forms have default IDs. Usually they're assigned IDs based on the order you've added them. If you only have one form on the page it has an ID of "**form01**".
 
@@ -112,7 +112,7 @@ Now you'll have to click on the form element to select it, click on the gear ico
 <img alt="On success form tracking in Carrd" src={useBaseUrl('img/track-form-submissions-submit-carrd.png')} />
 
 
-## Tracking button clicks and other links on your Webflow site
+## Tracking button clicks and other links on your Carrd site
 
 ### 1. Set an ID to the element you want to track
 
@@ -169,7 +169,7 @@ To configure a goal, go to [your website's settings](website-settings.md) in you
 
 Click on the "**+ Add goal**" button to go to the goal creation form. Select `Custom event` as the goal trigger and enter the name of the custom event you are triggering. The name must be an exact match to the one you added to your site for the conversions to show up in your dashboard.
 
-So in our example where we added a goal name `plausible-event-name=Button+Click` to the Webflow site, the goal to add in the Plausible account is `Button Click` (plus is replaced by a space).
+So in our example where we added a goal name `plausible-event-name=Button+Click` to the Carrd site, the goal to add in the Plausible account is `Button Click` (plus is replaced by a space).
 
 <img alt="Add your custom event goal" src={useBaseUrl('img/button-click-custom-event-goal-carrd.png')} />
 
