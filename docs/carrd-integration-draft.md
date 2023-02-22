@@ -36,7 +36,7 @@ In Carrd forms have default IDs. Usually they're assigned IDs based on the order
 
 ### 1. Change the Plausible snippet on your site
 
-Please change the file name in the `src` attribute of your Plausible snippet from `script.js` to `script.tagged-events.js`. It should look like this:
+Please change the file name in the `src` attribute of your Plausible snippet from `script.hash.js` to `script.tagged-events.hash.js`. It should look like this:
 
 ```html
 <script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.tagged-events.hash.js"></script>
@@ -48,7 +48,6 @@ If you're using outbound link clicks, file downloads or any of our other script 
 
 
 If you're on a higher plan, like Pro Plus, you'll be able to set these IDs yourself from the element's settings. 
-
 
 ### 2. Trigger custom events with JavaScript on your site
 
@@ -84,9 +83,6 @@ To represent a space character in goal names, you can use a `+` sign. For exampl
 
 <img alt="Modify Plausible script Carrd for form tracking" src={useBaseUrl('img/track-form-submissions-carrd.png')} />
 
-
-### 2.1
-
 Now you'll have to click on the form element to select it, click on the gear icon to access the form settings and then on "**Events**" tab. Add the same script as above in the "**On Success**" event box
 
 ```html
@@ -111,7 +107,6 @@ Now you'll have to click on the form element to select it, click on the gear ico
 
 <img alt="On success form tracking in Carrd" src={useBaseUrl('img/track-form-submissions-submit-carrd.png')} />
 
-
 ## Tracking button clicks and other links on your Carrd site
 
 ### 1. Set an ID to the element you want to track
@@ -123,7 +118,6 @@ If you're on a higher plan, like Pro Plus, you'll be able to set these IDs yours
 To be sure of your element's ID, you can use your browser's dev tool to inspect the element. 
 
 <img alt="Confirm element ID in Carrd" src={useBaseUrl('img/confirm-element-id-carrd.png')} />
-
 
 ### 2. Trigger custom events with JavaScript on your site
 
@@ -178,8 +172,6 @@ Next, click on the "**Add goal**" button and you'll be taken back to the Goals p
 ### 4. Your goal should now be ready and tracking
 
 Your goal should now be set up. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who triggered the custom event. Goal conversions are listed at the very bottom of the dashboard. The goal will show up in your dashboard as soon as it has been completed at least once.
-
-
 
 ## Triggering multiple custom events on the same page
 
