@@ -7,13 +7,19 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 You can use "**Google Tag Manager**" to add Plausible Analytics tracking code to your website. Here's the process if you're tracking a domain name or subdomain (see the note below if you'd like to track a subfolder using GTM):
 
 * In your Google Tag Manager account, click on "**Add a new tag**"
+<img alt="Add new tag" src={useBaseUrl('img/add-new-tag.png')} />
 * Click on the "**Choose a tag type to begin setup**"
+<img alt="Choose tag type" src={useBaseUrl('img/choose-type-to-begin.png')} />
 * Use the search functionality to search for "**Custom HTML**"
+<img alt="HTML tag" src={useBaseUrl('img/custom-html-tag.png')} />
 * In the HTML field within the Custom HTML section, paste [your Plausible snippet](plausible-script.md)
-* Be careful about extras you enable such as tag firing priority, tag sequencing, consent checks etc as they all may affect when and how our script loads
+:::note Be careful about extras you enable such as tag firing priority, tag sequencing, consent checks etc as they all may affect when and how our script loads:::
 * Then click to "**Choose a trigger to make this tag fire**"
+<img alt="Paste Plausible script" src={useBaseUrl('img/paste-plausible-script.png')} />
 * Select the "**All Pages**" and filter "**Page View**" as the trigger if you want to count all your pages
+<img alt="Tag trigger" src={useBaseUrl('img/trigger-tag.png')} />
 * Give your tag a name
+<img alt="Name tag" src={useBaseUrl('img/name-your-tag.png')} />
 * Click on the "**Save**" button
 * Click "**Submit**" to submit your changes
 * Then click on the "**Publish**" button
@@ -35,6 +41,11 @@ If you'd like to track a subfolder (yourdomain.com/subfolder) or report to [mult
 ```
 
 In case your Plausible site is a subfolder, enter "yoursite.com/subfolder" as the "**script.dataset.domain**" value. If you want to report to multiple dashboards at the same time, set the "**script.dataset.domain**" value to "firstsite.com,secondsite.com". 
+
+## Track custom events
+
+To track custom events, you will simply need to change the default tracking script to add the [**tagged-events** extension](https://plausible.io/docs/script-extensions#all-our-script-extensions) and, if necessary, add the extra script to triger the custom event. For refference you can check out any of our CRM integration guides like this [Webflow guide](https://plausible.io/docs/webflow-integration), for example.  
+
 
 ## Concerns about using Google Tag Manager
 
