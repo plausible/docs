@@ -44,8 +44,7 @@ In case your Plausible site is a subfolder, enter "yoursite.com/subfolder" as th
 
 ## Track custom events
 
-To track custom events, you will simply need to change the default tracking script to add the [**tagged-events** extension](https://plausible.io/docs/script-extensions#all-our-script-extensions) and, if necessary, add the extra script to triger the custom event. For refference you can check out any of our CRM integration guides like this [Webflow guide](https://plausible.io/docs/webflow-integration), for example.  
-
+To track custom events, you will simply need to change the default tracking script to add the [tagged-events extension](https://plausible.io/docs/script-extensions#all-our-script-extensions) and, if necessary, add the extra script to triger the custom event. For refference you can check out any of our CRM integration guides. For example, our [Webflow guide](https://plausible.io/docs/webflow-integration)
 
 ## Concerns about using Google Tag Manager
 
