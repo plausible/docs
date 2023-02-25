@@ -8,7 +8,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 If you use the File downloads tracking feature, then these count towards your billable monthly pageviews.
 :::
 
-File downloads tracking is essential for many site owners and Plausible helps you automate this process. Plausible tracks when a visitor clicks a link leading to a file. All the most common file extensions are tracked by default but you can also specify a custom list of file types to track. With our "**File Downloads Tracking**" you can:
+File downloads tracking is essential for many site owners and Plausible helps you automate this process. Plausible can capture a file download event each time a link is clicked and that link contains a file extension. All the most common file extensions are tracked by default but you can also specify a custom list of file types to track. With our "**File Downloads Tracking**" you can:
 
 * See which files are clicked the most
 * See on which of your pages the particular file gets the clicks
