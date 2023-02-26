@@ -49,7 +49,7 @@ https://<yourdomain.com>/api/event    -> https://plausible.io/api/event
 
 When the browser requests a file at `https://yourdomain.com/js/script.js` it will actually be fetched from `https://plausible.io/js/script.js`. The analytics will work exactly the same but the script will be served without being flagged.
 
-Care should be taken when serving the script from a domain that some ad-blockers may classify as analytics, even if it is a personal domain. Many ad-blockers rely on regex-like matching to classify requests. For example, some popular ad-blockers classify `://stats.*/script.js` as blockable, leading to the analytics script being blocked in both self-hosted and proxy setups.  
+Care should be taken when serving the script from a domain that some ad-blockers may classify as analytics, even if it is a personal domain. Many ad-blockers rely on regex-like matching to classify requests. For example, some popular ad-blockers classify `://stats.*/script.js` as blockable, leading to the analytics script being blocked in both self-hosted and proxy setups, should you serve the script from a domain which matches this pattern.
 
 We used to have a CNAME/DNS custom domain approach in the past, but it's no longer effective, so we now recommend a proxy as it's a much more flexible and powerful solution.
 
