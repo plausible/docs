@@ -49,6 +49,8 @@ https://<yourdomain.com>/api/event    -> https://plausible.io/api/event
 
 When the browser requests a file at `https://yourdomain.com/js/script.js` it will actually be fetched from `https://plausible.io/js/script.js`. The analytics will work exactly the same but the script will be served without being flagged.
 
+Care should be taken when serving the script from a domain that some ad-blockers may classify as analytics, even if it is a personal domain. Modern ad-blockers often rely on regex-like matching to classify requests. For example, some popular ad-blockers classify `://stats.*/script.js` as blockable, leading to the analytics script being blocked in both self-hosted and proxy setups.  
+
 We used to have a CNAME/DNS custom domain approach in the past, but it's no longer effective, so we now recommend a proxy as it's a much more flexible and powerful solution.
 
 There are many ways you can proxy requests to Plausible depending on your hosting situation. We've divided our guides to *standalone* and *integrated* proxies. A standalone proxy can be set up on its own and it does not matter what hosting provider or tech stack you are using. Integrated proxy setups are dependent on how you've deployed your app.
