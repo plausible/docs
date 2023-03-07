@@ -109,7 +109,7 @@ The number of people who visited your site. We are privacy-friendly so we don't 
 
 ## Views per visit (or Pages / Session)
 
-Views per visit (also known as Pages per session) shows the the average number of pageviews per visit. Repeated views of a single page are included too.
+Views per visit (also known as Pages per session) shows the average number of pageviews per visit. Repeated views of a single page are included too.
 
 ## Visit Duration
 
@@ -119,6 +119,6 @@ If you have issues with high bounce rates on your site, you can try to set up so
 
 ## Visits (or Sessions)
 
-A session (also known as a visit) is a set of actions that a user takes on your site. It is started when a visitor first lands on your page and ends when no action is taken on your site for 30 minutes.
+A session (also known as a visit) is a set of actions that a user takes on your site. A visit is started when a visitor first lands on your page and ends when no action is taken on your site for 30 minutes.
 
 You can read more about how you can use these metrics to [measure your website's or startup's progress and make better decisions](https://plausible.io/blog/analytics-metrics-definitions).
