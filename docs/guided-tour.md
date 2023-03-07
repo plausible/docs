@@ -14,7 +14,7 @@ Here’s what you can discover on your Plausible dashboard. You can also explore
 
 <img alt="Top Graph" src={useBaseUrl('img/top-graph.png')} />
 
-See the number of unique visitors, total page views, the bounce rate (the percentage of sessions that had one page view only) and the visit duration. These metrics include a percentage comparison to the previous time period, so you understand if the trends are going up or down. You can click on a particular metric to display it in the top graph.
+See the number of unique visitors, total visits (sessions), total page views, views per visit, the bounce rate (the percentage of sessions that had one page view only) and the visit duration. These metrics include a percentage comparison to the previous time period, so you understand if the trends are going up or down. You can click on a particular metric to display it in the top graph.
 
 You can choose a different time range that you want to analyze in the date picker in the top right. The visitor numbers are automatically presented on the graph and you can set a different interval. The time format (24-hour or 12-hour am/pm) for the top graph timelines is displayed automatically based on your browser's defined language.
 
