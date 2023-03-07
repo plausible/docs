@@ -34,21 +34,15 @@ settings in Plausible and grab the value of the `domain` field.
 
 You can specify a `metrics` option in the query, to choose the metrics for each instance returned. See here for a full overview of [metrics and their definitions](/metrics-definitions). The metrics currently supported in Stats API are:
 
-* `visitors` - The number of unique visitors.
-* `pageviews` - The number of pageview events.
-* `bounce_rate` - Bounce rate percentage.
-* `visit_duration` - Visit duration in seconds.
-* `events` - The number of events (pageviews + custom events).
-* `visits` - The number of visits/sessions.
-
-:::note
-The number of visits/sessions is currently exclusive in the Stats API. It isn't displayed in your Plausible dashboard. Below is an example command that returns this number from the last 30 days (default time period). Make sure to fill in your Plausible site name and API key.
-
-```bash title="Get the number of visits"
-curl 'https://plausible.io/api/v1/stats/aggregate?metrics=visits&site_id=YOUR_SITE_NAME' \
-  -H "Authorization: Bearer YOUR_API_KEY"
-```
-:::
+| Metric            | Description                                                                                                                                               |
+|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `visitors`        | The number of unique visitors.                                                                                                                            |
+| `visits`          | The number of visits/sessions                                                                                                                             |
+| `pageviews`       | The number of pageview events                                                                                                                             |
+| `views_per_visit` | The number of pageviews divided by the number of visits. Returns a floating point number. currently only supported in Aggregate and Timeseries endpoints. |
+| `bounce_rate`     | Bounce rate percentage                                                                                                                                    |
+| `visit_duration`  | Visit duration in seconds                                                                                                                                 |
+| `events`          | The number of events (pageviews + custom events)                                                                                                          |
 
 ### Time periods
 
@@ -208,7 +202,7 @@ See [time periods](#time-periods). If not specified, it will default to `30d`.
 
 **metrics** <Optional />
 
-List of metrics to aggregate. Valid options are `visitors`, `pageviews`, `bounce_rate`, `visit_duration`, `visits` and `events`. If not specified, it will default to `visitors`.
+List of metrics to aggregate. Valid options are `visitors`, `visits`, `pageviews`, `views_per_visit`, `bounce_rate`, `visit_duration` and `events`. If not specified, it will default to `visitors`.
 
 <hr / >
 
@@ -289,7 +283,7 @@ See [filtering](#filtering)
 
 **metrics** <Optional />
 
-Comma-separated list of metrics to show for each time bucket. Valid options are `visitors`, `pageviews`, `bounce_rate`, `visit_duration` and `visits`. If not
+Comma-separated list of metrics to show for each time bucket. Valid options are `visitors`, `visits`, `pageviews`, `views_per_visit`, `bounce_rate` and `visit_duration`. If not
 specified, it will default to `visitors`.
 
 <hr / >
