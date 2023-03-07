@@ -75,10 +75,6 @@ You can click on any source to drill-down and view the individual pages linking 
 
 Shows the width of the screens used by your visitors. We measure the width of the browser window where your site is actually rendered rather than the full screen width. Anything under 576px screen size is considered a mobile device, up to 992px is considered a tablet, up to 1440px is considered a laptop and anything above 1440px is considered a desktop. Metrics are shown as the total number of unique visitors and as a percentage of all visitors.
 
-## Session (or visit)
-
-A session (also known as a visit) is a set of actions that a user takes on your site. It is started when a visitor first lands on your page and ends when no action is taken on your site for 30 minutes.
-
 ## Source
 
 See all referral sources that are sending you traffic. A source is reported when a person clicks through to your site from another site.
@@ -111,10 +107,18 @@ When a visitor converts for a particular goal they’ll be counted as a unique c
 
 The number of people who visited your site. We are privacy-friendly so we don't use cookies and other persistent identifiers. If a person visits from multiple devices or on multiple days, they are counted as separate visitors. You can learn more about [how we count unique visitors](https://plausible.io/data-policy).
 
+## Views per visit (or Pages / Session)
+
+Views per visit (also known as Pages per session) shows the the average number of pageviews per visit. Repeated views of a single page are included too.
+
 ## Visit Duration
 
 The amount of time visitors spend on your site. It only shows people who visit more than one page. For those who visit one page only we default to 0 seconds. Average visit duration is the sum of all session lengths divided by the number of sessions, which includes the 0 second visits (bounces).
 
 If you have issues with high bounce rates on your site, you can try to set up some [custom events](custom-event-goals.md). All custom events are considered interactive so any clicks on those events will count towards the bounce rate and visit duration too.
+
+## Visits (or Sessions)
+
+A session (also known as a visit) is a set of actions that a user takes on your site. It is started when a visitor first lands on your page and ends when no action is taken on your site for 30 minutes.
 
 You can read more about how you can use these metrics to [measure your website's or startup's progress and make better decisions](https://plausible.io/blog/analytics-metrics-definitions).
