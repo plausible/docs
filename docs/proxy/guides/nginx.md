@@ -16,10 +16,14 @@ proxy, you can also configure it to proxy your analytics. Start by adjusting you
 proxy_cache_path /var/run/nginx-cache/jscache levels=1:2 keys_zone=jscache:100m inactive=30d  use_temp_path=off max_size=100m;
 
 server {
+
+    resolver 9.9.9.9; # Use quad9 DNS resolver. Remove this line if you've already configured a DNS resolver.
+    set $plausible_script_url https://plausible.io/js/script.local.js;
+    set $plausible_event_url https://plausible.io/api/event;
     ...
     location = /js/script.js {
         # Change this if you use a different variant of the script
-        proxy_pass https://plausible.io/js/script.js;
+        proxy_pass $plausible_script_url;
         proxy_set_header Host plausible.io;
 
 
@@ -27,16 +31,16 @@ server {
         proxy_buffering on;
 
         # Cache the script for 6 hours, as long as plausible.io returns a valid response
-        proxy_cache jscache;
-        proxy_cache_valid 200 6h;
-        proxy_cache_use_stale updating error timeout invalid_header http_500;
+        # proxy_cache jscache;
+        # proxy_cache_valid 200 6h;
+        # proxy_cache_use_stale updating error timeout invalid_header http_500;
 
         # Optional. Adds a header to tell if you got a cache hit or miss
-        add_header X-Cache $upstream_cache_status;
+        # add_header X-Cache $upstream_cache_status;
     }
 
     location = /api/event {
-        proxy_pass https://plausible.io/api/event;
+        proxy_pass $plausible_event_url;
         proxy_set_header Host plausible.io;
         proxy_buffering on;
         proxy_http_version 1.1;
