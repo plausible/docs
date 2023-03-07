@@ -18,11 +18,10 @@ proxy_cache_path /var/run/nginx-cache/jscache levels=1:2 keys_zone=jscache:100m 
 server {
 
     resolver 9.9.9.9; # Use quad9 DNS resolver. Remove this line if you've already configured a DNS resolver.
-    set $plausible_script_url https://plausible.io/js/script.local.js;
+    set $plausible_script_url https://plausible.io/js/script.js; # Change this if you use a different variant of the script
     set $plausible_event_url https://plausible.io/api/event;
     ...
     location = /js/script.js {
-        # Change this if you use a different variant of the script
         proxy_pass $plausible_script_url;
         proxy_set_header Host plausible.io;
 
