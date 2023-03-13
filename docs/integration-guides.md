@@ -150,6 +150,12 @@ If you're using a frontend framework that uses the URL hash for routing, you nee
 
 [Kirby 3 Plausible](https://github.com/rowdyrabouw/kirby3-plausible): Frontend snippet and Kirby panel. Contribution by [Rowdy Rabouw](https://github.com/rowdyrabouw).
 
+## Laravel
+
+* [Laravel Plausible](https://github.com/VincentBean/laravel-plausible): This package provides a blade view with the script tag for Plausible and a wrapper to easily send custom events to Plausible. Built and maintained by [Vincent Boon](https://github.com/VincentBean). 
+
+* [Laravel Plausible Exclude Page](https://github.com/swiftmade/laravel-plausible-exclude): Quickly add a page to your Laravel application to exclude your visits from Plausible. Built and maintained by [Swiftmade](https://swiftmade.co/blog/2023-03-11-exclude-your-own-traffic-from-plausible-analytics/).
+
 ## Localhost for hybrid apps
 
 You can enable Plausible to count visitors on localhost which is useful in Cordova, Capacitor and other hybrid apps. [Learn more here](script-extensions.md)
