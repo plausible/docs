@@ -78,6 +78,10 @@ Rollup reporting allows you to aggregate stats from multiple sites and see them 
 
 This will send pageviews from your sites to their individual dashboards so you can still see their separate stats but it will also send their stats to a grouped dashboard which means you'll be able to see the combined stats too in a roll-up view.
 
+:::note
+Using Google Tag Manager? You'll need to use a different code. [See these instructions](https://plausible.io/docs/google-tag-manager#track-a-subfolder-or-report-to-multiple-dashboards).
+:::
+
 ## How to verify if the script is installed on your site
 
 After you've added the Plausible Analytics script to the HTML of your website, you should see the script installed on your site and can verify that the integration is working.
