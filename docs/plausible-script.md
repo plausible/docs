@@ -62,15 +62,15 @@ Pageviews tracked using the roll-up view will count towards your billable monthl
 
 Rollup reporting allows you to aggregate stats from multiple sites and see them all together in one dashboard while still keeping the individual site stats on their own separate dashboards. Here's how you can use it:
 
-* Say you have yoursite.com and anothersite.com as websites in your Plausible account
-* Then you could add a new site to your Plausible account called for example rollup.mysites.com (you can come up with any name that you want for this, it doesn't need to be an actual website)
-* On the yoursite.com site, add the new site name to the data-domain attribute in your Plausible snippet like this:
+* Say you have `yoursite.com` and `anothersite.com` as websites in your Plausible account
+* Then you could add a new site to your Plausible account called for example `rollup.mysites.com` (you can come up with any name that you want for this, it doesn't need to be an actual website)
+* On the `yoursite.com` site, add the new site name to the data-domain attribute in your Plausible snippet like this:
 
 ```html
 <script defer data-domain="yoursite.com,rollup.mysites.com" src="https://plausible.io/js/script.js"></script>
 ```
 
-* Add the new site name to the data-domain attribute in your Plausible snippet on the anothersite.com site too. Like this:
+* Add the new site name to the data-domain attribute in your Plausible snippet on the `anothersite.com` site too. Like this:
 
 ```html
 <script defer data-domain="anothersite.com,rollup.mysites.com" src="https://plausible.io/js/script.js"></script>
