@@ -10,7 +10,9 @@ module.exports = {
     {src: 'https://plausible.io/js/script.js', defer: true, 'data-domain': 'plausible.io'}
   ],
   themeConfig: {
-    colorMode: {disableSwitch: true},
+    colorMode: {
+      defaultMode: 'light',
+    },
     algolia: {
       appId: '7M80VX1X5C',
       apiKey: '00c4f9109050cbf666dd95a6e6ca373a',
