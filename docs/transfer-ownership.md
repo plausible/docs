@@ -8,7 +8,7 @@ Plausible allows you to transfer the ownership of a site to a different Plausibl
 
 This is useful for consultants and agencies working with clients. You set up the site in Plausible, add custom events, email reports, traffic spike notifications and so on. When your job is completed, you can transfer the ownership of the site to your client. 
 
-As the new owner of the site, your client is then responsible for paying for [the Plausible subscription](subscription-plans.md) and the day-to-day operations through their own Plausible account.
+Do note that a subscription plan is not transferred alongside the site. As the new owner of the site, your client is then responsible for paying for [the Plausible subscription](subscription-plans.md) and the day-to-day operations through their own Plausible account.
 
 <img alt="Transfer ownership of a site" src={useBaseUrl('img/transfer-site-ownership.png')} />
 
