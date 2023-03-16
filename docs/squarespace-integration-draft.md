@@ -55,11 +55,11 @@ When you send custom events to Plausible, they won't show up in your dashboard a
 
 To configure a goal, go to [your website's settings](website-settings.md) in your Plausible account and visit the "**Goals**" section. You should see an empty list with a prompt to add a goal.
 
-<img alt="Add your first Squarespace goal" src={useBaseUrl('img/add-goal-Squarespace.png')} />
+<img alt="Add your first Squarespace goal" src={useBaseUrl('img/add-goal-squarespace.png')} />
 
 Click on the "**+ Add goal**" button to go to the goal creation form. Select `Pageview` as the goal trigger and enter the and enter the page path that you want to track ( i.e. **/thank-you**)
 
-<img alt="Thank you pageview goal in Squarespace" src={useBaseUrl('img/thank-you-pageview-goal-Squarespace.png')} />
+<img alt="Thank you pageview goal in Squarespace" src={useBaseUrl('img/thank-you-pageview-goal-squarespace.png')} />
 
 ### 4. Your goal should now be ready and tracking
 
@@ -70,9 +70,7 @@ Your goal should now be set up. When you navigate back to your Plausible Analyti
 
 In Squarespace, all completed orders are being redirected to a page with the following format: 
 
-
-```https://yourwebsite.com/commerce/orders/977f8aa0-f618-47d0-8787-ee37b1457cc0
-```
+```https://yourwebsite.com/commerce/orders/977f8aa0-f618-47d0-8787-ee37b1457cc0```
 
 To track completed orders, you can also set a pageview goal, however since the ID ( in our example "/977f8aa0-f618-47d0-8787-ee37b1457cc0" ) changes with every order, you will need to use [wildcards](https://plausible.io/docs/pageview-goals#pageview-goals-support-wildcards) to set up the gol. 
 
