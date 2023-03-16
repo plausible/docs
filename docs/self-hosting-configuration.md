@@ -91,43 +91,42 @@ To run the complete setup including geoip see [`docker-compose-geoip.yml`](https
 
 To enable [the Google Search Console integration](google-search-console-integration.md) and [Google Analytics imports,](google-analytics-import.md) you first need to authorize your self-hosted installation with a Google Account. Complete the following two tasks to do so.
 
-#### Task One: Create an OAuth Client
+#### Task One: Configure the OAuth Consent Screen
 
-1. Login to [Google API Console](https://console.developers.google.com/) with your Google Account. We will need to obtain OAuth 2.0 credentials such as a Client ID and Client Secret key that are known to both Google and your installation.
-2. Once on the API Console, create a new project for the Plausible integration.
+1. Login to [Google API Console](https://console.developers.google.com/) with your Google Account. Once on the API Console, create a new project for the Plausible integration.
 
 ![google1](https://user-images.githubusercontent.com/85956139/132954658-2d5bc2c3-22c2-4300-b9c6-cbe4f8f8987e.png)
 
-3. Make sure your new Project is open, then go to the "Credentials" screen and get your Client ID and Client Secret key. If you can't see the "Credentials" menu item, open the navigation ("hamburger") menu in the top left corner and select "APIs & Services". "Credentials" is a menu item below that.
+2. Make sure your new Project is open, select "OAuth consent screen" from the left side menu to configure the consent screen. If you can't see the "OAuth consent screen" menu item, open the navigation ("hamburger") menu in the top left corner and select "APIs & Services". "OAuth consent screen" is a menu item below that.
+
+3. Enter an "App name" and a "User support email". Again, to help with naming, remember that the "app" is your self-hosted Plausible site which will be requesting access to the Search Console API using your Google Account, so you are probably the only user.
+
+4. Apart from the mandatory "Developer contact information" fields, the only other necessary setting is the "Authorized domains" which must include the domain used for the earlier "Authorized Redirect URIs" setting. That is, add the domain (eg. `example.com`) of your Plausible installation's public URL. All subdomains will be authorized automatically.
+
+5. Click "SAVE AND CONTINUE". No "Scopes" are required, so click "SAVE AND CONTINUE" again.
+
+6. The "app" will be created with status set to "Testing". To avoid having to verify it with Google, you must enter the email address of your Google Account as a "Test user". Add the email address and then click "SAVE AND CONTINUE" and the OAuth Consent Screen configuration is complete.
+
+#### Task Two: Create an OAuth Client
+
+1. We will need to obtain OAuth 2.0 credentials such as a Client ID and Client Secret key that are known to both Google and your installation. Make sure your new Project is open, then go to the "Credentials" screen and get your Client ID and Client Secret key. If you can't see the "Credentials" menu item, open the navigation ("hamburger") menu in the top left corner and select "APIs & Services". "Credentials" is a menu item below that.
 
 ![google2](https://user-images.githubusercontent.com/85956139/132954742-bb9c3477-b84a-40a5-a2eb-f9fa683804cf.png)
 
-4. Use the "+ CREATE CREDENTIALS" button near the top of the screen to create a new "OAuth client ID". Set the "Application type" to "Web application" and give it a name. To help with naming, note that your self-hosted Plausible site will be the "client" that is accessing an API exposed by your Google account.
+2. Use the "+ CREATE CREDENTIALS" button near the top of the screen to create a new "OAuth client ID". Set the "Application type" to "Web application" and give it a name. To help with naming, note that your self-hosted Plausible site will be the "client" that is accessing an API exposed by your Google account.
 
-5. Use the "+ ADD URI" button to set an "Authorized redirect URI" to your Plausible installation's public URL followed by `/auth/google/callback`. Eg. `https://plausible.example.com/auth/google/callback`. Then click "CREATE".
+3. Use the "+ ADD URI" button to set an "Authorized redirect URI" to your Plausible installation's public URL followed by `/auth/google/callback`. Eg. `https://plausible.example.com/auth/google/callback`. Then click "CREATE".
 
 ![google3](https://user-images.githubusercontent.com/85956139/132954858-ef951349-20b0-4675-bf9c-ead8d4bc292b.jpg)
 
-6. Copy the Client ID and Client Secret key from your project in Google API Console into these config values (that is, add them to `plausible-conf.env`):
+4. Copy the Client ID and Client Secret key from your project in Google API Console into these config values (that is, add them to `plausible-conf.env`):
 
 | Parameter            | Default | Description                                                                        |
 | -------------------- | ------- | ---------------------------------------------------------------------------------- |
 | GOOGLE_CLIENT_ID     | --      | The Client ID from the Google API Console for your Plausible Analytics project     |
 | GOOGLE_CLIENT_SECRET | --      | The Client Secret from the Google API Console for your Plausible Analytics project |
 
-7. Force the new config values to take effect by restarting your Plausible site (eg. with the command `docker-compose down --remove-orphans && docker-compose up -d`).
-
-#### Task Two: Configure the OAuth Consent Screen
-
-1. Follow the prompts or select "OAuth consent screen" from the left side menu to configure the consent screen. If you can't see the "OAuth consent screen" menu item, open the navigation ("hamburger") menu in the top left corner and select "APIs & Services". "OAuth consent screen" is a menu item below that.
-
-1. Enter an "App name" and a "User support email". Again, to help with naming, remember that the "app" is your self-hosted Plausible site which will be requesting access to the Search Console API using your Google Account, so you are probably the only user.
-
-1. Apart from the mandatory "Developer contact information" fields, the only other necessary setting is the "Authorized domains" which must include the domain used for the earlier "Authorized Redirect URIs" setting. That is, add the domain (eg. `example.com`) of your Plausible installation's public URL. All subdomains will be authorized automatically.
-
-1. Click "SAVE AND CONTINUE". No "Scopes" are required, so click "SAVE AND CONTINUE" again.
-
-1. The "app" will be created with status set to "Testing". To avoid having to verify it with Google, you must enter the email address of your Google Account as a "Test user". Add the email address and then click "SAVE AND CONTINUE" and the OAuth Consent Screen configuration is complete.
+5. Force the new config values to take effect by restarting your Plausible site (eg. with the command `docker-compose down --remove-orphans && docker-compose up -d`).
 
 ### Google Search Integration
 
