@@ -74,6 +74,6 @@ In Squarespace, all completed orders are being redirected to a page with the fol
 
 To track completed orders, you can also set a pageview goal, however since the ID ( in our example "/977f8aa0-f618-47d0-8787-ee37b1457cc0" ) changes with every order, you will need to use [wildcards](https://plausible.io/docs/pageview-goals#pageview-goals-support-wildcards) to set up the gol. 
 
-Any of these wildcards should work: /**orders** , /**/orders/** , /commerce/orders/**
+Any of these wildcards should work: `/**orders**` , `/**/orders/**` , `/commerce/orders/**`
 
 <img alt="Track orders in Squarespace" src={useBaseUrl('img/track-orders-squarespace.png')} />
