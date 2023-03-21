@@ -92,15 +92,27 @@ If you're unable to add the classnames in your page editor (or if your CMS overr
 
 This approach will be using the `id` attribute of your element, to add the CSS classes dynamically with JavaScript. The `id` attribute should already be present on your element in most site builders.
 
-### 1. Verify that your element has an `id` attribute
+<h3>
+
+1. Verify that your element has an `id` attribute
+
+</h3>
 
 Go to your website, right-click and inspect the element you want to track, which will show you the HTML code of that element. If there is the `id="...."` attribute, no matter the value, you can proceed to step 3.
 
-### 2. Add an `id` attribute in your CMS
+<h3>
+
+2. Add an `id` attribute in your CMS
+
+</h3>
 
 If the element you want to track does not have an `id` attribute by default, you can try adding one in the edit mode of your CMS. However, if you don't have that option, then this approach will be impossible and you will have to check out the section at the bottom of this page - [implementing custom events manually with JavaScript](#trigger-custom-events-manually-with-a-javascript-function). 
 
-### 3. Add the JavaScript code to your page
+<h3>
+
+3. Add the JavaScript code to your page
+
+</h3>
 
 Once you have the `id` attribute, you can use it to add the CSS classnames dynamically with JavaScript. Here's the code that does that:
 
@@ -131,8 +143,11 @@ You should copy this code into the `<head>` section of your page, and make the f
 
 Once you have this script inserted on your page, Plausible will be able to track your element.
 
+<h3>
 
-### 4. Want to track multiple elements?
+4. Want to track multiple elements?
+
+</h3>
 
 If you want to track multiple elements accross your site, you can use the same code from step 3 on all of your pages. The only modification you will have to make, is list as many pairs of `elementId` and `classes` as you want. For example, if you want to track three elements:
 
@@ -240,8 +255,11 @@ And here's what triggering a custom event with custom properties looks like:
 ```javascript
 plausible('Download', {props: {method: 'HTTP', Region: 'Europe'}})
 ```
+<h3>
 
-### Example: Tracking audio and video elements
+Example: Tracking audio and video elements
+
+</h3>
 
 1. Give your audio or video element an `id` attribute to use it with JavaScript. If it already has an `id`, feel free to use that instead of `trackedMedia` in this example.
 
