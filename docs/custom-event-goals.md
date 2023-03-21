@@ -136,11 +136,7 @@ After adding the class, please go back to your site, and verify that the class a
 
 In some cases, the tracking classes might be added to a wrapper `<div>` element (parent to the element you want to track), but don't worry, Plausible will still be able to track clicks on the child element if its parent has the necessary classes. 
 
-If your CMS doesn't support CSS class names or if it overrides the format of your class names, you would need to use custom JavaScript code to either trigger custom events manually or to attach the class names to your element dynamically.
-
-Are you using Webflow? Here's our guide for how to set up [custom events for form submissions and button clicks on Webflow](webflow-integration.md).
-
-And here's how to [trigger custom events manually using JavaScript](custom-event-goals.md#want-to-trigger-custom-events-manually-with-custom-javascript).
+If your CMS doesn't support CSS class names or if it overrides the format of your class names, you would need to use custom JavaScript code to either trigger custom events manually or to attach the class names to your element dynamically. We have instruction on how to trigger custom events manually using JavaScript further down this page.
 
 ## Using custom props
 
