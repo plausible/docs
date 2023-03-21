@@ -68,20 +68,48 @@ Or if your element already has a class attribute, just separate the new ones wit
 <button class="some-existing-class plausible-event-name=Button+Click">Click Me</button>
 ```
 
-If your CMS overrides the format of your class names, Plausible will most likely not be able to track it. If that's the case, please keep reading the below instructions.
+### Verify that the CSS classes were added correctly
 
-### Does the element you want to track have an `id` attribute, or can you add one?
+After adding the class, please go back to your site, and verify that the class attribute got added with the exact required format. You can check it by right-clicking the element and inspecting it. This will show you the HTML code of the element.
 
-If the element already has an `id` you can use that. If it doesn't, go ahead and add a unique `id` attribute.
+In some cases, the tracking classes might be added to a wrapper `<div>` element (parent to the element you want to track), but don't worry, Plausible will still be able to track clicks on the child element if its parent has the necessary classes. 
 
-You can use this `id` to add the class names to your element dynamically with JavaScript. Here's the code you will have to insert in the `<head>` section of the page with the element you want to track:
+If your CMS overrides the format of your class names, Plausible will most likely not be able to track it.
+
+For example - you add a class attribute with the value `plausible-event-name=Signup`, but when you go back to your page and inspect the element, it will have `class="plausible-event-name-Signup"` (equals sign replaced with a hyphen).
+
+If that's the case, please expand the following section of instructions.
+
+<details>
+
+<summary>
+
+### My site builder does not support adding CSS classes 
+
+If you're unable to add the classnames in your page editor (or if your CMS overrides the classname format), there's still a way for you to leverage the `tagged-events` script extension and track custom events. This method includes copying and pasting some JavaScript code onto your page. You can expand this section and follow step-by-step instructions.
+
+</summary>
+
+This approach will be using the `id` attribute of your element, to add the CSS classes dynamically with JavaScript. The `id` attribute should already be present on your element in most site builders.
+
+### 1. Verify that your element has an `id` attribute
+
+Go to your website, right-click and inspect the element you want to track, which will show you the HTML code of that element. If there is the `id="...."` attribute, no matter the value, you can proceed to step 3.
+
+### 2. Add an `id` attribute in your CMS
+
+If the element you want to track does not have an `id` attribute by default, you can try adding one in the edit mode of your CMS. However, if you don't have that option, then this approach will be impossible and you will have to check out the section at the bottom of this page - [implementing custom events manually with JavaScript](#trigger-custom-events-manually-with-a-javascript-function). 
+
+### 3. Add the JavaScript code to your page
+
+Once you have the `id` attribute, you can use it to add the CSS classnames dynamically with JavaScript. Here's the code that does that:
 
 ```html
 <script>
     var toTag = [
         {
-            elementId: 'my-custom-event-element',
-            classes: 'plausible-event-name=<event_name> plausible-event-<property>=<value>'
+            elementId: 'my-element-id',
+            classes: 'plausible-event-name=<event_name>'
         }
     ]
 
@@ -96,23 +124,36 @@ You can use this `id` to add the class names to your element dynamically with Ja
 </script>
 ```
 
-In this code, you will have to change the `elementId` and `classes` keys in the `toTag` variable. If you want to track multiple elements on one page, you can do it like this:
+You should copy this code into the `<head>` section of your page, and make the following adjustments to it:
+
+1. In the line that says `elementId: 'my-element-id`, replace `my-element-id` with the `id` value from step 2 or 3.
+2. In the line that says `classes: 'plausible-event-name=Event+Name'`, replace `Event+Name` with your desired custom event name. This will be the goal name that will be displayed in your dashboard later.
+
+Once you have this script inserted on your page, Plausible will be able to track your element.
+
+
+### 4. Want to track multiple elements?
+
+If you want to track multiple elements accross your site, you can use the same code from step 3 on all of your pages. The only modification you will have to make, is list as many pairs of `elementId` and `classes` as you want. For example, if you want to track three elements:
 
 ```javascript
 var toTag = [
     {
-        elementId: 'my-custom-event-element',
-        classes: 'plausible-event-name=<event_name> plausible-event-<property>=<value>'
+        elementId: 'id-1',
+        classes: 'plausible-event-name=My+First+Goal'
     },
     {
-        elementId: 'another-custom-event-element',
-        classes: 'plausible-event-name=<event_name> plausible-event-<property>=<value>'
+        elementId: 'id-2',
+        classes: 'plausible-event-name=My+Second+Goal'
     },
-    // ...
+    {
+        elementId: 'id-3',
+        classes: 'plausible-event-name=My+Third+Goal'
+    },
 ]
 ```
 
-Once you have this script running on your site, it will add your class names as soon as the HTML content is loaded on the page, and Plausible will be able to track your element.
+</details>
 
 ## 3. Create a custom event goal in your Plausible account
 
@@ -129,14 +170,6 @@ Select `Custom event` as the goal trigger and enter the name of the custom event
 <img alt="Add your custom event goal" src={useBaseUrl('img/add-custom-event-goal.png')} />
 
 Next, click on the "**Add goal**" button and you'll be taken back to the Goals page. When you navigate back to your Plausible dashboard, you should see the number of visitors who triggered the custom event. Custom events are listed at the bottom of your dashboard and will appear as soon as the first conversion has been tracked.
-
-## 4. Verify that the CSS class has been added correctly
-
-After adding the class, please go back to your site, and verify that the class attribute got added with the exact required format. You can check it by right-clicking the element and inspecting it. This will show you the HTML code of the element.
-
-In some cases, the tracking classes might be added to a wrapper `<div>` element (parent to the element you want to track), but don't worry, Plausible will still be able to track clicks on the child element if its parent has the necessary classes. 
-
-If your CMS doesn't support CSS class names or if it overrides the format of your class names, you would need to use custom JavaScript code to either trigger custom events manually or to attach the class names to your element dynamically. We have instruction on how to trigger custom events manually using JavaScript further down this page.
 
 ## Using custom props
 
