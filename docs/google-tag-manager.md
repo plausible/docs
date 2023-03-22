@@ -12,8 +12,7 @@ You can use "**Google Tag Manager**" to add Plausible Analytics tracking code to
 <img alt="Choose tag type" src={useBaseUrl('img/choose-type-to-begin.png')} />
 * Use the search functionality to search for "**Custom HTML**"
 <img alt="HTML tag" src={useBaseUrl('img/custom-html-tag.png')} />
-* In the HTML field within the Custom HTML section, paste [your Plausible snippet](plausible-script.md)
-:::note Be careful about extras you enable such as tag firing priority, tag sequencing, consent checks etc as they all may affect when and how our script loads:::
+* In the HTML field within the Custom HTML section, paste [your Plausible snippet](plausible-script.md). Be careful about extras you enable such as tag firing priority, tag sequencing, consent checks etc as they all may affect when and how our script loads
 * Then click to "**Choose a trigger to make this tag fire**"
 <img alt="Paste Plausible script" src={useBaseUrl('img/paste-plausible-script.png')} />
 * Select the "**All Pages**" and filter "**Page View**" as the trigger if you want to count all your pages
