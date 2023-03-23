@@ -48,13 +48,24 @@ Click on the "**Filter**" button, then select "**Country**" as your metric, choo
 
 Want to group all your blog posts and analyze the traffic to the blog separately from the rest of your site? Or exclude traffic that has visited a specific section of your site such as your logged in pages or your order confirmation page?
 
-You can group pages by using the "**Filter**" button. The "**Page**" menu within the filter button includes options for "**is**", "**is not**" and "**contains**". The "**Filter**" button also allows you to segment the dashboard by multiple pages at the same time.:
+You can group pages by using the "**Filter**" button. The "**Page**" menu within the filter button includes option "**contains**". Put any specific keyword to group all of your pages that contain that keyword. 
 
-When searching for pages, you can use double asterisks to match any character (e.g. `/blog**`). Filter for pages supports wildcards in the following format:
+<details>
+
+<summary>
+
+### Filter for pages also supports wildcards
+
+The "**Page**" menu within the filter button also supports wildcards format that makes filtering even more powerful. 
+
+You can use rules in the following format to group different pages or dynamic URLs. You can track all the blog posts by using `/blog**` (if your blog subdirectory is named `blog`) or track Woocommerce checkout pages for your ecommerce (`/checkout/order-received/*`). 
+
+Here are the supported formats:
+
+</summary>
 
 - Asterisks (`*`) expand to any stretch (of length >=0) of the page path and can be on either end or in the middle of any entry, but **cannot** be in the place of slashes.
 - Double asterisks (`**`) expand to any stretch (of length >=0) of the page path, can be on either end or in the middle of any entry, and can represent **any** characters, even slashes.
-- For page-based metrics, "contains" is also available as a filter type. This has the same effect of adding double asterisks (`**`) before and after your entry.
 
 <img alt="Group pages" src={useBaseUrl('img/group-pages-filter.png')} />
 
@@ -79,3 +90,5 @@ See below for more examples of common use cases and how they would function.
 :::note
 Would you like your grouped pages to be permanently displayed in your dashboard? You can do so by using [pageview goals](pageview-goals.md).
 :::
+
+</details>
