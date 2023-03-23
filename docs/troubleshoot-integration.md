@@ -66,6 +66,8 @@ Here's [the full list of all integrations and guides](integration-guides.md).
 
 * Using cache? Do purge the cache just in case.
 
+* Implemented Plausible using Google Tag Manager? GTM strips the `data-*` attributes by default which can break the tracking. Please follow [our GTM guide](google-tag-manager.md) for instructions on how to integrate Plausible using GTM.
+
 * Are you running an AMP page? To track Google AMP pages with Plausible, you need to declare an AMP-analytics object on your AMP pages. [See the instructions here](https://github.com/plausible/analytics/discussions/220#discussioncomment-904022).
 
 * Are you running a browser extension that may be blocking our script? Do disable the extension or whitelist our script within the settings of the extension you are using
