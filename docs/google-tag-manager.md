@@ -4,46 +4,58 @@ title: How to add the script to your site using Google Tag Manager
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-You can use "**Google Tag Manager**" to add Plausible Analytics tracking code to your website. Here's the process if you're tracking a domain name or subdomain (see the note below if you'd like to track a subfolder using GTM):
+You can use "**Google Tag Manager**" to add Plausible Analytics tracking code to your website.
 
 * In your Google Tag Manager account, click on "**Add a new tag**"
 <img alt="Add new tag" src={useBaseUrl('img/add-new-tag.png')} />
+
 * Click on the "**Choose a tag type to begin setup**"
 <img alt="Choose tag type" src={useBaseUrl('img/choose-type-to-begin.png')} />
+
 * Use the search functionality to search for "**Custom HTML**"
 <img alt="HTML tag" src={useBaseUrl('img/custom-html-tag.png')} />
-* In the HTML field within the Custom HTML section, paste [your Plausible snippet](plausible-script.md). Be careful about extras you enable such as tag firing priority, tag sequencing, consent checks etc as they all may affect when and how our script loads
-* Then click to "**Choose a trigger to make this tag fire**"
-<img alt="Paste Plausible script" src={useBaseUrl('img/paste-plausible-script.png')} />
-* Select the "**All Pages**" and filter "**Page View**" as the trigger if you want to count all your pages
-<img alt="Tag trigger" src={useBaseUrl('img/trigger-tag.png')} />
-* Give your tag a name
-<img alt="Name tag" src={useBaseUrl('img/name-your-tag.png')} />
-* Click on the "**Save**" button
-* Click "**Submit**" to submit your changes
-* Then click on the "**Publish**" button
 
-That's it! Now you can go to your website and verify whether Plausible Analytics script has been added and to your Plausible Analytics account to see whether the stats are being tracked. See here [how to verify the integration](troubleshoot-integration.md).
-
-## Track a subfolder or report to multiple dashboards
-
-If you'd like to track a subfolder (yourdomain.com/subfolder) or report to [multiple dashboards at the same time](plausible-script.md#can-i-send-stats-to-multiple-dashboards-at-the-same-time), the snippet you need to insert in the HTML field within the Custom HTML section should look like this:
+* In the HTML field within the Custom HTML section, paste the following code:
 
 ```html
 <script>
   var script = document.createElement('script');
   script.defer = true;
-  script.dataset.domain = "YOUR-DATA-DOMAIN";
+  script.dataset.domain = "YOUR_DATA_DOMAIN";
+  script.dataset.api = "https://plausible.io/api/event";
   script.src = "https://plausible.io/js/script.js";
   document.getElementsByTagName('head')[0].appendChild(script);
 </script>
 ```
 
-In case your Plausible site is a subfolder, enter "yoursite.com/subfolder" as the "**script.dataset.domain**" value. If you want to report to multiple dashboards at the same time, set the "**script.dataset.domain**" value to "firstsite.com,secondsite.com". 
+This code will generate your Plausible snippet, and add it to the `<head>` section of the page. Make sure to change `YOUR_DATA_DOMAIN` with the actual name of your Plausible site.
+
+Additionally, if you're using our [proxy](proxy/introduction.md) or any [script extensions](/script-extensions), you can change the `script.dataset.api` (`data-api` attribute) and `script.src` values according to your tracking needs. Please check out the linked resources for further instructions. For a full documentation on the Plausible script configuration and tracking options, see [here](plausible-script.md).
+
+:::note
+Be careful about extras you enable such as tag firing priority, tag sequencing, consent checks etc as they all may affect when and how our script loads
+:::
+
+* Then click to "**Choose a trigger to make this tag fire**"
+<img alt="Paste Plausible script" src={useBaseUrl('img/paste-plausible-script.png')} />
+
+* Select the "**All Pages**" and filter "**Page View**" as the trigger if you want to count all your pages
+<img alt="Tag trigger" src={useBaseUrl('img/trigger-tag.png')} />
+
+* Give your tag a name
+<img alt="Name tag" src={useBaseUrl('img/name-your-tag.png')} />
+
+* Click on the "**Save**" button
+
+* Click "**Submit**" to submit your changes
+
+* Then click on the "**Publish**" button
+
+That's it! Now you can go to your website and verify whether Plausible Analytics script has been added and to your Plausible Analytics account to see whether the stats are being tracked. See here [how to verify the integration](troubleshoot-integration.md).
 
 ## Track custom events
 
-To track custom events, you will simply need to change the default tracking script to add the [tagged-events extension](https://plausible.io/docs/script-extensions#all-our-script-extensions) and, if necessary, add the extra script to triger the custom event. For refference you can check out any of our CRM integration guides. For example, our [Webflow guide](https://plausible.io/docs/webflow-integration)
+To track custom events, you will simply need to change the default tracking script to add the [tagged-events extension](https://plausible.io/docs/script-extensions#all-our-script-extensions) and, if necessary, add the extra script to triger the custom event. For reference you can check out any of our CRM integration guides. For example, our [Webflow guide](https://plausible.io/docs/webflow-integration)
 
 ## Concerns about using Google Tag Manager
 
