@@ -30,6 +30,9 @@ We also allow you to add filters without clicking on any specific metric in the 
 
 You can filter your stats by multiple sources, countries, pages and more, all at once. This is useful if you want to group specific geographical regions, separate organic search traffic from other sources or segment your audience to your needs.
 
+<img alt="Multiple filters" src={useBaseUrl('img/filter-segments-multiple-filters.png')} />
+
+
 ### Search for any metric
 
 You can search for any metric such as a particular country, referral source or page on your site. Start typing to discover the specific page (or another metric) you're looking for. No need to scroll through the long list of countries or pages.
