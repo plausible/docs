@@ -8,9 +8,11 @@ Your "**Locations**" report shows where in the world your visitors are coming fr
 
 Click on any country to see the list of regions within that country where your visitors are coming from. Click on any region to see the list of cities within that region. You can also use the "**Countries**", "**Regions**" and "**Cities**" tabs on the top of the report.
 
+<img alt="Countries" src={useBaseUrl('img/countries.png')} />
+
 You can also use the "**Filter**" button on the top of your dashboard to segment the traffic by multiple countries, regions or cities at the same time. This allows you to group specific geographical regions and display only that traffic. You can also filter out traffic from particular countries, regions or cities using the "**Filter**" button.
 
-<img alt="Countries" src={useBaseUrl('img/countries.png')} />
+<img alt="Countries - multiple filters" src={useBaseUrl('img/countries-filtering-multiple-filters.png')} />
 
 ## How it works
 
