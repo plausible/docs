@@ -4,29 +4,40 @@ title: Top Pages
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Your "**Top Pages**" report shows which pages your visitors are visiting the most often. You can use it to identify the most popular content on your site. Click on any page to see the page drilldown with further details. You can also click on the "**details**" button to see the full list of pages with additional metrics. The number of pageviews, bounce rate, and time on page for the individual pages are included too.
+Your "**Top Pages**" report shows which pages your visitors are visiting the most often. You can use it to identify the most popular content on your site. Click on any page to segment your audience by those who visited that particular page. You can also click on the "**Details**" button to see the full list of pages with additional metrics. The number of pageviews, bounce rate, and time on page for the individual pages are included too.
 
-You can also see the traffic flow by looking at the "**Entry Pages**" and "**Exit Pages**" reports. You can click on the "**details**" button to see the full list with additional details. For entry pages details include visit duration for visits that started on a specific page and for exit pages details include the exit rate percentage.
+You can also see the traffic flow by looking at the "**Entry Pages**" and "**Exit Pages**" reports. You can click on the "**Details**" button to see the full list with additional details. For entry pages details include visit duration for visits that started on a specific page and for exit pages details include the exit rate percentage.
 
 <img alt="Top Pages" src={useBaseUrl('img/top-pages.png')} />
 
-### How it works
+## Grouping pages
 
-Plausible Analytics records the URL path of each page view as the visitors are browsing your site. Query parameters are discarded from the path to make sure they don't show up as different pages in Plausible Analytics.
+Do you want to group all your blog posts and analyze the traffic to the blog separately from the rest of your site? The "**Page**" menu within the filter button includes option for "**contains**". Put any specific keyword to group all of your pages that contain that keyword. The "**Filter**" button also allows you to segment the dashboard by grouping multiple unrelated pages at the same time.
 
-If your website is a single-page application with `pushState` routing, Plausible Analytics will track page views automatically with no extra work. If you're using a frontend framework that uses the URL hash for routing, we also have a special [hash-based script](hash-based-routing.md).
+## Filtering out pages
 
-## Searching for and grouping pages
+Do you want to exclude traffic that has visited a specific section of your site such as your logged in pages or your order confirmation page? You can filter out pages by using the "**Filter**" button on the top of your dashboard. The "**Page**" menu within the filter button includes option for "**is not**".
 
-Do you want to group all your blog posts and analyze the traffic to the blog separately from the rest of your site? Or exclude traffic that has visited a specific section of your site such as your logged in pages or your order confirmation page?
+## Searching for pages
 
-You can search for pages, exclude pages and group pages by using the "**Filter**" button on the top of your dashboard. The "**Page**" menu includes filters for "**is**", "**is not**" and "**contains**". Filter for pages also supports wildcards in the following format:
+You can search for pages using the "**Filter**" button on the top of your dashboard.
+
+<details>
+
+<summary>
+
+## Filter for pages also supports wildcards
+
+The "**Page**" menu within the filter button also supports wildcards format that makes filtering even more powerful. 
+
+You can use rules in the following format to group different pages or dynamic URLs. You can track all the blog posts by using `/blog**` (if your blog subdirectory is named `blog`) or track Woocommerce checkout pages for your ecommerce (`/checkout/order-received/*`). 
+
+Here are the supported formats:
+
+</summary>
 
 - Asterisks (`*`) expand to any stretch (of length >=0) of the page path and can be on either end or in the middle of any entry, but **cannot** be in the place of slashes.
 - Double asterisks (`**`) expand to any stretch (of length >=0) of the page path, can be on either end or in the middle of any entry, and can represent **any** characters, even slashes.
-- For page-based metrics, "contains" is also available as a filter type. This has the same effect of adding double asterisks (`**`) before and after your entry.
-
-You can use rules in this format to group different pages or dynamic URLs. You can track all the blog posts by using `/blog**` (if your blog subdirectory is named `blog`) or track Woocommerce checkout pages for your ecommerce (`/checkout/order-received/*`). 
 
 <img alt="Group pages" src={useBaseUrl('img/group-pages-filter.png')} />
 
@@ -49,3 +60,11 @@ See below for more examples of common use cases and how they would function.
 :::note
 Do you prefer to display your page groupings permanently in your dashboard? You can do so using [our pageview goals](pageview-goals.md).
 :::
+
+</details>
+
+### How it works
+
+Plausible Analytics records the URL path of each page view as the visitors are browsing your site. Query parameters are discarded from the path to make sure they don't show up as different pages in Plausible Analytics.
+
+If your website is a single-page application with `pushState` routing, Plausible Analytics will track page views automatically with no extra work. If you're using a frontend framework that uses the URL hash for routing, we also have a special [hash-based script](hash-based-routing.md).
