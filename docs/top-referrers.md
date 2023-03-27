@@ -10,6 +10,8 @@ The Top Sources report also includes all the traffic tagged with UTM tags such a
 
 Using the "**Filter**" button on the top of your dashboard, you can filter the stats by multiple sources at the same time which allows you to for instance separate organic search traffic from other traffic. It's also possible to filter out traffic from a specific referral source.
 
+<img alt="Top Referrers - multiple filters" src={useBaseUrl('img/top-referrers-filtering-multiple-filters.png')} />
+
 Note that all referral sources are counted only when they start a new session on your site. This is why you don't see all your own referral sources if you click to test several different UTM tagged links at the same time. Only the first one would be included in the "**Top Sources**" report. You would need to start a new session by for instance waiting more than 30 minutes or using a different device, browser or IP address.
 
 The fact that the referral sources are counted only when they start a new session on your site prevents external domains such as a payment gateway that the user is being taken through to show up in the referrers list. No need for you to manually exclude referrers.
