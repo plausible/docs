@@ -14,6 +14,8 @@ You can also see the traffic flow by looking at the "**Entry Pages**" and "**Exi
 
 Do you want to group all your blog posts and analyze the traffic to the blog separately from the rest of your site? The "**Page**" menu within the filter button includes option for "**contains**". Put any specific keyword to group all of your pages that contain that keyword. The "**Filter**" button also allows you to segment the dashboard by grouping multiple unrelated pages at the same time.
 
+<img alt="Top Pages - multiple filters" src={useBaseUrl('img/top-pages-filtering-multiple-filters.png')} />
+
 ## Filtering out pages
 
 Do you want to exclude traffic that has visited a specific section of your site such as your logged in pages or your order confirmation page? You can filter out pages by using the "**Filter**" button on the top of your dashboard. The "**Page**" menu within the filter button includes option for "**is not**".
