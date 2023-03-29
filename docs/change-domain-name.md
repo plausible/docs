@@ -4,7 +4,7 @@ title: Change your domain name
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Please follow the following steps if you have changed the domain name of your site and would like your new domain name to be displayed in your Plausible dashboard. You won't lose any of your historical stats in this process.
+Please follow these steps if you have changed the domain name of your site and would like your new domain name to be displayed in your Plausible dashboard. You won't lose any of your historical stats in this process.
 
 Note that once you change the domain in your Plausible site settings, you must update the JavaScript snippet on your site within 72 hours to guarantee continuous tracking. If you're using our APIs, you must also make sure to update your API credentials.
 
