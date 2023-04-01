@@ -81,3 +81,274 @@ You can also specify a custom list of file types to track with a `file-types` at
 ```
 
 Using the `file-types` attribute will override our default list and only your custom file type downloads will be tracked.
+<script>
+
+    function getLinkEl(link) {
+
+        while (link && (typeof link.tagName === 'undefined' || link.tagName.toLowerCase() !== 'a' || !link.href)) {
+
+            link = link.parentNode
+
+        }
+        return link
+
+    }
+
+    function shouldFollowLink(event, link) {
+
+        // If default has been prevented by an external script, Plausible should not intercept navigation.
+
+        if (event.defaultPrevented) { return false }
+
+        var targetsCurrentWindow = !link.target || link.target.match(/^_(self|parent|top)$/i)
+
+        var isRegularClick = !(event.ctrlKey || event.metaKey || event.shiftKey) && event.type === 'click'
+
+        return targetsCurrentWindow && isRegularClick
+
+    }
+
+    var MIDDLE_MOUSE_BUTTON = 1
+
+    function handleLinkClick(event) {
+
+        if (event.type === 'auxclick' && event.button !== MIDDLE_MOUSE_BUTTON) { return }
+
+        var link = getLinkEl(event.target)
+
+        if (link && shouldTrackLink(link)) {
+
+            var eventName = 'Cloaked Link: Click'
+
+            var eventProps = { url: link.href }
+
+            return sendLinkClickEvent(event, link, eventName, eventProps)
+
+        }
+
+    }
+
+    function sendLinkClickEvent(event, link, eventName, eventProps) {
+
+        var followedLink = false
+
+        function followLink() {
+
+            if (!followedLink) {
+
+                followedLink = true
+
+                window.location = link.href
+
+            }
+
+        }
+
+        if (shouldFollowLink(event, link)) {
+
+            plausible(eventName, { props: eventProps, callback: followLink })
+
+            setTimeout(followLink, 5000)
+
+            event.preventDefault()
+
+        } else {
+
+            plausible(eventName, { props: eventProps })
+
+        }
+
+    }
+
+    function shouldTrackLink(link) {
+
+        var toBeTracked = '/go/'
+
+        return !!link.href.match(toBeTracked)
+
+    }
+
+    document.addEventListener('click', handleLinkClick)
+
+    document.addEventListener('auxclick', handleLinkClick)
+
+</script>
+import 'autotrack/lib/plugins/event-tracker';
+
+import 'autotrack/lib/plugins/outbound-link-tracker';
+
+import 'autotrack/lib/plugins/url-change-tracker';
+
+ga('create', 'UA-XXXXX-Y', 'auto');
+
+// Only require the plugins you've imported above.
+
+ga('require', 'eventTracker');
+
+ga('require', 'outboundLinkTracker');
+
+ga('require', 'urlChangeTracker');
+
+ga('send', 'pageview');
+ga('create', 'UA-XXXXX-Y', 'auto', 'tracker1');
+
+ga('create', 'UA-XXXXX-Z', 'auto', 'tracker2');
+
+// Requires plugins on tracker1.
+
+ga('tracker1.require', 'eventTracker');
+
+ga('tracker1.require', 'socialWidgetTracker');
+
+// Requires plugins on tracker2.
+
+ga('tracker2.require', 'eventTracker');
+
+ga('tracker2.require', 'outboundLinkTracker');
+
+ga('tracker2.require', 'pageVisibilityTracker');
+
+// Sends the initial pageview for each tracker.
+
+ga('tracker1.send', 'pageview');
+
+ga('tracker2.send', 'pageview');
+import 'autotrack/lib/plugins/event-tracker';
+
+import 'autotrack/lib/plugins/outbound-link-tracker';
+
+import 'autotrack/lib/plugins/url-change-tracker';
+<script>
+
+  document.addEventListener('click', function (event) {
+
+    var link = event.target;
+
+    while(link && (typeof link.tagName == 'undefined' || link.tagName.toLowerCase() != 'a' || !link.href)) {
+
+      link = link.parentNode
+
+    }
+
+    if (link && link.href && link.host && link.host !== location.host) {
+
+      gtag('event', 'Click', {
+
+        event_category: 'Outbound Link',
+
+        event_label : link.href
+
+      });
+
+      // Or, if you're using analytics.js
+
+      // ga('send', 'event', 'Outbound Link', 'Click', link.href);
+
+      // Allow event to be sent before the page is unloaded
+
+      if(!link.target || link.target.match(/^_(self|parent|top)$/i)) {
+
+        setTimeout(function() { location.href = link.href; }, 150);
+
+        event.preventDefault();
+
+      }
+
+    }
+
+  })
+
+</script>
+var toBeTracked = /products\/.*\/details/<script>
+
+    function getLinkEl(link) {
+
+        while (link && (typeof link.tagName === 'undefined' || link.tagName.toLowerCase() !== 'a' || !link.href)) {
+
+            link = link.parentNode
+
+        }
+
+        return link
+
+    }
+
+    function shouldFollowLink(event, link) {
+
+        // If default has been prevented by an external script, Plausible should not intercept navigation.
+
+        if (event.defaultPrevented) { return false }
+
+        var targetsCurrentWindow = !link.target || link.target.match(/^_(self|parent|top)$/i)
+
+        var isRegularClick = !(event.ctrlKey || event.metaKey || event.shiftKey) && event.type === 'click'
+
+        return targetsCurrentWindow && isRegularClick
+
+    }
+
+    var MIDDLE_MOUSE_BUTTON = 1
+
+    function handleLinkClick(event) {
+
+        if (event.type === 'auxclick' && event.button !== MIDDLE_MOUSE_BUTTON) { return }
+
+        var link = getLinkEl(event.target)
+
+        if (link && shouldTrackLink(link)) {
+
+            var eventName = 'Cloaked Link: Click'
+
+            var eventProps = { url: link.href }
+
+            return sendLinkClickEvent(event, link, eventName, eventProps)
+
+        }
+
+    }
+
+    function sendLinkClickEvent(event, link, eventName, eventProps) {
+
+        var followedLink = false
+
+        function followLink() {
+
+            if (!followedLink) {
+
+                followedLink = true
+
+                window.location = link.href
+
+            }
+
+        }
+
+        if (shouldFollowLink(event, link)) {
+
+            plausible(eventName, { props: eventProps, callback: followLink })
+
+            setTimeout(followLink, 5000)
+
+            event.preventDefault()
+
+        } else {
+
+            plausible(eventName, { props: eventProps })
+
+        }
+
+    }
+
+    function shouldTrackLink(link) {
+
+        var toBeTracked = '/go/'
+
+        return !!link.href.match(toBeTracked)
+
+    }
+
+    document.addEventListener('click', handleLinkClick)
+
+    document.addEventListener('auxclick', handleLinkClick)
+
+</script>
