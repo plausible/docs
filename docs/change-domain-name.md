@@ -20,7 +20,7 @@ Here's how to change the domain name of your site:
 
 * Your new snippet will be displayed on the following screen. You need to update the script on your site to use the snippet with the new domain name as opposed to the old domain name within 72 hours to guarantee continuous tracking. If you're using our APIs, you must also make sure to update your API credentials.
 
-* During this 72 hour transition period, we will allow counting of the stats using both old and new snippets. The same applies to any API calls using the `site_id` parameter - both old and new domain will work. After 72 hours the old domain is cleared from our database and any new traffic sent to the old snippet will be rejected. Once you change your domain you won't be able to change it back to the original domain during this transition period either
+* During this 72 hour transition period, we will allow counting of the stats using both old and new snippets. The same applies to any API calls using the `site_id` parameter - both old and new domain will work. After 72 hours the old domain is cleared from our database and any new traffic sent to the old snippet will be rejected.
 
 * Click on the "**I understand, I'll change my snippet**" button to go to your new dashboard
 
