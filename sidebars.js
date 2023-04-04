@@ -1,7 +1,7 @@
 module.exports = {
   someSidebar: {
     "Get Started": ['introduction', 'register-account', 'add-website', 'plausible-script', 'script-extensions', 'integration-guides', 'troubleshoot-integration', 'your-plausible-experience'],
-    "Website Settings": ['landing-page', 'website-settings', 'general', 'users-roles', 'visibility', 'shared-links', 'embed-dashboard', 'email-reports', 'traffic-spikes', 'slack-reports', 'excluding-pages', 'transfer-ownership', 'reset-site-data', 'delete-site-data', 'change-domain-name', 'excluding'],
+    "Website Settings": ['landing-page', 'website-settings', 'change-domain-name', 'general', 'users-roles', 'visibility', 'shared-links', 'embed-dashboard', 'email-reports', 'traffic-spikes', 'slack-reports', 'excluding-pages', 'transfer-ownership', 'reset-site-data', 'delete-site-data', 'excluding'],
     "Stats Dashboard": ['guided-tour', 'realtime-dashboard', 'top-referrers', 'manual-link-tagging', 'google-search-console-integration', 'top-pages', 'countries', 'devices', 'filters-segments', 'google-analytics-import', 'export-stats', 'metrics-definitions', 'keyboard-shortcuts', 'dashboard-faq'],
     "Goals and Custom Events": ['goal-conversions', 'outbound-link-click-tracking', 'file-downloads-tracking', 'error-pages-tracking-404', 'pageview-goals', 'custom-event-goals',
       {
