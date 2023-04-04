@@ -50,6 +50,31 @@ Domain of the site to be created in Plausible. Must be a globally unique, the re
 Timezone name according to the [IANA](https://www.iana.org/time-zones) database. Defaults to `Etc/UTC` when left blank.
 <hr / >
 
+### PUT /api/v1/sites/:site_id
+
+Update an existing site in your Plausible account. Note: currently only `domain` change is allowed.
+
+```bash title="Try it yourself"
+curl -X PUT https://plausible.io/api/v1/sites/test-domain.com \
+  -H "Authorization: Bearer ${TOKEN}" \
+  -F 'domain="new-test-domain.com"'
+```
+
+```json title="Response 200 OK"
+{
+    "domain": "new-test-domain.com",
+    "timezone": "Europe/London"
+}
+```
+
+#### Post body parameters
+<hr / >
+
+**domain** <Required />
+
+Domain of the site to be created in Plausible. Must be a globally unique, the request will fail if the domain is already taken.
+<hr / >
+
 ### DELETE /api/v1/sites/:site_id
 
 Deletes a site from your Plausible account along with all it's data and configuration. The API key must belong to the owner of the site.
