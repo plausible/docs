@@ -60,14 +60,18 @@ Plausible uses a SMTP server to send transactional emails e.g. account activatio
 | SMTP_HOST_SSL_ENABLED | false                 | If SSL is enabled for SMTP connection                                           |
 | SMTP_RETRIES          | 2                     | Number of retries to make until mailer gives up.                                |
 
-Alternatively, you can use Postmark to send transactional emails. In this case, use the following parameters:
+Alternatively, you can use Postmark, Mailgun, Mandrill or SendGrid to send transactional emails. In this case, use the following parameters:
 
 | Parameter        | Default            | Description                                                        |
 | ---------------- | ------------------ | ------------------------------------------------------------------ |
 | MAILER_ADAPTER   | Bamboo.SMTPAdapter | Instead of the default, replace this with `Bamboo.PostmarkAdapter` |
-| POSTMARK_API_KEY | --                 | Enter your API key.                                                |
+| POSTMARK_API_KEY | --                 | Enter your Postmark API key.                                       |
+| MAILGUN_API_KEY  | --                 | Enter your Mailgun API key.                                        |
+| MAILGUN_DOMAIN   | --                 | Enter your Mailgun domain.                                         |
+| MANDRILL_API_KEY | --                 | Enter your Mandrill API key.                                       |
+| SENDGRID_API_KEY | --                 | Enter your SendGrid API key.                                       |
 
-In case you are using postmark, you have to set the MAILER_EMAIL variable which needs to be configured in PostmarkApps sender signatures.
+In case you are using postmark, you have to set the MAILER_EMAIL variable which needs to be configured in PostmarkApps sender signatures. This might also apply to other SaaS adapters as well.
 
 ### IP Geolocation
 
