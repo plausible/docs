@@ -14,15 +14,22 @@ Here's how to change the domain name of your site:
 
 * Click on the "**Change domain**" button in the "**Site domain**" section
 
+<img alt="Change domain name in Plausible" src={useBaseUrl('img/change-domain.png')} />
+
+
 * Type in your new domain name. Please, remove `https` and `www` from the domain, just keep the hostname (`yourdomain.com`). For example, if your new domain is `https://www.yourdomain.com` then the part to enter in the "**Domain**" field is `yourdomain.com`
 
 * Click on the "**Change domain and add new snippet**" button to confirm the domain name change
+
+<img alt="Change domain name in Plausible" src={useBaseUrl('img/change-domain-and-add-new-snippet.png')} />
 
 * Your new snippet will be displayed on the following screen. You need to update the script on your site to use the snippet with the new domain name as opposed to the old domain name within 72 hours to guarantee continuous tracking. If you're using our APIs, you must also make sure to update your API credentials.
 
 * During this 72 hour transition period, we will allow counting of the stats using both old and new snippets. The same applies to any API calls using the `site_id` parameter - both old and new domain will work. After 72 hours the old domain is cleared from our database and any new traffic sent to the old snippet will be rejected.
 
 * Click on the "**I understand, I'll change my snippet**" button to go to your new dashboard
+
+<img alt="Change domain name in Plausible" src={useBaseUrl('img/change-snippet.png')} />
 
 :::note
 Are you looking to transfer a site from your account to a different account such as an account owned by your client? Use our [site ownership transfer functionality](transfer-ownership.md).
