@@ -13,6 +13,7 @@ It currently allows these operations:
 * Find or create a shared link by name
 * Find or create a goal by type and value
 * Delete an existing goal
+* Change a domain name
 
 Each request must be authenticated with an API key using the Bearer Token method. Currently, this API is in private preview and therefore it's not
 possible to acquire an API key through the dashboard. Please [contact us](https://plausible.io/contact) to get an API key with permissions for the endpoints listed in this document.
