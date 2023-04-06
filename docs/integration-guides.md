@@ -154,6 +154,8 @@ If you're using a frontend framework that uses the URL hash for routing, you nee
 
 * [Laravel Plausible](https://github.com/VincentBean/laravel-plausible): This package provides a blade view with the script tag for Plausible and a wrapper to easily send custom events to Plausible. Built and maintained by [Vincent Boon](https://github.com/VincentBean). 
 
+* [Plausible Analytics for Laravel 10+](https://github.com/njoguamos/laravel-plausible): A Laravel package for interacting with the Plausible API. Built and maintained by [Njogu Amos](https://github.com/njoguamos).
+
 * [Laravel Plausible Exclude Page](https://github.com/swiftmade/laravel-plausible-exclude): Quickly add a page to your Laravel application to exclude your visits from Plausible. Built and maintained by [Swiftmade](https://swiftmade.co/blog/2023-03-11-exclude-your-own-traffic-from-plausible-analytics/).
 
 ## Localhost for hybrid apps
