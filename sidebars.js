@@ -15,7 +15,7 @@ module.exports = {
       {
         type: 'category',
         label: 'Guides',
-        items: ['proxy/guides/cloudflare', 'proxy/guides/akamai', 'proxy/guides/netlify', 'proxy/guides/vercel', 'proxy/guides/nextjs', 'proxy/guides/cloudfront', 'proxy/guides/nginx', 'proxy/guides/caddy'],
+        items: ['proxy/guides/cloudflare', 'proxy/guides/akamai', 'proxy/guides/netlify', 'proxy/guides/vercel', 'proxy/guides/nextjs', 'proxy/guides/cloudfront', 'proxy/guides/nginx', 'proxy/guides/caddy', 'proxy/guides/apache'],
       }
     ],
     "Account Settings": ['change-email', 'reset-password', 'dashboard-appearance', 'delete-account'],
