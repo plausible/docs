@@ -13,7 +13,7 @@ sudo a2enmod proxy_http
 sudo a2enmod ssl
 ```
 
-## Step 1: Update your config
+## Step 2: Update your config
 ```
 <VirtualHost *:80>
   ServerName website.com
@@ -35,13 +35,16 @@ sudo a2enmod ssl
 </VirtualHost>
 ```
 
-In case you host a plausible instance(self-hosting setup) update the `ProxyPass` and `ProxyPassReverse` directives to point to your instance.
-
-
-## Step 2: Adjust your deployed script
+## Step 3: Adjust your deployed script
 
 With the above config in place, you can change the script tag on your site as follows:
 
 ```html
 <script defer data-api="/api/event" data-domain="website.com" src="/js/script.js"></script>
 ```
+
+That's it! You're now using a proxy.
+
+## Alternative reverse proxy written in PHP for shared hosting on Apache
+
+As an alternative to the above, there's also a reverse proxy for Plausible Analytics written in PHP for shared hostings on Apache. [See details here](https://github.com/Neoflow/ReverseProxy-PlausibleAnalytics).
