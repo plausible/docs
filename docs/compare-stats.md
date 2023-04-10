@@ -16,13 +16,21 @@ Here's how to track your progress and identify trends by comparing your stats ov
 
 * Then select "**Compare**" in the date picker or press the "**X**" key on your keyboard to enable the comparison feature
 
+<img alt="Date picker for the compare feature" src={useBaseUrl('img/date-picker-compare-feature.png')} />
+
 * This will enable a new comparison drop down. "**Previous period**" is our default option but you can also compare trends "**Year over year**" or a completely "**Custom period**" too
+
+<img alt="Compare your stats over time" src={useBaseUrl('img/compare-your-stats-over-time.png')} />
 
 * You can click on "**Match day of the week**" in the comparison drop down to align the comparison by day of the week
 
 * The comparison will be shown on the top chart of your Plausible dashboard. You can see the stats for both date ranges in the chart and you can see the percent changes in the tooltip. As with everything else on the dashboard, we'll save your comparison preference for your next visit to save you a click or two
 
+<img alt="Comparison chart" src={useBaseUrl('img/comparison-chart.png')} />
+
 * Want to disable the comparison and get back to the regular view? Press the "**X**" key on your keyboard or choose "**Disable comparison**" in the comparison drop down
+
+<img alt="Disable comparison" src={useBaseUrl('img/disable-comparison.png')} />
 
 ### Segment your audience
 
