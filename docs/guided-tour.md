@@ -18,9 +18,24 @@ See the number of unique visitors, total visits (sessions), total page views, vi
 
 You can **choose a different time range** that you want to analyze in the date picker in the top right. The visitor numbers are automatically presented on the graph. The time format (24-hour or 12-hour am/pm) for the top graph timelines is displayed automatically based on your browser's defined language.
 
-You can **set a different unit of time the stats on the chart are grouped by** in the top right of the chart itself. The available interval options depend on the date range you've selected. For example, if you select "Today", you can display the stats by minute or by hour. Or if you select "Last 30 days", you can display the stats by day or by week.
+You can **set a different unit of time the stats on the chart are grouped by** in the top right of the chart itself. The available interval options depend on the date range you've selected. For example, if you select "Today", you can display the stats by minute or by hour. 
 
-You can also **compare your stats over time**. Our comparison feature allows you to analyze stats of a specified date range and compare them to another period. "Previous period", "Year over year" and "Custom period" comparisons are all available. You can also optionally match by day of the week to avoid any discrepancies caused by the weekend. Select "Compare" in the date picker or press the "X" key on your keyboard to enable the comparison feature. Learn more on [how the comparison works here](compare-stats.md).
+<img alt="Today intervals in top graph" src={useBaseUrl('img/intervals-minutes-hours.png')} />
+
+Or if you select "Last 30 days", you can display the stats by day or by week. You can display the stats by days, weeks or months if you choose a wider timeframe. 
+
+<img alt="Last 30 days intervals in top graph" src={useBaseUrl('img/intervals-days-weeks-months.png')} />
+
+
+You can also **compare your stats over time**. Our comparison feature allows you to analyze stats of a specified date range and compare them to another period. "Previous period", "Year over year" and "Custom period" comparisons are all available. You can also optionally match by day of the week to avoid any discrepancies caused by the weekend. 
+
+<img alt="Compare your stats over time" src={useBaseUrl('img/compare-your-stats-over-time.png')} />
+
+
+Select "Compare" in the date picker or press the "X" key on your keyboard to enable the comparison feature. Learn more on [how the comparison works here](compare-stats.md).
+
+<img alt="Date picker for the compare feature" src={useBaseUrl('img/date-picker-compare-feature.png')} />
+
 
 :::note
 Click on your site name in the top left side of your dashboard. It allows you to select "[Site Settings](website-settings.md)" in the dropdown menu but also switch to a different site you have added to your Plausible account.
