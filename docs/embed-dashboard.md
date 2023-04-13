@@ -1,10 +1,10 @@
 ---
-title: Embed your dashboard on another website using an iFrame
+title: Embed the dashboard without our branding into your user interface
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-You can embed your Plausible stats dashboard into any other website using an iFrame. This is useful in case you want to showcase your stats on your own website or if you want to integrate Plausible into your custom built client area.
+You can embed your Plausible stats dashboard into any other website using an iFrame. This is useful in case you want to showcase your stats on your own website or if you want to [offer Plausible-powered web analytics dashboard (without our branding)](https://plausible.io/white-label-web-analytics) directly in your user interface.
 
 ## 1. Create a shared link
 
