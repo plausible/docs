@@ -4,19 +4,17 @@ title: Site provisioning API reference
 
 import {Required, Optional} from '../src/js/api-helpers.js';
 
-The Plausible Site provisioning API offers a way to create and manage your sites in your Plausible account programmatically.
-It currently allows these operations:
+The Plausible Site provisioning API offers a way to create and manage sites in your Plausible account programmatically. This is useful if you run many websites or if you're [offering a web analytics dashboard powered by Plausible to your customers](https://plausible.io/white-label-web-analytics). The Site API allows these operations:
 
 * Create a new site
 * Delete an existing site
-* Get a site by domain
-* Find or create a shared link by name
-* Find or create a goal by type and value
-* Delete an existing goal
 * Change a domain name
+* Get a site by domain
+* Find or create a shared link by name (to use for the [embed dashboard functionality](embed-dashboard.md))
+* Find or create a goal by type and value (learn more about [goals and custom events](goal-conversions.md))
+* Delete an existing goal
 
-Each request must be authenticated with an API key using the Bearer Token method. Currently, this API is in private preview and therefore it's not
-possible to acquire an API key through the dashboard. Please [contact us](https://plausible.io/contact) to get an API key with permissions for the endpoints listed in this document.
+Each request must be authenticated with an API key using the Bearer Token method. Please [contact us](https://plausible.io/contact) to get an API key with permissions for the endpoints listed in this document. Do note that our regular plans allow you to add up to 50 websites. Let us know if you need more sites.
 
 ## Endpoints
 
