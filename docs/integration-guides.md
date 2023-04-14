@@ -167,6 +167,10 @@ If you're using a frontend framework that uses the URL hash for routing, you nee
 
 You can enable Plausible to count visitors on localhost which is useful in Cordova, Capacitor and other hybrid apps. [Learn more here](script-extensions.md)
 
+## Magento / Adobe Commerce
+
+[Magento Plausible](https://github.com/Pixel-Open/magento-plausible): Add Plausible to Magento to save visited pages, access analytics in Magento admin area, manage goals on specific actions and more. Built and maintained by [PIXEL Open](https://pixel-open.org).
+
 ## MediaWiki
 
 [MediaWiki Extension](https://github.com/octfx/mediawiki-extension-Plausible): MediaWiki extension to enable Plausible Analytics. Built and maintained by [Octfx](https://github.com/octfx).
