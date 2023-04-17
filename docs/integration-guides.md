@@ -207,6 +207,10 @@ If you'd like to count users on your Android and/or iOS mobile apps, you can use
 
 To integrate Plausible Analytics into your Notion website, you'll need to use a third-party service such as Potion or Super (both are paid tools) that will allow you add custom code to your Notion website. 
 
+## PayloadCMS
+
+[Dashboard Analytics plugin for PayloadCMS](https://nouance.io/articles/announcing-the-dashboard-analytics-plugin): You can add charts and statistics widgets directly in your admin interface.
+ 
 ## Podcastpage.io
 
 Add Plausible to your [Podcastpage.io](https://podcastpage.io/) website. Just enable the Plausible script through the "Integrations" page of your dashboard to add the tracking script to all pages.
