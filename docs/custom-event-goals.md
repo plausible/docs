@@ -46,6 +46,10 @@ When tracking form submits, it is important to tag the `<form>` element itself w
 To represent a space character in the event names, you can use a `+` sign. For example: `plausible-event-name=Form+Submit` will display as `Form Submit` in your dashboard
 :::
 
+:::note
+Tracking form submissions with `tagged-events` extension may currently not work with forms where either `id` or `name` attribute is set to `"submit"` literal. To work around this limitation please rename the attribute value.
+:::
+
 ### You can also add class names directly in HTML
 
 If you can edit the raw HTML code of the element you want to track, you can also add the classes directly in HTML. For example:
