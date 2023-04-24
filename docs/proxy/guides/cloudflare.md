@@ -51,38 +51,53 @@ Do avoid words like 'plausible', 'analytics', 'tracking', 'stats', etc. as they 
 const ScriptName = '/js/script.js';
 const Endpoint = '/api/event';
 
-const ScriptWithoutExtension = ScriptName.replace('.js', '')
+const ScriptWithoutExtension = ScriptName.replace('.js', '');
+
+// Since even the script names (e.g. `script.outbound-links.js`) are blocked by sensitive adblockers,
+// the required scripts are hidden behind numbers
+const ExtensionMapping = {
+  'js': 'js',
+  0: 'hash',
+  1: 'outbound-links',
+  2: 'file-downloads',
+  3: 'tagged-events',
+  4: 'exclusions',
+  5: 'compat',
+  6: 'local',
+  7: 'manual',
+};
 
 addEventListener('fetch', event => {
-    event.passThroughOnException();
-    event.respondWith(handleRequest(event));
+  event.passThroughOnException();
+  event.respondWith(handleRequest(event));
 })
 
 async function handleRequest(event) {
   const pathname = new URL(event.request.url).pathname
-  const [baseUri, ...extensions] = pathname.split('.')
+  let [baseUri, ...extensions] = pathname.split('.')
+  extensions = extensions.map(extension => ExtensionMapping[extension]);
 
   if (baseUri.endsWith(ScriptWithoutExtension)) {
-      return getScript(event, extensions)
+    return getScript(event, extensions)
   } else if (pathname.endsWith(Endpoint)) {
-      return postData(event)
+    return postData(event)
   }
   return new Response(null, { status: 404 })
 }
 
 async function getScript(event, extensions) {
-    let response = await caches.default.match(event.request);
-    if (!response) {
-        response = await fetch("https://plausible.io/js/plausible." + extensions.join("."));
-        event.waitUntil(caches.default.put(event.request, response.clone()));
-    }
-    return response;
+  let response = await caches.default.match(event.request);
+  if (!response) {
+    response = await fetch('https://plausible.io/js/plausible.' + extensions.join('.'));
+    event.waitUntil(caches.default.put(event.request, response.clone()));
+  }
+  return response;
 }
 
 async function postData(event) {
-    const request = new Request(event.request);
-    request.headers.delete('cookie');
-    return await fetch("https://plausible.io/api/event", request);
+  const request = new Request(event.request);
+  request.headers.delete('cookie');
+  return await fetch('https://plausible.io/api/event', request);
 }
 ```
 
@@ -106,7 +121,20 @@ Once you have the URL for your script, you can replace your Plausible Analytics 
 <script defer data-domain="yourdomain.com" data-api="https://your-worker-name.your-cloudflare-username.workers.dev/your-folder-name/event" src="https://your-worker-name.your-cloudflare-username.workers.dev/your-folder-name/script.js"></script>
 ```
 
-Are you using our extensions such as hash-based routing, page exclusions or outbound link click tracking? Change the file name from `script.js` to the script you want to use: `script.hash.js`, `script.exclusions.js` or `script.outbound-links.js`. Want to use more than one extension? You can chain them like this: `script.hash.exclusions.outbound-links.js`. You just need to change the script name in the snippet that you insert into your site, no need to change the code for the worker.
+Are you using our extensions such as hash-based routing, page exclusions or outbound link click tracking? Change the file name from `script.js` to the script you want to use. Since even the script names (e.g. `script.outbound-links.js`) are blocked by sensitive adblockers, the required scripts are hidden behind numbers. Which number corresponds to which script is defined in the code. According to the code block above, the following mapping is available:
+
+| Number | Script              |
+| ------ | ------------------- |
+| 0      | `hash.js`           |
+| 1      | `outbound-links.js` |
+| 2      | `file-downloads.js` |
+| 3      | `tagged-events.js`  |
+| 4      | `exclusions.js`     |
+| 5      | `compat.js`         |
+| 6      | `local.js`          |
+| 7      | `manual.js`         |
+
+For example, if you want to have script `outbound-links.js` used, change the import of the script to `script.1.js`. For script `tagged-events.js` you use `script.3.js` and so on. Want to use more than one extension? You can chain them like this: `script.2.4.0.js` (the order is irrelevant). You just need to change the script name in the snippet that you insert into your site, no need to change the code for the worker.
 
 That's it! You're now counting your website stats using a proxy.
 
