@@ -18,7 +18,7 @@ Plausible Analytics is designed, developed and maintained fully remotely, distri
 
 In addition to this, Plausible Analytics is made possible by an incredible [community of contributors](https://github.com/plausible/analytics/) from all over the world who volunteer their time to the project. Special thanks to the following contributors:
 
-* [Chandra Tungathurthi](https://tckb.tgrthi.me?ref=plausible) (tckb) for the extraordinary efforts on [making Plausible Analytics Self-Hosted possible](https://tckb.tgrthi.me/2020/making-plausible-docker-ready/?ref=plausible) and the continuous efforts on improving the self-hosted version.
+* [Chandra Tungathurthi](https://blog.tgrthi.me?ref=plausible) (tckb) for the extraordinary efforts on [making Plausible Analytics Self-Hosted possible](https://blog.tgrthi.me/2020/making-plausible-docker-ready/?ref=plausible) and the continuous efforts on improving the self-hosted version.
 
 * [Chris Morgan](https://chrismorgan.info/) (chris-morgan) for [the help](https://github.com/plausible/analytics/issues/52) on reducing the Plausible Analytics script to under 1 KB in size.
 
