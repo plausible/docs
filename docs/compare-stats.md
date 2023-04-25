@@ -8,7 +8,7 @@ You can gain valuable insights and a fresh perspective on your website traffic b
 
 "Previous period", "Year over year" and "Custom period" comparisons are all available. The comparison is matched by day of the week by default to avoid any discrepancies caused by the weekend. You can also optionally match by date.
 
-You can choose between different chart intervals to display the comparison the way you want and segment your audience any way you wish to analyze that segment over time.
+You can choose between different chart intervals to display the comparison the way you want and segment your audience any way you wish to analyze that segment over time. And if you've [imported your historical Google Analytics stats](google-analytics-import.md), you can compare against those too.
 
 ## How to compare two different date ranges
 
@@ -40,7 +40,7 @@ First, filter the dashboard in any way you want to [segment your audience](filte
 
 ### Choose a chart interval 
 
-In the top right of the chart itself, you can choose the unit of time the stats on the chart are grouped by. The available interval options depend on the date range you've selected. For example, if you select "Last 30 days" as your primary date range, you can display the stats by day or by week.
+In the top right of the chart itself, you can choose the unit of time the stats on the chart are grouped by. This gives you a more granular comparison view. The available interval options depend on the date range you've selected. For example, if you select "Last 30 days" as your primary date range, you can display the stats by day or by week.
 
 ## Match day of the week or match exact date
 
