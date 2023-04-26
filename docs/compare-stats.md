@@ -46,9 +46,13 @@ In the top right of the chart itself, you can choose the unit of time the stats 
 
 Our comparison matches by day of the week by default. This means that your primary date range will be compared to the secondary date range starting with the same day of the week. This helps you eliminate discrepancies due to the weekend or weekday differences.
 
-The alternative option in the comparison drop-down is to ""**Match exact date**". When choosing Sunday January 1st to January 7th 2023 as the primary date range and matching by exact date, the year over year comparison will be against Saturday January 1st to January 7th 2022. 
+The alternative option in the comparison drop-down is to ""**Match exact date**". When choosing Sunday January 1st to January 7th 2023 as the primary date range and matching by exact date, the year over year comparison will be against Saturday January 1st to January 7th 2022.
+
+ <img alt="Match exact date" src={useBaseUrl('img/comparison-match-exact-date.png')} />
 
 But when "**Match day of the week**" is selected, the comparison will be against Sunday January 2nd to January 8th 2022 instead. It's still compared to the same amount of time but the secondary date range is aligned by day of the week to get more accurate data.
+
+<img alt="Match day of the week" src={useBaseUrl('img/comparison-match-day-week.png')} />
 
 ## Available comparison options
 
