@@ -24,9 +24,9 @@ You can enable the Google Search Console integration to get all the search keywo
 
 ## Set up easy goals including 404 error pages, file downloads and outbound link click tracking
 
-Plausible allows you to track custom event goals like signups, purchases and anything else you can think of. [See the instructions here](custom-event-goals.md).
+Plausible allows you to track custom event goals like signups, purchases and anything else you can think of by using CSS class names. [See the instructions here](custom-event-goals.md).
 
-You can also enable some easy-to-use goals. Here are instructions on how to track [404 error pages](error-pages-tracking-404.md), how to track [file downloads](file-downloads-tracking.md) and how to track [outbound link clicks](outbound-link-click-tracking.md) in your Plausible dashboard.
+You can also enable some automated goals. Here are instructions on how to track [404 error pages](error-pages-tracking-404.md), how to track [file downloads](file-downloads-tracking.md) and how to track [outbound link clicks](outbound-link-click-tracking.md) in your Plausible dashboard.
 
 ## Start using UTM tags in your marketing campaigns
 
@@ -72,4 +72,4 @@ If you'd like to serve the script as a first-party connection from your domain n
 
 ## Explore the intuitive stats dashboard
 
-Now you're ready to start exploring your [fast-loading, intutive, ethical and actionable Plausible Analytics dashboard](/docs/guided-tour.md). 
+Now you're ready to start exploring the [fast-loading, ethical and actionable Plausible Analytics dashboard](/docs/guided-tour.md). The dashboard is easy to use, intuitive and powerful too. Segment your audience any way that you want. Compare your trends over different time periods. Track conversion attribution. See what referral sources and landing pages drive the highest (or lowest) conversion rates. 
