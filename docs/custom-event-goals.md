@@ -8,6 +8,10 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 If you use the Custom Events feature, then these count towards your billable monthly pageviews.
 :::
 
+:::note
+Tracking form submissions with `tagged-events` extension may currently not work with forms that contain an element with `id="submit"` or `name="submit"`. To work around this limitation please rename the `id` or `name` attribute value to something else. If you're unable to do that, please look into [implementing custom events manually with JavaScript](#trigger-custom-events-manually-with-a-javascript-function)
+:::
+
 Here are the steps you need to take to track custom events such as purchases, signups, button clicks or form submissions.
 
 ## 1. Change the Plausible snippet on your site
@@ -47,7 +51,7 @@ To represent a space character in the event names, you can use a `+` sign. For e
 :::
 
 :::note
-Tracking form submissions with `tagged-events` extension may currently not work with forms where either `id` or `name` attribute is set to `"submit"` literal. To work around this limitation please rename the attribute value.
+Some CMSs (like Webflow) do not support an equals sign (`=`) in the classnames. If that's the case, use a double dash (`--`) instead of the equals sign. For example: `plausible-event-name--signup`.
 :::
 
 ### You can also add class names directly in HTML
