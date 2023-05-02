@@ -8,10 +8,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 If you use the Custom Events feature, then these count towards your billable monthly pageviews.
 :::
 
-:::note
-Tracking form submissions with `tagged-events` extension may currently not work with forms that contain an element with `id="submit"` or `name="submit"`. To work around this limitation please rename the `id` or `name` attribute value to something else. If you're unable to do that, please look into [implementing custom events manually with JavaScript](#trigger-custom-events-manually-with-a-javascript-function)
-:::
-
 Here are the steps you need to take to track custom events such as purchases, signups, button clicks or form submissions.
 
 ## 1. Change the Plausible snippet on your site
@@ -82,11 +78,14 @@ After adding the class, please go back to your site, and verify that the class a
 
 In some cases, the tracking classes might be added to a wrapper `<div>` element (parent to the element you want to track), but don't worry, Plausible will still be able to track clicks on the child element if its parent has the necessary classes. 
 
-If your CMS overrides the format of your class names, Plausible will most likely not be able to track it.
+Some CMSs like Webflow do not support an equals sign (`=`) in the classnames. If you add a class attribute with the value `plausible-event-name=Signup`, but when you go back to your page and inspect the element, it might have `class="plausible-event-name-Signup"` (equals sign replaced with a hyphen). 
+If that's the case, use a double dash (`--`) instead of the equals sign. For example: `plausible-event-name--signup`.
 
-For example - you add a class attribute with the value `plausible-event-name=Signup`, but when you go back to your page and inspect the element, it will have `class="plausible-event-name-Signup"` (equals sign replaced with a hyphen).
+:::note
+Tracking form submissions may currently not work with forms that contain an element with `id="submit"` or `name="submit"`. To work around this limitation please rename the `id` or `name` attribute value to something else. If you're unable to do that, please look into [implementing custom events manually with JavaScript](#trigger-custom-events-manually-with-a-javascript-function)
+:::
 
-If that's the case, please expand the following section of instructions.
+If your CMS does not support adding CSS classes, please expand the following section of instructions.
 
 <details>
 
@@ -94,7 +93,7 @@ If that's the case, please expand the following section of instructions.
 
 ### My site builder does not support adding CSS classes 
 
-If you're unable to add the classnames in your page editor (or if your CMS overrides the classname format), there's still a way for you to leverage the `tagged-events` script extension and track custom events. This method includes copying and pasting some JavaScript code onto your page. You can expand this section and follow step-by-step instructions.
+If you're unable to add the classnames in your page editor, there's still a way for you to track custom events. This method includes copying and pasting some JavaScript code onto your page. You can expand this section and follow step-by-step instructions.
 
 </summary>
 
