@@ -46,9 +46,9 @@ As soon as you have at least one pageview sent with a custom property, you shoul
 
 <img alt="Custom Property Filter" src={useBaseUrl('img/custom-property-filter.png')} />
 
-<img alt="Custom Property Filter" src={useBaseUrl('img/prop-filter-modal.png')} />
-
 In that view you can interact with the dropdown fields, where Plausible will automatically provide filtering suggestions based on the data that your dashboard has received. The suggestions also take into account the selected time period and other filters already applied.
+
+<img alt="Custom Property Filter" src={useBaseUrl('img/prop-filter-modal.png')} />
 
 :::note
 Currently clients are limited to filtering by just one custom property at a time.
