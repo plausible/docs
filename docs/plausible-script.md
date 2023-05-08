@@ -46,7 +46,11 @@ Yes, you can send your visitor stats to multiple Plausible dashboards at the sam
 
 ## Can I use the same snippet across my domain and subdomain?
 
-Yes, you can use the same Plausible snippet on multiple sites and subdomains. There are two drawbacks with this approach:
+Yes, this is possible. If your landing page is on the main domain name (yoursite.com) and your app is on the subdomain (app.yoursite.com), you can use the same Plausible snippet on both. This keeps the visitor session active between the main site and the subdomain. 
+
+You can then set up [a custom event](custom-event-goals.md) or [a pageview goal](pageview-goals.md) on the action you wants to track on the subdomain. This allows you to see the visitor journey end-to-end from the landing on the main domain name to a conversion on the subdomain. And the conversion on the subdomain will be attributed to the original referral source that brought the visitor to the main domain.
+
+There are two drawbacks with this approach:
 
 1. You will have one dashboard with all the stats combined. You won't be able to see individual dashboard of the individual site separated from the other sites.
 
