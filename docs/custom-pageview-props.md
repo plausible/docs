@@ -45,6 +45,12 @@ You should now add the custom properties as HTML attributes to your Plausible sn
 <script defer event-author="John Doe" data-domain="<yourdomain.com>" src="https://plausible.io/script.pageview-props.js"></script>
 ```
 
+And if you want to send multiple custom properties alongside a pageview, you can do that as follows:
+
+```html
+<script defer event-author="John Doe" event-logged_in="true" event-darkmode="true" data-domain="<yourdomain.com>" src="https://plausible.io/script.pageview-props.js"></script>
+```
+
 All properties provided in the snippet will automatically be attached to any [custom event conversions](custom-event-goals.md) as well.
 
 That's it! You're now tracking custom properties alongside pageviews.
