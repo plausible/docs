@@ -1,5 +1,5 @@
 ---
-title: Send custom properties with pageviews to create custom metrics
+title: Custom properties for pageviews
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
