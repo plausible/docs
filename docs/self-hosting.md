@@ -166,7 +166,7 @@ If you're already running a reverse proxy, the most important things to note are
 
 The most important thing to note with an existing reverse proxy is that the `X-Forwarded-For` header is set correctly. If the remote client IP isn't forwarded to the Plausible server, it can't detect visitor countries and unique user tracking will be inaccurate.
 
-In our hosting repo, you'll find useful example configurations in case you're already running [Nginx](https://github.com/plausible/hosting/tree/master/reverse-proxy#nginx) or [Traefik 2](https://github.com/plausible/hosting/tree/master/reverse-proxy#traefik-2).
+In our hosting repo, you'll find useful example configurations in case you're already running [Nginx](https://github.com/plausible/hosting/tree/master/reverse-proxy#nginx), [Apache](https://github.com/plausible/hosting/tree/master/reverse-proxy#apache2), or [Traefik 2](https://github.com/plausible/hosting/tree/master/reverse-proxy#traefik-2).
 
 ### 3. External Databases
 
