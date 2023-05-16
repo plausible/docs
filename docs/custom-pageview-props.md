@@ -42,13 +42,13 @@ If you're using any of our other script extensions, you can [combine them](scrip
 You should now add the custom properties as HTML attributes to your Plausible snippet (the `<script>` element). The attributes must follow the format `event-<property>="<value>"`. For example, if you want to track the `author` property with a value of `John Doe`, you should do that as follows:
 
 ```html
-<script defer event-author="John Doe" data-domain="<yourdomain.com>" src="https://plausible.io/script.pageview-props.js"></script>
+<script defer event-author="John Doe" data-domain="<yourdomain.com>" src="https://plausible.io/js/script.pageview-props.js"></script>
 ```
 
 And if you want to send multiple custom properties alongside a pageview, you can do that as follows:
 
 ```html
-<script defer event-author="John Doe" event-logged_in="true" event-darkmode="true" data-domain="<yourdomain.com>" src="https://plausible.io/script.pageview-props.js"></script>
+<script defer event-author="John Doe" event-logged_in="true" event-darkmode="true" data-domain="<yourdomain.com>" src="https://plausible.io/js/script.pageview-props.js"></script>
 ```
 
 All properties provided in the snippet will automatically be attached to any [custom event conversions](custom-event-goals.md) as well.
