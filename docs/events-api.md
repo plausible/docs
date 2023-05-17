@@ -112,7 +112,16 @@ So if you send `https://some.domain.com/example-path`, it will be parsed as foll
 
 **props** <Optional />
 
-Custom properties for the event. See: https://plausible.io/docs/custom-event-goals#using-custom-props
+Custom properties for the event. These can be attached to both pageview and custom events. To learn more about using custom properties, you can check out these two links:
+
+* [custom properties for pageviews](https://plausible.io/docs/custom-pageview-props)
+* [custom properties for custom events](https://plausible.io/docs/custom-event-goals#using-custom-props)
+
+The value corresponding to the `props` key in the request body is expected to be a JSON object. For example, if you're using the `text/plain` content type, your request body might look like this:
+
+```
+'{"name":"pageview","url":"http://dummy.site","domain":"dummy.site","props":{"author":"John Doe","logged_in":"false"}}'
+```
 <hr / >
 
 :::note
