@@ -60,14 +60,20 @@ Plausible uses a SMTP server to send transactional emails e.g. account activatio
 | SMTP_HOST_SSL_ENABLED | false                 | If SSL is enabled for SMTP connection                                           |
 | SMTP_RETRIES          | 2                     | Number of retries to make until mailer gives up.                                |
 
-Alternatively, you can use Postmark to send transactional emails. In this case, use the following parameters:
+Alternatively, you can use other [Bamboo Adapters](https://hexdocs.pm/bamboo/readme.html#available-adapters) such as Postmark, Mailgun, Mandrill or Send Grid to send transactional emails. In this case, use the following parameters:
 
 | Parameter        | Default            | Description                                                        |
 | ---------------- | ------------------ | ------------------------------------------------------------------ |
-| MAILER_ADAPTER   | Bamboo.SMTPAdapter | Instead of the default, replace this with `Bamboo.PostmarkAdapter` |
-| POSTMARK_API_KEY | --                 | Enter your API key.                                                |
+| MAILER_ADAPTER   | Bamboo.SMTPAdapter | Instead of the default, replace this with `Bamboo.PostmarkAdapter`, `Bamboo.MailgunAdapter`, `Bamboo.MandrillAdapter` or `Bamboo.SendGridAdapter` and add the appropriate variables below |
+| POSTMARK_API_KEY | --                 | Required. Enter your API key.                                                |
+| MAILGUN_API_KEY | --                 | Required. Enter your API key.                                                |
+| MAILGUN_DOMAIN | --                 | Required. Enter your Mailgun domain.                                                |
+| MAILGUN_BASE_URI | --                 | This is optional. Mailgun makes a difference in the API base URL between sender domains from within the EU and outside. By default, the base URL is set to `https://api.mailgun.net/v3`. To override this you can pass `https://api.eu.mailgun.net/v3` if you are using an EU domain. |
+| MANDRILL_API_KEY | --                 | Required. Enter your API key.                                                |
+| SENDGRID_API_KEY | --                 | Required. Enter your API key.                                                |
 
-In case you are using postmark, you have to set the MAILER_EMAIL variable which needs to be configured in PostmarkApps sender signatures.
+In case you are using Postmark, you have to set the MAILER_EMAIL variable which needs to be configured in PostmarkApps sender signatures.
+
 
 ### IP Geolocation
 
