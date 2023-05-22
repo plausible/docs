@@ -28,6 +28,7 @@ Here's how you can install the Plausible Analytics plugin on your WordPress site
 "Plausible Analytics" entry will now show up in the "Settings" section in the left-hand side navigation of your WordPress dashboard. Click on it to explore the various options available.
 
 * In the "Bypass adblockers" section of our WordPress plugin settings, tick the "Enable proxy"
+<img alt="Enable proxy in our WordPress plugin" src={useBaseUrl('img/plausible-wordpress-plugin-proxy.png')} />
 * Then click on the "Save Changes" button
 * If you have a caching plugin enabled, please make sure to clear the cache for the changes to take effect
 * Enabling the proxy will make our script run as a first-party connection from your domain name. The proxy uses WordPress' API with a randomly generated endpoint, starting with `yourdomain.com/wp-json`
