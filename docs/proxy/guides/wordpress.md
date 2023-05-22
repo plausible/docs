@@ -43,6 +43,6 @@ We will send you a notification if the proxy takes too long (>500ms) to send pag
 
 * Access your server using (S)FTP, SSH or your host
 * Navigate to the directory of the Plausible plugin, usually `wp-content/plugins/plausible-analytics`
-* Open the `mu-plugin` directory withing the plugin directory and copy the `plausible-proxy-speed-module.php` file to the `wp-content/mu-plugins` folder (if the `mu-plugins` folder doesn't exist within `wp-content`, create it before copying the file)
+* Open the `mu-plugin` directory within the plugin directory and copy the `plausible-proxy-speed-module.php` file to the `wp-content/mu-plugins` folder (if the `mu-plugins` folder doesn't exist within `wp-content`, create it before copying the file)
 
 Check here for full instructions and details on the other features of our [WordPress plugin](https://plausible.io/wordpress-analytics-plugin).
