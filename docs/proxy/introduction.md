@@ -64,6 +64,7 @@ Standalone proxy setups:
 * [Google Cloud Platform](https://github.com/mtlynch/plausible-proxy)
 
 Integrated proxy setups:
+* [WordPress](/docs/proxy/guides/wordpress)
 * [Netlify](/docs/proxy/guides/netlify)
 * [Vercel](/docs/proxy/guides/vercel)
 * [Vercel with Next.JS](/docs/proxy/guides/nextjs)
