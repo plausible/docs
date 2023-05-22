@@ -14,16 +14,16 @@ Here's how you can install the Plausible Analytics plugin on your WordPress site
 * Click on "Add New"
 * In the search box in the top right, type "Plausible Analytics" and press enter
 
-![Search and install the "Plausible Analytics" WordPress plugin](https://plausible.io/uploads/wordpress-plugin-search.png)
+![Search and install the "Plausible Analytics" WordPress plugin](img/wordpress-plugin-search.png)
 
 * Click on the "Install Now" button on the listing of [our official "Plausible Analytics" plugin](https://wordpress.org/plugins/plausible-analytics/)
 * After the installation is finished, click on the "Activate" button
 
-![Activate our WordPress plugin](https://plausible.io/uploads/activate-our-wordpress-plugin.png)
+![Activate our WordPress plugin](img/activate-our-wordpress-plugin.png)
 
 * If you have a caching plugin activated, do purge the cache just in case
 
-![Plausible Analytics WordPress plugin settings](/uploads/plausible-analytics-wordpress-plugin-settings.png)
+![Plausible Analytics WordPress plugin settings](img/plausible-analytics-wordpress-plugin-settings.png)
 
 ## Step 2: Enable the proxy in our WordPress plugin settings
 
