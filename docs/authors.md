@@ -34,7 +34,7 @@ In addition to this, Plausible Analytics is made possible by an incredible [comm
 
 * [Matt Colligan](https://github.com/m-col) (m-col) for all the help on the export / import functionality.
 
-* [Daan van den Bergh](https://github.com/Dan0sz) (Dan0sz) for all the help with bringing our WordPress plugin to another level.
+* [Daan van den Bergh](https://daan.dev/) (Dan0sz) for all the help with bringing our WordPress plugin to another level.
 
 * To those who build and maintain Plausible Analytics integrations with various frameworks. [Full list here](integration-guides.md).
 
