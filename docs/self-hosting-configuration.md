@@ -19,6 +19,7 @@ Following are the variables that can be used to configure the availability of th
 | LISTEN_IP            | 0.0.0.0 | The IP address on which the server is listening. `0.0.0.0` means all interfaces, `127.0.0.1` means localhost. Also see the related section **Erlang platform ports** below.                         |
 | SECRET_KEY_BASE      | --      | An internal secret key used by [Phoenix Framework](https://www.phoenixframework.org/). Follow the [instructions](https://hexdocs.pm/phoenix/Mix.Tasks.Phx.Gen.Secret.html#content) or use `openssl rand -hex 64` to generate one. |
 | DISABLE_REGISTRATION | false   | Restricts registration of new users. Possible values are `true` (full restriction), `false` (no restriction), and `invite_only` (only the invited users can register).                                                                                                                            |
+| LOG_FAILED_LOGIN_ATTEMPTS | false | Controls whether to log warnings about failed login attempts. |
 
 #### Erlang platform ports
 
@@ -37,11 +38,11 @@ Plausible uses [PostgreSQL](https://www.tutorialspoint.com/postgresql/postgresql
 
 | Parameter                    | Default                                 | Description                                                                                                                                                                                                                  |
 | ---------------------------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DATABASE_URL                 | postgres://localhost:5432/plausible_db | The database URL as dictated [here](https://hexdocs.pm/ecto/Ecto.Repo.html#module-urls), i.e. for external db server postgres://user:password@ip.or.domain.to.server/database_name                                           |
+| DATABASE_URL                 | postgres://postgres:postgres@plausible_db:5432/plausible_db | The database URL as dictated [here](https://hexdocs.pm/ecto/Ecto.Repo.html#module-urls), i.e. for external db server postgres://user:password@ip.or.domain.to.server/database_name                                           |
 | DATABASE_SOCKET_DIR          | --                                      | Directory where a UNIX socket of postgresql is available. Mutually exclusive with `DATABASE_URL`, can only be used with `DATABASE_NAME`                                                                                      |
 | DATABASE_NAME                | --                                      | Name of the database in PostgreSQL to use. Only applicable in conjunction with `DATABASE_SOCKET_DIR`                                                                                                                         |
 | ECTO_IPV6                    | --                                      | When defined, enables ipv6 for the PostgreSQL connection. [Applicable](https://github.com/plausible/analytics/pull/1661) for hosting on fly.io.                                                                              |
-| CLICKHOUSE_DATABASE_URL      | http://localhost:8123/plausible_events_db     | Connection string for Clickhouse in the same format, i.e. for docker-compose setup http://plausible_events_db:8123/plausible_events_db                                                                                       |
+| CLICKHOUSE_DATABASE_URL      | http://plausible_events_db:8123/plausible_events_db     | Connection string for Clickhouse in the same format, i.e. for docker-compose setup http://ip.or.domain.to.server:8123/plausible_events_db                                                                                       |
 | CLICKHOUSE_FLUSH_INTERVAL_MS | 5000                                    | Interval (in milliseconds) between flushing events and sessions data to Clickhouse. Consult [Clickhouse docs](https://clickhouse.tech/docs/en/introduction/performance/#performance-when-inserting-data) before changing it. |
 | CLICKHOUSE_MAX_BUFFER_SIZE   | 10000                                   | Maximum size of the buffer of events or sessions. Consult [Clickhouse docs](https://clickhouse.tech/docs/en/introduction/performance/#performance-when-inserting-data) before changing it.                                   |
 
@@ -53,6 +54,7 @@ Plausible uses a SMTP server to send transactional emails e.g. account activatio
 | Parameter             | Default               | Description                                                                     |
 | --------------------- | --------------------- | ------------------------------------------------------------------------------- |
 | MAILER_EMAIL          | hello@plausible.local | The email id to use for as _from_ address of all communications from Plausible. |
+| MAILER_NAME           | --                    | The display name for the sender (_from_). |
 | SMTP_HOST_ADDR        | localhost             | The host address of your smtp server.                                           |
 | SMTP_HOST_PORT        | 25                    | The port of your smtp server.                                                   |
 | SMTP_USER_NAME        | --                    | The username/email in case SMTP auth is enabled.                                |
@@ -75,17 +77,14 @@ Plausible uses the country database created by [dbip](https://db-ip.com/) for en
 database is shipped with Plausible and country data collection happens automatically.
 
 Optionally, you can provide a different database. For example, you can use [MaxMind](https://www.maxmind.com) services.
-You need to create an account and download their **GeoLite2 Country** database.
-
-Once you have the database, mount it on the Plausible docker image and configure the path of the database file:
+You need to create an account and use their **GeoLite2 Country** database.
 
 | Parameter           | Default                | Description                                              |
 | ------------------- | ---------------------- | -------------------------------------------------------- |
-| GEOLITE2_COUNTRY_DB | -- (internal database) | Path to your IP geolocation database in MaxMind's format |
-
-To make this as easy as possible you can use the [`maxmindinc/geoipupdate`](https://hub.docker.com/r/maxmindinc/geoipupdate) Docker image.
-You just need to add your account details, mount the database in the `plausible` container and let the image update the database automatically.
-To run the complete setup including geoip see [`docker-compose-geoip.yml`](https://github.com/plausible/hosting/blob/master/geoip/docker-compose.geoip.yml).
+| MAXMIND_LICENSE_KEY | --                     | MaxMind license key to automatically download and update the datase |
+| MAXMIND_EDITION     | GeoLite2-City          | MaxMind database edition to use (only if MAXMIND_LICENSE_KEY is set) |
+| GEOLITE2_COUNTRY_DB | --                     | Path to your custom IP geolocation database in MaxMind's format |
+| GEONAMES_SOURCE_FILE | -- | Path to your custom CSV file containing geoname_id -> place name mapping. [geonames.lite.csv](https://github.com/plausible/location/blob/main/priv/geonames.lite.csv) is used by default.
 
 ### Google API Integration
 
