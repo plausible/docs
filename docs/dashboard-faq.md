@@ -26,8 +26,6 @@ In addition to this, we exclude known bots by the User-Agent header, we filter o
 
 Data sampling is the practice of analyzing a subset of all data to uncover the meaningful information in the larger data set. Most analytics tools including Google Analytics do data sampling for all their reports.
 
-Plausible does not do any data sampling by default. The stats in your dashboard show 100% accurate data of what happens on your site.
+Plausible does not use any data sampling by default. We collect and store 100% of the data regardless of how many pageviews you have. The stats in your dashboard reflect 100% accurate data of what happens on your site.
 
-On some dashboard views that have a lot of data such as those with more than 20 million pageviews, we do limited data sampling to make the dashboard load as fast as possible. There will be a clear note in your dashboard when you're viewing a report with sampled data.
-
-Note that we do collect and store 100% of the data no matter how many page views you have. Our stats API is completely unsampled so if you need 100% unsampled data for longer time ranges, you can use [our stats API](stats-api.md).
+However, on some dashboard views that have a lot of data such as those with more than 20 million pageviews, we apply limited data sampling to make the dashboard load as fast as possible. There will be a clear note in your dashboard when you're viewing a report with sampled data.
