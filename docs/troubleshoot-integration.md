@@ -60,9 +60,7 @@ Here's [the full list of all integrations and guides](integration-guides.md).
 
 * Running on localhost? Our script automatically disables itself when running on localhost as most people don't want those stats to be counted. In the `script.js` script, `window.location.hostname` is used to verify that. If you do want to track stats on localhost, you can [use our extension](script-extensions.md).
 
-* On WordPress and using WP Rocket plugin? It may affect our script. We recommend you use our official WordPress plugin to avoid these issues or to manually whitelist our script in WP Rocket settings. [Learn more here](https://plausible.io/wordpress-analytics-plugin#troubleshoot-conflict-with-wp-rocket-or-other-performance-optimization-plugins). 
-
-* On WordPress and using SiteGround Optimizer plugin? Take a look at these instructions for the [SG Optimizer](https://plausible.io/wordpress-analytics-plugin#conflict-with-siteground-optimizer).
+* On WordPress and using WP Rocket, SiteGround Optimizer or other performance optimization plugins? These may affect our script. We recommend you use our official WordPress plugin to avoid these issues or to manually whitelist our script in the settings of the individual performance optimization plugin. [Learn more abour our plugin here](https://plausible.io/wordpress-analytics-plugin). 
 
 * Using cache? Do purge the cache just in case.
 
