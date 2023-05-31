@@ -31,7 +31,7 @@ Here's how you can install the Plausible Analytics plugin on your WordPress site
 <img alt="Enable proxy in our WordPress plugin" src={useBaseUrl('img/plausible-wordpress-plugin-proxy.png')} />
 * Then click on the "Save Changes" button
 * If you have a caching plugin enabled, please make sure to clear the cache for the changes to take effect
-* Enabling the proxy will make our script run as a first-party connection from your domain name. The proxy uses WordPress' API with a randomly generated endpoint, starting with `yourdomain.com/wp-json`
+* Enabling the proxy will make our script run as a first-party connection from your domain name. The proxy uses WordPress' API with a randomly generated endpoint, starting with `yourdomain.com/wp-json` and it creates a randomly named folder and file in the `/wp-content/uploads/` directory
 
 ## Stats not being recorded after enabling the proxy?
 
