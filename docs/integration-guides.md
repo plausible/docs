@@ -74,6 +74,8 @@ Plausible by default doesn't take DNT (Do Not Track) into consideration as we're
 
 ## Drupal
 
+[New Drupal module](https://www.drupal.org/project/plausible_tracking): A new drupal module for Plausible. Allows you to integrate Plausible, track custom events, block IPs from tracking, enable file download tracking, track custom query params as pageview events, track outbound link clicks. Built and maintained by [Reload](https://reload.dk/)
+
 [Drupal](https://www.drupal.org/project/plausible): A Drupal module for Plausible. Allows you to ignore tracking on certain pages and by certain user roles. Built and maintained by Dane Rossenrode of [Touchdreams](https://touchdreams.co.za/).
 
 ## First party connection (proxy)
