@@ -209,7 +209,7 @@ Let's say you have a contact form both in the header and footer of your site. In
 To represent a space character in property values, you can use a `+` sign. For example: `plausible-event-author=John+Doe`. Spaces in custom property names (`author` in this example) are not allowed.
 :::
 
-You can add as many of these classes as you want. And the names can be anything that you want.
+You can have up to 30 custom props classes. And the names can be anything that you want.
 
 Custom properties only accept scalar values such as strings, numbers and booleans. Data structures such as objects, arrays etc. aren't accepted.
 

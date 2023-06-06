@@ -117,7 +117,7 @@ Custom properties for the event. These can be attached to both pageview and cust
 * [custom properties for pageviews](https://plausible.io/docs/custom-pageview-props)
 * [custom properties for custom events](https://plausible.io/docs/custom-event-goals#using-custom-props)
 
-The value corresponding to the `props` key in the request body is expected to be a JSON object. For example, if you're using the `text/plain` content type, your request body might look like this:
+The value corresponding to the `props` key in the request body is expected to be a JSON object with a maximum of 30 key-value pairs. If you include more than 30 items in the `props` object, the exceeding items will be discarded. For example, if you're using the `text/plain` content type, your request body might look like this:
 
 ```
 '{"name":"pageview","url":"http://dummy.site","domain":"dummy.site","props":{"author":"John Doe","logged_in":"false"}}'

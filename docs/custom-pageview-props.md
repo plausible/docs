@@ -45,7 +45,7 @@ You should now add the custom properties as HTML attributes to your Plausible sn
 <script defer event-author="John Doe" data-domain="<yourdomain.com>" src="https://plausible.io/js/script.pageview-props.js"></script>
 ```
 
-And if you want to send multiple custom properties alongside a pageview, you can do that as follows:
+You can add up to 30 custom properties alongside a pageview by adding multiple attributes:
 
 ```html
 <script defer event-author="John Doe" event-logged_in="true" event-darkmode="true" data-domain="<yourdomain.com>" src="https://plausible.io/js/script.pageview-props.js"></script>
