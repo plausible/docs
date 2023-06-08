@@ -4,7 +4,7 @@ title: Custom properties for pageviews and events
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-You can attach custom properties (also known as custom dimensions in Google Analytics) when sending a pageview or an event to Plausible. This allows you to capture dynamic elements and to further break down goal conversions or to create custom metrics to collect and analyze data that we don't track automatically. 
+You can attach custom properties (also known as custom dimensions in Google Analytics) when sending a pageview or an event to Plausible. This allows you to capture dynamic elements to further break down goal conversions or to create custom metrics to collect and analyze data that we don't track automatically. 
 
 Let's say you have a call to action to register for an account both in the header and footer of your site. In addition to tracking registrations, you might want to know which section of your site this call to action was clicked on. Instead of creating separate goals for each CTA, you can send custom properties instead. For example `plausible-event-signup=footer`. 
 
@@ -94,7 +94,6 @@ Then the pageview will be sent with two properties - `author` and `logged_in`. I
 ```
 
 Then the pageview will be sent with `logged_in = true`.
-
 
 ## Custom properties for events
 
