@@ -95,7 +95,6 @@ Then the pageview will be sent with two properties - `author` and `logged_in`. I
 
 Then the pageview will be sent with `logged_in = true`.
 
-
 ## Custom properties for events
 
 Take a look at [our custom events guide](custom-event-goals.md) for instructions on how to set up custom events. You can then send custom properties alongside those events.
