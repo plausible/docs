@@ -62,7 +62,7 @@ Choose the custom property that you want to analyze and click on "**Apply Filter
 
 <img alt="Custom Property Filter" src={useBaseUrl('img/prop-filter-modal.png')} />
 
-## Using `script.manual.js` as an alternative
+### Using `script.manual.js` as an alternative
 
 As an alternative, you can also use our `manual` script extension to send custom properties for pageviews. It works exactly the same way as with [custom properties for custom events](custom-event-goals.md#using-custom-props). For example:
 
@@ -72,7 +72,7 @@ plausible('pageview', {props: {author: 'John Doe', logged_in: 'false'}})
 
 This will send a pageview with properties `author` and `logged_in`.
 
-## Using a combination of `script.manual.pageview-props.js`
+### Using a combination of `script.manual.pageview-props.js`
 
 You can also combine the `manual` extension with the `pageview-props` extension. For example, if you're using this snippet:
 
