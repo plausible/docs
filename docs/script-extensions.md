@@ -35,7 +35,7 @@ Here's the list of all the available extensions at this time:
 | script.file-downloads.js | Automatically [track file downloads](file-downloads-tracking.md)                                   |
 | script.tagged-events.js  | Allows you to [track standard custom events](custom-event-goals.md) such as link clicks, form submits, and any other HTML element clicks            |
 | script.exclusions.js     | [Exclude certain pages from being tracked](excluding-pages.md)                                     |
-| script.compat.js         | Compatibility mode for [tracking users on Internet Explorer](#scriptcompatjs)                      |
+| script.compat.js         | Compatibility mode for [tracking users on Internet Explorer](#scriptcompatjs) (≥IE11)                      |
 | script.local.js          | Allow analytics to track on localhost too which is useful in hybrid apps                           |
 | script.manual.js         | [Don't trigger pageviews automatically](#scriptmanualjs). Also allows you to [specify custom locations](custom-locations.md) to redact URLs with identifiers. You can also use it to track [custom query parameters](custom-query-params.md)|
 
@@ -63,6 +63,8 @@ Or say you want to use our `script.exclusions.js` extension to exclude certain p
 You can mix and match, and combine extensions any way that you wish. And you only need to insert that one snippet into your site, no need for anything else.
 
 ## script.compat.js
+
+_This works only on ≥ IE11_
 
 The default Plausible script won't work on Internet Explorer because it uses the [document.currentScript](https://caniuse.com/document-currentscript) API to read configuration options. You can run Plausible in compatibility mode by including the `script.compat.js` extension and defining `id="plausible"` on the script tag so that it can find itself. Here's how it should look like:
 
