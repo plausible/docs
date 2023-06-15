@@ -46,7 +46,17 @@ This currency will be used for total and average revenue metrics in the dashboar
 
 ## 3. Start sending the revenue data from your site
 
-In the page where you want to track revenue, call the Plausible function with revenue data. For example: 
+You can now start sending revenue data from your site alongside custom events. How to do it depends on the way you've set up custom events. You can either use [the CSS class name approach](custom-event-goals.md):
+
+```javascript
+<button class="plausible-event-name=Purchase plausible-event-revenue-amount=10.29 plausible-event-revenue-currency=EUR"></button>
+```
+
+:::note
+If you're using the CSS class name approach for custom events, you'll need to change the file name in the `src` attribute of your Plausible snippet to `script.revenue.tagged-events.js`.
+:::
+
+Or [the JavaScript function approach](custom-event-goals.md#trigger-custom-events-manually-with-a-javascript-function):
 
 ```javascript
 window.plausible("goal name", {revenue: {currency: "USD", amount: 10.29}})
