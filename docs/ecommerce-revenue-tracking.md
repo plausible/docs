@@ -4,6 +4,10 @@ title: Ecommerce revenue and attribution tracking
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+:::note
+Revenue tracking is an upcoming premium feature that's free-to-use during the private preview. Pricing will be announced soon.
+:::
+
 You can assign dynamic monetary values to goals and custom events to track revenue attribution. Revenue attribution helps you determine which marketing campaigns and landing pages result in the most revenue for your business or ecommerce store.
 
 When you create a new custom event, you can now optionally assign a monetary value to it. Our revenue tracking supports multi-currencies too. You can send data in any local currency that the purchase is made in. When doing that, you'll be able to see these metrics in your dashboard:
