@@ -53,7 +53,7 @@ This currency will be used for total and average revenue metrics in the dashboar
 You can now start sending revenue data from your site alongside custom events. How to do it depends on the way you've set up custom events. You can either use [the CSS class name approach](custom-event-goals.md):
 
 ```javascript
-<button class="plausible-event-name=Purchase plausible-event-revenue-amount=10.29 plausible-event-revenue-currency=EUR"></button>
+<button class="plausible-event-name=Purchase plausible-revenue-amount=10.29 plausible-revenue-currency=EUR"></button>
 ```
 
 :::note
