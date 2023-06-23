@@ -197,7 +197,7 @@ Next, click on the "**Add goal**" button and you'll be taken back to the Goals p
 
 Custom properties can be attached to events to capture dynamic elements and to further break down goal conversions. You can use custom properties to create your custom metrics to collect and analyze data that Plausible doesn't automatically track.
 
-You can then filter and sort your goals by custom event properties in your Plausible dashboard. For those coming from Google Analytics, custom properties are roughly the same concept as _custom dimensions_ in Google Analytics.
+You can then filter and sort your goals by custom event properties in your Plausible dashboard. For those coming from Google Analytics, custom properties are roughly the same concept as _custom dimensions_ in Google Analytics. Custom properties can be sent both on the custom event and the pageview level. Learn more about [custom properties for pageviews here](custom-pageview-props.md).
 
 Let's say you have a contact form both in the header and footer of your site. In addition to tracking submissions, you might want to know which section of your site the form was submitted on. Instead of creating separate goals for each form, you can send a custom property instead:
 
@@ -228,6 +228,10 @@ Note that you must ensure that no personally identifiable information (PII) is s
 * precise locations
 * IP addresses
 * pseudonymous cookie IDs, advertising IDs or other pseudonymous end user identifiers
+
+## Sending monetary values to track ecommerce revenue
+
+You can also send dynamic monetary values alongside custom events to track revenue attribution. Here's how to set up the [ecommerce revenue tracking](ecommerce-revenue-tracking.md).
 
 <details>
 
