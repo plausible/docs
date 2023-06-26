@@ -20,6 +20,7 @@ When you create a new custom event, you can now optionally assign a monetary val
 
 The revenue metrics are fully filterable. For instance, you can see the total or average revenue for a particular custom event per any dimension such as a specific date, referral source, marketing campaign, entry page, country or device. 
 
+
 You can add multiple filters to [create audience segments](filters-segments.md) too. This allows you to see the conversions and revenue from for instance the audience segment that's located in Germany, Austria and Switzerland, that were referred by a particular UTM campaign and are using Mac OS.
 
 Here's how to send revenue alongside custom events:
@@ -48,7 +49,11 @@ Go to your [site settings](website-settings.md) and in the "**Goals**" section c
 
 This currency will be used for total and average revenue metrics in the dashboard. Note that the currency for a specific event cannot be changed later.
 
+<img alt="Add goal and choose your currency" src={useBaseUrl('img/plausible-ecommerce-currency-goal.png')} />
+
 ## 3. Start sending the revenue data from your site
+
+<img alt="Ecommerce revenue goal top graph" src={useBaseUrl('img/plausible-ecommerce-revenue-top-graph.png')} />
 
 You can now start sending revenue data from your site alongside custom events. How to do it depends on the way you've set up custom events. You can either use [the CSS class name approach](custom-event-goals.md):
 
@@ -67,3 +72,5 @@ window.plausible("goal name", {revenue: {currency: "USD", amount: 10.29}})
 ```
 
 Custom events and revenue goals are listed at the bottom of your dashboard and will appear as soon as the first conversion has been tracked. 
+
+<img alt="Ecommerce revenue tracking goal" src={useBaseUrl('img/plausible-ecommerce-revenue-goal.png')} />
