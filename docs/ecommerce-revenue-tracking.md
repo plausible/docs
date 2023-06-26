@@ -18,8 +18,9 @@ When you create a new custom event, you can now optionally assign a monetary val
 * Total revenue
 * Average revenue
 
-The revenue metrics are fully filterable. For instance, you can see the total or average revenue for a particular custom event per any dimension such as a specific date, referral source, marketing campaign, entry page, country or device. 
+<img alt="Ecommerce revenue goal top graph" src={useBaseUrl('img/plausible-ecommerce-revenue-top-graph.png')} />
 
+The revenue metrics are fully filterable. For instance, you can see the total or average revenue for a particular custom event per any dimension such as a specific date, referral source, marketing campaign, entry page, country or device. 
 
 You can add multiple filters to [create audience segments](filters-segments.md) too. This allows you to see the conversions and revenue from for instance the audience segment that's located in Germany, Austria and Switzerland, that were referred by a particular UTM campaign and are using Mac OS.
 
@@ -52,8 +53,6 @@ This currency will be used for total and average revenue metrics in the dashboar
 <img alt="Add goal and choose your currency" src={useBaseUrl('img/plausible-ecommerce-currency-goal.png')} />
 
 ## 3. Start sending the revenue data from your site
-
-<img alt="Ecommerce revenue goal top graph" src={useBaseUrl('img/plausible-ecommerce-revenue-top-graph.png')} />
 
 You can now start sending revenue data from your site alongside custom events. How to do it depends on the way you've set up custom events. You can either use [the CSS class name approach](custom-event-goals.md):
 
