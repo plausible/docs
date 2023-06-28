@@ -62,7 +62,7 @@ export default function Home() {
         <script
           defer
           src="/js/script.js"
-          data-domain="<your-domain>"
+          data-domain="yourdomain.com"
         ></script>
       </Head>
       <p class={tw`my-6`}>
