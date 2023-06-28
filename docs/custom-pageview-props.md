@@ -34,7 +34,7 @@ The easiest option to get started is to use the `script.pageview-props.js` scrip
 Or if you're using [a proxy](/proxy/introduction.md):
 
 ```html
-<script defer data-domain="yourdomain.com>" src="https://yourproxy.com/script.pageview-props.js"></script>
+<script defer data-domain="yourdomain.com" src="https://yourproxy.com/script.pageview-props.js"></script>
 ```
 
 :::note
@@ -98,7 +98,7 @@ plausible('pageview', {props: {author: 'John Doe'}})
 Then the pageview will be sent with two properties - `author` and `logged_in`. If you provide the exact same property name in the snippet and in sending the pageview manually, the value from the manual `plausible` function call will take precedence. For example, if you do this:
 
 ```html
-<script defer event-logged_in="false" data-domain="<yourdomain.com>" src="https://plausible.io/js/script.manual.pageview-props.js"></script>
+<script defer event-logged_in="false" data-domain="yourdomain.com" src="https://plausible.io/js/script.manual.pageview-props.js"></script>
 <script>plausible('pageview', {props: {logged_in: 'true'}})</script>
 ```
 
