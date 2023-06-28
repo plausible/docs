@@ -21,7 +21,7 @@ Here's how to automatically track clicks on cloaked affiliate links and other pr
 First, make sure your tracking setup includes the second line as shown below:
 
 ```html
-<script defer data-domain="<yourdomain.com>" src="https://plausible.io/js/script.js"></script>
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.js"></script>
 <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 ```
 ## 2. Add the JavaScript that will be sending the link click events to Plausible
