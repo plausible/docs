@@ -31,13 +31,13 @@ Here's how to send revenue alongside custom events:
 Please change the file name in the `src` attribute of your Plausible snippet from `script.js` to `script.revenue.js`. It should look like this:
 
 ```html
-<script defer data-domain="<yourdomain.com>" src="https://plausible.io/js/script.revenue.js"></script>
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.revenue.js"></script>
 ```
 
 Or if you're using [a proxy](/proxy/introduction.md):
 
 ```html
-<script defer data-domain="<yourdomain.com>" src="https://yourproxy.com/script.revenue.js"></script>
+<script defer data-domain="yourdomain.com" src="https://yourproxy.com/script.revenue.js"></script>
 ```
 
 :::note
