@@ -15,13 +15,13 @@ Here are the steps you need to take to track custom events such as purchases, si
 Please change the file name in the `src` attribute of your Plausible snippet from `script.js` to `script.tagged-events.js`. It should look like this:
 
 ```html
-<script defer data-domain="<yourdomain.com>" src="https://plausible.io/js/script.tagged-events.js"></script>
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.tagged-events.js"></script>
 ```
 
 Or if you're using [a proxy](/proxy/introduction.md):
 
 ```html
-<script defer data-domain="<yourdomain.com>" src="https://yourproxy.com/script.tagged-events.js"></script>
+<script defer data-domain="yourdomain.com" src="https://yourproxy.com/script.tagged-events.js"></script>
 ```
 
 :::note
@@ -244,7 +244,7 @@ You can also send dynamic monetary values alongside custom events to track reven
 For more specific tracking needs, you will have to write the JavaScript yourself. The API only consists of one function, which you can use in your code by including the second line in your tracking setup, as shown below: 
 
 ```html
-<script defer data-domain="<yourdomain.com>" src="https://plausible.io/js/script.js"></script>
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.js"></script>
 <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 ```
 
