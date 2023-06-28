@@ -49,7 +49,7 @@ Add a script tag to your application's HTML page, passing the values configured 
 <script
   src="/stats/js/script.js"
   data-api="/stats/api/event"
-  data-domain="<your-domain>"
+  data-domain="yourdomain.com"
 ></script>
 ```
 :::note
