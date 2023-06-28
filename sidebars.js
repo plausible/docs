@@ -3,7 +3,7 @@ module.exports = {
     "Get Started": ['introduction', 'register-account', 'add-website', 'plausible-script', 'script-extensions', 'integration-guides', 'troubleshoot-integration', 'your-plausible-experience'],
     "Website Settings": ['landing-page', 'website-settings', 'change-domain-name', 'general', 'users-roles', 'visibility', 'shared-links', 'embed-dashboard', 'email-reports', 'traffic-spikes', 'slack-reports', 'excluding-pages', 'transfer-ownership', 'reset-site-data', 'delete-site-data', 'excluding'],
     "Stats Dashboard": ['guided-tour', 'compare-stats', 'filters-segments', 'manual-link-tagging', 'google-analytics-import', 'google-search-console-integration', 'realtime-dashboard', 'top-referrers', 'top-pages', 'countries', 'devices', 'export-stats', 'metrics-definitions', 'keyboard-shortcuts', 'dashboard-faq'],
-    "Events, funnels and ecommerce": ['goal-conversions', 'funnel-analysis', 'ecommerce-revenue-tracking', 'outbound-link-click-tracking', 'file-downloads-tracking', 'error-pages-tracking-404', 'pageview-goals', 'custom-pageview-props', 'custom-event-goals',
+    "Events, Funnels and Ecommerce": ['goal-conversions', 'funnel-analysis', 'ecommerce-revenue-tracking', 'outbound-link-click-tracking', 'file-downloads-tracking', 'error-pages-tracking-404', 'pageview-goals', 'custom-pageview-props', 'custom-event-goals',
       {
         type: 'category',
         label: 'Custom events CMS guides',
