@@ -28,13 +28,13 @@ In order to use this feature you have to start sending custom properties with pa
 The easiest option to get started is to use the `script.pageview-props.js` script extension. Please change the file name in the `src` attribute of your Plausible snippet from `script.js` to `script.pageview-props.js`. It should look like this:
 
 ```html
-<script defer data-domain="<yourdomain.com>" src="https://plausible.io/js/script.pageview-props.js"></script>
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.pageview-props.js"></script>
 ```
 
 Or if you're using [a proxy](/proxy/introduction.md):
 
 ```html
-<script defer data-domain="<yourdomain.com>" src="https://yourproxy.com/script.pageview-props.js"></script>
+<script defer data-domain="yourdomain.com>" src="https://yourproxy.com/script.pageview-props.js"></script>
 ```
 
 :::note
@@ -46,13 +46,13 @@ If you're using any of our other script extensions, you can [combine them](scrip
 You should now add the custom properties as HTML attributes to your Plausible snippet (the `<script>` element). The attributes must follow the format `event-<property>="<value>"`. For example, if you want to track the `author` property with a value of `John Doe`, you should do that as follows:
 
 ```html
-<script defer event-author="John Doe" data-domain="<yourdomain.com>" src="https://plausible.io/js/script.pageview-props.js"></script>
+<script defer event-author="John Doe" data-domain="yourdomain.com" src="https://plausible.io/js/script.pageview-props.js"></script>
 ```
 
 You can add up to 30 custom properties alongside a pageview by adding multiple attributes:
 
 ```html
-<script defer event-author="John Doe" event-logged_in="true" event-darkmode="true" data-domain="<yourdomain.com>" src="https://plausible.io/js/script.pageview-props.js"></script>
+<script defer event-author="John Doe" event-logged_in="true" event-darkmode="true" data-domain="yourdomain.com" src="https://plausible.io/js/script.pageview-props.js"></script>
 ```
 
 All properties provided in the snippet will automatically be attached to any [custom event conversions](custom-event-goals.md) as well.
@@ -86,7 +86,7 @@ This will send a pageview with properties `author` and `logged_in`.
 You can also combine the `manual` extension with the `pageview-props` extension. For example, if you're using this snippet:
 
 ```html
-<script defer event-logged_in="false" data-domain="<yourdomain.com>" src="https://plausible.io/js/script.manual.pageview-props.js"></script>
+<script defer event-logged_in="false" data-domain="yourdomain.com" src="https://plausible.io/js/script.manual.pageview-props.js"></script>
 ```
 
 and also calling the `plausible` function manually like this:
