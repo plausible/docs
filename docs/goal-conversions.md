@@ -1,5 +1,5 @@
 ---
-title: Introduction to goals and custom events
+title: Introduction to goal conversions and behavior analytics
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
