@@ -233,6 +233,10 @@ Note that you must ensure that no personally identifiable information (PII) is s
 
 You can also send dynamic monetary values alongside custom events to track revenue attribution. Here's how to set up the [ecommerce revenue tracking](ecommerce-revenue-tracking.md).
 
+## Creating funnels to optimize your conversion rate
+
+After you have the custom events in place, you can start creating [marketing funnels](funnel-analysis.md) to uncover possible issues, optimize your site and increase the conversion rate.
+
 <details>
 
 <summary>
