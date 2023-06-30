@@ -14,7 +14,7 @@ You can follow the visitor journey from a landing page to a conversion with our 
 * You can go beyond pageviews and use any custom events to build a funnel
 * With the conversion rate you understand the percentage of visitors who started the user flow and ended with a conversion event
 * With the percentage drop-off between the individual funnel steps, you can spot where you lose the most visitors
-* You can get more granular by [using filters](filters-segments.md) to segment your audience. Filter conversion funnels by a marketing campaign, a device or a location for more insights
+* You can get more granular by [using filters](filters-segments.md) to segment your audience. Filter conversion funnels by marketing campaign, referral source, landing page, device or location for more insights
 
 <img alt="Funnels demo" src={useBaseUrl('img/funnels-demo.png')} />
 
