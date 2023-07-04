@@ -337,4 +337,6 @@ We have a WordPress plugin that makes the integration with WordPress nice and ea
 
 * [Metrics iOS Widget](https://santiviquez.gumroad.com/l/xLrcq) by Santiago Víquez
 
+* [PlausibleSwift](https://github.com/nickoneill/PlausibleSwift) - An implementation of Plausible Analytics pageview and event tracking for Swift. Built and maintained by [Nick O'neill](https://github.com/nickoneill)
+
 Let us know about any other integrations that you've built and we will feature them in this list. Thanks for your support!
