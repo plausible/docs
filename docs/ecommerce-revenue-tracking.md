@@ -73,3 +73,25 @@ window.plausible("goal name", {revenue: {currency: "USD", amount: 10.29}})
 Custom events and revenue goals are listed at the bottom of your dashboard and will appear as soon as the first conversion has been tracked. 
 
 <img alt="Ecommerce revenue tracking goal" src={useBaseUrl('img/plausible-ecommerce-revenue-goal.png')} />
+
+## Integrating with Shopify
+
+If you're using Shopify, you can track sales by making a few changes to the order status page.
+
+1. Go to your Shopify admin page
+2. Click on Settings > Checkout > Order status page
+3. Add the following code to 'Additional scripts'. Don't forget to replace `yourdomain.com` and `Purchase` with the goal name you created
+5. Click 'Save' and you're done!
+
+```liquid
+{% if first_time_accessed == true and post_purchase_page_accessed == false %}
+<script data-domain="yourdomain.com" src="https://plausible.io/js/script.manual.revenue.js"></script>
+<script>
+  const amount = "{{ total_price | money_without_currency | replace:',','.' }}"
+  const currency = "{{ currency }}"
+  window.plausible("Purchase", {revenue: {amount: amount, currency: currency}})
+</script>
+{% endif %}
+```
+
+You're now getting events on Plausible when a customer completes an order in your Shopify store.
