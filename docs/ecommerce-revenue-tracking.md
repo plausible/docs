@@ -95,3 +95,30 @@ If you're using Shopify, you can track sales by making a few changes to the orde
 ```
 
 You're now getting events on Plausible when a customer completes an order in your Shopify store.
+
+## Integrating with WooCommerce
+
+If you're using WooCommerce, you can track sales by making a few changes to the checkout thank you page. The following instructions use the [Code Snippets plugin](https://wordpress.org/plugins/code-snippets/) to add the custom script. If you are an advanced user of Wordpress and don't want to install plugins, you can add this same code to your child theme’s `functions.php` file.
+
+1. Install the [Code Snippets plugin](https://wordpress.org/plugins/code-snippets/) on your Wordpress site
+2. In the Wordpress admin panel, click on Snippets > Add New
+3. In the code field, select PHP and paste the code provided below. Don't forget to replace `yourdomain.com` and `Purchase` with the goal name you created
+4. Click 'Save changes and activate' and you're done!
+
+```
+add_action( 'woocommerce_thankyou', 'plausible_revenue_tracking' );
+
+function plausible_revenue_tracking( $order_id ) {
+	$order = wc_get_order( $order_id );
+	?>
+	<script data-domain="yourdomain.com" src="https://plausible.io/js/script.manual.revenue.js"></script>
+	<script>
+	  const amount = "<?php echo $order->get_total(); ?>"
+	  const currency = "<?php echo $order->get_currency(); ?>"
+	  window.plausible("Purchase", {revenue: {amount: amount, currency: currency}})
+	</script>
+<?php
+}
+```
+
+You're now getting events on Plausible when a customer completes an order in your WooCommerce store.
