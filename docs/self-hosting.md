@@ -47,7 +47,7 @@ To get started quickly, download the [plausible/hosting](https://github.com/plau
 to boot up your own Plausible server.
 
 ```bash
-$ git clone https://github.com/plausible/hosting
+$ git clone --depth 1 https://github.com/plausible/hosting
 $ cd hosting
 ```
 
