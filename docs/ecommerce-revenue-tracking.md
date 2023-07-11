@@ -70,6 +70,8 @@ Or [the JavaScript function approach](custom-event-goals.md#trigger-custom-event
 window.plausible("goal name", {revenue: {currency: "USD", amount: 10.29}})
 ```
 
+Or using the [Events API](events-api.md) directly.
+
 Custom events and revenue goals are listed at the bottom of your dashboard and will appear as soon as the first conversion has been tracked. 
 
 <img alt="Ecommerce revenue tracking goal" src={useBaseUrl('img/plausible-ecommerce-revenue-goal.png')} />

@@ -124,6 +124,19 @@ The value corresponding to the `props` key in the request body is expected to be
 ```
 <hr / >
 
+**revenue** <Optional />
+
+Revenue data for this event. This can be attached to goals and custom events to track revenue attribution. To learn more about revenue tracking and how you can set up your dashboard before sending revenue data, please read [this document](ecommerce-revenue-tracking.md).
+
+The value corresponding to the `revenue` key in the request body is expected to be a JSON object with `currency` and `amount`. `currency` is a ISO 4217 string representing the currency code, e.g. `"USD"` or `"EUR"`. `amount` can be either a float or a string, e.g. `1322.22` or `"1322.22"`. In the case of an invalid currency or amount, the event is still recorded and the API returns HTTP 202, but revenue data associated with it is discarded.
+
+For example, to track a purchase of US$ 1.322,22, your request body might look like this:
+
+```json
+{"name":"Purchase","url":"http://dummy.site","domain":"dummy.site","revenue":{"currency":"USD","amount":"1322.22"}}
+```
+<hr / >
+
 :::note
 You can can use GET https://plausible.io/api/health endpoint to monitor the status of our API
 :::
