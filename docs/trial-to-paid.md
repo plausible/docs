@@ -32,7 +32,7 @@ Choose your location and click on the "**Continue**" button.
 
 <img alt="Choose your location" src={useBaseUrl('img/location.png')} />
 
-Next up you need to choose your payment method. You can pay by a credit card or with a PayPal account.
+Next up you need to choose your payment method. You can pay by a credit card, PayPal, Apple Pay or Google Pay.
 
 Fill in your card details and click on the "**Subscribe Now**" button to subscribe to a paid subscription. 
 
