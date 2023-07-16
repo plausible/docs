@@ -107,7 +107,8 @@ The Plausible server itself does not perform SSL termination. It only runs on un
 ## Updating Plausible
 
 Plausible is updated regularly, but it's up to you to apply these updates on your server.
-By virtue of using Docker, these updates are safe and easy to apply.
+You may refer to the discussions on [the releases page](https://github.com/plausible/analytics/releases) for specific instructions.
+The typical steps for handling minor version updates are as follows:
 
 ```bash
 $ docker-compose down --remove-orphans
