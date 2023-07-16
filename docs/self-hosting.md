@@ -19,8 +19,8 @@ Plausible follows [semantic versioning](https://semver.org/): `MAJOR.MINOR.PATCH
 You can find available Plausible versions on [DockerHub](https://hub.docker.com/r/plausible/analytics). The default
 `latest` tag refers to the latest stable release tag. You can also pin your version:
 
-* `plausible/analytics:v1` pins the major version to `1` but allows minor and patch version upgrades
-* `plausible/analytics:v1.5` pins the minor version to `1.5` but allows only patch upgrades
+* `plausible/analytics:v2` pins the major version to `2` but allows minor and patch version upgrades
+* `plausible/analytics:v2.0` pins the minor version to `2.0` but allows only patch upgrades
 
 None of the functionality is backported to older versions. If you wish to get the latest bug fixes and security
 updates you need to upgrade to a newer version.
