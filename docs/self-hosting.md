@@ -19,8 +19,8 @@ Plausible follows [semantic versioning](https://semver.org/): `MAJOR.MINOR.PATCH
 You can find available Plausible versions on [DockerHub](https://hub.docker.com/r/plausible/analytics). The default
 `latest` tag refers to the latest stable release tag. You can also pin your version:
 
-* `plausible/analytics:v1` pins the major version to `1` but allows minor and patch version upgrades
-* `plausible/analytics:v1.5` pins the minor version to `1.5` but allows only patch upgrades
+* `plausible/analytics:v2` pins the major version to `2` but allows minor and patch version upgrades
+* `plausible/analytics:v2.0` pins the minor version to `2.0` but allows only patch upgrades
 
 None of the functionality is backported to older versions. If you wish to get the latest bug fixes and security
 updates you need to upgrade to a newer version.
@@ -107,7 +107,8 @@ The Plausible server itself does not perform SSL termination. It only runs on un
 ## Updating Plausible
 
 Plausible is updated regularly, but it's up to you to apply these updates on your server.
-By virtue of using Docker, these updates are safe and easy to apply.
+You may refer to the discussions on [the releases page](https://github.com/plausible/analytics/releases) for specific instructions.
+The typical steps for handling minor version updates are as follows:
 
 ```bash
 $ docker-compose down --remove-orphans
