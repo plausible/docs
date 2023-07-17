@@ -76,6 +76,10 @@ Custom events and revenue goals are listed at the bottom of your dashboard and w
 
 <img alt="Ecommerce revenue tracking goal" src={useBaseUrl('img/plausible-ecommerce-revenue-goal.png')} />
 
+:::note
+You can add more detail to your revenue tracking by using the custom properties script extension. This lets you track like order IDs, coupon codes, or if customers are logged in. [Learn more.](custom-pageview-props.md)
+:::
+
 ## Integrating with Shopify
 
 If you're using Shopify, you can track sales by making a few changes to the order status page.
@@ -98,6 +102,26 @@ If you're using Shopify, you can track sales by making a few changes to the orde
 
 You're now getting events on Plausible when a customer completes an order in your Shopify store.
 
+If you want to track custom properties, such as order IDs or the number of items in an order, here's an example to get you started:
+
+```
+{% if first_time_accessed == true and post_purchase_page_accessed == false %}
+<script data-domain="yourdomain.com" src="https://plausible.io/js/script.manual.revenue.pageview-props.js"></script>
+<script>
+  const amount = "{{ total_price | money_without_currency | replace:',','.' }}"
+  const currency = "{{ currency }}"
+
+  const orderId = "{{ order_number }}"
+  const itemCount = {{ item_count }}
+
+  window.plausible("Purchase", {
+    revenue: {amount: amount, currency: currency},
+    props: {orderId: orderId, itemCount: itemCount}
+  })
+</script>
+{% endif %}
+```
+
 ## Integrating with WooCommerce
 
 If you're using WooCommerce, you can track sales by making a few changes to the checkout thank you page. The following instructions use the [Code Snippets plugin](https://wordpress.org/plugins/code-snippets/) to add the custom script. If you are an advanced user of Wordpress and don't want to install plugins, you can add this same code to your child theme’s `functions.php` file.
@@ -111,16 +135,41 @@ If you're using WooCommerce, you can track sales by making a few changes to the 
 add_action( 'woocommerce_thankyou', 'plausible_revenue_tracking' );
 
 function plausible_revenue_tracking( $order_id ) {
-	$order = wc_get_order( $order_id );
-	?>
-	<script data-domain="yourdomain.com" src="https://plausible.io/js/script.manual.revenue.js"></script>
-	<script>
-	  const amount = "<?php echo $order->get_total(); ?>"
-	  const currency = "<?php echo $order->get_currency(); ?>"
-	  window.plausible("Purchase", {revenue: {amount: amount, currency: currency}})
-	</script>
+  $order = wc_get_order( $order_id );
+  ?>
+  <script data-domain="yourdomain.com" src="https://plausible.io/js/script.manual.revenue.js"></script>
+  <script>
+    const amount = "<?php echo $order->get_total(); ?>"
+    const currency = "<?php echo $order->get_currency(); ?>"
+    window.plausible("Purchase", {revenue: {amount: amount, currency: currency}})
+  </script>
 <?php
 }
 ```
 
 You're now getting events on Plausible when a customer completes an order in your WooCommerce store.
+
+If you want to track custom properties, such as order IDs or the number of items in an order, here's an example to get you started:
+
+```
+add_action( 'woocommerce_thankyou', 'plausible_revenue_tracking' );
+
+function plausible_revenue_tracking( $order_id ) {
+  $order = wc_get_order( $order_id );
+  ?>
+  <script data-domain="yourdomain.com" src="https://plausible.io/js/script.manual.revenue.pageview-props.js"></script>
+  <script>
+    const amount = "<?php echo $order->get_total(); ?>"
+    const currency = "<?php echo $order->get_currency(); ?>"
+
+    const orderId = "<?php echo $order->get_id(); ?>"
+    const itemCount = <?php echo $order->get_item_count(); ?>
+
+    window.plausible("Purchase", {
+      revenue: {amount: amount, currency: currency},
+      props: {orderId: orderId, itemCount: itemCount}
+    })
+  </script>
+<?php
+}
+```
