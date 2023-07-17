@@ -340,5 +340,6 @@ We have a WordPress plugin that makes the integration with WordPress nice and ea
 
 * [Metrics iOS Widget](https://santiviquez.gumroad.com/l/xLrcq) by Santiago Víquez
 
+* [Staat](https://apps.apple.com/app/staat/id6451257773) by Andraz Polajzer
 
 Let us know about any other integrations that you've built and we will feature them in this list. Thanks for your support!
