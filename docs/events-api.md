@@ -46,13 +46,20 @@ in Plausible.
 
 User-Agent is also used to populate the _Devices_ report in your Plausible dashboard. The device data is derived from the open source database [device-detector](https://github.com/matomo-org/device-detector). If your User-Agent is not showing up in your dashboard, it's probably because it is not recognized as one in the _device-detector_ database.
 
+The header is required but bear in mind that browsers and some HTTP libraries automatically add a default User-Agent header to HTTP requests. In case of browsers, we would not recommend overriding the header manually unless you have a specific reason to.
+
 <hr / >
 
-**X-Forwarded-For** <Required />
+**X-Forwarded-For** <Optional />
 
-Used to get the IP address of the client. The IP address is used to calculate the *user_id* which identifies a [unique visitor](https://plausible.io/data-policy#how-we-count-unique-users-without-cookies) in Plausible. The raw value is anonymized and not stored. If the header contains a comma-separated list (as it should if the request is sent through a chain of proxies), then the first valid IP address from the list is used.
+Used to explicitly set the IP address of the client. If not set, the remote IP of the sender will automatically be used. Depending on your use-case:
+1. If sending the event from your visitors' device, this header does not need to be set
+2. If sending the event from a backend server or proxy, make sure to override this header with the correct IP address of the client.
 
-More information can be found on [MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Forwarded-For).
+
+The raw value of the IP address is not stored in our database. The IP address is used to calculate the *user_id* which identifies a [unique visitor](https://plausible.io/data-policy#how-we-count-unique-users-without-cookies) in Plausible. It is also used to fill the Location report with country, region and city data of the visitor.
+
+If the header contains a comma-separated list (as it should if the request is sent through a chain of proxies), then the first valid IP address from the list is used. Both IPv4 and IPv6 addresses are supported. More information about the header format can be found on [MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Forwarded-For).
 
 <hr / >
 
