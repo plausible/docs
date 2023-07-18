@@ -48,11 +48,16 @@ User-Agent is also used to populate the _Devices_ report in your Plausible dashb
 
 <hr / >
 
-**X-Forwarded-For** <Required />
+**X-Forwarded-For** <Optional />
 
-Used to get the IP address of the client. The IP address is used to calculate the *user_id* which identifies a [unique visitor](https://plausible.io/data-policy#how-we-count-unique-users-without-cookies) in Plausible. The raw value is anonymized and not stored. If the header contains a comma-separated list (as it should if the request is sent through a chain of proxies), then the first valid IP address from the list is used.
+Used to explicitly set the IP address of the client. If not set, the remote IP of the sender will automatically be used. Depending on your use-case:
+1. If sending the event from your visitors' device, this header does not need to be set
+2. If sending the event from a backend server or proxy, make sure to override this header with the correct IP address of the client.
 
-More information can be found on [MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Forwarded-For).
+
+The raw value of the IP address is not stored in our database. The IP address is used to calculate the *user_id* which identifies a [unique visitor](https://plausible.io/data-policy#how-we-count-unique-users-without-cookies) in Plausible. It is also used to fill the Location report with country, region and city data of the visitor.
+
+If the header contains a comma-separated list (as it should if the request is sent through a chain of proxies), then the first valid IP address from the list is used. Both IPv4 and IPv6 addresses are supported. More information about the header format can be found on [MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Forwarded-For).
 
 <hr / >
 
