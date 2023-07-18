@@ -207,7 +207,11 @@ If you'd like to count users on your Android and/or iOS mobile apps, you can use
 
 ## Notion website
 
-To integrate Plausible Analytics into your Notion website, you'll need to use a third-party service such as Potion or Super (both are paid tools) that will allow you add custom code to your Notion website. 
+To integrate Plausible Analytics into your Notion website, you'll need to use a third-party service such as Potion or Super (both are paid tools) that will allow you add custom code to your Notion website.
+
+## Open Journal Systems (OJS)
+
+The [OJS Site Usage plugin](https://gitlab.com/ubiquitypress/ojs-plugin-site-usage) inserts a new page into the editor dashboard for a journal that displays the Plausible dashboard, allowing journal editors and managers to access and filter their site data in real time.
 
 ## PayloadCMS
 
