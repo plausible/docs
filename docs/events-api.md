@@ -46,6 +46,8 @@ in Plausible.
 
 User-Agent is also used to populate the _Devices_ report in your Plausible dashboard. The device data is derived from the open source database [device-detector](https://github.com/matomo-org/device-detector). If your User-Agent is not showing up in your dashboard, it's probably because it is not recognized as one in the _device-detector_ database.
 
+The header is required but bear in mind that browsers and some HTTP libraries automatically add a default User-Agent header to HTTP requests. In case of browsers, we would not recommend overriding the header manually unless you have a specific reason to.
+
 <hr / >
 
 **X-Forwarded-For** <Optional />
