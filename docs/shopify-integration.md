@@ -152,3 +152,56 @@ If you want to trigger multiple custom events on the same site, you don't need t
 ```
 
 <img alt="track multiple elements in Shopify" src={useBaseUrl('img/track-multiple-elements-shopify.png')} />
+
+
+## Ecommerce revenue and attribution tracking 
+
+You can [track sales](https://plausible.io/docs/ecommerce-revenue-tracking) by making a few changes to the order status page.
+
+1. Go to your Shopify admin page
+2. Click on Settings > Checkout > Order status page
+
+<img alt="Shopify Settings" src={useBaseUrl('img/shopify-settings-revenue-metrics.png')} />
+<img alt="Shopify Checkout menu" src={useBaseUrl('img/shopify-settings-checkout-revenue-metrics.png')} />
+
+3. Add the following code to 'Additional scripts'. Don't forget to replace `yourdomain.com` and `Purchase` with the goal name you created
+
+<img alt="Shopify Additional scripts box" src={useBaseUrl('img/shopify-additional-scripts-revenue-metrics.png')} />
+
+5. Click 'Save' and you're done!
+
+```liquid
+{% if first_time_accessed == true and post_purchase_page_accessed == false %}
+<script data-domain="yourdomain.com" src="https://plausible.io/js/script.manual.revenue.js"></script>
+<script>
+  const amount = "{{ total_price | money_without_currency | replace:',','.' }}"
+  const currency = "{{ currency }}"
+  window.plausible("Purchase", {revenue: {amount: amount, currency: currency}})
+</script>
+{% endif %}
+```
+
+You're now getting events on Plausible when a customer completes an order in your Shopify store.
+
+If you want to track custom properties, such as order IDs or the number of items in an order, here's an example to get you started:
+
+```
+{% if first_time_accessed == true and post_purchase_page_accessed == false %}
+<script data-domain="yourdomain.com" src="https://plausible.io/js/script.manual.revenue.pageview-props.js"></script>
+<script>
+  const amount = "{{ total_price | money_without_currency | replace:',','.' }}"
+  const currency = "{{ currency }}"
+
+  const orderId = "{{ order_number }}"
+  const itemCount = {{ item_count }}
+
+  window.plausible("Purchase", {
+    revenue: {amount: amount, currency: currency},
+    props: {orderId: orderId, itemCount: itemCount}
+  })
+</script>
+{% endif %}
+```
+
+<img alt="Revenue goal custom props" src={useBaseUrl('img/revenue-goal-custom-props.png')} />
+
