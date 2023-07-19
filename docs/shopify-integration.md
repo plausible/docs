@@ -166,10 +166,6 @@ You can [track sales](https://plausible.io/docs/ecommerce-revenue-tracking) by m
 
 3. Add the following code to 'Additional scripts'. Don't forget to replace `yourdomain.com` and `Purchase` with the goal name you created
 
-<img alt="Shopify Additional scripts box" src={useBaseUrl('img/shopify-additional-scripts-revenue-metrics.png')} />
-
-5. Click 'Save' and you're done!
-
 ```liquid
 {% if first_time_accessed == true and post_purchase_page_accessed == false %}
 <script data-domain="yourdomain.com" src="https://plausible.io/js/script.manual.revenue.js"></script>
@@ -202,6 +198,9 @@ If you want to track custom properties, such as order IDs or the number of items
 </script>
 {% endif %}
 ```
+<img alt="Shopify Additional scripts box" src={useBaseUrl('img/shopify-additional-scripts-revenue-metrics.png')} />
+
+5. Click 'Save' and you're done!
 
 <img alt="Revenue goal custom props" src={useBaseUrl('img/revenue-goal-custom-props.png')} />
 
