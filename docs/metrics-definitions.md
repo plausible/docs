@@ -8,6 +8,10 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Automatically track the 404 error pages on your site. This feature isn't enabled by default so you need to [follow these steps](error-pages-tracking-404.md) to enable it for sites where you want to track 404 error pages.
 
+## Average Revenue
+
+The average revenue of orders tracked. This is a part of the [revenue attribution tracking](ecommerce-revenue-tracking.md).
+
 ## Bounce Rate
 
 The percentage of visitors with a single page view. A visitor "bounces" away and leaves your site after only viewing a single page.
@@ -22,6 +26,10 @@ Shows the browsers used by your visitors. We only show the brand of the browser 
 
 The percentage of visitors that take a desired action such as subscribing to a newsletter or signing up for an account. Calculated as follows:
 unique conversions for a goal / unique visitors, where both values depend on the filters applied to the dashboard.
+
+## Custom Properties (or Custom Dimensions)
+
+You can attach custom data when sending [a pageview](custom-pageview-props.md) or [a custom event](custom-event-goals.md#using-custom-props) to Plausible in order to create custom metrics.
 
 ## Current Visitors
 
@@ -46,6 +54,10 @@ Shows how often people exit from a specific page. It's calculated as the number 
 ## File Downloads
 
 Automatically track the number of file downloads. This feature isn't enabled by default so you need to [follow these steps](file-downloads-tracking.md) to enable it for sites where you want to track clicks on files.
+
+## Funnels
+
+You can follow the visitor journey from a landing page to a conversion with [funnel analysis](funnel-analysis.md). 
 
 ## Goals
 
@@ -73,7 +85,7 @@ You can click on any source to drill-down and view the individual pages linking 
 
 ## Screen Size
 
-Shows the width of the screens used by your visitors. We measure the width of the browser window where your site is actually rendered rather than the full screen width. Anything under 576px screen size is considered a mobile device, up to 992px is considered a tablet, up to 1440px is considered a laptop and anything above 1440px is considered a desktop. Metrics are shown as the total number of unique visitors and as a percentage of all visitors.
+Shows the devices used by your visitors. Devices are categorized into desktop, mobile or tablet. This is derived from the User-Agent HTTP header. The full User-Agent is discarded. Metrics are shown as the total number of unique visitors and as a percentage of all visitors.
 
 ## Source
 
@@ -95,6 +107,10 @@ If the same goal is completed multiple times by the same visitor, all the comple
 
 The total number of times your pages were loaded by your visitors.
 
+## Total Revenue
+
+The total revenue of orders tracked. This is a part of the [revenue attribution tracking](ecommerce-revenue-tracking.md).
+
 ## UTM parameters
 
 To minimize the amount of traffic that falls within the "Direct / None" category, you can add special query parameters (UTMs) to your links. UTMs help you better understand where your traffic is coming from. Plausible Analytics supports `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term`. Read more about [tagging your links](manual-link-tagging.md).
@@ -107,7 +123,7 @@ When a visitor converts for a particular goal they’ll be counted as a unique c
 
 The number of people who visited your site. We are privacy-friendly so we don't use cookies and other persistent identifiers. If a person visits from multiple devices or on multiple days, they are counted as separate visitors. You can learn more about [how we count unique visitors](https://plausible.io/data-policy).
 
-## Views per visit (or Pages / Session)
+## Views Per Visit (or Pages / Session)
 
 Views per visit (also known as Pages per session) shows the average number of pageviews per visit. Repeated views of a single page are included too.
 
