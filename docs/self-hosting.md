@@ -128,16 +128,9 @@ your instance:
 
 Plausible uses the country database created by [dbip](https://db-ip.com/) for enriching analytics data with visitor countries. The database is shipped with Plausible and country data collection happens automatically.
 
-Optionally, you can provide a different database. For example, you can use [MaxMind](https://www.maxmind.com) services. Their end-user license does not make it very easy to just package the database along with an open-source product.
+Optionally, you can use [MaxMind](https://www.maxmind.com) services. Their end-user license does not make it very easy to just package the database along with an open-source product.
 
-This is why, to use MaxMind, you need to create an account [here](https://www.maxmind.com/en/geolite2/signup). Once you have your account details, open the `geoip/geoip.conf` file and enter your `GEOIPUPDATE_ACCOUNT_ID` and `GEOIPUPDATE_LICENSE_KEY`. Then, combine both the base docker-compose file with the one in the geoip folder:
-
-```bash
-$ docker-compose -f docker-compose.yml -f geoip/docker-compose.geoip.yml up -d
-```
-
-The `geoip/docker-compose.geoip.yml` file downloads and updates the country database automatically, making it available to the `plausible`
-container.
+This is why, to use MaxMind, you need to create an account [here](https://www.maxmind.com/en/geolite2/signup). Once you have your account details, you can add `MAXMIND_LICENSE_KEY` and `MAXMIND_EDITION` environmental valiables as described in [IP Geolocation configuration options,](self-hosting-configuration.md#ip-geolocation) and the databases would be automatically downloaded and kept up to date.
 
 ### 2. Reverse proxy
 
