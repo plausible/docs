@@ -36,10 +36,10 @@ You need to place your Plausible Analytics tracking script code into the Header 
 Add this code to your 404 page. For instance, if you're using WordPress, your 404 page template will be called `404.php`. It will be located within your theme files.
 
 ```html
-<script>plausible("404",{ props: { path: document.location.pathname } });</script>
+<script>document.addEventListener('DOMContentLoaded', function () { plausible('404', { props: { path: document.location.pathname } }); });</script>
 ```
 
-You need to place this code on your 404 page below the header section (place it somewhere after the closing `</head>` tag).
+You can place this code anywhere on your 404 page template.
 
 ## 3: Create a custom event goal in your Plausible Analytics account
 
