@@ -39,7 +39,7 @@ Add this code to your 404 page. For instance, if you're using WordPress, your 40
 <script>document.addEventListener('DOMContentLoaded', function () { plausible('404', { props: { path: document.location.pathname } }); });</script>
 ```
 
-You can place this code anywhere on your 404 page template.
+You can place this code anywhere in the `<head>` or `<body>` section of your 404 page template.
 
 ## 3: Create a custom event goal in your Plausible Analytics account
 
