@@ -95,9 +95,7 @@ See all referral sources that are sending you traffic. A source is reported when
 
 The average time people spend on a particular page on your site. This is calculated as the difference between the point when a person lands on a particular page and when they move on to the next page.
 
-You may notice differences in the time on page in Plausible and in Google Analytics. This is because we have a different definition. In Google Analytics, bounced visitors are included in the time on page calculation but are set to 10 seconds. In Plausible, we exclude bounced visitors from the time on page calculation. Neither of these approaches is 100% accurate. Plausible would show higher than the actual time on page, and Google Analytics would show lower than the actual time on page. In both cases, it's not possible to measure the time on page of people that bounce from your site. 
-
-We're working on a new approach with the beacon API, which would allow us to include actual time on page even from people that bounce, making Plausible have more accurate time on page than what's possible now in Google Analytics and in Plausible.
+You may notice differences in the time on page in Plausible and in Google's Universal Analytics. This is because we have a different definition. In Google Analytics (UA), bounced visitors are included in the time on page calculation but are set to 10 seconds. In Plausible, we exclude bounced visitors from the time on page calculation. Neither of these approaches is 100% accurate. Plausible would show higher than the actual time on page, and Google Analytics would show lower than the actual time on page. In both cases, it's not possible to measure the time on page of people that bounce from your site. 
 
 ## Total Conversions
 
