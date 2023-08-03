@@ -26,11 +26,9 @@ First, make sure your tracking setup includes the second line as shown below:
 ```
 ## 2. Add the JavaScript that will be sending the link click events to Plausible
 
-You need to add the following code to all of the pages where you want to track your links. You should insert the code below into your HTML page `<head>` section just under the custom event snippet. Here are the changes you will have to make in the code:
+You need to add the following code to all of the pages where you want to track your links. You should insert the code below into your HTML page `<head>` section just under the custom event snippet.
 
-- On the line that says `var toBeTracked = '/go/'` change `/go/` to what you want to match with. With this example, any link with a URL that contains `/go/` will be tracked. If simply containing a string value is not enough, see [more flexible URL matching below](#more-flexible-url-matching). 
-
-- (Optional) Give your custom event a new name (`var eventName = 'Cloaked Link: Click'`). The default event name is `Cloaked Link: Click`. Feel free to change it. This is the name that will show up in your Plausible dashboard.
+On the line that says `var toBeTracked = '/go/'` change `/go/` to what you want to match with. With this example, any link with a URL that contains `/go/` will be tracked. If simply containing a string value is not enough, see [more flexible URL matching below](#more-flexible-url-matching).
 
 ```html
 <script>
@@ -115,7 +113,7 @@ You'll have to configure the goal for the click numbers to show up in your Plaus
 
 Click on the "**+ Add goal**" button to go to the goal creation form.
 
-Select `Custom event` as the goal trigger and enter your custom event name (or the default `Cloaked Link: Click` if you didn't change it in step 2).
+Select `Custom event` as the goal trigger and enter this exact name: `Cloaked Link: Click`.
 
 Next, click on the "**Add goal**" button and you'll be taken back to the Goals page. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who have completed your new custom event. Goal conversions are listed at the very bottom of the dashboard. Note that at least one click is required for this to show in your dashboard. 
 
