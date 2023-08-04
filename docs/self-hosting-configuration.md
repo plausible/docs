@@ -87,7 +87,7 @@ You need to create an account and use their **GeoLite2 Country** database.
 
 | Parameter           | Default                | Description                                              |
 | ------------------- | ---------------------- | -------------------------------------------------------- |
-| MAXMIND_LICENSE_KEY | --                     | MaxMind license key to automatically download and update the datase |
+| MAXMIND_LICENSE_KEY | --                     | MaxMind license key to automatically download and update the database |
 | MAXMIND_EDITION     | GeoLite2-City          | MaxMind database edition to use (only if MAXMIND_LICENSE_KEY is set) |
 | GEOLITE2_COUNTRY_DB | --                     | Path to your custom IP geolocation database in MaxMind's format |
 | GEONAMES_SOURCE_FILE | -- | Path to your custom CSV file containing geoname_id -> place name mapping. [geonames.lite.csv](https://github.com/plausible/location/blob/main/priv/geonames.lite.csv) is used by default.
