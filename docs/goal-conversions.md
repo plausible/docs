@@ -16,7 +16,7 @@ There are several types of behavior analytics tools in Plausible Analytics:
 * [Custom event goals](custom-event-goals.md) allow you to measure button clicks, purchases, subscriptions, form completions, clicks on video or audio elements and pretty much any other action that you wish (you can also send custom dimensions alongside custom events for extra insights)
 * [Funnel analysis](funnel-analysis.md) allow you to follow the visitor journey from a landing page to a conversion in order to to uncover possible issues, optimize your site and increase the conversion rate.
 * [Ecommerce revenue tracking](ecommerce-revenue-tracking.md) allows you to assign dynamic monetary values to goals and custom events to track revenue attribution.
-* [Custom properties for pageviews](custom-pageview-props.md) allow you to send custom data when sending a pageview to create custom metrics.
+* [Custom properties](/custom-props/introduction) allow you to send custom data with pageviews and custom events to create custom metrics.
 * [Outbound link clicks](outbound-link-click-tracking.md) allow you to automatically measure clicks on external links
 * [File downloads](file-downloads-tracking.md) allow you to automatically track when a visitor clicks a link leading to a file
 * [404 error pages](error-pages-tracking-404.md) allow you to automatically measure page not found errors

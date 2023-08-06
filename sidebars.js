@@ -53,8 +53,17 @@ module.exports = {
       'file-downloads-tracking',
       'error-pages-tracking-404',
       'pageview-goals',
-      'custom-pageview-props',
       'custom-event-goals',
+      {
+        type: 'category',
+        label: 'Custom properties',
+        items: [
+          'custom-props/introduction',
+          'custom-props/for-pageviews',
+          'custom-props/for-custom-events',
+          'custom-props/props-dashboard',
+        ]
+      },
       {
         type: 'category',
         label: 'Custom events CMS guides',

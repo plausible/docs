@@ -35,7 +35,7 @@ Here's the list of all the available extensions at this time:
 | script.file-downloads.js | Automatically [track file downloads](file-downloads-tracking.md)                                   |
 | script.tagged-events.js  | Allows you to [track standard custom events](custom-event-goals.md) such as link clicks, form submits, and any other HTML element clicks            |
 | script.revenue.js  | Allows you to assign dynamic [monetary values](ecommerce-revenue-tracking.md) to goals and custom events to track revenue attribution |
-| script.pageview-props.js  | Allow you to attach [custom properties](custom-pageview-props.md) (also known as custom dimensions in Google Analytics) when sending a pageview in order to create custom metrics      |
+| script.pageview-props.js  | Allow you to attach [custom properties](/custom-props/introduction) (also known as custom dimensions in Google Analytics) when sending a pageview in order to create custom metrics      |
 | script.exclusions.js     | [Exclude certain pages from being tracked](excluding-pages.md)                                     |
 | script.compat.js         | Compatibility mode for [tracking users on Internet Explorer](#scriptcompatjs) (≥IE11)                      |
 | script.local.js          | Allow analytics to track on localhost too which is useful in hybrid apps                           |

@@ -88,7 +88,7 @@ more depth. Here's the full list of properties we collect automatically:
 
 #### Custom props
 
-In addition to props that are collected automatically, you can also query for [custom properties](/custom-event-goals#using-custom-props).
+In addition to props that are collected automatically, you can also query for [custom properties](/custom-props/introduction).
 To filter or break down by a custom property, use the key `event:props:<custom_prop_name>`. [See example](#breakdown-custom-event-by-custom-props) for how to use it.
 
 :::note
