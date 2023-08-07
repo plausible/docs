@@ -193,47 +193,23 @@ Select `Custom event` as the goal trigger and enter the name of the custom event
 
 Next, click on the "**Add goal**" button and you'll be taken back to the Goals page. When you navigate back to your Plausible dashboard, you should see the number of visitors who triggered the custom event. Custom events are listed at the bottom of your dashboard and will appear as soon as the first conversion has been tracked.
 
-## Using custom props
+That's it. You're now tracking goal conversions.
 
-Custom properties can be attached to events to capture dynamic elements and to further break down goal conversions. You can use custom properties to create your custom metrics to collect and analyze data that Plausible doesn't automatically track.
-
-You can then filter and sort your goals by custom event properties in your Plausible dashboard. For those coming from Google Analytics, custom properties are roughly the same concept as _custom dimensions_ in Google Analytics. Custom properties can be sent both on the custom event and the pageview level. Learn more about [custom properties for pageviews here](custom-pageview-props.md).
-
-Let's say you have a contact form both in the header and footer of your site. In addition to tracking submissions, you might want to know which section of your site the form was submitted on. Instead of creating separate goals for each form, you can send a custom property instead:
-
-`plausible-event-<property>=<value>` allows you to define custom properties that are sent with your custom event. For example `plausible-event-position=footer`. The full CSS class name would look like this:
-
-`plausible-event-name=Form+Submit plausible-event-position=footer`
+## Enhanced goal conversion tracking
 
 :::note
-To represent a space character in property values, you can use a `+` sign. For example: `plausible-event-author=John+Doe`. Spaces in custom property names (`author` in this example) are not allowed.
+These three are upcoming premium features that are free-to-use during the private preview. Pricing will be announced soon.
 :::
 
-You can have up to 30 custom props classes. And the names can be anything that you want.
+### Attach custom properties
 
-Custom properties only accept scalar values such as strings, numbers and booleans. Data structures such as objects, arrays etc. aren't accepted.
+Custom properties can be attached to events to capture dynamic elements and to further break down goal conversions. You can use custom properties to create your custom metrics to collect and analyze data that Plausible doesn't automatically track. [Learn more here](/custom-props/for-custom-events).
 
-Custom properties will show up automatically on your dashboard as long as you've added the goal itself. You don't need to manually add them in your settings.
-
-Plausible will display `(none)` in your dashboard when you send a custom property key with no value, or `null`/`undefined` as a value.
-
-Note that you must ensure that no personally identifiable information (PII) is sent to Plausible with custom properties. PII is information that could be used on its own to identify, contact, or precisely locate an individual. This includes:
-
-* full names or usernames
-* email addresses
-* mailing addresses
-* phone numbers
-* credit card information
-* passport numbers
-* precise locations
-* IP addresses
-* pseudonymous cookie IDs, advertising IDs or other pseudonymous end user identifiers
-
-## Sending monetary values to track ecommerce revenue
+### Monetary values to track ecommerce revenue
 
 You can also send dynamic monetary values alongside custom events to track revenue attribution. Here's how to set up the [ecommerce revenue tracking](ecommerce-revenue-tracking.md).
 
-## Creating funnels to optimize your conversion rate
+### Create funnels to optimize your conversion rate
 
 After you have the custom events in place, you can start creating [marketing funnels](funnel-analysis.md) to uncover possible issues, optimize your site and increase the conversion rate.
 
@@ -260,16 +236,24 @@ Here's what triggering a custom event looks like:
 plausible('Signup')
 ```
 
-The event name can be anything. As a second parameter, you can also send an object with options. The supported options at the moment are:
+The first argument to this function ("Signup" in this case) is the name of your custom event (i.e. the name of your goal).
+
+The second (optional) argument to the `plausible` function is an object with that currently supports the following options: 
 
 * `callback` – a function that is called once the event is logged successfully.
-* `props` – an object with custom properties for the event
+* `props` - an object with custom properties. Read more and see examples [here](/custom-props/for-custom-events)
+* `revenue` - an object with revenue tracking fields. Read more and see examples [here](ecommerce-revenue-tracking.md)
 
-And here's what triggering a custom event with custom properties looks like:
+Here's an example of the options argument using the `callback` and `props` options. 
 
 ```javascript
-plausible('Download', {props: {method: 'HTTP', Region: 'Europe'}})
+plausible('Download', {callback: navigateFn, props: {method: 'HTTP'}})
 ```
+
+:::note
+Custom properties and revenue tracking are upcoming premium features that are currently free-to-use during the private preview. Pricing will be announced soon.
+:::
+
 <h3>
 
 Example: Tracking audio and video elements

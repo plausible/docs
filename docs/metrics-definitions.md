@@ -29,7 +29,7 @@ unique conversions for a goal / unique visitors, where both values depend on the
 
 ## Custom Properties (or Custom Dimensions)
 
-You can attach custom data when sending [a pageview](custom-pageview-props.md) or [a custom event](custom-event-goals.md#using-custom-props) to Plausible in order to create custom metrics.
+You can attach custom data when sending pageviews and custom events in order to create custom metrics. Learn more [here](/custom-props/introduction)
 
 ## Current Visitors
 
