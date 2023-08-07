@@ -28,6 +28,6 @@ Choose the custom property that you want to analyze and click on "**Apply Filter
 
 ## 3. Break down your traffic by a custom property
 
-At the bottom of your dashboard, you have the Behaviors section which allows you to switch to the "**Properties**" tab on the top right.
+At the bottom of your dashboard, you have the Behaviors section which allows you to switch to the "**Properties**" tab on the top right. In this view, you can select a property to see the value breakdown for.
 
-In this view, you can select a property to see the value breakdown for.
+<img alt="Custom Property Filter" src={useBaseUrl('img/custom-props-breakdown.png')} />
