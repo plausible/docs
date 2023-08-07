@@ -77,7 +77,7 @@ Custom events and revenue goals are listed at the bottom of your dashboard and w
 <img alt="Ecommerce revenue tracking goal" src={useBaseUrl('img/plausible-ecommerce-revenue-goal.png')} />
 
 :::note
-You can add more details to your revenue tracking by using custom properties. This lets you track order IDs, coupon codes, if customers are logged in and more. [Learn more](custom-pageview-props.md).
+You can add more details to your revenue tracking by using custom properties. This lets you track order IDs, coupon codes, if customers are logged in and more. [Learn more](/custom-props/introduction.md).
 :::
 
 ## Integrating with Shopify
