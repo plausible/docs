@@ -86,13 +86,13 @@ more depth. Here's the full list of properties we collect automatically:
 | visit:region          | US-MD                         | ISO 3166-2 code of the visitor region.                                                                                                  |
 | visit:city            | 4347778                       | [GeoName ID](https://www.geonames.org/) of the visitor city.                                                                            |
 
-#### Custom props
+#### Custom properties
 
-In addition to props that are collected automatically, you can also query for [custom properties](/custom-props/introduction).
+In addition to properties that are collected automatically, you can also query for [custom properties](/custom-props/introduction).
 To filter or break down by a custom property, use the key `event:props:<custom_prop_name>`. [See example](#breakdown-custom-event-by-custom-props) for how to use it.
 
 :::note
-Currently clients are limited to filtering or breaking down on just one custom property at a time. Custom prop filters and breakdowns can't be combined arbitrarily. We are aware of this issue and we have plans to fix it, but we rely on our database to support some new features to fix this issue.
+Currently clients are limited to filtering or breaking down on just one custom property at a time. Custom property filters and breakdowns can't be combined arbitrarily. We are aware of this issue and we have plans to fix it, but we rely on our database to support some new features to fix this issue.
 :::
 
 ### Filtering
@@ -486,9 +486,9 @@ curl 'https://plausible.io/api/v1/stats/timeseries?site_id=$SITE_ID&period=6mo&f
 }
 ```
 
-### Breakdown custom event by custom props
+### Breakdown custom event by custom properties
 
-A more advanced use-case where custom events are used along with custom props. Let's say you have a `Download` custom event along with
+A more advanced use-case where custom events are used along with custom properties. Let's say you have a `Download` custom event along with
 a custom property called `method`. You can get a breakdown of download methods with the following query:
 
 ```bash title="Breakdown of download methods"

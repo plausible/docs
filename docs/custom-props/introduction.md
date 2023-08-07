@@ -45,7 +45,7 @@ Custom properties only accept scalar values such as strings, numbers and boolean
 
 ## Limits
 
-* You can send up to 30 different custom props per event
+* You can send up to 30 different custom properties per event
 * The number of allowed characters for a property name is 300
 * The limit for custom property values is 2000 characters 
 
