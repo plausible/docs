@@ -184,7 +184,7 @@ Actual value of the event name of your goal
 
 <hr / >
 
-**page_type** <Required /> only if _goal_type_ is set to `page`
+**page_path** <Required /> only if _goal_type_ is set to `page`
 
 Actual value of the page path of your goal, also accepts wildcards for type `page` 
 
