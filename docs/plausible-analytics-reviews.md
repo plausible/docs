@@ -32,6 +32,8 @@ Plausible Analytics is trusted by 2,000+ subscribers to deliver their website an
 
 * [Migrating all analytics to Plausible across your websites](https://gingeleski.com/plausible-analytics/) by Randy Gingeleski, a senior staff security engineer for HBO Max
 
+* [Why we switched to Plausible web analytics](https://www.loyal.guru/news/plausible/) by Loyal Guru
+
 * [Why we removed third-party trackers and Google Analytics from our website](https://hide.me/en/blog/why-we-removed-third-party-trackers-and-google-analytics-from-our-website/) by hide.me
 
 * [Let's talk about the importance of ethical website analytics (Why I switched from Google Analytics to Plausible)](https://www.calibratedconcepts.com/blog/the-importance-of-ethical-website-analytics) by Ellie McBride of Calibrated Concepts
