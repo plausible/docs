@@ -25,7 +25,7 @@ You can find available Plausible versions on [DockerHub](https://hub.docker.com/
 None of the functionality is backported to older versions. If you wish to get the latest bug fixes and security
 updates you need to upgrade to a newer version.
 
-Version changes are documented in our [Changelog](https://github.com/plausible/analytics/blob/master/CHANGELOG.md).
+New versions are published on [the releases page](https://github.com/plausible/analytics/releases) and their changes are documented in our [Changelog](https://github.com/plausible/analytics/blob/master/CHANGELOG.md).
 Please note that database schema changes require running migrations when you're upgrading. However, we consider the schema
 as an internal API and therefore schema changes aren't considered a breaking change.
 
