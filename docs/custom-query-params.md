@@ -48,14 +48,14 @@ make the query part of the URL look like a standard subfolder. To do so, add the
     }
     return customUrl
   }
-  plausible('pageview', { u: prepareUrl(["CUSTOM_PARAM_1", "CUSTOM_PARAM_2", ... ]) })
+  plausible('pageview', { u: prepareUrl(["CUSTOM_PARAM_1", "CUSTOM_PARAM_2", ... ]) + window.location.search })
 </script>
 ```
 Make sure to replace `CUSTOM_PARAM_X` with your query parameter names. You can define as many as you want.
 For example, for `yoursite.com/blog/index.php?article=some_article&page=11` you could write the last line as
 
 ```javascript
-plausible('pageview', { u: prepareUrl(["article", "page"]) });
+plausible('pageview', { u: prepareUrl(["article", "page"]) + window.location.search });
 ```
 
 and the page path will be reported to your dashboard as `blog/index.php/some_article/11`
@@ -78,8 +78,12 @@ At this point, your entire setup should look like this:
     }
     return customUrl
   }
-  plausible('pageview', { u: prepareUrl(["CUSTOM_PARAM_1", "CUSTOM_PARAM_2", ... ]) })
+  plausible('pageview', { u: prepareUrl(["CUSTOM_PARAM_1", "CUSTOM_PARAM_2", ... ]) + window.location.search })
 </script>
 ```
+
+:::note
+The `+ window.location.search` is needed to persist source acquisition query parameters from your actual URL. Plausible uses `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term` query parameters for source acquisition. [Learn more here](manual-link-tagging.md).
+:::
 
 That's it! You're now tracking the complete URLs of the pages that include custom parameters. 
