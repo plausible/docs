@@ -14,6 +14,9 @@ Before any properties will be visible in your dashboard, you have to explicitly 
 
 You also have the option to enable all properties that you've already sent with one click.
 
+<img alt="Configure custom props" src={useBaseUrl('img/add-custom-properties.png')} />
+
+
 ## 2. Filter by a custom property
 
 As soon as you have at least one event with a custom property, you will be able to see an option to filter by that property in your Plausible dashboard. To do that, open up the filter dropdown menu and select "**Property**".
