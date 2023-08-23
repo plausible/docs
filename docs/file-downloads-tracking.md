@@ -4,6 +4,8 @@ title: File downloads tracking
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+<img alt="Track file downloads" src={useBaseUrl('img/track-file-downloads.png')} />
+
 :::note
 If you use the File downloads tracking feature, then these count towards your billable monthly pageviews.
 :::
