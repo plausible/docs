@@ -20,7 +20,7 @@ To configure a property, go to the [site settings](website-settings.md) in your 
 
 As soon as you have at least one event or one pageview with a custom property attached to it, you will be able to see an option to filter by that property in your Plausible dashboard. 
 
-At the bottom of your dashboard, in the "**Goal Conversions**" section you can switch to the "**Properties**" tab. There you can select a property to see the related data. You can also click on any of your custom events in the  "**Goals**" which will then display the properties attached to that event.
+At the bottom of your dashboard, in the "**Goal Conversions**" section you can switch to the "**Properties**" tab. There you can select a property to see the related data. You can also click on any of your custom events in the  "**Goals**" tab which will then display the properties attached to that event.
 
 <img alt="Custom Property Filter" src={useBaseUrl('img/custom-props-breakdown.png')} />
 
