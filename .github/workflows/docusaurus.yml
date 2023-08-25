@@ -36,3 +36,13 @@ jobs:
         remote_host: ${{ secrets.DEPLOY_STATIC_SITE_HOST02 }}
         remote_user: ${{ secrets.DEPLOY_STATIC_SITE_USER }}
         remote_key: ${{ secrets.DEPLOY_STATIC_SITE_KEY }}
+
+    - name: Deploy to Static Host 03
+      uses: burnett01/rsync-deployments@5.2
+      with:
+        switches: -avzr --delete
+        path: build/
+        remote_path: /var/www/docs/
+        remote_host: ${{ secrets.DEPLOY_STATIC_SITE_HOST03 }}
+        remote_user: ${{ secrets.DEPLOY_STATIC_SITE_USER01 }}
+        remote_key: ${{ secrets.DEPLOY_STATIC_SITE_KEY01 }}
