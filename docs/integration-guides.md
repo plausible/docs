@@ -78,6 +78,10 @@ Plausible by default doesn't take DNT (Do Not Track) into consideration as we're
 
 [Drupal](https://www.drupal.org/project/plausible): A Drupal module for Plausible. Allows you to ignore tracking on certain pages and by certain user roles. Built and maintained by Dane Rossenrode of [Touchdreams](https://touchdreams.co.za/).
 
+## Elixir
+
+[Elixir library](https://hex.pm/packages/plausible) to push events to Plausible. Built and maintained by [Suracheth Chawla](https://hex.pm/users/blisscs).
+
 ## First party connection (proxy)
 
 You can run Plausible as a first party connection from your domain name. [Learn more here](/proxy/introduction.md).
