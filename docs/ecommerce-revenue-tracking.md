@@ -174,5 +174,3 @@ function plausible_revenue_tracking( $order_id ) {
 }
 ```
 
-<img alt="Revenue goal custom props" src={useBaseUrl('img/revenue-goal-custom-props.png')} />
-
