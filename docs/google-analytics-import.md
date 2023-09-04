@@ -4,7 +4,11 @@ title: Import stats from Google Analytics
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Universal Analytics, the current version of Google Analytics, will be sunset and [will stop counting stats](https://plausible.io/blog/universal-google-analytics-is-dead) on July 1st 2023. There’s no way to import your historical Universal Analytics stats into the new Google Analytics 4, so we've put a lot of effort into making a Google Analytics stats import tool ourselves. 
+Universal Analytics, the third version of Google Analytics, was sunset and [stopped counting stats](https://plausible.io/blog/universal-google-analytics-is-dead) on July 1st 2023. 
+
+There’s no way to import your historical Universal Analytics stats into the new Google Analytics 4. Further to this, Google will shut down the Universal Analytics user interface and the API on July 1, 2024. They recommend that you export your historical reports before this date.
+
+Because of this we've put a lot of effort into making a Google Analytics stats import tool ourselves so you can import your historical Google Analytics stats in your Plausible dashboard. Here's how you can do that.
 
 ## How to import your historical stats from Google Analytics to Plausible Analytics 
 
