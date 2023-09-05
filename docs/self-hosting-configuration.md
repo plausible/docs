@@ -51,16 +51,16 @@ Plausible uses [PostgreSQL](https://www.tutorialspoint.com/postgresql/postgresql
 
 Plausible uses a SMTP server to send transactional emails e.g. account activation, password reset. In addition, it sends non-transactional emails like weekly or monthly reports.
 
-| Parameter             | Default               | Description                                                                     |
-| --------------------- | --------------------- | ------------------------------------------------------------------------------- |
-| MAILER_EMAIL          | hello@plausible.local | The email id to use for as _from_ address of all communications from Plausible. |
-| MAILER_NAME           | --                    | The display name for the sender (_from_). |
-| SMTP_HOST_ADDR        | localhost             | The host address of your smtp server.                                           |
-| SMTP_HOST_PORT        | 25                    | The port of your smtp server.                                                   |
-| SMTP_USER_NAME        | --                    | The username/email in case SMTP auth is enabled.                                |
-| SMTP_USER_PWD         | --                    | The password in case SMTP auth is enabled.                                      |
-| SMTP_HOST_SSL_ENABLED | false                 | If SSL is enabled for SMTP connection                                           |
-| SMTP_RETRIES          | 2                     | Number of retries to make until mailer gives up.                                |
+| Parameter             | Default               | Description                                                                                 |
+| --------------------- | --------------------- | ------------------------------------------------------------------------------------------- |
+| MAILER_EMAIL          | hello@plausible.local | The email id to use for as _from_ address of all communications from Plausible.             |
+| MAILER_NAME           | --                    | The display name for the sender (_from_).                                                   |
+| SMTP_HOST_ADDR        | localhost             | The host address of your SMTP server.                                                       |
+| SMTP_HOST_PORT        | 25                    | The port of your SMTP server.                                                               |
+| SMTP_USER_NAME        | --                    | The username/email in case SMTP authentication is enabled.                                  |
+| SMTP_USER_PWD         | --                    | The password in case SMTP authentication is enabled.                                        |
+| SMTP_HOST_SSL_ENABLED | false                 | Uses [SMTPS](https://en.wikipedia.org/wiki/SMTPS) for the host connection if enabled and [STARTTLS](https://en.wikipedia.org/wiki/Opportunistic_TLS) if disabled. |
+| SMTP_RETRIES          | 2                     | Number of retries to make until mailer gives up.                                            |
 
 Alternatively, you can use other [Bamboo Adapters](https://hexdocs.pm/bamboo/readme.html#available-adapters) such as Postmark, Mailgun, Mandrill or Send Grid to send transactional emails. In this case, use the following parameters:
 
