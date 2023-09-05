@@ -44,6 +44,8 @@ See below for more examples of common use cases and how they would function.
 
 <br />
 
+<img alt="Add a wildcard pageview goal" src={useBaseUrl('img/add-wildcard-pageview-goal.png')} />
+
 :::note
 Would you like to group your pages at any time without using pageview goals? You can do so by using [the "Filter" button](filters-segments.md) on the top of your dashboard.
 :::
