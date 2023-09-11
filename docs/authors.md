@@ -13,6 +13,7 @@ Plausible Analytics is designed, developed and maintained fully remotely, distri
 * Vini - Product engineer
 * Adam - Product engineer and infrastructure
 * Bogdan - Customer success
+* Adrian - Product engineer
 
 ## Contributors
 
