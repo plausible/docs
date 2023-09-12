@@ -62,6 +62,8 @@ Plausible uses a SMTP server to send transactional emails e.g. account activatio
 | SMTP_HOST_SSL_ENABLED | false                 | If SSL is enabled for SMTP connection                                           |
 | SMTP_RETRIES          | 2                     | Number of retries to make until mailer gives up.                                |
 
+Note that cloud platforms, like AWS or GCP, block all outbound traffic to port 25. You will have to use an external provider in this case.
+
 Alternatively, you can use other [Bamboo Adapters](https://hexdocs.pm/bamboo/readme.html#available-adapters) such as Postmark, Mailgun, Mandrill or Send Grid to send transactional emails. In this case, use the following parameters:
 
 | Parameter        | Default            | Description                                                        |
