@@ -131,7 +131,7 @@ The amount of time visitors spend on your site. It only shows people who visit m
 
 If you have issues with high bounce rates on your site, you can try to set up some [custom events](custom-event-goals.md). All custom events are considered interactive so any clicks on those events will count towards the bounce rate and visit duration too.
 
-## Visits (or Sessions)
+## Total Visits (or Sessions)
 
 A session (also known as a visit) is a set of actions that a user takes on your site. A visit is started when a visitor first lands on your page and ends when no action is taken on your site for 30 minutes.
 
