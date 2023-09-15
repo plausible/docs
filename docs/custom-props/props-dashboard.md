@@ -18,7 +18,7 @@ To configure a property, go to the [site settings](website-settings.md) in your 
 
 You also have the option to add all properties that you've already sent with one click.
 
-<img alt="Add all custom props" src={useBaseUrl('img/add-all-custom-properties.png')} />
+<img alt="Add all custom props with one click" src={useBaseUrl('img/add-all-custom-properties.png')} />
 
 
 ## 2. Filter by a custom property
