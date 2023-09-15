@@ -12,9 +12,14 @@ Custom properties is an upcoming premium feature that's free-to-use during the p
 
 When you send properties to Plausible, they won't show up in your dashboard automatically. You'll have to configure the property for the numbers to show up.
 
-To configure a property, go to the [site settings](website-settings.md) in your Plausible account and visit the "**Custom Properties**" section. You should see an empty list with a prompt to add a property. You also have the option to add all properties that you've already sent with one click.
+To configure a property, go to the [site settings](website-settings.md) in your Plausible account and visit the "**Custom Properties**" section. You should see an empty list with a prompt to add a property. 
 
 <img alt="Configure custom props" src={useBaseUrl('img/add-custom-properties.png')} />
+
+You also have the option to add all properties that you've already sent with one click.
+
+<img alt="Add all custom props" src={useBaseUrl('img/add-all-custom-properties.png')} />
+
 
 ## 2. Filter by a custom property
 
