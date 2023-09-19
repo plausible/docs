@@ -22,6 +22,8 @@ Credit/debit card, PayPal, Apple Pay and Google Pay are the supported payment me
 
 Please make sure that there's a valid credit/debit card added to your PayPal account. It is not possible to pay for subscriptions via PayPal balance as all recurring payments must be associated with a card.
 
+<img alt="Apple Pay & Google Pay payment methods" src={useBaseUrl('img/plausible-apple-pay.png')} />
+
 ## How do I change my billing address?
 
 You can change the billing address yourself by opening your invoice and clicking the "Edit business address".
