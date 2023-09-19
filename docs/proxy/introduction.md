@@ -19,7 +19,7 @@ Plausible isn't tracking people in the way that Google Analytics is, so it's imp
 * No personal data is collected, and all stats are in aggregate only.
 * No cross-site or cross-device tracking.
 * You 100% own your website data, and it isn't sent to, shared with or sold to any third-parties.
-* Fully open source web analytics software that can be self-hosted.
+* Open source web analytics software that can be self-hosted.
 * You can see [how the dashboard looks like](https://plausible.io/plausible.io).
 
 ## Options for dealing with missing data as a site owner
