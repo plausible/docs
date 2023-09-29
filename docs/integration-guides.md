@@ -271,6 +271,11 @@ We have the Plausible events API which can be used to record pageviews and custo
 
 [How to add the script to your Shopify store](shopify-integration.md)
 
+## Shopware
+
+[Plausible Tracking and Ecommerce](https://store.shopware.com/en/campi10096862362m/plausible-tracking-and-ecommerce-cloud.html): Add Plausible Analytics to Shopware 6. Track custom events and ecommerce data.
+Built and maintained by [Campit](https://store.shopware.com/en/campit.html)
+
 ## Single-page applications
 
 Plausible integrates automatically with modern pushState based frontend routers. If you're running a single-page application with React, Angular, Vue or similar frameworks, you don't need to add any extra configuration to make analytics work. [Learn more here](spa-support.md).
