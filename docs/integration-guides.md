@@ -318,7 +318,7 @@ We offer a manual mode in case you want full control over when pageviews are tri
 
 * [Vue.js & Nuxt.js](https://github.com/moritzsternemann/vue-plausible): A Vue.js plugin and NuxtJS module for Plausible. Exposes the functionality of [plausible-tracker](https://github.com/plausible/plausible-tracker) to Vue and Nuxt instances, Vue components, and Vuex stores. Built and maintained by [Moritz Sternemann](https://github.com/moritzsternemann).
 
-* Support for Vue 3 ([plausible-vue](https://github.com/huntersofbook/huntersofbook/tree/main/packages/plausible-vue)) and for Nuxt 3 ([plausible-nuxt](https://github.com/huntersofbook/huntersofbook/tree/main/packages/plausible-nuxt)).
+* Support for Vue 3 ([plausible-vue](https://github.com/productdevbookcom/v-plausible)) and for Nuxt 3 ([plausible-nuxt](https://github.com/productdevbookcom/v-plausible)).
 
 * There's also this [nuxt-plausible](https://github.com/johannschopplich/nuxt-plausible) Nuxt 3 module. 
 
