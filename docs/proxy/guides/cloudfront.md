@@ -78,6 +78,6 @@ Resources:
               OriginProtocolPolicy: 'https-only'
 ```
 
-*Note:* Managed policies in CloudFormation templates are referred to using their UUIDs. To find out ore read the documentation for [Managed Cache policies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-managed-cache-policies.html) and [Managed Origin request policies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-managed-origin-request-policies.html).
+*Note:* Managed policies in CloudFormation templates are referred to using their UUIDs. To find out more read the documentation for [Managed Cache policies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-managed-cache-policies.html) and [Managed Origin request policies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-managed-origin-request-policies.html).
 
 Thanks to [@thomasjsn](https://github.com/thomasjsn) for contributing these instructions!
