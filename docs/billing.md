@@ -26,7 +26,7 @@ Please make sure that there's a valid credit/debit card added to your PayPal acc
 
 ## How do I change my billing address?
 
-You can change the billing address yourself by opening your invoice and clicking the "Edit business address".
+You can change the billing address yourself by opening your invoice and clicking the "**Edit business address**".
 
 Unfortunately, changing a country associated with a subscription isn't possible due to legal and tax reasons. Suppose you wish to link the service to a company registered in a different country. You can wait until the current subscription expires, then cancel the subscription and resubscribe again from the same account with the address in the new country. You won't lose any of the data in this process.
 
@@ -36,7 +36,7 @@ On the "**Payment**" screen in the upgrade process, you have the option to add y
 
 <img alt="Add VAT number at checkout" src={useBaseUrl('img/add-vat-number-during-checkout.png')} />
 
-If you haven't added your company details during the subscription process, you can open the invoice that Paddle sent you and click on the "Add address & VAT Number" link to do so.
+If you haven't added your company details during the subscription process, you can open the invoice that Paddle sent you and click on the "**Add address & VAT Number**" link to do so.
 
 <img alt="Edit invoice to add business details" src={useBaseUrl('img/edit-invoice-to-add-business-details.png')} />
 
@@ -44,11 +44,11 @@ More information about Paddle and the sales taxes or VAT can be found [here](htt
 
 ## What happens if I go over my monthly page views limit?
 
-You will never be charged extra for an occasional traffic spike. We won't stop counting your stats either. There are no surprise fees and your card will never be charged unexpectedly. 
+You will never be charged extra for an occasional traffic spike. We will never stop counting your stats because of an occasional traffic spike. There are no surprise fees and your card will never be charged unexpectedly.
 
-Suppose new higher traffic levels become your new standard and your page views exceed your subscription plan for two consecutive months. In that case, we kindly ask you to upgrade your subscription plan to accommodate your new traffic levels using our self-serve platform. 
+Suppose new higher traffic levels become your new standard and your page views exceed your subscription plan for two consecutive months. In that case, we will contact you and ask you to upgrade your subscription plan to accommodate your new traffic levels using our self-serve platform.
 
-We will email and send an alert in app if your traffic levels exceed your subscription plan two months in a row.
+After we contact you, you will have a week to decide. To keep having access to your stats, we require you to upgrade your account to accommodate your new traffic levels. You can continue with the appropriate tier or cancel your account. If you do not upgrade your account to the appropriate tier within a week, our automated system will lock the stats so they won't be accessible. Stats will be automatically unlocked after you get on the appropriate tier.
 
 ## How does the billing work if I upgrade my subscription to a higher tier?
 
@@ -56,6 +56,6 @@ Our payment processor Paddle will calculate a pro-rated amount which reflects th
 
 ## How do I update my billing information?
 
-You can edit your payment details by logging into your Plausible account and in the top right menu, click on your account name and choose "Settings" to enter your account's settings. You will see the "Update billing info" link under "Next bill amount".
+You can edit your payment details by logging into your Plausible account and in the top right menu, click on your account name and choose "**Settings**" to enter your account's settings. You will see the "**Update billing info**" link under "**Next bill amount**".
 
 <img alt="Update Plausible billing information" src={useBaseUrl('img/update-billing-info.png')} />
