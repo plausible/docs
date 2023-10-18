@@ -32,9 +32,9 @@ Follow the provided instructions depending on which verification method you’ve
 
 ## Allow Plausible Analytics to access your Search Console
 
-Open the settings for your website on [your Plausible Analytics account](https://plausible.io/sites) and go into the settings section called "**Search Console**":
+Open the [site settings area](website-settings.md) for your website in your Plausible account and go into the section called "**Integrations**":
 
-Clicking on the "**Continue with Google**" button will take you through to Google’s authentication flow to get the necessary permissions.
+In the "**Google Search Console Integration**" module, click on the "**Continue with Google**" button which will take you through to Google’s authentication flow to get the necessary permissions.
 
 <img alt="Continue with Google" src={useBaseUrl('img/continue-with-google.png')} />
 
@@ -50,7 +50,7 @@ You then need to grant Plausible Analytics a permission to view your Search Cons
 
 ## Select property to pull keywords from
 
-Next up, you are back in Plausible Analytics settings where you should see a select box where you can choose which property from Google Search Console to integrate your Plausible Analytics dashboard with. Properties that start with `sc-domain:` represent domain properties and others are URL prefix properties in Search Console.
+Next up, you are back in Plausible Analytics site settings where you should see a select box where you can choose which property from Google Search Console to integrate your Plausible Analytics dashboard with. Properties that start with `sc-domain:` represent domain properties and others are URL prefix properties in Search Console.
 
 Once you’ve selected your property, click on the "**Save**" button. At that point, the integration should be fully functional.
 
@@ -97,4 +97,4 @@ You can check if Plausible Analytics is integrated with and has the right permis
 
 ## Remove the Google Search Console integration
 
-If you'd like to remove the Google Search Console integration, click on the "**Unlink Google account**" button in the "**Search Console**" section of your website settings.
+If you'd like to remove the Google Search Console integration, click on the "**Unlink Google account**" button in the "**Google Search Console Integration**" module within the "**Integrations**" section of your website settings.
