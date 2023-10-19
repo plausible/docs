@@ -52,7 +52,7 @@ Here's the full list in alphabetical order:
 
 ## Doctave
 
-[How to Plausible to your Doctave project](https://docs.doctave.com/docs/integrations/plausible)
+[How to add Plausible to your Doctave project](https://docs.doctave.com/docs/integrations/plausible)
 
 ## DNT and offline functionality
 
