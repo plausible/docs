@@ -50,6 +50,10 @@ Here's the full list in alphabetical order:
 
 [DatoCMS plugin](https://www.datocms.com/marketplace/plugins/i/datocms-plugin-plausible): Provides a link to Plausible for the current record on the sidebar.  Built and maintained by [Odd Camp](https://www.oddcamp.com).
 
+## Doctave
+
+[How to Plausible to your Doctave project](https://docs.doctave.com/docs/integrations/plausible)
+
 ## DNT and offline functionality
 
 You can use Plausible with [the analytics library](https://github.com/ian/analytics/tree/main/packages/plausible). Combine privacy first analytics with a tiny middleware layer to add features such as DNT (Do Not Track) and offline functionality. Built and maintained by [David Wells](https://github.com/DavidWells).
