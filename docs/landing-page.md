@@ -10,6 +10,10 @@ When you log into your Plausible Analytics account, you are met with the ["**/si
 
 In the top right, you can access your account settings or log out of your account. Further down the page, on the right-hand side, you have the "**+ Add a website**" button, which allows you to [add a new site](add-website.md) to your account.
 
+:::note
+We use [Gravatar](https://gravatar.com) to get your account profile picture. If your picture doesn't display, please add the email address associated with your Plausible account to your Gravatar profile. We use a proxy for this request to ensure your information is not exposed to Gravatar. This method prevents the IP address, user agent and referrer header from being sent.
+:::
+
 The rest of the "**/sites**" landing page features all your sites. To give you a quick overview, we display the number of visitors in the last 24 hours next to each site. You can click on any website to enter [its stats dashboard](guided-tour.md), or you can click on the "**Settings**" icon on the right-hand side of the domain name to enter the [website settings section](website-settings.md).
 
 :::note
