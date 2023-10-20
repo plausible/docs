@@ -56,6 +56,6 @@ Our payment processor Paddle will calculate a pro-rated amount which reflects th
 
 ## How do I update my billing information?
 
-You can edit your payment details by logging into your Plausible account and in the top right menu, click on your account name and choose "**Settings**" to enter your account's settings. You will see the "**Update billing info**" link under "**Next bill amount**".
+You can edit your payment details by logging into your Plausible account and in the top right menu, click on your account name and choose "**Account Settings**" to enter your account's settings. You will see the "**Update billing info**" link under "**Next bill amount**".
 
 <img alt="Update Plausible billing information" src={useBaseUrl('img/update-billing-info.png')} />
