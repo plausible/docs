@@ -39,6 +39,8 @@ Note that you must ensure that no personally identifiable information (PII) is s
 
 Plausible will display `(none)` in your dashboard when you send a custom property key with no value, or `null`/`undefined` as a value. Also, when you send one event with a property (e.g. `author`) and another event with the same name, but without the `author` property, then you will also see the `(none)` value because the property has not been sent with every event.
 
+When you filter your dashboard by a particular custom event and look at the "**Properties**" tab, you shouldn't see the `(none)` value there if all the relevant events have been sent with the property included. However, if you're viewing the "**Properties**" tab without any custom event filter, it returns all the events in your dashboard (including all regular pageviews) and many of these events may not have a property attached. Hence you see the `(none)` value.
+
 ## Accepted values
 
 Custom properties only accept scalar values such as strings, numbers and booleans. Data structures such as objects, arrays etc. aren't accepted.
