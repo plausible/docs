@@ -53,10 +53,6 @@ We used to have a CNAME/DNS custom domain approach in the past, but it's no long
 
 There are many ways you can proxy requests to Plausible depending on your hosting situation. We've divided our guides to *standalone* and *integrated* proxies. A standalone proxy can be set up on its own and it does not matter what hosting provider or tech stack you are using. Integrated proxy setups are dependent on how you've deployed your app.
 
-:::note
-In all proxy setups, please ensure that you have the correct headers set and that you filter out sensitive data such as cookies and authentication headers. See [Events API](events-api.md) for more details.
-:::
-
 Standalone proxy setups:
 * [Akamai](/docs/proxy/guides/akamai)
 * [Cloudflare Workers](/docs/proxy/guides/cloudflare)
@@ -79,7 +75,3 @@ Events API as a server side alternative:
 
 NPM package as another alternative:
 * [NPM standalone package](https://github.com/plausible/plausible-tracker).
-
-:::note
-Are you using something else? Please help us crowdsource the proxy instructions by [submitting the step-by-step process](https://github.com/plausible/docs/) for the framework that you are familiar with. We're also looking for help to enable the proxy on the different [community-built plugins and extensions](integration-guides.md). Thanks for your contribution!
-:::
