@@ -89,7 +89,7 @@ more depth. Here's the full list of properties we collect automatically:
 #### Custom properties
 
 In addition to properties that are collected automatically, you can also query for [custom properties](/custom-props/introduction).
-To filter or break down by a custom property, use the key `event:props:<custom_prop_name>`. [See example](#breakdown-custom-event-by-custom-props) for how to use it.
+To filter or break down by a custom property, use the key `event:props:<custom_prop_name>`. [See example](#breakdown-custom-event-by-custom-properties) for how to use it.
 
 :::note
 Currently clients are limited to filtering or breaking down on just one custom property at a time. Custom property filters and breakdowns can't be combined arbitrarily. We are aware of this issue and we have plans to fix it, but we rely on our database to support some new features to fix this issue.
