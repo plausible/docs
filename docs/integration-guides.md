@@ -98,6 +98,10 @@ You can run Plausible as a first party connection from your domain name. [Learn 
 
 [Flutter plugin](https://pub.dev/packages/plausible_analytics): Send pageviews and custom events to Plausible. Built and maintained by [Eric Trenkel](https://erictrenkel.com/).
 
+## GA Insights
+
+[GA Insights](https://www.ga-insights.com/plausible-slack) allows you to extend Plausible Analytics with automated reporting, monitoring and goal tracking straight in Slack.
+
 ## Gatsby
 
 * [Gatsby](https://www.gatsbyjs.com/plugins/gatsby-plugin-plausible/): A Gatsby plugin for adding Plausible Analytics to your Gatsby site. Built and maintained by [Curtis Cummings](https://curtiscummings.me).
