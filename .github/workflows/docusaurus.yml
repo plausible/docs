@@ -16,33 +16,21 @@ jobs:
         cache: 'npm'
     - run: npm install
     - run: npm run build
-        
-    - name: Deploy to Static Host 01
-      uses: burnett01/rsync-deployments@5.2
+
+    - name: Tailscale
+      uses: tailscale/github-action@v2
+      with:
+        oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+        oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
+        version: '1.50.1'
+        tags: tag:static-sites
+
+    - name: Deploy to Static Sites Host
+      uses: burnett01/rsync-deployments@6.0.0
       with:
         switches: -avzr --delete
         path: build/
         remote_path: /var/www/docs/
-        remote_host: ${{ secrets.DEPLOY_STATIC_SITE_HOST01 }}
+        remote_host: ${{ secrets.DEPLOY_STATIC_SITE_HOST }}
         remote_user: ${{ secrets.DEPLOY_STATIC_SITE_USER }}
         remote_key: ${{ secrets.DEPLOY_STATIC_SITE_KEY }}
-
-    - name: Deploy to Static Host 02
-      uses: burnett01/rsync-deployments@5.2
-      with:
-        switches: -avzr --delete
-        path: build/
-        remote_path: /var/www/docs/
-        remote_host: ${{ secrets.DEPLOY_STATIC_SITE_HOST02 }}
-        remote_user: ${{ secrets.DEPLOY_STATIC_SITE_USER }}
-        remote_key: ${{ secrets.DEPLOY_STATIC_SITE_KEY }}
-
-    - name: Deploy to Static Host 03
-      uses: burnett01/rsync-deployments@5.2
-      with:
-        switches: -avzr --delete
-        path: build/
-        remote_path: /var/www/docs/
-        remote_host: ${{ secrets.DEPLOY_STATIC_SITE_HOST03 }}
-        remote_user: ${{ secrets.DEPLOY_STATIC_SITE_USER01 }}
-        remote_key: ${{ secrets.DEPLOY_STATIC_SITE_KEY01 }}
