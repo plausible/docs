@@ -131,6 +131,8 @@ It is currently only possible to exclude one value at a time.
 
 [Pageview goals](/pageview-goals) are a convenient way to see pageviews for a specific page path in the Plausible dashboard. To filter by a pageview goal in Stats API, simply use a filter like this: `event:page==/your-page`. As in your dashboard, you can use [wildcards](/pageview-goals#pageview-goals-support-wildcards) like `event:page==/blog**` to represent pageview goals that match with multiple paths.  
 
+It is currently not possible to combine wildcards and `|` in the same query.
+
 ## Endpoints
 
 ### GET /api/v1/stats/realtime/visitors
