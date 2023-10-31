@@ -52,7 +52,7 @@ Do you see our script on your site but your visits are not being counted? Here's
 
 * **On WordPress and using WP Rocket, SiteGround Optimizer or other performance optimization plugins**? These may affect our script. We recommend you use our official WordPress plugin to avoid these issues or to manually whitelist our script in the settings of the individual performance optimization plugin. [Learn more abour our plugin here](https://plausible.io/wordpress-analytics-plugin). 
 
-* **Rrunning a browser extension that may be blocking our script**? Do disable extensions such as adblockers or whitelist our script within the settings of the extension you are using.
+* **Running a browser extension that may be blocking our script**? Do disable extensions such as adblockers or whitelist our script within the settings of the extension you are using.
 
 * **Integrated Plausible using our official WordPress plugin? It excludes admin visits by default** which is why you may not see your own visits being recorded in the dashboard.
 
