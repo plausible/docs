@@ -84,14 +84,10 @@ You can add more details to your revenue tracking by using custom properties. Th
 
 If you're using Shopify, you can track sales by making a few changes to the order status page.
 
-:::note
-The integrations below are independent from the Plausible tracking snippet that you've added in the [header of your store](https://plausible.io/docs/shopify-integration).
-:::
-
-1. Go to your Shopify admin page
-2. Click on Settings > Checkout > Order status page
+1. Integrate the regular Plausible snippet [into your Shopify store](shopify-integration.md) to start counting stats
+2. To start tracking revenue stats, go to your Shopify admin page, click on Settings > Checkout > Order status page
 3. Add the following code to 'Additional scripts'. Don't forget to replace `yourdomain.com` and `Purchase` with the goal name you created
-5. Click 'Save' and you're done!
+4. Click 'Save' and you're done!
 
 ```liquid
 {% if first_time_accessed == true and post_purchase_page_accessed == false %}
@@ -130,14 +126,11 @@ If you want to track custom properties, such as order IDs or the number of items
 
 If you're using WooCommerce, you can track sales by making a few changes to the checkout thank you page. The following instructions use the [Code Snippets plugin](https://wordpress.org/plugins/code-snippets/) to add the custom script. If you are an advanced user of Wordpress and don't want to install plugins, you can add this same code to your child theme’s `functions.php` file.
 
-:::note
-The integrations below are independent from the Plausible tracking snippet that you've added in the header of your website.
-:::
-
-1. Install the [Code Snippets plugin](https://wordpress.org/plugins/code-snippets/) on your Wordpress site
-2. In the Wordpress admin panel, click on Snippets > Add New
-3. In the code field, select PHP and paste the code provided below. Don't forget to replace `yourdomain.com` and `Purchase` with the goal name you created
-4. Click 'Save changes and activate' and you're done!
+1. Integrate the regular Plausible snippet into your WordPress site to start counting stats. You can [use our plugin for this](https://plausible.io/wordpress-analytics-plugin)
+2. Install the [Code Snippets plugin](https://wordpress.org/plugins/code-snippets/) on your Wordpress site
+3. In the Wordpress admin panel, click on Snippets > Add New
+4. In the code field, select PHP and paste the code provided below. Don't forget to replace `yourdomain.com` and `Purchase` with the goal name you created
+5. Click 'Save changes and activate' and you're done!
 
 ```
 add_action( 'woocommerce_thankyou', 'plausible_revenue_tracking' );
