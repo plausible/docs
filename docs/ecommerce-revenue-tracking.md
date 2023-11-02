@@ -84,7 +84,9 @@ You can add more details to your revenue tracking by using custom properties. Th
 
 If you're using Shopify, you can track sales by making a few changes to the order status page.
 
-:::note The integrations below are independent from the Plausible tracking snippet that you've added in the [header of your store](https://plausible.io/docs/shopify-integration). :::
+:::note
+The integrations below are independent from the Plausible tracking snippet that you've added in the [header of your store](https://plausible.io/docs/shopify-integration).
+:::
 
 1. Go to your Shopify admin page
 2. Click on Settings > Checkout > Order status page
@@ -128,7 +130,9 @@ If you want to track custom properties, such as order IDs or the number of items
 
 If you're using WooCommerce, you can track sales by making a few changes to the checkout thank you page. The following instructions use the [Code Snippets plugin](https://wordpress.org/plugins/code-snippets/) to add the custom script. If you are an advanced user of Wordpress and don't want to install plugins, you can add this same code to your child theme’s `functions.php` file.
 
-:::note The integrations below are independent from the Plausible tracking snippet that you've added in the header of your website. :::
+:::note
+The integrations below are independent from the Plausible tracking snippet that you've added in the header of your website.
+:::
 
 1. Install the [Code Snippets plugin](https://wordpress.org/plugins/code-snippets/) on your Wordpress site
 2. In the Wordpress admin panel, click on Snippets > Add New
