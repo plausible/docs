@@ -46,9 +46,7 @@ If you're using any of our other script extensions, you can [combine them](scrip
 
 ## 2. Add a new custom event and specify the currency of your choice
 
-Go to your [site settings](website-settings.md) and in the "**Goals**" section click on the "**Add goal**" button. Choose "**Custom event**" as the goal trigger, enter the goal name in the "**Event name**" field and set the currency of your choice in the "**Reporting currency for revenue tracking**". 
-
-This currency will be used for total and average revenue metrics in the dashboard. Note that the currency for a specific event cannot be changed later.
+Go to your [site settings](website-settings.md) and in the "**Goals**" section click on the "**Add goal**" button. Choose "**Custom event**" as the goal trigger, enter the goal name in the "**Event name**" field, tick to "**Enable Revenue Tracking**" and set the currency of your choice. This currency will be used for total and average revenue metrics in the dashboard. Note that the currency for a specific event cannot be changed later.
 
 <img alt="Add goal and choose your currency" src={useBaseUrl('img/plausible-ecommerce-currency-goal.png')} />
 
