@@ -5,7 +5,7 @@ title: Ecommerce revenue and attribution tracking
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 :::note
-Revenue tracking is an upcoming premium feature that's free-to-use during the private preview. Pricing will be announced soon.
+Revenue tracking is part of the Plausible Business plan. To continue using revenue tracking after your trial, please upgrade to the Business plan.
 :::
 
 You can assign dynamic monetary values to goals and custom events to track revenue attribution. Revenue attribution helps you determine which marketing campaigns and landing pages result in the most revenue for your business or ecommerce store.
