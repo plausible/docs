@@ -26,6 +26,8 @@ Choose your monthly pageviews level according to the number of monthly page view
 
 Then choose between "**Growth**" and "**Business**" subscription plans all depending on the features you need, the number of sites you have and the size of your team.
 
+<img alt="Choose your subscription tier" src={useBaseUrl('img/choose-your-subscription-tier.png')} />
+
 Click on the "**Pay securely via Paddle**" button. The payment process is handled by a third-party payment provider. The billing information and the payment process is handled by Paddle.
 
 ## Choose your payment method and subscribe
@@ -35,6 +37,8 @@ Choose your location and click on the "**Continue**" button.
 <img alt="Choose your location" src={useBaseUrl('img/location.png')} />
 
 Next up you need to choose your payment method. You can pay by a credit card, PayPal, Apple Pay or Google Pay.
+
+<img alt="Subscribe now" src={useBaseUrl('img/subscribe-now.png')} />
 
 Fill in your card details and click on the "**Subscribe Now**" button to subscribe to a paid subscription. 
 
