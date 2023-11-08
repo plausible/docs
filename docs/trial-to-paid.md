@@ -18,19 +18,24 @@ If you're using Plausible as [a part of a team](users-roles.md), note that the a
 
 ## Choose your subscription tier
 
-Our pricing levels are based on the number of page views per month for all the sites you have added to your Plausible Analytics account combined. 
+Our subscription tiers are based on the total number of pageviews and custom events per month between all the sites you have added to your Plausible Analytics account. 
 
-Check your current page view usage. We list the total number of page views between all the sites you have in your Plausible Analytics account during your trial period to date.
+Check your current pageview and custom event usage in the "**Usage & Limits**" section of your account settings. There we list the total number of billable pageviews during your trial period to date.
 
-Choose your monthly pageviews level according to the number of monthly page views and custom events. Then decide between monthly or yearly billing. You can get 2 months free if you subscribe to a yearly plan.
+Select a subscription tier that matches your billable pageviews. Opt for monthly or yearly billing. You can get 2 free months with an annual subscription.
 
-Then choose between "**Growth**" and "**Business**" subscription plans all depending on the features you need, the number of sites you have and the size of your team.
+Next, decide on your plan:
+
+* Choose "**Growth**" for essential features, ideal for growing teams
+* Go for "**Business**" for advanced features, multiple sites and larger teams
+  
+Then click on the "**Upgrade**" button to get started.
 
 <img alt="Choose your subscription tier" src={useBaseUrl('img/choose-your-subscription-tier.png')} />
 
-Click on the "**Pay securely via Paddle**" button. The payment process is handled by a third-party payment provider. The billing information and the payment process is handled by Paddle.
-
 ## Choose your payment method and subscribe
+
+The billing information and the payment process is handled by Paddle, a third-party payment processor. Click on the "**Pay securely via Paddle**" button.
 
 Choose your location and click on the "**Continue**" button.
 
@@ -38,9 +43,9 @@ Choose your location and click on the "**Continue**" button.
 
 Next up you need to choose your payment method. You can pay by a credit card, PayPal, Apple Pay or Google Pay.
 
-<img alt="Subscribe now" src={useBaseUrl('img/subscribe-now.png')} />
+Fill in your payment details and click on the "**Subscribe Now**" button to subscribe to a paid subscription. 
 
-Fill in your card details and click on the "**Subscribe Now**" button to subscribe to a paid subscription. 
+<img alt="Subscribe now" src={useBaseUrl('img/subscribe-now.png')} />
 
 ## Add your company address and VAT number
 
