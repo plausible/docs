@@ -5,7 +5,7 @@ title: Introduction to custom properties
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 :::note
-Custom properties is an upcoming premium feature that's free-to-use during the private preview. Pricing will be announced soon.
+Custom properties is part of the Plausible Business plan. To continue using custom properties after your trial, please upgrade to the Business plan.
 :::
 
 You can attach custom properties (also known as custom dimensions in Google Analytics) when sending pageviews or custom events to Plausible in order to create custom metrics. Custom properties allow you to collect and analyze metrics that we don't track automatically. 
