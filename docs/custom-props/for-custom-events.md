@@ -5,7 +5,7 @@ title: Attach custom properties to custom events
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 :::note
-Custom properties is an upcoming premium feature that's free-to-use during the private preview. Pricing will be announced soon.
+Custom properties is part of the Plausible Business plan. To continue using custom properties after your trial, please upgrade to the Business plan.
 :::
 
 The process of attaching custom properties to your custom events is different depending on how you're sending your events to Plausible.
