@@ -5,7 +5,7 @@ title: Analyze your traffic by custom properties
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 :::note
-Custom properties is an upcoming premium feature that's free-to-use during the private preview. Pricing will be announced soon.
+Custom properties is part of the Plausible Business plan. To continue using custom properties after your trial, please upgrade to the Business plan.
 :::
 
 ## 1. Configure properties in your site settings
