@@ -22,7 +22,9 @@ Our pricing levels are based on the number of page views per month for all the s
 
 Check your current page view usage. We list the total number of page views between all the sites you have in your Plausible Analytics account during your trial period to date.
 
-Choose your subscription tier according to the number of monthly page views and decide between monthly or yearly billing. You can get 2 months free if you subscribe to a yearly plan.
+Choose your monthly pageviews level according to the number of monthly page views and custom events. Then decide between monthly or yearly billing. You can get 2 months free if you subscribe to a yearly plan.
+
+Then choose between "**Growth**" and "**Business**" subscription plans all depending on the features you need, the number of sites you have and the size of your team.
 
 Click on the "**Pay securely via Paddle**" button. The payment process is handled by a third-party payment provider. The billing information and the payment process is handled by Paddle.
 
