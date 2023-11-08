@@ -5,7 +5,7 @@ title: Increase conversions using funnel analysis
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 :::note
-Funnel analysis is an upcoming premium feature that's free-to-use during the private preview. Pricing will be announced soon.
+Funnel analysis is part of the Plausible Business plan. To continue using funnels after your trial, please upgrade to the Business plan.
 :::
 
 You can follow the visitor journey from a landing page to a conversion with our multi-step funnel analysis. The insights from the marketing funnel allow you to uncover possible issues, optimize your site and increase the conversion rate.
