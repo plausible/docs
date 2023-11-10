@@ -4,10 +4,6 @@ title: Site provisioning API reference
 
 import {Required, Optional} from '../src/js/api-helpers.js';
 
-:::note
-Sites API is part of the Plausible Enterprise plan. Please [contact us](https://plausible.io/contact) to discuss your needs and to get an API key with permissions for the endpoints listed in this document
-:::
-
 The Plausible Site provisioning API offers a way to create and manage sites in your Plausible account programmatically. This is useful if you run many websites or if you're [offering a web analytics dashboard powered by Plausible to your customers](https://plausible.io/white-label-web-analytics). The Site API allows these operations:
 
 * Create a new site
@@ -18,7 +14,7 @@ The Plausible Site provisioning API offers a way to create and manage sites in y
 * Find or create a goal by type and value (learn more about [goals and custom events](goal-conversions.md))
 * Delete an existing goal
 
-Each request must be authenticated with an API key using the Bearer Token method.
+Each request must be authenticated with an API key using the Bearer Token method. Please [contact us](https://plausible.io/contact) to discuss your needs and to get an API key with permissions for the endpoints listed in this document.
 
 ## Endpoints
 
