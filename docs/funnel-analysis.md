@@ -4,13 +4,10 @@ title: Increase conversions using funnel analysis
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-:::note
-Funnel analysis is part of the Plausible Business plan. To continue using funnels after your trial, please upgrade to the Business plan.
-:::
-
 You can follow the visitor journey from a landing page to a conversion with our multi-step funnel analysis. The insights from the marketing funnel allow you to uncover possible issues, optimize your site and increase the conversion rate.
 
 * Funnels allow you to analyze the user flow through your website and the different pages
+* You can also follow the user flow between your main domain and its subdomains ([see more](plausible-script.md#can-i-track-visitors-across-my-domain-and-subdomain))
 * You can go beyond pageviews and use any custom events to build a funnel
 * With the conversion rate you understand the percentage of visitors who started the user flow and ended with a conversion event
 * With the percentage drop-off between the individual funnel steps, you can spot where you lose the most visitors
