@@ -4,10 +4,6 @@ title: Introduction to custom properties
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-:::note
-Custom properties is part of the Plausible Business plan. To continue using custom properties after your trial, please upgrade to the Business plan.
-:::
-
 You can attach custom properties (also known as custom dimensions in Google Analytics) when sending pageviews or custom events to Plausible in order to create custom metrics. Custom properties allow you to collect and analyze metrics that we don't track automatically. 
 
 For example, say you want to track your blog posts by `author`. Every time a visitor lands on one of the posts, you can send a pageview with the property `author=...`. You can then filter your Plausible dashboard by a specific author to see all the relevant stats for the posts published by that particular writer.
