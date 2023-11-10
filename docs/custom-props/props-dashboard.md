@@ -4,10 +4,6 @@ title: Analyze your traffic by custom properties
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-:::note
-Custom properties is part of the Plausible Business plan. To continue using custom properties after your trial, please upgrade to the Business plan.
-:::
-
 ## 1. Configure properties in your site settings
 
 When you send properties to Plausible, they won't show up in your dashboard automatically. You'll have to configure the property for the numbers to show up.
