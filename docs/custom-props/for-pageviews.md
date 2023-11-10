@@ -4,10 +4,6 @@ title: Attach custom properties to pageviews
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-:::note
-Custom properties is part of the Plausible Business plan. To continue using custom properties after your trial, please upgrade to the Business plan.
-:::
-
 ## 1. Change the Plausible snippet on your site
 
 The easiest option to get started is to use the `script.pageview-props.js` script extension. Please change the file name in the `src` attribute of your Plausible snippet from `script.js` to `script.pageview-props.js`. It should look like this:
