@@ -4,10 +4,6 @@ title: Stats API reference
 
 import {Required, Optional} from '../src/js/api-helpers.js';
 
-:::note
-Stats API is part of the Plausible Business plan. To continue using the stats API after your trial, please upgrade to the Business plan.
-:::
-
 The Plausible Stats API offers a way to retrieve your stats programmatically. It's a read-only interface to present historical and real-time stats only. Take a look at our [events API](events-api.md) if you want to send pageviews or custom events to our backend and our [sites API](sites-api.md) if you want to manage your sites through the API.
 
 The API accepts GET requests with query parameters and returns standard HTTP responses along with a JSON-encoded body. All API requests must be made over HTTPS. Calls made over plain HTTP will fail. API requests without authentication will also fail.
