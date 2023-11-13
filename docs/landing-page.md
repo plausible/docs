@@ -26,4 +26,6 @@ You can pin sites that you want to feature at the top of your sites page. You ca
 
 To pin a site, click on the menu icon on the right-hand side of the domain name and then choose "**Pin Site**". To unpin a site, click on the menu icon on any of your pinned sites and then choose "**Unpin Site**".
 
+<img alt="Pin sites" src={useBaseUrl('img/pin-sites.png')} />
+
 Your pinned sites will also show up in the site switcher list that you can see within each dashboard by clicking on the site name in the top left. You can navigate between the sites in the site switcher list using keyboard shortcuts 1 to 9.
