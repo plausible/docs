@@ -1,5 +1,5 @@
 ---
-title: My Sites landing page
+title: Your sites landing page
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -12,8 +12,18 @@ In the top right, you can access your account settings or log out of your accoun
 
 Further down the "**My Sites**" page, you have the search box on the left so you can quickly find a site and the "**+ Add a website**" button on the right so you can [add a new site](add-website.md) to your account.
 
-The rest of the "**My Sites**" page features all your sites. To give you a quick overview, we display the number of visitors in the last 24 hours next to each site. There's also a graph of each site for a quick overview of the traffic and a comparison to the previous period so you can see the trend. 
+## Website settings
 
-You can click on any website to enter [its stats dashboard](guided-tour.md) or you can click on the "**Settings**" icon on the right-hand side of the domain name to enter the [website settings section](website-settings.md).
+The rest of the "**My Sites**" page features all your sites. To give you a quick overview, we display the number of visitors in the last 24 hours next to each site. There's also a graph of each site for a quick overview of the traffic and a comparison to the previous 24 hour period so you can see the trend. 
+
+You can click on any website to enter [its stats dashboard](guided-tour.md) or you can click on the menu icon on the right-hand side of the domain name and choose "**Settings**" to enter the [website settings section](website-settings.md). That's where you can add team members, create custom events, set up funnels and more.
 
 There are a couple of keyboard shortcuts that you can use on the "**My Sites**" page. You can press `/` to start a search or press the `Esc` key to clear the search. For more shortcuts that you can use on the dashboard itself, take a look at [this list](keyboard-shortcuts.md).
+
+## Pin your most-used sites for quick access
+
+You can pin sites that you want to feature at the top of your sites page. You can pin up to nine sites. The most recently pinned site will automatically appear at the top of your list, helping you organize your dashboards by how often you use them.
+
+To pin a site, click on the menu icon on the right-hand side of the domain name and then choose "**Pin Site**". To unpin a site, click on the menu icon on any of your pinned sites and then choose "**Unpin Site**".
+
+Your pinned sites will also show up in the site switcher list that you can see within each dashboard by clicking on the site name in the top left. You can navigate between the sites in the site switcher list using keyboard shortcuts 1 to 9.
