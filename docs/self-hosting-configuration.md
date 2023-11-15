@@ -45,7 +45,7 @@ Plausible uses [PostgreSQL](https://www.tutorialspoint.com/postgresql/postgresql
 | ECTO_IPV6                    | --                                      | When defined, enables ipv6 for the PostgreSQL connection. [Applicable](https://github.com/plausible/analytics/pull/1661) for hosting on fly.io.                                                                              |
 | CLICKHOUSE_DATABASE_URL      | http://plausible_events_db:8123/plausible_events_db     | Connection string for Clickhouse in the same format, i.e. for docker-compose setup http://ip.or.domain.to.server:8123/plausible_events_db                                                                                       |
 | CLICKHOUSE_FLUSH_INTERVAL_MS | 5000                                    | Interval (in milliseconds) between flushing events and sessions data to Clickhouse. Consult [Clickhouse docs](https://clickhouse.tech/docs/en/introduction/performance/#performance-when-inserting-data) before changing it. |
-| CLICKHOUSE_MAX_BUFFER_SIZE   | 10000                                   | Maximum size of the buffer of events or sessions. Consult [Clickhouse docs](https://clickhouse.tech/docs/en/introduction/performance/#performance-when-inserting-data) before changing it.                                   |
+| CLICKHOUSE_MAX_BUFFER_SIZE   | 100000                                  | Maximum size in bytes of the buffer for events or sessions. Consult [Clickhouse docs](https://clickhouse.tech/docs/en/introduction/performance/#performance-when-inserting-data) before changing it.                                   |
 
 
 ### Mailer/SMTP Setup
