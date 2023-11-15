@@ -15,13 +15,19 @@ Step 0: Sign up for a free Cloudflare account if you don't have an account alrea
 
 In your Cloudflare account, click on the 'Workers & Pages' section in the sidebar to get the 'Overview' page. On the top right of the 'Overview' page, click on the 'Create application' button. On the 'Create an application' page click on the 'Create Worker' button in the 'Workers' tab to start configuring your proxy. 
 
+<img alt="Create CloudFlare worker" src={useBaseUrl('img/create-cloudflare-worker.png')} />
+
 ## Step 2 (Optional): You can change your service name
 
-This is optional but you can change the service name to give your worker a more meaningful name. Do avoid words like 'plausible', 'analytics', 'tracking', 'stats', etc. as they may be blocked. It's also fine to keep the random name that Cloudflare generates by default. 
+This is optional but you can change the service name to give your worker a more meaningful name. Do avoid words like 'plausible', 'analytics', 'tracking', 'stats', etc. as they may be blocked. It's also fine to keep the random name that Cloudflare generates by default. Then click on the 'Deploy' button. 
+
+<img alt="Deploy CloudFlare worker" src={useBaseUrl('img/deploy-cloudflare-worker.png')} />
 
 ## Step 3: Paste the following code
 
-Then click on the 'Deploy' button. Next click on the 'Edit Code' button, remove the default code that Cloudflare presents and paste the code that we present below instead.
+Next click on the 'Edit Code' button, remove the default code that Cloudflare presents and paste the code that we present below instead.
+
+<img alt="Edit CloudFlare worker" src={useBaseUrl('img/edit-worker-code.png')} />
 
 We recommend you change the folder name in the first two lines in the code below. This makes your proxy more difficult to discover and block. We especially recommend you change the folder name in the two lines if you're not hosting your site on the Cloudflare CDN.
 
@@ -71,6 +77,8 @@ async function postData(event) {
 ```
 
 Once you've added the above code to the worker, you can click on the 'Save and Deploy' button on the top right. On the confirmation message, do confirm that you want to save and deploy your worker by clicking on the 'Save and Deploy' button again.
+
+<img alt="Paste Plausible code to CloudFlare worker" src={useBaseUrl('img/paste-plausible-code-to-cloudflare-worker.png')} />
 
 ## Step 4: Make sure the script is accessible
 
