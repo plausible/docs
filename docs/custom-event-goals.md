@@ -197,10 +197,6 @@ That's it. You're now tracking goal conversions.
 
 ## Enhanced goal conversion tracking
 
-:::note
-These three are upcoming premium features that are free-to-use during the private preview. Pricing will be announced soon.
-:::
-
 ### Attach custom properties
 
 Custom properties can be attached to events to capture dynamic elements and to further break down goal conversions. You can use custom properties to create your custom metrics to collect and analyze data that Plausible doesn't automatically track. [Learn more here](/custom-props/for-custom-events).
@@ -249,10 +245,6 @@ Here's an example of the options argument using the `callback` and `props` optio
 ```javascript
 plausible('Download', {callback: navigateFn, props: {method: 'HTTP'}})
 ```
-
-:::note
-Custom properties and revenue tracking are upcoming premium features that are currently free-to-use during the private preview. Pricing will be announced soon.
-:::
 
 <h3>
 
