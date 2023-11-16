@@ -119,10 +119,6 @@ So if you send `https://some.domain.com/example-path`, it will be parsed as foll
 
 **props** <Optional />
 
-:::note
-Custom properties is an upcoming premium feature that's free-to-use during the private preview. Pricing will be announced soon.
-:::
-
 Custom properties for the event. These can be attached to both pageviews and custom events. Learn more about using custom properties [here](/custom-props/introduction).
 
 The value corresponding to the `props` key in the request body is expected to be a JSON object with a maximum of 30 key-value pairs. If you include more than 30 items in the `props` object, the exceeding items will be discarded. For example, if you're using the `text/plain` content type, your request body might look like this:
@@ -133,10 +129,6 @@ The value corresponding to the `props` key in the request body is expected to be
 <hr / >
 
 **revenue** <Optional />
-
-:::note
-Revenue tracking is an upcoming premium feature that's free-to-use during the private preview. Pricing will be announced soon.
-:::
 
 Revenue data for this event. This can be attached to goals and custom events to track revenue attribution. To learn more about revenue tracking and how you can set up your dashboard before sending revenue data, please read [this document](ecommerce-revenue-tracking.md).
 
