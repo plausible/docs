@@ -19,7 +19,7 @@ See the number of unique visitors, total visits (sessions), total page views, vi
 You can **choose a different time range** that you want to analyze in the date picker in the top right. The visitor numbers are automatically presented on the graph. The time format (24-hour or 12-hour am/pm) for the top graph timelines is displayed automatically based on your browser's defined language.
 
 :::note
-Click on your site name in the top left side of your dashboard. It allows you to select "[Site Settings](website-settings.md)" in the dropdown menu but also switch to a different site you have added to your Plausible account.
+Click on your site name in the top left side of your dashboard. It allows you to select "[Site Settings](website-settings.md)" in the dropdown menu but also [switch to a different site](landing-page.md#access-your-pinned-sites-from-the-site-switcher-list) you have added to your Plausible account.
 :::
 
 We get all the favicons (your site favicon and the favicons of all the referral sources) directly from the DuckDuckGo API. We display the same icon that DuckDuckGo shows in their search results.
