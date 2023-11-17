@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 We don't do any paid ads, retargeting or any other surveillance based marketing. People that enjoy using Plausible Analytics sharing how they use it and what they find useful is the best way for us to spread the word and get even more sites to consider removing privacy-intrusive analytics. 
 
-Plausible Analytics is trusted by 2,000+ subscribers to deliver their website and business insights. Here's a list of some people and organizations who use Plausible Analytics and what they think about it along some other Plausible mentions in the media:
+Plausible Analytics is trusted by thousands of subscribers to deliver their website and business insights. Here's a list of some people and organizations who use Plausible Analytics and what they think about it along some other Plausible mentions in the media:
 
 * [We've put together a list of people tweeting about using Plausible](https://twitter.com/PlausibleHQ/timelines/1311218983912308736)
 
