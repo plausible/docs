@@ -141,6 +141,12 @@ For example, to track a purchase of US$ 1.322,22, your request body might look l
 ```
 <hr / >
 
+### Debugging
+
+By default, the API returns HTTP 202 Accepted. However, if you want to debug a request and see if the `X-Forwarded-For` header is set correctly, you can add the `X-Debug-Request` header to your request. If set to `true`, the API will return an HTTP 200 OK and the IP address which we will use for unique visitor counting.
+
+E.g: Add this header to your request and log the response.
+
 :::note
 You can can use GET https://plausible.io/api/health endpoint to monitor the status of our API
 :::
