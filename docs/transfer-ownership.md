@@ -6,7 +6,9 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Plausible allows you to transfer the ownership of a site to a different Plausible user.
 
-This is useful for consultants and agencies working with clients. You set up the site in Plausible, add custom events, email reports, traffic spike notifications and so on. When your job is completed, you can transfer the ownership of the site to your client. 
+You can use this to transfer all your sites to the team member who has the Plausible subscription, as the billing responsibility lies with the account that owns the sites.
+
+It is also useful for consultants and agencies working with clients. You set up the site in Plausible, add custom events, email reports, traffic spike notifications and so on. When your job is completed, you can transfer the ownership of the site to your client. 
 
 Do note that a subscription plan is not transferred alongside the site. As the new owner of the site, your client is then responsible for paying for [the Plausible subscription](subscription-plans.md) and the day-to-day operations through their own Plausible account.
 
