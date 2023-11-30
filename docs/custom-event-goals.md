@@ -72,6 +72,10 @@ Or if your element already has a class attribute, just separate the new ones wit
 <button class="some-existing-class plausible-event-name=Button+Click">Click Me</button>
 ```
 
+:::note
+As an alternative to custom events, check out [pageview goals](pageview-goals.md). Since pageviews are collected automatically, you don’t need to change your website’s code to measure pageview goals. This makes pageview goals the easiest way to start tracking any type of conversions. Do you run a store and want to track orders? Do you have a contact form and want to track form submissions? Use pageview goals to track the "thank you" page or the order confirmation page.
+:::
+
 ### Verify that the CSS classes were added correctly
 
 After adding the class, please go back to your site, and verify that the class attribute got added with the exact required format. You can check it by right-clicking the element and inspecting it. This will show you the HTML code of the element.
