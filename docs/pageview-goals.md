@@ -6,7 +6,9 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Pageview goals allow you to measure how many people visit a specific section of your site (for instance dynamically created checkout pages for ecommerce) and get referral sources and other details for those conversions. 
 
-Since page views are collected automatically, you don’t need to change your website’s code to measure page URL goals.
+Since pageviews are collected automatically, you don’t need to change your website’s code to measure pageview goals. This makes pageview goals the easiest way to start tracking any type of conversion on your site. 
+
+Do you run a store and want to track purchases? Do you have a contact form and want to track form submissions? Use pageview goals to track the "thank you" page or the order confirmation page.
 
 To get started with "**Pageview Goals**", go to [your website's settings](website-settings.md) in Plausible Analytics and visit the "**Goals**" section. You should see an empty list with a prompt to add a goal.
 
@@ -28,6 +30,10 @@ You can use one asterisk (`*`) to represent any number of characters within the 
 
 You can for instance group all of your blog posts by creating a pageview goal `/blog**` (if your blog subdirectory is named `blog`) or track Woocommerce checkout pages for your ecommerce by creating a pageview goal `/checkout/order-received/**`. Or you could use double asterisks in front and back (`**keyword**`) to group any URLs containing a specific keyword.
 
+:::note
+Would you like to group your pages at any time without using pageview goals? You can do so by using [the "Filter" button](filters-segments.md) on the top of your dashboard.
+:::
+
 See below for more examples of common use cases and how they would function.
 
 | Input | Includes pages with a URL path of: |
@@ -45,7 +51,3 @@ See below for more examples of common use cases and how they would function.
 <br />
 
 <img alt="Add a wildcard pageview goal" src={useBaseUrl('img/add-wildcard-pageview-goal.png')} />
-
-:::note
-Would you like to group your pages at any time without using pageview goals? You can do so by using [the "Filter" button](filters-segments.md) on the top of your dashboard.
-:::
