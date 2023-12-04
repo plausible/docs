@@ -20,7 +20,7 @@ Following are the variables that can be used to configure the availability of th
 | SECRET_KEY_BASE      | --      | An internal secret key used by [Phoenix Framework](https://www.phoenixframework.org/). Follow the [instructions](https://hexdocs.pm/phoenix/Mix.Tasks.Phx.Gen.Secret.html#content) or use `openssl rand -hex 64` to generate one. |
 | DISABLE_REGISTRATION | true    | Restricts registration of new users. Possible values are `true` (full restriction), `false` (no restriction), and `invite_only` (only the invited users can register).                                                                                                                            |
 | LOG_FAILED_LOGIN_ATTEMPTS | false | Controls whether to log warnings about failed login attempts. |
-| LOG_LEVEL | warn | Controls the logging level. Possible values are `error`, `warn`, `info`, and `debug`
+| LOG_LEVEL | warning | Controls the logging level. Possible values are `error`, `warning`, `info`, and `debug`
 
 #### Erlang platform ports
 
