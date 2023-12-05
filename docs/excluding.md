@@ -87,7 +87,7 @@ You can test your filter by:
 
 * Reloading your website multiple times and making sure that the total page views number in your Plausible Analytics dashboard does not increase. This isn’t very reliable if there are other people visiting your site at the same time.
 
-* Alternatively you can load your website, open the browser inspector (press F12 in Firefox or Chrome), and ensure that the Plausible Analytics script isn't loading in the "**Network**" tab.
+* Alternatively you can load your website, open the browser developer tools and ensure that the Plausible Analytics script isn't loading in the "**Network**" tab. Right-click anywhere on your page and click "**Inspect**" (the wording may vary depending on your web browser) to open the developer tools. Alternatively, press the key `F12` on Firefox or Chrome or `Option+Command+c` on Safari.
 
 * Your adblocker will also show you the number of domains and/or scripts they block when you visit the individual website.
 
