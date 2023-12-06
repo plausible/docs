@@ -8,7 +8,7 @@ To prevent counting your visits, you can set a special `localStorage` flag in th
 
 ## To exclude your visits from being counted
 
-Visit the website you'd like to exclude your visits from and open the developer tools in your browser. Right-click anywhere on your page and click "**Inspect**" (the wording may vary depending on your web browser) to open the developer tools. Alternatively, press the key `F12` on Firefox or Chrome or `Option+Command+c` on Safari. Then click the "Console" tab.
+Visit the website you'd like to exclude your visits from and open the developer tools in your browser. Right-click anywhere on your page and click "**Inspect**" (the wording may vary depending on your web browser) to open the developer tools. Alternatively, press the key `F12` on Firefox or Chrome or `Option+Command+i` on Safari. Then click the "Console" tab.
 
 In Firefox, it looks like this:
 
