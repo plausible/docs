@@ -12,16 +12,22 @@ To enable the 2FA on your Plausible account, you are required to insert the secu
 
 * Log in to your Plausible Analytics account and in the top right menu, click on your account name and choose "**Account Settings**" to enter your account settings.
 * Find the “**Two-Factor Authentication (2FA)**” section and click on the “**Enable 2FA**” button.
+<img alt="Enable 2FA" src={useBaseUrl('img/enable-2FA.png')} />
 * Link your Plausible account to your authenticator app by scanning the QR code or pasting the code manually. Then click on the “**Proceed**” button.
+<img alt="Scan QR to enable 2FA" src={useBaseUrl('img/scan-qr-2FA.png')} />
 * Enter the verification code from your authenticator application and click on the “**Verify**” button.
+<img alt="Enter verification code to enable 2FA" src={useBaseUrl('img/enter-verificaiton-code-2FA.png')} />
 * Store the recovery codes somewhere safe. You can log in to your Plausible account with a recovery code if you lose access to your authenticator application or your trusted device. Then click on the “**Finish**” button to complete the 2FA setup.
+<img alt="Save 2FA recovery codes" src={useBaseUrl('img/recovery-codes-2FA.png')} />
 
 ## How to generate new recovery codes
 
 Have you lost your recovery codes? You can generate new codes at any time. You can use a recovery code to log in to your Plausible account if you lose access to your authenticator app or your trusted device.
 
 * In your Plausible account settings, find the “**Two-Factor Authentication (2FA)**” section and click the “**Generate new**” link.
+<img alt="Generate new 2FA recovery codes" src={useBaseUrl('img/generate-new-recovery-codes-2FA.png')} />
 * Confirm your account password and click the “**Generate New Codes**” button.
+<img alt="Generate new 2FA recovery codes" src={useBaseUrl('img/enter-password-to-generate-new-codes-2FA.png')} />
 * Store your new recovery codes somewhere safe and click the “**Finish**” button to complete the process. 
 
 Note that when you generate new recovery codes, your old recovery codes will become invalid.
@@ -29,6 +35,7 @@ Note that when you generate new recovery codes, your old recovery codes will bec
 ## How to disable 2FA
 
 * In your Plausible account settings, find the “**Two-Factor Authentication (2FA)**” section and click on the “**Disable 2FA**” button.
+<img alt="Disable 2FA" src={useBaseUrl('img/disable-2FA.png')} />
 * Then enter your account password and click the “**Disable 2FA**” button to complete the process.
 
 Note that once you turn off the 2FA, verification codes from the authenticator application and saved recovery codes will become invalid.
