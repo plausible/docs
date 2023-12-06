@@ -99,4 +99,4 @@ You can test your page-specific exclusions by:
 
 * Visiting a page on your website that you excluded from tracking and ensuring views for it don't show in your Plausible dashboard.
 
-* Alternatively, after loading a page, you can check the browser console (press F12 on Firefox or Chrome and then click the "Console" tab). If you've excluded your pages and are browsing on the excluded page, you should see a message saying "Ignoring event in exclusion". You may need to ensure the "Warnings" filter (in the top right in Firefox and top-center under a dropdown in Chrome) is enabled before this message is visible.
+* Alternatively, after loading a page, you can check the browser console (press F12 on Firefox or Chrome, or `Option+Command+i` on Safari and then click the "Console" tab). If you've excluded your pages and are browsing on the excluded page, you should see a message saying "Ignoring event in exclusion". You may need to ensure the "Warnings" filter (in the top right in Firefox and top-center under a dropdown in Chrome) is enabled before this message is visible.
