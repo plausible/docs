@@ -99,6 +99,7 @@ module.exports = {
       }
     ],
     "Account Settings": [
+      '2fa',
       'change-email',
       'reset-password',
       'dashboard-appearance',
