@@ -1,5 +1,5 @@
 ---
-title: How to enable two-factor authentication (2FA)
+title: Enable two-factor authentication (2FA)
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
