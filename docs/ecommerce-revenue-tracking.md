@@ -169,3 +169,6 @@ function plausible_revenue_tracking( $order_id ) {
 }
 ```
 
+## Integrating with Magento
+
+There's a third-party Plausible plugin for Magento that supports custom events and revenue goals tracking. [Take a look](https://github.com/Pixel-Open/magento-plausible).
