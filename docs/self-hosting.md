@@ -31,8 +31,8 @@ as an internal API and therefore schema changes aren't considered a breaking cha
 
 ## Requirements
 
-The only thing you need to install Plausible Analytics is a server with Docker installed. The server must have a CPU with x86_64 architecture
-and support for SSE 4.2 instructions. We recommend using a minimum of 4GB of RAM but the requirements will depend on your site traffic. 
+The only thing you need to install Plausible Analytics is a server with Docker installed. The server must have a CPU with x86_64 or arm64 architecture
+and support for SSE 4.2 or equivalent NEON instructions. We recommend using a minimum of 4GB of RAM but the requirements will depend on your site traffic. 
 
 We've tested this on [Digital Ocean](https://m.do.co/c/91569eca0213) (affiliate link)
 but any hosting provider works. If your server doesn't come with Docker pre-installed, you can follow [their docs](https://docs.docker.com/get-docker/) to install it.
