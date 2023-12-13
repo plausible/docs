@@ -2,8 +2,8 @@
 title: Configuration options
 ---
 
-:::note
-The easiest way to get started with Plausible is with [our official managed service in the Cloud](https://plausible.io/#pricing). It takes 2 minutes to start counting your stats with a worldwide CDN, high availability, backups, security and maintenance all done for you by us. Our managed hosting can save a substantial amount of developer time and resources. For most sites this ends up being the best value option and the revenue goes to funding the maintenance and further development of Plausible. So you’ll be supporting open source software and getting a great service! The section below is for self-hosting our analytics on your server and managing your infrastructure.
+:::info
+The easiest way to get started with Plausible is with [our official managed service in the Cloud](https://plausible.io/#pricing). It takes 2 minutes to start counting your stats with a worldwide CDN, high availability, backups, security and maintenance all done for you by us. You also get access to all the premium features and the advanced bot filtering. Our managed hosting can save a substantial amount of developer time and resources. For most sites this ends up being the best value option and the revenue goes to funding the maintenance and further development of Plausible. So you’ll be supporting open source software and getting a great service! Here's the [full comparison between the managed hosting and self-hosting](https://plausible.io/self-hosted-web-analytics). The section below is for self-hosting our analytics on your server and managing your infrastructure. 
 :::
 
 When running a Plausible release, the following configuration parameters can be supplied as environment variables.
