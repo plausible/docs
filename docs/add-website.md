@@ -12,7 +12,7 @@ For example, if your site is `https://www.yourdomain.com` then the part to enter
 
 If you'd like to track a specific subfolder only, you can also add a subfolder (`yourdomain.com/subfolder`).
 
-:::tip[Domain doesn't necessarily need to match the actual domain]
+:::tip [Domain doesn't necessarily need to match the actual domain]
 You don't necessarily need to install our script on the same domain as the domain you have added to your Plausible account. Think of the domain field more like a site ID rather than an exact match. This allows you more flexibility in your setup all depending on your situation.
 :::
 
