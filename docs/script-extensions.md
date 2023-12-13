@@ -41,8 +41,8 @@ Here's the list of all the available extensions at this time:
 | script.local.js          | Allow analytics to track on localhost too which is useful in hybrid apps                           |
 | script.manual.js         | [Don't trigger pageviews automatically](#scriptmanualjs). Also allows you to [specify custom locations](custom-locations.md) to redact URLs with identifiers. You can also use it to track [custom query parameters](custom-query-params.md)|
 
-:::note
-Want to track outbound link clicks or downloads cloaked with pretty URLs? See the [step by step instructions](custom-automatic-link-tracking) and add the JavaScript code to your site.
+:::tip Want to track outbound link clicks or file downloads cloaked with pretty URLs?
+See these [step-by-step instructions](custom-automatic-link-tracking.md) for how to do that.
 :::
 
 ## You can combine extensions according to your needs
@@ -66,9 +66,7 @@ You can mix and match, and combine extensions any way that you wish. And you onl
 
 ## script.compat.js
 
-_This works only on ≥ IE11_
-
-The default Plausible script won't work on Internet Explorer because it uses the [document.currentScript](https://caniuse.com/document-currentscript) API to read configuration options. You can run Plausible in compatibility mode by including the `script.compat.js` extension and defining `id="plausible"` on the script tag so that it can find itself. Here's how it should look like:
+The default Plausible script won't work on Internet Explorer because it uses the [document.currentScript](https://caniuse.com/document-currentscript) API to read configuration options. You can run Plausible in compatibility mode by including the `script.compat.js` extension and defining `id="plausible"` on the script tag so that it can find itself. Note that this works only on ≥ IE11. Here's how it should look like:
 
 ```html
 <script id="plausible" defer data-domain="yourdomain.com" src="https://plausible.io/js/script.compat.js"></script>
@@ -92,9 +90,7 @@ document.addEventListener("turbo:load", function() {
 </script>
 ```
 
-:::note
-When using turbolinks, make sure that the Plausible script isn't loaded and executed during turbo navigation. You may need to move the script to the `<head>` section of your website or use the `data-turbo-eval="false"` attribute.
-:::
+Note also that when using turbolinks, you should make sure that the Plausible script isn't loaded and executed during turbo navigation. You may need to move the script to the `<head>` section of your website or use the `data-turbo-eval="false"` attribute to do so.
 
 ### Specify custom locations for your page URLs
 
@@ -106,6 +102,6 @@ It's especially helpful to redact and aggregate multiple pages whose URLs contai
 
 By default, Plausible strips all query parameters for privacy purposes [except](manual-link-tagging.md) `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term`. 
 
-This means that pages like `yoursite.com/blog/index.php?article=some_article&page=11` will be reported as `yoursite.com/blog/index.php` in the Top Pages report of your Plausible dashboard.
+This means that pages like `yoursite.com/blog/index.php?article=some_article&page=11` will be reported as `yoursite.com/blog/index.php` in the "**Top Pages**" report of your Plausible dashboard.
 
-By using the manual script extension, you can also track custom query parameters and get the complete page URLs in your Top Pages report. Learn here [how to do that](custom-query-params.md).
+By using the manual script extension, you can also track custom query parameters and get the complete page URLs in your "**Top Pages**" report. Learn here [how to do that](custom-query-params.md).
