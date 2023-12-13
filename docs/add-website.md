@@ -6,11 +6,15 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Enter the domain name of the website you want to track
 
-Once you have an account, you can enter the domain name of the website you want to track. Umlauts and other special characters (including numbers, dots and slashes) are supported so you can add international domain names too. Please, remove `https` and `www` from the URL, just keep the `hostname` (yourdomain.com).
+Once you have an account, you can enter the domain name of the website you want to track. Umlauts and other special characters (including numbers, dots and slashes) are supported so you can add international domain names too. Please, remove `https` and `www` from the URL, just keep the `hostname` (`yourdomain.com`).
 
 For example, if your site is `https://www.yourdomain.com` then the part to enter in the "**Domain**" field is `yourdomain.com`.
 
-If you'd like to track a specific subfolder only, you can also add a subfolder (yourdomain.com/subfolder).
+If you'd like to track a specific subfolder only, you can also add a subfolder (`yourdomain.com/subfolder`).
+
+:::tip[Domain doesn't necessarily need to match the actual domain]
+You don't necessarily need to install our script on the same domain as the domain you have added to your Plausible account. Think of the domain field more like a site ID rather than an exact match. This allows you more flexibility in your setup all depending on your situation.
+:::
 
 <img alt="Add your website details to Plausible Analytics" src={useBaseUrl('img/website-details.png')} />
 
@@ -20,9 +24,9 @@ If you would like to track a subdomain such as `blog.yourdomain.com` then please
 
 For example, if your subdomain is `https://blog.yourdomain.com` then the part to enter in the "**Domain**" field is `blog.yourdomain.com`.
 
-:::note
-You don't necessarily need to install the script on the same domain as the domain you have added to your Plausible account. Think of it more like a site ID rather than an exact match. This allows you more flexibility in your setup all depending on your situation. 
-:::
+### Prefer to track visitors across your domain and subdomain?
+
+You can add one domain to your Plausible account and use the same snippet on both the main domain name and its subdomains. This keeps the visitor session active between the main site and the subdomains. See [more details here](plausible-script.md#can-i-track-visitors-across-my-domain-and-subdomain).
 
 ## Select your reporting timezone
 
