@@ -2,7 +2,7 @@
 title: Integration guides
 ---
 
-Installing Plausible on a site can be a slightly different process depending on what tools you're using. 
+Installing Plausible on a website can be a slightly different process depending on what tools you're using to manage your site. 
 
 We've put together several guides that cover popular website builders and content management systems (CMS). These can help you set up and start counting your site visitors in no time.
 
@@ -56,11 +56,7 @@ Here's the full list in alphabetical order:
 
 ## DNT and offline functionality
 
-You can use Plausible with [the analytics library](https://github.com/ian/analytics/tree/main/packages/plausible). Combine privacy first analytics with a tiny middleware layer to add features such as DNT (Do Not Track) and offline functionality. Built and maintained by [David Wells](https://github.com/DavidWells).
-
-:::note
-Plausible by default doesn't take DNT (Do Not Track) into consideration as we're a privacy first analytics tool and [DNT allows](https://www.eff.org/issues/do-not-track) "data analysis techniques that protect the anonymity of the users".
-:::
+Plausible doesn't take DNT (Do Not Track) into consideration by default as [DNT has been](https://www.eff.org/issues/do-not-track) abandoned by standards bodies such as the W3C. You can use [the analytics library](https://github.com/ian/analytics/tree/main/packages/plausible) to add features such as DNT (Do Not Track) and offline functionality. Built and maintained by [David Wells](https://github.com/DavidWells).
 
 ## Discourse
 
@@ -110,8 +106,7 @@ You can run Plausible as a first party connection from your domain name. [Learn 
 
 ## Ghost
 
-[How to add the script to your Ghost site](ghost-integration.md)
-
+[How to add the script to your Ghost site](ghost-integration.md).
 
 ## GitBook
 
@@ -159,7 +154,7 @@ If you're using a frontend framework that uses the URL hash for routing, you nee
 
 ## Hugo
 
-[How to add the script to your Hugo site](hugo-integration.md)
+[How to add the script to your Hugo site](hugo-integration.md).
 
 ## Jekyll
 
@@ -277,12 +272,11 @@ We have the Plausible events API which can be used to record pageviews and custo
 
 ## Shopify
 
-[How to add the script to your Shopify store](shopify-integration.md)
+[How to add the script to your Shopify store](shopify-integration.md).
 
 ## Shopware
 
-[Plausible Tracking and Ecommerce](https://store.shopware.com/en/campi10096862362m/plausible-tracking-and-ecommerce-cloud.html): Add Plausible Analytics to Shopware 6. Track custom events and ecommerce data.
-Built and maintained by [Campit](https://store.shopware.com/en/campit.html)
+[Plausible Tracking and Ecommerce](https://store.shopware.com/en/campi10096862362m/plausible-tracking-and-ecommerce-cloud.html): Add Plausible Analytics to Shopware 6. Track custom events and ecommerce data. Built and maintained by Campit.
 
 ## Single-page applications
 
@@ -294,17 +288,7 @@ Plausible integrates automatically with modern pushState based frontend routers.
 
 ## Sphinx / Read The Docs
 
-This should place the script in the right place:
-
-```python
-html_js_files = [
-    ('https://plausible.io/js/script.js', {"data-domain": "yourdomain.com", "defer": "defer"}),
-]
-```
-
-If you need to override your theme, you need to use the `block extrahead` template instruction.  First, update the `conf.py` to include your `templates_path`. Then create a template (e.g. `_templates/layout.html`) and include the block in the template: `{% block extrahead %}<script ... >{% endblock %}`. See [Sphinx template](https://www.sphinx-doc.org/en/master/templating.html) documentation.
-
-There is also a [Plausible Sphinx extension](https://pypi.org/project/sphinx-plausible/).
+There is a [Plausible Sphinx extension](https://pypi.org/project/sphinx-plausible/).
 
 ## Squarespace
 
@@ -344,12 +328,11 @@ We offer a manual mode in case you want full control over when pageviews are tri
 
 ## WordPress
 
-We have a WordPress plugin that makes the integration with WordPress nice and easy.
-
-[Here's how to get started with our WordPress plugin](https://plausible.io/wordpress-analytics-plugin)
+We have a WordPress plugin that makes the integration with WordPress nice and easy. [Here's how to get started with our WordPress plugin](https://plausible.io/wordpress-analytics-plugin).
 
 ## Swift
-* [PlausibleSwift](https://github.com/nickoneill/PlausibleSwift) - An implementation of Plausible Analytics pageview and event tracking for Swift. Built and maintained by [Nick O'neill](https://github.com/nickoneill)
+
+[PlausibleSwift](https://github.com/nickoneill/PlausibleSwift) - An implementation of Plausible Analytics pageview and event tracking for Swift. Built and maintained by [Nick O'neill](https://github.com/nickoneill)
 
 ## iOS apps and widgets for quick overview of your stats
 
