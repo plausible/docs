@@ -16,7 +16,7 @@ In the "**Visibility**" area of your website settings there's a "**Shared links*
 
 Click the "**Create shared link**" button and your new shared link will be displayed.
 
-:::tip Make sure to keep the password field blank 
+:::info Make sure to keep the password field blank 
 It's technically not possible to embed a password-protected dashboard. When you try to embed a password-protected dashboard, the browser will show a "refused to connect" error message
 :::
 
