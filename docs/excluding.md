@@ -4,14 +4,12 @@ title: Opt out and exclude yourself from the analytics
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-By default, Plausible Analytics tracks every visitor to your website. When you're working on your site, you might not want to record your own visits and page views.
+By default, Plausible Analytics tracks every visitor to your website. When you're working on your site, you might not want to record your own visits and pageviews.
 
-Most web analytics tools do this by excluding certain IP addresses from being counted. However, we don't store the visitors’ IP addresses in our database for privacy reasons as we are a [GDPR compliant web analytics](https://plausible.io/data-policy) tool.
-
-To block your page views from your Plausible Analytics stats dashboard, you can use a standard ad-blocking browser extension. Some extensions may automatically opt you out of Plausible tracking as soon as you activate them but you can follow these steps to make sure that they do so. 
+To block your page views from your Plausible Analytics stats dashboard, you can use a standard adblocking browser extension. Some extensions may automatically opt you out of Plausible tracking as soon as you activate them but you can follow these steps to make sure that they do so. 
  
-:::note 
-On WordPress? You can use our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) which excludes views coming from admins by default.
+:::tip Using WordPress?
+You can use our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) which excludes views coming from admins and other user roles
 :::
 
 ## uBlock Origin
@@ -38,7 +36,6 @@ When using [uBlock Origin](https://github.com/gorhill/uBlock/#installation), you
 
 ### Block the Plausible Analytics script on your domain
 
-
 In the "**Temporary rules**" box on the right-hand side of the page insert the following rule. Remember to change `yourdomain.com` with the domain name where you installed Plausible Analytics.
 
 ```html 
@@ -61,15 +58,13 @@ Once you’ve entered the correct rule, click on the "**Save**" button and then 
 
 When using [Adblock Plus](https://adblockplus.org/) or [Adguard](https://adguard.com), you can follow these steps to make sure that you exclude yourself from being counted in the stats. 
 
-
-Go into your Adblock Plus or Adguard settings and click on "**Advanced**" (Adblock Plus) or "**User Rules**" ( Adguard ) in the left hand side menu. 
+Go into your Adblock Plus or Adguard settings and click on "**Advanced**" (Adblock Plus) or "**User Rules**" (Adguard) in the left hand side menu. 
 
 <center><img alt="Adguard and Adblock Plus dashboard icon" src={useBaseUrl('img/adblock-plus-adguard-origin-exclude-own-visits.png')} /></center>
 
 Insert the following rule and click on the "**Add**"/"**Save**" button. Remember to change `yourdomain.com` with the domain name where you installed Plausible Analytics.
 
 <img alt="Save and commit your new rule Adguard and Adblock Plus dashboard" src={useBaseUrl('img/adblock-plus-adguard-origin-exclude-own-visits-settings.png')} />
-
 
 ```html
 ||plausible.io^$script,domain=yourdomain.com 
@@ -85,12 +80,12 @@ Or in case you're proxying our script, use this. Remember to change `yourproxy.c
 
 You can test your filter by:
 
-* Reloading your website multiple times and making sure that the total page views number in your Plausible Analytics dashboard does not increase. This isn’t very reliable if there are other people visiting your site at the same time.
+* Reloading your website multiple times and making sure that the total page views number in your Plausible Analytics dashboard does not increase. This isn’t very reliable if there are other people visiting your site at the same time
 
-* Alternatively you can load your website, open the browser developer tools and ensure that the Plausible Analytics script isn't loading in the "**Network**" tab. Right-click anywhere on your page and click "**Inspect**" (the wording may vary depending on your web browser) to open the developer tools. Alternatively, press the key `F12` on Firefox or Chrome or `Option+Command+c` on Safari.
+* Alternatively you can load your website, open the browser developer tools and ensure that the Plausible Analytics script isn't loading in the "**Network**" tab. Right-click anywhere on your page and click "**Inspect**" (the wording may vary depending on your web browser) to open the developer tools. Alternatively, press the key `F12` on Firefox or Chrome or `Option+Command+c` on Safari
 
-* Your adblocker will also show you the number of domains and/or scripts they block when you visit the individual website.
+* Your adblocker will also show you the number of domains and/or scripts they block when you visit the individual website
 
-:::note
-Do you want a different way of excluding your visits or do you want to make it easy for your team to exclude themselves from being counted? You can allow them to set a special `localStorage` flag in the browser. [Here's how](excluding-localstorage.md).
+:::tip Want to make it easy for your team to exclude themselves from being counted?
+You can allow them to set a special `localStorage` flag in the browser. [Here's how](excluding-localstorage.md)
 :::
