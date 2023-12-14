@@ -4,38 +4,36 @@ title: Invite team members, assign roles and remove users
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Plausible allows you to invite your team members to view the stats and manage sites you have added to your Plausible account.
+Plausible allows you to invite team members to view stats and manage sites that you have added to your Plausible account.
 
-You can invite any email address. It doesn't necessarily need to be an email address from your company. You can invite existing Plausible users or people who don't have a Plausible account. 
+You can invite any email address. It doesn't necessarily need to be an email address from your company. You can invite existing Plausible users or people who don't have a Plausible account.
+
+:::tip Want to share a single dashboard with someone without them needing a Plausible account?
+Our [private and secure shared links](shared-links.md) are a great way to share a particular dashboard quickly 
+:::
 
 <img alt="Invite users, assign roles and remove users" src={useBaseUrl('img/invite-team-member.png')} />
 
-### How to invite users
+## How to invite users
 
-* Go into [the site settings](website-settings.md) of the website you'd like to invite users to.
-* Click on the "**People**" section on the left-hand sidebar.
-* Click on the "**Invite**" button.
-* Enter the email address of the person you'd like to invite. If you invite a new person to Plausible, they will need to register for a Plausible account with the exact email address that you invited.
+* Go into [the site settings](website-settings.md) of the website you'd like to invite users to
+* Click on the "**People**" section on the left-hand sidebar
+* Click on the "**Invite**" button
+* Enter the email address of the person you'd like to invite. If you invite a new person to Plausible, they will need to register for a Plausible account with the exact email address that you invited
 * Assign the role for the invited user. You can choose between two different roles:
 
-1. "**Admin**" gets access to the stats dashboard, can change the site settings and invite other members.
-2. "**Viewer**" gets access to the stats dashboard.
+1. "**Admin**" gets access to the stats dashboard, can change the site settings and invite other members
+2. "**Viewer**" gets access to the stats dashboard
 
-:::note
-**Owner of a site needs to have an active subscription with Plausible. Viewers and admins don't need to have a paid subscription and can access the stats even without it.** Want to transfer the ownership of a site to the account that has a paid subscription? [Take a look here](transfer-ownership.md)
-:::
+* Click on the "**Invite**" button. We will email the invited person to notify them about your invitation. They will need to register for a Plausible account with the email address that was invited (or log in to their existing Plausible account registered with that email address) and accept your invitation. All invitations expire after 48 hours
 
-* Click on the "**Invite**" button. We will email the invited person to notify them about your invitation. They will need to register for a Plausible account with the email address that was invited (or log in to their existing Plausible account registered with that email address) and accept your invitation. All invitations expire after 48 hours.
+### Who's responsible for the billing?
 
-All invited users can use Plausible and view stats from sites they were invited to free of charge even without having their own subscription. It's also free of charge for you to invite as many users as you want.
+Note that the owner of a site in Plausible is responsible for the billing of that site and needs to have an active paid subscription. All invited users (both Viewers and Admins) can use Plausible and view stats for sites they were invited to free of charge without having their own subscription.
 
-If the invited user adds a brand-new site to Plausible and becomes an owner of that site, then the trial comes into effect, and they'll need to subscribe to a plan to continue viewing the stats of the site they own after the trial expires.
+If the invited user adds a brand new site to their Plausible account and becomes an owner of that site, then the trial comes into effect. They'll need to subscribe to a plan to continue viewing the stats of the site they own after the trial expires. As an alternative, they can transfer the ownership of a site they own to the account that has a paid subscription. That way they won't need a subscription themselves. [Take a look here](transfer-ownership.md).
 
-:::note
-Want to share a single dashboard with someone without them needing a Plausible account? Our [private and secure shared links](shared-links.md) are a great way to share the stats
-:::
-
-### How to modify the user roles
+## How to modify the user roles
 
 <img alt="Change user roles or remove users" src={useBaseUrl('img/change-roles-remove-users.png')} />
 
@@ -50,7 +48,7 @@ That's it. The user now has a different role.
 
 Note that you need to be an owner or an admin of a site to change user roles.
 
-### How to remove a user
+## How to remove a user
 
 You can remove a user from having access to a site at any time:
 
@@ -62,7 +60,3 @@ You can remove a user from having access to a site at any time:
 That's it. The user has now been removed from the specific site.
 
 Note that you need to be an owner or an admin of a site to remove users. 
-
-:::note
-Want to transfer the ownership of a site to someone else? [Take a look here](transfer-ownership.md)
-:::
