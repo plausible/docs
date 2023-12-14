@@ -8,11 +8,11 @@ Please follow these steps if you have changed the domain name of your site and w
 
 Note that once you change the domain in your Plausible site settings, you must update the JavaScript snippet on your site within 72 hours to guarantee continuous tracking. If you're using our APIs, you must also make sure to update your API credentials.
 
-:::tip Looking to transfer a site from your account to a different account?
-Would you like to transfer a site from your account to a different Plausible account such as an account owned by your client or someone else on your team? Use our [site ownership transfer functionality](transfer-ownership.md).
+:::tip Looking to transfer a site to a different Plausible account?
+Use the [site ownership transfer](transfer-ownership.md) functionality instead
 :::
 
-Here's how to change the domain name of your site:
+Here's how to change the domain name of a site in your Plausible account:
 
 * Go to the "**General**" section of the [website settings](website-settings.md) in your Plausible account 
 
