@@ -22,8 +22,8 @@ Here's how to import your historical Google Analytics (Universal Analytics) stat
 
 3. You will now see a drop-down selection menu listing Google Analytics properties associated with your Google account. Select the appropriate property. This will generally be the property with the same domain name as your Plausible site. Then click on the "**Continue**" button.
 
-:::note
-Cannot see your Google Analytics property in the list of properties? You may be trying to import a Google Analytics 4 (GA4) property rather than a Universal Analytics (UA) property. Our Google Analytics import works for UA properties only at the moment. We plan to build a GA4 import in the future.
+:::tip Cannot see your Google Analytics property in the list of properties?
+You may be trying to import a Google Analytics 4 (GA4) property rather than a Universal Analytics (UA) property. Our Google Analytics import works for UA properties only at the moment. We plan to build a [GA4 import in the future](https://feedback.plausible.io/169)
 :::
 
 4. On the next screen, you can click on the "**Confirm import**" button to start the data import process. Depending on the amount of data you have, this may take some time. This is run in the background, so you will receive an email when the import has been completed. It should take no more than a couple of minutes for most sites.
@@ -50,8 +50,8 @@ Data you have imported can be deleted by returning to your site's "**Integration
 
 Data is imported in aggregate for each date, from your first Google Analytics visitor until your first Plausible Analytics visitor. This is to avoid double-counting visits. 
 
-:::note
-Do you want your imported Google Analytics data to replace the native Plausible Analytics data up to today? This isn't recommended as the native data is superior to the imported data, but it's possible if you wish to do so. You can [reset the Plausible stats](reset-site-data.md) first and make the import after that.
+:::tip Do you want your Google Analytics data to replace the native Plausible data up to today?
+This isn't recommended as the native data is superior to the imported data but it's possible if you wish to do so. You can [reset the Plausible stats](reset-site-data.md) first and make the import after that
 :::
 
 How long time frame we can import the data for depends on your data retention limits in your Google Analytics settings. If you haven't set any data retention limits in your Google Analytics settings, we can import all the data from when you started using Google Analytics for the particular website.
