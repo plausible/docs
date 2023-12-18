@@ -34,8 +34,8 @@ As usual, you need to place your Plausible Analytics tracking script code into t
 
 Do this for all the websites where you'd like to enable file downloads tracking. This is the only tracking script you need. You don't need to keep the old script. Your stats will keep tracking without interruption, and you won't lose any of your old data.
 
-:::note
-Do you want to use the file downloads feature alongside the [outbound link clicks tracking](outbound-link-click-tracking.md)? You can combine any of our extensions by changing the `src` attribute in the snippet. In this case, change it to `script.file-downloads.outbound-links.js`.
+:::tip You can combine any of our extensions
+Do you want to use the file downloads feature alongside the [outbound link clicks tracking](outbound-link-click-tracking.md)? You can combine any of our extensions by changing the `src` attribute in the snippet. In this case, change it to `script.file-downloads.outbound-links.js`
 :::
 
 ## Step 2: Create a custom event goal in your Plausible Analytics account
