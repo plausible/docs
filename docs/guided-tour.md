@@ -18,11 +18,11 @@ See the number of unique visitors, total visits (sessions), total page views, vi
 
 You can **choose a different time range** that you want to analyze in the date picker in the top right. The visitor numbers are automatically presented on the graph. The time format (24-hour or 12-hour am/pm) for the top graph timelines is displayed automatically based on your browser's defined language.
 
-:::note
-Click on your site name in the top left side of your dashboard. It allows you to select "[Site Settings](website-settings.md)" in the dropdown menu but also [switch to a different site](landing-page.md#access-your-pinned-sites-from-the-site-switcher-list) you have added to your Plausible account.
-:::
-
 We get all the favicons (your site favicon and the favicons of all the referral sources) directly from the DuckDuckGo API. We display the same icon that DuckDuckGo shows in their search results.
+
+:::tip Click on the site name in the top left side of the dashboard
+Here you can enter "[Site Settings](website-settings.md)" but also switch to a different [pinned site](landing-page.md#access-your-pinned-sites-from-the-site-switcher-list) that you have added to your Plausible account
+:::
 
 ## Set a different chart interval
 
@@ -78,8 +78,8 @@ See all the most visited pages on your site ranked by the number of unique visit
 
 You can also get insights into the visitor flow by looking at the "**Entry pages**" and "**Exit pages**". Click on the "**details**" button to see the full list with additional metrics. For "**Entry pages**" details include visit duration for visits that started on a specific page and for "**Exit pages**" details include the exit rate percentage. [Read more here](top-pages.md).
 
-:::note
-Looking for the definitions of the metrics you have access to? [See this list](metrics-definitions.md).
+:::tip Looking for the definitions of the metrics you have access to?
+[See this list](metrics-definitions.md)
 :::
 
 ## Locations
@@ -88,8 +88,8 @@ Looking for the definitions of the metrics you have access to? [See this list](m
 
 See the list of countries, regions and cities your traffic is coming from. You can click on the "**details**" button to see the full list ranked by the number of visitors. [Read more here](countries.md).
 
-:::note
-Want a quicker way to navigate the dashboard? You can use the keyboard shortcuts to do so. Here's [the full list of shortcuts we support](keyboard-shortcuts.md).
+:::tip Want a quicker way to navigate the dashboard?
+You can use the keyboard shortcuts to do so. Here's [the full list of shortcuts we support](keyboard-shortcuts.md)
 :::
 
 ## Devices
