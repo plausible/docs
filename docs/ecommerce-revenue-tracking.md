@@ -36,8 +36,8 @@ Or if you're using [a proxy](/proxy/introduction.md):
 <script defer data-domain="yourdomain.com" src="https://yourproxy.com/script.revenue.js"></script>
 ```
 
-:::note
-If you're using any of our other script extensions, you can [combine them](script-extensions.md#you-can-combine-extensions-according-to-your-needs) by changing the `src` attribute in the snippet. If you want to track revenue goals and outbound link clicks simultaneously, change the script name to `script.revenue.outbound-links.js`.
+:::tip You can combine script extensions
+If you're using any of our other script extensions, you can [combine them](script-extensions.md#you-can-combine-extensions-according-to-your-needs) by changing the `src` attribute in the snippet. If you want to track revenue goals and outbound link clicks simultaneously, change the script name to `script.revenue.outbound-links.js`
 :::
 
 ## 2. Add a new custom event and specify the currency of your choice
@@ -54,8 +54,8 @@ You can now start sending revenue data from your site alongside custom events. H
 <button class="plausible-event-name=Purchase plausible-revenue-amount=10.29 plausible-revenue-currency=EUR"></button>
 ```
 
-:::note
-If you're using the CSS class name approach for custom events, you'll need to change the file name in the `src` attribute of your Plausible snippet to `script.revenue.tagged-events.js`.
+:::tip Using the CSS class name approach for custom events?
+You should change the file name in the `src` attribute of your Plausible snippet to `script.revenue.tagged-events.js`
 :::
 
 Or [the JavaScript function approach](custom-event-goals.md#trigger-custom-events-manually-with-a-javascript-function):
@@ -70,8 +70,8 @@ Custom events and revenue goals are listed at the bottom of your dashboard and w
 
 <img alt="Ecommerce revenue tracking goal" src={useBaseUrl('img/plausible-ecommerce-revenue-goal.png')} />
 
-:::note
-You can add more details to your revenue tracking by using custom properties. This lets you track order IDs, coupon codes, if customers are logged in and more. [Learn more](/custom-props/introduction.md).
+:::tip You can add more details to your revenue tracking by using custom properties
+This lets you track order IDs, coupon codes, if customers are logged in and more. [Learn more](/custom-props/introduction.md)
 :::
 
 ## Integrating with Shopify
