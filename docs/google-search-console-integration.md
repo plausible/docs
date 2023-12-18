@@ -81,9 +81,7 @@ Search query data isn't live. It's delayed by approximately 24-36 hours even on 
 
 So if you go back two days in your Plausible Analytics dashboard and click on Google in the referral sources you should be able to see the search queries for that day. We get the search query data directly from Google Search Console so as soon as they show up there they show up in Plausible Analytics too.
 
-:::note
 Note that "**Top Sources**" will only show keywords that have sent visitors to your site. We don't display keywords that have had impressions in Google's search results but no clicks to your site. Search phrases and keywords must have at least one click for them to show up in Plausible.
-:::
 
 ### Search query number doesn't add up to the total number of Google visitors
 
