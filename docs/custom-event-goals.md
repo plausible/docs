@@ -24,8 +24,8 @@ Or if you're using [a proxy](/proxy/introduction.md):
 <script defer data-domain="yourdomain.com" src="https://yourproxy.com/script.tagged-events.js"></script>
 ```
 
-:::note
-If you're using outbound link clicks, file downloads or any of our other script extensions, you can [combine them](script-extensions.md#you-can-combine-extensions-according-to-your-needs) by changing the `src` attribute in the snippet. If you want to track custom events and outbound link clicks simultaneously, change the script name to `script.tagged-events.outbound-links.js`.
+:::tip You can combine our script extensions
+If you're using outbound link clicks, file downloads or any of our other script extensions, you can [combine them](script-extensions.md#you-can-combine-extensions-according-to-your-needs) by changing the `src` attribute in the snippet. If you want to track custom events and outbound link clicks simultaneously, change the script name to `script.tagged-events.outbound-links.js`
 :::
 
 ## 2. Add a CSS class name to the element you want to track on your site
@@ -38,16 +38,16 @@ For instance, if you're using WordPress, you can click on any block element you 
 
 You can then click on "Advanced" and add a CSS class name in the "Additional CSS class(es)" field. Add the CSS class name in this format: `plausible-event-name=MyEventName`. For instance, if you want to track form submissions on your contact form, you could use: `plausible-event-name=Form+Submit`.
 
+:::tip To represent a space character in the event names, you can use a `+` sign
+For example: `plausible-event-name=Form+Submit` will display as `Form Submit` in your dashboard
+:::
+
 <img alt="Add a CSS class name in the 'Additional CSS class(es)' field" src={useBaseUrl('img/wordpress-css-class-name.png')} />
 
 When tracking form submits, it is important to tag the `<form>` element itself with the `plausible-event-name=...` class (not the `input` or `button` element inside the form). Normally, Plausible can track button clicks, but if a button is inside a form, it will navigate to the next page often leaving not enough time for the event to finish.
 
-:::note
-To represent a space character in the event names, you can use a `+` sign. For example: `plausible-event-name=Form+Submit` will display as `Form Submit` in your dashboard
-:::
-
-:::note
-Some CMSs (like Webflow) do not support an equals sign (`=`) in the classnames. If that's the case, use a double dash (`--`) instead of the equals sign. For example: `plausible-event-name--signup`.
+:::tip Some CMSs (like Webflow) do not support an equals sign (`=`) in the classnames
+If that's the case, use a double dash (`--`) instead of the equals sign. For example: `plausible-event-name--signup`
 :::
 
 ### You can also add class names directly in HTML
@@ -72,8 +72,8 @@ Or if your element already has a class attribute, just separate the new ones wit
 <button class="some-existing-class plausible-event-name=Button+Click">Click Me</button>
 ```
 
-:::note
-As an alternative to custom events, check out [pageview goals](pageview-goals.md). Since pageviews are collected automatically, you don’t need to change your website’s code to measure pageview goals. This makes pageview goals the easiest way to start tracking any type of conversions. Do you run a store and want to track orders? Do you have a contact form and want to track form submissions? Use pageview goals to track the "thank you" page or the order confirmation page.
+:::tip Use pageview goals to track the "thank you" page or the order confirmation page
+As an alternative to custom events, check out [pageview goals](pageview-goals.md). Since pageviews are collected automatically, you don’t need to change your website’s code to measure pageview goals. This makes pageview goals the easiest way to start tracking any type of conversions. Do you run a store and want to track orders? Do you have a contact form and want to track form submissions? Use pageview goals to track the "thank you" page or the order confirmation page
 :::
 
 ### Verify that the CSS classes were added correctly
@@ -85,8 +85,8 @@ In some cases, the tracking classes might be added to a wrapper `<div>` element 
 Some CMSs like Webflow do not support an equals sign (`=`) in the classnames. If you add a class attribute with the value `plausible-event-name=Signup`, but when you go back to your page and inspect the element, it might have `class="plausible-event-name-Signup"` (equals sign replaced with a hyphen). 
 If that's the case, use a double dash (`--`) instead of the equals sign. For example: `plausible-event-name--signup`.
 
-:::note
-Tracking form submissions may currently not work with forms that contain an element with `id="submit"` or `name="submit"`. To work around this limitation please rename the `id` or `name` attribute value to something else. If you're unable to do that, please look into [implementing custom events manually with JavaScript](#trigger-custom-events-manually-with-a-javascript-function)
+:::tip Tracking form submissions may not work with forms that contain an element with `id="submit"` or `name="submit"`
+To work around this limitation please rename the `id` or `name` attribute value to something else. If you're unable to do that, please look into [implementing custom events manually with JavaScript](#trigger-custom-events-manually-with-a-javascript-function)
 :::
 
 If your CMS does not support adding CSS classes, please expand the following section of instructions.
