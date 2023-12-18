@@ -36,8 +36,8 @@ As usual, you need to place your Plausible Analytics tracking script code into t
 
 Do this for all the websites where you'd like to enable outbound link click tracking. This is the only tracking script you need. You don't need to keep the old script. Your stats will keep tracking without interruption, and you won't lose any of your old data.
 
-:::note
-Do you want to use the outbound link clicks feature alongside the [file downloads feature](file-downloads-tracking.md)? You can combine any of our extensions by changing the `src` attribute in the snippet. In this case, change it to `script.outbound-links.file-downloads.js`.
+:::tip You can combine any of our extensions
+Do you want to use the outbound link clicks feature alongside the [file downloads feature](file-downloads-tracking.md)? You can combine any of our extensions by changing the `src` attribute in the snippet. In this case, change it to `script.outbound-links.file-downloads.js`
 :::
 
 ## Step 2: Create a custom event goal in your Plausible Analytics account
@@ -70,6 +70,6 @@ Click on "**Outbound Link: Click**" to see the full list of all clicks on all ex
 
 Click on a particular external URL to filter the dashboard by those clicks only and get the full overview of that specific URL.
 
-:::note
-Are you using cloaked affiliate links on your site? Here's how to automatically [track clicks on cloaked affiliate links](custom-automatic-link-tracking.md)
+:::tip Are you using cloaked affiliate links on your site?
+Here's how to automatically [track clicks on cloaked affiliate links](custom-automatic-link-tracking.md)
 :::
