@@ -32,8 +32,8 @@ Similarly to how you define an event name inside the `class` attribute, you can 
 
 Now, both form submissions would trigger the same `Form Submit` event, but the `position` property will be different.
 
-:::note
-To represent a space character in property values, you can use a `+` sign. This is because you can't include the space character in the `class` attribute.
+:::tip To represent a space character in property values, you can use a `+` sign
+This is because you can't include the space character in the `class` attribute
 :::
 
 You can add up to 30 classes for custom properties. Simply separate them with a space character like in the above example.
@@ -51,4 +51,3 @@ All you have to do is add the second argument to this function call with the cus
 ```js
 plausible('Download', {props: {method: 'HTTP', position: 'footer'}})
 ```
-
