@@ -18,8 +18,8 @@ Or if you're using [a proxy](/proxy/introduction.md):
 <script defer data-domain="yourdomain.com" src="https://yourproxy.com/script.pageview-props.js"></script>
 ```
 
-:::note
-If you're using any of our other script extensions, you can [combine them](script-extensions.md#you-can-combine-extensions-according-to-your-needs) by changing the `src` attribute in the snippet. If you want to track pageview props and outbound link clicks simultaneously, change the script name to `script.pageview-props.outbound-links.js`.
+:::tip You can combine our script extensions
+If you're using any of our other script extensions, you can [combine them](script-extensions.md#you-can-combine-extensions-according-to-your-needs) by changing the `src` attribute in the snippet. If you want to track pageview props and outbound link clicks simultaneously, change the script name to `script.pageview-props.outbound-links.js`
 :::
 
 ## 2. Add your custom properties to your Plausible snippet
