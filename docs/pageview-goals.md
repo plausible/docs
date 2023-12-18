@@ -30,8 +30,8 @@ You can use one asterisk (`*`) to represent any number of characters within the 
 
 You can for instance group all of your blog posts by creating a pageview goal `/blog**` (if your blog subdirectory is named `blog`) or track Woocommerce checkout pages for your ecommerce by creating a pageview goal `/checkout/order-received/**`. Or you could use double asterisks in front and back (`**keyword**`) to group any URLs containing a specific keyword.
 
-:::note
-Would you like to group your pages at any time without using pageview goals? You can do so by using [the "Filter" button](filters-segments.md) on the top of your dashboard.
+:::tip Would you like to group your pages at any time without using pageview goals?
+You can do so by using [the "Filter" button](filters-segments.md) on the top of your dashboard
 :::
 
 See below for more examples of common use cases and how they would function.
