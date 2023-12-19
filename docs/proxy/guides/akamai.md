@@ -6,9 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Proxying Plausible through your own property on Akamai is easy, fast and privacy-friendly. 
 
-:::note
 The instructions assume you use the default paths ``/js/script.js`` and ``/api/event``. You can change these based on your preferences.
-:::
 
 ## Step 1: Proxy Analytics Script
 
