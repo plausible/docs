@@ -43,7 +43,7 @@ Note that:
 
 > See Plausible's [script tag](plausible-script.md) docs 
 
-Add a script tag to your application's HTML page, passing the values configured above as attributes:
+Add a script tag to your application's HTML page, passing the values configured above as attributes. The `src` and `data-api` attributes **must match** the `source` values in the `vercel.json` file.
 
 ```html
 <script
@@ -52,8 +52,5 @@ Add a script tag to your application's HTML page, passing the values configured 
   data-domain="yourdomain.com"
 ></script>
 ```
-:::note
-The `src` and `data-api` attributes **must match** the `source` values in the `vercel.json` file.
-:::
 
 Thanks to [davestewart](https://github.com/davestewart) for contributing these instructions!
