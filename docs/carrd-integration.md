@@ -33,7 +33,6 @@ Now you can go to your Carrd website and verify that Plausible script has been a
 
 In Carrd forms have default IDs. Usually they're assigned IDs based on the order you've added them. If you only have one form on the page it has an ID of "**form01**".
 
-
 ### 1. Change the Plausible snippet on your site
 
 Please change the file name in the `src` attribute of your Plausible snippet from `script.hash.js` to `script.tagged-events.hash.js`. It should look like this:
@@ -42,10 +41,9 @@ Please change the file name in the `src` attribute of your Plausible snippet fro
 <script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.tagged-events.hash.js"></script>
 ```
 
-:::note
-If you're using outbound link clicks, file downloads or any of our other script extensions, you can [combine them](script-extensions.md#you-can-combine-extensions-according-to-your-needs) by changing the `src` attribute in the snippet. If you want to track custom events and outbound link clicks simultaneously, change the script name to `script.tagged-events.outbound-links.hash.js`.
+:::tip You can combine script extensions
+If you're using outbound link clicks, file downloads or any of our other script extensions, you can [combine them](script-extensions.md#you-can-combine-extensions-according-to-your-needs) by changing the `src` attribute in the snippet. If you want to track custom events and outbound link clicks simultaneously, change the script name to `script.tagged-events.outbound-links.hash.js`
 :::
-
 
 If you're on a higher plan, like Pro Plus, you'll be able to set these IDs yourself from the element's settings. 
 
@@ -57,8 +55,8 @@ Make sure to change the `elementId` line in the code below to include the ID att
 
 Also do change the `classes` line to include the goal name in this format: `plausible-event-name=Goal+Name`. The goal name is completely up to you. It's the name under which the goal conversions will appear in your Plausible dashboard. We've used `Form+Submit` goal name in our example.
 
-:::note
-To represent a space character in goal names, you can use a `+` sign. For example: `plausible-event-name=Form+Submit` will display as `Form Submit` in your Plausible dashboard
+:::tip To represent a space character in goal names, you can use a `+` sign
+For example: `plausible-event-name=Form+Submit` will display as `Form Submit` in your Plausible dashboard
 :::
 
 ```html
@@ -126,10 +124,6 @@ Here's the code you will need to insert in the `<head>` section of the page wher
 Make sure to change the `elementId` line in the code below to include the ID attribute of the element you want to track (`buttons01` in our example). 
 
 Also do change the `classes` line to include the goal name in this format: `plausible-event-name=Goal+Name`. The goal name is completely up to you. It's the name under which the goal conversions will appear in your Plausible dashboard. We've used `Button+Click` goal name in our example.
-
-:::note
-To represent a space character in goal names, you can use a `+` sign. For example: `plausible-event-name=Form+Submit` will display as `Form Submit` in your Plausible dashboard
-:::
 
 ```html
 <script>
