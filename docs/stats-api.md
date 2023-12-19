@@ -17,8 +17,8 @@ The easiest way to explore the API is by using our Postman collection. Just defi
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/32c111c4f6d2cccef9dd)
 
-:::note
-New to Postman? We have [a step-by-step guide to set up the authorization and run your first queries with Postman](get-started-with-postman.md).
+:::tip New to Postman?
+We have [a step-by-step guide to set up the authorization and run your first queries with Postman](get-started-with-postman.md)
 :::
 
 ## Concepts
@@ -90,8 +90,8 @@ more depth. Here's the full list of properties we collect automatically:
 In addition to properties that are collected automatically, you can also query for [custom properties](/custom-props/introduction).
 To filter or break down by a custom property, use the key `event:props:<custom_prop_name>`. [See example](#breakdown-custom-event-by-custom-properties) for how to use it.
 
-:::note
-Currently clients are limited to filtering or breaking down on just one custom property at a time. Custom property filters and breakdowns can't be combined arbitrarily. We are aware of this issue and we have plans to fix it, but we rely on our database to support some new features to fix this issue.
+:::info Clients are limited to filtering or breaking down on just one custom property at a time
+Custom property filters and breakdowns can't be combined arbitrarily. We plan to [support this in the future](https://feedback.plausible.io/195)
 :::
 
 ### Filtering
@@ -114,8 +114,8 @@ visit:country==FR|DE
 
 Would match both visitors from both France and Germany.
 
-:::note
-Want to use the `|` character in a filter value? You can escape it with a backslash. For example, `visit:utm_campaign==campaign\|one` will let you filter by the literal `campaign|one` value.
+:::tip Want to use the `|` character in a filter value? 
+You can escape it with a backslash. For example, `visit:utm_campaign==campaign\|one` will let you filter by the literal `campaign|one` value
 :::
 
 You can also exclude by a specific property, using a `!=` filter:
@@ -185,7 +185,6 @@ curl 'https://plausible.io/api/v1/stats/aggregate?site_id=$SITE_ID&period=6mo&me
 }
 ```
 
-
 #### Parameters
 <hr / >
 
@@ -216,7 +215,6 @@ Off by default. You can specify `compare=previous_period` to calculate the perce
 **filters** <Optional />
 
 See [filtering](#filtering)
-
 
 ### GET /api/v1/stats/timeseries
 
@@ -259,7 +257,6 @@ curl 'https://plausible.io/api/v1/stats/timeseries?site_id=$SITE_ID&period=6mo'
   ]
 }
 ```
-
 
 #### Parameters
 <hr / >
@@ -450,7 +447,6 @@ As a second example, let's imagine we want to analyze our SEO efforts for the la
 To graph your traffic from Google over time, you can use the `timeseries` endpoint with a time period `6mo` and
 filter expression `visit:source==Google`.
 
-
 ```bash title="Monthly traffic from Google"
 curl 'https://plausible.io/api/v1/stats/timeseries?site_id=$SITE_ID&period=6mo&filters=visit:source%3D%3DGoogle' \
   -H "Authorization: Bearer ${TOKEN}"
@@ -512,6 +508,6 @@ curl 'https://plausible.io/api/v1/stats/breakdown?site_id=$SITE_ID&period=6mo&pr
 }
 ```
 
-:::note
-You can use GET https://plausible.io/api/health endpoint to monitor the status of our API
+:::tip Want to monitor the status of our API?
+You can use GET https://plausible.io/api/health endpoint to do so
 :::
