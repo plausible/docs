@@ -17,7 +17,6 @@ integration packages listed [here](/docs/integration-guides). However, if there'
 
 If these headers are not sent exactly as required, unique visitor counting will not work as intended. Please refer to the [Request headers](#request-headers) section below for more in-depth documentation on each header separately.
 
-
 ## Endpoints
 ### POST /api/event
 
@@ -56,7 +55,6 @@ Used to explicitly set the IP address of the client. If not set, the remote IP o
 1. If sending the event from your visitors' device, this header does not need to be set
 2. If sending the event from a backend server or proxy, make sure to override this header with the correct IP address of the client.
 
-
 The raw value of the IP address is not stored in our database. The IP address is used to calculate the *user_id* which identifies a [unique visitor](https://plausible.io/data-policy#how-we-count-unique-users-without-cookies) in Plausible. It is also used to fill the Location report with country, region and city data of the visitor.
 
 If the header contains a comma-separated list (as it should if the request is sent through a chain of proxies), then the first valid IP address from the list is used. Both IPv4 and IPv6 addresses are supported. More information about the header format can be found on [MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Forwarded-For).
@@ -67,7 +65,6 @@ If the header contains a comma-separated list (as it should if the request is se
 
 Must be either *application/json* or *text/plain*. In case of *text/plain*, the request body is still interpreted as JSON.
 
-
 ### Request body JSON parameters
 <hr / >
 
@@ -75,8 +72,8 @@ Must be either *application/json* or *text/plain*. In case of *text/plain*, the 
 
 Domain name of the site in Plausible
 
-:::note
-This is the domain name you used when you added your site to your Plausible account. It doesn't need to be an actual domain name, so when adding your mobile app to Plausible, you could insert the mobile app name in the domain name field
+:::note This is the domain name you used when you added your site to your Plausible account
+It doesn't need to be an actual domain name, so when adding your mobile app to Plausible, you could insert the mobile app name in the domain name field
 :::
 <hr / >
 
@@ -92,13 +89,13 @@ URL of the page where the event was triggered. If the URL contains UTM parameter
 
 The maximum size of the URL, excluding the domain and the query string, is 2,000 characters. Additionally, URLs using the [data URI scheme](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URLs) are not supported by the API.
 
-:::note
-The URL parameter will feel strange in a mobile app but you can manufacture something that looks like a web URL. If you name your mobile app screens like page URLs, Plausible will know how to handle it. So for example, on your login screen you could send something like:  
+:::tip The URL parameter will feel strange in a mobile app but you can manufacture something that looks like a web URL
+If you name your mobile app screens like page URLs, Plausible will know how to handle it. So for example, on your login screen you could send something like:  
 
 event: pageview  
 url: app://localhost/login  
 
-The pathname (/login) is what will be shown as the page value in the Plausible dashboard.  
+The pathname (/login) is what will be shown as the page value in the Plausible dashboard
 :::
 <hr / >
 
@@ -147,6 +144,6 @@ By default, the API returns HTTP 202 Accepted. However, if you want to debug a r
 
 E.g: Add this header to your request and log the response.
 
-:::note
-You can can use GET https://plausible.io/api/health endpoint to monitor the status of our API
+:::tip Want to monitor the status of our API?
+You can can use GET https://plausible.io/api/health endpoint to do so
 :::
