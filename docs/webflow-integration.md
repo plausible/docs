@@ -58,7 +58,6 @@ Click on the "**+ Add goal**" button to go to the goal creation form. Select `Pa
 
 Your goal should now be set up. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who completed the form submission. Goal conversions are listed at the very bottom of the dashboard. The goal will show up in your dashboard as soon as it has been completed at least once.
 
-
 ## Tracking button clicks and other links on your Webflow site
 
 ### 1. Change the Plausible snippet on your site
@@ -69,8 +68,8 @@ Please change the file name in the `src` attribute of your Plausible snippet fro
 <script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.tagged-events.js"></script>
 ```
 
-:::note
-If you're using outbound link clicks, file downloads or any of our other script extensions, you can [combine them](script-extensions.md#you-can-combine-extensions-according-to-your-needs) by changing the `src` attribute in the snippet. If you want to track custom events and outbound link clicks simultaneously, change the script name to `script.tagged-events.outbound-links.js`.
+:::tip You can combine script extensions
+If you're using outbound link clicks, file downloads or any of our other script extensions, you can [combine them](script-extensions.md#you-can-combine-extensions-according-to-your-needs) by changing the `src` attribute in the snippet. If you want to track custom events and outbound link clicks simultaneously, change the script name to `script.tagged-events.outbound-links.js`
 :::
 
 ### 3. Set an ID to the element you want to track
@@ -78,7 +77,6 @@ If you're using outbound link clicks, file downloads or any of our other script 
 In Webflow, link and button elements don't have a default ID. You'll need to assign an ID by selecting the element and clicking on the settings gear. In the **"Designer View"**, you'll be able to set the ID. 
 
 <img alt="Add an ID to link and button elements in Webflow" src={useBaseUrl('img/add-id-to-link-and-button-webflow.png')} />
-
 
 ### 3. Trigger custom events with JavaScript on your site
 
@@ -88,8 +86,8 @@ Make sure to change the `elementId` line in the code below to include the ID att
 
 Also do change the `classes` line to include the goal name in this format: `plausible-event-name=Goal+Name`. The goal name is completely up to you. It's the name under which the goal conversions will appear in your Plausible dashboard. We've used `Button+Click` goal name in our example.
 
-:::note
-To represent a space character in goal names, you can use a `+` sign. For example: `plausible-event-name=Form+Submit` will display as `Form Submit` in your Plausible dashboard
+:::tip To represent a space character in goal names, you can use a `+` sign
+For example: `plausible-event-name=Form+Submit` will display as `Form Submit` in your Plausible dashboard
 :::
 
 ```html
@@ -133,8 +131,6 @@ Next, click on the "**Add goal**" button and you'll be taken back to the Goals p
 ### 5. Your goal should now be ready and tracking
 
 Your goal should now be set up. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who triggered the custom event. Goal conversions are listed at the very bottom of the dashboard. The goal will show up in your dashboard as soon as it has been completed at least once.
-
-
 
 ## Triggering multiple custom events on the same page
 
