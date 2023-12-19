@@ -298,6 +298,10 @@ There is a [Plausible Sphinx extension](https://pypi.org/project/sphinx-plausibl
 
 [Plausible Wrapper](https://statamic.com/addons/jack-whiting/plausible): A wrapper around the Plausible API that fetches the analytics into your dashboard in a pretty way. Built and maintained by [Jack Whiting](https://jackwhiting.co.uk/).
 
+## Sylius
+
+A [Sylius Plausible plugin](https://github.com/Setono/sylius-plausible-plugin) that integrates Plausible seamlessly into your store. Built and maintained by [Setono](https://github.com/Setono).
+
 ## Turbo / Turbolinks
 
 We offer a manual mode in case you want full control over when pageviews are triggered on your website. The most common use-case for this is when you use Turbo (formerly Turbolinks). [Learn more here](script-extensions.md#plausiblemanualjs)
