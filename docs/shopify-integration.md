@@ -44,7 +44,6 @@ If you'd like to see these grouped order confirmations or checkout page visits p
 
 <img alt="Shopify thank you page tracking" src={useBaseUrl('img/shopify-thank-you-page-goal.png')} />
 
-
 ## How to track form submissions and button clicks on Shopify
 
 Here's how you can track particular form submissions and button clicks on your Shopify site:
@@ -57,8 +56,8 @@ Please change the file name in the `src` attribute of your Plausible snippet fro
 <script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.tagged-events.js"></script>
 ```
 
-:::note
-If you're using outbound link clicks, file downloads or any of our other script extensions, you can [combine them](script-extensions.md#you-can-combine-extensions-according-to-your-needs) by changing the `src` attribute in the snippet. If you want to track custom events and outbound link clicks simultaneously, change the script name to `script.tagged-events.outbound-links.js`.
+:::tip You can combined script extensions
+If you're using outbound link clicks, file downloads or any of our other script extensions, you can [combine them](script-extensions.md#you-can-combine-extensions-according-to-your-needs) by changing the `src` attribute in the snippet. If you want to track custom events and outbound link clicks simultaneously, change the script name to `script.tagged-events.outbound-links.js`
 :::
 
 ### 2. Find the ID attribute of the form or button you want to track
@@ -153,7 +152,6 @@ If you want to trigger multiple custom events on the same site, you don't need t
 
 <img alt="track multiple elements in Shopify" src={useBaseUrl('img/track-multiple-elements-shopify.png')} />
 
-
 ## Ecommerce revenue and attribution tracking 
 
 You can [track sales](https://plausible.io/docs/ecommerce-revenue-tracking) by making a few changes to the order status page.
@@ -198,9 +196,9 @@ If you want to track custom properties, such as order IDs or the number of items
 </script>
 {% endif %}
 ```
+
 <img alt="Shopify Additional scripts box" src={useBaseUrl('img/shopify-additional-scripts-revenue-metrics.png')} />
 
 5. Click 'Save' and you're done!
 
 <img alt="Revenue goal custom props" src={useBaseUrl('img/revenue-goal-custom-props.png')} />
-
