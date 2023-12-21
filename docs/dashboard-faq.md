@@ -20,9 +20,9 @@ There's another situation where differences might occur. If you manually tally t
 
 Plausible excludes bots, crawlers, referrer spam and other known non-human traffic by default. In [a test we ran](https://plausible.io/blog/server-log-analysis), we saw 18x more pageviews with server side tracking than with Plausible Analytics which shows the volume of spam traffic that Plausible excludes. 
 
-Most of this difference comes from the fact that client-side analytics such as Plausible only count visitors that run JavaScript. This is a decent proxy for "this is probably a real human using a web browser".
+A lot of this difference comes from the fact that client-side analytics such as Plausible only count visitors that run JavaScript. This is a decent proxy for "this is probably a real human using a web browser".
 
-In addition to this, we exclude known bots by the User-Agent header, we filter out traffic from known referrer spam domains and we also use our own algorithm to detect and exclude non-human traffic patterns.
+In addition to this, we exclude known bots by the User-Agent header, we filter out traffic from known referrer spam domains and data centers, and we also use our own algorithm to detect and exclude non-human traffic patterns.
 
 ## Does Plausible do data sampling?
 
