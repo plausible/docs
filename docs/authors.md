@@ -10,7 +10,6 @@ Plausible Analytics is designed, developed and maintained fully remotely, distri
 * [Marko Saric](https://twitter.com/markosaric) - Marketing and communication 
 * Robert - Product engineer
 * Cenk - Infrastructure and security 
-* Vini - Product engineer
 * Adam - Product engineer and infrastructure
 * Bogdan - Customer success
 * Adrian - Product engineer
