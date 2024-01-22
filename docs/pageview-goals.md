@@ -22,32 +22,12 @@ Select `Pageview` as the goal trigger and enter the pathname of the page you wou
 
 Next, click on the "**Add goal**" button and you’ll be taken back to the goals page. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who reached the specified page or group of pages. Goal conversions are listed at the very bottom of the dashboard.
 
-## Group your pages using wildcards
+## How to group your pages
 
-Do you want to analyze the total traffic to specific sections of your site or to group your dynamically created pages? You can use wildcards to match patterns in your page path URLs.
+Do you want to analyze the total traffic to specific sections of your site or to group your dynamically created pages? You can use an asterisk (`*`) to match patterns in your page path URLs. Asterisks can be placed on either end or in the middle of any page path URL.
 
-You can use one asterisk (`*`) to represent any number of characters within the same directory or you can use double asterisks (`**`) to represent any number of characters even forward slashes. Asterisks can be placed on either end or in the middle of any page path URL.
-
-You can for instance group all of your blog posts by creating a pageview goal `/blog**` (if your blog subdirectory is named `blog`) or track Woocommerce checkout pages for your ecommerce by creating a pageview goal `/checkout/order-received/**`. Or you could use double asterisks in front and back (`**keyword**`) to group any URLs containing a specific keyword.
+You can for instance group all of your blog posts by creating a pageview goal `/blog*` (if your blog subdirectory is named `blog`) or track Woocommerce checkout pages for your ecommerce by creating a pageview goal `/checkout/order-received/*`. 
 
 :::tip Would you like to group your pages at any time without using pageview goals?
 You can do so by using [the "Filter" button](filters-segments.md) on the top of your dashboard
 :::
-
-See below for more examples of common use cases and how they would function.
-
-| Input | Includes pages with a URL path of: |
-| ------------- | ------------- |
-| `**keyword**` | use double asterisks in front and back in the same way that you would use "contain". It finds any URL containing a specific keyword |
-| `/blog**` | use this to for instance group all your blog posts |
-| `/blog4` | `/blog4` and exactly `/blog4` with nothing before or after it, so not `/blog45` nor `/blog4/new` nor `/blog` |
-| `/rule/*` | `/rule/<anything>`, with `<anything>` being any set of characters (length >=0), but not a forward slash - for example, both `/rule/1` as well as `/rule/general-rule-14`, but not `/rule/4/details` nor `/rules` |
-| `/how-to-*` | `/how-to-<anything>` - for example, `/how-to-play` or `/how-to-succeed`, but not `how-to-/blog` |
-| `/*/admin` | `/<anything>/admin` - for example, `/sites/admin`, but not `/sites/admin/page-2` nor `/sites/2/admin` nor `/admin` |
-| `/*/priv/*` | `/<anything>/priv/<anything>` - for example, `/admin/priv/sites`, but not `/priv` nor `/priv/page` nor `/admin/priv` |
-| `/rule/*/*` | `/rule/<anything>/<anything>` - for example, `/rule/4/new/` or `/rule/10/edit`, but not `/rule` nor `/rule/10/new/save` |
-| `/wp/**` | `/wp/<anything, even slashes>` - for example, `/wp/assets/subdirectory/another/image.png` or `/wp/admin`, and everything in between, but not `/page/wp`
-
-<br />
-
-<img alt="Add a wildcard pageview goal" src={useBaseUrl('img/add-wildcard-pageview-goal.png')} />
