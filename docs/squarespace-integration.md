@@ -65,15 +65,10 @@ Click on the "**+ Add goal**" button to go to the goal creation form. Select `Pa
 
 Your goal should now be set up. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who completed the form submission. Goal conversions are listed at the very bottom of the dashboard. The goal will show up in your dashboard as soon as it has been completed at least once.
 
-
 ## Tracking orders on your Squarespace site
 
 In Squarespace, all completed orders are being redirected to a page with the following format: 
 
-```https://yourwebsite.com/commerce/orders/977f8aa0-f618-47d0-8787-ee37b1457cc0```
+`https://yourwebsite.com/commerce/orders/977f8aa0-f618-47d0-8787-ee37b1457cc0`
 
-To track completed orders, you can also set a pageview goal, however since the ID ( in our example "/977f8aa0-f618-47d0-8787-ee37b1457cc0" ) changes with every order, you will need to use [wildcards](https://plausible.io/docs/pageview-goals#pageview-goals-support-wildcards) to set up the gol. 
-
-Any of these wildcards should work: `/**orders**` , `/**/orders/**` , `/commerce/orders/**`
-
-<img alt="Track orders in Squarespace" src={useBaseUrl('img/track-orders-squarespace.png')} />
+To track completed orders, you can set up a pageview goal. Since the ID (in our example `/977f8aa0-f618-47d0-8787-ee37b1457cc0`) changes with every order, you will need to group those dynamic pages. You can use asterisks (*) to do so. Asterisks can be placed on either end or in the middle of any page path URL. For the example above, you can set up a pageview goal `/commerce/orders/*` to group all of the dynamically created order completion pages.
