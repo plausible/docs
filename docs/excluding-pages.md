@@ -36,18 +36,13 @@ To exclude **everything except** for some specific pages, use the `data-include`
 data-include="/en**, /es**"
 ```
 
-You can also use a combination of `data-include` and `data-exclude` options. Do note that when using the two options together, any page path that matches both the exclusion and inclusion rule, is **excluded** from being tracked. For example, the following combination won't track the page `/en/user/*/settings` (even though it matches the inclusion rule).
+You can also use a combination of `data-include` and `data-exclude` options. Do note that when using the two options together, any page path that matches both the exclusion and inclusion rule, is **excluded** from being tracked. For example, the following combination won't track pages `/en/user/*` (even though they match the inclusion rule).
 
 ```
-data-include="/en**" data-exclude="/en/user/*/settings"
+data-include="/en*" data-exclude="/en/user/*"
 ```
 
 Any pages listed in this format should be **comma-separated**, with asterisks to indicate unspecified regions of the pathname. All entries must begin with a `/`, and should **not** include the trailing slash as we account for this automatically.
-
-- Asterisks (`*`) expand to any stretch (of length >=0) of the page path and can be on either end or in the middle of any entry, but **can't** be in the place of slashes.
-- Double asterisks (`**`) expand to any stretch (of length >=0) of the page path, can be on either end or in the middle of any entry, and can represent **any** characters, even slashes.
-
-See below for examples of common page use cases and how they would function.
 
 ## 3. Change the snippet on your site to the new snippet
 
@@ -78,18 +73,6 @@ The example above includes both [outbound link clicks tracking](outbound-link-cl
 :::note
 If you are [tracking custom events](goal-conversions.md) on pages excluded with this method, the URLs of those pages will keep showing in your dashboard. You can override and anonymize the URLs reported through custom events by using [our manual script extension](custom-locations.md).
 :::
-
-## Common use cases and examples
-
-| inclusion or exclusion rule | pages that will match |
-| ------------- | ------------- |
-| `/blog4` | `/blog4` and exactly `/blog4` with nothing before or after it, so not `/blog45` nor `/blog4/new` nor `/blog` |
-| `/rule/*` | `/rule/<anything>`, with `<anything>` being any set of characters (length >=0), but not a forward slash - for example, both `/rule/1` as well as `/rule/general-rule-14`, but not `/rule/4/details` nor `/rules` |
-| `/how-to-*` | `/how-to-<anything>` - for example, `/how-to-play` or `/how-to-succeed`, but not `how-to-/blog` |
-| `/*/admin` | `/<anything>/admin` - for example, `/sites/admin`, but not `/sites/admin/page-2` nor `/sites/2/admin` nor `/admin` |
-| `/*/priv/*` | `/<anything>/priv/<anything>` - for example, `/admin/priv/sites`, but not `/priv` nor `/priv/page` nor `/admin/priv` |
-| `/rule/*/*` | `/rule/<anything>/<anything>` - for example, `/rule/4/new/` or `/rule/10/edit`, but not `/rule` nor `/rule/10/new/save` |
-| `/wp/**` | `/wp<anything, even slashes>` - for example, `/wp/assets/subdirectory/another/image.png` or `/wp/admin`, and everything in between, but not `/page/wp`
 
 This exclusion method currently does not support filtering out specific page [hashes](hash-based-routing.md), but may in the future.
 
