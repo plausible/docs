@@ -32,7 +32,6 @@ You can filter your stats by multiple sources, countries, pages and more, all at
 
 <img alt="Multiple filters" src={useBaseUrl('img/filter-segments-multiple-filters.png')} />
 
-
 ### Search for any metric
 
 You can search for any metric such as a particular country, referral source or page on your site. Start typing to discover the specific page (or another metric) you're looking for. No need to scroll through the long list of countries or pages.
@@ -53,45 +52,8 @@ Want to group all your blog posts and analyze the traffic to the blog separately
 
 You can group pages by using the "**Filter**" button. The "**Page**" menu within the filter button includes option "**contains**". Put any specific keyword to group all of your pages that contain that keyword. 
 
-<details>
-
-<summary>
-
-### Filter for pages also supports wildcards
-
-The "**Page**" menu within the filter button also supports wildcards format that makes filtering even more powerful. 
-
-You can use rules in the following format to group different pages or dynamic URLs. You can track all the blog posts by using `/blog**` (if your blog subdirectory is named `blog`) or track Woocommerce checkout pages for your ecommerce (`/checkout/order-received/*`). 
-
-Here are the supported formats:
-
-</summary>
-
-- Asterisks (`*`) expand to any stretch (of length >=0) of the page path and can be on either end or in the middle of any entry, but **cannot** be in the place of slashes.
-- Double asterisks (`**`) expand to any stretch (of length >=0) of the page path, can be on either end or in the middle of any entry, and can represent **any** characters, even slashes.
-
-<img alt="Group pages" src={useBaseUrl('img/group-pages-filter.png')} />
-
-You can use rules in this format to group different pages or dynamic URLs. You can track all the blog posts by using `/blog**` (if your blog subdirectory is named `blog`) or track Woocommerce checkout pages for your ecommerce (`/checkout/order-received/*`). 
-
-See below for more examples of common use cases and how they would function.
-
-| Input | Includes pages with a URL path of: |
-| ------------- | ------------- |
-| `**keyword**` | use double asterisks in front and back in the same way that you would use "contain". It finds any URL containing a specific keyword |
-| `/blog**` | use this to for instance group all your blog posts |
-| `/blog4` | `/blog4` and exactly `/blog4` with nothing before or after it, so not `/blog45` nor `/blog4/new` nor `/blog` |
-| `/rule/*` | `/rule/<anything>`, with `<anything>` being any set of characters (length >=0), but not a forward slash - for example, both `/rule/1` as well as `/rule/general-rule-14`, but not `/rule/4/details` nor `/rules` |
-| `/how-to-*` | `/how-to-<anything>` - for example, `/how-to-play` or `/how-to-succeed`, but not `how-to-/blog` |
-| `/*/admin` | `/<anything>/admin` - for example, `/sites/admin`, but not `/sites/admin/page-2` nor `/sites/2/admin` nor `/admin` |
-| `/*/priv/*` | `/<anything>/priv/<anything>` - for example, `/admin/priv/sites`, but not `/priv` nor `/priv/page` nor `/admin/priv` |
-| `/rule/*/*` | `/rule/<anything>/<anything>` - for example, `/rule/4/new/` or `/rule/10/edit`, but not `/rule` nor `/rule/10/new/save` |
-| `/wp/**` | `/wp/<anything, even slashes>` - for example, `/wp/assets/subdirectory/another/image.png` or `/wp/admin`, and everything in between, but not `/page/wp`
-
-<br />
+You can also group dynamically created URLs with an asterisk `*`. For instance, you can track Woocommerce checkout pages for your ecommerce store like this: `/checkout/order-received/*`. 
 
 :::note
 Would you like your grouped pages to be permanently displayed in your dashboard? You can do so by using [pageview goals](pageview-goals.md).
 :::
-
-</details>
