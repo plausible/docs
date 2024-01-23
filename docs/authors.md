@@ -4,7 +4,7 @@ title: Our team
 
 Plausible Analytics is designed, developed and maintained fully remotely, distributed and transparent by the following people:
 
-## Full-time team
+## Core team
 
 * [Uku Taht](https://twitter.com/ukutaht) - Design and development 
 * [Marko Saric](https://twitter.com/markosaric) - Marketing and communication 
@@ -13,6 +13,7 @@ Plausible Analytics is designed, developed and maintained fully remotely, distri
 * Adam - Product engineer and infrastructure
 * Bogdan - Customer success
 * Adrian - Product engineer
+* Karl - Product engineer and infrastructure
 
 ## Contributors
 
@@ -35,6 +36,8 @@ In addition to this, Plausible Analytics is made possible by an incredible [comm
 * [Matt Colligan](https://github.com/m-col) (m-col) for all the help on the export / import functionality.
 
 * [Daan van den Bergh](https://daan.dev/) (Dan0sz) for all the help with bringing our WordPress plugin to another level.
+
+* [Ruslan Doga](https://github.com/ruslandoga) (ruslandoga) for all the help with GitHub community management and self-hosting.
 
 * To those who build and maintain Plausible Analytics integrations with various frameworks. [Full list here](integration-guides.md).
 
