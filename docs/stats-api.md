@@ -96,35 +96,25 @@ Custom property filters and breakdowns can't be combined arbitrarily. We plan to
 
 ### Filtering
 
-Most endpoints support a `filters` query parameter to drill down into your data. Currently, only simple equality filters are supported.
+Most endpoints support a `filters` query parameter to drill down into your data. You can filter by all properties described in the [Properties table](#properties), using the following operators:
 
-An equality filter can be specified with url-encoded `==`. Filters can be joined together with `;` which applies a logical
-`AND` operator to the filters. Here's a filter expression combining two filters:
-
-```
-visit:browser==Firefox;visit:country==FR
-```
-
-You can join values together with a `|` to express an IN filter. The filter will match if the key is
-in any of the values. For example, the following filter:
-
-```
-visit:country==FR|DE
-```
-
-Would match both visitors from both France and Germany.
+| Operator        | Usage example                              | Explanation                                                               |
+|-----------------|--------------------------------------------|---------------------------------------------------------------------------|
+| `==`            | `event:goal==Signup`                       | Simple equality - completed goal "Signup"                                 |
+| `!=`            | `visit:country!=FR`                        | Simple inequality - country is not France                                 |
+| <code>\|</code> | <code>visit:source==Github\|Twitter</code> | IN expression - visit source is Github or Twitter.                        |
+| `;`             | `event:goal==Signup;visit:country==DE`     | AND expression - completed goal "Signup" and country is Germany           |
+| `*`             | `event:page==/blog/*`                      | Wildcard - matches any character                                          |
 
 :::tip Want to use the `|` character in a filter value? 
 You can escape it with a backslash. For example, `visit:utm_campaign==campaign\|one` will let you filter by the literal `campaign|one` value
 :::
 
-You can also exclude by a specific property, using a `!=` filter:
+#### Limitations
 
-```
-visit:country!=FR
-```
-
-It is currently only possible to exclude one value at a time.
+* It is currently possible to exclude only one value at a time (e.g. `visit:browser!=Chrome|Safari` is not yet supported)
+* Wildcard characters cannot be used in combination with an IN expression (except for pageview goals - e.g. `event:goal==Signup|Visit+/register` is supported)
+* Inequality `!=` operator is currently not supported for goals
 
 #### Filtering by goals
 
