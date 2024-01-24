@@ -177,7 +177,9 @@ You can [track sales](https://plausible.io/docs/ecommerce-revenue-tracking) by m
 
 You're now getting events on Plausible when a customer completes an order in your Shopify store.
 
-If you want to track custom properties, such as order IDs or the number of items in an order, here's an example to get you started:
+If you want to track custom properties, such as order IDs or the number of items in an order, here's an example to get you started.
+
+Don't forget to add the custom properties `orderId` and `itemCount` in the Plausible UI, as well.
 
 ```
 {% if first_time_accessed == true and post_purchase_page_accessed == false %}
