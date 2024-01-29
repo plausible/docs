@@ -65,7 +65,7 @@ more depth. Here's the full list of properties we collect automatically:
 
 | Property              | Example                       | Description                                                                                                                             |
 | --------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| event:name            | pageview                      | Name of the event triggered. `pageview` is a reserved event name but custom events can be named anything. Use this property to represent a custom event goal.                             |
+| event:goal            | Register                      | A custom action that you want your users to take. To use this property, you first need to configure some goals in the [site settings](/website-settings), or via the [Sites API](/sites-api). Learn more about goals [here](/goal-conversions).                            |
 | event:page            | /blog/remove-google-analytics | Pathname of the page where the event is triggered. You can also use an asterisk to group multiple pages (`/blog*`)  |
 | visit:entry_page      | /home                         | Page on which the visit session started (landing page).                                                                                 |
 | visit:exit_page       | /home                         | Page on which the visit session ended (last page viewed).                                                                               |
@@ -96,41 +96,38 @@ Custom property filters and breakdowns can't be combined arbitrarily. We plan to
 
 ### Filtering
 
-Most endpoints support a `filters` query parameter to drill down into your data. Currently, only simple equality filters are supported.
+Most endpoints support a `filters` query parameter to drill down into your data. You can filter by all properties described in the [Properties table](#properties), using the following operators:
 
-An equality filter can be specified with url-encoded `==`. Filters can be joined together with `;` which applies a logical
-`AND` operator to the filters. Here's a filter expression combining two filters:
-
-```
-visit:browser==Firefox;visit:country==FR
-```
-
-You can join values together with a `|` to express an IN filter. The filter will match if the key is
-in any of the values. For example, the following filter:
-
-```
-visit:country==FR|DE
-```
-
-Would match both visitors from both France and Germany.
+| Operator        | Usage example                              | Explanation                                                               |
+|-----------------|--------------------------------------------|---------------------------------------------------------------------------|
+| `==`            | `event:goal==Signup`                       | Simple equality - completed goal "Signup"                                 |
+| `!=`            | `visit:country!=FR`                        | Simple inequality - country is not France                                 |
+| <code>\|</code> | <code>visit:source==Github\|Twitter</code> | IN expression - visit source is Github or Twitter.                        |
+| `;`             | `event:goal==Signup;visit:country==DE`     | AND expression - completed goal "Signup" and country is Germany           |
+| `*`             | `event:page==/blog/*`                      | Wildcard - matches any character                                          |
 
 :::tip Want to use the `|` character in a filter value? 
 You can escape it with a backslash. For example, `visit:utm_campaign==campaign\|one` will let you filter by the literal `campaign|one` value
 :::
 
-You can also exclude by a specific property, using a `!=` filter:
+#### Limitations
 
-```
-visit:country!=FR
-```
+* It is currently possible to exclude only one value at a time (e.g. `visit:browser!=Chrome|Safari` is not yet supported)
+* Wildcard characters cannot be used in combination with an IN expression (except for pageview goals - e.g. `event:goal==Signup|Visit+/register` is supported)
+* Inequality `!=` operator is currently not supported for goals
 
-It is currently only possible to exclude one value at a time.
+#### Filtering by goals
 
-#### Filtering by pageview goals
+Unlike other properties you need to set up the goals in your [site settings](/website-settings), or via the [Sites API](/sites-api) first, before you can filter by them.
 
-[Pageview goals](/pageview-goals) are a convenient way to see pageviews for a specific page path in the Plausible dashboard. To filter by a pageview goal in Stats API, simply use a filter like this: `event:page==/your-page`. As in your dashboard, you can use [wildcards](/pageview-goals#pageview-goals-support-wildcards) like `event:page==/blog**` to represent pageview goals that match with multiple paths.  
+For custom event goals, the filter value is simply the name of your goal, e.g. `event:goal==Signup`.
 
-It is currently not possible to combine wildcards and `|` in the same query.
+For pageview goals, the value should contain the string `"Visit"` followed by a space character, and the pathname of your pageview goal. For example: `Visit /register`.
+
+To include a space character in the query part of the URL, you can use `%20` (a URL encoded space character) or a `+` sign. For example:
+
+* `event:goal==Visit%20/register`
+* `event:goal==Outbound+Link:+Click`
 
 ## Endpoints
 
@@ -485,11 +482,11 @@ curl 'https://plausible.io/api/v1/stats/timeseries?site_id=$SITE_ID&period=6mo&f
 
 ### Breakdown custom event by custom properties
 
-A more advanced use-case where custom events are used along with custom properties. Let's say you have a `Download` custom event along with
+A more advanced use-case where custom events are used along with custom properties. Let's say you have a `Download` custom event goal along with
 a custom property called `method`. You can get a breakdown of download methods with the following query:
 
 ```bash title="Breakdown of download methods"
-curl 'https://plausible.io/api/v1/stats/breakdown?site_id=$SITE_ID&period=6mo&property=event:props:method&filters=event:name%3D%3DDownload'
+curl 'https://plausible.io/api/v1/stats/breakdown?site_id=$SITE_ID&period=6mo&property=event:props:method&filters=event:goal%3D%3DDownload'
   -H "Authorization: Bearer ${TOKEN}"
 ```
 
