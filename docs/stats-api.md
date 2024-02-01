@@ -42,6 +42,7 @@ You can specify a `metrics` option in the query, to choose the metrics for each 
 | `bounce_rate`     | Bounce rate percentage                                                                                                                                    |
 | `visit_duration`  | Visit duration in seconds                                                                                                                                 |
 | `events`          | The number of events (pageviews + custom events)                                                                                                          |
+| `conversion_rate` | The percentage of visitors who completed the goal. Requires an `event:goal` filter or `event:goal` property in the breakdown endpoint                     |
 
 ### Time periods
 
@@ -199,7 +200,11 @@ See [time periods](#time-periods). If not specified, it will default to `30d`.
 
 **metrics** <Optional />
 
-List of metrics to aggregate. Valid options are `visitors`, `visits`, `pageviews`, `views_per_visit`, `bounce_rate`, `visit_duration` and `events`. If not specified, it will default to `visitors`.
+List of metrics to aggregate. Valid options are `visitors`, `visits`, `pageviews`, `views_per_visit`, `bounce_rate`, `visit_duration`, `events` and `conversion_rate`. If not specified, it will default to `visitors`.
+
+:::note
+You can only query `conversion_rate` when filtering by a `event:goal`. 
+:::
 
 <hr / >
 
@@ -358,8 +363,11 @@ See [time periods](#time-periods). If not specified, it will default to `30d`.
 
 **metrics** <Optional />
 
-Comma-separated list of metrics to show for each item in breakdown. Valid options are `visitors`, `pageviews`, `bounce_rate`, `visit_duration`, `visits` and `events`. If not
-specified, it will default to `visitors`.
+Comma-separated list of metrics to show for each item in breakdown. Valid options are `visitors`, `pageviews`, `bounce_rate`, `visit_duration`, `visits`, `events` and `conversion_rate`. If not specified, it will default to `visitors`.
+
+:::note
+You can only query `conversion_rate` when filtering by `event:goal` or breaking down on the `event:goal` property. 
+:::
 
 <hr / >
 
