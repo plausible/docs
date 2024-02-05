@@ -68,4 +68,6 @@ Plausible Analytics is trusted by thousands of subscribers to deliver their webs
 
 * [De-Google-ing your website analytics](https://changelog.com/podcast/396) by The Changelog podcast
 
+* [Google Analytics vs Plausible Analytics: Website Analytics Review for Small Businesses](https://boujeebrands.io/posts/plausible-analytics-vs-google-analytics/) by James Walker on boujeebrands.io
+
 Let us know about any other reviews that you've published and we will feature them. Thanks for your support!
