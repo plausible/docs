@@ -86,6 +86,7 @@ module.exports = {
         label: 'Guides',
         items: [
           'proxy/guides/cloudflare',
+          'proxy/guides/deno',
           'proxy/guides/wordpress',
           'proxy/guides/akamai',
           'proxy/guides/netlify',
