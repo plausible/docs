@@ -202,5 +202,3 @@ Don't forget to add the custom properties `orderId` and `itemCount` in the Plaus
 <img alt="Shopify Additional scripts box" src={useBaseUrl('img/shopify-additional-scripts-revenue-metrics.png')} />
 
 5. Click 'Save' and you're done!
-
-<img alt="Revenue goal custom props" src={useBaseUrl('img/revenue-goal-custom-props.png')} />
