@@ -1,6 +1,6 @@
 module.exports = {
   someSidebar: {
-    "Get Started": [
+    'Get Started': [
       'introduction',
       'register-account',
       'add-website',
@@ -8,9 +8,9 @@ module.exports = {
       'script-extensions',
       'integration-guides',
       'troubleshoot-integration',
-      'your-plausible-experience'
+      'your-plausible-experience',
     ],
-    "Website Settings": [
+    'Website Settings': [
       'landing-page',
       'website-settings',
       'change-domain-name',
@@ -26,9 +26,9 @@ module.exports = {
       'transfer-ownership',
       'reset-site-data',
       'delete-site-data',
-      'excluding'
+      'excluding',
     ],
-    "Stats Dashboard": [
+    'Stats Dashboard': [
       'guided-tour',
       'compare-stats',
       'filters-segments',
@@ -43,9 +43,9 @@ module.exports = {
       'export-stats',
       'metrics-definitions',
       'keyboard-shortcuts',
-      'dashboard-faq'
+      'dashboard-faq',
     ],
-    "Events, Funnels and Ecommerce": [
+    'Events, Funnels and Ecommerce': [
       'goal-conversions',
       'funnel-analysis',
       'ecommerce-revenue-tracking',
@@ -62,7 +62,7 @@ module.exports = {
           'custom-props/for-pageviews',
           'custom-props/for-custom-events',
           'custom-props/props-dashboard',
-        ]
+        ],
       },
       {
         type: 'category',
@@ -70,57 +70,51 @@ module.exports = {
         items: [
           'webflow-integration',
           'shopify-integration',
-          'carrd-integration'
+          'carrd-integration',
         ],
-      }
+      },
     ],
-    "API": [
-      'stats-api',
-      'events-api',
-      'sites-api'
-    ],
-    "Adblockers": [
-      'proxy/introduction',
+    API: ['stats-api', 'events-api', 'sites-api'],
+    Adblockers: [
+      { type: 'doc', id: 'proxy/introduction', label: 'Overview' },
       {
         type: 'category',
-        label: 'Guides',
+        label: 'Proxy Guides',
         items: [
-          'proxy/guides/cloudflare',
-          'proxy/guides/wordpress',
-          'proxy/guides/akamai',
-          'proxy/guides/netlify',
-          'proxy/guides/vercel',
-          'proxy/guides/nextjs',
-          'proxy/guides/cloudfront',
-          'proxy/guides/nginx',
-          'proxy/guides/caddy',
-          'proxy/guides/apache'
+          { type: 'doc', id: 'proxy/guides/cloudflare', label: 'Cloudflare' },
+          { type: 'doc', id: 'proxy/guides/deno', label: 'Deno Deploy' },
+          { type: 'doc', id: 'proxy/guides/wordpress', label: 'WordPress' },
+          { type: 'doc', id: 'proxy/guides/akamai', label: 'Akamai' },
+          { type: 'doc', id: 'proxy/guides/netlify', label: 'Netlify' },
+          { type: 'doc', id: 'proxy/guides/vercel', label: 'Vercel' },
+          {
+            type: 'doc',
+            id: 'proxy/guides/nextjs',
+            label: 'Next.js on Vercel',
+          },
+          { type: 'doc', id: 'proxy/guides/cloudfront', label: 'CloudFront' },
+          { type: 'doc', id: 'proxy/guides/nginx', label: 'Nginx' },
+          { type: 'doc', id: 'proxy/guides/caddy', label: 'Caddy' },
+          { type: 'doc', id: 'proxy/guides/apache', label: 'Apache' },
         ],
-      }
+      },
     ],
-    "Account Settings": [
+    'Account Settings': [
       '2fa',
       'change-email',
       'reset-password',
       'dashboard-appearance',
-      'delete-account'
+      'delete-account',
     ],
-    "Billing and Subscription": [
+    'Billing and Subscription': [
       'trial-to-paid',
       'subscription-plans',
       'change-plan',
       'cancel-subscription',
       'download-invoices',
-      'billing'
+      'billing',
     ],
-    "Self-Hosting": [
-      'self-hosting',
-      'self-hosting-configuration'
-    ],
-    "Contribute": [
-      'contribute',
-      'plausible-analytics-reviews',
-      'authors'
-    ],
+    'Self-Hosting': ['self-hosting', 'self-hosting-configuration'],
+    Contribute: ['contribute', 'plausible-analytics-reviews', 'authors'],
   },
-};
+}
