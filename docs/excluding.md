@@ -6,86 +6,32 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 By default, Plausible Analytics tracks every visitor to your website. When you're working on your site, you might not want to record your own visits and pageviews.
 
-To block your page views from your Plausible Analytics stats dashboard, you can use a standard adblocking browser extension. Some extensions may automatically opt you out of Plausible tracking as soon as you activate them but you can follow these steps to make sure that they do so. 
+Here's how to block your pageviews from your Plausible Analytics stats dashboard.
  
 :::tip Using WordPress?
 You can use our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) which excludes views coming from admins and other user roles
 :::
 
-## uBlock Origin
+## How to exclude your own visits from being counted
 
-When using [uBlock Origin](https://github.com/gorhill/uBlock/#installation), you can follow these steps to make sure that you exclude yourself from being counted in the stats. 
+* Go into the [site settings](website-settings.md) of the site you'd like to block yourself from.
 
-### Locate the My Rules tab
+* Click on the "**Shields**" section in the left-hand sidebar
 
-* Click the "**uBlock Origin**" icon in your browser
+* There's you'll see a list of all the IP addresses that you're blocking currently
 
-<img alt="The uBlock Origin browse icon" src={useBaseUrl('img/ublock-origin-exclude-own-visits.png')} />
+* Click on the "**Add IP Address**" button to add a new address to the block list
 
-* Then click the "**Dashboard**" icon in the lower-right corner to open the uBlock Origin dashboard
+* You can manually insert an IP address or click to block your current IP address
 
-<center><img alt="The uBlock Origin dashboard icon" src={useBaseUrl('img/ublock-origin-exclude-own-visits-settings.png')} /></center>
+* You can also add any description to help you identify which device or location you have blocked
 
-* Tick the "**I am an advanced user**" box
+* You can block up to 30 different IP addresses per website
+  
+* Once added to the blocklist, we will start blocking traffic from that specific IP address within a few minutes
+  
+## How to remove an IP address from the blocklist
 
-<img alt="The uBlock Origin advanced user" src={useBaseUrl('img/ublock-origin-exclude-own-visits-advanced-user.png')} />
+* In the list of all the IP addresses that you're blocking currently, find the IP address you want to remove
 
-* Select the "**My rules**" tab in the top navigation
-
-<img alt="My Rules tab in the uBlock Origin dashboard" src={useBaseUrl('img/ublock-origin-exclude-own-visits-my-rules.png')} />
-
-### Block the Plausible Analytics script on your domain
-
-In the "**Temporary rules**" box on the right-hand side of the page insert the following rule. Remember to change `yourdomain.com` with the domain name where you installed Plausible Analytics.
-
-```html 
-yourdomain.com plausible.io * block 
-```
-
-Or in case you're proxying our script, use this. Remember to change `yourproxy.com` with location where you're serving the Plausible script from and `yourdomain.com` with the domain name where you installed Plausible Analytics.
-
-```html
-yourdomain.com yourproxy.com * block 
-```
-
-<img alt="Add a new rule the uBlock Origin dashboard" src={useBaseUrl('img/ublock-origin-exclude-own-visits-add-rule.png')} />
-
-Once you’ve entered the correct rule, click on the "**Save**" button and then click on the "**Commit**" button.
-
-<img alt="Save and commit your new rule the uBlock Origin dashboard" src={useBaseUrl('img/ublock-origin-exclude-own-visits-save-commit.png')} />
-
-## Adblock Plus and AdGuard
-
-When using [Adblock Plus](https://adblockplus.org/) or [Adguard](https://adguard.com), you can follow these steps to make sure that you exclude yourself from being counted in the stats. 
-
-Go into your Adblock Plus or Adguard settings and click on "**Advanced**" (Adblock Plus) or "**User Rules**" (Adguard) in the left hand side menu. 
-
-<center><img alt="Adguard and Adblock Plus dashboard icon" src={useBaseUrl('img/adblock-plus-adguard-origin-exclude-own-visits.png')} /></center>
-
-Insert the following rule and click on the "**Add**"/"**Save**" button. Remember to change `yourdomain.com` with the domain name where you installed Plausible Analytics.
-
-<img alt="Save and commit your new rule Adguard and Adblock Plus dashboard" src={useBaseUrl('img/adblock-plus-adguard-origin-exclude-own-visits-settings.png')} />
-
-```html
-||plausible.io^$script,domain=yourdomain.com 
-```
-
-Or in case you're proxying our script, use this. Remember to change `yourproxy.com` with location where you're serving the Plausible script from and `yourdomain.com` with the domain name where you installed Plausible Analytics.
-
-```html
-||yourproxy.com^$script,domain=yourdomain.com 
-```
-
-## Return to your website to ensure it works
-
-You can test your filter by:
-
-* Reloading your website multiple times and making sure that the total page views number in your Plausible Analytics dashboard does not increase. This isn’t very reliable if there are other people visiting your site at the same time
-
-* Alternatively you can load your website, open the browser developer tools and ensure that the Plausible Analytics script isn't loading in the "**Network**" tab. Right-click anywhere on your page and click "**Inspect**" (the wording may vary depending on your web browser) to open the developer tools. Alternatively, press the key `F12` on Firefox or Chrome or `Option+Command+c` on Safari
-
-* Your adblocker will also show you the number of domains and/or scripts they block when you visit the individual website
-
-:::tip Want to make it easy for your team to exclude themselves from being counted?
-You can allow them to set a special `localStorage` flag in the browser. [Here's how](excluding-localstorage.md)
-:::
+* Click on the "**Remove**" button next to that IP address to remove it from the blocklist
