@@ -22,16 +22,22 @@ Do you want to group all your blog posts and analyze the traffic to the blog sep
 
 You can also group different pages or dynamic URLs by using asterisks. Track all the blog posts by using `/blog*` (if your blog subdirectory is named `blog`) or track Woocommerce checkout pages for your ecommerce (`/checkout/order-received/*`). You can add asterisks in front and back in the same way that you would use "contain" (`*keyword*`). It finds any URL containing a specific keyword.
 
-## Filtering out pages
-
-Do you want to exclude traffic that has visited a specific section of your site such as your logged in pages or your order confirmation page? You can filter out pages by using the "**Filter**" button on the top of your dashboard. The "**Page**" menu within the filter button includes option for "**is not**".
-
 :::note
 Do you prefer to display your page groupings permanently in your dashboard? You can do so using [our pageview goals](pageview-goals.md).
 :::
 
+## Filtering out pages
+
+Do you want to filter out traffic that has visited a specific section of your site such as your logged in pages or your order confirmation page? You can filter out pages by using the "**Filter**" button on the top of your dashboard. The "**Page**" menu within the filter button includes option for "**is not**".
+
 ### How it works
 
-Plausible Analytics records the URL path of each page view as the visitors are browsing your site. Query parameters are discarded from the path to make sure they don't show up as different pages in Plausible Analytics.
+Plausible Analytics records the URL path of each page view as the visitors are browsing your site. 
 
-If your website is a single-page application with `pushState` routing, Plausible Analytics will track page views automatically with no extra work. If you're using a frontend framework that uses the URL hash for routing, we also have a special [hash-based script](hash-based-routing.md).
+* Query parameters are discarded from the path to make sure they don't show up as different pages in Plausible. This means that pages like `yoursite.com/index.php?article=some_article&page=11` will be reported as `yoursite.com/index.php` in your Plausible dashboard. If you still want some pages to be reported with the complete URL that includes the query part, [here's what you should do](custom-query-params.md)
+
+* In some cases, you might want to provide Plausible with a custom URL to use instead of the actual URL of a page. This is especially helpful to redact and aggregate multiple pages whose URLs contain user identifiers. This is helpful both from the privacy and analytics perspective. Here's [how you can aggregate page URLs](custom-locations.md)
+
+* Do you see identical page paths with and without a trailing slash (`/some_article` and `/some_article/`) in your pages report? This points to a duplicate content issue on the site and can be solved [with a 301 redirect](https://ahrefs.com/blog/trailing-slash/)
+
+* If your website is a single-page application with `pushState` routing, Plausible Analytics will track page views automatically with no extra work. If you're using a frontend framework that uses the URL hash for routing, we also have a special [hash-based script](hash-based-routing.md)
