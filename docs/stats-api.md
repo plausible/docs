@@ -106,7 +106,7 @@ Most endpoints support a `filters` query parameter to drill down into your data.
 | `;`             | `event:goal==Signup;visit:country==DE`     | AND expression - completed goal "Signup" and country is Germany           |
 | `*`             | `event:page==/blog/*`                      | Wildcard - matches any character                                          |
 
-:::tip Want to use the `|` character in a filter value? 
+:::tip Want to use the `|` character in a filter value?
 You can escape it with a backslash. For example, `visit:utm_campaign==campaign\|one` will let you filter by the literal `campaign|one` value
 :::
 
@@ -137,7 +137,7 @@ This endpoint returns the number of current visitors on your site. A current vis
 in the last 5 minutes.
 
 ```bash title="Try it yourself"
-curl 'https://plausible.io/api/v1/stats/realtime/visitors?site_id=$SITE_ID'
+curl "https://plausible.io/api/v1/stats/realtime/visitors?site_id=$SITE_ID" \
   -H "Authorization: Bearer ${TOKEN}"
 ```
 
@@ -159,7 +159,7 @@ This endpoint aggregates metrics over a certain time period. If you are familiar
 
 
 ```bash title="Try it yourself"
-curl 'https://plausible.io/api/v1/stats/aggregate?site_id=$SITE_ID&period=6mo&metrics=visitors,pageviews,bounce_rate,visit_duration' \
+curl "https://plausible.io/api/v1/stats/aggregate?site_id=$SITE_ID&period=6mo&metrics=visitors,pageviews,bounce_rate,visit_duration" \
   -H "Authorization: Bearer ${TOKEN}"
 ```
 
@@ -220,7 +220,7 @@ the main visitor graph.
 
 
 ```bash title="Try it yourself"
-curl 'https://plausible.io/api/v1/stats/timeseries?site_id=$SITE_ID&period=6mo'
+curl "https://plausible.io/api/v1/stats/timeseries?site_id=$SITE_ID&period=6mo" \
   -H "Authorization: Bearer ${TOKEN}"
 ```
 
@@ -299,7 +299,7 @@ This endpoint can be used to fetch data for `Top sources`, `Top pages`, `Top cou
 
 
 ```bash title="Try it yourself"
-curl 'https://plausible.io/api/v1/stats/breakdown?site_id=$SITE_ID&period=6mo&property=visit:source&metrics=visitors,bounce_rate&limit=5' \
+curl "https://plausible.io/api/v1/stats/breakdown?site_id=$SITE_ID&period=6mo&property=visit:source&metrics=visitors,bounce_rate&limit=5" \
   -H "Authorization: Bearer ${TOKEN}"
 ```
 
@@ -387,7 +387,7 @@ Let's say you want to show a similar report to the `Top pages` report in the Pla
 `/api/v1/stats/breakdown` endpoint and specify `event:page` as the property to group by.
 
 ```bash title="Top pages"
-curl 'https://plausible.io/api/v1/stats/breakdown?site_id=$SITE_ID&period=6mo&property=event:page&limit=5'
+curl "https://plausible.io/api/v1/stats/breakdown?site_id=$SITE_ID&period=6mo&property=event:page&limit=5" \
   -H "Authorization: Bearer ${TOKEN}"
 ```
 
@@ -424,7 +424,7 @@ Let's say you want to get the number of visitors to a specific page on your webs
 filtering your stats on the `event:page` property:
 
 ```bash title="Visitors to /order/confirmation"
-curl 'https://plausible.io/api/v1/stats/aggregate?site_id=$SITE_ID&period=6mo&filters=event:page%3D%3D%2Forder%2Fconfirmation'
+curl "https://plausible.io/api/v1/stats/aggregate?site_id=$SITE_ID&period=6mo&filters=event:page%3D%3D%2Forder%2Fconfirmation" \
   -H "Authorization: Bearer ${TOKEN}"
 ```
 
@@ -445,7 +445,7 @@ To graph your traffic from Google over time, you can use the `timeseries` endpoi
 filter expression `visit:source==Google`.
 
 ```bash title="Monthly traffic from Google"
-curl 'https://plausible.io/api/v1/stats/timeseries?site_id=$SITE_ID&period=6mo&filters=visit:source%3D%3DGoogle' \
+curl "https://plausible.io/api/v1/stats/timeseries?site_id=$SITE_ID&period=6mo&filters=visit:source%3D%3DGoogle" \
   -H "Authorization: Bearer ${TOKEN}"
 ```
 
@@ -486,7 +486,7 @@ A more advanced use-case where custom events are used along with custom properti
 a custom property called `method`. You can get a breakdown of download methods with the following query:
 
 ```bash title="Breakdown of download methods"
-curl 'https://plausible.io/api/v1/stats/breakdown?site_id=$SITE_ID&period=6mo&property=event:props:method&filters=event:goal%3D%3DDownload'
+curl "https://plausible.io/api/v1/stats/breakdown?site_id=$SITE_ID&period=6mo&property=event:props:method&filters=event:goal%3D%3DDownload" \
   -H "Authorization: Bearer ${TOKEN}"
 ```
 
