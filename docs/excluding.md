@@ -22,7 +22,7 @@ You can use our [official WordPress plugin](https://plausible.io/wordpress-analy
 
 * You can also add a description to help you identify which device or location you have blocked
 
-* You can block up to 30 different IP addresses per website
+* You need to add one IP address at a time and it has to be the full IP address as IP ranges are not supported. You can block up to 30 different IP addresses per website
   
 * Once added to the block list, we will start blocking traffic from that specific IP address within a few minutes
 
