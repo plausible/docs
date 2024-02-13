@@ -26,9 +26,9 @@ You can use our [official WordPress plugin](https://plausible.io/wordpress-analy
   
 * Once added to the block list, we will start blocking traffic from that specific IP address within a few minutes
 
-* You can see the list of all the IP addresses that you're blocking at the moment. The entry in the list which has the "**YOU**" tag is the IP address of your current device 
+* You can see the list of all the IP addresses that you're blocking at the moment. The entry in the list which has the "**YOU**" tag is your current IP address 
 
-:::tip Do you frequently use VPNs or change your IP addresses?
+:::tip Do you use VPNs or often change your IP addresses?
 You can set a special `localStorage` flag in your browser so you don't need to frequently block new IP addresses. [Here's how](excluding-localstorage.md)
 :::
   
