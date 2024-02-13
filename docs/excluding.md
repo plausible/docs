@@ -1,10 +1,10 @@
 ---
-title: Opt out and exclude yourself from the analytics
+title: How to exclude internal traffic from your analytics
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-By default, Plausible Analytics tracks every visitor to your website. When you're working on your site, you might not want to record your own visits and page views. Here's how to block your page views from your Plausible Analytics stats dashboard.
+By default, Plausible Analytics tracks every visitor to your website. You might not want your office traffic to be counted. Or when you're working on your site, you might not want to record your own visits and page views. Here's how to block your internal traffic from your Plausible Analytics stats dashboard.
  
 :::tip Using WordPress?
 You can use our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) which excludes views coming from admins and other user roles
@@ -16,17 +16,21 @@ You can use our [official WordPress plugin](https://plausible.io/wordpress-analy
 
 * Click on the "**Shields**" section in the left-hand sidebar
 
-* There you'll see a list of all the IP addresses that you're blocking at the moment
-
 * Click on the "**Add IP Address**" button to add a new address to the block list
 
-* You can manually insert an IP address or click to block your current IP address
+* You can manually insert an IP address (both IPv4 and IPv6 addresses are acceptable) or you can click to block your current public IP address which our system will find and display for you
 
 * You can also add a description to help you identify which device or location you have blocked
 
 * You can block up to 30 different IP addresses per website
   
 * Once added to the block list, we will start blocking traffic from that specific IP address within a few minutes
+
+* You can see the list of all the IP addresses that you're blocking at the moment. The entry in the list which has the "**YOU**" tag is the IP address of your current device 
+
+:::tip Do you frequently use VPNs or change your IP addresses?
+You can set a special `localStorage` flag in your browser so you don't need to frequently block new IP addresses. [Here's how](excluding-localstorage.md)
+:::
   
 ## How to remove an IP address from the blocklist
 
