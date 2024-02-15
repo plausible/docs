@@ -91,10 +91,6 @@ more depth. Here's the full list of properties we collect automatically:
 In addition to properties that are collected automatically, you can also query for [custom properties](/custom-props/introduction).
 To filter or break down by a custom property, use the key `event:props:<custom_prop_name>`. [See example](#breakdown-custom-event-by-custom-properties) for how to use it.
 
-:::info Clients are limited to filtering or breaking down on just one custom property at a time
-Custom property filters and breakdowns can't be combined arbitrarily. We plan to [support this in the future](https://feedback.plausible.io/195)
-:::
-
 ### Filtering
 
 Most endpoints support a `filters` query parameter to drill down into your data. You can filter by all properties described in the [Properties table](#properties), using the following operators:
