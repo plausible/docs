@@ -14,7 +14,7 @@ Here's what the full script tag will look like:
 <script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.hash.js"></script>
 ```
 
-If you're using [a proxy](/proxy/introduction.md), you can add the `.hash.js` as follows: `https://yourproxylocation.com/js/index.hash.js`
+If you're using [a proxy](/proxy/introduction.md), you can add the `.hash.js` as follows: `https://yourproxylocation.com/js/script.hash.js`
 
 This tracker will change two things about how events are collected:
 * Trigger pageviews on the `hashchange` event
