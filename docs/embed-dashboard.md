@@ -47,9 +47,19 @@ max-width: 1024px;
 margin: 0 auto;
 ```
 
-This gives a usable max width and centers the dashboard, but may not work with your design. If you want manual control over these rules, you can
-set `?width=manual` in the shared link URL. In that case, the iframe will not set any CSS rules to contain and center itself, it will grow to whatever
-container you create for it. This way you can choose your own max-width and to align the dashboard as you wish.
+This gives a usable max width and centers the dashboard, but may not work with your site design. If you want manual control over these rules, you can
+add `&width=manual` to the end of your shared link URL. For instance, if your shared link is `https://plausible.io/share/yourdomain.com?auth=O38--W2DDc75s0GJodlCV`, it would look like this `https://plausible.io/share/yourdomain.com?auth=O38--W2DDc75s0GJodlCV&width=manual`.
+
+In that case, the iframe will not set any CSS rules to contain and center itself, it will grow to whatever
+container you create for it. This way you can choose your own max-width and to align the dashboard as you wish. It would look like this if you wish to set the max width to 400px:
+
+```html
+<body>
+<div style="width: 400px;"> <!-- the wrapping container lets you control the width -->
+<!-- below the embed code generated for &width=manual shared link -->
+</div>
+</body>
+```
 
 :::tip Prefer to build a completely custom dashboard? 
 [Our stats API](stats-api.md) allows you to take individual metrics and create a custom-built dashboard within your UI in whichever shape or form you want. This requires more development time from your side but you get full flexibility
