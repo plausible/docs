@@ -22,7 +22,7 @@ Check out this blog post for more details on the value of [tracking outbound lin
 "**Outbound Link Click Tracking**" is an enhanced measurement and not included in our default script. This is because we want to keep the default script as simple and lightweight as possible. The [additional enhanced measurements](script-extensions.md) you can choose to add depending on your needs.
 
 :::tip Using WordPress?
-The quickest way to start tracking outbound link clicks it to use our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) 
+The quickest way to start tracking outbound link clicks is to use our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) 
 :::
 
 If you want to track external link clicks, here's what you need to do:
