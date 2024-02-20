@@ -15,8 +15,13 @@ File downloads tracking is essential for many site owners and Plausible helps yo
 * See which files are clicked the most
 * See on which of your pages the particular file gets the clicks
 * Filter the dashboard by a file URL to see what type of visitors click the most (referral source, location, device, browser, OS)
+* Group your file downloads by any domain name or keyword
 
 "**File Downloads Tracking**" is an enhanced measurement and not included in our default script. This is because we want to keep the default script as simple and lightweight as possible. The [additional enhanced measurements](script-extensions.md) you can choose to add depending on your needs.
+
+:::tip Using WordPress?
+The quickest way to start tracking file downloads is to use our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) 
+:::
 
 If you want to track file downloads, here's what you need to do:
 
@@ -67,6 +72,8 @@ Click on "**File Download**" to see the full list of all clicks on all files and
 * Devices (screen size, browser, OS) that click on file download 
 
 Click on a particular file URL to filter the dashboard by those clicks only and get the full overview of that specific file.
+
+Want to group file downloads by the domain name or any other keyword? In the "**Filter**" button in the top right of your dashboard, choose "**Property**". Then select "**url**" (this includes all the file download URLs we have recorded) and use the "**contains**" option. Add whatever domain or keyword you want to group the file downloads by and click on the "**Apply Filter**" button.
 
 ## Which file types are tracked?
 
