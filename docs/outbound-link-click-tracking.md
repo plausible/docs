@@ -15,10 +15,15 @@ Outbound link click tracking is essential for many site owners and Plausible hel
 * See which external URLs are clicked the most
 * See on which of your pages the particular outbound link gets the clicks
 * Filter the dashboard by external URL to see what type of visitors click the most (referral source, country, device, browser, OS)
+* Group your external link clicks by domain name or any keyword
 
 Check out this blog post for more details on the value of [tracking outbound link clicks](https://plausible.io/blog/track-outbound-link-clicks).
 
 "**Outbound Link Click Tracking**" is an enhanced measurement and not included in our default script. This is because we want to keep the default script as simple and lightweight as possible. The [additional enhanced measurements](script-extensions.md) you can choose to add depending on your needs.
+
+:::tip Using WordPress?
+The quickest way to start tracking outbound link clicks it to use our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) 
+:::
 
 If you want to track external link clicks, here's what you need to do:
 
@@ -69,6 +74,8 @@ Click on "**Outbound Link: Click**" to see the full list of all clicks on all ex
 * Devices (screen size, browser, OS) that click on external links
 
 Click on a particular external URL to filter the dashboard by those clicks only and get the full overview of that specific URL.
+
+Want to group external link clicks by the domain name or any other keyword? In the "**Filter**" button in the top right of your dashboard, choose "**Property**". Then select "**url**" (this includes all the external link click URLs we have recorded) and use the "**contains**" option. Add whatever domain or keyword you want to group the external link clicks by and click on the "**Apply Filter**" button.
 
 :::tip Are you using cloaked affiliate links on your site?
 Here's how to automatically [track clicks on cloaked affiliate links](custom-automatic-link-tracking.md)
