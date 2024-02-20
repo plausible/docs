@@ -1,5 +1,5 @@
 ---
-title: How to exclude internal traffic from your analytics
+title: Exclude internal traffic from your analytics
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
