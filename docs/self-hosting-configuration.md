@@ -17,7 +17,8 @@ Following are the variables that can be used to configure the availability of th
 | BASE_URL             | --      | The hosting URL of the server, used for URL generation. In production systems, this should be your ingress host.                                                                                    |
 | PORT                 | 8000    | The port on which the server is available.                                                                                                                                                          |
 | LISTEN_IP            | 0.0.0.0 | The IP address on which the server is listening. `0.0.0.0` means all interfaces, `127.0.0.1` means localhost. Also see the related section **Erlang platform ports** below.                         |
-| SECRET_KEY_BASE      | --      | An internal secret key used by [Phoenix Framework](https://www.phoenixframework.org/). Follow the [instructions](https://hexdocs.pm/phoenix/Mix.Tasks.Phx.Gen.Secret.html#content) or use `openssl rand -hex 64` to generate one. |
+| SECRET_KEY_BASE      | --      | An internal secret key used by [Phoenix Framework](https://www.phoenixframework.org/). Follow the [instructions](https://hexdocs.pm/phoenix/Mix.Tasks.Phx.Gen.Secret.html#content) or use `openssl rand -hex 64` or `openssl rand -base64 64` to generate one. |
+| TOTP_VAULT_KEY       | --      | A secret key for Time-based One-Time Password (TOTP) encryption at rest. Use `openssl rand -base64 32` to generate one. |
 | DISABLE_REGISTRATION | true    | Restricts registration of new users. Possible values are `true` (full restriction), `false` (no restriction), and `invite_only` (only the invited users can register).                                                                                                                            |
 | LOG_FAILED_LOGIN_ATTEMPTS | false | Controls whether to log warnings about failed login attempts. |
 | LOG_LEVEL | warning | Controls the logging level. Possible values are `error`, `warning`, `info`, and `debug`
@@ -45,7 +46,7 @@ Plausible uses [PostgreSQL](https://www.tutorialspoint.com/postgresql/postgresql
 | ECTO_IPV6                    | --                                      | When defined, enables ipv6 for the PostgreSQL connection. [Applicable](https://github.com/plausible/analytics/pull/1661) for hosting on fly.io.                                                                              |
 | CLICKHOUSE_DATABASE_URL      | http://plausible_events_db:8123/plausible_events_db     | Connection string for Clickhouse in the same format, i.e. for docker-compose setup http://ip.or.domain.to.server:8123/plausible_events_db                                                                                       |
 | CLICKHOUSE_FLUSH_INTERVAL_MS | 5000                                    | Interval (in milliseconds) between flushing events and sessions data to Clickhouse. Consult [Clickhouse docs](https://clickhouse.tech/docs/en/introduction/performance/#performance-when-inserting-data) before changing it. |
-| CLICKHOUSE_MAX_BUFFER_SIZE (DEPRECATED) | 10000 | This parameter used to set the maximum size of the buffer of events or sessions. It was replaced with CLICKHOUSE_MAX_BUFFER_SIZE_BYTES in v2.1.0 |
+| CLICKHOUSE_MAX_BUFFER_SIZE (DEPRECATED) | 10000 | This parameter used to set the maximum size of the buffer of events or sessions. It was replaced with `CLICKHOUSE_MAX_BUFFER_SIZE_BYTES` in v2.1.0 |
 | CLICKHOUSE_MAX_BUFFER_SIZE_BYTES | 100000 | Maximum size in bytes of the buffer for events or sessions. Consult [Clickhouse docs](https://clickhouse.tech/docs/en/introduction/performance/#performance-when-inserting-data) before changing it. |
 
 
