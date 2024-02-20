@@ -12,11 +12,15 @@ If you use the 404 error pages tracking feature, then these count towards your b
 
 Tracking 404 error pages is essential for many site owners and Plausible helps you automate this process. With our "**404 Error Pages Tracking**" you can:
 
-* Get an easy overview of which 404 pages are accessed by your visitors
+* Get an easy overview of which 404 pages are accessed by your visitors (you can even group error pages by any keyword)
 * See where visitors find broken links to your 404 error pages
 * Then you can manually fix broken links and redirect error pages
 
 Check out this blog post for more details on the value of [tracking 404 error pages](https://plausible.io/blog/track-404-errors).
+
+:::tip Using WordPress?
+The quickest way to start tracking 404 error pages is to use our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) 
+:::
 
 If you want to track 404 error pages on your site, here's what you need to do:
 
@@ -58,5 +62,7 @@ Select `Custom event` as the goal trigger and enter this exact name: `404`.
 Next, click on the "**Add goal**" button, and you'll be taken back to the Goals page. After you've completed this process, all the 404 error pages will start being tracked and will be displayed in the "**Goal Conversions**" report of your Plausible Analytics dashboard. You'll see "**404**" goal as soon as the first visit on an error page has been tracked.
 
 Click on "**404**" to see the full list of all visits on all error pages and have your dashboard filtered by error pages only. Click on a particular error page URL to filter the dashboard by those clicks only and get the full overview of that specific URL. Then you can figure out how your visitors discover the broken links and fix them.
+
+You can also group 404 error pages by any keyword. In the "**Filter**" button in the top right of your dashboard, choose "**Property**". Then select "**path**" (this includes all the 404 error page paths we have recorded) and use the "**contains**" option. Add whatever keyword you want to group 404 error pages by and click on the "**Apply Filter**" button.
 
 Thanks to [Jeremiah Lee](https://www.jeremiahlee.com/) for contributing this to the Plausible Analytics community!
