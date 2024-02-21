@@ -57,6 +57,26 @@ That's it! Now you can go to your website and verify whether Plausible Analytics
 
 To track custom events, you will simply need to change the default tracking script to add the [tagged-events extension](https://plausible.io/docs/script-extensions#all-our-script-extensions) and, if necessary, add the extra script to triger the custom event. For reference you can check out any of our CRM integration guides. For example, our [Webflow guide](https://plausible.io/docs/webflow-integration)
 
+## Tracking custom properties
+
+You can also track custom properties with our [pageview-props extension](/custom-props/for-pageviews) if you've integrated Plausible via Google Tag Manager. In order to add your custom properties according to the pageview-props instructions, in Google Tag Manager, you need to do the following in your custom HTML tag:
+
+```html
+<script>
+  var script = document.createElement('script');
+  script.defer = true;
+  script.dataset.domain = "YOUR_DATA_DOMAIN";
+  script.dataset.api = "https://plausible.io/api/event";
+  script.src = "https://plausible.io/js/script.js";
+
+  script.setAttribute("event-author", "John Doe");
+  script.setAttribute("event-logged_in", "true");
+  // ... add a new line like above for each property
+
+  document.getElementsByTagName('head')[0].appendChild(script);
+</script>
+```
+
 ## Concerns about using Google Tag Manager
 
 There are a couple of concerns when using Plausible with Google Tag Manager:
