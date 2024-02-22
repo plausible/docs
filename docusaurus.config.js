@@ -19,10 +19,9 @@ module.exports = {
       indexName: 'plausible',
     },
     navbar: {
-      title: 'Plausible Analytics',
       logo: {
         alt: 'Plausible logo',
-        src: 'img/logo.svg',
+        src: 'img/plausible_logo.svg',
         href: 'https://plausible.io/',
         target: '_self',
       },
