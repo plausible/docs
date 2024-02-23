@@ -114,7 +114,6 @@ module.exports = {
       'download-invoices',
       'billing',
     ],
-    'Self-Hosting': ['self-hosting', 'self-hosting-configuration'],
     Contribute: ['contribute', 'plausible-analytics-reviews', 'authors'],
   },
 }
