@@ -1,7 +1,7 @@
 ---
-title: Self-Hosted guides
+title: Plausible Community Edition (CE)
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
+Plausible Community Edition (CE) is our "free as in beer", self-hosted and AGPL-licensed release. Check out the [getting started guide to self-hosting Plausible Community Edition](https://github.com/plausible/community-edition/).
 
-[Plausible Analytics Self-Hosted](https://plausible.io/self-hosted-web-analytics) is our free as in beer and free as in speech version of Plausible Analytics.
+Here's the complete overview of differences between [Plausible Analytics managed hosting in the cloud and Plausible CE](https://plausible.io/self-hosted-web-analytics).
