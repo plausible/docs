@@ -334,6 +334,11 @@ We offer a manual mode in case you want full control over when pageviews are tri
 
 We have a WordPress plugin that makes the integration with WordPress nice and easy. [Here's how to get started with our WordPress plugin](https://plausible.io/wordpress-analytics-plugin).
 
+## Moodle LMS
+
+There is a complete, working guide on how to link Moodle (learning platform) to Plausible.
+[How to connect Plausible with Moodle LMS](https://self-hosted.xn--schchner-2za.de/how-to-connect-plausible-with-moodle-lms/)
+
 ## Swift
 
 [PlausibleSwift](https://github.com/nickoneill/PlausibleSwift) - An implementation of Plausible Analytics pageview and event tracking for Swift. Built and maintained by [Nick O'neill](https://github.com/nickoneill)
