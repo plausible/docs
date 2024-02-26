@@ -16,14 +16,13 @@ You can also use the "**Filter**" button on the top of your dashboard to segment
 
 ## How to block traffic from specific countries
 
-You can use the "**Filter**" button to temporarily filter out traffic from particular countries, regions or cities when doing your reporting and analysis.
+You can also use the "**Filter**" button to temporarily filter out traffic from particular countries, regions or cities when doing your reporting and analysis.
 
-If you prefer to completely block traffic from specific countries from being recorded in your dashboard, you can do so in your site settings: 
+If you prefer to permanently block traffic from specific countries from being recorded in your dashboard, you can do so in your site settings: 
 
 * Visit the [site settings area](website-settings.md) for the dashboard in question
-* Click on "**Shields**" in the left-hand menu
-* Then choose "**Countries**" in the menu
-* Click on the "**Add Country**" button to add a new country to your block list
+* Choose "**Countries**" in the "**Shields**" entry in the left-hand menu
+* Then click on the "**Add Country**" button to add a new country to your block list
 
 Once added to the block list, we will start blocking traffic from that specific country within a few minutes.
 
