@@ -53,15 +53,6 @@ server {
     }
 }
 ```
-### Step 1.5: In case you host a plausible instance(self-hosting setup, doesn't apply to the cloud version)
-
-Add the following configuration instructions at both `location`s
-```
-    proxy_set_header Host <your>.<plausible>.<instance>;
-    proxy_ssl_name <your>.<plausible>.<instance>;
-    proxy_ssl_server_name on;
-    proxy_ssl_session_reuse off;
-```
 
 ## Step 2: Adjust your deployed script
 
