@@ -14,7 +14,7 @@ You can use our [official WordPress plugin](https://plausible.io/wordpress-analy
 
 * Go into the [site settings](website-settings.md) of the website you'd like to block your activity from
 
-* Click on the "**Shields**" section in the left-hand sidebar
+* Choose "**IP Addresses**" in the "**Shields**" entry in the left-hand menu
 
 <img alt="Shields exclude traffic by IP" src={useBaseUrl('img/shields-exclude-tracking-by-IP.png')} />
 
