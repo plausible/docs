@@ -8,9 +8,11 @@ Your "**Locations**" report shows where in the world your visitors are coming fr
 
 Click on any country to see the list of regions within that country where your visitors are coming from. Click on any region to see the list of cities within that region. You can also use the "**Countries**", "**Regions**" and "**Cities**" tabs on the top of the report.
 
+<img alt="Countries" src={useBaseUrl('img/countries.png')} />
+
 To improve accuracy of the "**Locations**" report, visitors that use VPN services are grouped under the "**Anonymous VPN Service**" entry in the "**Countries**" tab. This eliminates noise that VPNs add to locations and makes it easy to view the percentage of visitors using VPNs.
 
-<img alt="Countries" src={useBaseUrl('img/countries.png')} />
+<img alt="Anonymous VPN Service" src={useBaseUrl('img/anonymous-vpn-service.png')} />
 
 You can also use the "**Filter**" button on the top of your dashboard to segment the traffic by multiple countries, regions or cities at the same time. This allows you to group specific geographical regions and display only that traffic. 
 
@@ -25,6 +27,8 @@ If you prefer to permanently block traffic from specific countries from being re
 * Visit the [site settings area](website-settings.md) for the dashboard in question
 * Choose "**Countries**" in the "**Shields**" entry in the left-hand menu
 * Then click on the "**Add Country**" button to add a new country to your block list
+
+<img alt="Block countries" src={useBaseUrl('img/block-countries.png')} />
 
 Once added to the block list, we will start blocking traffic from that specific country within a few minutes. You can block up to 30 different countries. 
 
