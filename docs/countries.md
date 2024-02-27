@@ -4,17 +4,13 @@ title: Locations
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Your "**Locations**" report shows where in the world your visitors are coming from. You can click on the "**Details**" button to see the full list of countries ranked by the number of visitors. There you can also see the percentage of your total traffic the individual country stands for.
+Your "**Locations**" report shows where in the world your visitors are coming from. You can click on the "**Details**" button to see the full list ranked by the number of visitors. There you can also see the percentage of your total traffic the individual location stands for.
 
 Click on any country to see the list of regions within that country where your visitors are coming from. Click on any region to see the list of cities within that region. You can also use the "**Countries**", "**Regions**" and "**Cities**" tabs on the top of the report.
 
-<img alt="Countries" src={useBaseUrl('img/countries.png')} />
+To improve the accuracy, visitors that use VPN services are grouped under the "**Anonymous VPN Service**" entry in the "**Countries**" tab. This eliminates noise that VPNs add to locations and makes it easy to view the percentage of visitors using VPNs.
 
-To improve accuracy of the "**Locations**" report, visitors that use VPN services are grouped under the "**Anonymous VPN Service**" entry in the "**Countries**" tab. This eliminates noise that VPNs add to locations and makes it easy to view the percentage of visitors using VPNs.
-
-<img alt="Anonymous VPN Service" src={useBaseUrl('img/anonymous-vpn-service.png')} />
-
-You can also use the "**Filter**" button on the top of your dashboard to segment the traffic by multiple countries, regions or cities at the same time. This allows you to group specific geographical regions and display only that traffic. 
+You can use the "**Filter**" button on the top of your dashboard to segment the traffic by multiple countries, regions or cities at the same time. This allows you to group specific geographical regions and display only that traffic.
 
 <img alt="Countries - multiple filters" src={useBaseUrl('img/countries-filtering-multiple-filters.png')} />
 
