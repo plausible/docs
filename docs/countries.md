@@ -24,7 +24,7 @@ If you prefer to permanently block traffic from specific countries from being re
 * Choose "**Countries**" in the "**Shields**" entry in the left-hand menu
 * Then click on the "**Add Country**" button to add a new country to your block list
 
-Once added to the block list, we will start blocking traffic from that specific country within a few minutes.
+You can block up to 30 different countries. Once added to the block list, we will start blocking traffic from that specific country within a few minutes.
 
 You can also see the list of all the countries that you're blocking the traffic from at the moment. Click on the "Remove" button next to that country to remove it from the blocklist.
 
