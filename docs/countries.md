@@ -8,7 +8,7 @@ Your "**Locations**" report shows where in the world your visitors are coming fr
 
 Click on any country to see the list of regions within that country where your visitors are coming from. Click on any region to see the list of cities within that region. You can also use the "**Countries**", "**Regions**" and "**Cities**" tabs on the top of the report.
 
-To improve the accuracy, visitors that use VPN services are grouped under the "**Anonymous VPN Service**" entry in the "**Countries**" tab. This eliminates noise that VPNs add to locations and makes it easy to view the percentage of visitors using VPNs.
+To improve the accuracy, visitors that use VPN services and the Tor browser are grouped under the "**Anonymous VPN Service**" entry in the "**Countries**" tab. This eliminates noise that VPNs add to locations and makes it easy to view the percentage of visitors using VPNs.
 
 You can use the "**Filter**" button on the top of your dashboard to segment the traffic by multiple countries, regions or cities at the same time. This allows you to group specific geographical regions and display only that traffic.
 
