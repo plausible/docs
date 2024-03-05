@@ -46,9 +46,11 @@ Yes, you can send your visitor stats to multiple Plausible dashboards at the sam
 
 ## Can I track visitors across my domain and subdomain?
 
-Yes, this is possible. If your landing page is on the main domain name (`yoursite.com`) and your app is on the subdomain (`app.yoursite.com`), you can add one site to your Plausible account and use the same snippet on both the domain name and the subdomain. This keeps the visitor session active between the main site and the subdomain. 
+Yes, seamless cross-subdomain tracking is possible. If your marketing landing page is on the main domain name (`yoursite.com`) and your app is on the subdomain (`app.yoursite.com`), you can add one site to your Plausible account (`yoursite.com`) and insert the same tracking snippet on both the domain name and the subdomain. This keeps the visitor session active between the main site and the subdomain.
 
-You can then set up [a custom event](custom-event-goals.md) or [a pageview goal](pageview-goals.md) on the action you wants to track on the subdomain. This allows you to see the visitor journey end-to-end from the landing on the main domain name to a conversion on the subdomain. And the conversion on the subdomain will be attributed to the original referral source that brought the visitor to the main domain. You can even display this user journey [in a funnel](funnel-analysis.md). 
+You can then set up [a custom event](custom-event-goals.md) or [a pageview goal](pageview-goals.md) on the actions you want to track on your site. This allows you to see the visitor journey end-to-end from the landing on the main domain name to a conversion on the subdomain. And the conversion on the subdomain will be attributed to the original referral source that brought the visitor to the main domain. No need to filter out internal referral sources. 
+
+You can even display this user journey [in a funnel](funnel-analysis.md). 
 
 There are two drawbacks with this approach:
 
