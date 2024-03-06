@@ -31,6 +31,10 @@ Now you can go to your Carrd website and verify that Plausible script has been a
 
 ## How to track form submissions on your Carrd site
 
+:::tip Use pageview goals to track the "thank you" page or the order confirmation page
+As an alternative to custom events, check out [pageview goals](pageview-goals.md). Since pageviews are collected automatically, you don’t need to change your website’s code to measure pageview goals. This makes pageview goals the easiest way to start tracking any type of conversions. Do you run a store and want to track orders? Do you have a contact form and want to track form submissions? Use pageview goals to track the "thank you" page or the order confirmation page
+:::
+
 In Carrd forms have default IDs. Usually they're assigned IDs based on the order you've added them. If you only have one form on the page it has an ID of "**form01**".
 
 ### 1. Change the Plausible snippet on your site
