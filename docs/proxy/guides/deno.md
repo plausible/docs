@@ -21,13 +21,19 @@ Deno.serve((request, info) => {
   if (request.url.endsWith(SCRIPT_PATH)) {
     return fetch("https://plausible.io/js/plausible.js")
   } else if (request.url.endsWith(EVENT_PATH)) {
-    const requestClone = new Request(request)
-    requestClone.headers.delete("Cookie")
-    requestClone.headers.set("X-Forwarded-For", info.remoteAddr.hostname)
-    return fetch("https://plausible.io/api/event", requestClone)
+    const originalXForwardedFor = request.headers.get("X-Forwarded-For");
+    const clientIp = info.remoteAddr.hostname;
+    const xForwardedForValue = originalXForwardedFor ? `${originalXForwardedFor}, ${clientIp}` : clientIp;
+    
+    const requestClone = new Request(request);
+    requestClone.headers.delete("Cookie");
+    requestClone.headers.set("X-Forwarded-For", xForwardedForValue);
+    console.log(xForwardedForValue);
+
+    return fetch(BASE_DOMAIN + EVENT_PATH, requestClone);
   }
-  return new Response(null, { status: 404 })
-})
+  return new Response(null, { status: 404 });
+});
 ```
 
 Notice that we remove the `Cookie` header as that could contain sensitive information that's best not shared. We also set the value of `X-Forwarded-For` with the user's IP. See the [events API](../../events-api#request-headers) page for more information on header requirements.
