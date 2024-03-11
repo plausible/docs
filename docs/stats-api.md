@@ -38,11 +38,12 @@ You can specify a `metrics` option in the query, to choose the metrics for each 
 | `visitors`        | The number of unique visitors.                                                                                                                            |
 | `visits`          | The number of visits/sessions                                                                                                                             |
 | `pageviews`       | The number of pageview events                                                                                                                             |
-| `views_per_visit` | The number of pageviews divided by the number of visits. Returns a floating point number. currently only supported in Aggregate and Timeseries endpoints. |
+| `views_per_visit` | The number of pageviews divided by the number of visits. Returns a floating point number. Currently only supported in Aggregate and Timeseries endpoints. |
 | `bounce_rate`     | Bounce rate percentage                                                                                                                                    |
 | `visit_duration`  | Visit duration in seconds                                                                                                                                 |
 | `events`          | The number of events (pageviews + custom events)                                                                                                          |
 | `conversion_rate` | The percentage of visitors who completed the goal. Requires an `event:goal` filter or `event:goal` property in the breakdown endpoint                     |
+| `time_on_page`    | The average time users spend on viewing a single page. Requires an `event:page` filter or `event:page` property in the breakdown endpoint.                |
 
 ### Time periods
 
@@ -196,10 +197,12 @@ See [time periods](#time-periods). If not specified, it will default to `30d`.
 
 **metrics** <Optional />
 
-List of metrics to aggregate. Valid options are `visitors`, `visits`, `pageviews`, `views_per_visit`, `bounce_rate`, `visit_duration`, `events` and `conversion_rate`. If not specified, it will default to `visitors`.
+Comma-separated list of metrics to aggregate, e.g. `visitors,pageviews,bounce_rate`. See the [list of available metrics](#metrics) above.
+
+If not specified, will default to `visitors`.
 
 :::note
-You can only query `conversion_rate` when filtering by a `event:goal`. 
+Some metrics can only be queried with a certain filter. For example, the `conversion_rate` metric can only be queried with a filter on `event:goal`. Similarly, `time_on_page` can only be queried with an `event:page` filter.
 :::
 
 <hr / >
@@ -359,10 +362,10 @@ See [time periods](#time-periods). If not specified, it will default to `30d`.
 
 **metrics** <Optional />
 
-Comma-separated list of metrics to show for each item in breakdown. Valid options are `visitors`, `pageviews`, `bounce_rate`, `visit_duration`, `visits`, `events` and `conversion_rate`. If not specified, it will default to `visitors`.
+Comma-separated list of metrics to show for each item in breakdown. See the [list of available metrics](#metrics) above. If not specified, it will default to `visitors`.
 
 :::note
-You can only query `conversion_rate` when filtering by `event:goal` or breaking down on the `event:goal` property. 
+Some metrics require a certain filter or breakdown property. For example `conversion_rate` can be queried with a filter on `event:goal` or in a breakdown by`event:goal`.
 :::
 
 <hr / >
