@@ -45,3 +45,7 @@ You can set a special `localStorage` flag in your browser so you don't need to f
 * In the list of all the IP addresses that you're blocking currently, find the IP address you want to remove
 
 * Click on the "**Remove**" button next to that IP address to remove it from the blocklist
+
+:::tip Want to block visits from an entire country from being recorded?
+You can do that too. [See how here](countries.md#how-to-block-traffic-from-specific-countries)
+:::
