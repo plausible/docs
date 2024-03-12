@@ -4,6 +4,10 @@ title: Opt out and exclude your visits from the analytics by setting a localStor
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+:::tip You can exclude internal traffic by IP address too
+This is the easiest way to exclude your own visits from being traffic. [See how here](excluding.md)
+:::
+
 To prevent counting your visits, you can set a special `localStorage` flag in the browser. Here's how.
 
 ## To exclude your visits from being counted
