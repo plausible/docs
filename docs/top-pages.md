@@ -10,11 +10,11 @@ You can also see the traffic flow by looking at the "**Entry Pages**" and "**Exi
 
 <img alt="Top Pages" src={useBaseUrl('img/top-pages.png')} />
 
-## Searching for pages
+## Search for pages
 
-You can search for pages using the "**Filter**" button on the top of your dashboard.
+You can search for pages by using [the "**Filter**" button](filters-segments.md) on the top of your dashboard.
 
-## Grouping pages
+## Group pages
 
 Do you want to group all your blog posts and analyze the traffic to the blog separately from the rest of your site? The "**Page**" menu within the filter button includes option for "**contains**". Put any specific keyword to group all of your pages that contain that keyword. The "**Filter**" button also allows you to segment the dashboard by grouping multiple unrelated pages at the same time.
 
@@ -26,9 +26,24 @@ You can also group different pages or dynamic URLs by using asterisks. Track all
 Do you prefer to display your page groupings permanently in your dashboard? You can do so using [our pageview goals](pageview-goals.md).
 :::
 
-## Filtering out pages
+## Filter out pages
 
 Do you want to filter out traffic that has visited a specific section of your site such as your logged in pages or your order confirmation page? You can filter out pages by using the "**Filter**" button on the top of your dashboard. The "**Page**" menu within the filter button includes option for "**is not**".
+
+## Block traffic from specific pages or sections
+
+You can use the "**Filter**" button to temporarily filter out traffic from particular pages or sections of your site when doing your reporting and analysis.
+
+If you prefer to permanently block traffic from specific pages or sections from being recorded in your dashboard, you can do so in your site settings: 
+
+* Visit the [site settings area](website-settings.md) for the dashboard in question
+* Choose "**Pages**" in the "**Shields**" entry in the left-hand menu
+* Then click on the "**Add Page**" button to add a new page to your block list
+* You can group different pages or dynamic URLs by using asterisks. For instance, if you'd like to block all the blog traffic from being recorded you can add something like (`/blog/*`)
+
+Once added to the block list, we will start blocking traffic from that specific page within a few minutes. You can block up to 30 different pages. 
+
+You can see the list of all the pages that you're blocking the traffic from. Click on the "Remove" button next to that page to remove it from the blocklist.
 
 ### How it works
 
