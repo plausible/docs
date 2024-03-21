@@ -21,7 +21,7 @@ You can also choose a subdirectory to install Plausible under to make sure it do
 Choose a generic or irrelevant name for the subdirectory. If you choose something like `analytics` or `plausible`,
 it might get blocked in the future.
 
-Using our [script extensions](script-extensions.md) such as hash-based routing, page exclusions or outbound link click tracking? Edit your `_redirects` and change the name from `script.js` to the script you want to use: `script.hash.js`, `script.exclusions.js` or `script.outbound-links.js`. Want to use more than one extension? You can chain them like this: `script.hash.exclusions.outbound-links.js`.
+Using our [script extensions](script-extensions.md) such as hash-based routing, revenue or outbound link click tracking? Edit your `_redirects` and change the name from `script.js` to the script you want to use: `script.hash.js`, `script.revenue.js` or `script.outbound-links.js`. Want to use more than one extension? You can chain them like this: `script.hash.revenue.outbound-links.js`.
 
 ## Step 2: Adjust your deployed script
 
