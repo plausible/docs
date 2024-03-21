@@ -282,8 +282,7 @@ See [filtering](#filtering)
 
 **metrics** <Optional />
 
-Comma-separated list of metrics to show for each time bucket. Valid options are `visitors`, `visits`, `pageviews`, `views_per_visit`, `bounce_rate`, `visit_duration` and `events`. If not
-specified, it will default to `visitors`.
+Comma-separated list of metrics to show for each time bucket. Valid options are `visitors`, `visits`, `pageviews`, `views_per_visit`, `bounce_rate`, `visit_duration`, `events` and `conversion_rate`. If not specified, it will default to `visitors`.
 
 <hr / >
 
