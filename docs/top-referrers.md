@@ -28,9 +28,11 @@ Note that all the major browsers have stopped sending the detailed info on [refe
 
 ### "Direct / None" traffic without a referrer source
 
-Not every request from a browser will have the referrer specified, and the `referer` header isn't always accurate. Take a look at our blog post on the topic of [referrer header](https://plausible.io/blog/referrer-policy) for further details.
+Not every request from a browser will have the referrer specified, and the `referer` header isn't always accurate. 
 
-You can see your "**Direct / None**" referrer source in "**Top Sources**" report too. This covers all the traffic where the referrer isn't passed. These could be clicks from email, clicks from documents, clicks from messengers and other mobile apps, bookmarks, people typing in the URL directly into the browser and more. You may also know it as "**dark traffic**".
+This is why you see the "**Direct / None**" referrer source in the "**Top Sources**" report. This covers all the traffic where the referrer isn't passed. These could be clicks from email, clicks from documents, clicks from messengers and other mobile apps, bookmarks, people typing in the URL directly into the browser and more. You may also know it as "**dark traffic**".
+
+By default, we attempt to uncover traffic originating from Android apps which is traditionally categorized as direct traffic in web analytics. The volume of "**android-app**" entries in your "**Top Sources**" report will vary based on your site and audience. For sites with significant mobile traffic, this recovers 10% or more previously unattributed traffic from apps like Gmail, Slack and Telegram.
 
 Here’s a non-exhaustive list of other problems with the header:
 
