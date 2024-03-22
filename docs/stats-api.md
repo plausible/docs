@@ -41,7 +41,7 @@ You can specify a `metrics` option in the query, to choose the metrics for each 
 | `views_per_visit` | The number of pageviews divided by the number of visits. Returns a floating point number. Currently only supported in Aggregate and Timeseries endpoints. |
 | `bounce_rate`     | Bounce rate percentage                                                                                                                                    |
 | `visit_duration`  | Visit duration in seconds                                                                                                                                 |
-| `events`          | The number of events (pageviews + custom events)                                                                                                          |
+| `events`          | The number of events (pageviews + custom events). When filtering by a goal, this metric corresponds to "Total Conversions" in the dashboard.              |
 | `conversion_rate` | The percentage of visitors who completed the goal. Requires an `event:goal` filter or `event:goal` property in the breakdown endpoint                     |
 | `time_on_page`    | The average time users spend on viewing a single page. Requires an `event:page` filter or `event:page` property in the breakdown endpoint.                |
 
