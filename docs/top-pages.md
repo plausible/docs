@@ -45,7 +45,7 @@ Once added to the block list, we will start blocking traffic from that specific 
 
 You can see the list of all the pages that you're blocking the traffic from. Click on the "Remove" button next to that page to remove it from the blocklist.
 
-### How it works
+## How it works
 
 Plausible Analytics records the URL path of each page view as the visitors are browsing your site. 
 
