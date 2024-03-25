@@ -39,6 +39,6 @@ With the custom origin and behaviours in place, you can change your script tag a
 Deploy these changes to your CloudFront site. You can verify the proxy is working by opening your network tab. You should see a request to
 `https://yourdomain.com/js/script.js` with status 200 and another one to `https://yourdomain.com/api/event` with status 202.
 
-Using our extensions such as hash-based routing, page exclusions or outbound link click tracking? Change the file name from script.js to the script you want to use: script.hash.js, script.exclusions.js or script.outbound-links.js. Want to use more than one extension? You can chain them like this: script.hash.exclusions.outbound-links.js.
+Using our extensions such as hash-based routing, revenue or outbound link click tracking? Change the file name from script.js to the script you want to use: script.hash.js, script.revenue.js or script.outbound-links.js. Want to use more than one extension? You can chain them like this: script.hash.revenue.outbound-links.js.
 
 Thanks to [@thomasjsn](https://github.com/thomasjsn) for contributing these instructions!

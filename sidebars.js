@@ -22,7 +22,6 @@ module.exports = {
       'email-reports',
       'traffic-spikes',
       'slack-reports',
-      'excluding-pages',
       'transfer-ownership',
       'reset-site-data',
       'delete-site-data',

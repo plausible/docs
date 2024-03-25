@@ -36,7 +36,6 @@ Here's the list of all the available extensions at this time:
 | script.tagged-events.js  | Allows you to [track standard custom events](custom-event-goals.md) such as link clicks, form submits, and any other HTML element clicks            |
 | script.revenue.js  | Allows you to assign dynamic [monetary values](ecommerce-revenue-tracking.md) to goals and custom events to track revenue attribution |
 | script.pageview-props.js  | Allow you to attach [custom properties](/custom-props/introduction) (also known as custom dimensions in Google Analytics) when sending a pageview in order to create custom metrics      |
-| script.exclusions.js     | [Exclude certain pages from being tracked](excluding-pages.md)                                     |
 | script.compat.js         | Compatibility mode for [tracking users on Internet Explorer](#scriptcompatjs) (≥IE11)                      |
 | script.local.js          | Allow analytics to track on localhost too which is useful in hybrid apps                           |
 | script.manual.js         | [Don't trigger pageviews automatically](#scriptmanualjs). Also allows you to [specify custom locations](custom-locations.md) to redact URLs with identifiers. You can also use it to track [custom query parameters](custom-query-params.md)|
@@ -56,10 +55,10 @@ In this case, the snippet you need to insert into your site is as follows (make 
 <script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.hash.outbound-links.js"></script>
 ```
 
-Or say you want to use our `script.exclusions.js` extension to exclude certain pages from being tracked and our `script.local.js` extension to track localhost traffic, your snippet should look like this:
+Or say you want to use our `script.revenue.js` extension to track ecommerce revenue and our `script.local.js` extension to track localhost traffic, your snippet should look like this:
 
 ```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.exclusions.local.js"></script>
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.revenue.local.js"></script>
 ```
 
 You can mix and match, and combine extensions any way that you wish. And you only need to insert that one snippet into your site, no need for anything else.
