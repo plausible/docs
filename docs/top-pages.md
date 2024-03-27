@@ -41,6 +41,8 @@ If you prefer to permanently block traffic from specific pages or sections from 
 * Then click on the "**Add Page**" button to add a new page to your block list
 * You can group different pages or dynamic URLs by using asterisks. For instance, if you'd like to block all the blog traffic from being recorded you can add something like (`/blog/*`)
 
+<img alt="Block traffic from specific pages or sections" src={useBaseUrl('img/block-traffic-from-specific-pages-or-sections.png')} />
+
 Once added to the block list, we will start blocking traffic from that specific page within a few minutes. You can block up to 30 different pages. 
 
 You can see the list of all the pages that you're blocking the traffic from. Click on the "Remove" button next to that page to remove it from the blocklist.
