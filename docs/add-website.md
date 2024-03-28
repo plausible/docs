@@ -8,19 +8,13 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Once you have an account, you can enter the domain name of the website you want to track. Umlauts and other special characters (including numbers, dots and slashes) are supported so you can add international domain names too. 
 
-Please, remove `https` and `www` from the URL, just keep the `hostname` (`yourdomain.com`). For example, if your site is `https://www.yourdomain.com` then the part to enter in the "**Domain**" field is `yourdomain.com`.
-
-If you would like to track a subdomain such as `blog.yourdomain.com`, you can do that too. For example, if your subdomain is `https://blog.yourdomain.com` then the part to enter in the "**Domain**" field is `blog.yourdomain.com`.
+Please, remove `https` and `www` from the URL, just keep the `hostname`. For example, if your site is `https://www.yourdomain.com` then the part to enter in the "**Domain**" field is `yourdomain.com`.
 
 After you add your domain, we will provide you with the tracking snippet that you need to [insert into your site](plausible-script.md) to start counting your stats.
 
-### Prefer to track visitors across your domain and subdomain?
+Does your site operate on multiple subdomains such as `docs.yourdomain.com` and `app.yourdomain.com`? Simply add your main domain name (`yourdomain.com`) to your Plausible account and use that tracking snippet on all your subdomains too. This keeps the visitor session active between the main site and the subdomains.
 
-You can add the main domain to your Plausible account and insert the same tracking snippet on both the main domain name and its subdomains. This keeps the visitor session active between the main site and the subdomains. 
-
-It allows you to see the visitor journey end-to-end from the landing on the main domain name to a conversion on the subdomain. And the conversion on the subdomain will be attributed to the original referral source that brought the visitor to the main domain. No need to filter out internal referral sources.
-
-See [the full details on this approach here](plausible-script.md#can-i-track-visitors-across-my-domain-and-subdomain).
+If you'd like to track a subdomain independently from the rest of your site, you can do that too. For example, if the subdomain you want to track on its own is `https://blog.yourdomain.com` then the part to enter in the "**Domain**" field is `blog.yourdomain.com`.
 
 :::tip Domain doesn't necessarily need to match the actual domain
 You don't necessarily need to install our snippet on the same domain as the domain you have added to your Plausible account. Think of the domain field in Plausible more like a site ID rather than an exact match. This allows you more flexibility in your setup all depending on your situation.
