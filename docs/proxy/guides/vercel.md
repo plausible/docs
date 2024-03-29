@@ -24,11 +24,11 @@ Add the following JSON to rewrite calls within your application to Plausible's r
 {
   "rewrites": [
     {
-      "source": "/stats/js/script.js",
+      "source": "/your-subdirectory/js/script.js",
       "destination": "https://plausible.io/js/script.js"
     },
     {
-      "source": "/stats/api/event",
+      "source": "/your-subdirectory/api/event",
       "destination": "https://plausible.io/api/event"
     }
   ]
@@ -36,8 +36,9 @@ Add the following JSON to rewrite calls within your application to Plausible's r
 ```
 
 Note that:
-- the source paths identified here **must be** used when configuring the HTML script tag in the next section.
-- you can use whatever paths you like here (for example, here prefixing with `/stats/`).
+
+- The source paths identified here **must be** used when configuring the HTML script tag in the next section.
+- You can use whatever paths you like here (for example, here prefixing with `/your-subdirectory/`). Do choose a generic or irrelevant name. If you choose something like analytics, stats or plausible, it might get blocked.
 
 ## Step 3: Add the script tag
 
@@ -47,8 +48,8 @@ Add a script tag to your application's HTML page, passing the values configured 
 
 ```html
 <script
-  src="/stats/js/script.js"
-  data-api="/stats/api/event"
+  src="/your-subdirectory/js/script.js"
+  data-api="/your-subdirectory/api/event"
   data-domain="yourdomain.com"
 ></script>
 ```
