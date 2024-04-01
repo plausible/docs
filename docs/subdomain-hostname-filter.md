@@ -26,9 +26,12 @@ You can even display this user journey [in a funnel](funnel-analysis.md).
 
 If you have pages with identical page paths on the different sites (say `yourdomain.com/best-page/` and `docs.yourdomain.com/best-page/`), these identical page paths will be listed under one entry (`/best-page/`) in the "**Top Pages**" report with the stats combined into that one entry.
 
-This is why we allow you to filter your traffic by hostname so you can segment your traffic to a specific subdomain only.
+This is why we allow you to filter your traffic by hostname so you can segment your traffic to view stats from a specific subdomain only. Click on [the "**Filter**" button](filters-segments.md) in the top right of your dashboard and choose the "**Hostname**" option to do so.
 
-Hostname contains my domain 
+You can choose to segment by any one specific hostname in the list but you can also group your hostnames using wildcards:
+
+1. `*.yourdomain.com` will match all subdomains of yourdomain.com but not yourdomain.com itself
+2. `*yourdomain.com` will match subdomains of yourdomain.com and yourdomain.com itself
 
 ## When to create a site in Plausible for a subdomain 
 
