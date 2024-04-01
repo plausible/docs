@@ -42,6 +42,10 @@ Rollup reporting allows you to aggregate stats from multiple sites and see them 
 
 Plausible blocks all bot traffic out of the box. We filter out known referrer spam domains, we block traffic originating from data centers, and we detect and exclude unnatural traffic patterns.
 
-Our script also automatically disables itself when running on localhost so that traffic won’t be counted either. If you do want to track stats on localhost, you can [use an extension](https://plausible.io/docs/script-extensions).
+In some cases you may see visitors from unwanted or unexpected hostnames in your stats. These hostnames vary based on how you've built your site. 
 
-You can also easily [exclude your internal traffic](https://plausible.io/docs/excluding) from being recorded in your dashboard.
+One of the most common cases of unexpected hostnames would be a translation or a similar web service that proxies your site and modifies its content before it reaches the visitor. For instance, `translate.goog` is the hostname for visitors who view your content using Google Translate and `webcache.googleusercontent.com` is the hostname of visitors who view your site using the cache feature in Google's search results.
+
+On the other hand, if you’re using Netlify or Vercel to build your site, you may see `deploy-preview.netlify.app` or similar hostnames which are the deployments that allow you to preview changes you're making to your site before publishing them.
+
+Our script automatically disables itself when running on localhost to reduce recording of traffic from any testing or preview environments. You can also [exclude your internal traffic by IP address](https://plausible.io/docs/excluding) from being recorded in your dashboard.
