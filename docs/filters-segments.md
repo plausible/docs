@@ -60,7 +60,11 @@ Would you like your grouped pages to be permanently displayed in your dashboard?
 
 ### Filter by subdomain or hostname
 
-Want to filter your traffic by hostname so you can segment your traffic to a specific subdomain only? You can do so by using the "**Filter**" button and choosing the "**Hostname**" entry within menu. You can choose to segment by any one specific hostname in the list but you can also group your hostnames using wildcards:
+Want to filter by hostname so you can segment your stats to a specific subdomain only? You can do so by using the "**Filter**" button and choosing the "**Hostname**" entry within the menu.
+
+You can choose to segment your traffic by any one specific hostname from the list, you can exclude any one specific hostname or even segment by hostnames that contain any specific word.
+
+You can also group your hostnames using wildcards:
 
 1. `*.yourdomain.com` will match all subdomains of yourdomain.com but not yourdomain.com itself
 2. `*yourdomain.com` will match subdomains of yourdomain.com and yourdomain.com itself
