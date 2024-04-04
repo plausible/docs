@@ -4,24 +4,30 @@ title: Export your website stats
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-On the main chart on the top of your Plausible dashboard you can export your website stats.
+There are a couple of different ways you can export your stats.
 
-Select the date range in the top right to view the specific time period. Then click on the "**Download**" icon on the right hand side of the main graph to download your stats. 
+## Export specific time ranges or audience segments
 
-You can even export [a filtered view](filters-segments.md). Filter your dashboard by any metric and click on the download icon to get an export of that particular view. Segment the dashboard by any goal such as external link clicks, 404 error pages or custom events to download those metrics.
+You can export your stats directly from the top chart of your Plausible dashboard. This is the quickest and most convenient option when you want to export specific audience segments or time ranges for reporting purposes. Here's how to do it:
+
+1. Select the date range in the top right to view the specific time period.
+2. [Filter your dashboard](filters-segments.md) by any metric to create a specific segment of your audience. Filter by any goal such as external link clicks, 404 error pages or custom events if you're looking for specific conversion metrics.
+3. Click on the "**Download**" icon on the right-hand side of the top chart of your Plausible dashboard to download the stats for that particular view.
+
+This will export a ZIP file which includes CSV files of the individual reports. You can then use these CSV files to import your stats into Excel or other data analysis tools.
+
+Note that in order for the export to be as quick as possible, the individual CSV files are limited to 300 entries each while page reports are limited to 100 entries each with this method. For the full data export, please look at the next option.
 
 <img alt="Exporting your website stats" src={useBaseUrl('img/download-website-stats.png')} />
 
-It will export a ZIP file which includes CSV files of the individual reports. You can then import your stats into Excel or other data analysis tools.
+## Export all stats to date
 
-For example, **visitors.csv** exports the metrics from the top chart and includes daily stats for the number of visitors, the number of pageviews, bounce rate percentage and visit duration in seconds. The format is like this:
+Here's how to export all the data collected for a particular dashboard from day one. This export is best used for data portability purposes. 
 
-| Date       | Visitors | Pageviews | Bounce Rate | Visit Duration |
-| ---------- | -------- | --------- | ----------- | -------------- |
-| 2020-05-31 | 149      | 218       | 79          | 68             |
-| 2020-06-01 | 140      | 194       | 83          | 52             |
-| 2020-06-02 | 171      | 225       | 82          | 43             |
+1. Go to the Plausible Analytics [site settings](website-settings.md) for the website you'd like to export the data for.
+2. In the "**Imports & Exports**" tab, find the "**Export Data**" panel and click on the "**Export to CSV**" button to export all the data.
+3. Your export will be queued and we'll send you an email once it's ready for download. After the export is ready, you'll have 24 hours to download the data.
 
-:::info Individual CSV files are limited to 300 entries each while page reports are limited to 100 entries each
-If you want an even more granular way to export the stats, please take a look at our [stats API](stats-api.md)
-:::
+## Use the stats API
+
+If you want a programatic way to export your stats, please take a look at our [stats API](stats-api.md).
