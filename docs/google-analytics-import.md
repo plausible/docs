@@ -1,35 +1,71 @@
 ---
-title: Import stats from Google Analytics
+title: Import stats from Google Analytics and other tools
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Universal Analytics, the third version of Google Analytics, was sunset and [stopped counting stats](https://plausible.io/blog/universal-google-analytics-is-dead) on July 1st 2023. 
+Plausible Analytics allows you to import your historical stats from Google Universal Analytics and Google Analytics 4 (GA4). Additionally, you can import data via CSV files which can be used to import stats from other analytics tools. You can import multiple properties into the same Plausible dashboard too.
 
-There’s no way to import your historical Universal Analytics stats into the new Google Analytics 4. Further to this, Google will shut down the Universal Analytics user interface and the API on July 1st 2024. They recommend that you export your historical data before this date.
-
-We've put a lot of effort into making a Google Analytics stats import tool ourselves. Here's how you can import your historical Google Analytics stats into your Plausible dashboard before Google deletes your data.
+Here's how you can import your historical stats into your Plausible dashboard.
 
 ## How to import your historical stats from Google Analytics to Plausible Analytics 
 
-Here's how to import your historical Google Analytics (Universal Analytics) stats into your Plausible Analytics account.
-
 1. Go to the Plausible Analytics [site settings](website-settings.md) for the website you'd like to import the data for.
 
-2. In the "**Integrations**" tab, find the "**Google Analytics Data Import**" panel. You can link your Google account to your Plausible account by clicking on the "**Continue With Google**" button.
+2. In the "**Imports & Exports**" tab, find the "**Import Data**" panel. You can link your Google account to your Plausible account by clicking on the "**Google Analytics**" button.
 
 <img alt="Import Google Analytics data into Plausible" src={useBaseUrl('img/import-google-analytics-data.png')} />
 
-3. You will now see a drop-down selection menu listing Google Analytics properties associated with your Google account. Select the appropriate property. This will generally be the property with the same domain name as your Plausible site. Then click on the "**Continue**" button.
+3. After linking Plausible to your Google account, you will see a drop-down selection menu listing all the existing Google Analytics properties (both UA and GA4) associated with the connected Google account. Select the property that you'd like to import and click on the "**Continue**" button.
 
-:::tip Cannot see your Google Analytics property in the list of properties?
-You may be trying to import a Google Analytics 4 (GA4) property rather than a Universal Analytics (UA) property. Our Google Analytics import works for UA properties only at the moment. We plan to build a [GA4 import in the future](https://feedback.plausible.io/169)
-:::
-
-4. On the next screen, you can click on the "**Confirm import**" button to start the data import process. Depending on the amount of data you have, this may take some time. This is run in the background, so you will receive an email when the import has been completed. It should take no more than a couple of minutes for most sites.
+4. On the next screen, you can click on the "**Confirm import**" button to start the data import process. Depending on the amount of data you have, this may take some time. You will receive an email when the import has been completed. It should take no more than a couple of minutes for most sites.
 
 5. Once you have received the email, the imported data will be visible in your Plausible dashboard. 
 
+:::tip Google will shut down the Universal Analytics user interface and the API on July 1st 2024
+You should import your UA historical data into Plausible before Google deletes your data
+:::
+
+## Import multiple properties into the same Plausible dashboard
+
+If you'd like to import multiple properties into the same Plausible dashboard, please go through the process above again and choose a different property to import. You can import a maximum of 5 different properties into one Plausible dashboard. 
+
+In the "**Imports & Exports**" section, you can see the overview of all your existing imports to that specific Plausible dashboard. For each import, we list the property ID, the number of pageviews imported and the time range that the import covers.
+
+## How much data is imported?
+
+Data is imported in aggregate for each date, from your first Google Analytics visitor until your first Plausible Analytics visitor. This is to avoid double-counting visits. 
+
+We also have measures in place to detect and avoid double-counting visitors if you import multiple properties into the same Plausible dashboard. Here's an example:
+
+1. You started counting visitors with Plausible for a specific site on March 11th 2024
+2. You do the first Google Analytics import into that Plausible dashboard and choose your old UA property. We automatically import the data from when you started using that UA property until you stopped using it (say Oct 25th 2008 to May 19th 2023)
+3. You do another Google Analytics import into that same Plausible dashboard and this time choose your newer GA4 property. We automatically import the data from when you stopped using UA until you started using Plausible (May 19th 2023 to Mar 11th 2024)
+
+This makes it easy and convenient to import all your historical stats without having any gaps in the data and without any double-counting. It also allows you the flexibility to choose the order in which you import your historical properties into Plausible. For instance, if you've used GA4 and UA simultanously for some time, you can choose which data you prefer to keep in Plausible and do that specific import first. The subsequent import will cover the missing date ranges.
+
+:::tip Do you want your Google Analytics data to replace the native Plausible data up to today?
+This isn't recommended as the native data is superior to the imported data but it's possible if you wish to do so. You can [reset the Plausible stats](reset-site-data.md) first and make the import after that
+:::
+
+### Google Analytics Data Retention limits
+
+How long time frame we can import the data for also depends on the data retention limits in Google Analytics. If there are no data retention limits in your Google Analytics account, we can import all the data.
+
+If you have strict data retention limits in place in Google Analytics (for instance GA4 properties have data retention limit of up to 14 months), we can only show the metrics in the top chart of your Plausible dashboard for periods outside of your data retention limit as Google automatically deletes all the other stats.
+
+## How to import your historical stats via CSV files
+
+This makes it possible to import data from various analytics tools and it allows you to migrate from the Plausible Community Edition (CE) to our managed hosting (or vice-versa).
+
+1. Go to the Plausible Analytics [site settings](website-settings.md) for the website you'd like to import the data for.
+
+2. If you'd like to migrate from Plausible CE to our managed hosting, go into the "**Imports & Exports**" tab, find the "**Export Data**" panel and click on the "**Export to CSV**" button to export all the data.
+
+3. Also in the "**Imports & Exports**" tab, find the "**Import Data**" panel and click on the "**CSV**" button to import your CSV files.
+
+4. Select all the CSV files that you'd like to import and click on the "**Confirm import**" button. If you're importing from different analytics tools, please ensure each file follows our CSV format guidelines.
+   
 ## How do I view the imported data?
 
 The imported data will be displayed alongside your native Plausible data in the same Plausible dashboard. An icon is shown in the top-right of the dashboard when imported data has been included.
@@ -42,33 +78,19 @@ Clicking this icon will stop the imported data from being displayed and the icon
 
 ## How do I delete the imported data?
 
-Data you have imported can be deleted by returning to your site's "**Integrations**" settings page and clicking the "**Clear imported pageviews**" button in the "**Google Analytics Data Import**" panel. This action won't affect the native data you have collected using our script directly.
+Data you have imported can be deleted by returning to your site's "**Imports & Exports**" settings page and clicking the "**Delete Import**" button in the "**Existing Imports**" section. This action won't affect the native data you have collected using our script directly.
 
 <img alt="Delete Google Analytics data from Plausible" src={useBaseUrl('img/delete-google-analytics-data.png')} />
 
-## How much data is imported?
-
-Data is imported in aggregate for each date, from your first Google Analytics visitor until your first Plausible Analytics visitor. This is to avoid double-counting visits. 
-
-:::tip Do you want your Google Analytics data to replace the native Plausible data up to today?
-This isn't recommended as the native data is superior to the imported data but it's possible if you wish to do so. You can [reset the Plausible stats](reset-site-data.md) first and make the import after that
-:::
-
-How long time frame we can import the data for depends on your data retention limits in your Google Analytics settings. If you haven't set any data retention limits in your Google Analytics settings, we can import all the data from when you started using Google Analytics for the particular website.
-
-You can check the data retention limit you have set for your Google Analytics property in your Google Analytics admin settings by visiting the "**Tracking Info**" section and clicking on "**Data Retention**". 
-
-Do you have strict data retention limits in place in your Google Analytics? We can only show the metrics in the top chart of your Plausible dashboard for periods outside of your data retention limit as Google automatically deletes all the other stats.
-
 ## My import has failed
 
-This may be due to the user metric setting in your Google Analytics account. We found out that for some accounts changing the user metric settings is necessary to get correct data out of the Google API.
+This may be due to the user metric setting in your Google Analytics account. We found out that for some Universal Analytics properties, changing the user metric settings is necessary to get correct data out of the Google API.
 
 You will have to take an extra step to make sure we can import the data smoothly. Please navigate to your Google Analytics admin, and in the "**Property Settings**", go to "**User Analysis**". In that section, you'll need to make sure that "**Enable Users Metric in Reporting**" is OFF. Then please try to do the import once again.
 
 ## Can I delete my Google Analytics account after a successful import?
 
-We no longer need access to your Google Analytics account after the import has been completed successfully. If you're happy with the way your old Google Analytics stats look in Plausible Analytics, you can safely delete your Google Analytics account. Your imported data will stay in your Plausible account. 
+We no longer need access to your Google Analytics account after the import has been completed successfully. If you're happy with the way your Google Analytics stats look in Plausible Analytics, you can safely delete your Google Analytics account. Your imported data will stay in your Plausible account. 
 
 ## How does imported data differ from Plausible native data?
 
