@@ -55,3 +55,7 @@ We have taken many steps to make the imported data feel as fast, easy, and strai
 ### Filtering 
 
 It isn't possible to use [our filters](filters-segments.md) with the imported data.
+
+## CSV format guidelines
+
+If you're importing data from different analytics tools then please ensure that your CSV files follow our format guidelines.
