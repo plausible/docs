@@ -18,9 +18,9 @@ Here's how to track the user journey across your domain name and its subdomains.
 
 3. Insert that same tracking snippet on both the main domain name and all of its subdomains. This keeps the visitor session active between your primary site and its subdomains
 
-4. Set up [custom events](custom-event-goals.md) or [pageview goals](pageview-goals.md) for the actions you want to track on your site. You can even follow the user journey [in a marketing funnel](funnel-analysis.md)
+4. Set up [custom events](custom-event-goals.md) or [pageview goals](pageview-goals.md) for the actions you want to track. You can even follow the user journey [in a funnel](funnel-analysis.md). Any conversions that happen on your subdomains will be attributed to the original referral source that brought the visitor to your main domain. There's no need to filter out internal referral sources as this eliminates the issue where you might see your subdomains as a major source of traffic
   
-5. Any conversions that happen on your subdomains will be attributed to the original referral source that brought the visitor to your main domain. There's no need to filter out internal referral sources as this eliminates the issue where you might see your subdomains as a major source of traffic
+5. Click on any specific referral source in your dashboard to see the number of conversions and the conversion rate (CR) of that referral source for any of your goal completions regardless of the hostname. Or click on any goal in your dashboard to see the number of conversions and the CR of that specific goal coming from any referral source or landing page
 
 ## Filtering traffic by hostname
 
