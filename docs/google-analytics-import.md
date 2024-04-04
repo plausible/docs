@@ -1,12 +1,12 @@
 ---
-title: Import stats from Google Analytics and other tools
+title: Import stats from Google Analytics
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Plausible Analytics allows you to import your historical stats from Google Universal Analytics and Google Analytics 4 (GA4). Additionally, you can import data via CSV files which can be used to import stats from other analytics tools. You can import multiple properties into the same Plausible dashboard too.
+Plausible Analytics allows you to import your historical stats from Google's Universal Analytics (UA) and Google Analytics 4 (GA4). You can import multiple properties into the same Plausible dashboard too.
 
-Here's how you can import your historical stats into your Plausible dashboard.
+Here's how you can import your historical Google Analytics stats into your Plausible dashboard.
 
 ## How to import your historical stats from Google Analytics to Plausible Analytics 
 
@@ -26,9 +26,9 @@ Here's how you can import your historical stats into your Plausible dashboard.
 You should import your UA historical data into Plausible before Google deletes your data
 :::
 
-## Import multiple properties into the same Plausible dashboard
+## Import multiple Google Analytics properties into the same Plausible dashboard
 
-If you'd like to import multiple properties into the same Plausible dashboard, please go through the process above again and choose a different property to import. You can import a maximum of 5 different properties into one Plausible dashboard. 
+If you'd like to import multiple Google Analytics properties into the same Plausible dashboard, please go through the process above again and choose a different property to import. You can import a maximum of 5 different properties into one Plausible dashboard. 
 
 In the "**Imports & Exports**" section, you can see the overview of all your existing imports to that specific Plausible dashboard. For each import, we list the property ID, the number of pageviews imported and the time range that the import covers.
 
@@ -36,13 +36,13 @@ In the "**Imports & Exports**" section, you can see the overview of all your exi
 
 Data is imported in aggregate for each date, from your first Google Analytics visitor until your first Plausible Analytics visitor. This is to avoid double-counting visits. 
 
-We also have measures in place to detect and avoid double-counting visitors if you import multiple properties into the same Plausible dashboard. Here's an example:
+We also have measures in place to detect and avoid double-counting visitors if you import multiple properties into the same Plausible dashboard. Here's an example of how it works:
 
 1. You started counting visitors with Plausible for a specific site on March 11th 2024
 2. You do the first Google Analytics import into that Plausible dashboard and choose your old UA property. We automatically import the data from when you started using that UA property until you stopped using it (say Oct 25th 2008 to May 19th 2023)
 3. You do another Google Analytics import into that same Plausible dashboard and this time choose your newer GA4 property. We automatically import the data from when you stopped using UA until you started using Plausible (May 19th 2023 to Mar 11th 2024)
 
-This makes it easy and convenient to import all your historical stats without having any gaps in the data and without any double-counting. It also allows you the flexibility to choose the order in which you import your historical properties into Plausible. For instance, if you've used GA4 and UA simultanously for some time, you can choose which data you prefer to keep in Plausible and do that specific import first. The subsequent import will cover the missing date ranges.
+This makes it easy and convenient to import all your historical stats without having any gaps in the data and without any double-counting. It also allows you the flexibility to choose the order in which you import your historical properties into Plausible. For instance, if you've used GA4 and UA simultanously for some time, you can choose which data you prefer to keep in Plausible and import that specific property first. The subsequent import will cover the missing date ranges.
 
 :::tip Do you want your Google Analytics data to replace the native Plausible data up to today?
 This isn't recommended as the native data is superior to the imported data but it's possible if you wish to do so. You can [reset the Plausible stats](reset-site-data.md) first and make the import after that
@@ -53,18 +53,6 @@ This isn't recommended as the native data is superior to the imported data but i
 How long time frame we can import the data for also depends on the data retention limits in Google Analytics. If there are no data retention limits in your Google Analytics account, we can import all the data.
 
 If you have strict data retention limits in place in Google Analytics (for instance GA4 properties have data retention limit of up to 14 months), we can only show the metrics in the top chart of your Plausible dashboard for periods outside of your data retention limit as Google automatically deletes all the other stats.
-
-## How to import your historical stats via CSV files
-
-This makes it possible to import data from various analytics tools and it allows you to migrate from the Plausible Community Edition (CE) to our managed hosting (or vice-versa).
-
-1. Go to the Plausible Analytics [site settings](website-settings.md) for the website you'd like to import the data for.
-
-2. If you'd like to migrate from Plausible CE to our managed hosting, go into the "**Imports & Exports**" tab, find the "**Export Data**" panel and click on the "**Export to CSV**" button to export all the data.
-
-3. Also in the "**Imports & Exports**" tab, find the "**Import Data**" panel and click on the "**CSV**" button to import your CSV files.
-
-4. Select all the CSV files that you'd like to import and click on the "**Confirm import**" button. If you're importing from different analytics tools, please ensure each file follows our CSV format guidelines.
    
 ## How do I view the imported data?
 
