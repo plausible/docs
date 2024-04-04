@@ -36,12 +36,16 @@ Here's [the full list of all integrations and guides](integration-guides.md). Th
 
 If you'd like to serve the script as a first-party connection from your domain name, we offer a way to proxy our script. See [full details here](/proxy/introduction.md).
 
+## Can I track visitors across my domain and subdomain?
+
+Yes, you can add your main domain name as a site to your Plausible account and use that same tracking snippet on all your subdomains too. This keeps the visitor session active between your main site and its subdomains. Here's [more details on how it works](subdomain-hostname-filter.md).
+
 ## Can I send stats to multiple dashboards at the same time?
 
 Yes, you can send your visitor stats to multiple Plausible dashboards at the same time. To do this, you need to configure the data-domain attribute as a comma-separated list in the Plausible snippet that you insert into your site. Here's an example:
 
 ```html
-<script defer data-domain="domain1.com,domain2.com,subdomain.yourdomain.com" src="https://plausible.io/js/script.js"></script>
+<script defer data-domain="domain1.com,domain2.com,domain3.com" src="https://plausible.io/js/script.js"></script>
 ```
 
 ## Is there a roll-up view?
@@ -50,7 +54,7 @@ Yes, you can send your visitor stats to multiple Plausible dashboards at the sam
 Pageviews tracked using the roll-up view will count towards your billable monthly pageviews.
 :::
 
-Rollup reporting allows you to aggregate stats from multiple sites and see them all together in one dashboard while still keeping the individual site stats on their own separate dashboards. Here's how you can use it:
+Rollup reporting allows you to aggregate stats from multiple sites and see them in one combined dashboard while keeping the individual site stats on their own separate dashboards. This way you get detailed insights into individual site performance and a holistic view of your whole network too. Here's how you can use it:
 
 * Say you have `yoursite.com`, `yoursecondsite.com` and `anothersite.com` as websites in your Plausible account
 * Then you could add a new site to your Plausible account called for example `rollup.mysites.com` (you can come up with any name that you want for this, it doesn't need to be an actual domain)
@@ -71,8 +75,6 @@ Rollup reporting allows you to aggregate stats from multiple sites and see them 
 ```html
 <script defer data-domain="anothersite.com,rollup.mysites.com" src="https://plausible.io/js/script.js"></script>
 ```
-
-This will send pageviews from your sites to their individual dashboards so you can still see their separate stats but it will also send their stats to a grouped dashboard which means you'll be able to see the combined stats too in a roll-up view.
 
 :::tip Integrating Plausible by using Google Tag Manager?
 You'll need to use a different tracking snippet. [See these instructions](google-tag-manager.md).
