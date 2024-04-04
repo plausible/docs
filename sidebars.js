@@ -46,8 +46,8 @@ module.exports = {
         label: 'Import & Export',
         items: [
           'google-analytics-import',
-          'export-stats',
           'csv-import',
+          'export-stats',
         ],
       },
     ],
