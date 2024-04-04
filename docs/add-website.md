@@ -14,7 +14,7 @@ After you add your domain, we will provide you with the tracking snippet that yo
 
 Does your site operate on multiple subdomains such as `docs.yourdomain.com` and `app.yourdomain.com`? Simply add your main domain name (`yourdomain.com`) to your Plausible account and use that tracking snippet on all your subdomains too. This keeps the visitor session [active between the main site and its subdomains](subdomain-hostname-filter.md).
 
-If you'd like to track a subdomain completely independently from the rest of your site, you can do that too. For example, if the subdomain you want to track on its own is `https://blog.yourdomain.com` then the part to enter in the "**Domain**" field is `blog.yourdomain.com`.
+If you'd like to track a particular subdomain independently from the rest of your site, you can do that too. For example, if the subdomain you want to track on its own is `https://blog.yourdomain.com` then the part to enter in the "**Domain**" field is `blog.yourdomain.com`.
 
 :::tip Domain doesn't necessarily need to match the actual domain
 You don't necessarily need to install our snippet on the same domain as the domain you have added to your Plausible account. Think of the domain field in Plausible more like a site ID rather than an exact match. This allows you more flexibility in your setup all depending on your situation.
