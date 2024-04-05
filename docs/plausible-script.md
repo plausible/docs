@@ -50,11 +50,17 @@ Yes, you can send your visitor stats to multiple Plausible dashboards at the sam
 
 ## Is there a roll-up view?
 
+## Roll-up reporting
+
 :::note
 Pageviews tracked using the roll-up view will count towards your billable monthly pageviews.
 :::
 
-Rollup reporting allows you to aggregate stats from multiple sites and see them in one combined dashboard while keeping the individual site stats on their own separate dashboards. This way you get detailed insights into individual site performance and a holistic view of your whole network too. Here's how you can use it:
+Rollup reporting allows you to aggregate stats from multiple sites and see them in one combined dashboard while keeping the individual site stats on their own separate dashboards. This way you get detailed insights into individual site performance and a holistic view of your whole network too. 
+
+This is useful when building multi-tenant applications, offering [a white label analytics dashboard](https://plausible.io/white-label-web-analytics) or in similar situations. It allows you to keep all your global traffic in one dashboard for internal purposes but also share the traffic from individual tenant sites with the particular client only.
+
+Here's how you can use it:
 
 * Say you have `yoursite.com`, `yoursecondsite.com` and `anothersite.com` as websites in your Plausible account
 * Then you could add a new site to your Plausible account called for example `rollup.mysites.com` (you can come up with any name that you want for this, it doesn't need to be an actual domain)
