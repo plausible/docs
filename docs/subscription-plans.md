@@ -1,22 +1,27 @@
 ---
-title: Choose the right subscription tier
+title: Choose the right subscription
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Plausible gives you great control and flexibility in plans you can subscribe to, the billing frequency and in upgrading or downgrading your subscription tier. Here's how to choose the subscription tier that's right for you.
+Plausible gives you control and flexibility in plans you can subscribe to, the billing frequency and in upgrading or downgrading your subscription tier based on your usage. Here's how to choose the subscription that's right for you.
 
-## All plans are priced according to your traffic levels
+## How are the subscriptions priced?
 
-All Plausible Analytics subscription plans are priced according to your monthly traffic levels. The billing is based on the total number of pageviews between all the sites you have added to your account. 
+Our subscription tiers are based on the total number of pageviews and custom events between all the sites you have added to your Plausible Analytics account.
 
-To calculate your traffic level, we take all the websites you have added to your Plausible account and total the number of page views between them. If you use the "[Custom Events](custom-event-goals.md)" feature, then these count towards your total monthly pageviews as well.
+To calculate your usage levels, we take all the websites you have added to your account and total the number of pageviews between them. If you use the "[Custom Events](custom-event-goals.md)" feature, then these count towards your total usage as well.
 
-"**Custom Events**" are any custom goals including external link click tracking, file downloads tracking and 404 error page tracking. The act of adding a "[Pageview Goal](pageview-goals.md)" has no effect on your usage.
+"**Custom Events**" include external link clicks, file downloads and 404 error page tracking. The act of adding a "[Pageview Goal](pageview-goals.md)" has no effect on your usage.
 
-You can check your current traffic level in your account settings within the "**Subscription Plan**" section. Look under the "**Usage & Limits**" heading. You should get on a subscription plan that fits your traffic levels.
+You can check your usage levels in your account settings within the "**Subscription Plan**" section. You should be on a subscription tier that fits your usage levels. You can get 2 months free on a yearly plan.
 
-You can get 2 months free if you subscribe to a yearly plan and pay annually. You can see all [our subscription plans and pricing](https://plausible.io/#pricing) on our website or within your Plausible account.
+You also need to decide on your subscription plan. These vary in terms of number of sites, team members and features:
+
+* Choose the "**Growth**" plan for essential features, ideal for growing teams
+* Go for the "**Business**" plan for advanced features, more sites and larger teams
+
+You can see [the pricing and the differences between the plans](https://plausible.io/#pricing) on our website or within your Plausible account settings.
 
 ## What happens if I go over my monthly page views limit?
 
@@ -28,6 +33,6 @@ After we contact you, you will have a week to decide. To keep having access to y
 
 ## How do I manage my subscription?
 
-Everything is self-serve within your account settings. There are no long term contracts and you can change your subscription tier or cancel your plan at any time. You don't need to call or contact us. Here's how to [change your subscription plan](change-plan.md) and how to [cancel your subscription](cancel-subscription.md).
+Everything is self-serve within your account settings. There are no long term contracts and you can change your subscription or cancel your plan at any time. Here's how to [change your subscription plan](change-plan.md) and how to [cancel your subscription](cancel-subscription.md).
 
 Need any help or have a question about our subscription plans or your subscription? [Contact us](https://plausible.io/contact).
