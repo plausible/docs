@@ -18,17 +18,15 @@ If you're using Plausible as [a part of a team](users-roles.md), note that the a
 
 ## Choose your subscription tier
 
-Our subscription tiers are based on the total number of pageviews and custom events per month between all the sites you have added to your Plausible Analytics account. 
+Our subscription tiers are based on the total number of pageviews and custom events between all the sites you have added to your Plausible Analytics account.
 
-Check your current pageview and custom event usage in the "**Usage & Limits**" section of your account settings. There we list the total number of billable pageviews during your trial period to date.
+You can check your usage levels during the trial period to date in your account settings within the "**Subscription Plan**" section. You should select a subscription tier that matches your usage levels. Opt for monthly or yearly billing. You can get 2 free months with an annual subscription.
 
-Select a subscription tier that matches your billable pageviews. Opt for monthly or yearly billing. You can get 2 free months with an annual subscription.
+Next, decide on your plan. These vary in terms of number of sites, team members and features:
 
-Next, decide on your plan:
+* Choose the "**Growth**" plan for essential features, ideal for growing teams
+* Go for the "**Business**" plan for advanced features, more sites and larger teams
 
-* Choose "**Growth**" for essential features, ideal for growing teams
-* Go for "**Business**" for advanced features, multiple sites and larger teams
-  
 Then click on the "**Upgrade**" button to get started.
 
 <img alt="Choose your subscription tier" src={useBaseUrl('img/choose-your-subscription-tier.png')} />
