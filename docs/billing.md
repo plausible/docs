@@ -8,7 +8,7 @@ Answers to frequently asked questions about billing, invoicing and payments:
 
 ## Is the billing based per account or per website?
 
-The billing is based on the total number of pageviews between all the sites you have added to your account. You can see this total number of billable pageviews at any time in your account settings.
+The billing is based on the usage between all the sites you have added to your account. You can see your usage numbers at any time in your account settings.
 
 ## How do I get an invoice?
 
@@ -53,6 +53,10 @@ After we contact you, you will have a week to decide. To keep having access to y
 ## How does the billing work if I upgrade my subscription to a higher tier?
 
 Our payment processor Paddle will calculate a pro-rated amount which reflects the amount you have paid on your previous subscription and the amount of time until that subscription was supposed to expire.
+
+## How does the billing work if I downgrade my subscription to a lower tier?
+
+Your subscription tier is based on your usage in the last billing cycle. If your usage decreases and you downgrade your subscription to a lower tier, you'll see a negative value for immediate payment amount. This negative value indicates a credit balance which will be automatically applied to reduce your future payments until it runs out.
 
 ## How do I update my billing information?
 
