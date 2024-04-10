@@ -57,3 +57,16 @@ You can also group dynamically created URLs with an asterisk `*`. For instance, 
 :::note
 Would you like your grouped pages to be permanently displayed in your dashboard? You can do so by using [pageview goals](pageview-goals.md).
 :::
+
+### Filter by subdomain or hostname
+
+Want to filter by hostname so you can segment your stats to a specific subdomain only? You can do so by using the "**Filter**" button and choosing the "**Hostname**" entry within the menu.
+
+You can choose to segment your traffic by any one specific hostname from the list, you can exclude any one specific hostname or even segment by hostnames that contain any specific word.
+
+You can also group your hostnames using wildcards:
+
+1. `*.yourdomain.com` will match all subdomains of yourdomain.com but not yourdomain.com itself
+2. `*yourdomain.com` will match subdomains of yourdomain.com and yourdomain.com itself
+
+Learn more on how Plausible [handles cross-subdomain tracking here](subdomain-hostname-filter.md).
