@@ -48,7 +48,7 @@ Yes, you can send your visitor stats to multiple Plausible dashboards at the sam
 <script defer data-domain="domain1.com,domain2.com,domain3.com" src="https://plausible.io/js/script.js"></script>
 ```
 
-## Roll-up reporting
+## Is there a roll-up view?
 
 :::note
 Pageviews tracked using the roll-up view will count towards your billable monthly pageviews.
