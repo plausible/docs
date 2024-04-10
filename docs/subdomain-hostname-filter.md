@@ -32,7 +32,6 @@ To filter by hostname, click on [the "**Filter**" button](filters-segments.md) i
 
 <img alt="Filter by subdomain" src={useBaseUrl('img/filter-by-hostname-or-subdomain.png')} />
 
-
 We'll show you the list of all the hostnames we have recorded in the chosen time range:
 
 * You can filter your traffic by one or more specific hostnames from the list ("**is**")
@@ -52,15 +51,38 @@ You can do this by using the filter button or by setting up a pageview goal. [Se
 
 ## Block traffic from unwanted hostnames
 
-Plausible [detects and blocks bot traffic out of the box](dashboard-faq.md#does-plausible-exclude-known-bots-and-spam-traffic). We filter out known referrer spam domains, we block traffic originating from data centers, and we detect and exclude unnatural traffic patterns.
+In some cases you may see unwanted or unexpected hostnames in your hostname list. These hostnames vary based on your traffic and on how you've built your site:
 
-In some cases you may see unwanted or unexpected hostnames in your hostname list. These hostnames vary based on your traffic and on how you've built your site. 
+* One of the most common cases of unexpected hostnames would be a web translator or a similar service that proxies your site and modifies its content before it reaches the visitor. For instance, `translate.goog` is the hostname for visitors who view your content using Google Translate and `webcache.googleusercontent.com` is the hostname of visitors who view your site using the cache feature in Google's search results.
 
-One of the most common cases of unexpected hostnames would be a web translator or a similar service that proxies your site and modifies its content before it reaches the visitor. For instance, `translate.goog` is the hostname for visitors who view your content using Google Translate and `webcache.googleusercontent.com` is the hostname of visitors who view your site using the cache feature in Google's search results.
+* On the other hand, if you’re using Netlify or a similar service to build your site, you may see `deploy-preview.netlify.app` or similar hostnames which are the deployments that allow you to preview changes to your site before making them live to the public.
 
-On the other hand, if you’re using Netlify or a similar service to build your site, you may see `deploy-preview.netlify.app` or similar hostnames which are the deployments that allow you to preview changes to your site before making them live to the public.
+From our side, we [detect and block bot traffic out of the box](dashboard-faq.md#does-plausible-exclude-known-bots-and-spam-traffic). We filter out known referrer spam domains, we block traffic originating from data centers, and we detect and exclude unnatural traffic patterns.
 
-Our script automatically disables itself when running on localhost to reduce the recording of traffic from testing environments. You can also [exclude your internal traffic](https://plausible.io/docs/excluding) from being recorded in the dashboard to block and avoid any unwanted hostnames.
+And our script automatically disables itself when running on localhost to reduce the recording of traffic from testing environments. 
+
+There are also some things you can do from your side to block traffic from unwanted hostnames:
+
+### Exclude internal traffic
+
+You can [exclude your internal traffic](https://plausible.io/docs/excluding) by IP address from being recorded in the dashboard.
+
+### Allow traffic from specific hostnames only 
+
+If you prefer to only record traffic from specific hostnames (and block all the other traffic), you can do so in your site settings: 
+
+* Visit the [site settings area](website-settings.md) for the dashboard in question
+* Choose "**Hostnames**" in the "**Shields**" entry in the left-hand menu
+* Then click on the "**Add Hostname**" button to add a new hostname to your allow list
+
+You can group your hostnames when adding them to the allow list:
+
+* `*.yourdomain.com` will record all traffic on all subdomains of `yourdomain.com` but won't record traffic of `yourdomain.com` itself
+2. `*yourdomain.com` will record all traffic on all subdomains of `yourdomain.com` and `yourdomain.com` traffic itself will be recorded too
+   
+Once added to the allow list, we will start blocking traffic from all the other hostnames within a few minutes. You can add up to 30 different hostnames. 
+
+You can see the list of all the hostnames that you're allowing the traffic from at any time. Click on the "Remove" button next to a hostname to remove it from the allow list.
 
 ## When to add a subdomain as a dedicated site
 
