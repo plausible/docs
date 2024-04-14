@@ -310,6 +310,10 @@ We offer a manual mode in case you want full control over when pageviews are tri
 
 [TYPO3](https://extensions.typo3.org/extension/plausibleio) extension for Plausible. Built and maintained by Susanne Moog
 
+## TypeDoc
+
+A [TypeDoc Plausible plugin](https://typedoc-plausible.8hob.io/) that integrates Plausible into your built html docs. Built and maintained by [8 Hobbies](https://8hob.io).
+
 ## Vue.js & Nuxt.js
 
 * [Vue.js & Nuxt.js](https://github.com/moritzsternemann/vue-plausible): A Vue.js plugin and NuxtJS module for Plausible. Exposes the functionality of [plausible-tracker](https://github.com/plausible/plausible-tracker) to Vue and Nuxt instances, Vue components, and Vuex stores. Built and maintained by [Moritz Sternemann](https://github.com/moritzsternemann).
