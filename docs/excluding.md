@@ -39,7 +39,8 @@ You can use our [official WordPress plugin](https://plausible.io/wordpress-analy
 * You can click on the "**Remove**" button next to that IP address to remove it from the blocklist
 
 <img alt="Shields IP blocked" src={useBaseUrl('img/shields-ip-blocked.png')} />
-  
+ 
+
 ## Exclude visits by hostname
 
 If you prefer to only record traffic from specific hostnames (and block all the other traffic), you can do so in your site settings: 
