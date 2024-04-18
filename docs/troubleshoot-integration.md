@@ -68,6 +68,10 @@ Do you see our script on your site but your visits are not being counted? Here's
 
 ## Would you like to exclude your own visits from being tracked?
 
-You can follow the instructions [in this guide](excluding.md).
+You can follow the instructions [in this guide](excluding.md) to exclude visits by IP address, countries, pages or hostnames.
 
 On WordPress? [Our WordPress plugin](https://plausible.io/wordpress-analytics-plugin) excludes admin visits by default.
+
+## Need further help with your integration?
+
+Do [contact us](https://plausible.io/contact). We're here to help.
