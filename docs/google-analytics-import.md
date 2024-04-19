@@ -16,7 +16,7 @@ Here's how to import your historical Google Analytics (Universal Analytics) stat
 
 1. Go to the Plausible Analytics [site settings](website-settings.md) for the website you'd like to import the data for.
 
-2. In the "**Integrations**" tab, find the "**Google Analytics Data Import**" panel. You can link your Google account to your Plausible account by clicking on the "**Continue With Google**" button.
+2. In the "**Imports**" tab, click the big button with the Google Analytics logo. This will let you link your Google account to your Plausible account, and give Plausible access to your Google Analytics properties.
 
 <img alt="Import Google Analytics data into Plausible" src={useBaseUrl('img/import-google-analytics-data.png')} />
 
