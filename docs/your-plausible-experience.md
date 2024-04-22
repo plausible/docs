@@ -64,7 +64,7 @@ There's also the [events API](events-api.md) that can be used to record pageview
 
 ## Import your historical Google Analytics stats
 
-You can import your historical Google Analytics (Universal Analytics) stats into your Plausible dashboard. See [how our GA importer works](google-analytics-import.md).
+You can import your historical Google Analytics stats into your Plausible dashboard. See [how our GA importer works](google-analytics-import.md).
 
 ## Opt out from counting your own visits
 
