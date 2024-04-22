@@ -32,7 +32,6 @@ module.exports = {
       'compare-stats',
       'filters-segments',
       'manual-link-tagging',
-      'google-analytics-import',
       'google-search-console-integration',
       'realtime-dashboard',
       'top-referrers',
@@ -40,10 +39,17 @@ module.exports = {
       'countries',
       'devices',
       'subdomain-hostname-filter',
-      'export-stats',
       'metrics-definitions',
       'keyboard-shortcuts',
       'dashboard-faq',
+      {
+        type: 'category',
+        label: 'Import & Export',
+        items: [
+          'google-analytics-import',
+          'export-stats',
+        ],
+      },
     ],
     'Events, Funnels and Ecommerce': [
       'goal-conversions',
