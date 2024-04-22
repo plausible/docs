@@ -86,13 +86,9 @@ When you're looking at a longer period of time, you may see a discrepancy in the
 
 To get the number of unique visitors in a longer period of time (say one month) we just sum up the daily unique visitor numbers. We can't do the proper unique visitors calculation like Google Analytics is doing.
 
-### UTM traffic
+### UTM sources
 
-Google Analytics aggregates multiple dimensions under the name "**source**" including referral sources and the value of the UTM source parameter if that was present during a visit. 
-
-If AdWords auto-tagging was enabled for a visit, then this takes the value "**google**". This means that we're unable to get the referrer for any visits that used a UTM source parameter. The compromise we have made with this problem is to save referrers - identified as being domain names - as "**sources**" and everything else as "**UTM sources**". 
-
-In the case of AdWords tracking, this is saved as a "**UTM source**" with the value "**adwords**".
+Google Analytics aggregates UTM source under the "**source**" dimension, and they don't expose a separate "**UTM source**" dimension from their API. This is why we cannot show UTM sources imported from Google Analytics.
 
 ### Browser and operating system versions
 
