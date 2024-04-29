@@ -110,7 +110,7 @@ You can run Plausible as a first party connection from your domain name. [Learn 
 
 ## GitBook
 
-[The GitBook Plausible Analytics integration](https://docs.gitbook.com/product-tour/integrations/plausible) allows you to track traffic in your published spaces from your Plausible dashboard.
+[The GitBook Plausible Analytics integration](https://www.gitbook.com/integrations/plausible) allows you to track traffic in your published spaces from your Plausible dashboard.
 
 ## Go
 
