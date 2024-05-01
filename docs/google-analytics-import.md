@@ -18,7 +18,7 @@ Here's how you can import your historical Google Analytics stats into your Plaus
 
 3. After linking Plausible to your Google account, you'll see a drop-down selection menu listing all the existing Google Analytics properties (both UA and GA4) associated with the connected Google account. Select the property that you'd like to import and click on the "**Continue**" button.
 
-4. On the next screen, you can click on the "**Confirm import**" button to start the data import process. Depending on the amount of data you have, this may take some time. You'll receive an email when the import has been completed. It should take no more than a couple of minutes for most sites.
+4. On the next screen, you can click on the "**Confirm import**" button to start the data import process. The import should take no more than a few minutes for most sites but if you have a site with a lot of historical data, it may take up to a couple of hours to complete due to Google's API limits. You'll receive an email when the import has been completed. 
 
 5. Once you have received the email, the imported data will be visible in your Plausible dashboard alongside the native data. An icon is shown in the top-right of the dashboard when imported data has been included. Clicking this icon will stop the imported data from being displayed and the icon will then appear with a strike-through.
 
