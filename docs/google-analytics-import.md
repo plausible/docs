@@ -12,7 +12,7 @@ Here's how you can import your historical Google Analytics stats into your Plaus
 
 1. Go to the Plausible Analytics [site settings](website-settings.md) for the website you'd like to import the data for.
 
-2. In the "**Imports**" section, find the "**Import Data**" panel. You can link your Google account to your Plausible account by clicking on the "**Google Analytics**" button.
+2. In the "**Imports & Exports**" section, find the "**Import Data**" panel. You can link your Google account to your Plausible account by clicking on the "**Google Analytics**" button.
 
 <img alt="Import Google Analytics data into Plausible" src={useBaseUrl('img/import-google-analytics-data.png')} />
 
@@ -30,7 +30,7 @@ You should import your UA historical data into Plausible before Google deletes y
 
 If you'd like to import multiple Google Analytics properties into the same Plausible dashboard, please go through the process above again and choose a different property to import. You can import a maximum of 5 different properties into the same Plausible dashboard. 
 
-In the "**Imports**" section, you can see the overview of all your existing imports to that specific Plausible dashboard. For each import, we list the Google Analytics property ID, the number of pageviews imported and the time range that the import covers.
+In the "**Imports & Exports**" section, you can see the overview of all your existing imports to that specific Plausible dashboard. For each import, we list the Google Analytics property ID, the number of pageviews imported and the time range that the import covers.
 
 ## How much data is imported?
 
@@ -56,7 +56,7 @@ If you have strict data retention limits in place in Google Analytics (for insta
 
 ## How do I delete the imported data?
 
-Data you have imported can be deleted by returning to your site's "**Imports**" settings page and clicking the "**Delete Import**" button in the "**Existing Imports**" section. This action won't affect the native data you have collected using our script directly.
+Data you have imported can be deleted by returning to your site's "**Imports & Exports**" settings page and clicking the "**Delete Import**" button in the "**Existing Imports**" section. This action won't affect the native data you have collected using our script directly.
 
 <img alt="Delete Google Analytics data from Plausible" src={useBaseUrl('img/delete-google-analytics-data.png')} />
 
