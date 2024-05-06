@@ -27,7 +27,7 @@ It is quick and easy to create a funnel. Here's how:
 
 * Give your funnel a name in the "**Funnel name**" field
 
-* Define your funnel by adding a set of specific steps that you expect a visitor to take before a conversion, a purchase or a sign up. These steps consist of [pageviews goals](pageview-goals.md) and [custom events](custom-event-goals.md). You need to add a minimum of two steps to create a funnel
+* Define your funnel by adding a set of specific steps that you expect a visitor to take before a conversion, a purchase or a sign up. These steps consist of [pageviews goals](pageview-goals.md) and [custom events](custom-event-goals.md). You need to add a minimum of 2 steps and a maximum of 8 steps to create a funnel.
 
 <img alt="Define funnel" src={useBaseUrl('img/define-funnel.png')} />
 
