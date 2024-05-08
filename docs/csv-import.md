@@ -20,7 +20,11 @@ Here's how you can import your historical stats into your Plausible dashboard by
 
 2. Go into the "**Imports & Exports**" section, find the "**Import Data**" panel and click on the "**CSV**" button to import your CSV files.
 
+<img alt="Import CSV" src={useBaseUrl('img/import-csv.png')} />
+
 3. Select all the CSV files that you'd like to import and click on the "**Confirm import**" button. When importing your stats from different analytics tools, please ensure that each CSV file follows our CSV format guidelines. The guidelines are listed at the end of this document.
+
+<img alt="Select CSV and import" src={useBaseUrl('img/select-csv-to-import.png')} />
 
 :::tip Want to transfer a site ownership to another Plausible account?
 No data export/import is needed in this case. We have a way to [transfer site ownership](transfer-ownership.md) with a couple of clicks.
