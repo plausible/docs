@@ -16,9 +16,17 @@ You can export your stats directly from the top chart of your Plausible dashboar
 
 This will export a ZIP file which includes CSV files of the individual reports. You can then use these CSV files to import your stats into Excel or other data analysis tools.
 
-Note that for the export to be as quick as possible, the individual CSV files are limited to 300 entries each, while page reports are limited to 100 entries each with this method.
+Note that for the export to be as quick as possible, the individual CSV files are limited to 300 entries each, while page reports are limited to 100 entries each with this method. For the full data export, please look at the Stats API.
 
 <img alt="Exporting your website stats" src={useBaseUrl('img/download-website-stats.png')} />
+
+## Export all stats to date
+
+Here's how to export all the data collected for a particular Plausible dashboard. This export method is best suited for data portability purposes. 
+
+1. Go to the Plausible Analytics [site settings](website-settings.md) for the website for which you'd like to export the data.
+2. In the "**Imports & Exports**" section, find the "**Export Data**" panel and click on the "**Export to CSV**" button.
+3. Your export will be queued and we'll email you when it's ready for download. You'll have 24 hours to download the data after the export is ready.
 
 ## Use the stats API
 
