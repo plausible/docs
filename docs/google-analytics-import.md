@@ -100,7 +100,18 @@ Currently, you can only see the Exit Pages report for data imported from Univers
 
 ### Goals
 
-It's currently not possible to import your goals, custom events and ecommerce revenue data.
+It's only possible to import your goal data from Google Analytics 4.
+
+When your import finishes, you will not see your goal data show up automatically. You need to go to your site settings and add the goals you want to show up on your dashboard. To see how to do that, check out the [Create a custom event goal in your Plausible Account](custom-event-goals#3-create-a-custom-event-goal-in-your-plausible-account) section in our docs. Note that you can add all goals with a single click as long as the goals in your Google Analytics property have been completed within the last 6 months.
+
+It's important to note that two event names are changed as they are being imported to Plausible. Those are:
+
+* `file_dowload` (GA4) &rarr; `File Download` (Plausible)
+* `click` (GA4) &rarr; `Outbound Link: Click` (Plausible)
+
+They have the same meaning in Plausible and Google Analytics, which is why it makes sense to group them together under a single entry. While filtering is not yet supported on imported data, you can click on either of these two goals to see a breakdown by their URL.
+
+The `url` for `File Download` and `Outbound Link: Click` events is the only additional dimension that we are importing. All other goal data is imported without any additional dimensions. For example, a `form_submit` event imported from Google Analytics will not include any information about the `form_id`, `form_name` or anything of the sort.
 
 ### Day view graph
 
