@@ -197,7 +197,13 @@ Select `Custom event` as the goal trigger and enter the name of the custom event
 
 Next, click on the "**Add goal**" button and you'll be taken back to the Goals page. When you navigate back to your Plausible dashboard, you should see the number of visitors who triggered the custom event. Custom events are listed at the bottom of your dashboard and will appear as soon as the first conversion has been tracked.
 
-That's it. You're now tracking goal conversions.
+If you happen to be sending events to Plausible already, you might see the following message under the "**Add goal**" button:
+
+<img alt="Add all custom event goals in a single action" src={useBaseUrl('img/add-all-event-goals.png')} />
+
+You can click the link to automatically add all the goals you've been sending so far. If you end up not wanting to see some of them on the dashboard, you can simply remove them from the list.
+
+That's it. You can now check our your goal conversions on the dashboard.
 
 ## Enhanced goal conversion tracking
 
