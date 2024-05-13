@@ -298,6 +298,10 @@ There is a [Plausible Sphinx extension](https://pypi.org/project/sphinx-plausibl
 
 [Plausible Wrapper](https://statamic.com/addons/jack-whiting/plausible): A wrapper around the Plausible API that fetches the analytics into your dashboard in a pretty way. Built and maintained by [Jack Whiting](https://jackwhiting.co.uk/).
 
+## Swift
+
+[AviaryInsights](https://github.com/brightdigit/AviaryInsights): Easy to use Swift package for recording pageviews and custom events for Plausible. Built and maintained by [Leo Dion](https://github.com/leogdion).
+
 ## Sylius
 
 A [Sylius Plausible plugin](https://github.com/Setono/sylius-plausible-plugin) that integrates Plausible seamlessly into your store. Built and maintained by [Setono](https://github.com/Setono).
