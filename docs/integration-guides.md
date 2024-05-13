@@ -288,7 +288,7 @@ Plausible integrates automatically with modern pushState based frontend routers.
 
 ## Sphinx / Read The Docs
 
-There is a [Plausible Sphinx extension](https://pypi.org/project/sphinx-plausible/).
+There is a [Plausible Sphinx extension](https://pypi.org/project/sphinx-plausible/)
 
 ## Squarespace
 
@@ -296,11 +296,13 @@ There is a [Plausible Sphinx extension](https://pypi.org/project/sphinx-plausibl
 
 ## Statamic
 
-[Plausible Wrapper](https://statamic.com/addons/jack-whiting/plausible): A wrapper around the Plausible API that fetches the analytics into your dashboard in a pretty way. Built and maintained by [Jack Whiting](https://jackwhiting.co.uk/).
+[Plausible Wrapper](https://statamic.com/addons/jack-whiting/plausible): A wrapper around the Plausible API that fetches the analytics into your dashboard in a pretty way. Built and maintained by [Jack Whiting](https://jackwhiting.co.uk/)
 
 ## Swift
 
-[AviaryInsights](https://github.com/brightdigit/AviaryInsights): Easy to use Swift package for recording pageviews and custom events for Plausible. Built and maintained by [Leo Dion](https://github.com/leogdion).
+* [PlausibleSwift](https://github.com/nickoneill/PlausibleSwift) - An implementation of Plausible Analytics pageview and event tracking for Swift. Built and maintained by [Nick O'neill](https://github.com/nickoneill)
+
+* [AviaryInsights](https://github.com/brightdigit/AviaryInsights): Easy to use Swift package for recording pageviews and custom events for Plausible. Built and maintained by [Leo Dion](https://github.com/leogdion)
 
 ## Sylius
 
@@ -341,10 +343,6 @@ A [TypeDoc Plausible plugin](https://typedoc-plausible.8hob.io/) that integrates
 ## WordPress
 
 We have a WordPress plugin that makes the integration with WordPress nice and easy. [Here's how to get started with our WordPress plugin](https://plausible.io/wordpress-analytics-plugin).
-
-## Swift
-
-[PlausibleSwift](https://github.com/nickoneill/PlausibleSwift) - An implementation of Plausible Analytics pageview and event tracking for Swift. Built and maintained by [Nick O'neill](https://github.com/nickoneill)
 
 ## iOS apps and widgets for quick overview of your stats
 
