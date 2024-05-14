@@ -74,8 +74,16 @@ It isn't possible to use [our filters](filters-segments.md) with the imported da
 
 ### Goals and custom properties
 
-It's currently not possible to import your goals, custom events and ecommerce revenue data. It's also not possible to import your custom
-properties.
+You can import your goals and custom events. However, there is a limited support for importing custom properties along with them.
+
+A single custom property is supported in combination with particular goals:
+
+- `url` property (imported as `link_url`) with "Outbound Link: Click", "File Download" and "Cloaked Link: Click" goals
+- `path` property (imported as `path`) with "404" goal
+
+Ecommerce revenue data are not supported.
+
+Due to our current imported data model, we are unfortunately unable to show exact aggregated visitor counts for special goals such as "Outbound Link: Click", "404" and "File Download". For example, if one visitor completed a "File Download" event two times with a different `url` property, they'll be counted as two visitors from re-imported data, while native query would count them as a single visitor. The same applies for pageview goals.
 
 ## CSV format guidelines
 
@@ -95,6 +103,7 @@ Each CSV file must follow a specific naming convention to be recognized by the i
   - `imported_pages`
   - `imported_entry_pages`
   - `imported_exit_pages`
+  - `imported_custom_events`
   - `imported_locations`
   - `imported_devices`
   - `imported_browsers`
@@ -199,6 +208,27 @@ $ head imported_exit_pages_20230209_20240123.csv
 "2023-02-09","/docs/script-extensions",4,138,4,2,6
 "2023-02-09","/docs/excluding",1,0,1,1,1
 "2023-02-09","/docs/change-plan",2,0,2,2,2
+```
+
+#### imported_custom_events
+
+| date | name   | link_url | path   | visitors | events |
+| ---- | ------ | -------- | ------ |--------- | ------ |
+| Date | String | String   | String | UInt64   | UInt64 |
+|      |        |          |        | count    | count  |
+
+Example:
+
+```console
+$ head imported_custom_events_20230209_20240123.csv
+"date","name","link_url","path","visitors","events"
+"2023-02-09","Outbound Link: Click","https://one.example.com/","",1,1
+"2023-02-09","Outbound Link: Click","https://two.example.com/","",1,1
+"2023-02-09","Outbound Link: Click","https://three.example.com/news","",1,1
+"2023-02-09","Outbound Link: Click","https://social.example.com/someone/status/1231233456","",2,2
+"2023-02-09","404","","/no-such-site",1,1
+"2023-02-09","Outbound Link: Click","https://blog.example.com/","",1,1
+"2023-02-09","Signup","","",3,3
 ```
 
 #### imported_locations
