@@ -89,4 +89,8 @@ You can also specify a custom list of file types to track with a `file-types` at
 <script defer file-types="js,py" data-domain="yourdomain.com" src="https://plausible.io/js/script.file-downloads.js"></script>
 ```
 
-Using the `file-types` attribute will override our default list and only your custom file type downloads will be tracked. If you want to add custom file type downloads without overriding the default list you can use `add-file-types` instead.
+Using the `file-types` attribute will override our default list and only your custom file type downloads will be tracked. If you want to add custom file type downloads without overriding the default list you can use `add-file-types` instead like this:
+
+```html
+<script defer add-file-types="js,py" data-domain="yourdomain.com" src="https://plausible.io/js/script.file-downloads.js"></script>
+```
