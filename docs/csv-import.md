@@ -78,10 +78,12 @@ You can import your goals and custom events. However, there is a limited support
 
 A single custom property is supported in combination with particular goals:
 
-- `url` property (imported as `link_url`) with `Outbound Link: Click`, `File Download` and `Cloaked Link: Click` goals
-- `path` property (imported as `path`) with `404` goal
+- `url` property (imported as `link_url`) with "Outbound Link: Click", "File Download" and "Cloaked Link: Click" goals
+- `path` property (imported as `path`) with "404" goal
 
 Ecommerce revenue data are not supported.
+
+Due to our current imported data model, we are unfortunately unable to show exact aggregated visitor counts for special goals such as "Outbound Link: Click", "404" and "File Download". For example, if one visitor completed a "File Download" event two times with a different `url` property, they'll be counted as two visitors from re-imported data, while native query would count them as a single visitor. The same applies for pageview goals.
 
 ## CSV format guidelines
 
