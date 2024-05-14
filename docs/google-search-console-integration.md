@@ -71,7 +71,7 @@ Please make sure you tick the "View Search Console data for your verified sites"
 
 ## Check your search query data in Plausible Analytics
 
-Look at your site’s "**Top Sources**" stats in your Plausible Analytics dashboard, click on "**Google**" in the list and you should see the keywords coming through. You can also [filter your dashboard](filters-segments.md) by page, country or device and see the Search Console keyword terms for that segment of your audience only. 
+Look at your site’s "**Top Sources**" report in your Plausible Analytics dashboard, click on "**Google**" in the list and you should see the keyword terms coming through. If you click on the "**Details**" button, you can also see the number of impressions, CTR and position for each keyword term. And you can also [filter your dashboard](filters-segments.md) by page, country or device and see the Search Console keyword terms for that segment of your audience only. 
 
 <img alt="Google search query data in Plausible Analytics" src={useBaseUrl('img/google-search-query-referrers.png')} />
 
