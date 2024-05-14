@@ -128,6 +128,19 @@ To include a space character in the query part of the URL, you can use `%20` (a 
 * `event:goal==Visit%20/register`
 * `event:goal==Outbound+Link:+Click`
 
+### Imported stats
+
+Aggregates, timeseries and breakdowns support including imported stats in the results using `with_imported` option. There are some limitations though:
+
+* `event:props:*` custom property breakdowns are only supported for 2 properties: `url` and `path`. Property breakdowns will only work in combination with a [certain subset](/csv-import#goals-and-custom-properties) of `event:goal` filters,
+* `event:page`, `event:hostname` and `visit:exit_page` breakdowns do not support `bounce_rate` and `visit_duration` metrics.
+
+For metrics which are not supported but query parameters include imported stats, the returned values completely ignore the imported stats while the values of supported metrics do include them.
+
+### Filtering imported stats
+
+Filtering imported stats is currently not possible, except for very specific cases of filtering by `event:goal` in custom property breakdowns described earlier.
+
 ## Endpoints
 
 ### GET /api/v1/stats/realtime/visitors
@@ -208,6 +221,12 @@ Some metrics can only be queried with a certain filter. For example, the `conver
 
 <hr / >
 
+**with_imported** <Optional />
+
+A boolean determining whether to include imported stats in the returned results or not. If not specified, it will default to `false`. See [imported stats](#imported-stats) for more details.
+
+<hr / >
+
 **compare** <Optional />
 
 Off by default. You can specify `compare=previous_period` to calculate the percent difference with the previous period for each metric. The previous period will be of the exact same length as specified in the `period` parameter.
@@ -284,6 +303,12 @@ See [filtering](#filtering)
 **metrics** <Optional />
 
 Comma-separated list of metrics to show for each time bucket. Valid options are `visitors`, `visits`, `pageviews`, `views_per_visit`, `bounce_rate`, `visit_duration`, `events` and `conversion_rate`. If not specified, it will default to `visitors`.
+
+<hr / >
+
+**with_imported** <Optional />
+
+A boolean determining whether to include imported stats in the returned results or not. If not specified, it will default to `false`. See [imported stats](#imported-stats) for more details.
 
 <hr / >
 
@@ -367,6 +392,12 @@ Comma-separated list of metrics to show for each item in breakdown. See the [lis
 :::note
 Some metrics require a certain filter or breakdown property. For example `conversion_rate` can be queried with a filter on `event:goal` or in a breakdown by`event:goal`.
 :::
+
+<hr / >
+
+**with_imported** <Optional />
+
+A boolean determining whether to include imported stats in the returned results or not. If not specified, it will default to `false`. See [imported stats](#imported-stats) for more details.
 
 <hr / >
 
