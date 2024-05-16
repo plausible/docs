@@ -10,8 +10,6 @@ To integrate your website with Plausible Analytics, you need to insert a Plausib
 <script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.js"></script>
 ```
 
-## Where to find your tracking snippet
-
 You can find your JavaScript snippet by [logging into your Plausible account](https://plausible.io/sites). Here you'll find the list of websites you've added to Plausible.
 
 Click on the menu icon on the right-hand side of the site you'd like to get the snippet for and choose "**Settings**" to enter the [site settings](website-settings.md). Then scroll down to the "**JavaScript Snippet**" section.
