@@ -22,15 +22,13 @@ Click on the menu icon on the right-hand side of the site you'd like to get the 
 
 Installing Plausible on a site can be a slightly different process depending on what tools you're using to manage your site.
 
-Are you using WordPress? We recommend you integrate Plausible by using our plugin. It's very lightweight, excludes your visits by default and allows you to see the stats directly in your WordPress dashboard. It also avoids conflicts with WP Rocket and similar plugins. [See more here](https://plausible.io/wordpress-analytics-plugin).
+* Are you using WordPress? We recommend you integrate Plausible by using our plugin. It's very lightweight, excludes your visits by default and allows you to see the stats directly in your WordPress dashboard. It also avoids conflicts with WP Rocket and similar plugins. [See more here](https://plausible.io/wordpress-analytics-plugin).
 
-We've put together several guides that cover popular website builders and content management systems (CMS). Thanks to the members of our community, there are also integrations and plugins for several frameworks such as Hugo and GatsbyJS. We also have guides for single-page applications.
+* Are you using Google Tag Manager? We have a guide on [how to add the Plausible snippet using GTM](google-tag-manager.md).
 
-Here's [the full list of all integrations and guides](integration-guides.md). These can help you set up and start counting your site visitors in no time.
+* If you'd like to serve our snippet as a first-party connection from your domain name, we offer a way to proxy our script. See [full details here](/proxy/introduction.md).
 
-## Alternatively you can proxy our snippet
-
-If you'd like to serve our snippet as a first-party connection from your domain name, we offer a way to proxy our script. See [full details here](/proxy/introduction.md).
+* We've put together [several other guides and plugins](integration-guides.md) that cover popular website builders, content management systems (CMS) and frameworks. These can help you set up and start counting your site visitors in no time.
 
 ## Can I track visitors across my domain and subdomain?
 
@@ -75,10 +73,6 @@ Here's how you can use it:
 ```html
 <script defer data-domain="anothersite.com,rollup.mysites.com" src="https://plausible.io/js/script.js"></script>
 ```
-
-:::tip Integrating Plausible by using Google Tag Manager?
-You'll need to use a different tracking snippet. [See these instructions](google-tag-manager.md).
-:::
 
 ## How to check if Plausible Analytics is installed correctly 
 
