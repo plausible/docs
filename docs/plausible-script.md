@@ -1,26 +1,20 @@
 ---
-title: Add the script to your website
+title: Add the tracking snippet to your website
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-To integrate your website with Plausible Analytics, you need to be able to update the HTML code of the website you want to track. Paste your Plausible Analytics tracking script code into the Header (`<head>`) section of your site. Place the tracking script within the `<head> … </head>` tags.
-
-Your Plausible Analytics tracking script code will look something like this (your exact code will be shown on the JavaScript snippet page):
+To integrate your website with Plausible Analytics, you need to insert a Plausible tracking snippet into the header section of your site. Place the snippet within the `<head> … </head>` tags. Your Plausible tracking snippet will look something like this:
 
 ```html
 <script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.js"></script>
 ```
 
-:::tip Are you using WordPress?
-We recommend you integrate Plausible by using our plugin. It's very lightweight, excludes your visits by default and allows you to see the stats directly in your WordPress dashboard. It also avoids conflicts with WP Rocket and similar plugins. [See more here](https://plausible.io/wordpress-analytics-plugin).
-:::
+## Where to find your tracking snippet
 
-## Where to find your JavaScript snippet
+You can find your JavaScript snippet by [logging into your Plausible account](https://plausible.io/sites). Here you'll find the list of websites you've added to Plausible.
 
-You can find your JavaScript snippet by [logging into your Plausible account](https://plausible.io/sites). Here you'll find the list of websites you've added to Plausible Analytics.
-
-Click on the menu icon on the right-hand side of the domain name you'd like to get the snippet for and choose "**Settings**" to enter the website settings section. Then scroll down to the "**JavaScript Snippet**" section on the following page.
+Click on the menu icon on the right-hand side of the site you'd like to get the snippet for and choose "**Settings**" to enter the [site settings](website-settings.md). Then scroll down to the "**JavaScript Snippet**" section.
 
 <img alt="Plausible Analytics" src={useBaseUrl('img/list-of-sites.png')} />
 
@@ -28,13 +22,15 @@ Click on the menu icon on the right-hand side of the domain name you'd like to g
 
 Installing Plausible on a site can be a slightly different process depending on what tools you're using to manage your site.
 
-We've put together several guides that cover popular website builders and content management systems (CMS) such as WordPress and Ghost. Thanks to the members of our community, there are also integrations and plugins for several frameworks such as Hugo and GatsbyJS. We also have guides for single-page applications.
+Are you using WordPress? We recommend you integrate Plausible by using our plugin. It's very lightweight, excludes your visits by default and allows you to see the stats directly in your WordPress dashboard. It also avoids conflicts with WP Rocket and similar plugins. [See more here](https://plausible.io/wordpress-analytics-plugin).
+
+We've put together several guides that cover popular website builders and content management systems (CMS). Thanks to the members of our community, there are also integrations and plugins for several frameworks such as Hugo and GatsbyJS. We also have guides for single-page applications.
 
 Here's [the full list of all integrations and guides](integration-guides.md). These can help you set up and start counting your site visitors in no time.
 
-## Alternatively you can proxy our script
+## Alternatively you can proxy our snippet
 
-If you'd like to serve the script as a first-party connection from your domain name, we offer a way to proxy our script. See [full details here](/proxy/introduction.md).
+If you'd like to serve our snippet as a first-party connection from your domain name, we offer a way to proxy our script. See [full details here](/proxy/introduction.md).
 
 ## Can I track visitors across my domain and subdomain?
 
@@ -42,7 +38,7 @@ Yes, you can add your main domain name as a site to your Plausible account and u
 
 ## Can I send stats to multiple dashboards at the same time?
 
-Yes, you can send your visitor stats to multiple Plausible dashboards at the same time. To do this, you need to configure the data-domain attribute as a comma-separated list in the Plausible snippet that you insert into your site. Here's an example:
+Yes, you can send your visitor stats to multiple Plausible dashboards at the same time. To do this, you need to configure the data-domain attribute as a comma-separated list in the Plausible snippet. Here's an example:
 
 ```html
 <script defer data-domain="domain1.com,domain2.com,domain3.com" src="https://plausible.io/js/script.js"></script>
@@ -84,13 +80,13 @@ Here's how you can use it:
 You'll need to use a different tracking snippet. [See these instructions](google-tag-manager.md).
 :::
 
-## How to verify if the script is installed on your site
+## How to check if Plausible Analytics is installed correctly 
 
-After you've added the Plausible Analytics snippet to the HTML of your website, you should see our script installed on your site and can verify that the integration is working.
+After you've added the Plausible snippet to your website, you can use our testing tool to verify that the snippet has been installed correctly and that the integration is working.
 
-In your [Plausible Analytics account](https://plausible.io/sites), click on your website domain name. You should see a blinking green dot which indicates that we’re listening for incoming page views in real-time.
+In your [Plausible account](https://plausible.io/sites), click on your website domain name. You should see a blinking green dot which indicates that we’re listening for incoming page views in real-time. Our testing tool will launch automatically and will send test traffic to your site. This test traffic won't be recorded in the dashboard but you'll see a status message that indicates whether tracking is working or not. You can launch the testing tool at any time from your site settings.
 
-There are no delays in stats with Plausible. Everything is live. Once the first page view comes through, you'll be automatically taken to the stats dashboard with graphs and numbers.
+There are no delays in stats with Plausible. Everything is live. Once the first real visitor comes to your site, you'll be automatically taken to the stats dashboard with graphs and numbers.
 
 This is an indication that the integration is working, congrats! Plausible Analytics is now tracking your website statistics while preserving the privacy of your visitors.
 
