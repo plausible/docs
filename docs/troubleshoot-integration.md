@@ -46,6 +46,42 @@ In addition to the steps above, do check this too:
 
 Have you made any change? You can launch our testing tool at any time from your [site settings](website-settings.md) to verify whether the changes you made has worked.
 
+<details>
+
+<summary>
+
+## How to manually check your integration
+
+</summary>
+
+In some cases, our automated testing tool may not be able to check your site. In those cases, a manual check is needed:
+
+## Check for the Plausible snippet in your source code
+
+A simple way to verify if Plausible is working is to view the source code of your site and look for the Plausible snippet. Here's how:
+
+1. Visit your home page or any other page on your site where Plausible is installed. 
+2. View the source code of your site. You can right-click anywhere on your page and click "**View Page Source**" (the wording may be slightly different depending on your web browser). Alternatively, use a keyboard shortcut to view the source code (`Option+Command+u` on a Mac or `ctrl+u` on Linux and Windows).  
+3. Press `Command+f` on a Mac or `ctrl+f` on Linux and Windows to search the source code. Type `data-domain` to search for the Plausible snippet. 
+4. Do you see our snippet? Ensure that the snippet is correct and that there are no unintended modifications compared to the snippet we provided you with.
+
+If you see our snippet in your source code and it is exactly the same snippet as the one we provided, it means Plausible is installed.
+
+<img alt="Ensure that the Plausible Analytics script is loading by checking the source code" src={useBaseUrl('img/data-domain-plausible-analytics-script.png')} />
+
+## Check for the Plausible script in your browser's developer tools
+
+You can also use your browser's developer tools to look for the Plausible script or any errors related to your Plausible integration.
+
+1. Visit your home page or any other page on your site where Plausible is installed. 
+2. Right-click anywhere on your page and click "**Inspect**" (the wording may vary depending on your web browser) to open the developer tools. Alternatively, press the key `F12` on Firefox or Chrome or `Option+Command+i` on Safari.
+3. Look into the "**Console**" tab in the developer tools for any errors related to Plausible. If you see an error related to the Plausible script, it means that something's not right with your implementation. We have some troubleshooting options further down this article.
+4. Then click on the "**Network**" tab in the developer tools. It will be empty, so you would need to reload your page. After you refresh the page, you will start seeing some data in the "**Network**" tab. You should see the `script.js` script from the Plausible domain `plausible.io` in the list. The Plausible script should display status 200.
+
+<img alt="Ensure that the Plausible Analytics script is loading in the 'Network' tab" src={useBaseUrl('img/network-check-if-plausible-is-working.png')} />
+
+</details>
+
 ## Need further help with your integration?
 
 Do [contact us](https://plausible.io/contact). We're here to help.
