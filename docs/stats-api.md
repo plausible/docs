@@ -69,7 +69,7 @@ more depth. Here's the full list of properties we collect automatically:
 | --------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | `event:goal`          | Register                      | A custom action that you want your users to take. To use this property, you first need to configure some goals in the [site settings](/website-settings), or via the [Sites API](/sites-api). Learn more about goals [here](/goal-conversions).                            |
 | `event:page`          | /blog/remove-google-analytics | Pathname of the page where the event is triggered. You can also use an asterisk to group multiple pages (`/blog*`)                      |
-| `event:hostname`      | example.com                   | Hostname of the event. You can also use an asterisk to group multiple hostnames (`*.example.com`).
+| `event:hostname`      | example.com                   | Hostname of the event. At this stage, breaking down on hostname is not supported and you can only use this property for filtering. Use an asterisk to filter by multiple hostnames at once, e.g. `*.example.com`.
 | `visit:entry_page`    | /home                         | Page on which the visit session started (landing page).                                                                                 |
 | `visit:exit_page`     | /home                         | Page on which the visit session ended (last page viewed).                                                                               |
 | `visit:source`        | Twitter                       | Visit source, populated from an url query parameter tag (`utm_source`, `source` or `ref`) or the `Referer` HTTP header.                 |
@@ -350,7 +350,7 @@ Domain of your site on Plausible.
 
 **property** <Required />
 
-Which property to break down the stats by. Valid options are listed in the [properties](#properties) section above.
+Which property to break down the stats by. Valid options are listed in the [properties](#properties) section above. Note that the `event:hostname` property is unsupported as a breakdown property at this stage.
 
 <hr / >
 
