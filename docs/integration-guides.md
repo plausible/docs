@@ -28,7 +28,7 @@ Here's the full list in alphabetical order:
 
 ## Bubble.io
 
-[This simple plugin](https://bubble.io/plugin/plausible-analytics-1609143980013x318025391610265600) just adds the Plausible JS script loading to the header. You only need to provide your site url. Built and maintained by [Balthazar](https://bubble.io/contributor/balthazar-1608993775771x115633308365631340)
+[This plugin](https://bubble.io/plugin/plausible-1676637257786x508745208583421950) helps you integrate Plausible into Bubble. Built and maintained by [AlderHam](https://bubble.io/contributor/1635756684643x102125470408982670)
 
 ## Buttondown
 
