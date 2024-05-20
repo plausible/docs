@@ -130,14 +130,9 @@ To include a space character in the query part of the URL, you can use `%20` (a 
 
 ### Imported stats
 
-Aggregates, timeseries and breakdowns support including imported stats in the results using `with_imported` option. There are some limitations though:
+Aggregates, timeseries and breakdowns support including imported stats in the results using `with_imported` option, with limitations. Breakdowns for custom properties (`event:props:*`) are only supported for 2 properties: `url` and `path`. Additionally, these breakdowns will only work in combination with a [certain subset](/csv-import#goals-and-custom-properties) of `event:goal` filters.
 
-* `event:props:*` custom property breakdowns are only supported for 2 properties: `url` and `path`. Property breakdowns will only work in combination with a [certain subset](/csv-import#goals-and-custom-properties) of `event:goal` filters,
-* `event:page`, `event:hostname` and `visit:exit_page` breakdowns do not support `bounce_rate` and `visit_duration` metrics.
-
-For metrics which are not supported but query parameters include imported stats, the returned values completely ignore the imported stats while the values of supported metrics do include them.
-
-### Filtering imported stats
+#### Filtering imported stats
 
 Filtering imported stats is currently not possible, except for very specific cases of filtering by `event:goal` in custom property breakdowns described earlier.
 
