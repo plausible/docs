@@ -74,12 +74,13 @@ Here's how you can use it:
 
 ## How to check if Plausible Analytics is installed correctly 
 
-After you've added the Plausible snippet to your website, you can use our testing tool to verify that the snippet has been installed correctly and that the integration is working.
+After adding the Plausible snippet to your website, you can use our testing tool to verify that the snippet is installed correctly and the integration is working:
 
-In your [Plausible account](https://plausible.io/sites), click on your website domain name. You should see a blinking green dot which indicates that we’re listening for incoming page views in real-time. Our testing tool will launch automatically and will send test traffic to your site. This test traffic won't be recorded in the dashboard but you'll see a status message that indicates whether tracking is working or not. You can launch the testing tool at any time from your site settings.
+1. In your [Plausible account's sites landing page](https://plausible.io/sites), click on your website domain name
+2. If no traffic has been counted yet, you should see a blinking green dot which indicates that we’re listening for incoming pageviews in real-time
+3. Our testing tool will launch automatically from that screen and send test traffic to your site. This test traffic won't be recorded in the dashboard but you'll see a status message that indicates whether tracking is working or not
+4. There are no delays in stats with Plausible. Everything is live. Once the first real visitor comes to your site, you'll be automatically taken to the stats dashboard with graphs and numbers, indicating that the integration is working. Congrats! Plausible is now tracking your website statistics while preserving the privacy of your visitors
 
-There are no delays in stats with Plausible. Everything is live. Once the first real visitor comes to your site, you'll be automatically taken to the stats dashboard with graphs and numbers.
-
-This is an indication that the integration is working, congrats! Plausible Analytics is now tracking your website statistics while preserving the privacy of your visitors.
+If something looks off in your stats, you can launch our integration verification testing tool at any time [from your site settings](website-settings.md).
 
 Have some issues with the integration? Take a look at [our guide to troubleshooting your Plausible Analytics integration](troubleshoot-integration.md).
