@@ -10,11 +10,11 @@ If you see the dashboard with graphs and numbers, it means everything is working
 
 Do you keep seeing a blinking green dot screen instead of the dashboard? The blinking green dot indicates that we’re listening for incoming visits in real-time but haven't recorded any yet. 
 
-Our testing tool will launch automatically from the blinking green dot screen to send test traffic to your site. This test traffic won't be recorded in the dashboard but you'll see a status message that indicates whether Plausible Analytics has been installed correctly.
+Our testing tool will launch automatically from the blinking green dot screen to send test traffic to your site. This test traffic won't be recorded in the dashboard but you'll see a status message indicating whether Plausible Analytics has been installed correctly.
+
+Did our testing tool detect an issue with your integration? See how to troubleshoot the most common issues below.
 
 ## How to troubleshoot your Plausible integration
-
-Are the visits not being counted or does something look off? Here's how to troubleshoot your integration if Plausible is not counting visitors correctly:
 
 * **Didn't add the Plausible snippet?** We've put together [many integration guides](integration-guides.md) that cover popular website builders and content management systems (CMS) such as WordPress and Ghost. Thanks to the members of our community, there are also community integrations and plugins for several frameworks such as Hugo and GatsbyJS. These can help you set up and start counting your site visitors in no time.
 
