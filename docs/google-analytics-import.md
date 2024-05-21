@@ -116,7 +116,3 @@ The `url` for `File Download` and `Outbound Link: Click` events is the only addi
 ### Day view graph
 
 We can't display hourly graph interval on the daily view.
-
-### Export
-
-It isn't possible to export the data imported from Google Analytics using our usual methods, such as the [CSV export](export-stats.md) and the [stats API](stats-api.md).
