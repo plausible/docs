@@ -134,7 +134,7 @@ Aggregates, timeseries and breakdowns support including imported stats in the re
 
 #### Filtering imported stats
 
-Filtering imported stats is currently not possible, except for very specific cases of filtering by `event:goal` in custom property breakdowns described earlier.
+Filtering imported stats is currently not possible, except for very specific cases of filtering by `event:goal` in custom property breakdowns described earlier. When the applied combination of filters and property is not supported for imported stats, the results are still returned based only on native stats, with a warning.
 
 ## Endpoints
 
