@@ -16,35 +16,61 @@ Did our testing tool detect an issue with your integration? See how to troublesh
 
 ## How to troubleshoot your Plausible integration
 
-* **Didn't add the Plausible snippet?** We've put together [many integration guides](integration-guides.md) that cover popular website builders and content management systems (CMS) such as WordPress and Ghost. Thanks to the members of our community, there are also community integrations and plugins for several frameworks such as Hugo and GatsbyJS. These can help you set up and start counting your site visitors in no time.
+### Have you added the Plausible snippet into your site?
 
-* **Running a browser extension that may be blocking our script**? Do disable extensions such as adblockers or whitelist our script within the settings of the extension you are using.
+We've put together [many integration guides](integration-guides.md) that cover popular website builders and content management systems (CMS) such as WordPress and Ghost. Thanks to the members of our community, there are also community integrations and plugins for several frameworks such as Hugo and GatsbyJS. These can help you set up and start counting your site visitors in no time.
 
-* **Using caching on your site**? Do purge the cache to ensure that you're viewing the latest version of your site.
+### Are you blocking our script from your device?
 
-* **Is the snippet correct?** View the source code of your site. You can right-click anywhere on your page and click "View Page Source" (the wording may be slightly different depending on your web browser). Then press Command+f on a Mac or ctrl+f on Linux and Windows to search. Type "**data-domain**" to search for the Plausible snippet. Does the snippet look as expected? Is the data-domain attribute within the snippet an exact match to the site as you've added it to your Plausible account?
+If you are running a browser extension that may be blocking our script, your own visits may not be recorded. Do disable extensions such as adblockers or whitelist our script within the settings of the extension you are using to count your own visits too.
 
-* **Implemented Plausible using Google Tag Manager?** GTM strips the `data-*` attributes by default which can break the tracking. Please follow [our GTM guide](google-tag-manager.md) for instructions on how to integrate Plausible using GTM.
+### Have you cleared the cache of your site?
 
-* **Check for errors in your browser's developer tools**. Your browser's developer tools may give you some insights through the error code it provides. Make sure to check for any errors in the "**Console**" tab. To do so, right-click anywhere on your page and click "Inspect" (the wording may vary depending on your web browser) to open the developer tools. Alternatively, press the key F12 on Firefox or Chrome or Option+Command+i on Safari.
+If you are using caching on your site, the latest version of your site where our snippet is integrated may not be showing to all your visitors yet. Do purge the cache to ensure that you're presenting the latest version of your site to all your visitors.
 
-* **Does your site use a Content Security Policy (CSP)**? If it does, you need to add plausible.io specifically to the allowed domains. [More info here](https://github.com/plausible/docs/issues/20).
+### Have you added the correct data-domain attribute in the Plausible snippet? 
 
-* **Running on localhost**? Our script automatically disables itself when running on localhost as most people don't want those stats to be counted. In the `script.js` script, `window.location.hostname` is used to verify that. If you do want to track stats on localhost, you can [use our extension](script-extensions.md).
-  
-* **Are you running an AMP page**? To track Google AMP pages with Plausible, you need to declare an AMP-analytics object on your AMP pages. [See the instructions here](https://github.com/plausible/analytics/discussions/220#discussioncomment-904022).
+View the source code of your site. You can right-click anywhere on your page and click "View Page Source" (the wording may be slightly different depending on your web browser). Then press Command+f on a Mac or ctrl+f on Linux and Windows to search. Type "**data-domain**" to search for the Plausible snippet. 
 
-### WordPress troubleshooting
+Does the snippet look as expected? Is the data-domain attribute within the snippet an exact match to the site as you've added it to your Plausible account? The data-domain must be an exact match for the stats to be recorded.
 
-In addition to the steps above, do check this too:
+### Have you implemented Plausible using Google Tag Manager? 
 
-* **Integrated Plausible using our official WordPress plugin?** It excludes admin visits by default which is why you may not see your own visits being recorded in the dashboard.
+GTM strips the `data-*` attributes by default which can break the tracking. Please follow [our GTM guide](google-tag-manager.md) for instructions on how to integrate Plausible using GTM.
 
-* **On WordPress and using WP Rocket, SiteGround Optimizer or other performance optimization plugins**? These may affect our script. We recommend you use our official WordPress plugin to avoid these issues or to manually whitelist our script in the settings of the individual performance optimization plugin. [Learn more abour our plugin here](https://plausible.io/wordpress-analytics-plugin).
+### Does your Console show any errors?
+
+Your browser's developer tools may give you some insights into what's going on through the error code it provides. Make sure to check for any errors in the "**Console**" tab. To do so, right-click anywhere on your page and click "Inspect" (the wording may vary depending on your web browser) to open the developer tools. Alternatively, press the key F12 on Firefox or Chrome or Option+Command+i on Safari.
+
+### Does your site use a Content Security Policy (CSP)? 
+
+If it does, you would need to add our domain name (plausible.io) specifically to the allowed domains list in order for the script to work. [More info here](https://github.com/plausible/docs/issues/20).
+
+### Are you running on localhost? 
+
+Our script automatically disables itself when running on localhost as most people don't want those stats to be counted. In the `script.js` script, `window.location.hostname` is used to verify that. If you do want to track stats on localhost, you can [use our extension](script-extensions.md).
+
+### Are you running an AMP page? 
+
+To track Google AMP pages with Plausible, you need to declare an AMP-analytics object on your AMP pages. [See the instructions here](https://github.com/plausible/analytics/discussions/220#discussioncomment-904022).
+
+### Have you integrated Plausible using our official WordPress plugin?
+
+It excludes admin visits by default which is why you may not see your own visits being recorded in the dashboard.
+
+### Are you using WP Rocket, SiteGround Optimizer or other performance optimization plugins? 
+
+These may affect our script. If you're on WordPress, we recommend you use [our official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) to avoid these issues. As an alternative, please manually whitelist our script in the settings of the individual performance optimization plugin. 
+
+### Did you insert multiple Plausible snippets into your site?
+
+This may affect the accuracy of the tracking. Please make sure to only insert one snippet. 
+
+If you're looking to use some of our enhanced measurements, you can combine multiple of these extensions into the same snippet. [See more here](script-extensions.md#you-can-combine-extensions-according-to-your-needs).
 
 ## Launch the Plausible testing tool
 
-Have you made any change? You can launch our testing tool at any time from your [site settings](website-settings.md) to verify whether the changes you made has worked.
+Have you made any changes? You can launch our testing tool at any time from your [site settings](website-settings.md) to verify whether the changes you made has worked.
 
 <details>
 
