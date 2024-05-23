@@ -97,7 +97,7 @@ Each CSV file must follow a specific naming convention to be recognized by the i
 {table_name}_{start_date}_{end_date}.csv
 ```
 
-- `table_name` refers to the specific table you are importing data into. There are nine tables available for import:
+- `table_name` refers to the specific table you are importing data into. There are ten tables available for import:
   - `imported_visitors`
   - `imported_sources`
   - `imported_pages`
