@@ -60,7 +60,7 @@ It excludes admin visits by default which is why you may not see your own visits
 
 ### Has some other plugin altered our snippet? 
 
-Are you using WP Rocket, SiteGround Optimizer or other performance optimization plugins? Or some type of consent banner plugin that determines which scripts can run when? These plugins may affect our tracking as they try to optimize our script. If you're on WordPress, we recommend you use [our official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) to avoid these issues as we've built-in resolutions to the most commong plugins. 
+Are you using WP Rocket, SiteGround Optimizer or other performance optimization plugins? Or some type of consent banner plugin that determines which scripts can run when? These plugins may affect our tracking as they try to optimize our script. If you're on WordPress, we recommend you use [our official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) to avoid these issues as we've built-in resolutions to the most common plugin conflicts. 
 
 Do you experience an issue even when using our plugin? Do check your integration manually to see which plugin is in question. Then please manually whitelist our script location and our domain name in the settings of the individual plugin so it stops altering our snippet. 
 
