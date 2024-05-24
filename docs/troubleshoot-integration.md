@@ -68,6 +68,10 @@ This may affect the accuracy of the tracking. Please make sure to only insert on
 
 If you're looking to use some of our enhanced measurements, you can combine multiple of these extensions into the same snippet. [See more here](script-extensions.md#you-can-combine-extensions-according-to-your-needs).
 
+### Are you using an older version of our script?
+
+In some cases when you’re using a custom proxy implementation, you may not be using the latest version of our tracking script. This doesn’t necessarily mean that the tracking won’t work but our automated verification tool won’t be able to confirm whether your integration is working correctly. Please either update your script to the latest version or manually check your integration.
+
 ## Launch the Plausible testing tool
 
 Have you made any changes? You can launch our testing tool at any time from your [site settings](website-settings.md) to verify whether the changes you made has worked.
