@@ -78,7 +78,7 @@ The fact that the referral sources are counted only when they start a new sessio
 
 Have you made any changes to your integration? You can launch our testing tool at any time from your [site settings](website-settings.md) to verify whether the changes you made has worked.
 
-You can also use tools that are built into your browser, such as the [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/open/), to manually confirm that Plausible is working on your site. See the instructions below.
+You can also use the tools that are built into your browser, such as the [Chrome](https://developer.chrome.com/docs/devtools/open/), [Safari](https://support.apple.com/en-gb/guide/safari/sfri20948/mac) and [Firefox](https://firefox-source-docs.mozilla.org/devtools-user/) developer tools to manually confirm that Plausible is working on your site. See the instructions below.
 
 Do you need further help with your integration? Do [contact us](https://plausible.io/contact). We're here to help.
 
