@@ -16,7 +16,7 @@ Did our testing tool detect an issue with your integration? See how to troublesh
 
 ## Verification tool says it's working but my own visit isn't counted 
 
-Are you blocking our script from your own device? If you are running a browser extension that may be blocking our script, your own visits may not be recorded. Do disable extensions such as adblockers or whitelist our script within the settings of the extension you are using to start counting your own visits too.
+Are you blocking our script from your own device? Or perhaps using a VPN that is blocking scripts? If you are running a browser extension or another service that may be blocking our script, your own visits may not be recorded. Do disable extensions such as adblockers or whitelist our script within the settings of the extension you are using to start counting your own visits too.
 
 Using WordPress and integrated Plausible using our official WordPress plugin? Our plugin excludes logged-in admin visits by default which is why you may not see your own visits being recorded in the dashboard.
 
@@ -68,6 +68,12 @@ Are you using WP Rocket, SiteGround Optimizer or other performance optimization 
 
 Do you experience an issue even when using our plugin? Do check your integration manually using the steps below to identify which plugin is in question. Then please whitelist our script location and our domain name in the settings of the individual plugin to stop it from altering our snippet. 
 
+## Launch the Plausible testing tool from your site settings
+
+Have you made any changes to your integration? You can launch our testing tool at any time from your [site settings](website-settings.md) to verify whether the changes you made has worked.
+
+Do you need further help with your integration? Do [contact us](https://plausible.io/contact). We're here to help.
+
 <details>
 
 <summary>
@@ -103,9 +109,3 @@ You can also use your browser's developer tools to look for the Plausible script
 <img alt="Ensure that the Plausible Analytics script is loading in the 'Network' tab" src={useBaseUrl('img/network-check-if-plausible-is-working.png')} />
 
 </details>
-
-## Launch the Plausible testing tool from your site settings
-
-Have you made any changes to your integration? You can launch our testing tool at any time from your [site settings](website-settings.md) to verify whether the changes you made has worked.
-
-Do you need further help with your integration? Do [contact us](https://plausible.io/contact). We're here to help.
