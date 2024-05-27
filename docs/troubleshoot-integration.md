@@ -12,7 +12,7 @@ Do you keep seeing a blinking green dot screen instead of the dashboard? The bli
 
 Our testing tool will launch automatically from the blinking green dot screen to send test traffic to your site. This test traffic won't be recorded in the dashboard but you'll see a status message indicating whether Plausible Analytics has been installed correctly.
 
-Did our testing tool detect an issue with your integration? See how to troubleshoot the most common issues below.
+Did our testing tool detect an issue with your integration? Or is there something unusual about the data you're seeing? See how to troubleshoot the most common issues below.
 
 ## Verification tool says it's working but my own visit isn't counted 
 
@@ -68,9 +68,17 @@ Are you using WP Rocket, SiteGround Optimizer or other performance optimization 
 
 Do you experience an issue even when using our plugin? Do check your integration manually using the steps below to identify which plugin is in question. Then please whitelist our script location and our domain name in the settings of the individual plugin to stop it from altering our snippet. 
 
+## I don't see my own referral source
+
+All referral sources are counted only when they start a new session on your site. This is why you don't see all your own referral sources if you for instance click to test several different [UTM tagged links](manual-link-tagging.md) at the same time. Only the first one would be included in the "**Top Sources**" report. You would need to start a new session by for instance waiting more than 30 minutes or using a different device, browser or IP address to have the subsequent sources counted too.
+
+The fact that the referral sources are counted only when they start a new session on your site prevents external domains such as a payment gateway that the user is being taken through to show up in the referrers list. No need for you to manually exclude referrers.
+
 ## Launch the Plausible testing tool from your site settings
 
 Have you made any changes to your integration? You can launch our testing tool at any time from your [site settings](website-settings.md) to verify whether the changes you made has worked.
+
+You can also use tools that are built into your browser, such as the [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/open/), to manually confirm that Plausible is working on your site. See the instructions below.
 
 Do you need further help with your integration? Do [contact us](https://plausible.io/contact). We're here to help.
 
