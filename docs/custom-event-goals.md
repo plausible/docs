@@ -160,7 +160,7 @@ Once you have this script inserted on your page, Plausible will be able to track
 
 </h3>
 
-If you want to track multiple elements accross your site, you can use the same code from step 3 on all of your pages. The only modification you will have to make, is list as many pairs of `elementId` and `classes` as you want. For example, if you want to track three elements:
+If you want to track multiple elements across your site, you can use the same code from step 3 on all of your pages. The only modification you will have to make, is list as many pairs of `elementId` and `classes` as you want. For example, if you want to track three elements:
 
 ```javascript
 var toTag = [

@@ -46,7 +46,7 @@ This will deploy a new project and present an online text editor with the conten
 
 ### Using Deno's runtime CLI
 
-Assumming you have a local installation of the [Deno runtime](https://docs.deno.com/runtime/manual#install-deno), initialize a new project with the init command:
+Assuming you have a local installation of the [Deno runtime](https://docs.deno.com/runtime/manual#install-deno), initialize a new project with the init command:
 
 ```shell
 deno init proxy-project-folder
