@@ -12,6 +12,8 @@ Do you keep seeing a blinking green dot screen instead of the dashboard? The bli
 
 Our testing tool will launch automatically from the blinking green dot screen to send test traffic to your site. This test traffic won't be recorded in the dashboard but you'll see a status message indicating whether Plausible Analytics has been installed correctly.
 
+<img alt="Integration verification tool" src={useBaseUrl('img/integration-verification-tool.png')} />
+
 Did our testing tool detect an issue with your integration? Or is there something unusual about the data you're seeing? See how to troubleshoot the most common issues below.
 
 ## Verification tool says it's working but my own visit isn't counted 
