@@ -28,7 +28,7 @@ But as the verification tool has confirmed, the tracking is working fine overall
 
 We've put together [many integration guides](integration-guides.md) that cover popular website builders and content management systems (CMS) such as WordPress and Ghost. Thanks to the members of our community, there are also community integrations and plugins for several frameworks such as Hugo and GatsbyJS. These can help you set up and start counting your site visitors in no time.
 
-## Have you used the correct data-domain attribute in the Plausible snippet? 
+## Have you added the correct data-domain attribute in the Plausible snippet? 
 
 View the source code of your site. You can right-click anywhere on your page and click "View Page Source" (the wording may be slightly different depending on your web browser). Then press Command+f on a Mac or ctrl+f on Linux and Windows to search. Type "**data-domain**" to search for the Plausible snippet. 
 
