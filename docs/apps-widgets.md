@@ -19,3 +19,7 @@ If you're looking to access your Plausible dashboard or stats outside of a web b
 ## Linux
 
 * [Tally](https://flathub.org/apps/com.cassidyjames.plausible) by [Cassidy James Blaede](https://cassidyjames.com): hybrid native + web app that wraps the Plausible web app in a native UI, integrating better with desktop operating systems.
+
+---
+
+Let us know about any other apps or widgets that you've built and we will feature them in this list. Thanks for your support!
