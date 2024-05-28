@@ -13,6 +13,8 @@ You can follow the visitor journey from a landing page to a conversion with our 
 * With the percentage drop-off between the individual funnel steps, you can spot where you lose the most visitors
 * You can get more granular by [using filters](filters-segments.md) to segment your audience. Filter conversion funnels by marketing campaign, referral source, landing page, device or location for more insights
 
+To learn about in-depth funnel marketing, [head to our blog](https://plausible.io/blog/funnels-conversion-optimization).
+
 <img alt="Funnels demo" src={useBaseUrl('img/funnels-demo.png')} />
 
 ## How to set up the conversion funnel analysis
