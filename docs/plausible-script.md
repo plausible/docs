@@ -28,6 +28,8 @@ Installing Plausible on a site can be a slightly different process depending on 
 
 * We've put together [several other guides and plugins](integration-guides.md) that cover popular website builders, content management systems (CMS) and frameworks. These can help you set up and start counting your site visitors in no time.
 
+* Prefer to use server side tracking? We have [the events API for that](events-api.md).
+
 ## Can I track visitors across my domain and subdomain?
 
 Yes, you can add your main domain name as a site to your Plausible account and use that same tracking snippet on all your subdomains too. This keeps the visitor session active between your main site and its subdomains. Here's [more details on how it works](subdomain-hostname-filter.md).
