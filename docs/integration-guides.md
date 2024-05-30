@@ -192,6 +192,10 @@ If you'd like to count users on your Android and/or iOS mobile apps, you can use
 
 To integrate Plausible Analytics into your Notion website, you'll need to use a third-party service such as Potion or Super (both are paid tools) that will allow you add custom code to your Notion website.
 
+## Nuxt 
+
+[Nuxt module](https://nuxt.com/modules/plausible) to natively integrate Plausible Analytics.
+
 ## Open Journal Systems (OJS)
 
 The [OJS Site Usage plugin](https://gitlab.com/ubiquitypress/ojs-plugin-site-usage) inserts a new page into the editor dashboard for a journal that displays the Plausible dashboard, allowing journal editors and managers to access and filter their site data in real time.
@@ -284,13 +288,11 @@ We offer a manual mode in case you want full control over when pageviews are tri
 
 A [TypeDoc Plausible plugin](https://typedoc-plausible.8hob.io/) that integrates Plausible into your built html docs. Built and maintained by [8 Hobbies](https://8hob.io).
 
-## Vue.js & Nuxt.js
+## Vue.js
 
 * [Vue.js & Nuxt.js](https://github.com/moritzsternemann/vue-plausible): A Vue.js plugin and NuxtJS module for Plausible. Exposes the functionality of [plausible-tracker](https://github.com/plausible/plausible-tracker) to Vue and Nuxt instances, Vue components, and Vuex stores. Built and maintained by [Moritz Sternemann](https://github.com/moritzsternemann).
 
-* Support for Vue 3 ([plausible-vue](https://github.com/productdevbookcom/v-plausible)) and for Nuxt 3 ([plausible-nuxt](https://github.com/productdevbookcom/v-plausible)).
-
-* There's also this [nuxt-plausible](https://github.com/johannschopplich/nuxt-plausible) Nuxt 3 module. 
+* Plausible module [for Nuxt 3 and Vue 3](https://github.com/productdevbookcom/v-plausible)
 
 ## VuePress
 
