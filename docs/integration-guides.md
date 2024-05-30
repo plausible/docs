@@ -10,17 +10,9 @@ Thanks to the members of our community, there are also integrations and plugins 
 
 Here's the full list in alphabetical order:
 
-## Airbyte connector
-
-[Airbyte connector](https://docs.airbyte.com/integrations/sources/plausible/): A Plausible API connector for Airbyte, an open-source data integration platform. Built and maintained by [Scott Lee Chua](https://github.com/scottleechua).
-
 ## Android SDK
 
 [Android SDK](https://github.com/wbrawner/plausible-android): An Android SDK for Plausible Analytics. Built and maintained by [William Brawner](https://github.com/wbrawner).
-
-## BigQuery
-
-[CloudQuery Plausible plugin](https://www.cloudquery.io/docs/plugins/sources/plausible/overview) extracts stats from Plausible stats API and loads them into BigQuery.
 
 ## Bridgetown
 
@@ -37,10 +29,6 @@ Here's the full list in alphabetical order:
 ## Carrd
 
 [How to add the script to your Carrd site](carrd-integration.md)
-
-## CloudQuery
-
-[CloudQuery Plausible plugin](https://www.cloudquery.io/docs/plugins/sources/plausible/overview) extracts stats from Plausible and loads them into any supported CloudQuery destination (PostgreSQL, Snowflake, BigQuery, S3...).
 
 ## Craft CMS
 
@@ -90,10 +78,6 @@ You can run Plausible as a first party connection from your domain name. [Learn 
 
 [Flutter plugin](https://pub.dev/packages/plausible_analytics): Send pageviews and custom events to Plausible. Built and maintained by [Eric Trenkel](https://erictrenkel.com/).
 
-## GA Insights
-
-[GA Insights](https://www.ga-insights.com/plausible-slack) allows you to extend Plausible Analytics with automated reporting, monitoring and goal tracking straight in Slack.
-
 ## Gatsby
 
 * [Gatsby](https://www.gatsbyjs.com/plugins/gatsby-plugin-plausible/): A Gatsby plugin for adding Plausible Analytics to your Gatsby site. Built and maintained by [Curtis Cummings](https://curtiscummings.me).
@@ -119,10 +103,6 @@ To track Google AMP pages with Plausible, you need to declare an AMP-analytics o
 ## Google Chrome extensions 
 
 To track Google Chrome browser extensions with Plausible, you can [follow these instructions](https://gist.github.com/Joelkw/31b798f69c714c00e9e097b1fd4bb3c8).
-
-## Google Data Studio
-
-There is a Plausible connector for Google Data Studio. It's community built and a paid product, but for those that require GDS, it's [worth checking out](https://www.epilocal.com/products/plausible-data-studio-connector/).
 
 ## Google Tag Manager (GTM)
 
@@ -224,10 +204,6 @@ The [OJS Site Usage plugin](https://gitlab.com/ubiquitypress/ojs-plugin-site-usa
 
 Add Plausible to your [Podcastpage.io](https://podcastpage.io/) website. Just enable the Plausible script through the "Integrations" page of your dashboard to add the tracking script to all pages.
 
-## Power BI
-
-[CloudQuery Plausible plugin](https://www.cloudquery.io/docs/plugins/sources/plausible/overview) extracts stats from Plausible stats API and loads them into Power BI.
-
 ## Publii
 
 [Plausible plugin](https://marketplace.getpublii.com/plugins/plausible-analytics/) for Publii. Built and maintained by [TidyCustom](https://tidycustoms.net/).
@@ -249,10 +225,6 @@ Add Plausible to your [Podcastpage.io](https://podcastpage.io/) website. Just en
 ## Ruby
 
 [Plausible API Ruby Gem](https://github.com/dailytics/plausible_api): This is a simple wrapper to read the Plausible API with Ruby. Built and maintained by [Dailytics](https://dailytics.com/).
-
-## S3
-
-[CloudQuery Plausible plugin](https://www.cloudquery.io/docs/plugins/sources/plausible/overview) extracts stats from Plausible stats API and loads them into S3.
 
 ## Sanity.io
 
@@ -277,10 +249,6 @@ We have the Plausible events API which can be used to record pageviews and custo
 ## Single-page applications
 
 Plausible integrates automatically with modern pushState based frontend routers. If you're running a single-page application with React, Angular, Vue or similar frameworks, you don't need to add any extra configuration to make analytics work. [Learn more here](spa-support.md).
-
-## Snowflake
-
-[CloudQuery Plausible plugin](https://www.cloudquery.io/docs/plugins/sources/plausible/overview) extracts stats from Plausible stats API and loads them into Snowflake.
 
 ## Sphinx / Read The Docs
 
