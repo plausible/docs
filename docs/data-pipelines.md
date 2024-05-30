@@ -46,7 +46,7 @@ There is a Plausible connector for [Looker Studio (formerly Google Data Studio)]
 
 ## Linux
 
-* [Tally](https://flathub.org/apps/com.cassidyjames.plausible) by [Cassidy James Blaede](https://cassidyjames.com): hybrid native + web app that wraps the Plausible web app in a native UI, integrating better with desktop operating systems.
+[Tally](https://flathub.org/apps/com.cassidyjames.plausible) by [Cassidy James Blaede](https://cassidyjames.com): hybrid native + web app that wraps the Plausible web app in a native UI, integrating better with desktop operating systems.
 
 ---
 
