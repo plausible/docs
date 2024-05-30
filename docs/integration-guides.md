@@ -308,6 +308,10 @@ A [TypeDoc Plausible plugin](https://typedoc-plausible.8hob.io/) that integrates
 
 We have a WordPress plugin that makes the integration with WordPress nice and easy. [Here's how to get started with our WordPress plugin](https://plausible.io/wordpress-analytics-plugin).
 
+## Data pipelines, warehouses and other ways of viewing Plausible stats elsewhere
+
+[See this list](data-pipelines.md) for data pipelines, warehouses and other ways of viewing Plausible stats elsewhere.
+
 ---
 
 Let us know about any other integrations that you've built and we will feature them in this list. Thanks for your support!
