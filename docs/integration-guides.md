@@ -344,16 +344,6 @@ A [TypeDoc Plausible plugin](https://typedoc-plausible.8hob.io/) that integrates
 
 We have a WordPress plugin that makes the integration with WordPress nice and easy. [Here's how to get started with our WordPress plugin](https://plausible.io/wordpress-analytics-plugin).
 
-## iOS apps and widgets for quick overview of your stats
-
-* [Glance for Plausible](https://testflight.apple.com/join/hG0MV7FC): A small app which lets you view your Plausible stats right on your iOS device. Built and maintained by Alexander Weiß.
-
-* [Numerics Dashboards for Plausible](https://cynapse.com/numerics-integrations/plausible-dashboards/): Track your Plausible KPIs with Numerics Dashboards on your iPhone, iPad, Mac, Apple TV and Apple Watch.
-
-* [iOS widget](https://gist.github.com/linuz90/ac969cdfe9bd92af0b306c43caee8d0c) to display the total visitors count for today and the live visitors count with Plausible and Scriptable. Built and maintained by [Fabrizio Rinaldi](https://gist.github.com/linuz90).
-
-* [Metrics iOS Widget](https://santiviquez.gumroad.com/l/xLrcq) by Santiago Víquez
-
-* [Staat](https://apps.apple.com/app/staat/id6451257773) by Andraz Polajzer
+---
 
 Let us know about any other integrations that you've built and we will feature them in this list. Thanks for your support!
