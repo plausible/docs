@@ -80,7 +80,7 @@ Google Analytics data is imported using Google API which has limits on the numbe
 
 This means that we're unable to look at how most dimensions interact with each other, making [our filtering capability](filters-segments.md) limited with imported data. For example, we're unable to tell how many visitors with a specific page came from a specific source - this data does not exist. The same happens when we're filtering by one property and breaking down by another.
 
-There are several exceptions to this though, because some properties are imported in groups. The properties in the following groups can be filtered at the same time:
+There are several exceptions to this though, because some properties are aggregated and grouped together. The properties in the following groups can be filtered at the same time:
 
 * Countries, regions, cities
 * Operating systems and their versions
