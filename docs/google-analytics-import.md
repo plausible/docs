@@ -84,7 +84,7 @@ There are several exceptions to this though, because some properties are aggrega
 
 * Countries, regions, cities
 * Operating systems and their versions
-* Hostname and page
+* Hostnames and pages
 * Specific custom events and their properties
   * `Outbound Link: Click` and `File Download` goals with the `url` property
   * `404` goals with the `path` property
