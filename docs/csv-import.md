@@ -84,7 +84,11 @@ There are several exceptions to this though, because some properties are aggrega
 
 By default, imported data is always included in the view, unless you choose to exclude it manually by clicking on the imported icon in the top right of the dashboard main graph.
 
+<img alt="Stats include imported data" src={useBaseUrl('img/stats-include-imported-data.png')} />
+
 Whenever imported data cannot be included due to the applied filters, you will see a warning bubble in the corresponding report. Note that this does not affect displaying native data in any way.
+
+<img alt="Imported data is excluded due to applied filters" src={useBaseUrl('img/imported-data-is-excluded-due-to-filters.png')} />
 
 ### Goals and custom properties
 
