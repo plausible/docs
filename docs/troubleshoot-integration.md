@@ -70,6 +70,12 @@ Are you using WP Rocket, SiteGround Optimizer or other performance optimization 
 
 Do you experience an issue even when using our plugin? Do check your integration manually using the steps below to identify which plugin is in question. Then please whitelist our script location and our domain name in the settings of the individual plugin to stop it from altering our snippet. 
 
+## Have you placed our script behind the GDPR consent banner?
+
+Are you using Cookiebot or a similar consent management platform? Have you set the Plausible script to load only after the user gives the consent? Our testing tool cannot verify the integration in that case so please do use [our manual verification process instead](#how-to-manually-check-your-integration).
+
+Plausible is built to be privacy-first and compliant with various privacy regulations so do raise this with your legal team as they could provide the green light to not require user consent. See more details in [our data policy](https://plausible.io/data-policy) and in [this legal assessment written by a data protection lawyer](https://plausible.io/blog/legal-assessment-gdpr-eprivacy).
+
 ## I don't see my own referral source
 
 All referral sources are counted only when they start a new session on your site. This is why you don't see all your own referral sources if you for instance click to test several different [UTM tagged links](manual-link-tagging.md) at the same time. Only the first one would be included in the "**Top Sources**" report. You would need to start a new session by for instance waiting more than 30 minutes or using a different device, browser or IP address to have the subsequent sources counted too.
