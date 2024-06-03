@@ -72,7 +72,7 @@ We have taken many steps to make the imported data feel as fast, easy, and strai
 
 Filtering on imported data is not as powerful as with native Plausible data. Since imported data is already aggregated and grouped by properties in the database, you cannot see how two arbitrary properties interact with each other. For example, filtering by page and source at the same time, or filtering by browser and breaking down by entry page is impossible.
 
-There are several exceptions to this though, because some properties are imported into the same database table. The properties in the following groups can be filtered by at the same time:
+There are several exceptions to this though, because some properties are aggregated and grouped together. The properties in the following groups can be filtered by at the same time:
 
 * Countries, regions, cities
 * Browsers and their versions
