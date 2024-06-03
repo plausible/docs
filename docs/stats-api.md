@@ -137,7 +137,7 @@ Aggregates, timeseries and breakdowns support including imported stats in the re
 Filtering by imported data is limited. The general rule is that you cannot filter by two different properties at the same time.
 For example, `filters=event:page==/;visit:source==Twitter` is not able to return any imported results. The same happens when you try to filter by one property and break down by another.
 
-There are some exceptions though, the following properties are aggregated and grouped together, which means you can use them together in a query as well.
+There are some exceptions though. The following properties are aggregated and grouped together and can be combined in a query:
 
 * Countries, regions, cities
 * Operating systems and their versions
