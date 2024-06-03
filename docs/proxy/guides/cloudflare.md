@@ -85,7 +85,7 @@ Once you've added the above code to the worker, you can click on the 'Save and D
 Now, the Plausible script should be accessible at the following URL:
 
 ```
-https://your-worker-name.your-cloudflare-username.workers.dev/your-folder-name/script.js
+https://your-worker-name.your-cloudflare-zone.workers.dev/your-folder-name/script.js
 ```
 
 If you can load this URL and see some JavaScript code, you should be good to go to the following step.
@@ -95,7 +95,7 @@ If you can load this URL and see some JavaScript code, you should be good to go 
 Once you have the URL for your script, you can replace your Plausible Analytics script tag in the Header (`<head>`) section of your site with the proxied snippet. This is how the new snippet should look like (make sure to edit it to have the correct domain name of your site and the correct URL to the proxied file):
 
 ```html
-<script defer data-domain="yourdomain.com" data-api="https://your-worker-name.your-cloudflare-username.workers.dev/your-folder-name/event" src="https://your-worker-name.your-cloudflare-username.workers.dev/your-folder-name/script.js"></script>
+<script defer data-domain="yourdomain.com" data-api="https://your-worker-name.your-cloudflare-zone.workers.dev/your-folder-name/event" src="https://your-worker-name.your-cloudflare-zone.workers.dev/your-folder-name/script.js"></script>
 ```
 
 Are you using our extensions such as hash-based routing, revenue or outbound link click tracking? Change the file name from `script.js` to the script you want to use: `script.hash.js`, `script.revenue.js` or `script.outbound-links.js`. Want to use more than one extension? You can chain them like this: `script.hash.revenue.outbound-links.js`. You just need to change the script name in the snippet that you insert into your site, no need to change the code for the worker.
@@ -108,9 +108,9 @@ If you're hosting your site on the Cloudflare CDN, you can run the proxy as a su
 request to the `workers.dev` domain. This is completely optional but it can make your URLs look much cleaner and avoid third-party
 requests.
 
-In your Cloudflare account, click on the 'Workers & Pages' section in the sidebar. Then, click on the worker that you have just created and then click on the 'View' button in the 'Routes' section of your worker. Next click on the 'Add route' button in the top right.
+In your Cloudflare account, click on the 'Workers & Pages' section in the sidebar. Then, click on the worker that you have just created and then choose the 'Triggers' options in the 'Settings' section of your worker. Next click on the 'Add route' button on the right-hand side of the 'Route' heading.
 
-Next, in the 'Route' field enter the URL prefix where you would like to install Plausible. In this example, we'll install the proxy on the `example.com` domain, and we'll use `qwerty` as the subdirectory name. You can choose any name for the subdirectory, but it's a good idea to avoid words like 'analytics' and 'tracking'.
+Next, in the 'Route' field enter the URL prefix where you would like to host the proxy. In this example, we'll install the proxy on the `example.com` domain, and we'll use `qwerty` as the subdirectory name. You can choose any name for the subdirectory, but it's a good idea to avoid words like 'analytics' and 'tracking'.
 
 * Route: `*example.com/qwerty/*`
 
