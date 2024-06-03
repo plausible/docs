@@ -70,7 +70,21 @@ We have taken many steps to make the imported data feel as fast, easy, and strai
 
 ### Filtering
 
-It isn't possible to use [our filters](filters-segments.md) with the imported data.
+Filtering on imported data is not as powerful as with native Plausible data. Since imported data is already aggregated and grouped by properties in the database, you cannot see how two arbitrary properties interact with each other. For example, filtering by page and source at the same time, or filtering by browser and breaking down by entry page is impossible.
+
+There are several exceptions to this though, because some properties are imported into the same database table. The properties in the following groups can be filtered by at the same time:
+
+* Countries, regions, cities
+* Browsers and their versions
+* Operating systems and their versions
+* Hostname and page
+* Specific custom events and their properties
+  * `Outbound Link: Click` and `File Download` goals with the `url` property
+  * `404` goals with the `path` property
+
+By default, imported data is always included in the view, unless you choose to exclude it manually by clicking on the imported icon in the top right of the dashboard main graph.
+
+Whenever imported data cannot be included due to the applied filters, you will see a warning bubble in the corresponding report. Note that this does not affect displaying native data in any way.
 
 ### Goals and custom properties
 
