@@ -8,7 +8,27 @@ We've put together several guides that cover popular website builders and conten
 
 Thanks to the members of our community, there are also integrations and plugins for various frameworks. 
 
-Here's the full list in alphabetical order:
+Here's the full list:
+
+## Add the snippet to the header of your site
+
+To integrate your website with Plausible, you can manually insert our tracking snippet into the header section of your site. See [the details here](plausible-script.md).
+
+## WordPress
+
+Using WordPress? We have a WordPress plugin that makes the integration nice and easy. [Here's how to get started with our WordPress plugin](https://plausible.io/wordpress-analytics-plugin).
+
+## Google Tag Manager (GTM)
+
+Using GTM? You need to use a GTM-specific snippet instead of our default snippet. See how to integrate Plausible into your site by using [Google Tag Manager](google-tag-manager.md).
+
+## Run Plausible as a first-party connection
+
+You can run Plausible script as a first-party connection from your domain name in order to bypass adblockers. [Learn more here](/proxy/introduction.md).
+
+## Server side tracking and mobile apps tracking
+
+Our events API can be used to record pageviews and custom events server side without the use of JavaScript. You can use the events API to count users on your Android and/or iOS mobile apps too. [Learn more here](events-api.md)
 
 ## Android SDK
 
@@ -70,19 +90,13 @@ Plausible doesn't take DNT (Do Not Track) into consideration by default as [DNT 
 
 [Elixir library](https://hex.pm/packages/plausible) to push events to Plausible. Built and maintained by [Suracheth Chawla](https://hex.pm/users/blisscs).
 
-## First party connection (proxy)
-
-You can run Plausible as a first party connection from your domain name. [Learn more here](/proxy/introduction.md).
-
 ## Flutter
 
 [Flutter plugin](https://pub.dev/packages/plausible_analytics): Send pageviews and custom events to Plausible. Built and maintained by [Eric Trenkel](https://erictrenkel.com/).
 
 ## Gatsby
 
-* [Gatsby](https://www.gatsbyjs.com/plugins/gatsby-plugin-plausible/): A Gatsby plugin for adding Plausible Analytics to your Gatsby site. Built and maintained by [Curtis Cummings](https://curtiscummings.me).
-
-* In the post [Using Deferred Static Generation with Plausible Analytics](https://www.lekoarts.de/gatsby/using-deferred-static-generation-with-analytics-tools) you can learn how to build a source plugin for Plausible's API and use it together with Deferred Static Generation in Gatsby.
+[Gatsby](https://www.gatsbyjs.com/plugins/gatsby-plugin-plausible/): A Gatsby plugin for adding Plausible Analytics to your Gatsby site. Built and maintained by [Curtis Cummings](https://curtiscummings.me).
 
 ## Ghost
 
@@ -103,10 +117,6 @@ To track Google AMP pages with Plausible, you need to declare an AMP-analytics o
 ## Google Chrome extensions 
 
 To track Google Chrome browser extensions with Plausible, you can [follow these instructions](https://gist.github.com/Joelkw/31b798f69c714c00e9e097b1fd4bb3c8).
-
-## Google Tag Manager (GTM)
-
-You can integrate Plausible into your site by using [Google Tag Manager](google-tag-manager.md).
 
 ## Grav
 
@@ -167,10 +177,6 @@ You can enable Plausible to count visitors on localhost which is useful in Cordo
 ## MkDocs
 
 [Plausible Analytics for Material](https://material-plausible-plugin.ale.sh/): This plugin implements Plausible Analytics support in Material for MkDocs. Built and maintained by [Alexander Pushkov](https://github.com/notpushkin).
-
-## Mobile apps for Android and iOS
-
-If you'd like to count users on your Android and/or iOS mobile apps, you can use our events API to record views and custom events. [Learn more here](events-api.md)
 
 ## n8n
 
@@ -238,10 +244,6 @@ Add Plausible to your [Podcastpage.io](https://podcastpage.io/) website. Just en
 
 There's no official Plausible integration with Segment but Segment allows you to integrate with Google Tag Manager. So you could integrate Plausible with Segment through Google Tag Manager. Here's how to use [Google Tag Manager](google-tag-manager.md).
 
-## Server side tracking
-
-We have the Plausible events API which can be used to record pageviews and custom events server side without the use of JavaScript. [Learn more here](events-api.md). 
-
 ## Shopify
 
 [How to add the script to your Shopify store](shopify-integration.md).
@@ -305,10 +307,6 @@ A [TypeDoc Plausible plugin](https://typedoc-plausible.8hob.io/) that integrates
 ## Wix
 
 [How to add the script to your Wix site](wix-integration.md)
-
-## WordPress
-
-We have a WordPress plugin that makes the integration with WordPress nice and easy. [Here's how to get started with our WordPress plugin](https://plausible.io/wordpress-analytics-plugin).
 
 ## Data pipelines, warehouses and other ways of viewing Plausible stats elsewhere
 
