@@ -78,7 +78,7 @@ We have taken many steps to make the imported data feel as fast, easy, and strai
 
 Google Analytics data is imported using Google API which has limits on the number of dimensions that can be fetched in a single query. This means we can't fetch entries that contain all the dimensions we're interested in and instead need to fetch data for each dimension individually.
 
-This means that we're unable to look at how most dimensions interact with each other, making [our filtering capability](filters-segments.md) limited with imported data. For example, we're unable to tell how many visitors with a specific page came from a specific source - this data does not exist. The same happens when we're filtering by a property and breaking down by another.
+This means that we're unable to look at how most dimensions interact with each other, making [our filtering capability](filters-segments.md) limited with imported data. For example, we're unable to tell how many visitors with a specific page came from a specific source - this data does not exist. The same happens when we're filtering by one property and breaking down by another.
 
 There are several exceptions to this though, because some properties are imported in groups. The properties in the following groups can be filtered at the same time:
 
