@@ -76,9 +76,22 @@ We have taken many steps to make the imported data feel as fast, easy, and strai
 
 ### Filtering 
 
-Google Analytics data is imported using Google API which has limits on the number of dimensions that can be fetched in a single query. This means we can't fetch entries that contain all the dimensions we're interested in and instead need to fetch data for each dimension individually. 
+Google Analytics data is imported using Google API which has limits on the number of dimensions that can be fetched in a single query. This means we can't fetch entries that contain all the dimensions we're interested in and instead need to fetch data for each dimension individually.
 
-This means that we're unfortunately unable to look at how dimensions interact which makes it impossible to use [our filtering capability](filters-segments.md) with the imported data.
+This means that we're unable to look at how most dimensions interact with each other, making [our filtering capability](filters-segments.md) limited with imported data. For example, we're unable to tell how many visitors with a specific page came from a specific source - this data does not exist. The same happens when we're filtering by one property and breaking down by another.
+
+There are several exceptions to this though, because some properties are aggregated and grouped together. The properties in the following groups can be filtered at the same time:
+
+* Countries, regions, cities
+* Operating systems and their versions
+* Hostnames and pages
+* Specific custom events and their properties
+  * `Outbound Link: Click` and `File Download` goals with the `url` property
+  * `404` goals with the `path` property
+
+By default, imported data is always included in the view, unless you choose to exclude it manually by clicking on the imported icon in the top right of the dashboard main graph.
+
+Whenever imported data cannot be included due to the applied filters, you will see a warning bubble in the corresponding report. Note that this does not affect displaying native data in any way.
 
 ### Unique visitors
 

@@ -134,7 +134,19 @@ Aggregates, timeseries and breakdowns support including imported stats in the re
 
 #### Filtering imported stats
 
-Filtering imported stats is currently not possible, except for very specific cases of filtering by `event:goal` in custom property breakdowns described earlier. When the applied combination of filters and property is not supported for imported stats, the results are still returned based only on native stats, with a warning.
+Filtering by imported data is limited. The general rule is that you cannot filter by two different properties at the same time.
+For example, `filters=event:page==/;visit:source==Twitter` is not able to return any imported results. The same happens when you try to filter by one property and break down by another.
+
+There are some exceptions though. The following properties are aggregated and grouped together and can be combined in a query:
+
+* Countries, regions, cities
+* Operating systems and their versions
+* Hostnames and pages
+* Specific custom events and their properties
+  * `Outbound Link: Click` and `File Download` goals with the `url` property
+  * `404` goals with the `path` property
+
+For example, you can break down by `country` and filter by both `city` and `region`. When the applied combination of filters and property is not supported for imported stats, the results are still returned based only on native stats, with a warning.
 
 ## Endpoints
 
