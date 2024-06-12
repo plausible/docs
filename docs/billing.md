@@ -48,7 +48,7 @@ You will never be charged extra for an occasional traffic spike. We will never s
 
 Suppose new higher traffic levels become your new standard and your page views exceed your subscription plan for two consecutive months. In that case, we will contact you and ask you to upgrade your subscription plan to accommodate your new traffic levels using our self-serve platform.
 
-After we contact you, you will have a week to decide. To keep having access to your stats, we require you to upgrade your account to accommodate your new traffic levels. You can continue with the appropriate tier or cancel your account. If you do not upgrade your account to the appropriate tier within a week, our automated system will lock the stats so they won't be accessible. Stats will be automatically unlocked after you get on the appropriate tier.
+To maintain access to your stats, you will need to upgrade your account to accommodate your new traffic levels. If you do not upgrade your account within a week, our automated system will lock the stats making them inaccessible. Your stats will be automatically unlocked once you upgrade to the appropriate tier or if your usage falls back within your subscription limits.
 
 ## How does the billing work if I upgrade my subscription to a higher tier?
 
