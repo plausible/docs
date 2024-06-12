@@ -29,7 +29,7 @@ Here's how to change the domain name of a site in your Plausible account:
 * Your new snippet will be displayed on the following screen. You need to update the script on your site to use the snippet with the new domain name as opposed to the old domain name within 72 hours to guarantee continuous tracking. If you're using our APIs, you must also make sure to update your API credentials.
 
 :::note How the 72 hour transition period works
-During the transition period, we will allow counting of the stats using both old and new snippets. After 72 hours, the old domain is cleared from our database and any new traffic sent to the old snippet will be rejected. After the transition period ends, you'll be able to add the old domain as a new site if you want to do that
+During the transition period, we will allow counting of the stats using both old and new snippets. After 72 hours, the old domain is cleared from our database and any new traffic sent to the old snippet will be rejected
 :::
 
 * Click on the "**I understand, I'll change my snippet**" button to go to your new dashboard
