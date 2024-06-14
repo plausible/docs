@@ -20,7 +20,7 @@ You can remove all your filters by hitting the `Esc` key on your keyboard or by 
 
 <img alt="Using the custom filter" src={useBaseUrl('img/custom-filter.png')} />
 
-When you’re trying to understand and analyze your traffic, the "**Filter**" button is a powerful tool. It allows you to search, select multiple entries and it includes options "**is**", "**is_not**", and "**contains**" to give you more flexiblity when matching and segmenting your audience. Click on the "**Filter**" button on the top right of your dashboard to start adding filters. 
+When you’re trying to understand and analyze your traffic, the "**Filter**" button is a powerful tool. It allows you to search, select multiple entries and it includes options "**is**", "**is_not**", and "**contains**" to give you more flexibility when matching and segmenting your audience. Click on the "**Filter**" button on the top right of your dashboard to start adding filters. 
 
 ### Filter by multiple sources, countries, pages and more
 
