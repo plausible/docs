@@ -20,8 +20,6 @@ Do you want to group all your blog posts and analyze the traffic to the blog sep
 
 <img alt="Top Pages - multiple filters" src={useBaseUrl('img/top-pages-filtering-multiple-filters.png')} />
 
-You can also group different pages or dynamic URLs by using asterisks. Track all the blog posts by using `/blog*` (if your blog subdirectory is named `blog`) or track Woocommerce checkout pages for your ecommerce (`/checkout/order-received/*`). You can add asterisks in front and back in the same way that you would use "contain" (`*keyword*`). It finds any URL containing a specific keyword.
-
 :::note
 Do you prefer to display your page groupings permanently in your dashboard? You can do so using [our pageview goals](pageview-goals.md).
 :::
