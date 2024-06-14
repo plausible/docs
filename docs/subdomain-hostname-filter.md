@@ -40,11 +40,6 @@ We'll show you the list of all the hostnames we have recorded in the chosen time
 
 <img alt="List of subdomains" src={useBaseUrl('img/list-of-hostnames-and-subdomains.png')} />
 
-You can also segment your hostnames like this:
-
-1. `*.yourdomain.com` will include all traffic on all subdomains of `yourdomain.com` but won't include traffic of `yourdomain.com` itself
-2. `*yourdomain.com` will include all traffic on all subdomains of `yourdomain.com` and `yourdomain.com` traffic itself will be included too
-
 :::tip Want to filter your traffic by a subfolder or directory?
 You can do this by using the filter button or by setting up a pageview goal. [See how here](pageview-goals.md#how-to-group-your-pages)
 :::
