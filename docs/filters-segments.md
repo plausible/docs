@@ -6,25 +6,21 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Plausible Analytics allows you to easily segment your audience to analyze and understand the different trends. A segment is made up of one or more filters. 
 
-<img alt="Using filters to segment your audience" src={useBaseUrl('img/segmenting-your-audience.png')} />
-
-## How to use filters 
-
-Any metric you click on in your dashboard creates a new filter. Click on any referral source, any of your pages or on any country, device or goal and your dashboard will then show only the traffic for the metric you have selected.
+Any metric you click on in your dashboard creates a new filter. Click on any referral source, any of your pages or any location, device or goal and your dashboard will then show only the traffic for the metric you have selected.
 
 You can mix and match filters too. So you can click on a referral source, then click on a country and then a goal to see all the traffic sent by the chosen referral source that is based in the selected country and that has converted on the selected goal.
-
-<img alt="Mix and match filters" src={useBaseUrl('img/filter-by-source-and-country.png')} />
 
 Your current filters will be displayed on the top of your dashboard. You can click on the name of the existing filter to edit it or on the `x` icon to remove it. 
 
 You can remove all your filters by hitting the `Esc` key on your keyboard or by selecting `Clear all filters` in the filters menu that shows up when you're using multiple filters.
 
-## Using the "Filter" button for extra functionality 
+<img alt="Mix and match filters to segment your audience" src={useBaseUrl('img/filter-by-source-and-country.png')} />
+
+## Use the "Filter" button for more powerful segmenting and matching
 
 <img alt="Using the custom filter" src={useBaseUrl('img/custom-filter.png')} />
 
-We also allow you to add filters without clicking on any specific metric in the dashboard. Click on the "**Filter**" button on the top right of your dashboard to start adding filters. Using the "Filter" menu makes filtering even more powerful:
+When you’re trying to understand and analyze your traffic, the "**Filter**" button is a powerful tool. It allows you to search, select multiple entries and it includes options "**is**", "**is_not**", and "**contains**" to give you more flexiblity when matching and segmenting your audience. Click on the "**Filter**" button on the top right of your dashboard to start adding filters. 
 
 ### Filter by multiple sources, countries, pages and more
 
@@ -46,13 +42,11 @@ Click on the "**Filter**" button, then select "**Country**" as your metric, choo
 
 <img alt="Exclude traffic" src={useBaseUrl('img/exclude-traffic.png')} />
 
-### Group your pages
+### Group relevant pages, marketing campaigns and more
 
-Want to group all your blog posts and analyze the traffic to the blog separately from the rest of your site? Or exclude traffic that has visited a specific section of your site such as your logged in pages or your order confirmation page?
+Want to group all your blog posts and analyze the traffic to the blog separately from the rest of your site? Or exclude traffic that has visited a specific section of your site such as your logged in pages or your order confirmation page? Or do you want to group all the traffic from a specific set of marketing camapigns?
 
-You can group pages by using the "**Filter**" button. The "**Page**" menu within the filter button includes option "**contains**". Put any specific keyword to group all of your pages that contain that keyword. 
-
-You can also group dynamically created URLs with an asterisk `*`. For instance, you can track Woocommerce checkout pages for your ecommerce store like this: `/checkout/order-received/*`. 
+You can group pages, sources, campaigns and more by using the "**Filter**" button. For instance, the "**Page**" menu within the filter button includes option "**contains**". Put any specific keyword to group all of your pages that contain that keyword.
 
 :::note
 Would you like your grouped pages to be permanently displayed in your dashboard? You can do so by using [pageview goals](pageview-goals.md).
@@ -64,9 +58,6 @@ Want to filter by hostname so you can segment your stats to a specific subdomain
 
 You can choose to segment your traffic by any one specific hostname from the list, you can exclude any one specific hostname or even segment by hostnames that contain any specific word.
 
-You can also group your hostnames using wildcards:
-
-1. `*.yourdomain.com` will match all subdomains of yourdomain.com but not yourdomain.com itself
-2. `*yourdomain.com` will match subdomains of yourdomain.com and yourdomain.com itself
-
 Learn more on how Plausible [handles cross-subdomain tracking here](subdomain-hostname-filter.md).
+
+<img alt="List of subdomains" src={useBaseUrl('img/list-of-hostnames-and-subdomains.png')} />
