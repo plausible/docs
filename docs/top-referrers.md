@@ -16,8 +16,6 @@ Note that all referral sources are counted only when they start a new session on
 
 The fact that the referral sources are counted only when they start a new session on your site prevents external domains such as a payment gateway that the user is being taken through to show up in the referrers list. No need for you to manually exclude referrers.
 
-<img alt="Top Referrers" src={useBaseUrl('img/top-sources.png')} />
-
 There are two distinct ways that Plausible Analytics collects the referrer source for a visitor:
 
 ## 1. Automatic by the `referer` header
