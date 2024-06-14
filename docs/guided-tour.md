@@ -62,8 +62,6 @@ You can also use the "**Filter**" button on the top of your dashboard which give
 
 ## Top Sources
 
-<img alt="Top Sources" src={useBaseUrl('img/top-sources.png')} />
-
 See all the top referral sources of traffic ranked by the number of unique visitors. You can click on the "**Details**" button to see the full list which also includes additional metrics such as the bounce rate and visit duration of the individual referral. [Read more here](top-referrers.md).
  
 You can click into the "**Campaign**" tabs of the Top Sources report to see your campaigns isolated from other traffic sources. These are visitors coming from UTM tagged links such as those in your emails, social media or in your paid advertising campaigns. Click on "**Medium**", "**Source**", "**Campaign**", "**Term**" and "**Content**" to explore these. You can learn more about [link tagging here](manual-link-tagging.md).
@@ -71,8 +69,6 @@ You can click into the "**Campaign**" tabs of the Top Sources report to see your
 Note that the referral sources including UTM and other query parameters are counted only when they start a new session on your site.
 
 ## Top Pages
-
-<img alt="Top Pages" src={useBaseUrl('img/top-pages.png')} />
 
 See all the most visited pages on your site ranked by the number of unique visitors. You can click on the "**details**" button to see the full list with additional metrics. The number of pageviews, bounce rate, and time on page for the individual pages are included too.
 
@@ -84,8 +80,6 @@ You can also get insights into the visitor flow by looking at the "**Entry pages
 
 ## Locations
 
-<img alt="Countries" src={useBaseUrl('img/countries.png')} />
-
 See the list of countries, regions and cities your traffic is coming from. You can click on the "**details**" button to see the full list ranked by the number of visitors. [Read more here](countries.md).
 
 :::tip Want a quicker way to navigate the dashboard?
@@ -93,8 +87,6 @@ You can use the keyboard shortcuts to do so. Here's [the full list of shortcuts 
 :::
 
 ## Devices
-
-<img alt="Devices" src={useBaseUrl('img/devices-size.png')} />
 
 You can see the device, browser and operating system your visitors are using. Click on the individual browser or operating system to drill down and see browser versions and OS versions too. [Read more here](devices.md).
 
