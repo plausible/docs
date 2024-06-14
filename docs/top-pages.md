@@ -8,8 +8,6 @@ Your "**Top Pages**" report shows which pages your visitors are visiting the mos
 
 You can also see the traffic flow by looking at the "**Entry Pages**" and "**Exit Pages**" reports. You can click on the "**Details**" button to see the full list with additional details. For entry pages details include visit duration for visits that started on a specific page and for exit pages details include the exit rate percentage.
 
-<img alt="Top Pages" src={useBaseUrl('img/top-pages.png')} />
-
 ## Search for pages
 
 You can search for pages by using [the "**Filter**" button](filters-segments.md) on the top of your dashboard.
