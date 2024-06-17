@@ -52,6 +52,8 @@ You can group pages, sources, campaigns and more by using the "**Filter**" butto
 Would you like your grouped pages to be permanently displayed in your dashboard? You can do so by using [pageview goals](pageview-goals.md).
 :::
 
+<img alt="Filter contains" src={useBaseUrl('img/filter-contains.png')} />
+
 ### Filter by subdomain or hostname
 
 Want to filter by hostname so you can segment your stats to a specific subdomain only? You can do so by using the "**Filter**" button and choosing the "**Hostname**" entry within the menu.
