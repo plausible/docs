@@ -9,7 +9,7 @@ Your "**Devices**" report shows the screen size, the browser and the operating s
 You can use the "**Filter**" button on the top of your dashboard to segment the traffic by multiple devices at the same time. Filter button also allows you to filter out traffic from specific devices.
 
 <img alt="Screen sizes - multiple filters" src={useBaseUrl('img/devices-filtering-multiple-filters.png')} />
-	
+
 ## Screen size
 
 Your "**Screen size**" report shows the devices used by your website visitors. Devices are categorized into desktop, mobile or tablet. This is derived from the User-Agent HTTP header. The full User-Agent is discarded.
