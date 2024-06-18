@@ -70,9 +70,7 @@ We have taken many steps to make the imported data feel as fast, easy, and strai
 
 ### Filtering 
 
-Google Analytics data is imported using Google API which has limits on the number of dimensions that can be fetched in a single query. This means we can't fetch entries that contain all the dimensions we're interested in and instead need to fetch data for each dimension individually.
-
-While simple filtering of imported data is possible, we're unable to look at how some metrics interact with each other which makes [the more advanced segmenting](filters-segments.md) of imported data limited. Whenever imported data cannot be included due to the applied filters, you will see a warning bubble in the corresponding report.
+Simple filtering of imported data is possible but we're unable to look at how some metrics interact with each other which makes [the more advanced segmenting](filters-segments.md) limited. Whenever imported data cannot be included due to the applied filters, you will see a warning bubble in the corresponding report.
 
 <img alt="Imported data is excluded due to applied filters" src={useBaseUrl('img/imported-data-is-excluded-due-to-filters.png')} />
 
@@ -88,7 +86,7 @@ Google Analytics aggregates UTM source under the "**source**" dimension and they
 
 ### Goals
 
-It's only possible to import your goal data from Google Analytics 4. When your import finishes, you will not see your goal data show up automatically. You need to go to your site settings and [add the goals you want to show up on your dashboard](custom-event-goals.md#3-create-a-custom-event-goal-in-your-plausible-account). 
+It's possible to import your goal conversion data from Google Analytics 4. When your import finishes, you will not see your goal data show up automatically. You need to go to your site settings and [add the goals you want to show up on your dashboard](custom-event-goals.md#3-create-a-custom-event-goal-in-your-plausible-account). Note that ecommerce revenue numbers cannot be imported. 
 
 ### Browser versions
 
