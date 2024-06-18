@@ -4,7 +4,7 @@ title: Import stats from Google Analytics
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Plausible Analytics allows you to import your historical stats from Google's Universal Analytics (UA) and Google Analytics 4 (GA4). You can import multiple Google Analytics properties into the same Plausible dashboard without having any gaps in the data and without any double-counting.
+Plausible Analytics allows you to import your historical stats from Google's Universal Analytics (UA) and Google Analytics 4 (GA4). You can import multiple Google Analytics properties into the same Plausible dashboard without having any gaps in the data and without any double-counting. You can also segment the imported data and export it using our regular exporting methods ([CSV](export-stats.md) and [stats API](stats-api.md)).
 
 Here's how you can import your historical Google Analytics stats into your Plausible dashboard.
 
@@ -60,12 +60,6 @@ Data you have imported can be deleted by returning to your site's "**Imports & E
 
 <img alt="Delete Google Analytics data from Plausible" src={useBaseUrl('img/delete-google-analytics-data.png')} />
 
-## My import has failed
-
-This may be due to the user metric setting in your Google Analytics account. We found out that for some Universal Analytics properties, changing the user metric settings is necessary to get correct data out of the Google API.
-
-You'll have to take an extra step to make sure we can import the data smoothly. Please navigate to your Google Analytics admin. In the "**Property Settings**", go to "**User Analysis**". In that section, you'll need to make sure that "**Enable Users Metric in Reporting**" is OFF. Then please try to do the import once again.
-
 ## Can I delete my Google Analytics account after a successful import?
 
 We no longer need access to your Google Analytics account after the import has been completed successfully. If you're happy with the way your Google Analytics stats look in your Plausible Analytics dashboard, you can safely delete your Google Analytics account. Your imported data will stay in your Plausible account. 
@@ -78,25 +72,9 @@ We have taken many steps to make the imported data feel as fast, easy, and strai
 
 Google Analytics data is imported using Google API which has limits on the number of dimensions that can be fetched in a single query. This means we can't fetch entries that contain all the dimensions we're interested in and instead need to fetch data for each dimension individually.
 
-This means that we're unable to look at how most dimensions interact with each other, making [our filtering capability](filters-segments.md) limited with imported data. For example, we're unable to tell how many visitors with a specific page came from a specific source - this data does not exist. The same happens when we're filtering by one property and breaking down by another.
-
-There are several exceptions to this though, because some properties are aggregated and grouped together. The properties in the following groups can be filtered at the same time:
-
-* Countries, regions, cities
-* Operating systems and their versions
-* Hostnames and pages
-* Specific custom events and their properties
-  * `Outbound Link: Click` and `File Download` goals with the `url` property
-  * `404` goals with the `path` property
-
-By default, imported data is always included in the view, unless you choose to exclude it manually by clicking on the imported icon in the top right of the dashboard main graph.
-
-<img alt="Stats include imported data" src={useBaseUrl('img/stats-include-imported-data.png')} />
-
-Whenever imported data cannot be included due to the applied filters, you will see a warning bubble in the corresponding report. Note that this does not affect displaying native data in any way.
+While simple filtering of imported data is possible, we're unable to look at how some metrics interact with each other which makes [the more advanced segmenting](filters-segments.md) of imported data limited. Whenever imported data cannot be included due to the applied filters, you will see a warning bubble in the corresponding report.
 
 <img alt="Imported data is excluded due to applied filters" src={useBaseUrl('img/imported-data-is-excluded-due-to-filters.png')} />
-
 
 ### Unique visitors
 
@@ -106,30 +84,19 @@ To get the number of unique visitors in a longer period of time (say one month) 
 
 ### UTM sources
 
-Google Analytics aggregates UTM source under the "**source**" dimension, and they don't expose a separate "**UTM source**" dimension from their API. This is why we cannot show UTM sources imported from Google Analytics.
-
-### Browser and operating system versions
-
-We can import your traffic split between the different browsers and operating systems. However, you can't drill down to see the imported data's exact browser versions. The OS version can only be drilled down for data imported from Google Analytics 4.
-
-### Exit pages
-
-Currently, you can only see the Exit Pages report for data imported from Universal Analytics. Google Analytics 4 API does not expose that information yet.
+Google Analytics aggregates UTM source under the "**source**" dimension and they don't expose a separate "**UTM source**" dimension from their API. This is why we cannot show UTM sources imported from Google Analytics.
 
 ### Goals
 
-It's only possible to import your goal data from Google Analytics 4.
+It's only possible to import your goal data from Google Analytics 4. When your import finishes, you will not see your goal data show up automatically. You need to go to your site settings and [add the goals you want to show up on your dashboard](custom-event-goals.md#3-create-a-custom-event-goal-in-your-plausible-account). 
 
-When your import finishes, you will not see your goal data show up automatically. You need to go to your site settings and add the goals you want to show up on your dashboard. To see how to do that, check out the [Create a custom event goal in your Plausible Account](custom-event-goals#3-create-a-custom-event-goal-in-your-plausible-account) section in our docs. Note that you can add all goals with a single click as long as the goals in your Google Analytics property have been completed within the last 6 months.
+### Browser versions
 
-It's important to note that two event names are changed as they are being imported to Plausible. Those are:
+We can import your traffic split between the different browsers but you can't drill down to see the imported data's exact browser versions. 
 
-* `file_dowload` (GA4) &rarr; `File Download` (Plausible)
-* `click` (GA4) &rarr; `Outbound Link: Click` (Plausible)
+### Exit pages
 
-They have the same meaning in Plausible and Google Analytics, which is why it makes sense to group them together under a single entry. While filtering is not yet supported on imported data, you can click on either of these two goals to see a breakdown by their URL.
-
-The `url` for `File Download` and `Outbound Link: Click` events is the only additional dimension that we are importing. All other goal data is imported without any additional dimensions. For example, a `form_submit` event imported from Google Analytics will not include any information about the `form_id`, `form_name` or anything of the sort.
+You can only see the Exit Pages report for data imported from Universal Analytics. Google Analytics 4 API does not expose this information.
 
 ### Day view graph
 
