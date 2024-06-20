@@ -4,7 +4,7 @@ title: Ecommerce revenue and attribution tracking
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-You can assign dynamic monetary values to goals and custom events to track revenue attribution. Revenue attribution helps you determine which marketing campaigns and landing pages result in the most revenue for your business or ecommerce store.
+You can assign dynamic monetary values to custom event - goals to track revenue attribution. Revenue attribution helps you determine which marketing campaigns and landing pages result in the most revenue for your business or ecommerce store. Learn more [here](https://plausible.io/blog/ecommerce-revenue-attribution).
 
 When you create a new custom event, you can now optionally assign a monetary value to it. Our revenue tracking supports multi-currencies too. You can send data in any local currency that the purchase is made in. When using revenue tracking, you'll be able to see these metrics in your dashboard:
 
