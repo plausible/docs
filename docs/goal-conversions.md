@@ -6,9 +6,9 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <img alt="Adding or searching for Goals" src={useBaseUrl('img/goal-display.png')} />
 
-Goals and custom events allow you to track actions that you want your visitors to take on your site. Actions such as signing up to a newsletter, clicking on a "**Download**" button, registering for a trial account, purchasing a product, clicking on an external link, downloading a file or completing a checkout form of an ecommerce store.
+Goals / custom events allow you to track actions that you want your visitors to take on your site. Actions such as signing up to a newsletter, clicking on a "**Download**" button, registering for a trial account, purchasing a product, clicking on an external link, downloading a file or completing a checkout form of an ecommerce store.
 
-By setting up goals and custom events, you can track the number of conversions, conversion rate, referrer sources and entry pages that are driving conversions and the top pages that people convert on. You can also follow the visitor journey using funnels.
+By setting up goals / custom events, you can track the number of conversions, conversion rate, referrer sources and entry pages that are driving conversions and the top pages that people convert on. You can also follow the visitor journey using funnels.
 
 After setting up a goal, it will show up in the "**Goal Conversions**" section of your dashboard as soon as we record the first conversion. Then you can click on the particular goal to filter your dashboard by it and get all the insights on the traffic that has converted on that specific goal.
 
