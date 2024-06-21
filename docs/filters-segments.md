@@ -20,7 +20,7 @@ You can remove all your filters by hitting the `Esc` key on your keyboard or by 
 
 <img alt="Using the custom filter" src={useBaseUrl('img/custom-filter.png')} />
 
-When you’re trying to understand and analyze your traffic, the "**Filter**" button is a powerful tool. It allows you to search, select multiple entries and it includes options "**is**", "**is_not**", and "**contains**" to give you more flexibility when matching and segmenting your audience. Click on the "**Filter**" button on the top right of your dashboard to start adding filters. 
+When you’re trying to understand and analyze your traffic, the "**Filter**" button is a powerful tool. It allows you to search, select multiple entries and it includes options "**is**", "**is not**", "**contains**" and "**does not contain**" to give you more flexibility when matching and segmenting your audience. Click on the "**Filter**" button on the top right of your dashboard to start adding filters. 
 
 ### Filter by multiple sources, countries, pages and more
 
@@ -38,7 +38,7 @@ You can search for any metric such as a particular country, referral source or p
 
 You can exclude specific segments of traffic and only display the traffic that isn't part of the excluded segment. You can, for instance, exclude traffic from the United States so your dashboard only shows the visitors that aren't based in the USA. 
 
-Click on the "**Filter**" button, then select "**Country**" as your metric, choose "**Is Not**" and then select (or type) the name of the country you want to exclude. You can do the same for referral sources or any of the other metrics.
+Click on the "**Filter**" button, then select "**Country**" as your metric, choose "**is not**" (or "**does not contain**" as an alternative) and then select (or type) the name of the country you want to exclude. You can do the same for referral sources or any of the other metrics.
 
 <img alt="Exclude traffic" src={useBaseUrl('img/exclude-traffic.png')} />
 
@@ -46,7 +46,7 @@ Click on the "**Filter**" button, then select "**Country**" as your metric, choo
 
 Want to group all your blog posts and analyze the traffic to the blog separately from the rest of your site? Or exclude traffic that has visited a specific section of your site such as your logged in pages or your order confirmation page? Or do you want to group all the traffic from a specific set of marketing camapigns?
 
-You can group pages, sources, campaigns and more by using the "**Filter**" button. For instance, the "**Page**" menu within the filter button includes option "**contains**". Put any specific keyword to group all of your pages that contain that keyword.
+You can group pages, sources, campaigns and more by using the "**Filter**" button. For instance, the "**Page**" menu within the filter button includes options "**contains**" and "**does not contain**". Put any specific keyword to group all of your pages that contain that keyword.
 
 :::note
 Would you like your grouped pages to be permanently displayed in your dashboard? You can do so by using [pageview goals](pageview-goals.md).
