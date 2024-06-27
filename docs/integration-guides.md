@@ -2,11 +2,11 @@
 title: Integration guides
 ---
 
-Installing Plausible on a website can be a slightly different process depending on what tools you're using to manage your site. 
+Installing Plausible on a website can be a slightly different process depending on what tools you're using to manage your site.
 
 We've put together several guides that cover popular website builders and content management systems (CMS). These can help you set up and start counting your site visitors in no time.
 
-Thanks to the members of our community, there are also integrations and plugins for various frameworks. 
+Thanks to the members of our community, there are also integrations and plugins for various frameworks.
 
 Here's the full list:
 
@@ -74,7 +74,7 @@ Plausible doesn't take DNT (Do Not Track) into consideration by default as [DNT 
 
 * [Django-Plausible](https://pypi.org/project/django-plausible/): Django module to provide easy Plausible integration, with Wagtail support. Built and maintained by [Jake Howard](https://pypi.org/user/TheOrangeOne/).
 
-* [Django-plausible-proxy](https://github.com/imankulov/django-plausible-proxy) is a module to proxy requests and send server-side events to Plausible Analytics. 
+* [Django-plausible-proxy](https://github.com/imankulov/django-plausible-proxy) is a module to proxy requests and send server-side events to Plausible Analytics.
 
 ## Docusaurus
 
@@ -114,7 +114,7 @@ Plausible doesn't take DNT (Do Not Track) into consideration by default as [DNT 
 
 To track Google AMP pages with Plausible, you need to declare an AMP-analytics object on your AMP pages. [See the instructions here](https://github.com/plausible/analytics/discussions/220#discussioncomment-904022).
 
-## Google Chrome extensions 
+## Google Chrome extensions
 
 To track Google Chrome browser extensions with Plausible, you can [follow these instructions](https://gist.github.com/Joelkw/31b798f69c714c00e9e097b1fd4bb3c8).
 
@@ -146,13 +146,13 @@ If you're using a frontend framework that uses the URL hash for routing, you nee
 
 [Jekyll](https://github.com/hendrikschneider/jekyll-analytics): Webanalytics for Jekyll. Just install the plugin, configure it and you are done. Contribution by [David Schmitt](https://github.com/hendrikschneider/jekyll-analytics/pull/44).
 
-## Kirby 
+## Kirby
 
 [Kirby 3 Plausible](https://github.com/rowdyrabouw/kirby3-plausible): Frontend snippet and Kirby panel. Contribution by [Rowdy Rabouw](https://github.com/rowdyrabouw).
 
 ## Laravel
 
-* [Laravel Plausible](https://github.com/VincentBean/laravel-plausible): This package provides a blade view with the script tag for Plausible and a wrapper to easily send custom events to Plausible. Built and maintained by [Vincent Boon](https://github.com/VincentBean). 
+* [Laravel Plausible](https://github.com/VincentBean/laravel-plausible): This package provides a blade view with the script tag for Plausible and a wrapper to easily send custom events to Plausible. Built and maintained by [Vincent Boon](https://github.com/VincentBean).
 
 * [Plausible Analytics for Laravel 10+](https://github.com/njoguamos/laravel-plausible): A Laravel package for interacting with the Plausible API. Built and maintained by [Njogu Amos](https://github.com/njoguamos).
 
@@ -198,7 +198,7 @@ You can enable Plausible to count visitors on localhost which is useful in Cordo
 
 To integrate Plausible Analytics into your Notion website, you'll need to use a third-party service such as Potion or Super (both are paid tools) that will allow you add custom code to your Notion website.
 
-## Nuxt 
+## Nuxt
 
 [Nuxt module](https://nuxt.com/modules/plausible) to natively integrate Plausible Analytics.
 
@@ -209,7 +209,7 @@ The [OJS Site Usage plugin](https://gitlab.com/ubiquitypress/ojs-plugin-site-usa
 ## PayloadCMS
 
 [Dashboard Analytics plugin for PayloadCMS](https://nouance.io/articles/announcing-the-dashboard-analytics-plugin): You can add charts and statistics widgets directly in your admin interface.
- 
+
 ## Podcastpage.io
 
 Add Plausible to your [Podcastpage.io](https://podcastpage.io/) website. Just enable the Plausible script through the "Integrations" page of your dashboard to add the tracking script to all pages.
@@ -307,6 +307,10 @@ A [TypeDoc Plausible plugin](https://typedoc-plausible.8hob.io/) that integrates
 ## Wix
 
 [How to add the script to your Wix site](wix-integration.md)
+
+## Readymag
+
+Follow the instructions here: [How to add the script to your Readymag website](readymag-integration.md)
 
 ## Data pipelines, warehouses and other ways of viewing Plausible stats elsewhere
 
