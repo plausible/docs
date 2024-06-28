@@ -310,7 +310,7 @@ A [TypeDoc Plausible plugin](https://typedoc-plausible.8hob.io/) that integrates
 
 ## Readymag
 
-Follow the instructions here: [How to add the script to your Readymag website](readymag-integration.md)
+Follow the instructions here: [How to add the script to your Readymag website](https://help.readymag.com/hc/en-us/articles/26933451909019-Plausible)
 
 ## Data pipelines, warehouses and other ways of viewing Plausible stats elsewhere
 
