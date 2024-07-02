@@ -22,7 +22,9 @@ All the stats are embedded directly into the email and there's no need to go to 
 
 ## Set the unique visitors threshold for the traffic drop notifications
 
-You need to set the "**Total unique visitors in the last 12 hours threshold**" for your traffic drop notifications and click on the "**Save threshold**" button. The default threshold is at 100 unique visitors in the last 12 hours, but you can set it as low or as high as you want depending on your usual traffic numbers. You will get the traffic drop notification when your site falls below the threshold you've set.
+You need to set the "**Total unique visitors in the last 12 hours threshold**" for your traffic drop notifications and click on the "**Save threshold**" button. The default threshold is at 1 unique visitors in the last 12 hours, but you can set it as high as you want depending on your usual traffic numbers. 
+
+You will get the traffic drop notification when your site falls below the threshold you've set. You'll get the notification for an individual website no more than twice in a 24-hour period.
 
 ## Set traffic spike or drop notifications to be sent to multiple recipients
 
