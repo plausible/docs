@@ -20,9 +20,9 @@ The email will include the number of current visitors and the top referral sourc
 
 All the stats are embedded directly into the email and there's no need to go to the Plausible Analytics website to view them. There are no attachments, no PDFs and no links to click on in the email either.
 
-## Set the unique visitors threshold for the traffic drop notifications
+## Set the unique visitor threshold for the traffic drop notifications
 
-You need to set the "**Total unique visitors in the last 12 hours threshold**" for your traffic drop notifications and click on the "**Save threshold**" button. The default threshold is at 1 unique visitors in the last 12 hours, but you can set it as high as you want depending on your usual traffic numbers. 
+You need to set the "**12 hour visitor threshold**" for your traffic drop notifications and click on the "**Save threshold**" button. The default threshold is at 1 unique visitor in the last 12 hours, but you can set it as high as you want depending on your usual traffic numbers. 
 
 You will get the traffic drop notification when your site falls below the threshold you've set. You'll get the notification for an individual website no more than twice in a 24-hour period.
 
