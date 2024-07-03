@@ -4,7 +4,9 @@ title: Import stats from Google Analytics
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Plausible Analytics allows you to import your historical stats from Google's Universal Analytics (UA) and Google Analytics 4 (GA4). You can import multiple Google Analytics properties into the same Plausible dashboard without having any gaps in the data and without any double-counting. You can also segment the imported data and export it using our regular exporting methods ([CSV](export-stats.md) and [stats API](stats-api.md)).
+Plausible Analytics allows you to import your historical stats from Google Analytics 4 (GA4). You can import multiple Google Analytics properties into the same Plausible dashboard without having any gaps in the data and without any double-counting. You can also segment the imported data and export it using our regular exporting methods ([CSV](export-stats.md) and [stats API](stats-api.md)).
+
+Note that Google shut down the Universal Analytics (UA) user interface and the API on July 1st 2024, deleting all your historical stats. This is why it's no longer possible to import data from UA but only from GA4.
 
 Here's how you can import your historical Google Analytics stats into your Plausible dashboard.
 
@@ -16,15 +18,11 @@ Here's how you can import your historical Google Analytics stats into your Plaus
 
 <img alt="Import Google Analytics data into Plausible" src={useBaseUrl('img/import-google-analytics-data.png')} />
 
-3. After linking Plausible to your Google account, you'll see a drop-down selection menu listing all the existing Google Analytics properties (both UA and GA4) associated with the connected Google account. Select the property that you'd like to import and click on the "**Continue**" button.
+3. After linking Plausible to your Google account, you'll see a drop-down selection menu listing all the existing Google Analytics properties associated with the connected Google account. Select the property that you'd like to import and click on the "**Continue**" button.
 
 4. On the next screen, you can click on the "**Confirm import**" button to start the data import process. The import should take no more than a few minutes for most sites but if you have a site with a lot of historical data, it may take up to a couple of hours to complete due to Google's API limits. You'll receive an email when the import has been completed. 
 
 5. Once you have received the email, the imported data will be visible in your Plausible dashboard alongside the native data. An icon is shown in the top-right of the dashboard when imported data has been included. Clicking this icon will stop the imported data from being displayed and the icon will then appear with a strike-through.
-
-:::tip Google will shut down the Universal Analytics user interface and the API on July 1st 2024
-You should import your UA historical data into Plausible before Google deletes your data
-:::
 
 ## Import multiple Google Analytics properties into the same Plausible dashboard
 
@@ -39,10 +37,10 @@ Data is imported in aggregate for each date, from your first Google Analytics vi
 We also have measures in place to detect and avoid double-counting visitors if you import multiple GA properties into the same Plausible dashboard. Here's an example of how it works:
 
 1. Say that you started counting visitors with Plausible for your site on March 11th 2024
-2. You do the first Google Analytics import into that Plausible dashboard and choose your old UA property. We automatically import the data from when you started using that UA property until you stopped using it (say Oct 25th 2008 to May 19th 2023)
-3. Then you do the second Google Analytics import into that Plausible dashboard and this time you choose your newer GA4 property. We automatically import the data from when you stopped using UA until you started using Plausible (May 19th 2023 to Mar 11th 2024)
+2. You do the first Google Analytics import into that Plausible dashboard and choose your oldest GA property. We automatically import the data from when you started using that GA property until you stopped using it (say Oct 25th 2008 to May 19th 2023)
+3. Then you do the second Google Analytics import into that Plausible dashboard and this time you choose your newer GA property. We automatically import the data from when you stopped using the first GA property until you started using Plausible (May 19th 2023 to Mar 11th 2024)
 
-This makes it easy and convenient to import all your historical Google Analytics stats from multiple properties without having any gaps in your data and without any double-counting. It also allows you the flexibility to choose the order in which you import your historical properties into Plausible. For instance, if you've used GA4 and UA simultaneously for some time, you can choose which data you prefer to keep in Plausible and import that specific property first. The second import will cover the missing date ranges and will not overwrite the first import.
+This makes it easy and convenient to import all your historical Google Analytics stats from multiple properties without having any gaps in your data and without any double-counting. It also allows you the flexibility to choose the order in which you import your historical properties into Plausible. For instance, if you've used different GA properties simultaneously for some time, you can choose which data you prefer to keep in Plausible and import that specific property first. The second import will cover the missing date ranges and will not overwrite the first import.
 
 :::tip Do you want your Google Analytics data to replace the native Plausible data up to today?
 This isn't recommended as the native data is superior to the imported data but it's possible if you wish to do so. You can [reset the Plausible stats](reset-site-data.md) first and make the import after that
@@ -94,7 +92,7 @@ We can import your traffic split between the different browsers but you can't dr
 
 ### Exit pages
 
-You can only see the Exit Pages report for data imported from Universal Analytics. Google Analytics 4 API does not expose this information.
+Google Analytics 4 API does not expose this information so you cannot see the Exit Pages report for imported data. 
 
 ### Day view graph
 
