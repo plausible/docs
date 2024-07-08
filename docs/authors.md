@@ -14,6 +14,7 @@ Plausible Analytics is designed, developed and maintained fully remotely, distri
 * Bogdan - Customer success
 * Adrian - Product engineer
 * Karl - Product engineer and infrastructure
+* Artur - Product engineer
 
 ## Contributors
 
