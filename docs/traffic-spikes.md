@@ -26,6 +26,8 @@ You need to set the "**12 hour visitor threshold**" for your traffic drop notifi
 
 You will get the traffic drop notification when your site falls below the threshold you've set. You'll get the notification for an individual website no more than twice in a 24-hour period.
 
+<img alt="Get traffic drop notifications via email" src={useBaseUrl('img/traffic-drop-notifications.png')} />
+
 ## Set traffic spike or drop notifications to be sent to multiple recipients
 
 Traffic spike or drop notifications can be set to be sent to multiple recipients. Enable the notifications, add an individual recipient into the "**Notification recipients**" field and click on the "**Add recipient**" button. 
