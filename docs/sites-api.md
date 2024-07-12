@@ -6,11 +6,13 @@ import {Required, Optional} from '../src/js/api-helpers.js';
 
 The Plausible Site provisioning API offers a way to create and manage sites in your Plausible account programmatically. This is useful if you run many websites or if you're [offering a web analytics dashboard powered by Plausible to your customers](https://plausible.io/white-label-web-analytics). The Site API allows these operations:
 
+* List existing sites
 * Create a new site
 * Delete an existing site
 * Change a domain name
 * Get a site by domain
 * Find or create a shared link by name (to use for the [embed dashboard functionality](embed-dashboard.md))
+* List existing goals
 * Find or create a goal by type and value (learn more about [goals and custom events](goal-conversions.md))
 * Delete an existing goal
 
@@ -18,6 +20,59 @@ Each request must be authenticated with an API key using the Bearer Token method
 
 ## Endpoints
 
+### GET /api/v1/sites
+
+Gets a list of existing sites owned by your Plausible account.
+
+```bash title="Try it yourself"
+curl -X GET https://plausible.io/api/v1/sites \
+  -H "Authorization: Bearer ${TOKEN}"
+```
+
+```json title="Response 200 OK"
+{
+    "sites": [
+        {
+            "domain": "test-domain1.com",
+            "timezone": "Europe/London",
+        },
+        {
+            "domain": "test-domain2.com",
+            "timezone": "Europe/London",
+        },
+        {
+            "domain": "test-domain3.com",
+            "timezone": "Europe/London",
+        }
+    ],
+    "meta": {
+        "after": null,
+        "before": null,
+        "limit": 100
+    }
+}
+```
+
+#### Query parameters
+<hr / >
+
+**after** <Optional />
+
+Pagination cursor. See [Pagination](#pagination).
+
+<hr / >
+
+**before** <Optional />
+
+Pagination cursor. See [Pagination](#pagination).
+
+<hr / >
+
+**limit** <Optional />
+
+Pagination limit. Defaults to 100. See [Pagination](#pagination).
+
+<hr / >
 ### POST /api/v1/sites
 
 Creates a site in your Plausible account.
@@ -102,7 +157,8 @@ curl -X GET https://plausible.io/api/v1/sites/test-domain.com \
 ```json title="Response 200 OK"
 {
     "domain": "test-domain.com",
-    "timezone": "Europe/London"
+    "timezone": "Europe/London",
+    "custom_properties": ["logged_in"]
 }
 ```
 
@@ -140,6 +196,81 @@ Name of the shared link.
 
 <hr / >
 
+### GET /api/v1/sites/goals
+
+Gets a list of existing goals for a given `site_id` (use the site domain as the ID).
+
+```bash title="Try it yourself"
+curl -X GET https://plausible.io/api/v1/sites/goals?site_id=test-domain.com \
+  -H "Authorization: Bearer ${TOKEN}"
+```
+
+```json title="Response 200 OK"
+{
+    "goals": [
+        {
+            "domain": "test-domain.com",
+            "id": "1",
+            "goal_type": "event",
+            "event_name": "Signup",
+            "page_path": null,
+            "name": "Signup",
+            "currency": null
+        },
+        {
+            "domain": "test-domain.com",
+            "id": "2",
+            "goal_type": "page",
+            "event_name": null,
+            "page_path": "/register",
+            "name": "Visit /register",
+            "currency": null
+        },
+        {
+            "domain": "test-domain.com",
+            "id": "3",
+            "goal_type": "event",
+            "event_name": "Purchase",
+            "page_path": null,
+            "name": "Purchase",
+            "currency": "USD"
+        }
+    ],
+    "meta": {
+        "after": null,
+        "before": null,
+        "limit": 100
+    }
+}
+```
+
+#### Query parameters
+<hr / >
+
+**site_id** <Required />
+
+Id of your site in Plausible.
+
+<hr / >
+
+**after** <Optional />
+
+Pagination cursor. See [Pagination](#pagination).
+
+<hr / >
+
+**before** <Optional />
+
+Pagination cursor. See [Pagination](#pagination).
+
+<hr / >
+
+**limit** <Optional />
+
+Pagination limit. Defaults to 100. See [Pagination](#pagination).
+
+<hr / >
+
 ### PUT /api/v1/sites/goals
 
 Finds or creates a goal for a given `site_id` (use the site domain as the ID). This endpoint is idempotent, it won't fail if a goal with the provided name already exists.
@@ -174,19 +305,19 @@ Id of your site in Plausible.
 
 **goal_type** <Required />
 
-Type of your goal, accepts only one of the following values: `event` or `page` 
+Type of your goal, accepts only one of the following values: `event` or `page`
 
 <hr / >
 
 **event_name** <Required /> only if _goal_type_ is set to `event`
 
-Actual value of the event name of your goal 
+Actual value of the event name of your goal
 
 <hr / >
 
 **page_path** <Required /> only if _goal_type_ is set to `page`
 
-Actual value of the page path of your goal, also accepts wildcards for type `page` 
+Actual value of the page path of your goal, also accepts wildcards for type `page`
 
 <hr / >
 
@@ -214,3 +345,27 @@ curl -X DELETE https://plausible.io/api/v1/sites/goals/1 \
 Id of your site in Plausible.
 
 <hr / >
+
+## Pagination
+
+All list endpoints implement cursor based pagination. They accept following URL query parameters: `before`, `after` and `limit`. The response payload always contains pagination metadata under `meta`:
+
+```json title="Example list response"
+{
+  "sites": [...],
+  "meta": {
+    "after": "Z2xc...",
+    "before": null,
+    "limit": 100
+  }
+}
+```
+
+After the initial request, previous and next pages can be retrieved by repeating the same request with either `before` or `after` query parameter passed over from the last response:
+
+```bash title="Try it yourself"
+curl -X GET https://plausible.io/api/v1/sites?after=AFTER_VALUE_FROM_LAST_RESPONSE \
+  -H "Authorization: Bearer ${TOKEN}"
+```
+
+The `limit` parameter must remain the same when paginating, either by leaving it at a default value or passing the same value each time explicitly. The `null` value in `before` or `after` means there are no more previous or next pages to navigate to, respectively.
