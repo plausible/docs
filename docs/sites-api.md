@@ -22,7 +22,7 @@ Each request must be authenticated with an API key using the Bearer Token method
 
 ### GET /api/v1/sites
 
-Gets a list of existing sites owned by your Plausible account.
+Gets a list of existing sites your Plausible account can access.
 
 ```bash title="Try it yourself"
 curl -X GET https://plausible.io/api/v1/sites \
@@ -147,7 +147,7 @@ curl -X DELETE https://plausible.io/api/v1/sites/test-domain.com \
 
 ### GET /api/v1/sites/:site_id
 
-Gets a site from your Plausible account. The API key must belong to the owner of the site.
+Gets details of a site. Your Plausible account must have access to it.
 
 ```bash title="Try it yourself"
 curl -X GET https://plausible.io/api/v1/sites/test-domain.com \
