@@ -38,3 +38,15 @@ It is quick and easy to create a funnel. Here's how:
 <img alt="Goals and funnels" src={useBaseUrl('img/goals-and-funnels.png')} />
 
 That's it! Funnels are listed at the bottom of your dashboard and will appear as soon as the first visit has been tracked on the funnel steps. You can then make changes to your site or to your campaign, test different options and check the funnel again to see how your improvements have affected the conversions.
+
+## How to edit existing funnels
+
+It is also quick and easy to edit any of your existing funnels. Here's how:
+
+* Go into your [site settings](website-settings.md) and click on "**Funnels**" in the left-hand sidebar
+
+* Click on the edit icon on the right-hand side of the funnel that you'd like to edit
+
+* Change the funnel name and/or edit the steps of your funnel
+
+* Click on the "**Update Funnel**" button
