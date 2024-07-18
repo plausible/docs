@@ -209,31 +209,18 @@ curl -X GET https://plausible.io/api/v1/sites/goals?site_id=test-domain.com \
 {
     "goals": [
         {
-            "domain": "test-domain.com",
             "id": "1",
             "goal_type": "event",
+            "display_name": "Signup",
             "event_name": "Signup",
-            "page_path": null,
-            "name": "Signup",
-            "currency": null
+            "page_path": null
         },
         {
-            "domain": "test-domain.com",
             "id": "2",
             "goal_type": "page",
+            "display_name": "Visit /register",
             "event_name": null,
-            "page_path": "/register",
-            "name": "Visit /register",
-            "currency": null
-        },
-        {
-            "domain": "test-domain.com",
-            "id": "3",
-            "goal_type": "event",
-            "event_name": "Purchase",
-            "page_path": null,
-            "name": "Purchase",
-            "currency": "USD"
+            "page_path": "/register"
         }
     ],
     "meta": {
@@ -288,6 +275,7 @@ curl -X PUT https://plausible.io/api/v1/sites/goals \
 {
     "domain": "test-domain.com",
     "id": "1",
+    "display_name": "Signup",
     "goal_type": "event",
     "event_name": "Signup",
     "page_path": null
