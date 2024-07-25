@@ -7,7 +7,7 @@ module.exports = {
   trailingSlash: false,
   projectName: 'docs',
   scripts: [
-    {src: 'https://plausible.io/js/script.js', defer: true, 'data-domain': 'plausible.io'}
+    {src: 'js/tracking.js', defer: true}
   ],
   themeConfig: {
     colorMode: {
