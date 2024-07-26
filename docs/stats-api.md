@@ -48,7 +48,7 @@ You can specify a `metrics` option in the query, to choose the metrics for each 
 ### Time periods
 
 The options are identical for each endpoint that supports configurable time periods. Each period is relative to a `date` parameter. The date should follow the standard ISO-8601 format. When not specified, the `date` field defaults to `today(site.timezone)`.
-All time calculations on our backend are done in the time zone that the site is configured in.
+Time calculations will be done in the time zone provided by the `timezone` parameter, or the time zone in which the site is configured if the `timezone` parameter is not supplied.
 
 * `12mo,6mo` - Last n calendar months relative to `date`.
 * `month` - The calendar month that `date` falls into.
@@ -244,6 +244,12 @@ Off by default. You can specify `compare=previous_period` to calculate the perce
 
 See [filtering](#filtering)
 
+<hr / >
+
+**timezone** <Optional />
+
+Used in time zone calculations when determining the time range to be included in the aggregate.  If not supplied, the time zone in which the site is configured will be used.
+
 ### GET /api/v1/stats/timeseries
 
 This endpoint provides timeseries data over a certain time period. If you are familiar with the Plausible dashboard, this endpoint corresponds to
@@ -323,6 +329,12 @@ A boolean determining whether to include imported stats in the returned results 
 
 Choose your reporting interval. Valid options are `date` (always) and `month` (when specified period is longer than one calendar month). Defaults to
 `month` for `6mo` and `12mo`, otherwise falls back to `date`.
+
+<hr / >
+
+**timezone** <Optional />
+
+Used in time zone calculations when determining the time range to be included.  In addition, the dates and times in the response are to be interpreted using this time zone. If not supplied, the time zone in which the site is configured will be used.
 
 ### GET /api/v1/stats/breakdown
 
@@ -412,13 +424,25 @@ A boolean determining whether to include imported stats in the returned results 
 
 Limit the number of results. Maximum value is 1000. Defaults to 100. If you want to get more than 1000 results, you can make multiple requests and paginate the results by specifying the `page` parameter (e.g. make the same request with `page=1`, then `page=2`, etc)
 
+<hr / >
+
 **page** <Optional />
 
 Number of the page, used to paginate results. Importantly, the page numbers start from 1 not 0.
 
+<hr / >
+
 **filters** <Optional />
 
 See [filtering](#filtering)
+
+<hr / >
+
+**timezone** <Optional />
+
+Used in time zone calculations when determining the time range to be included in the breakdown.  If not supplied, the time zone in which the site is configured will be used.
+
+<hr / >
 
 #### Breaking down by multiple properties at the same time
 
