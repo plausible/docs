@@ -34,11 +34,7 @@ There is a Plausible connector for [Looker Studio (formerly Google Data Studio)]
 
 ## Apple platforms (iOS, iPadOS, macOS, tvOS, etc.)
 
-* [Glance for Plausible](https://testflight.apple.com/join/hG0MV7FC): A small app which lets you view your Plausible stats right on your iOS device. Built and maintained by Alexander Weiß.
-
-* [iOS widget](https://gist.github.com/linuz90/ac969cdfe9bd92af0b306c43caee8d0c) to display the total visitors count for today and the live visitors count with Plausible and Scriptable. Built and maintained by [Fabrizio Rinaldi](https://gist.github.com/linuz90).
-
-* [Metrics iOS Widget](https://santiviquez.gumroad.com/l/xLrcq) by Santiago Víquez
+* [Charsible](https://charsible.app): Charsible is an iOS app offering a range of widgets to help you keep an eye on your Plausible Analytics data wherever you are.
 
 * [Numerics Dashboards for Plausible](https://cynapse.com/numerics-integrations/plausible-dashboards/): Track your Plausible KPIs with Numerics Dashboards on your iPhone, iPad, Mac, Apple TV and Apple Watch.
 
