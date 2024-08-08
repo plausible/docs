@@ -307,6 +307,10 @@ Actual value of the event name of your goal
 
 Actual value of the page path of your goal, also accepts wildcards for type `page`
 
+**display_name**
+
+The value under which the goal is available in the dashboard, as well as in the [Stats API](/stats-api). If not provided, for custom events the `display_name` becomes `event_name` and `Visit {page_path}` in case of pageview goals.
+
 <hr / >
 
 ### DELETE /api/v1/sites/goals/:goal_id
