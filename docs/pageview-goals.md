@@ -22,6 +22,21 @@ Select `Pageview` as the goal trigger and enter the pathname of the page you wou
 
 Next, click on the "**Add goal**" button and you’ll be taken back to the goals page. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who reached the specified page or group of pages. Goal conversions are listed at the very bottom of the dashboard.
 
+## Edit a Pageview Goal
+
+To edit a Pageview Goal, start by locating the pageview goal you want to update in the Goals list. Click on the "Edit goal" button next to it, which will bring up the goal editing form.
+
+<img alt="Edit goal button" src={useBaseUrl('img/edit-goal-button.png')} />
+
+From the pop up, you can select a new page path from the dropdown menu that matches the updated page you want to track.
+
+You can also give it a new display name, say, if the original name of the goal is too long or doesn’t quite fit your needs. This allows you to make the goal name more personalized and descriptive, which not only helps in organizing your reports but also helps your funnels look cleaner.
+
+<img alt="Edit pageview goal popup" src={useBaseUrl('img/edit-pageview-goal-popup.png')} />
+
+Once you’ve made the necessary changes, simply click "Update goal," and your updated settings will be applied immediately. The changes will be reflected in your Plausible Analytics dashboard, with the goal now tracking based on the new settings you’ve configured.
+
+
 ## How to group your pages
 
 Do you want to analyze the total traffic to specific sections of your site or to group your dynamically created pages? You can use an asterisk (`*`) to match patterns in your page path URLs. Asterisks can be placed on either end or in the middle of any page path URL.
