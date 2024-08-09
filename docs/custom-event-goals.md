@@ -205,6 +205,18 @@ You can click the link to automatically add all the goals you've been sending so
 
 That's it. You can now check our your goal conversions on the dashboard.
 
+## Edit a Custom Event Goal 
+
+To edit a custom event goal, start by locating the custom event goal you want to update in the Goals list. Click on the "Edit goal" button next to it, which will bring up the goal editing form.
+
+<img alt="Edit goal button" src={useBaseUrl('img/edit-goal-button.png')} />
+
+From the pop up, you can select a new custom event from the dropdown menu that matches the updated custom event you want to track. You can also edit the display name.
+
+<img alt="Edit custom even goal popup" src={useBaseUrl('img/edit-custom-event-goal-popup.png')} />
+
+Once you’ve made the necessary changes, simply click "Update goal," and your updated settings will be applied immediately. The changes will be reflected in your Plausible Analytics dashboard, with the goal now tracking based on the new settings you’ve configured.
+
 ## Enhanced goal conversion tracking
 
 ### Attach custom properties
