@@ -22,6 +22,16 @@ Select `Pageview` as the goal trigger and enter the pathname of the page you wou
 
 Next, click on the "**Add goal**" button and you’ll be taken back to the goals page. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who reached the specified page or group of pages. Goal conversions are listed at the very bottom of the dashboard.
 
+## How to group your pages
+
+Do you want to analyze the total traffic to specific sections of your site or to group your dynamically created pages? You can use an asterisk (`*`) to match patterns in your page path URLs. Asterisks can be placed on either end or in the middle of any page path URL.
+
+You can for instance group all of your blog posts by creating a pageview goal `/blog*` (if your blog subdirectory is named `blog`) or track Woocommerce checkout pages for your ecommerce by creating a pageview goal `/checkout/order-received/*`. 
+
+:::tip Would you like to group your pages at any time without using pageview goals?
+You can do so by using [the "Filter" button](filters-segments.md) on the top of your dashboard
+:::
+
 ## Edit a Pageview Goal
 
 To edit a Pageview Goal, start by locating the pageview goal you want to update in the Goals list. Click on the "Edit goal" button next to it, which will bring up the goal editing form.
@@ -35,14 +45,3 @@ You can also give it a new display name, say, if the original name of the goal i
 <img alt="Edit pageview goal popup" src={useBaseUrl('img/edit-pageview-goal-popup.png')} />
 
 Once you’ve made the necessary changes, simply click "Update goal," and your updated settings will be applied immediately. The changes will be reflected in your Plausible Analytics dashboard, with the goal now tracking based on the new settings you’ve configured.
-
-
-## How to group your pages
-
-Do you want to analyze the total traffic to specific sections of your site or to group your dynamically created pages? You can use an asterisk (`*`) to match patterns in your page path URLs. Asterisks can be placed on either end or in the middle of any page path URL.
-
-You can for instance group all of your blog posts by creating a pageview goal `/blog*` (if your blog subdirectory is named `blog`) or track Woocommerce checkout pages for your ecommerce by creating a pageview goal `/checkout/order-received/*`. 
-
-:::tip Would you like to group your pages at any time without using pageview goals?
-You can do so by using [the "Filter" button](filters-segments.md) on the top of your dashboard
-:::
