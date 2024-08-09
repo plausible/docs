@@ -34,7 +34,7 @@ You can do so by using [the "Filter" button](filters-segments.md) on the top of 
 
 ## Edit a Pageview Goal
 
-To edit a Pageview Goal, start by locating the pageview goal you want to update in the Goals list. Click on the "Edit goal" button next to it, which will bring up the goal editing form.
+To edit a Pageview Goal, start by locating the pageview goal you want to update in the Goals list in your website's settings. Click on the "Edit goal" button next to it, which will bring up the goal editing form.
 
 <img alt="Edit goal button" src={useBaseUrl('img/edit-goal-button.png')} />
 
