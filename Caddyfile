@@ -1,0 +1,4 @@
+:8001 {
+    reverse_proxy /docs* localhost:3000
+    reverse_proxy :8000
+}
