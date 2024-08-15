@@ -3,6 +3,7 @@ import { Editor } from '@monaco-editor/react'
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 import { Icon } from '@iconify/react'
+import { useHistory } from '@docusaurus/router'
 
 import Examples from './examples'
 import SCHEMA from './apiv2-json-schema.json'
@@ -10,18 +11,20 @@ import SCHEMA from './apiv2-json-schema.json'
 const MIN_HEIGHT = 170
 const MAX_HEIGHT = 500
 
-export default function ApiV2Example({ request }) {
-  const [code, setCode] = useState(JSON.stringify(Examples[request], null, 2))
+export default function ApiV2Example(props) {
+  const [code, setCode] = useState(JSON.stringify(Examples[props.request], null, 2))
   const [canReset, setCanReset] = useState(false)
   const [response, setResponse] = useState(null)
+  const history = useHistory()
 
   const onCodeChange = useCallback((code) => {
     setCode(code)
     setCanReset(true)
+    setResponse(null)
   })
 
   const resetCode = useCallback(() => {
-    setCode(JSON.stringify(Examples[request], null, 2))
+    setCode(JSON.stringify(Examples[props.request], null, 2))
     setCanReset(false)
     setResponse(null)
   })
@@ -41,18 +44,23 @@ export default function ApiV2Example({ request }) {
     const data = await response.json()
 
     setResponse({
-      status_code: response.status_code,
-      status_text: response.status_text,
+      status: response.status,
+      statusText: response.statusText,
       ok: response.ok,
       data
     })
+
+    const url = new URL(window.location)
+    url.searchParams.set(props.id, "response")
+    history.push(`${url.pathname}${url.search}`);
   })
 
   return (
-    <Tabs>
+    <Tabs groupId={props.id} queryString lazy>
       <TabItem label="Query" value="query">
         <div style={{ position: "relative" }}>
           <JsonSchemaEditor
+            theme="vs-dark"
             schema={SCHEMA}
             value={code}
             onChange={onCodeChange}
@@ -73,18 +81,28 @@ export default function ApiV2Example({ request }) {
         </div>
       </TabItem>
       <TabItem label="Example Response" value="example_response">
-        <pre>{code}</pre>
+        <JsonSchemaEditor
+          readOnly
+          value={JSON.stringify(Examples[props.response], null, 2)}
+        />
       </TabItem>
       {response && (
         <TabItem label="Response" value="response">
-          <pre>{JSON.stringify(response, null, 2)}</pre>
+          {response.status !== 200 && (
+            <p>Request did not succeed. {response.status} - ${response.statusText}</p>
+          )}
+
+          <JsonSchemaEditor
+            readOnly
+            value={JSON.stringify(response.data, null, 2)}
+          />
         </TabItem>
       )}
     </Tabs>
   )
 }
 
-function JsonSchemaEditor({ value, schema, onChange }) {
+function JsonSchemaEditor({ theme, value, schema, onChange, readOnly }) {
   const [height, setHeight] = useState(MIN_HEIGHT)
   const editorRef = useRef()
 
@@ -105,7 +123,7 @@ function JsonSchemaEditor({ value, schema, onChange }) {
 
   return (
     <Editor
-      theme="vs-dark"
+      theme={theme}
       language="json"
       value={value}
       height={height}
@@ -122,6 +140,7 @@ function JsonSchemaEditor({ value, schema, onChange }) {
         overviewRulerLanes: 0,
         hideCursorInOverviewRuler: false,
         scrollBeyondLastLine: false,
+        readOnly: readOnly
       }}
       onMount={onMount}
       onChange={onChange}
