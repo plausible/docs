@@ -11,6 +11,7 @@
   "dependencies": {
     "@docusaurus/core": "^3.5.2",
     "@docusaurus/preset-classic": "^3.5.2",
+    "@iconify/react": "^5.0.2",
     "@monaco-editor/react": "^4.6.0",
     "classnames": "^2.5.1",
     "monaco-editor": "^0.34.0",

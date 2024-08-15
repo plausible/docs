@@ -1,7 +1,8 @@
-import React, {useState, useCallback, useRef} from 'react'
+import React, { useState, useCallback, useRef } from 'react'
 import { Editor } from '@monaco-editor/react'
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
+import { Icon } from '@iconify/react'
 
 import Examples from './examples'
 import SCHEMA from './apiv2-json-schema.json'
@@ -10,29 +11,55 @@ const MIN_HEIGHT = 170
 const MAX_HEIGHT = 500
 
 export default function ApiV2Example({ request }) {
-  const [value, setValue] = useState(JSON.stringify(Examples[request], null, 2))
+  const [code, setCode] = useState(JSON.stringify(Examples[request], null, 2))
+  const [canReset, setCanReset] = useState(false)
 
-  const onCodeChange = useCallback((value) => {
-    setValue(value)
+  const onCodeChange = useCallback((code) => {
+    setCode(code)
+    setCanReset(true)
+  })
+
+  const resetCode = useCallback(() => {
+    setCode(JSON.stringify(Examples[request], null, 2))
+    setCanReset(false)
+  })
+
+  const copyCode = useCallback(() => {
+    navigator.clipboard.writeText(code)
   })
 
   return (
     <Tabs>
-      <TabItem label="Request" value="request">
-        <JsonSchemaEditor
-          schema={SCHEMA}
-          defaultValue={value}
-          onChange={onCodeChange}
-        />
+      <TabItem label="Query" value="query">
+        <div style={{ position: "relative" }}>
+          <JsonSchemaEditor
+            schema={SCHEMA}
+            value={code}
+            onChange={onCodeChange}
+          />
+          <div style={{ position: "absolute", top: 2, right: 2 }}>
+            {canReset && (
+              <button title="Reset query" className="code-button" onClick={resetCode}>
+                <Icon icon="carbon:reset-alt" />
+              </button>
+            )}
+            <button title="Copy query" className="code-button" onClick={copyCode}>
+              <Icon icon="uil:copy" />
+            </button>
+            <button title="Run query" className="code-button">
+              <Icon icon="ant-design:code-outlined" />
+            </button>
+          </div>
+        </div>
       </TabItem>
-      <TabItem label="Response" value="response">
-        <pre>{value}</pre>
+      <TabItem label="Example Response" value="example_response">
+        <pre>{code}</pre>
       </TabItem>
     </Tabs>
   )
 }
 
-function JsonSchemaEditor({ defaultValue, schema, onChange }) {
+function JsonSchemaEditor({ value, schema, onChange }) {
   const [height, setHeight] = useState(MIN_HEIGHT)
   const editorRef = useRef()
 
@@ -55,7 +82,7 @@ function JsonSchemaEditor({ defaultValue, schema, onChange }) {
     <Editor
       theme="vs-dark"
       language="json"
-      defaultValue={defaultValue}
+      value={value}
       height={height}
       options={{
         minimap: {
