@@ -1,6 +1,8 @@
 import React, {useState, useCallback, useRef} from 'react'
 import { Editor } from '@monaco-editor/react'
 
+import Examples from './examples'
+
 const SCHEMA = {
   validate: true,
   schemas: [
@@ -279,7 +281,7 @@ const SCHEMA = {
   ]
 }
 
-export default function ApiV2Example(props) {
+export default function ApiV2Example({ request }) {
   const [height, setHeight] = useState(170);
   const editorRef = useRef();
 
@@ -301,7 +303,7 @@ export default function ApiV2Example(props) {
     <Editor
       theme="vs-dark"
       language="json"
-      defaultValue={props.children}
+      defaultValue={JSON.stringify(Examples[request], null, 2)}
       height={height}
       options={{
         minimap: {
