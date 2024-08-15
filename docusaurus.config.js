@@ -1,3 +1,5 @@
+const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin')
+
 module.exports = {
   title: 'Plausible docs',
   url: 'https://plausible.io',
@@ -106,6 +108,19 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Plausible Analytics. Built with Docusaurus.`,
     },
   },
+  plugins: [
+    function enableMonacoEditorPlugin() {
+      return {
+        name: 'enableMonacoEditorPlugin',
+        configureWebpack() {
+          return {
+            // https://stackoverflow.com/questions/69265357/monaco-editor-worker
+            plugins: [new MonacoWebpackPlugin()],
+          };
+        },
+      };
+    },
+  ],
   presets: [
     [
       '@docusaurus/preset-classic',
