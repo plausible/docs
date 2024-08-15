@@ -1,0 +1,30 @@
+{
+  "results": [
+    {
+      "metrics": [
+        1200,
+        10013
+      ],
+      "dimensions": []
+    }
+  ],
+  "meta": {},
+  "query": {
+    "filters": [],
+    "metrics": [
+      "visitors",
+      "events"
+    ],
+    "date_range": [
+      "2024-06-01",
+      "2024-07-01"
+    ],
+    "order_by": [
+      [
+        "visitors",
+        "desc"
+      ]
+    ],
+    "dimensions": []
+  }
+}

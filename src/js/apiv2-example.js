@@ -12,7 +12,8 @@ const MIN_HEIGHT = 170
 const MAX_HEIGHT = 500
 
 export default function ApiV2Example(props) {
-  const [code, setCode] = useState(JSON.stringify(Examples[props.request], null, 2))
+  console.log(Examples)
+  const [code, setCode] = useState(Examples[props.request] || "")
   const [canReset, setCanReset] = useState(false)
   const [response, setResponse] = useState(null)
   const history = useHistory()
@@ -24,7 +25,7 @@ export default function ApiV2Example(props) {
   })
 
   const resetCode = useCallback(() => {
-    setCode(JSON.stringify(Examples[props.request], null, 2))
+    setCode(Examples[props.request] || "")
     setCanReset(false)
     setResponse(null)
   })
@@ -52,15 +53,14 @@ export default function ApiV2Example(props) {
 
     const url = new URL(window.location)
     url.searchParams.set(props.id, "response")
-    history.push(`${url.pathname}${url.search}`);
+    history.replace(`${url.pathname}${url.search}`);
   })
 
   return (
-    <Tabs groupId={props.id} queryString lazy>
+    <Tabs groupId={props.id} queryString>
       <TabItem label="Query" value="query">
         <div style={{ position: "relative" }}>
           <JsonSchemaEditor
-            theme="vs-dark"
             schema={SCHEMA}
             value={code}
             onChange={onCodeChange}
@@ -83,7 +83,7 @@ export default function ApiV2Example(props) {
       <TabItem label="Example Response" value="example_response">
         <JsonSchemaEditor
           readOnly
-          value={JSON.stringify(Examples[props.response], null, 2)}
+          value={Examples[props.response] || ""}
         />
       </TabItem>
       {response && (
@@ -123,7 +123,7 @@ function JsonSchemaEditor({ theme, value, schema, onChange, readOnly }) {
 
   return (
     <Editor
-      theme={theme}
+      theme="vs-dark"
       language="json"
       value={value}
       height={height}
