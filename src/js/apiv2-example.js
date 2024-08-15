@@ -13,6 +13,7 @@ const MAX_HEIGHT = 500
 export default function ApiV2Example({ request }) {
   const [code, setCode] = useState(JSON.stringify(Examples[request], null, 2))
   const [canReset, setCanReset] = useState(false)
+  const [response, setResponse] = useState(null)
 
   const onCodeChange = useCallback((code) => {
     setCode(code)
@@ -22,10 +23,29 @@ export default function ApiV2Example({ request }) {
   const resetCode = useCallback(() => {
     setCode(JSON.stringify(Examples[request], null, 2))
     setCanReset(false)
+    setResponse(null)
   })
 
   const copyCode = useCallback(() => {
     navigator.clipboard.writeText(code)
+  })
+
+  const runCode = useCallback(async () => {
+    setResponse(null)
+
+    const response = await fetch('/api/v2/docs/query', {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: code
+    })
+    const data = await response.json()
+
+    setResponse({
+      status_code: response.status_code,
+      status_text: response.status_text,
+      ok: response.ok,
+      data
+    })
   })
 
   return (
@@ -46,7 +66,7 @@ export default function ApiV2Example({ request }) {
             <button title="Copy query" className="code-button" onClick={copyCode}>
               <Icon icon="uil:copy" />
             </button>
-            <button title="Run query" className="code-button">
+            <button title="Run query" className="code-button" onClick={runCode}>
               <Icon icon="ant-design:code-outlined" />
             </button>
           </div>
@@ -55,6 +75,11 @@ export default function ApiV2Example({ request }) {
       <TabItem label="Example Response" value="example_response">
         <pre>{code}</pre>
       </TabItem>
+      {response && (
+        <TabItem label="Response" value="response">
+          <pre>{JSON.stringify(response, null, 2)}</pre>
+        </TabItem>
+      )}
     </Tabs>
   )
 }
