@@ -4,6 +4,7 @@ import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 import { Icon } from '@iconify/react'
 import { useHistory } from '@docusaurus/router'
+import stringify from "json-stringify-pretty-compact"
 
 import Examples from './examples'
 import SCHEMA from './apiv2-json-schema.json'
@@ -93,7 +94,7 @@ export default function ApiV2Example(props) {
 
           <JsonSchemaEditor
             readOnly
-            value={JSON.stringify(response.data, null, 2)}
+            value={stringify(response.data)}
           />
         </TabItem>
       )}
