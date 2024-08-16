@@ -7,7 +7,7 @@ module.exports = {
   trailingSlash: false,
   projectName: 'docs',
   scripts: [
-    {src: 'js/tracking.js', defer: true}
+    {src: '/docs/js/tracking.js', defer: true}
   ],
   themeConfig: {
     colorMode: {
