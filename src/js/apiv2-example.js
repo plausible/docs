@@ -12,7 +12,6 @@ const MIN_HEIGHT = 170
 const MAX_HEIGHT = 500
 
 export default function ApiV2Example(props) {
-  console.log(Examples)
   const [code, setCode] = useState(Examples[props.request] || "")
   const [canReset, setCanReset] = useState(false)
   const [response, setResponse] = useState(null)
@@ -102,7 +101,7 @@ export default function ApiV2Example(props) {
   )
 }
 
-function JsonSchemaEditor({ theme, value, schema, onChange, readOnly }) {
+function JsonSchemaEditor({ value, schema, onChange, readOnly }) {
   const [height, setHeight] = useState(MIN_HEIGHT)
   const editorRef = useRef()
 
