@@ -1,11 +1,10 @@
 import React, { useState, useCallback, useRef } from 'react'
 import { Editor } from '@monaco-editor/react'
-import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 import { Icon } from '@iconify/react'
-import { useHistory } from '@docusaurus/router'
 import stringify from "json-stringify-pretty-compact"
 
+import Tabs from '../theme/Tabs'
 import Examples from './examples'
 import SCHEMA from './apiv2-json-schema.json'
 
@@ -13,10 +12,10 @@ const MIN_HEIGHT = 170
 const MAX_HEIGHT = 500
 
 export default function ApiV2Example(props) {
+  const [activeTab, setActiveTab] = useState("query")
   const [code, setCode] = useState(Examples[props.request] || "")
   const [canReset, setCanReset] = useState(false)
   const [response, setResponse] = useState(null)
-  const history = useHistory()
 
   const onCodeChange = useCallback((code) => {
     setCode(code)
@@ -51,13 +50,11 @@ export default function ApiV2Example(props) {
       data
     })
 
-    const url = new URL(window.location)
-    url.searchParams.set(props.id, "response")
-    history.replace(`${url.pathname}${url.search}`);
+    setActiveTab("response")
   })
 
   return (
-    <Tabs groupId={props.id} queryString>
+    <Tabs activeTab={activeTab} onTabChange={setActiveTab}>
       <TabItem label="Query" value="query">
         <div style={{ position: "relative" }}>
           <JsonSchemaEditor
