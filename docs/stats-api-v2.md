@@ -150,9 +150,7 @@ Note that:
 - `time` dimensions are not usable in filters. Set [`date_range`](#date_range) instead.
 - If no data falls into a given time bucket, no values are returned. [See `include.time_labels` option](#time-labels) for a workaround.
 
-Note behavior when no data matches - nothing returned. See time-labels.
-
-Not usable in filters.
+[See example](#example-timeseries)
 
 #### Custom properties
 
@@ -162,7 +160,7 @@ Not usable in filters.
 
 Default: `[]`
 
-Filters allow limiting the data analyzed in a query. Each filter takes the form of `[operator, dimension, clauses]`. See [example](#filtering-basic).
+Filters allow limiting the data analyzed in a query. Each filter takes the form of `[operator, dimension, clauses]`. [See example](#example-filtering).
 
 **operators**
 
@@ -249,15 +247,20 @@ The following example queries are interactive and can be edited and run against 
 
 ### Custom date range {#example-custom-date-range}
 
+<ApiV2Example
+  request="apiv2-examples/custom-date-range-request.json"
+  response="apiv2-examples/custom-date-range-response.json"
+/>
+
 ### Best-performing UTM tags {#example-utm}
 
-### Filtering by utm and country {#filtering-basic}
+### Filtering by utm and country {#example-filtering}
 
 Event, visit and custom properties
 
 ### Filtering by regex
 
-### Timeseries query {#timeseries}
+### Timeseries query {#example-timeseries}
 
 <ApiV2Example
   request="apiv2-examples/timeseries-request.json"
