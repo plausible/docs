@@ -36,13 +36,7 @@ export default function ApiV2Example(props) {
 
   const runCode = useCallback(async () => {
     setResponse(null)
-
-    const response = await fetch('/api/v2/docs/query', {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: code
-    })
-    const data = await response.json()
+    const [response, data] = await postQuery(code)
 
     setResponse({
       status: response.status,
@@ -90,14 +84,16 @@ export default function ApiV2Example(props) {
       </TabItem>
       {response && (
         <TabItem label="Response" value="response">
-          {response.status !== 200 && (
-            <p>Request did not succeed. {response.status} - ${response.statusText}</p>
-          )}
+          <Admonition type="info">
+            {/* <p><code>POST /api/v2/query</code></p> */}
+            <p>Status: <code>{response.status}</code> - <code>{response.statusText}</code></p>
+          </Admonition>
 
-          <JsonSchemaEditor
-            readOnly
-            value={stringify(response.data)}
-          />
+          {response.data !== "" && (
+            <JsonSchemaEditor
+              readOnly
+              value={response.data}
+            />)}
         </TabItem>
       )}
     </Tabs>
@@ -148,4 +144,26 @@ function JsonSchemaEditor({ value, schema, onChange, readOnly }) {
       onChange={onChange}
     />
   )
+}
+
+async function postQuery(query) {
+  let response
+  try {
+    response = await fetch('/api/v2/docs/query', {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: query
+    })
+
+  } catch (error_response) {
+    response = error_response
+  }
+
+  try {
+    const data = await response.json()
+
+    return [response, stringify(data)]
+  } catch (error) {
+    return [response, ""]
+  }
 }
