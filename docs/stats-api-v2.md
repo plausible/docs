@@ -1,5 +1,6 @@
 ---
 title: Stats API v2 reference
+toc_max_heading_level: 4
 ---
 
 import ApiV2Example from '../src/js/apiv2-example.js';
@@ -8,7 +9,7 @@ import {Required, Optional} from '../src/js/api-helpers.js';
 
 :::warning
 
-Please be advised that this feature is currently in its beta stage. Some functionality might change in the upcoming releases.
+Please be advised that this feature is currently in beta. Some functionality might be broken or change in the coming months.
 
 :::
 
@@ -20,7 +21,11 @@ The Plausible Stats API offers a way to retrieve your stats programmatically. It
 
 You can obtain an API key for your account by going to your user settings page [plausible.io/settings](https://plausible.io/settings).
 
-After creating a token, you can authenticate your request by sending the token in the Authorization header of your request. For example, in the following request, replace YOUR-TOKEN with a reference to your token and site_id value with your domain.
+After creating a token, you can authenticate your request by sending the token in the Authorization header of your request.
+
+### Example curl request
+
+In the following request, replace YOUR-TOKEN with a reference to your token and site_id value with your domain.
 
 ```bash
 curl \
@@ -77,7 +82,7 @@ Valid metrics are:
 | `conversion_rate` | The percentage of visitors who completed the goal. Requires: dimension list passed, an event:goal filter or event:goal dimension |
 | `group_conversion_rate` | The percentage of visitors who completed the goal with the same dimension. Requires: dimension list passed, an event:goal filter or event:goal dimension |
 
-### dimensions <Optional />
+### dimensions <Optional /> {#dimensions}
 
 Default: `[]`
 
@@ -132,11 +137,11 @@ Mixing session metrics `bounce_rate`, `views_per_visit` and `visit_duration` wit
 
 Default: `[]`
 
-Filters allow limiting the data analyzed in a query. Each filter takes the form of `[operator, dimension, list_of_values]`. See [example](#filtering-basic).
+Filters allow limiting the data analyzed in a query. Each filter takes the form of `[operator, dimension, clauses]`. See [example](#filtering-basic).
 
-#### operators
+**operators**
 
-The following operators are supported
+The following operators are currently supported:
 
 | Operator | Example | Explanation |
 | -- | -- | -- |
@@ -147,7 +152,40 @@ The following operators are supported
 
 `matches` and `does_not_match` uses XXX system for matching. TODO
 
+**dimension**
+
+[All dimensions listed above](#dimensions) are valid except for time-related ones.
+
+Note that only `is` operator is valid for `event:goal` dimension.
+
+**clauses**
+
+List of values to match against. A data point matches filter if _any_ of the clauses matches.
+
 ### include <Optional />
+
+Default: `{}`
+
+Additional options for the query as to what data to include.
+
+#### include.imports
+
+Default: `false`
+
+If true, tries to include imported data in the result.
+
+Not all queries support including imported data.
+
+TODO: Examples, limitations
+
+#### include.time_labels
+
+Default: `false`
+
+Requires a `time` dimension being set. If true, sets meta.time_labels in response containing all
+time labels valid for `date_range`.
+
+TODO: Link to an example
 
 ## Examples
 
