@@ -5,7 +5,9 @@ function read(path) {
 const examplePaths = [
   "apiv2-examples/aggregate-request.json",
   "apiv2-examples/aggregate-response.json",
-  "apiv2-examples/timeseries-request.json"
+  "apiv2-examples/timeseries-request.json",
+  "apiv2-examples/time-labels-request.json",
+  "apiv2-examples/time-labels-response.json",
 ]
 
 export default Object.fromEntries(examplePaths.map((path) => [path, read(path)]))

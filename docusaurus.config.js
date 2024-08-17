@@ -106,7 +106,7 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Plausible Analytics. Built with Docusaurus.`,
     },
     prism: {
-      additionalLanguages: ['bash'],
+      additionalLanguages: ['bash', 'json'],
     },
   },
   presets: [

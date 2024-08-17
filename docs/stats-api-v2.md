@@ -47,7 +47,7 @@ API keys have a rate limit of 600 requests per hour by default. If you have spec
 
 Domain of your site on Plausible to be queried.
 
-### date_range <Required />
+### date_range <Required /> {#date_range}
 
 Date range to be queried.
 
@@ -63,7 +63,7 @@ Date range to be queried.
 | `"year"` | Since the start of this year |
 | `"all"` | Since the start of stats in Plausible |
 
-### metrics <Required />
+### metrics <Required /> {#metrics}
 
 Metrics represent values to be calculated with the query.
 
@@ -91,6 +91,8 @@ List of dimensions to group by.
 Dimensions are attributes of your dataset. Using them in queries enables analyzing and compare multiple groups against each other.
 Think of them as `GROUP BY` in SQL.
 
+#### Event dimensions
+
 Valid dimensions include:
 
 | Dimension | Example | Description |
@@ -98,6 +100,19 @@ Valid dimensions include:
 | `event:goal` | Register | A custom action that you want your users to take. To use this dimension, you first need to configure some goals in the site settings, or via the Sites API. Learn more about goals here. |
 | `event:page` | /blog/remove-google-analytics | Pathname of the page where the event is triggered. You can also use an asterisk to group multiple pages (/blog*) |
 | `event:hostname` | example.com | Hostname of the event. |
+:::warning
+
+Mixing session metrics `bounce_rate`, `views_per_visit` and `visit_duration` with event dimensions is not allowed.
+:::
+
+
+#### Visit dimensions
+
+Values of these dimensions are determined by the first pageview in a session.
+
+
+| Dimension | Example | Description |
+| --- | --- | --- |
 | `visit:entry_page` | /home | Page on which the visit session started (landing page). |
 | `visit:exit_page` | /home | Page on which the visit session ended (last page viewed). |
 | `visit:source` | Twitter | Visit source, populated from an url query parameter tag (utm_source, source or ref) or the Referer HTTP header. |
@@ -118,16 +133,26 @@ Valid dimensions include:
 | `visit:country_name` | United States | Name of the visitor country. |
 | `visit:region_name` | California | Name of the visitor region. |
 | `visit:city_name` | San Francisco | Name of the visitor city. |
+
+#### Time dimensions {#time-dimensions}
+
+It's useful to be able to group data by time, which can be done via the following dimensions.
+
+| Dimension | Example | Description |
+| -- | -- | -- |
 | `time` | 2024-01-01 | Time or date to group by. Automatically figures out the appropriate time:bucket value from date range. Response is a valid ISO8601 date or timestamp |
 | `time:hour` | 2021-01-27T23:43:10Z | Time grouped by hour. ISO8601 |
 | `time:day` | 2021-01-27 | Time grouped by date |
 | `time:week` | 2021-01-04 | Time grouped by start of the week |
 | `time:month` | 2021-01-01 | Time grouped by start of month |
 
-:::warning
+Note that:
+- `time` dimensions are not usable in filters. Set [`date_range`](#date_range) instead.
+- If no data falls into a given time bucket, no values are returned. [See `include.time_labels` option](#time-labels) for a workaround.
 
-Mixing session metrics `bounce_rate`, `views_per_visit` and `visit_duration` with event dimensions is not allowed.
-:::
+Note behavior when no data matches - nothing returned. See time-labels.
+
+Not usable in filters.
 
 #### Custom properties
 
@@ -162,6 +187,27 @@ Note that only `is` operator is valid for `event:goal` dimension.
 
 List of values to match against. A data point matches filter if _any_ of the clauses matches.
 
+### order_by <Optional />
+
+Allows for custom ordering of query results.
+
+List of tuples `[dimension_or_metric, direction]`, where:
+- `dimension_or_metric` needs to be listed in query [`metrics`](#metrics) or [`dimensions`](#dimensions) respectively.
+- `direction` can be one of `"asc"` or `"desc"`
+
+For example:
+
+```json
+[["visitors", "desc"], ["visit:country_name", "asc"]]
+```
+
+When not specified, the default ordering is:
+
+1. If a [time dimensions](#time-dimensions) is present, `[time_dimension, "asc"]`
+2. By the first metric specified, descending.
+
+[See full query example](#example-order-by)
+
 ### include <Optional />
 
 Default: `{}`
@@ -185,7 +231,7 @@ Default: `false`
 Requires a `time` dimension being set. If true, sets meta.time_labels in response containing all
 time labels valid for `date_range`.
 
-TODO: Link to an example
+[See example](#example-time-labels)
 
 ## Examples
 
@@ -194,15 +240,16 @@ TODO: Link to an example
 The following example queries are interactive and can be edited and run against your own data.
 :::
 
-### Simple aggregate query {#aggregate}
+### Simple aggregate query {#example-aggregate}
 
 <ApiV2Example
-  id="aggregate"
   request="apiv2-examples/aggregate-request.json"
   response="apiv2-examples/aggregate-response.json"
 />
 
-### Best-performing UTM tags
+### Custom date range {#example-custom-date-range}
+
+### Best-performing UTM tags {#example-utm}
 
 ### Filtering by utm and country {#filtering-basic}
 
@@ -213,12 +260,17 @@ Event, visit and custom properties
 ### Timeseries query {#timeseries}
 
 <ApiV2Example
-  id="timeseries-query"
   request="apiv2-examples/timeseries-request.json"
   response="apiv2-examples/timeseries-response.json"
 />
 
-### Timeseries query with labels
+### Timeseries query hourly, with labels {#example-time-labels}
+
+<ApiV2Example
+  request="apiv2-examples/time-labels-request.json"
+  response="apiv2-examples/time-labels-response.json"
+/>
+
 
 ### Using custom properties {#custom-properties-example}
 
@@ -228,7 +280,7 @@ Event, visit and custom properties
 
 ### Including imported data failed
 
-### Explicit ordering of results
+### Explicit ordering of results {#example-order-by}
 
 ### Filtering by hostname
 
