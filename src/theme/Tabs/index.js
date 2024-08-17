@@ -111,8 +111,10 @@ function TabsComponent(props) {
   }, [props.activeTab])
 
   useEffect(() => {
-    props?.onTabChange(props.selectedValue)
-  }, [props.selectedValue])
+    if (props.onTabChange && tabs.selectedValue !== props.activeTab) {
+      props.onTabChange(tabs.selectedValue)
+    }
+  }, [tabs.selectedValue])
 
   return (
     <div className={clsx('tabs-container', styles.tabList)}>
