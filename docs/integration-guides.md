@@ -90,6 +90,10 @@ Plausible doesn't take DNT (Do Not Track) into consideration by default as [DNT 
 
 [Elixir library](https://hex.pm/packages/plausible) to push events to Plausible. Built and maintained by [Suracheth Chawla](https://hex.pm/users/blisscs).
 
+## Flipsite
+
+[Flipsite settings](https://flipsite.io/blog/plausible-analytics/): Include Plausible in your Flipsite settings and score 100% on Lighthouse and all other speed tests. Open Source compiler at [Github](https://github.com/flipsite/flipsite). Only possible with Plausible.
+
 ## Flutter
 
 [Flutter plugin](https://pub.dev/packages/plausible_analytics): Send pageviews and custom events to Plausible. Built and maintained by [Eric Trenkel](https://erictrenkel.com/).
