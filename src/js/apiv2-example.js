@@ -1,6 +1,7 @@
 import React, { useState, useCallback, useRef } from 'react'
 import { Editor } from '@monaco-editor/react'
 import TabItem from '@theme/TabItem'
+import Admonition from '@theme/Admonition';
 import { Icon } from '@iconify/react'
 import stringify from "json-stringify-pretty-compact"
 
@@ -78,6 +79,10 @@ export default function ApiV2Example(props) {
         </div>
       </TabItem>
       <TabItem label="Example Response" value="example_response">
+        <Admonition type="info">
+          <p>Example response for this query</p>
+        </Admonition>
+
         <JsonSchemaEditor
           readOnly
           value={Examples[props.response] || ""}

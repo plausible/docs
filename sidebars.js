@@ -81,7 +81,7 @@ module.exports = {
         ],
       },
     ],
-    API: ['stats-api', 'events-api', 'sites-api'],
+    API: ['stats-api', 'events-api', 'sites-api', 'stats-api-v2'],
     Adblockers: [
       { type: 'doc', id: 'proxy/introduction', label: 'Overview' },
       {
