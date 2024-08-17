@@ -3,7 +3,8 @@ import { Editor } from '@monaco-editor/react'
 import TabItem from '@theme/TabItem'
 import Admonition from '@theme/Admonition';
 import { Icon } from '@iconify/react'
-import stringify from "json-stringify-pretty-compact"
+import stringify from 'json-stringify-pretty-compact'
+import stripJsonComments from 'strip-json-comments'
 
 import Tabs from '../theme/Tabs'
 import Examples from './examples'
@@ -107,7 +108,10 @@ function JsonSchemaEditor({ value, schema, onChange, readOnly }) {
   const onMount = useCallback((editor, monaco) => {
     editorRef.current = editor
 
-    monaco.languages.json.jsonDefaults.setDiagnosticsOptions(schema)
+    monaco.languages.json.jsonDefaults.setDiagnosticsOptions({
+      validate: true,
+      schemas: [schema]
+    })
     editor.onDidChangeModelContent(handleEditorChange)
     handleEditorChange()
   })
