@@ -311,6 +311,9 @@
               },
               {
                 "$ref": "#/definitions/custom_property_filter_dimensions"
+              },
+              {
+                "$ref": "#/definitions/time_dimensions"
               }
             ],
             "markdownDescription": "Metric or dimension to order by. Must be listed under `metrics` or `dimensions`"

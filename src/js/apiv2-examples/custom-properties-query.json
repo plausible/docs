@@ -1,0 +1,7 @@
+{
+  "site_id": "dummy.site",
+  "metrics": ["visitors"],
+  "date_range": "7d",
+  "dimensions": ["time:day", "event:props:is_customer"],
+  "order_by": [["time:day", "asc"], ["event:props:is_customer", "desc"]]
+}

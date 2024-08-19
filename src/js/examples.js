@@ -17,6 +17,8 @@ const examplePaths = [
   "apiv2-examples/filtering-basics-response.json",
   "apiv2-examples/country-and-city-query.json",
   "apiv2-examples/country-and-city-response.json",
+  "apiv2-examples/custom-properties-query.json",
+  "apiv2-examples/custom-properties-response.json",
 ]
 
 export default Object.fromEntries(examplePaths.map((path) => [path, read(path)]))

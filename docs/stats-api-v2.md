@@ -210,7 +210,7 @@ When not specified, the default ordering is:
 1. If a [time dimensions](#time-dimensions) is present, `[time_dimension, "asc"]`
 2. By the first metric specified, descending.
 
-[See full query example](#example-order-by)
+[See full query example](#custom-properties-example)
 
 ### include <Optional />
 
@@ -222,10 +222,31 @@ Additional options for the query as to what data to include.
 
 Default: `false`
 
-If true, tries to include imported data in the result. [See example](#example-imports)
+If true, tries to include imported data in the result. See [imported stats](#imported-stats) for more details, [query example](#example-imports).
 
-Not all queries support including imported data due to google analytics limitations. If
-including imported data fails, `meta.warning` response key will be set. [See example](#example-imports-warning)
+<details>
+  <summary>Read more on limitations of including imported data</summary>
+
+  Using custom property dimensions (`event:props:*`) are only supported for 2 properties: `url` and `path`. Additionally, these breakdowns will only work in combination with a [certain subset](/csv-import#goals-and-custom-properties) of `event:goal` filters.
+
+  ##### Filtering imported stats
+
+  Filtering by imported data is limited. The general rule is that you cannot filter by two different properties at the same time.
+  For example, `event:page==/;visit:source==Twitter` is not able to return any imported results. The same happens when you try to filter by one dimension and set another as a dimension.
+
+  There are some exceptions though. The following dimensions are aggregated and grouped together and can be combined in a query:
+
+  * Countries, regions, cities
+  * Operating systems and their versions
+  * Hostnames and pages
+  * Specific custom events and their properties
+    * `Outbound Link: Click` and `File Download` goals with the `url` property
+    * `404` goals with the `path` property
+
+  For example, you can set a `country` dimension and filter by both `city` and `region`.
+</details>
+
+If the applied combination of filters and dimensions is not supported for imported stats, the results are still returned based only on native stats and `meta.warning` response key will be set. [See example](#example-imports-warning)
 
 #### include.time_labels
 
@@ -319,7 +340,10 @@ The following example queries are interactive and can be edited and run against 
 
 ### Using custom properties {#custom-properties-example}
 
-### Multiple dimensions
+<ApiV2Example
+  request="apiv2-examples/custom-properties-query.json"
+  response="apiv2-examples/custom-properties-response.json"
+/>
 
 ### Including imported data
 

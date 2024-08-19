@@ -1,0 +1,26 @@
+{
+  "results": [
+    {"metrics": [213], "dimensions": ["2024-08-13", "true"]},
+    {"metrics": [187], "dimensions": ["2024-08-13", "false"]},
+    {"metrics": [163], "dimensions": ["2024-08-14", "true"]},
+    {"metrics": [158], "dimensions": ["2024-08-14", "false"]},
+    {"metrics": [42], "dimensions": ["2024-08-15", "true"]},
+    {"metrics": [38], "dimensions": ["2024-08-15", "false"]},
+    {"metrics": [99], "dimensions": ["2024-08-16", "true"]},
+    {"metrics": [93], "dimensions": ["2024-08-16", "false"]},
+    {"metrics": [116], "dimensions": ["2024-08-17", "true"]},
+    {"metrics": [113], "dimensions": ["2024-08-17", "false"]},
+    {"metrics": [228], "dimensions": ["2024-08-18", "true"]},
+    {"metrics": [232], "dimensions": ["2024-08-18", "false"]},
+    {"metrics": [147], "dimensions": ["2024-08-19", "true"]},
+    {"metrics": [134], "dimensions": ["2024-08-19", "false"]}
+  ],
+  "meta": {},
+  "query": {
+    "metrics": ["visitors"],
+    "date_range": ["2024-08-13", "2024-08-19"],
+    "filters": [],
+    "dimensions": ["time:day", "event:props:is_customer"],
+    "order_by": [["time:day", "asc"], ["event:props:is_customer", "desc"]]
+  }
+}
