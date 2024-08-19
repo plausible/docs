@@ -1,15 +1,15 @@
 {
   "results": [
-    {"metrics": [482, 602], "dimensions": ["(not set)", "(not set)"]},
-    {"metrics": [375, 464], "dimensions": ["(not set)", "duckduckgo"]},
-    {"metrics": [349, 432], "dimensions": ["(not set)", "google"]},
-    {"metrics": [334, 415], "dimensions": ["social", "twitter"]},
-    {"metrics": [323, 394], "dimensions": ["social", "facebook"]},
-    {"metrics": [183, 217], "dimensions": ["email", "(not set)"]}
+    {"metrics": [482, 602, 213], "dimensions": ["(not set)", "(not set)"]},
+    {"metrics": [375, 464, 464], "dimensions": ["(not set)", "duckduckgo"]},
+    {"metrics": [349, 432, 432], "dimensions": ["(not set)", "google"]},
+    {"metrics": [334, 415, 415], "dimensions": ["social", "twitter"]},
+    {"metrics": [323, 394, 394], "dimensions": ["social", "facebook"]},
+    {"metrics": [183, 217, 217], "dimensions": ["email", "(not set)"]}
   ],
   "meta": {},
   "query": {
-    "metrics": ["visitors", "events"],
+    "metrics": ["visitors", "events", "pageviews"],
     "date_range": ["2024-08-13", "2024-08-19"],
     "filters": [],
     "dimensions": ["visit:utm_medium", "visit:utm_source"],

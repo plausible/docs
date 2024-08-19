@@ -5,6 +5,8 @@ toc_max_heading_level: 4
 
 import ApiV2Example from '../src/js/apiv2-example.js';
 import {Required, Optional} from '../src/js/api-helpers.js';
+import Examples from '../src/js/examples.js';
+import CodeBlock from '@theme/CodeBlock';
 
 
 :::warning
@@ -41,7 +43,12 @@ API keys have a rate limit of 600 requests per hour by default. If you have spec
 
 ## Request structure
 
-`/api/v2/query` endpoint accepts a `query` object. The following keys can be passed with a request.
+`/api/v2/query` endpoint accepts a `query` object. Example:
+
+<CodeBlock language="json">{Examples["apiv2-examples/country-and-city-request.json"]}</CodeBlock>
+
+
+Query can contain the following keys:
 
 ### site_id <Required />
 
@@ -229,6 +236,29 @@ time labels valid for `date_range`.
 
 [See example](#example-time-labels)
 
+## Response structure
+
+Example response:
+
+<CodeBlock language="json">{Examples["apiv2-examples/country-and-city-response.json"]}</CodeBlock>
+
+### results
+
+Results is an ordered list query results.
+
+Each result row contains:
+- `dimensions` - values for each `dimension` listed in query. In the same order as query `dimensions`, empty if no dimensions requested.
+- `metrics` - List of metric values, in the same order as query `metrics`
+
+
+### meta
+
+Meta information about this query. Related: [include.imports](include-imports) and [include.time_labels](#include-time_labels).
+
+### query
+
+The query that was executed, after manipulations performed on the backend.
+
 ## Examples
 
 :::tip
@@ -248,6 +278,14 @@ The following example queries are interactive and can be edited and run against 
 <ApiV2Example
   request="apiv2-examples/custom-date-range-request.json"
   response="apiv2-examples/custom-date-range-response.json"
+/>
+
+### Country and city analysis {#example-country-and-city}
+
+
+<ApiV2Example
+  request="apiv2-examples/country-and-city-request.json"
+  response="apiv2-examples/country-and-city-response.json"
 />
 
 ### UTM medium, source analysis {#example-utm}

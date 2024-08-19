@@ -1,6 +1,6 @@
 {
   "site_id": "dummy.site",
-  "metrics": ["visitors", "events"],
+  "metrics": ["visitors", "events", "pageviews"],
   "date_range": "7d",
   "dimensions": ["visit:utm_medium", "visit:utm_source"]
 }

@@ -1,0 +1,18 @@
+{
+  "results": [
+    {"metrics": [169, 163, 94], "dimensions": ["Italy", "Rome"]},
+    {"metrics": [158, 159, 93], "dimensions": ["Germany", "Berlin"]},
+    {"metrics": [154, 142, 96], "dimensions": ["Estonia", "Tallinn"]},
+    {"metrics": [152, 139, 97], "dimensions": ["Poland", "Warsaw"]},
+    {"metrics": [152, 145, 96], "dimensions": ["Brazil", "São Paulo"]},
+    {"metrics": [145, 143, 97], "dimensions": ["United States", "San Francisco"]}
+  ],
+  "meta": {},
+  "query": {
+    "metrics": ["visitors", "pageviews", "bounce_rate"],
+    "date_range": ["2024-08-13", "2024-08-19"],
+    "filters": [["is_not", "visit:country_name", [""]]],
+    "dimensions": ["visit:country_name", "visit:city_name"],
+    "order_by": [["visitors", "desc"]]
+  }
+}
