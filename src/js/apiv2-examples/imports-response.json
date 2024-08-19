@@ -1,0 +1,18 @@
+{
+  "results": [
+    {"metrics": [98467], "dimensions": ["Google"]},
+    {"metrics": [97775], "dimensions": ["Direct / None"]},
+    {"metrics": [97333], "dimensions": ["Twitter"]},
+    {"metrics": [97281], "dimensions": ["Facebook"]},
+    {"metrics": [96571], "dimensions": ["DuckDuckGo"]}
+  ],
+  "meta": {},
+  "query": {
+    "metrics": ["visitors"],
+    "date_range": ["2021-09-04", "2024-08-19"],
+    "filters": [],
+    "dimensions": ["visit:source"],
+    "order_by": [["visitors", "desc"]],
+    "include": {"imports": true, "time_labels": false}
+  }
+}

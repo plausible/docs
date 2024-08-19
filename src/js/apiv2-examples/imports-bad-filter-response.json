@@ -1,0 +1,20 @@
+{
+  "results": [
+    {"metrics": [1196], "dimensions": ["Facebook"]},
+    {"metrics": [1195], "dimensions": ["Direct / None"]},
+    {"metrics": [1194], "dimensions": ["Google"]},
+    {"metrics": [1193], "dimensions": ["DuckDuckGo"]},
+    {"metrics": [1191], "dimensions": ["Twitter"]}
+  ],
+  "meta": {
+    "warning": "Imported stats are not included in the results because query parameters are not supported. For more information, see: https://plausible.io/docs/stats-api#filtering-imported-stats"
+  },
+  "query": {
+    "metrics": ["visitors"],
+    "date_range": ["2021-09-04", "2024-08-19"],
+    "filters": [["is", "visit:country_name", ["Estonia"]]],
+    "dimensions": ["visit:source"],
+    "order_by": [["visitors", "desc"]],
+    "include": {"imports": true, "time_labels": false}
+  }
+}

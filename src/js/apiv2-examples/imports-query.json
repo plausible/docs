@@ -1,0 +1,9 @@
+{
+  "site_id": "dummy.site",
+  "metrics": ["visitors"],
+  "date_range": "all",
+  "dimensions": ["visit:source"],
+  "include": {
+    "imports": true
+  }
+}

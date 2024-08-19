@@ -162,7 +162,7 @@ Note that:
 
 #### Custom properties
 
-[Custom properties](/custom-props/introduction) can also be used as dimensions with the form `event:props:<custom_prop_name>`. [See example](#custom-properties-example)
+[Custom properties](/custom-props/introduction) can also be used as dimensions with the form `event:props:<custom_prop_name>`. [See example](#example-custom-properties)
 
 ### filters <Optional />
 
@@ -210,7 +210,7 @@ When not specified, the default ordering is:
 1. If a [time dimensions](#time-dimensions) is present, `[time_dimension, "asc"]`
 2. By the first metric specified, descending.
 
-[See full query example](#custom-properties-example)
+[See full query example](#example-custom-properties)
 
 ### include <Optional />
 
@@ -218,7 +218,7 @@ Default: `{}`
 
 Additional options for the query as to what data to include.
 
-#### include.imports
+#### include.imports {#include.imports}
 
 Default: `false`
 
@@ -248,7 +248,7 @@ If true, tries to include imported data in the result. See [imported stats](#imp
 
 If the applied combination of filters and dimensions is not supported for imported stats, the results are still returned based only on native stats and `meta.warning` response key will be set. [See example](#example-imports-warning)
 
-#### include.time_labels
+#### include.time_labels {#include.time_labels}
 
 Default: `false`
 
@@ -274,7 +274,7 @@ Each result row contains:
 
 ### meta
 
-Meta information about this query. Related: [include.imports](include-imports) and [include.time_labels](#include-time_labels).
+Meta information about this query. Related: [include.imports](#include.imports) and [include.time_labels](#include.time_labels).
 
 ### query
 
@@ -302,7 +302,6 @@ The following example queries are interactive and can be edited and run against 
 />
 
 ### Country and city analysis {#example-country-and-city}
-
 
 <ApiV2Example
   request="apiv2-examples/country-and-city-query.json"
@@ -338,19 +337,25 @@ The following example queries are interactive and can be edited and run against 
 />
 
 
-### Using custom properties {#custom-properties-example}
+### Using custom properties {#example-custom-properties}
 
 <ApiV2Example
   request="apiv2-examples/custom-properties-query.json"
   response="apiv2-examples/custom-properties-response.json"
 />
 
-### Including imported data
+### Including imported data {#example-imports}
 
-### Including imported data failed
+<ApiV2Example
+  request="apiv2-examples/imports-query.json"
+  response="apiv2-examples/imports-response.json"
+/>
 
-### Explicit ordering of results {#example-order-by}
+### Including imported data failed {#example-imports-warning}
 
-### Filtering by hostname
+Including imported data in this query fails due to dimension and filter combination not supporting imports. [More information](#include.imports)
 
-Custom behavior
+<ApiV2Example
+  request="apiv2-examples/imports-bad-filter-query.json"
+  response="apiv2-examples/imports-bad-filter-response.json"
+/>
