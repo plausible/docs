@@ -108,10 +108,12 @@ function JsonSchemaEditor({ value, schema, onChange, readOnly }) {
   const onMount = useCallback((editor, monaco) => {
     editorRef.current = editor
 
-    monaco.languages.json.jsonDefaults.setDiagnosticsOptions({
-      validate: true,
-      schemas: [schema]
-    })
+    if (schema) {
+      monaco.languages.json.jsonDefaults.setDiagnosticsOptions({
+        validate: true,
+        schemas: [schema]
+      })
+    }
     editor.onDidChangeModelContent(handleEditorChange)
     handleEditorChange()
   })
