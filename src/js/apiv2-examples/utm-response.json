@@ -1,0 +1,18 @@
+{
+  "results": [
+    {"metrics": [482, 602], "dimensions": ["(not set)", "(not set)"]},
+    {"metrics": [375, 464], "dimensions": ["(not set)", "duckduckgo"]},
+    {"metrics": [349, 432], "dimensions": ["(not set)", "google"]},
+    {"metrics": [334, 415], "dimensions": ["social", "twitter"]},
+    {"metrics": [323, 394], "dimensions": ["social", "facebook"]},
+    {"metrics": [183, 217], "dimensions": ["email", "(not set)"]}
+  ],
+  "meta": {},
+  "query": {
+    "metrics": ["visitors", "events"],
+    "date_range": ["2024-08-13", "2024-08-19"],
+    "filters": [],
+    "dimensions": ["visit:utm_medium", "visit:utm_source"],
+    "order_by": [["visitors", "desc"]]
+  }
+}

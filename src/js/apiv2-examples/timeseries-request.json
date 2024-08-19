@@ -1,7 +1,7 @@
 {
   "site_id": "dummy.site",
   "metrics": ["visitors", "events"],
-  "date_range": ["2024-06-01", "2024-07-01"],
+  "date_range": "7d",
   "filters": [
     ["is", "visit:os", ["GNU/Linux", "Mac"]]
   ],

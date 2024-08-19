@@ -86,7 +86,7 @@ Valid metrics are:
 
 Default: `[]`
 
-List of dimensions to group by.
+List of dimensions to group by. [See example](#example-utm)
 
 Dimensions are attributes of your dataset. Using them in queries enables analyzing and compare multiple groups against each other.
 Think of them as `GROUP BY` in SQL.
@@ -97,9 +97,10 @@ Valid dimensions include:
 
 | Dimension | Example | Description |
 | --- | --- | --- |
-| `event:goal` | Register | A custom action that you want your users to take. To use this dimension, you first need to configure some goals in the site settings, or via the Sites API. Learn more about goals here. |
-| `event:page` | /blog/remove-google-analytics | Pathname of the page where the event is triggered. You can also use an asterisk to group multiple pages (/blog*) |
+| `event:goal` | Register | A custom action that you want your users to take. To use this property, you first need to configure some goals in the [site settings](/website-settings), or via the [Sites API](/sites-api). The value is the goal's `display_name`. Learn more about goals [here](/goal-conversions). |
+| `event:page` | /blog/remove-google-analytics | Pathname of the page where the event is triggered. You can also use an asterisk to group multiple pages (`/blog*`) |
 | `event:hostname` | example.com | Hostname of the event. |
+
 :::warning
 
 Mixing session metrics `bounce_rate`, `views_per_visit` and `visit_duration` with event dimensions is not allowed.
@@ -115,21 +116,21 @@ Values of these dimensions are determined by the first pageview in a session.
 | --- | --- | --- |
 | `visit:entry_page` | /home | Page on which the visit session started (landing page). |
 | `visit:exit_page` | /home | Page on which the visit session ended (last page viewed). |
-| `visit:source` | Twitter | Visit source, populated from an url query parameter tag (utm_source, source or ref) or the Referer HTTP header. |
-| `visit:referrer` | t.co/fzWTE9OTPt | Raw Referer header without http://, http:// or www.. |
-| `visit:utm_medium` | social | Raw value of the utm_medium query param on the entry page. |
-| `visit:utm_source` | twitter | Raw value of the utm_source query param on the entry page. |
-| `visit:utm_campaign` | profile | Raw value of the utm_campaign query param on the entry page. |
-| `visit:utm_content` | banner | Raw value of the utm_content query param on the entry page. |
-| `visit:utm_term` | keyword | Raw value of the utm_term query param on the entry page. |
-| `visit:device` | Desktop | Device type. Possible values are Desktop, Laptop, Tablet and Mobile. |
-| `visit:browser` | Chrome | Name of the browser vendor. Most popular ones are Chrome, Safari and Firefox. |
+| `visit:source` | Twitter | Visit source, populated from an url query parameter tag (`utm_source`, `source` or `ref`) or the Referer HTTP header. |
+| `visit:referrer` | t.co/fzWTE9OTPt | Raw `Referer` header without `http://`, `http://` or `www.`. |
+| `visit:utm_medium` | social | Raw value of the `utm_medium` query param on the entry page. |
+| `visit:utm_source` | twitter | Raw value of the `utm_source` query param on the entry page. |
+| `visit:utm_campaign` | profile | Raw value of the `utm_campaign` query param on the entry page. |
+| `visit:utm_content` | banner | Raw value of the `utm_content` query param on the entry page. |
+| `visit:utm_term` | keyword | Raw value of the `utm_term` query param on the entry page. |
+| `visit:device` | Desktop | Device type. Possible values are `Desktop`, `Laptop`, `Tablet` and `Mobile`. |
+| `visit:browser` | Chrome | Name of the browser vendor. Most popular ones are `Chrome`, `Safari` and `Firefox`. |
 | `visit:browser_version` | 88.0.4324.146 | Version number of the browser used by the visitor. |
-| `visit:os` | Mac | Name of the operating system. Most popular ones are Mac, Windows, iOS and Android. Linux distributions are reported separately. |
+| `visit:os` | Mac | Name of the operating system. Most popular ones are `Mac`, `Windows`, `iOS` and `Android`. Linux distributions are reported separately. |
 | `visit:os_version` | 10.6 | Version number of the operating system used by the visitor. |
 | `visit:country` | US | ISO 3166-1 alpha-2 code of the visitor country. |
 | `visit:region` | US-MD | ISO 3166-2 code of the visitor region. |
-| `visit:city` | 4347778 | GeoName ID of the visitor city. |
+| `visit:city` | 4347778 | [GeoName ID](https://www.geonames.org/) of the visitor |
 | `visit:country_name` | United States | Name of the visitor country. |
 | `visit:region_name` | California | Name of the visitor region. |
 | `visit:city_name` | San Francisco | Name of the visitor city. |
@@ -170,14 +171,12 @@ The following operators are currently supported:
 | -- | -- | -- |
 | `is` | `["is", "visit:country_name", ["Germany", "Poland"]]` | Sessions originating from Germany or Poland. |
 | `is_not` | `["is_not", "event:page", ["/pricing"]]` | Events that did not visit /pricing page |
-| `matches` | `["matches", "visit:browser_version", ["88.*", "89.*"]]` | Sessions from browser versions starting with 88 or 89 |
-| `does_not_match` | `["does_not_match", "event:page", ["/login*"]]` | Events that did not visit any page starting with /login |
-
-`matches` and `does_not_match` uses XXX system for matching. TODO
+| `contains` | `["contains", "event:page", ["/login"]]` | Events visited any page containing /login |
+| `does_not_contain` | `["contains", "event:page", ["docs", "pricing"]]` | Events that did not visit any page containing docs or pricing |
 
 **dimension**
 
-[All dimensions listed above](#dimensions) are valid except for time-related ones.
+[Event and visit dimensions](#dimensions) are valid for filters.
 
 Note that only `is` operator is valid for `event:goal` dimension.
 
@@ -216,17 +215,16 @@ Additional options for the query as to what data to include.
 
 Default: `false`
 
-If true, tries to include imported data in the result.
+If true, tries to include imported data in the result. [See example](#example-imports)
 
-Not all queries support including imported data.
-
-TODO: Examples, limitations
+Not all queries support including imported data due to google analytics limitations. If
+including imported data fails, `meta.warning` response key will be set. [See example](#example-imports-warning)
 
 #### include.time_labels
 
 Default: `false`
 
-Requires a `time` dimension being set. If true, sets meta.time_labels in response containing all
+Requires a `time` dimension being set. If true, sets `meta.time_labels` in response containing all
 time labels valid for `date_range`.
 
 [See example](#example-time-labels)
@@ -252,13 +250,19 @@ The following example queries are interactive and can be edited and run against 
   response="apiv2-examples/custom-date-range-response.json"
 />
 
-### Best-performing UTM tags {#example-utm}
+### UTM medium, source analysis {#example-utm}
 
-### Filtering by utm and country {#example-filtering}
+<ApiV2Example
+  request="apiv2-examples/utm-request.json"
+  response="apiv2-examples/utm-response.json"
+/>
 
-Event, visit and custom properties
+### Filtering by country and page {#example-filtering}
 
-### Filtering by regex
+<ApiV2Example
+  request="apiv2-examples/filtering-basics-request.json"
+  response="apiv2-examples/filtering-basics-response.json"
+/>
 
 ### Timeseries query {#example-timeseries}
 

@@ -1,0 +1,19 @@
+{
+  "results": [
+    {"metrics": [223, 255], "dimensions": ["2024-08-13"]},
+    {"metrics": [168, 177], "dimensions": ["2024-08-14"]},
+    {"metrics": [126, 136], "dimensions": ["2024-08-15"]},
+    {"metrics": [70, 73], "dimensions": ["2024-08-16"]},
+    {"metrics": [83, 91], "dimensions": ["2024-08-17"]},
+    {"metrics": [32, 33], "dimensions": ["2024-08-18"]},
+    {"metrics": [30, 33], "dimensions": ["2024-08-19"]}
+  ],
+  "meta": {},
+  "query": {
+    "metrics": ["visitors", "events"],
+    "date_range": ["2024-08-13", "2024-08-19"],
+    "filters": [["is", "visit:os", ["GNU/Linux", "Mac"]]],
+    "dimensions": ["time:day"],
+    "order_by": [["time:day", "asc"], ["visitors", "desc"]]
+  }
+}
