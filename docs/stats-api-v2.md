@@ -45,7 +45,7 @@ API keys have a rate limit of 600 requests per hour by default. If you have spec
 
 `/api/v2/query` endpoint accepts a `query` object. Example:
 
-<CodeBlock language="json">{Examples["apiv2-examples/country-and-city-request.json"]}</CodeBlock>
+<CodeBlock language="json">{Examples["apiv2-examples/country-and-city-query.json"]}</CodeBlock>
 
 
 Query can contain the following keys:
@@ -269,14 +269,14 @@ The following example queries are interactive and can be edited and run against 
 ### Simple aggregate query {#example-aggregate}
 
 <ApiV2Example
-  request="apiv2-examples/aggregate-request.json"
+  request="apiv2-examples/aggregate-query.json"
   response="apiv2-examples/aggregate-response.json"
 />
 
 ### Custom date range {#example-custom-date-range}
 
 <ApiV2Example
-  request="apiv2-examples/custom-date-range-request.json"
+  request="apiv2-examples/custom-date-range-query.json"
   response="apiv2-examples/custom-date-range-response.json"
 />
 
@@ -284,35 +284,35 @@ The following example queries are interactive and can be edited and run against 
 
 
 <ApiV2Example
-  request="apiv2-examples/country-and-city-request.json"
+  request="apiv2-examples/country-and-city-query.json"
   response="apiv2-examples/country-and-city-response.json"
 />
 
 ### UTM medium, source analysis {#example-utm}
 
 <ApiV2Example
-  request="apiv2-examples/utm-request.json"
+  request="apiv2-examples/utm-query.json"
   response="apiv2-examples/utm-response.json"
 />
 
 ### Filtering by country and page {#example-filtering}
 
 <ApiV2Example
-  request="apiv2-examples/filtering-basics-request.json"
+  request="apiv2-examples/filtering-basics-query.json"
   response="apiv2-examples/filtering-basics-response.json"
 />
 
 ### Timeseries query {#example-timeseries}
 
 <ApiV2Example
-  request="apiv2-examples/timeseries-request.json"
+  request="apiv2-examples/timeseries-query.json"
   response="apiv2-examples/timeseries-response.json"
 />
 
 ### Timeseries query hourly, with labels {#example-time-labels}
 
 <ApiV2Example
-  request="apiv2-examples/time-labels-request.json"
+  request="apiv2-examples/time-labels-query.json"
   response="apiv2-examples/time-labels-response.json"
 />
 

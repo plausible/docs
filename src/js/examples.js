@@ -3,19 +3,19 @@ function read(path) {
 }
 
 const examplePaths = [
-  "apiv2-examples/aggregate-request.json",
+  "apiv2-examples/aggregate-query.json",
   "apiv2-examples/aggregate-response.json",
-  "apiv2-examples/timeseries-request.json",
+  "apiv2-examples/timeseries-query.json",
   "apiv2-examples/timeseries-response.json",
-  "apiv2-examples/time-labels-request.json",
+  "apiv2-examples/time-labels-query.json",
   "apiv2-examples/time-labels-response.json",
-  "apiv2-examples/custom-date-range-request.json",
+  "apiv2-examples/custom-date-range-query.json",
   "apiv2-examples/custom-date-range-response.json",
-  "apiv2-examples/utm-request.json",
+  "apiv2-examples/utm-query.json",
   "apiv2-examples/utm-response.json",
-  "apiv2-examples/filtering-basics-request.json",
+  "apiv2-examples/filtering-basics-query.json",
   "apiv2-examples/filtering-basics-response.json",
-  "apiv2-examples/country-and-city-request.json",
+  "apiv2-examples/country-and-city-query.json",
   "apiv2-examples/country-and-city-response.json",
 ]
 
