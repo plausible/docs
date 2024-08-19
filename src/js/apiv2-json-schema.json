@@ -223,6 +223,9 @@
           },
           {
             "$ref": "#/definitions/goal_dimension"
+          },
+          {
+            "$ref": "#/definitions/time_dimensions"
           }
         ]
       },
