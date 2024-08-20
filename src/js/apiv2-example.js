@@ -77,7 +77,12 @@ export default function ApiV2Example(props) {
               <Icon icon="uil:copy" />
             </button>
             {isLoggedIn && (
-              <select value={selectedSite} onChange={(e) => selectSite(e.target.value)} className="site-select">
+              <select
+                value={selectedSite}
+                onChange={(e) => selectSite(e.target.value)}
+                className="site-select"
+                title="Site to run query against"
+              >
                 {sites.map((siteDomain) => (<option key={siteDomain} value={siteDomain}>{siteDomain}</option>))}
               </select>
             )}

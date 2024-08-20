@@ -356,7 +356,7 @@ The following example queries are interactive and can be edited and run against 
 
 ### Including imported data failed {#example-imports-warning}
 
-Including imported data in this query fails due to dimension and filter combination not supporting imports. [More information](#include.imports)
+In this example, imported data could not be included due to dimension and filter combination not supporting imports. [More information](#include.imports)
 
 <ApiV2Example
   request="apiv2-examples/imports-bad-filter-query.json"
