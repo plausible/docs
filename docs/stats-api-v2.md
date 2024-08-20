@@ -5,7 +5,7 @@ toc_max_heading_level: 4
 
 import ApiV2Example from '../src/js/apiv2-example.js';
 import {Required, Optional} from '../src/js/api-helpers.js';
-import Examples from '../src/js/examples.js';
+import Examples, { ExamplesTip } from '../src/js/examples.js';
 import CodeBlock from '@theme/CodeBlock';
 import { SiteContextProvider } from '../src/js/sites.js';
 
@@ -283,12 +283,9 @@ The query that was executed, after manipulations performed on the backend.
 
 ## Examples
 
-:::tip
-
-The following example queries are interactive and can be edited and run against your own data.
-:::
-
 <SiteContextProvider>
+
+<ExamplesTip />
 
 ### Simple aggregate query {#example-aggregate}
 

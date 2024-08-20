@@ -1,3 +1,8 @@
+import React, { useContext } from 'react'
+import Admonition from '@theme/Admonition'
+
+import { SiteContext } from './sites'
+
 function read(path) {
   return require(`!!raw-loader?esModule=false!./${path}`)
 }
@@ -24,5 +29,19 @@ const examplePaths = [
   "apiv2-examples/imports-bad-filter-query.json",
   "apiv2-examples/imports-bad-filter-response.json",
 ]
+
+export function ExamplesTip() {
+  const { isLoggedIn } = useContext(SiteContext)
+
+  return (
+    <Admonition type="tip">
+      The following examples are interactive and can be edited and run against your own data if you're logged in.
+
+      {!isLoggedIn && (
+        <p><a href="/login" target="_blank">Click here to log in</a></p>
+      )}
+    </Admonition>
+  )
+}
 
 export default Object.fromEntries(examplePaths.map((path) => [path, read(path)]))
