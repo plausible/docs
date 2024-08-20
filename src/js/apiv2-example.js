@@ -78,7 +78,7 @@ export default function ApiV2Example(props) {
             </button>
             {isLoggedIn && (
               <select value={selectedSite} onChange={(e) => selectSite(e.target.value)} className="site-select">
-                {sites.map((site) => (<option key={site.domain} value={site.domain}>{site.domain}</option>))}
+                {sites.map((siteDomain) => (<option key={siteDomain} value={siteDomain}>{siteDomain}</option>))}
               </select>
             )}
             {isLoggedIn && (

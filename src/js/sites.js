@@ -11,9 +11,9 @@ export function SiteContextProvider({ children }) {
 
   const [selectedSite, setSelectedSite] = useState(localStorage.getItem("plausible_docs_site"))
 
-  function selectSite(domain) {
-    localStorage.setItem("plausible_docs_site", domain)
-    setSelectedSite(domain)
+  function selectSite(siteDomain) {
+    localStorage.setItem("plausible_docs_site", siteDomain)
+    setSelectedSite(siteDomain)
   }
 
   useEffect(() => {
@@ -22,12 +22,17 @@ export function SiteContextProvider({ children }) {
 
       if (response.status === 200) {
         const { data } = await response.json()
+        const dataSites = data.map((site) => site.domain)
+
         setSites({
           loading: false,
           isLoggedIn: true,
-          sites: data
+          sites: dataSites
         })
-        setSelectedSite(data[0].domain)
+
+        if (!dataSites.includes(selectedSite)) {
+          setSelectedSite(dataSites[0])
+        }
       } else {
         setSites({
           loading: false,
