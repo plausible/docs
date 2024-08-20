@@ -1,11 +1,13 @@
 {
-  "results": [{"metrics": [1069, 2648], "dimensions": []}],
+  "results": [{"metrics": [900, 1661], "dimensions": []}],
   "meta": {},
   "query": {
+    "site_id": "dummy.site",
     "metrics": ["visitors", "events"],
-    "date_range": ["2024-08-11", "2024-08-17"],
+    "date_range": ["2024-08-14", "2024-08-20"],
     "filters": [],
     "dimensions": [],
-    "order_by": [["visitors", "desc"]]
+    "order_by": [["visitors", "desc"]],
+    "include": {}
   }
 }

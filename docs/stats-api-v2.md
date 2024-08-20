@@ -318,7 +318,7 @@ The following example queries are interactive and can be edited and run against 
   response="apiv2-examples/utm-response.json"
 />
 
-### Filtering by country and page {#example-filtering}
+### Filtering by page and country {#example-filtering}
 
 <ApiV2Example
   request="apiv2-examples/filtering-basics-query.json"
