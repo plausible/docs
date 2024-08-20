@@ -1,23 +1,31 @@
-import React, { useState, useCallback, useRef } from 'react'
+import React, { useState, useCallback, useRef, useContext, useEffect } from 'react'
 import { Editor } from '@monaco-editor/react'
 import TabItem from '@theme/TabItem'
 import Admonition from '@theme/Admonition';
 import { Icon } from '@iconify/react'
 import stringify from 'json-stringify-pretty-compact'
-import stripJsonComments from 'strip-json-comments'
 
 import Tabs from '../theme/Tabs'
 import Examples from './examples'
 import SCHEMA from './apiv2-json-schema.json'
+import { SiteContext } from './sites'
 
 const MIN_HEIGHT = 170
 const MAX_HEIGHT = 500
 
 export default function ApiV2Example(props) {
+  const { isLoggedIn, sites, selectedSite, setSelectedSite } = useContext(SiteContext)
+
   const [activeTab, setActiveTab] = useState("query")
-  const [code, setCode] = useState(Examples[props.request] || "")
+  const [code, setCode] = useState(getCode(props.request, selectedSite))
   const [canReset, setCanReset] = useState(false)
   const [response, setResponse] = useState(null)
+
+  useEffect(() => {
+    if (!canReset && isLoggedIn) {
+      setCode(getCode(props.request, selectedSite))
+    }
+  }, [selectedSite, canReset, isLoggedIn])
 
   const onCodeChange = useCallback((code) => {
     setCode(code)
@@ -26,7 +34,7 @@ export default function ApiV2Example(props) {
   })
 
   const resetCode = useCallback(() => {
-    setCode(Examples[props.request] || "")
+    setCode(getCode(props.request, selectedSite))
     setCanReset(false)
     setResponse(null)
   })
@@ -57,8 +65,9 @@ export default function ApiV2Example(props) {
             schema={SCHEMA}
             value={code}
             onChange={onCodeChange}
+            readOnly={!isLoggedIn}
           />
-          <div style={{ position: "absolute", top: 2, right: 2 }}>
+          <div style={{ position: "absolute", top: 2, right: 2, display: "flex" }}>
             {canReset && (
               <button title="Reset query" className="code-button" onClick={resetCode}>
                 <Icon icon="carbon:reset-alt" />
@@ -67,9 +76,17 @@ export default function ApiV2Example(props) {
             <button title="Copy query" className="code-button" onClick={copyCode}>
               <Icon icon="uil:copy" />
             </button>
-            <button title="Run query" className="code-button" onClick={runCode}>
-              <Icon icon="ant-design:code-outlined" />
-            </button>
+            {isLoggedIn && (
+              // TODO: max width, overflow
+              <select value={selectedSite} onChange={(e) => setSelectedSite(e.target.value)} className="site-select">
+                {sites.map((site) => (<option value={site.domain}>{site.domain}</option>))}
+              </select>
+            )}
+            {isLoggedIn && (
+              <button title="Run query" className="code-button" onClick={runCode}>
+                <Icon icon="ant-design:code-outlined" />
+              </button>
+            )}
           </div>
         </div>
       </TabItem>
@@ -80,7 +97,7 @@ export default function ApiV2Example(props) {
 
         <JsonSchemaEditor
           readOnly
-          value={Examples[props.response] || ""}
+          value={getCode(props.response, selectedSite)}
         />
       </TabItem>
       {response && (
@@ -155,7 +172,7 @@ function JsonSchemaEditor({ value, schema, onChange, readOnly }) {
 async function postQuery(query) {
   let response
   try {
-    response = await fetch('/api/v2/docs/query', {
+    response = await fetch('/api/docs/query', {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: query
@@ -172,4 +189,14 @@ async function postQuery(query) {
   } catch (error) {
     return [response, ""]
   }
+}
+
+function getCode(name, selectedSite) {
+  let exampleCode = Examples[name] || ""
+
+  if (selectedSite) {
+    exampleCode = exampleCode.replace("dummy.site", selectedSite)
+  }
+
+  return exampleCode
 }

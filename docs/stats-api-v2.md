@@ -7,6 +7,7 @@ import ApiV2Example from '../src/js/apiv2-example.js';
 import {Required, Optional} from '../src/js/api-helpers.js';
 import Examples from '../src/js/examples.js';
 import CodeBlock from '@theme/CodeBlock';
+import { SiteContextProvider } from '../src/js/sites.js';
 
 
 :::warning
@@ -287,6 +288,8 @@ The query that was executed, after manipulations performed on the backend.
 The following example queries are interactive and can be edited and run against your own data.
 :::
 
+<SiteContextProvider>
+
 ### Simple aggregate query {#example-aggregate}
 
 <ApiV2Example
@@ -359,3 +362,6 @@ Including imported data in this query fails due to dimension and filter combinat
   request="apiv2-examples/imports-bad-filter-query.json"
   response="apiv2-examples/imports-bad-filter-response.json"
 />
+
+
+</SiteContextProvider>
