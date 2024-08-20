@@ -41,4 +41,8 @@
 
 .site-select {
   margin-left: 4px;
+  max-width: 9em;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
 }

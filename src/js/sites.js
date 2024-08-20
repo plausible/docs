@@ -9,7 +9,12 @@ export function SiteContextProvider({ children }) {
     sites: []
   })
 
-  const [selectedSite, setSelectedSite] = useState(null)
+  const [selectedSite, setSelectedSite] = useState(localStorage.getItem("plausible_docs_site"))
+
+  function selectSite(domain) {
+    localStorage.setItem("plausible_docs_site", domain)
+    setSelectedSite(domain)
+  }
 
   useEffect(() => {
     async function loadSites() {
@@ -34,8 +39,9 @@ export function SiteContextProvider({ children }) {
     loadSites()
   }, [])
 
+
   return (
-    <SiteContext.Provider value={{ ...sites, selectedSite, setSelectedSite }}>
+    <SiteContext.Provider value={{ ...sites, selectedSite, selectSite }}>
       {children}
     </SiteContext.Provider>
   )

@@ -14,7 +14,7 @@ const MIN_HEIGHT = 170
 const MAX_HEIGHT = 500
 
 export default function ApiV2Example(props) {
-  const { isLoggedIn, sites, selectedSite, setSelectedSite } = useContext(SiteContext)
+  const { isLoggedIn, sites, selectedSite, selectSite } = useContext(SiteContext)
 
   const [activeTab, setActiveTab] = useState("query")
   const [code, setCode] = useState(getCode(props.request, selectedSite))
@@ -77,9 +77,8 @@ export default function ApiV2Example(props) {
               <Icon icon="uil:copy" />
             </button>
             {isLoggedIn && (
-              // TODO: max width, overflow
-              <select value={selectedSite} onChange={(e) => setSelectedSite(e.target.value)} className="site-select">
-                {sites.map((site) => (<option value={site.domain}>{site.domain}</option>))}
+              <select value={selectedSite} onChange={(e) => selectSite(e.target.value)} className="site-select">
+                {sites.map((site) => (<option key={site.domain} value={site.domain}>{site.domain}</option>))}
               </select>
             )}
             {isLoggedIn && (
