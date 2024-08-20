@@ -74,7 +74,7 @@ export default function ApiV2Example(props) {
               </button>
             )}
             <button title="Copy query" className="code-button" onClick={copyCode}>
-              <Icon icon="uil:copy" />
+              <Icon icon="ant-design:copy-outlined" />
             </button>
             {isLoggedIn && (
               <select
