@@ -1,22 +1,12 @@
 ---
-title: Script extensions for enhanced measurement
+title: Enable enhanced measurements
 ---
 
 We're proud to have one of the most [lightweight JavaScript snippets](https://plausible.io/lightweight-web-analytics) in the analytics industry. Clocking in at less than 1KB, our script won't add any bloat to your website or cause performance issues. 
 
-One of the ways we achieve that is by radically limiting the number of options in the default script. Instead, we provide separate script files based on how you might want to use Plausible.
+One of the ways we achieve that is by radically limiting the number of options in the default script. Instead, we provide enhanced measurements as script extensions depending on how you might want to use Plausible.
 
-For example, the default `script.js` script will automatically work with [pushState](https://developer.mozilla.org/en-US/docs/Web/API/History_API) based frontend routing which is the most common. If your website uses [hash-based routing](https://krasimirtsonev.com/blog/article/deep-dive-into-client-side-routing-navigo-pushstate-hash#hash-based-routing) instead, you have the option of loading the script with a different extension: `script.hash.js`. 
-
-In this case, the snippet you need to insert into your site is as follows (make sure to change the data-domain attribute to the domain you added to Plausible):
-
-```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.hash.js"></script>
-```
-
-Another example: If you want to track clicks on outbound links on your site, you can use the `script.outbound-links.js` extension.
-
-In this case, the snippet you need to insert into your site is as follows:
+For example, if you want to track clicks on outbound links on your site, you can use the `script.outbound-links.js` extension. In this case, the snippet you need to insert into your site is as follows (make sure to change the data-domain attribute to the domain you added to Plausible):
 
 ```html
 <script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.outbound-links.js"></script>
