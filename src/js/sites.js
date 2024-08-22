@@ -18,7 +18,7 @@ export function SiteContextProvider({ children }) {
 
   useEffect(() => {
     async function loadSites() {
-      const response = await fetch("/api/docs/sites")
+      const response = await fetch("/api/sites")
 
       if (response.status === 200) {
         const { data } = await response.json()
