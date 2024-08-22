@@ -321,8 +321,8 @@ A boolean determining whether to include imported stats in the returned results 
 
 **interval** <Optional />
 
-Choose your reporting interval. Valid options are `date` (always) and `month` (when specified period is longer than one calendar month). Defaults to
-`month` for `6mo` and `12mo`, otherwise falls back to `date`.
+Choose your reporting interval. Valid options are `day` (always) and `month` (when specified period is longer than one calendar month). Defaults to
+`month` for `6mo` and `12mo`, otherwise falls back to `day`.
 
 ### GET /api/v1/stats/breakdown
 
