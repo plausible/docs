@@ -1,6 +1,7 @@
 ---
 title: Stats API v2 reference
 toc_max_heading_level: 4
+sidebar_label: Stats API v2 reference (Beta)
 ---
 
 import ApiV2Example from '../src/js/apiv2-example.js';
@@ -9,16 +10,17 @@ import Examples, { ExamplesTip } from '../src/js/examples.js';
 import CodeBlock from '@theme/CodeBlock';
 import { SiteContextProvider } from '../src/js/sites.js';
 
-
-:::warning
-
-Please be advised that this feature is currently in beta. Some functionality might be broken or change in the coming months.
-
+:::warning[Beta feature]
+Please be advised that this feature is currently in beta phase. It might change or break in the coming months as it is refined.
 :::
 
-The Plausible Stats API offers a way to retrieve your stats programmatically. It's a read-only interface to present historical and real-time stats only. Take a look at our [events API](events-api.md) if you want to send pageviews or custom events to our backend and our [sites API](sites-api.md) if you want to manage your sites through the API.
+Plausible Stats API v2 is a powerful single endpoint HTTP interface to **view historical and real-time stats**. In a nutshell, the endpoint `/api/v2/query` accepts both simple and complex stats queries in the POST request body and returns the metrics as JSON. 
 
-`/api/v2/query` endpoint accepts POST requests with query parameters and returns standard HTTP responses along with a JSON-encoded body. All API requests must be made over HTTPS. Calls made over plain HTTP will fail.
+[Try it now for your own site!](#examples)
+
+:::tip[Not what you need?]
+Take a look at our [Events API Reference](events-api.md) if you want to record pageviews or custom events for your sites, or [Sites API Reference](sites-api.md) if you want to manage your sites over the API.
+:::
 
 ## Authentication
 
