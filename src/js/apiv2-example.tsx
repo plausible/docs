@@ -30,17 +30,17 @@ export default function ApiV2Example(props) {
     setCode(code)
     setCanReset(true)
     setResponse(null)
-  })
+  }, [])
 
   const resetCode = useCallback(() => {
     setCode(getCode(props.request, selectedSite))
     setCanReset(false)
     setResponse(null)
-  })
+  }, [])
 
   const copyCode = useCallback(() => {
     navigator.clipboard.writeText(code)
-  })
+  }, [])
 
   const runCode = useCallback(async () => {
     setResponse(null)
@@ -54,7 +54,7 @@ export default function ApiV2Example(props) {
     })
 
     setActiveTab("response")
-  })
+  }, [])
 
   return (
     <Tabs activeTab={activeTab} onTabChange={setActiveTab}>
@@ -121,9 +121,16 @@ export default function ApiV2Example(props) {
   )
 }
 
-function JsonSchemaEditor({ value, schema, onChange, readOnly }) {
+type EditorProps = {
+  value: string,
+  schema?: string,
+  onChange?: (code: string) => void,
+  readOnly?: boolean
+}
+
+function JsonSchemaEditor({ value, schema, onChange, readOnly }: EditorProps) {
   const [height, setHeight] = useState(MIN_HEIGHT)
-  const editorRef = useRef()
+  const editorRef = useRef<any>()
 
   const onMount = useCallback((editor, monaco) => {
     editorRef.current = editor
@@ -140,14 +147,14 @@ function JsonSchemaEditor({ value, schema, onChange, readOnly }) {
     }
     editor.onDidChangeModelContent(handleEditorChange)
     handleEditorChange()
-  })
+  }, [schema])
 
   const handleEditorChange = useCallback(() => {
     const editAreaHeight = editorRef.current.getContentHeight()
     if (editAreaHeight > height && height < MAX_HEIGHT) {
       setHeight(editAreaHeight)
     }
-  }, []);
+  }, [editorRef]);
 
   return (
     <Editor
@@ -164,7 +171,6 @@ function JsonSchemaEditor({ value, schema, onChange, readOnly }) {
         glyphMargin: false,
         wordWrap: 'off',
         lineNumbers: 'on',
-        tabFocusMode: false,
         overviewRulerLanes: 0,
         hideCursorInOverviewRuler: false,
         scrollBeyondLastLine: false,
@@ -198,7 +204,7 @@ async function postQuery(query) {
   }
 }
 
-function getCode(name, selectedSite) {
+function getCode(name: string, selectedSite: string | null) {
   let exampleCode = Examples[name] || ""
 
   if (selectedSite) {

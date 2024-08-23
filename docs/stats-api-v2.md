@@ -4,17 +4,17 @@ toc_max_heading_level: 4
 sidebar_label: Stats API v2 reference (Beta)
 ---
 
-import ApiV2Example from '../src/js/apiv2-example.js';
-import {Required, Optional} from '../src/js/api-helpers.js';
-import Examples, { ExamplesTip } from '../src/js/examples.js';
+import ApiV2Example from '../src/js/apiv2-example.tsx';
+import {Required, Optional} from '../src/js/api-helpers.tsx';
+import Examples, { ExamplesTip } from '../src/js/examples.tsx';
 import CodeBlock from '@theme/CodeBlock';
-import { SiteContextProvider } from '../src/js/sites.js';
+import { SiteContextProvider } from '../src/js/sites.tsx';
 
 :::warning[Beta feature]
 Please be advised that this feature is currently in beta phase. It might change or break in the coming months as it is refined.
 :::
 
-Plausible Stats API v2 is a powerful single endpoint HTTP interface to **view historical and real-time stats**. In a nutshell, the endpoint `/api/v2/query` accepts both simple and complex stats queries in the POST request body and returns the metrics as JSON. 
+Plausible Stats API v2 is a powerful single endpoint HTTP interface to **view historical and real-time stats**. In a nutshell, the endpoint `/api/v2/query` accepts both simple and complex stats queries in the POST request body and returns the metrics as JSON.
 
 [Try it now for your own site!](#examples)
 

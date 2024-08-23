@@ -2,7 +2,7 @@
 title: Events API reference
 ---
 
-import {Required, Optional} from '../src/js/api-helpers.js';
+import {Required, Optional} from '../src/js/api-helpers.tsx';
 
 The Plausible Events API can be used to record pageviews and custom events. This is useful when tracking Android or iOS mobile apps, or for server side tracking.
 
@@ -90,10 +90,10 @@ URL of the page where the event was triggered. If the URL contains UTM parameter
 The maximum size of the URL, excluding the domain and the query string, is 2,000 characters. Additionally, URLs using the [data URI scheme](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URLs) are not supported by the API.
 
 :::tip The URL parameter will feel strange in a mobile app but you can manufacture something that looks like a web URL
-If you name your mobile app screens like page URLs, Plausible will know how to handle it. So for example, on your login screen you could send something like:  
+If you name your mobile app screens like page URLs, Plausible will know how to handle it. So for example, on your login screen you could send something like:
 
-event: pageview  
-url: app://localhost/login  
+event: pageview
+url: app://localhost/login
 
 The pathname (/login) is what will be shown as the page value in the Plausible dashboard
 :::

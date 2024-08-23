@@ -44,4 +44,4 @@ export function ExamplesTip() {
   )
 }
 
-export default Object.fromEntries(examplePaths.map((path) => [path, read(path)]))
+export default Object.fromEntries(examplePaths.map((path) => [path, read(path)])) as Record<string, string | undefined>
