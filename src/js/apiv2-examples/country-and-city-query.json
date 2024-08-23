@@ -1,0 +1,9 @@
+{
+  "site_id": "dummy.site",
+  "metrics": ["visitors", "pageviews", "bounce_rate"],
+  "date_range": "7d",
+  "filters": [
+    ["is_not", "visit:country_name", [""]]
+  ],
+  "dimensions": ["visit:country_name", "visit:city_name"]
+}

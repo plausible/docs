@@ -1,0 +1,9 @@
+{
+  "site_id": "dummy.site",
+  "metrics": ["visitors"],
+  "date_range": "day",
+  "dimensions": ["time:hour"],
+  "include": {
+    "time_labels": true
+  }
+}

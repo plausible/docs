@@ -1,0 +1,5 @@
+{
+  "site_id": "dummy.site",
+  "metrics": ["visitors", "events"],
+  "date_range": "7d"
+}

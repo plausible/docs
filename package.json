@@ -11,7 +11,12 @@
   "dependencies": {
     "@docusaurus/core": "^3.5.2",
     "@docusaurus/preset-classic": "^3.5.2",
+    "@iconify/react": "^5.0.2",
+    "@monaco-editor/react": "^4.6.0",
     "classnames": "^2.5.1",
+    "json-stringify-pretty-compact": "^4.0.0",
+    "monaco-editor": "^0.34.0",
+    "raw-loader": "^4.0.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },

@@ -1,0 +1,9 @@
+{
+  "site_id": "dummy.site",
+  "metrics": ["visitors", "events"],
+  "date_range": "7d",
+  "filters": [
+    ["is", "visit:os", ["GNU/Linux", "Mac"]]
+  ],
+  "dimensions": ["time:day"]
+}

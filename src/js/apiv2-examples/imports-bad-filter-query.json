@@ -1,0 +1,10 @@
+{
+  "site_id": "dummy.site",
+  "metrics": ["visitors"],
+  "date_range": "all",
+  "dimensions": ["visit:source"],
+  "filters": [["is", "visit:country_name", ["Estonia"]]],
+  "include": {
+    "imports": true
+  }
+}
