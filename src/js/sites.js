@@ -1,8 +1,9 @@
 import React, { createContext, useEffect, useState } from 'react'
+import BrowserOnly from '@docusaurus/BrowserOnly'
 
 export const SiteContext = createContext(null)
 
-export function SiteContextProvider({ children }) {
+function NestedProvider({ children }) {
   const [sites, setSites] = useState({
     loading: true,
     isLoggedIn: false,
@@ -44,10 +45,18 @@ export function SiteContextProvider({ children }) {
     loadSites()
   }, [])
 
-
   return (
     <SiteContext.Provider value={{ ...sites, selectedSite, selectSite }}>
       {children}
     </SiteContext.Provider>
+  )
+}
+
+// Ensure that content requiring site data is only rendered in the browser
+export function SiteContextProvider(props) {
+  return (
+    <BrowserOnly>
+      {() => (<NestedProvider>{props.children}</NestedProvider>)}
+    </BrowserOnly>
   )
 }
