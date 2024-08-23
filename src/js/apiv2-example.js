@@ -7,7 +7,6 @@ import stringify from 'json-stringify-pretty-compact'
 
 import Tabs from '../theme/Tabs'
 import Examples from './examples'
-import SCHEMA from './apiv2-json-schema.json'
 import { SiteContext } from './sites'
 
 const MIN_HEIGHT = 170
@@ -62,7 +61,7 @@ export default function ApiV2Example(props) {
       <TabItem label="Query" value="query">
         <div style={{ position: "relative" }}>
           <JsonSchemaEditor
-            schema={SCHEMA}
+            schema="/api/docs/query/schema.json"
             value={code}
             onChange={onCodeChange}
             readOnly={!isLoggedIn}
@@ -132,7 +131,11 @@ function JsonSchemaEditor({ value, schema, onChange, readOnly }) {
     if (schema) {
       monaco.languages.json.jsonDefaults.setDiagnosticsOptions({
         validate: true,
-        schemas: [schema]
+        schemas: [{
+          uri: `${window.location.origin}${schema}`,
+          fileMatch: ["*"],
+        }],
+        enableSchemaRequest: true
       })
     }
     editor.onDidChangeModelContent(handleEditorChange)
