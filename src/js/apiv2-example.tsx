@@ -31,7 +31,7 @@ export function ApiV2Example({ id }) {
     })
 
     setActiveTab("response")
-  }, [])
+  }, [code])
 
   return (
     <Tabs activeTab={activeTab} onTabChange={setActiveTab}>
@@ -68,5 +68,19 @@ export function ApiV2Example({ id }) {
         </TabItem>
       )}
     </Tabs>
+  )
+}
+
+export function ExamplesTip() {
+  const { isLoggedIn } = useContext(SiteContext)
+
+  return (
+    <Admonition type="tip">
+      The following examples are interactive and can be edited and run against your own data if you're logged in.
+
+      {!isLoggedIn && (
+        <p><a href="/login" target="_blank">Click here to log in</a></p>
+      )}
+    </Admonition>
   )
 }

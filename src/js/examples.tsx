@@ -1,8 +1,3 @@
-import React, { useContext } from 'react'
-import Admonition from '@theme/Admonition'
-
-import { SiteContext } from './sites'
-
 function read(path: string): string {
   return require(`!!raw-loader?esModule=false!./${path}`)
 }
@@ -79,20 +74,6 @@ export function getExampleCode(field: "query" | "exampleResponse", id: string, s
   }
 
   return exampleCode
-}
-
-export function ExamplesTip() {
-  const { isLoggedIn } = useContext(SiteContext)
-
-  return (
-    <Admonition type="tip">
-      The following examples are interactive and can be edited and run against your own data if you're logged in.
-
-      {!isLoggedIn && (
-        <p><a href="/login" target="_blank">Click here to log in</a></p>
-      )}
-    </Admonition>
-  )
 }
 
 export default EXAMPLES

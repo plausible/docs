@@ -4,11 +4,11 @@ toc_max_heading_level: 4
 sidebar_label: Stats API v2 reference (Beta)
 ---
 
-import { ApiV2Example } from '../src/js/apiv2-example.tsx';
-import {Required, Optional} from '../src/js/api-helpers.tsx';
-import { ExamplesTip, getExampleCode } from '../src/js/examples.tsx';
+import { ApiV2Example, ExamplesTip } from '../src/js/apiv2-example.tsx';
+import { Required, Optional } from '../src/js/api-helpers.tsx';
+import { getExampleCode } from '../src/js/examples.tsx';
 import CodeBlock from '@theme/CodeBlock';
-import EXAMPLES, { SiteContextProvider } from '../src/js/sites.tsx';
+import { SiteContextProvider } from '../src/js/sites.tsx';
 
 :::warning[Beta feature]
 Please be advised that this feature is currently in beta phase. It might change or break in the coming months as it is refined.
