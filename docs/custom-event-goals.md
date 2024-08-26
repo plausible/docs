@@ -10,6 +10,10 @@ If you use the Custom Events feature, then these count towards your billable mon
 
 Here are the steps you need to take to track custom events such as purchases, signups, button clicks or form submissions.
 
+:::tip Use pageview goals to track the "thank you" page or the order confirmation page
+As an alternative to custom events, check out [pageview goals](pageview-goals.md). Since pageviews are collected automatically, you don’t need to change your website’s code to measure pageview goals. This makes pageview goals the easiest way to start tracking any type of conversions. Do you run a store and want to track orders? Do you have a contact form and want to track form submissions? Use pageview goals to track the "thank you" page or the order confirmation page
+:::
+
 ## 1. Change the Plausible snippet on your site
 
 Please change the file name in the `src` attribute of your Plausible snippet from `script.js` to `script.tagged-events.js`. It should look like this:
@@ -71,10 +75,6 @@ Or if your element already has a class attribute, just separate the new ones wit
 <!-- after -->
 <button class="some-existing-class plausible-event-name=Button+Click">Click Me</button>
 ```
-
-:::tip Use pageview goals to track the "thank you" page or the order confirmation page
-As an alternative to custom events, check out [pageview goals](pageview-goals.md). Since pageviews are collected automatically, you don’t need to change your website’s code to measure pageview goals. This makes pageview goals the easiest way to start tracking any type of conversions. Do you run a store and want to track orders? Do you have a contact form and want to track form submissions? Use pageview goals to track the "thank you" page or the order confirmation page
-:::
 
 ### Verify that the CSS classes were added correctly
 
