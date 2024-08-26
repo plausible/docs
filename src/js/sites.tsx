@@ -1,13 +1,21 @@
 import React, { ReactNode, createContext, useEffect, useState } from 'react'
 import BrowserOnly from '@docusaurus/BrowserOnly'
 
-export const SiteContext = createContext(null)
+export type SiteContextType = {
+  loading: boolean,
+  isLoggedIn: boolean,
+  sites: Array<string>,
+  selectedSite: string,
+  selectSite: (siteDomain: string) => void,
+}
+
+export const SiteContext = createContext<SiteContextType>(null)
 
 function NestedProvider({ children }) {
   const [sites, setSites] = useState({
     loading: true,
     isLoggedIn: false,
-    sites: []
+    sites: [] as Array<string>
   })
 
   const [selectedSite, setSelectedSite] = useState(localStorage.getItem("plausible_docs_site"))
