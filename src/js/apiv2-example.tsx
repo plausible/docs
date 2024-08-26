@@ -6,23 +6,23 @@ import { Icon } from '@iconify/react'
 import stringify from 'json-stringify-pretty-compact'
 
 import Tabs from '../theme/Tabs'
-import Examples from './examples'
+import EXAMPLES from './examples'
 import { SiteContext } from './sites'
 
 const MIN_HEIGHT = 170
 const MAX_HEIGHT = 500
 
-export default function ApiV2Example(props) {
+export default function ApiV2Example({ id }) {
   const { isLoggedIn, sites, selectedSite, selectSite } = useContext(SiteContext)
 
   const [activeTab, setActiveTab] = useState("query")
-  const [code, setCode] = useState(getCode(props.request, selectedSite))
+  const [code, setCode] = useState(getCode("query", id, selectedSite))
   const [canReset, setCanReset] = useState(false)
   const [response, setResponse] = useState(null)
 
   useEffect(() => {
     if (!canReset && isLoggedIn) {
-      setCode(getCode(props.request, selectedSite))
+      setCode(getCode("query", id, selectedSite))
     }
   }, [selectedSite, canReset, isLoggedIn])
 
@@ -33,7 +33,7 @@ export default function ApiV2Example(props) {
   }, [])
 
   const resetCode = useCallback(() => {
-    setCode(getCode(props.request, selectedSite))
+    setCode(getCode("query", id, selectedSite))
     setCanReset(false)
     setResponse(null)
   }, [])
@@ -100,7 +100,7 @@ export default function ApiV2Example(props) {
 
         <JsonSchemaEditor
           readOnly
-          value={getCode(props.response, selectedSite)}
+          value={getCode("exampleResponse", id, selectedSite)}
         />
       </TabItem>
       {response && (
@@ -204,8 +204,9 @@ async function postQuery(query) {
   }
 }
 
-function getCode(name: string, selectedSite: string | null) {
-  let exampleCode = Examples[name] || ""
+function getCode(field: "query" | "exampleResponse", id: string, selectedSite: string | null) {
+  const examples = EXAMPLES.filter((example) => example.id === id)
+  let exampleCode = examples[0][field]
 
   if (selectedSite) {
     exampleCode = exampleCode.replace("dummy.site", selectedSite)
