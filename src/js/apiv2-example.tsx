@@ -1,45 +1,22 @@
-import React, { useState, useCallback, useRef, useContext, useEffect } from 'react'
-import { Editor } from '@monaco-editor/react'
+import React, { useState, useCallback, useContext } from 'react'
 import TabItem from '@theme/TabItem'
 import Admonition from '@theme/Admonition'
-import { Icon } from '@iconify/react'
-import stringify from 'json-stringify-pretty-compact'
 
 import Tabs from '../theme/Tabs'
-import EXAMPLES from './examples'
 import { SiteContext } from './sites'
+import { getExampleCode } from './examples'
+import { ApiV2Editor, JsonSchemaEditor, postQuery } from './apiv2-editor'
 
-const MIN_HEIGHT = 170
-const MAX_HEIGHT = 500
-
-export default function ApiV2Example({ id }) {
-  const { isLoggedIn, sites, selectedSite, selectSite } = useContext(SiteContext)
+export function ApiV2Example({ id }) {
+  const { selectedSite } = useContext(SiteContext)
 
   const [activeTab, setActiveTab] = useState("query")
-  const [code, setCode] = useState(getCode("query", id, selectedSite))
-  const [canReset, setCanReset] = useState(false)
+  const [code, setCode] = useState(getExampleCode("query", id, selectedSite))
   const [response, setResponse] = useState(null)
 
-  useEffect(() => {
-    if (!canReset && isLoggedIn) {
-      setCode(getCode("query", id, selectedSite))
-    }
-  }, [selectedSite, canReset, isLoggedIn])
-
-  const onCodeChange = useCallback((code) => {
+  const onCodeChange = useCallback((code: string) => {
     setCode(code)
-    setCanReset(true)
     setResponse(null)
-  }, [])
-
-  const resetCode = useCallback(() => {
-    setCode(getCode("query", id, selectedSite))
-    setCanReset(false)
-    setResponse(null)
-  }, [])
-
-  const copyCode = useCallback(() => {
-    navigator.clipboard.writeText(code)
   }, [])
 
   const runCode = useCallback(async () => {
@@ -59,39 +36,12 @@ export default function ApiV2Example({ id }) {
   return (
     <Tabs activeTab={activeTab} onTabChange={setActiveTab}>
       <TabItem label="Query" value="query">
-        <div style={{ position: "relative" }}>
-          <JsonSchemaEditor
-            schema="/api/docs/query/schema.json"
-            value={code}
-            onChange={onCodeChange}
-            readOnly={!isLoggedIn}
-          />
-          <div style={{ position: "absolute", top: 2, right: 2, display: "flex" }}>
-            {canReset && (
-              <button title="Reset query" className="code-button" onClick={resetCode}>
-                <Icon icon="carbon:reset-alt" />
-              </button>
-            )}
-            <button title="Copy query" className="code-button" onClick={copyCode}>
-              <Icon icon="ant-design:copy-outlined" />
-            </button>
-            {isLoggedIn && !canReset && (
-              <select
-                value={selectedSite}
-                onChange={(e) => selectSite(e.target.value)}
-                className="site-select"
-                title="Site to run query against"
-              >
-                {sites.map((siteDomain) => (<option key={siteDomain} value={siteDomain}>{siteDomain}</option>))}
-              </select>
-            )}
-            {isLoggedIn && (
-              <button title="Run query" className="code-button" onClick={runCode}>
-                <Icon icon="ant-design:code-outlined" />
-              </button>
-            )}
-          </div>
-        </div>
+        <ApiV2Editor
+          id={id}
+          code={code}
+          onChange={onCodeChange}
+          onRunCode={runCode}
+        />
       </TabItem>
       <TabItem label="Example Response" value="example_response">
         <Admonition type="info">
@@ -100,7 +50,7 @@ export default function ApiV2Example({ id }) {
 
         <JsonSchemaEditor
           readOnly
-          value={getCode("exampleResponse", id, selectedSite)}
+          value={getExampleCode("exampleResponse", id, selectedSite)}
         />
       </TabItem>
       {response && (
@@ -119,98 +69,4 @@ export default function ApiV2Example({ id }) {
       )}
     </Tabs>
   )
-}
-
-type EditorProps = {
-  value: string,
-  schema?: string,
-  onChange?: (code: string) => void,
-  readOnly?: boolean
-}
-
-function JsonSchemaEditor({ value, schema, onChange, readOnly }: EditorProps) {
-  const [height, setHeight] = useState(MIN_HEIGHT)
-  const editorRef = useRef<any>()
-
-  const onMount = useCallback((editor, monaco) => {
-    editorRef.current = editor
-
-    if (schema) {
-      monaco.languages.json.jsonDefaults.setDiagnosticsOptions({
-        validate: true,
-        schemas: [{
-          uri: `${window.location.origin}${schema}`,
-          fileMatch: ["*"],
-        }],
-        enableSchemaRequest: true
-      })
-    }
-    editor.onDidChangeModelContent(handleEditorChange)
-    handleEditorChange()
-  }, [schema])
-
-  const handleEditorChange = useCallback(() => {
-    const editAreaHeight = editorRef.current.getContentHeight()
-    if (editAreaHeight > height && height < MAX_HEIGHT) {
-      setHeight(editAreaHeight)
-    }
-  }, [editorRef]);
-
-  return (
-    <Editor
-      theme="vs-dark"
-      language="json"
-      value={value}
-      height={height}
-      options={{
-        minimap: {
-          enabled: false,
-        },
-        automaticLayout: true,
-        fixedOverflowWidgets: true,
-        glyphMargin: false,
-        wordWrap: 'off',
-        lineNumbers: 'on',
-        overviewRulerLanes: 0,
-        hideCursorInOverviewRuler: false,
-        scrollBeyondLastLine: false,
-        readOnly: readOnly
-      }}
-      onMount={onMount}
-      onChange={onChange}
-    />
-  )
-}
-
-async function postQuery(query) {
-  let response
-  try {
-    response = await fetch('/api/docs/query', {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: query
-    })
-
-  } catch (error_response) {
-    response = error_response
-  }
-
-  try {
-    const data = await response.json()
-
-    return [response, stringify(data)]
-  } catch (error) {
-    return [response, ""]
-  }
-}
-
-function getCode(field: "query" | "exampleResponse", id: string, selectedSite: string | null) {
-  const examples = EXAMPLES.filter((example) => example.id === id)
-  let exampleCode = examples[0][field]
-
-  if (selectedSite) {
-    exampleCode = exampleCode.replace("dummy.site", selectedSite)
-  }
-
-  return exampleCode
 }

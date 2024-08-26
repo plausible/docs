@@ -70,6 +70,17 @@ const EXAMPLES = [
   }
 ]
 
+export function getExampleCode(field: "query" | "exampleResponse", id: string, selectedSite: string | null): string {
+  const examples = EXAMPLES.filter((example) => example.id === id)
+  let exampleCode = examples[0][field]
+
+  if (selectedSite) {
+    exampleCode = exampleCode.replace("dummy.site", selectedSite)
+  }
+
+  return exampleCode
+}
+
 export function ExamplesTip() {
   const { isLoggedIn } = useContext(SiteContext)
 

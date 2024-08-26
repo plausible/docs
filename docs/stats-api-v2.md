@@ -4,9 +4,9 @@ toc_max_heading_level: 4
 sidebar_label: Stats API v2 reference (Beta)
 ---
 
-import ApiV2Example from '../src/js/apiv2-example.tsx';
+import { ApiV2Example } from '../src/js/apiv2-example.tsx';
 import {Required, Optional} from '../src/js/api-helpers.tsx';
-import Examples, { ExamplesTip } from '../src/js/examples.tsx';
+import { ExamplesTip, getExampleCode } from '../src/js/examples.tsx';
 import CodeBlock from '@theme/CodeBlock';
 import EXAMPLES, { SiteContextProvider } from '../src/js/sites.tsx';
 
@@ -48,7 +48,7 @@ API keys have a rate limit of 600 requests per hour by default. If you have spec
 
 `/api/v2/query` endpoint accepts a `query` object. Example:
 
-<CodeBlock language="json">{Examples["apiv2-examples/country-and-city-query.json"]}</CodeBlock>
+<CodeBlock language="json">{getExampleCode("query", "example-country-and-city", null)}</CodeBlock>
 
 
 Query can contain the following keys:
@@ -264,7 +264,7 @@ time labels valid for `date_range`.
 
 Example response:
 
-<CodeBlock language="json">{Examples["apiv2-examples/country-and-city-response.json"]}</CodeBlock>
+<CodeBlock language="json">{getExampleCode("exampleResponse", "example-country-and-city", null)}</CodeBlock>
 
 ### results
 
