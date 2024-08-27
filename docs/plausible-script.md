@@ -4,15 +4,13 @@ title: Add the tracking snippet to your website
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-To integrate your website with Plausible Analytics, you need to insert a Plausible tracking snippet into the header section of your site. Place the snippet within the `<head> … </head>` tags. Your Plausible tracking snippet will look something like this:
+To integrate your website with Plausible Analytics, you need to insert a Plausible tracking snippet into the header section of your site. Place the snippet within the `<head> … </head>` tags. 
 
-```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.js"></script>
-```
+We display your snippet during the process of adding a new site to your account. For sites that you've already added to your account, you can find your JavaScript snippet by [logging into your Plausible account](https://plausible.io/sites). Here you'll find the list of websites you've added to Plausible.
 
-You can find your JavaScript snippet by [logging into your Plausible account](https://plausible.io/sites). Here you'll find the list of websites you've added to Plausible.
+Click on the menu icon on the right-hand side of the site you'd like to get the snippet for and choose "**Settings**" to enter the [site settings](website-settings.md). Then scroll down to the **Site Installation**" area of the "**General** section. Click on the "**Review Installation**" button to get the installation details including your snippet. 
 
-Click on the menu icon on the right-hand side of the site you'd like to get the snippet for and choose "**Settings**" to enter the [site settings](website-settings.md). Then scroll down to the "**JavaScript Snippet**" section.
+There you can also enable any [optional enhanced measurements](script-extensions.md). Note that the snippet changes depending on your selection of optional measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected.
 
 <img alt="Plausible Analytics" src={useBaseUrl('img/list-of-sites.png')} />
 
@@ -26,9 +24,9 @@ Installing Plausible on a site can be a slightly different process depending on 
 
 * If you'd like to serve our snippet as a first-party connection from your domain name, we offer a way to proxy our script. See [full details here](/proxy/introduction.md).
 
+* Prefer to avoid JavaScript and use server side tracking instead? We have [the events API for that](events-api.md).
+  
 * We've put together [several other guides and plugins](integration-guides.md) that cover popular website builders, content management systems (CMS) and frameworks. These can help you set up and start counting your site visitors in no time.
-
-* Prefer to use server side tracking? We have [the events API for that](events-api.md).
 
 ## Can I track visitors across my domain and subdomain?
 
