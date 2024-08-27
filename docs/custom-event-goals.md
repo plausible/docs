@@ -1,38 +1,36 @@
 ---
-title: Custom event goals
+title: Custom events
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 :::note
-If you use the Custom Events feature, then these count towards your billable monthly pageviews.
+If you use the custom events feature, then these count towards your billable monthly pageviews.
 :::
 
-Here are the steps you need to take to track custom events such as purchases, signups, button clicks or form submissions.
+Custom events allow you to measure button clicks, purchases, subscription signups, form completions and pretty much any other action that you wish your visitors to take. 
+
+"**Custom events**" is an [optional enhanced measurement](script-extensions.md) that's not included in our default script. This is because we want to keep the default script as simple and lightweight as possible. If you want to track custom events, here's how to enable it:
+
+## Step 1: Enable "Custom events" for your site
+
+You can enable "**Custom events**" as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
+
+## Step 2: Change the snippet on your site
+
+The tracking snippet changes depending on your selection of optional measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected. We display your snippet during the process of adding a new site to your account. You can also see the snippet within the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
+
+Your Plausible tracking snippet should be inserted into [the Header (`<head>`) section of your site](plausible-script.md). Place the tracking script within the `<head> … </head>` tags.
+
+:::tip Using WordPress?
+The quickest way to start tracking custom events is to use our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) 
+:::
+
+## Step 3: Add a CSS class name to the element you want to track on your site
 
 :::tip Use pageview goals to track the "thank you" page or the order confirmation page
-As an alternative to custom events, check out [pageview goals](pageview-goals.md). Since pageviews are collected automatically, you don’t need to change your website’s code to measure pageview goals. This makes pageview goals the easiest way to start tracking any type of conversions. Do you run a store and want to track orders? Do you have a contact form and want to track form submissions? Use pageview goals to track the "thank you" page or the order confirmation page
+As an alternative to custom events, check out the [pageview goals](pageview-goals.md). Since pageviews are collected automatically, you don’t need to change your website’s code to measure pageview goals. This makes pageview goals the easiest way to start tracking any type of conversions.
 :::
-
-## 1. Change the Plausible snippet on your site
-
-Please change the file name in the `src` attribute of your Plausible snippet from `script.js` to `script.tagged-events.js`. It should look like this:
-
-```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.tagged-events.js"></script>
-```
-
-Or if you're using [a proxy](/proxy/introduction.md):
-
-```html
-<script defer data-domain="yourdomain.com" src="https://yourproxy.com/script.tagged-events.js"></script>
-```
-
-:::tip You can combine our script extensions
-If you're using outbound link clicks, file downloads or any of our other script extensions, you can [combine them](script-extensions.md#you-can-combine-extensions-according-to-your-needs) by changing the `src` attribute in the snippet. If you want to track custom events and outbound link clicks simultaneously, change the script name to `script.tagged-events.outbound-links.js`
-:::
-
-## 2. Add a CSS class name to the element you want to track on your site
 
 Tag the site element you want to track with a CSS class name. How to do this varies depending on the site builder, CMS or framework you've used to build your site. 
 
@@ -181,11 +179,11 @@ var toTag = [
 
 </details>
 
-## 3. Create a custom event goal in your Plausible account
+## Step 4: Create a custom event goal in your Plausible account
 
 When you send custom events to Plausible, they won't show up in your dashboard automatically. You'll have to configure the goal for the conversion numbers to show up.
 
-To configure a goal, go to [your website's settings](website-settings.md) in your Plausible account and visit the "**Goals**" section. You should see an empty list with a prompt to add a goal.
+To configure a goal, go to [your website's settings](website-settings.md) in your Plausible account and visit the "**Goals**" section. You should see a list of current goals with a prompt to add a goal.
 
 <img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
 
