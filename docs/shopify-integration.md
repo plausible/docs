@@ -48,7 +48,7 @@ Here's how you can track particular form submissions and button clicks on your S
 
 You can enable "**Custom events**" as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
 
-## 2. Change the snippet on your site
+### 2. Change the snippet on your site
 
 The tracking snippet changes depending on your selection of optional measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected. You can see the snippet within the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
 
