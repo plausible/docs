@@ -6,18 +6,19 @@ We're proud to have one of the most [lightweight JavaScript snippets](https://pl
 
 One of the ways we achieve that is by radically limiting the number of options in the default script. Instead, we offer enhanced measurements as optional script extensions tailored to how you want to use Plausible. This approach makes sure that you only load the code that will actually be used on your website. Websites shouldn't have to load dozens or hundreds of kilobytes of dead JavaScript code on every page load which degrades the user experience and causes unnecessary network traffic.
 
-You can enable enhanced measurements when adding a new site to your Plausible account or by accessing the site settings. Note that the JavaScript tracking snippet changes depending on your selection of enhanced measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected.
+You can enable optional enhanced measurements when adding a new site to your Plausible account or by accessing the site settings. Note that the JavaScript tracking snippet changes depending on your selection of enhanced measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected.
 
-Here's the list of our enhanced measurements:
+Here's the list of our optional measurements:
 
-| Enhanced Measurement                | Explanation                                                                                        |
+| Optional Measurement                | Explanation                                                                                        |
 |--------------------------|----------------------------------------------------------------------------------------------------|
-| script.outbound-links.js | Automatically [track clicks on outbound links](outbound-link-click-tracking.md)  |
-| script.file-downloads.js | Automatically [track file downloads](file-downloads-tracking.md)                                   |
-| script.hash.js           | Automatically track page paths that use a `#` in the URL ([hash-based routing](hash-based-routing.md))    |
-| script.tagged-events.js  | Allows you to [track custom events](custom-event-goals.md) such as link clicks, form submits and any other HTML element clicks            |
-| script.pageview-props.js  | Allows you to attach [custom properties](/custom-props/introduction) (also known as custom dimensions in Google Analytics) when sending a pageview or custom event to create custom metrics      |
-| script.revenue.js  | Allows you to assign dynamic [monetary values](ecommerce-revenue-tracking.md) to custom events and track revenue attribution |
+| Outbound links | Automatically [track clicks on outbound links](outbound-link-click-tracking.md)  |
+| File downloads | Automatically [track file downloads](file-downloads-tracking.md)                                   |
+| 404 error pages | Automatically [track 404 error pages](error-pages-tracking-404.md)                                   |
+| Hashed page paths          | Automatically track page paths that use a `#` in the URL ([hash-based routing](hash-based-routing.md))    |
+| Custom events  | Allows you to [track custom events](custom-event-goals.md) such as link clicks, form submits and any other HTML element clicks            |
+| Custom properties | Allows you to attach [custom properties](/custom-props/introduction) (also known as custom dimensions in Google Analytics) when sending a pageview or custom event to create custom metrics      |
+| Ecommerce revenue  | Allows you to assign dynamic [monetary values](ecommerce-revenue-tracking.md) to custom events and track revenue attribution |
 
 <details>
 
@@ -27,7 +28,7 @@ Here's the list of our enhanced measurements:
 
 </summary>
 
-Below is the list of advanced tracking options available at this time. Note that these are not included in the site onboarding list so you will need to insert them into your tracking snippet manually.
+In addition to the above list (`script.outbound-links.js`, `script.file-downloads.js`, `script.hash.js`, `script.tagged-events.js`, `script.pageview-props.js` and `script.revenue.js`), we also have some more advanced tracking options available. Note that these are not included in the site onboarding list so you will need to insert them into your tracking snippet manually.
 
 | Extension                | Explanation                                                                                        |
 |--------------------------|----------------------------------------------------------------------------------------------------|
