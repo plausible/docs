@@ -12,11 +12,7 @@ Here's how to add Plausible Analytics to your Squarespace site
 
 * You can use the "**[Custom Code](https://university.Squarespace.com/lesson/custom-code-in-the-head-and-body-tags)**" feature in Squarespace to add Plausible tracking code to your website. Site-wide JavaScript code injection is a premium Squarespace feature so you need to upgrade your Squarespace account to a paid subscription plan.
 
-* [Paste your Plausible snippet](https://plausible.io/docs/plausible-script) in the "**Header Code**" section. Your Plausible tracking script code will look something like this (your exact code will be shown on the JavaScript snippet page in your Plausible account):
-
-```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.js"></script>
-```
+* [Paste your Plausible snippet](https://plausible.io/docs/plausible-script) in the "**Header Code**" section. We display your snippet during the process of adding a new site to your account. You can also see the snippet within the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
 
 <img alt="Add Plausible Analytics script to Squarespace" src={useBaseUrl('img/add-plausible-script-to-Squarespace.png')} />
 
@@ -37,7 +33,6 @@ The easiest way to track form submissions on your Squarespace site is to track t
 * Click on the gear icon button next to your "thank you" page to access the page's settings. Here you can see ( or edit ) the page path. 
 
 <img alt="Squarespace form submission thank you page path" src={useBaseUrl('img/squarespace-thank-you-page-path.png')} />
-
 
 ### 2. Set the redirect URL on form submission
 
