@@ -14,11 +14,7 @@ Here's how to add Plausible Analytics to your Shopify store and set up the track
 
 <img alt="Add Plausible to Shopify" src={useBaseUrl('img/add-custom-code-to-shopify.png')} />
 
-* In the "Layout" folder, select your "theme.liquid" file and [paste your Plausible snippet](https://plausible.io/docs/plausible-script) in the "**Head Code**" section. Your Plausible tracking script code will look something like this (your exact code will be shown on the JavaScript snippet page in your Plausible account):
-
-```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.js"></script>
-```
+* In the "Layout" folder, select your "theme.liquid" file and [paste your Plausible snippet](https://plausible.io/docs/plausible-script) in the "**Head Code**" section. We display your snippet during the process of adding a new site to your account. You can also see the snippet within the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
 
 <img alt="Add Plausible Analytics script to Shopify" src={useBaseUrl('img/add-plausible-script-to-shopify.png')} />
 
@@ -48,25 +44,21 @@ If you'd like to see these grouped order confirmations or checkout page visits p
 
 Here's how you can track particular form submissions and button clicks on your Shopify site:
 
-### 1. Change the Plausible snippet on your site
+### 1. Enable "Custom events" for your site
 
-Please change the file name in the `src` attribute of your Plausible snippet from `script.js` to `script.tagged-events.js`. It should look like this:
+You can enable "**Custom events**" as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
 
-```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.tagged-events.js"></script>
-```
+## 2. Change the snippet on your site
 
-:::tip You can combined script extensions
-If you're using outbound link clicks, file downloads or any of our other script extensions, you can [combine them](script-extensions.md#you-can-combine-extensions-according-to-your-needs) by changing the `src` attribute in the snippet. If you want to track custom events and outbound link clicks simultaneously, change the script name to `script.tagged-events.outbound-links.js`
-:::
+The tracking snippet changes depending on your selection of optional measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected. You can see the snippet within the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
 
-### 2. Find the ID attribute of the form or button you want to track
+### 3. Find the ID attribute of the form or button you want to track
 
 Your form or button element should have an ID attribute assigned by default. You can find this ID by selecting the element you want to track (do make sure you select your form element and not just the "Submit" button) and clicking on the settings gear.
 
 <img alt="Shopify form ID" src={useBaseUrl('img/shopify-form-id.png')} />
 
-### 3. Trigger custom events with JavaScript on your site
+### 4. Trigger custom events with JavaScript on your site
 
 Here's the code you will need to insert in the `<head>` section of the page where the element ID that you want to track is located. You can do this the same way as you've inserted the Plausible snippet into your site.
 
@@ -102,7 +94,7 @@ To represent a space character in goal names, you can use a `+` sign. For exampl
 
 Do click on the "**Save**" button to save your changes.
 
-### 4. Create a custom event goal in your Plausible account
+### 5. Create a custom event goal in your Plausible account
 
 When you send custom events to Plausible, they won't show up in your dashboard automatically. You'll have to configure the goal for the conversion numbers to show up.
 
@@ -118,7 +110,7 @@ So in our example where we added a goal name `plausible-event-name=Form+Submit` 
 
 Next, click on the "**Add goal**" button and you'll be taken back to the Goals page. 
 
-### 5. Your goal should now be ready and tracking
+### 6. Your goal should now be ready and tracking
 
 Your goal should now be set up. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who triggered the custom event. Goal conversions are listed at the very bottom of the dashboard. The goal will show up in your dashboard as soon as it has been completed at least once.
 
