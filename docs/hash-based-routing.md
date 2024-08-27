@@ -8,7 +8,7 @@ If your site is using page paths with a `#` in the URL, you can use our "**Hashe
 
 ## Step 1: Enable "Hashed page paths" for your site
 
-You can enable "**Hashed page paths**" tracking as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control how data is collected in the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
+You can enable "**Hashed page paths**" tracking as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control how data is collected in the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
 
 ## Step 2: Change the snippet on your site
 
