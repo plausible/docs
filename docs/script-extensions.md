@@ -87,7 +87,11 @@ document.addEventListener("turbo:load", function() {
 </script>
 ```
 
-Note also that when using turbolinks, you should make sure that the Plausible script isn't loaded and executed during turbo navigation. You may need to move the script to the `<head>` section of your website or use the `data-turbo-eval="false"` attribute to do so.
+When using turbolinks, you should make sure that the Plausible script isn't loaded and executed during turbo navigation. You may need to move the script to the `<head>` section of your website or use the `data-turbo-eval="false"` attribute to do so.
+
+:::note 
+When using manual.js every script call with `'pageview'` results in a separate pageview being counted even if called on the same page
+:::
 
 #### Specify custom locations for your page URLs
 
