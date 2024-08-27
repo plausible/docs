@@ -42,7 +42,7 @@ For example, the default script name in our snippet is `script.js`. If your webs
 In this case, the snippet you need to insert into your site is as follows (make sure to change the data-domain attribute to the domain you added to Plausible):
 
 ```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.hash.js"></script>
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.local.js"></script>
 ```
 
 You can mix and match, and combine extensions any way that you wish. For instance, if you want to use both our hash-based routing extension and our outbound link click extension, you can combine them as follows: `script.hash.outbound-links.js`.
