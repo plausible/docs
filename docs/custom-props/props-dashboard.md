@@ -32,7 +32,7 @@ You can also open [the filter dropdown menu](filters-segments.md) in the top rig
 
 <img alt="Custom Property Filter" src={useBaseUrl('img/custom-property-filter.png')} />
 
-In that view you can interact with the dropdown fields, where Plausible will automatically provide filtering suggestions based on the custom properties that we have recorded. The suggestions take into account the selected time period and other filters that you've already applied to your stats. You can choose between "**is**", "**is not**" and "**contains**" as options when selecting the custom property to filter by. 
+In that view you can interact with the dropdown fields, where Plausible will automatically provide filtering suggestions based on the custom properties that we have recorded. The suggestions take into account the selected time period and other filters that you've already applied to your stats. You can choose between "**is**", "**is not**", "**does not contain**" and "**contains**" as options when selecting the custom property to filter by. 
 
 You can filter by multiple custom properties too. Click on the "**Add another**" link to add another custom property to the filter. Choose the custom properties that you want to segment your audience by and click on the "**Apply Filter**" button to filter your dashboard.
 
