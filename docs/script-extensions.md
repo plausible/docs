@@ -4,9 +4,13 @@ title: Enable optional measurements
 
 We're proud to have one of the most [lightweight JavaScript snippets](https://plausible.io/lightweight-web-analytics) in the analytics industry. Our script is under 1KB ensuring that it won’t add any bloat to your website or cause performance issues.
 
-One of the ways we achieve that is by radically limiting the number of options in the default script. Instead, we offer enhanced measurements as optional script extensions tailored to how you want to use Plausible. This approach makes sure that you only load the code that will actually be used on your website. Websites shouldn't have to load dozens or hundreds of kilobytes of dead JavaScript code on every page load which degrades the user experience and causes unnecessary network traffic.
+One of the ways we achieve that is by radically limiting the number of options in the default script. Instead, we offer enhanced measurements as optional script extensions tailored to how you want to use Plausible. This approach makes sure that you only load the code that will actually be used on your website.
 
-You can enable optional enhanced measurements when adding a new site to your Plausible account or by accessing the site settings. Note that the JavaScript tracking snippet changes depending on your selection of enhanced measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected.
+You can enable these optional measurements when adding a new site to your Plausible account or in the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md). 
+
+:::tip The snippet changes depending on your selection of measurements
+Note that the tracking snippet that you need to insert into your site changes depending on your selection of enhanced measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected
+:::
 
 Here's the list of our optional measurements:
 
@@ -46,7 +50,7 @@ In this case, the snippet you need to insert into your site is as follows (make 
 <script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.local.js"></script>
 ```
 
-You can mix and match, and combine extensions any way that you wish. For instance, if you want to use both our hash-based routing extension and our outbound link click extension, you can combine them as follows: `script.hash.outbound-links.js`.
+You can mix and match, and combine these extensions any way that you wish. For instance, if you want to use both our hash-based routing and our outbound link click tracking, you can combine them as follows: `script.hash.outbound-links.js`.
 
 In this case, the snippet you need to insert into your site is as follows (make sure to change the data-domain attribute to the domain you added to Plausible):
 
