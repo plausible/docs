@@ -24,6 +24,10 @@ You can enable "**404 error pages**" as an optional measurement when adding a ne
 
 After you enable 404 error pages tracking, we will automatically add a new goal called `404` to your site.
 
+:::tip Using Google Tag Manager to integrate Plausible?
+Please follow [our GTM-specific instructions](google-tag-manager.md) to correctly set up 404 error pages tracking
+:::
+
 ## Step 2: Change the snippet on your site
 
 The tracking snippet changes depending on your selection of optional measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected. We display your snippet during the process of adding a new site to your account. You can also see the snippet within the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
