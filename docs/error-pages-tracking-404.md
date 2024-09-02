@@ -58,4 +58,12 @@ You can also group 404 error pages by any keyword. In the "**Filter**" button in
 
 Check out this blog post for more details on the value of [tracking 404 error pages](https://plausible.io/blog/track-404-errors).
 
+## How to disable "404 error pages" tracking for your site
+
+You can control what data is collected in the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
+
+When making changes to your optional measurements, your snippet will change so do ensure to insert the newest snippet into your site for 404 error pages tracking to stop. You should also remove the code that you inserted into your 404 error page template. 
+
+After you disable 404 error pages tracking, we will automatically remove the goal called `404` from your site. 
+
 Thanks to [Jeremiah Lee](https://www.jeremiahlee.com/) for contributing this to the Plausible Analytics community!
