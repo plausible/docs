@@ -4,17 +4,13 @@ title: Attach custom properties to custom events
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-The process of attaching custom properties to your custom events is different depending on how you're sending your events to Plausible.
+## Step 1: Enable "Custom events" for your site
 
-## 1. Using the `tagged-events` script extension
+You can enable "**Custom events**" as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
 
-Here's how you can attach custom properties if you're tracking your custom events with the `tagged-events` script extension.
+Note that the tracking snippet changes depending on your selection of optional measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected. 
 
-In this case, your tracking script should already include the `tagged-events`` script extension:
-
-```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.tagged-events.js"></script>
-```
+## Step 2. Tag properties to custom events you want to track
 
 Now, let's say you have a contact form both in the header and footer of your site. In addition to tracking submissions, you might want to know which section of your site the form was submitted on. Instead of creating separate goals for each form, you can send a custom property instead:
 
@@ -38,9 +34,15 @@ This is because you can't include the space character in the `class` attribute
 
 You can add up to 30 classes for custom properties. Simply separate them with a space character like in the above example.
 
-## 2. Using the manual method
+<details>
 
-If you're sending your custom events manually with JavaScript, for example:
+<summary>
+  
+## Tag custom properties using the manual method
+
+</summary>
+
+This is an alternative option for those who are sending custom events manually with JavaScript, for example:
 
 ```js
 plausible('Download')
@@ -51,3 +53,5 @@ All you have to do is add the second argument to this function call with the cus
 ```js
 plausible('Download', {props: {method: 'HTTP', position: 'footer'}})
 ```
+
+</details>

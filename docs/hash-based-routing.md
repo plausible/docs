@@ -1,21 +1,19 @@
 ---
-title: Hash-based routing
+title: Hashed page paths
 ---
 
-Plausible Analytics integrates automatically with `pushState` based frontend routers. However, if you're using a frontend
-framework that uses the URL hash for routing, you need to take an extra step to install the hash-based tracker instead of the default one. This is the same process you need to follow with [Carrd](carrd-integration.md) and other website builders that don't support normal navigation.
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
-The hash-based tracker is available by changing your script to load `https://plausible.io/js/script.hash.js` instead of
-the default `https://plausible.io/js/script.js`.
+If your site is using page paths with a `#` in the URL, you can use our "**Hashed page paths**" tracking to see the different pages your visitors have viewed. Here's how to enable it:
 
-Here's what the full script tag will look like:
+## Step 1: Enable "Hashed page paths" for your site
 
-```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.hash.js"></script>
-```
+You can enable "**Hashed page paths**" tracking as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control how data is collected in the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
 
-If you're using [a proxy](/proxy/introduction.md), you can add the `.hash.js` as follows: `https://yourproxylocation.com/js/script.hash.js`
+## Step 2: Change the snippet on your site
 
-This tracker will change two things about how events are collected:
-* Trigger pageviews on the `hashchange` event
-* Normally the hash part of the URL is discarded in your Plausible dashboard. In hash-mode, the hash part is preserved in your stats so you can see the different pages your visitors have viewed.
+The tracking snippet changes depending on your selection of optional measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected. We display your snippet during the process of adding a new site to your account. You can also see the snippet within the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
+
+Your Plausible tracking snippet should be inserted into [the Header (`<head>`) section of your site](plausible-script.md). Place the tracking script within the `<head> … </head>` tags.
+
+After you change the tracking snippet on your site, all the hash-based page paths will start being tracked and will be displayed in the "**Top Pages**" report of your Plausible Analytics dashboard.

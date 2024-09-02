@@ -8,6 +8,14 @@ Here's how to add Plausible Analytics to your Carrd site and set up the tracking
 
 ## How to add Plausible to your Carrd website 
 
+### Enable "Hashed page paths" for your site in your Plausible account
+
+Carrd is a one-page website builder that doesn't support normal navigation. This means that you can enable "**Hashed page paths**" tracking as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control how data is collected in the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
+
+Plausible tracking snippet changes depending on your selection of optional measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected. 
+
+### Go to your Carrd website editor
+
 * Go to the editor of your Carrd website and add an "**Embed**" component.
 
 <img alt="Add embed element to Carrd" src={useBaseUrl('img/add-embed-element-to-carrd.png')} />
@@ -17,45 +25,33 @@ Here's how to add Plausible Analytics to your Carrd site and set up the tracking
 - Type is set to "**Code**"
 - Style is set to "**Hidden**" and "**Head**"
 
-And past your tracking script in the **Code** field. Carrd is a one-page website builder that doesn't support normal navigation. You need to use [our special hash-based script](hash-based-routing.md) on Carrd sites. Your Plausible tracking script code will look something like this:
+* Then paste your Plausible tracking script in the **Code** field
 
-```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.hash.js"></script>
-```
+* Do click on the "**Done**" button and then "**Publish**" your changes. After you change the tracking snippet on your site, all the hash-based page paths on your Carrd website will start being tracked and will be displayed in the "**Top Pages**" report of your Plausible Analytics dashboard.
 
 <img alt="Add Plausible Analytics script to Carrd" src={useBaseUrl('img/add-plausible-script-to-carrd.png')} />
-
-* Do click on the "**Done**" button and then "**Publish**" your changes.
 
 Now you can go to your Carrd website and verify that Plausible script has been added and to your Plausible account to see whether the stats are being tracked. See here [how to verify the integration](troubleshoot-integration.md).
 
 ## How to track form submissions on your Carrd site
 
-:::tip Use pageview goals to track the "thank you" page or the order confirmation page
-As an alternative to custom events, check out [pageview goals](pageview-goals.md). Since pageviews are collected automatically, you don’t need to change your website’s code to measure pageview goals. This makes pageview goals the easiest way to start tracking any type of conversions. Do you run a store and want to track orders? Do you have a contact form and want to track form submissions? Use pageview goals to track the "thank you" page or the order confirmation page
+:::tip Use pageview goals to track the "thank you" page
+As an alternative to custom events, check out [pageview goals](pageview-goals.md). Since pageviews are collected automatically, you don’t need to change your website’s code to measure pageview goals. This makes pageview goals the easiest way to start tracking any type of conversions.
 :::
 
-In Carrd forms have default IDs. Usually they're assigned IDs based on the order you've added them. If you only have one form on the page it has an ID of "**form01**".
+### 1. Enable "Custom events" for your site
 
-### 1. Change the Plausible snippet on your site
+You can enable "**Custom events**" as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
 
-Please change the file name in the `src` attribute of your Plausible snippet from `script.hash.js` to `script.tagged-events.hash.js`. It should look like this:
+### 2. Change the snippet on your site
 
-```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.tagged-events.hash.js"></script>
-```
+The tracking snippet changes depending on your selection of optional measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected. We display your snippet during the process of adding a new site to your account. You can also see the snippet within the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
 
-:::tip You can combine script extensions
-If you're using outbound link clicks, file downloads or any of our other script extensions, you can [combine them](script-extensions.md#you-can-combine-extensions-according-to-your-needs) by changing the `src` attribute in the snippet. If you want to track custom events and outbound link clicks simultaneously, change the script name to `script.tagged-events.outbound-links.hash.js`
-:::
-
-If you're on a higher plan, like Pro Plus, you'll be able to set these IDs yourself from the element's settings. 
-
-### 2. Trigger custom events with JavaScript on your site
+### 3. Trigger custom events with JavaScript on your site
 
 Here's the code you will need to insert in the `<head>` section of the page where the element ID that you want to track is located. You can use the "**Custom Code**" feature to do this similarly to how you've inserted the Plausible snippet into your site.
 
-Make sure to change the `elementId` line in the code below to include the ID attribute of the element you want to track (`form01` in our example). 
+Make sure to change the `elementId` line in the code below to include the ID attribute of the element you want to track (`form01` in our example). In Carrd forms have default IDs. Usually they're assigned IDs based on the order you've added them. If you only have one form on the page it has an ID of "**form01**". If you're on a higher plan, like Pro Plus, you'll be able to set these IDs yourself from the element's settings. 
 
 Also do change the `classes` line to include the goal name in this format: `plausible-event-name=Goal+Name`. The goal name is completely up to you. It's the name under which the goal conversions will appear in your Plausible dashboard. We've used `Form+Submit` goal name in our example.
 
@@ -111,7 +107,15 @@ Now you'll have to click on the form element to select it, click on the gear ico
 
 ## Tracking button clicks and other links on your Carrd site
 
-### 1. Set an ID to the element you want to track
+### 1. Enable "Custom events" for your site
+
+You can enable "**Custom events**" as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
+
+### 2. Change the snippet on your site
+
+The tracking snippet changes depending on your selection of optional measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected. We display your snippet during the process of adding a new site to your account. You can also see the snippet within the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
+
+### 3. Set an ID to the element you want to track
 
 In Carrd buttons and links have default IDs. Usually they're assigned IDs based on the order you've added them. So first button or link has an ID of "**buttons01**"/"**links01**", second button or link has an ID of "**buttons02**"/"**links02**" and so on and so forth. 
 
@@ -121,7 +125,7 @@ To be sure of your element's ID, you can use your browser's dev tool to inspect 
 
 <img alt="Confirm element ID in Carrd" src={useBaseUrl('img/confirm-element-id-carrd.png')} />
 
-### 2. Trigger custom events with JavaScript on your site
+### 4. Trigger custom events with JavaScript on your site
 
 Here's the code you will need to insert in the `<head>` section of the page where the element ID that you want to track is located. You can use the "**Custom Code**" feature to do this similarly to how you've inserted the Plausible snippet into your site.
 
@@ -153,7 +157,7 @@ Also do change the `classes` line to include the goal name in this format: `plau
 
 Do click on the "**Save Changes**" button and then "**Publish**" your changes.
 
-### 3. Create a custom event goal in your Plausible account
+### 5. Create a custom event goal in your Plausible account
 
 When you send custom events to Plausible, they won't show up in your dashboard automatically. You'll have to configure the goal for the conversion numbers to show up.
 
@@ -167,7 +171,7 @@ So in our example where we added a goal name `plausible-event-name=Button+Click`
 
 Next, click on the "**Add goal**" button and you'll be taken back to the Goals page. 
 
-### 4. Your goal should now be ready and tracking
+### 6. Your goal should now be ready and tracking
 
 Your goal should now be set up. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who triggered the custom event. Goal conversions are listed at the very bottom of the dashboard. The goal will show up in your dashboard as soon as it has been completed at least once.
 

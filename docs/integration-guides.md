@@ -1,5 +1,5 @@
 ---
-title: Integration guides
+title: Installation guides
 ---
 
 Installing Plausible on a website can be a slightly different process depending on what tools you're using to manage your site.
@@ -14,7 +14,7 @@ Here's the full list:
 
 To integrate your website with Plausible, you can manually insert our tracking snippet into the header section of your site. See [the details here](plausible-script.md).
 
-## WordPress
+## WordPress plugin
 
 Using WordPress? We have a WordPress plugin that makes the integration nice and easy. [Here's how to get started with our WordPress plugin](https://plausible.io/wordpress-analytics-plugin).
 
