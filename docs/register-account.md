@@ -8,8 +8,6 @@ To use Plausible Analytics, you need to [register an account](https://plausible.
 
 You can test all the different features and use Plausible on multiple sites during the trial. Plausible is so lightweight that you can run it alongside Google Analytics without any negative impact on your site's performance. 
 
-## Register your account
-
 Fill in your full name and email address, choose your account password and click on the "**Start my free trial**" button.
 
 <img alt="Register for an account with Plausible Analytics" src={useBaseUrl('img/register-account.png')} />
