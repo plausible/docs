@@ -14,11 +14,11 @@ Does your site operate on multiple subdomains such as `docs.yourdomain.com` and 
 
 If you'd like to track a particular subdomain independently from the rest of your site, you can do that too. For example, if the subdomain you want to track on its own is `https://blog.yourdomain.com` then the part to enter in the "**Domain**" field is `blog.yourdomain.com`.
 
+<img alt="Add your website details to Plausible Analytics" src={useBaseUrl('img/website-details.png')} />
+
 :::tip Domain doesn't necessarily need to match the actual domain
 You don't necessarily need to install our snippet on the same domain as the domain you have added to your Plausible account. Think of the domain field in Plausible more like a site ID rather than an exact match. This allows you more flexibility in your setup all depending on your situation.
 :::
-
-<img alt="Add your website details to Plausible Analytics" src={useBaseUrl('img/website-details.png')} />
 
 ## Select your reporting timezone
 
