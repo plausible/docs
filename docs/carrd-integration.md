@@ -12,6 +12,8 @@ Here's how to add Plausible Analytics to your Carrd site and set up the tracking
 
 Carrd is a one-page website builder that doesn't support normal navigation. This means that you can enable "**Hashed page paths**" tracking as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control how data is collected in the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
 
+<img alt="Enable hashed page paths tracking during onboarding" src={useBaseUrl('img/onboarding-enable-hash-based-tracking.png')} />
+
 Plausible tracking snippet changes depending on your selection of optional measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected. 
 
 ### Go to your Carrd website editor
