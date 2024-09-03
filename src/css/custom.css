@@ -46,3 +46,36 @@
   white-space:nowrap;
   text-overflow:ellipsis;
 }
+
+.playground-run-code {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4px;
+}
+
+.playground-run-code button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  background-color: var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-global-radius);
+  border-width: 0;
+  color: var(--ifm-navbar-link-color);
+  cursor: pointer;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  touch-action: manipulation;
+}
+
+.playground-run-code button:hover {
+  background-color: var(--ifm-color-emphasis-400);
+}

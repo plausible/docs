@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Required = ({children, color}) => (
+export const Required = () => (
   <span
     style={{
       color: '#ED8936',
@@ -13,7 +13,7 @@ export const Required = ({children, color}) => (
   </span>
 );
 
-export const Optional = ({children, color}) => (
+export const Optional = () => (
   <span
     style={{
       color: '#718096',

@@ -1,18 +1,26 @@
-import React, { createContext, useEffect, useState } from 'react'
+import React, { ReactNode, createContext, useEffect, useState } from 'react'
 import BrowserOnly from '@docusaurus/BrowserOnly'
 
-export const SiteContext = createContext(null)
+export type SiteContextType = {
+  loading: boolean,
+  isLoggedIn: boolean,
+  sites: Array<string>,
+  selectedSite: string,
+  selectSite: (siteDomain: string) => void,
+}
+
+export const SiteContext = createContext<SiteContextType>(null)
 
 function NestedProvider({ children }) {
   const [sites, setSites] = useState({
     loading: true,
     isLoggedIn: false,
-    sites: []
+    sites: [] as Array<string>
   })
 
   const [selectedSite, setSelectedSite] = useState(localStorage.getItem("plausible_docs_site"))
 
-  function selectSite(siteDomain) {
+  function selectSite(siteDomain: string) {
     localStorage.setItem("plausible_docs_site", siteDomain)
     setSelectedSite(siteDomain)
   }
@@ -53,7 +61,7 @@ function NestedProvider({ children }) {
 }
 
 // Ensure that content requiring site data is only rendered in the browser
-export function SiteContextProvider(props) {
+export function SiteContextProvider(props: { children: ReactNode }) {
   return (
     <BrowserOnly>
       {() => (<NestedProvider>{props.children}</NestedProvider>)}

@@ -2,7 +2,7 @@
 title: Site provisioning API reference
 ---
 
-import {Required, Optional} from '../src/js/api-helpers.js';
+import {Required, Optional} from '../src/js/api-helpers.tsx';
 
 The Plausible Site provisioning API offers a way to create and manage sites in your Plausible account programmatically. This is useful if you run many websites or if you're [offering a web analytics dashboard powered by Plausible to your customers](https://plausible.io/white-label-web-analytics). The Site API allows these operations:
 

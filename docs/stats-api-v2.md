@@ -4,17 +4,17 @@ toc_max_heading_level: 4
 sidebar_label: Stats API v2 reference (Beta)
 ---
 
-import ApiV2Example from '../src/js/apiv2-example.js';
-import {Required, Optional} from '../src/js/api-helpers.js';
-import Examples, { ExamplesTip } from '../src/js/examples.js';
+import { ApiV2Example, ExamplesTip } from '../src/js/apiv2-example.tsx';
+import { Required, Optional } from '../src/js/api-helpers.tsx';
+import { getExampleCode } from '../src/js/examples.tsx';
 import CodeBlock from '@theme/CodeBlock';
-import { SiteContextProvider } from '../src/js/sites.js';
+import { SiteContextProvider } from '../src/js/sites.tsx';
 
 :::warning[Beta feature]
 Please be advised that this feature is currently in beta phase. It might change or break in the coming months as it is refined.
 :::
 
-Plausible Stats API v2 is a powerful single endpoint HTTP interface to **view historical and real-time stats**. In a nutshell, the endpoint `/api/v2/query` accepts both simple and complex stats queries in the POST request body and returns the metrics as JSON. 
+Plausible Stats API v2 is a powerful single endpoint HTTP interface to **view historical and real-time stats**. In a nutshell, the endpoint `/api/v2/query` accepts both simple and complex stats queries in the POST request body and returns the metrics as JSON.
 
 [Try it now for your own site!](#examples)
 
@@ -48,7 +48,7 @@ API keys have a rate limit of 600 requests per hour by default. If you have spec
 
 `/api/v2/query` endpoint accepts a `query` object. Example:
 
-<CodeBlock language="json">{Examples["apiv2-examples/country-and-city-query.json"]}</CodeBlock>
+<CodeBlock language="json">{getExampleCode("query", "example-country-and-city", null)}</CodeBlock>
 
 
 Query can contain the following keys:
@@ -264,7 +264,7 @@ time labels valid for `date_range`.
 
 Example response:
 
-<CodeBlock language="json">{Examples["apiv2-examples/country-and-city-response.json"]}</CodeBlock>
+<CodeBlock language="json">{getExampleCode("exampleResponse", "example-country-and-city", null)}</CodeBlock>
 
 ### results
 
@@ -291,76 +291,44 @@ The query that was executed, after manipulations performed on the backend.
 
 ### Simple aggregate query {#example-aggregate}
 
-<ApiV2Example
-  request="apiv2-examples/aggregate-query.json"
-  response="apiv2-examples/aggregate-response.json"
-/>
+<ApiV2Example id="example-aggregate" />
 
 ### Custom date range {#example-custom-date-range}
 
-<ApiV2Example
-  request="apiv2-examples/custom-date-range-query.json"
-  response="apiv2-examples/custom-date-range-response.json"
-/>
+<ApiV2Example id="example-custom-date-range" />
 
 ### Country and city analysis {#example-country-and-city}
 
-<ApiV2Example
-  request="apiv2-examples/country-and-city-query.json"
-  response="apiv2-examples/country-and-city-response.json"
-/>
+<ApiV2Example id="example-country-and-city" />
 
 ### UTM medium, source analysis {#example-utm}
 
-<ApiV2Example
-  request="apiv2-examples/utm-query.json"
-  response="apiv2-examples/utm-response.json"
-/>
+<ApiV2Example id="example-utm" />
 
 ### Filtering by page and country {#example-filtering}
 
-<ApiV2Example
-  request="apiv2-examples/filtering-basics-query.json"
-  response="apiv2-examples/filtering-basics-response.json"
-/>
+<ApiV2Example id="example-filtering" />
 
 ### Timeseries query {#example-timeseries}
 
-<ApiV2Example
-  request="apiv2-examples/timeseries-query.json"
-  response="apiv2-examples/timeseries-response.json"
-/>
+<ApiV2Example id="example-timeseries" />
 
 ### Timeseries query hourly, with labels {#example-time-labels}
 
-<ApiV2Example
-  request="apiv2-examples/time-labels-query.json"
-  response="apiv2-examples/time-labels-response.json"
-/>
-
+<ApiV2Example id="example-time-labels" />
 
 ### Using custom properties {#example-custom-properties}
 
-<ApiV2Example
-  request="apiv2-examples/custom-properties-query.json"
-  response="apiv2-examples/custom-properties-response.json"
-/>
+<ApiV2Example id="example-custom-properties" />
 
 ### Including imported data {#example-imports}
 
-<ApiV2Example
-  request="apiv2-examples/imports-query.json"
-  response="apiv2-examples/imports-response.json"
-/>
+<ApiV2Example id="example-imports" />
 
 ### Including imported data failed {#example-imports-warning}
 
 In this example, imported data could not be included due to dimension and filter combination not supporting imports. [More information](#include.imports)
 
-<ApiV2Example
-  request="apiv2-examples/imports-bad-filter-query.json"
-  response="apiv2-examples/imports-bad-filter-response.json"
-/>
-
+<ApiV2Example id="example-imports-warning" />
 
 </SiteContextProvider>

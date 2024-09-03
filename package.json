@@ -6,7 +6,8 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy"
+    "deploy": "docusaurus deploy",
+    "serve": "docusaurus serve"
   },
   "dependencies": {
     "@docusaurus/core": "^3.5.2",
@@ -15,7 +16,7 @@
     "@monaco-editor/react": "^4.6.0",
     "classnames": "^2.5.1",
     "json-stringify-pretty-compact": "^4.0.0",
-    "monaco-editor": "^0.34.0",
+    "monaco-editor": "^0.51.0",
     "raw-loader": "^4.0.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
@@ -31,5 +32,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "^3.5.2",
+    "@docusaurus/tsconfig": "^3.5.2",
+    "@docusaurus/types": "^3.5.2",
+    "typescript": "^5.5.4"
   }
 }
