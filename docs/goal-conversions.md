@@ -16,12 +16,14 @@ After setting up a goal, it will show up in the "**Goal Conversions**" section o
 
 There are several types of behavior analytics tools in Plausible Analytics:
 
-* [Pageview goals](pageview-goals.md) allow you to measure how many people visit a specific page or section of your site. Use pageview goals to track the "thank you" page or the order confirmation page. Since pageviews are collected automatically, you don’t need to change your website’s code to measure pageview goals. This makes them the easiest way to start tracking conversions on your site.
-* [Custom event goals](custom-event-goals.md) allow you to measure button clicks, purchases, subscriptions, form completions, clicks on video or audio elements and pretty much any other action that you wish (you can also send custom dimensions alongside custom events for extra insights)
-* [Funnel analysis](funnel-analysis.md) allow you to follow the visitor journey from a landing page to a conversion in order to uncover possible issues, optimize your site and increase the conversion rate.
-* [Ecommerce revenue tracking](ecommerce-revenue-tracking.md) allows you to assign dynamic monetary values to goals and custom events to track revenue attribution.
-* [Custom properties](/custom-props/introduction) allow you to send custom data with pageviews and custom events to create custom metrics.
-* [Outbound link clicks](outbound-link-click-tracking.md) allow you to automatically measure clicks on external links
-* [File downloads](file-downloads-tracking.md) allow you to automatically track when a visitor clicks a link leading to a file
-* [404 error pages](error-pages-tracking-404.md) allow you to automatically measure page not found errors
-* We also have a way to automatically track clicks on [cloaked affiliate links and other pretty URLs](custom-automatic-link-tracking.md)
+| Goal                | Explanation                                                                                        |
+|--------------------------|----------------------------------------------------------------------------------------------------|
+| [Pageview goals](pageview-goals.md) | Measure how many people visit a specific page or section of your site. Use these to track the "thank you" page or the order confirmation page. Since pageviews are collected automatically, you don’t need to change your website’s code to measure pageview goals. This makes them the easiest way to start tracking conversions on your site  |
+| [Custom event goals](custom-event-goals.md) | Measure button clicks, purchases, subscriptions, form completions, clicks on video or audio elements and pretty much any other action that you wish (you can also send custom dimensions alongside custom events for extra insights)                                   |
+| [Funnel analysis](funnel-analysis.md) | Follow the visitor journey from a landing page to a conversion in order to uncover possible issues, optimize your site and increase the conversion rate                                   |
+| [Ecommerce revenue tracking](ecommerce-revenue-tracking.md)          | Assign dynamic monetary values to goals and custom events to track revenue attribution   |
+| [Custom properties](/custom-props/introduction)  | Send custom data with pageviews and custom events to create custom metrics  |
+| [Outbound link clicks](outbound-link-click-tracking.md) | Automatically measure clicks on external links     |
+| [File downloads](file-downloads-tracking.md)  | Automatically track when a visitor clicks a link leading to a file |
+| [404 error pages](error-pages-tracking-404.md)  | Automatically measure page not found errors |
+| [Pretty URLs clicks](custom-automatic-link-tracking.md)  | Automatically track clicks on cloaked affiliate links and other pretty URLs |
