@@ -8,7 +8,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 You can enable "**Custom events**" as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
 
-<img alt="Enable custom events tracking during onboarding" src={useBaseUrl('img/onboarding-enable-custom-events-tracking')} />
+<img alt="Enable custom events tracking during onboarding" src={useBaseUrl('img/onboarding-enable-custom-events-tracking.png')} />
 
 Note that the tracking snippet changes depending on your selection of optional measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected. 
 
