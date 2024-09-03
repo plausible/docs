@@ -8,6 +8,8 @@ One of the ways we achieve that is by radically limiting the number of options i
 
 You can enable these optional measurements when adding a new site to your Plausible account or in the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md). 
 
+<img alt="Enable enhanced tracking during onboarding" src={useBaseUrl('img/enable-enhanced-tracking-onboarding.png')} />
+
 :::tip The snippet changes depending on your selection of measurements
 Note that the tracking snippet that you need to insert into your site changes depending on your selection of enhanced measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected
 :::
