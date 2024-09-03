@@ -10,7 +10,7 @@ If you still want some pages to be reported with the complete URL that includes 
 
 ## 1. Add the `manual` script extension
 
-You can use [Plausible's manual script extension](script-extensions.md#plausiblemanualjs) and define a custom location for all such pageviews. 
+You can use Plausible's manual script extension and define a custom location for all such pageviews. 
 
 To do so, change your Plausible script snippet `src` attribute from `https://plausible.io/js/script.js` to `https://plausible.io/js/script.manual.js`.
 
