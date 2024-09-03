@@ -23,6 +23,9 @@ File downloads tracking is essential for many site owners and Plausible helps yo
 
 You can enable "**File downloads**" as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
 
+<img alt="Enable outbound file downloads tracking during onboarding" src={useBaseUrl('img/onboarding-enable-file-downloads-tracking.png')} />
+
+
 After you enable file downloads tracking, we will automatically add a new goal called `File Download` to your site.
 
 ## Step 2: Change the snippet on your site
