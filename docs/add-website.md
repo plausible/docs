@@ -4,9 +4,7 @@ title: Add your website details
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-## Enter the domain name of the website you want to track
-
-Once you have an account, you can enter the domain name of the website you want to track. Umlauts and other special characters (including numbers, dots and slashes) are supported so you can add international domain names too. 
+Once you have an account, you can enter the domain name of the website you want to track. Umlauts and other special characters (including numbers, dots and slashes) are supported so you can add international domain names too.
 
 Please, remove `https` and `www` from the URL, just keep the `hostname`. For example, if your site is `https://www.yourdomain.com` then the part to enter in the "**Domain**" field is `yourdomain.com`.
 
