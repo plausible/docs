@@ -12,7 +12,7 @@ Click on the menu icon on the right-hand side of the site you'd like to get the 
 
 There you can also enable any [optional enhanced measurements](script-extensions.md). Note that the snippet changes depending on your selection of optional measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected.
 
-<img alt="Plausible Analytics" src={useBaseUrl('img/list-of-sites.png')} />
+<img alt="Add script extensions and verify your installation" src={useBaseUrl('img/add-script-extensions-verify-installation.png')} />
 
 ## Check out integration guides for popular site builders and CMSs
 
