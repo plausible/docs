@@ -26,6 +26,8 @@ You can add multiple filters to [create audience segments](filters-segments.md) 
 
 You can enable "**Ecommerce revenue**" as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
 
+<img alt="Enable revenue tracking during onboarding" src={useBaseUrl('img/onboarding-enable-revenue-tracking.png')} />
+
 ## Step 2: Change the snippet on your site
 
 The tracking snippet changes depending on your selection of optional measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected. We display your snippet during the process of adding a new site to your account. You can also see the snippet within the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
