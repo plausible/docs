@@ -4,13 +4,9 @@ title: Add your website details
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Once you have an account, you can enter the domain name of the website you want to track. Umlauts and other special characters (including numbers, dots and slashes) are supported so you can add international domain names too.
+Once you have an account, you can enter the domain name of the website you want to track. Please, remove `https` and `www` from the URL, just keep the `hostname`. For example, if your site is `https://www.yourdomain.com` then the part to enter in the "**Domain**" field is `yourdomain.com`.
 
-Please, remove `https` and `www` from the URL, just keep the `hostname`. For example, if your site is `https://www.yourdomain.com` then the part to enter in the "**Domain**" field is `yourdomain.com`.
-
-After you add your domain, we will provide you with the tracking snippet that you need to [insert into your site](plausible-script.md) to start counting your stats.
-
-Does your site operate on multiple subdomains such as `docs.yourdomain.com` and `app.yourdomain.com`? Simply add your main domain name (`yourdomain.com`) to your Plausible account and use that tracking snippet on all your subdomains too. This keeps the visitor session [active between the main site and its subdomains](subdomain-hostname-filter.md).
+Does your site operate on multiple subdomains such as `docs.yourdomain.com` and `app.yourdomain.com`? Simply add your main domain name (`yourdomain.com`) to your Plausible account and use the same tracking snippet on all your subdomains. This keeps the visitor session [active between the main site and its subdomains](subdomain-hostname-filter.md).
 
 If you'd like to track a particular subdomain independently from the rest of your site, you can do that too. For example, if the subdomain you want to track on its own is `https://blog.yourdomain.com` then the part to enter in the "**Domain**" field is `blog.yourdomain.com`.
 
@@ -28,4 +24,4 @@ For instance, if you select "**(GMT+01:00) Amsterdam, Berlin…**" then the begi
 
 The best practice is to set the timezone that reflects the location of your audience or if the audience is very broad and spread across the world to set the timezone of your location.
 
-Click on the "**Add snippet**" button to go to the next step.
+Click on the "**Add snippet**" button to go to the next step where we will provide you with the tracking snippet that you need to [insert into your site](plausible-script.md) to start counting your stats.
