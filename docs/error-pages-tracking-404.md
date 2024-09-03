@@ -22,6 +22,8 @@ Tracking 404 error pages is essential for many site owners and Plausible helps y
 
 You can enable "**404 error pages**" as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
 
+<img alt="Enable 404 tracking during onboarding" src={useBaseUrl('img/onboarding-enable-404-tracking.png')} />
+
 After you enable 404 error pages tracking, we will automatically add a new goal called `404` to your site.
 
 :::tip Using Google Tag Manager to integrate Plausible?
