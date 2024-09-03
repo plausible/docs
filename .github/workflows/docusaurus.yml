@@ -34,3 +34,9 @@ jobs:
         remote_host: ${{ secrets.DEPLOY_STATIC_SITE_HOST }}
         remote_user: ${{ secrets.DEPLOY_STATIC_SITE_USER }}
         remote_key: ${{ secrets.DEPLOY_STATIC_SITE_KEY }}
+
+    - name: Purge BunnyCDN cache
+      uses: eayllon/bunnycdn-purge-cache@253ab627f8e743b4d7f96e7020e8bc04377ac49d
+      with:
+        accessKey: ${{ secrets.BUNNY_API_KEY }}
+        zoneID: ${{ secrets.BUNNY_ZONE_ID }}
