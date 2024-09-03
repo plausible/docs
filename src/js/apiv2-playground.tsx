@@ -34,7 +34,7 @@ export function ApiV2Playground() {
     <Fragment>
       <div className="playground-run-code">
         <select
-          value={selectedSite}
+          value={id}
           onChange={(e) => setExample(e.target.value)}
           title="Select example query"
         >
