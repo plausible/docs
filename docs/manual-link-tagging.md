@@ -44,11 +44,9 @@ Please [follow these instructions](stop-tracking-utm-tags.md)
 
 ## Segment between organic traffic and paid marketing campaigns
 
-Did you know that UTMs and other query parameters are case-sensitive? This means that traffic from utm_source=Facebook and utm_source=facebook will appear as separate entries in the "**Top Sources**" report on the Plausible dashboard. Specifically, you'll see one entry as "Facebook" and another as "facebook".
+For granular insights into your paid campaigns, you can segment the traffic by paid marketing campaign clicks by using the "**Medium**", "**Source**", "**Campaign**", "**Term**" and "**Content**" sections of the "**Top Sources**" report in your Plausible dashboard.
 
-Do note that in the "**Top Sources**" report, we consolidate identical sources. For example, organic clicks from Facebook are automatically labeled as "Facebook" by the platform itself. If you also tag certain links shared on Facebook such as your paid ads with utm_source=Facebook (note the capital F), those clicks will be combined with the organic Facebook clicks in one "Facebook" entry in the "**All**" tab of the "**Top Sources**" report.
-
-For granular insights into your paid campaigns isolated from the organic clicks, you can segment the traffic by paid marketing campaign clicks using the "**Medium**", "**Source**", "**Campaign**", "**Term**", and "**Content**" reports.
+You can also use [the "**Filter**" button on the top of your dashboard](filters-segments.md) to filter the stats by multiple UTM tags at the same time for more powerful segmenting of traffic. It's also possible to filter out traffic from a specific UTM tag.
 
 :::tip Does your site use custom query parameters in URLs?
 A page like `yoursite.com/blog/index.php?article=some_article&page=11` will be reported as `yoursite.com/blog/index.php` in the "**Top Pages**" report of your Plausible dashboard as we strip custom parameters. You can manually enable these custom parameters to be tracked. [See how here](custom-query-params.md).
