@@ -48,6 +48,8 @@ That's it! Now you can go to your website and verify whether Plausible Analytics
 
 * You can enable "**404 error pages**" as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md). After you enable 404 error pages tracking, we will automatically add a new goal called `404` to your site
 
+<img alt="Enable 404 tracking during onboarding" src={useBaseUrl('img/onboarding-enable-404-tracking.png')} />
+
 * The tracking snippet will change after your selection of "**404 error pages**" as an optional measurement. Do ensure to paste the newest snippet into your "**Custom HTML**" tag for all tracking to work as expected
 
 * Create a new GTM Variable called "**Page Not Found**" with type "**Custom JavaScript**"
