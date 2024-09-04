@@ -52,17 +52,35 @@ That's it! Now you can go to your website and verify whether Plausible Analytics
 
 * The tracking snippet will change after your selection of "**404 error pages**" as an optional measurement. Do ensure to paste the newest snippet into your "**Custom HTML**" tag for all tracking to work as expected
 
-* Create a new GTM Variable called "**Page Not Found**" with type "**Custom JavaScript**"
+* Create a new GTM Variable 
 
-<img alt="Create new GTM Variable called Page Not Found" src={useBaseUrl('img/new-gtm-variable.png')} />
+<img alt="Create new GTM Variable " src={useBaseUrl('img/GTM-create-new-variable.png')} />
 
-* Create a new GTM Trigger called "**Page Not Found Trigger**" with type "**DOM Ready**"
+* Name the new variable "**Page Not Found**" and set the type to "**Custom JavaScript**"
 
-<img alt="Create new GTM Trigger" src={useBaseUrl('img/new-gtm-trigger.png')} />
+<img alt="New GTM variable name and type" src={useBaseUrl('img/GTM-variable-name-and-type.png')} />
+
+* Create a new GTM Trigger 
+
+<img alt="Create new GTM trigger" src={useBaseUrl('img/GTM-create-trigger.png')} />
+
+* Name the new trigger "**Page Not Found Trigger**" and set the type to "**Page View**" and "**DOM Ready**"
+
+<img alt="New GTM trigger name and type" src={useBaseUrl('img/GTM-trigger-name-and-type.png')} />
+
+* Add the following function to the trigger's field
+
+```javascript
+    function() {
+  return typeof pageNotFound === 'undefined' ? 0 : pageNotFound;
+}
+```
+
+<img alt="New GTM trigger code" src={useBaseUrl('img/GTM-variable-code.png')} />
 
 * Make sure that the "**Page Not Found Trigger**" only fires on "**Some DOM Ready Events**" where "**Page Not Found**" variable is "**greater than equal to 1**"
   
-<img alt="Make Page Not Found variable greater than equal to 1" src={useBaseUrl('img/page-not-found-gtm-variable.png')} />
+<img alt="New GTM trigger references" src={useBaseUrl('img/GTM-trigger-fire.png')} />
 
 * Add the following line within the `body` section of your website's 404 page template. For instance, if you're using WordPress, your 404 page template will be called `404.php` and it will be located within your theme files
 
