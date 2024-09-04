@@ -6,23 +6,25 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 You can use "**Google Tag Manager**" to add Plausible Analytics tracking code to your website.
 
-* In your Google Tag Manager account, click on "**Add a new tag**"
+* In your Google Tag Manager account, add a new tag
   
 <img alt="Add new tag" src={useBaseUrl('img/add-new-tag.png')} />
 
-* Click on the "**Choose a tag type to begin setup**"
+* Edit the tag configuration
 
 <img alt="Choose tag type" src={useBaseUrl('img/choose-type-to-begin.png')} />
 
-* Use the search functionality to search for "**Custom HTML**"
+* Choose "**Custom HTML**" for the tag type
   
 <img alt="HTML tag" src={useBaseUrl('img/custom-html-tag.png')} />
 
 * Paste your Plausible JavaScript tracking snippet in the "**HTML**" field within the "**Custom HTML**" section. Do note that Plausible will automatically detect that you're using Google Tag Manager and will present you a GTM-dedicated snippet that you need to use. We will display your snippet during the process of adding a new site to your account. If you've already added the site to your Plausible account, you can see the snippet within the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
 
-* After pasting the snippet, click to "**Choose a trigger to make this tag fire**"
-  
 <img alt="Paste Plausible script" src={useBaseUrl('img/paste-plausible-script.png')} />
+
+* After pasting the snippet, add a trigger to make this tag fire
+
+<img alt="trigger to fire script" src={useBaseUrl('img/add-tag-trigger.png')} />  
 
 * Select the "**All Pages**" and filter "**Page View**" as the trigger if you want to count all your pages
   
