@@ -1,13 +1,22 @@
 {
-  "results": [{"metrics": [4], "dimensions": []}],
+  "results": [{"metrics": [14], "dimensions": []}],
   "meta": {},
   "query": {
     "site_id": "dummy.site",
     "metrics": ["visitors"],
-    "date_range": ["2024-08-14", "2024-08-20"],
+    "date_range": [
+      "2024-08-29T00:00:00 Europe/Tallinn",
+      "2024-09-04T23:59:59 Europe/Tallinn"
+    ],
     "filters": [
       ["contains", "event:page", ["/docs", "/pricing"]],
-      ["is", "visit:country_name", ["Estonia", "United States of America"]]
+      [
+        "or",
+        [
+          ["not", ["is", "visit:utm_campaign", ["Referral"]]],
+          ["is", "visit:country_name", ["Estonia", "United States of America"]]
+        ]
+      ]
     ],
     "dimensions": [],
     "order_by": [["visitors", "desc"]],

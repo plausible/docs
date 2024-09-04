@@ -171,9 +171,13 @@ Note that:
 
 Default: `[]`
 
-Filters allow limiting the data analyzed in a query. Each filter takes the form of `[operator, dimension, clauses]`. [See example](#example-filtering).
+Filters allow limiting the data analyzed in a query. [See example](#example-filtering).
 
-**operators**
+#### Simple filters
+
+Each simple filter takes the form of `[operator, dimension, clauses]`.
+
+##### operators
 
 The following operators are currently supported:
 
@@ -182,15 +186,27 @@ The following operators are currently supported:
 | `is` | `["is", "visit:country_name", ["Germany", "Poland"]]` | Sessions originating from Germany or Poland. |
 | `is_not` | `["is_not", "event:page", ["/pricing"]]` | Events that did not visit /pricing page |
 | `contains` | `["contains", "event:page", ["/login"]]` | Events visited any page containing /login |
-| `does_not_contain` | `["contains", "event:page", ["docs", "pricing"]]` | Events that did not visit any page containing docs or pricing |
+| `contains_not` | `["contains_not", "event:page", ["docs", "pricing"]]` | Events that did not visit any page containing docs or pricing |
+| `matches` | `["matches", "event:page", ["^/user/\d+$"]]` | Events where page matches regular expression `^/user/\d+$`. [Uses re2 syntax](https://github.com/google/re2/wiki/Syntax) |
+| `matches_not` | `["matches", "event:page", ["^/user/\d+$"]]` | Events where page does not match regular expression `^/user/\d+$`. [Uses re2 syntax](https://github.com/google/re2/wiki/Syntax) |
 
-**dimension**
+##### dimension
 
 [Event and visit dimensions](#dimensions) are valid for filters.
 
 Note that only `is` operator is valid for `event:goal` dimension.
 
-**clauses**
+### Logical operations
+
+| Operator | Example | Explanation |
+| -- | -- | -- |
+| `and` | `["and", [["is", "visit:country_name", ["Germany"]]], ["is", "visit:city_name", ["Berlin"]]]]` | Sessions originating from Berlin, Germany |
+| `or` | `["and", [["is", "visit:country_name", ["Germany"]]], ["is", "visit:city_name", ["Tallinn"]]]]` | Sessions originating from Germany or city of Tallinn |
+| `not` | `["not", ["is", "visit:country_name", ["Germany"]]]` | Sessions not originating from Germany |
+
+Note that top level filters is wrapped in an implicit `and`.
+
+##### clauses
 
 List of values to match against. A data point matches filter if _any_ of the clauses matches.
 
