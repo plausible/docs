@@ -132,6 +132,10 @@ To include a space character in the query part of the URL, you can use `%20` (a 
 
 Aggregates, timeseries and breakdowns support including imported stats in the results using `with_imported` option, with limitations. Breakdowns for custom properties (`event:props:*`) are only supported for 2 properties: `url` and `path`. Additionally, these breakdowns will only work in combination with a [certain subset](/csv-import#goals-and-custom-properties) of `event:goal` filters.
 
+#### Timeseries intervals
+
+Since imported data is aggregated for each date, it cannot be included in timeseries queries with an hourly interval (i.e. when querying for a `day` period in Timeseries).
+
 #### Filtering imported stats
 
 Filtering by imported data is limited. The general rule is that you cannot filter by two different properties at the same time.
