@@ -63,3 +63,5 @@ You can choose to segment your traffic by any one specific hostname from the lis
 Learn more on how Plausible [handles cross-subdomain tracking here](subdomain-hostname-filter.md).
 
 <img alt="List of subdomains" src={useBaseUrl('img/list-of-hostnames-and-subdomains.png')} />
+
+P.S. We've written an in-depth guide on effective use of audience segmentation, you can [read it here](https://plausible.io/audience-segmentation).
