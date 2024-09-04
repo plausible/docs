@@ -1,16 +1,19 @@
 {
   "results": [
-    {"metrics": [98467], "dimensions": ["Google"]},
-    {"metrics": [97775], "dimensions": ["Direct / None"]},
-    {"metrics": [97333], "dimensions": ["Twitter"]},
-    {"metrics": [97281], "dimensions": ["Facebook"]},
-    {"metrics": [96571], "dimensions": ["DuckDuckGo"]}
+    {"metrics": [106337], "dimensions": ["Facebook"]},
+    {"metrics": [105879], "dimensions": ["Google"]},
+    {"metrics": [104126], "dimensions": ["Direct / None"]},
+    {"metrics": [103529], "dimensions": ["Twitter"]},
+    {"metrics": [101513], "dimensions": ["DuckDuckGo"]}
   ],
-  "meta": {},
+  "meta": {"imports_included": true},
   "query": {
     "site_id": "dummy.site",
     "metrics": ["visitors"],
-    "date_range": ["2021-09-04", "2024-08-20"],
+    "date_range": [
+      "2021-09-20T00:00:00 Europe/Tallinn",
+      "2024-09-04T23:59:59 Europe/Tallinn"
+    ],
     "filters": [],
     "dimensions": ["visit:source"],
     "order_by": [["visitors", "desc"]],

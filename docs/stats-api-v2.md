@@ -265,7 +265,9 @@ If true, tries to include imported data in the result. See [imported stats](#imp
   For example, you can set a `country` dimension and filter by both `city` and `region`.
 </details>
 
-If the applied combination of filters and dimensions is not supported for imported stats, the results are still returned based only on native stats and `meta.warning` response key will be set. [See example](#example-imports-warning)
+If set, `meta.imports_included` field will be set as a boolean.
+
+If the applied combination of filters and dimensions is not supported for imported stats, the results are still returned based only on native stats and. In this case, `meta.imports_skip_reason` and `meta.imports_warning` response fields will contain more information on why including imported data failed. [See example](#example-imports-warning)
 
 #### include.time_labels {#include.time_labels}
 
