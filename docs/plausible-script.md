@@ -1,5 +1,5 @@
 ---
-title: Add the tracking snippet to your website
+title: Add the snippet to your website
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -14,6 +14,10 @@ There you can also enable any [optional enhanced measurements](script-extensions
 
 <img alt="Add script extensions and verify your installation" src={useBaseUrl('img/add-script-extensions-verify-installation.png')} />
 
+:::tip Want to track visitors across your domain and its subdomains?
+You can add your main domain name as a site to your Plausible account and use that same tracking snippet on all your subdomains too. This keeps the visitor session active between your main site and its subdomains. Here's [how it works](subdomain-hostname-filter.md).
+:::
+
 ## Check out integration guides for popular site builders and CMSs
 
 Installing Plausible on a site can be a slightly different process depending on what tools you're using to manage your site.
@@ -26,11 +30,7 @@ Installing Plausible on a site can be a slightly different process depending on 
 
 * Prefer to avoid JavaScript and use server side tracking instead? We have [the events API for that](events-api.md).
   
-* We've put together [several other guides and plugins](integration-guides.md) that cover popular website builders, content management systems (CMS) and frameworks. These can help you set up and start counting your site visitors in no time.
-
-## Can I track visitors across my domain and subdomain?
-
-Yes, you can add your main domain name as a site to your Plausible account and use that same tracking snippet on all your subdomains too. This keeps the visitor session active between your main site and its subdomains. Here's [more details on how it works](subdomain-hostname-filter.md).
+We've put together [several other guides and plugins](integration-guides.md) that cover popular website builders, content management systems (CMS) and frameworks. These can help you set up and start counting your site visitors in no time.
 
 ## Can I send stats to multiple dashboards at the same time?
 
@@ -74,13 +74,4 @@ Here's how you can use it:
 
 ## How to check if Plausible Analytics is installed correctly 
 
-After adding the Plausible snippet to your website, you can use our testing tool to verify that the snippet is installed correctly and the integration is working:
-
-1. In your [Plausible account's sites landing page](https://plausible.io/sites), click on your website domain name
-2. If no traffic has been counted yet, you should see a blinking green dot which indicates that we’re listening for incoming pageviews in real-time
-3. Our testing tool will launch automatically from that screen and send test traffic to your site. This test traffic won't be recorded in the dashboard but you'll see a status message that indicates whether tracking is working or not
-4. There are no delays in stats with Plausible. Everything is live. Once the first real visitor comes to your site, you'll be automatically taken to the stats dashboard with graphs and numbers, indicating that the integration is working. Congrats! Plausible is now tracking your website statistics while preserving the privacy of your visitors
-
-If something looks off in your stats, you can launch our integration verification testing tool at any time [from your site settings](website-settings.md).
-
-Have some issues with the integration? Take a look at [our guide to troubleshooting your Plausible Analytics integration](troubleshoot-integration.md).
+After adding the Plausible snippet to your website, you can use our testing tool to verify that the snippet is installed correctly and the integration is working. Have some issues with the integration? Take a look at [our guide to troubleshooting your Plausible Analytics integration](troubleshoot-integration.md).
