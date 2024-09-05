@@ -23,7 +23,7 @@ First for the analytics script:
 - Use *Legacy cache settings*
 
 :::note
-Make sure that the **Origin Reques** setting for the *script.js* is empty
+Make sure that the Origin Reques setting for the script.js is empty
 :::
 
 And another for the event API:
