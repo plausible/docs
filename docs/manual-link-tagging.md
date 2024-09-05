@@ -44,9 +44,11 @@ Please [follow these instructions](stop-tracking-utm-tags.md)
 
 ## Segment between organic traffic and paid marketing campaigns
 
-We merge all identical sources in the “**All**” tab of the “**Top Sources**” report in your Plausible dashboard. For instance, clicks that you get from Facebook which are not tagged by UTMs are labeled with a referral source Facebook by Facebook itself. If you tag some links that you share on Facebook with the utm_source=Facebook or utm_source=facebook, clicks on those we will merge alongside other Facebook clicks in the “All” tab. This is in order to make it easier for you to keep track and get a combined overview of all the clicks from Facebook.
+Note that UTM tags are case sensitive. In the "**Top Sources**" report of your Plausible dashboard, each source is consolidated into a single entry regardless of capitalization stemming from UTM tagging differences.
 
-For granular insights into your paid campaigns and to isolate your UTM tagged clicks from the organic clicks, you can segment the traffic by paid marketing campaign clicks by using the "**UTM Medium**", "**UTM Source**", "**UTM Campaign**", "**UTM UTM Content**" sections of the "**Top Sources**" report.
+For instance, clicks that you get from Facebook which are not tagged by UTMs are labeled with a referral source "**Facebook**" by Facebook itself. If you tag some links that you share on Facebook with the utm_source=facebook, clicks on those links will be consolidated alongside other Facebook clicks in the "**Facebook**" source in the “**All**” tab of the "**Top Sources**" report. This is in order to make it easier for you to keep track and get a combined overview of all the clicks from Facebook.
+
+Want to see the specific source data? Just click on any entry to see specific source breakdowns or explore the "**Campaigns**" tab of the "**Top Sources**" report. To isolate your UTM tagged clicks from the organic clicks, you can segment the traffic by using the "**UTM Medium**", "**UTM Source**", "**UTM Campaign**", "**UTM Content**" and "**UTM Term**" reports within the "**Campaigns**" tab.
 
 You can also use [the "**Filter**" button on the top of your dashboard](filters-segments.md) to filter the stats by multiple UTM tags at the same time for more powerful segmenting of traffic. It's also possible to filter out traffic from a specific UTM tag.
 
