@@ -1,5 +1,5 @@
 ---
-title: How to check if Plausible Analytics is installed correctly 
+title: Check if Plausible is installed correctly
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
