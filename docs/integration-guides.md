@@ -136,7 +136,7 @@ If you're using a frontend framework that uses the URL hash for routing, you nee
 
 ## HelpDocs
 
-[HelpDocs]([https://github.com/maaaaarco/hexo-plausible-analytics](https://support.helpdocs.io/article/63zwj1o9vy-connecting-plausible-analytics)): Native Plausible integration to make it easy for you to work out how customers are behaving on your Knowledge Base, in a secure and privacy-compliant way.
+[HelpDocs](https://github.com/maaaaarco/hexo-plausible-analytics](https://support.helpdocs.io/article/63zwj1o9vy-connecting-plausible-analytics): Native Plausible integration to make it easy for you to work out how customers are behaving on your Knowledge Base, in a secure and privacy-compliant way.
 
 ## Hexo
 
