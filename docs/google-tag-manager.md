@@ -133,3 +133,34 @@ That's it! Now you can go to your website and verify whether Plausible Analytics
 ```
 
 For more details on custom properties, do check out the [custom properties guide](custom-props/introduction.md).
+
+
+## GTM Containers ready to import
+
+If you prefer to get up and running with Plausible as quickly as possible, we have two containers that require minimal edits: 
+
+- [Plausible Integration](https://plausible.io/docs/files/Plausible-GTM-Integration.json) - default script.js tracking
+- [Plausible Full Integration](https://plausible.io/docs/files/Plausible-GTM-full-integration.json) - includes script extensions, props and 404 tracking
+
+## How to use the Plausible GTM containers
+
+* Navigate to the **Admin** section of your container's workspace
+
+<img alt="GTM admin" src={useBaseUrl('img/GTM-admin.png')} />
+
+* Click on **Import Container**
+
+<img alt="GTM import container" src={useBaseUrl('img/GTM-import-container.png')} />
+
+* Select the downloaded .json file we provided and make sure to select **merge**
+
+<img alt="Select container and merge" src={useBaseUrl('img/GTM-import-merge-container.png')} />
+
+* If you chose the default tracking container, make sure to edit the new Plausible Analytics tag and change **yourdomain.com** to the name of your dashboard. 
+
+<img alt="GTM container change domain" src={useBaseUrl('img/GTM-change-domain.png')} />
+
+* If you chose the full integration container, make sure to change the domain name as well as deleting the script extension that you don't need and add your own custom props. 
+
+<img alt="GTM container change domain extensions and props" src={useBaseUrl('img/GTM-change-domain-extensions-props.png')} />
+
