@@ -24,13 +24,13 @@ You can add multiple filters to [create audience segments](filters-segments.md) 
 
 ## Step 1: Enable "Ecommerce revenue" for your site
 
-You can enable "**Ecommerce revenue**" as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
+You can enable "**Ecommerce revenue**" as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
 
 <img alt="Enable revenue tracking during onboarding" src={useBaseUrl('img/onboarding-enable-revenue-tracking.png')} />
 
 ## Step 2: Change the snippet on your site
 
-The tracking snippet changes depending on your selection of optional measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected. We display your snippet during the process of adding a new site to your account. You can also see the snippet within the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
+The tracking snippet changes depending on your selection of optional measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected.
 
 Your Plausible tracking snippet should be inserted into [the Header (`<head>`) section of your site](plausible-script.md). Place the tracking script within the `<head> … </head>` tags.
 
@@ -76,7 +76,7 @@ If you're running your ebusiness using WooCommerce, you can use our official Wor
 
 [Plausible Analytics WordPress plugin](https://wordpress.org/plugins/plausible-analytics/) has a built-in support for tracking of WooCommerce store activity. 
 
-In the "Enhanced measurements" section of our WordPress plugin settings, enable the "Ecommerce revenue" option. This will automatically set up and start tracking several WooCommerce custom events:
+In the "**Enhanced measurements**" section of our WordPress plugin settings, enable the "**Ecommerce revenue**" option. This will automatically set up and start tracking several WooCommerce custom events:
 
 * Add to Cart
 * Remove from Cart
