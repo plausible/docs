@@ -30,7 +30,7 @@ If you're not a Shopify Plus merchant, you can go to "Settings" and "Checkout an
 
 After doing that, you will start seeing pageviews for page paths that include "/checkouts/" and "/thank_you" in the "**Top Pages**" report of your Plausible Analytics dashboard. You can group all visits to checkout pages (or all order confirmations) into one set of pages in your Plausible dashboard to better analyze your marketing campaigns and performance.
 
-Click on the "Filter" button on the top right of your dashboard and then choose "Page". Here you can combine URLs to analyze them as one group. Filter by "**contains**" `thank_you` to combine all the purchase confirmations or by "**contains**" `checkouts` to group all the checkouts. 
+Click on the "**Filter**" button on the top right of your dashboard and then choose "**Page**". Here you can combine URLs to analyze them as one group. Filter by "**contains**" `thank_you` to combine all the purchase confirmations or by "**contains**" `checkouts` to group all the checkouts. 
 
 Doing this will segment your dashboard by the traffic that went through the checkout process and successfully placed orders. You'll be able to see the referral sources and landing pages that drove the most conversions. You'll also be able to see the location and device details of the buyers too.
 
@@ -40,7 +40,7 @@ If you'd like to see these grouped order confirmations or checkout page visits p
 
 ## How to track ecommerce revenue and attribution
 
-You can [track sales](https://plausible.io/docs/ecommerce-revenue-tracking) by making a few changes to the order status page.
+You can [track sales revenue](ecommerce-revenue-tracking.md) by making a few changes to the order status page:
 
 1. Go to your Shopify admin page
 2. Click on Settings > Checkout > Order status page
@@ -63,9 +63,7 @@ You can [track sales](https://plausible.io/docs/ecommerce-revenue-tracking) by m
 
 You're now getting events on Plausible when a customer completes an order in your Shopify store.
 
-If you want to track custom properties, such as order IDs or the number of items in an order, here's an example to get you started.
-
-Don't forget to add the custom properties `orderId` and `itemCount` in the Plausible UI, as well.
+If you want to track custom properties, such as order IDs or the number of items in an order, here's an example to get you started. Don't forget to add the custom properties `orderId` and `itemCount` in the Plausible UI, as well.
 
 ```
 {% if first_time_accessed == true and post_purchase_page_accessed == false %}
@@ -88,6 +86,8 @@ Don't forget to add the custom properties `orderId` and `itemCount` in the Plaus
 <img alt="Shopify Additional scripts box" src={useBaseUrl('img/shopify-additional-scripts-revenue-metrics.png')} />
 
 5. Click 'Save' and you're done!
+
+Learn more [about custom properties here](/custom-props/introduction.md). 
 
 ## How to track form submissions and button clicks on Shopify
 
@@ -163,7 +163,7 @@ Next, click on the "**Add goal**" button and you'll be taken back to the Goals p
 
 Your goal should now be set up. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who triggered the custom event. Goal conversions are listed at the very bottom of the dashboard. The goal will show up in your dashboard as soon as it has been completed at least once.
 
-## Triggering multiple custom events on the same page
+### How to trigger multiple custom events on the same page
 
 If you want to trigger multiple custom events on the same site, you don't need to add the script for each element that you want to track. Simply add all the elements in the same code. Make sure to **only add** the elements that already exist on your site. For example, if you want to track a form and a button, the code will look like this:
 
