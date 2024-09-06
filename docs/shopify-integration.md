@@ -6,8 +6,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Here's how to add Plausible Analytics to your Shopify store and set up the tracking of events such as button clicks, form submissions, order confirmations and revenue attribution.
 
-## How to add Plausible to your Shopify store 
-
 * Log in to your Shopify account and click on Sales Channels > Online Store > Themes in the left-hand side menu.  
 
 * Click on the hamburger menu icon next to your current theme and choose "Edit code" from the drop-down menu.
@@ -39,6 +37,57 @@ Doing this will segment your dashboard by the traffic that went through the chec
 If you'd like to see these grouped order confirmations or checkout page visits permanently in your dashboard, you can add them as [pageview goals](pageview-goals.md).
 
 <img alt="Shopify thank you page tracking" src={useBaseUrl('img/shopify-thank-you-page-goal.png')} />
+
+## How to track ecommerce revenue and attribution
+
+You can [track sales](https://plausible.io/docs/ecommerce-revenue-tracking) by making a few changes to the order status page.
+
+1. Go to your Shopify admin page
+2. Click on Settings > Checkout > Order status page
+
+<img alt="Shopify Settings" src={useBaseUrl('img/shopify-settings-revenue-metrics.png')} />
+<img alt="Shopify Checkout menu" src={useBaseUrl('img/shopify-settings-checkout-revenue-metrics.png')} />
+
+3. Add the following code to 'Additional scripts'. Don't forget to replace `yourdomain.com` and `Purchase` with the goal name you created
+
+```liquid
+{% if first_time_accessed == true and post_purchase_page_accessed == false %}
+<script data-domain="yourdomain.com" src="https://plausible.io/js/script.manual.revenue.js"></script>
+<script>
+  const amount = "{{ total_price | money_without_currency | replace:',','.' }}"
+  const currency = "{{ currency }}"
+  window.plausible("Purchase", {revenue: {amount: amount, currency: currency}})
+</script>
+{% endif %}
+```
+
+You're now getting events on Plausible when a customer completes an order in your Shopify store.
+
+If you want to track custom properties, such as order IDs or the number of items in an order, here's an example to get you started.
+
+Don't forget to add the custom properties `orderId` and `itemCount` in the Plausible UI, as well.
+
+```
+{% if first_time_accessed == true and post_purchase_page_accessed == false %}
+<script data-domain="yourdomain.com" src="https://plausible.io/js/script.manual.revenue.pageview-props.js"></script>
+<script>
+  const amount = "{{ total_price | money_without_currency | replace:',','.' }}"
+  const currency = "{{ currency }}"
+
+  const orderId = "{{ order_number }}"
+  const itemCount = {{ item_count }}
+
+  window.plausible("Purchase", {
+    revenue: {amount: amount, currency: currency},
+    props: {orderId: orderId, itemCount: itemCount}
+  })
+</script>
+{% endif %}
+```
+
+<img alt="Shopify Additional scripts box" src={useBaseUrl('img/shopify-additional-scripts-revenue-metrics.png')} />
+
+5. Click 'Save' and you're done!
 
 ## How to track form submissions and button clicks on Shopify
 
@@ -143,54 +192,3 @@ If you want to trigger multiple custom events on the same site, you don't need t
 ```
 
 <img alt="track multiple elements in Shopify" src={useBaseUrl('img/track-multiple-elements-shopify.png')} />
-
-## Ecommerce revenue and attribution tracking 
-
-You can [track sales](https://plausible.io/docs/ecommerce-revenue-tracking) by making a few changes to the order status page.
-
-1. Go to your Shopify admin page
-2. Click on Settings > Checkout > Order status page
-
-<img alt="Shopify Settings" src={useBaseUrl('img/shopify-settings-revenue-metrics.png')} />
-<img alt="Shopify Checkout menu" src={useBaseUrl('img/shopify-settings-checkout-revenue-metrics.png')} />
-
-3. Add the following code to 'Additional scripts'. Don't forget to replace `yourdomain.com` and `Purchase` with the goal name you created
-
-```liquid
-{% if first_time_accessed == true and post_purchase_page_accessed == false %}
-<script data-domain="yourdomain.com" src="https://plausible.io/js/script.manual.revenue.js"></script>
-<script>
-  const amount = "{{ total_price | money_without_currency | replace:',','.' }}"
-  const currency = "{{ currency }}"
-  window.plausible("Purchase", {revenue: {amount: amount, currency: currency}})
-</script>
-{% endif %}
-```
-
-You're now getting events on Plausible when a customer completes an order in your Shopify store.
-
-If you want to track custom properties, such as order IDs or the number of items in an order, here's an example to get you started.
-
-Don't forget to add the custom properties `orderId` and `itemCount` in the Plausible UI, as well.
-
-```
-{% if first_time_accessed == true and post_purchase_page_accessed == false %}
-<script data-domain="yourdomain.com" src="https://plausible.io/js/script.manual.revenue.pageview-props.js"></script>
-<script>
-  const amount = "{{ total_price | money_without_currency | replace:',','.' }}"
-  const currency = "{{ currency }}"
-
-  const orderId = "{{ order_number }}"
-  const itemCount = {{ item_count }}
-
-  window.plausible("Purchase", {
-    revenue: {amount: amount, currency: currency},
-    props: {orderId: orderId, itemCount: itemCount}
-  })
-</script>
-{% endif %}
-```
-
-<img alt="Shopify Additional scripts box" src={useBaseUrl('img/shopify-additional-scripts-revenue-metrics.png')} />
-
-5. Click 'Save' and you're done!
