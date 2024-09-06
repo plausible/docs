@@ -139,8 +139,8 @@ For more details on custom properties, do check out the [custom properties guide
 
 If you prefer to get up and running with Plausible as quickly as possible, we have two containers that require minimal edits: 
 
-- [Plausible Integration](https://plausible.io/docs/files/Plausible-GTM-Integration.json) - default script.js tracking
-- [Plausible Full Integration](https://plausible.io/docs/files/Plausible-GTM-full-integration.json) - includes script extensions, props and 404 tracking
+- [Plausible Integration](https://raw.githubusercontent.com/plausible/docs/master/static/files/Plausible-GTM-Integration.json)) - default script.js tracking
+- [Plausible Full Integration](https://raw.githubusercontent.com/plausible/docs/master/static/files/Plausible-GTM-full-integration.json)) - includes script extensions, props and 404 tracking
 
 ## How to use the Plausible GTM containers
 
