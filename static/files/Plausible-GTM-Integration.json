@@ -1,0 +1,107 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2024-08-29 12:00:11",
+    "containerVersion": {
+        "path": "accounts/6242226806/containers/194156347/versions/0",
+        "accountId": "6242226806",
+        "containerId": "194156347",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/6242226806/containers/194156347",
+            "accountId": "6242226806",
+            "containerId": "194156347",
+            "name": "Plausible GTM integration",
+            "publicId": "GTM-KPVKTNRR",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1724932155432",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6242226806/containers/194156347/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": false
+            },
+            "tagIds": [
+                "GTM-KPVKTNRR"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "6242226806",
+                "containerId": "194156347",
+                "tagId": "3",
+                "name": "Plausible Analytics",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  var script = document.createElement('script');\n  script.defer = true;\n  script.dataset.domain = \"yourdomain.com\";\n  script.dataset.api = \"https://plausible.io/api/event\";\n  script.src = \"https://plausible.io/js/script.js\";\n  document.getElementsByTagName('head')[0].appendChild(script);\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1724932231364",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "6242226806",
+                "containerId": "194156347",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "6242226806",
+                "containerId": "194156347",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "6242226806",
+                "containerId": "194156347",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "6242226806",
+                "containerId": "194156347",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "6242226806",
+                "containerId": "194156347",
+                "type": "EVENT",
+                "name": "Event"
+            }
+        ],
+        "fingerprint": "1724932810977",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6242226806/containers/194156347/versions/0?apiLink=version"
+    }
+}

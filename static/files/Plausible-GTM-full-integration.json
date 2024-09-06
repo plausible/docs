@@ -1,0 +1,152 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2024-08-29 12:07:56",
+    "containerVersion": {
+        "path": "accounts/6242226806/containers/194153952/versions/0",
+        "accountId": "6242226806",
+        "containerId": "194153952",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/6242226806/containers/194153952",
+            "accountId": "6242226806",
+            "containerId": "194153952",
+            "name": "Plausible GTM Integration Full",
+            "publicId": "GTM-WVCVN97H",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1724932923101",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6242226806/containers/194153952/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": false
+            },
+            "tagIds": [
+                "GTM-WVCVN97H"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "6242226806",
+                "containerId": "194153952",
+                "tagId": "3",
+                "name": "Plausible Analytics",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  var script = document.createElement('script');\n  script.defer = true;\n  script.dataset.domain = \"yourdomain.com\";\n  script.dataset.api = \"https://plausible.io/api/event\";\n  script.src = \"https://plausible.io/js/script.pageview-props.hash.outbound-links.file-downloads.tagged-events.revenue.js\";\n\n  script.setAttribute(\"event-author\", \"John Doe\");\n  script.setAttribute(\"event-logged_in\", \"true\");\n  // ... add a new line like above for each property\n\n  document.getElementsByTagName('head')[0].appendChild(script);\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1724933085632",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "6242226806",
+                "containerId": "194153952",
+                "triggerId": "5",
+                "name": "Page Not Found Trigger",
+                "type": "DOM_READY",
+                "filter": [
+                    {
+                        "type": "GREATER_OR_EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page Not Found}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "1"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1724933203755"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "6242226806",
+                "containerId": "194153952",
+                "variableId": "4",
+                "name": "Page Not Found",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  return typeof pageNotFound === 'undefined' ? 0 : pageNotFound;\n}\n"
+                    }
+                ],
+                "fingerprint": "1724933166556",
+                "formatValue": {}
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "6242226806",
+                "containerId": "194153952",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "6242226806",
+                "containerId": "194153952",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "6242226806",
+                "containerId": "194153952",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "6242226806",
+                "containerId": "194153952",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "6242226806",
+                "containerId": "194153952",
+                "type": "EVENT",
+                "name": "Event"
+            }
+        ],
+        "fingerprint": "1724933275983",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6242226806/containers/194153952/versions/0?apiLink=version"
+    }
+}
