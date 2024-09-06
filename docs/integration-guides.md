@@ -134,6 +134,10 @@ To track Google Chrome browser extensions with Plausible, you can [follow these 
 
 If you're using a frontend framework that uses the URL hash for routing, you need to use our hash-based tracker instead of the default one. [See more here](hash-based-routing.md)
 
+## HelpDocs
+
+[HelpDocs]([https://github.com/maaaaarco/hexo-plausible-analytics](https://support.helpdocs.io/article/63zwj1o9vy-connecting-plausible-analytics)): Native Plausible integration to make it easy for you to work out how customers are behaving on your Knowledge Base, in a secure and privacy-compliant way.
+
 ## Hexo
 
 [Hego plugin](https://github.com/maaaaarco/hexo-plausible-analytics): A simple Hexo plugin to inject Plausible script into your pages. Built and maintained by [Marco](https://spaghetti.dev/).
