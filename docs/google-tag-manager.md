@@ -138,10 +138,10 @@ For more details on custom properties, do check out the [custom properties guide
 
 If you prefer to get up and running with Plausible as quickly as possible, we have two Google Tag Manager containers that require minimal edits. Do right click the links below to download the linked files:
 
-- [Plausible Integration](https://raw.githubusercontent.com/plausible/docs/master/static/files/Plausible-GTM-Integration.json) - default script.js tracking
-- [Plausible Full Integration](https://raw.githubusercontent.com/plausible/docs/master/static/files/Plausible-GTM-full-integration.json) - includes script extensions, props and 404 tracking
+- [Plausible Integration](https://raw.githubusercontent.com/plausible/docs/master/static/files/Plausible-GTM-Integration.json) - For the default tracking snippet
+- [Plausible Full Integration](https://raw.githubusercontent.com/plausible/docs/master/static/files/Plausible-GTM-full-integration.json) - For tracking snippet that includes our optional enhanced measurements, custom properties and 404 error page tracking
 
-## How to import Plausible's GTM containers
+### How to import Plausible's GTM containers
 
 * Navigate to the **Admin** section of your container's workspace
 
@@ -155,10 +155,10 @@ If you prefer to get up and running with Plausible as quickly as possible, we ha
 
 <img alt="Select container and merge" src={useBaseUrl('img/GTM-import-merge-container.png')} />
 
-* If you chose the default tracking container, make sure to edit the new Plausible Analytics tag and change **yourdomain.com** to the name of your dashboard. 
+* If you chose the default tracking snippet container, make sure to edit the new Plausible Analytics tag and change **yourdomain.com** to the name of your dashboard
 
 <img alt="GTM container change domain" src={useBaseUrl('img/GTM-change-domain.png')} />
 
-* If you chose the full integration container, make sure to change the domain name as well as deleting the script extension that you don't need and add your own custom props. 
+* If you chose the full integration container that includes our optional enhanced measurements, make sure to change **yourdomain.com** to the name of your dashboard as well as to delete the script extensions that you don't need and to add the custom properties that you'd like to track as described above
 
 <img alt="GTM container change domain extensions and props" src={useBaseUrl('img/GTM-change-domain-extensions-props.png')} />
