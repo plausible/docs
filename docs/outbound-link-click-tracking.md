@@ -63,7 +63,7 @@ Check out this blog post for more details on the value of [tracking outbound lin
 
 ## How to disable "Outbound links" tracking for your site
 
-You can control what data is collected in the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
+You can control what data is collected in the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
 
 When making changes to your optional measurements, your snippet will change so do ensure to insert the newest snippet into your site for outbound link click tracking to stop. 
 
