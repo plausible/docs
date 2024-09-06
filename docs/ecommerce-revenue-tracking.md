@@ -72,84 +72,17 @@ This lets you track product names, coupon codes, if customers are logged in and 
 
 ## Integrating with WooCommerce
 
-If you're running your ebusiness using WooCommerce, you can use our official WordPress plugin.
+If you're running your ebusiness using WooCommerce, you can use our WordPress plugin. [Plausible WordPress plugin](https://wordpress.org/plugins/plausible-analytics/) has a built-in support for tracking of WooCommerce store activity including:
 
-[Plausible Analytics WordPress plugin](https://wordpress.org/plugins/plausible-analytics/) has a built-in support for tracking of WooCommerce store activity. 
+* Tracking of several custom events including actions such as add to cart, complete purchase and revenue
+* Tracking of several custom properties including product name and product category
+* A purchase funnel looking at the user journey from viewing a product to completing a purchase
 
-In the "**Enhanced measurements**" section of our WordPress plugin settings, enable the "**Ecommerce revenue**" option. This will automatically set up and start tracking several WooCommerce custom events:
-
-* Add to Cart
-* Remove from Cart
-* Start Checkout
-* Complete Purchase (including revenue)
-
-Several custom properties (also known as custom dimensions in Google Analytics) will start being recorded as well for further analysis:
-
-* product_type
-* product_cat
-* pa_color
-* tax
-* cart_total
-* cart_total_items
-* price
-* product_id
-* product_name
-* quantity
-* shipping
-* subtotal
-* subtotal_tax
-* tax_class
-* total
-* total_tax
-* variation_id
-
-A purchase funnel will be created as well looking at the user journey all the way from viewing a product to completing a purchase. This will help you see the drop-off rates between the different steps and understand your cart abandonment rate.
-
-All this is done automatically for you by our plugin and you don't need to manually set up any custom events nor make any changes to the code of your store.
-
-Check here for [more details about our WordPress plugin](https://plausible.io/wordpress-analytics-plugin).
+All this is done automatically for you by our plugin and you don't need to manually set up any custom events nor make any changes to the code of your store. Check here for [more details about our WordPress plugin](https://plausible.io/wordpress-analytics-plugin).
 
 ## Integrating with Shopify
 
-If you're using Shopify, you can track sales by making a few changes to the order status page.
-
-1. Integrate the regular Plausible snippet [into your Shopify store](shopify-integration.md) to start counting stats
-2. To start tracking revenue stats, go to your Shopify admin page, click on Settings > Checkout > Order status page
-3. Add the following code to 'Additional scripts'. Don't forget to replace `yourdomain.com` and `Purchase` with the goal name you created
-4. Click 'Save' and you're done!
-
-```liquid
-{% if first_time_accessed == true and post_purchase_page_accessed == false %}
-<script data-domain="yourdomain.com" src="https://plausible.io/js/script.manual.revenue.js"></script>
-<script>
-  const amount = "{{ total_price | money_without_currency | replace:',','.' }}"
-  const currency = "{{ currency }}"
-  window.plausible("Purchase", {revenue: {amount: amount, currency: currency}})
-</script>
-{% endif %}
-```
-
-You're now getting events on Plausible when a customer completes an order in your Shopify store.
-
-If you want to track custom properties, such as order IDs or the number of items in an order, here's an example to get you started:
-
-```
-{% if first_time_accessed == true and post_purchase_page_accessed == false %}
-<script data-domain="yourdomain.com" src="https://plausible.io/js/script.manual.revenue.pageview-props.js"></script>
-<script>
-  const amount = "{{ total_price | money_without_currency | replace:',','.' }}"
-  const currency = "{{ currency }}"
-
-  const orderId = "{{ order_number }}"
-  const itemCount = {{ item_count }}
-
-  window.plausible("Purchase", {
-    revenue: {amount: amount, currency: currency},
-    props: {orderId: orderId, itemCount: itemCount}
-  })
-</script>
-{% endif %}
-```
+If you're using Shopify, you can track sales and revenue by making a few changes to the order status page. See [our complete Shopify guide here](shopify-integration.md). 
 
 ## Integrating with Magento
 
