@@ -14,7 +14,7 @@ Custom events allow you to measure button clicks, purchases, subscription signup
 
 ## Step 1: Enable "Custom events" for your site
 
-You can enable "**Custom events**" as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
+You can enable "**Custom events**" as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
 
 <img alt="Enable custom events tracking during onboarding" src={useBaseUrl('img/onboarding-enable-custom-events-tracking.png')} />
 
