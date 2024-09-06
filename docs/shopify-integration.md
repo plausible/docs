@@ -4,7 +4,7 @@ title: Adding Plausible to Shopify (and tracking checkouts and order confirmatio
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Here's how to add Plausible Analytics to your Shopify store and set up the tracking of events such as button clicks, form submissions and order confirmations.
+Here's how to add Plausible Analytics to your Shopify store and set up the tracking of events such as button clicks, form submissions, order confirmations and revenue attribution.
 
 ## How to add Plausible to your Shopify store 
 
@@ -14,7 +14,7 @@ Here's how to add Plausible Analytics to your Shopify store and set up the track
 
 <img alt="Add Plausible to Shopify" src={useBaseUrl('img/add-custom-code-to-shopify.png')} />
 
-* In the "Layout" folder, select your "theme.liquid" file and [paste your Plausible snippet](https://plausible.io/docs/plausible-script) in the "**Head Code**" section. We display your snippet during the process of adding a new site to your account. You can also see the snippet within the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
+* In the "Layout" folder, select your "theme.liquid" file and [paste your Plausible snippet](https://plausible.io/docs/plausible-script) in the "**Head Code**" section. We display your snippet during the process of adding a new site to your account. You can also see the snippet within the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
 
 <img alt="Add Plausible Analytics script to Shopify" src={useBaseUrl('img/add-plausible-script-to-shopify.png')} />
 
@@ -32,7 +32,7 @@ If you're not a Shopify Plus merchant, you can go to "Settings" and "Checkout an
 
 After doing that, you will start seeing pageviews for page paths that include "/checkouts/" and "/thank_you" in the "**Top Pages**" report of your Plausible Analytics dashboard. You can group all visits to checkout pages (or all order confirmations) into one set of pages in your Plausible dashboard to better analyze your marketing campaigns and performance.
 
-Click on the "Filter" button on the top right of your dashboard and then choose "Page". Here you can combine URLs to analyze them as one group. Filter by `/**thank_you**` to combine all the purchase confirmations or by `/**checkouts**` to group all the checkouts. 
+Click on the "Filter" button on the top right of your dashboard and then choose "Page". Here you can combine URLs to analyze them as one group. Filter by "**contains**" `thank_you` to combine all the purchase confirmations or by "**contains**" `checkouts` to group all the checkouts. 
 
 Doing this will segment your dashboard by the traffic that went through the checkout process and successfully placed orders. You'll be able to see the referral sources and landing pages that drove the most conversions. You'll also be able to see the location and device details of the buyers too.
 
@@ -46,11 +46,11 @@ Here's how you can track particular form submissions and button clicks on your S
 
 ### 1. Enable "Custom events" for your site
 
-You can enable "**Custom events**" as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
+You can enable "**Custom events**" as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
 
 ### 2. Change the snippet on your site
 
-The tracking snippet changes depending on your selection of optional measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected. You can see the snippet within the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
+The tracking snippet changes depending on your selection of optional measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected.
 
 ### 3. Find the ID attribute of the form or button you want to track
 
