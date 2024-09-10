@@ -196,7 +196,13 @@ The following operators are currently supported:
 
 Note that only `is` operator is valid for `event:goal` dimension.
 
-### Logical operations
+##### clauses
+
+List of values to match against. A data point matches filter if _any_ of the clauses matches.
+
+#### Logical operations
+
+Filters can be combined using `and`, `or` and `not` operators.
 
 | Operator | Example | Explanation |
 | -- | -- | -- |
@@ -205,10 +211,6 @@ Note that only `is` operator is valid for `event:goal` dimension.
 | `not` | `["not", ["is", "visit:country_name", ["Germany"]]]` | Sessions not originating from Germany |
 
 Note that top level filters is wrapped in an implicit `and`.
-
-##### clauses
-
-List of values to match against. A data point matches filter if _any_ of the clauses matches.
 
 ### order_by <Optional />
 
@@ -267,7 +269,7 @@ If true, tries to include imported data in the result. See [imported stats](#imp
 
 If set, `meta.imports_included` field will be set as a boolean.
 
-If the applied combination of filters and dimensions is not supported for imported stats, the results are still returned based only on native stats and. In this case, `meta.imports_skip_reason` and `meta.imports_warning` response fields will contain more information on why including imported data failed. [See example](#example-imports-warning)
+If the applied combination of filters and dimensions is not supported for imported stats, the results are still returned based only on native stats. Additionally, `meta.imports_skip_reason` and `meta.imports_warning` response fields will contain more information on why including imported data failed. [See example](#example-imports-warning)
 
 #### include.time_labels {#include.time_labels}
 
