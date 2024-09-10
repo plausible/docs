@@ -18,6 +18,8 @@ Plausible Analytics is trusted by thousands of subscribers to deliver their webs
 
 * [Is it Plausible to stop using Google Analytics?](https://www.wholegraindigital.com/blog/plausible-vs-google-analytics/) by Tom Greenwood of Wholegrain Digital
 
+* [The Average Level of GA4 Inaccuracy compared to Plausible](https://www.orbitmedia.com/blog/inaccurate-google-analytics-traffic-sources/) by Andy Crestodina of Orbit Media
+
 * [Meet your new analytics dashboard](https://www.prezly.com/news/meet-your-new-analytics-dashboard) by Kate Bystrova of Prezly
 
 * [Why we use Plausible.io Web Analytics](https://www.sanechoice.cloud/why-we-use-plausible-io-web-analytics/) by Bradley Porter of SaneChoice
