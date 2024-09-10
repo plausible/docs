@@ -64,6 +64,7 @@ Date range to be queried.
 | Option | Description |
 | --- | --- |
 | `["2024-01-01", "2024-07-01"]` | Custom date range (ISO8601) |
+| `["2024-01-01 12:00:00", "2024-01-01 15:59:59"]` | Custom date-time range (ISO8601) |
 | `"day"`  | Current day (e.g. 2024-07-01) |
 | `"7d"` | Last 7 days relative to today |
 | `"30d"` | Last 30 days relative to today |
