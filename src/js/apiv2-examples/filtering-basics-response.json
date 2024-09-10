@@ -1,13 +1,10 @@
 {
-  "results": [{"metrics": [14], "dimensions": []}],
+  "results": [{"metrics": [10], "dimensions": []}],
   "meta": {},
   "query": {
     "site_id": "dummy.site",
     "metrics": ["visitors"],
-    "date_range": [
-      "2024-08-29T00:00:00 Europe/Tallinn",
-      "2024-09-04T23:59:59 Europe/Tallinn"
-    ],
+    "date_range": ["2024-09-04T00:00:00+00:00", "2024-09-10T23:59:59+00:00"],
     "filters": [
       ["contains", "event:page", ["/docs", "/pricing"]],
       [
