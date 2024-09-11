@@ -64,6 +64,7 @@ Date range to be queried.
 | Option | Description |
 | --- | --- |
 | `["2024-01-01", "2024-07-01"]` | Custom date range (ISO8601) |
+| `["2024-01-01 12:00:00", "2024-01-01 15:59:59"]` | Custom date-time range (ISO8601) |
 | `"day"`  | Current day (e.g. 2024-07-01) |
 | `"7d"` | Last 7 days relative to today |
 | `"30d"` | Last 30 days relative to today |
@@ -171,9 +172,13 @@ Note that:
 
 Default: `[]`
 
-Filters allow limiting the data analyzed in a query. Each filter takes the form of `[operator, dimension, clauses]`. [See example](#example-filtering).
+Filters allow limiting the data analyzed in a query. [See example](#example-filtering).
 
-**operators**
+#### Simple filters
+
+Each simple filter takes the form of `[operator, dimension, clauses]`.
+
+##### operators
 
 The following operators are currently supported:
 
@@ -182,17 +187,31 @@ The following operators are currently supported:
 | `is` | `["is", "visit:country_name", ["Germany", "Poland"]]` | Sessions originating from Germany or Poland. |
 | `is_not` | `["is_not", "event:page", ["/pricing"]]` | Events that did not visit /pricing page |
 | `contains` | `["contains", "event:page", ["/login"]]` | Events visited any page containing /login |
-| `does_not_contain` | `["contains", "event:page", ["docs", "pricing"]]` | Events that did not visit any page containing docs or pricing |
+| `contains_not` | `["contains_not", "event:page", ["docs", "pricing"]]` | Events that did not visit any page containing docs or pricing |
+| `matches` | `["matches", "event:page", ["^/user/\d+$"]]` | Events where page matches regular expression `^/user/\d+$`. [Uses re2 syntax](https://github.com/google/re2/wiki/Syntax) |
+| `matches_not` | `["matches", "event:page", ["^/user/\d+$"]]` | Events where page does not match regular expression `^/user/\d+$`. [Uses re2 syntax](https://github.com/google/re2/wiki/Syntax) |
 
-**dimension**
+##### dimension
 
 [Event and visit dimensions](#dimensions) are valid for filters.
 
 Note that only `is` operator is valid for `event:goal` dimension.
 
-**clauses**
+##### clauses
 
 List of values to match against. A data point matches filter if _any_ of the clauses matches.
+
+#### Logical operations
+
+Filters can be combined using `and`, `or` and `not` operators.
+
+| Operator | Example | Explanation |
+| -- | -- | -- |
+| `and` | `["and", [["is", "visit:country_name", ["Germany"]]], ["is", "visit:city_name", ["Berlin"]]]]` | Sessions originating from Berlin, Germany |
+| `or` | `["and", [["is", "visit:country_name", ["Germany"]]], ["is", "visit:city_name", ["Tallinn"]]]]` | Sessions originating from Germany or city of Tallinn |
+| `not` | `["not", ["is", "visit:country_name", ["Germany"]]]` | Sessions not originating from Germany |
+
+Note that top level filters is wrapped in an implicit `and`.
 
 ### order_by <Optional />
 
@@ -249,7 +268,9 @@ If true, tries to include imported data in the result. See [imported stats](#imp
   For example, you can set a `country` dimension and filter by both `city` and `region`.
 </details>
 
-If the applied combination of filters and dimensions is not supported for imported stats, the results are still returned based only on native stats and `meta.warning` response key will be set. [See example](#example-imports-warning)
+If set, `meta.imports_included` field will be set as a boolean.
+
+If the applied combination of filters and dimensions is not supported for imported stats, the results are still returned based only on native stats. Additionally, `meta.imports_skip_reason` and `meta.imports_warning` response fields will contain more information on why including imported data failed. [See example](#example-imports-warning)
 
 #### include.time_labels {#include.time_labels}
 

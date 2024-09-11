@@ -1,18 +1,20 @@
 {
   "results": [
-    {"metrics": [1196], "dimensions": ["Facebook"]},
-    {"metrics": [1195], "dimensions": ["Direct / None"]},
-    {"metrics": [1194], "dimensions": ["Google"]},
-    {"metrics": [1193], "dimensions": ["DuckDuckGo"]},
-    {"metrics": [1191], "dimensions": ["Twitter"]}
+    {"metrics": [1192], "dimensions": ["Google"]},
+    {"metrics": [1191], "dimensions": ["Direct / None"]},
+    {"metrics": [1189], "dimensions": ["DuckDuckGo"]},
+    {"metrics": [1186], "dimensions": ["Facebook"]},
+    {"metrics": [1185], "dimensions": ["Twitter"]}
   ],
   "meta": {
-    "warning": "Imported stats are not included in the results because query parameters are not supported. For more information, see: https://plausible.io/docs/stats-api#filtering-imported-stats"
+    "imports_included": false,
+    "imports_skip_reason": "unsupported_query",
+    "imports_warning": "Imported stats are not included in the results because query parameters are not supported. For more information, see: https://plausible.io/docs/stats-api#filtering-imported-stats"
   },
   "query": {
     "site_id": "dummy.site",
     "metrics": ["visitors"],
-    "date_range": ["2021-09-04", "2024-08-20"],
+    "date_range": ["2021-09-26T00:00:00+00:00", "2024-09-10T23:59:59+00:00"],
     "filters": [["is", "visit:country_name", ["Estonia"]]],
     "dimensions": ["visit:source"],
     "order_by": [["visitors", "desc"]],
