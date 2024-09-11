@@ -67,8 +67,8 @@ We have created a downloadable version of such a page for you to use freely on y
 
 ### Download and Deploy
 
-For the styled version of this page, you'll need to download a <a target="_blank" download="index.html" href="/exclusion-examples/exclude.html">HTML file</a> and a <a target="_blank" download="plausible-exclusion.css" href="/exclusion-examples/plausible-exclusion.css">CSS file</a> and make both available together on your website.
+For the styled version of this page, you'll need to download a <a target="_blank" download="index.html" href="/docs/exclusion-examples/exclude.html">HTML file</a> and a <a target="_blank" download="plausible-exclusion.css" href="/docs/exclusion-examples/plausible-exclusion.css">CSS file</a> and make both available together on your website.
 
 (If you'd prefer a light-theme for this page, you can delete the `dark` class from line 1 of the above HTML file)
 
-For the unstyled/bare version, you'll just need to download a <a target="_blank" download="index.html" href="/exclusion-examples/exclude-bare.html">HTML file</a>, and make it available on your website with any CSS you choose to add.
+For the unstyled/bare version, you'll just need to download a <a target="_blank" download="index.html" href="/docs/exclusion-examples/exclude-bare.html">HTML file</a>, and make it available on your website with any CSS you choose to add.
