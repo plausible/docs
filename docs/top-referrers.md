@@ -4,7 +4,7 @@ title: Top Sources
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Your "**Top Sources**" report shows which referral sources are driving traffic to your website. Click on the "**Details**" button to get extra insights such as the visit duration and bounce rate for the individual referral source. Click on any referral source to filter the dashboard by it.
+Your "**Top Sources**" report shows which referral sources are driving traffic to your website. Click the "**Details**" button to get extra insights such as the visit duration and bounce rate for the individual referral source. Click on any metric heading to sort and arrange your data in ascending or descending order. Click on any referral source to filter the dashboard by it.
 
 The Top Sources report also includes the "**Campaigns**" tab where you can see the traffic tagged with UTM tags such as `utm_source`, `utm_medium` and `utm_campaign`. You can use UTM tags to understand which marketing and promotional activities are driving traffic that converts best. 
 
