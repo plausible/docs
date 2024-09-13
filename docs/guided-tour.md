@@ -60,7 +60,7 @@ You can also use the "**Filter**" button on the top of your dashboard which give
 
 <img alt="Top Sources - multiple filters" src={useBaseUrl('img/guided-tour-filtering-multiple-filters.png')} />
 
-## Detailed metrics and sorting
+## Detailed metrics and Sorting
 
 You can click the "**Details**" button at the bottom of any report to get an expanded view and see the full list with additional metrics such as Visitors, Bounce Rate, Visit Duration, Uniques, Total, CR (Conversion Rate), etc., depending upon the type of the report.
 
