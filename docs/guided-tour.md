@@ -54,11 +54,17 @@ The realtime dashboard also includes a pageview graph for the last 30 minutes. I
 
 ## Filtering
 
-You can go granular and click on any of the metrics in your Plausible dashboard to filter the dashboard by it. You can mix and match filters too. This is an easy way for you to segment your audience. For instance you can drill down to see traffic coming from a specific marketing campaign to a specific landing page over time.
+You can go granular and click on any of the entries in any of the reports to filter your Plausible dashboard by it. You can mix and match filters too. This is an easy way for you to segment your audience. For instance you can drill down to see traffic coming from a specific marketing campaign to a specific landing page over time.
 
 You can also use the "**Filter**" button on the top of your dashboard which gives you extra functionality. It allows you to filter the dashboard by multiple sources, countries, pages and more, all at once. You can also search for any metric, exclude segments of your audience and group pages with options such as "**is not**", "**contains**" and "**does not contain**". [Learn more about filtering here](filters-segments.md).
 
 <img alt="Top Sources - multiple filters" src={useBaseUrl('img/guided-tour-filtering-multiple-filters.png')} />
+
+## Detailed metrics and Sorting
+
+You can click the "**Details**" button at the bottom of any report to get an expanded view and see the full list with additional metrics such as Visitors, Bounce Rate, Visit Duration, Uniques, Total, CR (Conversion Rate), etc., depending upon the type of the report.
+
+You can sort any report by such performance metrics by clicking on any metric heading to sort and arrange your data in ascending or descending order.
 
 ## Top Sources
 

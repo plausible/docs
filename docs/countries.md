@@ -4,7 +4,7 @@ title: Locations
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Your "**Locations**" report shows where in the world your visitors are coming from. You can click on the "**Details**" button to see the full list ranked by the number of visitors. There you can also see the percentage of your total traffic the individual location stands for.
+Your "**Locations**" report shows where in the world your visitors are coming from. You can click the "**Details**" button to see the full list ranked by the number of visitors. There you can also see the percentage of your total traffic the individual location stands for. Click on any such metric heading to sort and arrange your data in ascending or descending order. 
 
 Click on any country to see the list of regions within that country where your visitors are coming from. Click on any region to see the list of cities within that region. You can also use the "**Countries**", "**Regions**" and "**Cities**" tabs on the top of the report.
 
