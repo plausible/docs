@@ -6,6 +6,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Your "**Devices**" report shows the screen size, the browser and the operating system (OS) of your visitors. It helps you identify and understand the type of device your visitors use the most often so you can optimize your website experience to them. Click on any particular entry to filter the dashboard by that traffic and see further details such as the browser or OS version.
 
+You can click the "**Details**" button to see the full list with additional details like "Visitors", "%", "Bounce Rate", and "Visit Duration". Click on any such metric heading to sort and arrange your data in ascending or descending order. 
+
 You can use the "**Filter**" button on the top of your dashboard to segment the traffic by multiple devices at the same time. Filter button also allows you to filter out traffic from specific devices.
 
 <img alt="Screen sizes - multiple filters" src={useBaseUrl('img/devices-filtering-multiple-filters.png')} />
