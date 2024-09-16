@@ -281,6 +281,21 @@ time labels valid for `date_range`.
 
 [See example](#example-time-labels)
 
+#### include.total_rows {#include.total_rows}
+
+Default: `false`
+
+Should be used for [pagination](#pagination). If true, sets `meta.total_rows` in response containing the total number of
+rows for this query.
+
+[See example](#example-pagination)
+
+### pagination <Optional />
+
+Default: `{ "limit": 10000, "offset: 0 }`
+
+[See example](#example-pagination)
+
 ## Response structure
 
 Example response:
@@ -341,6 +356,10 @@ The query that was executed, after manipulations performed on the backend.
 ### Using custom properties {#example-custom-properties}
 
 <ApiV2Example id="example-custom-properties" />
+
+### Pagination {#example-pagination}
+
+<ApiV2Example id="example-pagination" />
 
 ### Including imported data {#example-imports}
 

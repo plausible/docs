@@ -1,0 +1,18 @@
+{
+  "results": [
+    {"metrics": [325, 397, 317], "dimensions": ["(not set)", "duckduckgo"]},
+    {"metrics": [311, 369, 295], "dimensions": ["(not set)", "google"]},
+    {"metrics": [296, 357, 292], "dimensions": ["social", "twitter"]}
+  ],
+  "meta": {"total_rows": 6},
+  "query": {
+    "site_id": "dummy.site",
+    "metrics": ["visitors", "events", "pageviews"],
+    "date_range": ["2024-09-10T00:00:00+00:00", "2024-09-16T23:59:59+00:00"],
+    "filters": [],
+    "dimensions": ["visit:utm_medium", "visit:utm_source"],
+    "order_by": [["visitors", "desc"]],
+    "include": {"total_rows": true},
+    "pagination": {"offset": 1, "limit": 3}
+  }
+}

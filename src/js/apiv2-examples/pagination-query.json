@@ -1,0 +1,8 @@
+{
+  "site_id": "dummy.site",
+  "metrics": ["visitors", "events", "pageviews"],
+  "date_range": "7d",
+  "dimensions": ["visit:utm_medium", "visit:utm_source"],
+  "include": { "total_rows": true },
+  "pagination": { "limit": 3, "offset": 1 }
+}
