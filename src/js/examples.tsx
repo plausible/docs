@@ -52,6 +52,12 @@ const EXAMPLES = [
     exampleResponse: read("apiv2-examples/custom-properties-response.json"),
   },
   {
+    id: "example-pagination",
+    title: "Pagination for UTM sources",
+    query: read("apiv2-examples/pagination-query.json"),
+    exampleResponse: read("apiv2-examples/pagination-response.json")
+  },
+  {
     id: "example-imports",
     title: "Including imported data",
     query: read("apiv2-examples/imports-query.json"),
