@@ -11,3 +11,5 @@ To reset your password, [click here to request a password reset](https://plausib
 <img alt="Reset your account password" src={useBaseUrl('img/reset-password.png')} />
 
 Look for an email with the subject line "**Plausible password reset**" and click on the link within that email to change your account password.
+
+Note that after you successfully change your password, we will automatically log out [any of your active sessions](login-management.md) on your other devices.
