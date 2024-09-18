@@ -26,4 +26,5 @@ We've tried to make Plausible as usable and accessible as possible with just a k
 | I           | [Set chart interval](guided-tour.md#set-a-different-chart-interval)      |
 | X           | [Enable comparison](compare-stats.md) |
 | 1-9         | [Switch between sites](landing-page.md#pin-your-most-used-sites-for-quick-access) |
+| /           | Search on the sites page or the Details view |
 | Esc         | Clear all filters |
