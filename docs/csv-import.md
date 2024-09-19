@@ -44,6 +44,10 @@ Make sure to upgrade your self-hosted instance to Plausible CE version 2.1 or hi
 
 2. Go into the "**Imports & Exports**" section, find the "**Export Data**" panel and click on the "**Export to CSV**" button to export all the data.
 
+:::note
+Only native data can be exported. Any data imported from [external sources such as Google Analytics](https://plausible.io/docs/google-analytics-import), will be excluded from the [export](https://plausible.io/docs/export-stats).
+:::
+
 3. Then go to the site you'd like to import the data to. In the "**Imports & Exports**" section, find the "**Import Data**" panel and click on the "**CSV**" button to import your CSV files.
 
 4. Make sure to select all the CSV files that you've exported and click on the "**Confirm import**" button. If you don't select all the exported files, some data may be missing from your import.
