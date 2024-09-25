@@ -78,7 +78,7 @@ If you're running your ebusiness using WooCommerce, you can use our WordPress pl
 * Tracking of several custom properties including product name and product category
 * A purchase funnel looking at the user journey from viewing a product to completing a purchase
 
-All this is done automatically for you by our plugin and you don't need to manually set up any custom events nor make any changes to the code of your store. Check here for [more details about our WordPress plugin](https://plausible.io/wordpress-analytics-plugin).
+All this is done automatically for you by our plugin and you don't need to manually set up any custom events nor make any changes to the code of your store. Check here for [more details about our WordPress plugin](https://plausible.io/wordpress-analytics-plugin). Check here to learn more about [WooCommerce site tracking with Plausible](https://plausible.io/blog/woocommerce-analytics-plugin).
 
 ## Integrating with Shopify
 
