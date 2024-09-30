@@ -43,3 +43,5 @@ Note that once you turn off the 2FA, verification codes from the authenticator a
 ## Lost or stolen trusted device?
 
 If you lose your trusted device or otherwise can’t get codes from your authenticator app, you can use recovery codes you previously saved to sign in to your Plausible account.
+
+Plausible Analytics also offers a security feature that allows you to remotely log out of your account on other devices via your account settings. [Here's how](login-management.md).

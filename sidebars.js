@@ -109,6 +109,7 @@ module.exports = {
     'Account Settings': [
       '2fa',
       'change-email',
+      'login-management',
       'reset-password',
       'dashboard-appearance',
       'delete-account',
