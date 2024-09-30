@@ -6,6 +6,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Plausible Analytics offers a security feature that allows you to remotely log out of your account on other devices via your account settings.
 
+<img alt="Plausible Login Management" src={useBaseUrl('img/login-management.png')} />
+
 ## How to log out of your Plausible account remotely
 
 * Log in to your Plausible Analytics account and in the top right menu, click on your account name and choose "**Account Settings**" to enter your account settings.
