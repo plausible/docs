@@ -1,5 +1,5 @@
 ---
-title: Login Management 
+title: Login management 
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
