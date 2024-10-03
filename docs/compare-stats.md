@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 You can gain valuable insights and a fresh perspective on your website traffic by comparing stats over time. Our comparison feature allows you to analyze the stats of a specified date range and compare them to another period. 
 
-"Previous period", "Year over year" and "Custom period" comparisons are all available. The comparison is matched by day of the week by default to avoid any discrepancies caused by the weekend. You can also optionally match by date.
+"**Previous period**", "**Year over year**" and "**Custom period**" comparisons are all available. The comparison is matched by day of the week by default to avoid any discrepancies caused by the weekend. You can also optionally match by date.
 
 You can choose between different chart intervals to display the comparison the way you want and segment your audience any way you wish to analyze that segment over time. And if you've [imported your historical Google Analytics stats](google-analytics-import.md), you can compare against those too.
 
@@ -16,7 +16,7 @@ Here's how to track your progress and identify trends by comparing your stats:
 
 * Select your primary date range using the date picker in the top right of your dashboard or by using one of our [keyboard shortcuts](keyboard-shortcuts.md)
 
-* Then select "**Compare**" in the date picker or press the "**X**" key on your keyboard to enable the comparison feature
+* Then select "**Compare**" in the date picker or press the "**X**" key [on your keyboard](keyboard-shortcuts.md) to enable the comparison feature
 
 <img alt="Date picker for the compare feature" src={useBaseUrl('img/date-picker-compare-feature.png')} />
 
@@ -46,7 +46,7 @@ In the top right of the chart itself, you can choose the unit of time the stats 
 
 Our comparison matches by day of the week by default. This means that your primary date range will be compared to the secondary date range starting with the same day of the week. This helps you eliminate discrepancies due to the weekend or weekday differences.
 
-The alternative option in the comparison drop-down is to ""**Match exact date**". When choosing Sunday January 1st to January 7th 2023 as the primary date range and matching by exact date, the year over year comparison will be against Saturday January 1st to January 7th 2022.
+The alternative option in the comparison drop-down is to "**Match exact date**". When choosing Sunday January 1st to January 7th 2023 as the primary date range and matching by exact date, the year over year comparison will be against Saturday January 1st to January 7th 2022.
 
  <img alt="Match exact date" src={useBaseUrl('img/comparison-match-exact-date.png')} />
 
@@ -60,11 +60,11 @@ Here are the details on the available comparison options:
 
 ### Previous period
 
-This is the default comparison mode. Your primary date range will be compared to the same amount of time in the period before it. If you select "Last 7 days" as your primary date range, the stats are compared to the previous seven days before it.
+This is the default comparison mode. Your primary date range will be compared to the same amount of time in the period before it. If you select "**Last 7 days**" as your primary date range, the stats are compared to the previous seven days before it.
 
 ### Year over year
 
-Your primary date range will be compared to the same period of the previous calendar year. If you select January 1st to January 7th 2023 as your primary date range and choose ""**Match exact date**", a comparison to January 1st to January 7th 2022 will be shown.
+Your primary date range will be compared to the same period of the previous calendar year. If you select January 1st to January 7th 2023 as your primary date range and choose "**Match exact date**", a comparison to January 1st to January 7th 2022 will be shown.
 
 ### Custom period
 
