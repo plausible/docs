@@ -12,7 +12,7 @@ Here's how to change your Plausible account password:
 
 * Log in to your Plausible account and in the top right menu, click on your account name and choose "**Account Settings**" to enter your account settings.
 * Find the “**Change password**” section.
-* Confirm your current password, then enter your new password and click on the "**Change password** button.
+* Confirm your current password, then enter your new password and click on the "**Change my password** button.
 * If you have enabled the two-factor authentication (2FA), you'll also need to verify the password change by inserting the security code provided by your authenticator app.
 * Note that after you successfully change your password, we will automatically log out any of your active sessions on your other devices.
 
