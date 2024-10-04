@@ -241,7 +241,7 @@ You can see the full list of Shopify's customer events [here](https://shopify.de
 
 **Plausible API - the `plausible` function**
 
-This function sends events to Plausible. It is initialized within the setup block (see [above](/shopify-integration#required-setup-block)). Therefore, make sure to also grab that code when implementing your custom pixel, otherwise the `plausible` function won't be available.
+This function sends events to Plausible. It is initialized within the setup block (see [above](/shopify-integration#setup-block-required)). Therefore, make sure to also grab that code when implementing your custom pixel, otherwise the `plausible` function won't be available.
 
 The `plausible` function takes two arguments:
 
