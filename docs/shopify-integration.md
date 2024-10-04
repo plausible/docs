@@ -6,6 +6,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Here's how to add Plausible Analytics to your Shopify store and set up the tracking of events such as add to cart, checkout, purchase, revenue attribution and more.
 
+## Add Plausible snippet to Shopify
+
 * Log in to your Shopify account and click on Sales Channels > Online Store > Themes in the left-hand side menu.  
 
 * Click on the icon with three dots next to your current theme and choose "**Edit code**" from the drop-down menu.
