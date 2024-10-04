@@ -4,6 +4,10 @@ title: Adding Plausible to Shopify (and tracking checkouts and order confirmatio
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+:::caution
+You're viewing the legacy version of this document. Several instructions here will not work after August 28, 2025. Please see the new instructions **[here](shopify-integration.md)**.
+:::
+
 Here's how to add Plausible Analytics to your Shopify store and set up the tracking of events such as button clicks, form submissions, order confirmations and revenue attribution.
 
 * Log in to your Shopify account and click on Sales Channels > Online Store > Themes in the left-hand side menu.  
