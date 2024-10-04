@@ -167,11 +167,6 @@ Send a custom event "**Add to Cart**" to Plausible when an item gets added to th
 * `quantity` (custom property) - number of items added to cart
 * a revenue value - the price of the product multiplied with quantity
 
-In order to see this information on your Plausible dashboard, you should:
-
-1. [Set up a revenue goal](ecommerce-revenue-tracking#step-3-add-a-new-custom-event-and-specify-the-currency-of-your-choice) called `Add to Cart` with your desired reporting currency
-2. [Set up two custom properties](/custom-props/props-dashboard#1-configure-custom-properties-in-your-site-settings) called `productTitle`, and `quantity`
-
 ```javascript
 // Track "Add to Cart"
 analytics.subscribe('product_added_to_cart', async (event) => {
@@ -189,14 +184,14 @@ analytics.subscribe('product_added_to_cart', async (event) => {
 });
 ```
 
+In order to see this information on your Plausible dashboard, you should:
+
+1. [Set up a revenue goal](ecommerce-revenue-tracking#step-3-add-a-new-custom-event-and-specify-the-currency-of-your-choice) called `Add to Cart` with your desired reporting currency
+2. [Set up two custom properties](/custom-props/props-dashboard#1-configure-custom-properties-in-your-site-settings) called `productTitle`, and `quantity`
+
 ### Track site searches
 
 Send a custom event called "**Search**" to Plausible when a site search is performed. This event also includes a `searchQuery` custom property, containing the string value that was used for the search.
-
-In order to see this information on your Plausible dashboard, you should:
-
-1. [Set up a custom event goal](/custom-event-goals#step-4-create-a-custom-event-goal-in-your-plausible-account) called `Search`
-2. [Set up a custom property](/custom-props/props-dashboard#1-configure-custom-properties-in-your-site-settings) called `searchQuery`
 
 ```javascript
 // Track site searches
@@ -207,6 +202,11 @@ analytics.subscribe('search_submitted', async (event) => {
   })
 });
 ```
+
+In order to see this information on your Plausible dashboard, you should:
+
+1. [Set up a custom event goal](/custom-event-goals#step-4-create-a-custom-event-goal-in-your-plausible-account) called `Search`
+2. [Set up a custom property](/custom-props/props-dashboard#1-configure-custom-properties-in-your-site-settings) called `searchQuery`
 
 ### Customize your own tracking pixel
 
