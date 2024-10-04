@@ -1,54 +1,24 @@
 ---
-title: Adding Plausible to Shopify (and tracking checkouts and order confirmations)
+title: Tracking checkouts, purchases and revenue attribution on Shopify
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-<details>
-
-<summary>
-
-### This document has been updated
-
-_Expand this section if you want to migrate from your old tracking setup due to additional scripts being deprecated in Shopify._
-
-</summary>
-
-The "additional scripts" feature and editing the `checkout.liquid` file are deprecated in Shopify. Here's what they say in [their docs](https://help.shopify.com/en/manual/checkout-settings/customize-checkout-configurations/checkout-extensibility):
-
-> _August 28, 2025: Deadline to upgrade your Thank you and Order status pages, including your apps using script tags and additional scripts._
-
-Therefore, this document has been updated, switching to "custom pixels" which is what they now recommend. If your tracking is set up with the [old version of this document](shopify-integration-deprecated.md) and if you're tracking any of the following:
-
-* Pageviews on checkout pages (titled [How to track checkouts and order confirmations](/shopify-integration-deprecated#how-to-track-checkouts-and-order-confirmations) in the old document)
-* The "Purchase" custom event (titled [How to track ecommerce revenue and attribution](/shopify-integration-deprecated#how-to-track-ecommerce-revenue-and-attribution) in the old document)
-
-make sure to replace your "additional scripts" with the custom pixel as instructed below in this document. You'll also have the ability to easily set up new custom events with this pixel, such as `Add to Cart`, `Begin Checkout`, `Add Payment Info` and `Search`.
-
-Note that you don't have to take any action if your tracking is set up only in the `theme.liquid` file. According to our instructions (old and new), that includes:
-
-* Tracking pageviews everywhere else around your site, **excluding checkout pages**
-* Tracking form submissions and button clicks
-
-</details>
-
-Here's how to add Plausible Analytics to your Shopify store and set up the tracking of events such as button clicks, form submissions, "Add to Cart", checkout events (including revenue attribution) and site search.
+Here's how to add Plausible Analytics to your Shopify store and set up the tracking of events such as add to cart, checkout, purchase, revenue attribution and more.
 
 * Log in to your Shopify account and click on Sales Channels > Online Store > Themes in the left-hand side menu.  
 
-* Click on the icon with three dots next to your current theme and choose "Edit code" from the drop-down menu.
+* Click on the icon with three dots next to your current theme and choose "**Edit code**" from the drop-down menu.
 
 <img alt="Add Plausible to Shopify" src={useBaseUrl('img/add-custom-code-to-shopify.png')} />
 
-* In the "Layout" folder, select your "theme.liquid" file and [paste your Plausible snippet](https://plausible.io/docs/plausible-script) in the "**Head Code**" section. We display your snippet during the process of adding a new site to your account. You can also see the snippet within the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
+* In the "**Layout**" folder, select your "**theme.liquid**" file and [paste your Plausible snippet](https://plausible.io/docs/plausible-script) in the "**Head Code**" section. We display your snippet during the process of adding a new site to your account. You can also see the snippet within the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
 
 <img alt="Add Plausible Analytics script to Shopify" src={useBaseUrl('img/add-plausible-script-to-shopify.png')} />
 
-* Do click on the "**Save Changes**" to publish your changes. 
+* Do click on the "**Save Changes**" to publish your changes.
 
-Now you can go to your Shopify website and verify that Plausible script has been added and to your Plausible account to see whether the stats are being tracked. See here [how to verify the integration](troubleshoot-integration.md).
-
-## Tracking checkout pageviews, checkout events, and revenue attribution
+## Track checkouts and revenue attribution
 
 Even after having added the Plausible snippet into your `theme.liquid` file, checkout pages such as `/checkouts/cn/:id/review` or `/checkouts/cn/:id/thank-you` will not be tracked yet. That's because they're not using the same theme layout. To enable pageview tracking on checkout pages, you need to create a custom pixel. The same pixel can also be used for tracking Shopify's customer events (e.g. `"product_added_to_cart"`, `"checkout_completed"`, etc...) with revenue attribution and custom properties. 
 
@@ -59,26 +29,19 @@ To create the custom pixel, follow these steps:
 
 <img alt="Shopify Settings" src={useBaseUrl('img/shopify-settings-revenue-metrics.png')} />
 
-* Open the "Customer events" section, and click on "Add custom pixel"
-* Choose a name for your pixel (e.g. "Plausible")
-* Copy and paste snippets into the "Code" block as instructed [below](#snippets-for-the-custom-pixel), according to your tracking needs.
-* Click "Save" at the top, then connect the pixel
+* Open the "**Customer events**" section, and click on "**Add custom pixel**"
+* Choose a name for your pixel (e.g. "**Plausible**")
+* Copy and paste the snippet into the "**Code**" block according to your tracking needs [as instructed below](#snippet-options-for-the-custom-pixel)
+* Click "**Save**" at the top, then connect the pixel
+* That's it - your custom Plausible pixel should now be tracking!
 
 <img alt="Shopify add pixel" src={useBaseUrl('img/shopify-add-pixel.png')} />
 
-* That's it - your custom Plausible pixel should now be tracking!
+## Snippet options for the custom pixel
 
-### Snippets for the custom pixel
+The code that will end up in your pixel depends on what you want to track. The first code block (**Setup block**) is required for everything else to work. Everything that follows the "**Setup block**" is optional. You can copy and paste the code blocks that you're interested in, one after another.
 
-The code that will end up in your pixel depends on what you want to track. The first code block in this section is required for everything else to work. Everything that follows is optional - you can copy and paste the code blocks that you're interested in, one after another.
-
-<details open>
-
-<summary>
-
-#### [Required] Setup block
-
-</summary>
+### Setup block [Required]
 
 This snippet is required for everything else that follows, but doesn't track anything by itself. Make sure to replace `yourdomain.com` on the first line with the name of your site in Plausible.
 
@@ -98,15 +61,8 @@ window.plausible = window.plausible || function() {
   (window.plausible.q = window.plausible.q || []).push(arguments)
 }
 ```
-</details>
 
-<details>
-
-<summary>
-
-#### Track pageviews on checkout pages
-
-</summary>
+### Track pageviews on checkout pages
 
 Track pageviews on checkout page paths such as:
 
@@ -140,20 +96,9 @@ If you'd like to see these grouped order confirmations or checkout page visits p
 
 <img alt="Shopify thank you page tracking" src={useBaseUrl('img/shopify-thank-you-page-goal.png')} />
 
+### Track started checkouts
 
-</details>
-
-<details>
-
-<summary>
-
-#### Track started checkouts
-
-</summary>
-
-Send a custom event called "Begin Checkout" to Plausible every time the checkout process is started. The total price of the shopping cart will be recorded under this event. Before you update your pixel with this code, make sure you've already set up a `Begin Checkout` revenue goal in your Plausible dashboard with your desired reporting currency. See [here](ecommerce-revenue-tracking#step-3-add-a-new-custom-event-and-specify-the-currency-of-your-choice) on how to do that.
-
-The goal needs to exist in your dashboard beforehand because we're doing conversions from the source currency to your selected reporting currency upon receiving the events.
+Send a custom event called "**Begin Checkout**" to Plausible every time the checkout process is started. The total price of the shopping cart will be recorded under this event. 
 
 ```javascript
 // Track started checkouts
@@ -168,19 +113,13 @@ analytics.subscribe('checkout_started', async (event) => {
 });
 ```
 
-</details>
+In order to see this information on your Plausible dashboard, you should:
 
-<details>
+* [Set up a revenue goal](ecommerce-revenue-tracking#step-3-add-a-new-custom-event-and-specify-the-currency-of-your-choice) called `Begin Checkout` with your desired reporting currency
 
-<summary>
+### Track payment info added during checkout
 
-#### Track payment info added during checkout
-
-</summary>
-
-Send a custom event called "Add Payment Info" to Plausible every time payment information is submitted by a customer during the checkout. The total price of the shopping cart will be recorded under this event. Before you update your pixel with this code, make sure you've already set up an `Add Payment Info` revenue goal in your Plausible dashboard with your desired reporting currency. See [here](ecommerce-revenue-tracking#step-3-add-a-new-custom-event-and-specify-the-currency-of-your-choice) on how to do that.
-
-The goal needs to exist in your dashboard beforehand because we're doing conversions from the source currency to your selected reporting currency upon receiving the events.
+Send a custom event called "**Add Payment Info**" to Plausible every time payment information is submitted by a customer during the checkout. The total price of the shopping cart will be recorded under this event. 
 
 ```javascript
 // Track payment info added during checkout
@@ -195,19 +134,13 @@ analytics.subscribe('payment_info_submitted', async (event) => {
 });
 ```
 
-</details>
+In order to see this information on your Plausible dashboard, you should:
 
-<details>
+* [Set up a revenue goal](ecommerce-revenue-tracking#step-3-add-a-new-custom-event-and-specify-the-currency-of-your-choice) called `Add Payment Info` with your desired reporting currency
 
-<summary>
+### Track completed checkouts (purchases)
 
-#### Track completed checkouts (purchases)
-
-</summary>
-
-Send a custom event called "Purchase" to Plausible every time a checkout is completed. The total amount paid by the customer will be recorded under this event. Before you update your pixel with this code, make sure you've already set up a `Purchase` revenue goal in your Plausible dashboard with your desired reporting currency. See [here](ecommerce-revenue-tracking#step-3-add-a-new-custom-event-and-specify-the-currency-of-your-choice) on how to do that.
-
-The goal needs to exist in your dashboard beforehand because we're doing conversions from the source currency to your selected reporting currency upon receiving the events.
+Send a custom event called "**Purchase**" to Plausible every time a checkout is completed. The total amount paid by the customer will be recorded under this event. 
 
 ```javascript
 // Track completed checkouts
@@ -222,26 +155,22 @@ analytics.subscribe('checkout_completed', async (event) => {
 });
 ```
 
-</details>
+In order to see this information on your Plausible dashboard, you should:
 
-<details>
+* [Set up a revenue goal](ecommerce-revenue-tracking#step-3-add-a-new-custom-event-and-specify-the-currency-of-your-choice) called `Purchase` with your desired reporting currency
 
-<summary>
+### Track "Add to Cart"
 
-#### Track "Add to Cart"
-
-</summary>
-
-Send a custom event "Add to Cart" to Plausible when an item gets added to the shopping cart. Each "Add to Cart" event also captures the following information:
+Send a custom event "**Add to Cart**" to Plausible when an item gets added to the shopping cart. Each "**Add to Cart**" event also captures the following information:
 
 * `productTitle` (custom property) - title of the product added to cart
 * `quantity` (custom property) - number of items added to cart
 * a revenue value - the price of the product multiplied with quantity
 
-Before you start sending this event, make sure to:
+In order to see this information on your Plausible dashboard, you should:
 
 1. [Set up a revenue goal](ecommerce-revenue-tracking#step-3-add-a-new-custom-event-and-specify-the-currency-of-your-choice) called `Add to Cart` with your desired reporting currency
-2. [set up two custom properties](/custom-props/props-dashboard#1-configure-custom-properties-in-your-site-settings) - `productTitle`, and `quantity`.
+2. [Set up two custom properties](/custom-props/props-dashboard#1-configure-custom-properties-in-your-site-settings) called `productTitle`, and `quantity`
 
 ```javascript
 // Track "Add to Cart"
@@ -260,22 +189,14 @@ analytics.subscribe('product_added_to_cart', async (event) => {
 });
 ```
 
-</details>
+### Track site searches
 
-<details>
-
-<summary>
-
-#### Track site searches
-
-</summary>
-
-Send a custom event called "Search" to Plausible when a site search is performed. This event also includes a `searchQuery` custom property, containing the string value that was used for the search.
+Send a custom event called "**Search**" to Plausible when a site search is performed. This event also includes a `searchQuery` custom property, containing the string value that was used for the search.
 
 In order to see this information on your Plausible dashboard, you should:
 
-1. [set up a custom event goal](/custom-event-goals#step-4-create-a-custom-event-goal-in-your-plausible-account) called `Search`
-2. [set up a custom property](/custom-props/props-dashboard#1-configure-custom-properties-in-your-site-settings) called `searchQuery`.
+1. [Set up a custom event goal](/custom-event-goals#step-4-create-a-custom-event-goal-in-your-plausible-account) called `Search`
+2. [Set up a custom property](/custom-props/props-dashboard#1-configure-custom-properties-in-your-site-settings) called `searchQuery`
 
 ```javascript
 // Track site searches
@@ -287,13 +208,11 @@ analytics.subscribe('search_submitted', async (event) => {
 });
 ```
 
-</details>
-
 ### Customize your own tracking pixel
 
 Should you need something more specific that's not covered by the tracking snippets we've listed above, even with a tiny bit of coding experience, it's pretty straight forward to implement your own custom tracking pixel.
 
-Simply put, you're working with two APIs (application programming interfaces) - Plausible and Shopify. You just need to plug the right pieces together. The "Add to Cart" event is a really good and elaborate example, using both revenue attribution and custom properties. Let's see how it works.
+Simply put, you're working with two APIs (application programming interfaces) - Plausible and Shopify. You just need to plug the right pieces together. The "**Add to Cart**" event is a really good and elaborate example, using both revenue attribution and custom properties. Let's see how it works.
 
 ```javascript
 analytics.subscribe('product_added_to_cart', async (event) => {
@@ -333,7 +252,13 @@ The `plausible` function takes two arguments:
 * [Object] `props` - here you can pass any value under any key you'd like. The key you choose will become the name of the custom property that you need to [configure in your site settings](/custom-props/props-dashboard#1-configure-custom-properties-in-your-site-settings). Note that you are responsible for ensuring that no [personally identifiable information](/custom-props/introduction#personally-identifiable-information) is tracked.
 * [String] `u` - this field stands for the `url` of the page where this customer event happened. You will most likely want to just keep it the same as in the example. It's important to always pass this option because otherwise the url will become the location of the pixel which has nothing to do with the real location where the event happened.
 
+<details>
+
+<summary>
+
 ## How to track form submissions and button clicks on Shopify
+
+</summary>
 
 Here's how you can track particular form submissions and button clicks on your Shopify site:
 
@@ -436,3 +361,4 @@ If you want to trigger multiple custom events on the same site, you don't need t
 ```
 
 <img alt="track multiple elements in Shopify" src={useBaseUrl('img/track-multiple-elements-shopify.png')} />
+</details>
