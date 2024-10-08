@@ -10,4 +10,4 @@ Log in to your Plausible Analytics account and in the top right menu, click on y
 
 To change your Plausible Analytics theme, go to the "**Preferences**" section, find "**Dashboard Appearance**", choose your preferred theme and click on the "**Change Theme**" button.
 
-<img alt="Choose between dark or light theme" src={useBaseUrl('img/dashboard-appearance.png')} />
+<img alt="Choose between dark or light theme" src={useBaseUrl('img/account-settings-change-theme.png')} />
