@@ -10,6 +10,6 @@ To cancel your subscription plan, go to the "**Subscription**" section and click
 
 After canceling, the stats will keep being counted, and you will have access to your stats until the end of your subscription period.
 
-<img alt="Cancel your Plausible subscription" src={useBaseUrl('img/cancel-subscription.png')} />
+<img alt="Cancel your Plausible subscription" src={useBaseUrl('img/account-settings-cancel-subscription.png')} />
 
 
