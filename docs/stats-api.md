@@ -1,559 +1,369 @@
 ---
-title: Stats API reference
+title: Stats API v2 reference
+toc_max_heading_level: 4
 ---
 
-import {Required, Optional} from '../src/js/api-helpers.tsx';
+import { ApiV2Example, ExamplesTip } from '../src/js/apiv2-example.tsx';
+import { Required, Optional } from '../src/js/api-helpers.tsx';
+import { getExampleCode } from '../src/js/examples.tsx';
+import CodeBlock from '@theme/CodeBlock';
+import { SiteContextProvider } from '../src/js/sites.tsx';
 
-The Plausible Stats API offers a way to retrieve your stats programmatically. It's a read-only interface to present historical and real-time stats only. Take a look at our [events API](events-api.md) if you want to send pageviews or custom events to our backend and our [sites API](sites-api.md) if you want to manage your sites through the API.
+Plausible Stats API v2 is a powerful single endpoint HTTP interface to **view historical and real-time stats**. In a nutshell, the endpoint `/api/v2/query` accepts both simple and complex stats queries in the POST request body and returns the metrics as JSON.
 
-The API accepts GET requests with query parameters and returns standard HTTP responses along with a JSON-encoded body. All API requests must be made over HTTPS. Calls made over plain HTTP will fail. API requests without authentication will also fail.
+[Try it now for your own site!](#examples)
 
-Each request must be authenticated with an API key using the Bearer Token method. You can obtain an API key for your account by going to your user
-settings page [plausible.io/settings](https://plausible.io/settings).
+:::tip[Not what you need?]
+Take a look at our [Events API Reference](events-api.md) if you want to record pageviews or custom events for your sites, or [Sites API Reference](sites-api.md) if you want to manage your sites over the API.
+:::
+
+## Authentication
+
+You can obtain an API key for your account by going to your user settings page [plausible.io/settings](https://plausible.io/settings).
+
+After creating a token, you can authenticate your request by sending the token in the Authorization header of your request.
+
+### Example curl request
+
+In the following request, replace YOUR-TOKEN with a reference to your token and site_id value with your domain.
+
+```bash
+curl \
+--request POST \
+# highlight-next-line
+--header 'Authorization: Bearer YOUR-TOKEN' \
+--header 'Content-Type: application/json' \
+--url 'https://plausible.io/api/v2/query' \
+--data '{ "site_id": "dummy.site", "metrics": ["visitors"], "date_range": "7d" }'
+```
 
 API keys have a rate limit of 600 requests per hour by default. If you have special needs for more requests, please contact us to request more capacity.
 
-The easiest way to explore the API is by using our Postman collection. Just define your `TOKEN` and `SITE_ID` variables, and you'll have an executable API reference ready to go.
+## Request structure
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/32c111c4f6d2cccef9dd)
+`/api/v2/query` endpoint accepts a `query` object. Example:
 
-:::tip New to Postman?
-We have a [step-by-step guide to set up the authorization and run your first queries with Postman](get-started-with-postman.md)
+<CodeBlock language="json">{getExampleCode("query", "example-country-and-city", null)}</CodeBlock>
+
+
+Query can contain the following keys:
+
+### site_id <Required />
+
+Domain of your site on Plausible to be queried.
+
+### date_range <Required /> {#date_range}
+
+Date range to be queried.
+
+| Option | Description |
+| --- | --- |
+| `["2024-01-01", "2024-07-01"]` | Custom date range (ISO8601) |
+| `["2024-01-01T12:00:00+02:00", "2024-01-01T15:59:59+02:00"]` | Custom date-time range (ISO8601) |
+| `"day"`  | Current day (e.g. 2024-07-01) |
+| `"7d"` | Last 7 days relative to today |
+| `"30d"` | Last 30 days relative to today |
+| `"month"` | Since the start of the current month |
+| `"6mo"` | Last 6 months relative to start of this month |
+| `"12mo"` | Last 12 months relative to start of this month |
+| `"year"` | Since the start of this year |
+| `"all"` | Since the start of stats in Plausible |
+
+### metrics <Required /> {#metrics}
+
+Metrics represent values to be calculated with the query.
+
+Valid metrics are:
+
+| Metric name | Description |
+| --- | --- |
+| `visitors` | The number of unique visitors |
+| `visits` | The number of visits/sessions |
+| `pageviews` | The number of pageview events |
+| `views_per_visit` | The number of pageviews divided by the number of visits. Returns a floating point number. |
+| `bounce_rate` | Bounce rate percentage |
+| `visit_duration` | Visit duration in seconds |
+| `events` | The number of events (pageviews + custom events). When filtering by a goal, this metric corresponds to "Total Conversions" in the dashboard. |
+| `percentage` | The percentage of visitors of total who fall into this category: Requires: dimension list |
+| `conversion_rate` | The percentage of visitors who completed the goal. Requires: dimension list passed, an event:goal filter or event:goal dimension |
+| `group_conversion_rate` | The percentage of visitors who completed the goal with the same dimension. Requires: dimension list passed, an event:goal filter or event:goal dimension |
+
+### dimensions <Optional /> {#dimensions}
+
+Default: `[]`
+
+List of dimensions to group by. [See example](#example-utm)
+
+Dimensions are attributes of your dataset. Using them in queries enables analyzing and compare multiple groups against each other.
+Think of them as `GROUP BY` in SQL.
+
+#### Event dimensions
+
+Valid dimensions include:
+
+| Dimension | Example | Description |
+| --- | --- | --- |
+| `event:goal` | Register | A custom action that you want your users to take. To use this property, you first need to configure some goals in the [site settings](/website-settings), or via the [Sites API](/sites-api). The value is the goal's `display_name`. Learn more about goals [here](/goal-conversions). |
+| `event:page` | /blog/remove-google-analytics | Pathname of the page where the event is triggered. You can also use an asterisk to group multiple pages (`/blog*`) |
+| `event:hostname` | example.com | Hostname of the event. |
+
+:::warning
+
+Mixing session metrics `bounce_rate`, `views_per_visit` and `visit_duration` with event dimensions is not allowed.
 :::
 
-## Concepts
 
-Querying the Plausible API will feel familiar if you have used time-series databases before. You can't query individual records from
-our stats database. You can only request aggregated metrics over a certain time period.
+#### Visit dimensions
 
-Each request requires a `site_id` parameter which is the domain of your site as configured in Plausible. If you're unsure, navigate to your site
-settings in Plausible and grab the value of the `domain` field.
+Values of these dimensions are determined by the first pageview in a session.
 
-### Metrics
 
-You can specify a `metrics` option in the query, to choose the metrics for each instance returned. See here for a full overview of [metrics and their definitions](/metrics-definitions). The metrics currently supported in Stats API are:
+| Dimension | Example | Description |
+| --- | --- | --- |
+| `visit:entry_page` | /home | Page on which the visit session started (landing page). |
+| `visit:exit_page` | /home | Page on which the visit session ended (last page viewed). |
+| `visit:source` | Twitter | Visit source, populated from an url query parameter tag (`utm_source`, `source` or `ref`) or the Referer HTTP header. |
+| `visit:referrer` | t.co/fzWTE9OTPt | Raw `Referer` header without `http://`, `http://` or `www.`. |
+| `visit:utm_medium` | social | Raw value of the `utm_medium` query param on the entry page. |
+| `visit:utm_source` | twitter | Raw value of the `utm_source` query param on the entry page. |
+| `visit:utm_campaign` | profile | Raw value of the `utm_campaign` query param on the entry page. |
+| `visit:utm_content` | banner | Raw value of the `utm_content` query param on the entry page. |
+| `visit:utm_term` | keyword | Raw value of the `utm_term` query param on the entry page. |
+| `visit:device` | Desktop | Device type. Possible values are `Desktop`, `Laptop`, `Tablet` and `Mobile`. |
+| `visit:browser` | Chrome | Name of the browser vendor. Most popular ones are `Chrome`, `Safari` and `Firefox`. |
+| `visit:browser_version` | 88.0.4324.146 | Version number of the browser used by the visitor. |
+| `visit:os` | Mac | Name of the operating system. Most popular ones are `Mac`, `Windows`, `iOS` and `Android`. Linux distributions are reported separately. |
+| `visit:os_version` | 10.6 | Version number of the operating system used by the visitor. |
+| `visit:country` | US | ISO 3166-1 alpha-2 code of the visitor country. |
+| `visit:region` | US-MD | ISO 3166-2 code of the visitor region. |
+| `visit:city` | 4347778 | [GeoName ID](https://www.geonames.org/) of the visitor |
+| `visit:country_name` | United States | Name of the visitor country. |
+| `visit:region_name` | California | Name of the visitor region. |
+| `visit:city_name` | San Francisco | Name of the visitor city. |
 
-| Metric            | Description                                                                                                                                               |
-|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `visitors`        | The number of unique visitors.                                                                                                                            |
-| `visits`          | The number of visits/sessions                                                                                                                             |
-| `pageviews`       | The number of pageview events                                                                                                                             |
-| `views_per_visit` | The number of pageviews divided by the number of visits. Returns a floating point number. Currently only supported in Aggregate and Timeseries endpoints. |
-| `bounce_rate`     | Bounce rate percentage                                                                                                                                    |
-| `visit_duration`  | Visit duration in seconds                                                                                                                                 |
-| `events`          | The number of events (pageviews + custom events). When filtering by a goal, this metric corresponds to "Total Conversions" in the dashboard.              |
-| `conversion_rate` | The percentage of visitors who completed the goal. Requires an `event:goal` filter or `event:goal` property in the breakdown endpoint                     |
-| `time_on_page`    | The average time users spend on viewing a single page. Requires an `event:page` filter or `event:page` property in the breakdown endpoint.                |
+#### Time dimensions {#time-dimensions}
 
-### Time periods
+It's useful to be able to group data by time, which can be done via the following dimensions.
 
-The options are identical for each endpoint that supports configurable time periods. Each period is relative to a `date` parameter. The date should follow the standard ISO-8601 format. When not specified, the `date` field defaults to `today(site.timezone)`.
-All time calculations on our backend are done in the time zone that the site is configured in.
+| Dimension | Example | Description |
+| -- | -- | -- |
+| `time` | 2024-01-01 | Time or date to group by. Automatically figures out the appropriate time:bucket value from date range. Response is a valid ISO8601 date or timestamp |
+| `time:hour` | 2021-01-27T23:43:10Z | Time grouped by hour. ISO8601 timestamp |
+| `time:day` | 2021-01-27 | Time grouped by date. ISO8601 date |
+| `time:week` | 2021-01-04 | Time grouped by start of the week. ISO8601 date |
+| `time:month` | 2021-01-01 | Time grouped by start of month. ISO8601 date |
 
-* `12mo,6mo` - Last n calendar months relative to `date`.
-* `month` - The calendar month that `date` falls into.
-* `30d,7d` - Last n days relative to `date`.
-* `day` - Stats for the full day specified in `date`.
-* `custom` - Provide a custom range in the `date` parameter.
+Note that:
+- `time` dimensions are not usable in filters. Set [`date_range`](#date_range) instead.
+- If no data falls into a given time bucket, no values are returned. [See `include.time_labels` option](#time-labels) for a workaround.
 
-When using a custom range, the `date` parameter expects two ISO-8601 formatted dates joined with a comma as follows `?period=custom&date=2021-01-01,2021-01-31`.
-Stats will be returned for the whole date range inclusive of the start and end dates.
-
-### Properties
-
-Each pageview and custom event in our database has some predefined _properties_ associated with it. In other analytics tools, these
-are often referred to as _dimensions_ as well. Properties can be used for filtering and breaking down your stats to drill into
-more depth. Here's the full list of properties we collect automatically:
-
-| Property                | Example                       | Description                                                                                                                             |
-| ----------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| `event:goal`            | Register                      | A custom action that you want your users to take. To use this property, you first need to configure some goals in the [site settings](/website-settings), or via the [Sites API](/sites-api). The value is the goal's `display_name`. Learn more about goals [here](/goal-conversions).                            |
-| `event:page`            | /blog/remove-google-analytics | Pathname of the page where the event is triggered. You can also use an asterisk to group multiple pages (`/blog*`)                      |
-| `event:hostname`        | example.com                   | Hostname of the event. At this stage, breaking down on hostname is not supported and you can only use this property for filtering. Use an asterisk to filter by multiple hostnames at once, e.g. `*.example.com`.
-| `visit:entry_page`      | /home                         | Page on which the visit session started (landing page).                                                                                 |
-| `visit:exit_page`       | /home                         | Page on which the visit session ended (last page viewed).                                                                               |
-| `visit:source`          | Twitter                       | Visit source, populated from an url query parameter tag (`utm_source`, `source` or `ref`) or the `Referer` HTTP header.                 |
-| `visit:referrer`        | t.co/fzWTE9OTPt               | Raw `Referer` header without `http://`, `http://` or `www.`.                                                                            |
-| `visit:utm_medium`      | social                        | Raw value of the `utm_medium` query param on the entry page.                                                                            |
-| `visit:utm_source`      | twitter                       | Raw value of the `utm_source` query param on the entry page.                                                                            |
-| `visit:utm_campaign`    | profile                       | Raw value of the `utm_campaign` query param on the entry page.                                                                          |
-| `visit:utm_content`     | banner                        | Raw value of the `utm_content` query param on the entry page.                                                                           |
-| `visit:utm_term`        | keyword                       | Raw value of the `utm_term` query param on the entry page.                                                                              |
-| `visit:device`          | Desktop                       | Device type. Possible values are `Desktop`, `Laptop`, `Tablet` and `Mobile`.                                                            |
-| `visit:browser`         | Chrome                        | Name of the browser vendor. Most popular ones are `Chrome`, `Safari` and `Firefox`.                                                     |
-| `visit:browser_version` | 88.0.4324.146                 | Version number of the browser used by the visitor.                                                                                      |
-| `visit:os`              | Mac                           | Name of the operating system. Most popular ones are `Mac`, `Windows`, `iOS` and `Android`. Linux distributions are reported separately. |
-| `visit:os_version`      | 10.6                          | Version number of the operating system used by the visitor.                                                                             |
-| `visit:country`         | US                            | ISO 3166-1 alpha-2 code of the visitor country.                                                                                         |
-| `visit:region`          | US-MD                         | ISO 3166-2 code of the visitor region.                                                                                                  |
-| `visit:city`            | 4347778                       | [GeoName ID](https://www.geonames.org/) of the visitor city.                                                                            |
+[See example](#example-timeseries)
 
 #### Custom properties
 
-In addition to properties that are collected automatically, you can also query for [custom properties](/custom-props/introduction).
-To filter or break down by a custom property, use the key `event:props:<custom_prop_name>`. [See example](#breakdown-custom-event-by-custom-properties) for how to use it.
+[Custom properties](/custom-props/introduction) can also be used as dimensions with the form `event:props:<custom_prop_name>`. [See example](#example-custom-properties)
 
-### Filtering
+### filters <Optional />
 
-Most endpoints support a `filters` query parameter to drill down into your data. You can filter by all properties described in the [Properties table](#properties), using the following operators:
+Default: `[]`
 
-| Operator        | Usage example                              | Explanation                                                               |
-|-----------------|--------------------------------------------|---------------------------------------------------------------------------|
-| `==`            | `event:goal==Signup`                       | Simple equality - completed goal "Signup"                                 |
-| `!=`            | `visit:country!=FR`                        | Simple inequality - country is not France                                 |
-| <code>\|</code> | <code>visit:source==Github\|Twitter</code> | IN expression - visit source is Github or Twitter.                        |
-| `;`             | `event:goal==Signup;visit:country==DE`     | AND expression - completed goal "Signup" and country is Germany           |
-| `*`             | `event:page==/blog/*`                      | Wildcard - matches any character                                          |
+Filters allow limiting the data analyzed in a query. [See example](#example-filtering).
 
-:::tip Want to use the `|` character in a filter value?
-You can escape it with a backslash. For example, `visit:utm_campaign==campaign\|one` will let you filter by the literal `campaign|one` value
-:::
+#### Simple filters
 
-#### Limitations
+Each simple filter takes the form of `[operator, dimension, clauses]`.
 
-* It is currently possible to exclude only one value at a time (e.g. `visit:browser!=Chrome|Safari` is not yet supported)
-* Wildcard characters cannot be used in combination with an IN expression (except for pageview goals - e.g. `event:goal==Signup|Visit+/register` is supported)
-* Inequality `!=` operator is currently not supported for goals
+##### operators
 
-#### Filtering by goals
+The following operators are currently supported:
 
-Unlike other properties you need to set up the goals in your [site settings](/website-settings), or via the [Sites API](/sites-api) first, before you can filter by them.
+| Operator | Example | Explanation |
+| -- | -- | -- |
+| `is` | `["is", "visit:country_name", ["Germany", "Poland"]]` | Sessions originating from Germany or Poland. |
+| `is_not` | `["is_not", "event:page", ["/pricing"]]` | Events that did not visit /pricing page |
+| `contains` | `["contains", "event:page", ["/login"]]` | Events visited any page containing /login |
+| `contains_not` | `["contains_not", "event:page", ["docs", "pricing"]]` | Events that did not visit any page containing docs or pricing |
+| `matches` | `["matches", "event:page", ["^/user/\d+$"]]` | Events where page matches regular expression `^/user/\d+$`. [Uses re2 syntax](https://github.com/google/re2/wiki/Syntax) |
+| `matches_not` | `["matches", "event:page", ["^/user/\d+$"]]` | Events where page does not match regular expression `^/user/\d+$`. [Uses re2 syntax](https://github.com/google/re2/wiki/Syntax) |
 
-For custom event goals, the filter value is simply the name of your goal, e.g. `event:goal==Signup`.
+##### dimension
 
-For pageview goals, the value should contain the string `"Visit"` followed by a space character, and the pathname of your pageview goal. For example: `Visit /register`.
+[Event and visit dimensions](#dimensions) are valid for filters.
 
-To include a space character in the query part of the URL, you can use `%20` (a URL encoded space character) or a `+` sign. For example:
+Note that only `is` operator is valid for `event:goal` dimension.
 
-* `event:goal==Visit%20/register`
-* `event:goal==Outbound+Link:+Click`
+##### clauses
 
-### Imported stats
+List of values to match against. A data point matches filter if _any_ of the clauses matches.
 
-Aggregates, timeseries and breakdowns support including imported stats in the results using `with_imported` option, with limitations. Breakdowns for custom properties (`event:props:*`) are only supported for 2 properties: `url` and `path`. Additionally, these breakdowns will only work in combination with a [certain subset](/csv-import#goals-and-custom-properties) of `event:goal` filters.
+#### Logical operations
 
-#### Timeseries intervals
+Filters can be combined using `and`, `or` and `not` operators.
 
-Since imported data is aggregated for each date, it cannot be included in timeseries queries with an hourly interval (i.e. when querying for a `day` period in Timeseries).
+| Operator | Example | Explanation |
+| -- | -- | -- |
+| `and` | `["and", [["is", "visit:country_name", ["Germany"]]], ["is", "visit:city_name", ["Berlin"]]]]` | Sessions originating from Berlin, Germany |
+| `or` | `["and", [["is", "visit:country_name", ["Germany"]]], ["is", "visit:city_name", ["Tallinn"]]]]` | Sessions originating from Germany or city of Tallinn |
+| `not` | `["not", ["is", "visit:country_name", ["Germany"]]]` | Sessions not originating from Germany |
 
-#### Filtering imported stats
+Note that top level filters is wrapped in an implicit `and`.
 
-Filtering by imported data is limited. The general rule is that you cannot filter by two different properties at the same time.
-For example, `filters=event:page==/;visit:source==Twitter` is not able to return any imported results. The same happens when you try to filter by one property and break down by another.
+### order_by <Optional />
 
-There are some exceptions though. The following properties are aggregated and grouped together and can be combined in a query:
+Allows for custom ordering of query results.
 
-* Countries, regions, cities
-* Operating systems and their versions
-* Hostnames and pages
-* Specific custom events and their properties
-  * `Outbound Link: Click` and `File Download` goals with the `url` property
-  * `404` goals with the `path` property
+List of tuples `[dimension_or_metric, direction]`, where:
+- `dimension_or_metric` needs to be listed in query [`metrics`](#metrics) or [`dimensions`](#dimensions) respectively.
+- `direction` can be one of `"asc"` or `"desc"`
 
-For example, you can break down by `country` and filter by both `city` and `region`. When the applied combination of filters and property is not supported for imported stats, the results are still returned based only on native stats, with a warning.
+For example:
 
-## Endpoints
-
-### GET /api/v1/stats/realtime/visitors
-
-This endpoint returns the number of current visitors on your site. A current visitor is defined as a visitor who triggered a pageview on your site
-in the last 5 minutes.
-
-```bash title="Try it yourself"
-curl "https://plausible.io/api/v1/stats/realtime/visitors?site_id=$SITE_ID" \
-  -H "Authorization: Bearer ${TOKEN}"
+```json
+[["visitors", "desc"], ["visit:country_name", "asc"]]
 ```
 
-```json title="Response"
-21
-```
+When not specified, the default ordering is:
 
-#### Parameters
-<hr / >
+1. If a [time dimensions](#time-dimensions) is present, `[time_dimension, "asc"]`
+2. By the first metric specified, descending.
 
-**site_id** <Required />
+[See full query example](#example-custom-properties)
 
-Domain of your site on Plausible.
-<hr / >
+### include <Optional />
 
-### GET /api/v1/stats/aggregate
+Default: `{}`
 
-This endpoint aggregates metrics over a certain time period. If you are familiar with the Plausible dashboard, this endpoint corresponds to the top row of stats that include `Unique Visitors` Pageviews, `Bounce rate` and `Visit duration`. You can retrieve any number and combination of these metrics in one request.
+Additional options for the query as to what data to include.
 
+#### include.imports {#include.imports}
 
-```bash title="Try it yourself"
-curl "https://plausible.io/api/v1/stats/aggregate?site_id=$SITE_ID&period=6mo&metrics=visitors,pageviews,bounce_rate,visit_duration" \
-  -H "Authorization: Bearer ${TOKEN}"
-```
+Default: `false`
 
-```json title="Response"
-{
-  "results": {
-    "bounce_rate": {
-        "value": 53.0
-    },
-    "pageviews": {
-        "value": 673814
-    },
-    "visit_duration": {
-        "value": 86.0
-    },
-    "visitors": {
-        "value": 201524
-    }
-  }
-}
-```
+If true, tries to include imported data in the result. See [imported stats](#imported-stats) for more details, [query example](#example-imports).
 
-#### Parameters
-<hr / >
+<details>
+  <summary>Read more on limitations of including imported data</summary>
 
-**site_id** <Required />
+  Using custom property dimensions (`event:props:*`) are only supported for 2 properties: `url` and `path`. Additionally, these breakdowns will only work in combination with a [certain subset](/csv-import#goals-and-custom-properties) of `event:goal` filters.
 
-Domain of your site on Plausible.
+  ##### Filtering imported stats
 
-<hr / >
+  Filtering by imported data is limited. The general rule is that you cannot filter by two different properties at the same time.
+  For example, `event:page==/;visit:source==Twitter` is not able to return any imported results. The same happens when you try to filter by one dimension and set another as a dimension.
 
-**period** <Optional />
+  There are some exceptions though. The following dimensions are aggregated and grouped together and can be combined in a query:
 
-See [time periods](#time-periods). If not specified, it will default to `30d`.
+  * Countries, regions, cities
+  * Operating systems and their versions
+  * Hostnames and pages
+  * Specific custom events and their properties
+    * `Outbound Link: Click` and `File Download` goals with the `url` property
+    * `404` goals with the `path` property
 
-<hr / >
+  For example, you can set a `country` dimension and filter by both `city` and `region`.
+</details>
 
-**metrics** <Optional />
+If set, `meta.imports_included` field will be set as a boolean.
 
-Comma-separated list of metrics to aggregate, e.g. `visitors,pageviews,bounce_rate`. See the [list of available metrics](#metrics) above.
+If the applied combination of filters and dimensions is not supported for imported stats, the results are still returned based only on native stats. Additionally, `meta.imports_skip_reason` and `meta.imports_warning` response fields will contain more information on why including imported data failed. [See example](#example-imports-warning)
 
-If not specified, will default to `visitors`.
+#### include.time_labels {#include.time_labels}
 
-:::note
-Some metrics can only be queried with a certain filter. For example, the `conversion_rate` metric can only be queried with a filter on `event:goal`. Similarly, `time_on_page` can only be queried with an `event:page` filter.
-:::
+Default: `false`
 
-<hr / >
+Requires a `time` dimension being set. If true, sets `meta.time_labels` in response containing all
+time labels valid for `date_range`.
 
-**with_imported** <Optional />
+[See example](#example-time-labels)
 
-A boolean determining whether to include imported stats in the returned results or not. If not specified, it will default to `false`. See [imported stats](#imported-stats) for more details.
+#### include.total_rows {#include.total_rows}
 
-<hr / >
+Default: `false`
 
-**compare** <Optional />
+Should be used for [pagination](#pagination). If true, sets `meta.total_rows` in response containing the total number of
+rows for this query.
 
-Off by default. You can specify `compare=previous_period` to calculate the percent difference with the previous period for each metric. The previous period will be of the exact same length as specified in the `period` parameter.
+[See example](#example-pagination)
 
-<hr / >
+### pagination <Optional />
 
-**filters** <Optional />
+Default: `{ "limit": 10000, "offset: 0 }`
 
-See [filtering](#filtering)
+[See example](#example-pagination)
 
-### GET /api/v1/stats/timeseries
+## Response structure
 
-This endpoint provides timeseries data over a certain time period. If you are familiar with the Plausible dashboard, this endpoint corresponds to
-the main visitor graph.
+Example response:
 
+<CodeBlock language="json">{getExampleCode("exampleResponse", "example-country-and-city", null)}</CodeBlock>
 
-```bash title="Try it yourself"
-curl "https://plausible.io/api/v1/stats/timeseries?site_id=$SITE_ID&period=6mo" \
-  -H "Authorization: Bearer ${TOKEN}"
-```
+### results
 
-```json title="Response"
-{
-  "results": [
-    {
-      "date": "2020-08-01",
-      "visitors": 36085
-    },
-    {
-      "date": "2020-09-01",
-      "visitors": 27688
-    },
-    {
-      "date": "2020-10-01",
-      "visitors": 71615
-    },
-    {
-      "date": "2020-11-01",
-      "visitors": 31440
-    },
-    {
-      "date": "2020-12-01",
-      "visitors": 35804
-    },
-    {
-      "date": "2021-01-01",
-      "visitors": 0
-    }
-  ]
-}
-```
+Results is an ordered list query results.
 
-#### Parameters
-<hr / >
+Each result row contains:
+- `dimensions` - values for each `dimension` listed in query. In the same order as query `dimensions`, empty if no dimensions requested.
+- `metrics` - List of metric values, in the same order as query `metrics`
 
-**site_id** <Required />
 
-Domain of your site on Plausible.
+### meta
 
-<hr / >
+Meta information about this query. Related: [include.imports](#include.imports) and [include.time_labels](#include.time_labels).
 
-**period** <Optional />
+### query
 
-See [time periods](#time-periods). If not specified, it will default to `30d`.
+The query that was executed, after manipulations performed on the backend.
 
-<hr / >
+## Examples
 
-**filters** <Optional />
+<SiteContextProvider>
 
-See [filtering](#filtering)
+<ExamplesTip />
 
-<hr / >
+### Simple aggregate query {#example-aggregate}
 
-**metrics** <Optional />
+<ApiV2Example id="example-aggregate" />
 
-Comma-separated list of metrics to show for each time bucket. Valid options are `visitors`, `visits`, `pageviews`, `views_per_visit`, `bounce_rate`, `visit_duration`, `events` and `conversion_rate`. If not specified, it will default to `visitors`.
+### Custom date range {#example-custom-date-range}
 
-<hr / >
+<ApiV2Example id="example-custom-date-range" />
 
-**with_imported** <Optional />
+### Country and city analysis {#example-country-and-city}
 
-A boolean determining whether to include imported stats in the returned results or not. If not specified, it will default to `false`. See [imported stats](#imported-stats) for more details.
+<ApiV2Example id="example-country-and-city" />
 
-<hr / >
+### UTM medium, source analysis {#example-utm}
 
-**interval** <Optional />
+<ApiV2Example id="example-utm" />
 
-Choose your reporting interval. Valid options are `day` (always) and `month` (when specified period is longer than one calendar month). Defaults to
-`month` for `6mo` and `12mo`, otherwise falls back to `day`.
+### Filtering by page and country {#example-filtering}
 
-### GET /api/v1/stats/breakdown
+<ApiV2Example id="example-filtering" />
 
-This endpoint allows you to break down your stats by some property. If you are familiar with SQL family databases, this endpoint corresponds to
-running `GROUP BY` on a certain property in your stats, then ordering by the count.
+### Timeseries query {#example-timeseries}
 
-Check out the [properties](#properties) section for a reference of all the properties you can use in this query.
+<ApiV2Example id="example-timeseries" />
 
-This endpoint can be used to fetch data for `Top sources`, `Top pages`, `Top countries` and similar reports.
+### Timeseries query hourly, with labels {#example-time-labels}
 
+<ApiV2Example id="example-time-labels" />
 
-```bash title="Try it yourself"
-curl "https://plausible.io/api/v1/stats/breakdown?site_id=$SITE_ID&period=6mo&property=visit:source&metrics=visitors,bounce_rate&limit=5" \
-  -H "Authorization: Bearer ${TOKEN}"
-```
+### Using custom properties {#example-custom-properties}
 
-```json title="Response"
-{
-  "results": [
-    {
-        "bounce_rate": 49.0,
-        "source": "(Direct / None)",
-        "visitors": 94932
-    },
-    {
-        "bounce_rate": 75.0,
-        "source": "Hacker News",
-        "visitors": 22540
-    },
-    {
-        "bounce_rate": 58.0,
-        "source": "Google",
-        "visitors": 16909
-    },
-    {
-        "bounce_rate": 62.0,
-        "source": "Twitter",
-        "visitors": 7477
-    },
-    {
-        "bounce_rate": 56.0,
-        "source": "indiehackers.com",
-        "visitors": 4518
-    }
-  ]
-}
-```
+<ApiV2Example id="example-custom-properties" />
 
-#### Parameters
-<hr / >
+### Pagination {#example-pagination}
 
-**site_id** <Required />
+<ApiV2Example id="example-pagination" />
 
-Domain of your site on Plausible.
+### Including imported data {#example-imports}
 
-<hr / >
+<ApiV2Example id="example-imports" />
 
-**property** <Required />
+### Including imported data failed {#example-imports-warning}
 
-Which property to break down the stats by. Valid options are listed in the [properties](#properties) section above. Note that the `event:hostname` property is unsupported as a breakdown property at this stage.
+In this example, imported data could not be included due to dimension and filter combination not supporting imports. [More information](#include.imports)
 
-<hr / >
+<ApiV2Example id="example-imports-warning" />
 
-**period** <Optional />
-
-See [time periods](#time-periods). If not specified, it will default to `30d`.
-
-<hr / >
-
-**metrics** <Optional />
-
-Comma-separated list of metrics to show for each item in breakdown. See the [list of available metrics](#metrics) above. If not specified, it will default to `visitors`.
-
-:::note
-Some metrics require a certain filter or breakdown property. For example `conversion_rate` can be queried with a filter on `event:goal` or in a breakdown by`event:goal`.
-:::
-
-<hr / >
-
-**with_imported** <Optional />
-
-A boolean determining whether to include imported stats in the returned results or not. If not specified, it will default to `false`. See [imported stats](#imported-stats) for more details.
-
-<hr / >
-
-**limit** <Optional />
-
-Limit the number of results. Maximum value is 1000. Defaults to 100. If you want to get more than 1000 results, you can make multiple requests and paginate the results by specifying the `page` parameter (e.g. make the same request with `page=1`, then `page=2`, etc)
-
-**page** <Optional />
-
-Number of the page, used to paginate results. Importantly, the page numbers start from 1 not 0.
-
-**filters** <Optional />
-
-See [filtering](#filtering)
-
-#### Breaking down by multiple properties at the same time
-
-Currently, it is only possible to break down on one property at a time. Using a list of properties with one query is not supported. So if you want a breakdown by both `event:page` and `visit:source` for example, you would have to make multiple queries (break down on one property and filter on another) and then manually/programmatically group the results together in one report. This also applies for breaking down by time periods. To get a daily breakdown for every page, you would have to break down on `event:page` and make multiple queries for each date. For a simple time period breakdown, have a look at the Timeseries endpoint.
-
-## Examples of common queries
-
-### Top pages
-
-Let's say you want to show a similar report to the `Top pages` report in the Plausible UI. You can do this by calling the
-`/api/v1/stats/breakdown` endpoint and specify `event:page` as the property to group by.
-
-```bash title="Top pages"
-curl "https://plausible.io/api/v1/stats/breakdown?site_id=$SITE_ID&period=6mo&property=event:page&limit=5" \
-  -H "Authorization: Bearer ${TOKEN}"
-```
-
-```json title="Response"
-{
-  "results": [
-    {
-      "page": "/",
-      "visitors": 94298
-    },
-    {
-      "page": "/blog/open-source-licenses",
-      "visitors": 18803
-    },
-    {
-      "page": "/plausible.io",
-      "visitors": 20485
-    },
-    {
-      "page": "/self-hosted-web-analytics",
-      "visitors": 22236
-    },
-    {
-      "page": "/sites",
-      "visitors": 32386
-    }
-  ]
-}
-```
-
-### Number of visitors to a specific page
-
-Let's say you want to get the number of visitors to a specific page on your website like `/order/confirmation`. This can be achieved by
-filtering your stats on the `event:page` property:
-
-```bash title="Visitors to /order/confirmation"
-curl "https://plausible.io/api/v1/stats/aggregate?site_id=$SITE_ID&period=6mo&filters=event:page%3D%3D%2Forder%2Fconfirmation" \
-  -H "Authorization: Bearer ${TOKEN}"
-```
-
-```json title="Response"
-{
-  "results": {
-    "visitors": {
-        "value": 1480
-    }
-  }
-}
-```
-
-### Monthly traffic from Google
-
-As a second example, let's imagine we want to analyze our SEO efforts for the last half year.
-To graph your traffic from Google over time, you can use the `timeseries` endpoint with a time period `6mo` and
-filter expression `visit:source==Google`.
-
-```bash title="Monthly traffic from Google"
-curl "https://plausible.io/api/v1/stats/timeseries?site_id=$SITE_ID&period=6mo&filters=visit:source%3D%3DGoogle" \
-  -H "Authorization: Bearer ${TOKEN}"
-```
-
-```json title="Response"
-{
-  "results": [
-    {
-        "date": "2020-09-01",
-        "visitors": 2962
-    },
-    {
-        "date": "2020-10-01",
-        "visitors": 4974
-    },
-    {
-        "date": "2020-11-01",
-        "visitors": 5119
-    },
-    {
-        "date": "2020-12-01",
-        "visitors": 5397
-    },
-    {
-        "date": "2021-01-01",
-        "visitors": 7167
-    },
-    {
-        "date": "2021-02-01",
-        "visitors": 5802
-    }
-]
-}
-```
-
-### Breakdown custom event by custom properties
-
-A more advanced use-case where custom events are used along with custom properties. Let's say you have a `Download` custom event goal along with
-a custom property called `method`. You can get a breakdown of download methods with the following query:
-
-```bash title="Breakdown of download methods"
-curl "https://plausible.io/api/v1/stats/breakdown?site_id=$SITE_ID&period=6mo&property=event:props:method&filters=event:goal%3D%3DDownload" \
-  -H "Authorization: Bearer ${TOKEN}"
-```
-
-```json title="Response"
-{
-    "results": [
-        {
-            "method": "HTTP",
-            "visitors": 1477
-        },
-        {
-            "method": "Magnet",
-            "visitors": 370
-        }
-    ]
-}
-```
-
-:::tip Want to monitor the status of our API?
-You can use GET https://plausible.io/api/health endpoint to do so
-:::
+</SiteContextProvider>
