@@ -144,7 +144,7 @@ export async function postQuery(query: string): Promise<[Response, string]> {
   try {
     response = await fetch('/api/docs/query', {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
       body: query
     })
 
