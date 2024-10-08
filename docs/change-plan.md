@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Log in to your Plausible Analytics account and in the top right menu, click on your account name, and choose "**Account Settings**" to enter your account settings.
 
-To change your subscription plan, find the "**Subscription Plan**" section and click on "**Change plan**".
+To change your subscription plan, go to the "**Subscription**" section and click on "**Change plan**".
 
 <img alt="Change Plausible Plan" src={useBaseUrl('img/change-plan.png')} />
 
