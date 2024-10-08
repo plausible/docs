@@ -14,7 +14,7 @@ To calculate your usage levels, we take all the websites you have added to your 
 
 "**Custom Events**" include external link clicks, file downloads and 404 error page tracking. The act of adding a "[Pageview Goal](pageview-goals.md)" has no effect on your usage.
 
-You can check your usage levels in your account settings within the "**Subscription Plan**" section. You should be on a subscription tier that fits your usage levels. You can get 2 months free on a yearly plan.
+You can check your usage levels in your account settings within the "**Subscription**" section. You should be on a subscription tier that fits your usage levels. You can get 2 months free on a yearly plan.
 
 You also need to decide on your subscription plan. These vary in terms of number of sites, team members and features:
 
