@@ -11,8 +11,8 @@ Plausible Analytics offers a security feature that allows you to remotely log ou
 ## How to log out of your Plausible account remotely
 
 * Log in to your Plausible Analytics account and in the top right menu, click on your account name and choose "**Account Settings**" to enter your account settings.
-* Find the “**Login Management**” section where you can see a list of all your active logged-in sessions.
-* Click the "**Log Out**" button next to the session you wish to end.
+* In the "**Security**" section, find “**Login Management**” where you can see a list of all your active logged-in sessions.
+* Click the trash icon next to the session you wish to end.
 
 Note that all Plausible logged-in sessions automatically expire after 14 days of inactivity.
 
