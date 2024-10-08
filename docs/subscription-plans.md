@@ -16,6 +16,8 @@ To calculate your usage levels, we take all the websites you have added to your 
 
 You can check your usage levels in your account settings within the "**Subscription**" section. You should be on a subscription tier that fits your usage levels. You can get 2 months free on a yearly plan.
 
+<img alt="Plausible subscription" src={useBaseUrl('img/account-settings-subscription.png')} />
+
 You also need to decide on your subscription plan. These vary in terms of number of sites, team members and features:
 
 * Choose the "**Growth**" plan for essential features, ideal for growing teams
