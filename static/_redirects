@@ -1,1 +1,4 @@
 https://docs.plausible.io/* https://plausible.io/docs/:splat 301!
+
+# Legacy redirect
+/docs/stats-api-v2 /docs/stats-api
