@@ -8,7 +8,7 @@ Log in to your Plausible Analytics account and in the top right menu, click on y
 
 <img alt="Access your account's settings" src={useBaseUrl('img/plausible-account-settings.png')} />
 
-To change your account email address, find the "**Change email address**" section, provide your current password and new email, and click on the "**Change my email**" button. You will be then requested to provide a verification code which will be sent to your new email address.
+To change your account email address, go into the "**Security**" section. Find the "**Email Address**" area, provide your current password and new email, and click on the "**Change Email**" button. You will be then requested to provide a verification code which will be sent to your new email address.
 
 Note that our system has two email addresses and that these may not necessarily be the same. One is for your Plausible account and the other one for your Paddle account. Paddle is our payment processor and they send the billing emails such as invoices to the email address on your Paddle account.
 
