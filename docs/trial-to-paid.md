@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Log in to your Plausible Analytics account and in the top right, click on the "**X trial days left**" button.
 
-Under "**Subscription Plan**", your "**Current plan**" should list "**Free Trial**". Click on "**Upgrade**" to upgrade your trial account to a paid subscription.
+In the "**Subscription**" section, your "**Monthly quota**" should list "**Free trial**". Click on "**Upgrade**" to upgrade your trial account to a paid subscription.
 
 Note that you will keep all the stats you have collected during the trial when you upgrade your account. We don't reset any data collected in the trial.
 
@@ -20,7 +20,7 @@ If you're using Plausible as [a part of a team](users-roles.md), note that the a
 
 Our subscription tiers are based on the total number of pageviews and custom events between all the sites you have added to your Plausible Analytics account.
 
-You can check your usage levels during the trial period to date in your account settings within the "**Subscription Plan**" section. You should select a subscription tier that matches your usage levels. Opt for monthly or yearly billing. You can get 2 free months with an annual subscription.
+You can check your usage levels during the trial period to date in your account settings within the "**Subscription**" section of your account settings. You should select a subscription tier that matches your usage levels. Opt for monthly or yearly billing. You can get 2 free months with an annual subscription.
 
 Next, decide on your plan. These vary in terms of number of sites, team members and features:
 
