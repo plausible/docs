@@ -8,7 +8,7 @@ Log in to your Plausible Analytics account and in the top right menu, click on y
 
 To change your subscription plan, go to the "**Subscription**" section and click on "**Change plan**".
 
-<img alt="Change Plausible Plan" src={useBaseUrl('img/change-plan.png')} />
+<img alt="Change Plausible Plan" src={useBaseUrl('img/account-settings-change-plan.png')} />
 
 Select your new subscription plan and choose if you want to pay on a monthly or yearly basis. Then click on the "**Preview changes**" button.
 
