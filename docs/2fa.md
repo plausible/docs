@@ -11,7 +11,7 @@ To enable the 2FA on your Plausible account, you are required to insert the secu
 ## How to enable 2FA
 
 * Log in to your Plausible Analytics account and in the top right menu, click on your account name and choose "**Account Settings**" to enter your account settings.
-* Find the “**Two-Factor Authentication (2FA)**” section and click on the “**Enable 2FA**” button.
+* In the "**Security**" section, find “**Two-Factor Authentication (2FA)**” and click on the “**Enable 2FA**” button.
 <img alt="Enable 2FA" src={useBaseUrl('img/enable-2FA.png')} />
 * Link your Plausible account to your authenticator app by scanning the QR code or pasting the code manually. Then click on the “**Proceed**” button.
 <img alt="Scan QR to enable 2FA" src={useBaseUrl('img/scan-qr-2FA.png')} />
@@ -24,7 +24,7 @@ To enable the 2FA on your Plausible account, you are required to insert the secu
 
 Have you lost your recovery codes? You can generate new codes at any time. You can use a recovery code to log in to your Plausible account if you lose access to your authenticator app or your trusted device.
 
-* In your Plausible account settings, find the “**Two-Factor Authentication (2FA)**” section and click the “**Generate new**” link.
+* In your Plausible account settings "**Security**" section, find “**Two-Factor Authentication (2FA)**” and click the “**Generate new**” link.
 <img alt="Generate new 2FA recovery codes" src={useBaseUrl('img/generate-new-recovery-codes-2FA.png')} />
 * Confirm your account password and click the “**Generate New Codes**” button.
 <img alt="Generate new 2FA recovery codes" src={useBaseUrl('img/enter-password-to-generate-new-codes-2FA.png')} />
@@ -34,7 +34,7 @@ Note that when you generate new recovery codes, your old recovery codes will bec
 
 ## How to disable 2FA
 
-* In your Plausible account settings, find the “**Two-Factor Authentication (2FA)**” section and click on the “**Disable 2FA**” button.
+* In your Plausible account settings "**Security**" section, find “**Two-Factor Authentication (2FA)**” and click on the “**Disable 2FA**” button.
 <img alt="Disable 2FA" src={useBaseUrl('img/disable-2FA.png')} />
 * Then enter your account password and click the “**Disable 2FA**” button to complete the process.
 
