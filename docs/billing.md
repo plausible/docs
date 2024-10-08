@@ -60,6 +60,6 @@ Your subscription tier is based on your usage in the last billing cycle. If your
 
 ## How do I update my billing information?
 
-You can edit your payment details by logging into your Plausible account and in the top right menu, click on your account name and choose "**Account Settings**" to enter your account's settings. You will see the "**Update billing info**" link under "**Next bill amount**".
+You can edit your payment details by logging into your Plausible account and in the top right menu, click on your account name and choose "**Account Settings**" to enter your account's settings. In the "**Subscription**" section, you will see the "**Update billing info**" link under "**Next bill amount**".
 
 <img alt="Update Plausible billing information" src={useBaseUrl('img/update-billing-info.png')} />
