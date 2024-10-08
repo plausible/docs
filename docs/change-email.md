@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Log in to your Plausible Analytics account and in the top right menu, click on your account name and choose "**Account Settings**" to enter your account settings.
 
-<img alt="Access your account's settings" src={useBaseUrl('img/plausible-account-settings.png')} />
+<img alt="Access your account's settings" src={useBaseUrl('img/account-settings-change-email.png')} />
 
 To change your account email address, go into the "**Security**" section. Find the "**Email Address**" area, provide your current password and new email, and click on the "**Change Email**" button. You will be then requested to provide a verification code which will be sent to your new email address.
 
