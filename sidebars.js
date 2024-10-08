@@ -81,7 +81,31 @@ module.exports = {
         ],
       },
     ],
-    API: ['stats-api', 'events-api', 'sites-api', 'stats-api-v2', 'stats-api-playground'],
+    API: [
+      {
+        type: 'category',
+        label: 'Stats API',
+        items: [
+          {
+            type: 'doc',
+            id: 'stats-api',
+            label: 'Reference',
+          },
+          {
+            type: 'doc',
+            id: 'stats-api-playground',
+            label: 'Playground',
+          },
+          {
+            type: 'doc',
+            id: 'stats-api-v1',
+            label: 'v1 API Reference',
+          }
+        ]
+      },
+      'events-api',
+      'sites-api',
+    ],
     Adblockers: [
       { type: 'doc', id: 'proxy/introduction', label: 'Overview' },
       {
