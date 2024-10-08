@@ -56,7 +56,7 @@ export function ApiV2Playground() {
         <div>
           <hr />
           <h3>Response</h3>
-          <p>Status: <code>{response.status}</code> - <code>{response.statusText}</code></p>
+          <p>Status code: <code>{response.status}</code></p>
           <JsonSchemaEditor
             readOnly
             value={response.data}
