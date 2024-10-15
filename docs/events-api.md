@@ -87,6 +87,12 @@ custom events.
 
 URL of the page where the event was triggered. If the URL contains UTM parameters, they will be extracted and stored. When using the script, this is set to `window.location.href`.
 
+:::note The hostname derived from `url` takes part in unique visitor recognition. 
+Sending two events from the same client, for two different hostnames, will result with two sessions recorded. 
+If you don't include hostname in the `url` field (e.g. the value is `/blog` instead of `https://example.com/blog`), 
+we'll store missing hostname as `(none)`.
+:::
+
 The maximum size of the URL, excluding the domain and the query string, is 2,000 characters. Additionally, URLs using the [data URI scheme](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URLs) are not supported by the API.
 
 :::tip The URL parameter will feel strange in a mobile app but you can manufacture something that looks like a web URL
