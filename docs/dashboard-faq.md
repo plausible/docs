@@ -30,4 +30,4 @@ Data sampling is the practice of analyzing a subset of all data to uncover the m
 
 Plausible does not use any data sampling by default. We collect and store 100% of the data regardless of how many pageviews you have. The stats in your dashboard reflect 100% accurate data of what happens on your site.
 
-However, on some dashboard views that have a lot of data such as those with more than 20 million pageviews, we apply limited data sampling to make the dashboard load as fast as possible. There will be a clear note in your dashboard when you're viewing a report with sampled data.
+However, on some dashboard views that have a lot of data such as those with more than 20 million pageviews, we apply limited data sampling to make the dashboard load as fast as possible.
