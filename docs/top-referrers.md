@@ -58,16 +58,16 @@ For any clicks on the above link, "**Newsletter**" would be listed as a referral
 
 Read more about "[how to use UTM parameters to track your campaigns and understand the dark traffic](https://plausible.io/blog/utm-tracking-tags)".
 
-## Custom events and conversion attribution 
+## How to track conversion attribution 
 
 Goals and custom events allow you to track actions that you want your visitors to take on your site. Actions such as registering for a trial account, purchasing a product or completing a checkout form of an ecommerce store.
 
 <img alt="Conversion rate" src={useBaseUrl('img/conversion-rate.png')} />
 
-By [setting up goals and custom events](goal-conversions.md), you can track the number of conversions, conversion rate, referrer sources and entry pages that are driving conversions and the top pages that people convert on. You can also track [ecommerce revenue](ecommerce-revenue-tracking.md). And you can [set up funnels](funnel-analysis.md) to track the user journey too.
+By [setting up goals and custom events](goal-conversions.md), you can track the number of conversions, conversion rate, referrer sources and entry pages that are driving conversions and the top pages that people convert on. You can also track [ecommerce revenue](ecommerce-revenue-tracking.md) and [set up funnels](funnel-analysis.md) to track the user journey too.
 
 <img alt="Custom goal conversion rate" src={useBaseUrl('img/custom-goal-conversion-rate.png')} />
 
-Click on any specific referral source in your dashboard to see the number of conversions and the conversion rate (CR) of that referral source for any of your goals. You can also click on any goal in your dashboard to see the number of conversions and the conversion rate of that specific goal coming from any referral source or any landing page. This works even if your site operates [across multiple subdomains](subdomain-hostname-filter.md).
+Click on any specific source in your dashboard to see the number of conversions and the conversion rate (CR) of that referral source for any of your goals. You can also click on any goal in your dashboard to see the number of conversions and the conversion rate of that specific goal coming from any source or any landing page. This works even if your site operates [across multiple subdomains](subdomain-hostname-filter.md).
 
 Due to the privacy-first nature of our product and the fact that we don't use cookies and other long term identifiers, the conversion attribution in Plausible is based on last click attribution. The referral source of the visit on which the purchase was made will be credited for that conversion. 
