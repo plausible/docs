@@ -4,7 +4,7 @@ title: Acquisition channels, referral sources and paid campaigns
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Your "**Top Sources**" report shows acquisition channels, referral sources and marketing campaigns that are driving traffic to your website. This helps you understand your best converting promotional activities.
+Your "**Top Sources**" report shows acquisition channels, referral sources and marketing campaigns that drive traffic to your website. This helps you understand your best converting promotional activities.
 
 Click on any individual entry to filter the dashboard by it. Click the "**Details**" button to get extra insights such as the visit duration and bounce rate for the individual entry. Click on any metric heading in the "**Details**" view to sort and arrange your data in ascending or descending order.
 
@@ -14,7 +14,7 @@ Using [the "**Filter**" button on the top of your dashboard](filters-segments.md
 
 ## Acquisition channels
 
-In the "**Channels**" tab, you can see a break down of your sources into high-level categories such as "**Organic Social**" and "**Paid Search**". This for instance allows you to segment your traffic between organic traffic and paid marketing campaigns.
+In the "**Channels**" tab, you can see a breakdown of your sources into high-level categories such as "**Organic Social**" and "**Paid Search**". This allows you to segment your traffic between organic traffic and paid marketing campaigns.
 
 ## Referral sources
 
@@ -26,11 +26,11 @@ And know also that referral sources are counted only when they start a new sessi
 
 ### Consolidation of sources
 
-UTM tags are case sensitive. This may result in the traffic sources being badly categorized. To help reduce this issue, in the "**Sources**" tab of the "**Top Sources**" report, each source is consolidated into a single entry regardless of capitalization stemming from UTM tagging differences.
+UTM tags are case sensitive which may lead to traffic sources being duplicated or miscategorized. To mitigate this issue, the "**Sources**" tab in the "**Top Sources**" report consolidates each source into a single entry, disregarding capitalization or naming differences in UTM tags.
 
-For instance, clicks that you get from Facebook which are not tagged by UTMs are labeled with a referral source "**Facebook**" by Facebook itself. If you tag some links that you share on Facebook with the utm_source=facebook, utm_source=fb or utm_source=facebook-ads, clicks on those links will be consolidated alongside other Facebook clicks in the "**Facebook**" entry in the “**All**” tab of your "**Top Sources**" report. This is in order to make it easier for you to keep track and get a combined overview of all the clicks from Facebook.
+For instance, clicks that you get from Facebook which are not tagged by UTMs are labeled with a referral source "**Facebook**" by Facebook itself. If you tag some links that you share on Facebook with utm_source=facebook, utm_source=fb or utm_source=facebook-ads, clicks on those links will be consolidated alongside organic clicks in the "**Facebook**" entry in the “**All**” tab of your "**Top Sources**" report providing a unified view of all Facebook clicks.
 
-To isolate your UTM tagged clicks from other clicks, check the "**Campaigns**" tab.
+You can still isolate your UTM tagged clicks from organic traffic and view their original labels in the "**Campaigns**" tab of "**Top Sources**".
 
 ### Keyword phrases from Google search
 
