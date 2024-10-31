@@ -1,47 +1,73 @@
 ---
-title: Top Sources
+title: Aquisition channels, refferal sources and paid campaigns 
 --- 
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Your "**Top Sources**" report shows which referral sources are driving traffic to your website. Click the "**Details**" button to get extra insights such as the visit duration and bounce rate for the individual referral source. Click on any metric heading to sort and arrange your data in ascending or descending order. Click on any referral source to filter the dashboard by it.
+Your "**Top Sources**" report shows aquisition channels, referral sources and marketing campaigns that are driving traffic to your website. This helps you understand your best converting promotional activities.
 
-The Top Sources report also includes the "**Campaigns**" tab where you can see the traffic tagged with UTM tags such as `utm_source`, `utm_medium` and `utm_campaign`. You can use UTM tags to understand which marketing and promotional activities are driving traffic that converts best. 
+Click on any individual entry to filter the dashboard by it. Click the "**Details**" button to get extra insights such as the visit duration and bounce rate for the individual entry. Click on any metric heading in the "**Details**" view to sort and arrange your data in ascending or descending order.
 
-Using [the "**Filter**" button on the top of your dashboard](filters-segments.md), you can filter the stats by multiple sources or multiple UTM tags at the same time for more powerful segmenting of traffic. It's also possible to filter out traffic from a specific referral source.
+Using [the "**Filter**" button on the top of your dashboard](filters-segments.md), you can filter the stats by multiple channels, sources or UTM tags at the same time for more powerful segmenting of traffic. It's also possible to filter out traffic from a specific channel, referral source or UTM tag.
 
 <img alt="Top Referrers - multiple filters" src={useBaseUrl('img/top-referrers-filtering-multiple-filters.png')} />
 
-Note that all referral sources are counted only when they start a new session on your site. This is why you don't see all your own referral sources if you click to test several different UTM tagged links at the same time. Only the first one would be included in the "**Top Sources**" report. You would need to start a new session by for instance waiting more than 30 minutes or using a different device, browser or IP address.
+## Aquisition channels
 
-The fact that the referral sources are counted only when they start a new session on your site prevents external domains such as a payment gateway that the user is being taken through to show up in the referrers list. No need for you to manually exclude referrers.
+In the "**Channels**" tab, you can see a break down of your sources into high-level categories such as "**Organic Social**" and "**Paid Search**". This for instance allows you to segment your traffic between organic traffic and paid marketing campaigns.
 
-There are two distinct ways that Plausible Analytics collects the referrer source for a visitor:
+## Referral sources
 
-## 1. Automatic by the `referer` header
+In the "**Sources**" tab, you can see the full list of your traffic sources.
 
-The `referer` header (the HTTP header is misspelled with one r for historical reasons) is the default and automated way of tracking referrer sources of web traffic. The `referer` header works well for the majority of cases but there are some limitations and fall-backs with using it for various historical and technical reasons.
+Note that browsers now only send the domain name of the referrer and not the actual URL. If `thatblog.com/one-post/` sends you visitors, you will see `thatblog.com` in your sources list but won’t be able to see the exact post URL itself. [See more here](https://plausible.io/blog/referrer-policy).
 
-Note that all the major browsers have stopped sending the detailed info on [referral sources](https://plausible.io/blog/referrer-policy). Chrome, Safari and Firefox now only send the full domain name of the referrer and not the actual URL. This affects all analytics services including Plausible. It means that if `thatblog.com/one-post/` sends you visitors, you will see `thatblog.com` in your referral sources list but won’t be able to see the exact post URL itself.
+And know also that referral sources are counted only when they start a new session on your site. This is why you may not see all sources of your own visits if you click to test several different links at the same time. You would need to start a new session by using a different browser, IP address or device for the additional sources to be included in the report. This prevents external domains such as payment gateways showing up in the list of sources.
 
-### "Direct / None" traffic without a referrer source
+### Consolidation of sources
 
-Not every request from a browser will have the referrer specified, and the `referer` header isn't always accurate. 
+UTM tags are case sensitive. This may result in the traffic sources being badly categorized. To help reduce this issue, in the "**Sources**" tab of the "**Top Sources**" report, each source is consolidated into a single entry regardless of capitalization stemming from UTM tagging differences.
 
-This is why you see the "**Direct / None**" referrer source in the "**Top Sources**" report. This covers all the traffic where the referrer isn't passed. These could be clicks from email, clicks from documents, clicks from messengers and other mobile apps, bookmarks, people typing in the URL directly into the browser and more. You may also know it as "**dark traffic**".
+For instance, clicks that you get from Facebook which are not tagged by UTMs are labeled with a referral source "**Facebook**" by Facebook itself. If you tag some links that you share on Facebook with the utm_source=facebook, utm_source=fb or utm_source=facebook-ads, clicks on those links will be consolidated alongside other Facebook clicks in the "**Facebook**" entry in the “**All**” tab of your "**Top Sources**" report. This is in order to make it easier for you to keep track and get a combined overview of all the clicks from Facebook.
 
-By default, we attempt to uncover traffic originating from Android apps which is traditionally categorized as direct traffic in web analytics. The volume of "**android-app**" entries in your "**Top Sources**" report will vary based on your site and audience. For sites with significant mobile traffic, this recovers 10% or more previously unattributed traffic from apps like Gmail, Slack and Telegram.
+To isolate your UTM tagged clicks from other clicks, check the "**Campaigns**" tab.
 
-Here’s a non-exhaustive list of other problems with the header:
+### Keyword phrases from Google search
 
-* Whenever someone is moving from `http` to `https` or vice versa, the `referer` header is dropped.
+Note that Google does not include the search keywords in the referrer. This means that you can see that the visitor is coming from Google search but you can't see which keyword phrase they used to find you. 
 
-* Facebook `referer` only includes the fact that the visitor came from Facebook. Facebook never sends the post or comment ID where someone clicked.
+To fix this, you can integrate your Plausible account [with Google Search Console](google-search-console-integration.md) so that the keyword phrases people discover your site with show in your Plausible dashboard. After integrating with Search Console, you can click on the "**Google**" entry in the "**Top Sources**" report to view these keyword phrases.
 
-* Google does not include the search keywords in the referrer, so you can see that the visitor is coming from Google search, but you can't see which keyword phrase they used to find you. To fix this, you can [integrate your account](google-search-console-integration.md) with Google Search Console so the keyword phrases people discover your site with show in your Plausible Analytics dashboard. After integrating with Search Console, you can click on "**Google**" to view these.
+## Paid marketing campaigns 
 
-## 2. Manual by link tagging
+In the "**Campaigns**" tab, you can see the traffic tagged with UTM tags.
 
-To minimize the amount of traffic that falls within the "**Direct / None**" category, you can add special query parameters such as UTM tags to your links. `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term` query parameters are all valid and supported by Plausible Analytics.
+To isolate your UTM tagged clicks from the organic clicks, you can segment the traffic by using the "**UTM Medium**", "**UTM Source**", "**UTM Campaign**", "**UTM Content**" and "**UTM Term**" reports within the "**Campaigns**" tab.
 
-See "[Manual link tagging](manual-link-tagging.md)" section of the documentation for the full instructions.
+## How to reduce the volume of dark traffic
+
+Not all traffic to your website will have the referrer header specified in the browser. This "**dark traffic**" is why you see the "**Direct / None**" source in the "**Top Sources**" report. These are typically clicks from emails, documents, instant messengers, mobile apps or bookmarks.
+
+By default, we attempt to uncover traffic originating from Android apps which is traditionally categorized as direct traffic in web analytics. The volume of "**android-app**" entries in your "**Top Sources**" report will vary based on your site and audience.
+
+To minimize the amount of traffic that falls within the "**Direct / None**" category, you can add special query parameters such as UTM tags to your links whenever you post a link in social media, paid advertising or an email newsletter. `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term` query parameters are all valid and supported by Plausible.
+
+Tagging links helps you better track your marketing campaigns and see which campaigns are responsible for most conversions. Here's an example of how to tag your links: `yourdomain.com?utm_source=Newsletter&utm_medium=Email&utm_campaign=NovemberNewsletter&utm_content=Link`
+
+For any clicks on the above link, "**Newsletter**" would be listed as a referral source in your Plausible dashboard, "**Email**" would be listed as the medium, "**NovemberNewsletter**" would be listed as the campaign and "**Link**" would be listed as the content. 
+
+Read more about "[how to use UTM parameters to track your campaigns and understand the dark traffic](https://plausible.io/blog/utm-tracking-tags)".
+
+## Custom events and conversion attribution 
+
+Goals and custom events allow you to track actions that you want your visitors to take on your site. Actions such as registering for a trial account, purchasing a product or completing a checkout form of an ecommerce store.
+
+<img alt="Conversion rate" src={useBaseUrl('img/conversion-rate.png')} />
+
+By [setting up goals and custom events](goal-conversions.md), you can track the number of conversions, conversion rate, referrer sources and entry pages that are driving conversions and the top pages that people convert on. You can also track [ecommerce revenue](ecommerce-revenue-tracking.md). And you can [set up funnels](funnel-analysis.md) to track the user journey too.
+
+<img alt="Custom goal conversion rate" src={useBaseUrl('img/custom-goal-conversion-rate.png')} />
+
+Click on any specific referral source in your dashboard to see the number of conversions and the conversion rate (CR) of that referral source for any of your goals. You can also click on any goal in your dashboard to see the number of conversions and the conversion rate of that specific goal coming from any referral source or any landing page. This works even if your site operates [across multiple subdomains](subdomain-hostname-filter.md).
+
+Due to the privacy-first nature of our product and the fact that we don't use cookies and other long term identifiers, the conversion attribution in Plausible is based on last click attribution. The referral source of the visit on which the purchase was made will be credited for that conversion. 
