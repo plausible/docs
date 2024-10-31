@@ -1,10 +1,10 @@
 ---
-title: Aquisition channels, refferal sources and paid campaigns 
+title: Acquisition channels, referral sources and paid campaigns 
 --- 
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Your "**Top Sources**" report shows aquisition channels, referral sources and marketing campaigns that are driving traffic to your website. This helps you understand your best converting promotional activities.
+Your "**Top Sources**" report shows acquisition channels, referral sources and marketing campaigns that are driving traffic to your website. This helps you understand your best converting promotional activities.
 
 Click on any individual entry to filter the dashboard by it. Click the "**Details**" button to get extra insights such as the visit duration and bounce rate for the individual entry. Click on any metric heading in the "**Details**" view to sort and arrange your data in ascending or descending order.
 
@@ -12,7 +12,7 @@ Using [the "**Filter**" button on the top of your dashboard](filters-segments.md
 
 <img alt="Top Referrers - multiple filters" src={useBaseUrl('img/top-referrers-filtering-multiple-filters.png')} />
 
-## Aquisition channels
+## Acquisition channels
 
 In the "**Channels**" tab, you can see a break down of your sources into high-level categories such as "**Organic Social**" and "**Paid Search**". This for instance allows you to segment your traffic between organic traffic and paid marketing campaigns.
 
