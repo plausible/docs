@@ -50,7 +50,7 @@ Not all traffic to your website will have the referrer header specified in the b
 
 By default, we attempt to uncover traffic originating from Android apps which is traditionally categorized as direct traffic in web analytics. The volume of "**android-app**" entries in your "**Top Sources**" report will vary based on your site and audience.
 
-To minimize the amount of traffic that falls within the "**Direct / None**" category, you can add special query parameters such as UTM tags to your links whenever you post a link in social media, paid advertising or an email newsletter. `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term` query parameters are all valid and supported by Plausible.
+To further minimize the amount of traffic that falls within the "**Direct / None**" category, you can add special query parameters such as UTM tags to your links whenever you post a link in social media, paid advertising or an email newsletter. `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term` query parameters are all valid and supported by Plausible.
 
 Tagging links helps you better track your marketing campaigns and see which campaigns are responsible for most conversions. Here's an example of how to tag your links: `yourdomain.com?utm_source=Newsletter&utm_medium=Email&utm_campaign=NovemberNewsletter&utm_content=Link`
 
