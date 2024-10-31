@@ -2,11 +2,11 @@
 title: Stop tracking UTM tags and other query parameters
 ---
 
-By default, Plausible strips all query parameters for privacy purposes [except for](manual-link-tagging.md) `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term`. If you prefer to stop tracking these parameters as well, please follow these instructions:
+By default, Plausible strips all query parameters for privacy purposes [except for](top-referrers.md) `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term`. If you prefer to stop tracking these parameters as well, please follow these instructions:
 
 ## 1. Add the `manual` script extension
 
-You should use [our manual script extension](script-extensions.md#plausiblemanualjs). To do so, please change your Plausible script snippet `src` attribute from `https://plausible.io/js/script.js` to `https://plausible.io/js/script.manual.js`.
+You should use [our manual script extension](script-extensions.md). To do so, please change your Plausible script snippet `src` attribute from `https://plausible.io/js/script.js` to `https://plausible.io/js/script.manual.js`.
 
 The new snippet will look like this (make sure to change the `data-domain` attribute to the domain you added to your Plausible account):
 
@@ -53,4 +53,4 @@ At this point, your entire setup should look like this:
 </script>
 ```
 
-That's it! You're now no longer tracking any UTM tags or other parameters. We will use the [referrer header](top-referrers.md#1-automatic-by-the-referer-header) to display the sources of the traffic instead. If the referring site doesn't send any referrer header, the traffic will fall within the "Direct / None" source.
+That's it! You're now no longer tracking any UTM tags or other parameters. We will use the [referrer header](top-referrers.md) to display the sources of the traffic instead. If the referring site doesn't send any referrer header, the traffic will fall within the "**Direct / None**" source.
