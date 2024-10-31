@@ -9,7 +9,7 @@ This is especially helpful to redact and aggregate multiple pages whose URLs con
 Follow the steps below to learn how you can specify a custom location for your pages and aggregate page URLs that contain identifiers:
 
 ## 1. Add the `manual` script extension
-To specify a custom location for your event, you must use [Plausible's manual script extension](script-extensions.md#plausiblemanualjs). 
+To specify a custom location for your event, you must use [Plausible's manual script extension](script-extensions.md). 
 
 To do so, change your Plausible script snippet `src` attribute from `https://plausible.io/js/script.js` to `https://plausible.io/js/script.manual.js`.
 
@@ -54,7 +54,7 @@ plausible('pageview', { u: "https://yourdomain.com/my-custom-location" + window.
 ```
 
 :::note
-The `+ window.location.search` is needed to persist query parameters from your actual URL. Plausible uses `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term` query parameters for source acquisition. [Learn more here](manual-link-tagging.md).
+The `+ window.location.search` is needed to persist query parameters from your actual URL. Plausible uses `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term` query parameters for source acquisition. [Learn more here](top-referrers.md).
 :::
 
 At this point, your entire setup should look like this:
