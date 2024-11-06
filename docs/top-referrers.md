@@ -12,11 +12,11 @@ Using [the "**Filter**" button on the top of your dashboard](filters-segments.md
 
 <img alt="Top Referrers - multiple filters" src={useBaseUrl('img/top-referrers-filtering-multiple-filters.png')} />
 
-## Acquisition channels
+## Channels
 
 In the "**Channels**" tab within the "**Top Sources**" report, you can see a breakdown of your sources into high-level categories such as "**Organic Social**" and "**Paid Search**". This allows you to segment your traffic between organic traffic and paid marketing campaigns.
 
-## Referral sources
+## Sources
 
 In the "**Sources**" tab within the "**Top Sources**" report, you can see the full list of your individual referral sources.
 
@@ -38,9 +38,9 @@ Note that Google does not include the search keywords in the referrer. This mean
 
 To fix this, you can integrate your Plausible account [with Google Search Console](google-search-console-integration.md) so that the keyword phrases people discover your site with show in your Plausible dashboard. After integrating with Search Console, you can click on the "**Google**" entry in the "**Top Sources**" report to view these keyword phrases.
 
-## Paid marketing campaigns 
+## Campaigns 
 
-In the "**Campaigns**" tab within the "**Top Sources**" report, you can see the traffic arriving to your site from UTM-tagged links.
+In the "**Campaigns**" tab within the "**Top Sources**" report, you can see the traffic arriving to your site from links tagged with UTM tags and other query parameters.
 
 To isolate your UTM-tagged clicks from the organic clicks, you can segment the traffic by using the "**UTM Medium**", "**UTM Source**", "**UTM Campaign**", "**UTM Content**" and "**UTM Term**" reports within the "**Campaigns**" tab.
 
