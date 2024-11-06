@@ -36,7 +36,7 @@ Our events API can be used to record pageviews and custom events server side wit
 
 ## Bridgetown
 
-[Bridgetown](https://rubygems.org/gems/bridgetown-plausible-tag): A Liquid tag to add Plausible to your Bridgetown site. Built and maintained by [Andrew Mason](https://www.andrewm.codes/). Here's [the source code](https://github.com/andrewmcodes/bridgetown-plausible-tag).
+[Bridgetown](https://rubygems.org/gems/bridgetown-plausible): this plugin provides the plausible Liquid tag & ERB helper to your Bridgetown site. Built and maintained by [Andrew Mason](https://www.andrewm.codes/) and the Bridgetown Community. Here's [the source code](https://github.com/bt-rb/bridgetown-plausible).
 
 ## Bubble.io
 
