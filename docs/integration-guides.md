@@ -122,6 +122,10 @@ To track Google AMP pages with Plausible, you need to declare an AMP-analytics o
 
 To track Google Chrome browser extensions with Plausible, you can [follow these instructions](https://gist.github.com/Joelkw/31b798f69c714c00e9e097b1fd4bb3c8).
 
+## Grafana
+
+To observe Plausible records from [Prometheus](#prometheus) in [Grafana](https://grafana.com), you can use [this Dashboard](https://github.com/netservicedev/grafana-plausible-dashboard). Created by [Marks Bogdanovs](https://www.ezitisitis.com) and maintained by [Net service](https://www.netservice.lv)
+
 ## Grav
 
 [Grav](https://github.com/iainsgillis/grav-plugin-plausible): Add Plausible Analytics to your [Grav CMS](https://getgrav.org/) site and configure it from the admin panel. Built and maintained by [Iain Gillis](https://www.iainsgillis.com).
@@ -221,6 +225,10 @@ The [OJS Site Usage plugin](https://gitlab.com/ubiquitypress/ojs-plugin-site-usa
 ## Podcastpage.io
 
 Add Plausible to your [Podcastpage.io](https://podcastpage.io/) website. Just enable the Plausible script through the "Integrations" page of your dashboard to add the tracking script to all pages.
+
+## Prometheus 
+
+Add Plausible records to [Prometheus](https://prometheus.io) to use with [Grafana](#grafana). Add [Plausible exporter](https://github.com/riesinger/plausible-exporter) and start collecting data. Created and maintained by [Pascal Riesinger](https://riesinger.dev).
 
 ## Publii
 
