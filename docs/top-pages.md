@@ -1,5 +1,5 @@
 ---
-title: Top Pages
+title: Top content, landing pages and exit pages
 --- 
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
