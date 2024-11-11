@@ -54,7 +54,7 @@ Filter your dashboard by a specific goal to see the number of conversions, conve
 
 Due to the privacy-first nature of Plausible and the fact that we don't use cookies and other long-term identifiers, the conversion attribution is based on last-click attribution. The referral source of the visit on which the purchase was made will be credited for that conversion. 
 
-## How to tag reduce the volume of dark traffic
+## How to reduce the volume of dark traffic
 
 Not all traffic to your website will have the referrer header specified in the browser. This "**dark traffic**" is why you see the "**Direct / None**" source in the "**Top Sources**" report. These are typically clicks from emails, documents, instant messengers, mobile apps or bookmarks.
 
