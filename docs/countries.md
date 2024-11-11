@@ -1,5 +1,5 @@
 ---
-title: Locations
+title: Top countries, regions and cities
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
