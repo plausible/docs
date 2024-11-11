@@ -4,7 +4,7 @@ title: Acquisition channels, referral sources and paid campaigns
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Your "**Top Sources**" report shows acquisition channels, referral sources and marketing campaigns that drive traffic to your website. This information helps you understand your best converting promotional activities.
+Your "**Top Sources**" report shows acquisition channels, referral sources and marketing campaigns that drive traffic to your website. This information helps you understand your best converting paid campaigns and other promotional activities.
 
 Click on any individual entry within the "**Top Sources**" report to segment your audience by it. Click the "**Details**" button to get extra insights such as the visit duration and bounce rate for the individual entry. Click on any metric heading in the "**Details**" view to sort and arrange your data in ascending or descending order.
 
@@ -40,11 +40,21 @@ To fix this, you can integrate your Plausible account [with Google Search Consol
 
 ## Campaigns 
 
-In the "**Campaigns**" tab within the "**Top Sources**" report, you can see the traffic arriving to your site from links tagged with UTM tags and other query parameters.
+Are you running paid ads on Facebook, Google and other ad platforms? It's possible to track paid campaigns and conversions with Plausible. In the "**Campaigns**" tab within the "**Top Sources**" report, you can see the traffic arriving to your site from links tagged with UTM tags and other query parameters.
 
 To isolate your UTM-tagged clicks from the organic clicks, you can segment the traffic by using the "**UTM Medium**", "**UTM Source**", "**UTM Campaign**", "**UTM Content**" and "**UTM Term**" reports within the "**Campaigns**" tab.
 
-## How to reduce the volume of dark traffic
+### How to track paid ad conversion attribution
+
+Goals and custom events allow you to track actions that you want your visitors to take on your site. Actions such as registering for a trial account, purchasing a product or completing a checkout form of an ecommerce store. By [setting up goals and custom events](goal-conversions.md), you'll be able to follow the visitor journey from a paid ad click to a conversion on your site. 
+
+Filter your dashboard by a specific goal to see the number of conversions, conversion rate (CR), referrer sources and entry pages that are driving conversions and the top pages that people convert on. You can also track [ecommerce revenue](ecommerce-revenue-tracking.md) and [set up funnels](funnel-analysis.md). This works even if your site operates [across multiple subdomains](subdomain-hostname-filter.md).
+
+<img alt="Custom goal conversion rate" src={useBaseUrl('img/custom-goal-conversion-rate.png')} />
+
+Due to the privacy-first nature of Plausible and the fact that we don't use cookies and other long-term identifiers, the conversion attribution is based on last-click attribution. The referral source of the visit on which the purchase was made will be credited for that conversion. 
+
+## How to tag reduce the volume of dark traffic
 
 Not all traffic to your website will have the referrer header specified in the browser. This "**dark traffic**" is why you see the "**Direct / None**" source in the "**Top Sources**" report. These are typically clicks from emails, documents, instant messengers, mobile apps or bookmarks.
 
@@ -57,17 +67,3 @@ Tagging links helps you better track your marketing campaigns and see which are 
 For any clicks on the above link, "**Newsletter**" would be listed as a referral source in your Plausible dashboard, "**Email**" would be listed as the medium, "**NovemberNewsletter**" would be listed as the campaign and "**Link**" would be listed as the content. 
 
 Read more about "[how to use UTM parameters to track your campaigns and understand the dark traffic](https://plausible.io/blog/utm-tracking-tags)".
-
-## How to track conversion attribution 
-
-Goals and custom events allow you to track actions that you want your visitors to take on your site. Actions such as registering for a trial account, purchasing a product or completing a checkout form of an ecommerce store.
-
-<img alt="Conversion rate" src={useBaseUrl('img/conversion-rate.png')} />
-
-By [setting up goals and custom events](goal-conversions.md), you can track the number of conversions, conversion rate, referrer sources and entry pages that are driving conversions and the top pages that people convert on. You can also track [ecommerce revenue](ecommerce-revenue-tracking.md) and [set up funnels](funnel-analysis.md) to track the user journey too.
-
-<img alt="Custom goal conversion rate" src={useBaseUrl('img/custom-goal-conversion-rate.png')} />
-
-Click on any specific source in your dashboard to see the number of conversions and the conversion rate (CR) of that referral source for any of your goals. You can also click on any goal in your dashboard to see the number of conversions and the conversion rate of that specific goal coming from any source or landing page. This works even if your site operates [across multiple subdomains](subdomain-hostname-filter.md).
-
-Due to the privacy-first nature of our product and the fact that we don't use cookies and other long-term identifiers, the conversion attribution in Plausible is based on last-click attribution. The referral source of the visit on which the purchase was made will be credited for that conversion. 
