@@ -50,6 +50,19 @@ Are you running paid ads on Facebook, Google and other ad platforms? It's possib
 
 To isolate your UTM-tagged clicks from the organic clicks, you can segment the traffic by using the "**UTM Medium**", "**UTM Source**", "**UTM Campaign**", "**UTM Content**" and "**UTM Term**" reports within the "**Campaigns**" tab.
 
+### GCLID, FBCLID and other marketing parameters
+
+Plausible also records clicks coming from links tagged with GCLID, FBCLID and other paid marketing parameters. You can see these and filter by them within the "**UTM Medium**" section of the "**Top Sources**" report. Do note that we do strip the values of these parameters as they are considered unique identifiers and are not compliant with GDPR without user consent. These are the mrketing parameters that we do record but that we do strip the unique values of:
+
+* `gclid`
+* `gbraid`
+* `wbraid`
+* `msclkid`
+* `fbclid`
+* `twclid`
+
+This is why we do recommend that you use UTM tags when tagging your paid ad campaigns. We do not strip the values of UTM tags. 
+
 ### How to track paid ad conversion attribution
 
 Goals and custom events allow you to track actions that you want your visitors to take on your site. Actions such as registering for a trial account, purchasing a product or completing a checkout form of an ecommerce store. By [setting up goals and custom events](goal-conversions.md), you'll be able to follow the visitor journey from a paid ad click to a conversion on your site. 
