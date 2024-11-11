@@ -28,7 +28,7 @@ Know also that referral sources are counted only when they start a new session o
 
 UTM tags are case-sensitive, which may lead to duplicated or miscategorized traffic sources all depending on how the different links are tagged. To mitigate this issue, the "**Sources**" tab in the "**Top Sources**" report consolidates each source into a single entry, disregarding capitalization or naming differences in UTM tags.
 
-For instance, clicks you get from Facebook which are not tagged by UTMs are labeled with a referral source "**Facebook**" by Facebook itself. Suppose you tag some links that you share on Facebook with `utm_source=facebook`, `utm_source=fb` or `utm_source=facebook-ads`. In that case, clicks on those tagged links will be consolidated alongside organic clicks within the "**Facebook**" entry in the "**All**" tab of your "**Top Sources**" report providing a unified view of all Facebook clicks.
+For instance, clicks you get from Facebook which are not tagged by UTMs are labeled with a referral source "**Facebook**" by Facebook itself. Suppose you tag some links that you share on Facebook with `utm_source=facebook`, `utm_source=fb` or `utm_source=facebook-ads`. In that case, clicks on those tagged links will be consolidated alongside organic clicks within the "**Facebook**" entry in the "**Sources**" tab of your "**Top Sources**" report providing a unified view of all Facebook clicks.
 
 You can still isolate your UTM-tagged clicks from organic traffic and view their original labels in the "**Campaigns**" tab of "**Top Sources**".
 
