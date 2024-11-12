@@ -28,7 +28,11 @@ In the "**Sources**" tab within the "**Top Sources**" report, you can see the fu
 
 Note that browsers only send the domain name of the referrer and not the actual URL. If `thatblog.com/one-post/` sends you visitors, you will see `thatblog.com` in your sources list but won’t see the exact post URL itself. [See more here](https://plausible.io/blog/referrer-policy).
 
-Know also that referral sources are counted only when they start a new session on your site. This is why you may not see all sources of your visits if you click to test several different links simultaneously. You would need to start a new session by using a different browser, IP address or device for the additional sources to be included in the report. This prevents external domains such as payment gateways showing up in the sources list without you manually needing to exclude them.
+### No need to manually exclude unwanted sources
+
+With Plausible, there's no need for you to manually exclude unwanted referral sources like payment processors such as PayPal, Stripe or Paddle to keep your data clean.
+
+Referral sources are counted only when they start a new session on your site. This prevents external domains such as payment gateways showing up in the list of sources when for instance visitors briefly leave your site to make a payment before returning back. The source that brought the visitor to your site in the first place will be the one attributed for that conversion.
 
 ### Consolidation of duplicate sources
 
