@@ -72,7 +72,7 @@ This lets you track product names, coupon codes, if customers are logged in and 
 
 ## Integrating with WooCommerce
 
-If you're running your ebusiness using WooCommerce, you can use our WordPress plugin. [Plausible WordPress plugin](https://wordpress.org/plugins/plausible-analytics/) has a built-in support for tracking of WooCommerce store activity including:
+If you're running WooCommerce, you can use our WordPress plugin. [Plausible WordPress plugin](https://wordpress.org/plugins/plausible-analytics/) has a built-in support for tracking of WooCommerce store activity including:
 
 * Tracking of several custom events including actions such as add to cart, complete purchase and revenue
 * Tracking of several custom properties including product name and product category
