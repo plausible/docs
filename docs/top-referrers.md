@@ -4,7 +4,7 @@ title: Acquisition channels, referral sources and paid campaigns
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Your "**Top Sources**" report shows acquisition channels, referral sources and marketing campaigns that drive traffic to your website. This information helps you understand your best converting paid campaigns and other promotional activities.
+Your "**Top Sources**" report shows acquisition channels, referral sources and marketing campaigns that drive traffic to your website. This information helps you understand where your traffic originates, which sources are most effective, and how specific campaigns perform. For eg., This is where you can understand how much SEO traffic you get from different search engines, social media, how PPC campaigns perform, or other marketing efforts like SMS marketing or video marketing perform in bringing traffic to the site.
 
 Click on any individual entry within the "**Top Sources**" report to segment your audience by it. Click the "**Details**" button to get extra insights such as the visit duration and bounce rate for the individual entry. Click on any metric heading in the "**Details**" view to sort and arrange your data in ascending or descending order.
 
