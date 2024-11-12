@@ -44,7 +44,7 @@ You can still isolate your UTM-tagged clicks from organic traffic and view their
 
 ### Keyword phrases from Google search
 
-Note that Google does not include the search keywords in the referrer. This means that you can see that a visitor is coming from a Google search but you can't see which keyword phrase they used to find you. 
+Note that Google does not include the search keywords in the referrer. This means that you can see that a visitor is coming from a Google search but you can't see which keyword phrase they used to visit your site.
 
 To fix this, you can integrate your Plausible account [with Google Search Console](google-search-console-integration.md) so that the keyword phrases people discover your site with show in your Plausible dashboard. After integrating with Search Console, you can click on the "**Google**" entry in the "**Top Sources**" report to view these keyword phrases.
 
