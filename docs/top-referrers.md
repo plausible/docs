@@ -79,7 +79,7 @@ Filter your dashboard by a specific goal to see the number of conversions, conve
 
 <img alt="Custom goal conversion rate" src={useBaseUrl('img/custom-goal-conversion-rate.png')} />
 
-Due to the privacy-first nature of Plausible and the fact that we don't use cookies and other long-term identifiers, the conversion attribution is based on last-click attribution. The referral source of the visit on which the purchase was made will be credited for that conversion. 
+Due to Plausible’s privacy-first approach—without using cookies or long-term identifiers—conversion attribution relies on last-click attribution. This means the referral source of the visit leading to the purchase is credited for the conversion.
 
 ## How to reduce the volume of dark traffic
 
