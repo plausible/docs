@@ -70,7 +70,7 @@ You can sort any report by such performance metrics by clicking on any metric he
 
 See all the acquisition channels and sources of traffic ranked by the number of unique visitors. You can click on the "**Details**" button to see the full list which also includes additional metrics such as the bounce rate and visit duration of the individual referral.
  
-You can click into the "**Campaign**" tabs of the Top Sources report to see your campaigns isolated from other traffic sources. These are visitors coming from UTM tagged links such as those in your emails, social media or in your paid advertising campaigns. Click on "**Medium**", "**Source**", "**Campaign**", "**Term**" and "**Content**" to explore these. 
+You can use the "**Campaigns**" dropdown section in the Top Sources report to view your campaigns separately from other traffic sources. These are visitors coming from UTM tagged links such as those in your emails, social media or in your paid advertising campaigns. Click on "**Medium**", "**Source**", "**Campaign**", "**Term**" and "**Content**" to explore these. 
 
 Note that the referral sources including UTM and other query parameters are counted only when they start a new session on your site.
 
