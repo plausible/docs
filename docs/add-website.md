@@ -16,6 +16,8 @@ If you'd like to track a particular subdomain independently from the rest of you
 You don't necessarily need to install our snippet on the same domain as the domain you have added to your Plausible account. Think of the domain field in Plausible more like a site ID rather than an exact match. This allows you more flexibility in your setup all depending on your situation.
 :::
 
+hello 
+
 ## Select your reporting timezone
 
 You need to select your reporting timezone too. This sets the day boundary of your reports regardless of where your traffic is coming from.
