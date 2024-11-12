@@ -81,7 +81,11 @@ Due to the privacy-first nature of Plausible and the fact that we don't use cook
 
 Not all traffic to your website will have the referrer header specified in the browser. This "**dark traffic**" is why you see the "**Direct / None**" source in the "**Top Sources**" report. These are typically clicks from emails, documents, instant messengers, mobile apps or bookmarks.
 
+### We attempt to uncover some direct traffic
+
 By default, we attempt to uncover traffic originating from Android apps which is traditionally categorized as direct traffic in web analytics. The volume of these clicks in your "**Top Sources**" report will vary based on your site and audience.
+
+### Tag all the links that you control
 
 To further minimize the amount of traffic that falls within the "**Direct / None**" category, you can add special query parameters such as UTM tags to your links whenever you post a link in social media, paid advertising or an email newsletter. 
 
