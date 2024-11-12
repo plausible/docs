@@ -56,16 +56,20 @@ To isolate your UTM-tagged clicks from the organic clicks, you can segment the t
 
 ### GCLID, FBCLID and other marketing parameters
 
-Plausible also records clicks coming from links tagged with GCLID, FBCLID and other paid marketing parameters. You can see these and filter by them within the "**UTM Medium**" section of the "**Top Sources**" report. Do note that we do strip the values of these parameters as they are considered unique identifiers and are not compliant with GDPR without user consent. These are the mrketing parameters that we do record but that we do strip the unique values of:
+Plausible also records clicks from links tagged with GCLID, FBCLID and other paid marketing parameters. You can view and filter these within the "**UTM Medium**" section of the "**Top Sources**" report. 
+
+Please note that we strip the values of these paid marketing parameters because they are considered unique identifiers and are not GDPR-compliant without user consent. This means you can view and filter your dashboard by the audience coming from GCLID-tagged links, but you will not see the unique identifier for each visitor.
+
+These are the marketing parameters that we do record and list in the "**UTM Medium**" section but that we do strip the unique values of:
 
 * `gclid`
-* `gbraid`
+* `gbraid` 
 * `wbraid`
 * `msclkid`
 * `fbclid`
 * `twclid`
 
-This is why we do recommend that you use UTM tags when tagging your paid ad campaigns. We do not strip the values of UTM tags. 
+This is why we recommend using UTM tags when tagging your paid ad campaigns for more powerful insights. Unlike the marketing parameters listed above, we do not strip the values of UTM tags.
 
 ### How to track paid ad conversion attribution
 
