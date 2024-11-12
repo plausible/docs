@@ -4,7 +4,9 @@ title: Acquisition channels, referral sources and paid campaigns
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Your "**Top Sources**" report shows acquisition channels, referral sources and marketing campaigns that drive traffic to your website. This information helps you understand where your traffic originates, which sources are most effective, and how specific campaigns perform. For eg., This is where you can understand how much SEO traffic you get from different search engines, social media, how PPC campaigns perform, or other marketing efforts like SMS marketing or video marketing perform in bringing traffic to the site.
+Your "**Top Sources**" report shows acquisition channels, referral sources and marketing campaigns that drive traffic to your website. This information helps you understand where your traffic originates, which sources are most effective and how specific campaigns perform. 
+
+For instance, this is where you can understand how much traffic you get from different search engines, social media, how your PPC campaigns or other marketing efforts perform.
 
 Click on any individual entry within the "**Top Sources**" report to segment your audience by it. Click the "**Details**" button to get extra insights such as the visit duration and bounce rate for the individual entry. Click on any metric heading in the "**Details**" view to sort and arrange your data in ascending or descending order.
 
@@ -24,7 +26,7 @@ Note that channel groupings and definitions may evolve as the market changes. We
 
 ## Sources
 
-In the "**Sources**" tab within the "**Top Sources**" report, you can see the full list of your individual referral sources. Some examples include "Google," "Facebook," "LinkedIn," "Reddit," "chatgpt," etc.
+In the "**Sources**" tab within the "**Top Sources**" report, you can see the full list of your individual referral sources. Some examples include "Google", "Facebook", "LinkedIn", "Reddit", "chatgpt.com" etc.
 
 Note that browsers only send the domain name of the referrer and not the actual URL. If `thatblog.com/one-post/` sends you visitors, you will see `thatblog.com` in your sources list but won’t see the exact post URL itself. [See more here](https://plausible.io/blog/referrer-policy).
 
