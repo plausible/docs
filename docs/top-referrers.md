@@ -24,7 +24,7 @@ Note that channel groupings and definitions may evolve as the market changes. We
 
 ## Sources
 
-In the "**Sources**" tab within the "**Top Sources**" report, you can see the full list of your individual referral sources.
+In the "**Sources**" tab within the "**Top Sources**" report, you can see the full list of your individual referral sources. Some examples include "Google," "Facebook," "LinkedIn," "Reddit," "chatgpt," etc.
 
 Note that browsers only send the domain name of the referrer and not the actual URL. If `thatblog.com/one-post/` sends you visitors, you will see `thatblog.com` in your sources list but won’t see the exact post URL itself. [See more here](https://plausible.io/blog/referrer-policy).
 
