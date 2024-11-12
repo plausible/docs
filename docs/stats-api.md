@@ -182,7 +182,9 @@ The following operators are currently supported:
 | `is` | `["is", "visit:country_name", ["Germany", "Poland"]]` | Sessions originating from Germany or Poland. |
 | `is_not` | `["is_not", "event:page", ["/pricing"]]` | Events that did not visit /pricing page |
 | `contains` | `["contains", "event:page", ["/login"]]` | Events visited any page containing /login |
+| `icontains` | `["icontains", "event:page", ["/LoGiN"]]` | Like above, but case-insensitive |
 | `contains_not` | `["contains_not", "event:page", ["docs", "pricing"]]` | Events that did not visit any page containing docs or pricing |
+| `icontains_not` | `["contains_not", "event:page", ["docs", "PriCiNg"]]` | Like above, but case-insensitive |
 | `matches` | `["matches", "event:page", ["^/user/\d+$"]]` | Events where page matches regular expression `^/user/\d+$`. [Uses re2 syntax](https://github.com/google/re2/wiki/Syntax) |
 | `matches_not` | `["matches", "event:page", ["^/user/\d+$"]]` | Events where page does not match regular expression `^/user/\d+$`. [Uses re2 syntax](https://github.com/google/re2/wiki/Syntax) |
 
