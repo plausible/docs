@@ -76,7 +76,7 @@ Plausible is built to be privacy-first and compliant with various privacy regula
 
 ## I don't see my own referral source
 
-All referral sources are counted only when they start a new session on your site. This is why you don't see all your own referral sources if you for instance click to test several different [UTM tagged links](top-referrers.md) at the same time. Only the first one would be included in the "**Top Sources**" report. You would need to start a new session by for instance waiting more than 30 minutes or using a different device, browser or IP address to have the subsequent sources counted too.
+All referral sources are counted only when they start a new session on your site. This is why you don't see all your own referral sources if you for instance click to test several different [UTM tagged links](top-referrers.md) at the same time. Only the first one appears in the "**Top Sources**" report. You would need to start a new session—such as by waiting 30 minutes or using a different device, browser, or IP address, to have the subsequent sources counted too.
 
 The fact that the referral sources are counted only when they start a new session on your site prevents external domains such as a payment gateway that the user is being taken through to show up in the referrers list. No need for you to manually exclude referrers.
 
