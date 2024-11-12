@@ -91,7 +91,7 @@ By default, we attempt to uncover traffic originating from Android apps which is
 
 ### Tag all the links that you control
 
-To further minimize the amount of traffic that falls within the "**Direct / None**" category, you can add special query parameters such as UTM tags to your links whenever you post a link in social media, paid advertising or an email newsletter. 
+To further minimize the amount of traffic that falls within the "**Direct / None**" category, you can add special query parameters such as UTM tags to your links whenever you post a link in social media, paid advertising, an email newsletter, or anywhere else.
 
 Query parameters that are valid and supported by Plausible:
 
