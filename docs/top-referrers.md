@@ -4,11 +4,9 @@ title: Acquisition channels, referral sources and paid campaigns
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Your "**Top Sources**" report shows acquisition channels, referral sources and marketing campaigns that drive traffic to your website. This information helps you understand where your traffic originates, which sources are most effective and how specific campaigns perform. 
+Your "**Top Sources**" report shows acquisition channels, referral sources and marketing campaigns that drive traffic to your website. This information helps you understand where your traffic originates, which referral sources are most effective and how specific marketing campaigns perform. 
 
-For instance, this is where you can understand how much traffic you get from different search engines, social media, how your PPC campaigns or other marketing efforts perform.
-
-Click on any individual entry within the "**Top Sources**" report to segment your audience by it. Click the "**Details**" button to get extra insights such as the visit duration and bounce rate for the individual entry. Click on any metric heading in the "**Details**" view to sort and arrange your data in ascending or descending order.
+Click on any individual entry within the "**Top Sources**" report to segment your audience by it and see the best performing landing pages or highest converting goals. Click the "**Details**" button to get extra insights such as the visit duration and bounce rate for the individual entry. Click on any metric heading in the "**Details**" view to sort and arrange your data in ascending or descending order.
 
 Using [the "**Filter**" button on the top of your dashboard](filters-segments.md), you can filter the stats by multiple channels, sources or UTM tags at the same time for more powerful traffic segmentation. You can also exclude traffic from a specific channel, referral source or UTM tag.
 
@@ -16,7 +14,7 @@ Using [the "**Filter**" button on the top of your dashboard](filters-segments.md
 
 ## Channels
 
-In the "**Channels**" tab within the "**Top Sources**" report, you can see a breakdown of your sources into high-level categories such as "**Organic Social**" and "**Paid Search**". This allows you to segment your traffic between organic traffic and paid marketing campaigns. These are the definitions and descriptions of each channel available:
+In the "**Channels**" tab within the "**Top Sources**" report, you can see a breakdown of your sources into high-level categories such as "**Organic Social**", "**Paid Search**", "**Email**" and more. These are the definitions and descriptions of each channel available:
 
 | Channel     | Definition        |
 | :---------- | :---------------- |
@@ -26,9 +24,9 @@ Note that channel groupings and definitions may evolve as the market changes. We
 
 ## Sources
 
-In the "**Sources**" tab within the "**Top Sources**" report, you can see the full list of your individual referral sources. Some examples include "Google", "Facebook", "LinkedIn", "Reddit", "chatgpt.com" etc.
+In the "**Sources**" tab within the "**Top Sources**" report, you can see the full list of your individual referral sources such as "**Google**", "**Facebook**", "**LinkedIn**", "**Reddit**" and "**chatgpt.com**".
 
-Note that browsers only send the domain name of the referrer and not the actual URL. If `thatblog.com/one-post/` sends you visitors, you will see `thatblog.com` in your sources list but won’t see the exact post URL itself. [See more here](https://plausible.io/blog/referrer-policy).
+Browsers only send the domain name of the referrer and not the actual URL. If `thatblog.com/one-post/` sends you visitors, you will see `thatblog.com` in your sources list but won’t see the exact post URL itself. [See more here](https://plausible.io/blog/referrer-policy).
 
 ### No need to manually exclude unwanted sources
 
@@ -42,17 +40,17 @@ UTM tags are case-sensitive, which may lead to duplicated or miscategorized traf
 
 For instance, clicks you get from Facebook which are not tagged by UTMs are labeled with a referral source "**Facebook**" by Facebook itself. Suppose you tag some links that you share on Facebook with `utm_source=facebook`, `utm_source=fb` or `utm_source=facebook-ads`. In that case, clicks on those tagged links will be consolidated alongside organic clicks within the "**Facebook**" entry in the "**Sources**" tab of your "**Top Sources**" report providing a unified view of all Facebook clicks.
 
-You can still isolate your UTM-tagged clicks from organic traffic and view their original labels in the "**Campaigns**" tab of "**Top Sources**".
+You can isolate your paid clicks from organic traffic or organic clicks from paid traffic by using the "**Channels**" tab or the "**Campaigns**" tab of the "**Top Sources**" report.
 
 ### Keyword phrases from Google search
 
-Note that Google does not include the search keywords in the referrer. This means that you can see that a visitor is coming from a Google search but you can't see which keyword phrase they used to visit your site.
+Google does not include the search keywords in the referrer. This means that you can see that a visitor is coming from a Google search but you can't see which keyword phrase they used to visit your site.
 
-To fix this, you can integrate your Plausible account [with Google Search Console](google-search-console-integration.md) so that the keyword phrases people discover your site with show in your Plausible dashboard. After integrating with Search Console, you can click on the "**Google**" entry in the "**Top Sources**" report to view these keyword phrases.
+To fix this, you can integrate your Plausible account [with Google Search Console](google-search-console-integration.md) so that the keyword phrases people discover your site with show in your Plausible dashboard. After integrating with Search Console, you can click on the "**Google**" entry in the "**Top Sources**" report to view your keyword phrases.
 
 ## Campaigns 
 
-Are you running paid ads on Facebook, Google and other ad platforms? It's possible to track paid campaigns and conversions with Plausible. In the "**Campaigns**" tab within the "**Top Sources**" report, you can see the traffic arriving to your site from links tagged with UTM tags and other query parameters.
+Are you running paid marketing campaigns on Facebook, Google and other ad platforms? "**Campaigns**" tab within the "**Top Sources**" report allows you to see the traffic arriving to your site from links tagged with UTM tags and other query parameters.
 
 To isolate your UTM-tagged clicks from the organic clicks, you can segment the traffic by using the "**UTM Medium**", "**UTM Source**", "**UTM Campaign**", "**UTM Content**" and "**UTM Term**" reports within the "**Campaigns**" tab.
 
@@ -81,7 +79,7 @@ Filter your dashboard by a specific goal to see the number of conversions, conve
 
 <img alt="Custom goal conversion rate" src={useBaseUrl('img/custom-goal-conversion-rate.png')} />
 
-Due to Plausible’s privacy-first approach—without using cookies or long-term identifiers—conversion attribution relies on last-click attribution. This means the referral source of the visit leading to the purchase is credited for the conversion.
+Due to Plausible’s privacy-first approach without using cookies or long-term identifiers conversion attribution relies on last-click attribution. This means the referral source of the visit leading to the purchase is credited for the conversion.
 
 ## How to reduce the volume of dark traffic
 
