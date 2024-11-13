@@ -50,17 +50,33 @@ To fix this, you can integrate your Plausible account [with Google Search Consol
 
 ## Campaigns 
 
-Are you running paid marketing campaigns on Facebook, Google and other ad platforms? "**Campaigns**" tab within the "**Top Sources**" report allows you to see the traffic arriving to your site from links tagged with UTM tags and other query parameters.
+The "**Campaigns**" tab within the "**Top Sources**" report allows you to see the traffic arriving to your site from links tagged with UTM tags and other query parameters. 
 
-To isolate your UTM-tagged clicks from the organic clicks, you can segment the traffic by using the "**UTM Medium**", "**UTM Source**", "**UTM Campaign**", "**UTM Content**" and "**UTM Term**" reports within the "**Campaigns**" tab.
+### How to tag your paid campaign links
 
-### GCLID, FBCLID and other marketing parameters
+Are you running paid marketing campaigns on Facebook, Google and other ad platforms? We recommend you tag your paid campaign links with UTM parameters. These are the query parameters that are valid and supported by Plausible:
 
-Plausible also records clicks from links tagged with GCLID, FBCLID and other paid marketing parameters. You can view and filter these within the "**UTM Medium**" section of the "**Top Sources**" report. 
+* `ref`
+* `source`
+* `utm_source`
+* `utm_medium`
+* `utm_campaign`
+* `utm_content`
+* `utm_term`
+
+Here's an example of how to tag your links: `yourdomain.com?utm_source=adwords&utm_medium=ppc&utm_campaign=novemberoffer&utm_content=sustainability&utm_term=discount`
+
+To isolate your UTM-tagged clicks from the organic clicks, you can segment the traffic by using the "**UTM Medium**", "**UTM Source**", "**UTM Campaign**", "**UTM Content**" and "**UTM Term**" reports in the "**Campaigns**" tab of the "**Top Sources**" report.
+
+### GCLID, FBCLID and other special marketing parameters
+
+If the UTM tag is not present within the link, Plausible also records clicks from GCLID, FBCLID and other paid marketing parameters. You can view and filter these within the "**UTM Medium**" section of the "**Top Sources**" report. 
 
 Please note that we strip the values of these paid marketing parameters because they are considered unique identifiers and are not GDPR-compliant without user consent. This means you can view and filter your dashboard by the audience coming from GCLID-tagged links, but you will not see the unique identifier for each visitor.
 
-These are the marketing parameters that we do record and list in the "**UTM Medium**" section but that we do strip the unique values of:
+This is why we recommend using UTM tags when tagging your paid ad campaigns. When a UTM tag is present in the link, it takes priority over other parameters. And unlike the marketing parameters listed below, we do not strip the values of UTM tags which provides you more powerful insights.
+
+These are the special marketing parameters that we do record and list in the "**UTM Medium**" section but that we do strip the unique values of:
 
 * `gclid`
 * `gbraid` 
@@ -69,17 +85,15 @@ These are the marketing parameters that we do record and list in the "**UTM Medi
 * `fbclid`
 * `twclid`
 
-We recommend using UTM tags when tagging your paid ad campaigns, as they provide more powerful insights. When a UTM tag is present in the link, it takes priority over other parameters. And unlike the marketing parameters listed above, we do not strip the values of UTM tags.
-
-### How to track paid ad conversion attribution
+### How to track conversion attribution
 
 Goals and custom events allow you to track actions that you want your visitors to take on your site. Actions such as registering for a trial account, purchasing a product or completing a checkout form of an ecommerce store. By [setting up goals and custom events](goal-conversions.md), you'll be able to follow the visitor journey from a paid ad click to a conversion on your site. 
 
-Filter your dashboard by a specific goal to see the number of conversions, conversion rate (CR), referrer sources and entry pages that are driving conversions and the top pages that people convert on. You can also track [ecommerce revenue](ecommerce-revenue-tracking.md) and [set up funnels](funnel-analysis.md). This works even if your site operates [across multiple subdomains](subdomain-hostname-filter.md).
-
-<img alt="Custom goal conversion rate" src={useBaseUrl('img/custom-goal-conversion-rate.png')} />
+Filter your dashboard by a specific goal to see the number of conversions, conversion rate (CR), referrer sources, marketing campaigns and entry pages that are driving conversions. You can also track [ecommerce revenue](ecommerce-revenue-tracking.md) and [set up funnels](funnel-analysis.md). This works even if your site operates [across multiple subdomains](subdomain-hostname-filter.md).
 
 Due to Plausible’s privacy-first approach, which avoids using cookies or long-term identifiers, conversion attribution relies on last-click attribution. This means the referral source of the visit that leads to the purchase is credited for the conversion.
+
+<img alt="Custom goal conversion rate" src={useBaseUrl('img/custom-goal-conversion-rate.png')} />
 
 ## How to reduce the volume of dark traffic
 
@@ -91,20 +105,4 @@ By default, we attempt to uncover traffic originating from Android apps which is
 
 ### Tag all the links that you control
 
-To further minimize the amount of traffic that falls within the "**Direct / None**" category, you can add special query parameters such as UTM tags to your links whenever you post a link in social media, paid advertising, an email newsletter, or anywhere else.
-
-Query parameters that are valid and supported by Plausible:
-
-* `ref`
-* `source`
-* `utm_source`
-* `utm_medium`
-* `utm_campaign`
-* `utm_content`
-* `utm_term` 
-
-Tagging links helps you better track your marketing campaigns and see which are responsible for most conversions. Here's an example of how to tag your links: `yourdomain.com?utm_source=Newsletter&utm_medium=Email&utm_campaign=NovemberNewsletter&utm_content=Link`
-
-For any clicks on the above link, "**Newsletter**" would be listed as a referral source in your Plausible dashboard, "**Email**" would be listed as the medium, "**NovemberNewsletter**" would be listed as the campaign and "**Link**" would be listed as the content. 
-
-Read more about "[how to use UTM parameters to track your campaigns and understand the dark traffic](https://plausible.io/blog/utm-tracking-tags)".
+To further minimize the amount of traffic that falls within the "**Direct / None**" category, we recommend that you add query parameters such as UTM tags to your links whenever you post a link in social media, paid advertising, an email newsletter or anywhere else. Read more about [how to use UTM parameters to track your campaigns and understand the dark traffic](https://plausible.io/blog/utm-tracking-tags).
