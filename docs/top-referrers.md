@@ -4,17 +4,17 @@ title: Acquisition channels, referral sources and paid campaigns
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Your "**Top Sources**" report shows acquisition channels, referral sources and marketing campaigns that drive traffic to your website. This information helps you understand where your traffic originates, which referral sources are most effective and how specific marketing campaigns perform. 
+The "**Top Sources**" report displays acquisition channels, referral sources and marketing campaigns that drive traffic to your website. This information helps you understand where your traffic originates, which referral sources are most effective and how specific marketing campaigns perform. 
 
-Click on any individual entry within the "**Top Sources**" report to segment your audience by it and see the best performing landing pages or highest converting goals. Click the "**Details**" button to get extra insights such as the visit duration and bounce rate for the individual entry. Click on any metric heading in the "**Details**" view to sort and arrange your data in ascending or descending order.
+You can click on any individual entry within the "**Top Sources**" report to segment your audience by that source and view the best performing landing pages or highest converting goals. Click the "**Details**" button to access additional insights such as the visit duration and bounce rate for the individual entry. In the "**Details**" view, you can sort and arrange your data in ascending or descending order by clicking any metric heading.
 
-Using [the "**Filter**" button on the top of your dashboard](filters-segments.md), you can filter the stats by multiple channels, sources or UTM tags at the same time for more powerful traffic segmentation. You can also exclude traffic from a specific channel, referral source or UTM tag.
+Using [the "**Filter**" button on the top of your dashboard](filters-segments.md), you can filter the stats by multiple channels, sources or UTM tags simultaneously for more powerful traffic segmentation. You can also exclude traffic from a specific channel, referral source or UTM tag.
 
 <img alt="Top Referrers - multiple filters" src={useBaseUrl('img/top-referrers-filtering-multiple-filters.png')} />
 
 ## Channels
 
-In the "**Channels**" tab within the "**Top Sources**" report, you can see a breakdown of your sources into high-level categories such as "**Organic Social**", "**Paid Search**", "**Email**" and more. These are the definitions and descriptions of each channel available:
+In the "**Channels**" tab within the "**Top Sources**" report, you can see a breakdown of your sources into high-level categories such as "**Organic Social**", "**Paid Search**" and "**Email**". These are the definitions and descriptions of each channel available:
 
 | Channel     | Definition        |
 | :---------- | :---------------- |
@@ -69,7 +69,7 @@ These are the marketing parameters that we do record and list in the "**UTM Medi
 * `fbclid`
 * `twclid`
 
-This is why we recommend using UTM tags when tagging your paid ad campaigns for more powerful insights. Unlike the marketing parameters listed above, we do not strip the values of UTM tags.
+We recommend using UTM tags when tagging your paid ad campaigns, as they provide more powerful insights. When a UTM tag is present in the link, it takes priority over other parameters. And unlike the marketing parameters listed above, we do not strip the values of UTM tags.
 
 ### How to track paid ad conversion attribution
 
@@ -79,7 +79,7 @@ Filter your dashboard by a specific goal to see the number of conversions, conve
 
 <img alt="Custom goal conversion rate" src={useBaseUrl('img/custom-goal-conversion-rate.png')} />
 
-Due to Plausible’s privacy-first approach without using cookies or long-term identifiers conversion attribution relies on last-click attribution. This means the referral source of the visit leading to the purchase is credited for the conversion.
+Due to Plausible’s privacy-first approach, which avoids using cookies or long-term identifiers, conversion attribution relies on last-click attribution. This means the referral source of the visit that leads to the purchase is credited for the conversion.
 
 ## How to reduce the volume of dark traffic
 
