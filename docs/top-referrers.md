@@ -85,7 +85,7 @@ Are you running paid marketing campaigns on Facebook, Google and other ad platfo
 
 Here's an example of how to tag your links: `yourdomain.com?utm_source=adwords&utm_medium=ppc&utm_campaign=novemberoffer&utm_content=sustainability&utm_term=discount`
 
-To isolate your UTM-tagged clicks from the organic clicks, you can segment the traffic by using the "**UTM Medium**", "**UTM Source**", "**UTM Campaign**", "**UTM Content**" and "**UTM Term**" sections in the "**Campaigns**" tab of the "**Top Sources**" report.
+To isolate your UTM-tagged clicks from the organic clicks, you can segment the traffic by using the "**UTM Medium**", "**UTM Source**" (UTM Source section also includes any traffic tagged with "ref" and "source" parameters), "**UTM Campaign**", "**UTM Content**" and "**UTM Term**" sections in the "**Campaigns**" tab of the "**Top Sources**" report.
 
 ### GCLID, FBCLID and other special marketing parameters
 
