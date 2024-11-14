@@ -30,7 +30,7 @@ In the "**Channels**" tab within the "**Top Sources**" report, you can view a br
 | Organic Social                      | `Source` is a known social site **OR** `Medium` is "social", "social-network", "social-media", "sm", "social network" or "social media"    |
 | Organic Video                       | `Source` is a known video site **OR** `Medium` matches regex `^(.*video.*)$`             |
 | Paid Other                          | `Medium` matches regex ^(.*cp.*|ppc|retargeting|paid.*)$            |
-| Paid Search                         | `Source` is a known search site **AND** `Medium` matches regex `^(.*cp.*|ppc|retargeting|paid.*)$` **OR** the link includes a "gclid" or "msclkid" parameter           |
+| Paid Search                         | `Source` is a known search site **AND** `Medium` matches regex `^(.*cp.*|ppc|retargeting|paid.*)$` **OR** `Source` is Google and the link includes a "gclid" parameter **OR** `Source` is Bing and the link includes a "msclkid" parameter **OR** `Source` is "adwords" or includes a known search site which ends with "ad" or "ads" (as in "googleads")           |
 | Paid Shopping                       | `Source` is a known shopping site **OR** `Campaign` matches regex `^(.*(([^a-df-z]|^)shop|shopping).*)$` **AND** `Medium` matches regex `^(.*cp.*|ppc|retargeting|paid.*)$`             |
 | Paid Social                         | `Source` is a known social site (including abbreviations IG and FB) **AND** `Medium` matches regex `^(.*cp.*|ppc|retargeting|paid.*)$` **OR** `Source` includes a known social site which ends with "ad" or "ads" (as in "fb-ads" or "facebook_feed_ad"           |
 | Paid Video                          | `Source` is a known video site (including abbreviation YT) **AND** `Medium` matches regex `^(.*cp.*|ppc|retargeting|paid.*)$` **OR** `Source` includes a known video site which ends with "ad" or "ads" (as in "yt-ads")             |
@@ -87,22 +87,13 @@ Here's an example of how to tag your links: `yourdomain.com?utm_source=adwords&u
 
 To isolate your UTM-tagged clicks from other clicks, you can segment the traffic by using the "**UTM Medium**", "**UTM Source**" (here you can also see any traffic tagged with "ref" and "source" parameters), "**UTM Campaign**", "**UTM Content**" and "**UTM Term**" sections in the "**Campaigns**" tab of the "**Top Sources**" report.
 
-### GCLID, FBCLID and other special marketing parameters
+### gclid and msclkid marketing parameters
 
-If the UTM tag is not present within the link, Plausible also records clicks from GCLID, FBCLID and other paid marketing parameters. You can view and filter these within the "**UTM Medium**" section of the "**Top Sources**" report. 
+If the UTM tag is not present within the link, Plausible also records clicks from "gclid" and "msclkid" which are special paid marketing parameters. You can view and filter these within the "**UTM Medium**" section of the "**Top Sources**" report. 
 
-Please note that we strip the values of these paid marketing parameters because they are considered unique identifiers and are not GDPR-compliant without user consent. This means you can view and filter your dashboard by the audience coming from GCLID-tagged links, but you will not see the unique identifier for each visitor.
+Please note that we strip the values from "gclid" and "msclkid" parameters because they are considered unique identifiers and are not GDPR-compliant without user consent. This means you can view and filter your dashboard by the audience coming from "gclid" or "msclkid" tagged links, but you will not see the unique identifier for each visitor.
 
-This is why we recommend using UTM tags when tagging your paid ad campaigns. When a UTM tag is present in the link, it takes priority over other parameters. And unlike the marketing parameters listed below, we do not strip the values of UTM tags which provides you more powerful insights.
-
-These are the special marketing parameters that we do record and list in the "**UTM Medium**" section but that we do strip the unique values of:
-
-* `gclid`
-* `gbraid` 
-* `wbraid`
-* `msclkid`
-* `fbclid`
-* `twclid`
+This is why we recommend using UTM tags when tagging your paid ad campaigns. When a UTM tag is present in the link, it takes priority over other parameters. And unlike the "gclid" and "msclkid" marketing parameters, we do not strip the values of UTM tags which provides you more powerful insights.
 
 ### How to track conversion attribution
 
