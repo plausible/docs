@@ -14,7 +14,7 @@ Using [the "**Filter**" button on the top of your dashboard](filters-segments.md
 
 ## Channels
 
-In the "**Channels**" tab within the "**Top Sources**" report, you can see a breakdown of your sources into high-level categories such as "**Organic Social**", "**Paid Search**" and "**Email**". Here are the definitions and descriptions of each channel:
+In the "**Channels**" tab within the "**Top Sources**" report, you can view a breakdown of your sources categorized into high-level groups such as "**Organic Social**", "**Paid Search**" and "**Email**". By clicking on any individual channel, you can see a detailed list of the specific sources within that channel that are driving traffic to your site. Below are the definitions and descriptions for each channel:
 
 | Channel                             | Definition                     |
 | :---------------------------------- | :----------------------------- |
@@ -43,7 +43,7 @@ Please note that channel groupings and definitions may evolve as the market chan
 
 ## Sources
 
-In the "**Sources**" tab within the "**Top Sources**" report, you can see the full list of your individual referral sources such as "**Google**", "**Facebook**", "**LinkedIn**", "**Reddit**" and "**chatgpt.com**".
+In the "**Sources**" tab within the "**Top Sources**" report, you can see the full list of your referral sources such as "**Google**", "**Facebook**", "**LinkedIn**", "**Reddit**" and "**chatgpt.com**".
 
 Browsers only send the domain name of the referrer and not the actual URL. If `thatblog.com/one-post/` sends you visitors, you will see `thatblog.com` in your sources list but won’t see the exact post URL itself. [See more here](https://plausible.io/blog/referrer-policy).
 
@@ -59,7 +59,7 @@ UTM tags are case-sensitive, which may lead to duplicated or miscategorized traf
 
 For instance, clicks you get from Facebook which are not tagged by UTMs are labeled with a referral source "**Facebook**" by Facebook itself. Suppose you tag some links that you share on Facebook with `utm_source=facebook`, `utm_source=fb` or `utm_source=facebook-ads`. In that case, clicks on those tagged links will be consolidated alongside organic clicks within the "**Facebook**" entry in the "**Sources**" tab of your "**Top Sources**" report providing a unified view of all Facebook clicks.
 
-You can isolate your paid clicks from organic traffic or organic clicks from paid traffic by using the "**Channels**" tab or the "**Campaigns**" tab of the "**Top Sources**" report.
+You can still isolate your paid clicks from organic traffic or organic clicks from paid traffic by using the "**Channels**" tab or the "**Campaigns**" tab of the "**Top Sources**" report.
 
 ### Keyword phrases from Google search
 
@@ -85,7 +85,7 @@ Are you running paid marketing campaigns on Facebook, Google and other ad platfo
 
 Here's an example of how to tag your links: `yourdomain.com?utm_source=adwords&utm_medium=ppc&utm_campaign=novemberoffer&utm_content=sustainability&utm_term=discount`
 
-To isolate your UTM-tagged clicks from the organic clicks, you can segment the traffic by using the "**UTM Medium**", "**UTM Source**" (UTM Source section also includes any traffic tagged with "ref" and "source" parameters), "**UTM Campaign**", "**UTM Content**" and "**UTM Term**" sections in the "**Campaigns**" tab of the "**Top Sources**" report.
+To isolate your UTM-tagged clicks from the organic clicks, you can segment the traffic by using the "**UTM Medium**", "**UTM Source**" (here you can also see any traffic tagged with "ref" and "source" parameters), "**UTM Campaign**", "**UTM Content**" and "**UTM Term**" sections in the "**Campaigns**" tab of the "**Top Sources**" report.
 
 ### GCLID, FBCLID and other special marketing parameters
 
