@@ -14,13 +14,32 @@ Using [the "**Filter**" button on the top of your dashboard](filters-segments.md
 
 ## Channels
 
-In the "**Channels**" tab within the "**Top Sources**" report, you can see a breakdown of your sources into high-level categories such as "**Organic Social**", "**Paid Search**" and "**Email**". These are the definitions and descriptions of each channel available:
+In the "**Channels**" tab within the "**Top Sources**" report, you can see a breakdown of your sources into high-level categories such as "**Organic Social**", "**Paid Search**" and "**Email**". Here are the definitions and descriptions of each channel:
 
-| Channel     | Definition        |
-| :---------- | :---------------- |
-| Organic Social           | List             |
+| Channel                             | Definition                     |
+| :---------------------------------- | :----------------------------- |
+| Affiliates                          | `Medium` is "affiliate"             |
+| Audio                               | `Medium` is "audio"                 |
+| Cross-network                       | `Medium` is "cross-network"          |
+| Direct                              | `Source` is "(direct)" **AND** `Medium` is "(not set)" or "(none)"             |
+| Display                             | `Medium` is "display", "banner", "expandable", "interstitial" or "cpm"            |
+| Email                               | `Source` is "gmail", "email", "e-mail", "e_mail" or "e mail" **OR** `Medium` is "email", "e-mail", "e_mail" or "e mail"          |
+| Mobile Push Notifications           | `Source` is "firebase" **OR** `Medium` is "mobile", "notification" or ends with "push"         |
+| Organic Search                      | `Source` is a known search site **OR** `Medium` is organic     |
+| Organic Shopping                    | `Source` is a known shopping site **OR** `Campaign` matches regex ^(.*(([^a-df-z]|^)shop|shopping).*)$             |
+| Organic Social                      | `Source` is a known social site **OR** `Medium` is "social", "social-network", "social-media", "sm", "social network" or "social media"    |
+| Organic Video                       | `Source` is a known video site **OR** `Medium` matches regex ^(.*video.*)$             |
+| Paid Other                          | `Medium` matches regex ^(.*cp.*|ppc|retargeting|paid.*)$            |
+| Paid Search                         | `Source` is a known search site **AND** `Medium` matches regex ^(.*cp.*|ppc|retargeting|paid.*)$ **OR** the link includes a "gclid" or "msclkid" parameter           |
+| Paid Shopping                       | `Source` is a known shopping site **OR** `Campaign` matches regex ^(.*(([^a-df-z]|^)shop|shopping).*)$ **AND** `Medium` matches regex ^(.*cp.*|ppc|retargeting|paid.*)$             |
+| Paid Social                         | `Source` is a known social site (including abbreviations IG and FB) **AND** `Medium` matches regex ^(.*cp.*|ppc|retargeting|paid.*)$ **OR** `Source` includes a known social site which ends with "ad" or "ads" (as in "fb-ads" or "facebook_feed_ad"           |
+| Paid Video                          | `Source` is a known video site (including abbreviation YT) **AND** `Medium` matches regex ^(.*cp.*|ppc|retargeting|paid.*)$ **OR** `Source` includes a known video site which ends with "ad" or "ads" (as in "yt-ads")             |
+| Referral                            | `Medium` is "referral", "app" or "link"            |
+| SMS                                 | `Source` is "sms" **OR** `Medium` is "sms"         |
 
-Note that channel groupings and definitions may evolve as the market changes. We will keep this list up-to-date with any changes.
+We align our channel lists and definitions closely with Google Analytics to make your transition to Plausible as seamless as possible. However, we strive to stay more up-to-date with newer sites and platforms. For example, in Plausible, Temu is categorized as a shopping site, Perplexity as a search site and Discord as a social site, among others.
+
+Please note that channel groupings and definitions may evolve as the market changes. We will keep this list updated to reflect any adjustments.
 
 ## Sources
 
