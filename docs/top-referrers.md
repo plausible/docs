@@ -45,7 +45,7 @@ Please note that channel groupings and definitions may evolve as the market chan
 
 In the "**Sources**" tab within the "**Top Sources**" report, you can see the full list of your referral sources such as "**Google**", "**Facebook**", "**LinkedIn**", "**Reddit**" and "**chatgpt.com**".
 
-Browsers only send the domain name of the referrer and not the actual URL. If `thatblog.com/one-post/` sends you visitors, you will see `thatblog.com` in your sources list but won’t see the exact post URL itself. [See more here](https://plausible.io/blog/referrer-policy).
+Note that browsers only send the domain name of the referrer and not the actual URL. If `thatblog.com/one-post/` sends you visitors, you will see `thatblog.com` in your sources list but won’t see the exact post URL itself. [See more here](https://plausible.io/blog/referrer-policy).
 
 ### No need to manually exclude unwanted sources
 
@@ -85,7 +85,7 @@ Are you running paid marketing campaigns on Facebook, Google and other ad platfo
 
 Here's an example of how to tag your links: `yourdomain.com?utm_source=adwords&utm_medium=ppc&utm_campaign=novemberoffer&utm_content=sustainability&utm_term=discount`
 
-To isolate your UTM-tagged clicks from the organic clicks, you can segment the traffic by using the "**UTM Medium**", "**UTM Source**" (here you can also see any traffic tagged with "ref" and "source" parameters), "**UTM Campaign**", "**UTM Content**" and "**UTM Term**" sections in the "**Campaigns**" tab of the "**Top Sources**" report.
+To isolate your UTM-tagged clicks from other clicks, you can segment the traffic by using the "**UTM Medium**", "**UTM Source**" (here you can also see any traffic tagged with "ref" and "source" parameters), "**UTM Campaign**", "**UTM Content**" and "**UTM Term**" sections in the "**Campaigns**" tab of the "**Top Sources**" report.
 
 ### GCLID, FBCLID and other special marketing parameters
 
