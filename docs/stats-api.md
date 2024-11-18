@@ -124,6 +124,7 @@ Values of these dimensions are determined by the first pageview in a session.
 | `visit:exit_page` | /home | Page on which the visit session ended (last page viewed). |
 | `visit:source` | Twitter | Visit source, populated from an url query parameter tag (`utm_source`, `source` or `ref`) or the Referer HTTP header. |
 | `visit:referrer` | t.co/fzWTE9OTPt | Raw `Referer` header without `http://`, `http://` or `www.`. |
+| `visit:channel` | Organic Search | Acquisition channel for visit. |
 | `visit:utm_medium` | social | Raw value of the `utm_medium` query param on the entry page. |
 | `visit:utm_source` | twitter | Raw value of the `utm_source` query param on the entry page. |
 | `visit:utm_campaign` | profile | Raw value of the `utm_campaign` query param on the entry page. |
@@ -136,7 +137,7 @@ Values of these dimensions are determined by the first pageview in a session.
 | `visit:os_version` | 10.6 | Version number of the operating system used by the visitor. |
 | `visit:country` | US | ISO 3166-1 alpha-2 code of the visitor country. |
 | `visit:region` | US-MD | ISO 3166-2 code of the visitor region. |
-| `visit:city` | 4347778 | [GeoName ID](https://www.geonames.org/) of the visitor |
+| `visit:city` | 4347778 | [GeoName ID](https://www.geonames.org/) of the visitor. |
 | `visit:country_name` | United States | Name of the visitor country. |
 | `visit:region_name` | California | Name of the visitor region. |
 | `visit:city_name` | San Francisco | Name of the visitor city. |
