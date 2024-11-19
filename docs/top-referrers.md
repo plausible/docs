@@ -26,14 +26,14 @@ In the "**Channels**" tab within the "**Top Sources**" report, you can view a br
 | Email                               | `Source` is "gmail", "email", "e-mail", "e_mail" or "e mail" **OR** `Medium` is "email", "e-mail", "e_mail" or "e mail"          |
 | Mobile Push Notifications           | `Source` is "firebase" **OR** `Medium` is "mobile", "notification" or ends with "push"         |
 | Organic Search                      | `Source` is a known search site **OR** `Medium` is organic     |
-| Organic Shopping                    | `Source` is a known shopping site **OR** `Campaign` matches regex `^(.*(([^a-df-z]|^)shop|shopping).*)$`             |
+| Organic Shopping                    | `Source` is a known shopping site **OR** `Campaign` matches regex `^(.*(([^a-df-z]\|^)shop\|shopping).*)$`             |
 | Organic Social                      | `Source` is a known social site **OR** `Medium` is "social", "social-network", "social-media", "sm", "social network" or "social media"    |
 | Organic Video                       | `Source` is a known video site **OR** `Medium` matches regex `^(.*video.*)$`             |
-| Paid Other                          | `Medium` matches regex ^(.*cp.*|ppc|retargeting|paid.*)$            |
-| Paid Search                         | `Source` is a known search site **AND** `Medium` matches regex `^(.*cp.*|ppc|retargeting|paid.*)$` **OR** `Source` is Google and the link includes a "gclid" parameter **OR** `Source` is Bing and the link includes a "msclkid" parameter **OR** `Source` is "adwords" or includes a known search site which ends with "ad" or "ads" (as in "googleads")           |
-| Paid Shopping                       | `Source` is a known shopping site **OR** `Campaign` matches regex `^(.*(([^a-df-z]|^)shop|shopping).*)$` **AND** `Medium` matches regex `^(.*cp.*|ppc|retargeting|paid.*)$`             |
+| Paid Other                          | `Medium` matches regex `^(.*cp.*\|ppc\|retargeting\|paid.*)$`            |
+| Paid Search                         | `Source` is a known search site **AND** `Medium` matches regex `^(.*cp.*\|ppc\|retargeting\|paid.*)$` **OR** `Source` is Google and the link includes a "gclid" parameter **OR** `Source` is Bing and the link includes a "msclkid" parameter **OR** `Source` is "adwords" or includes a known search site which ends with "ad" or "ads" (as in "googleads")           |
+| Paid Shopping                       | `Source` is a known shopping site **OR** `Campaign` matches regex `^(.*(([^a-df-z]\|^)shop\|shopping).*)$` **AND** `Medium` matches regex `^(.*cp.*\|ppc\|retargeting\|paid.*)$`             |
 | Paid Social                         | `Source` is a known social site (including abbreviations IG and FB) **AND** `Medium` matches regex `^(.*cp.*|ppc|retargeting|paid.*)$` **OR** `Source` includes a known social site which ends with "ad" or "ads" (as in "fb-ads" or "facebook_feed_ad"           |
-| Paid Video                          | `Source` is a known video site (including abbreviation YT) **AND** `Medium` matches regex `^(.*cp.*|ppc|retargeting|paid.*)$` **OR** `Source` includes a known video site which ends with "ad" or "ads" (as in "yt-ads")             |
+| Paid Video                          | `Source` is a known video site (including abbreviation YT) **AND** `Medium` matches regex `^(.*cp.*\|ppc\|retargeting\|paid.*)$` **OR** `Source` includes a known video site which ends with "ad" or "ads" (as in "yt-ads")             |
 | Referral                            | `Medium` is "referral", "app" or "link"            |
 | SMS                                 | `Source` is "sms" **OR** `Medium` is "sms"         |
 
