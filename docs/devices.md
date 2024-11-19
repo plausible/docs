@@ -1,5 +1,5 @@
 ---
-title: Devices
+title: Top devices, browsers and operating systems
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

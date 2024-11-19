@@ -31,7 +31,6 @@ module.exports = {
       'guided-tour',
       'compare-stats',
       'filters-segments',
-      'manual-link-tagging',
       'google-search-console-integration',
       'realtime-dashboard',
       'top-referrers',

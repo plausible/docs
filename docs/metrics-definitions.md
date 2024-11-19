@@ -111,7 +111,7 @@ The total revenue of orders tracked. This is a part of the [revenue attribution 
 
 ## UTM parameters
 
-To minimize the amount of traffic that falls within the "Direct / None" category, you can add special query parameters (UTMs) to your links. UTMs help you better understand where your traffic is coming from. Plausible Analytics supports `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term`. Read more about [tagging your links](manual-link-tagging.md).
+To minimize the amount of traffic that falls within the "Direct / None" category, you can add special query parameters (UTMs) to your links. UTMs help you better understand where your traffic is coming from. Plausible Analytics supports `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term`. Read more about [tagging your links](top-referrers.md).
 
 ## Unique Conversions
 

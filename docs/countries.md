@@ -1,5 +1,5 @@
 ---
-title: Locations
+title: Top countries, regions and cities
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -8,8 +8,10 @@ Your "**Locations**" report shows where in the world your visitors are coming fr
 
 Click on any country to see the list of regions within that country where your visitors are coming from. Click on any region to see the list of cities within that region. You can also use the "**Countries**", "**Regions**" and "**Cities**" tabs on the top of the report.
 
-To improve the accuracy, visitors that use VPN services and the Tor browser are grouped under the "**Anonymous VPN Service**" entry in the "**Countries**" tab. This eliminates noise that VPNs add to locations and makes it easy to view the percentage of visitors using VPNs.
+## Visitors using VPNs and similar services 
 
+To improve the location accuracy, visitors using VPN services or the Tor browser are grouped under the "**Anonymous VPN Service**" entry in the "**Countries**" tab. This method reduces the noise caused by analytics tools recording VPN server locations instead of actual user locations, while also making it easier to view the percentage of visitors using VPNs.
+ 
 You can use the "**Filter**" button on the top of your dashboard to segment the traffic by multiple countries, regions or cities at the same time. This allows you to group specific geographical regions and display only that traffic.
 
 <img alt="Countries - multiple filters" src={useBaseUrl('img/countries-filtering-multiple-filters.png')} />

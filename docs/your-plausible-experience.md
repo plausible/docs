@@ -36,7 +36,7 @@ See full details on our [goal conversions and behavior analytics](goal-conversio
 
 To minimize the amount of traffic that falls within the "direct / none" referral source, you can add special query parameters to your links in social media, email newsletters and your paid advertising campaigns.
 
-`ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term` query parameters are all valid and supported by Plausible Analytics. [Learn more here](manual-link-tagging.md).
+`ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term` query parameters are all valid and supported by Plausible Analytics. [Learn more here](top-referrers.md).
 
 You'll then be able to follow the visitor journey from a paid ad click to a conversion on your site directly in your Plausible dashboard. All the UTM tagged clicks will be displayed in the Campaign tabs of your Top Sources report and all the conversions will be in the Goal Conversions section. You can then [filter your Plausible dashboard](filters-segments.md) by a specific goal to see conversion rate for all the individual sources of traffic, landing pages and so on.
 

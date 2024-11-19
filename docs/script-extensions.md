@@ -110,7 +110,7 @@ It's especially helpful to redact and aggregate multiple pages whose URLs contai
 
 #### Track custom query parameters for complete page URLs
 
-By default, Plausible strips all query parameters for privacy purposes [except](manual-link-tagging.md) `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term`. 
+By default, Plausible strips all query parameters for privacy purposes [except for](top-referrers.md) `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term`. 
 
 This means that pages like `yoursite.com/blog/index.php?article=some_article&page=11` will be reported as `yoursite.com/blog/index.php` in the "**Top Pages**" report of your Plausible dashboard.
 
