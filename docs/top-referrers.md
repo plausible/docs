@@ -4,7 +4,7 @@ title: Acquisition channels, referral sources and paid campaigns
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-The "**Top Sources**" report displays acquisition channels, referral sources and marketing campaigns that drive traffic to your website. This information helps you understand where your traffic originates, which referral sources are most effective and how specific marketing campaigns perform. 
+The "**Top Sources**" report displays acquisition channels, referral sources and marketing campaigns that drive traffic to your website. This information helps you understand which referral sources are most effective and how specific marketing campaigns perform. 
 
 You can click on any individual entry within the "**Top Sources**" report to segment your audience by that source and view the best performing landing pages or highest converting goals. Click the "**Details**" button to access additional insights such as the visit duration and bounce rate for the individual entry. In the "**Details**" view, you can sort and arrange your data in ascending or descending order by clicking any metric heading.
 
@@ -37,7 +37,7 @@ In the "**Channels**" tab within the "**Top Sources**" report, you can view a br
 | Referral                            | `Medium` is "referral", "app" or "link"            |
 | SMS                                 | `Source` is "sms" **OR** `Medium` is "sms"         |
 
-We align our channel lists and definitions closely with Google Analytics to make your transition to Plausible as seamless as possible. However, we strive to stay more up-to-date with newer sites and platforms. For example, in Plausible, Temu is categorized as a shopping site, Perplexity as a search site and Discord as a social site, among others.
+We align our channel lists and definitions closely with Google Analytics to make your transition to Plausible as seamless as possible. However, we strive to stay more up-to-date with newer sites and platforms. For example, in Plausible, Temu is categorized as a shopping site, Perplexity as a search site and Discord as a social site.
 
 Please note that channel groupings and definitions may evolve as the market changes. We will keep this list updated to reflect any adjustments.
 
@@ -89,7 +89,7 @@ To isolate your UTM-tagged clicks from other clicks, you can segment the traffic
 
 ### gclid and msclkid marketing parameters
 
-If the UTM tag is not present within the link, Plausible also records clicks from "gclid" and "msclkid" which are special paid marketing parameters. You can view and filter these within the "**UTM Medium**" section of the "**Top Sources**" report. 
+If the UTM tag is not present within the link, Plausible also looks for "gclid" (Google ads) and "msclkid" (Bing ads) tags which are special paid marketing parameters. You can view and filter these within the "**UTM Medium**" section of the "**Top Sources**" report. 
 
 Please note that we strip the values from "gclid" and "msclkid" parameters because they are considered unique identifiers and are not GDPR-compliant without user consent. This means you can view and filter your dashboard by the audience coming from "gclid" or "msclkid" tagged links, but you will not see the unique identifier for each visitor.
 
