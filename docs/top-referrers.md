@@ -41,11 +41,15 @@ We align our channel lists and definitions closely with Google Analytics to make
 
 Please note that channel groupings and definitions may evolve as the market changes. We will keep this list updated to reflect any adjustments.
 
+<img alt="Top Sources - channels" src={useBaseUrl('img/top-sources-channels.png')} />
+
 ## Sources
 
 In the "**Sources**" tab within the "**Top Sources**" report, you can see the full list of your referral sources such as "**Google**", "**Facebook**", "**LinkedIn**", "**Reddit**" and "**chatgpt.com**".
 
 Note that browsers only send the domain name of the referrer and not the actual URL. If `thatblog.com/one-post/` sends you visitors, you will see `thatblog.com` in your sources list but won’t see the exact post URL itself. [See more here](https://plausible.io/blog/referrer-policy).
+
+<img alt="Top Sources - sources" src={useBaseUrl('img/top-sources-sources.png')} />
 
 ### No need to manually exclude unwanted sources
 
