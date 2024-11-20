@@ -93,7 +93,7 @@ To isolate your UTM-tagged clicks from other clicks, you can segment the traffic
 
 ### gclid and msclkid marketing parameters
 
-If the UTM tag is not present within the link, Plausible also looks for "gclid" (Google ads) and "msclkid" (Bing ads) tags which are special paid marketing parameters. You can view and filter these within the "**UTM Medium**" section of the "**Top Sources**" report. 
+If the UTM tag is not present within the link, Plausible also looks for "gclid" (Google Click ID in Google Ads) and "msclkid" (Microsoft Click ID in Microsoft Ads, formerly Bing Ads) tags which are special paid marketing parameters. You can view and filter these within the "**UTM Medium**" section of the "**Top Sources**" report. 
 
 Please note that we strip the values from "gclid" and "msclkid" parameters because they are considered unique identifiers and are not GDPR-compliant without user consent. This means you can view and filter your dashboard by the audience coming from "gclid" or "msclkid" tagged links, but you will not see the unique identifier for each visitor.
 
