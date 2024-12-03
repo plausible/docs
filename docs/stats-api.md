@@ -1,5 +1,5 @@
 ---
-title: Stats API v2 reference
+title: Stats API reference
 toc_max_heading_level: 4
 ---
 
@@ -9,7 +9,7 @@ import { getExampleCode } from '../src/js/examples.tsx';
 import CodeBlock from '@theme/CodeBlock';
 import { SiteContextProvider } from '../src/js/sites.tsx';
 
-Plausible Stats API v2 is a powerful single endpoint HTTP interface to **view historical and real-time stats**. In a nutshell, the endpoint `/api/v2/query` accepts both simple and complex stats queries in the POST request body and returns the metrics as JSON.
+Plausible Stats API is a powerful single endpoint HTTP interface to **view historical and real-time stats**. In a nutshell, the endpoint `/api/v2/query` accepts both simple and complex stats queries in the POST request body and returns the metrics as JSON.
 
 [Try it now for your own site!](#examples)
 
