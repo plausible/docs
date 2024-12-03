@@ -1,0 +1,8 @@
+{
+  "site_id": "dummy.site",
+  "metrics": ["visitors"],
+  "date_range": "7d",
+  "filters": [
+    ["contains", "event:page", ["blog"], {"case_sensitive": false}]
+  ]
+}

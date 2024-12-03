@@ -1,0 +1,15 @@
+{
+  "results": [{"metrics": [10], "dimensions": []}],
+  "meta": {},
+  "query": {
+    "site_id": "dummy.site",
+    "metrics": ["visitors"],
+    "date_range": ["2024-09-04T00:00:00+00:00", "2024-09-10T23:59:59+00:00"],
+    "filters": [
+      ["contains", "event:page", ["/blog"], {"case_sensitive": false}]
+    ],
+    "dimensions": [],
+    "order_by": [["visitors", "desc"]],
+    "include": {}
+  }
+}

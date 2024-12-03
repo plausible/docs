@@ -34,6 +34,12 @@ const EXAMPLES = [
     exampleResponse: read("apiv2-examples/filtering-basics-response.json"),
   },
   {
+    id: "example-filtering-case-insensitive",
+    title: "Case insensitive filtering",
+    query: read("apiv2-examples/filtering-case-insensitive-query.json"),
+    exampleResponse: read("apiv2-examples/filtering-case-insensitive-response.json"),
+  },
+  {
     id: "example-timeseries",
     title: "Timeseries query",
     query: read("apiv2-examples/timeseries-query.json"),

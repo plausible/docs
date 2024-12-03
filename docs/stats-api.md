@@ -172,7 +172,7 @@ Filters allow limiting the data analyzed in a query. [See example](#example-filt
 
 #### Simple filters
 
-Each simple filter takes the form of `[operator, dimension, clauses]`.
+Each simple filter is an array with three or four elements `[operator, dimension, clauses]` or `[operator, dimension, clauses, modifiers]`.
 
 ##### operators
 
@@ -187,6 +187,7 @@ The following operators are currently supported:
 | `matches` | `["matches", "event:page", ["^/user/\d+$"]]` | Events where page matches regular expression `^/user/\d+$`. [Uses re2 syntax](https://github.com/google/re2/wiki/Syntax) |
 | `matches_not` | `["matches", "event:page", ["^/user/\d+$"]]` | Events where page does not match regular expression `^/user/\d+$`. [Uses re2 syntax](https://github.com/google/re2/wiki/Syntax) |
 
+
 ##### dimension
 
 [Event and visit dimensions](#dimensions) are valid for filters.
@@ -196,6 +197,12 @@ Note that only `is` operator is valid for `event:goal` dimension.
 ##### clauses
 
 List of values to match against. A data point matches filter if _any_ of the clauses matches.
+
+##### modifiers <Optional />
+
+`contains` and `is` filters also support a 4th, modifier argument. For example, to match countries ignoring casing, you can use the following filter:
+
+`["contains", "event:country", ["united", "EST], { "case_sensitive": false }]`. [See full example](#example-filtering-case-insensitive)
 
 #### Logical operations
 
@@ -340,6 +347,10 @@ The query that was executed, after manipulations performed on the backend.
 ### Filtering by page and country {#example-filtering}
 
 <ApiV2Example id="example-filtering" />
+
+### Case insensitive filtering {#example-filtering-case-insensitive}
+
+<ApiV2Example id="example-filtering-case-insensitive" />
 
 ### Timeseries query {#example-timeseries}
 
