@@ -172,7 +172,7 @@ Filters allow limiting the data analyzed in a query. [See example](#example-filt
 
 #### Simple filters
 
-Each simple filter takes the form of `[operator, dimension, clauses]`.
+Each simple filter is an array with three or four elements `[operator, dimension, clauses]` or `[operator, dimension, clauses, modifiers]`.
 
 ##### operators
 
