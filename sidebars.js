@@ -80,28 +80,9 @@ module.exports = {
         ],
       },
     ],
-    API: [
-      {
-        type: 'category',
-        label: 'Stats API',
-        items: [
-          {
-            type: 'doc',
-            id: 'stats-api',
-            label: 'Reference',
-          },
-          {
-            type: 'doc',
-            id: 'stats-api-playground',
-            label: 'Playground',
-          },
-          {
-            type: 'doc',
-            id: 'stats-api-v1',
-            label: 'v1 API Reference',
-          }
-        ]
-      },
+    'API': [
+      'stats-api',
+      'stats-api-playground',
       'events-api',
       'sites-api',
     ],
