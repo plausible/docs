@@ -4,27 +4,29 @@ title: How to add the script to your Discourse community
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-You can add Plausible Analytics tracking code to your Discourse community by adding a "**Theme**" component. You need to use [our special hash-based script](hash-based-routing.md) on Discourse forums.
+You can add Plausible Analytics tracking code to your Discourse community by adding a component. Since Discourse uses hash-based routing for the post threads, you should to use [our special hash-based script](hash-based-routing.md) on Discourse forums.  You may also want to add some of the other options like file-downloads.
 
-* Go to Admin > Customize > Themes in your Discourse admin to create a new "**Theme**" component.
+* Go to Admin > Customize > Appearance > Components in your Discourse admin to create a new component.
 
-* Paste your Plausible Analytics hash-based script tag into the `<head>` section.
+* Click 'Install' and then 'Create New +'.  Give it a friendly name like 'Plausible Analytics', make sure the Type shows 'Component', and click 'Create'.
 
-* Here's what the full script tag will look like (make sure to replace your-domain with the domain you've added to Plausible Analytics):
+* For the 'Include Component...' section, click the 'Add All Themes' button to ensure that this tracker is enabled across all themes.  However, you may have themes that you don't want to track (maybe a special theme for Admins) in which case you can use the drop-down to select the specfic themes where you want the Plausible script added.
+
+* Then click on the 'Edit CSS/HTML' button.  Make sure you're in the 'Common' section (not 'Desktop' or 'Mobile').  Go to the `<head>` section (not the 'header' but the 'head') and paste in your Plausible Analytics script tag.
+
+* Here's how the full script tag should look inside the `head` section:
 
 ```html
 <script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.hash.js"></script>
 ```
 
-* If you're using [a proxy](/proxy/introduction.md) for your Plausible account, you can add the `.hash.js` as follows: `https://yourproxylocation.com/js/index.hash.js`.
+* Note: Replace "yourdomain.com" with the site you're tracking in Plausible.  If your Discourse is on a sub-domain of your main site, you could track them together by entering your main site here.  Alternately, you could create a separate site in Plausible for yout Discourse to keep them separate.  See [here](https://plausible.io/docs/subdomain-hostname-filter) for a deeper discussion.
 
-* After adding your code, click on the "**Save**" button.
+* Note: If you're using [a proxy](/proxy/introduction.md) for your Plausible account, you can add the `.hash.js` as follows: `https://yourproxylocation.com/js/index.hash.js`.
 
-Discourse has cross-site protections by default, and to allow Plausible to collect data, you need to add the Plausible URL to the setting called **content security policy script src** 
+* After adding your code, click on the "**Save**" button at the bottom, and the "**<**" button in the top left to get back to the component screen.  If it saved properly, you should see the `head` section called out as a 'custom section' under the CSS/HTML header.   
 
-* Go to Admin > Settings > search for: *content security policy script src*
-
-* Add `plausible.io` or your custom URL (i.e., `yourproxylocation.com`) as an item and click the green checkmark.
+Discourse will automatically add a nonce to the script to satisfy the Content Security Policy headers, so no further action is necessary for that.
 
 Now you can go to your Discourse community and verify whether Plausible Analytics script has been added and to your Plausible Analytics account to see whether the stats are being tracked. See here [how to verify the integration](troubleshoot-integration.md).
 
