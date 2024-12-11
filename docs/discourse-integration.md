@@ -24,7 +24,7 @@ You can add Plausible Analytics tracking code to your Discourse community by add
 
 * Note: If you're using [a proxy](/proxy/introduction.md) for your Plausible account, you can add the `.hash.js` as follows: `https://yourproxylocation.com/js/index.hash.js`.
 
-* After adding your code, click on the "**Save**" button at the bottom, and the "**<**" button in the top left to get back to the component screen.  If it saved properly, you should see the `head` section called out as a 'custom section' under the CSS/HTML header.   
+* After adding your code, click on the "**Save**" button at the bottom, and the "**\<**" button in the top left to get back to the component screen.  If it saved properly, you should see the `head` section called out as a 'custom section' under the CSS/HTML header.
 
 Discourse will automatically add a nonce to the script to satisfy the Content Security Policy headers, so no further action is necessary for that.
 
