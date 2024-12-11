@@ -379,3 +379,7 @@ In this example, imported data could not be included due to dimension and filter
 <ApiV2Example id="example-imports-warning" />
 
 </SiteContextProvider>
+
+:::tip Looking for legacy stats API v1 docs?
+Take a look [here](stats-api-v1)
+:::
