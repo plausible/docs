@@ -2,6 +2,8 @@ function read(path: string): string {
   return require(`!!raw-loader?esModule=false!./${path}`)
 }
 
+export const EXAMPLE_RESPONSE_META = read("apiv2-examples/response-meta.json")
+
 const EXAMPLES = [
   {
     id: "example-aggregate",
@@ -74,6 +76,18 @@ const EXAMPLES = [
     title: "Including imported data failed",
     query: read("apiv2-examples/imports-bad-filter-query.json"),
     exampleResponse: read("apiv2-examples/imports-bad-filter-response.json"),
+  },
+  {
+    id: "example-revenue-metrics",
+    title: "Revenue metrics",
+    query: read("apiv2-examples/revenue-metrics-query.json"),
+    exampleResponse: read("apiv2-examples/revenue-metrics-response.json"),
+  },
+  {
+    id: "example-revenue-warning",
+    title: "Revenue metrics could not be calculated",
+    query: read("apiv2-examples/revenue-warning-query.json"),
+    exampleResponse: read("apiv2-examples/revenue-warning-response.json"),
   }
 ]
 

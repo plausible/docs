@@ -1,0 +1,6 @@
+{
+  "site_id": "dummy.site",
+  "metrics": ["total_revenue"],
+  "date_range": "all",
+  "dimensions": ["event:goal"]
+}
