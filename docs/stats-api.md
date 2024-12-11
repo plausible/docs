@@ -328,9 +328,9 @@ Take a look [here](stats-api-v1)
 
 ## Examples
 
-The following examples are interactive and can be edited and run against your own data if you're logged in.
-
 <SiteContextProvider>
+
+<ExamplesTip />
 
 ### Simple aggregate query {#example-aggregate}
 
