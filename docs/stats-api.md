@@ -322,6 +322,10 @@ Meta information about this query. Related: [include.imports](#include.imports) 
 
 The query that was executed, after manipulations performed on the backend.
 
+:::tip Looking for legacy stats API v1 docs?
+Take a look [here](stats-api-v1)
+:::
+
 ## Examples
 
 <SiteContextProvider>
@@ -379,7 +383,3 @@ In this example, imported data could not be included due to dimension and filter
 <ApiV2Example id="example-imports-warning" />
 
 </SiteContextProvider>
-
-:::tip Looking for legacy stats API v1 docs?
-Take a look [here](stats-api-v1)
-:::
