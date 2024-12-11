@@ -1,0 +1,8 @@
+{
+  "site_id": "dummy.site",
+  "metrics": ["total_revenue"],
+  "date_range": "all",
+  "filters": [
+    ["is", "event:goal", ["PurchaseUSD", "PurchaseEUR"]]
+  ]
+}

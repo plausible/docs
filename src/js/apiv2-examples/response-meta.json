@@ -1,0 +1,32 @@
+{
+  // Whether imported data was included
+  // Only set if include.imports was set
+  "imports_included": false,
+
+  // Information about why including imported data failed
+  "imports_skip_reason": "unsupported_interval",
+  "imports_warning": "Imported stats are not included because the time dimension (i.e. the interval) is too short.",
+
+  // Warnings about specific metrics
+  // Currently only set if a revenue metric was used and was unable to be calculated
+  "metric_warnings": {
+    "total_revenue": {
+      "code": "no_revenue_goals_matching",
+      "warning": "Revenue metrics are null as there are no matching revenue goals."
+    }
+  },
+
+  // Only set if include.time_labels was set
+  "time_labels": [
+    "2024-09-10 00:00:00",
+    "2024-09-10 01:00:00",
+    "2024-09-10 02:00:00",
+    "2024-09-10 03:00:00",
+    "2024-09-10 04:00:00",
+    "2024-09-10 05:00:00",
+    "2024-09-10 06:00:00"
+  ],
+
+  // Only set if include.total_rows was set
+  "total_rows": 342
+}
