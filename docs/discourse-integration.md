@@ -10,7 +10,7 @@ You can add Plausible Analytics tracking code to your Discourse community by add
 
 * Click 'Install' and then 'Create New +'.  Give it a friendly name like 'Plausible Analytics', make sure the Type shows 'Component', and click 'Create'.
 
-* For the 'Include Component...' section, click the 'Add All Themes' button to ensure that this tracker is enabled across all themes.  However, you may have themes that you don't want to track (maybe a special theme for Admins) in which case you can use the drop-down to select the specfic themes where you want the Plausible script added.
+* For the 'Include Component...' section, click the 'Add All Themes' button to ensure that this tracker is enabled across all themes.  However, you may have themes that you don't want to track (maybe a special theme for Admins) in which case you can use the drop-down to select the specific themes where you want the Plausible script added.
 
 * Then click on the 'Edit CSS/HTML' button.  Make sure you're in the 'Common' section (not 'Desktop' or 'Mobile').  Go to the `<head>` section (not the 'header' but the 'head') and paste in your Plausible Analytics script tag.
 
