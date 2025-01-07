@@ -354,11 +354,15 @@ Meta information about this query, including warnings and auxiliary data. Relate
 
 The query that was executed, after manipulations performed on the backend.
 
+:::tip Looking for legacy stats API v1 docs?
+Take a look [here](stats-api-v1)
+:::
+
 ## Examples
 
-<SiteContextProvider>
+The following examples are interactive and can be edited and run against your own data if you're logged in.
 
-<ExamplesTip />
+<SiteContextProvider>
 
 ### Simple aggregate query {#example-aggregate}
 
