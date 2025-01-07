@@ -1,0 +1,23 @@
+{
+  "results": [
+    {"metrics": [null], "dimensions": ["Visit /"]}
+  ],
+  "meta": {
+    "metric_warnings": {
+      "total_revenue": {
+        "code": "no_single_revenue_currency",
+        "warning": "Revenue metrics are null as there are multiple currencies for the selected event:goals."
+      }
+    }
+  },
+  "query": {
+    "site_id": "dummy.site",
+    "metrics": ["total_revenue"],
+    "date_range": ["2021-12-14T00:00:00+00:00", "2024-12-11T23:59:59+00:00"],
+    "filters": [["is", "event:goal", ["PurchaseUSD", "PurchaseEUR"]]],
+    "dimensions": [],
+    "order_by": [["total_revenue", "desc"]],
+    "include": {},
+    "pagination": {"offset": 0, "limit": 10000}
+  }
+}

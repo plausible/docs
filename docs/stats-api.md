@@ -5,7 +5,7 @@ toc_max_heading_level: 4
 
 import { ApiV2Example, ExamplesTip } from '../src/js/apiv2-example.tsx';
 import { Required, Optional } from '../src/js/api-helpers.tsx';
-import { getExampleCode } from '../src/js/examples.tsx';
+import { getExampleCode, EXAMPLE_RESPONSE_META } from '../src/js/examples.tsx';
 import CodeBlock from '@theme/CodeBlock';
 import { SiteContextProvider } from '../src/js/sites.tsx';
 
@@ -75,18 +75,49 @@ Metrics represent values to be calculated with the query.
 
 Valid metrics are:
 
-| Metric name | Description |
-| --- | --- |
-| `visitors` | The number of unique visitors |
-| `visits` | The number of visits/sessions |
-| `pageviews` | The number of pageview events |
-| `views_per_visit` | The number of pageviews divided by the number of visits. Returns a floating point number. |
-| `bounce_rate` | Bounce rate percentage |
-| `visit_duration` | Visit duration in seconds |
-| `events` | The number of events (pageviews + custom events). When filtering by a goal, this metric corresponds to "Total Conversions" in the dashboard. |
-| `percentage` | The percentage of visitors of total who fall into this category: Requires: dimension list |
-| `conversion_rate` | The percentage of visitors who completed the goal. Requires: dimension list passed, an event:goal filter or event:goal dimension |
-| `group_conversion_rate` | The percentage of visitors who completed the goal with the same dimension. Requires: dimension list passed, an event:goal filter or event:goal dimension |
+| Metric name | Type | Description | Requirements |
+| --- | --- | --- | --- |
+| `visitors` | `int` | The number of unique visitors | |
+| `visits` | `int` | The number of visits/sessions | |
+| `pageviews` | `int` | The number of pageview events | |
+| `views_per_visit` | `float` | The number of pageviews divided by the number of visits. | |
+| `bounce_rate` | `float` | Bounce rate percentage | |
+| `visit_duration` | `int` | Visit duration in seconds | |
+| `events` | `int` | The number of events (pageviews + custom events). When filtering by a goal, this metric corresponds to "Total Conversions" in the dashboard. | |
+| `percentage` | `float` | The percentage of visitors of total who fall into this category: Requires: dimension list | Requires non-empty `dimensions` |
+| `conversion_rate` | `float` | The percentage of visitors who completed the goal. | Requires non-empty `dimensions`, `event:goal` filter or dimension being set |
+| `group_conversion_rate` | `float` | The percentage of visitors who completed the goal with the same dimension. Requires: dimension list passed, an event:goal filter or event:goal dimension | Requires non-empty `dimensions`, event:goal filter or dimension being set |
+| `average_revenue` | `Revenue` or null | Average revenue per revenue goal conversion | Requires [revenue goals](docs/ecommerce-revenue-tracking.md), `event:goal` filter or dimension for a relevant revenue goal. |
+| `total_revenue` | `Revenue` or null | Total revenue from revenue goal conversions | Requires [revenue goals](docs/ecommerce-revenue-tracking.md), `event:goal` filter or dimension for a relevant revenue goal. |
+
+
+<details>
+  <summary>Read more about revenue metrics</summary>
+
+  To use revenue metrics, users should configure [revenue goals](docs/ecommerce-revenue-tracking.md).
+
+  Revenue metric response type has the following structure:
+
+  ```js
+  {
+    value: float,
+    currency: string, // e.g. "USD" or "EUR"
+    short: string, // e.g. "€500.2M"
+    long: string, // e.g. "€500,200,700.25"
+  }
+  ```
+
+  `long` and `short` options are human-friendly formatted results.
+
+  There are scenarios where revenue metrics can't be calculated. For example:
+  1. When no revenue goals are configured
+  2. No `event:goal` filter or dimension
+  3. No revenue goal matches `event:goal` filter
+  4. No `event:goal` dimension and filtered revenue goals have different currencies.
+
+  In these cases, revenue is returned as `null`s and `response.meta.metric_warning` value will have a warning for why the metric could not
+  be calculated. See [response.meta structure](#meta) and [example](#example-revenue-warning)
+</details>
 
 ### dimensions <Optional /> {#dimensions}
 
@@ -313,10 +344,11 @@ Each result row contains:
 - `dimensions` - values for each `dimension` listed in query. In the same order as query `dimensions`, empty if no dimensions requested.
 - `metrics` - List of metric values, in the same order as query `metrics`
 
-
 ### meta
 
-Meta information about this query. Related: [include.imports](#include.imports) and [include.time_labels](#include.time_labels).
+Meta information about this query, including warnings and auxiliary data. Related: [include](#include).
+
+<CodeBlock language="javascript">{EXAMPLE_RESPONSE_META}</CodeBlock>
 
 ### query
 
@@ -381,5 +413,16 @@ The following examples are interactive and can be edited and run against your ow
 In this example, imported data could not be included due to dimension and filter combination not supporting imports. [More information](#include.imports)
 
 <ApiV2Example id="example-imports-warning" />
+
+
+### Revenue metrics {#example-revenue-metrics}
+
+<ApiV2Example id="example-revenue-metrics" />
+
+### Revenue metrics could not be calculated {#example-revenue-warning}
+
+In this example, revenue metrics could not be calculated due to different currency filters. [More information](#metrics)
+
+<ApiV2Example id="example-revenue-warning" />
 
 </SiteContextProvider>
