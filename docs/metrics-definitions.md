@@ -87,6 +87,10 @@ You can click on any source to drill-down and view the individual pages linking 
 
 Shows the devices used by your visitors. Devices are categorized into desktop, mobile or tablet. This is derived from the User-Agent HTTP header. The full User-Agent is discarded. Metrics are shown as the total number of unique visitors and as a percentage of all visitors.
 
+## Scroll Depth
+
+Shows the percentage of a particular page your visitors have reached on average.
+
 ## Source
 
 See all referral sources that are sending you traffic. A source is reported when a person clicks through to your site from another site.
