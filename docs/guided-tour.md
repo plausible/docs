@@ -62,7 +62,7 @@ You can also use the "**Filter**" button on the top of your dashboard which give
 
 ## Detailed metrics and Sorting
 
-You can click the "**Details**" button at the bottom of any report to get an expanded view and see the full list with additional metrics such as Visitors, Bounce Rate, Visit Duration, Uniques, Total, CR (Conversion Rate), etc., depending upon the type of the report.
+You can click the "**Details**" button at the bottom of any report to get an expanded view and see the full list with additional metrics such as "**Visitors**", "**Bounce Rate**", "**Visit Duration**", "**Scroll Depth**", "**Unique Conversions**", "**Total Conversions**", "**Conversion Rate**" and more all depending upon the type of the report.
 
 You can sort any report by such performance metrics by clicking on any metric heading to sort and arrange your data in ascending or descending order.
 
@@ -78,7 +78,7 @@ Note that the referral sources including UTM and other query parameters are coun
 
 ## Top Pages
 
-See all the most visited pages on your site ranked by the number of unique visitors. You can click on the "**details**" button to see the full list with additional metrics. The number of pageviews, bounce rate, and time on page for the individual pages are included too.
+See all the most visited pages on your site ranked by the number of unique visitors. You can click on the "**details**" button to see the full list with additional metrics. The number of pageviews, bounce rate, time on page and scroll depth for the individual pages are included too.
 
 You can also get insights into the visitor flow by looking at the "**Entry pages**" and "**Exit pages**". Click on the "**details**" button to see the full list with additional metrics. For "**Entry pages**" details include visit duration for visits that started on a specific page and for "**Exit pages**" details include the exit rate percentage. [Read more here](top-pages.md).
 
