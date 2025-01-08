@@ -92,7 +92,11 @@ We can import your traffic split between the different browsers but you can't dr
 
 ### Exit pages
 
-Google Analytics 4 API does not expose this information so you cannot see the Exit Pages report for imported data. 
+Google Analytics API does not expose this information so you cannot see the Exit Pages report for imported data. 
+
+### Scroll Depth
+
+Google Analytics API does not expose this information so you cannot see the Scroll Depth report for imported data. 
 
 ### Day view graph
 
