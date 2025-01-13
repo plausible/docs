@@ -17,6 +17,10 @@ Plausible Stats API is a powerful single endpoint HTTP interface to **view histo
 Take a look at our [Events API Reference](events-api.md) if you want to record pageviews or custom events for your sites, or [Sites API Reference](sites-api.md) if you want to manage your sites over the API.
 :::
 
+:::tip[Using Plausible Community Edition?]
+Take a look [here](stats-api-v1) as the V2 API isn't currently included with Plausible CE.
+:::
+
 ## Authentication
 
 You can obtain an API key for your account by going to your user settings page [plausible.io/settings](https://plausible.io/settings).
