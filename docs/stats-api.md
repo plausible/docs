@@ -236,7 +236,7 @@ List of values to match against. A data point matches filter if _any_ of the cla
 
 `["contains", "event:country", ["united", "EST], { "case_sensitive": false }]`. [See full example](#example-filtering-case-insensitive)
 
-#### Logical operations
+#### Logical filters
 
 Filters can be combined using `and`, `or` and `not` operators.
 
@@ -247,6 +247,20 @@ Filters can be combined using `and`, `or` and `not` operators.
 | `not` | `["not", ["is", "visit:country_name", ["Germany"]]]` | Sessions not originating from Germany |
 
 Note that top level filters is wrapped in an implicit `and`.
+
+#### Behavioral filters
+
+Behavioral filters can be used to filter whether a user has ever done or not done something. This can be used to filter out users who have not completed a goal or
+who have visited a particular page.
+
+| Operator | Example | Explanation |
+| -- | -- | -- |
+| `has_done` | `["has_done", ["is", "event:page", ["/pricing"]]]` | Users who have done a pageview to /pricing page |
+| `has_not_done` | `["has_not_done", ["is", "event:goal", ["Login"]]]` | Users who have not done Login goal |
+
+Behavioral filters can only be used with [event dimension](#event-dimensions) filters.
+
+[See example](#example-behavioral-filters)
 
 ### order_by <Optional />
 
@@ -389,6 +403,12 @@ The following examples are interactive and can be edited and run against your ow
 
 <ApiV2Example id="example-filtering-case-insensitive" />
 
+### Behavioral filters {#example-behavioral-filters}
+
+This example shows how many visitors and how many times visitors have visited the `/pricing` page, needed support before or after and not created an account or logged in.
+
+<ApiV2Example id="example-behavioral-filters" />
+
 ### Timeseries query {#example-timeseries}
 
 <ApiV2Example id="example-timeseries" />
@@ -414,7 +434,6 @@ The following examples are interactive and can be edited and run against your ow
 In this example, imported data could not be included due to dimension and filter combination not supporting imports. [More information](#include.imports)
 
 <ApiV2Example id="example-imports-warning" />
-
 
 ### Revenue metrics {#example-revenue-metrics}
 

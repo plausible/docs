@@ -1,0 +1,18 @@
+{
+  "results": [{"metrics": [1533, 3429], "dimensions": []}],
+  "meta": {},
+  "query": {
+    "site_id": "dummy.site",
+    "metrics": ["visitors", "pageviews"],
+    "date_range": ["2025-01-10T00:00:00+00:00", "2025-01-16T23:59:59+00:00"],
+    "filters": [
+      ["is", "event:page", ["/pricing"]],
+      ["has_done", ["is", "event:goal", ["Open Support Chat"]]],
+      ["has_not_done", ["is", "event:goal", ["Register", "Login"]]]
+    ],
+    "dimensions": [],
+    "order_by": [["visitors", "desc"]],
+    "include": {},
+    "pagination": {"offset": 0, "limit": 10000}
+  }
+}

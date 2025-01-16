@@ -88,6 +88,12 @@ const EXAMPLES = [
     title: "Revenue metrics could not be calculated",
     query: read("apiv2-examples/revenue-warning-query.json"),
     exampleResponse: read("apiv2-examples/revenue-warning-response.json"),
+  },
+  {
+    id: "example-behavioral-filters",
+    title: "Behavioral filters",
+    query: read("apiv2-examples/behavioral-filters-query.json"),
+    exampleResponse: read("apiv2-examples/behavioral-filters-response.json"),
   }
 ]
 

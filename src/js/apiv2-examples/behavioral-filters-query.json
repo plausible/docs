@@ -1,0 +1,10 @@
+{
+  "site_id": "dummy.site",
+  "metrics": ["visitors", "pageviews"],
+  "date_range": "7d",
+  "filters": [
+    ["is", "event:page", ["/pricing"]],
+    ["has_done", ["is", "event:goal", ["Open Support Chat"]]],
+    ["has_not_done", ["is", "event:goal", ["Register", "Login"]]]
+  ]
+}
