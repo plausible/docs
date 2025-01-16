@@ -40,6 +40,7 @@ module.exports = {
       'subdomain-hostname-filter',
       'metrics-definitions',
       'keyboard-shortcuts',
+      'looker-studio',
       'dashboard-faq',
       {
         type: 'category',
