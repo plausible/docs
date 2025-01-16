@@ -136,6 +136,7 @@ Valid dimensions include:
 | --- | --- | --- |
 | `event:goal` | Register | A custom action that you want your users to take. To use this property, you first need to configure some goals in the [site settings](/website-settings), or via the [Sites API](/sites-api). The value is the goal's `display_name`. Learn more about goals [here](/goal-conversions). |
 | `event:page` | /blog/remove-google-analytics | Pathname of the page where the event is triggered. You can also use an asterisk to group multiple pages (`/blog*`) |
+| `event:name` | Custom Event | Name of the event or [custom event](/docs/custom-event-goals.md) to filter by. |
 | `event:hostname` | example.com | Hostname of the event. |
 
 :::warning
