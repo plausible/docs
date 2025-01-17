@@ -18,6 +18,10 @@ Once you have selected the data source, you will be prompted to authorize the co
 
 The only permission that will be asked for is to make an external API request, which is how the connector pulls data from [the Plausible Analytics Stats API](stats-api.md).
 
+:::note
+Our connector is currently in beta and undergoing a review by Google. This is why you see the note stating: "This connector has not been verified or reviewed"
+:::
+
 After authorizing your account, you will be prompted to enter your Plausible Analytics API Key. You can create a new API Key by going to your Plausible Analytics account, navigating to "**Account Settings**" and clicking on the section called "**API Keys**".
 
 Click "**New API Key**" and be sure you save the result as you will only see the key once. (However, you can always delete the key and create a new one if you no longer remember what it is.)
