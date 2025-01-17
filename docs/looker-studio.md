@@ -30,9 +30,11 @@ This means you have successfully linked your Plausible Analytics account to Look
 
 You can select one or many of your Plausible sites to create a custom report. Simply tick the box next to each site that you want to include data for.
 
-At this stage, you also have the ability to choose whether or not you want to constantly pull data in real-time. Looker Studio does not refresh automatically but what this does is it will force Looker Studio to pull fresh data whenever you make a change to your report, say changing the order of a table or adding new metrics.
+At this stage, you can check to "**Allow "Plausible Site(s)" to be modified in reports**". This option is default for Looker Studio and enables you to have a report with a drop-down to toggle your Plausible site(s) directly in the report. Not checking this box would disable that ability.
 
-If this box is not checked, the connector will by default cache data for 6 hours. This will make your reports quicker and will limit the number of API requests used by the connector which for most plans are limited to 600 per hour.
+You also have the ability to choose whether or not you want to constantly pull data in real-time by checking the "**Data Refreshed in Real-time**" box. Looker Studio does not refresh automatically but what this does is it will force Looker Studio to pull fresh data whenever you make a change to your report, say changing the order of a table or adding new metrics.
+
+If this box is not checked, the connector will by default cache data for 6 hours. This will make your reports quicker and will limit the number of API requests used by the connector which for most Plausible plans are limited to 600 per hour.
 
 Once these options are configured, you can click "**Connect**" and you will see a list of all available fields.
 
