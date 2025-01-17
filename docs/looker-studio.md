@@ -22,6 +22,10 @@ Once you have selected the data source, you will be prompted to authorize the co
 
 The only permission that will be asked for is to make an external API request, which is how the connector pulls data from [the Plausible Analytics Stats API](stats-api.md).
 
+:::note
+Our connector is currently in beta and undergoing a review by Google. This is why you see the note stating: "This connector has not been verified or reviewed"
+:::
+
 ## Insert your Plausible stats API key
 
 After authorizing your Google account, you will be prompted to enter your Plausible Analytics stats API key. You can create a new API key for our stats API by going to your Plausible Analytics account, navigating to "**Account Settings**" and clicking on the section called "**API Keys**".
@@ -37,10 +41,6 @@ Then you will just need to paste your API key into Looker Studio where you are p
 This means you have successfully linked your Plausible Analytics account to Looker Studio.
 
 ## Configure the Plausible Looker Studio connector
-
-:::note
-Our connector is currently in beta and undergoing a review by Google. This is why you see the note stating: "This connector has not been verified or reviewed"
-:::
 
 You can select one or more of your Plausible sites to create a custom report. Simply tick the box next to each site that you want to include data for.
 
