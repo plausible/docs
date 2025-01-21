@@ -40,6 +40,9 @@ There is a Plausible connector for [Looker Studio (formerly Google Data Studio)]
 
 * [Staat](https://apps.apple.com/app/staat/id6451257773) by Andraz Polajzer
 
+* [Applausible](https://apps.apple.com/us/app/applausible/id6737839249) by [Riva Farabi](https://bigvaria.com): Instantly view Plausible Analytics' visitor counts, top pages, and more data on your iOS app or home widgets. Optimized for both iPhone and iPad.
+
+
 ## Linux
 
 [Tally](https://flathub.org/apps/com.cassidyjames.plausible) by [Cassidy James Blaede](https://cassidyjames.com): hybrid native + web app that wraps the Plausible web app in a native UI, integrating better with desktop operating systems.
