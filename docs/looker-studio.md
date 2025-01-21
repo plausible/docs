@@ -8,13 +8,13 @@ In order to focus on simplicity and speed, Plausible Analytics does not support 
 
 For this reason, we have created an official integration with the free data visualization tool, Google Looker Studio (formerly known as Data Studio). You can use our Looker Studio connector to build custom reports with your Plausible Analytics data.
 
-<img alt="Plausible Analytics Looker Studio template" src={useBaseUrl('img/plausible-looker-studio.png')} />
-
 Here's how to get started with our official Looker Studio connector.
+
+<img alt="Plausible Analytics Looker Studio template" src={useBaseUrl('img/plausible-looker-studio.png')} />
 
 ## Connect to Looker Studio
 
-Connecting your Plausible Analytics account to Looker Studio is simple and can be done in a matter of minutes. First, you select our connector as a new data source in Looker Studio. You can either select it from the [Looker Studio connector gallery](https://lookerstudio.google.com/data) or you can follow [this direct link](https://lookerstudio.google.com/datasources/create?connectorId=AKfycbz88iSK4B6V-VoaiwocFu2dDp3CBRM0arAZoDjQ97SroAt9RtzgS6z3UCxpjJDi0ieVjQ).
+Connecting your Plausible Analytics account to Looker Studio is simple and can be done in a matter of minutes. First, you select our connector as a new data source in Looker Studio. You can find our connector on [this direct link](https://lookerstudio.google.com/datasources/create?connectorId=AKfycbz88iSK4B6V-VoaiwocFu2dDp3CBRM0arAZoDjQ97SroAt9RtzgS6z3UCxpjJDi0ieVjQ).
 
 Once you have selected the data source, you will be prompted to authorize the connector to access your Google account.
 
@@ -34,7 +34,7 @@ Click "**New API Key**" and be sure you save the result as you will only see the
 
 <img alt="Create your Plausible stats API key" src={useBaseUrl('img/create-stats-api-key-looker.png')} />
 
-Then you will just need to paste your API key into Looker Studio where you are prompted to enter your key. Once you do this, you will see a dropdown menu with all of the Plausible Sites connected to your account.
+Then you will just need to paste your stats API key into Looker Studio where you are prompted to enter your key. Once you do this, you will see a dropdown menu with all of the Plausible Sites connected to your account.
 
 <img alt="Insert your Plausible API key" src={useBaseUrl('img/plausible-api-looker.png')} />
 
