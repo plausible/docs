@@ -19,25 +19,27 @@ Take a look at our [Events API Reference](events-api.md) if you want to record p
 
 ## Authentication
 
-You can obtain an API key for your account by going to your user settings page [plausible.io/settings](https://plausible.io/settings).
+You can create a new stats API key by going to your Plausible Analytics account, navigating to "**Account Settings**" and clicking on the section called "**API Keys**". The key will be valid for all sites that you own.
 
-After creating a token, you can authenticate your request by sending the token in the Authorization header of your request.
+Click "**New API Key**" and be sure you save the result as you will only see the key once. However, you can always delete the key and create a new one if you no longer remember what it is.
+
+After creating an API key, you can authenticate your request by sending the key in the Authorization header of your request.
 
 ### Example curl request
 
-In the following request, replace YOUR-TOKEN with a reference to your token and site_id value with your domain.
+In the following request, replace `YOUR-KEY` with a reference to your stats API key and `site_id` value with your domain as you've added it to your Plausible account.
 
 ```bash
 curl \
 --request POST \
 # highlight-next-line
---header 'Authorization: Bearer YOUR-TOKEN' \
+--header 'Authorization: Bearer YOUR-KEY' \
 --header 'Content-Type: application/json' \
 --url 'https://plausible.io/api/v2/query' \
 --data '{ "site_id": "dummy.site", "metrics": ["visitors"], "date_range": "7d" }'
 ```
 
-API keys have a rate limit of 600 requests per hour by default. If you have special needs for more requests, please contact us to request more capacity.
+API keys have a rate limit of 600 requests per hour by default. If you have special needs for more requests, [please contact us](https://plausible.io/contact) to request more capacity.
 
 ## Request structure
 

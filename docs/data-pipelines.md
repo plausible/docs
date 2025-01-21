@@ -18,7 +18,7 @@ By using our official WordPress plugin, you can view your Plausible stats dashbo
 
 ## Looker Studio
 
-There is a Plausible connector for [Looker Studio (formerly Google Data Studio)](https://www.epilocal.com/products/plausible-data-studio-connector/).
+There is an official Plausible connector for [Looker Studio (formerly Google Data Studio)](looker-studio.md).
 
 ## Airbyte connector
 

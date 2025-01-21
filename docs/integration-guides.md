@@ -248,6 +248,10 @@ Add Plausible records to [Prometheus](https://prometheus.io) to use with [Grafan
 
 [plausibler](https://github.com/giocomai/plausibler): R wrapper for the Plausible API. Built and maintained by [Giorgio Comai](https://github.com/giocomai/).
 
+## Readymag
+
+Here's [how to add the script to your Readymag website](https://help.readymag.com/hc/en-us/articles/26933451909019-Plausible)
+
 ## Ruby
 
 [Plausible API Ruby Gem](https://github.com/dailytics/plausible_api): This is a simple wrapper to read the Plausible API with Ruby. Built and maintained by [Dailytics](https://dailytics.com/).
@@ -324,13 +328,9 @@ A [TypeDoc Plausible plugin](https://typedoc-plausible.8hob.io/) that integrates
 
 [How to add the script to your Wix site](wix-integration.md)
 
-## Readymag
-
-Follow the instructions here: [How to add the script to your Readymag website](https://help.readymag.com/hc/en-us/articles/26933451909019-Plausible)
-
 ## Data pipelines, warehouses and other ways of viewing Plausible stats elsewhere
 
-[See this list](data-pipelines.md) for data pipelines, warehouses and other ways of viewing Plausible stats elsewhere.
+[See this list](data-pipelines.md) for data pipelines, warehouses and other ways of viewing Plausible stats elsewhere. For instance, our [stats API](stats-api.md), [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) and [official Google Looker Studio connector](looker-studio.md).
 
 ---
 
