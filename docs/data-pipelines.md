@@ -28,6 +28,10 @@ There is an official Plausible connector for [Looker Studio (formerly Google Dat
 
 [CloudQuery Plausible plugin](https://www.cloudquery.io/docs/plugins/sources/plausible/overview) extracts stats from Plausible and loads them into any supported CloudQuery destination (PostgreSQL, Snowflake, BigQuery, S3...).
 
+## Fivetran connector
+
+[Fivetran Plausible Connector](https://github.com/imgly/fivetran-plausible-connector) by [IMG.LY](https://img.ly): A Google Cloud Function–based solution for ingesting Plausible data into Fivetran. This custom connector pulls hourly stats from the Plausible API and creates a `timeseries` table in any destination supported by Fivetran. Follow the instructions in the repository to deploy and configure it for your account.
+
 ## GA Insights
 
 [GA Insights](https://www.ga-insights.com/plausible-slack) allows you to extend Plausible Analytics with automated reporting, monitoring and goal tracking straight in Slack.
