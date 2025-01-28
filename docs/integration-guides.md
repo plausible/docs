@@ -270,7 +270,7 @@ There's no official Plausible integration with Segment but Segment allows you to
 
 ## Shopware
 
-[Plausible Tracking and Ecommerce](https://store.shopware.com/en/campi10096862362m/plausible-tracking-and-ecommerce-cloud.html): Add Plausible Analytics to Shopware 6. Track custom events and ecommerce data. Built and maintained by Campit.
+[Plausible Tracking and Ecommerce](https://store.shopware.com/en/campi10096862362m/plausible-tracking-and-ecommerce-cloud.html): Add Plausible Analytics to Shopware 6. Track custom events and ecommerce data. Built and maintained by [Campit](https://campit.be/).
 
 ## Single-page applications
 
