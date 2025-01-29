@@ -18,11 +18,13 @@ By using our official WordPress plugin, you can view your Plausible stats dashbo
 
 ## Looker Studio
 
-There is an official Plausible connector for [Looker Studio (formerly Google Data Studio)](looker-studio.md).
+We have an official Plausible connector for [Looker Studio (formerly Google Data Studio)](looker-studio.md).
+
+And thanks to the members of our community, there are also some third-party solutions:
 
 ## Airbyte connector
 
-[Airbyte connector](https://docs.airbyte.com/integrations/sources/plausible/): A Plausible API connector for Airbyte, an open-source data integration platform. Built and maintained by [Scott Lee Chua](https://github.com/scottleechua).
+[Airbyte connector](https://docs.airbyte.com/integrations/sources/plausible/): A Plausible API connector for Airbyte, an open-source data integration platform.
 
 ## CloudQuery for BigQuery, Power BI, S3, Snowflake and more
 
@@ -30,7 +32,7 @@ There is an official Plausible connector for [Looker Studio (formerly Google Dat
 
 ## Fivetran connector
 
-[Fivetran Plausible Connector](https://github.com/imgly/fivetran-plausible-connector) by [IMG.LY](https://img.ly): A Google Cloud Function–based solution for ingesting Plausible data into Fivetran. This custom connector pulls hourly stats from the Plausible API and creates a `timeseries` table in any destination supported by Fivetran. Follow the instructions in the repository to deploy and configure it for your account.
+[Fivetran Plausible Connector](https://github.com/imgly/fivetran-plausible-connector): A Google Cloud Function–based solution for ingesting Plausible data into Fivetran. This custom connector pulls hourly stats from the Plausible API and creates a `timeseries` table in any destination supported by Fivetran.
 
 ## GA Insights
 
@@ -42,14 +44,13 @@ There is an official Plausible connector for [Looker Studio (formerly Google Dat
 
 * [Numerics Dashboards for Plausible](https://cynapse.com/numerics-integrations/plausible-dashboards/): Track your Plausible KPIs with Numerics Dashboards on your iPhone, iPad, Mac, Apple TV and Apple Watch.
 
-* [Staat](https://apps.apple.com/app/staat/id6451257773) by Andraz Polajzer
+* [Staat](https://apps.apple.com/app/staat/id6451257773)
 
-* [Applausible](https://apps.apple.com/us/app/applausible/id6737839249) by [Riva Farabi](https://bigvaria.com): Instantly view Plausible Analytics' visitor counts, top pages, and more data on your iOS app or home widgets. Optimized for both iPhone and iPad.
-
+* [Applausible](https://apps.apple.com/us/app/applausible/id6737839249): Instantly view Plausible Analytics' visitor counts, top pages, and more data on your iOS app or home widgets. Optimized for both iPhone and iPad.
 
 ## Linux
 
-[Tally](https://flathub.org/apps/com.cassidyjames.plausible) by [Cassidy James Blaede](https://cassidyjames.com): hybrid native + web app that wraps the Plausible web app in a native UI, integrating better with desktop operating systems.
+[Tally](https://flathub.org/apps/com.cassidyjames.plausible): hybrid native + web app that wraps the Plausible web app in a native UI, integrating better with desktop operating systems.
 
 ---
 
