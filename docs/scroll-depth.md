@@ -37,3 +37,5 @@ Scroll depth is calculated as the maximum scroll depth reached by an average use
 You can also define a `scroll_threshold` when creating a [pageview goal](https://plausible.io/docs/pageview-goals) to see how many visitors scroll below your desired scroll depth mark.
 
 Once set up, you will be able to filter and break down page scroll goals like any other goals on the dashboard.
+
+If you'd like to learn more about what scroll depth is, what's a good metric to have, and more, you can check out our blog post [here](https://plausible.io/blog/scroll-depth-tracking).
