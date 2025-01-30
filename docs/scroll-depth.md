@@ -2,6 +2,8 @@
 title: Scroll depth tracking
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 Scroll depth tracking is built into Plausible Analytics by default, allowing you to measure how far visitors scroll down your pages, expressed as a percentage.
 
 This data provides insights into user engagement and helps optimize content placement, calls-to-action (CTAs), and page layouts.
@@ -19,6 +21,8 @@ You can find scroll depth data in:
 1.  **The top row of metrics** when a page filter is applied. Click on it to see trends over time.
 
 2.  **The expanded Top Pages report**, where pages can be sorted by scroll depth for deeper analysis.
+
+<img alt="Scroll depth metric in Plausible" src={useBaseUrl('img/scroll-depth.png')} />
 
 If there's insufficient data, scroll depth will display as "-" until more traffic is recorded.
 
