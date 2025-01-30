@@ -14,13 +14,17 @@ To get started with "**Pageview Goals**", go to [your website's settings](websit
 
 <img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
 
-Click on the "**+ Add goal**" button to go to the goal creation form.
+Click the "**+ Add goal**" button to go to the goal creation form.
 
-Select `Pageview` as the goal trigger and enter the pathname of the page you would like your visitors to hit. The pathname must match the page path you can see in your Plausible Analytics dashboard.
+Select `Pageview` as the goal trigger and enter the pathname of the page you would like your visitors to hit, or select the same from the dropdown. The pathname must match the page path you can see in your Plausible Analytics dashboard.
 
 <img alt="Add your pageview goal" src={useBaseUrl('img/add-pageview-goal.png')} />
 
-Next, click on the "**Add goal**" button and you’ll be taken back to the goals page. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who reached the specified page or group of pages. Goal conversions are listed at the very bottom of the dashboard.
+Next, you'll see the Display Name which gets self-populated. You can optionally edit it. You can also edit this later at any time. 
+
+In the next field, you can optionally choose a scroll depth threshold for the selected page to see how many visitors scroll below your desired scroll depth mark. Scroll depth is measured in percentage of a page’s total height that visitors have reached on average. If you set this up, you can filter and break down page scroll goals like any other goals on the dashboard.
+
+Then click the "**Add goal**" button and you’ll be taken back to the goals page. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who reached the specified page or group of pages. Goal conversions are listed at the very bottom of the dashboard.
 
 ## How to group your pages
 
