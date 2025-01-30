@@ -96,7 +96,7 @@ Google Analytics API does not expose this information so you cannot see the Exit
 
 ### Scroll Depth
 
-Google Analytics API does not expose this information so you cannot see the Scroll Depth report for imported data. 
+Google Analytics API does not expose this information so you cannot see the scroll depth metric for imported data. 
 
 ### Day view graph
 
