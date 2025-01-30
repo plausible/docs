@@ -89,7 +89,7 @@ Shows the devices used by your visitors. Devices are categorized into desktop, m
 
 ## Scroll Depth
 
-Shows the percentage of a particular page your visitors have reached on average.
+Measures how far visitors scroll down a webpage. It represents the percentage of a page’s total height that visitors have reached on average. ```
 
 ## Source
 
