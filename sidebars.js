@@ -37,6 +37,7 @@ module.exports = {
       'top-pages',
       'countries',
       'devices',
+      'scroll-depth',
       'subdomain-hostname-filter',
       'metrics-definitions',
       'keyboard-shortcuts',
