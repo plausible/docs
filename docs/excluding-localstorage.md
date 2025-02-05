@@ -72,3 +72,7 @@ For the styled version of this page, you'll need to download a <a target="_blank
 (If you'd prefer a light-theme for this page, you can delete the `dark` class from line 1 of the above HTML file)
 
 For the unstyled/bare version, you'll just need to download a <a target="_blank" download="index.html" href="/docs/exclusion-examples/exclude-bare.html">HTML file</a>, and make it available on your website with any CSS you choose to add.
+
+## Use a community browser extension to exclude all of your browsers
+
+[Plausible Shield](https://www.goodaddon.com/plausible-shield/) is a browser extension, developed and maintained by [GoodAddon](https://www.goodaddon.com), that saves your excluded websites and syncs them across browser instances. If you use multiple browser instances and sync between them, you may find this browser extension helpful.
