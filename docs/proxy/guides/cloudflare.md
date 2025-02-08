@@ -1,5 +1,4 @@
----
-title: Proxying Plausible through Cloudflare
+#title: Proxying Plausible through Cloudflare
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
