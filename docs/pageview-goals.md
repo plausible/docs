@@ -22,8 +22,6 @@ Select `Pageview` as the goal trigger and enter the pathname of the page you wou
 
 Next, you'll see the Display Name which gets self-populated. You can optionally edit it. You can also edit this later at any time. 
 
-In the next field, you can optionally choose a scroll depth threshold for the selected page to see how many visitors scroll below your desired scroll depth mark. [Scroll depth](http://plausible.io/docs/scroll-depth) is measured in percentage of a page’s total height that visitors have reached on average. If you set this up, you can filter and break down page scroll goals like any other goals on the dashboard.
-
 Then click the "**Add goal**" button and you’ll be taken back to the goals page. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who reached the specified page or group of pages. Goal conversions are listed at the very bottom of the dashboard.
 
 ## How to group your pages
@@ -48,4 +46,4 @@ You can also give it a new display name, say, if the original name of the goal i
 
 <img alt="Edit pageview goal popup" src={useBaseUrl('img/edit-pageview-goal-popup.png')} />
 
-Once you’ve made the necessary changes, simply click "Update goal," and your updated settings will be applied immediately. The changes will be reflected in your Plausible Analytics dashboard, with the goal now tracking based on the new settings you’ve configured.
+Once you’ve made the necessary changes, simply click "Update goal" and your updated settings will be applied immediately. The changes will be reflected in your Plausible Analytics dashboard, with the goal now tracking based on the new settings you’ve configured.
