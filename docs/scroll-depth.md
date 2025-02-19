@@ -22,7 +22,7 @@ If there's insufficient data, scroll depth will display as "-" until more traffi
 
 You can also use [the Filters feature](filters-segments.md) to group similar pages and analyze their average scroll depth. For example, filter URLs containing "blog" to see average engagement for blog posts.
 
-Plausible tracks scrolling at all percentages (1% to 100%), unlike many other tools that limit tracking to specific points such as 25%, 50%, and 75%. If you also want to track a specific scroll depth treshold for some of your pages, you can set up scroll depth goals.
+Plausible tracks scrolling at all percentages (1% to 100%), unlike many other tools that limit tracking to specific points such as 25%, 50%, and 75%. If you also want to track a specific scroll depth threshold for some of your pages, you can set up scroll depth goals.
 
 ## Scroll Depth goals
 
