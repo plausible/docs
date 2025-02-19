@@ -1,10 +1,12 @@
 ---
-title: Using filters to segment your audience
+title: Filter and segment your audience
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Plausible Analytics allows you to easily segment your audience to analyze and understand the different trends. A segment is made up of one or more filters. 
+Plausible Analytics allows you to easily segment your audience to analyze and understand the different trends. A segment is made up of one or more filters. You can save any segment for quick and convenient access.
+
+## How to filter your dashboard 
 
 Any metric you click on in your dashboard creates a new filter. Click on any referral source, any of your pages or any location, device or goal and your dashboard will then show only the traffic for the metric you have selected.
 
@@ -12,7 +14,7 @@ You can mix and match filters too. So you can click on a referral source, then c
 
 Your current filters will be displayed on the top of your dashboard. You can click on the name of the existing filter to edit it or on the `x` icon to remove it. 
 
-You can remove all your filters by hitting the `Esc` key on your keyboard or by selecting `Clear all filters` in the filters menu that shows up when you're using multiple filters.
+You can remove all your filters by hitting the `Esc` key on your keyboard or by selecting `Clear all filters` in the filters menu (`***`).
 
 <img alt="Mix and match filters to segment your audience" src={useBaseUrl('img/filter-by-source-and-country.png')} />
 
@@ -63,5 +65,25 @@ You can choose to segment your traffic by any one specific hostname from the lis
 Learn more on how Plausible [handles cross-subdomain tracking here](subdomain-hostname-filter.md).
 
 <img alt="List of subdomains" src={useBaseUrl('img/list-of-hostnames-and-subdomains.png')} />
+
+## How to save a segment 
+
+Click on any metric in the dashboard or use the "**Filter**" button to filter your audience to a desired segment. After completing your segment, click on the "**Save as segment**" button that is visible in the filters menu (`***`) that you see when your dashboard is filtered.
+
+Segments can be saved either as "**personal segments**" (these are visible only to you) or as "**site segments**" (these are visible to all the team members that have access to your dashboard).
+
+Choose the type of segment you want to create, give it a recognizable name and click on the "**Save**" button.
+
+### How to open a previously saved segment
+
+Click on the "**Filter**" button on the top right of your dashboard to see the list of your saved segments under the "**Segments**" heading. You can also search for any of your existing saved segments. Click on a specific segment to open that segment in your dashboard. 
+
+Note that the "**Segments**" heading will only be visible in the "**Filter**" button after you save your first segment. 
+
+### How to edit or delete a previously saved segment
+
+Open a previously saved segment and then click on its name in the top line of your Plausible dashboard. Then click on the "**Edit segment**" button. Here you can add new filters or remove any existing filters from your segment. 
+
+You can then click on the "**Update segment**" button. Click on the arrow on the right-hand side of the "**Update segment**" button to save the existing segment as a brand new segment ("**Save as a new segment**) or to delete the existing segment ("**Delete segment**").
 
 P.S. We've written an in-depth guide on effective use of audience segmentation, you can [read it here](https://plausible.io/audience-segmentation).
