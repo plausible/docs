@@ -38,6 +38,6 @@ Do you want to analyze the scroll depth for a specific section of your site? You
 
 You can for instance group all of your blog posts by using `/blog*` (if your blog subdirectory is named `blog`) or your Woocommerce checkout pages by using `/checkout/order-received/*`. 
 
-Next, click on the "**Add goal**" button and you’ll be taken back to the goals page. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who have reached the particular scroll depth on the specified pages. Goal conversions are listed at the very bottom of the dashboard.
+Next, click on the "**Add goal**" button to return to the goals page. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who reached the particular scroll depth on the specified pages. Goal conversions are listed at the bottom of the dashboard.
 
 If you'd like to learn more about what scroll depth is, what's a good metric to have, and more, you can check out our blog post [here](https://plausible.io/blog/scroll-depth-tracking).
