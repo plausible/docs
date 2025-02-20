@@ -82,7 +82,7 @@ Note that the "**Segments**" heading will only be visible in the "**Filter**" bu
 
 ### How to edit or delete a previously saved segment
 
-Open a previously saved segment and then click on its name in the top line of your Plausible dashboard. Then click on the "**Edit segment**" button. Here you can add new filters or remove any existing filters from your segment. 
+Open a previously saved segment and click its name in the top line of your Plausible dashboard. Then, select "**Edit segment**" to add or remove filters. 
 
 You can then click on the "**Update segment**" button. Click on the arrow on the right-hand side of the "**Update segment**" button to save the existing segment as a brand new segment ("**Save as a new segment**) or to delete the existing segment ("**Delete segment**").
 
