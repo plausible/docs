@@ -76,7 +76,7 @@ Choose the type of segment you want to create, give it a recognizable name and c
 
 ### How to open a previously saved segment
 
-Click on the "**Filter**" button on the top right of your dashboard to see the list of your saved segments under the "**Segments**" heading. You can also search for any of your existing saved segments. Click on a specific segment to open that segment in your dashboard. 
+Click the "**Filter**" button in the top-right corner of your dashboard to view your saved segments under the "**Segments**" heading. You can also search for specific segments. Click on a segment to open it in your dashboard. 
 
 Note that the "**Segments**" heading will only be visible in the "**Filter**" button after you save your first segment. 
 
