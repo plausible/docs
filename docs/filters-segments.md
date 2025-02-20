@@ -84,6 +84,6 @@ Note that the "**Segments**" heading will only be visible in the "**Filter**" bu
 
 Open a previously saved segment and click its name in the top line of your Plausible dashboard. Then, select "**Edit segment**" to add or remove filters. 
 
-You can then click on the "**Update segment**" button. Click on the arrow on the right-hand side of the "**Update segment**" button to save the existing segment as a brand new segment ("**Save as a new segment**) or to delete the existing segment ("**Delete segment**").
+To save your changes, click the "**Update segment**" button. Use the arrow next to this button to save the existing segment as a brand new segment ("**Save as a new segment**) or to delete the existing segment ("**Delete segment**").
 
 P.S. We've written an in-depth guide on effective use of audience segmentation, you can [read it here](https://plausible.io/audience-segmentation).
