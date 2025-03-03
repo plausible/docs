@@ -26,10 +26,6 @@ And thanks to the members of our community, there are also some third-party solu
 
 [Airbyte connector](https://docs.airbyte.com/integrations/sources/plausible/): A Plausible API connector for Airbyte, an open-source data integration platform.
 
-## CloudQuery for BigQuery, Power BI, S3, Snowflake and more
-
-[CloudQuery Plausible plugin](https://www.cloudquery.io/docs/plugins/sources/plausible/overview) extracts stats from Plausible and loads them into any supported CloudQuery destination (PostgreSQL, Snowflake, BigQuery, S3...).
-
 ## Fivetran connector
 
 [Fivetran Plausible Connector](https://github.com/imgly/fivetran-plausible-connector): A Google Cloud Function–based solution for ingesting Plausible data into Fivetran. This custom connector pulls hourly stats from the Plausible API and creates a `timeseries` table in any destination supported by Fivetran.
