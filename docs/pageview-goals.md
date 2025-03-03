@@ -14,13 +14,15 @@ To get started with "**Pageview Goals**", go to [your website's settings](websit
 
 <img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
 
-Click on the "**+ Add goal**" button to go to the goal creation form.
+Click the "**+ Add goal**" button to go to the goal creation form.
 
-Select `Pageview` as the goal trigger and enter the pathname of the page you would like your visitors to hit. The pathname must match the page path you can see in your Plausible Analytics dashboard.
+Select `Pageview` as the goal trigger and enter the pathname of the page you would like your visitors to hit, or select the same from the dropdown. The pathname must match the page path you can see in your Plausible Analytics dashboard.
 
 <img alt="Add your pageview goal" src={useBaseUrl('img/add-pageview-goal.png')} />
 
-Next, click on the "**Add goal**" button and you’ll be taken back to the goals page. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who reached the specified page or group of pages. Goal conversions are listed at the very bottom of the dashboard.
+Next, you'll see the Display Name which gets self-populated. You can optionally edit it. You can also edit this later at any time. 
+
+Then click the "**Add goal**" button and you’ll be taken back to the goals page. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who reached the specified page or group of pages. Goal conversions are listed at the very bottom of the dashboard.
 
 ## How to group your pages
 
@@ -44,4 +46,4 @@ You can also give it a new display name, say, if the original name of the goal i
 
 <img alt="Edit pageview goal popup" src={useBaseUrl('img/edit-pageview-goal-popup.png')} />
 
-Once you’ve made the necessary changes, simply click "Update goal," and your updated settings will be applied immediately. The changes will be reflected in your Plausible Analytics dashboard, with the goal now tracking based on the new settings you’ve configured.
+Once you’ve made the necessary changes, simply click "Update goal" and your updated settings will be applied immediately. The changes will be reflected in your Plausible Analytics dashboard, with the goal now tracking based on the new settings you’ve configured.

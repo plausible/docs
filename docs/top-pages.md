@@ -4,7 +4,7 @@ title: Top content, landing pages and exit pages
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Your "**Top Pages**" report shows which pages your visitors are visiting the most often. You can use it to identify the most popular content on your site. Click on any page to segment your audience by those who visited that particular page. You can also click the "**Details**" button to see the full list of pages with additional metrics. The number of pageviews, bounce rate, and time on page for the individual pages are included too. Click on any metric heading to sort and arrange your data in ascending or descending order.
+Your "**Top Pages**" report shows which pages your visitors are visiting the most often. You can use it to identify the most popular content on your site. Click on any page to segment your audience by those who visited that particular page. You can also click the "**Details**" button to see the full list of pages with additional metrics. The number of pageviews, bounce rate, time on page and scroll depth for the individual pages are included too. Click on any metric heading to sort and arrange your data in ascending or descending order.
 
 You can also see the traffic flow by looking at the "**Entry Pages**" and "**Exit Pages**" reports. You can click the "**Details**" button to see the full list with additional details. For entry pages, details include visit duration for visits that started on a specific page and for exit pages, details include the exit rate percentage. Click on any metric heading to sort and arrange your data in ascending or descending order.
 
