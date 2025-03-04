@@ -33,3 +33,5 @@ You will get the traffic drop notification when your site falls below the thresh
 Traffic spike or drop notifications can be set to be sent to multiple recipients. Enable the notifications, add an individual recipient into the "**Notification recipients**" field and click on the "**Add recipient**" button. 
 
 You can set the notifications to be sent to as many people as you want. You can remove individual recipients or completely stop the notifications at any time.
+
+P.S. If you're dealing with a traffic drop and need some tips on how to investigate it using your Plausible dashboard, take a look at our [blog post](https://plausible.io/blog/drop-in-website-traffic).
