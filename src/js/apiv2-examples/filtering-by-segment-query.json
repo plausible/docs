@@ -1,0 +1,6 @@
+{
+  "site_id": "dummy.site",
+  "metrics": ["visitors", "events"],
+  "filters": [["is", "segment", [2]]],
+  "date_range": "7d"
+}

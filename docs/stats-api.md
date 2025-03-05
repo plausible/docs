@@ -237,6 +237,10 @@ List of values to match against. A data point matches filter if _any_ of the cla
 
 `["contains", "event:country", ["united", "EST], { "case_sensitive": false }]`. [See full example](#example-filtering-case-insensitive)
 
+#### Segments
+
+[Segments](/filters-segments/#how-to-save-a-segment) can be used in filters, in the form `["is", "segment", [<segment_id>]]`. [See example](#example-filtering-by-segment)
+
 #### Logical operations
 
 Filters can be combined using `and`, `or` and `not` operators.
@@ -389,6 +393,10 @@ The following examples are interactive and can be edited and run against your ow
 ### Case insensitive filtering {#example-filtering-case-insensitive}
 
 <ApiV2Example id="example-filtering-case-insensitive" />
+
+### Filtering by segment {#example-filtering-by-segment}
+
+<ApiV2Example id="example-filtering-by-segment" />
 
 ### Timeseries query {#example-timeseries}
 

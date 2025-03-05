@@ -1,0 +1,17 @@
+{
+  "results": [{"metrics": [0, 0], "dimensions": []}],
+  "meta": {},
+  "query": {
+    "site_id": "dummy.site",
+    "metrics": ["visitors", "events"],
+    "date_range": ["2025-02-27T00:00:00+00:00", "2025-03-05T23:59:59+00:00"],
+    "filters": [
+      ["has_not_done", ["is", "event:goal", ["Signup"]]],
+      ["is", "visit:source", ["opensource.com"]]
+    ],
+    "dimensions": [],
+    "order_by": [["visitors", "desc"]],
+    "include": {},
+    "pagination": {"offset": 0, "limit": 10000}
+  }
+}
