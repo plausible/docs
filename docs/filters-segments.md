@@ -70,6 +70,8 @@ Learn more on how Plausible [handles cross-subdomain tracking here](subdomain-ho
 
 Click on any metric in the dashboard or use the "**Filter**" button to filter your audience to a desired segment. After completing your segment, click on the "**Save as segment**" button that is visible in the filters menu (`***`) that you see when your dashboard is filtered.
 
+<img alt="Create and Save a Segment" src={useBaseUrl('img/save-segments.png')} />
+
 Segments can be saved either as "**personal segments**" (these are visible only to you) or as "**site segments**" (these are visible to all the team members that have access to your dashboard).
 
 Choose the type of segment you want to create, give it a recognizable name and click on the "**Save**" button.
@@ -78,11 +80,15 @@ Choose the type of segment you want to create, give it a recognizable name and c
 
 Click the "**Filter**" button in the top-right corner of your dashboard to view your saved segments under the "**Segments**" heading. You can also search for specific segments. Click on a segment to open it in your dashboard. 
 
+<img alt="Open a Segment" src={useBaseUrl('img/open-segments.png')} />
+
 Note that the "**Segments**" heading will only be visible in the "**Filter**" button after you save your first segment. 
 
 ### How to edit or delete a previously saved segment
 
 Open a previously saved segment and click its name in the top line of your Plausible dashboard. Then, select "**Edit segment**" to add or remove filters. 
+
+<img alt="Edit a Segment" src={useBaseUrl('img/edit-segments.png')} />
 
 To save your changes, click the "**Update segment**" button. Use the arrow next to this button to save the existing segment as a brand new segment ("**Save as a new segment**) or to delete the existing segment ("**Delete segment**").
 
