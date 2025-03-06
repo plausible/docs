@@ -88,7 +88,14 @@ const EXAMPLES = [
     title: "Revenue metrics could not be calculated",
     query: read("apiv2-examples/revenue-warning-query.json"),
     exampleResponse: read("apiv2-examples/revenue-warning-response.json"),
+  },
+  {
+    id: "example-filtering-by-segment",
+    title: "Filtering by segment",
+    query: read("apiv2-examples/filtering-by-segment-query.json"),
+    exampleResponse: read("apiv2-examples/filtering-by-segment-response.json"),
   }
+
 ]
 
 export function getExampleCode(field: "query" | "exampleResponse", id: string, selectedSite: string | null): string {
