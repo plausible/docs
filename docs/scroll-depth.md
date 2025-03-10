@@ -14,9 +14,11 @@ You can find scroll depth data in:
 
 1.  **The top row of metrics** when a page filter is applied. Click on it to see trends over time.
 
+<img alt="Scroll depth metric in Plausible" src={useBaseUrl('img/scroll-depth-top-graph.png')} />
+
 2.  **The expanded Top Pages report**, where pages can be sorted by scroll depth for deeper analysis.
 
-<img alt="Scroll depth metric in Plausible" src={useBaseUrl('img/scroll-depth.png')} />
+<img alt="Scroll depth metric in Top Pages details" src={useBaseUrl('img/scroll-depth-top-pages-details.png')} />
 
 If there's insufficient data, scroll depth will display as "-" until more traffic is recorded.
 
@@ -33,6 +35,8 @@ To get started with "**Scroll Depth Goals**", go to [your website's settings](we
 Click on the "**+ Add goal**" button to go to the goal creation form.
 
 Select `Scroll Depth` as the goal trigger, select the scroll depth percentage threshold (from 1% to 100%) and enter the pathname of the page you would like to track. The pathname must match the page path you can see in your Plausible Analytics dashboard.
+
+<img alt="Scroll depth goals" src={useBaseUrl('img/scroll-depth-goal.png')} />
 
 Do you want to analyze the scroll depth for a specific section of your site? You can use an asterisk (`*`) to match patterns in your page path URLs. Asterisks can be placed on either end or in the middle of any page path URL.
 
