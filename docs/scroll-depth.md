@@ -40,4 +40,6 @@ You can for instance group all of your blog posts by using `/blog*` (if your blo
 
 Next, click on the "**Add goal**" button to return to the goals page. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who reached the particular scroll depth on the specified pages. Goal conversions are listed at the bottom of the dashboard.
 
+Scroll Depth goals only display the "Uniques" and "CR (conversion rate)" metrics, and not the "Total" metric like the pageview goals and custom event goals do. This is because scrolling is an action that gets measured continuously during a pageview and it's not possible to count the total number of "scroll depth events" that occurred.
+
 If you'd like to learn more about what scroll depth is, what's a good metric to have, and more, you can check out our blog post [here](https://plausible.io/blog/scroll-depth-tracking).
