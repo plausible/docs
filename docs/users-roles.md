@@ -1,62 +1,114 @@
 ---
-title: Invite team members, assign roles and remove users
+title: Invite team members or external guests and assign roles
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Plausible allows you to invite team members to view stats and manage sites that you have added to your Plausible account.
+Plausible allows you to create a team for your organization, invite team members to view stats and change your site settings, and to manage your Plausible subscription and invoices as well. You can also invite external collaborators as guests and give them access to specific sites only. 
 
-You can invite any email address. It doesn't necessarily need to be an email address from your company. You can invite existing Plausible users or people who don't have a Plausible account.
+## Working with your team
+
+### How to create a new team
+
+Log in to your Plausible Analytics account and in the top right menu, click on your account name and choose "**Create a Team**". Note that you may not see this option if you're already a member of an existing team.
+
+* Give the name to your team.
+* Invite individual team members. You can invite any email address. It doesn't necessarily need to be an email address from your company. You can invite existing Plausible users or people who don't have a Plausible account. You can also turn any existing guest into a team member. 
+* Assign individual team members their roles
+
+### How to invite team members and assign roles
+
+<img alt="Invite users, assign roles and remove users" src={useBaseUrl('img/invite-team-member.png')} />
+
+* In the top right menu, click on your account name, make sure you have chosen the team you'd like to manage and then click on the "**Team Settings**"
+* You can invite new team members within the "**General**" option of the "**Team Settings**"
+* We will email the invited person to notify them about your invitation. They will need to register for a Plausible account with the email address that was invited (or log in to their existing Plausible account registered with that email address) and accept your invitation. All invitations expire after 48 hours
+
+### How to manage team member roles
+
+When managing team members, you can choose between five different roles:
+
+1. "**Owner**" gets access to everything and can manage the team, sites and subscription itself. An owner can also delete a team 
+2. "**Admin**" can manage sites and team members
+3. "**Editor**" gets access to all your stats dashboards and can change the site settings or invite guests to the individual sites
+4. "**Billing**" can manage your Plausible subscription, payments and invoices 
+5. "**Viewer**" can view the stats dashboards of the sites that the team owns 
+
+You can change the role of a team member at any time:
+
+* In the top right menu, click on your account name, make sure you have chosen the team you'd like to manage and then click on the "**Team Settings**"
+* You can adjust roles of existing members within the "**General**" option of the "**Team Settings**"
+* Click on the current role next to the name of the person you'd like to change the role for
+* Choose a new role for the user
+
+That's it. The team member now has a different role.
+
+Note that you need to be an owner or an admin of a team to change team member roles.
+
+### How to remove a team member
+
+You can remove a team member from having access to a site at any time:
+
+* In the top right menu, click on your account name, make sure you have chosen the team you'd like to manage and then click on the "**Team Settings**"
+* You can delete existing members within the "**General**" option of the "**Team Settings**"
+* Click on the current role next to the name of the person you'd like to remove
+* Click "**Remove member**" 
+
+That's it. The team member has now been removed from your team.
+
+Note that you need to be an owner or an admin of a team to remove team members. 
+
+### How to delete a team
+
+* In the top right menu, click on your account name, make sure you have chosen the team you'd like to delete and then click on the "**Team Settings**"
+* To delete the team, go to the "**Danger Zone**" option of the "**Team Settings**"
+* Click on the "**Delete Team**" button. Note that deleting the team deletes all dashboards and collected stats of the sites that the team owns
+  
+## Working with external collaborators
+
+You can also invite external collaborators as guests and give them access to specific sites only. This is useful when working with consultants, freelancers and other individuals who don't need access to all the sites. Here's how to invite guests.
+
+### How to invite external collaborators as guests to individual sites
 
 :::tip Want to share a single dashboard with someone without them needing a Plausible account?
 Our [private and secure shared links](shared-links.md) are a great way to share a particular dashboard quickly 
 :::
 
-<img alt="Invite users, assign roles and remove users" src={useBaseUrl('img/invite-team-member.png')} />
-
-## How to invite users
-
-* Go into [the site settings](website-settings.md) of the website you'd like to invite users to
+* Go into [the site settings](website-settings.md) of the website you'd like to invite guests to
 * Click on the "**People**" section on the left-hand sidebar
-* Click on the "**Invite**" button
+* Click on the "**Invite New Guest**" button
 * Enter the email address of the person you'd like to invite. If you invite a new person to Plausible, they will need to register for a Plausible account with the exact email address that you invited
 * Assign the role for the invited user. You can choose between two different roles:
 
-1. "**Admin**" gets access to the stats dashboard, can change the site settings and invite other members
-2. "**Viewer**" gets access to the stats dashboard
+1. "**Guest Admin**" gets access to the stats dashboard, can change the site settings and invite other guests
+2. "**Guest Viewer**" gets access to the stats dashboard
 
 * Click on the "**Invite**" button. We will email the invited person to notify them about your invitation. They will need to register for a Plausible account with the email address that was invited (or log in to their existing Plausible account registered with that email address) and accept your invitation. All invitations expire after 48 hours
 
-### Who's responsible for the billing?
+### How to modify the guest roles
 
-Note that the owner of a site in Plausible is responsible for the billing of that site and needs to have an active paid subscription. All invited users (both Viewers and Admins) can use Plausible and view stats for sites they were invited to free of charge without having their own subscription.
+<img alt="Change guest roles or remove guests" src={useBaseUrl('img/change-roles-remove-users.png')} />
 
-If the invited user adds a brand new site to their Plausible account and becomes an owner of that site, then the trial comes into effect. They'll need to subscribe to a plan to continue viewing the stats of the site they own after the trial expires. As an alternative, they can transfer the ownership of a site they own to the account that has a paid subscription. That way they won't need a subscription themselves. [Take a look here](transfer-ownership.md).
-
-## How to modify the user roles
-
-<img alt="Change user roles or remove users" src={useBaseUrl('img/change-roles-remove-users.png')} />
-
-You can change the user role at any time:
+You can change the guest role at any time:
 
 * Go into the site settings of the website you'd like to modify the roles for
-* Click on the "**People**" section on the left-hand sidebar. That's where you can get an overview of the current team members and their existing roles
+* Click on the "**People**" section on the left-hand sidebar. That's where you can get an overview of the current guests and their existing roles
 * Click on the current role next to the name of the person you'd like to change the role for
 * Choose a new role for the user
 
-That's it. The user now has a different role.
+That's it. The guest now has a different role.
 
-Note that you need to be an owner or an admin of a site to change user roles.
+Note that you need to be an owner or an admin of the site or of the team that owns the site to change guest roles.
 
-## How to remove a user
+### How to remove a guest from the individual site
 
-You can remove a user from having access to a site at any time:
+You can remove a guest from having access to a site at any time:
 
-* Go into the site settings of the website you'd like to remove a user for
+* Go into the site settings of the website you'd like to remove a guest for
 * Click on the "**People**" section on the left-hand sidebar
 * Click on the current role next to the name of the person you'd like to remove
 * Click "**Remove member**" 
 
-That's it. The user has now been removed from the specific site.
+That's it. The guest has now been removed from the specific site.
 
-Note that you need to be an owner or an admin of a site to remove users. 
+Note that you need to be an owner or an admin of the site or of the team that owns the site to change guest roles.
