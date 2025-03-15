@@ -248,8 +248,8 @@ Filters can be combined using `and`, `or` and `not` operators.
 
 | Operator | Example | Explanation |
 | -- | -- | -- |
-| `and` | `["and", [["is", "visit:country_name", ["Germany"]]], ["is", "visit:city_name", ["Berlin"]]]]` | Sessions originating from Berlin, Germany |
-| `or` | `["and", [["is", "visit:country_name", ["Germany"]]], ["is", "visit:city_name", ["Tallinn"]]]]` | Sessions originating from Germany or city of Tallinn |
+| `and` | `["and", [["is", "visit:country_name", ["Germany"]], ["is", "visit:city_name", ["Berlin"]]]]` | Sessions originating from Berlin, Germany |
+| `or` | `["or", [["is", "visit:country_name", ["Germany"]], ["is", "visit:city_name", ["Tallinn"]]]]` | Sessions originating from Germany or city of Tallinn |
 | `not` | `["not", ["is", "visit:country_name", ["Germany"]]]` | Sessions not originating from Germany |
 
 Note that top level filters is wrapped in an implicit `and`.
