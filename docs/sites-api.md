@@ -15,6 +15,9 @@ The Plausible Site provisioning API offers a way to create and manage sites in y
 * List existing goals
 * Find or create a goal by type and value (learn more about [goals and custom events](goal-conversions.md))
 * Delete an existing goal
+* List site guests/invitations
+* Create site guest invitations
+* Delete site guests/invitations
 
 Each request must be authenticated with an API key using the Bearer Token method. Please [contact us](https://plausible.io/contact) to discuss your needs and to get an API key with permissions for the endpoints listed in this document.
 
