@@ -131,7 +131,7 @@ Domain of the site to be created in Plausible. Must be a globally unique, the re
 
 ### DELETE /api/v1/sites/:site_id
 
-Deletes a site from your Plausible account along with all it's data and configuration. The API key must belong to the owner of the site.
+Deletes a site from your Plausible account along with all its data and configuration. The API key must belong to the owner of the site.
 Permanently deleting all your data may take up to 48 hours and you won't be able to immediately register the same site again until the process is complete.
 
 ```bash title="Try it yourself"
@@ -337,6 +337,123 @@ curl -X DELETE https://plausible.io/api/v1/sites/goals/1 \
 Id of your site in Plausible.
 
 <hr / >
+
+### GET /api/v1/sites/guests
+
+Gets a list of guests for a given `site_id` (use the site domain as the ID).
+
+```bash title="Try it yourself"
+curl -X GET https://plausible.io/api/v1/sites/guests?site_id=test-domain.com \
+         -H "Authorization: Bearer ${TOKEN}"
+```
+
+```json title="Response 200 OK"
+{
+    "guests": [
+        {
+            "email": "alice@example.com",
+            "role": "viewer",
+            "accepted": true
+        },
+        {
+            "email": "bob@example.com",
+            "role": "editor",
+            "accepted": false
+        }
+    ],
+    "meta": {
+        "after": null,
+        "before": null,
+        "limit": 100
+    }
+}
+```
+
+
+#### Query parameters
+<hr / >
+
+**site_id** <Required />
+
+Id of your site in Plausible.
+
+<hr / >
+
+**after** <Optional />
+
+Pagination cursor. See [Pagination](#pagination).
+
+<hr / >
+
+**before** <Optional />
+
+Pagination cursor. See [Pagination](#pagination).
+
+<hr / >
+
+**limit** <Optional />
+
+Pagination limit. Defaults to 100. See [Pagination](#pagination).
+
+<hr / >
+
+
+
+### PUT /api/v1/sites/guests
+
+For a given `site_id` (use the site domain as the ID), finds an invitation or existing guest membership or sends a new invitation to a given `email`. This endpoint is idempotent, it won't fail if guest/invitation with the provided e-mail already exists.
+
+
+```bash title="Try it yourself"
+curl -X PUT https://plausible.io/api/v1/sites/guests \
+         -H "Authorization: Bearer ${TOKEN}" \
+         -F 'site_id="test-domain.com"' \
+         -F 'role="viewer"' \
+         -F 'email="alice@example.com"'
+         ```
+
+```json title="Response 200 OK"
+{
+    "email": "alice@example.com",
+    "role": "viewer",
+    "accepted": false
+}
+```
+
+#### Body parameters
+<hr / >
+
+**site_id** <Required />
+
+Id of your site in Plausible.
+
+<hr / >
+
+**email** <Required />
+
+Guest's e-mail address.
+
+**role** <Required />
+
+Either `editor` or `viewer`.
+
+<hr / >
+
+
+### DELETE /api/v1/sites/guests/:email
+
+Deletes an invitation or guest membership from the given site along with all its data and configuration.
+
+```bash title="Try it yourself"
+curl -X DELETE https://plausible.io/api/v1/sites/guests/test@example.com \
+         -H "Authorization: Bearer ${TOKEN}"
+```
+
+```json title="Response 200 OK"
+{
+    "deleted": "true"
+}
+```
 
 ## Pagination
 
