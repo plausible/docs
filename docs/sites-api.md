@@ -397,8 +397,6 @@ Pagination limit. Defaults to 100. See [Pagination](#pagination).
 
 <hr / >
 
-
-
 ### PUT /api/v1/sites/guests
 
 For a given `site_id` (use the site domain as the ID), finds an invitation or existing guest membership or sends a new invitation to a given `email`. This endpoint is idempotent, it won't fail if guest/invitation with the provided e-mail already exists.
@@ -438,7 +436,6 @@ Guest's e-mail address.
 Either `editor` or `viewer`.
 
 <hr / >
-
 
 ### DELETE /api/v1/sites/guests/:email
 
