@@ -439,7 +439,7 @@ Either `editor` or `viewer`.
 
 ### DELETE /api/v1/sites/guests/:email
 
-Deletes an invitation or guest membership from the given site along with all its data and configuration.
+Deletes an invitation or guest membership from the given site. Does not delete associated user account, if any.
 
 ```bash title="Try it yourself"
 curl -X DELETE https://plausible.io/api/v1/sites/guests/test@example.com \
