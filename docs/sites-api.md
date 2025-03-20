@@ -425,12 +425,12 @@ curl -X GET https://plausible.io/api/v1/sites/guests?site_id=test-domain.com \
         {
             "email": "alice@example.com",
             "role": "viewer",
-            "accepted": true
+            "status": "accepted"
         },
         {
             "email": "bob@example.com",
             "role": "editor",
-            "accepted": false
+            "status": "invited"
         }
     ],
     "meta": {
@@ -486,7 +486,7 @@ curl -X PUT https://plausible.io/api/v1/sites/guests \
 {
     "email": "alice@example.com",
     "role": "viewer",
-    "accepted": false
+    "status": "invited"
 }
 ```
 
