@@ -7,6 +7,7 @@ import {Required, Optional} from '../src/js/api-helpers.tsx';
 The Plausible Site provisioning API offers a way to create and manage sites in your Plausible account programmatically. This is useful if you run many websites or if you're [offering a web analytics dashboard powered by Plausible to your customers](https://plausible.io/white-label-web-analytics). The Site API allows these operations:
 
 * List existing sites
+* List teams
 * Create a new site
 * Delete an existing site
 * Change a domain name
@@ -75,7 +76,69 @@ Pagination cursor. See [Pagination](#pagination).
 
 Pagination limit. Defaults to 100. See [Pagination](#pagination).
 
+**team_id** <Optional />
+
+ID of the team to scope the list of sites by. All sites including the ones accessible via guest membership are listed when no ID provided.
+
 <hr / >
+
+### GET /api/v1/sites/teams
+
+Gets a list of teams your Plausible account can access. The `api_available` attribute determines if the API is available for a given team.
+
+```bash title="Try it yourself"
+curl -X GET https://plausible.io/api/v1/sites/teams \
+  -H "Authorization: Bearer ${TOKEN}"
+```
+
+```json title="Response 200 OK"
+{
+    "teams": [
+        {
+            "id": "4d3dae3b-2a44-4aaa-baac-6bb55234a435",
+            "name": "My Personal Sites",
+            "api_available": false,
+        },
+        {
+            "id": "ef828bca-8a1b-49f6-b829-dee1c9f7d628",
+            "name": "Some Team",
+            "api_available": true,
+        },
+        {
+            "id": "59e4d5b3-fc1c-464d-95f2-dbe6983396be",
+            "name": "Another Team",
+            "api_available": true,
+        }
+    ],
+    "meta": {
+        "after": null,
+        "before": null,
+        "limit": 100
+    }
+}
+```
+
+#### Query parameters
+<hr / >
+
+**after** <Optional />
+
+Pagination cursor. See [Pagination](#pagination).
+
+<hr / >
+
+**before** <Optional />
+
+Pagination cursor. See [Pagination](#pagination).
+
+<hr / >
+
+**limit** <Optional />
+
+Pagination limit. Defaults to 100. See [Pagination](#pagination).
+
+<hr / >
+
 ### POST /api/v1/sites
 
 Creates a site in your Plausible account.
@@ -105,6 +168,12 @@ Domain of the site to be created in Plausible. Must be a globally unique, the re
 **timezone** <Optional />
 
 Timezone name according to the [IANA](https://www.iana.org/time-zones) database. Defaults to `Etc/UTC` when left blank.
+<hr / >
+
+**team_id** <Optional />
+
+ID of the team under which the created site is to be put. Defaults to the ID of "My Personal Sites".
+
 <hr / >
 
 ### PUT /api/v1/sites/:site_id
