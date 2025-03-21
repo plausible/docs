@@ -222,6 +222,10 @@ The [OJS Site Usage plugin](https://gitlab.com/ubiquitypress/ojs-plugin-site-usa
 
 [Dashboard analytics plugin for PayloadCMS](https://nouance.io/articles/announcing-the-dashboard-analytics-plugin): You can add charts and statistics widgets directly in your admin interface.
 
+## Pika
+
+[Pika.page]([https://nouance.io/articles/announcing-the-dashboard-analytics-plugin](https://pika.page/dashboard)): With a Pro account, you can add your own analytics and Plausible is officially supported
+
 ## Podcastpage.io
 
 Add Plausible to your [Podcastpage.io](https://podcastpage.io/) website. Just enable the Plausible script through the "Integrations" page of your dashboard to add the tracking script to all pages.
