@@ -7,6 +7,7 @@ import {Required, Optional} from '../src/js/api-helpers.tsx';
 The Plausible Site provisioning API offers a way to create and manage sites in your Plausible account programmatically. This is useful if you run many websites or if you're [offering a web analytics dashboard powered by Plausible to your customers](https://plausible.io/white-label-web-analytics). The Site API allows these operations:
 
 * List existing sites
+* List teams
 * Create a new site
 * Delete an existing site
 * Change a domain name
@@ -15,6 +16,9 @@ The Plausible Site provisioning API offers a way to create and manage sites in y
 * List existing goals
 * Find or create a goal by type and value (learn more about [goals and custom events](goal-conversions.md))
 * Delete an existing goal
+* List site guests/invitations
+* Create site guest invitations
+* Delete site guests/invitations
 
 Each request must be authenticated with an API key using the Bearer Token method. Please [contact us](https://plausible.io/contact) to discuss your needs and to get an API key with permissions for the endpoints listed in this document.
 
@@ -72,7 +76,69 @@ Pagination cursor. See [Pagination](#pagination).
 
 Pagination limit. Defaults to 100. See [Pagination](#pagination).
 
+**team_id** <Optional />
+
+ID of the team to scope the list of sites by. All sites including the ones accessible via guest membership are listed when no ID provided.
+
 <hr / >
+
+### GET /api/v1/sites/teams
+
+Gets a list of teams your Plausible account can access. The `api_available` attribute determines if the API is available for a given team.
+
+```bash title="Try it yourself"
+curl -X GET https://plausible.io/api/v1/sites/teams \
+  -H "Authorization: Bearer ${TOKEN}"
+```
+
+```json title="Response 200 OK"
+{
+    "teams": [
+        {
+            "id": "4d3dae3b-2a44-4aaa-baac-6bb55234a435",
+            "name": "My Personal Sites",
+            "api_available": false,
+        },
+        {
+            "id": "ef828bca-8a1b-49f6-b829-dee1c9f7d628",
+            "name": "Some Team",
+            "api_available": true,
+        },
+        {
+            "id": "59e4d5b3-fc1c-464d-95f2-dbe6983396be",
+            "name": "Another Team",
+            "api_available": true,
+        }
+    ],
+    "meta": {
+        "after": null,
+        "before": null,
+        "limit": 100
+    }
+}
+```
+
+#### Query parameters
+<hr / >
+
+**after** <Optional />
+
+Pagination cursor. See [Pagination](#pagination).
+
+<hr / >
+
+**before** <Optional />
+
+Pagination cursor. See [Pagination](#pagination).
+
+<hr / >
+
+**limit** <Optional />
+
+Pagination limit. Defaults to 100. See [Pagination](#pagination).
+
+<hr / >
+
 ### POST /api/v1/sites
 
 Creates a site in your Plausible account.
@@ -104,6 +170,12 @@ Domain of the site to be created in Plausible. Must be a globally unique, the re
 Timezone name according to the [IANA](https://www.iana.org/time-zones) database. Defaults to `Etc/UTC` when left blank.
 <hr / >
 
+**team_id** <Optional />
+
+ID of the team under which the created site is to be put. Defaults to the ID of "My Personal Sites".
+
+<hr / >
+
 ### PUT /api/v1/sites/:site_id
 
 Update an existing site in your Plausible account. Note: currently only `domain` change is allowed.
@@ -131,7 +203,7 @@ Domain of the site to be created in Plausible. Must be a globally unique, the re
 
 ### DELETE /api/v1/sites/:site_id
 
-Deletes a site from your Plausible account along with all it's data and configuration. The API key must belong to the owner of the site.
+Deletes a site from your Plausible account along with all its data and configuration. The API key must belong to the owner of the site.
 Permanently deleting all your data may take up to 48 hours and you won't be able to immediately register the same site again until the process is complete.
 
 ```bash title="Try it yourself"
@@ -337,6 +409,120 @@ curl -X DELETE https://plausible.io/api/v1/sites/goals/1 \
 Id of your site in Plausible.
 
 <hr / >
+
+### GET /api/v1/sites/guests
+
+Gets a list of guests for a given `site_id` (use the site domain as the ID).
+
+```bash title="Try it yourself"
+curl -X GET https://plausible.io/api/v1/sites/guests?site_id=test-domain.com \
+         -H "Authorization: Bearer ${TOKEN}"
+```
+
+```json title="Response 200 OK"
+{
+    "guests": [
+        {
+            "email": "alice@example.com",
+            "role": "viewer",
+            "status": "accepted"
+        },
+        {
+            "email": "bob@example.com",
+            "role": "editor",
+            "status": "invited"
+        }
+    ],
+    "meta": {
+        "after": null,
+        "before": null,
+        "limit": 100
+    }
+}
+```
+
+
+#### Query parameters
+<hr / >
+
+**site_id** <Required />
+
+Id of your site in Plausible.
+
+<hr / >
+
+**after** <Optional />
+
+Pagination cursor. See [Pagination](#pagination).
+
+<hr / >
+
+**before** <Optional />
+
+Pagination cursor. See [Pagination](#pagination).
+
+<hr / >
+
+**limit** <Optional />
+
+Pagination limit. Defaults to 100. See [Pagination](#pagination).
+
+<hr / >
+
+### PUT /api/v1/sites/guests
+
+For a given `site_id` (use the site domain as the ID), finds an invitation or existing guest membership or sends a new invitation to a given `email`. This endpoint is idempotent, it won't fail if guest/invitation with the provided e-mail already exists.
+
+
+```bash title="Try it yourself"
+curl -X PUT https://plausible.io/api/v1/sites/guests \
+         -H "Authorization: Bearer ${TOKEN}" \
+         -F 'site_id="test-domain.com"' \
+         -F 'role="viewer"' \
+         -F 'email="alice@example.com"'
+         ```
+
+```json title="Response 200 OK"
+{
+    "email": "alice@example.com",
+    "role": "viewer",
+    "status": "invited"
+}
+```
+
+#### Body parameters
+<hr / >
+
+**site_id** <Required />
+
+Id of your site in Plausible.
+
+<hr / >
+
+**email** <Required />
+
+Guest's e-mail address.
+
+**role** <Required />
+
+Either `editor` or `viewer`.
+
+<hr / >
+
+### DELETE /api/v1/sites/guests/:email
+
+Deletes an invitation or guest membership from the given site. Does not delete associated user account, if any.
+
+```bash title="Try it yourself"
+curl -X DELETE https://plausible.io/api/v1/sites/guests/test@example.com \
+         -H "Authorization: Bearer ${TOKEN}"
+```
+
+```json title="Response 200 OK"
+{
+    "deleted": "true"
+}
+```
 
 ## Pagination
 
