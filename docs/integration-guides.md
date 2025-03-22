@@ -34,6 +34,10 @@ Our events API can be used to record pageviews and custom events server side wit
 
 [Android SDK](https://github.com/wbrawner/plausible-android): An Android SDK for Plausible Analytics.
 
+## Astro
+
+[Astro Plausible loader](https://github.com/LekoArts/astro-loaders/tree/main/packages/plausible): This package provides a Plausible content loader for Astro's content layer. You can access the Stats API v2 to view historical and real-time stats of your website.
+
 ## Bridgetown
 
 [Bridgetown](https://rubygems.org/gems/bridgetown-plausible): this plugin provides the plausible Liquid tag & ERB helper to your Bridgetown site.
