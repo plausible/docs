@@ -18,6 +18,7 @@ We've tried to make Plausible as usable and accessible as possible with just a k
 | T           | Last 30 days      |
 | N           | Last 90 days      |
 | M           | Month to Date     |
+| P           | Last month        |
 | Y           | Year to Date      |
 | S           | Last 6 months     |
 | L           | Last 12 months    |
