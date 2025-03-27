@@ -64,7 +64,9 @@ Date range to be queried.
 | `["2024-01-01T12:00:00+02:00", "2024-01-01T15:59:59+02:00"]` | Custom date-time range (ISO8601) |
 | `"day"`  | Current day (e.g. 2024-07-01) |
 | `"7d"` | Last 7 days relative to today |
+| `"28d"` | Last 28 days relative to today |
 | `"30d"` | Last 30 days relative to today |
+| `"90d"` | Last 90 days relative to today |
 | `"month"` | Since the start of the current month |
 | `"6mo"` | Last 6 months relative to start of this month |
 | `"12mo"` | Last 12 months relative to start of this month |
