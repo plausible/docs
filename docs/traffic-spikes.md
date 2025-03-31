@@ -16,7 +16,7 @@ You need to set the "**Current visitor threshold**" for your traffic spike notif
 
 You will get the traffic spike notification when your site reaches the threshold you've set. You'll get the notification for an individual website no more than twice in a 24-hour period.
 
-The email will include the number of current visitors and the top referral sources of current visitors. 
+The email will include the number of current visitors, the top referral sources, and the top pages of your current visitors. 
 
 All the stats are embedded directly into the email and there's no need to go to the Plausible Analytics website to view them. There are no attachments, no PDFs and no links to click on in the email either.
 
