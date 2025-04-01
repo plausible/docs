@@ -128,6 +128,9 @@ module.exports = {
       'download-invoices',
       'billing',
     ],
+    'Team and Organization': [
+      'users-roles',
+    ],
     Contribute: ['contribute', 'plausible-analytics-reviews', 'authors'],
   },
 }
