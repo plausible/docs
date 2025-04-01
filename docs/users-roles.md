@@ -20,8 +20,6 @@ Log in to your Plausible Analytics account and in the top right menu, click on y
 
 ### Inviting team members and assigning roles
 
-<img alt="Invite team member" src={useBaseUrl('img/invite-team-member.png')} />
-
 * In the top right menu, click on your account name, make sure you have chosen the team you'd like to manage and then click on the "**Team Settings**"
 * You can invite new team members within the "**General**" option of the "**Team Settings**"
 * We will email the invited person to notify them about your invitation. They will need to register for a Plausible account with the email address that was invited (or log in to their existing Plausible account registered with that email address) and accept your invitation. All invitations expire after 48 hours
@@ -46,8 +44,6 @@ You can change the role of a team member at any time:
 That's it. The team member now has a different role.
 
 Note that you need to be an owner or an admin of a team to change team member roles.
-
-<img alt="Change roles, delete team member" src={useBaseUrl('img/change-roles-remove-users.png')} />
 
 ### Removing a team member
 
