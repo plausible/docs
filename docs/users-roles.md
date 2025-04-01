@@ -10,7 +10,7 @@ Plausible allows you to create a team for your organization, invite team members
 
 ### Creating a new team
 
-Log in to your Plausible Analytics account and in the top right menu, click on your account name and choose "**Create a Team**". Note that you may not see this option if you're already a member of an existing team.
+Log in to your Plausible Analytics account and in the top right menu, click on your account name and choose "**Create a Team**". Note that you may not see this option if you're already a member of an existing team or if you haven't added any sites to your account.
 
 * Give the name to your team.
 * Invite individual team members. You can invite any email address. It doesn't necessarily need to be an email address from your company. You can invite existing Plausible users or people who don't have a Plausible account. You can also turn any existing guest into a team member. 
@@ -30,7 +30,7 @@ When managing team members, you can choose between five different roles:
 
 1. "**Owner**" gets access to everything and can manage the team, sites and subscription itself. An owner can also delete a team 
 2. "**Admin**" can manage sites and team members
-3. "**Editor**" gets access to all your stats dashboards and can change the site settings or invite guests to the individual sites
+3. "**Editor**" gets access to all your stats dashboards and can change the site settings
 4. "**Billing**" can manage your Plausible subscription, payments and invoices 
 5. "**Viewer**" can view the stats dashboards of the sites that the team owns 
 
@@ -106,7 +106,7 @@ You can change the guest role at any time:
 
 That's it. The guest now has a different role.
 
-Note that you need to be an owner or an admin of the site or of the team that owns the site to change guest roles.
+Note that you need to be an owner or an admin of the team that owns the site to change guest roles.
 
 ### Removing a guest from an individual site
 
@@ -119,4 +119,4 @@ You can remove a guest from having access to a site at any time:
 
 That's it. The guest has now been removed from the specific site.
 
-Note that you need to be an owner or an admin of the site or of the team that owns the site to change guest roles.
+Note that you need to be an owner or an admin of the team that owns the site to change guest roles.
