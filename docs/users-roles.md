@@ -12,13 +12,15 @@ Plausible allows you to create a team for your organization, invite team members
 
 Log in to your Plausible Analytics account and in the top right menu, click on your account name and choose "**Create a Team**". Note that you may not see this option if you're already a member of an existing team or if you haven't added any sites to your account.
 
+<img alt="Create a team" src={useBaseUrl('img/create-new-team.png')} />
+
 * Give the name to your team.
 * Invite individual team members. You can invite any email address. It doesn't necessarily need to be an email address from your company. You can invite existing Plausible users or people who don't have a Plausible account. You can also turn any existing guest into a team member. 
 * Assign individual team members their roles
 
 ### Inviting team members and assigning roles
 
-<img alt="Invite users, assign roles and remove users" src={useBaseUrl('img/invite-team-member.png')} />
+<img alt="Invite team member" src={useBaseUrl('img/invite-team-member.png')} />
 
 * In the top right menu, click on your account name, make sure you have chosen the team you'd like to manage and then click on the "**Team Settings**"
 * You can invite new team members within the "**General**" option of the "**Team Settings**"
@@ -44,6 +46,8 @@ You can change the role of a team member at any time:
 That's it. The team member now has a different role.
 
 Note that you need to be an owner or an admin of a team to change team member roles.
+
+<img alt="Change roles, delete team member" src={useBaseUrl('img/change-roles-remove-users.png')} />
 
 ### Removing a team member
 
@@ -72,9 +76,13 @@ Note that you need to be an owner or an admin of a team to remove team members.
 
 Note that you need to be an owner to delete a team. 
 
+<img alt="Delete team" src={useBaseUrl('img/delete-team.png')} />
+
 ## Working with external collaborators
 
 You can also invite external collaborators as guests and give them access to specific sites only. This is useful when working with consultants, freelancers and other individuals who don't need access to all the sites. Here's how to invite guests.
+
+<img alt="Invite collabs" src={useBaseUrl('img/invite-collabs.png')} />
 
 ### Inviting external collaborators as guests to individual sites
 
