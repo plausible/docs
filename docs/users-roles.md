@@ -80,15 +80,11 @@ Note that you need to be an owner to delete a team.
 
 ## Working with external collaborators
 
-You can also invite external collaborators as guests and give them access to specific sites only. This is useful when working with consultants, freelancers and other individuals who don't need access to all the sites. Here's how to invite guests.
+You can also invite external collaborators as guests and give them access to specific sites only. This is useful when working with consultants, freelancers and other individuals who don't need access to all your sites. Here's how to invite guests.
 
 <img alt="Invite collabs" src={useBaseUrl('img/invite-collabs.png')} />
 
 ### Inviting external collaborators as guests to individual sites
-
-:::tip Want to share a single dashboard with someone without them needing a Plausible account?
-Our [private and secure shared links](shared-links.md) are a great way to share a particular dashboard quickly 
-:::
 
 * Go into [the site settings](website-settings.md) of the website you'd like to invite guests to
 * Click on the "**People**" section on the left-hand sidebar
@@ -96,10 +92,14 @@ Our [private and secure shared links](shared-links.md) are a great way to share 
 * Enter the email address of the person you'd like to invite. If you invite a new person to Plausible, they will need to register for a Plausible account with the exact email address that you invited
 * Assign the role for the invited user. You can choose between two different roles:
 
-1. "**Guest Admin**" gets access to the stats dashboard, can change the site settings and invite other guests
-2. "**Guest Viewer**" gets access to the stats dashboard
+1. "**Guest Editor**" gets access to the stats dashboard and can manage the site settings
+2. "**Guest Viewer**" gets access to the stats dashboard only
 
 * Click on the "**Invite**" button. We will email the invited person to notify them about your invitation. They will need to register for a Plausible account with the email address that was invited (or log in to their existing Plausible account registered with that email address) and accept your invitation. All invitations expire after 48 hours
+
+:::tip Want to share a single dashboard with someone without them needing a Plausible account?
+Our [private and secure shared links](shared-links.md) are a great way to share a particular dashboard quickly 
+:::
 
 ### Adjusting the guest roles
 
@@ -127,4 +127,4 @@ You can remove a guest from having access to a site at any time:
 
 That's it. The guest has now been removed from the specific site.
 
-Note that you need to be an owner or an admin of the team that owns the site to change guest roles.
+Note that you need to be an owner or an admin of the team that owns the site to remove a guest.
