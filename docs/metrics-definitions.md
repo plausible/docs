@@ -22,10 +22,13 @@ If you have issues with high bounce rates on your site, you can try to set up so
 
 Shows the browsers used by your visitors. We only show the brand of the browser and when you click on the brand you can see the version number too. Metrics are shown as a percentage of all visitors and the total number of unique visitors.
 
+## Channels
+
+Channels show a breakdown of your traffic sources categorized into high-level groups such as "Organic Social", "Paid Search" and "Email". Learn more [here](top-referrers.md).
+
 ## Conversion Rate (or CR)
 
-The percentage of visitors that take a desired action such as subscribing to a newsletter or signing up for an account. Calculated as follows:
-unique conversions for a goal / unique visitors, where both values depend on the filters applied to the dashboard.
+The percentage of visitors that take a desired action such as subscribing to a newsletter or signing up for an account. Calculated as follows: unique conversions for a goal / unique visitors, where both values depend on the filters applied to the dashboard.
 
 ## Custom Properties (or Custom Dimensions)
 
