@@ -22,7 +22,7 @@ If you have issues with high bounce rates on your site, you can try to set up so
 
 Shows the browsers used by your visitors. We only show the brand of the browser and when you click on the brand you can see the version number too. Metrics are shown as a percentage of all visitors and the total number of unique visitors.
 
-## Conversion Rate
+## Conversion Rate (or CR)
 
 The percentage of visitors that take a desired action such as subscribing to a newsletter or signing up for an account. Calculated as follows:
 unique conversions for a goal / unique visitors, where both values depend on the filters applied to the dashboard.
@@ -59,7 +59,7 @@ Automatically track the number of file downloads. This feature isn't enabled by 
 
 You can follow the visitor journey from a landing page to a conversion with [funnel analysis](funnel-analysis.md). 
 
-## Goals
+## Goals (or Events)
 
 You can use goals to track desired actions people take on your site. Goals can be based on people [visiting a particular page](pageview-goals.md) or [triggering a particular event](custom-event-goals.md) such as subscribing to a newsletter or signing up for an account. You can even use custom properties to create your own metrics to collect and analyze data that Plausible doesn’t automatically track.
 
@@ -89,7 +89,7 @@ Shows the devices used by your visitors. Devices are categorized into desktop, m
 
 ## Scroll Depth
 
-Measures how far visitors scroll down a webpage. It represents the percentage of a page’s total height that visitors have reached on average. You can learn how we calculate it [here](http://plausible.io/docs/scroll-depth).```
+Measures how far visitors scroll down a webpage. It represents the percentage of a page’s total height that visitors have reached on average. You can learn how we calculate it [here](http://plausible.io/docs/scroll-depth).
 
 ## Source
 
