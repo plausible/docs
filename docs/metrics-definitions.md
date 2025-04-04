@@ -22,10 +22,13 @@ If you have issues with high bounce rates on your site, you can try to set up so
 
 Shows the browsers used by your visitors. We only show the brand of the browser and when you click on the brand you can see the version number too. Metrics are shown as a percentage of all visitors and the total number of unique visitors.
 
-## Conversion Rate
+## Channels
 
-The percentage of visitors that take a desired action such as subscribing to a newsletter or signing up for an account. Calculated as follows:
-unique conversions for a goal / unique visitors, where both values depend on the filters applied to the dashboard.
+Channels show a breakdown of your traffic sources categorized into high-level groups such as "Organic Social", "Paid Search" and "Email". Learn more [here](top-referrers.md).
+
+## Conversion Rate (or CR)
+
+The percentage of visitors that take a desired action such as subscribing to a newsletter or signing up for an account. Calculated as follows: unique conversions for a goal / unique visitors, where both values depend on the filters applied to the dashboard.
 
 ## Custom Properties (or Custom Dimensions)
 
@@ -59,7 +62,7 @@ Automatically track the number of file downloads. This feature isn't enabled by 
 
 You can follow the visitor journey from a landing page to a conversion with [funnel analysis](funnel-analysis.md). 
 
-## Goals
+## Goals (or Events)
 
 You can use goals to track desired actions people take on your site. Goals can be based on people [visiting a particular page](pageview-goals.md) or [triggering a particular event](custom-event-goals.md) such as subscribing to a newsletter or signing up for an account. You can even use custom properties to create your own metrics to collect and analyze data that Plausible doesn’t automatically track.
 
@@ -89,7 +92,7 @@ Shows the devices used by your visitors. Devices are categorized into desktop, m
 
 ## Scroll Depth
 
-Measures how far visitors scroll down a webpage. It represents the percentage of a page’s total height that visitors have reached on average. You can learn how we calculate it [here](http://plausible.io/docs/scroll-depth).```
+Measures how far visitors scroll down a webpage. It represents the percentage of a page’s total height that visitors have reached on average. You can learn how we calculate it [here](http://plausible.io/docs/scroll-depth).
 
 ## Source
 
@@ -97,9 +100,7 @@ See all referral sources that are sending you traffic. A source is reported when
 
 ## Time on Page
 
-The average time people spend on a particular page on your site. This is calculated as the difference between the point when a person lands on a particular page and when they move on to the next page.
-
-You may notice differences in the time on page in Plausible and in Google's Universal Analytics. This is because we have a different definition. In Google Analytics (UA), bounced visitors are included in the time on page calculation but are set to 10 seconds. In Plausible, we exclude bounced visitors from the time on page calculation. Neither of these approaches is 100% accurate. Plausible would show higher than the actual time on page, and Google Analytics would show lower than the actual time on page. In both cases, it's not possible to measure the time on page of people that bounce from your site. 
+The average amount of time people spend viewing a particular page on your site. Since March 2025, we've improved our methodology by sending multiple `engagement` events per pageview and by triggering an event every time the visitor closes the browser tab or moves the focus away from the current tab. This allows us to provide you with a more precise and reliable measure of user engagement which includes visitors who bounce away from your pages and excludes those who are not actually active on your pages.
 
 ## Total Conversions
 
