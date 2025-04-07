@@ -240,10 +240,6 @@ List of values to match against. A data point matches filter if _any_ of the cla
 
 `["contains", "event:country", ["united", "EST], { "case_sensitive": false }]`. [See full example](#example-filtering-case-insensitive)
 
-#### Segments
-
-[Segments](/filters-segments/#how-to-save-a-segment) can be used in filters, in the form `["is", "segment", [<segment_id>]]`. [See example](#example-filtering-by-segment)
-
 #### Logical operations
 
 Filters can be combined using `and`, `or` and `not` operators.
@@ -255,6 +251,14 @@ Filters can be combined using `and`, `or` and `not` operators.
 | `not` | `["not", ["is", "visit:country_name", ["Germany"]]]` | Sessions not originating from Germany |
 
 Note that top level filters is wrapped in an implicit `and`.
+
+#### Behavioral filters
+
+`has_done` and `has_not_done` operators can be used to filter sessions based on whether another event was completed or not. [See example](#example-behavioral-filters)
+
+#### Segments
+
+[Segments](/filters-segments/#how-to-save-a-segment) can be used in filters, in the form `["is", "segment", [<segment_id>]]`. [See example](#example-filtering-by-segment)
 
 ### order_by <Optional />
 
@@ -437,5 +441,11 @@ In this example, imported data could not be included due to dimension and filter
 In this example, revenue metrics could not be calculated due to different currency filters. [More information](#metrics)
 
 <ApiV2Example id="example-revenue-warning" />
+
+### Behavioral filters {#example-behavioral-filters}
+
+In this example, we're counting goal completions for a goal named "Signup" for users who visited the `/pricing` page.
+
+<ApiV2Example id="example-behavioral-filters" />
 
 </SiteContextProvider>

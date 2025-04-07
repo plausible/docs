@@ -1,0 +1,17 @@
+{
+  "results": [{"metrics": [456], "dimensions": []}],
+  "meta": {},
+  "query": {
+    "site_id": "dummy.site",
+    "metrics": ["visitors"],
+    "date_range": ["2022-09-23T00:00:00+03:00", "2025-04-07T23:59:59+03:00"],
+    "filters": [
+      ["is", "event:goal", ["Signup"]],
+      ["has_done", ["is", "event:page", ["/pricing"]]]
+    ],
+    "dimensions": [],
+    "order_by": [["visitors", "desc"]],
+    "include": {},
+    "pagination": {"offset": 0, "limit": 10000}
+  }
+}
