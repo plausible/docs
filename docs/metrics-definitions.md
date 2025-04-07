@@ -60,7 +60,7 @@ Automatically track the number of file downloads. This feature isn't enabled by 
 
 ## Funnels
 
-You can follow the visitor journey from a landing page to a conversion with [funnel analysis](funnel-analysis.md). 
+You can follow the visitor journey from a landing page to a conversion with [funnel analysis](funnel-analysis.md).
 
 ## Goals (or Events)
 
@@ -100,7 +100,17 @@ See all referral sources that are sending you traffic. A source is reported when
 
 ## Time on Page
 
-The average amount of time people spend viewing a particular page on your site. Since March 2025, we've improved our methodology by sending multiple `engagement` events per pageview and by triggering an event every time the visitor closes the browser tab or moves the focus away from the current tab. This allows us to provide you with a more precise and reliable measure of user engagement which includes visitors who bounce away from your pages and excludes those who are not actually active on your pages.
+The average amount of time spent per visitor viewing a particular page on your site.
+
+Similar to scroll depth, this metric relies on `engagement` events being sent by our tracking script for every pageview. This allows us to provide you with a more precise and reliable measure of user engagement which includes visitors who bounce away from your pages and excludes those who are not actually active on your pages.
+
+<details>
+<summary>Legacy time on page metric</summary>
+
+Prior to a tracker script upgrade in March 2025, we used a different method to calculate time on page, instead relying on timestamp of each `pageview` event. This method was both prone to over-estimating time spent on a page and was unable to provide measurements on pages where visitors bounced.
+
+For dates prior to the new tracker upgrade, the legacy time on page metric is displayed along with a note in the tooltip.
+</details>
 
 ## Total Conversions
 
