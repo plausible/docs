@@ -204,7 +204,7 @@ Note that:
 
 Default: `[]`
 
-Filters allow limiting the data analyzed in a query. [See example](#example-filtering).
+Filters allow limiting which events or sessions are included in the query. [See example](#example-filtering).
 
 #### Simple filters
 
@@ -228,7 +228,7 @@ The following operators are currently supported:
 
 [Event and visit dimensions](#dimensions) are valid for filters.
 
-Note that only `is` operator is valid for `event:goal` dimension.
+Note that only `is` and `contains` operators are valid for `event:goal` dimension.
 
 ##### clauses
 
@@ -254,7 +254,11 @@ Note that top level filters is wrapped in an implicit `and`.
 
 #### Behavioral filters
 
-`has_done` and `has_not_done` operators can be used to filter sessions based on whether another event was completed or not. [See example](#example-behavioral-filters)
+When filtering by multiple simple event dimension(s), our Stats API selects only events which match all event filters. This means that it's not possible to filter sessions based on whether multiple (separate) events occurred.
+
+For this usecase, `has_done` and `has_not_done` operators allow filtering sessions based on whether another event occurred within it or not.
+
+[See example](#example-behavioral-filters)
 
 #### Segments
 
