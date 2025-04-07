@@ -102,7 +102,7 @@ See all referral sources that are sending you traffic. A source is reported when
 
 The average amount of time spent per visitor viewing a particular page on your site.
 
-Similar to scroll depth, this metric relies on `engagement` events being sent by our tracking script for every pageview. This allows us to provide you with a more precise and reliable measure of user engagement which includes visitors who bounce away from your pages and excludes those who are not actually active on your pages.
+Similar to scroll depth, this metric relies on `engagement` events being sent by our tracking script for every pageview when the user navigates to a new page or switches tabs. This allows us to provide you with a more precise and reliable measure of user engagement which includes visitors who bounce away from your pages and which does not include time not spent actively on your pages.
 
 <details>
 <summary>Legacy time on page metric</summary>
