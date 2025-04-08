@@ -94,7 +94,7 @@ Valid metrics are:
 | `group_conversion_rate` | `float` | The percentage of visitors who completed the goal with the same dimension. Requires: dimension list passed, an event:goal filter or event:goal dimension | Requires non-empty `dimensions`, event:goal filter or dimension being set |
 | `average_revenue` | `Revenue` or null | Average revenue per revenue goal conversion | Requires [revenue goals](docs/ecommerce-revenue-tracking.md), `event:goal` filter or dimension for a relevant revenue goal. |
 | `total_revenue` | `Revenue` or null | Total revenue from revenue goal conversions | Requires [revenue goals](docs/ecommerce-revenue-tracking.md), `event:goal` filter or dimension for a relevant revenue goal. |
-
+| `time_on_page` | `int` | Average time in seconds spent on a page per visit | Requires `event:page` filter or dimension being set. |
 
 <details>
   <summary>Read more about revenue metrics</summary>
