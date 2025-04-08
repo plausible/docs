@@ -94,6 +94,12 @@ const EXAMPLES = [
     title: "Filtering by segment",
     query: read("apiv2-examples/filtering-by-segment-query.json"),
     exampleResponse: read("apiv2-examples/filtering-by-segment-response.json"),
+  },
+  {
+    id: "example-behavioral-filters",
+    title: "Behavioral filters",
+    query: read("apiv2-examples/behavioral-filters-query.json"),
+    exampleResponse: read("apiv2-examples/behavioral-filters-response.json"),
   }
 
 ]

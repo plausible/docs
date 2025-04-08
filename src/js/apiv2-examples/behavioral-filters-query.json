@@ -1,0 +1,9 @@
+{
+  "site_id": "dummy.site",
+  "metrics": ["visitors"],
+  "date_range": "all",
+  "filters": [
+    ["is", "event:goal", ["Signup"]],
+    ["has_done", ["is", "event:page", ["/pricing"]]]
+  ]
+}
