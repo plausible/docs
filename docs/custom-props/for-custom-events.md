@@ -56,4 +56,10 @@ All you have to do is add the second argument to this function call with the cus
 plausible('Download', {props: {method: 'HTTP', position: 'footer'}})
 ```
 
+To mark an event as non-interactive, you can set the `interactive` argument to `false`. This will exclude the event from bounce rate calculations.
+
+```js
+plausible('Custom Event', {interactive: false})
+```
+
 </details>
