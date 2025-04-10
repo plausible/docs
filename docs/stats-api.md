@@ -66,7 +66,7 @@ Date range to be queried.
 | `"7d"` | Last 7 days relative to today |
 | `"28d"` | Last 28 days relative to today |
 | `"30d"` | Last 30 days relative to today |
-| `"90d"` | Last 90 days relative to today |
+| `"91d"` | Last 91 days relative to today |
 | `"month"` | Since the start of the current month |
 | `"6mo"` | Last 6 months relative to start of this month |
 | `"12mo"` | Last 12 months relative to start of this month |
