@@ -16,7 +16,7 @@ The average revenue of orders tracked. This is a part of the [revenue attributio
 
 The percentage of visitors with a single page view. A visitor "bounces" away and leaves your site after only viewing a single page.
 
-If you have issues with high bounce rates on your site, you can try to set up some [custom events](custom-event-goals.md). All custom events are considered interactive so any clicks on those events will count towards the bounce rate.
+If you have issues with high bounce rates on your site, you can try to set up some [custom events](custom-event-goals.md). Custom events are by default considered interactive and will count towards the bounce rate.
 
 ## Browser
 
