@@ -144,6 +144,12 @@ For example, to track a purchase of US$ 1.322,22, your request body might look l
 ```
 <hr / >
 
+**interactive** <Optional />
+
+Whether the event is interactive. By default, Plausible will assume all events are interactive and will be counted for bounce detection.
+
+By marking a custom event as non-interactive, it will not be counted towards bounce rate calculationsp.
+
 ### Debugging
 
 By default, the API returns HTTP 202 Accepted. However, if you want to debug a request and see if the `X-Forwarded-For` header is set correctly, you can add the `X-Debug-Request` header to your request. If set to `true`, the API will return an HTTP 200 OK and the IP address which we will use for unique visitor counting.
