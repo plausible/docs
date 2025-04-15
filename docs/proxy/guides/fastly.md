@@ -10,40 +10,38 @@ You can use Fastly to proxy your Plausible Analytics requests. Here's the step-b
 
 First, set up a Plausible backend:
 
-* Go to your Fastly service configuration
-* Click on "**Origins**" or "**Hosts**"
-* Click "**Create a host**"
+1. Go to your Fastly service configuration
+2. Click on "**Origins**" or "**Hosts**"
+3. Click "**Create a host**"
+4. Fill in:
 
-* Fill in:
+* Name: `Plausible`
+* Address: `plausible.io`
+* Port: `443`
+* Enable SSL: `Checked`
+* Verify certificate: `Checked`
+* SNI hostname: `plausible.io`
 
-- Name: `Plausible`
-- Address: `plausible.io`
-- Port: `443`
-- Enable SSL: `Checked`
-- Verify certificate: `Checked`
-- SNI hostname: `plausible.io`
+5. Set the timeouts:
 
-* Set the timeouts:
+* First byte timeout: `15000` (15 seconds)
+* Between bytes timeout: `10000` (10 seconds)
 
-- First byte timeout: `15000` (15 seconds)
-- Between bytes timeout: `10000` (10 seconds)
-
-* Save
+6. Save
 
 ## Step 2: Create VCL Snippet
 
 Snippet 1: Plausible Request Routing (`vcl_recv`)
 
-* Go to "**VCL Snippets**"
-* Click "**Create snippet**"
+1. Go to "**VCL Snippets**"
+2. Click "**Create snippet**"
+3. Fill in:
 
-* Fill in:
+* Name: `Plausible Request Routing`
+* Type: `recv (vcl_recv)`
+* Priority: `100` (or any number that ensures this runs before your other recv snippets)
 
-- Name: `Plausible Request Routing`
-- Type: `recv (vcl_recv)`
-- Priority: `100` (or any number that ensures this runs before your other recv snippets)
-
-* Add this VCL (Varnish Configuration Language):
+4. Add this VCL (Varnish Configuration Language):
 
 ```
 vcl
@@ -63,7 +61,7 @@ return(pass);
 }
 ```
 
-* Save
+5. Save
 
 ## Step 3: Integrate a new snippet into your site header
 
