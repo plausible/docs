@@ -16,32 +16,32 @@ First, set up a Plausible backend:
 
 * Fill in:
 
-- Name: Plausible
-- Address: plausible.io
-- Port: 443
-- Enable SSL: Checked
-- Verify certificate: Checked
-- SNI hostname: plausible.io
+- Name: `Plausible`
+- Address: `plausible.io`
+- Port: `443`
+- Enable SSL: `Checked`
+- Verify certificate: `Checked`
+- SNI hostname: `plausible.io`
 
 * Set the timeouts:
 
-- First byte timeout: 15000 (15 seconds)
-- Between bytes timeout: 10000 (10 seconds)
+- First byte timeout: `15000` (15 seconds)
+- Between bytes timeout: `10000` (10 seconds)
 
 * Save
 
 ## Step 2: Create VCL Snippet
 
-Snippet 1: Plausible Request Routing (vcl_recv)
+Snippet 1: Plausible Request Routing (`vcl_recv`)
 
 * Go to "**VCL Snippets**"
 * Click "**Create snippet**"
 
 * Fill in:
 
-- Name: Plausible Request Routing
-- Type: recv (vcl_recv)
-- Priority: 100 (or any number that ensures this runs before your other recv snippets)
+- Name: `Plausible Request Routing`
+- Type: `recv (vcl_recv)`
+- Priority: `100` (or any number that ensures this runs before your other recv snippets)
 
 * Add this VCL (Varnish Configuration Language):
 
