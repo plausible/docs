@@ -2,7 +2,9 @@
 title: Proxying Plausible through Fastly
 ---
 
-You can also configure Fastly to proxy your analytics. Here's how.
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+You can use Fastly to proxy your Plausible Analytics requests. Here's the step-by-step process for creating a proxy.
 
 ## Step 1: Create the Backend for Plausible
 
@@ -41,7 +43,7 @@ Snippet 1: Plausible Request Routing (vcl_recv)
 - Type: recv (vcl_recv)
 - Priority: 100 (or any number that ensures this runs before your other recv snippets)
 
-* Add this VCL:
+* Add this VCL (Varnish Configuration Language):
 
 ```
 vcl
@@ -63,12 +65,14 @@ return(pass);
 
 * Save
 
-## Step 3: Adjust your deployed script
+## Step 3: Integrate a new snippet into your site header
 
-With the above config in place, you can change the script tag on your site as follows:
+You can now replace your Plausible Analytics script tag in the Header (`<head>`) section of your site with the proxied snippet. This is how the new snippet should look like (make sure to edit it to have the correct domain name of your site):
 
 ```html
-<script defer data-api="/plsbl/api/event" data-domain="website.com" src="/plsbl/js/script.js"></script>
+<script defer data-domain="yourdomain.com" data-api="/plsbl/api/event" src="/plsbl/js/script.js"></script>
 ```
 
-That's it! You're now using a proxy.
+Are you using our extensions such as hash-based routing, revenue or outbound link click tracking? Change the file name from `script.js` to the script you want to use: `script.hash.js`, `script.revenue.js` or `script.outbound-links.js`. Want to use more than one extension? You can chain them like this: `script.hash.revenue.outbound-links.js`.
+
+That's it! You're now counting your website stats using a proxy.
