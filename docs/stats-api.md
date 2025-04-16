@@ -90,8 +90,8 @@ Valid metrics are:
 | `events` | `int` | The number of events (pageviews + custom events). When filtering by a goal, this metric corresponds to "Total Conversions" in the dashboard. | |
 | `scroll_depth` | `int` | Page scroll depth averaged per session | Requires `event:page` filter or dimension being set |
 | `percentage` | `float` | The percentage of visitors of total who fall into this category | Requires non-empty `dimensions` |
-| `conversion_rate` | `float` | The percentage of visitors who completed the goal. | Requires non-empty `dimensions`, `event:goal` filter or dimension being set |
-| `group_conversion_rate` | `float` | The percentage of visitors who completed the goal with the same dimension. Requires: dimension list passed, an event:goal filter or event:goal dimension | Requires non-empty `dimensions`, event:goal filter or dimension being set |
+| `conversion_rate` | `float` | The percentage of visitors who completed the goal. The number of total visitors (divisor) gets calculated across all dimensions. | Requires `event:goal` filter or dimension being set. |
+| `group_conversion_rate` | `float` | The percentage of visitors who completed the goal with the same dimension. The number of total visitors (divisor) gets calculated for each dimension group individually. | Requires `event:goal` filter or dimension being set. |
 | `average_revenue` | `Revenue` or null | Average revenue per revenue goal conversion | Requires [revenue goals](docs/ecommerce-revenue-tracking.md), `event:goal` filter or dimension for a relevant revenue goal. |
 | `total_revenue` | `Revenue` or null | Total revenue from revenue goal conversions | Requires [revenue goals](docs/ecommerce-revenue-tracking.md), `event:goal` filter or dimension for a relevant revenue goal. |
 | `time_on_page` | `int` | Average time in seconds spent on a page per visit | Requires `event:page` filter or dimension being set. |
