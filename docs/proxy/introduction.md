@@ -56,6 +56,7 @@ There are many ways you can proxy requests to Plausible depending on your hostin
 Standalone proxy setups:
 * [Akamai](/docs/proxy/guides/akamai)
 * [Cloudflare Workers](/docs/proxy/guides/cloudflare)
+* [Fastly](/docs/proxy/guides/fastly)
 * [CloudFront](/docs/proxy/guides/cloudfront)
 * [Google Cloud Platform](https://github.com/mtlynch/plausible-proxy)
 
