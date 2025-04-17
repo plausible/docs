@@ -30,8 +30,8 @@ Log in to your Plausible Analytics account and in the top right menu, click on y
 
 When managing team members, you can choose between five different roles:
 
-1. "**Owner**" gets access to everything and can manage the team, sites and subscription itself. An owner can also delete a team 
-2. "**Admin**" can manage sites and team members
+1. "**Owner**" gets access to everything and can manage the team, sites, API keys and the subscription itself. An owner can also delete a team 
+2. "**Admin**" can manage team members, sites and API keys
 3. "**Editor**" gets access to all your stats dashboards and can change the site settings
 4. "**Billing**" can manage your Plausible subscription, payments and invoices 
 5. "**Viewer**" can view the stats dashboards of the sites that the team owns 
