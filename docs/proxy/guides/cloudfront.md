@@ -54,7 +54,7 @@ With the origin and behaviours in place, you can replace your Plausible Analytic
 <script defer data-domain="yourdomain.com" src="/js/script.js"></script>
 ```
 
-If you're not using the CloudFront CDN, you'll also need to add a `data-api` attribute to tell the script where the data should be sent. This is how the new snippet should look like in that case (do make sure to edit it to the correct URL of your CloudFront distribution)
+If you're not using the CloudFront with a custom domain, you'll also need to add a `data-api` attribute to tell the script where the data should be sent. This is how the new snippet should look like in that case (do make sure to edit it to the correct URL of your CloudFront distribution)
 
 ```html
 <script defer data-domain="yourdomain.com" data-api="https://YOURDISTRIBUTION.cloudfront.net/api/event" src="https://YOURDISTRIBUTION.cloudfront.net/js/script.js"></script>
