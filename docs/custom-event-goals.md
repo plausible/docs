@@ -268,6 +268,12 @@ Here's an example of the options argument using the `callback` and `props` optio
 plausible('Download', {callback: navigateFn, props: {method: 'HTTP'}})
 ```
 
+To mark an event as non-interactive, you can set the `interactive` argument to `false`. This will exclude the event from bounce rate calculations.
+
+```js
+plausible('Custom Event', {interactive: false})
+```
+
 <h3>
 
 Example: Tracking audio and video elements
