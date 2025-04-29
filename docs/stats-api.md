@@ -23,8 +23,6 @@ To create a new stats API key, log in to your Plausible Analytics account. In th
 
 Next, go to the "**API Keys**" section in the left-hand sidebar. Click the "**New API Key**" button, choose "**Stats API**" and save the key as it will only be shown once. After saving the key, click on "**Create API Key**" to confirm its creation.
 
-The key will be valid for all sites that you have access to.
-
 After creating an API key, you can authenticate your request by sending the key in the Authorization header of your request.
 
 ### Example curl request
