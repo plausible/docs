@@ -19,9 +19,9 @@ Take a look at our [Events API Reference](events-api.md) if you want to record p
 
 ## Authentication
 
-You can create a new stats API key by going to your Plausible Analytics account, navigating to "**Account Settings**" and clicking on the section called "**API Keys**". The key will be valid for all sites that you own.
+To create a new stats API key, log in to your Plausible Analytics account. In the top-right menu, click on your account name and go to settings.
 
-Click "**New API Key**" and be sure you save the result as you will only see the key once. However, you can always delete the key and create a new one if you no longer remember what it is.
+Next, go to the "**API Keys**" section in the left-hand sidebar. Click the "**New API Key**" button, choose "**Stats API**" and save the key as it will only be shown once. After saving the key, click on "**Create API Key**" to confirm its creation.
 
 After creating an API key, you can authenticate your request by sending the key in the Authorization header of your request.
 
