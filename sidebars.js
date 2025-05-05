@@ -127,6 +127,7 @@ module.exports = {
     ],
     'Team and Organization': [
       'users-roles',
+      'transfer-ownership',
     ],
     Contribute: ['contribute', 'plausible-analytics-reviews', 'authors'],
   },
