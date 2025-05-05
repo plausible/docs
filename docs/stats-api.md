@@ -184,15 +184,16 @@ It's useful to be able to group data by time, which can be done via the followin
 
 | Dimension | Example | Description |
 | -- | -- | -- |
-| `time` | 2024-01-01 | Time or date to group by. Automatically figures out the appropriate time:bucket value from date range. Response is a valid ISO8601 date or timestamp |
-| `time:hour` | 2021-01-27T23:43:10Z | Time grouped by hour. ISO8601 timestamp |
-| `time:day` | 2021-01-27 | Time grouped by date. ISO8601 date |
-| `time:week` | 2021-01-04 | Time grouped by start of the week. ISO8601 date |
-| `time:month` | 2021-01-01 | Time grouped by start of month. ISO8601 date |
+| `time` | `2024-01-01` | Time or date to group by. Automatically figures out the appropriate time:bucket value from date range. Response is a valid ISO8601 date or timestamp |
+| `time:hour` | `2021-01-27 23:43:10` | Time grouped by hour. |
+| `time:day` | `2021-01-27` | Time grouped by date. ISO8601 date |
+| `time:week` | `2021-01-04` | Time grouped by start of the week. ISO8601 date |
+| `time:month` | `2021-01-01` | Time grouped by start of month. ISO8601 date |
 
 Note that:
 - `time` dimensions are not usable in filters. Set [`date_range`](#date_range) instead.
 - If no data falls into a given time bucket, no values are returned. [See `include.time_labels` option](#time-labels) for a workaround.
+- These dates and timestamps are reported in sites Reporting Timezone.
 
 [See example](#example-timeseries)
 
