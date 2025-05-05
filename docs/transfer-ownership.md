@@ -4,13 +4,11 @@ title: Transfer ownership of a site
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Plausible allows you to transfer the ownership of a site to a different Plausible user.
+Plausible allows you to transfer the ownership of a site to a different Plausible user or to a team that you're a part of.
 
-You can use this to transfer all your sites to the team member who has the Plausible subscription, as the billing responsibility lies with the account that owns the sites.
+This is useful for consultants and agencies working with clients. You set up the site in Plausible, add custom events, email reports, traffic spike notifications and so on. When your job is completed, you can transfer the ownership of the site to your client. 
 
-It is also useful for consultants and agencies working with clients. You set up the site in Plausible, add custom events, email reports, traffic spike notifications and so on. When your job is completed, you can transfer the ownership of the site to your client. 
-
-Do note that a subscription plan is not transferred alongside the site. As the new owner of the site, your client is then responsible for paying for [the Plausible subscription](subscription-plans.md) and the day-to-day operations through their own Plausible account.
+Do note that any active subscription is not transferred alongside the site. As the new owner of the site, your client is then responsible for paying for [the Plausible subscription](subscription-plans.md) and the day-to-day operations through their own Plausible account.
 
 <img alt="Transfer ownership of a site" src={useBaseUrl('img/transfer-site-ownership.png')} />
 
@@ -23,7 +21,7 @@ Do note that a subscription plan is not transferred alongside the site. As the n
 * Enter the email address of the person you'd like to transfer the ownership to. If you transfer the ownership to a person that doesn't have an existing Plausible account, they will get an email and will need to register an account.
 * Click on the "**Request transfer**" button. We will send an email to the person you want to transfer the ownership to and notify them about your transfer request. They will need to register for a Plausible account (or log in to their existing Plausible account) and accept the transfer request. All requests expire after 48 hours.
 
-They will immediately become the new owner of the site after they accept the transfer request. The new owner is then responsible for the billing. If the new owner doesn't have an active subscription, they are required to upgrade their account to view the stats.
+They will immediately become the new owner of the site after they accept the transfer request. The new owner is then responsible for the billing. If the new owner doesn't have an active subscription, they are required to upgrade their account to accept the transfer.
 
 After the transfer of the ownership has been completed, you still keep the "**Admin**" role to the site so you can view the stats and edit the site settings. The new owner can choose to change your role or altogether remove you from having access to the site at any time.
 
@@ -34,7 +32,7 @@ After the transfer of the ownership has been completed, you still keep the "**Ad
 You can change the user role at any time:
 
 * Go into the site settings of the website you'd like to modify the roles for.
-* Click on the "**People**" section on the left-hand sidebar. That's where you can get an overview of the current team members and their existing roles.
+* Click on the "**People**" section on the left-hand sidebar. That's where you can get an overview of the current site guests and their existing roles.
 * Click on the current role next to the name of the person you'd like to change the role for.
 * Choose a new role for the user.
 
