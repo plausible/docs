@@ -14,9 +14,12 @@ The average revenue of orders tracked. This is a part of the [revenue attributio
 
 ## Bounce Rate
 
-The percentage of visitors with a single page view. A visitor "bounces" away and leaves your site after only viewing a single page.
+The percentage of visitors who land on a page and leave without performing an engaging action. By default, Plausible counts a visit as a “bounce” if the visitor does **not** either:
 
-If you have issues with high bounce rates on your site, you can try to set up some [custom events](custom-event-goals.md). Custom events are by default considered interactive and will count towards the bounce rate.
+- view more than one page, or
+- trigger a [custom events](custom-event-goals.md)
+
+To keep accuracy higher, you can optionally select which custom events you want to exclude from the bounce rate calculation too. To do that, mark any such events as "non-interactive" as explained [here](https://plausible.io/docs/custom-event-goals#trigger-custom-events-manually-with-a-javascript-function). These events are tracked but do not affect the bounce rate.
 
 ## Browser
 
