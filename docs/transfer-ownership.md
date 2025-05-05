@@ -20,11 +20,12 @@ Do note that any active subscription is not transferred alongside the site. As t
 * Enter the email address of the person you'd like to transfer the ownership to. If you transfer the ownership to a person that doesn't have an existing Plausible account, they will get an email and will need to register an account.
 * Click the "**Request transfer**" button. We will send an email to the person you want to transfer the ownership to and notify them about your transfer request. They will need to register for a Plausible account (or log in to their existing Plausible account) and accept the transfer request. All requests expire after 48 hours.
 
+<img alt="Transfer ownership of a site to a different user" src={useBaseUrl('img/new-transfer-ownership-different-user.png')} />
+
 They will immediately become the new owner of the site after they accept the transfer request. The new owner is then responsible for the billing. If the new owner doesn't have an active subscription, they are required to upgrade their account to accept the transfer.
 
 After the transfer of the ownership has been completed, you still keep the "**Guest Editor**" role to the site so you can view the stats and edit the site settings. The new owner can choose to change your role or altogether remove you from having access to the site at any time.
 
-<img alt="modify user roles or delete user" src={useBaseUrl('img/change-role-remove-user.png')} />
 
 ## How to transfer site ownership to a team
 
@@ -34,6 +35,8 @@ After the transfer of the ownership has been completed, you still keep the "**Gu
 * Select the team you'd like to move the site to.
 * Click the "**Change team**" button. Note that the destination team must have an active subscription with a sufficient plan to support the transfer.
 
+<img alt="Transfer ownership of a site to a team" src={useBaseUrl('img/new-transfer-site-ownership-team.png')} />
+
 ## How to modify the user roles
 
 You can change the user role at any time:
@@ -42,6 +45,8 @@ You can change the user role at any time:
 * Click on the "**People**" section in the left-hand sidebar. That's where you can get an overview of the current site guests and their existing roles.
 * Click on the current role next to the name of the person you'd like to change the role for.
 * Choose a new role for the user.
+
+<img alt="Change user role" src={useBaseUrl('img/new-modify-user-role.png')} />
 
 That's it. The user now has a different role.
 
@@ -53,5 +58,7 @@ You can remove a user from having access to a site at any time:
 * Click on the "**People**" section in the left-hand sidebar.
 * Click on the current role next to the name of the person you'd like to remove.
 * Click "**Remove member**" .
+
+<img alt="Remove user" src={useBaseUrl('img/new-remove-member.png')} />
 
 That's it. The user has now been removed from the specific site.
