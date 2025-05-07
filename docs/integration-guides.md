@@ -240,9 +240,7 @@ Add Plausible records to Prometheus to use with Grafana. Add [Plausible exporter
 
 ## Prestashop
 
-* [Plausible module](https://github.com/mrdotb/prestashop_plausible/) for Prestashop. 
-
-* [Prestashop Plausible](https://pixel-open.org/projects/prestashop-plausible/): Add Plausible in Prestashop.
+[Prestashop Plausible](https://pixel-open.org/projects/prestashop-plausible/): Add Plausible in Prestashop.
 
 ## Qt6 / QML
 
