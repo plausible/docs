@@ -98,6 +98,8 @@ Once you have the URL for your script, you can replace your Plausible Analytics 
 <script defer data-domain="yourdomain.com" data-api="https://your-worker-name.your-cloudflare-zone.workers.dev/your-folder-name/event" src="https://your-worker-name.your-cloudflare-zone.workers.dev/your-folder-name/script.js"></script>
 ```
 
+The example folder name for `data-api` is `/event/`. The example folder name for the script is `/js/`.
+
 Are you using our extensions such as hash-based routing, revenue or outbound link click tracking? Change the file name from `script.js` to the script you want to use: `script.hash.js`, `script.revenue.js` or `script.outbound-links.js`. Want to use more than one extension? You can chain them like this: `script.hash.revenue.outbound-links.js`. You just need to change the script name in the snippet that you insert into your site, no need to change the code for the worker.
 
 That's it! You're now counting your website stats using a proxy.
