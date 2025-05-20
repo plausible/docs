@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 After you've [added the Plausible snippet to your site](plausible-script.md), the dashboard will start displaying the stats in real-time as soon as the first visit is counted. There are no delays with data in Plausible.
 
-If you see the dashboard with graphs and numbers, it means everything is working. Congrats! Plausible is now tracking your website statistics while preserving the privacy of your visitors.
+If you see the dashboard with graphs and numbers, it means everything is working and we've counted your first visitor. Congrats! Plausible is now tracking your website statistics while preserving the privacy of your visitors.
 
 Do you keep seeing a blinking green dot screen instead of the dashboard? The blinking green dot indicates that we’re listening for incoming visits in real-time but haven't recorded any yet. 
 
@@ -15,14 +15,6 @@ Our testing tool will launch automatically from the blinking green dot screen to
 <img alt="Integration verification tool" src={useBaseUrl('img/integration-verification-tool.png')} />
 
 Did our testing tool detect an issue with your integration? Or is there something unusual about the data you're seeing? See how to troubleshoot the most common issues below.
-
-## Verification tool says it's working but my own visit isn't counted 
-
-Are you blocking our script from your own device? Or perhaps using a VPN that is blocking scripts? If you are running a browser extension or another service that may be blocking our script, your own visits may not be recorded. Do disable extensions such as adblockers or whitelist our script within the settings of the extension you are using to start counting your own visits too.
-
-Using WordPress and integrated Plausible using our official WordPress plugin? Our plugin excludes logged-in admin visits by default which is why you may not see your own visits being recorded in the dashboard.
-
-But as the verification tool has confirmed, the tracking is working fine overall and is tracking your visitors. If you'd like to track those who use adblockers too, take a look at [our proxy solution](/proxy/introduction.md).
 
 ## Have you added the Plausible snippet into your site?
 
@@ -56,11 +48,20 @@ To track Google AMP pages with Plausible, you need to declare an AMP-analytics o
 
 ## Did you insert multiple Plausible snippets into your site?
 
-This may affect the accuracy of the tracking. Please make sure to only insert one snippet. 
+This may affect the accuracy of the tracking and can result in the stats being counted twice. Please make sure to only insert one snippet. 
 
 ## Are you using an older version of our script?
 
 In some cases when you’re using a custom proxy implementation, you may not be using the latest version of our tracking script. This doesn’t necessarily mean that the tracking won’t work but our automated verification tool won’t be able to confirm whether your integration is working correctly. Please update the script you're proxying to the latest version of our script.
+
+If you're using [our WordPress plugin](https://plausible.io/wordpress-analytics-plugin) with the built-in proxy enabled, you'll need to:
+
+1. Disable the proxy
+2. Clear your cache
+3. Re-enable the proxy
+4. Clear your cache again
+
+This ensures the changes are fully applied and the latest version of our script is properly loaded.
 
 ## Has some other plugin altered our snippet? 
 
@@ -73,6 +74,20 @@ Do you experience an issue even when using our plugin? Do check your integration
 Are you using Cookiebot or a similar consent management platform? Have you set the Plausible script to load only after the user gives the consent? Our testing tool cannot verify the integration in that case so please do use [our manual verification process instead](#how-to-manually-check-your-integration).
 
 Plausible is built to be privacy-first and compliant with various privacy regulations so do raise this with your legal team as they could provide the green light to not require user consent. See more details in [our data policy](https://plausible.io/data-policy) and in [this legal assessment written by a data protection lawyer](https://plausible.io/blog/legal-assessment-gdpr-eprivacy).
+
+## Is your website on a different URL than the one you added as your site?
+
+Our testing tool visits the exact URL that you added to your Plausible account. For example, if you added `yourdomain.com` as your site, the tool will try to visit `yourdomain.com` directly.
+
+If the URL you added doesn’t work or doesn’t point to your actual website, the tool won’t be able to reach it and can’t verify the integration. In that case, please use [our manual verification process instead](#how-to-manually-check-your-integration).
+
+## Are you blocking our script or using a VPN that blocks us?
+
+Are you blocking our script from your own device? Or perhaps using a VPN that is blocking scripts? If you are running a browser extension or another service that may be blocking our script, your own visits may not be recorded. Do disable extensions such as adblockers or whitelist our script within the settings of the extension you are using to start counting your own visits too.
+
+Using WordPress and integrated Plausible using our official WordPress plugin? Our plugin excludes logged-in admin visits by default which is why you may not see your own visits being recorded in the dashboard.
+
+If the verification tool has confirmed that the tracking is working fine, then you have nothing to worry about. If you'd like to track those who use adblockers too, take a look at [our proxy solution](/proxy/introduction.md).
 
 ## I don't see my own referral source
 
