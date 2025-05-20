@@ -16,6 +16,10 @@ Instructions below can be used to start tracking every `<a>` (i.e. link) element
 
 Here's how to automatically track clicks on cloaked affiliate links and other pretty URLs:
 
+:::tip Our WordPress plugin can track cloaked affiliate links automatically 
+On WordPress? Check out our WordPress plugin which can track cloaked affiliate links automatically. [See more here](https://plausible.io/wordpress-analytics-plugin).
+:::
+
 ## 1. Trigger custom events with JavaScript on your site
 
 First, make sure your tracking setup includes the second line as shown below:
