@@ -12,10 +12,6 @@ Note that you will keep all the stats you have collected during the trial when y
 
 <img alt="Upgrade your trial account to a paid subscription" src={useBaseUrl('img/account-settings-free-trial-upgrade.png')} />
 
-:::tip Account that owns the site is responsible for the billing
-If you're using Plausible as [a part of a team](users-roles.md), note that the account that owns the site(s) in Plausible is also the account that needs to have an active subscription. Please upgrade to a subscription through the account that owns the site(s) or do [transfer the site ownership](transfer-ownership.md) to the account that you want to be responsible for the billing
-:::
-
 ## Choose your subscription tier
 
 Our subscription tiers are based on the total number of pageviews and custom events between all the sites you have added to your Plausible Analytics account.
