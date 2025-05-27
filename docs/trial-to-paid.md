@@ -20,10 +20,12 @@ You can check your usage levels during the trial period to date in your account 
 
 <img alt="Plausible subscription" src={useBaseUrl('img/account-settings-subscription.png')} />
 
-Next, decide on your plan. These vary in terms of number of sites, team members and features:
+Next, choose your plan. Each plan offers different features, site limits and team access:
 
-* Choose the "**Growth**" plan for essential features, ideal for growing teams
-* Go for the "**Business**" plan for advanced features, more sites and larger teams
+* **Starter** - Essential features for solo projects and new sites  
+* **Growth** - Team access and sharing tools for growing projects  
+* **Business** - Advanced marketing features, more sites and larger teams  
+* **Enterprise** - Custom plan with tailored limits. [Contact us](https://plausible.io/contact) to discuss
 
 Then click on the "**Upgrade**" button to get started.
 
