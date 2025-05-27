@@ -27,6 +27,8 @@ Next, choose your plan. Each plan offers different features, site limits and tea
 * **Business** - Advanced marketing features, more sites and larger teams  
 * **Enterprise** - Custom plan with tailored limits. [Contact us](https://plausible.io/contact) to discuss
 
+You can see [the pricing and the differences between the plans](https://plausible.io/#pricing) on our website.
+
 Then click on the "**Upgrade**" button to get started.
 
 <img alt="Choose your subscription tier" src={useBaseUrl('img/choose-your-subscription-tier.png')} />
