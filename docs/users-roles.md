@@ -17,6 +17,10 @@ Log in to your Plausible Analytics account and in the top right menu, click on y
 * Give the name to your team.
 * Invite individual team members. You can invite any email address. It doesn't necessarily need to be an email address from your company. You can invite existing Plausible users or people who don't have a Plausible account. You can also turn any existing guest into a team member. 
 * Assign individual team members their roles
+* Click on the "Create Team" button to finish the process
+
+<img alt="Create a team button" src={useBaseUrl('img/create-team-button.png')} />
+
 
 ### Inviting team members and assigning roles
 
