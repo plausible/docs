@@ -148,7 +148,7 @@ For example, to track a purchase of US$ 1.322,22, your request body might look l
 
 Whether the event is interactive. By default, Plausible will assume all events are interactive and will be counted for bounce detection.
 
-By marking a custom event as non-interactive, it will not be counted towards bounce rate calculationsp.
+By marking a custom event as non-interactive, it will not be counted towards bounce rate calculations.
 
 ### Debugging
 
