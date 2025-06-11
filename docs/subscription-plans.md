@@ -18,10 +18,12 @@ You can check your usage levels in your account settings within the "**Subscript
 
 <img alt="Plausible subscription" src={useBaseUrl('img/account-settings-subscription.png')} />
 
-You also need to decide on your subscription plan. These vary in terms of number of sites, team members and features:
+Next, choose your plan. Each plan offers different features, site limits and team access:
 
-* Choose the "**Growth**" plan for essential features, ideal for growing teams
-* Go for the "**Business**" plan for advanced features, more sites and larger teams
+* **Starter** - Essential features for solo projects and new sites  
+* **Growth** - Team access and sharing tools for growing projects  
+* **Business** - Advanced marketing features, more sites and larger teams  
+* **Enterprise** - Custom plan with tailored limits. [Contact us](https://plausible.io/contact) to discuss
 
 You can see [the pricing and the differences between the plans](https://plausible.io/#pricing) on our website or within your Plausible account settings.
 
