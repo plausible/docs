@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Tag properties to custom events you want to track
 
-Now, let's say you have a contact form both in the header and footer of your site. In addition to tracking submissions, you might want to know which section of your site the form was submitted on. Instead of creating separate goals for each form, you can send a custom property instead:
+Let's say you have a contact form both in the header and footer of your site. In addition to tracking submissions, you might want to know which section of your site the form was submitted on. Instead of creating separate goals for each form, you can send a custom property instead:
 
 Similarly to how you define an event name inside the `class` attribute, you can use the format `plausible-event-<property>=<value>` to define custom properties. Following the same example, your code might look something like this:
 
@@ -27,6 +27,10 @@ This is because you can't include the space character in the `class` attribute
 :::
 
 You can add up to 30 classes for custom properties. Simply separate them with a space character like in the above example.
+
+:::note
+If you don't see a `plausible.init` call in your snippet, [upgrade your script](/script-update-guide)
+:::
 
 <details>
 
