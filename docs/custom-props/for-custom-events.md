@@ -4,15 +4,7 @@ title: Attach custom properties to custom events
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-## Step 1: Enable "Custom events" for your site
-
-You can enable "**Custom events**" as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
-
-<img alt="Enable custom events tracking during onboarding" src={useBaseUrl('img/onboarding-enable-custom-events-tracking.png')} />
-
-Note that the tracking snippet changes depending on your selection of optional measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected. 
-
-## Step 2. Tag properties to custom events you want to track
+## Tag properties to custom events you want to track
 
 Now, let's say you have a contact form both in the header and footer of your site. In addition to tracking submissions, you might want to know which section of your site the form was submitted on. Instead of creating separate goals for each form, you can send a custom property instead:
 
@@ -39,7 +31,7 @@ You can add up to 30 classes for custom properties. Simply separate them with a 
 <details>
 
 <summary>
-  
+
 ## Tag custom properties using the manual method
 
 </summary>
