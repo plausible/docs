@@ -53,6 +53,6 @@ Plausible Analytics records the URL path of each page view as the visitors are b
 
 * Do you see identical page paths with and without a trailing slash (`/some_article` and `/some_article/`) in your pages report? This points to a duplicate content issue on the site and can be solved [with a 301 redirect](https://ahrefs.com/blog/trailing-slash/)
 
-* If your website is a single-page application with `pushState` routing, Plausible Analytics will track page views automatically with no extra work. If you're using a frontend framework that uses the URL hash for routing, we also have a special [hash-based script](hash-based-routing.md)
+* If your website is a single-page application with `pushState` routing, Plausible Analytics will track page views automatically with no extra work. If you're using a frontend framework that uses the URL hash for routing, you can enable [hash-based routing in our script](hash-based-routing.md)
 
 P.S. You can learn more about using this information as a site owner [here](https://plausible.io/blog/analyzing-landing-pages#how-to-use-this-information-as-a-site-owner).
