@@ -8,27 +8,13 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 If you use the custom events feature, then these count towards your billable monthly pageviews.
 :::
 
-Custom events allow you to measure button clicks, purchases, subscription signups, form completions and pretty much any other action that you wish your visitors to take. 
-
-"**Custom events**" is an [optional enhanced measurement](script-extensions.md) that's not included in our default script. This is because we want to keep the default script as simple and lightweight as possible. If you want to track custom events, here's how to enable it:
-
-## Step 1: Enable "Custom events" for your site
-
-You can enable "**Custom events**" as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
-
-<img alt="Enable custom events tracking during onboarding" src={useBaseUrl('img/onboarding-enable-custom-events-tracking.png')} />
-
-## Step 2: Change the snippet on your site
-
-The tracking snippet changes depending on your selection of optional measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected.
-
-Your Plausible tracking snippet should be inserted into [the Header (`<head>`) section of your site](plausible-script.md). Place the tracking script within the `<head> … </head>` tags.
+Custom events allow you to measure button clicks, purchases, subscription signups, form completions and pretty much any other action that you wish your visitors to take.
 
 :::tip Using WordPress?
 The quickest way to start tracking custom events is to use our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) 
 :::
 
-## Step 3: Add a CSS class name to the element you want to track on your site
+## Add a CSS class name to the element you want to track on your site
 
 :::tip Use pageview goals to track the "thank you" page or the order confirmation page
 As an alternative to custom events, check out the [pageview goals](pageview-goals.md). Since pageviews are collected automatically, you don’t need to change your website’s code to measure pageview goals. This makes pageview goals the easiest way to start tracking any type of conversions.
