@@ -225,16 +225,7 @@ After you have the custom events in place, you can start creating [marketing fun
 
 </summary>
 
-For more specific tracking needs, you will have to write the JavaScript yourself. The API only consists of one function, which you can use in your code by including the second line in your tracking setup, as shown below: 
-
-```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.js"></script>
-<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-```
-
-This snippet creates a global function called `plausible` which can be used to trigger custom events from anywhere in your code.
-
-Here's what triggering a custom event looks like:
+For more specific tracking needs, you will have to write the JavaScript yourself. Here's what triggering a custom event looks like:
 
 ```javascript
 plausible('Signup')
@@ -242,16 +233,27 @@ plausible('Signup')
 
 The first argument to this function ("Signup" in this case) is the name of your custom event (i.e. the name of your goal).
 
-The second (optional) argument to the `plausible` function is an object with that currently supports the following options: 
+The second (optional) argument to the `plausible` function is an object with that currently supports the following options:
 
-* `callback` – a function that is called once the event is logged successfully.
+* `callback` - a function that is called for every event after it's logged, ignored or errored.
 * `props` - an object with custom properties. Read more and see examples [here](/custom-props/for-custom-events)
 * `revenue` - an object with revenue tracking fields. Read more and see examples [here](ecommerce-revenue-tracking.md)
+* `interactive` - whether to include the event in bounce rate calculations (defaults to true).
 
-Here's an example of the options argument using the `callback` and `props` options. 
+Here's an example of the options argument using the `callback` and `props` options.
 
 ```javascript
-plausible('Download', {callback: navigateFn, props: {method: 'HTTP'}})
+plausible('Download', {callback: callback, props: {method: 'HTTP'}})
+
+function callback(result) {
+  if (result && result.status) {
+    console.debug("Request to plausible done. Status:", result.status)
+  } else if (result && result.error) {
+    console.log("Error handling request:", result.error)
+  } else {
+    console.log("Request was ignored")
+  }
+}
 ```
 
 To mark an event as non-interactive, you can set the `interactive` argument to `false`. This will exclude the event from bounce rate calculations.
