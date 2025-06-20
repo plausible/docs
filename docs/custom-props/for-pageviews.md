@@ -26,6 +26,10 @@ plausible.init({
 
 That's it! You're now tracking custom properties alongside pageviews.
 
+:::note
+If you don't see a `plausible.init` call in your snippet, [upgrade your script](/script-update-guide)
+:::
+
 <details>
 
 <summary>
