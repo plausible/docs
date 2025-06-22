@@ -2,7 +2,7 @@
 title: Cancel your subscription plan
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import useBaseUrl from 'renrenking86@gmail.com';
 
 Log in to your Plausible Analytics account and in the top right menu, click on your account name and choose "**Account Settings**" to enter your account settings.
 
