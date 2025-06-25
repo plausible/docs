@@ -4,7 +4,7 @@ title: Ecommerce revenue and attribution tracking
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-You can assign dynamic monetary values to custom events to track revenue attribution. Revenue attribution helps you determine which marketing campaigns and landing pages result in the most revenue for your business or ecommerce store. 
+You can assign dynamic monetary values to custom events to track revenue attribution. Revenue attribution helps you determine which marketing campaigns and landing pages result in the most revenue for your business or ecommerce store.
 
 When you create a new custom event, you can optionally assign a monetary value to it. Our revenue tracking supports multi-currencies too. You can send data in any local currency that the purchase is made in. When using revenue tracking, you'll be able to see these metrics in your dashboard:
 
@@ -16,31 +16,19 @@ When you create a new custom event, you can optionally assign a monetary value t
 
 <img alt="Ecommerce revenue goal top graph" src={useBaseUrl('img/plausible-ecommerce-revenue-top-graph.png')} />
 
-The revenue metrics are fully filterable. For instance, you can see the total or average revenue for a particular custom event per any dimension such as a specific date, referral source, marketing campaign, entry page, country or device. 
+The revenue metrics are fully filterable. For instance, you can see the total or average revenue for a particular custom event per any dimension such as a specific date, referral source, marketing campaign, entry page, country or device.
 
 You can add multiple filters to [create audience segments](filters-segments.md) too. This allows you to see the conversions and revenue from for instance the audience segment that's located in Germany, Austria and Switzerland, that were referred by a particular UTM campaign and are using Mac OS.
 
 "**Ecommerce revenue**" is an [optional enhanced measurement](script-extensions.md) that's not included in our default script. This is because we want to keep the default script as simple and lightweight as possible. If you want to track ecommerce revenue, here's how to enable it:
 
-## Step 1: Enable "Ecommerce revenue" for your site
-
-You can enable "**Ecommerce revenue**" as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
-
-<img alt="Enable revenue tracking during onboarding" src={useBaseUrl('img/onboarding-enable-revenue-tracking.png')} />
-
-## Step 2: Change the snippet on your site
-
-The tracking snippet changes depending on your selection of optional measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected.
-
-Your Plausible tracking snippet should be inserted into [the Header (`<head>`) section of your site](plausible-script.md). Place the tracking script within the `<head> … </head>` tags.
-
-## Step 3: Add a new custom event and specify the currency of your choice
+## Step 1: Add a new custom event and specify the currency of your choice
 
 Go to your [site settings](website-settings.md) and in the "**Goals**" section click on the "**Add goal**" button. Choose "**Custom event**" as the goal trigger, enter the goal name in the "**Event name**" field, switch to "**Enable Revenue Tracking**" and set the base currency of your choice. This currency will be used for total and average revenue metrics in the dashboard. Note that the currency for a specific event cannot be changed later.
 
 <img alt="Add goal and choose your currency" src={useBaseUrl('img/plausible-ecommerce-currency-goal.png')} />
 
-## Step 4: Send the revenue data from your site
+## Step 2: Send the revenue data from your site
 
 You can now start sending revenue data from your site alongside custom events. You can send the revenue data in the currency that the purchase was made in too and we'll convert it to your goal's base currency.
 
@@ -62,7 +50,7 @@ window.plausible("goal name", {revenue: {currency: "USD", amount: 10.29}})
 
 Or using the [Events API](events-api.md) directly.
 
-Custom events and revenue goals are listed at the bottom of your dashboard and will appear as soon as the first conversion has been tracked. 
+Custom events and revenue goals are listed at the bottom of your dashboard and will appear as soon as the first conversion has been tracked.
 
 <img alt="Ecommerce revenue tracking goal" src={useBaseUrl('img/plausible-ecommerce-revenue-goal.png')} />
 
@@ -82,7 +70,7 @@ All this is done automatically for you by our plugin and you don't need to manua
 
 ## Integrating with Shopify
 
-If you're using Shopify, you can track sales and revenue by making a few changes to the order status page. See [our complete Shopify guide here](shopify-integration.md). 
+If you're using Shopify, you can track sales and revenue by making a few changes to the order status page. See [our complete Shopify guide here](shopify-integration.md).
 
 ## Integrating with Magento
 
