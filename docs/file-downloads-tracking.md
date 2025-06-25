@@ -19,21 +19,13 @@ File downloads tracking is essential for many site owners and Plausible helps yo
 
 "**File downloads**" is an [optional enhanced measurement](script-extensions.md) that's not included in our default script. This is because we want to keep the default script as simple and lightweight as possible. If you want to track file downloads, here's how to enable it:
 
-## Step 1: Enable "File downloads" for your site
+## Enable "File downloads" for your site
 
 You can enable "**File downloads**" as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
 
 <img alt="Enable outbound file downloads tracking during onboarding" src={useBaseUrl('img/onboarding-enable-file-downloads-tracking.png')} />
 
-After you enable file downloads tracking, we will automatically add a new goal called `File Download` to your site.
-
-## Step 2: Change the snippet on your site
-
-The tracking snippet changes depending on your selection of optional measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected.
-
-Your Plausible tracking snippet should be inserted into [the Header (`<head>`) section of your site](plausible-script.md). Place the tracking script within the `<head> … </head>` tags.
-
-After you change the tracking snippet on your site, all the file downloads will start being tracked and will be displayed in the "**Goal Conversions**" report of your Plausible Analytics dashboard. You'll see the "**File Download**" goal as soon as the first file download has been tracked.
+After you enable file downloads tracking on your site, all the file downloads will start being tracked and will be displayed in the "**Goal Conversions**" report of your Plausible Analytics dashboard. You'll see the "**File Download**" goal as soon as the first file download has been tracked.
 
 :::tip Using WordPress?
 The quickest way to start tracking file downloads is to use our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin)
