@@ -4,11 +4,9 @@ title: Enable optional measurements
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-We're proud to have one of the most [lightweight JavaScript snippets](https://plausible.io/lightweight-web-analytics) in the analytics industry. 
+We're proud to have one of the most [lightweight JavaScript snippets](https://plausible.io/lightweight-web-analytics) in the analytics industry.
 
-We achieve that by radically limiting the number of options in the default script. Instead, we offer enhanced measurements as optional script extensions tailored to how you want to use Plausible. This approach makes sure that you only load the code that will actually be used on your website.
-
-You can enable these optional measurements when adding a new site to your Plausible account or in the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md). 
+You can enable these optional measurements when adding a new site to your Plausible account or in the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
 
 <img alt="Enable optional enhanced measurements" src={useBaseUrl('img/onboarding-enable-enhanced-tracking.png')} />
 
