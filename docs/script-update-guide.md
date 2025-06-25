@@ -77,6 +77,8 @@ plausible.init({
 })
 ```
 
+See also [Custom locations guide](/custom-locations).
+
 ### 7. Changed: Tracking on localhost
 
 If you were previously using `local` extension to track events on localhost, you will need to set `captureOnLocalhost` option to `true`:
