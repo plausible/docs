@@ -36,7 +36,7 @@ Your Plausible tracking snippet should be inserted into [the Header (`<head>`) s
 After you change the tracking snippet on your site, all the file downloads will start being tracked and will be displayed in the "**Goal Conversions**" report of your Plausible Analytics dashboard. You'll see the "**File Download**" goal as soon as the first file download has been tracked.
 
 :::tip Using WordPress?
-The quickest way to start tracking file downloads is to use our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) 
+The quickest way to start tracking file downloads is to use our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin)
 :::
 
 ## See all the file download clicks in your dashboard
@@ -48,8 +48,8 @@ Click on "**File Download**" goal in the "**Goal Conversions**" report of your P
 * The conversion rate
 * Top referral sources that lead to clicks
 * Top pages that drive the clicks
-* Countries, regions and cities that click on file download 
-* Devices (screen size, browser, OS) that click on file download 
+* Countries, regions and cities that click on file download
+* Devices (screen size, browser, OS) that click on file download
 
 Click on a particular file URL to filter the dashboard by those clicks only and get the full overview of that specific file.
 
@@ -57,30 +57,28 @@ Want to group file downloads by the domain name or any other keyword? In the "**
 
 ## Which file types are tracked?
 
-Our "**File downloads**" tracking captures a file download event each time a link is clicked with a document, presentation, text file, compressed file, video, audio or other common file type. Both internal and external files downloads are tracked. These file extensions are tracked by default: 
+Our "**File downloads**" tracking captures a file download event each time a link is clicked with a document, presentation, text file, compressed file, video, audio or other common file type. Both internal and external files downloads are tracked. These file extensions are tracked by default:
 
 `.pdf`, `.xlsx`, `.docx`, `.txt`, `.rtf`, `.csv`, `.exe`, `.key`, `.pps`, `.ppt`, `.pptx`, `.7z`, `.pkg`, `.rar`, `.gz`, `.zip`, `.avi`, `.mov`, `.mp4`, `.mpeg`, `.wmv`, `.midi`, `.mp3`, `.wav`, `.wma`, `.dmg`
 
 ## What if I want to track a different file type?
 
-You can also specify a custom list of file types to track with a `file-types` attribute tag. With this, you can track other file types not present in our default list. Say you only want to track `.js` and `.py` files, you can use manually setup your tracking snippet like this:
+You can also specify a custom list of file types to track with a `file-types` attribute tag. With this, you can track other file types not present in our default list. Say you only want to track `.js` and `.py` files, you can pass the following argument to `plausible.init`:
 
-```html
-<script defer file-types="js,py" data-domain="yourdomain.com" src="https://plausible.io/js/script.file-downloads.js"></script>
+```javascript
+plausible.init({
+  fileDownloads: {
+    fileExtensions: ["pdf", "js"]
+  }
+})
 ```
 
-Using the `file-types` attribute will override our default list and only your custom file type downloads will be tracked. If you want to add custom file type downloads without overriding the default list you can use `add-file-types` instead like this:
-
-```html
-<script defer add-file-types="js,py" data-domain="yourdomain.com" src="https://plausible.io/js/script.file-downloads.js"></script>
-```
+Using the `fileExtensions` option will override our default list and only your custom file type downloads will be tracked.
 
 Learn more about [effectively optimizing for file downloads](https://plausible.io/blog/track-file-downloads-in-web-analytics) on our blog.
 
 ## How to disable "File downloads" tracking for your site
 
 You can control what data is collected in the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
-
-When making changes to your optional measurements, your snippet will change so do ensure to insert the newest snippet into your site for file downloads tracking to stop. 
 
 After you disable file downloads tracking, we will automatically remove the goal called `File Download` from your site.
