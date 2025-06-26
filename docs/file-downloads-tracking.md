@@ -17,7 +17,7 @@ File downloads tracking is essential for many site owners and Plausible helps yo
 * Filter the dashboard by a file URL to see what type of visitors click the most (referral source, entry page, location, device, browser, OS)
 * Group your file downloads by any domain name or keyword
 
-"**File downloads**" is an [optional enhanced measurement](script-extensions.md) that's not included in our default script. This is because we want to keep the default script as simple and lightweight as possible. If you want to track file downloads, here's how to enable it:
+"**File downloads**" is an [optional enhanced measurement](script-extensions.md). If you want to track file downloads, here's how to enable it:
 
 ## Enable "File downloads" for your site
 
