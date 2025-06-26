@@ -10,7 +10,7 @@ Follow the steps below to learn how you can specify a custom location for your p
 
 ## 1. Disable automatic pageviews
 
-To specify a custom location for your event, you must disable automatic pageview tracking. Update your snippet to set `autoCapturePageviews` to `false.
+To specify a custom location for your event, you must disable automatic pageview tracking. Update your snippet to set `autoCapturePageviews` to `false`.
 
 ```javascript
 plausible.init({
@@ -22,20 +22,10 @@ plausible.init({
 
 Once you've added the manual extension, the `pageview` event won't be sent automatically anymore: you'll have to trigger it manually.
 
-To trigger events manually, you need to add the following script after your regular Plausible tracking script:
+To trigger your pageview event, call the following javascript function:
 
-```html
-<!-- define the `plausible` function to manually trigger events -->
-<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-```
-
-Once that's done, you can create another script in which you will trigger your pageview event:
-
-```html
-<!-- trigger pageview -->
-<script>
-  plausible('pageview');
-</script>
+```javascript
+plausible('pageview')
 ```
 
 At this point, your pageview events are being triggered just like before, but you haven't defined a custom location yet.
