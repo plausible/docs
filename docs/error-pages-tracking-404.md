@@ -16,7 +16,7 @@ Tracking 404 error pages is essential for many site owners and Plausible helps y
 * See where visitors find broken links to your 404 error pages
 * Then you can manually fix broken links and redirect error pages
 
-"**404 error pages**" is an [optional enhanced measurement](script-extensions.md). If you want to track 404 error pages, here's how to enable it:
+"**404 error pages**" requires additional work in addition to [setting up tracking script](/plausible-script). If you want to track 404 error pages, here's how to enable it:
 
 ## Paste this piece of code to your 404 page template
 
