@@ -20,7 +20,7 @@ The revenue metrics are fully filterable. For instance, you can see the total or
 
 You can add multiple filters to [create audience segments](filters-segments.md) too. This allows you to see the conversions and revenue from for instance the audience segment that's located in Germany, Austria and Switzerland, that were referred by a particular UTM campaign and are using Mac OS.
 
-"**Ecommerce revenue**" is an [optional enhanced measurement](script-extensions.md) that's not included in our default script. This is because we want to keep the default script as simple and lightweight as possible. If you want to track ecommerce revenue, here's how to enable it:
+If you want to track ecommerce revenue, here's how to enable it:
 
 ## Step 1: Add a new custom event and specify the currency of your choice
 
