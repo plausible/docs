@@ -67,7 +67,19 @@ plausible.init({
 
 By default, plausible tracks the following file types: pdf, xlsx, docx, txt, rtf, csv, exe, key, pps, ppt, pptx, 7z, pkg, rar, gz, zip, avi, mov, mp4, mpeg, wmv, midi, mp3, wav, wma, dmg
 
-### 6. Changed: Tracking pageviews manually
+### 6. Changed: Hashed page paths
+
+If you were previously using a hash based routing and had a `.hash` in your script path, you will need to set `hashBasedRouting` option:
+
+```javascript
+plausible.init({
+  hashBasedRouting: true
+})
+```
+
+See also [Hashed page paths guide](/hash-based-routing.md)
+
+### 7. Changed: Tracking pageviews manually
 
 If you were previously using the `manual` extension to track pageviews manually, you will need to set `autoCapturePageviews` option to `false`:
 
@@ -79,7 +91,7 @@ plausible.init({
 
 See also [Custom locations guide](/custom-locations).
 
-### 7. Changed: Tracking on localhost
+### 8. Changed: Tracking on localhost
 
 If you were previously using `local` extension to track events on localhost, you will need to set `captureOnLocalhost` option to `true`:
 
@@ -89,16 +101,16 @@ plausible.init({
 })
 ```
 
-### 8. Changed: Custom events and revenue features are automatically enabled
+### 9. Changed: Custom events and revenue features are automatically enabled
 
 If you were already using these features, no additional steps are required. Documentation links:
 - [Custom events](/custom-event-goals)
 - [Ecommerce revenue and attribution tracking](docs/ecommerce-revenue-tracking.md)
 
-### 9. Removed: `data-exclude`
+### 10. Removed: `data-exclude`
 
 The new script no longer supports the `data-exclude` and `data-include` attributes. See [alternative guide](/excluding.md) instead.
 
-### 10. Removed: multiple domain support
+### 11. Removed: multiple domain support
 
 The new script does not support sending stats to multiple dashboards at once anymore. Keep using the old script for this functionality.
