@@ -302,7 +302,7 @@ A [Sylius Plausible plugin](https://github.com/Setono/sylius-plausible-plugin) t
 
 ## Turbo / Turbolinks
 
-We offer a manual mode in case you want full control over when pageviews are triggered on your website. The most common use-case for this is when you use Turbo (formerly Turbolinks). [Learn more here](script-extensions.md)
+We allow disabling automatic pageview tracking in case you want full control over when pageviews are triggered on your website. The most common use-case for this is when you use Turbo (formerly Turbolinks). [Learn more here](script-extensions.md)
 
 ## TYPO3
 
