@@ -10,6 +10,10 @@ This is useful for consultants and agencies working with clients. You set up the
 
 Do note that any active subscription is not transferred alongside the site. As the new owner of the site, your client is then responsible for paying for [the Plausible subscription](subscription-plans.md) and the day-to-day operations through their own Plausible account.
 
+:::tip Leaving the company and want to transfer your subscription to a different team member?
+Our teams functionality allows you to start a team and invite one or more team owners. Other team owners can then remove you from the team. See [how to start a team](users-roles.md)
+:::
+
 ## How to transfer site ownership to a different user
 
 <img alt="Transfer ownership of a site to a different user" src={useBaseUrl('img/new-transfer-ownership-different-user.png')} />
