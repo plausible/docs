@@ -35,15 +35,6 @@ On the line that says `var toBeTracked = '/go/'` change `/go/` to what you want 
         return link
     }
 
-    function shouldFollowLink(event, link) {
-        // If default has been prevented by an external script, Plausible should not intercept navigation.
-        if (event.defaultPrevented) { return false }
-
-        var targetsCurrentWindow = !link.target || link.target.match(/^_(self|parent|top)$/i)
-        var isRegularClick = !(event.ctrlKey || event.metaKey || event.shiftKey) && event.type === 'click'
-        return targetsCurrentWindow && isRegularClick
-    }
-
     var MIDDLE_MOUSE_BUTTON = 1
 
     function handleLinkClick(event) {
@@ -54,26 +45,7 @@ On the line that says `var toBeTracked = '/go/'` change `/go/` to what you want 
         if (link && shouldTrackLink(link)) {
             var eventName = 'Cloaked Link: Click'
             var eventProps = { url: link.href }
-            return sendLinkClickEvent(event, link, eventName, eventProps)
-        }
-    }
-
-    function sendLinkClickEvent(event, link, eventName, eventProps) {
-        var followedLink = false
-
-        function followLink() {
-            if (!followedLink) {
-                followedLink = true
-                window.location = link.href
-            }
-        }
-
-        if (shouldFollowLink(event, link)) {
             plausible(eventName, { props: eventProps, callback: followLink })
-            setTimeout(followLink, 5000)
-            event.preventDefault()
-        } else {
-            plausible(eventName, { props: eventProps })
         }
     }
 
