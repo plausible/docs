@@ -11,7 +11,7 @@ If you use the custom events feature, then these count towards your billable mon
 Custom events allow you to measure button clicks, purchases, subscription signups, form completions and pretty much any other action that you wish your visitors to take.
 
 :::tip Using WordPress?
-The quickest way to start tracking custom events is to use our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) 
+The quickest way to start tracking custom events is to use our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin)
 :::
 
 ## Add a CSS class name to the element you want to track on your site
@@ -20,9 +20,9 @@ The quickest way to start tracking custom events is to use our [official WordPre
 As an alternative to custom events, check out the [pageview goals](pageview-goals.md). Since pageviews are collected automatically, you don’t need to change your website’s code to measure pageview goals. This makes pageview goals the easiest way to start tracking any type of conversions.
 :::
 
-Tag the site element you want to track with a CSS class name. How to do this varies depending on the site builder, CMS or framework you've used to build your site. 
+Tag the site element you want to track with a CSS class name. How to do this varies depending on the site builder, CMS or framework you've used to build your site.
 
-For instance, if you're using WordPress, you can click on any block element you want to track such as a button or a form. This will open up the block menu on the right-hand side of your screen. 
+For instance, if you're using WordPress, you can click on any block element you want to track such as a button or a form. This will open up the block menu on the right-hand side of your screen.
 
 <img alt="Click on any WordPress block element you want to track such as a button or a form" src={useBaseUrl('img/wordpress-button-css-class-name.png')} />
 
@@ -34,7 +34,7 @@ For example: `plausible-event-name=Form+Submit` will display as `Form Submit` in
 
 <img alt="Add a CSS class name in the 'Additional CSS class(es)' field" src={useBaseUrl('img/wordpress-css-class-name.png')} />
 
-When tracking form submits, it is important to tag the `<form>` element itself with the `plausible-event-name=...` class (not the `input` or `button` element inside the form). Normally, Plausible can track button clicks, but if a button is inside a form, it will navigate to the next page often leaving not enough time for the event to finish.
+When tracking form submits this way, we recommend tagging the `<form>` element itself with the `plausible-event-name=...` class (not the `input` or `button` element inside the form).
 
 :::tip Some CMSs (like Webflow) do not support an equals sign (`=`) in the classnames
 If that's the case, use a double dash (`--`) instead of the equals sign. For example: `plausible-event-name--signup`
@@ -66,9 +66,9 @@ Or if your element already has a class attribute, just separate the new ones wit
 
 After adding the class, please go back to your site, and verify that the class attribute got added with the exact required format. You can check it by right-clicking the element and inspecting it. This will show you the HTML code of the element.
 
-In some cases, the tracking classes might be added to a wrapper `<div>` element (parent to the element you want to track), but don't worry, Plausible will still be able to track clicks on the child element if its parent has the necessary classes. 
+In some cases, the tracking classes might be added to a wrapper `<div>` element (parent to the element you want to track), but don't worry, Plausible will still be able to track clicks on the child element if its parent has the necessary classes.
 
-Some CMSs like Webflow do not support an equals sign (`=`) in the classnames. If you add a class attribute with the value `plausible-event-name=Signup`, but when you go back to your page and inspect the element, it might have `class="plausible-event-name-Signup"` (equals sign replaced with a hyphen). 
+Some CMSs like Webflow do not support an equals sign (`=`) in the classnames. If you add a class attribute with the value `plausible-event-name=Signup`, but when you go back to your page and inspect the element, it might have `class="plausible-event-name-Signup"` (equals sign replaced with a hyphen).
 If that's the case, use a double dash (`--`) instead of the equals sign. For example: `plausible-event-name--signup`.
 
 :::tip Tracking form submissions may not work with forms that contain an element with `id="submit"` or `name="submit"`
@@ -81,7 +81,7 @@ If your CMS does not support adding CSS classes, please expand the following sec
 
 <summary>
 
-### My site builder does not support adding CSS classes 
+### My site builder does not support adding CSS classes
 
 If you're unable to add the classnames in your page editor, there's still a way for you to track custom events. This method includes copying and pasting some JavaScript code onto your page. You can expand this section and follow step-by-step instructions.
 
@@ -103,7 +103,7 @@ Go to your website, right-click and inspect the element you want to track, which
 
 </h3>
 
-If the element you want to track does not have an `id` attribute by default, you can try adding one in the edit mode of your CMS. However, if you don't have that option, then this approach will be impossible and you will have to check out the section at the bottom of this page - [implementing custom events manually with JavaScript](#trigger-custom-events-manually-with-a-javascript-function). 
+If the element you want to track does not have an `id` attribute by default, you can try adding one in the edit mode of your CMS. However, if you don't have that option, then this approach will be impossible and you will have to check out the section at the bottom of this page - [implementing custom events manually with JavaScript](#trigger-custom-events-manually-with-a-javascript-function).
 
 <h3>
 
@@ -191,7 +191,7 @@ You can click the link to automatically add all the goals you've been sending so
 
 That's it. You can now check our your goal conversions on the dashboard.
 
-## Edit a Custom Event Goal 
+## Edit a Custom Event Goal
 
 To edit a custom event goal, start by locating the custom event goal you want to update in the Goals list. Click on the "Edit goal" button next to it, which will bring up the goal editing form.
 
@@ -281,7 +281,7 @@ Example: Tracking audio and video elements
 ```html
 <script>
     var mediaElement = document.getElementById('trackedMedia')
-    
+
     // Set a flag to ignore the case where playing has already started and is resumed from paused state
     var mediaAlreadyStarted = false
 
