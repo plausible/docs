@@ -8,7 +8,7 @@ After you've [added the Plausible snippet to your site](plausible-script.md), th
 
 If you see the dashboard with graphs and numbers, it means everything is working and we've counted your first visitor. Congrats! Plausible is now tracking your website statistics while preserving the privacy of your visitors.
 
-Do you keep seeing a blinking green dot screen instead of the dashboard? The blinking green dot indicates that we’re listening for incoming visits in real-time but haven't recorded any yet. 
+Do you keep seeing a blinking green dot screen instead of the dashboard? The blinking green dot indicates that we’re listening for incoming visits in real-time but haven't recorded any yet.
 
 Our testing tool will launch automatically from the blinking green dot screen to send test traffic to your site. This test traffic won't be recorded in the dashboard but you'll see a status message indicating whether Plausible Analytics has been installed correctly.
 
@@ -20,35 +20,29 @@ Did our testing tool detect an issue with your integration? Or is there somethin
 
 We've put together [many integration guides](integration-guides.md) that cover popular website builders and content management systems (CMS) such as WordPress and Ghost. Thanks to the members of our community, there are also community integrations and plugins for several frameworks such as Hugo and GatsbyJS. These can help you set up and start counting your site visitors in no time.
 
-## Have you added the correct data-domain attribute in the Plausible snippet? 
-
-View the source code of your site. You can right-click anywhere on your page and click "View Page Source" (the wording may be slightly different depending on your web browser). Then press Command+f on a Mac or ctrl+f on Linux and Windows to search. Type "**data-domain**" to search for the Plausible snippet. 
-
-Does the snippet look as expected? Is the data-domain attribute within the snippet an exact match to the site as you've added it to your Plausible account? The data-domain must be an exact match for the stats to be recorded.
-
 ## Have you cleared the cache of your site?
 
 If you are using caching on your site, the latest version of your site where our snippet is integrated may not be showing to all your visitors yet. Do purge the cache to ensure that you're presenting the latest version of your site to all your visitors.
 
-## Have you implemented Plausible using Google Tag Manager? 
+## Have you implemented Plausible using Google Tag Manager?
 
 GTM strips the `data-*` attributes by default which can break the tracking. Please follow [our GTM guide](google-tag-manager.md) for instructions on how to integrate Plausible using GTM.
 
-## Does your site use a Content Security Policy (CSP)? 
+## Does your site use a Content Security Policy (CSP)?
 
 If it does, you would need to add our domain name (plausible.io) specifically to the allowed domains list in order for the script to work. [More info here](https://github.com/plausible/docs/issues/20).
 
-## Are you running on localhost? 
+## Are you running on localhost?
 
-Our script automatically disables itself when running on localhost as most people don't want those stats to be counted. In the `script.js` script, `window.location.hostname` is used to verify that. If you do want to track stats on localhost, you can [use our extension](script-extensions.md).
+Our script automatically disables itself when running on localhost as most people don't want those stats to be counted. In the `script.js` script, `window.location.hostname` is used to verify that. If you do want to track stats on localhost, [see configuration guide](script-extensions.md).
 
-## Are you running a Google AMP page? 
+## Are you running a Google AMP page?
 
 To track Google AMP pages with Plausible, you need to declare an AMP-analytics object on your AMP pages. [See the instructions here](https://github.com/plausible/analytics/discussions/220#discussioncomment-904022).
 
 ## Did you insert multiple Plausible snippets into your site?
 
-This may affect the accuracy of the tracking and can result in the stats being counted twice. Please make sure to only insert one snippet. 
+This may affect the accuracy of the tracking and can result in the stats being counted twice. Please make sure to only insert one snippet.
 
 ## Are you using an older version of our script?
 
@@ -63,11 +57,11 @@ If you're using [our WordPress plugin](https://plausible.io/wordpress-analytics-
 
 This ensures the changes are fully applied and the latest version of our script is properly loaded.
 
-## Has some other plugin altered our snippet? 
+## Has some other plugin altered our snippet?
 
-Are you using WP Rocket, SiteGround Optimizer or other performance optimization plugins? Or some type of consent banner plugin that determines which scripts can run when? These plugins may affect our tracking as they try to optimize our script. If you're on WordPress, we recommend you use [our official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) to avoid these issues as we've built-in resolutions to the most common plugin conflicts. 
+Are you using WP Rocket, SiteGround Optimizer or other performance optimization plugins? Or some type of consent banner plugin that determines which scripts can run when? These plugins may affect our tracking as they try to optimize our script. If you're on WordPress, we recommend you use [our official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) to avoid these issues as we've built-in resolutions to the most common plugin conflicts.
 
-Do you experience an issue even when using our plugin? Do check your integration manually using the steps below to identify which plugin is in question. Then please whitelist our script location and our domain name in the settings of the individual plugin to stop it from altering our snippet. 
+Do you experience an issue even when using our plugin? Do check your integration manually using the steps below to identify which plugin is in question. Then please whitelist our script location and our domain name in the settings of the individual plugin to stop it from altering our snippet.
 
 ## Have you placed our script behind the GDPR consent banner?
 
@@ -117,9 +111,9 @@ In some cases, our automated testing tool may not be able to check your site. In
 
 A simple way to verify if Plausible is working is to view the source code of your site and look for the Plausible snippet. Here's how:
 
-1. Visit your home page or any other page on your site where Plausible is installed. 
-2. View the source code of your site. You can right-click anywhere on your page and click "**View Page Source**" (the wording may be slightly different depending on your web browser). Alternatively, use a keyboard shortcut to view the source code (`Option+Command+u` on a Mac or `ctrl+u` on Linux and Windows).  
-3. Press `Command+f` on a Mac or `ctrl+f` on Linux and Windows to search the source code. Type `data-domain` to search for the Plausible snippet. 
+1. Visit your home page or any other page on your site where Plausible is installed.
+2. View the source code of your site. You can right-click anywhere on your page and click "**View Page Source**" (the wording may be slightly different depending on your web browser). Alternatively, use a keyboard shortcut to view the source code (`Option+Command+u` on a Mac or `ctrl+u` on Linux and Windows).
+3. Press `Command+f` on a Mac or `ctrl+f` on Linux and Windows to search the source code. Type `plausible.initp` to search for the Plausible snippet.
 4. Do you see our snippet? Ensure that the snippet is correct and that there are no unintended modifications compared to the snippet we provided you with.
 
 If you see our snippet in your source code and it is exactly the same snippet as the one we provided, it means Plausible is installed.
@@ -130,10 +124,10 @@ If you see our snippet in your source code and it is exactly the same snippet as
 
 You can also use your browser's developer tools to look for the Plausible script or any errors related to your Plausible integration.
 
-1. Visit your home page or any other page on your site where Plausible is installed. 
+1. Visit your home page or any other page on your site where Plausible is installed.
 2. Right-click anywhere on your page and click "**Inspect**" (the wording may vary depending on your web browser) to open the developer tools. Alternatively, press the key `F12` on Firefox or Chrome or `Option+Command+i` on Safari.
 3. Look into the "**Console**" tab in the developer tools for any errors related to Plausible. It may give you some insights into what's going on through the error code it provides. If you see an error related to the Plausible script, it means that something's not right with your implementation.
-4. Then click on the "**Network**" tab in the developer tools. It will be empty, so you would need to reload your page. After you refresh the page, you will start seeing some data in the "**Network**" tab. You should see the `script.js` script from the Plausible domain `plausible.io` in the list. The Plausible script should display status 200.
+4. Then click on the "**Network**" tab in the developer tools. It will be empty, so you would need to reload your page. After you refresh the page, you will start seeing some data in the "**Network**" tab. You should see the a script from the Plausible domain `plausible.io` in the list, starting with `s-`. The Plausible script should display status 200.
 
 <img alt="Ensure that the Plausible Analytics script is loading in the 'Network' tab" src={useBaseUrl('img/network-check-if-plausible-is-working.png')} />
 
