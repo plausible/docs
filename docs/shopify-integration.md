@@ -8,7 +8,7 @@ Here's how to add Plausible Analytics to your Shopify store and set up the track
 
 ## Add Plausible snippet to Shopify
 
-* Log in to your Shopify account and click on Sales Channels > Online Store > Themes in the left-hand side menu.  
+* Log in to your Shopify account and click on Sales Channels > Online Store > Themes in the left-hand side menu.
 
 * Click on the icon with three dots next to your current theme and choose "**Edit code**" from the drop-down menu.
 
@@ -22,7 +22,7 @@ Here's how to add Plausible Analytics to your Shopify store and set up the track
 
 ## Track checkouts and revenue attribution
 
-Even after having added the Plausible snippet into your `theme.liquid` file, checkout pages such as `/checkouts/cn/:id/review` or `/checkouts/cn/:id/thank-you` will not be tracked yet. That's because they're not using the same theme layout. To enable pageview tracking on checkout pages, you need to create a custom pixel. The same pixel can also be used for tracking Shopify's customer events (e.g. `"product_added_to_cart"`, `"checkout_completed"`, etc...) with revenue attribution and custom properties. 
+Even after having added the Plausible snippet into your `theme.liquid` file, checkout pages such as `/checkouts/cn/:id/review` or `/checkouts/cn/:id/thank-you` will not be tracked yet. That's because they're not using the same theme layout. To enable pageview tracking on checkout pages, you need to create a custom pixel. The same pixel can also be used for tracking Shopify's customer events (e.g. `"product_added_to_cart"`, `"checkout_completed"`, etc...) with revenue attribution and custom properties.
 
 To create the custom pixel, follow these steps:
 
@@ -77,7 +77,7 @@ Track pageviews on checkout page paths such as:
 // Track pageviews on checkout pages
 analytics.subscribe('page_viewed', async (event) => {
   const loc = event.context.document.location;
-  
+
   // This "if" condition makes sure only checkout paths are tracked.
   // The "page_viewed" customer event is also fired for other pages,
   // but those should be tracked by the global snippet installed in
@@ -90,7 +90,7 @@ analytics.subscribe('page_viewed', async (event) => {
 
 You can then group all visits to checkout pages into one set of pages in your Plausible dashboard to better analyze your marketing campaigns and performance.
 
-Click on the "**Filter**" button on the top right of your dashboard and then choose "**Page**". Here you can combine URLs to analyze them as one group. Filter by "**contains**" `thank_you` to combine all the purchase confirmations or by "**contains**" `checkouts` to group all the checkouts. 
+Click on the "**Filter**" button on the top right of your dashboard and then choose "**Page**". Here you can combine URLs to analyze them as one group. Filter by "**contains**" `thank_you` to combine all the purchase confirmations or by "**contains**" `checkouts` to group all the checkouts.
 
 Doing this will segment your dashboard by the traffic that went through the checkout process and successfully placed orders. You'll be able to see the referral sources and landing pages that drove the most conversions. You'll also be able to see the location and device details of the buyers too.
 
@@ -100,14 +100,14 @@ If you'd like to see these grouped order confirmations or checkout page visits p
 
 ### Track started checkouts
 
-Send a custom event called "**Begin Checkout**" to Plausible every time the checkout process is started. The total price of the shopping cart will be recorded under this event. 
+Send a custom event called "**Begin Checkout**" to Plausible every time the checkout process is started. The total price of the shopping cart will be recorded under this event.
 
 ```javascript
 // Track started checkouts
 analytics.subscribe('checkout_started', async (event) => {
   const amount = event.data.checkout.totalPrice.amount;
   const currency = event.data.checkout.currencyCode;
-  
+
   plausible('Begin Checkout', {
     revenue: {amount: amount, currency: currency},
     u: event.context.document.location.href
@@ -121,14 +121,14 @@ In order to see this information on your Plausible dashboard, you should:
 
 ### Track payment info added during checkout
 
-Send a custom event called "**Add Payment Info**" to Plausible every time payment information is submitted by a customer during the checkout. The total price of the shopping cart will be recorded under this event. 
+Send a custom event called "**Add Payment Info**" to Plausible every time payment information is submitted by a customer during the checkout. The total price of the shopping cart will be recorded under this event.
 
 ```javascript
 // Track payment info added during checkout
 analytics.subscribe('payment_info_submitted', async (event) => {
   const amount = event.data.checkout.totalPrice.amount;
   const currency = event.data.checkout.currencyCode;
-  
+
   plausible('Add Payment Info', {
     revenue: {amount: amount, currency: currency},
     u: event.context.document.location.href
@@ -142,14 +142,14 @@ In order to see this information on your Plausible dashboard, you should:
 
 ### Track completed checkouts (purchases)
 
-Send a custom event called "**Purchase**" to Plausible every time a checkout is completed. The total amount paid by the customer will be recorded under this event. 
+Send a custom event called "**Purchase**" to Plausible every time a checkout is completed. The total amount paid by the customer will be recorded under this event.
 
 ```javascript
 // Track completed checkouts
 analytics.subscribe('checkout_completed', async (event) => {
   const amount = event.data.checkout.totalPrice.amount;
   const currency = event.data.checkout.currencyCode;
-  
+
   plausible('Purchase', {
     revenue: {amount: amount, currency: currency},
     u: event.context.document.location.href
@@ -250,7 +250,7 @@ The `plausible` function takes two arguments:
 1. an event name which can be whatever you like - just make sure to [set up a goal](/custom-event-goals#step-4-create-a-custom-event-goal-in-your-plausible-account) with the same name to see it on your dashboard.
 2. an object where a few options can be passed:
 
-* [Object] `revenue` - allows you to attribute a monetary value to your Plausible event. The object needs to contain two keys: `amount` and `currency`. Note that you can only attribute a single monetary value to one event. The revenue option is ignored until you've [set up a revenue goal](ecommerce-revenue-tracking#step-3-add-a-new-custom-event-and-specify-the-currency-of-your-choice) in your Plausible dashboard. That's because currency conversion into your desired reporting currency happens at the time of receiving the event. 
+* [Object] `revenue` - allows you to attribute a monetary value to your Plausible event. The object needs to contain two keys: `amount` and `currency`. Note that you can only attribute a single monetary value to one event. The revenue option is ignored until you've [set up a revenue goal](ecommerce-revenue-tracking#step-3-add-a-new-custom-event-and-specify-the-currency-of-your-choice) in your Plausible dashboard. That's because currency conversion into your desired reporting currency happens at the time of receiving the event.
 * [Object] `props` - here you can pass any value under any key you'd like. The key you choose will become the name of the custom property that you need to [configure in your site settings](/custom-props/props-dashboard#1-configure-custom-properties-in-your-site-settings). Note that you are responsible for ensuring that no [personally identifiable information](/custom-props/introduction#personally-identifiable-information) is tracked.
 * [String] `u` - this field stands for the `url` of the page where this customer event happened. You will most likely want to just keep it the same as in the example. It's important to always pass this option because otherwise the url will become the location of the pixel which has nothing to do with the real location where the event happened.
 
@@ -264,25 +264,17 @@ The `plausible` function takes two arguments:
 
 Here's how you can track particular form submissions and button clicks on your Shopify site:
 
-### 1. Enable "Custom events" for your site
-
-You can enable "**Custom events**" as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
-
-### 2. Change the snippet on your site
-
-The tracking snippet changes depending on your selection of optional measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected.
-
-### 3. Find the ID attribute of the form or button you want to track
+### 1. Find the ID attribute of the form or button you want to track
 
 Your form or button element should have an ID attribute assigned by default. You can find this ID by selecting the element you want to track (do make sure you select your form element and not just the "Submit" button) and clicking on the settings gear.
 
 <img alt="Shopify form ID" src={useBaseUrl('img/shopify-form-id.png')} />
 
-### 4. Trigger custom events with JavaScript on your site
+### 2. Trigger custom events with JavaScript on your site
 
 Here's the code you will need to insert in the `<head>` section of the page where the element ID that you want to track is located. You can do this the same way as you've inserted the Plausible snippet into your site.
 
-Make sure to change the `elementId` line in the code below to include the ID attribute of the element you want to track (`ContactForm` in our example). 
+Make sure to change the `elementId` line in the code below to include the ID attribute of the element you want to track (`ContactForm` in our example).
 
 Also do change the `classes` line to include the goal name in this format: `plausible-event-name=Goal+Name`. The goal name is completely up to you. It's the name under which the goal conversions will appear in your Plausible dashboard. We've used `Form+Submit` goal name in our example.
 
@@ -314,7 +306,7 @@ To represent a space character in goal names, you can use a `+` sign. For exampl
 
 Do click on the "**Save**" button to save your changes.
 
-### 5. Create a custom event goal in your Plausible account
+### 3. Create a custom event goal in your Plausible account
 
 When you send custom events to Plausible, they won't show up in your dashboard automatically. You'll have to configure the goal for the conversion numbers to show up.
 
@@ -328,9 +320,9 @@ So in our example where we added a goal name `plausible-event-name=Form+Submit` 
 
 <img alt="Add your custom event goal" src={useBaseUrl('img/form-submission-custom-event-goal-shopify.png')} />
 
-Next, click on the "**Add goal**" button and you'll be taken back to the Goals page. 
+Next, click on the "**Add goal**" button and you'll be taken back to the Goals page.
 
-### 6. Your goal should now be ready and tracking
+### 4. Your goal should now be ready and tracking
 
 Your goal should now be set up. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who triggered the custom event. Goal conversions are listed at the very bottom of the dashboard. The goal will show up in your dashboard as soon as it has been completed at least once.
 
@@ -347,7 +339,7 @@ If you want to trigger multiple custom events on the same site, you don't need t
         },
 		{
       		elementId: 'button-ID',
-            classes: 'plausible-event-name=Button+Click'   
+            classes: 'plausible-event-name=Button+Click'
    		}
     ]
 
