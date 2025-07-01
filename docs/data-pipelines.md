@@ -36,7 +36,7 @@ And thanks to the members of our community, there are also some third-party solu
 
 ## Apple platforms (iOS, iPadOS, macOS, tvOS, etc.)
 
-* [Charsible](https://charsible.app): Charsible is an iOS app offering a range of widgets to help you keep an eye on your Plausible Analytics data wherever you are.
+* [Charsible](https://fruitfulapps.com/charsible): Charsible is an iOS app offering a range of widgets to help you keep an eye on your Plausible Analytics data wherever you are.
 
 * [Numerics Dashboards for Plausible](https://cynapse.com/numerics-integrations/plausible-dashboards/): Track your Plausible KPIs with Numerics Dashboards on your iPhone, iPad, Mac, Apple TV and Apple Watch.
 
