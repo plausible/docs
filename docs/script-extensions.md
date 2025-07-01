@@ -16,7 +16,7 @@ Here's the list of our optional measurements:
 |--------------------------|----------------------------------------------------------------------------------------------------|
 | Outbound links | Automatically [track clicks on outbound links](outbound-link-click-tracking.md)  |
 | File downloads | Automatically [track file downloads](file-downloads-tracking.md)                                   |
-| Form submissions | Automatically [track form submissions](form-submissions-tracking.md) |
+| Form submissions | Automatically [track form submissions](form-submission-tracking.md) |
 
 ## `plausible.init()` configuration
 
@@ -29,7 +29,7 @@ Additionally, `plausible.init()` can be called with different options further en
 | fileDownloads        | `boolean` or `{ fileExtensions }` | `false`                            | Automatically [track file downloads](file-downloads-tracking.md) |
 | outboundLinks        | `boolean`                         | `false`                            | [track clicks on outbound links](outbound-link-click-tracking.md)                        |
 | customProperties     | `object` or `function(eventName)` | `{}`                               | [Add custom props globally](/custom-props/introduction)               |
-| formSubmissions      | `boolean`                         | `false`                            | [Track form submissions](form-submissions-tracking.md)                    |
+| formSubmissions      | `boolean`                         | `false`                            | [Track form submissions](form-submission-tracking.md)                    |
 | captureOnLocalhost   | `boolean`                         | `false`                            | Enables tracking on localhost for dev environments                  |
 | autoCapturePageviews | `boolean`                         | `true`                             | Automatically track pageviews                                       |
 | logging              | `boolean`                         | `true`                             | Enable/disable logging done by script                               |
