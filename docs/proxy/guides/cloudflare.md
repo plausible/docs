@@ -5,9 +5,11 @@ title: Proxying Plausible through Cloudflare
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 You can use Cloudflare Workers to proxy your Plausible Analytics requests. Cloudflare Workers offers free service for up to 100,000 requests per day.
-All you need to set it up is a free Cloudflare account.
+All you need to set it up is a free Cloudflare account. Here's the step-by-step process for creating a proxy. 
 
-Here's the step-by-step process for creating a proxy. It takes only a few minutes and requires no tech know-how or prior experience.
+:::tip Don't want to manage your own proxy? We can handle it for you
+Our managed proxy lets you send analytics through your own domain name as a first-party connection. All you need to do is set up a CNAME record using the instructions we'll send you and update the snippet on your site. We'll take care of everything else. [Contact us for details](https://plausible.io/contact).
+:::
 
 Step 0: Sign up for a free Cloudflare account if you don't have an account already and add your site.
 

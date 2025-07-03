@@ -2,6 +2,10 @@
 title: Proxying Plausible through Deno Deploy
 ---
 
+:::tip Don't want to manage your own proxy? We can handle it for you
+Our managed proxy lets you send analytics through your own domain name as a first-party connection. All you need to do is set up a CNAME record using the instructions we'll send you and update the snippet on your site. We'll take care of everything else. [Contact us for details](https://plausible.io/contact).
+:::
+
 ## Step 1: Deploy proxy code
 
 Start by getting a [Deno Deploy](https://deno.com/deploy) account if you don't have one already.

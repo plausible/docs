@@ -2,6 +2,10 @@
 title: Proxying Plausible through Netlify
 ---
 
+:::tip Don't want to manage your own proxy? We can handle it for you
+Our managed proxy lets you send analytics through your own domain name as a first-party connection. All you need to do is set up a CNAME record using the instructions we'll send you and update the snippet on your site. We'll take care of everything else. [Contact us for details](https://plausible.io/contact).
+:::
+
 ## Step 1: Add URL rewrite rules
 
 If you don't already have a `_redirects` file at the publishing directory of your site, create one. You can learn more about Netlify redirects and rewrites [here](https://docs.netlify.com/routing/redirects/). Here's the setup for proxying Plausible Analytics:

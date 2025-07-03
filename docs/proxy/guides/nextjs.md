@@ -4,6 +4,10 @@ title: Proxying Plausible through Vercel with Next.js
 
 There are two ways you can proxy Plausible through Next.js / Vercel. One is using the next-plausible npm package and the other is using the raw Next.js config. Here are the instructions:
 
+:::tip Don't want to manage your own proxy? We can handle it for you
+Our managed proxy lets you send analytics through your own domain name as a first-party connection. All you need to do is set up a CNAME record using the instructions we'll send you and update the snippet on your site. We'll take care of everything else. [Contact us for details](https://plausible.io/contact).
+:::
+
 ## Using next-plausible
 
 [next-plausible](https://github.com/4lejandrito/next-plausible) is an npm package that makes it easier to include Plausible Analytics in your Next.js site.

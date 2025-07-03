@@ -4,9 +4,11 @@ title: Proxying Plausible through Akamai
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Proxying Plausible through your own property on Akamai is easy, fast and privacy-friendly. 
+Here's how to proxy Plausible through your own property on Akamai. The instructions assume you use the default paths ``/js/script.js`` and ``/api/event``. You can change these based on your preferences.
 
-The instructions assume you use the default paths ``/js/script.js`` and ``/api/event``. You can change these based on your preferences.
+:::tip Don't want to manage your own proxy? We can handle it for you
+Our managed proxy lets you send analytics through your own domain name as a first-party connection. All you need to do is set up a CNAME record using the instructions we'll send you and update the snippet on your site. We'll take care of everything else. [Contact us for details](https://plausible.io/contact).
+:::
 
 ## Step 1: Proxy Analytics Script
 

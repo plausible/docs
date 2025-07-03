@@ -2,8 +2,11 @@
 title: Proxying Plausible through Apache HTTP Server
 ---
 
-If you're already running Apache HTTP Server as your main web server or reverse
-proxy, you can also configure it to proxy your analytics. Start by adjusting your configuration as shown in the next step.
+If you're already running Apache HTTP Server as your main web server or reverse proxy, you can also configure it to proxy your analytics. Start by adjusting your configuration as shown in the next step.
+
+:::tip Don't want to manage your own proxy? We can handle it for you
+Our managed proxy lets you send analytics through your own domain name as a first-party connection. All you need to do is set up a CNAME record using the instructions we'll send you and update the snippet on your site. We'll take care of everything else. [Contact us for details](https://plausible.io/contact).
+:::
 
 ## Step 1: Enable the required modules
 
