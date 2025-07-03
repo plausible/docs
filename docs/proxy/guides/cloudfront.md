@@ -6,6 +6,10 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 You can use CloudFront to proxy your Plausible Analytics requests. Here's the step-by-step process for creating a proxy.
 
+:::tip Don't want to manage your own proxy? We can handle it for you
+Our managed proxy lets you send analytics through your own domain name as a first-party connection. All you need to do is set up a CNAME record using the instructions we'll send you and update the snippet on your site. We'll take care of everything else. [Contact us for details](https://plausible.io/contact).
+:::
+
 Step 0: Sign up for a free AWS account if you don't have an account already and create a CloudFront distribution. 
 
 ## Step 1: Create new origin
