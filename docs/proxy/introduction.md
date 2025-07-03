@@ -38,9 +38,7 @@ This is the simplest way to install Plausible Analytics but it will also be bloc
 
 ### Are you concerned about missing data?
 
-Proxy our script. This is the option for those who want to get more accurate stats. With our step-by-step instructions, the setup is straightforward even for those who don't have any coding experience.
-
-A proxy basically maps certain URLs from your domain to the Plausible domain:
+Proxy our script. This is the option for those who want to get more accurate stats. A proxy basically maps certain URLs from your domain to the Plausible domain:
 
 ```
 https://<yourdomain.com>/js/script.js -> https://plausible.io/js/script.js
@@ -49,18 +47,33 @@ https://<yourdomain.com>/api/event    -> https://plausible.io/api/event
 
 When the browser requests a file at `https://yourdomain.com/js/script.js` it will actually be fetched from `https://plausible.io/js/script.js`. The analytics will work exactly the same but the script will be served without being flagged.
 
-We used to have a CNAME/DNS custom domain approach in the past, but it's no longer effective, so we now recommend a proxy as it's a much more flexible and powerful solution.
+## How to proxy requests to Plausible
 
-There are many ways you can proxy requests to Plausible depending on your hosting situation. We've divided our guides to *standalone* and *integrated* proxies. A standalone proxy can be set up on its own and it does not matter what hosting provider or tech stack you are using. Integrated proxy setups are dependent on how you've deployed your app.
+You can proxy requests to Plausible in several ways depending on your setup. If you'd rather not handle it yourself, we also offer a managed proxy option.
 
-Standalone proxy setups:
+### Managed proxy 
+
+Don't want to manage your own proxy? We can handle it for you. Our managed proxy lets you send analytics through your own domain name as a first-party connection. This helps bypass adblockers and count more traffic without any setup or maintenance on your end. 
+
+All you need to do is set up a CNAME record using the instructions we'll send you and update the snippet on your site. We'll take care of everything else.
+
+Managed proxy is available on our Enterprise plans. [Contact us for details](https://plausible.io/contact).
+
+### Standalone proxy
+
+A standalone proxy works with any tech stack or hosting provider. You're responsible for setting it up and keeping it running. You can use one of these options:
+
 * [Akamai](/docs/proxy/guides/akamai)
 * [Cloudflare Workers](/docs/proxy/guides/cloudflare)
 * [Fastly](/docs/proxy/guides/fastly)
 * [CloudFront](/docs/proxy/guides/cloudfront)
 * [Google Cloud Platform](https://github.com/mtlynch/plausible-proxy)
+* [How to send events directly to our API](/docs/events-api)
 
-Integrated proxy setups:
+### Integrated proxy
+
+These setups depend on how your app is deployed. You'll need to handle the proxy setup and maintenance yourself. Here are the available options:
+
 * [WordPress](/docs/proxy/guides/wordpress)
 * [Netlify](/docs/proxy/guides/netlify)
 * [Vercel](/docs/proxy/guides/vercel)
@@ -70,9 +83,3 @@ Integrated proxy setups:
 * [Apache](/docs/proxy/guides/apache)
 * [Caddy](/docs/proxy/guides/caddy)
 * [Django](https://github.com/imankulov/django-plausible-proxy)
-
-Events API as a server side alternative:
-* [How to send events directly to our API](/docs/events-api)
-
-NPM package as another alternative:
-* [NPM standalone package](https://github.com/plausible/plausible-tracker).
