@@ -21,7 +21,6 @@ Log in to your Plausible Analytics account and in the top right menu, click on y
 
 <img alt="Create a team button" src={useBaseUrl('img/create-team-button.png')} />
 
-
 ### Inviting team members and assigning roles
 
 <img alt="Invite team member" src={useBaseUrl('img/invite-team-member.png')} />
@@ -72,6 +71,12 @@ Note that you need to be an owner or an admin of a team to remove team members.
 * You can change the name of a team within the "**General**" option of the "**Team Settings**"
 * Enter the new name for the team and click on the "**Change Name**" button
 
+### Leaving a team
+
+* In the top right menu, click on your account name, make sure you have chosen the team you'd like to leave and then click on the "**Team Settings**"
+* To remove yourself from a team, go to the "**General**" option of the "**Team Settings**"
+* Click on the "**Leave Team**" button. Note that after leaving a team, you won't have access to the dashboards and collected stats of the sites that the team owns
+
 ### Deleting a team
 
 * In the top right menu, click on your account name, make sure you have chosen the team you'd like to delete and then click on the "**Team Settings**"
@@ -81,12 +86,6 @@ Note that you need to be an owner or an admin of a team to remove team members.
 Note that you need to be an owner to delete a team. 
 
 <img alt="Delete team" src={useBaseUrl('img/delete-team.png')} />
-
-### Leaving a team
-
-* In the top right menu, click on your account name, make sure you have chosen the team you'd like to leave and then click on the "**Team Settings**"
-* To remove yourself from a team, go to the "**General**" option of the "**Team Settings**"
-* Click on the "**Leave Team**" button. Note that after leaving a team, you won't have access to the dashboards and collected stats of the sites that the team owns
 
 ## Working with external collaborators
 
