@@ -11,7 +11,7 @@ SSO gives a way to access Plausible without having to create a separate account 
 Our SSO implementation is SAML 2.0 compliant and user accounts are provisioned just in time. It should be compatible with almost every identity provider as SAML 2.0 protocol is widely supported.
 
 :::tip What is SAML?
-**Security Assertion Markup Language (SAML)** is an XML-based protocol for secure exchange of information between an authority (Identity Provider or IdP) and a consumer (Service Provider or SP - in this case, us).
+**Security Assertion Markup Language (SAML)** is an XML-based protocol for secure exchange of information between an authority (Identity Provider or IdP) and a consumer (Service Provider or SP - in this case, Plausible).
 :::
 
 ## How it Works
@@ -85,7 +85,7 @@ Step-by-step instructions for commonly used identity providers:
 - Okta
 - Microsoft Entra (Azure)
 
-#### Configuring Google Workspaces
+### Configuring Google Workspaces
 
 TBD
 
@@ -152,3 +152,7 @@ Once all conditions are met and you enable enforcement, logging in through ident
 :::tip Owners can still use standard login in case of emergency
 Providing this fallback is important to provide a way to resolve issues with misconfigured or malfunctioning identity provider. Please note, however, that Owners must still log in at least once through identity provider in order to access the team with "**Force Single Sign-On**" enabled.
 :::
+
+## SSO Policy
+
+## Migrating Team to SSO
