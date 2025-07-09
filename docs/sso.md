@@ -125,6 +125,8 @@ TBD
 
 From that point on, SSO should be fully functional and it should be possible to log in using an identity email configured at identity provider.
 
+  <img alt="Standard login form with a link to SSO login" src={useBaseUrl('img/sso-standard-login.png')} />
+
 ### Enabling SSO Enforcement
 
 While this step is not strictly necessary to use SSO, it's pretty crucial in ensuring only members provisioned through identity provider have access to the team.
