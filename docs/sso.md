@@ -36,7 +36,7 @@ Once "Force SSO" is enabled, only SSO users are allowed to access the team. If t
 
 There's an exception made for Owners who keep the ability to log in using e-mail and password even after logging in through identity provider for troubleshooting configuration or malfunctioning identity provider. They, however, are forced to enable 2FA even before "Force SSO" can be enabled for improved security.
 
-With SSO not being enforced right away it's possible to configure and transition existing team to SSO without risking major disruptions.
+With SSO not being enforced right away it's possible to configure and transition an existing team to SSO without risking major disruptions.
 
 ### Other
 
@@ -157,4 +157,4 @@ Providing this fallback is important to provide a way to resolve issues with mis
 
 ## SSO Policy
 
-## Migrating Team to SSO
+## Transitioning Team to SSO
