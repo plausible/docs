@@ -73,7 +73,7 @@ The configuration procedure varies significantly from provider to provider. We p
 When setting up SAML SSO for any other identity provider, please keep the following in mind:
 
 - The `NameID` attribute must be a persistent and unique value that **does not change** between user sessions. This value identifies the user. This is the default for most identity provider services. For self-hosted IdP instances, you have to ensure it's configured properly.
-- **ACS URL / SSO URL / Reply URL**: Enter the URL you have obtained in the previous stage. This URL is unique to your workspace and is an entry point for accepting identity information obtained from identity provider. Some identity providers also call it **Consumer URL**
+- **ACS URL / Single Sign-On URL / Reply URL**: Enter the URL you have obtained in the previous stage. This URL is unique to your workspace and is an entry point for accepting identity information obtained from identity provider. Some identity providers also call it **Consumer URL**
 - **Entity ID / Issuer / Identifier**: Enter the ID you have obtained in the previous stage. This is a unique value identifying your team. Some identity providers also call it **Audience** or **SP Entity ID**
 - **Attributes**: Some identity providers also expose them under **Attributes & Claims** or **Attributes Statements**. Make sure you have create and properly mapped following attributes in your identity provider:
   - `email`
@@ -98,6 +98,10 @@ TBD
 - Fill the form with parameters obtained after configuring identity provider and click "**Save**"
 
   <img alt="SSO configuration parameters for SP" src={useBaseUrl('img/sso-idp-config-params.png')} />
+
+  :::tip Make sure to not mix up the inputs!
+  It's pretty common for "**SSO URL / Sign-on URL / Login URL**" and "**Entity ID / Issuer Identifier**" to contain very similar URLs. It might be easy to mistake one for the other. This can result in weird behaviour when trying to log in via SSO login form, like browser downloading a file instead of redirecting to identity provider's portal.
+  :::
 
 - Enter domain name used in e-mail addresses of identities that should be allowed to log in to this team through SSO and click "**Add Domain**"
 
