@@ -20,32 +20,32 @@ Once SSO is configured and prospective user has a valid identity created at iden
 
 <img alt="SSO Login Form" src={useBaseUrl('img/sso-login-form.png')} />
 
-After inputting the e-mail, they are redirected to identity provider's portal. The provider validates their identity if they haven't authenticated there yet or uses the already validated identity from logged in session. The identity information (e-mail, name) is then securely sent back to Plausible. That's when the user is provisioned in Plausible.
+After entering the e-mail, they are redirected to identity provider's portal. The provider validates their identity if they haven't logged in there yet or uses an already validated identity from an existing session. The identity information (e-mail, name) is then securely sent back to Plausible. That's when the user is provisioned in Plausible.
 
 ### Provisioning
 
-When somebody logs in, we first look for an existing member of a team with matching e-mail and configured SSO integration. If a match is found, we log them in as that user. If not, we create a new user on the fly and add them as a member in a team with a configured SSO domain matching email's domain. The member's role will have a default team role assigned. The default role is Viewer, but can be changed.
+When somebody logs in, we first look for an existing member of a team with matching e-mail and configured SSO integration. If a match is found, we log them in as that user. If not, we create a new user on the fly and add them as a member in a team with a configured SSO domain matching email's domain. The member's role will have a default team role assigned. The default role is Viewer but can be changed.
 
-User logging in through identity provider can only belong to a single team. Matching team with identity is done by looking up identity's email domain among configured SSO domains. Every SSO domain must be unique - the same domain cannot be associated with more than one team at once.
+User logging in through identity provider can only be a member in a single team. Matching team with identity is done by looking up identity's email domain among configured SSO domains. Every SSO domain must be unique - the same domain cannot be associated with more than one team at once.
 
 ### Security
 
-When SSO is configured for the team for the first time, existing team members can still access it using e-mail and password. However, once they log in using identity provider, their account becomes SSO-only and from that point on they can no longer access Plausible using standard credentials. Standard and SSO users can co-exist on the same team as long as "Force SSO" configuration option is disabled.
+When SSO is configured for the team for the first time, existing team members can still access it using e-mail and password. However, once they log in using identity provider, their account becomes SSO-only and from that point on they can no longer access Plausible using standard credentials. Standard and SSO users can co-exist on the same team as long as "Force Single Sign-On" configuration option is disabled.
 
-Once "Force SSO" is enabled, only SSO users are allowed to access the team. If there are still standard users among members, they are locked out of the team until they provision their account through identity provider.
+Once "Force Single Sign-On" is enabled, only SSO users are allowed to access the team. If there are still standard users among members, they are locked out of the team until they provision their account through identity provider.
 
-There's an exception made for Owners who keep the ability to log in using e-mail and password even after logging in through identity provider for troubleshooting configuration or malfunctioning identity provider. They, however, are forced to enable 2FA even before "Force SSO" can be enabled for improved security.
+There's an exception made for Owners who keep the ability to log in using e-mail and password even after logging in through identity provider for troubleshooting configuration or a malfunctioning identity provider. They, however, are forced to enable 2FA even before "Force SSO" can be enabled for improved security.
 
-With SSO not being enforced right away it's possible to configure and transition an existing team to SSO without risking major disruptions.
+With SSO not being enforced right away, it's possible to configure and transition an existing team to SSO without risking major disruptions.
 
 ### Other
 
 - **Changing name and e-mail of your SSO account**: The name and e-mail address can only be updated via identity provider.
-- **SSO initiated from IdP**: Identity providers often support starting login directly from their portal. While this is sometimes convenient, we explicitly do not support it for security reasons. Users must always start signing in from Plausible's login form.
+- **SSO initiated from IdP**: Identity providers often support starting login directly from their portal. While this is sometimes convenient, we explicitly do not support it for security reasons. Users must always start logging in from Plausible's login form.
 
 ## Configuring SSO
 
-Before starting configuration, make sure you have created a team and subscribed it to a plan enabling SSO. 
+Before starting configuration, make sure you have created a team and subscribed it to a plan with SSO enabled. 
 
 The configuration process consists of four major stages:
 
@@ -64,7 +64,7 @@ The configuration process consists of four major stages:
 
   <img alt="SSO configuration parameters for IdP" src={useBaseUrl('img/sso-sp-config-params.png')} />
 
-- Open identity provider's dashboard and follow further instructions
+- Open identity provider's administrative dashboard and follow further instructions
 
 ### Configuring SAML SSO in Identity Provider
 
@@ -75,7 +75,7 @@ When setting up SAML SSO for any other identity provider, please keep the follow
 - The `NameID` attribute must be a persistent and unique value that **does not change** between user sessions. This value identifies the user. This is the default for most identity provider services. For self-hosted IdP instances, you have to ensure it's configured properly.
 - **ACS URL / Single Sign-On URL / Reply URL**: Enter the URL you have obtained in the previous stage. This URL is unique to your workspace and is an entry point for accepting identity information obtained from identity provider. Some identity providers also call it **Consumer URL**.
 - **Entity ID / Issuer / Identifier**: Enter the ID you have obtained in the previous stage. This is a unique value identifying your team. Some identity providers also call it **Audience** or **SP Entity ID**
-- **Attributes**: Some identity providers also expose them under **Attributes & Claims** or **Attributes Statements**. Make sure you have create and properly mapped following attributes in your identity provider:
+- **Attributes**: Some identity providers also expose them under **Attributes & Claims** or **Attributes Statements**. Make sure you have created and properly mapped following attributes in your identity provider:
   - `email`
   - at least one of `first_name` or `last_name`
 
@@ -141,7 +141,7 @@ Step-by-step instructions for commonly used identity providers:
   <img alt="SSO configuration parameters for SP" src={useBaseUrl('img/sso-idp-config-params.png')} />
 
   :::tip Make sure to not mix up the inputs!
-  It's pretty common for "**SSO URL / Sign-on URL / Login URL**" and "**Entity ID / Issuer Identifier**" to contain very similar URLs. It might be easy to mistake one for the other. This can result in weird behaviour when trying to log in via SSO login form, like browser downloading a file instead of redirecting to identity provider's portal
+  It's pretty common for "**SSO URL / Sign-on URL / Login URL**" and "**Entity ID / Issuer Identifier**" to contain very similar URLs. It's easy to mistake one for the other. This can result in weird behaviour when trying to log in via SSO login form, like browser downloading a file instead of redirecting to identity provider's portal.
   :::
 
 - Enter domain name used in e-mail addresses of identities that should be allowed to log in to this team through SSO and click "**Add Domain**"
@@ -183,7 +183,7 @@ There are conditions that have to be met before "Force Single Sing-On" can be e
 - All Owners must have 2FA enabled
 
 :::tip What if not all Owners can enable 2FA at the time of setup?
-It might happen in a team with multiple Owners that some might be away and not able to enable 2FA right away. One way to resolve this is temporarily changing their role to "**Admin**". Once they are back, they can log in through identity provider, enable 2FA and ask to have their role changed back to "**Owner**".
+It might happen in a team with multiple Owners that some of them might be away and not able to enable 2FA right away. One way to resolve this is temporarily changing their role to "**Admin**". Once they are back, they can log in through identity provider, enable 2FA and ask to have their role changed back to "**Owner**".
 :::
 
 If any of those conditions are not met, the switch is disabled and the reason is outlined once you hover over it.
@@ -209,12 +209,12 @@ Following settings are available:
 - **Session timeout (minutes)**: Session timeout for users logged in through SSO. Maximum is 12 hours. Default is 360 minutes (6 hours).
 
 :::tip Session timeouts in Plausible and in identity provider are different things
-SSO account session timeout in Plausible is always counted relative to the time of last login. User activity does not prolong it like in the case of standard account. However, it does not mean the user has to manually log in again after it expires. Once the timeout is reached, Plausible automatically redirects to identity provider. If the session at identity provider is still valid, the user is automatically redirected back to Plausible, to the last page they visited. Session timeout in Plausible is usually much shorter than the session timeout in identity provider. This helps ensuring the user state in Plausible is up to date with the state in identity provider. When, for instance, identity is deleted in identity provider, the respective user account in Plausible will keep working only for the duration of the Plausible session.
+SSO account session timeout in Plausible is always counted relative to the time of last login. User activity does not extend it like in the case of standard account. However, it does not mean the user has to manually log in again after it expires. Once the timeout is reached, Plausible automatically redirects to identity provider. If the session at identity provider is still valid, the user is automatically redirected back to Plausible, to the last page they visited. Session timeout in Plausible is usually much shorter than the session timeout in identity provider. This helps ensuring the user state in Plausible is up to date with the state in identity provider. When, for instance, the identity is deleted in identity provider, the respective user account in Plausible will keep working, at most, only for the duration of the Plausible session.
 :::
 
 ## Team Management
 
-- Team members who have already provisioned their accounts through SSO have are distinctly labeled in members list under "**Team Settings**"
+- Team members who have already provisioned their accounts through SSO are distinctly labeled as such on members list under "**Team Settings**"
 
 <img alt="Team members list with labels" src={useBaseUrl('img/sso-team-members-list.png')} />
 
