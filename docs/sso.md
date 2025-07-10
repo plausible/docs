@@ -73,7 +73,7 @@ The configuration procedure varies significantly from provider to provider. We p
 When setting up SAML SSO for any other identity provider, please keep the following in mind:
 
 - The `NameID` attribute must be a persistent and unique value that **does not change** between user sessions. This value identifies the user. This is the default for most identity provider services. For self-hosted IdP instances, you have to ensure it's configured properly.
-- **ACS URL / Single Sign-On URL / Reply URL**: Enter the URL you have obtained in the previous stage. This URL is unique to your workspace and is an entry point for accepting identity information obtained from identity provider. Some identity providers also call it **Consumer URL**
+- **ACS URL / Single Sign-On URL / Reply URL**: Enter the URL you have obtained in the previous stage. This URL is unique to your workspace and is an entry point for accepting identity information obtained from identity provider. Some identity providers also call it **Consumer URL**.
 - **Entity ID / Issuer / Identifier**: Enter the ID you have obtained in the previous stage. This is a unique value identifying your team. Some identity providers also call it **Audience** or **SP Entity ID**
 - **Attributes**: Some identity providers also expose them under **Attributes & Claims** or **Attributes Statements**. Make sure you have create and properly mapped following attributes in your identity provider:
   - `email`
@@ -87,7 +87,48 @@ Step-by-step instructions for commonly used identity providers:
 
 ### Configuring Google Workspaces
 
-TBD
+- Sign in to your Google Workspace Admin console as an Admin
+- Go to **Apps** > **Web and mobile apps**
+
+  <img alt="Google Workspace apps list" src={useBaseUrl('img/sso-google-apps-list.png')} />
+
+- Click **Add app** > **Add custom SAML app**
+
+  <img alt="Google Workspace apps list add custom SAML app" src={useBaseUrl('img/sso-google-apps-list-add.png')} />
+
+- Put "Plausible" in the App name field, optionally upload a logo and click "**Continue**"
+
+  <img alt="Google Workspace app details" src={useBaseUrl('img/sso-google-app-details.png')} />
+
+- Skip the next step by clicking "**Continue**" again
+
+  <img alt="Google Workspace IdP details to skip" src={useBaseUrl('img/sso-google-idp-details-skip.png')} />
+
+- Put **ACS URL** and **Entity ID** obtained when [Initiating SSO Setup in Plausible](#initiating-sso-setup-in-plausible) in respective inputs, tick **Signed response** checkbox, leave **Name ID** configuration as is (format should be "Unspecified" and NameID should be "Basic Information > Primary email") and click "**Continue**"
+
+  <img alt="Google Workspace Service Provider details" src={useBaseUrl('img/sso-google-sp-details.png')} />
+
+- Click "**Add mapping**" three times and set the following mappings:
+  - Basic Information > First name: `first_name`
+  - Basic Information > Last name: `last_name`
+  - Basic Information > Primary email: `email`
+
+  <img alt="Google Workspace attributes mapping" src={useBaseUrl('img/sso-google-mapping.png')} />
+
+- Click "**Finish**"
+- Click on "**User access**" card
+
+  <img alt="Google Workspace user access card" src={useBaseUrl('img/sso-google-user-access-card.png')} />
+
+- Either pick "**ON for everyone**" or enable access for select groups and click "**Save**"
+
+  <img alt="Google Workspace user access config" src={useBaseUrl('img/sso-google-user-access.png')} />
+
+- Go to **Security** > **Authentication** > **SSO with SAML applications**
+
+  <img alt="Google Workspace IdP config" src={useBaseUrl('img/sso-google-idp-config.png')} />
+
+- Keep this page open while moving on to [Finishing SAML SSO Setup in Plausible](#finishing-saml-sso-setup-in-plausible)
 
 ### Finishing SAML SSO Setup in Plausible
 
@@ -100,7 +141,7 @@ TBD
   <img alt="SSO configuration parameters for SP" src={useBaseUrl('img/sso-idp-config-params.png')} />
 
   :::tip Make sure to not mix up the inputs!
-  It's pretty common for "**SSO URL / Sign-on URL / Login URL**" and "**Entity ID / Issuer Identifier**" to contain very similar URLs. It might be easy to mistake one for the other. This can result in weird behaviour when trying to log in via SSO login form, like browser downloading a file instead of redirecting to identity provider's portal.
+  It's pretty common for "**SSO URL / Sign-on URL / Login URL**" and "**Entity ID / Issuer Identifier**" to contain very similar URLs. It might be easy to mistake one for the other. This can result in weird behaviour when trying to log in via SSO login form, like browser downloading a file instead of redirecting to identity provider's portal
   :::
 
 - Enter domain name used in e-mail addresses of identities that should be allowed to log in to this team through SSO and click "**Add Domain**"
@@ -111,7 +152,7 @@ TBD
 
   <img alt="Verifying SSO domain" src={useBaseUrl('img/sso-verify-domain.png')} />
 
-- Scroll to "**SSO Domains**" and wait until "**Status**" changes to "validated".
+- Scroll to "**SSO Domains**" and wait until "**Status**" changes to "validated"
 
   <img alt="Pending SSO domain" src={useBaseUrl('img/sso-domains-table-pending.png')} />
 
@@ -157,4 +198,16 @@ Providing this fallback is important to provide a way to resolve issues with mis
 
 ## SSO Policy
 
-## Transitioning Team to SSO
+SSO policy can be configured from "**Configuration**" section of "**Single Sign-On**" under "**Team Settings**".
+
+<img alt="SSO policy with force SSO disabled" src={useBaseUrl('img/sso-policy-disabled.png')} />
+
+Following settings are available:
+
+- **Force Single Sign-On**: Whether to restrict access to the team only for users logging in through SSO. You can read more about it at [Enabling SSO Enforcement](#enabling-sso-enforcement). Disabled by default.
+- **Default role**: The team role assigned to members who log in through SSO for the first time and don't have a Plausible account yet. Default is **Viewer**.
+- **Session timeout (minutes)**: Session timeout for users logged in through SSO. Maximum is 12 hours. Default is 360 minutes (6 hours).
+
+:::tip Session timeouts in Plausible and in identity provider are different things
+SSO account session timeout in Plausible is always counted relative to the time of last login. User activity does not prolong it like in the case of standard account. However, it does not mean the user has to manually log in again after it expires. Once the timeout is reached, Plausible automatically redirects to identity provider. If the session at identity provider is still valid, the user is automatically redirected back to Plausible, to the last page they visited. Session timeout in Plausible is usually much shorter than the session timeout in identity provider. This helps ensuring the user state in Plausible is up to date with the state in identity provider. When, for instance, identity is deleted in identity provider, the respective user account in Plausible will keep working only for the duration of the Plausible session.
+:::
