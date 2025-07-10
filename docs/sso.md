@@ -211,3 +211,13 @@ Following settings are available:
 :::tip Session timeouts in Plausible and in identity provider are different things
 SSO account session timeout in Plausible is always counted relative to the time of last login. User activity does not prolong it like in the case of standard account. However, it does not mean the user has to manually log in again after it expires. Once the timeout is reached, Plausible automatically redirects to identity provider. If the session at identity provider is still valid, the user is automatically redirected back to Plausible, to the last page they visited. Session timeout in Plausible is usually much shorter than the session timeout in identity provider. This helps ensuring the user state in Plausible is up to date with the state in identity provider. When, for instance, identity is deleted in identity provider, the respective user account in Plausible will keep working only for the duration of the Plausible session.
 :::
+
+## Team Management
+
+- Team members who have already provisioned their accounts through SSO have are distinctly labeled in members list under "**Team Settings**"
+
+<img alt="Team members list with labels" src={useBaseUrl('img/sso-team-members-list.png')} />
+
+- All team members' active SSO sessions can be viewed and optionally logged out in "**Sessions**" section of "**Single Sign-On**" under "**Team Settings**"
+
+<img alt="SSO sessions" src={useBaseUrl('img/sso-sessions.png')} />
