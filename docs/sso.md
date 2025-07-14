@@ -16,7 +16,7 @@ Our SSO implementation is SAML 2.0 compliant and user accounts are provisioned j
 
 ## How it Works
 
-Once SSO is configured and prospective user has a valid identity created at identity provider of team's choice, they can log in using a dedicated login form. 
+Once SSO is configured and prospective user has a valid identity created at identity provider of team's choice, they can log in using a dedicated login form.
 
 <img alt="SSO Login Form" src={useBaseUrl('img/sso-login-form.png')} />
 
@@ -47,7 +47,7 @@ With SSO not being enforced right away, it's possible to configure and transitio
 
 ## Configuring SSO
 
-Before starting configuration, make sure you have created a team and subscribed it to a plan with SSO enabled. 
+Before starting configuration, make sure you have created a team and subscribed it to a plan with SSO enabled.
 
 The configuration process consists of four major stages:
 
@@ -111,9 +111,12 @@ Step-by-step instructions for commonly used identity providers:
   <img alt="Google Workspace Service Provider details" src={useBaseUrl('img/sso-google-sp-details.png')} />
 
 - Click "**Add mapping**" three times and set the following mappings:
+
   - Basic Information > First name: `first_name`
   - Basic Information > Last name: `last_name`
   - Basic Information > Primary email: `email`
+
+  The configured attributes should look like below:
 
   <img alt="Google Workspace attributes mapping" src={useBaseUrl('img/sso-google-mapping.png')} />
 
@@ -168,7 +171,7 @@ Step-by-step instructions for commonly used identity providers:
 
 From that point on, SSO should be fully functional and it should be possible to log in using an identity email configured at identity provider.
 
-  <img alt="Standard login form with a link to SSO login" src={useBaseUrl('img/sso-standard-login.png')} />
+<img alt="Standard login form with a link to SSO login" src={useBaseUrl('img/sso-standard-login.png')} />
 
 ### Enabling SSO Enforcement
 
@@ -176,7 +179,7 @@ While this step is not strictly necessary to use SSO, it's pretty crucial in ens
 
 SSO enforcement can be enabled from "**SSO Policy**" section of SSO configuration.
 
-  <img alt="SSO policy with force SSO disabled" src={useBaseUrl('img/sso-policy-disabled.png')} />
+<img alt="SSO policy with force SSO disabled" src={useBaseUrl('img/sso-policy-disabled.png')} />
 
 There are conditions that have to be met before "Force Single Sing-On" can be enabled though.
 
@@ -190,7 +193,7 @@ It might happen in a team with multiple Owners that some of them might be away a
 
 If any of those conditions are not met, the switch is disabled and the reason is outlined once you hover over it.
 
-  <img alt="SSO policy with force SSO disabled and a tooltip" src={useBaseUrl('img/sso-policy-disabled-tooltip.png')} />
+<img alt="SSO policy with force SSO disabled and a tooltip" src={useBaseUrl('img/sso-policy-disabled-tooltip.png')} />
 
 Once all conditions are met and you enable enforcement, logging in through identity provider will be the only way to access the team.
 
