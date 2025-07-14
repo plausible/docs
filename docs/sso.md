@@ -28,6 +28,8 @@ When somebody logs in, we first look for an existing member of a team with match
 
 User logging in through identity provider can only be a member in a single team. Matching team with identity is done by looking up identity's email domain among configured SSO domains. Every SSO domain must be unique - the same domain cannot be associated with more than one team at once.
 
+You can read more about domains at [SSO Domains](#sso-domains).
+
 ### Security
 
 When SSO is configured for the team for the first time, existing team members can still access it using e-mail and password. However, once they log in using identity provider, their account becomes SSO-only and from that point on they can no longer access Plausible using standard credentials. Standard and SSO users can co-exist on the same team as long as "Force Single Sign-On" configuration option is disabled.
@@ -195,6 +197,38 @@ Once all conditions are met and you enable enforcement, logging in through ident
 :::tip Owners can still use standard login in case of emergency
 Providing this fallback is important to provide a way to resolve issues with misconfigured or malfunctioning identity provider. Please note, however, that Owners must still log in at least once through identity provider in order to access the team with "**Force Single Sign-On**" enabled.
 :::
+
+## SSO Domains
+
+Before it's possible to log in through SSO, at least one domain must be added and its ownership verified using either of three available methods. SSO is not functional without adding and verifying domain even if SAML is already configured.
+
+On every SSO login attempt, the provided email's domain part (after "@") is compared against all configured domains. If a match is found, the login request is redirected to the respective identity provider service for further processing.
+
+The ownership of every added domain must be verified using one of three methods:
+
+- [Adding a TXT DNS record](#dns-record-verification) to the root domain
+- [Publishing a file or exposing a route](#file-or-route-verification) from the web page under the domain
+- [Adding a META HTML tag](#meta-tag-verification) to the web page under the domain
+
+<img alt="SSO domain verification" src={useBaseUrl('img/sso-domain-verification.png')} />
+
+Once started, the verification process is retried in the background over the following hours until it succeeds. Once it's verified or fails after too many attempts, you will be notified by e-mail. Verification can be immediately retried by canceling the running process and kicking off verification again.
+
+<img alt="Canceling SSO domain verification" src={useBaseUrl('img/sso-domain-verification-cancel.png')} />
+
+<img alt="Retrying SSO domain verification" src={useBaseUrl('img/sso-domain-verification-retry.png')} />
+
+### DNS Record Verification
+
+A DNS record of type TXT must be configured for the root domain with `plausible-sso-verification=<domain identifier>` for content. DNS record update takes some time and verification might have to be retried a couple times before it succeeds.
+
+### File or Route Verification
+
+You have to either upload a file named `plausible-sso-verification` to the public root folder of the web page under the verified domain or expose a route at `https://<domain>/plausible-sso-verification` with `<domain identifier>` as its only content. The verification should be immediate unless there's aggressive web service caching involved.
+
+### META Tag Verification
+
+You have to put `<meta name="plausible-sso-verification" content="<domain identifier>">` in the HEAD section of the web page under the domain. The verification should be immediate unless there's aggressive web service caching involved.
 
 ## SSO Policy
 
