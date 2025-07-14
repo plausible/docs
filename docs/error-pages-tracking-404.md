@@ -41,7 +41,7 @@ Your Plausible tracking snippet should be inserted into [the Header (`<head>`) s
 Add this code to your 404 page. For instance, if you're using WordPress, your 404 page template will be called `404.php`. It will be located within your theme files.
 
 ```html
-<script>document.addEventListener('DOMContentLoaded', function () { plausible('404', { props: { path: document.location.pathname } }); });</script>
+<script>document.addEventListener('DOMContentLoaded', function () { plausible('404'); });</script>
 ```
 
 You can place this code anywhere in the `<head>` or `<body>` section of your 404 page template.
