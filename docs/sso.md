@@ -106,7 +106,7 @@ Step-by-step instructions for commonly used identity providers:
 
   <img alt="Google Workspace apps list add custom SAML app" src={useBaseUrl('img/sso-google-apps-list-add.png')} />
 
-- Put "Plausible" in the App name field, optionally upload a logo and click "**Continue**"
+- Put "Plausible" in the App name field, optionally upload a [logo](/img/plausible_logo.png) and click "**Continue**"
 
   <img alt="Google Workspace app details" src={useBaseUrl('img/sso-google-app-details.png')} />
 
