@@ -4,9 +4,11 @@ title: Single Sign-On (SSO)
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Enterprise subscribers have an option to configure Single Sign-On (SSO) integration for their team.
+Enterprise subscribers can configure Single Sign-On (SSO) integration for their team. Please reach out to us if you need this feature enabled.
 
-SSO gives a way to access Plausible without having to create a separate account and keep track of another set of credentials. This is possible by first logging in to identity provider (IdP) - be it Google, Okta, Microsoft (Entra) or other - and accessing Plausible and other services supporting SSO through it. As long as login at identity provider is valid, it's possible to access Plausible using e-mail matching the identity from the provider.
+SSO gives you a way to access Plausible without having to create a separate account for Plausible and managing additional credentials. This is possible by first logging in to identity provider (IdP) - be it Google, Okta, Microsoft (Entra) or other - and accessing Plausible and other services supporting SSO through it. 
+
+As long as the IdP session is active, users can log in to Plausible with an email address that matches their identity provider account.
 
 Our SSO implementation is SAML 2.0 compliant and user accounts are provisioned just in time. It should be compatible with almost every identity provider as SAML 2.0 protocol is widely supported.
 
@@ -16,29 +18,35 @@ Our SSO implementation is SAML 2.0 compliant and user accounts are provisioned j
 
 ## How it Works
 
-Once SSO is configured and prospective user has a valid identity created at identity provider of team's choice, they can log in using a dedicated login form.
+Once SSO is configured and your users have valid identities with your chosen identity provider, they can log in using a dedicated SSO login form.
 
 <img alt="SSO Login Form" src={useBaseUrl('img/sso-login-form.png')} />
 
-After entering the e-mail, they are redirected to identity provider's portal. The provider validates their identity if they haven't logged in there yet or uses an already validated identity from an existing session. The identity information (e-mail, name) is then securely sent back to Plausible. That's when the user is provisioned in Plausible.
+After entering the e-mail, they are redirected to identity provider's portal. The provider validates their identity if they haven't logged in there yet or uses an already validated identity from an existing session. The identity information (e-mail, name) is then securely sent back to Plausible. At that point, their account is automatically created in Plausible—no manual setup needed.
 
 ### Provisioning
 
-When somebody logs in, we first look for an existing member of a team with matching e-mail and configured SSO integration. If a match is found, we log them in as that user. If not, we create a new user on the fly and add them as a member in a team with a configured SSO domain matching email's domain. The member's role will have a default team role assigned. The default role is Viewer but can be changed.
+When someone logs in through SSO, we will first check if there's an existing team member with a matching email address and SSO configuration. If a match is found, they're logged in as that user. If not, a new user would be created automatically and added to the team whose configured SSO domain matches the email’s domain.
 
-User logging in through identity provider can only be a member in a single team. Matching team with identity is done by looking up identity's email domain among configured SSO domains. Every SSO domain must be unique - the same domain cannot be associated with more than one team at once.
+By default, new members are assigned the Viewer role, but you can change it as needed.
+
+A user signing in through SSO can only belong to one team. Team assignment is based on the domain in their email address. Each SSO domain must be unique—a single domain can't be linked to more than one team at once.
 
 You can read more about domains at [SSO Domains](#sso-domains).
 
 ### Security
 
-When SSO is configured for the team for the first time, existing team members can still access it using e-mail and password. However, once they log in using identity provider, their account becomes SSO-only and from that point on they can no longer access Plausible using standard credentials. Standard and SSO users can co-exist on the same team as long as "Force Single Sign-On" configuration option is disabled.
+When you configure SSO for your team for the first time, existing members can still log in using their email and password. However, once a member signs in via your identity provider, their account becomes SSO-only—they can no longer use standard login credentials.
+
+Standard and SSO users can coexist on the same team as long as the "Force Single Sign-On" option is disabled.
 
 Once "Force Single Sign-On" is enabled, only SSO users are allowed to access the team. If there are still standard users among members, they are locked out of the team until they provision their account through identity provider.
 
-There's an exception made for Owners who keep the ability to log in using e-mail and password even after logging in through identity provider for troubleshooting configuration or a malfunctioning identity provider. They, however, are forced to enable 2FA even before "Force SSO" can be enabled for improved security.
+There's an exception made for team Owners who retain the ability to log in using e-mail and password, even after using SSO. This is to allow for troubleshooting issues with SSO configuration or a malfunctioning identity provider. 
 
-With SSO not being enforced right away, it's possible to configure and transition an existing team to SSO without risking major disruptions.
+To enable "Force SSO," Owners must first activate two-factor authentication (2FA) for added security.
+
+By not enforcing SSO immediately, you can safely transition your team without causing disruption.
 
 ### Other
 
@@ -66,7 +74,7 @@ The configuration process consists of four major stages:
 
   <img alt="SSO configuration parameters for IdP" src={useBaseUrl('img/sso-sp-config-params.png')} />
 
-- Open identity provider's administrative dashboard and follow further instructions
+- Open identity provider's administrative dashboard and follow further instructions.
 
 ### Configuring SAML SSO in Identity Provider
 
@@ -203,9 +211,9 @@ Providing this fallback is important to provide a way to resolve issues with mis
 
 ## SSO Domains
 
-Before it's possible to log in through SSO, at least one domain must be added and its ownership verified using either of three available methods. SSO is not functional without adding and verifying domain even if SAML is already configured.
+Before it's possible to log in through SSO, you need to add at least one domain and verify its ownership using one of the three available methods. SSO will not work—even if SAML is fully configured—until a domain is added and verified.
 
-On every SSO login attempt, the provided email's domain part (after "@") is compared against all configured domains. If a match is found, the login request is redirected to the respective identity provider service for further processing.
+When someone tries to log in via SSO, Plausible checks the domain part of their email address (the part after the “@”) against your configured domains. If a match is found, the user is redirected to the appropriate identity provider for authentication.
 
 The ownership of every added domain must be verified using one of three methods:
 
@@ -246,7 +254,7 @@ Following settings are available:
 - **Session timeout (minutes)**: Session timeout for users logged in through SSO. Maximum is 12 hours. Default is 360 minutes (6 hours).
 
 :::tip Session timeouts in Plausible and in identity provider are different things
-SSO account session timeout in Plausible is always counted relative to the time of last login. User activity does not extend it like in the case of standard account. However, it does not mean the user has to manually log in again after it expires. Once the timeout is reached, Plausible automatically redirects to identity provider. If the session at identity provider is still valid, the user is automatically redirected back to Plausible, to the last page they visited. Session timeout in Plausible is usually much shorter than the session timeout in identity provider. This helps ensuring the user state in Plausible is up to date with the state in identity provider. When, for instance, the identity is deleted in identity provider, the respective user account in Plausible will keep working, at most, only for the duration of the Plausible session.
+SSO account session timeout in Plausible is always counted relative to the time of last login, not user activity. Unlike standard accounts, simply staying active won’t extend the session. However, this doesn’t mean users need to manually log in again when the session expires. When the timeout is reached, Plausible automatically redirects to your identity provider. If the user's session is still valid there, they’re seamlessly returned to Plausible—right back to the last page they visited. Plausible's session timeout is typically shorter than the one configured at your identity provider. This helps keep user access in sync. For example, if a user's identity is removed at the provider level, their Plausible session will expire shortly after, limiting unauthorized access.
 :::
 
 ## Team Management
