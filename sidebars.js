@@ -134,6 +134,7 @@ module.exports = {
         items: [
           { type: 'doc', id: 'sso', label: 'Overview' },
           { type: 'doc', id: 'sso-google-workspaces', label: 'Configuring Google Workspaces' },
+          { type: 'doc', id: 'sso-okta', label: 'Configuring Okta' },
         ],
       }
     ],
