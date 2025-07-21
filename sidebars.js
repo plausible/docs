@@ -128,7 +128,14 @@ module.exports = {
     'Team and Organization': [
       'users-roles',
       'transfer-ownership',
-      'sso',
+      {
+        type: 'category',
+        label: 'Single Sign-On (SSO)',
+        items: [
+          { type: 'doc', id: 'sso', label: 'Overview' },
+          { type: 'doc', id: 'sso-google-workspaces', label: 'Configuring Google Workspaces' },
+        ],
+      }
     ],
     Contribute: ['contribute', 'plausible-analytics-reviews', 'authors'],
   },
