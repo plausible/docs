@@ -93,7 +93,7 @@ Step-by-step instructions for commonly used identity providers:
 
 - [Google Workspaces](sso-google-workspaces)
 - [Okta](sso-okta)
-- Microsoft Entra (Azure)
+- [Microsoft Entra (Azure)](sso-ms-entra)
 
 ### Finishing SAML SSO Setup in Plausible
 
