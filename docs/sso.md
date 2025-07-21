@@ -92,7 +92,7 @@ When setting up SAML SSO for any other identity provider, please keep the follow
 Step-by-step instructions for commonly used identity providers:
 
 - [Google Workspaces](sso-google-workspaces)
-- Okta
+- [Okta](sso-okta)
 - Microsoft Entra (Azure)
 
 ### Finishing SAML SSO Setup in Plausible
