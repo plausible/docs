@@ -4,7 +4,7 @@ title: Single Sign-On (SSO)
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Enterprise subscribers can configure Single Sign-On (SSO) integration for their team. Please reach out to us if you need this feature enabled.
+Enterprise subscribers can configure Single Sign-On (SSO) integration for their team. Please [reach out to us](https://plausible.io/contact) if you need this feature enabled.
 
 SSO gives you a way to access Plausible without having to create a separate account for Plausible and managing additional credentials. This is possible by first logging in to identity provider (IdP) - be it Google, Okta, Microsoft (Entra) or other - and accessing Plausible and other services supporting SSO through it. 
 
