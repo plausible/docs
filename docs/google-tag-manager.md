@@ -95,7 +95,7 @@ That's it! Now you can go to your website and verify whether Plausible Analytics
 5. Create a new GTM Tag called "**Page Not Found Tag**" of type "**Custom HTML**" and paste the following code:
 
 ```javascript
-<script type="text/javascript">window.plausible("404", { props: { path: document.location.pathname } });</script>
+<script type="text/javascript">window.plausible("404");</script>
 ```
 
 6. Publish all changes.
