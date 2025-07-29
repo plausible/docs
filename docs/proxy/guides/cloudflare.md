@@ -15,7 +15,7 @@ Step 0: Sign up for a free Cloudflare account if you don't have an account alrea
 
 ## Step 1: Create a worker
 
-In your Cloudflare account, click on the 'Workers & Pages' section in the sidebar to get the 'Overview' page. On the top right of the 'Overview' page, click on the 'Create application' button. On the 'Create an application' page click on the 'Create Worker' button in the 'Workers' tab to start configuring your proxy. 
+In your Cloudflare account, click on the "Compute (Workers" > 'Workers & Pages' section in the sidebar to get the 'Overview' page. Choose "Start with Hello World!" and then click on "Get Started" to start configuring your proxy. 
 
 <img alt="Create CloudFlare worker" src={useBaseUrl('img/create-cloudflare-worker.png')} />
 
