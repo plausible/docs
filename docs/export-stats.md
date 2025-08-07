@@ -19,6 +19,8 @@ You can export your stats directly from the top chart of your Plausible dashboar
 
 This will export a ZIP file which includes CSV files of the individual reports. You can then use these CSV files to import your stats into Excel or other data analysis tools.
 
+Tip: If you exported data for outbound link clicks, file downloads, or 404 errors and want details like URLs, visitors, events, and conversion rates, check the "custom_props.csv" file. The "conversions.csv" file only shows summary data.
+
 Note that for the export to be as quick as possible, the individual CSV files are limited to 300 entries each, while page reports are limited to 100 entries each with this method. For a full data export, refer to the instructions below.
 
 ## Export all stats to date
