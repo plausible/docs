@@ -14,17 +14,13 @@ Here's how to get started with our official Looker Studio connector.
 
 ## Connect to Looker Studio
 
-Connecting your Plausible Analytics account to Looker Studio is simple and can be done in a matter of minutes. First, you select our connector as a new data source in Looker Studio. You can find our connector on [this direct link](https://lookerstudio.google.com/datasources/create?connectorId=AKfycbz88iSK4B6V-VoaiwocFu2dDp3CBRM0arAZoDjQ97SroAt9RtzgS6z3UCxpjJDi0ieVjQ).
+Connecting your Plausible Analytics account to Looker Studio is simple and can be done in a matter of minutes. First, you select our connector as a new data source in Looker Studio. Our connector is called Plausible Analytics and it is made by us (Plausible Analytics). You can find our connector in the Looker Studio public gallery, the in-product gallery or by visiting on [this direct link](https://lookerstudio.google.com/datasources/create?connectorId=AKfycbz88iSK4B6V-VoaiwocFu2dDp3CBRM0arAZoDjQ97SroAt9RtzgS6z3UCxpjJDi0ieVjQ).
 
 Once you have selected the data source, you will be prompted to authorize the connector to access your Google account.
 
 <img alt="Authorize the Plausible connector" src={useBaseUrl('img/source-looker.png')} />
 
 The only permission that will be asked for is to make an external API request, which is how the connector pulls data from [the Plausible Analytics Stats API](stats-api.md).
-
-:::note
-Our connector is currently in beta and undergoing a review by Google. This is why you see the note stating: "This connector has not been verified or reviewed"
-:::
 
 ## Insert your Plausible Stats API key
 
