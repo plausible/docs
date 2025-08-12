@@ -127,7 +127,7 @@ You can also use your browser's developer tools to look for the Plausible script
 1. Visit your home page or any other page on your site where Plausible is installed.
 2. Right-click anywhere on your page and click "**Inspect**" (the wording may vary depending on your web browser) to open the developer tools. Alternatively, press the key `F12` on Firefox or Chrome or `Option+Command+i` on Safari.
 3. Look into the "**Console**" tab in the developer tools for any errors related to Plausible. It may give you some insights into what's going on through the error code it provides. If you see an error related to the Plausible script, it means that something's not right with your implementation.
-4. Then click on the "**Network**" tab in the developer tools. It will be empty, so you would need to reload your page. After you refresh the page, you will start seeing some data in the "**Network**" tab. You should see the a script from the Plausible domain `plausible.io` in the list, starting with `s-`. The Plausible script should display status 200.
+4. Then click on the "**Network**" tab in the developer tools. It will be empty, so you would need to reload your page. After you refresh the page, you will start seeing some data in the "**Network**" tab. You should see the a script from the Plausible domain `plausible.io` in the list, starting with `pa-`. The Plausible script should display status 200.
 
 <img alt="Ensure that the Plausible Analytics script is loading in the 'Network' tab" src={useBaseUrl('img/network-check-if-plausible-is-working.png')} />
 
