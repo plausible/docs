@@ -22,6 +22,10 @@ Using WordPress? We have an official WordPress plugin that makes the integration
 
 Using GTM? You need to use a GTM-specific snippet instead of our default snippet. See how to integrate Plausible into your site by using [Google Tag Manager](google-tag-manager.md).
 
+## NPM package
+
+[NPM package](https://www.npmjs.com/package/@plausible-analytics/tracker): A lightweight library to add Plausible tracking to your site through an easy-to-install NPM package.
+
 ## Run Plausible as a first-party connection
 
 You can run Plausible script as a first-party connection from your domain name in order to bypass adblockers. [Learn more here](/proxy/introduction.md).
@@ -193,10 +197,6 @@ You can enable Plausible to count visitors on localhost which is useful in Cordo
 ## n8n
 
 [An n8n community node](https://www.npmjs.com/package/n8n-nodes-plausible) for working with the Plausible API.
-
-## npm package
-
-[npm package](https://www.npmjs.com/package/@plausible-analytics/tracker): Frontend library as an npm module to interact with Plausible. Works with React.
 
 ## Neos CMS
 
