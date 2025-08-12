@@ -196,7 +196,7 @@ You can enable Plausible to count visitors on localhost which is useful in Cordo
 
 ## npm package
 
-[npm package](https://www.npmjs.com/package/plausible-tracker): Frontend library as an npm module to interact with Plausible. Works with React.
+[npm package](https://www.npmjs.com/package/@plausible-analytics/tracker): Frontend library as an npm module to interact with Plausible. Works with React.
 
 ## Neos CMS
 
