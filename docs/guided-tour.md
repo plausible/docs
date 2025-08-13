@@ -16,7 +16,9 @@ Here’s what you can discover on your Plausible dashboard. You can also explore
 
 See the number of unique visitors, total visits (sessions), total page views, views per visit, the bounce rate (the percentage of sessions that had one page view only) and the visit duration. You can **click on a particular metric to display it in the top graph**.
 
-You can **choose a different time range** that you want to analyze in the date picker in the top right. The visitor numbers are automatically presented on the graph. The time format (24-hour or 12-hour am/pm) for the top graph timelines is displayed automatically based on your browser's defined language.
+You can **choose a different time range** that you want to analyze in the date picker in the top right. The dotted line towards the right-end of a graph indicates the current, incomplete day. The current day is included in the time ranges "Month to date", "Year to date", "Last 12 months" and "All time." All other time ranges don't include the current day.
+
+The visitor numbers are automatically presented on the graph. The time format (24-hour or 12-hour am/pm) for the top graph timelines is displayed automatically based on your browser's defined language.
 
 We get all the favicons (your site favicon and the favicons of all the referral sources) directly from the DuckDuckGo API. We display the same icon that DuckDuckGo shows in their search results.
 
