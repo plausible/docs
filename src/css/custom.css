@@ -31,6 +31,14 @@
   --ra-admonition-icon-color: var(--ifm-color-gray-900);
 }
 
+[data-theme='dark'] .alert--warning {
+  color: var(--ifm-color-gray-900);
+}
+
+[data-theme='dark'] .alert--warning svg {
+  fill: var(--ifm-color-gray-900);
+}
+
 .code-button {
   font-size: 24px;
   line-height: 1em;
