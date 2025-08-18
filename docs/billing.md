@@ -14,6 +14,8 @@ The billing is based on the usage between all the sites you have added to your a
 
 Our payment processor Paddle sends an invoice to you through email automatically upon each payment. You can click on a link within this email to download your invoice. You can also download invoices in your Plausible account settings. [See here](download-invoices.md).
 
+Please note that this email is the one that you used while subscribing to a Plausible plan and it can be different from the [Billing role](https://plausible.io/docs/users-roles#managing-team-member-roles) in Plausible. 
+
 Would you like to change your Paddle email address to get your invoices sent to a different email? [Do contact us](https://plausible.io/contact) and tell us your current Paddle email and the new email address where you'd like to get invoices in the future.
 
 ## Do you support any alternative payment methods?
