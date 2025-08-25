@@ -16,27 +16,9 @@ Tracking 404 error pages is essential for many site owners and Plausible helps y
 * See where visitors find broken links to your 404 error pages
 * Then you can manually fix broken links and redirect error pages
 
-"**404 error pages**" is an [optional enhanced measurement](script-extensions.md). If you want to track 404 error pages, here's how to enable it:
+"**404 error pages**" requires additional work in addition to [setting up tracking script](/plausible-script). If you want to track 404 error pages, here's how to enable it:
 
-## Step 1: Enable "404 error pages" for your site
-
-You can enable "**404 error pages**" as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
-
-<img alt="Enable 404 tracking during onboarding" src={useBaseUrl('img/onboarding-enable-404-tracking.png')} />
-
-After you enable 404 error pages tracking, we will automatically add a new goal called `404` to your site.
-
-:::tip Using Google Tag Manager to integrate Plausible?
-Please follow [our GTM-specific instructions](google-tag-manager.md) to correctly set up 404 error pages tracking
-:::
-
-## Step 2: Change the snippet on your site
-
-The tracking snippet changes depending on your selection of optional measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected.
-
-Your Plausible tracking snippet should be inserted into [the Header (`<head>`) section of your site](plausible-script.md). Place the tracking script within the `<head> … </head>` tags.
-
-## Step 3: Paste this piece of code to your 404 page template
+## Step 1: Paste this piece of code to your 404 page template
 
 Add this code to your 404 page. For instance, if you're using WordPress, your 404 page template will be called `404.php`. It will be located within your theme files.
 
@@ -47,12 +29,26 @@ Add this code to your 404 page. For instance, if you're using WordPress, your 40
 You can place this code anywhere in the `<head>` or `<body>` section of your 404 page template.
 
 :::tip Using WordPress?
-The quickest way to start tracking 404 error pages is to use our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) 
+The quickest way to start tracking 404 error pages is to use our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin)
 :::
 
-## See all the visits on 404 error pages in your dashboard
+## Step 2: Create a `404` goal on your site
 
-After you change the tracking snippet on your site and after you tag your 404 page template, all the visits on 404 error pages will start being tracked and will be displayed in the "**Goal Conversions**" report of your Plausible Analytics dashboard. You'll see the "**404**" goal as soon as the first visit on a 404 error page has been tracked.
+404 events won't show up in your dashboard automatically. You'll have to configure the goal for the conversion numbers to show up.
+
+To configure a goal, go to [your website's settings](website-settings.md) in your Plausible account and visit the "**Goals**" section. You should see a list of current goals with a prompt to add a goal.
+
+<img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
+
+Click on the "**+ Add goal**" button to go to the goal creation form.
+
+Select `Custom event` as the goal trigger and enter `404` as the name of the custom event you are triggering.
+
+After clicking on the "**Add goal**" button the goal will be created and you'll be taken back to the Goals page.
+
+## Step 3: See all the visits on 404 error pages in your dashboard
+
+After updating your 404 page template and creating the goal, all the visits on 404 error pages will start being tracked and will be displayed in the "**Goal Conversions**" report of your Plausible Analytics dashboard. You'll see the "**404**" goal as soon as the first visit on a 404 error page has been tracked.
 
 Click on "**404**" to see the full list of all visits on all error pages and have your dashboard filtered by error pages only. Click on a particular error page URL to filter the dashboard by those clicks only and get the full overview of that specific URL. Then you can figure out how your visitors discover the broken links and fix them.
 
@@ -64,8 +60,8 @@ Check out this blog post for more details on the value of [tracking 404 error pa
 
 You can control what data is collected in the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
 
-When making changes to your optional measurements, your snippet will change so do ensure to insert the newest snippet into your site for 404 error pages tracking to stop. You should also remove the code that you inserted into your 404 error page template. 
+When making changes to your optional measurements, your snippet will change so do ensure to insert the newest snippet into your site for 404 error pages tracking to stop. You should also remove the code that you inserted into your 404 error page template.
 
-After you disable 404 error pages tracking, we will automatically remove the goal called `404` from your site. 
+After you disable 404 error pages tracking, we will automatically remove the goal called `404` from your site.
 
 Thanks to [Jeremiah Lee](https://www.jeremiahlee.com/) for contributing this to the Plausible Analytics community!

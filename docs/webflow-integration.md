@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Here's how to add Plausible Analytics to your Webflow site and set up the tracking of custom events such as button clicks and form submissions.
 
-## How to add Plausible to your Webflow website 
+## How to add Plausible to your Webflow website
 
 * On your project's page, click on the Webflow logo ("**W**") in the left-hand side menu and choose "**Project Settings**".
 
@@ -56,25 +56,17 @@ Your goal should now be set up. When you navigate back to your Plausible Analyti
 
 ## Tracking button clicks and other links on your Webflow site
 
-### 1. Enable "Custom events" for your site
+### 1. Set an ID to the element you want to track
 
-You can enable "**Custom events**" as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
-
-### 2. Change the snippet on your site
-
-The tracking snippet changes depending on your selection of optional measurements. When making changes to your optional measurements, do ensure to insert the newest snippet into your site for all tracking to work as expected. We display your snippet during the process of adding a new site to your account. You can also see the snippet within the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
-
-### 3. Set an ID to the element you want to track
-
-In Webflow, link and button elements don't have a default ID. You'll need to assign an ID by selecting the element and clicking on the settings gear. In the **"Designer View"**, you'll be able to set the ID. 
+In Webflow, link and button elements don't have a default ID. You'll need to assign an ID by selecting the element and clicking on the settings gear. In the **"Designer View"**, you'll be able to set the ID.
 
 <img alt="Add an ID to link and button elements in Webflow" src={useBaseUrl('img/add-id-to-link-and-button-webflow.png')} />
 
-### 4. Trigger custom events with JavaScript on your site
+### 2. Trigger custom events with JavaScript on your site
 
 Here's the code you will need to insert in the `<head>` section of the page where the element ID that you want to track is located. You can use the "**Custom Code**" feature to do this similarly to how you've inserted the Plausible snippet into your site.
 
-Make sure to change the `elementId` line in the code below to include the ID attribute of the element you want to track (`button-click` in our example). 
+Make sure to change the `elementId` line in the code below to include the ID attribute of the element you want to track (`button-click` in our example).
 
 Also do change the `classes` line to include the goal name in this format: `plausible-event-name=Goal+Name`. The goal name is completely up to you. It's the name under which the goal conversions will appear in your Plausible dashboard. We've used `Button+Click` goal name in our example.
 
@@ -106,11 +98,11 @@ For example: `plausible-event-name=Form+Submit` will display as `Form Submit` in
 
 Do click on the "**Save Changes**" button and then "**Publish**" your changes.
 
-### 5. Create a custom event goal in your Plausible account
+### 3. Create a custom event goal in your Plausible account
 
 When you send custom events to Plausible, they won't show up in your dashboard automatically. You'll have to configure the goal for the conversion numbers to show up.
 
-To configure a goal, go to [your website's settings](website-settings.md) in your Plausible account and visit the "**Goals**" section.  
+To configure a goal, go to [your website's settings](website-settings.md) in your Plausible account and visit the "**Goals**" section.
 
 Click on the "**+ Add goal**" button to go to the goal creation form. Select `Custom event` as the goal trigger and enter the name of the custom event you are triggering. The name must be an exact match to the one you added to your site for the conversions to show up in your dashboard.
 
@@ -118,9 +110,9 @@ So in our example where we added a goal name `plausible-event-name=Button+Click`
 
 <img alt="Add your custom event goal" src={useBaseUrl('img/button-click-custom-event-goal-webflow.png')} />
 
-Next, click on the "**Add goal**" button and you'll be taken back to the Goals page. 
+Next, click on the "**Add goal**" button and you'll be taken back to the Goals page.
 
-### 6. Your goal should now be ready and tracking
+### 4. Your goal should now be ready and tracking
 
 Your goal should now be set up. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who triggered the custom event. Goal conversions are listed at the very bottom of the dashboard. The goal will show up in your dashboard as soon as it has been completed at least once.
 
@@ -133,11 +125,11 @@ If you want to trigger multiple custom events on the same site, you don't need t
     var toTag = [
 		{
       		elementId: 'link-click',
-            classes: 'plausible-event-name=Link+Click'   
+            classes: 'plausible-event-name=Link+Click'
    		},
 		{
       		elementId: 'button-click',
-            classes: 'plausible-event-name=Button+Click'   
+            classes: 'plausible-event-name=Button+Click'
    		}
     ]
 
