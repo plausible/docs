@@ -60,3 +60,7 @@ You can control what data is collected in the "**Site Installation**" area of th
 When making changes to your optional measurements, your snippet will change so do ensure to insert the newest snippet into your site for outbound link click tracking to stop.
 
 After you disable outbound link click tracking, we will automatically remove the goal called `Outbound Link: Click` from your site.
+
+## Limitations
+
+Clicks on outbound links within `svg` elements are not tracked.
