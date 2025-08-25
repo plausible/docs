@@ -53,6 +53,8 @@ Our "**File downloads**" tracking captures a file download event each time a lin
 
 `.pdf`, `.xlsx`, `.docx`, `.txt`, `.rtf`, `.csv`, `.exe`, `.key`, `.pps`, `.ppt`, `.pptx`, `.7z`, `.pkg`, `.rar`, `.gz`, `.zip`, `.avi`, `.mov`, `.mp4`, `.mpeg`, `.wmv`, `.midi`, `.mp3`, `.wav`, `.wma`, `.dmg`
 
+Note that clicks on download links within `svg` elements are not tracked.
+
 ## What if I want to track a different file type?
 
 You can also specify a custom list of file types to track with a `file-types` attribute tag. With this, you can track other file types not present in our default list. Say you only want to track `.js` and `.py` files, you can pass the following argument to `plausible.init`:
