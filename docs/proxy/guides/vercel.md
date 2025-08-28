@@ -67,6 +67,7 @@ Note that:
 
 Add a script tag to your application's HTML page, passing the values configured above as attributes. The `src` and `endpoint` attributes **must match** the `source` values in the `vercel.json` file.
 
+```html
 <script async src="/your-subdirectory/js/script.js"></script>
 <script>
   window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
