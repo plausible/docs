@@ -8,7 +8,22 @@ If you're already running Nginx as your main web server or reverse proxy, you ca
 Our managed proxy lets you send analytics through your own domain name as a first-party connection. All you need to do is set up a CNAME record using the instructions we'll send you and update the snippet on your site. We'll take care of everything else. [Contact us for details](https://plausible.io/contact).
 :::
 
-## Step 1: Update your Nginx config
+## Step 1: Get your snippet
+
+In the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md) you can see
+the snippet specific for your site. It will look similar to the following:
+
+```html
+<script async src="https://plausible.io/js/pa-XXXXX.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+```
+
+Your snippet will have a different script location than the example above. Look for the `https://plausible.io/js/pa-XXXXX.js` part in your snippet - that's the personalized location for your site's script. Mark it down for subsequent steps.
+
+## Step 2: Update your Nginx config
 
 ```
 # Only needed if you cache the plausible script. Speeds things up.
@@ -24,7 +39,7 @@ proxy_cache_path /var/run/nginx-cache/jscache levels=1:2 keys_zone=jscache:100m 
 server {
 
     resolver 9.9.9.9; # Use quad9 DNS resolver. Remove this line if you've already configured a DNS resolver.
-    set $plausible_script_url https://plausible.io/js/script.js; # Change this if you use a different variant of the script
+    set $plausible_script_url https://plausible.io/js/pa-XXXXX.js; # Change this to path from step 1
     set $plausible_event_url https://plausible.io/api/event;
     ...
     location = /js/script.js {
@@ -57,10 +72,16 @@ server {
 }
 ```
 
-## Step 2: Adjust your deployed script
+## Step 3: Adjust your deployed script
 
 With the above config in place, you can change the script tag on your site as follows:
 
 ```html
-<script defer data-api="/api/event" data-domain="website.com" src="/js/script.js"></script>
+<script async src="/js/script.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init({
+    endpoint: "/api/event"
+  })
+</script>
 ```
