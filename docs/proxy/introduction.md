@@ -28,11 +28,7 @@ This section has been introduced after hearing from so many site owners who expe
 
 ### Not concerned about missing data?
 
-Simply run our default script. The easiest way to get started with Plausible Analytics is to install the script from our main domain as follows:
-
-```html
-<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.js"></script>
-```
+Simply run our default script. The easiest way to get started with Plausible Analytics is to [install the script](/docs/plausible-script.md) from our main domain.
 
 This is the simplest way to install Plausible Analytics but it will also be blocked by a portion of your visitors. In [our testing](https://markosaric.com/google-analytics-blocking/), between 6% and 26% of people block scripts all depending on the type of the site and the audience. In more extreme cases, with very tech-savvy referral sources these numbers can get [up to 60%](https://plausible.io/blog/google-analytics-adblockers-missing-data).
 
@@ -41,19 +37,22 @@ This is the simplest way to install Plausible Analytics but it will also be bloc
 Proxy our script. This is the option for those who want to get more accurate stats. A proxy basically maps certain URLs from your domain to the Plausible domain:
 
 ```
-https://<yourdomain.com>/js/script.js -> https://plausible.io/js/script.js
+https://<yourdomain.com>/js/script.js -> https://plausible.io/js/pa-XXXX.js
 https://<yourdomain.com>/api/event    -> https://plausible.io/api/event
 ```
 
-When the browser requests a file at `https://yourdomain.com/js/script.js` it will actually be fetched from `https://plausible.io/js/script.js`. The analytics will work exactly the same but the script will be served without being flagged.
+When the browser requests a file at `https://yourdomain.com/js/script.js` it will actually be fetched from `https://plausible.io/js/pa-XXXXX.js`. The analytics will work exactly the same but the script will be served without being flagged.
+
+In this case, `/js/pa-XXXXX.js` is the script location specific for your site. You can find it it in the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
+
 
 ## How to proxy requests to Plausible
 
 You can proxy requests to Plausible in several ways depending on your setup. If you'd rather not handle it yourself, we also offer a managed proxy option.
 
-### Managed proxy 
+### Managed proxy
 
-Don't want to manage your own proxy? We can handle it for you. Our managed proxy lets you send analytics through your own domain name as a first-party connection. This helps bypass adblockers and count more traffic without any setup or maintenance on your end. 
+Don't want to manage your own proxy? We can handle it for you. Our managed proxy lets you send analytics through your own domain name as a first-party connection. This helps bypass adblockers and count more traffic without any setup or maintenance on your end.
 
 All you need to do is set up a CNAME record using the instructions we'll send you and update the snippet on your site. We'll take care of everything else.
 
@@ -63,11 +62,8 @@ Managed proxy is available on our Enterprise plans. [Contact us for details](htt
 
 A standalone proxy works with any tech stack or hosting provider. You're responsible for setting it up and keeping it running. You can use one of these options:
 
-* [Akamai](/docs/proxy/guides/akamai)
 * [Cloudflare Workers](/docs/proxy/guides/cloudflare)
 * [Fastly](/docs/proxy/guides/fastly)
-* [CloudFront](/docs/proxy/guides/cloudfront)
-* [Google Cloud Platform](https://github.com/mtlynch/plausible-proxy)
 * [How to send events directly to our API](/docs/events-api)
 
 ### Integrated proxy
@@ -75,11 +71,8 @@ A standalone proxy works with any tech stack or hosting provider. You're respons
 These setups depend on how your app is deployed. You'll need to handle the proxy setup and maintenance yourself. Here are the available options:
 
 * [WordPress](/docs/proxy/guides/wordpress)
-* [Netlify](/docs/proxy/guides/netlify)
 * [Vercel](/docs/proxy/guides/vercel)
-* [Vercel with Next.JS](/docs/proxy/guides/nextjs)
 * [Fresh](/docs/proxy/guides/fresh)
 * [Nginx](/docs/proxy/guides/nginx)
 * [Apache](/docs/proxy/guides/apache)
 * [Caddy](/docs/proxy/guides/caddy)
-* [Django](https://github.com/imankulov/django-plausible-proxy)
