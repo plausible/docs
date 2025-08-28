@@ -1,8 +1,8 @@
 ---
-title: Upgrade your Plausible script
+title: Update your Plausible script
 ---
 
-In July 2025, Plausible released a new version of their tracking script. This document outlines
+In September 2025, Plausible released a new version of their tracking script. This document outlines
 the differences from the old script and how to migrate.
 
 ## Why a new script?
@@ -114,3 +114,7 @@ The new script no longer supports the `data-exclude` and `data-include` attribut
 ### 11. Removed: multiple domain support
 
 The new script does not support sending stats to multiple dashboards at once anymore. Keep using the old script for this functionality.
+
+## Google tag manager {#gtm}
+
+If you've installed Google Tag Manager using previous instructions, you will need to delete the old tag and install us [using tag manager gallery](/docs/google-tag-manager.md).
