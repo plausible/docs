@@ -21,7 +21,7 @@ Outbound link click tracking is essential for many site owners and Plausible hel
 
 ## Enable "Outbound links" for your site
 
-You can enable "**Outbound links**" as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
+By default, "**Outbound links**" is enabled when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
 
 <img alt="Enable outbound link clicks tracking during onboarding" src={useBaseUrl('img/onboarding-enable-outbound-link-clicks-tracking.png')} />
 
