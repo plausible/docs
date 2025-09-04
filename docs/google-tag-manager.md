@@ -98,7 +98,9 @@ That's it! Now you can go to your website and verify whether Plausible Analytics
 <script type="text/javascript">window.plausible("404");</script>
 ```
 
-6. Publish all changes.
+6. Assign the "Page Not Found Trigger" to the "Page Not Found Tag"
+
+7. Publish all changes.
 
 ## Track custom events
 
