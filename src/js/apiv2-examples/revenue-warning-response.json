@@ -1,6 +1,6 @@
 {
   "results": [
-    {"metrics": [null], "dimensions": ["Visit /"]}
+    {"metrics": [null], "dimensions": ["PurchaseUSD"]}
   ],
   "meta": {
     "metric_warnings": {

@@ -455,3 +455,20 @@ In this example, we're counting goal completions for a goal named "Signup" for u
 <ApiV2Example id="example-behavioral-filters" />
 
 </SiteContextProvider>
+
+## Quirks
+
+The stats API is created to be able to both pragmatically and performantly query the underlying dataset Plausible stores. To make
+it possible, the API has certain limitations and quirks. These include:
+
+### Imported data can not always be included
+
+As imported data from Google Analytics or other sources is stored as aggregates, responses for queries with certain metrics,
+filters and dimensions may not contain imported data. [See example](#example-imports-warning)
+
+### Metric values may change depending on metrics requested
+
+When requesting metrics such as `visits` or `visitors`, the system may use different database tables depending on your query and use
+different heuristics to calculate values. As such, the value may slightly change depending on the result.
+
+Our testing has shown this to be a small effect (less than 1 percent).
