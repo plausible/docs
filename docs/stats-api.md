@@ -468,7 +468,7 @@ filters and dimensions may not contain imported data. [See example](#example-imp
 
 ### Metric values may change depending on metrics requested
 
-When requesting metrics such as `visits` or `visitors`, may query different database tables depending on your query and use
+When requesting metrics such as `visits` or `visitors`, the system may use different database tables depending on your query and use
 different heuristics to calculate values. As such, the value may slightly change depending on the result.
 
 Our testing has shown this to be a small effect (less than 1 percent).
