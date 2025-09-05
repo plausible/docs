@@ -46,7 +46,7 @@ Click on the "**Filter**" button, then select "**Country**" as your metric, choo
 
 ### Group relevant pages, marketing campaigns and more
 
-Want to group all your blog posts and analyze the traffic to the blog separately from the rest of your site? Or exclude traffic that has visited a specific section of your site such as your logged in pages or your order confirmation page? Or do you want to group all the traffic from a specific set of marketing camapigns?
+Want to group all your blog posts and analyze the traffic to the blog separately from the rest of your site? Or exclude traffic that has visited a specific section of your site such as your logged in pages or your order confirmation page? Or do you want to group all the traffic from a specific set of marketing campaigns?
 
 You can group pages, sources, campaigns and more by using the "**Filter**" button. For instance, the "**Page**" menu within the filter button includes options "**contains**" and "**does not contain**". Put any specific keyword to group all of your pages that contain that keyword.
 
