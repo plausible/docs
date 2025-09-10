@@ -50,9 +50,9 @@ server {
         # Tiny, negligible performance improvement. Very optional.
         proxy_buffering on;
 
-        # Cache the script for 6 hours, as long as plausible.io returns a valid response
+        # Cache the script for 5 minutes, as long as plausible.io returns a valid response
         proxy_cache jscache;
-        proxy_cache_valid 200 6h;
+        proxy_cache_valid 200 5m;
         proxy_cache_use_stale updating error timeout invalid_header http_500;
 
         # Optional. Adds a header to tell if you got a cache hit or miss
