@@ -18,7 +18,7 @@ Your Plausible tracking snippet should be inserted into [the Header (`<head>`) s
 
 ## What has changed?
 
-This section outlines what has changed in the new snippet and how to adjust your setup.1
+This section outlines what has changed in the new snippet and how to adjust your setup.
 
 ### 1. Each site has a unique snippet
 
