@@ -38,10 +38,6 @@ How to send revenue data depends on the way you've set up custom events. You can
 <button class="plausible-event-name=Purchase plausible-revenue-amount=10.29 plausible-revenue-currency=EUR"></button>
 ```
 
-:::tip Using the CSS class name approach for custom events?
-You should change the file name in the `src` attribute of your Plausible snippet to `script.revenue.tagged-events.js`
-:::
-
 Or [the JavaScript function approach](custom-event-goals.md#trigger-custom-events-manually-with-a-javascript-function):
 
 ```javascript
