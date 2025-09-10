@@ -140,7 +140,7 @@ Next, in the 'Route' field enter the URL prefix where you would like to host the
 
 Then select your domain name in the 'Zone' field. Then click on the 'Add route' button. After clicking 'Add route', the script should be accessible at the subdirectory URL of your site: `https://example.com/qwerty/your-folder-name/script.js`.
 
-At this point you can change your Plausible script tag in your site header to reference the new URL. It's also important to specify the `data-api` attribute to make sure data is sent through the worker as well. The new snippet in your site header should look like this:
+At this point you can change your Plausible script tag in your site header to reference the new URL. It's also important to specify the `endpoint` option in `plausible.init()` to make sure data is sent through the worker as well. The new snippet in your site header should look like this:
 
 ```html
 <script async src="/qwerty/your-folder-name/script.js"></script>
