@@ -28,3 +28,8 @@ plausible.init({
 ```
 
 That's it! You're now no longer tracking any UTM tags or other parameters. We will use the [referrer header](top-referrers.md) to display the sources of the traffic instead. If the referring site doesn't send any referrer header, the traffic will fall within the "**Direct / None**" source.
+
+:::note
+This solution may not work in single-page-applications or when using [hash-based routing](/hash-based-routing) as `location.href` may change before `transformRequest`
+is called.
+:::

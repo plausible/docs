@@ -133,3 +133,8 @@ If your identifiers aren't entirely numerical, or if you only want to redact som
 With all the different identifiers being aggregated under the same URL, it's suddenly much easier to see which pages and features your visitors use the most!
 
 Thanks to [Émile Perron](https://github.com/EmilePerron) for the contribution!
+
+:::note
+This solution may not work in single-page-applications or when using [hash-based routing](/hash-based-routing) as `location.href` may change before `transformRequest`
+is called.
+:::
