@@ -13,15 +13,13 @@ Plausible Analytics is designed, developed and maintained by the following peopl
 * Adam - Product engineer and infrastructure
 * Bogdan - Customer success
 * Adrian - Product engineer
-* Karl - Product engineer and infrastructure
 * Hricha - Content and community
 * Artur - Product engineer
+* Sanne - Product designer
 
 ## Regular contributors
 
 * Daan - WordPress plugin
-* Ruslan - Community Edition
-* Liina - User interface and experience
 * Greg - Connectors and integrations
 
 Special thanks to the community contributors who build and maintain [integrations with various frameworks](integration-guides.md).
