@@ -16,6 +16,9 @@ The Plausible Site provisioning API offers a way to create and manage sites in y
 * List existing goals
 * Find or create a goal by type and value (learn more about [goals and custom events](goal-conversions.md))
 * Delete an existing goal
+* List existing custom properties
+* Create a custom property
+* Delete an existing custom property
 * List site guests/invitations
 * Create site guest invitations
 * Delete site guests/invitations
@@ -406,6 +409,94 @@ curl -X DELETE https://plausible.io/api/v1/sites/goals/1 \
 ```json title="Response 200 OK"
 {
     "deleted": "true"
+}
+```
+
+#### Body parameters
+<hr / >
+
+**site_id** <Required />
+
+Id of your site in Plausible.
+
+<hr / >
+
+### GET /api/v1/sites/custom-props
+
+Gets a list of existing custom properties for a given `site_id` (use the site domain as the ID).
+
+```bash title="Try it yourself"
+curl -X GET https://plausible.io/api/v1/sites/custom-props?site_id=test-domain.com \
+  -H "Authorization: Bearer ${TOKEN}"
+```
+
+```json title="Response 200 OK"
+{
+    "custom_properties": [
+        {
+            "property": "author"
+        },
+        {
+            "property": "title"
+        }
+    ]
+}
+```
+
+#### Query parameters
+<hr / >
+
+**site_id** <Required />
+
+Id of your site in Plausible.
+
+<hr / >
+
+### PUT /api/v1/sites/custom-props
+
+Creates a custom property for a given `site_id` (use the site domain as the ID). This endpoint is idempotent, it won't fail if a custom property with the provided name already exists.
+
+```bash title="Try it yourself"
+curl -X PUT https://plausible.io/api/v1/sites/custom-props \
+  -H "Authorization: Bearer ${TOKEN}" \
+  -F 'site_id="test-domain.com"' \
+  -F 'property="title"' 
+```
+
+```json title="Response 200 OK"
+{
+    "created": true
+}
+```
+
+#### Body parameters
+<hr / >
+
+**site_id** <Required />
+
+Id of your site in Plausible.
+
+<hr / >
+
+**property** <Required />
+
+Name of the custom property
+
+<hr / >
+
+### DELETE /api/v1/sites/custom-props/:property
+
+Deletes a custom property from your Plausible account. The API key must belong to the owner of the site. The site must owned by the current user.
+
+```bash title="Try it yourself"
+curl -X DELETE https://plausible.io/api/v1/sites/custom-props/title \
+  -H "Authorization: Bearer ${TOKEN}" \
+  -F 'site_id="test-domain.com"'
+```
+
+```json title="Response 200 OK"
+{
+    "deleted": true
 }
 ```
 
