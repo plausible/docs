@@ -43,39 +43,39 @@ Do avoid words like 'plausible', 'analytics', 'tracking', 'stats', etc. as they 
 const ScriptName = '/js/script.js';
 const Endpoint = '/api/event';
 
-const ScriptWithoutExtension = ScriptName.replace('.js', '')
+const ScriptWithoutExtension = ScriptName.replace('.js', '');
 
-addEventListener('fetch', event => {
-    event.passThroughOnException();
-    event.respondWith(handleRequest(event));
-})
+export default {
+  async fetch(request, env, ctx) {
+    const pathname = new URL(request.url).pathname;
+    const [baseUri, ...extensions] = pathname.split('.');
 
-async function handleRequest(event) {
-  const pathname = new URL(event.request.url).pathname
-  const [baseUri, ...extensions] = pathname.split('.')
+    if (baseUri.endsWith(ScriptWithoutExtension)) {
+        return await getScript(request, extensions);
+    } else if (pathname.endsWith(Endpoint)) {
+        return await postData(request);
+    }
+    return new Response(null, { status: 404 });
+  },
+};
 
-  if (baseUri.endsWith(ScriptWithoutExtension)) {
-      return getScript(event, extensions)
-  } else if (pathname.endsWith(Endpoint)) {
-      return postData(event)
-  }
-  return new Response(null, { status: 404 })
-}
-
-async function getScript(event, extensions) {
-    let response = await caches.default.match(event.request);
+async function getScript(request, extensions) {
+    let response = await caches.default.match(request);
     if (!response) {
         response = await fetch("https://plausible.io/js/plausible." + extensions.join("."));
-        event.waitUntil(caches.default.put(event.request, response.clone()));
+        const cachePut = caches.default.put(request, response.clone());
+        // Wait for the cache operation to complete before proceeding
+        await cachePut;
     }
     return response;
 }
 
-async function postData(event) {
-    const request = new Request(event.request);
-    request.headers.delete('cookie');
-    return await fetch("https://plausible.io/api/event", request);
+async function postData(request) {
+    const newRequest = new Request(request);
+    newRequest.headers.delete('cookie');
+    return await fetch("https://plausible.io/api/event", newRequest);
 }
+
 ```
 
 Once you've added the above code to the worker, you can click on the 'Save and Deploy' button on the top right. On the confirmation message, do confirm that you want to save and deploy your worker by clicking on the 'Save and Deploy' button again.
