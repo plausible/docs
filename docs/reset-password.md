@@ -28,3 +28,12 @@ Forgot your Plausible account password? Here's how to reset your Plausible accou
 * Note that after you successfully reset your password, we will automatically log out [any of your active sessions](login-management.md) on your other devices.
 
 <img alt="Reset your account password" src={useBaseUrl('img/reset-password.png')} />
+
+## How to reset Plausible account password in Docker
+
+When you are self-hosting Plausible and have not set up e-mails by some reason you could want
+to reset password from CLI.
+
+* Find your main Plausible container by executing `docker ps` (the name should be something like: `plausible-plausible-1`)
+* Run `docker exec -it plausible-plausible-1 /app/bin/plausible remote` (command contains example name)
+* Run `Plausible.Repo.get_by(Plausible.Auth.User, email: "youremail@example.com") |> Plausible.Auth.User.set_password("yourNewPassword") |> Plausible.Repo.update`
