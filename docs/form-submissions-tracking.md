@@ -2,6 +2,7 @@
 title: Form submissions tracking
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 :::note
 If you use the form submissions tracking feature, then these count towards your billable monthly pageviews.

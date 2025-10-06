@@ -22,7 +22,7 @@ The tag has the following optional configuration options:
 | **Optional Configuration** | **Explanation** |
 |---------------------------|-----------------|
 | **File Downloads**            | Automatically [track file downloads](/docs/file-downloads-tracking) (enabled by default) |
-| **Form Submissions**          | Whether to [track form submissions](/docs/form-submission-tracking.md) (enabled by default) |
+| **Form Submissions**          | Whether to [track form submissions](/docs/form-submissions-tracking.md) (enabled by default) |
 | **Outbound Links**            | Automatically [track clicks on outbound links](/docs/outbound-link-click-tracking) (enabled by default) |
 | **Hash Based Routing**        | Automatically track page paths that use a `#` in the URL, [described here](/docs/hash-based-routing) (disabled by default) |
 | **Custom Properties**         | Allows you to attach [custom properties](/docs/custom-props/introduction) (also known as custom dimensions in Google Analytics) when sending a pageview event. These can be configured using Google Tag Manager variables. |

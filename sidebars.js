@@ -59,6 +59,7 @@ module.exports = {
       'ecommerce-revenue-tracking',
       'outbound-link-click-tracking',
       'file-downloads-tracking',
+      'form-submissions-tracking',
       'error-pages-tracking-404',
       'pageview-goals',
       'custom-event-goals',
