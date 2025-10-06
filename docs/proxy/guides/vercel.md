@@ -8,7 +8,22 @@ Our managed proxy lets you send analytics through your own domain name as a firs
 
 If you are hosting a **Next.js** application, see [Proxying Plausible through Next.js / Vercel](/proxy/guides/nextjs.md).
 
-## Step 1: Add configuration file
+## Step 1: Get your snippet
+
+In the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md) you can see
+the snippet specific for your site. It will look similar to the following:
+
+```html
+<script async src="https://plausible.io/js/pa-XXXXX.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+```
+
+Your snippet will have a different script location than the example above. Look for the `https://plausible.io/js/pa-XXXXX.js` part in your snippet - that's the personalized location for your site's script. Mark it down for subsequent steps.
+
+## Step 2: Add configuration file
 
 > See Vercel's [project configuration](https://vercel.com/docs/cli#project-configuration) docs
 
@@ -18,18 +33,18 @@ Add a special `vercel.json` file in your application root:
 /vercel.json
 ```
 
-## Step 2: Configure rewrites
+## Step 3: Configure rewrites
 
 >  See Vercel's [rewrites](https://vercel.com/docs/cli#project-configuration/rewrites) docs
 
-Add the following JSON to rewrite calls within your application to Plausible's resources: 
+Add the following JSON to rewrite calls within your application to Plausible's resources:
 
 ```json
 {
   "rewrites": [
     {
       "source": "/your-subdirectory/js/script.js",
-      "destination": "https://plausible.io/js/script.js"
+      "destination": "https://plausible.io/js/pa-XXXXX.js"
     },
     {
       "source": "/your-subdirectory/api/event",
@@ -39,23 +54,27 @@ Add the following JSON to rewrite calls within your application to Plausible's r
 }
 ```
 
+Replace `https://plausible.io/js/pa-XXXXX.js` with script location from step 1.
+
 Note that:
 
 - The source paths identified here **must be** used when configuring the HTML script tag in the next section.
 - You can use whatever paths you like here (for example, here prefixing with `/your-subdirectory/`). Do choose a generic or irrelevant name. If you choose something like analytics, stats or plausible, it might get blocked.
 
-## Step 3: Add the script tag
+## Step 4: Update your snippet
 
-> See Plausible's [script tag](plausible-script.md) docs 
+> See Plausible's [script tag](plausible-script.md) docs
 
-Add a script tag to your application's HTML page, passing the values configured above as attributes. The `src` and `data-api` attributes **must match** the `source` values in the `vercel.json` file.
+Add a script tag to your application's HTML page, passing the values configured above as attributes. The `src` and `endpoint` attributes **must match** the `source` values in the `vercel.json` file.
 
 ```html
-<script
-  src="/your-subdirectory/js/script.js"
-  data-api="/your-subdirectory/api/event"
-  data-domain="yourdomain.com"
-></script>
+<script async src="/your-subdirectory/js/script.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init({
+    endpoint: "/your-subdirectory/api/event"
+  })
+</script>
 ```
 
 Thanks to [davestewart](https://github.com/davestewart) for contributing these instructions!

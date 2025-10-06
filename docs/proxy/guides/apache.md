@@ -16,7 +16,22 @@ sudo a2enmod proxy_http
 sudo a2enmod ssl
 ```
 
-## Step 2: Update your config
+## Step 2: Get your snippet
+
+In the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md) you can see
+the snippet specific for your site. It will look similar to the following:
+
+```html
+<script async src="https://plausible.io/js/pa-XXXXX.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+```
+
+Your snippet will have a different script location than the example above. Look for the `https://plausible.io/js/pa-XXXXX.js` part in your snippet - that's the personalized location for your site's script. Mark it down for subsequent steps.
+
+## Step 3: Update your config
 ```
 <VirtualHost *:80>
   ServerName website.com
@@ -26,8 +41,8 @@ sudo a2enmod ssl
   SSLProxyEngine on
 
   <Location /js/script.js>
-    ProxyPass https://plausible.io/js/script.js
-    ProxyPassReverse https://plausible.io/js/script.js
+    ProxyPass https://plausible.io/js/pa-XXXXX.js
+    ProxyPassReverse https://plausible.io/js/pa-XXXXX.js
   </Location>
 
   <Location /api/event>
@@ -38,16 +53,20 @@ sudo a2enmod ssl
 </VirtualHost>
 ```
 
-## Step 3: Adjust your deployed script
+Replace `https://plausible.io/js/pa-XXXXX.js` in this config with script location from step 2.
+
+## Step 4: Adjust your deployed script
 
 With the above config in place, you can change the script tag on your site as follows:
 
 ```html
-<script defer data-api="/api/event" data-domain="website.com" src="/js/script.js"></script>
+<script async src="/js/script.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init({
+    endpoint: "/api/event"
+  })
+</script>
 ```
 
 That's it! You're now using a proxy.
-
-## Alternative reverse proxy written in PHP for shared hosting on Apache
-
-As an alternative to the above, there's also a reverse proxy for Plausible Analytics written in PHP for shared hostings on Apache. [See details here](https://github.com/Neoflow/ReverseProxy-PlausibleAnalytics).
