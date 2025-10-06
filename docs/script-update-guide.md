@@ -2,7 +2,7 @@
 title: Update your Plausible script
 ---
 
-In September 2025, Plausible released a new version of their tracking script. This document outlines
+In October 2025, Plausible released a new version of their tracking script. This document outlines
 the differences from the old script and how to migrate.
 
 ## Why a new script?
