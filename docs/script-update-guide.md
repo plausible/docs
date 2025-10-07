@@ -24,7 +24,7 @@ Each site now has its own snippet. This means you no longer need to update the s
 
 ### 2. New: Form submission tracking
 
-You can now enable or disable form submission tracking directly from the **Site Installation** settings.
+You can now enable or disable [form submission tracking](https://plausible.io/docs/form-submissions-tracking) directly from the **Site Installation** settings.
 
 ### 3. Updated: Custom properties
 
