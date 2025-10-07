@@ -4,23 +4,23 @@ title: How to add the script to your site using Google Tag Manager
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-This document walks through how you can set up Plausible Analytics using Google Tag Manager.
+This guide walks you through how to set up Plausible Analytics using Google Tag Manager (GTM).
 
 ## Google Tag Manager Template
 
-In order to make the process easier, we have published a template that makes setting up Plausible Analytics with Google Tag Manager simple and code free.
+To make setup easier, Plausible provides a ready-to-use Google Tag Manager template. This template allows you to install and configure Plausible Analytics directly in GTM—no coding required.
 
-The simplest way to install the custom template is to locate it in the [Google Tag Manager template gallery](https://tagmanager.google.com/gallery/#/) where you can install it directly from your Google Tag Manager dashboard. Here's the direct link to the [Plausible Analytics GTM template](https://tagmanager.google.com/gallery/#/owners/plausible/templates/plausible-gtm-template). 
+You can find the template in the [Google Tag Manager template gallery](https://tagmanager.google.com/gallery/#/) where you can install it directly from your Google Tag Manager dashboard. Here's the direct link to the [Plausible Analytics GTM template](https://tagmanager.google.com/gallery/#/owners/plausible/templates/plausible-gtm-template). 
 
 <img alt="Plausible GTM Template" src={useBaseUrl('img/plausible-gtm-template.png')}/>
 
-Once you’ve installed the template, you should create a new Tag that uses it. To do this:
+Once you’ve installed the template, you should create a new Tag in GTM to start tracking.
 
-* In the main Google Tag Manager dashboard, browse to "**Tags**" and click "**New**" to create a new tag
+* In your Google Tag Manager dashboard, go to **Tags** and click **New**.
 
 <img alt="Plausible GTM Template New Tag" src={useBaseUrl('img/plausible-gtm-template-new-tag.png')}/>
 
-* From the list of available tag templates, choose the Plausible Analytics tag template you just installed
+* From the list of available tag templates, select the **Plausible Analytics** tag template you just installed.
 
 <img alt="Plausible GTM Template New Tag Template" src={useBaseUrl('img/plausible-gtm-template-new-tag-template.png')}/>
 
@@ -32,7 +32,7 @@ Once you’ve installed the template, you should create a new Tag that uses it. 
 
 <img alt="Plausible GTM Template New Tag Script ID" src={useBaseUrl('img/plausible-gtm-template-new-tag-configuration-options.png')}/>
 
-* For the tag trigger, you should select "**All Pages**" - "**Page View**", which will ensure that Plausible will capture data on all pages
+* For the tag trigger, you should select "**All Pages**" - "**Page View**", which will ensure that Plausible will capture data on all pages.
 
 <img alt="Plausible GTM Template New Tag Trigger" src={useBaseUrl('img/plausible-gtm-template-trigger.png')}/>
 
