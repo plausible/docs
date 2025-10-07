@@ -6,8 +6,6 @@ title: Proxying Plausible through Vercel
 Our managed proxy lets you send analytics through your own domain name as a first-party connection. All you need to do is set up a CNAME record using the instructions we'll send you and update the snippet on your site. We'll take care of everything else. [Contact us for details](https://plausible.io/contact).
 :::
 
-If you are hosting a **Next.js** application, see [Proxying Plausible through Next.js / Vercel](/proxy/guides/nextjs.md).
-
 ## Step 1: Get your snippet
 
 In the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md) you can see
@@ -76,5 +74,3 @@ Add a script tag to your application's HTML page, passing the values configured 
   })
 </script>
 ```
-
-Thanks to [davestewart](https://github.com/davestewart) for contributing these instructions!
