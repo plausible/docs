@@ -20,7 +20,7 @@ Using WordPress? We have an official WordPress plugin that makes the integration
 
 ## Google Tag Manager (GTM)
 
-Using GTM? You need to use a GTM-specific snippet instead of our default snippet. See how to integrate Plausible into your site by using [Google Tag Manager](google-tag-manager.md).
+Using GTM? You can use our Google Tag Manager template. See how to integrate Plausible into your site with [Google Tag Manager](https://plausible.io/gtm-template).
 
 ## NPM package
 
