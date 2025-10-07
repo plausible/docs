@@ -9,29 +9,29 @@ In order to make the process easier, we have published a template that makes set
 
 The simplest way to install the custom template is to locate it in the [Google Tag Manager template gallery](https://tagmanager.google.com/gallery/#/) where you can install it directly from your Google Tag Manager dashboard. Here's the direct link to the [Plausible Analytics GTM template](https://tagmanager.google.com/gallery/#/owners/plausible/templates/plausible-gtm-template). 
 
-<img alt="Plausible GTM Template" src={useBaseUrl('img/plausible-gtm-template.png')} />
+<img alt="Plausible GTM Template" src={useBaseUrl('img/plausible-gtm-template.png')}/>
 
 Once you’ve installed the template, you should create a new Tag that uses it. To do this:
 
 * In the main Google Tag Manager dashboard, browse to "**Tags**" and click "**New**" to create a new tag
 
-<img alt="Plausible GTM Template New Tag" src={useBaseUrl('img/plausible-gtm-template-new-tag.png')} />
+<img alt="Plausible GTM Template New Tag" src={useBaseUrl('img/plausible-gtm-template-new-tag.png')}/>
 
 * From the list of available tag templates, choose the Plausible Analytics tag template you just installed
 
-<img alt="Plausible GTM Template New Tag Template" src={useBaseUrl('img/plausible-gtm-template-new-tag-template.png')} />
+<img alt="Plausible GTM Template New Tag Template" src={useBaseUrl('img/plausible-gtm-template-new-tag-template.png')}/>
 
 * The only mandatory field in the tag configuration is the "**Script ID**" that can be found in the Plausible Analytics dashboard under "**Site Settings**" > "**Site Installation**" > "**Google Tag Manager**"
 
-<img alt="Plausible GTM Template New Tag Script ID" src={useBaseUrl('img/plausible-gtm-template-new-tag-script-id.png')} />
+<img alt="Plausible GTM Template New Tag Script ID" src={useBaseUrl('img/plausible-gtm-template-new-tag-script-id.png')}/>
 
 * Other optional configuration options are described below in the section "**Tag Configuration**"
 
-<img alt="Plausible GTM Template New Tag Script ID" src={useBaseUrl('img/plausible-gtm-template-new-tag-configuration-options.png')} />
+<img alt="Plausible GTM Template New Tag Script ID" src={useBaseUrl('img/plausible-gtm-template-new-tag-configuration-options.png')}/>
 
 * For the tag trigger, you should select "**All Pages**" - "**Page View**", which will ensure that Plausible will capture data on all pages
 
-<img alt="Plausible GTM Template New Tag Trigger" src={useBaseUrl('img/plausible-gtm-template-trigger.png')} />
+<img alt="Plausible GTM Template New Tag Trigger" src={useBaseUrl('img/plausible-gtm-template-trigger.png')}/>
 
 ## Tag Configuration
 
