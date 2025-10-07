@@ -1,6 +1,9 @@
 ---
 title: How to add the script to your site using Google Tag Manager
 ---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 This document walks through how you can set up Plausible Analytics using Google Tag Manager.
 
 ## Google Tag Manager Template
