@@ -26,7 +26,7 @@ If you are using caching on your site, the latest version of your site where our
 
 ## Have you implemented Plausible using Google Tag Manager?
 
-GTM strips the `data-*` attributes by default which can break the tracking. Please follow [our GTM guide](google-tag-manager.md) for instructions on how to integrate Plausible using GTM.
+Please follow [our GTM guide](https://plausible.io/gtm-template) for instructions on how to integrate Plausible with our Google Tag Manager template.
 
 ## Does your site use a Content Security Policy (CSP)?
 
@@ -34,7 +34,7 @@ If it does, you would need to add our domain name (plausible.io) specifically to
 
 ## Are you running on localhost?
 
-Our script automatically disables itself when running on localhost as most people don't want those stats to be counted. In the `script.js` script, `window.location.hostname` is used to verify that. If you do want to track stats on localhost, [see configuration guide](script-extensions.md).
+Our script automatically disables itself when running on localhost as most people don't want those stats to be counted. If you do want to track stats on localhost, [see our configuration guide](script-extensions.md).
 
 ## Are you running a Google AMP page?
 
@@ -69,11 +69,11 @@ Are you using Cookiebot or a similar consent management platform? Have you set t
 
 Plausible is built to be privacy-first and compliant with various privacy regulations so do raise this with your legal team as they could provide the green light to not require user consent. See more details in [our data policy](https://plausible.io/data-policy) and in [this legal assessment written by a data protection lawyer](https://plausible.io/blog/legal-assessment-gdpr-eprivacy).
 
-## Is your website on a different URL than the one you added as your site?
+## Is your website on a different URL than the one you added?
 
 Our testing tool visits the exact URL that you added to your Plausible account. For example, if you added `yourdomain.com` as your site, the tool will try to visit `yourdomain.com` directly.
 
-If the URL you added doesn’t work or doesn’t point to your actual website, the tool won’t be able to reach it and can’t verify the integration. In that case, please use [our manual verification process instead](#how-to-manually-check-your-integration).
+If your website is at a different address, the verification tool will let you enter another URL manually. If the URL you added doesn’t work or doesn’t point to your actual site, the tool won’t be able to reach it or verify your integration. In that case, please use [our manual verification process instead](#how-to-manually-check-your-integration).
 
 ## Are you blocking our script or using a VPN that blocks us?
 

@@ -4,9 +4,11 @@ title: Enable optional measurements
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-The Plausible JavaScript snippet offer enhanced measurements and configuration for tailoring to how you want to use Plausible.
+The Plausible script offers enhanced measurements and configuration options to tailor tracking to your needs.
 
-Optional measurements can enabled when adding a new site to your Plausible account or in the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
+You can enable optional measurements for form submissions, outbound link clicks and file downloads when adding a new site to your Plausible account, or later in the "**Site installation**" area under "**General**" in your [site settings](website-settings.md).
+
+There are also additional measurement options that you can set up manually if needed.
 
 <img alt="Enable optional enhanced measurements" src={useBaseUrl('img/onboarding-enable-enhanced-tracking.png')} />
 
@@ -17,8 +19,21 @@ Here's the list of our optional measurements:
 | Outbound links | Automatically [track clicks on outbound links](outbound-link-click-tracking.md)  |
 | File downloads | Automatically [track file downloads](file-downloads-tracking.md)                                   |
 | Form submissions | Automatically [track form submissions](form-submissions-tracking.md) |
+| 404 error pages | Allows you to set up [404 error pages tracking](error-pages-tracking-404.md)                                   |
+| Hashed page paths          | Allows you to set up page paths that use a `#` in the URL ([hash-based routing](hash-based-routing.md))    |
+| Custom events  | Allows you to [track custom events](custom-event-goals.md) such as link clicks, form submits and any other HTML element clicks            |
+| Custom properties | Allows you to attach [custom properties](/custom-props/introduction) (also known as custom dimensions in Google Analytics) when sending a pageview or custom event to create custom metrics      |
+| Ecommerce revenue  | Allows you to assign dynamic [monetary values](ecommerce-revenue-tracking.md) to custom events and track revenue attribution |
 
-## `plausible.init()` configuration
+<details>
+
+<summary>
+
+## Advanced tracking options
+
+</summary>
+
+### `plausible.init()` configuration
 
 Additionally, `plausible.init()` can be called with different options further enhance its behavior. Supported options are:
 
@@ -34,25 +49,6 @@ Additionally, `plausible.init()` can be called with different options further en
 | autoCapturePageviews | `boolean`                         | `true`                             | Automatically track pageviews                                       |
 | logging              | `boolean`                         | `true`                             | Enable/disable logging done by script                               |
 | transformRequest     | `function(payload)`               | –                                  | Modify or filter events before sending (e.g. [for custom locations](/custom-locations))|
-
-
-## Advanced tracking recipes
-
-### Tracking 404 error pages
-
-See guide for [tracking 404 error pages](error-pages-tracking-404.md)
-
-### Tracking custom events
-
-See guide for [tracking custom events such as link clicks or any other HTML element clicks](custom-event-goals.md)
-
-### Attaching custom properties
-
-See guide for [attaching custom properties](/custom-props/introduction) (also known as custom dimensions in Google Analytics) when sending a pageview or custom event to create custom metrics.
-
-### Ecommerce revenue
-
-See guide for [assigning dynamic monetary values](ecommerce-revenue-tracking.md) to custom events and track revenue attribution
 
 ### Manual pageviews
 
@@ -80,7 +76,6 @@ Triggering pageviews manually allows you to provide a special option named `url`
 
 It's especially helpful to redact and aggregate multiple pages whose URLs contain identifiers that are specific to users. [Learn more about specifying custom URLs in your events](custom-locations.md).
 
-
 #### Track custom query parameters for complete page URLs
 
 By default, Plausible strips all query parameters for privacy purposes [except for](top-referrers.md) `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term`.
@@ -92,3 +87,5 @@ By using the manual script extension, you can also track custom query parameters
 :::tip Want to track outbound link clicks or file downloads cloaked with pretty URLs?
 See these [step-by-step instructions](custom-automatic-link-tracking.md) for how to do that.
 :::
+
+</details>

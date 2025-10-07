@@ -22,11 +22,11 @@ And you can get the same reports and traffic spike notifications in Slack too. [
 
 You can enable the Google Search Console integration to get all the search keywords people find your site with in Google's search results directly in your Plausible dashboard. [See instructions here](google-search-console-integration.md).
 
-## Set up easy goals including 404 error pages, file downloads and outbound link click tracking
+## Set up easy goals including form submissions, 404 error pages, file downloads and outbound link click tracking
 
 Plausible allows you to track custom event goals like signups, purchases and anything else you can think of by using CSS class names or JavaScript. You can send custom properties alongside events too. And if you're an ecommerce store, you can send your revenue too. [See the instructions here](custom-event-goals.md).
 
-You can also enable some automated goals. Here are instructions on how to track [404 error pages](error-pages-tracking-404.md), how to track [file downloads](file-downloads-tracking.md) and how to track [outbound link clicks](outbound-link-click-tracking.md) in your Plausible dashboard.
+You can also enable some automated goals. Here are instructions on how to track [404 error pages](error-pages-tracking-404.md), [file downloads](file-downloads-tracking.md), [outbound link clicks](outbound-link-click-tracking.md) and [form submissions](form-submissions-tracking.md) in your Plausible dashboard.
 
 After you've set up some events, you can create your first [marketing funnel](funnel-analysis.md).
 
