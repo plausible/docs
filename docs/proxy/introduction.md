@@ -43,8 +43,11 @@ https://<yourdomain.com>/api/event    -> https://plausible.io/api/event
 
 When the browser requests a file at `https://yourdomain.com/js/script.js` it will actually be fetched from `https://plausible.io/js/pa-XXXXX.js`. The analytics will work exactly the same but the script will be served without being flagged.
 
-In this case, `/js/pa-XXXXX.js` is the script location specific for your site. You can find it it in the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
+In this case, `/js/pa-XXXXX.js` is the script location specific for your site. You can find it in the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
 
+:::tip Using WordPress?
+The quickest way to enable a proxy is to use our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin)
+:::
 
 ## How to proxy requests to Plausible
 
@@ -58,21 +61,12 @@ All you need to do is set up a CNAME record using the instructions we'll send yo
 
 Managed proxy is available on our Enterprise plans. [Contact us for details](https://plausible.io/contact).
 
-### Standalone proxy
+### Manual proxy
 
-A standalone proxy works with any tech stack or hosting provider. You're responsible for setting it up and keeping it running. You can use one of these options:
-
-* [Cloudflare Workers](/docs/proxy/guides/cloudflare)
-* [Fastly](/docs/proxy/guides/fastly)
-* [How to send events directly to our API](/docs/events-api)
-
-### Integrated proxy
-
-These setups depend on how your app is deployed. You'll need to handle the proxy setup and maintenance yourself. Here are the available options:
-
-* [WordPress](/docs/proxy/guides/wordpress)
+* [Cloudflare](/docs/proxy/guides/cloudflare)
 * [Vercel](/docs/proxy/guides/vercel)
 * [Fresh](/docs/proxy/guides/fresh)
 * [Nginx](/docs/proxy/guides/nginx)
 * [Apache](/docs/proxy/guides/apache)
 * [Caddy](/docs/proxy/guides/caddy)
+* [Send events directly to our API](/docs/events-api)
