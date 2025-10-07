@@ -25,6 +25,8 @@ Here's the list of our optional measurements:
 | Custom properties | Allows you to attach [custom properties](/custom-props/introduction) (also known as custom dimensions in Google Analytics) when sending a pageview or custom event to create custom metrics      |
 | Ecommerce revenue  | Allows you to assign dynamic [monetary values](ecommerce-revenue-tracking.md) to custom events and track revenue attribution |
 
+<details>
+
 <summary>
 
 ## Advanced tracking options
