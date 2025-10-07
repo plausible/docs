@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Numbers not 'adding up'
 
-It's common to see that the numbers in your dashboard aren't _adding up_. In the example below, there are 34 unique users in total but when you add together the unique users in the '**Top Pages**' report, it adds up to 52 users.
+It's common to see that the numbers in your dashboard aren't _adding up_. In the example below, there are 27 unique users in total but when you add together the unique users in the '**Top Pages**' report, it adds up to 51 users.
 
 <img alt="Numbers not adding up" src={useBaseUrl('img/numbers-not-adding-up.png')} />
 
