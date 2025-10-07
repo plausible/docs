@@ -2,13 +2,11 @@
 title: Update your Plausible script
 ---
 
-In October 2025, Plausible released a new version of their tracking script. This document outlines
-the differences from the old script and how to migrate.
+In October 2025, we introduced an updated version of the Plausible tracking script. This guide walks you through what’s new and how to smoothly transition from the old script.
 
 ## Why a new script?
 
-Our previous approach with various script extensions could be uncomfortable to Plausible users
-to manage. A new script also allows Plausible developers to build out new features.
+Previously, managing different script extensions could be cumbersome for Plausible users. The new script streamlines the process and makes it easier for our developers to introduce new features as well.
 
 ## Getting the new snippet
 
@@ -20,17 +18,17 @@ Your Plausible tracking snippet should be inserted into [the Header (`<head>`) s
 
 This section outlines what has changed in the new snippet and how to adjust your setup.
 
-### 1. Each site has a unique snippet
+### 1. Unique snippet per site
 
-As a result, selecting new optional enhanced measurements no longer requires updating the snippet.
+Each site now has its own snippet. This means you no longer need to update the snippet when enabling new optional enhanced measurements.
 
-### 2. New feature: Form submission tracking
+### 2. New: Form submission tracking
 
-Tracking form submissions can now be toggled on and off in **Site Installation** settings.
+You can now enable or disable form submission tracking directly from the **Site Installation** settings.
 
-### 3. Changed: Custom properties
+### 3. Updated: Custom properties
 
-If you were using data-attributes for custom properties, you will need to add `customProperties` option with your custom properties
+If you previously used data-attributes for custom properties, you will need to add `customProperties` option with your custom properties
 
 ```javascript
 plausible.init({
@@ -42,7 +40,7 @@ plausible.init({
 
 Read more about custom properties in [custom pageview properties](/custom-props/for-pageviews) documentation.
 
-### 4. Changed: Custom tracking endpoint
+### 4. Updated: Custom tracking endpoint
 
 The new script no longer supports the `data-api` attribute to send events to a custom endpoint. Set `endpoint` option instead:
 
@@ -53,7 +51,7 @@ plausible.init({
 })
 ```
 
-### 5. Changed: custom file download types
+### 5. Updated: custom file download types
 
 To track file downloads only for certain file types, you will need to set `fileDownloads` option:
 
@@ -65,9 +63,9 @@ plausible.init({
 })
 ```
 
-By default, plausible tracks the following file types: pdf, xlsx, docx, txt, rtf, csv, exe, key, pps, ppt, pptx, 7z, pkg, rar, gz, zip, avi, mov, mp4, mpeg, wmv, midi, mp3, wav, wma, dmg
+By default, Plausible tracks the following file types: `pdf`, `xlsx`, `docx`, `txt`, `rtf`, `csv`, `exe`, `key`, `pps`, `ppt`, `pptx`, `7z`, `pkg`, `rar`, `gz`, `zip`, `avi`, `mov`, `mp4`, `mpeg`, `wmv`, `midi`, `mp3`, `wav`, `wma`, `dmg` 
 
-### 6. Changed: Hashed page paths
+### 6. Updated: Hashed page paths
 
 If you were previously using a hash based routing and had a `.hash` in your script path, you will need to set `hashBasedRouting` option:
 
@@ -77,9 +75,9 @@ plausible.init({
 })
 ```
 
-See also [Hashed page paths guide](/hash-based-routing.md)
+See [Hashed page paths guide](/hash-based-routing.md) for details.
 
-### 7. Changed: Tracking pageviews manually
+### 7. Updated: Tracking pageviews manually
 
 If you were previously using the `manual` extension to track pageviews manually, you will need to set `autoCapturePageviews` option to `false`:
 
@@ -89,9 +87,9 @@ plausible.init({
 })
 ```
 
-See also [Custom locations guide](/custom-locations).
+See [Custom locations guide](/custom-locations) for details.
 
-### 8. Changed: Tracking on localhost
+### 8. Updated: Tracking on localhost
 
 If you were previously using `local` extension to track events on localhost, you will need to set `captureOnLocalhost` option to `true`:
 
@@ -101,20 +99,20 @@ plausible.init({
 })
 ```
 
-### 9. Changed: Custom events and revenue features are automatically enabled
+### 9. Simplified: Custom events and revenue features are automatically enabled
 
-If you were already using these features, no additional steps are required. Documentation links:
+If you were already using these features, no additional steps are required. See:
 - [Custom events](/custom-event-goals)
 - [Ecommerce revenue and attribution tracking](docs/ecommerce-revenue-tracking.md)
 
-### 10. Removed: `data-exclude`
+### 10. Removed: `data-exclude` and `data-include`
 
 The new script no longer supports the `data-exclude` and `data-include` attributes. See [alternative guide](/excluding.md) instead.
 
 ### 11. Removed: multiple domain support
 
-The new script does not support sending stats to multiple dashboards at once anymore. Keep using the old script for this functionality.
+The new script no longer supports sending stats to multiple dashboards simultaneously. Continue using the old script if you need this functionality.
 
 ## Google tag manager {#gtm}
 
-If you've installed Google Tag Manager using previous instructions, you will need to delete the old tag and install us [using tag manager gallery](/docs/google-tag-manager.md).
+If you previously installed Plausible through Google Tag Manager, remove the old tag and reinstall it [using tag manager gallery](/docs/google-tag-manager.md) instructions.
