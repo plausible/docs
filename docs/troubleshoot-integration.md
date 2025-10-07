@@ -26,7 +26,7 @@ If you are using caching on your site, the latest version of your site where our
 
 ## Have you implemented Plausible using Google Tag Manager?
 
-GTM strips the `data-*` attributes by default which can break the tracking. Please follow [our GTM guide](google-tag-manager.md) for instructions on how to integrate Plausible using GTM.
+GTM strips the `data-*` attributes by default which can break the tracking which is why we recommend you use our GTM template. Please follow [our GTM guide](https://plausible.io/gtm-template) for instructions on how to integrate Plausible with our Google Tag Manager template.
 
 ## Does your site use a Content Security Policy (CSP)?
 
