@@ -15,7 +15,7 @@ Plausible helps you automate tracking form submissions. With our "**Form submiss
 You can enable "**Form submissions**" as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
 
 <!-- TODO -->
-<img alt="Enable form submissions tracking during onboarding" src={useBaseUrl('img/onboarding-enable-outbound-link-clicks-tracking.png')} />
+<img alt="Enable form submissions tracking during onboarding" src={useBaseUrl('img/plausible-analytics-automatic-form-submission.png')} />
 
 After you enable form submissions click tracking, we will automatically add a new goal called `Form: Submission` to your site.
 
