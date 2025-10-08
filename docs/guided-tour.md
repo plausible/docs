@@ -104,7 +104,7 @@ You can see the device, browser and operating system your visitors are using. Cl
 
 <img alt="Goal Conversions" src={useBaseUrl('img/dashboard-goal-conversions.png')} />
 
-You can track events and goals to identify the number of unique converted visitors, the total number of conversions, the conversion rate, and the referral sites that send the traffic that converts the best. You can assign dynamic monetary values to goals and custom events to track revenue attribution. We also have an automated way to track 404 error pages, external link clicks and file downloads.
+You can track events and goals to identify the number of unique converted visitors, the total number of conversions, the conversion rate, and the referral sites that send the traffic that converts the best. You can assign dynamic monetary values to goals and custom events to track revenue attribution. We also have an automated way to track form completions, 404 error pages, external link clicks and file downloads.
 
 By sending custom properties alongside custom events or pageviews, you can create your own metrics to collect and analyze data that Plausible doesn’t automatically track.
 
