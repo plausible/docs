@@ -84,9 +84,3 @@ You can see the list of all the hostnames that you're allowing the traffic from 
 If you don't want to track visitors of a specific subdomain together with those of your other sites in the same dashboard, you should add that subdomain as a separate site to your Plausible account.
 
 For example, if your subdomain is `https://blog.yourdomain.com` then the part to enter in the "**Domain**" field when adding a new site is `blog.yourdomain.com`. This would give you one dedicated and standalone dashboard for that particular subdomain.
-
-## Roll-up reporting
-
-Rollup reporting allows you to aggregate stats from multiple sites and see them in one combined dashboard while keeping the individual site stats on their own separate dashboards. This way you can get detailed insights into individual site performance and a holistic view of your whole network too. 
-
-This is useful when building multi-tenant applications, offering [a white label analytics dashboard](https://plausible.io/white-label-web-analytics) or in similar situations. It allows you to keep all your global traffic in one dashboard for internal purposes but also share the traffic from individual tenant sites with the particular client only. [See how roll-up reporting works](plausible-script.md#is-there-a-roll-up-view).
