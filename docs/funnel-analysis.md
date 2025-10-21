@@ -13,8 +13,6 @@ You can follow the visitor journey from a landing page to a conversion with our 
 * With the percentage drop-off between the individual funnel steps, you can spot where you lose the most visitors
 * You can get more granular by [using filters](filters-segments.md) to segment your audience. Filter conversion funnels by marketing campaign, referral source, landing page, device or location for more insights
 
-To learn about in-depth funnel marketing, [head to our blog](https://plausible.io/blog/funnels-conversion-optimization).
-
 <img alt="Funnels demo" src={useBaseUrl('img/funnels-demo.png')} />
 
 ## How to set up the conversion funnel analysis
@@ -37,6 +35,10 @@ It is quick and easy to create a funnel. Here's how:
 
 <img alt="Goals and funnels" src={useBaseUrl('img/goals-and-funnels.png')} />
 
+:::tip How funnel conversions are counted
+To be counted as converted, visitors need to complete all the steps you’ve defined in your funnel. They must take the steps in the correct order but they can also visit other pages or trigger other events in between those steps.
+:::
+
 That's it! Funnels are listed at the bottom of your dashboard and will appear as soon as the first visit has been tracked on the funnel steps. You can then make changes to your site or to your campaign, test different options and check the funnel again to see how your improvements have affected the conversions.
 
 ## How to edit existing funnels
@@ -50,3 +52,5 @@ It is also quick and easy to edit any of your existing funnels. Here's how:
 * Change the funnel name and/or edit the steps of your funnel
 
 * Click on the "**Update Funnel**" button
+
+To learn about in-depth funnel marketing, [head to our blog](https://plausible.io/blog/funnels-conversion-optimization).
