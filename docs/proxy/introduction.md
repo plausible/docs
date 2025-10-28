@@ -65,6 +65,7 @@ Managed proxy is available on our Enterprise plans. [Contact us for details](htt
 
 * [Cloudflare](/docs/proxy/guides/cloudflare)
 * [Vercel](/docs/proxy/guides/vercel)
+* [Netlify](/docs/proxy/guides/netlify)
 * [Fresh](/docs/proxy/guides/fresh)
 * [Nginx](/docs/proxy/guides/nginx)
 * [Apache](/docs/proxy/guides/apache)
