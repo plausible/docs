@@ -98,6 +98,7 @@ module.exports = {
           { type: 'doc', id: 'proxy/guides/cloudflare', label: 'Cloudflare' },
           { type: 'doc', id: 'proxy/guides/wordpress', label: 'WordPress' },
           { type: 'doc', id: 'proxy/guides/vercel', label: 'Vercel' },
+          { type: 'doc', id: 'proxy/guides/netlify', label: 'Netlify' },
           { type: 'doc', id: 'proxy/guides/nginx', label: 'Nginx' },
           { type: 'doc', id: 'proxy/guides/caddy', label: 'Caddy' },
           { type: 'doc', id: 'proxy/guides/apache', label: 'Apache' },
