@@ -222,6 +222,10 @@ The [OJS Site Usage plugin](https://gitlab.com/ubiquitypress/ojs-plugin-site-usa
 
 [Dashboard analytics plugin for PayloadCMS](https://nouance.io/articles/announcing-the-dashboard-analytics-plugin): You can add charts and statistics widgets directly in your admin interface.
 
+## Perron
+
+[Perron](https://perron.railsdesigner.com/library/analytics-tracking/): Add plausible to your Perron site using this snippet
+
 ## Pika
 
 [Pika.page](https://pika.page/): With a Pro account, you can add your own analytics and Plausible is officially supported
