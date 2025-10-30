@@ -72,16 +72,11 @@ First and foremost, you'll need to make sure your stats are still tracking. Whet
 To make the necessary changes to your tracking, you'll have a transition period of 72 hours, during which we will count your stats using both the old and the new domain. After 72 hours, the old domain is cleared from our database and any new traffic sent with the old domain will be rejected.
 :::
 
-### 2. Stats API integrations
+### 2. Update Stats API integrations
 
-Any Stats API request (both in the legacy, and the new API) takes a domain parameter. Make sure your existing integrations are querying the stats with the new domain.
+Stats API requests depend on the domain as an argument. API requests made after a domain change with the old domain will fail. Update any Stats API based integrations to use the new domain.
 
-### 3. Shared links
+### 3. Ensure you update bookmarked and shared links
 
-As soon as you change the domain of your Plausible site, all shared links change automatically. Make sure any saved links are updated accordingly
-
-### 4. Bookmarked dashboard links
-
-Same as shared links, dashboard links will stop working as soon as you update your domain. Make sure to update the domain in those as well.
-
+As soon as you change the domain in Plausible, any links to your site analytics dashboard or site settings that you might have bookmarked or shared will stop working. These will be available at the new root URL `https://plausible.io/<your_new_domain>`. There is no automatic redirect in place from the old root URL to the new one.
 
