@@ -38,12 +38,35 @@ In this section, we'll highlight everything that might need additional action af
 
 First and foremost, you'll need to make sure your stats are still tracking. Whether or not you need to take any action here depends on your setup.
 
-| Tracking setup                                                                          | Required action to ensure continuous tracking  |
-|-----------------------------------------------------------------------------------------|------------------------------------------------|
-| V2 tracking snippet (i.e. a `<script>` tag with `src=".../pa-{UNIQUE_ID}.js"`)          | No action required                             |
-| Legacy tracking snippet (i.e. a  `<script>`  tag with the  `data-domain`  attribute)    | Update the `data-domain` attribute value       |
-| WordPress plugin                                                                        | Update the site domain in your plugin settings |
-| NPM package                                                                             | Update the `domain` option passed to `init()`  |
+<table>
+  <tr>
+    <th>Installation type</th>
+    <th>How do I know if I'm using this?</th>
+    <th>Required action to ensure continuous tracking</th>
+  </tr>
+  <tr>
+    <td><b>Script tag installation</b></td>
+    <td>
+      The snippet on your website contains the word `plausible.init`. This is also the case when you're using our official [Google Tag Manager template](https://tagmanager.google.com/gallery/#/owners/plausible/templates/plausible-gtm-template).
+    </td>
+    <td>No action required</td>
+  </tr>
+  <tr>
+    <td><b>WordPress plugin</b></td>
+    <td>If your website is on WordPress, you're most likely using the plugin as that's the recommended installation method.</td>
+    <td>Update the site domain in your plugin settings</td>
+  </tr>
+  <tr>
+    <td><b>NPM package</b></td>
+    <td>You're using the [@plausible-analytics/tracker](https://www.npmjs.com/package/@plausible-analytics/tracker) library</td>
+    <td>Update the init options, e.g. `init({ domain: "your_new_domain.com", ... })`</td>
+  </tr>
+  <tr>
+    <td><b>Legacy tracking snippet</b></td>
+    <td>The Plausible snippet on your website includes the `data-domain` attribute.</td>
+    <td>Update the snippet's data-domain attribute value, e.g. <code>&lt;script src="https://plausible.io/js/plausible.js" data-domain="your_new_domain.com" ...&gt;</code></td>
+  </tr>
+</table>
 
 :::important
 To make the necessary changes to your tracking, you'll have a transition period of 72 hours, during which we will count your stats using both the old and the new domain. After 72 hours, the old domain is cleared from our database and any new traffic sent with the old domain will be rejected.
