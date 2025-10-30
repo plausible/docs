@@ -115,4 +115,4 @@ The new script no longer supports sending stats to multiple dashboards simultane
 
 ## Google tag manager {#gtm}
 
-If you previously installed Plausible through Google Tag Manager, remove the old tag and reinstall it [using tag manager gallery](/docs/google-tag-manager.md) instructions.
+If you previously installed Plausible through Google Tag Manager, remove the old tag and reinstall it [using tag manager gallery](https://plausible.io/gtm-template) instructions.
