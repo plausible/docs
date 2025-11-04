@@ -71,6 +71,11 @@ Note that you need to be an owner or an admin of a team to remove team members.
 * You can change the name of a team within the "**General**" option of the "**Team Settings**"
 * Enter the new name for the team and click on the "**Change Name**" button
 
+### Improving team security
+
+* [Require two-factor authentication (2FA)](2fa.md) for all team members to add an extra layer of protection to your Plausible account.
+* [Configure Single Sign-On (SSO)](sso.md) for your team. You can also restrict access so only users signing in through SSO can access your account.
+
 ### Leaving a team
 
 * In the top right menu, click on your account name, make sure you have chosen the team you'd like to leave and then click on the "**Team Settings**"
