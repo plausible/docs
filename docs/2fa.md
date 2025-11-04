@@ -20,6 +20,17 @@ To enable the 2FA on your Plausible account, you are required to insert the secu
 * Store the recovery codes somewhere safe. You can log in to your Plausible account with a recovery code if you lose access to your authenticator application or your trusted device. Then click on the “**Finish**” button to complete the 2FA setup.
 <img alt="Save 2FA recovery codes" src={useBaseUrl('img/recovery-codes-2FA.png')} />
 
+## Require all team members to enable 2FA
+
+To improve your account security, you can require all your team members to enable two-factor authentication (2FA):
+
+* First, set up a team if you haven’t already. Here’s [how to create one](users-roles.md).
+* In the top-right menu, click your account name, select the team you want to manage, then open "**Team Settings**".
+* In the "**General**" section of "**Team Settings**", you’ll find the "**Force Two-Factor Authentication (2FA)**" option.
+* Click "**Enforce 2FA**" to make it mandatory for all team members.
+* Confirm by clicking OK. All members, including you, will need to set up 2FA before they can access the team sites.
+* To remove the requirement later, click "**Stop Forcing 2FA**".
+
 ## How to generate new recovery codes
 
 Have you lost your recovery codes? You can generate new codes at any time. You can use a recovery code to log in to your Plausible account if you lose access to your authenticator app or your trusted device.
