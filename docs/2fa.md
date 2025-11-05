@@ -14,7 +14,6 @@ To enable the 2FA on your Plausible account, you are required to insert the secu
 * In the "**Security**" section, find “**Two-Factor Authentication (2FA)**” and click on the “**Enable 2FA**” button.
 <img alt="Enable 2FA" src={useBaseUrl('img/enable-2FA.png')} />
 * Link your Plausible account to your authenticator app by scanning the QR code or pasting the code manually. Then click on the “**Proceed**” button.
-<img alt="Scan QR to enable 2FA" src={useBaseUrl('img/scan-qr-2FA.png')} />
 * Enter the verification code from your authenticator application and click on the “**Verify**” button.
 <img alt="Enter verification code to enable 2FA" src={useBaseUrl('img/enter-verificaiton-code-2FA.png')} />
 * Store the recovery codes somewhere safe. You can log in to your Plausible account with a recovery code if you lose access to your authenticator application or your trusted device. Then click on the “**Finish**” button to complete the 2FA setup.
