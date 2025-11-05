@@ -28,6 +28,7 @@ To improve your account security, you can require all your team members to enabl
 * In the top-right menu, click your account name, select the team you want to manage, then open "**Team Settings**".
 * In the "**General**" section of "**Team Settings**", you’ll find the "**Force Two-Factor Authentication (2FA)**" option.
 * Click "**Enforce 2FA**" to make it mandatory for all team members.
+<img alt="Enforce 2FA" src={useBaseUrl('img/enforce-2fa.png')} />
 * Confirm by clicking OK. All members, including you, will need to set up 2FA before they can access the team sites.
 * To remove the requirement later, click "**Stop Forcing 2FA**".
 
