@@ -34,7 +34,7 @@ Just like goals, [custom properties](https://plausible.io/docs/custom-props/intr
 
 #### Email reports
 
-You can also enable email reports that take all your sites' traffic into account.
+You can enable [email reports](https://plausible.io/docs/email-reports) that combine traffic from all your sites.
 
 ## Limitations
 
