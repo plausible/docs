@@ -4,7 +4,7 @@ title: Consolidated views
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-A consolidated view gives you an overview of traffic across all your websites. It looks just like any other Plausible stats dashboard, but the underlying data includes all your sites, instead of just one.
+A consolidated view gives you an overview of traffic across all your websites. It looks just like any other Plausible dashboard, but the data includes all your sites instead of just one.
 
 ## How to enable your consolidated view?
 
