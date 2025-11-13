@@ -22,7 +22,7 @@ Just like a regular site, a consolidated view has its own settings. You can acce
 
 #### Timezone
 
-You can change the timezone in which your consolidated stats are reported. By default, it's set to the timezone in which you've configured the majority of your sites.
+You can change the timezone used for your consolidated stats. By default, it uses the timezone set for the majority of your sites.
 
 #### Goals
 
