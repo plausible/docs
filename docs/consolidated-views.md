@@ -11,7 +11,7 @@ A consolidated view gives you an overview of traffic across all your websites. I
 To have a consolidated view, you need:
 
 1) To have a [team](/users-roles#creating-a-new-team) set up
-2) Your team has at least 2 sites
+2) At least two sites in that team
 3) Your team has a Plausible Business subscription (or a custom subscription plan with Business features included)
 
 Once your team is eligible for having a consolidated view, you can navigate to the /sites page and it will show up automatically.
