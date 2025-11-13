@@ -30,7 +30,7 @@ To see conversions on your consolidated dashboard, add your [goals](https://plau
 
 #### Custom properties
 
-Just like goals, custom properties need to be added manually too. 
+Just like goals, [custom properties](https://plausible.io/docs/custom-props/introduction) need to be added manually too. 
 
 #### Email reports
 
