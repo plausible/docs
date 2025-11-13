@@ -26,7 +26,7 @@ You can change the timezone used for your consolidated stats. By default, it use
 
 #### Goals
 
-In order to see conversions showing up on your consolidated dashboard, you'll have to add the goals manually, just as you would on a regular Plausible site. 
+To see conversions on your consolidated dashboard, add your [goals](https://plausible.io/docs/goal-conversions) manually, just like you would on a regular site.
 
 #### Custom properties
 
