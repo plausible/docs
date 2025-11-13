@@ -8,7 +8,7 @@ A consolidated view gives you an overview of traffic across all your websites. I
 
 ## How to enable your consolidated view?
 
-In order to have a consolidated view, the following requirements need to be met:
+To have a consolidated view, you need:
 
 1) You have a [team](/users-roles#creating-a-new-team) set up
 2) Your team has at least 2 sites
