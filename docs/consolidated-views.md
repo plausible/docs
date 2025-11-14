@@ -8,6 +8,8 @@ If you have multiple websites/dashboards in your Plausible account, the consolid
 
 It looks just like any other Plausible dashboard, but the data includes all your sites instead of just one. 
 
+<img alt="Consolidated traffic view" src={useBaseUrl('img/consolidated-view.png')} />
+
 ## How to enable your consolidated view?
 
 To have a consolidated view, you need:
@@ -21,6 +23,8 @@ Once your team meets these requirements, your consolidated view will appear auto
 ## Configuration
 
 Just like a regular site, a consolidated view has its own settings. You can access the settings directly from the /sites page, or the site picker menu on the top left of the consolidated dashboard.
+
+<img alt="Consolidated traffic view" src={useBaseUrl('img/consolidated-view-settings.png')} />
 
 #### Timezone
 
