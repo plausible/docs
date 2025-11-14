@@ -37,3 +37,11 @@ We've put together [several other guides and plugins](integration-guides.md) tha
 ## How to check if Plausible Analytics is installed correctly
 
 After adding the Plausible snippet to your website, you can use our testing tool to verify that the snippet is installed correctly and the integration is working. Have some issues with the integration? Take a look at [our guide to troubleshooting your Plausible Analytics integration](troubleshoot-integration.md).
+
+## Is there an aggregated traffic view?
+
+When you have at least two dashboards/websites in Plausible, you'll find a [consolidated view](https://plausible.io/docs/consolidated-views) automatically appear on your /sites page, which combines stats from all your sites. You can open this dashboard just like any other dashboard and find aggregated stats for every site you have in Plausible.
+
+This way you can get detailed insights into individual site performance and a holistic view of your whole network too. 
+
+This is especially useful for multi-tenant applications, offering [a white label analytics dashboard](https://plausible.io/white-label-web-analytics) or in similar situations. It allows you to keep all your global traffic in one dashboard for internal purposes but also share the traffic from individual tenant sites with the particular client only.
