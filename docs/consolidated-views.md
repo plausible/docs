@@ -16,7 +16,7 @@ To have a consolidated view, you need:
 2) At least two sites in that team
 3) A Plausible Business plan (or a custom plan with Business features)
 
-Once your team meets these requirements, your consolidated view will appear automatically on the /sites page.
+Once your team meets these requirements, your consolidated view will appear automatically on the /sites page (where all your dashboards are listed). You will be able to open the consolidated view dashboard from here.
 
 ## Configuration
 
