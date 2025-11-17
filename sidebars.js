@@ -29,6 +29,7 @@ module.exports = {
     ],
     'Stats Dashboard': [
       'guided-tour',
+      'consolidated-views',
       'compare-stats',
       'filters-segments',
       'google-search-console-integration',
