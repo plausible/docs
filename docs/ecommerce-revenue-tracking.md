@@ -20,6 +20,8 @@ The revenue metrics are fully filterable. For instance, you can see the total or
 
 You can add multiple filters to [create audience segments](filters-segments.md) too. This allows you to see the conversions and revenue from for instance the audience segment that's located in Germany, Austria and Switzerland, that were referred by a particular UTM campaign and are using Mac OS.
 
+When the revenue-goal filter is applied on the dashboard, you will also find the "Revenue" column appear in all the individual reports (when expanded using the "Details" option). This is uselful in seeing the breakdown of your revenue by individual traffic sources, top/entry/exit pages, locations, browser/OS/device types, and properties. You can also sort your reports by revenue in either ascending or descending order.
+
 If you want to track ecommerce revenue, here's how to enable it:
 
 ## Step 1: Add a new custom event and specify the currency of your choice
