@@ -1,10 +1,10 @@
 ---
-title: Consolidated views
+title: Consolidated View
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-If you have multiple websites/dashboards in your Plausible account, the consolidated view gives you an overview of traffic across all your websites. This allows you to quickly see the total number of visitors and other key metrics across all your properties in one place.
+If you have multiple websites in your Plausible account, the "**Consolidated View**" gives you an overview of traffic across all of them. This allows you to quickly see the total number of visitors and other key metrics across all your properties in one place.
 
 It looks just like any other Plausible dashboard, but the data includes all your sites instead of just one. 
 
@@ -20,13 +20,9 @@ It looks just like any other Plausible dashboard, but the data includes all your
 
 ## How to enable your consolidated view?
 
-To have a consolidated view, you need:
+To have a consolidated view, you need to have a [team](/users-roles#creating-a-new-team) set up and at least two sites in that team.
 
-1) To have a [team](/users-roles#creating-a-new-team) set up
-2) At least two sites in that team
-3) A Plausible Business plan (or a custom plan with Business features)
-
-Once your team meets these requirements, your consolidated view will appear automatically on the /sites page (where all your dashboards are listed). You will be able to open the consolidated view dashboard from here.
+Once your team meets these requirements, your consolidated view will appear automatically on [the /sites page](landing-page.md) (where all your dashboards are listed). You will be able to open the consolidated view dashboard from here.
 
 ## Configuration
 
@@ -59,9 +55,3 @@ Currently, consolidated views do not include any imported data.
 #### Revenue goals
 
 Revenue goals are currently not supported in consolidated views.
-
-
-
-
-
-
