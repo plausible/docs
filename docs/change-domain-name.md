@@ -12,10 +12,6 @@ Use the [site ownership transfer](transfer-ownership.md) functionality instead
 
 ## How to change your site domain in Plausible site settings?
 
-:::important
-Once you change the domain in your Plausible site settings, you may have to take additional steps to ensure your Plausible integration continues to work seamlessly. Please see the [list below](#domain-change-checklist).
-:::
-
 Here's how to change the domain name of a site in your Plausible account:
 
 * Go to the "**General**" section of the [website settings](website-settings.md) in your Plausible account 
@@ -29,6 +25,8 @@ Here's how to change the domain name of a site in your Plausible account:
 * Click on the "**Change domain**" button to proceed with the domain name change
 
 * After a successful domain change, we will attempt to visit your new domain in order to advise you on the next steps (which depend on how you've set up Plausible). You should see a loading spinner while the process is ongoing, and a tailored recommendation once it finishes. Note that the same information is available in step 1 of the checklist below. We recommend you to go over that checklist to make sure your entire Plausible integration will continue working as before.
+
+* Note that once you change the domain in your Plausible site settings, you may have to take additional steps to ensure your Plausible integration continues to work seamlessly. Please see the [list below](#domain-change-checklist).
 
 ## Domain change checklist
 
