@@ -20,40 +20,26 @@ It looks just like any other Plausible dashboard, but the data includes all your
 
 - It's easier to share insights with leadership or clients. You can even send a single email report that summarises combined activity for an entire organisation.
 
-## How to enable your consolidated view?
+## A holistic view of your whole network
 
-To have a consolidated view, you need to have a [team](/users-roles#creating-a-new-team) set up and at least two sites in that team.
+Your consolidated view will appear automatically on [the /sites page](landing-page.md) if you have a [team](/users-roles#creating-a-new-team) with at least two sites.
 
-Once your team meets these requirements, your consolidated view will appear automatically on [the /sites page](landing-page.md) (where all your dashboards are listed). You will be able to open the consolidated view dashboard from here.
-
-## Configuration
-
-Just like a regular site, a consolidated view has its own settings. You can access the settings directly from the [All Sites](https://plausible.io/sites) page, or the site picker menu on the top left of the consolidated dashboard.
+Just like a regular site, a consolidated view has its own settings. You can access the settings directly from the /sites page, or the site picker menu on the top left of the consolidated dashboard.
 
 <img alt="Consolidated traffic view" src={useBaseUrl('img/consolidated-view-settings.png')} />
 
-#### Timezone
+### Timezone
 
 You can change the timezone used for your consolidated stats. By default, it uses the timezone set for the majority of your sites. It might be helpful to choose a timezone that matches how you normally review performance.
 
-#### Goals
+### Goals
 
-To see conversions on your consolidated dashboard, add your [goals](https://plausible.io/docs/goal-conversions) manually, just like you would on a regular site.
+To see conversions on your consolidated dashboard, add your [goals](https://plausible.io/docs/goal-conversions) manually, just like you would on a regular site. Note that the revenue goals are not supported and that the imported data is not included in the consolidated view.
 
-#### Custom properties
+### Custom properties
 
 You can define custom properties that apply across all sites, such as brand, region, or product category. Just like goals, [custom properties](https://plausible.io/docs/custom-props/introduction) need to be added manually too.
 
-#### Email reports
+### Email reports
 
 You can enable [email reports](https://plausible.io/docs/email-reports) that combine traffic from all your sites.
-
-## Limitations
-
-#### Imported data
-
-Currently, consolidated views do not include any imported data.
-
-#### Revenue goals
-
-Revenue goals are currently not supported in consolidated views.
