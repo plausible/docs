@@ -103,6 +103,7 @@ module.exports = {
           { type: 'doc', id: 'proxy/guides/nginx', label: 'Nginx' },
           { type: 'doc', id: 'proxy/guides/caddy', label: 'Caddy' },
           { type: 'doc', id: 'proxy/guides/apache', label: 'Apache' },
+          { type: 'doc', id: 'proxy/guides/laravel', label: 'Laravel' },
         ],
       },
     ],
