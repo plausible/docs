@@ -75,7 +75,7 @@ You can group your hostnames when adding them to the allow list:
 * `*.yourdomain.com` will record all traffic on all subdomains of `yourdomain.com` but won't record traffic of `yourdomain.com` itself
 * `*yourdomain.com` will record all traffic on all subdomains of `yourdomain.com` and `yourdomain.com` traffic itself will be recorded too
    
-Once added to the allow list, we will start blocking traffic from all the other hostnames within a few minutes. You can add up to 30 different hostnames. 
+Once added to the allow list, we will start blocking traffic from all the **other** hostnames within a few minutes. You can add up to 30 different hostnames. 
 
 You can see the list of all the hostnames that you're allowing the traffic from at any time. Click on the "Remove" button next to a hostname to remove it from the allow list.
 
