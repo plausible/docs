@@ -70,4 +70,5 @@ Managed proxy is available on our Enterprise plans. [Contact us for details](htt
 * [Nginx](/docs/proxy/guides/nginx)
 * [Apache](/docs/proxy/guides/apache)
 * [Caddy](/docs/proxy/guides/caddy)
+* [Laravel](/docs/proxy/guides/laravel)
 * [Send events directly to our API](/docs/events-api)
