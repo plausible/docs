@@ -8,21 +8,15 @@ You can embed your Plausible stats dashboard into any other website using an iFr
 
 ## 1. Create a shared link
 
-<img alt="Plausible Analytics" src={useBaseUrl('img/shared-stats.png')} />
+You need to create a shared link to embed your dashboard into another website. See our [shared link docs](shared-links.md#how-to-create-a-shared-link) to see how.
 
-You need to create a shared link to embed your dashboard into another website. The shared link is secure and impossible to guess. 
-
-In the "**Visibility**" area of your website settings there's a "**Shared links**" section where you can create your shared link. Click on the "**+ new link**" button to do so. 
-
-Click the "**Create shared link**" button and your new shared link will be displayed.
-
-:::info Make sure to keep the password field blank 
-It's technically not possible to embed a password-protected dashboard. When you try to embed a password-protected dashboard, the browser will show a "refused to connect" error message
+:::info Make sure to keep the password field blank
+It's technically not possible to embed a password-protected dashboard. When you try to embed a password-protected dashboard, the browser will show a "refused to connect" error message.
 :::
 
 ## 2. Generate the embed code
 
-In the "**Visibility**" area of your website settings there's the "**Embed dashboard**" section where you can generate the embed code. 
+In the "**Visibility**" area of your website settings there's the "**Embed dashboard**" section where you can generate the embed code.
 
 Enter your shared link URL, select the theme of the embed dashboard (light, dark or system), optionally choose a custom background color and click on the "**Generate embed code**" button.
 
@@ -55,12 +49,13 @@ container you create for it. This way you can choose your own max-width and to a
 
 ```html
 <body>
-<div style="width: 400px;"> <!-- the wrapping container lets you control the width -->
-<!-- below the embed code generated for &width=manual shared link -->
-</div>
+  <div style="width: 400px;">
+    <!-- the wrapping container lets you control the width -->
+    <!-- below the embed code generated for &width=manual shared link -->
+  </div>
 </body>
 ```
 
-:::tip Prefer to build a completely custom dashboard? 
+:::tip Prefer to build a completely custom dashboard?
 [Our stats API](stats-api.md) allows you to take individual metrics and create a custom-built dashboard within your UI in whichever shape or form you want. This requires more development time from your side but you get full flexibility
 :::

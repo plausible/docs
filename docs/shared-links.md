@@ -2,9 +2,7 @@
 title: Share your stats with a private and secure link
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
-Shared links are useful for specific use cases such as if you want to share your stats with (potential) partners or advertisers. Or if you're an agency or working as a freelancer and want to share the stats [with your clients](https://plausible.io/for-freelancers-agencies). You can also use shared links to [embed the unbranded Plausible dashboard](embed-dashboard.md) directly into your site or product. 
+Shared links are useful for specific use cases such as if you want to share your stats with (potential) partners or advertisers. Or if you're an agency or working as a freelancer and want to share the stats [with your clients](https://plausible.io/for-freelancers-agencies). You can also use shared links to [embed the unbranded Plausible dashboard](embed-dashboard.md) directly into your site or product.
 
 :::tip Want to share the stats with your team members instead?
 See how to [invite team members and set user roles](users-roles.md)
@@ -12,22 +10,36 @@ See how to [invite team members and set user roles](users-roles.md)
 
 ## How to create a shared link
 
-In the "**Visibility**" area of your website settings there's a "**Shared links**" section. This is where you can decide to share your dashboard by generating a shared link. Click on the "**+ new link**" button to do so. The shared link is secure and impossible to guess by default. 
+In the "**Visibility**" area of your website settings there's a "**Shared links**" section. This is where you can decide to share your dashboard by generating a shared link. Click on the "**Add shared link**" button to do so. The shared link is secure and impossible to guess by default.
 
 People that you send your shared link to can view the stats dashboard without having a Plausible Analytics account and without needing to log in. They can only view the specific dashboard that you shared and can't see any other sites that you have added to your Plausible account.
 
-<img alt="Plausible Analytics" src={useBaseUrl('img/shared-stats.png')} />
+### Options
 
-## Shared link with a password protection
+#### Name
 
-You can add password protection to the shared link for extra security. Then people that you send your shared link to can only view the stats dashboard if they input the password you have chosen.
+This won't be visible to anyone viewing the link.
 
-If you prefer to share your stats without the password protection you can keep the password field blank. Click the "**Create shared link**" button and your new shared link will be displayed.
+#### Password
 
-<img alt="Plausible Analytics" src={useBaseUrl('img/create-shared-link.png')} />
+If you add password protection to the shared link, people that you send your shared link to can only view the stats if they enter the password.
 
-## Remove a particular shared link
+You can only set the password when creating the shared link, and you won't be able to see, edit, or remove the password from this link later on. If you forget it, you'll have to delete the link and create a new one.
 
-You can click on the trash can icon if you want to remove the particular shared link.
+#### Limit to segment
 
-<img alt="Plausible Analytics" src={useBaseUrl('img/shared-links-overview.png')} />
+If you enable this option, the dashboard accessible with this shared link will always be filtered to the selected segment. You can select only site segments.
+
+Viewers won't be able to remove that segment from the dashboard, but they will be able to see what filters are in the segment and add additional filters on top of the segment.
+
+:::info
+As an example, if the selected segment contains the filters "Country is Estonia or Poland" and "Page is not /private", visitors will be able to drill down further by adding "Country is Estonia" filter, but if they try to break out with an additional "Country is Italy" filter, they will see no data.
+:::
+
+## How to edit a shared link
+
+Click on the pencil icon next to the link in the links list if you want to edit the shared link.
+
+## How to remove a shared link
+
+Click on the trash can icon next to the link in the links list if you want to remove the shared link.
