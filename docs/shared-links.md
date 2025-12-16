@@ -35,7 +35,7 @@ Viewers won't be able to remove that segment from the dashboard. They can see wh
 This makes it possible to share only the part of your analytics that matters to a specific audience. For example, you might want to share data only for visitors from a certain country or only for traffic related to a campaign. It prevents viewers from changing the base filters and seeing data you did not intend to share.
 
 :::info
-As an example, if the selected segment contains the filters "Country is Estonia or Poland" and "Page is not /private", visitors will be able to drill down further by adding "Country is Estonia" filter, but if they try to break out with an additional "Country is Italy" filter, they will see no data.
+As an example, if the selected segment contains the filters "Country is Estonia or Poland" and "Page is not /private", visitors will be able to drill down further by adding "Country is Estonia" filter, but if they try to go outside of the segment, for example by adding Country is Italy, they will see no data.
 :::
 
 ## How to edit a shared link
