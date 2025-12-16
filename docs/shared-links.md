@@ -28,7 +28,7 @@ You can only set the password when creating the shared link, and you won't be ab
 
 #### Limit to segment
 
-If you enable this option, the dashboard accessible with this shared link will always be filtered to the selected segment. You can select only site segments.
+If you enable this option, anyone who opens the dashboard using the shared link will always see data filtered by the [selected segment](https://plausible.io/docs/filters-segments#how-to-save-a-segment) only. Only site segments (i.e. segments that anyone on your team can use) can be used.
 
 Viewers won't be able to remove that segment from the dashboard, but they will be able to see what filters are in the segment and add additional filters on top of the segment.
 
