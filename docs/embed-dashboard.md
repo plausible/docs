@@ -26,7 +26,7 @@ It's much more convenient than figuring out the hex code for your background col
 
 Want your embed to have default filters or time period? Instead of using the default shared link URL for generating the embed, you can open the shared link, apply filters to your dashboard and use the URL with the applied filters. Those filters will then be automatically added to your embed dashboard every time it's loaded. Note that these are [our regular filters](filters-segments.md) and your visitors can remove or change them to view other stats as well.
 
-<img alt="Generate embed code" src={useBaseUrl('img/embed-dashboard-code.png')} />
+<img alt="Generate embed code" src={useBaseUrl('img/embed-dashboard.png')} />
 
 ## 3. Paste the embed code into your website
 
