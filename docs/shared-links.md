@@ -12,7 +12,7 @@ See how to [invite team members and set user roles](users-roles.md)
 
 In the "**Visibility**" area of your website settings there's a "**Shared links**" section. This is where you can decide to share your dashboard by generating a shared link. Click on the "**Add shared link**" button to do so. The shared link is secure and impossible to guess by default.
 
-People that you send your shared link to can view the stats dashboard without having a Plausible Analytics account and without needing to log in. They can only view the specific dashboard that you shared and can't see any other sites that you have added to your Plausible account.
+<img alt="share stats with collaborators" src={useBaseUrl('img/shared-links-in-plausible-analytics.png')} />
 
 ### Options
 
