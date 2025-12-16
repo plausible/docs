@@ -43,7 +43,7 @@ As an example, if the selected segment contains the filters "Country is Estonia 
 
 ## How to edit a shared link
 
-Click on the pencil icon next to the link in the links list if you want to edit the shared link.
+Click on the pencil icon next to the link in the links list if you want to edit the shared link. This will open the modal where you can change the name of the shared link and toggle off the option of limiting to segment.
 
 ## How to remove a shared link
 
