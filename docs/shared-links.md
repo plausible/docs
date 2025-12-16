@@ -21,7 +21,7 @@ Go to the "**Visibility**" area of your website settings and find the "**Shared 
 
 #### Name
 
-This won't be visible to anyone viewing the link.
+Add a display name for your own reference. This won't be visible to anyone viewing the link.
 
 #### Password
 
