@@ -30,7 +30,9 @@ You can only set the password when creating the shared link, and you won't be ab
 
 If you enable this option, anyone who opens the dashboard using the shared link will always see data filtered by the [selected segment](https://plausible.io/docs/filters-segments#how-to-save-a-segment) only. Only site segments (i.e. segments that anyone on your team can use) can be used.
 
-Viewers won't be able to remove that segment from the dashboard, but they will be able to see what filters are in the segment and add additional filters on top of the segment.
+Viewers won't be able to remove that segment from the dashboard. They can see which filters are included in it and they can add more filters on top of it.
+
+This makes it possible to share only the part of your analytics that matters to a specific audience. For example, you might want to share data only for visitors from a certain country or only for traffic related to a campaign. It prevents viewers from changing the base filters and seeing data you did not intend to share.
 
 :::info
 As an example, if the selected segment contains the filters "Country is Estonia or Poland" and "Page is not /private", visitors will be able to drill down further by adding "Country is Estonia" filter, but if they try to break out with an additional "Country is Italy" filter, they will see no data.
