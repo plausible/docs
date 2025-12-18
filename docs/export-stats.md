@@ -34,3 +34,17 @@ Here's how to export all the native data collected for a particular Plausible da
 ## Use the stats API
 
 As an alternative to exporting as CSV files or if you prefer a programmatic way to access your stats, please take a look at our [stats API](stats-api.md).
+
+## Scheduled raw event data exports
+
+If you need access to event level data, we offer scheduled raw event data exports for Enterprise customers.
+
+This option complements our self serve export options and APIs and is intended for advanced use cases such as data warehousing, internal analytics or compliance reporting.
+
+Scheduled raw event exports are configured with our team. We agree on the event data fields and schema, the export format, the delivery interval such as daily or weekly and the secure delivery method.
+
+Once set up, the exports are delivered automatically on the agreed schedule.
+
+Scheduled raw event exports are not self serve and are not real time. They are intentionally scoped to keep Plausible fast, privacy friendly and predictable.
+
+If you only need aggregated data, occasional exports or self serve access, our standard export options as listed above are usually the best option.
