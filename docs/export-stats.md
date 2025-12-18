@@ -45,6 +45,6 @@ Scheduled raw event exports are configured with our team. We agree on the event 
 
 Once set up, the exports are delivered automatically on the agreed schedule.
 
-Scheduled raw event exports are not self serve and are not real time. They are intentionally scoped to keep Plausible fast, privacy friendly and predictable.
+Scheduled raw event exports are not self serve and are not real time. They are intentionally scoped to keep Plausible fast, privacy friendly and predictable. Please [contact us](https://plausible.io/contact) to discuss your needs.
 
 If you only need aggregated data, occasional exports or self serve access, our standard export options as listed above are usually the best option.
