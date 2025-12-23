@@ -2,6 +2,8 @@
 title: Share your stats with a private and secure link
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 Shared links are useful for specific use cases such as if you want to share your stats with (potential) partners or advertisers. Or if you're an agency or working as a freelancer and want to share the stats [with your clients](https://plausible.io/for-freelancers-agencies). You can also use shared links to [embed the unbranded Plausible dashboard](embed-dashboard.md) directly into your site or product.
 
 People that you send your shared link to can view the stats dashboard without having a Plausible Analytics account and without needing to log in. They can only view the specific dashboard that you shared and can't see any other sites that you have added to your Plausible account.
@@ -38,7 +40,7 @@ Viewers won't be able to remove that segment from the dashboard. They can see wh
 This makes it possible to share only the part of your analytics that matters to a specific audience. For example, you might want to share data only for visitors from a certain country or only for traffic related to a campaign. It prevents viewers from changing the base filters and seeing data you did not intend to share.
 
 :::info
-As an example, if the selected segment contains the filters "Country is Estonia or Poland" and "Page is not /private", visitors will be able to drill down further by adding "Country is Estonia" filter, but if they try to go outside of the segment, for example by adding Country is Italy, they will see no data.
+As an example, if the selected segment contains the filters "Country is Estonia or Poland" and "Page is not /private", visitors will be able to drill down further by adding "Country is Estonia" filter. If they try to go outside of the segment, by adding the filter "Country is Italy" as an example, they will see no data.
 :::
 
 ## How to edit a shared link
