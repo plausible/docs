@@ -8,7 +8,6 @@ Shared links are useful for specific use cases such as if you want to share your
 
 People that you send your shared link to can view the stats dashboard without having a Plausible Analytics account and without needing to log in. They can only view the specific dashboard that you shared and can't see any other sites that you have added to your Plausible account.
 
-
 :::tip Want to share the stats with your team members instead?
 See how to [invite team members and set user roles](users-roles.md)
 :::
@@ -19,19 +18,19 @@ Go to the "**Visibility**" area of your website settings and find the "**Shared 
 
 <img alt="share stats with collaborators" src={useBaseUrl('img/shared-links-in-plausible-analytics.png')} />
 
-### Options
+## Shared link options
 
-#### Name
+### Name
 
 Add a display name for your own reference. This won't be visible to anyone viewing the link.
 
-#### Password
+### Password
 
 If you add password protection to the shared link, people that you send your shared link to can only view the stats if they enter the password.
 
 You can only set the password when creating the shared link, and you won't be able to see, edit, or remove the password from this link later on. If you forget it, you'll have to delete the link and create a new one.
 
-#### Limit to segment
+### Limit to segment
 
 If you enable this option, anyone who opens the dashboard using the shared link will always see data filtered by the [selected segment](https://plausible.io/docs/filters-segments#how-to-save-a-segment) only. Only site segments (i.e. segments that anyone on your team can use) can be used.
 
