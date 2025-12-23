@@ -10,7 +10,7 @@ The Plausible Stats API offers a way to retrieve your stats programmatically. [L
 
 ## Embedded dashboard
 
-You can embed your Plausible stats dashboard into any other website using an iFrame. This is useful in case you want to showcase your stats on your own website or if you want to offer Plausible-powered web analytics dashboard (without our branding) directly in your user interface. [Learn more here](embed-dashboard.md).
+You can embed your Plausible stats dashboard into any other website using an HTML iframe. This is useful in case you want to showcase your stats on your own website or if you want to offer Plausible-powered web analytics dashboard (without our branding) directly in your user interface. [Learn more here](embed-dashboard.md).
 
 ## WordPress plugin
 
