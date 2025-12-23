@@ -8,7 +8,11 @@ You can embed your Plausible stats dashboard into any other website using an HTM
 
 ## 1. Create a shared link
 
-You need to create a shared link to embed your dashboard into another website. See our [shared link docs](shared-links.md#how-to-create-a-shared-link) to see how.
+You need to create a shared link to embed your dashboard into another website. 
+
+Want your embed to be limited to only include the stats of a specific segment of your traffic? When creating a new shared link, you can limit it to a segment.
+
+See our [shared link docs](shared-links.md) to see how.
 
 :::info Make sure to keep the password field blank
 It's technically not possible to embed a password-protected dashboard. When you try to embed a password-protected dashboard, the browser will show a "refused to connect" error message.
@@ -23,8 +27,6 @@ Enter your shared link URL, select the theme of the embed dashboard (light, dark
 :::tip You can set the background color as `transparent` in the embed code
 It's much more convenient than figuring out the hex code for your background color
 :::
-
-Want your embed to have default filters or time period? Instead of using the default shared link URL for generating the embed, you can open the shared link, apply filters to your dashboard and use the URL with the applied filters. Those filters will then be automatically added to your embed dashboard every time it's loaded. Note that these are [our regular filters](filters-segments.md) and your visitors can remove or change them to view other stats as well.
 
 <img alt="Generate embed code" src={useBaseUrl('img/embed-dashboard.png')} />
 
