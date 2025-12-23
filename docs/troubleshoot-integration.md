@@ -14,7 +14,17 @@ Our testing tool will launch automatically from the blinking green dot screen to
 
 <img alt="Integration verification tool" src={useBaseUrl('img/integration-verification-tool.png')} />
 
+### Launch the Plausible testing tool from your site settings
+
+Have you made any changes to your integration? You can launch our testing tool at any time from your [site settings](website-settings.md) to verify whether the changes you made has worked.
+
 Did our testing tool detect an issue with your integration? Or is there something unusual about the data you're seeing? See how to troubleshoot the most common issues below.
+
+## Did you block a specific segment of traffic using Shields?
+
+The **Shields** feature lets you block visits from being recorded based on IP addresses, hostnames, countries or specific pages.
+
+If your own visits are missing, check whether you have added any [Shields rules](excluding.md) that might be excluding them. Review the list of active rules for this site and make sure none of them apply to your current location or setup.
 
 ## Have you added the Plausible snippet into your site?
 
@@ -89,14 +99,6 @@ All referral sources are counted only when they start a new session on your site
 
 The fact that the referral sources are counted only when they start a new session on your site prevents external domains such as a payment gateway that the user is being taken through to show up in the referrers list. No need for you to manually exclude referrers.
 
-## Launch the Plausible testing tool from your site settings
-
-Have you made any changes to your integration? You can launch our testing tool at any time from your [site settings](website-settings.md) to verify whether the changes you made has worked.
-
-You can also use the tools that are built into your browser, such as the [Chrome](https://developer.chrome.com/docs/devtools/open/), [Safari](https://support.apple.com/en-gb/guide/safari/sfri20948/mac) and [Firefox](https://firefox-source-docs.mozilla.org/devtools-user/) developer tools to manually confirm that Plausible is working on your site. See the instructions below.
-
-Do you need further help with your integration? Do [contact us](https://plausible.io/contact). We're here to help.
-
 <details>
 
 <summary>
@@ -105,7 +107,7 @@ Do you need further help with your integration? Do [contact us](https://plausibl
 
 </summary>
 
-In some cases, our automated testing tool may not be able to check your site. In those cases, a manual check is needed:
+In some cases, our automated testing tool may not be able to check your site. In those cases, a manual check is needed. You can use the tools that are built into your browser, such as the [Chrome](https://developer.chrome.com/docs/devtools/open/), [Safari](https://support.apple.com/en-gb/guide/safari/sfri20948/mac) and [Firefox](https://firefox-source-docs.mozilla.org/devtools-user/) developer tools to manually confirm that Plausible is working on your site.
 
 ### Check for the Plausible snippet in your source code
 
