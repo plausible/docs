@@ -25,7 +25,7 @@ Next, choose your plan. Each plan offers different features, site limits and tea
 * **Starter** - Essential features for solo projects and new sites  
 * **Growth** - Team access and sharing tools for growing projects  
 * **Business** - Advanced marketing features, more sites and larger teams  
-* **Enterprise** - Custom plan with tailored limits. [Contact us](https://plausible.io/contact) to discuss
+* **Enterprise** - Custom plan with tailored limits. [Contact us](https://plausible.io/contact) to discuss or [learn more](https://plausible.io/enterprise-web-analytics) about it.
 
 You can see [the pricing and the differences between the plans](https://plausible.io/#pricing) on our website.
 
