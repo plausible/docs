@@ -59,7 +59,7 @@ Don't want to manage your own proxy? We can handle it for you. Our managed proxy
 
 All you need to do is set up a CNAME record using the instructions we'll send you and update the snippet on your site. We'll take care of everything else.
 
-Managed proxy is available on our Enterprise plans. [Contact us for details](https://plausible.io/contact).
+Managed proxy is available on our [Enterprise plans](https://plausible.io/enterprise-web-analytics). [Contact us for details](https://plausible.io/contact).
 
 ### Manual proxy
 
