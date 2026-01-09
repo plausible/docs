@@ -10,7 +10,7 @@ SSO works by logging in through an identity provider (IdP). We support the SAML 
 
 User accounts are provisioned just-in-time. As long as the IdP session is active and the email matches, users can log in to Plausible automatically.
 
-SSO is available on our Enterprise plan. [Contact us](https://plausible.io/contact) to learn more.
+SSO is available on our [Enterprise plan](https://plausible.io/enterprise-web-analytics). [Contact us](https://plausible.io/contact) to learn more.
 
 :::tip What is SAML?
 **Security Assertion Markup Language (SAML)** is an XML-based protocol for secure exchange of information between an authority (Identity Provider or IdP) and a consumer (Service Provider or SP - in this case, Plausible).
