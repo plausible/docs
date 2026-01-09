@@ -48,6 +48,10 @@ And thanks to the members of our community, there are also some third-party solu
 
 [Tally](https://flathub.org/apps/com.cassidyjames.plausible): hybrid native + web app that wraps the Plausible web app in a native UI, integrating better with desktop operating systems.
 
+## Windows
+
+[Wizible](https://xakpc.dev/apps/wizible) brings Plausible to your Windows desktop. Monitor your stats anytime, right from the Widgets panel.
+
 ---
 
 Let us know about any other connectors, apps or widgets that you've built and we will feature them in this list. Thanks for your support!
