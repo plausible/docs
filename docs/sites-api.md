@@ -24,7 +24,7 @@ The Plausible Site provisioning API offers a way to create and manage sites in y
 * Create site guest invitations
 * Delete site guests/invitations
 
-Each request must be authenticated with an API key using the Bearer Token method. Please [contact us](https://plausible.io/contact) to discuss your needs and to get an API key with permissions for the endpoints listed in this document.
+Each request must be authenticated with an API key using the Bearer Token method. Sites API is available on [Enterprise plans](https://plausible.io/enterprise-web-analytics). Please [contact us](https://plausible.io/contact) to discuss your needs and to get an API key with permissions for the endpoints listed in this document.
 
 ## Authentication
 
