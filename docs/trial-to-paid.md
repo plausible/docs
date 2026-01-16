@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Log in to your Plausible Analytics account and in the top right, click on the "**X trial days left**" button.
 
-In the "**Subscription**" section, your "**Monthly quota**" should list "**Free trial**". Click on "**Upgrade**" to upgrade your trial account to a paid subscription.
+In the "**Subscription**" section, your "**Monthly quota**" should list "**Free trial**". Click on "**Upgrade**" to upgrade your trial account to a paid subscription. You can also view [Plausible pricing and subscription plans](https://plausible.io/#pricing) on our website.
 
 Note that you will keep all the stats you have collected during the trial when you upgrade your account. We don't reset any data collected in the trial.
 
