@@ -4,7 +4,9 @@ title: Choose the right subscription
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Plausible gives you control and flexibility in plans you can subscribe to, the billing frequency and in upgrading or downgrading your subscription tier based on your usage. Here's how to choose the subscription that's right for you.
+Plausible gives you full control over your subscription. You can choose the plan that fits your needs, decide how often you are billed, and upgrade or downgrade your tier as your usage changes.
+
+You can view the [Plausible pricing and subscription plans here](https://plausible.io/#pricing). Below, we explain how to choose the subscription that is right for you.
 
 ## How are the subscriptions priced?
 
