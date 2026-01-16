@@ -4,11 +4,11 @@ title: Import stats using CSV files
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Plausible Analytics allows you to import your historical stats from various analytics tools using CSV files. This also makes it possible to migrate your stats [from Plausible Community Edition (CE) to our official managed hosting (or vice-versa)](https://plausible.io/self-hosted-web-analytics).
+Plausible Analytics allows you to import your historical stats from various analytics tools using CSV files. You can import multiple different properties into the same Plausible dashboard using CSVs. 
 
-You can import multiple different properties into the same Plausible dashboard using CSVs. In addition to CSV file imports, you can also import your Google Analytics stats to the same Plausible dashboard.
-
-Do you want to import your Google Analytics (UA and GA4) stats into Plausible? We have a simple [Google Analytics import tool](google-analytics-import.md).
+:::tip Do you want to import your Google Analytics stats into Plausible? 
+We have a simple [Google Analytics import tool](google-analytics-import.md).
+:::
 
 The rest of this article is focused importing your historical stats into Plausible using CSV files.
 
@@ -36,17 +36,9 @@ No data export/import is needed in this case either. We have an easy way to [cha
 
 ## How to migrate from Plausible CE to our managed hosting (or vice-versa)
 
-:::note
-Make sure to upgrade your self-hosted instance to Plausible CE version 2.1 or higher to get access to the export/import functionality
-:::
-
 1. First you need to export your stats. Go to the Plausible [site settings](website-settings.md) for the website you'd like to export the data for.
 
-2. Go into the "**Imports & Exports**" section, find the "**Export Data**" panel and click on the "**Export to CSV**" button to export all the data.
-
-:::note
-Only native data can be exported. Any data imported from [external sources such as Google Analytics](https://plausible.io/docs/google-analytics-import), will be excluded from the [export](https://plausible.io/docs/export-stats).
-:::
+2. Go into the "**Imports & Exports**" section, find the "**Export Data**" panel and click on the "**Export to CSV**" button to export all the data. Note that only native data can be exported. Any data imported from external sources such as Google Analytics will be excluded from the export.
 
 3. Then go to the site you'd like to import the data to. In the "**Imports & Exports**" section, find the "**Import Data**" panel and click on the "**CSV**" button to import your CSV files.
 
