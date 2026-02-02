@@ -363,7 +363,7 @@ curl -X GET https://plausible.io/api/v1/sites/goals?site_id=test-domain.com \
             "goal_type": "event",
             "display_name": "Signup",
             "event_name": "Signup",
-            "page_path": null
+            "page_path": null,
             "custom_props": {
                 "country": "Estonia"
             }
