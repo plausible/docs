@@ -363,14 +363,18 @@ curl -X GET https://plausible.io/api/v1/sites/goals?site_id=test-domain.com \
             "goal_type": "event",
             "display_name": "Signup",
             "event_name": "Signup",
-            "page_path": null
+            "page_path": null,
+            "custom_props": {
+                "country": "Estonia"
+            }
         },
         {
             "id": "2",
             "goal_type": "page",
             "display_name": "Visit /register",
             "event_name": null,
-            "page_path": "/register"
+            "page_path": "/register",
+            "custom_props": {}
         }
     ],
     "meta": {
@@ -462,6 +466,10 @@ Actual value of the page path of your goal, also accepts wildcards for type `pag
 **display_name**
 
 The value under which the goal is available in the dashboard, as well as in the [Stats API](/stats-api). If not provided, for custom events the `display_name` becomes `event_name` and `Visit {page_path}` in case of pageview goals.
+
+**custom_props**
+
+A map of custom properties to be part of the goal (keys designate custom property names, and values custom property values).
 
 <hr / >
 
