@@ -32,6 +32,14 @@ You can add up to 30 classes for custom properties. Simply separate them with a 
 If you don't see a `plausible.init` call in your snippet, [upgrade your script](/script-update-guide)
 :::
 
+## Using custom properties in goals and funnels
+
+When [creating a goal from a custom event](goal-conversions.md), you can attach up to three custom properties to that goal.
+
+This allows you to define more precise goals. For example, you can create a single goal for `Form Submit` and limit it to specific property values such as `position=header` or `method=HTTP`.
+
+Goals with custom properties can also be [used inside funnels](funnel-analysis.md). This makes it possible to build funnels that track specific variations of the same event, such as different form locations, buttons or interaction types.
+
 <details>
 
 <summary>
