@@ -192,13 +192,17 @@ Once you’ve made the necessary changes, simply click "Update goal," and your u
 
 ## Enhanced goal conversion tracking
 
+### Monetary values to track ecommerce revenue
+
+You can also send dynamic monetary values alongside custom events to track revenue attribution. Here's how to set up the [ecommerce revenue tracking](ecommerce-revenue-tracking.md).
+
 ### Attach custom properties
 
 Custom properties can be attached to events to capture dynamic elements and to further break down goal conversions. You can use custom properties to create your custom metrics to collect and analyze data that Plausible doesn't automatically track. [Learn more here](/custom-props/for-custom-events).
 
-### Automatically attached properties
+#### Automatically attached properties
 
-#### `url`
+##### `url`
 
 For clicks on links (`<a>` elements) tagged with `plausible-event-name=...`, we automatically track where the link is pointing (its `href` property). 
 
@@ -221,10 +225,6 @@ plausible.init({
   // ... your other init options
 })
 ```
-
-### Monetary values to track ecommerce revenue
-
-You can also send dynamic monetary values alongside custom events to track revenue attribution. Here's how to set up the [ecommerce revenue tracking](ecommerce-revenue-tracking.md).
 
 ### Create funnels to optimize your conversion rate
 
