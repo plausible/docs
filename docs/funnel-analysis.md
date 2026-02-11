@@ -7,13 +7,18 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 You can follow the visitor journey from a landing page to a conversion with our multi-step funnel analysis. The insights from the marketing funnel allow you to uncover possible issues, optimize your site and increase the conversion rate.
 
 * Funnels allow you to analyze the user flow through your website and the different pages
-* You can also follow the user flow between your main domain and its subdomains ([see more](plausible-script.md#can-i-track-visitors-across-my-domain-and-subdomain))
 * You can go beyond pageviews and use any custom events to build a funnel
 * With the conversion rate you understand the percentage of visitors who started the user flow and ended with a conversion event
 * With the percentage drop-off between the individual funnel steps, you can spot where you lose the most visitors
 * You can get more granular by [using filters](filters-segments.md) to segment your audience. Filter conversion funnels by marketing campaign, referral source, landing page, device or location for more insights
 
 <img alt="Funnels demo" src={useBaseUrl('img/funnels-demo.png')} />
+
+## How funnel conversions are counted
+
+To be counted as converted, visitors need to complete all the steps you've defined in your funnel. They must take the steps in the correct order but they can also visit other pages or trigger other events in between those steps.
+
+Funnels also work across your main domain and its subdomains ([see more](subdomain-hostname-filter.md)), and you don't need to worry about visitors briefly leaving your site to complete actions on external services like Stripe's payment page or other third-party gateways. Plausible treats the returning visit as part of the same session, so your funnel will accurately track the full visitor journey.
 
 ## How to set up the conversion funnel analysis
 
@@ -34,10 +39,6 @@ It is quick and easy to create a funnel. Here's how:
 * Click on the "**Save**" button after you've specified the user journey you want to analyse
 
 <img alt="Goals and funnels" src={useBaseUrl('img/goals-and-funnels.png')} />
-
-:::tip How funnel conversions are counted
-To be counted as converted, visitors need to complete all the steps you’ve defined in your funnel. They must take the steps in the correct order but they can also visit other pages or trigger other events in between those steps.
-:::
 
 That's it! Funnels are listed at the bottom of your dashboard and will appear as soon as the first visit has been tracked on the funnel steps. You can then make changes to your site or to your campaign, test different options and check the funnel again to see how your improvements have affected the conversions.
 
