@@ -22,6 +22,8 @@ Select `Pageview` as the goal trigger and enter the pathname of the page you wou
 
 Next, you'll see the Display Name which gets self-populated. You can optionally edit it. You can also edit this later at any time. 
 
+When creating a pageview goal, you can optionally narrow it down using custom properties. This lets you turn a broad goal into a more specific one by matching only events with certain property values. For example, you can create a pageview goal for /dashboard that only counts visits where account_type = trial, letting you measure dashboard engagement specifically from trial users.
+
 Then click the "**Add goal**" button and you’ll be taken back to the goals page. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who reached the specified page or group of pages. Goal conversions are listed at the very bottom of the dashboard.
 
 ## How to group your pages
