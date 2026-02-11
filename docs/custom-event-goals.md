@@ -167,7 +167,9 @@ Click on the "**+ Add goal**" button to go to the goal creation form.
 
 Select `Custom event` as the goal trigger and enter the name of the custom event you are triggering. The name must match the one you added as a CSS class name on your site for conversions to appear in your analytics dashboard. So in our example where you added a CSS class name `plausible-event-name=Button+Click`, the goal to add to your Plausible account is `Button Click` (plus is replaced by a space).
 
-<img alt="Add your custom event goal" src={useBaseUrl('img/add-custom-event-goal.png')} />
+When creating a custom event goal, you can optionally narrow it down using custom properties. This lets you turn a broad goal into a more specific one by matching only events with certain property values. This allows you to track something like “Purchase (Business – yearly)” as its own goal, rather than grouping all purchases together.
+
+<img alt="Add your custom event goal" src={useBaseUrl('img/custom-events-in-plausible-setup-modal.png')} />
 
 Next, click on the "**Add goal**" button and you'll be taken back to the Goals page. When you navigate back to your Plausible dashboard, you should see the number of visitors who triggered the custom event. Custom events are listed at the bottom of your dashboard and will appear as soon as the first conversion has been tracked.
 
