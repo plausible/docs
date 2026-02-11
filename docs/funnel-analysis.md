@@ -42,6 +42,14 @@ It is quick and easy to create a funnel. Here's how:
 
 That's it! Funnels are listed at the bottom of your dashboard and will appear as soon as the first visit has been tracked on the funnel steps. You can then make changes to your site or to your campaign, test different options and check the funnel again to see how your improvements have affected the conversions.
 
+## What's next?
+
+- Track [ecommerce revenue](ecommerce-revenue-tracking.md) alongside your funnels to see which paths generate the most sales
+- Use [filters and segments](filters-segments.md) to compare funnel performance across different traffic sources or campaigns
+- Add [custom properties](custom-props/introduction.md) to your events for deeper breakdowns within each funnel step
+
+To learn about in-depth funnel marketing, [head to our blog](https://plausible.io/blog/funnels-conversion-optimization).
+
 ## How to edit existing funnels
 
 It is also quick and easy to edit any of your existing funnels. Here's how:
@@ -53,5 +61,3 @@ It is also quick and easy to edit any of your existing funnels. Here's how:
 * Change the funnel name and/or edit the steps of your funnel
 
 * Click on the "**Update Funnel**" button
-
-To learn about in-depth funnel marketing, [head to our blog](https://plausible.io/blog/funnels-conversion-optimization).
