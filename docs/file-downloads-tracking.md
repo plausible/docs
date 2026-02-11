@@ -71,6 +71,10 @@ Using the `fileExtensions` option will override our default list and only your c
 
 Learn more about [effectively optimizing for file downloads](https://plausible.io/blog/track-file-downloads-in-web-analytics) on our blog.
 
+## Other automated goals
+
+Plausible also offers automated tracking for [outbound link clicks](outbound-link-click-tracking.md) and [form submissions](form-submissions-tracking.md). These can be enabled from the "Site Installation" area in your site settings without any code changes. You can also track [404 error pages](error-pages-tracking-404.md) with a small snippet of code.
+
 ## How to disable "File downloads" tracking for your site
 
 You can control what data is collected in the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
