@@ -36,6 +36,8 @@ Click on the "**+ Add goal**" button to go to the goal creation form.
 
 Select `Scroll Depth` as the goal trigger, select the scroll depth percentage threshold (from 1% to 100%) and enter the pathname of the page you would like to track. The pathname must match the page path you can see in your Plausible Analytics dashboard.
 
+When creating a scroll depth goal, you can optionally narrow it down using custom properties. This lets you turn a broad goal into a more specific one by matching only events with certain property values. For example, you could create a 75% scroll depth goal for blog posts that only counts when author = jane_doe, letting you measure deep engagement specifically with that author’s content.
+
 <img alt="Scroll depth goals" src={useBaseUrl('img/scroll-depth-goal.png')} />
 
 Do you want to analyze the scroll depth for a specific section of your site? You can use an asterisk (`*`) to match patterns in your page path URLs. Asterisks can be placed on either end or in the middle of any page path URL.
