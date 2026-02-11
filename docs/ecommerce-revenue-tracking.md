@@ -84,10 +84,10 @@ If you're using Shopify, you can track sales and revenue by making a few changes
 
 There's a third-party Plausible plugin for Magento that supports custom events and revenue goals tracking. [Take a look](https://github.com/Pixel-Open/magento-plausible).
 
-Learn more about tracking [ecommerce revenue attribution](https://plausible.io/blog/ecommerce-revenue-attribution) on our blog.
-
 ## What's next?
 
 - Set up a [funnel](funnel-analysis.md) to follow the purchase journey from landing page to checkout
 - Use [custom properties](custom-props/introduction.md) to break down revenue by product name, category or coupon code
 - [Filter and segment](filters-segments.md) your dashboard to see revenue by source, campaign, country or device
+
+Learn more about tracking [ecommerce revenue attribution](https://plausible.io/blog/ecommerce-revenue-attribution) on our blog.
