@@ -46,3 +46,17 @@ Data sampling is the practice of analyzing a subset of all data to uncover the m
 Plausible does not use any data sampling by default. We collect and store 100% of the data regardless of how many pageviews you have. The stats in your dashboard reflect 100% accurate data of what happens on your site.
 
 However, on some dashboard views that have a lot of data such as those with more than 10 million pageviews, we apply limited data sampling to make the dashboard load as fast as possible.
+
+## Why don't I see my own visits?
+
+If you've just installed Plausible and aren't seeing your own visits, there are a few common reasons:
+
+- **WordPress plugin**: Our [official WordPress plugin](https://wordpress.org/plugins/plausible-analytics/) excludes logged-in admin visits by default. If the verification tool confirms the tracking is working, you have nothing to worry about.
+- **Shields**: The [Shields feature](excluding.md) lets you block visits based on IP addresses, hostnames, countries or specific pages. Check whether you have any rules that might be excluding your own visits.
+- **Adblockers**: If you're using a browser extension or network-level adblocker, it may be blocking the Plausible script. Consider setting up a [proxy](proxy/introduction.md) to serve the script as a first-party connection.
+
+For more details, see our full [troubleshooting guide](troubleshoot-integration.md).
+
+## How quickly will I see data after installing the script?
+
+Data appears in real-time. As soon as the first visit is counted after installing the Plausible snippet, your dashboard will start displaying stats with no delays. If you see a blinking green dot instead of the dashboard, it means we haven't recorded any visits yet. Our testing tool will launch automatically to help you verify the installation.
