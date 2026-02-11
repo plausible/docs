@@ -24,6 +24,10 @@ It looks just like any other Plausible dashboard, but the data includes all your
 
 Your consolidated view will appear automatically on [the /sites page](landing-page.md) if you have a [team](/users-roles#creating-a-new-team) with at least two sites.
 
+The consolidated view requires no setup, configuration or ongoing maintenance. Your consolidated dashboard automatically includes the stats from all of the sites in your team.
+
+When you add a new site to your team, it will automatically be included in the consolidated view. When you remove a site from your team, all the data from that site including historical stats will automatically be removed from the consolidated view too.
+
 Just like a regular site, a consolidated view has its own settings. You can access the settings directly from the /sites page, or the site picker menu on the top left of the consolidated dashboard.
 
 <img alt="Consolidated traffic view" src={useBaseUrl('img/consolidated-view-settings.png')} />
@@ -34,7 +38,7 @@ You can change the timezone used for your consolidated stats. By default, it use
 
 ### Goals
 
-To see conversions on your consolidated dashboard, add your [goals](https://plausible.io/docs/goal-conversions) manually, just like you would on a regular site. Note that the revenue goals are not supported and that the imported data is not included in the consolidated view.
+To see conversions on your consolidated dashboard, add your [goals](https://plausible.io/docs/goal-conversions) manually, just like you would on a regular site. 
 
 ### Custom properties
 
@@ -43,3 +47,9 @@ You can define custom properties that apply across all sites, such as brand, reg
 ### Email reports
 
 You can enable [email reports](https://plausible.io/docs/email-reports) that combine traffic from all your sites.
+
+### Data not included in the consolidated view
+
+- **Imported data** such as stats imported from Google Analytics or other sources is not included. Only data collected natively by Plausible is reflected in your consolidated stats.
+
+- **Revenue goals** are not supported because different sites may track revenue in different currencies making it impossible to accurately combine revenue data across sites.
