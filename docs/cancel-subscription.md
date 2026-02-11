@@ -3,7 +3,6 @@ title: Cancel your subscription plan
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
-# Cancel your subscription plan
 
 Log in to your Plausible account. In the top right menu, click your account name → "**Account Settings**".
 
