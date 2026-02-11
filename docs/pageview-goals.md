@@ -34,6 +34,14 @@ You can for instance group all of your blog posts by creating a pageview goal `/
 You can do so by using [the "Filter" button](filters-segments.md) on the top of your dashboard
 :::
 
+## What's next?
+
+Now that you're tracking pageview goals, you can:
+
+- Build a [conversion funnel](funnel-analysis.md) to follow the visitor journey from landing page to conversion
+- Add [custom events](custom-event-goals.md) for more specific tracking like button clicks
+- Use [filters and segments](filters-segments.md) to analyse which sources and campaigns drive the most conversions
+
 ## Edit a Pageview Goal
 
 To edit a Pageview Goal, start by locating the pageview goal you want to update in the Goals list in your website's settings. Click on the "Edit goal" button next to it, which will bring up the goal editing form.
@@ -48,10 +56,3 @@ You can also give it a new display name, say, if the original name of the goal i
 
 Once you’ve made the necessary changes, simply click "Update goal" and your updated settings will be applied immediately. The changes will be reflected in your Plausible Analytics dashboard, with the goal now tracking based on the new settings you’ve configured.
 
-## What's next?
-
-Now that you're tracking pageview goals, you can:
-
-- Build a [conversion funnel](funnel-analysis.md) to follow the visitor journey from landing page to conversion
-- Add [custom events](custom-event-goals.md) for more specific tracking like button clicks
-- Use [filters and segments](filters-segments.md) to analyse which sources and campaigns drive the most conversions
