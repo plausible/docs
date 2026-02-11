@@ -20,17 +20,27 @@ The revenue metrics are fully filterable. For instance, you can see the total or
 
 You can add multiple filters to [create audience segments](filters-segments.md) too. This allows you to see the conversions and revenue from for instance the audience segment that's located in Germany, Austria and Switzerland, that were referred by a particular UTM campaign and are using Mac OS.
 
-When the revenue-goal filter is applied on the dashboard, you will also find the "Revenue" column appear in all the individual reports (when expanded using the "Details" option). This is uselful in seeing the breakdown of your revenue by individual traffic sources, top/entry/exit pages, locations, browser/OS/device types, and properties. You can also sort your reports by revenue in either ascending or descending order.
+When the revenue goal filter is applied on the dashboard, you will also find the "Revenue" column appear in all the individual reports (when expanded using the "Details" option). This is useful in seeing the breakdown of your revenue by individual traffic sources, entry or exit pages, locations, browser types and properties. You can also sort your reports by revenue in either ascending or descending order.
+
+## Clean referral source attribution
+
+Plausible automatically excludes unwanted referral sources such as payment processors like PayPal, Stripe and Paddle to keep your data clean.
+
+Referral sources are counted only when they start a new session on your site. This means that when visitors briefly leave your site to complete a payment on an external gateway before returning, the payment processor won't show up as a referral source. The original source that brought the visitor to your site will remain the one attributed for that conversion.
+
+This ensures your revenue is attributed to the marketing campaigns, referral sources and landing pages that actually drove the sale rather than the payment gateway the visitor passed through along the way.
+
+## How to track ecommerce revenue
 
 If you want to track ecommerce revenue, here's how to enable it:
 
-## Step 1: Add a new custom event and specify the currency of your choice
+### Step 1: Add a new custom event and specify the currency of your choice
 
 Go to your [site settings](website-settings.md) and in the "**Goals**" section click on the "**Add goal**" button. Choose "**Custom event**" as the goal trigger, enter the goal name in the "**Event name**" field, switch to "**Enable Revenue Tracking**" and set the base currency of your choice. This currency will be used for total and average revenue metrics in the dashboard. Note that the currency for a specific event cannot be changed later.
 
 <img alt="Add goal and choose your currency" src={useBaseUrl('img/plausible-ecommerce-currency-goal.png')} />
 
-## Step 2: Send the revenue data from your site
+### Step 2: Send the revenue data from your site
 
 You can now start sending revenue data from your site alongside custom events. You can send the revenue data in the currency that the purchase was made in too and we'll convert it to your goal's base currency.
 
