@@ -40,3 +40,7 @@ Click on "**Form: Submission**" goal in the "**Goal Conversions**" report of you
 * Devices (screen size, browser, OS) that click on forms
 
 To analyze a specific form, click on its URL to filter your dashboard by that form’s submissions. This gives you a complete overview of performance for that individual form.
+
+## Other automated goals
+
+Plausible also offers automated tracking for [outbound link clicks](outbound-link-click-tracking.md) and [file downloads](file-downloads-tracking.md). These can be enabled from the "Site Installation" area in your site settings without any code changes. You can also track [404 error pages](error-pages-tracking-404.md) with a small snippet of code.
