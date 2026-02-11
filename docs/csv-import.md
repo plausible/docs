@@ -99,6 +99,10 @@ Ecommerce revenue data are not supported.
 
 Due to our current imported data model, we are unfortunately unable to show exact aggregated visitor counts for special goals such as "Outbound Link: Click", "404" and "File Download". For example, if one visitor completed a "File Download" event two times with a different `url` property, they'll be counted as two visitors from re-imported data, while native query would count them as a single visitor. The same applies for pageview goals.
 
+### Consolidated view
+
+Imported data is not included in the [consolidated view](consolidated-views.md) dashboard. The consolidated view only reflects data collected natively by Plausible. 
+
 ## CSV format guidelines
 
 If you're importing data from different analytics tools then please ensure that your CSV files follow our format guidelines.
