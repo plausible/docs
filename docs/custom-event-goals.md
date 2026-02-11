@@ -8,12 +8,13 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 If you use the custom events feature, then these count towards your billable monthly pageviews.
 :::
 
-Custom events let you measure button clicks, subscription signups, or any other action you want visitors to take. A manual setup is required to get started. See the instructions below.  
+Custom events let you measure button clicks, subscription signups or any other action you want visitors to take. There are two ways to set them up:
 
-We also offer several easy goal options that don’t require any changes to your website’s code. Check out automated goal tracking for [external link clicks](outbound-link-click-tracking.md), [form submissions](form-submissions-tracking.md), [file downloads](file-downloads-tracking.md), and [404 error pages](error-pages-tracking-404.md). You can also use [pageview goals](pageview-goals.md) to track the "thank you" page or order confirmation page.
+- **Using CSS class names**: add a class to any HTML element you want to track. No JavaScript required. This is the easiest approach for most use cases and is covered in the first section below.
+- **Using JavaScript**: call the `plausible()` function directly for more advanced tracking needs such as dynamic values, conditional logic or tracking non-click interactions. See the [manual JavaScript approach](#trigger-custom-events-manually-with-a-javascript-function) section.
 
-:::tip Using WordPress or Google Tag Manager?
-The quickest way to start tracking custom events is with our [WordPress plugin](https://plausible.io/wordpress-analytics-plugin) or our [Google Tag Manager template](https://plausible.io/gtm-template).
+:::tip Quick start options
+If you're using WordPress or Google Tag Manager, you can set up custom events with our [WordPress plugin](https://plausible.io/wordpress-analytics-plugin) or [GTM template](https://plausible.io/gtm-template) without writing code. Plausible also offers automated tracking for [outbound link clicks](outbound-link-click-tracking.md), [file downloads](file-downloads-tracking.md) and [form submissions](form-submissions-tracking.md) straight from your site settings, [pageview goals](pageview-goals.md) for tracking visits to specific pages and [404 error pages](error-pages-tracking-404.md) with a small snippet of code.
 :::
 
 ## Add a CSS class name to the element you want to track on your site
