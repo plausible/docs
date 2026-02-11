@@ -3,13 +3,18 @@ title: Cancel your subscription plan
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+# Cancel your subscription plan
 
-Log in to your Plausible Analytics account and in the top right menu, click on your account name and choose "**Account Settings**" to enter your account settings.
+Log in to your Plausible account. In the top right menu, click your account name → "**Account Settings**".
 
-To cancel your subscription plan, go to the "**Subscription**" section and click on "**Cancel my subscription**".
-
-After canceling, the stats will keep being counted, and you will have access to your stats until the end of your subscription period.
+Go to the "**Subscription**" section and click "**Cancel my subscription**".
 
 <img alt="Cancel your Plausible subscription" src={useBaseUrl('img/account-settings-cancel-subscription.png')} />
 
+After canceling:
 
+* Your stats **keep being counted** and you have full access until the end of your current billing period.
+* Once the billing period ends, your stats dashboard will be locked but your data is **not deleted**. If you resubscribe later, everything will still be there.
+* If you change your mind before the period ends, you can resubscribe from the same "**Subscription**" section.
+
+Want to switch to a different plan instead of canceling? See [Change your subscription plan](/docs/change-plan).
