@@ -13,6 +13,7 @@ We've tried to make Plausible as usable and accessible as possible with just a k
 | D           | Today             |
 | E           | Yesterday         |
 | R           | Realtime          |
+| H           | Last 24 Hours     |
 | W           | Last 7 days       |
 | F           | Last 28 days      |
 | T           | Last 30 days      |
