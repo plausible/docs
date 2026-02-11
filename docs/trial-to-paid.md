@@ -4,61 +4,49 @@ title: Upgrade from trial to a paid subscription
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Log in to your Plausible Analytics account and in the top right, click on the "**X trial days left**" button.
+Log in to your Plausible account. In the top right, click the "**X trial days left**" button, then click "**Upgrade**" in the "**Subscription**" section.
 
-In the "**Subscription**" section, your "**Monthly quota**" should list "**Free trial**". Click on "**Upgrade**" to upgrade your trial account to a paid subscription. You can also view [Plausible pricing and subscription plans](https://plausible.io/#pricing) on our website.
+All stats collected during your trial are kept. Nothing is reset when you upgrade.
 
-Note that you will keep all the stats you have collected during the trial when you upgrade your account. We don't reset any data collected in the trial.
+![Upgrade your trial account to a paid subscription](/img/account-settings-free-trial-upgrade.png)
 
-<img alt="Upgrade your trial account to a paid subscription" src={useBaseUrl('img/account-settings-free-trial-upgrade.png')} />
+## Choose your tier and plan
 
-## Choose your subscription tier
+Our subscription tiers are based on total pageviews and [custom events](/docs/custom-event-goals) across all the sites in your account. Check your current usage in the account settings and pick a tier that matches. You can get 2 free months with an annual subscription.
 
-Our subscription tiers are based on the total number of pageviews and custom events between all the sites you have added to your Plausible Analytics account.
+![Plausible subscription](/img/account-settings-subscription.png)
 
-You can check your usage levels during the trial period to date in your account settings within the "**Subscription**" section of your account settings. You should select a subscription tier that matches your usage levels. Opt for monthly or yearly billing. You can get 2 free months with an annual subscription.
+Next, choose a plan:
 
-<img alt="Plausible subscription" src={useBaseUrl('img/account-settings-subscription.png')} />
+* **Starter** — Essential features for solo projects and new sites
+* **Growth** — Team access and sharing tools for growing projects
+* **Business** — Advanced marketing features, more sites and larger teams
+* **Enterprise** — Custom plan with tailored limits. [Contact us](https://plausible.io/contact) to discuss or [learn more](https://plausible.io/enterprise-web-analytics)
 
-Next, choose your plan. Each plan offers different features, site limits and team access:
+Compare plans and pricing on [our website](https://plausible.io/#pricing). Then click "**Upgrade**" to continue.
 
-* **Starter** - Essential features for solo projects and new sites  
-* **Growth** - Team access and sharing tools for growing projects  
-* **Business** - Advanced marketing features, more sites and larger teams  
-* **Enterprise** - Custom plan with tailored limits. [Contact us](https://plausible.io/contact) to discuss or [learn more](https://plausible.io/enterprise-web-analytics) about it.
+![Choose your subscription tier](/img/choose-your-subscription-tier.png)
 
-You can see [the pricing and the differences between the plans](https://plausible.io/#pricing) on our website.
+Not sure which tier or plan to pick? See [Choose the right subscription](/docs/subscription-plans) for details on how usage is calculated, what happens with traffic spikes and how to manage your plan over time.
 
-Then click on the "**Upgrade**" button to get started.
+## Pay and subscribe
 
-<img alt="Choose your subscription tier" src={useBaseUrl('img/choose-your-subscription-tier.png')} />
+Billing is handled by [Paddle](https://paddle.com), our payment processor. Click "**Pay securely via Paddle**", choose your location, then pick a payment method (credit/debit card, PayPal, Apple Pay or Google Pay).
 
-## Choose your payment method and subscribe
+![Choose your location](/img/location.png)
 
-The billing information and the payment process is handled by Paddle, a third-party payment processor. Click on the "**Pay securely via Paddle**" button.
+Fill in your details and click "**Subscribe Now**".
 
-Choose your location and click on the "**Continue**" button.
-
-<img alt="Choose your location" src={useBaseUrl('img/location.png')} />
-
-Next up you need to choose your payment method. You can pay by a credit card, PayPal, Apple Pay or Google Pay.
-
-Fill in your payment details and click on the "**Subscribe Now**" button to subscribe to a paid subscription. 
-
-<img alt="Subscribe now" src={useBaseUrl('img/subscribe-now.png')} />
+![Subscribe now](/img/subscribe-now.png)
 
 ## Add your company address and VAT number
 
-On the "**Payment**" screen in the upgrade process, you have the option to add your company address and VAT ID. Our payment processor Paddle handles all the VAT and other sales taxes, so if you're eligible no VAT will be charged on your subscription.
+During checkout, you can add your company address and VAT ID. Paddle handles VAT and sales taxes. If you're eligible, no VAT will be charged.
 
-<img alt="Add VAT number at checkout" src={useBaseUrl('img/add-vat-number-during-checkout.png')} />
+![Add VAT number at checkout](/img/add-vat-number-during-checkout.png)
 
-Your subscription will start right away. Your subscription will be renewed automatically, and you can change or cancel your plan at any time.
+If you skip this step, you can add these details later by opening any invoice from Paddle and clicking "**Add address & VAT Number**". More on managing invoices in [Download your invoices](/docs/download-invoices).
 
-You will automatically get an email from Paddle with your invoice. You will get an automatic invoice sent to you through email for each payment that you make. You can also [download your invoices](download-invoices.md) in your Plausible account settings.
+![Edit invoice to add business details](/img/edit-invoice-to-add-business-details.png)
 
-If you haven't added your company details and VAT number during the subscription process, you can open the invoice that Paddle sent you and click on the "**Add address & VAT Number**" link to do so.
-
-<img alt="Edit invoice to add business details" src={useBaseUrl('img/edit-invoice-to-add-business-details.png')} />
-
-More information about Paddle and the sales taxes or VAT can be found [here](https://paddle.com/support/which-countries-does-paddle-charge-vat-for/).
+Your subscription starts immediately and renews automatically. You can [change](/docs/change-plan) or [cancel](/docs/cancel-subscription) your plan at any time.
