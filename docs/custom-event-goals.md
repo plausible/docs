@@ -169,7 +169,7 @@ Select `Custom event` as the goal trigger and enter the name of the custom event
 
 When creating a custom event goal, you can optionally narrow it down using custom properties. This lets you turn a broad goal into a more specific one by matching only events with certain property values. This allows you to track something like “Purchase (Business – yearly)” as its own goal, rather than grouping all purchases together.
 
-<img alt="Add your custom event goal" src={useBaseUrl('img/add-custom-event-goal.png')} />
+<img alt="Add your custom event goal" src={useBaseUrl('img/custom-events-in-plausible-setup-modal.png')} />
 
 Next, click on the "**Add goal**" button and you'll be taken back to the Goals page. When you navigate back to your Plausible dashboard, you should see the number of visitors who triggered the custom event. Custom events are listed at the bottom of your dashboard and will appear as soon as the first conversion has been tracked.
 
