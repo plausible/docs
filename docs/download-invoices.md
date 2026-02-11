@@ -4,28 +4,24 @@ title: Download your invoices
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Our payment processor Paddle sends an invoice to you through email automatically upon each payment. You can click on a link within this email to download your invoice.
+Our payment processor Paddle sends an invoice by email automatically after each payment. You can also download invoices directly from your Plausible account.
 
-You can also download your invoices in your Plausible account. Log in to your Plausible account and in the top right menu, click on your account name and choose "**Account Settings**" to enter your account settings.
-
-To download your invoices, find the "**Invoices**" section. You'll see the list of your invoices and you can download the individual invoice by clicking on the link button.
+Log in and go to your account name → "**Account Settings**". In the "**Invoices**" section, you'll see a list of all invoices with a download link for each one.
 
 <img alt="Download Plausible invoice" src={useBaseUrl('img/download-invoice.png')} />
 
-## Adding your company address and VAT number
+## Add your company address and VAT number
 
-If you haven't added your company details and VAT number during the subscription process, you can open any of your invoices and click on the "Add address & VAT Number" link to do so.
+Open any invoice from Paddle and click "**Add address & VAT Number**". Paddle handles VAT and sales taxes. If you provide a valid VAT ID, no VAT will be charged on future payments. [More on Paddle's VAT handling →](https://paddle.com/support/which-countries-does-paddle-charge-vat-for/)
 
-## Changing your billing address
+## Change your billing address
 
-You can change the billing address by opening any of your invoices and clicking the "Edit business address" link. 
+Open any invoice and click "**Edit business address**" to update your address.
 
-Unfortunately, changing a country associated with a subscription isn't possible due to legal and tax reasons. Suppose you wish to link the service to a company registered in a different country. You can wait until the current subscription expires, then cancel the subscription and resubscribe again from the same account with the address in the new country. You won't lose any of the data in this process.
+Changing the **country** on an existing subscription isn't possible due to tax regulations. To switch countries, wait for your current subscription to expire, cancel, then resubscribe from the same account with the new country. No data is lost in this process.
 
-## Changing the email address for invoices
+## Change the email address for invoices
 
-Our system has two email addresses and these may not necessarily be the same. The first email is for your Plausible account. This is the email you use to log in to your Plausible account to view your stats. 
+Plausible and Paddle use separate email addresses. Your Plausible email is for logging in and viewing stats. Your Paddle email is where invoices are sent.
 
-The other email is for your Paddle account. Paddle is our payment processor and they send the billing emails such as invoices to the email address on your Paddle account. 
-
-Would you like to change your Paddle email address to get your invoices sent to a different address? [Do contact us](https://plausible.io/contact) and tell us your current Paddle email and the new email address where you'd like to get invoices in the future.
+To change your invoice email, [contact us](https://plausible.io/contact) with your current Paddle email and the new address you'd like invoices sent to.
