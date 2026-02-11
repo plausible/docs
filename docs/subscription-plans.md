@@ -4,41 +4,45 @@ title: Choose the right subscription
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Plausible gives you full control over your subscription. You can choose the plan that fits your needs, decide how often you are billed, and upgrade or downgrade your tier as your usage changes.
+Plausible gives you full control over your subscription. Choose a plan, pick monthly or yearly billing and upgrade or downgrade as your needs change. No long-term contracts.
 
-You can view the [Plausible pricing and subscription plans here](https://plausible.io/#pricing). Below, we explain how to choose the subscription that is right for you.
+[View plans and pricing →](https://plausible.io/#pricing)
 
-## How are the subscriptions priced?
+## How usage is calculated
 
-Our subscription tiers are based on the total number of pageviews and custom events between all the sites you have added to your Plausible Analytics account.
+Your subscription tier is based on the total number of **pageviews** and **[custom events](/docs/custom-event-goals)** across all the sites in your account.
 
-To calculate your usage levels, we take all the websites you have added to your account and total the number of pageviews between them. If you use the "[Custom Events](custom-event-goals.md)" feature, then these count towards your total usage as well.
+Custom events include outbound link clicks, file downloads, 404 error tracking and any manually tracked events. Adding a [pageview goal](/docs/pageview-goals) does not count towards your usage.
 
-"**Custom Events**" include external link clicks, file downloads and 404 error page tracking. The act of adding a "[Pageview Goal](pageview-goals.md)" has no effect on your usage.
-
-You can check your usage levels in your account settings within the "**Subscription**" section. You should be on a subscription tier that fits your usage levels. You can get 2 months free on a yearly plan.
+Check your current usage in the "**Subscription**" section of your account settings and pick a tier that matches.
 
 <img alt="Plausible subscription" src={useBaseUrl('img/account-settings-subscription.png')} />
 
-Next, choose your plan. Each plan offers different features, site limits and team access:
+## Plans
 
-* **Starter** - Essential features for solo projects and new sites  
-* **Growth** - Team access and sharing tools for growing projects  
-* **Business** - Advanced marketing features, more sites and larger teams  
+Each plan offers different features, site limits and team member access:
+
+* **Starter** - Essential features for solo projects and new sites
+* **Growth** - Team access and sharing tools for growing projects
+* **Business** - Advanced marketing features, more sites and larger teams
 * **Enterprise** - Custom plan with tailored limits. [Contact us](https://plausible.io/contact) to discuss
 
-You can see [the pricing and the differences between the plans](https://plausible.io/#pricing) on our website or within your Plausible account settings.
+Compare features and pricing on [our website](https://plausible.io/#pricing) or in your account settings. Save 2 months by choosing yearly billing.
 
-## What happens if I go over my monthly page views limit?
+## Traffic spikes and overages
 
-You will never be charged extra for an occasional traffic spike. We will never stop counting your stats because of an occasional traffic spike. There are no surprise fees and your card will never be charged unexpectedly. 
+You will never be charged extra for an occasional traffic spike. No surprise fees, no stats interruption, no unexpected charges.
 
-Suppose new higher traffic levels become your new standard and your page views exceed your subscription plan for two consecutive months. In that case, we will contact you and ask you to upgrade your subscription plan to accommodate your new traffic levels using our self-serve platform. The new charge will be prorated to reflect the amount you have already paid and the time until your current subscription is supposed to expire. 
+If higher traffic becomes your new normal and pageviews exceed your tier for **two consecutive months**, we'll email you and ask you to upgrade. The new charge is pro-rated. You only pay the difference for the remaining time on your current billing cycle.
 
-To maintain access to your stats, you will need to upgrade your account to accommodate your new traffic levels. If you do not upgrade your account within a week, our automated system will lock the stats making them inaccessible. Your stats will be automatically unlocked once you upgrade to the appropriate tier or if your usage falls back within your subscription limits.
+If you don't upgrade within a week of our notice, stats will be temporarily locked until you move to the right tier or your usage drops back within your limits.
 
-## How do I manage my subscription?
+## Managing your subscription
 
-Everything is self-serve within your account settings. There are no long term contracts and you can change your subscription or cancel your plan at any time. Here's how to [change your subscription plan](change-plan.md) and how to [cancel your subscription](cancel-subscription.md).
+Everything is self-serve in your account settings:
 
-Need any help or have a question about our subscription plans or your subscription? [Contact us](https://plausible.io/contact).
+* **[Change your plan](/docs/change-plan)** - switch tiers, change billing frequency or move between plans. All changes are pro-rated.
+* **[Cancel your subscription](/docs/cancel-subscription)** - you keep access to your stats until the end of the current billing period.
+* **[Download invoices](/docs/download-invoices)** - get invoices, add VAT numbers and change billing address.
+
+Have a question? Check the [Billing FAQ](/docs/billing) or [contact us](https://plausible.io/contact).
