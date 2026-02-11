@@ -154,7 +154,7 @@ var toTag = [
 
 </details>
 
-## Step 4: Create a custom event goal in your Plausible account
+## Create a custom event goal in your Plausible account
 
 When you send custom events to Plausible, they won't show up in your dashboard automatically. You'll have to configure the goal for the conversion numbers to show up.
 
@@ -176,7 +176,7 @@ If you happen to be sending events to Plausible already, you might see the follo
 
 You can click the link to automatically add all the goals you've been sending so far. If you end up not wanting to see some of them on the dashboard, you can simply remove them from the list.
 
-That's it. You can now check our your goal conversions on the dashboard.
+That's it. You can now check out your goal conversions on the dashboard.
 
 ## Edit a Custom Event Goal
 
