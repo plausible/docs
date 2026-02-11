@@ -47,3 +47,11 @@ You can also give it a new display name, say, if the original name of the goal i
 <img alt="Edit pageview goal popup" src={useBaseUrl('img/edit-pageview-goal-popup.png')} />
 
 Once you’ve made the necessary changes, simply click "Update goal" and your updated settings will be applied immediately. The changes will be reflected in your Plausible Analytics dashboard, with the goal now tracking based on the new settings you’ve configured.
+
+## What's next?
+
+Now that you're tracking pageview goals, you can:
+
+- Build a [conversion funnel](funnel-analysis.md) to follow the visitor journey from landing page to conversion
+- Add [custom events](custom-event-goals.md) for more specific tracking like button clicks
+- Use [filters and segments](filters-segments.md) to analyse which sources and campaigns drive the most conversions
