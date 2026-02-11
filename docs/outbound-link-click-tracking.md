@@ -53,6 +53,10 @@ Here's how to automatically [track clicks on cloaked affiliate links](custom-aut
 
 Check out this blog post for more details on the value of [tracking outbound link clicks](https://plausible.io/blog/track-outbound-link-clicks).
 
+## Other automated goals
+
+Plausible also offers automated tracking for [file downloads](file-downloads-tracking.md) and [form submissions](form-submissions-tracking.md). These can be enabled from the "Site Installation" area in your site settings without any code changes. You can also track [404 error pages](error-pages-tracking-404.md) with a small snippet of code.
+
 ## How to disable "Outbound links" tracking for your site
 
 You can control what data is collected in the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
@@ -60,7 +64,3 @@ You can control what data is collected in the "**Site Installation**" area of th
 When making changes to your optional measurements, your snippet will change so do ensure to insert the newest snippet into your site for outbound link click tracking to stop.
 
 After you disable outbound link click tracking, we will automatically remove the goal called `Outbound Link: Click` from your site.
-
-## Limitations
-
-Clicks on outbound links within `svg` elements are not tracked.
