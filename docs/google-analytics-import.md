@@ -101,3 +101,7 @@ Google Analytics API does not expose this information so you cannot see the scro
 ### Day view graph
 
 We can't display hourly graph interval on the daily view.
+
+### Consolidated view
+
+Imported data is not included in the [consolidated view](consolidated-views.md) dashboard. The consolidated view only reflects data collected natively by Plausible.
