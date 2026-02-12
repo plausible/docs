@@ -23,8 +23,8 @@ Click "**Confirm plan change**" to apply.
 
 <img alt="Confirm plan change" src={useBaseUrl('img/confirm-plan-change.png')} />
 
-Your subscription renews automatically and you can change or [cancel](/docs/cancel-subscription) at any time.
+Your subscription renews automatically and you can change or [cancel](cancel-subscription.md) at any time.
 
 :::tip
-Not sure which tier fits? Check your current usage in the "**Subscription**" section. You can also see [Choose the right subscription](/docs/subscription-plans) for guidance on how usage is calculated.
+Not sure which tier fits? Check your current usage in the "**Subscription**" section. You can also see [Choose the right subscription](subscription-plans.md) for guidance on how usage is calculated.
 :::
