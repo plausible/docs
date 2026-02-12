@@ -4,7 +4,7 @@ title: Upgrade from trial to a paid subscription
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Log in to your Plausible account. In the top right, click the "**X trial days left**" button and then click "**Upgrade**"
+Log in to your Plausible account. In the top right, click the "**X trial days left**" button, then click "**Upgrade**" in the "**Subscription**" section.
 
 All stats collected during your trial are kept. Nothing is reset when you upgrade.
 
@@ -12,7 +12,7 @@ All stats collected during your trial are kept. Nothing is reset when you upgrad
 
 ## Choose your tier and plan
 
-Our subscription tiers are based on total pageviews and [custom events](/docs/custom-event-goals) across all the sites in your account. Check your current usage in the account settings and pick a tier that matches. You can get 2 free months with an annual subscription.
+Our subscription tiers are based on total pageviews and [custom events](custom-event-goals.md) across all the sites in your account. Check your current usage in the "**Subscription**" section and pick a tier that matches. You can get 2 free months with an annual subscription.
 
 <img alt="Plausible subscription" src={useBaseUrl('img/account-settings-subscription.png')} />
 
@@ -27,7 +27,7 @@ Compare plans and pricing on [our website](https://plausible.io/#pricing). Then 
 
 <img alt="Choose your subscription tier" src={useBaseUrl('img/choose-your-subscription-tier.png')} />
 
-Not sure which tier or plan to pick? See [Choose the right subscription](/docs/subscription-plans) for details on how usage is calculated, what happens with traffic spikes and how to manage your plan over time.
+Not sure which tier or plan to pick? See [Choose the right subscription](subscription-plans.md) for details on how usage is calculated, what happens with traffic spikes and how to manage your plan over time.
 
 ## Pay and subscribe
 
@@ -45,8 +45,8 @@ During checkout, you can add your company address and VAT ID. Paddle handles VAT
 
 <img alt="Add VAT number at checkout" src={useBaseUrl('img/add-vat-number-during-checkout.png')} />
 
-If you skip this step, you can add these details later by opening any invoice from Paddle and clicking "**Add address & VAT Number**". More on managing invoices in [Download your invoices](/docs/download-invoices).
+If you skip this step, you can add these details later by opening any invoice from Paddle and clicking "**Add address & VAT Number**". More on managing invoices in [Download your invoices](download-invoices.md).
 
 <img alt="Edit invoice to add business details" src={useBaseUrl('img/edit-invoice-to-add-business-details.png')} />
 
-Your subscription starts immediately and renews automatically. You can [change](/docs/change-plan) or [cancel](/docs/cancel-subscription) your plan at any time.
+Your subscription starts immediately and renews automatically. You can [change](change-plan.md) or [cancel](cancel-subscription.md) your plan at any time.
