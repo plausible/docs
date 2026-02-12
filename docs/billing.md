@@ -30,17 +30,27 @@ If you didn't add it during checkout, open any Paddle invoice and click "**Add a
 
 <img alt="Add VAT number at checkout" src={useBaseUrl('img/add-vat-number-during-checkout.png')} />
 
+## How do I change my VAT number?
+
+Paddle does not allow editing the VAT number on an existing subscription. To update it, let your current subscription run until the end of the billing period, cancel it and resubscribe from the same Plausible account with the correct VAT details. All your Plausible data, sites and settings stay unchanged during this process.
+
 ## How do I change my billing address?
 
-Open any invoice and click "**Edit business address**".
+Open any invoice and click "**Edit business address**" to update your street address, city or postal code.
 
-Changing the **country** on an existing subscription isn't possible due to tax regulations. To switch countries, wait for your current billing period to end, cancel, then resubscribe from the same account with the new country. No data is lost.
+## How do I change the country on my subscription?
+
+Paddle does not allow changing the country on an existing subscription due to tax regulations. To switch countries, let your current subscription run until the end of the billing period, cancel it and resubscribe from the same Plausible account with the new country. All your Plausible data, sites and settings stay unchanged during this process.
 
 ## What happens if I exceed my pageview limit?
 
-No surprise fees. An occasional traffic spike won't trigger extra charges or stop your stats from being counted.
+No surprise fees. An occasional traffic spike won't trigger extra charges or stop your stats from being counted. A single month over your limit requires no action. If traffic drops back within your tier the following month, nothing happens.
 
-If usage exceeds your tier for two consecutive months, we'll email you to upgrade. Changes are pro-rated. If you don't upgrade within a week, stats are temporarily locked until you move to the right tier or usage drops back within limits. See [Choose the right subscription](subscription-plans.md#traffic-spikes-and-overages) for the full details.
+If usage exceeds your tier for **two consecutive months**, we'll notify you to upgrade. The change is pro-rated so you only pay the difference. If you don't upgrade within a week, your dashboards are temporarily locked. Even while locked, stats continue to be collected in the background and you still have access to your site settings and account settings. Dashboards are automatically unlocked at the start of the next billing cycle if your usage drops back within limits. You can also unlock them at any time by upgrading to the appropriate tier.
+
+If the spike is temporary, you can upgrade to restore access and downgrade again when traffic drops. Downgrades are pro-rated too, so you won't lose out. You're never locked into a higher plan when your usage no longer requires it. This works the same way on both monthly and yearly billing.
+
+We're not able to make exceptions to keep dashboards unlocked beyond the grace period. See [Choose the right subscription](subscription-plans.md#traffic-spikes-and-overages) for the full details.
 
 ## How does pro-rating work when I upgrade?
 
