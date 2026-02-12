@@ -10,9 +10,9 @@ Plausible gives you full control over your subscription. Choose a plan, pick mon
 
 ## How usage is calculated
 
-Your subscription tier is based on the total number of **pageviews** and **[custom events](/docs/custom-event-goals)** across all the sites in your account.
+Your subscription tier is based on the total number of **pageviews** and **[custom events](custom-event-goals.md)** across all the sites in your account.
 
-Custom events include outbound link clicks, file downloads, 404 error tracking and any manually tracked events. Adding a [pageview goal](/docs/pageview-goals) does not count towards your usage.
+Custom events include outbound link clicks, file downloads, 404 error tracking and any manually tracked events. Adding a [pageview goal](pageview-goals.md) does not count towards your usage.
 
 Check your current usage in the "**Subscription**" section of your account settings and pick a tier that matches.
 
@@ -41,8 +41,8 @@ If you don't upgrade within a week of our notice, stats will be temporarily lock
 
 Everything is self-serve in your account settings:
 
-* **[Change your plan](/docs/change-plan)** - switch tiers, change billing frequency or move between plans. All changes are pro-rated.
-* **[Cancel your subscription](/docs/cancel-subscription)** - you keep access to your stats until the end of the current billing period.
-* **[Download invoices](/docs/download-invoices)** - get invoices, add VAT numbers and change billing address.
+* **[Change your plan](change-plan.md)** - switch tiers, change billing frequency or move between plans. All changes are pro-rated.
+* **[Cancel your subscription](cancel-subscription.md)** - you keep access to your stats until the end of the current billing period.
+* **[Download invoices](download-invoices.md)** - get invoices, add VAT numbers and change billing address.
 
-Have a question? Check the [Billing FAQ](/docs/billing) or [contact us](https://plausible.io/contact).
+Have a question? Check the [Billing FAQ](billing.md) or [contact us](https://plausible.io/contact).
