@@ -16,4 +16,4 @@ After canceling:
 * Once the billing period ends, your stats dashboard will be locked but your data is **not deleted**. If you resubscribe later, everything will still be there.
 * If you change your mind before the period ends, you can resubscribe from the same "**Subscription**" section.
 
-Want to switch to a different plan instead of canceling? See [Change your subscription plan](/docs/change-plan).
+Want to switch to a different plan instead of canceling? See [Change your subscription plan](change-plan.md).
