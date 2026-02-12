@@ -33,9 +33,15 @@ Compare features and pricing on [our website](https://plausible.io/#pricing) or 
 
 You will never be charged extra for an occasional traffic spike. No surprise fees, no stats interruption, no unexpected charges.
 
-If higher traffic becomes your new normal and pageviews exceed your tier for **two consecutive months**, we'll email you and ask you to upgrade. The new charge is pro-rated. You only pay the difference for the remaining time on your current billing cycle.
+A single month over your limit requires no action. If your traffic drops back within your tier the following month, nothing happens and no upgrade is needed. This is common with seasonal traffic, viral posts or one-off campaigns.
 
-If you don't upgrade within a week of our notice, stats will be temporarily locked until you move to the right tier or your usage drops back within your limits.
+If pageviews exceed your tier for **two consecutive months**, we'll notify you and ask you to upgrade to a tier that fits your new traffic levels. The upgrade is pro-rated so you only pay the difference for the remaining time on your current billing cycle.
+
+If you don't upgrade within a week of our notice, your dashboards will be temporarily locked. Even while locked, your stats continue to be collected in the background and you still have full access to your site settings and account settings. Dashboards are automatically unlocked at the start of the next billing cycle if your usage drops back within your subscription limits. You can also unlock them at any time by upgrading to the appropriate tier.
+
+If the higher traffic turns out to be temporary, you can upgrade to restore access and then downgrade again once your traffic drops. Downgrades are pro-rated too, so you won't lose out. You're never locked into a higher plan when your usage no longer requires it. This works the same way on both monthly and yearly billing.
+
+We're not able to make exceptions to keep dashboards unlocked beyond the grace period, so if you're consistently above your tier, upgrading is the quickest way to restore access.
 
 ## Managing your subscription
 
