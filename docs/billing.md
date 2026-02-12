@@ -6,11 +6,11 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Is the billing based per account or per website?
 
-Billing is based on total usage across all the sites in your account. Check your usage numbers at any time in the "**Subscription**" section of your account settings. For details on how usage is calculated, see [Choose the right subscription](/docs/subscription-plans).
+Billing is based on total usage across all the sites in your account. Check your usage numbers at any time in the "**Subscription**" section of your account settings. For details on how usage is calculated, see [Choose the right subscription](subscription-plans.md).
 
 ## How do I get an invoice?
 
-Paddle (our payment processor) emails you an invoice automatically after each payment. You can also download invoices in your account settings. See [Download your invoices](/docs/download-invoices).
+Paddle (our payment processor) emails you an invoice automatically after each payment. You can also download invoices in your account settings. See [Download your invoices](download-invoices.md).
 
 The invoice email goes to your Paddle email address, which may differ from your Plausible login email. To change it, [contact us](https://plausible.io/contact) with your current and desired invoice email.
 
@@ -40,7 +40,7 @@ Changing the **country** on an existing subscription isn't possible due to tax r
 
 No surprise fees. An occasional traffic spike won't trigger extra charges or stop your stats from being counted.
 
-If usage exceeds your tier for two consecutive months, we'll email you to upgrade. Changes are pro-rated. If you don't upgrade within a week, stats are temporarily locked until you move to the right tier or usage drops back within limits. See [Choose the right subscription](/docs/subscription-plans#traffic-spikes-and-overages) for the full details.
+If usage exceeds your tier for two consecutive months, we'll email you to upgrade. Changes are pro-rated. If you don't upgrade within a week, stats are temporarily locked until you move to the right tier or usage drops back within limits. See [Choose the right subscription](subscription-plans.md#traffic-spikes-and-overages) for the full details.
 
 ## How does pro-rating work when I upgrade?
 
