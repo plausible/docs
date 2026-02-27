@@ -36,7 +36,15 @@ You can run Plausible script as a first-party connection from your domain name i
 
 Our events API can be used to record pageviews and custom events server side without the use of JavaScript. You can use the events API to count users on your Android and/or iOS mobile apps too. [Learn more here](events-api.md)
 
-## Website builders and CMS platforms
+## Community contributed integrations
+
+The integrations below are built and maintained by third parties in the open source community.
+
+While we’re grateful for the contributions, we do not develop, audit or maintain these plugins, and we do not guarantee their compatibility. They may become outdated or stop working as platforms or Plausible evolve.
+
+For a fully supported setup, we recommend using our official script or one of the official integrations listed above.
+
+### Website builders and CMS platforms
 
 Step-by-step guides for popular website builders and content management systems.
 
@@ -83,7 +91,7 @@ Step-by-step guides for popular website builders and content management systems.
 | [TYPO3](https://extensions.typo3.org/extension/plausibleio) | Plugin | TYPO3 extension for Plausible |
 | [WordPress](https://plausible.io/wordpress-analytics-plugin) | Plugin | Our official WordPress plugin (listed above in official integrations) |
 
-## JavaScript frameworks and frontend libraries
+### JavaScript frameworks and frontend libraries
 
 | Platform | Details |
 | --- | --- |
@@ -98,7 +106,7 @@ Step-by-step guides for popular website builders and content management systems.
 | [Vue 3 & Nuxt 3](https://github.com/productdevbookcom/v-plausible) | Plausible module for Nuxt 3 and Vue 3 |
 | [VuePress](https://github.com/spekulatius/vuepress-plugin-plausible) | A VuePress-plugin for Plausible on your documentation website |
 
-## Backend frameworks and server-side libraries
+### Backend frameworks and server-side libraries
 
 | Platform | Details |
 | --- | --- |
@@ -114,7 +122,7 @@ Step-by-step guides for popular website builders and content management systems.
 | [R](https://github.com/giocomai/plausibler) | R wrapper for the Plausible API |
 | [Ruby](https://github.com/dailytics/plausible_api) | Simple wrapper to read the Plausible API with Ruby |
 
-## Mobile and native app SDKs
+### Mobile and native app SDKs
 
 | Platform | Details |
 | --- | --- |
@@ -125,7 +133,7 @@ Step-by-step guides for popular website builders and content management systems.
 | [Qt6 / QML](https://gitlab.com/kelteseth/qml-plausible) | Qt6 QML plugin for Plausible |
 | [Localhost for hybrid apps](script-extensions.md) | Enable Plausible to count visitors on localhost for Cordova, Capacitor and other hybrid apps |
 
-## Documentation tools
+### Documentation tools
 
 | Platform | Details |
 | --- | --- |
@@ -134,7 +142,7 @@ Step-by-step guides for popular website builders and content management systems.
 | [Sphinx / Read The Docs](https://pypi.org/project/sphinx-plausible/) | Plausible Sphinx extension |
 | [TypeDoc](https://typedoc-plausible.ale.sh/) | TypeDoc Plausible plugin for your built HTML docs |
 
-## Special configurations
+### Special configurations
 
 | Configuration | Details |
 | --- | --- |
@@ -143,7 +151,7 @@ Step-by-step guides for popular website builders and content management systems.
 | [DNT and offline](https://github.com/ian/analytics/tree/main/packages/plausible) | Add Do Not Track and offline functionality via the analytics library |
 | [Segment](google-tag-manager.md) | No official integration, but you can integrate via Google Tag Manager |
 
-## Monitoring and automation
+### Monitoring and automation
 
 | Platform | Details |
 | --- | --- |
@@ -152,7 +160,7 @@ Step-by-step guides for popular website builders and content management systems.
 | [n8n](https://www.npmjs.com/package/n8n-nodes-plausible) | Community node for working with the Plausible API |
 | [Prometheus](https://github.com/riesinger/plausible-exporter) | Add Plausible records to Prometheus with the Plausible exporter |
 
-## Data pipelines, warehouses and other ways of viewing Plausible stats elsewhere
+### Data pipelines, warehouses and other ways of viewing Plausible stats elsewhere
 
 [See this list](data-pipelines.md) for data pipelines, warehouses and other ways of viewing Plausible stats elsewhere. For instance, our [stats API](stats-api.md), [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) and [official Google Looker Studio connector](looker-studio.md).
 
