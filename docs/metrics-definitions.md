@@ -14,12 +14,18 @@ The average revenue of orders tracked. This is a part of the [revenue attributio
 
 ## Bounce Rate
 
-The percentage of visitors who land on a page and leave without performing an engaging action. By default, Plausible counts a visit as a “bounce” if the visitor does **not** either:
+The percentage of visitors who land on a page and leave without meaningfully engaging with your site. By default, Plausible marks a visit as a bounce unless the visitor does at least one of the following:
 
-- view more than one page, or
-- trigger a [custom events](custom-event-goals.md)
+* Views more than one page
+* Triggers a [custom event](custom-event-goals.md)
 
-To keep accuracy higher, you can optionally select which custom events you want to exclude from the bounce rate calculation too. To do that, mark any such events as "non-interactive" as explained [here](https://plausible.io/docs/custom-event-goals#trigger-custom-events-manually-with-a-javascript-function). These events are tracked but do not affect the bounce rate.
+Some events fire automatically or in the background and you may not want to count them as engagement. You can mark any such event as "non-interactive" to exclude it from the bounce rate calculation. Like this:
+
+```js
+plausible('Custom Event', {interactive: false})
+```
+
+Non-interactive events are still tracked and recorded normally. However, visitors who only trigger these events will still be counted as bounced unless they also view another page.
 
 ## Browser
 
@@ -106,14 +112,6 @@ See all referral sources that are sending you traffic. A source is reported when
 The average amount of time spent per visitor viewing a particular page on your site.
 
 Similar to scroll depth, this metric relies on `engagement` events being sent by our tracking script for every pageview when the user navigates to a new page or switches tabs. This allows us to provide you with a more precise and reliable measure of user engagement which includes visitors who bounce away from your pages and which does not include time not spent actively on your pages.
-
-<details>
-<summary>Legacy time on page metric</summary>
-
-Prior to a tracker script upgrade in March 2025, we used a different method to calculate time on page, instead relying on timestamp of each `pageview` event. This method was both prone to over-estimating time spent on a page and was unable to provide measurements on pages where visitors bounced.
-
-For dates prior to the new tracker upgrade, the legacy time on page metric is displayed along with a note in the tooltip.
-</details>
 
 ## Total Conversions
 
