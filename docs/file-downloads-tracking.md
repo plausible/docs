@@ -27,6 +27,8 @@ You can enable "**File downloads**" as an optional measurement when adding a new
 
 After you enable file downloads tracking on your site, all the file downloads will start being tracked and will be displayed in the "**Goal Conversions**" report of your Plausible Analytics dashboard. You'll see the "**File Download**" goal as soon as the first file download has been tracked.
 
+Heads up: File download tracking only works for clicks that happen on your tracked pages. If you share a direct link to a file in an email or elsewhere, those opens won't be counted. Visitors need to arrive at your site first and click the link from there.
+
 :::tip Using WordPress?
 The quickest way to start tracking file downloads is to use our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin)
 :::
