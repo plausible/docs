@@ -6,9 +6,11 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Our payment processor Paddle sends an invoice by email automatically after each payment. You can also download invoices directly from your Plausible account.
 
-Log in and go to your account name → "**Account Settings**". In the "**Invoices**" section, you'll see a list of all invoices with a download link for each one.
+Log in and go to your account name → "**Account Settings**". Scroll down in the "**Subscription**" section to see a list of all invoices. Each invoice can be downloaded directly from the list.
 
-<img alt="Download Plausible invoice" src={useBaseUrl('img/download-invoice.png')} />
+<div class="browser">
+    <img alt="Download Plausible invoice" src={useBaseUrl('img/v2/download-invoice.webp')} />
+</div>
 
 ## Add your company address and VAT number
 
