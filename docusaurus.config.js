@@ -22,7 +22,6 @@ module.exports = {
       logo: {
         alt: 'Plausible logo',
         src: 'img/plausible_logo.svg',
-        srcDark: 'img/plausible_logo_darkmode.svg',
         href: 'https://plausible.io/',
         target: '_self',
       },

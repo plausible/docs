@@ -6,15 +6,14 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 If you have multiple websites in your Plausible account, the "**Consolidated View**" gives you an overview of traffic across all of them. This allows you to quickly see the total number of visitors and other key metrics across all your properties in one place.
 
-It looks just like any other Plausible dashboard, but the data includes all your sites instead of just one. This way you can get detailed insights into individual site performance and a holistic view of your whole network too.
+It looks just like any other Plausible dashboard, but the data includes all your sites instead of just one. This way you can get detailed insights into individual site performance and a holistic view of your whole network too. 
 
-<div class="browser">
-    <img alt="Consolidated traffic view" src={useBaseUrl('img/v2/consolidated-view.webp')} />
-</div>
+<img alt="Consolidated traffic view" src={useBaseUrl('img/consolidated-view.png')} />
 
 ## When a consolidated view is useful
 
 - If you're building multi-tenant applications, offering [a white label analytics dashboard](https://plausible.io/white-label-web-analytics) or a similar service.
+  
 - If you are managing several brands or domains, you will be able to check total visitors, top sources, and important trends across all your sites at once.
 
 - It helps you oversee a network of blogs or microsites so you can spot which sites grow fastest, which ones slow down, and where to focus content or marketing effort.
@@ -31,9 +30,7 @@ When you add a new site to your team, it will automatically be included in the c
 
 Just like a regular site, a consolidated view has its own settings. You can access the settings directly from the /sites page, or the site picker menu on the top left of the consolidated dashboard.
 
-<div class="browser">
-    <img alt="Consolidated traffic view" src={useBaseUrl('img/v2/consolidated-view-settings.webp')} />
-</div>
+<img alt="Consolidated traffic view" src={useBaseUrl('img/consolidated-view-settings.png')} />
 
 ### Timezone
 
@@ -41,7 +38,7 @@ You can change the timezone used for your consolidated stats. By default, it use
 
 ### Goals
 
-To see conversions on your consolidated dashboard, add your [goals](https://plausible.io/docs/goal-conversions) manually, just like you would on a regular site.
+To see conversions on your consolidated dashboard, add your [goals](https://plausible.io/docs/goal-conversions) manually, just like you would on a regular site. 
 
 ### Custom properties
 

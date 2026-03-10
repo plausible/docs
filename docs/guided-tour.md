@@ -1,6 +1,6 @@
 ---
 title: Introduction to the dashboard
----
+--- 
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -12,9 +12,7 @@ Here’s what you can discover on your Plausible dashboard. You can also explore
 
 ## Top Graph
 
-<div class="browser">
-    <img alt="Top Graph" src={useBaseUrl('img/v2/top-graph.webp')} />
-</div>
+<img alt="Top Graph" src={useBaseUrl('img/top-graph.png')} />
 
 See the number of unique visitors, total visits (sessions), total page views, views per visit, the bounce rate (the percentage of sessions that had one page view only) and the visit duration. You can **click on a particular metric to display it in the top graph**.
 
@@ -30,33 +28,27 @@ Here you can enter "[Site Settings](website-settings.md)" but also switch to a d
 
 ## Set a different chart interval
 
-You can **set a different unit of time the stats on the chart are grouped by** in the top right of the chart itself. The available interval options depend on the date range you've selected. For example, if you select "Today", you can display the stats by minute or by hour.
+You can **set a different unit of time the stats on the chart are grouped by** in the top right of the chart itself. The available interval options depend on the date range you've selected. For example, if you select "Today", you can display the stats by minute or by hour. 
 
-<div class="browser">
-    <img alt="Today intervals in top graph" src={useBaseUrl('img/v2/intervals-minutes-hours.webp')} />
-</div>
+<img alt="Today intervals in top graph" src={useBaseUrl('img/intervals-minutes-hours.png')} />
 
-Or if you select "Last 30 days", you can display the stats by day or by week. You can display the stats by days, weeks or months if you choose a wider timeframe.
+Or if you select "Last 30 days", you can display the stats by day or by week. You can display the stats by days, weeks or months if you choose a wider timeframe. 
 
-<div class="browser">
-    <img alt="Last 30 days intervals in top graph" src={useBaseUrl('img/v2/intervals-days-weeks-months.webp')} />
-</div>
+<img alt="Last 30 days intervals in top graph" src={useBaseUrl('img/intervals-days-weeks-months.png')} />
 
 ## Compare your stats over time
 
-You can also **compare your stats over time**. Our comparison feature allows you to analyze stats of a specified date range and compare them to another period. "Previous period", "Year over year" and "Custom period" comparisons are all available. You can also match by day of the week to avoid any discrepancies caused by the weekend.
+You can also **compare your stats over time**. Our comparison feature allows you to analyze stats of a specified date range and compare them to another period. "Previous period", "Year over year" and "Custom period" comparisons are all available. You can also match by day of the week to avoid any discrepancies caused by the weekend. 
+
+<img alt="Compare your stats over time" src={useBaseUrl('img/compare-your-stats-over-time.png')} />
 
 Select "Compare" in the date picker or press the "X" key on your keyboard to enable the comparison feature. Learn more on [how the comparison works here](compare-stats.md).
 
-<div class="browser">
-    <video autoPlay loop muted controls width="100%">
-        <source src={useBaseUrl('/video/compare-stats-over-time.mp4')} type="video/mp4" />
-    </video>
-</div>
+<img alt="Date picker for the compare feature" src={useBaseUrl('img/date-picker-compare-feature.png')} />
 
 ## Realtime dashboard
 
-By clicking on the number of "**current visitors**" (defined as those that visited the site in the last 5 minutes) or by selecting "**Realtime**" in the date picker in the top right, you can see the realtime dashboard that tells you what's happening on your site live in that moment.
+By clicking on the number of "**current visitors**" (defined as those that visited the site in the last 5 minutes) or by selecting "**Realtime**" in the date picker in the top right, you can see the realtime dashboard that tells you what's happening on your site live in that moment. 
 
 The realtime dashboard also includes a pageview graph for the last 30 minutes. It's updated every 30 seconds so you don’t have to refresh it to stay up to date.
 
@@ -68,11 +60,7 @@ You can go granular and click on any of the entries in any of the reports to fil
 
 You can also use the "**Filter**" button on the top of your dashboard which gives you extra functionality. It allows you to filter the dashboard by multiple sources, countries, pages and more, all at once. You can also search for any metric, exclude segments of your audience and group pages with options such as "**is not**", "**contains**" and "**does not contain**". [Learn more about filtering here](filters-segments.md).
 
-<div class="browser">
-    <video autoPlay loop muted controls width="100%">
-        <source src={useBaseUrl('/video/filtering-multiple-filters.mp4')} type="video/mp4" />
-    </video>
-</div>
+<img alt="Top Sources - multiple filters" src={useBaseUrl('img/guided-tour-filtering-multiple-filters.png')} />
 
 ## Detailed metrics and Sorting
 
@@ -83,8 +71,8 @@ You can sort any report by such performance metrics by clicking on any metric he
 ## Top Sources
 
 See all the acquisition channels and sources of traffic ranked by the number of unique visitors. You can click on the "**Details**" button to see the full list which also includes additional metrics such as the bounce rate and visit duration of the individual referral.
-
-You can use the "**Campaigns**" dropdown section in the Top Sources report to view your campaigns separately from other traffic sources. These are visitors coming from UTM tagged links such as those in your emails, social media or in your paid advertising campaigns. Click on "**Medium**", "**Source**", "**Campaign**", "**Term**" and "**Content**" to explore these.
+ 
+You can use the "**Campaigns**" dropdown section in the Top Sources report to view your campaigns separately from other traffic sources. These are visitors coming from UTM tagged links such as those in your emails, social media or in your paid advertising campaigns. Click on "**Medium**", "**Source**", "**Campaign**", "**Term**" and "**Content**" to explore these. 
 
 Note that the referral sources including UTM and other query parameters are counted only when they start a new session on your site.
 
@@ -114,14 +102,12 @@ You can see the device, browser and operating system your visitors are using. Cl
 
 ## Goals, properties and funnels
 
-<div class="browser">
-    <img alt="Goal Conversions" src={useBaseUrl('img/v2/dashboard-goal-conversions.webp')} />
-</div>
+<img alt="Goal Conversions" src={useBaseUrl('img/dashboard-goal-conversions.png')} />
 
 You can track events and goals to identify the number of unique converted visitors, the total number of conversions, the conversion rate, and the referral sites that send the traffic that converts the best. You can assign dynamic monetary values to goals and custom events to track revenue attribution. We also have an automated way to track form completions, 404 error pages, external link clicks and file downloads.
 
 By sending custom properties alongside custom events or pageviews, you can create your own metrics to collect and analyze data that Plausible doesn’t automatically track.
 
-And you can follow the visitor journey from a landing page to a conversion with our multi-step funnel analysis.
+And you can follow the visitor journey from a landing page to a conversion with our multi-step funnel analysis. 
 
 [You can read more about events, properties and funnels here](goal-conversions.md).

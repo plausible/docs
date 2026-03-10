@@ -16,18 +16,16 @@ Custom events include outbound link clicks, file downloads, 404 error tracking a
 
 Check your current usage in the "**Subscription**" section of your account settings and pick a tier that matches.
 
-<div class="browser">
-    <img alt="Plausible subscription" src={useBaseUrl('img/v2/account-settings-subscription.webp')} />
-</div>
+<img alt="Plausible subscription" src={useBaseUrl('img/account-settings-subscription.png')} />
 
 ## Plans
 
 Each plan offers different features, site limits and team member access:
 
-- **Starter** - Essential features for solo projects and new sites
-- **Growth** - Team access and sharing tools for growing projects
-- **Business** - Advanced marketing features, more sites and larger teams
-- **Enterprise** - Custom plan with tailored limits. [Contact us](https://plausible.io/contact) to discuss
+* **Starter** - Essential features for solo projects and new sites
+* **Growth** - Team access and sharing tools for growing projects
+* **Business** - Advanced marketing features, more sites and larger teams
+* **Enterprise** - Custom plan with tailored limits. [Contact us](https://plausible.io/contact) to discuss
 
 Compare features and pricing on [our website](https://plausible.io/#pricing) or in your account settings. Save 2 months by choosing yearly billing.
 
@@ -45,16 +43,12 @@ If the higher traffic turns out to be temporary, you can upgrade to restore acce
 
 We're not able to make exceptions to keep dashboards unlocked beyond the grace period, so if you're consistently above your tier, upgrading is the quickest way to restore access.
 
-<div class="browser">
-    <img alt="Plausible pageview limit exceeded" src={useBaseUrl('img/v2/pageview-limit-exceeded.webp')} />
-</div>
-
 ## Managing your subscription
 
 Everything is self-serve in your account settings:
 
-- **[Change your plan](change-plan.md)** - switch tiers, change billing frequency or move between plans. All changes are pro-rated.
-- **[Cancel your subscription](cancel-subscription.md)** - you keep access to your stats until the end of the current billing period.
-- **[Download invoices](download-invoices.md)** - get invoices, add VAT numbers and change billing address.
+* **[Change your plan](change-plan.md)** - switch tiers, change billing frequency or move between plans. All changes are pro-rated.
+* **[Cancel your subscription](cancel-subscription.md)** - you keep access to your stats until the end of the current billing period.
+* **[Download invoices](download-invoices.md)** - get invoices, add VAT numbers and change billing address.
 
 Have a question? Check the [Billing FAQ](billing.md) or [contact us](https://plausible.io/contact).
