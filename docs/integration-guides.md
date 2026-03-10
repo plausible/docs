@@ -121,6 +121,7 @@ Step-by-step guides for popular website builders and content management systems.
 | [Laravel Plausible Exclude](https://github.com/swiftmade/laravel-plausible-exclude) | Quickly add a page to exclude your visits from Plausible |
 | [R](https://github.com/giocomai/plausibler) | R wrapper for the Plausible API |
 | [Ruby](https://github.com/dailytics/plausible_api) | Simple wrapper to read the Plausible API with Ruby |
+| [Ruby on Rails Proxy](https://github.com/appercept/plausible_proxy_rails) | Plausible Analytics proxy for Ruby on Rails |
 
 ### Mobile and native app SDKs
 
