@@ -12,7 +12,9 @@ Click on the menu icon on the right-hand side of the site you'd like to get the 
 
 There you can also enable any [optional enhanced measurements](script-extensions.md).
 
-<img alt="Add script extensions and verify your installation" src={useBaseUrl('img/add-script-extensions-verify-installation.png')} />
+<div class="browser">
+    <img alt="Add script extensions and verify your installation" src={useBaseUrl('img/v2/add-script-extensions-verify-installation.webp')} />
+</div>
 
 :::tip Want to track visitors across your domain and its subdomains?
 You can add your main domain name as a site to your Plausible account and use that same tracking snippet on all your subdomains too. This keeps the visitor session active between your main site and its subdomains. Here's [how it works](subdomain-hostname-filter.md).
@@ -22,15 +24,15 @@ You can add your main domain name as a site to your Plausible account and use th
 
 Installing Plausible on a site can be a slightly different process depending on what tools you're using to manage your site.
 
-* Are you using WordPress? We recommend you integrate Plausible by using our plugin. It's very lightweight, excludes your visits by default and allows you to see the stats directly in your WordPress dashboard. It also avoids conflicts with WP Rocket and similar plugins. [See more here](https://plausible.io/wordpress-analytics-plugin)
+- Are you using WordPress? We recommend you integrate Plausible by using our plugin. It's very lightweight, excludes your visits by default and allows you to see the stats directly in your WordPress dashboard. It also avoids conflicts with WP Rocket and similar plugins. [See more here](https://plausible.io/wordpress-analytics-plugin)
 
-* Are you using Google Tag Manager? We have a guide on [how to integrate Plausible with our GTM template](https://plausible.io/gtm-template)
+- Are you using Google Tag Manager? We have a guide on [how to integrate Plausible with our GTM template](https://plausible.io/gtm-template)
 
-* Are you using NPM? We have an NPM library: [@plausible-analytics/tracker](https://www.npmjs.com/package/@plausible-analytics/tracker)
+- Are you using NPM? We have an NPM library: [@plausible-analytics/tracker](https://www.npmjs.com/package/@plausible-analytics/tracker)
 
-* If you'd like to serve our snippet as a first-party connection from your domain name, we offer a way to proxy our script. See [full details here](/proxy/introduction.md)
+- If you'd like to serve our snippet as a first-party connection from your domain name, we offer a way to proxy our script. See [full details here](/proxy/introduction.md)
 
-* Prefer to avoid JavaScript and use server side tracking instead? We have [the events API for that](events-api.md)
+- Prefer to avoid JavaScript and use server side tracking instead? We have [the events API for that](events-api.md)
 
 We've put together [several other guides and plugins](integration-guides.md) that cover popular website builders, content management systems (CMS) and frameworks. These can help you set up and start counting your site visitors in no time.
 

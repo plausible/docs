@@ -4,13 +4,15 @@ title: Your sites landing page
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-When you log into your Plausible Analytics account, you are met with the ["**My Sites**" landing page](https://plausible.io/sites), where we list all the websites you have access to. 
+When you log into your Plausible Analytics account, you are met with the ["**My Sites**" landing page](https://plausible.io/sites), where we list all the websites you have access to.
 
-<img alt="Plausible Analytics" src={useBaseUrl('img/list-of-sites.png')} />
+<div class="browser">
+    <img alt="Plausible Analytics" src={useBaseUrl('img/v2/list-of-sites.webp')} />
+</div>
 
 In the top right, you can access your account settings or log out of your account. Further down the "**My Sites**" page, you have the search box on the left so you can quickly find a site and the "**+ Add a website**" button on the right so you can [add a new site](add-website.md) to your account.
 
-The rest of the "**My Sites**" page features all your sites. To give you a quick overview, we display the number of visitors in the last 24 hours next to each site. There's also a graph of each site for a quick overview of the traffic and a comparison to the previous 24 hour period so you can see the trend. 
+The rest of the "**My Sites**" page features all your sites. To give you a quick overview, we display the number of visitors in the last 24 hours next to each site. There's also a graph of each site for a quick overview of the traffic and a comparison to the previous 24 hour period so you can see the trend.
 
 If you have multiple websites, there's also [the consolidated view](consolidated-views.md) which gives you an overview of traffic across all your websites. This allows you to quickly see the total number of visitors and other key metrics across all your properties in one place.
 
@@ -34,10 +36,16 @@ You can pin sites that you want to feature at the top of your sites page. You ca
 
 To pin a site, click on the menu icon on the right-hand side of the domain name and then choose "**Pin Site**". To unpin a site, click on the menu icon on any of your pinned sites and then choose "**Unpin Site**".
 
-<img alt="Pin sites" src={useBaseUrl('img/pin-sites.png')} />
+<div class="browser">
+    <video autoPlay loop muted controls width="100%">
+        <source src={useBaseUrl('/video/pin-site.mp4')} type="video/mp4" />
+    </video>
+</div>
 
 ## Access your pinned sites from the site switcher list
 
 Your pinned sites will also show up in the site switcher list that you can see within each dashboard by clicking on the site name in the top left. You can navigate between the sites in the site switcher list using keyboard shortcuts 1 to 9.
 
-<img alt="Pinned sites in the site switcher" src={useBaseUrl('img/pinned-site-switcher.png')} />
+<div class="browser">
+    <img alt="Pinned sites in the site switcher" src={useBaseUrl('img/v2/pinned-site-switcher.webp')} />
+</div>
