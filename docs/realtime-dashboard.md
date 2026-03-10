@@ -1,16 +1,14 @@
 ---
 title: Realtime dashboard
----
+--- 
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Plausible Analytics features a realtime view that tells you what's happening on your site live at that moment.
 
-<div class="browser">
-    <img alt="Realtime dashboard" src={useBaseUrl('img/v2/realtime-dashboard.webp')} />
-</div>
+<img alt="Realtime dashboard" src={useBaseUrl('img/realtime-dashboard.png')} />
 
-You can get to the realtime dashboard by clicking on the number of "**current visitors**" or selecting "**Realtime**" in the date picker in the top right. You can also view the realtime dashboard by pressing the `R` key on your keyboard.
+You can get to the realtime dashboard by clicking on the number of "**current visitors**" or selecting "**Realtime**" in the date picker in the top right. You can also view the realtime dashboard by pressing the `R` key on your keyboard. 
 
 The realtime dashboard will look familiar to you. All the same reports and metrics are there as in our default dashboard. You can also filter the realtime dashboard by any metric you click on. The realtime dashboard is updated every 30 seconds, so you don't have to refresh it to stay up to date.
 

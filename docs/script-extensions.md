@@ -10,22 +10,20 @@ You can enable optional measurements for form submissions, outbound link clicks 
 
 There are also additional measurement options that you can set up manually if needed.
 
-<div class="browser">
-  <img alt="Enable optional enhanced measurements" src={useBaseUrl('img/v2/onboarding-enable-enhanced-tracking.webp')} />
-</div>
+<img alt="Enable optional enhanced measurements" src={useBaseUrl('img/onboarding-enable-enhanced-tracking.png')} />
 
 Here's the list of our optional measurements:
 
-| Optional Measurement | Explanation                                                                                                                                                                                 |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Outbound links       | Automatically [track clicks on outbound links](outbound-link-click-tracking.md)                                                                                                             |
-| File downloads       | Automatically [track file downloads](file-downloads-tracking.md)                                                                                                                            |
-| Form submissions     | Automatically [track form submissions](form-submissions-tracking.md)                                                                                                                        |
-| 404 error pages      | Allows you to set up [404 error pages tracking](error-pages-tracking-404.md)                                                                                                                |
-| Hashed page paths    | Allows you to set up page paths that use a `#` in the URL ([hash-based routing](hash-based-routing.md))                                                                                     |
-| Custom events        | Allows you to [track custom events](custom-event-goals.md) such as link clicks, form submits and any other HTML element clicks                                                              |
-| Custom properties    | Allows you to attach [custom properties](/custom-props/introduction) (also known as custom dimensions in Google Analytics) when sending a pageview or custom event to create custom metrics |
-| Ecommerce revenue    | Allows you to assign dynamic [monetary values](ecommerce-revenue-tracking.md) to custom events and track revenue attribution                                                                |
+| Optional Measurement                | Explanation                                                                                        |
+|--------------------------|----------------------------------------------------------------------------------------------------|
+| Outbound links | Automatically [track clicks on outbound links](outbound-link-click-tracking.md)  |
+| File downloads | Automatically [track file downloads](file-downloads-tracking.md)                                   |
+| Form submissions | Automatically [track form submissions](form-submissions-tracking.md) |
+| 404 error pages | Allows you to set up [404 error pages tracking](error-pages-tracking-404.md)                                   |
+| Hashed page paths          | Allows you to set up page paths that use a `#` in the URL ([hash-based routing](hash-based-routing.md))    |
+| Custom events  | Allows you to [track custom events](custom-event-goals.md) such as link clicks, form submits and any other HTML element clicks            |
+| Custom properties | Allows you to attach [custom properties](/custom-props/introduction) (also known as custom dimensions in Google Analytics) when sending a pageview or custom event to create custom metrics      |
+| Ecommerce revenue  | Allows you to assign dynamic [monetary values](ecommerce-revenue-tracking.md) to custom events and track revenue attribution |
 
 <details>
 
@@ -39,18 +37,18 @@ Here's the list of our optional measurements:
 
 Additionally, `plausible.init()` can be called with different options further enhance its behavior. Supported options are:
 
-| Option               | Type                              | Default                            | Description                                                                              |
-| -------------------- | --------------------------------- | ---------------------------------- | ---------------------------------------------------------------------------------------- |
-| endpoint             | `string`                          | `"https://plausible.io/api/event"` | Allows [proxying requests](/proxy/introduction)                                          |
+| Option | Type | Default | Description |
+| -- | -- | -- | -- |
+| endpoint             | `string`                          | `"https://plausible.io/api/event"` | Allows [proxying requests](/proxy/introduction) |
 | hashBasedRouting     | `boolean`                         | `false`                            | Track page paths that use a `#` in the URL ([hash-based routing](hash-based-routing.md)) |
-| fileDownloads        | `boolean` or `{ fileExtensions }` | `false`                            | Automatically [track file downloads](file-downloads-tracking.md)                         |
+| fileDownloads        | `boolean` or `{ fileExtensions }` | `false`                            | Automatically [track file downloads](file-downloads-tracking.md) |
 | outboundLinks        | `boolean`                         | `false`                            | [track clicks on outbound links](outbound-link-click-tracking.md)                        |
-| customProperties     | `object` or `function(eventName)` | `{}`                               | [Add custom props globally](/custom-props/introduction)                                  |
-| formSubmissions      | `boolean`                         | `false`                            | [Track form submissions](form-submissions-tracking.md)                                   |
-| captureOnLocalhost   | `boolean`                         | `false`                            | Enables tracking on localhost for dev environments                                       |
-| autoCapturePageviews | `boolean`                         | `true`                             | Automatically track pageviews                                                            |
-| logging              | `boolean`                         | `true`                             | Enable/disable logging done by script                                                    |
-| transformRequest     | `function(payload)`               | –                                  | Modify or filter events before sending (e.g. [for custom locations](/custom-locations))  |
+| customProperties     | `object` or `function(eventName)` | `{}`                               | [Add custom props globally](/custom-props/introduction)               |
+| formSubmissions      | `boolean`                         | `false`                            | [Track form submissions](form-submissions-tracking.md)                    |
+| captureOnLocalhost   | `boolean`                         | `false`                            | Enables tracking on localhost for dev environments                  |
+| autoCapturePageviews | `boolean`                         | `true`                             | Automatically track pageviews                                       |
+| logging              | `boolean`                         | `true`                             | Enable/disable logging done by script                               |
+| transformRequest     | `function(payload)`               | –                                  | Modify or filter events before sending (e.g. [for custom locations](/custom-locations))|
 
 ### Manual pageviews
 
@@ -63,9 +61,9 @@ To do so, add update `plausible.init` to disable `autoCapturePageviews`: `plausi
 Additionally, add a javascript listener that triggers pageviews on turbolinks navigation:
 
 ```javascript
-document.addEventListener("turbo:load", function () {
-  plausible("pageview");
-});
+document.addEventListener("turbo:load", function() {
+  plausible('pageview')
+})
 ```
 
 :::note

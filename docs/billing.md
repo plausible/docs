@@ -20,7 +20,7 @@ Credit/debit card, PayPal, Apple Pay and Google Pay. All payment processing is h
 
 If paying via PayPal, make sure a valid card is linked to your PayPal account. Paddle requires this for recurring subscriptions.
 
-<img class="border" alt="Apple Pay & Google Pay payment methods" src={useBaseUrl('img/v2/plausible-apple-pay.webp')} />
+<img alt="Apple Pay & Google Pay payment methods" src={useBaseUrl('img/plausible-apple-pay.png')} />
 
 ## How do I add my VAT number?
 
@@ -28,7 +28,7 @@ During checkout, you can add your company address and VAT ID. Paddle handles all
 
 If you didn't add it during checkout, open any Paddle invoice and click "**Add address & VAT Number**". [More on Paddle's VAT handling →](https://paddle.com/support/which-countries-does-paddle-charge-vat-for/)
 
-<img class="border" alt="Add VAT number at checkout" src={useBaseUrl('img/v2/add-vat-number-during-checkout.webp')} />
+<img alt="Add VAT number at checkout" src={useBaseUrl('img/add-vat-number-during-checkout.png')} />
 
 ## How do I change my VAT number?
 
@@ -64,8 +64,6 @@ If you downgrade to a lower tier, you'll see a negative immediate payment amount
 
 In your account settings, go to the "**Subscription**" section. Under "**Next bill amount**", click "**Update billing info**".
 
-<div class="browser">
-    <img alt="Update Plausible billing information" src={useBaseUrl('img/v2/account-settings-update-billing-info.webp')} />
-</div>
+<img alt="Update Plausible billing information" src={useBaseUrl('img/account-settings-update-billing-info.png')} />
 
 Have a billing question not covered here? [Contact us](https://plausible.io/contact).
