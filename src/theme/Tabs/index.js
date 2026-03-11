@@ -1,5 +1,6 @@
 import React, {cloneElement, useEffect} from 'react';
 import clsx from 'clsx';
+import {ThemeClassNames} from '@docusaurus/theme-common';
 import {
   useScrollPositionBlocker,
   useTabs,
@@ -60,7 +61,9 @@ function TabList({className, block, selectedValue, selectValue, tabValues}) {
           tabIndex={selectedValue === value ? 0 : -1}
           aria-selected={selectedValue === value}
           key={value}
-          ref={(tabControl) => tabRefs.push(tabControl)}
+          ref={(tabControl) => {
+            tabRefs.push(tabControl);
+          }}
           onKeyDown={handleKeydown}
           onClick={handleTabChange}
           {...attributes}
@@ -117,7 +120,11 @@ function TabsComponent(props) {
   }, [tabs.selectedValue])
 
   return (
-    <div className={clsx('tabs-container', styles.tabList)}>
+    <div
+      className={clsx(
+        ThemeClassNames.tabs.container,
+        styles.tabList,
+      )}>
       <TabList {...tabs} {...props} />
       <TabContent {...tabs} {...props} />
     </div>
