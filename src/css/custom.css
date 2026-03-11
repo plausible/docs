@@ -86,8 +86,16 @@ html[data-theme='dark'] {
   height: 20px;
 }
 
-.DocSearch-Button {
-  padding: 0 8px 0 12px !important;
+@media (min-width: 997px) {
+  .DocSearch-Button {
+    padding: 0 8px 0 12px !important;
+  }
+}
+
+@media (max-width: 996px) {
+  .DocSearch-Button {
+    padding: 0 12px !important;
+  }
 }
 
 .DocSearch-Button-Container svg {
@@ -214,6 +222,11 @@ html[data-theme='dark'] {
   .tocCollapsible_ETCw.tocMobile_ITEo {
     background-color: var(--white);
     border: 1px solid var(--zinc-300);
+  }
+
+  [data-theme='dark'] .tocCollapsible_ETCw.tocMobile_ITEo {
+    background-color: var(--zinc-900);
+    border: 1px solid var(--zinc-600);
   }
   
   .clean-btn.tocCollapsibleButton_TO0P {
