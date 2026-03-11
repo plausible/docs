@@ -190,12 +190,11 @@ html[data-theme='dark'] {
   font-weight: 500;
 }
 
-.docItemCol_VOVn {
-  margin-left: var(--ifm-spacing-horizontal);
-}
-
-.col.docItemCol_VOVn {
-  max-width: calc(75% - var(--ifm-spacing-horizontal)) !important;
+@media (min-width: 997px) {
+  .col.docItemCol_VOVn {
+    max-width: calc(75% - var(--ifm-spacing-horizontal)) !important;
+    margin-left: var(--ifm-spacing-horizontal);
+  }
 }
 
 [data-theme='dark'] .table-of-contents__link:hover,
