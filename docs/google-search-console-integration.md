@@ -1,6 +1,6 @@
 ---
 title: Search Console integration
---- 
+---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -20,7 +20,9 @@ Head over to [Google Search Console](https://search.google.com/search-console/) 
 
 You can either create a domain property or a URL prefix property on Google Search Console. Check out [their documentation](https://support.google.com/webmasters/answer/34592?hl=en) to understand the difference between these options. Plausible Analytics works with both options, so it’s completely up to you.
 
-<img alt="Plausible Analytics" src={useBaseUrl('img/select-property-type.png')} />
+<div class="browser">
+    <img alt="Plausible Analytics" src={useBaseUrl('img/v2/select-property-type.webp')} />
+</div>
 
 ## Verify your ownership of the website
 
@@ -28,7 +30,9 @@ You should see several options to verify to Google that you do indeed own this w
 
 Follow the provided instructions depending on which verification method you’ve chosen. Once you’ve successfully verified the site, head back to the Plausible Analytics website.
 
-<img alt="Plausible Analytics" src={useBaseUrl('img/verify-ownership.png')} />
+<div class="browser">
+    <img alt="Plausible Analytics" src={useBaseUrl('img/v2/verify-ownership.webp')} />
+</div>
 
 ## Allow Plausible Analytics to access your Search Console
 
@@ -36,17 +40,23 @@ Open the [site settings area](website-settings.md) for your website in your Plau
 
 In the "**Google Search Console Integration**" module, click on the "**Continue with Google**" button which will take you through to Google’s authentication flow to get the necessary permissions.
 
-<img alt="Continue with Google" src={useBaseUrl('img/continue-with-google.png')} />
+<div class="browser">
+    <img alt="Continue with Google" src={useBaseUrl('img/v2/continue-with-google.webp')} />
+</div>
 
-Choose your Google account to continue with the authentication. Google will share your name, email address, language preference and profile picture with Plausible Analytics. We've set it so we get the absolutely minimum amount of information possible that Google allows us. 
+Choose your Google account to continue with the authentication. Google will share your name, email address, language preference and profile picture with Plausible Analytics. We've set it so we get the absolutely minimum amount of information possible that Google allows us.
 
 We really only need and use the email address from this. Email address is useful because some Plausible Analytics users have multiple Google accounts so we can remember which one is integrated with the Plausible Analytics site.
 
-<img alt="Choose your Google account" src={useBaseUrl('img/choose-google-account.png')} />
+<div class="browser">       
+    <img alt="Choose your Google account" src={useBaseUrl('img/v2/choose-google-account.webp')} />
+</div>
 
 You then need to grant Plausible Analytics a permission to view your Search Console website data by ticking the "View Search Console data for your verified sites" box in the "Plausible Analytics wants access to your Google account" screen.
 
-<img alt="Tick the View Search Console data for your verified sites box" src={useBaseUrl('img/confirm-choices.png')} />
+<div class="browser">
+    <img alt="Tick the View Search Console data for your verified sites box" src={useBaseUrl('img/v2/confirm-choices.webp')} />
+</div>
 
 ## Select property to pull keywords from
 
@@ -54,30 +64,36 @@ Next up, you are back in Plausible Analytics site settings where you should see 
 
 Once you’ve selected your property, click on the "**Save**" button. At that point, the integration should be fully functional.
 
-<img alt="Choose which property from Google Search Console to integrate with" src={useBaseUrl('img/choose-property.png')} />
+<div class="browser">
+    <img alt="Choose which property from Google Search Console to integrate with" src={useBaseUrl('img/v2/choose-property.webp')} />
+</div>
 
 ### I get the "Invalid Grant" error
 
 Google may return the "**invalid_grant**" error message for several reasons:
 
-* Google has a limit of 50 live tokens. When you try to add the 51st site, the site you added first will be disconnected from your Plausible account and so on. This is a limitation on Google's side so if you have more than 50 different sites in your Search Console, you will need to split them between different Google accounts to get them into Plausible at the same time
-* Your permissions for the specific site may have been changed or revoked in your Google account. Please check your Search Console account and make sure you still have the user permission to the site in question
-* Your token is inactive as your account has expired or your site isn't active. Please check your Search Console account and make sure you still have the account and are still tracking the site in question correctly
-* You may have changed the permissions or the password in your Google account since you gave us the access. Please make sure to reconnect your Google account again to Plausible with the correct account details
+- Google has a limit of 50 live tokens. When you try to add the 51st site, the site you added first will be disconnected from your Plausible account and so on. This is a limitation on Google's side so if you have more than 50 different sites in your Search Console, you will need to split them between different Google accounts to get them into Plausible at the same time
+- Your permissions for the specific site may have been changed or revoked in your Google account. Please check your Search Console account and make sure you still have the user permission to the site in question
+- Your token is inactive as your account has expired or your site isn't active. Please check your Search Console account and make sure you still have the account and are still tracking the site in question correctly
+- You may have changed the permissions or the password in your Google account since you gave us the access. Please make sure to reconnect your Google account again to Plausible with the correct account details
 
 ### I see no Search Console properties in my Plausible account
 
-Please make sure you tick the "View Search Console data for your verified sites" box on the "Plausible Analytics wants access to your Google account" screen. If you don't tick that box, Google won't give us permission to access any of your Search Console properties. 
+Please make sure you tick the "View Search Console data for your verified sites" box on the "Plausible Analytics wants access to your Google account" screen. If you don't tick that box, Google won't give us permission to access any of your Search Console properties.
 
 ## Check your search query data in Plausible Analytics
 
-Look at your site’s "**Top Sources**" report in your Plausible Analytics dashboard, click on "**Google**" in the list and you should see the keyword terms coming through. If you click on the "**Details**" button, you can also see the number of impressions, CTR and position for each keyword term. And you can also [filter your dashboard](filters-segments.md) by page, country or device and see the Search Console keyword terms for that segment of your audience only. 
+Look at your site’s "**Top Sources**" report in your Plausible Analytics dashboard, click on "**Google**" in the list and you should see the keyword terms coming through. If you click on the "**Details**" button, you can also see the number of impressions, CTR and position for each keyword term. And you can also [filter your dashboard](filters-segments.md) by page, country or device and see the Search Console keyword terms for that segment of your audience only.
 
-<img alt="Google search query data in Plausible Analytics" src={useBaseUrl('img/google-search-query-referrers.png')} />
+<div class="browser">
+    <video autoPlay loop muted controls width="100%">
+        <source src={useBaseUrl('/video/google-search-query-referrers.mp4')} type="video/mp4" />
+    </video>
+</div>
 
 ### I don't see Google search query data in my dashboard
 
-Search query data isn't live. It's delayed by approximately 24-36 hours even on Google Search Console itself. 
+Search query data isn't live. It's delayed by approximately 24-36 hours even on Google Search Console itself.
 
 So if you go back two days in your Plausible Analytics dashboard and click on Google in the referral sources you should be able to see the search queries for that day. We get the search query data directly from Google Search Console so as soon as they show up there they show up in Plausible Analytics too.
 
@@ -91,7 +107,9 @@ Google samples its keyword data heavily. The sampling is why your keyword visito
 
 You can check if Plausible Analytics is integrated with and has the right permissions to your Search Console properties in your Google account within the section "**Apps with access to your account**". Here's the [direct link to that section](https://myaccount.google.com/permissions). Here's how it looks.
 
-<img alt="Third-party apps with account access" src={useBaseUrl('img/third-party-apps.png')} />
+<div class="browser">
+    <img alt="Third-party apps with account access" src={useBaseUrl('img/v2/third-party-apps.webp')} />
+</div>
 
 ## Remove the Google Search Console integration
 

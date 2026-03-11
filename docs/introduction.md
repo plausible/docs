@@ -18,14 +18,14 @@ Once you're set up, explore the [stats dashboard](guided-tour.md) to see your da
 
 ## Popular topics
 
-| Topic | Description |
-| --- | --- |
-| [Goal conversions](goal-conversions.md) | Track signups, purchases, downloads and other actions |
-| [Funnel analysis](funnel-analysis.md) | Follow the visitor journey from landing page to conversion |
-| [Ecommerce revenue](ecommerce-revenue-tracking.md) | Attribute revenue to your marketing campaigns and sources |
-| [Consolidated view](consolidated-views.md) | See stats across all your sites in one dashboard |
-| [UTM campaigns](top-referrers.md) | Track your marketing campaigns with UTM tags |
-| [Stats API](stats-api.md) | Build custom dashboards and integrations |
+| Topic                                              | Description                                                |
+| -------------------------------------------------- | ---------------------------------------------------------- |
+| [Goal conversions](goal-conversions.md)            | Track signups, purchases, downloads and other actions      |
+| [Funnel analysis](funnel-analysis.md)              | Follow the visitor journey from landing page to conversion |
+| [Ecommerce revenue](ecommerce-revenue-tracking.md) | Attribute revenue to your marketing campaigns and sources  |
+| [Consolidated view](consolidated-views.md)         | See stats across all your sites in one dashboard           |
+| [UTM campaigns](top-referrers.md)                  | Track your marketing campaigns with UTM tags               |
+| [Stats API](stats-api.md)                          | Build custom dashboards and integrations                   |
 
 ## Get the most out of Plausible
 
@@ -35,4 +35,6 @@ Can't find what you're looking for? Please do [contact us](https://plausible.io/
 
 If you have a feature request or are wondering about what's coming up next, take a look at [our feedback board](https://feedback.plausible.io) and [roadmap](https://feedback.plausible.io/roadmap).
 
-<img alt="Plausible Analytics" src={useBaseUrl('img/plausible-analytics.png')} />
+<div class="browser">
+    <img alt="Plausible Analytics" src={useBaseUrl('img/plausible-analytics.png')} />
+</div>
