@@ -43,9 +43,9 @@ The destination team must have an active subscription with a plan that supports 
 If a site is currently part of a team but you want it to appear under **My Personal Sites**, you can transfer the ownership to yourself.
 
 1. Go to site settings for the site you want to move
-2. Click **Danger Zone** in the left sidebar
-3. Under **Transfer Site Ownership**, enter the email address of your own Plausible account
-4. Click **Request transfer**
+2. Click "**Danger Zone**" in the left sidebar
+3. Under "**Transfer Site Ownership**", enter the email address of your own Plausible account
+4. Click "**Request transfer**"
 
 You’ll receive an email invitation to accept the transfer. Once accepted, the site will move from the team to your **My Personal Sites** section.
 
