@@ -31,9 +31,22 @@ After the transfer, you keep "**Guest Editor**" access to the site. The new owne
 
 <img alt="Transfer ownership of a site to a team" src={useBaseUrl('img/new-transfer-site-ownership-team.png')} />
 
-1. Go to [site settings](website-settings.md) for the site you want to transfer
+1. Go to site settings for the site you want to transfer
 2. Click "**Danger Zone**" in the left sidebar
 3. Under "**Change Teams**", select the destination team
 4. Click "**Change team**"
 
 The destination team must have an active subscription with a plan that supports the transfer.
+
+## Transfer a site from a team to your personal sites
+
+If a site is currently part of a team but you want it to appear under **My Personal Sites**, you can transfer the ownership to yourself.
+
+1. Go to site settings for the site you want to move
+2. Click **Danger Zone** in the left sidebar
+3. Under **Transfer Site Ownership**, enter the email address of your own Plausible account
+4. Click **Request transfer**
+
+You’ll receive an email invitation to accept the transfer. Once accepted, the site will move from the team to your **My Personal Sites** section.
+
+Note that subscriptions are not transferred with the site. You will need an active subscription on the account that accepts the transfer. Once transferred, the site will count toward the limits of whichever account becomes the new owner.
