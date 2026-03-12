@@ -51,6 +51,10 @@ Want to group file downloads by the domain name or any other keyword? In the "**
 
 ## Which file types are tracked?
 
+:::note
+Automatic file download tracking only works for files hosted on the same domain as the tracked site. Files served from a CDN, another domain, or an untracked subdomain will be tracked as outbound link clicks instead.
+:::
+
 Our "**File downloads**" tracking captures a file download event each time a link is clicked with a document, presentation, text file, compressed file, video, audio or other common file type. Both internal and external files downloads are tracked. These file extensions are tracked by default:
 
 `.pdf`, `.xlsx`, `.docx`, `.txt`, `.rtf`, `.csv`, `.exe`, `.key`, `.pps`, `.ppt`, `.pptx`, `.7z`, `.pkg`, `.rar`, `.gz`, `.zip`, `.avi`, `.mov`, `.mp4`, `.mpeg`, `.wmv`, `.midi`, `.mp3`, `.wav`, `.wma`, `.dmg`
