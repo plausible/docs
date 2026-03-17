@@ -10,7 +10,7 @@ When you log into your Plausible Analytics account, you are met with the ["**My 
     <img alt="Plausible Analytics" src={useBaseUrl('img/v2/list-of-sites.webp')} />
 </div>
 
-In the top right, you can access your account settings or log out of your account. Further down the "**My Sites**" page, you have the search box on the left so you can quickly find a site and the "**+ Add a website**" button on the right so you can [add a new site](add-website.md) to your account.
+In the top right, you can access your account settings or log out of your account. Further down the "**My Sites**" page, you have the search box on the left so you can quickly find any site. And, the sorting option and the "**+ Add a website**" button on the right so you can [add a new site](add-website.md) to your account.
 
 The rest of the "**My Sites**" page features all your sites. To give you a quick overview, we display the number of visitors in the last 24 hours next to each site. There's also a graph of each site for a quick overview of the traffic and a comparison to the previous 24 hour period so you can see the trend.
 
@@ -41,6 +41,15 @@ To pin a site, click on the menu icon on the right-hand side of the domain name 
         <source src={useBaseUrl('/video/pin-site.mp4')} type="video/mp4" />
     </video>
 </div>
+
+## Sorting sites
+
+You can sort your sites too. Available sorting options include:
+
+- **Visitors (last 24 hours)** – sorts sites by the number of visitors in the past day
+- **Domain name** – sorts alphabetically (ascending or descending)
+
+Pinned sites remain fixed at the top regardless of the selected sorting option.
 
 ## Access your pinned sites from the site switcher list
 
