@@ -18,7 +18,7 @@ Our testing tool will launch automatically from the blinking green dot screen to
 
 ### Launch the Plausible testing tool from your site settings
 
-Have you made any changes to your integration? You can launch our testing tool at any time from your [site settings](website-settings.md) to verify whether the changes you made has worked.
+Have you made any changes to your integration? You can launch our testing tool at any time from your [site settings](website-settings.md) to verify whether the changes you made have worked.
 
 Did our testing tool detect an issue with your integration? Or is there something unusual about the data you're seeing? See how to troubleshoot the most common issues below.
 

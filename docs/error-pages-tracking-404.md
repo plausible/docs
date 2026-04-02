@@ -48,7 +48,7 @@ After clicking on the "**Add goal**" button the goal will be created and you'll 
 
 ## Step 3: See all the visits on 404 error pages in your dashboard
 
-After updating your 404 page template and creating the goal, all the visits on 404 error pages will start being tracked and will be displayed in the "**Goal Conversions**" report of your Plausible Analytics dashboard. You'll see the "**404**" goal as soon as the first visit on a 404 error page has been tracked.
+After updating your 404 page template and creating the goal, all the visits on 404 error pages will start being tracked and will be displayed in the "**Goals**" report of your Plausible Analytics dashboard. You'll see the "**404**" goal as soon as the first visit on a 404 error page has been tracked.
 
 Click on "**404**" to see the full list of all visits on all error pages and have your dashboard filtered by error pages only. Click on a particular error page URL to filter the dashboard by those clicks only and get the full overview of that specific URL. Then you can figure out how your visitors discover the broken links and fix them.
 

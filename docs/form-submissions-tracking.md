@@ -21,15 +21,15 @@ You can enable "**Form submissions**" as an optional measurement when adding a n
 <!-- TODO -->
 <img alt="Enable form submissions tracking during onboarding" src={useBaseUrl('img/plausible-analytics-automatic-form-submission.png')}/>
 
-After you enable form submissions click tracking, we will automatically add a new goal called `Form: Submission` to your site.
+After you enable form submissions tracking, we will automatically add a new goal called `Form: Submission` to your site.
 
 :::tip Using WordPress?
 The quickest way to start tracking form submissions is to use our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin)
 :::
 
-## See all the form submissions clicks in your dashboard
+## See all the form submissions in your dashboard
 
-Click on "**Form: Submission**" goal in the "**Goal Conversions**" report of your Plausible dashboard to see the full list of all form submissions and have your dashboard filtered by them. You can see:
+Click on "**Form: Submission**" goal in the "**Goals**" report of your Plausible dashboard to see the full list of all form submissions and have your dashboard filtered by them. You can see:
 
 * The number of total form submissions
 * The number of unique form submissions
@@ -37,7 +37,7 @@ Click on "**Form: Submission**" goal in the "**Goal Conversions**" report of you
 * Top referral sources that lead to submissions
 * Top pages that drive the submissions
 * Countries that submit forms
-* Devices (screen size, browser, OS) that click on forms
+* Devices (screen size, browser, OS) that submit forms
 
 To analyze a specific form, click on its URL to filter your dashboard by that form’s submissions. This gives you a complete overview of performance for that individual form.
 

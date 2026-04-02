@@ -14,7 +14,7 @@ It looks just like any other Plausible dashboard, but the data includes all your
 
 ## When a consolidated view is useful
 
-- If you're building multi-tenant applications, offering [a white label analytics dashboard](https://plausible.io/white-label-web-analytics) or a similar service.
+- If you're building multi-tenant applications, offering [a white label analytics dashboard](https://plausible.io/white-label-web-analytics) or a similar service, you can use a consolidated view to monitor traffic across all your properties at once.
 - If you are managing several brands or domains, you will be able to check total visitors, top sources, and important trends across all your sites at once.
 
 - It helps you oversee a network of blogs or microsites so you can spot which sites grow fastest, which ones slow down, and where to focus content or marketing effort.

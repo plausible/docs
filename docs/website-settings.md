@@ -4,6 +4,8 @@ title: Your website settings section
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+Your website settings let you manage your domain, control who has access, configure what data is collected, and set up reports and notifications. Common tasks include [changing your domain](change-domain-name.md), [managing users and roles](users-roles.md), [controlling dashboard visibility](visibility.md), setting up [email](email-reports.md) or [Slack reports](slack-reports.md), and [excluding your own traffic](excluding.md).
+
 You can access your website settings using these two methods:
 
 ## Directly from your site dashboard

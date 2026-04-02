@@ -4,9 +4,7 @@ title: Introduction to the dashboard
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Plausible Analytics is built with simplicity and speed in mind. There is no navigational menu. There are no additional sub-menus. There is no need to create custom reports. You get one simple and useful web analytics dashboard out of the box.
-
-Rather than tracking every metric imaginable, many of them that you will never find a use for, Plausible Analytics focuses on the essential website stats only. It's easy to use and understand with no training or prior experience.
+Plausible Analytics is built with simplicity and speed in mind. You get one dashboard with the essential website stats, easy to use and understand with no training or prior experience. There are no sub-menus and no need to build custom reports.
 
 Here’s what you can discover on your Plausible dashboard. You can also explore our [live demo](https://plausible.io/plausible.io) where you can see the actual traffic of our website.
 
@@ -20,9 +18,8 @@ See the number of unique visitors, total visits (sessions), total page views, vi
 
 You can **choose a different time range** that you want to analyze in the date picker in the top right. The dotted line towards the right-end of a graph indicates the current, incomplete day/week/month. The current day is included in the time ranges "Month to date", "Year to date", and "All time." All other time ranges don't include the current day.
 
-The visitor numbers are automatically presented on the graph. The time format (24-hour or 12-hour am/pm) for the top graph timelines is displayed automatically based on your browser's defined language.
+The time format (24-hour or 12-hour am/pm) is displayed based on your browser's language setting.
 
-We get all the favicons (your site favicon and the favicons of all the referral sources) directly from the DuckDuckGo API. We display the same icon that DuckDuckGo shows in their search results.
 
 :::tip Click on the site name in the top left side of the dashboard
 Here you can enter "[Site Settings](website-settings.md)" but also switch to a different [pinned site](landing-page.md#access-your-pinned-sites-from-the-site-switcher-list) that you have added to your Plausible account
@@ -76,7 +73,7 @@ You can also use the "**Filter**" button on the top of your dashboard which give
 
 ## Detailed metrics and Sorting
 
-You can click the "**Details**" button at the bottom of any report to get an expanded view and see the full list with additional metrics such as "**Visitors**", "**Bounce Rate**", "**Visit Duration**", "**Scroll Depth**", "**Unique Conversions**", "**Total Conversions**", "**Conversion Rate**" and more all depending upon the type of the report.
+You can click the "**Details**" button in any report to get an expanded view and see the full list with additional metrics such as "**Visitors**", "**Bounce Rate**", "**Visit Duration**", "**Scroll Depth**", "**Unique Conversions**", "**Total Conversions**", "**Conversion Rate**" and more, depending on the report type.
 
 You can sort any report by such performance metrics by clicking on any metric heading to sort and arrange your data in ascending or descending order.
 
@@ -86,15 +83,17 @@ See all the acquisition channels and sources of traffic ranked by the number of 
 
 You can use the "**Campaigns**" dropdown section in the Top Sources report to view your campaigns separately from other traffic sources. These are visitors coming from UTM tagged links such as those in your emails, social media or in your paid advertising campaigns. Click on "**Medium**", "**Source**", "**Campaign**", "**Term**" and "**Content**" to explore these.
 
-Note that the referral sources including UTM and other query parameters are counted only when they start a new session on your site.
+:::tip Referral sources are counted per session
+UTM parameters and other referral sources are only recorded when they start a new session. [Read more about how sources are counted](top-referrers.md).
+:::
 
 [Read more here](top-referrers.md).
 
 ## Top Pages
 
-See all the most visited pages on your site ranked by the number of unique visitors. You can click on the "**details**" button to see the full list with additional metrics. The number of pageviews, bounce rate, time on page and scroll depth for the individual pages are included too.
+See all the most visited pages on your site ranked by the number of unique visitors. You can click on the "**Details**" button to see the full list with additional metrics. The number of pageviews, bounce rate, time on page and scroll depth for the individual pages are included too.
 
-You can also get insights into the visitor flow by looking at the "**Entry pages**" and "**Exit pages**". Click on the "**details**" button to see the full list with additional metrics. For "**Entry pages**" details include visit duration for visits that started on a specific page and for "**Exit pages**" details include the exit rate percentage. [Read more here](top-pages.md).
+You can also get insights into the visitor flow by looking at the "**Entry pages**" and "**Exit pages**". Click on the "**Details**" button to see the full list with additional metrics. For "**Entry pages**" details include visit duration for visits that started on a specific page and for "**Exit pages**" details include the exit rate percentage. [Read more here](top-pages.md).
 
 :::tip Looking for the definitions of the metrics you have access to?
 [See this list](metrics-definitions.md)
@@ -102,7 +101,7 @@ You can also get insights into the visitor flow by looking at the "**Entry pages
 
 ## Locations
 
-See the list of countries, regions and cities your traffic is coming from. You can click on the "**details**" button to see the full list ranked by the number of visitors. [Read more here](countries.md).
+See the list of countries, regions and cities your traffic is coming from. You can click on the "**Details**" button to see the full list ranked by the number of visitors. [Read more here](countries.md).
 
 :::tip Want a quicker way to navigate the dashboard?
 You can use the keyboard shortcuts to do so. Here's [the full list of shortcuts we support](keyboard-shortcuts.md)
@@ -118,10 +117,6 @@ You can see the device, browser and operating system your visitors are using. Cl
     <img alt="Goal Conversions" src={useBaseUrl('img/v2/dashboard-goal-conversions.webp')} />
 </div>
 
-You can track events and goals to identify the number of unique converted visitors, the total number of conversions, the conversion rate, and the referral sites that send the traffic that converts the best. You can assign dynamic monetary values to goals and custom events to track revenue attribution. We also have an automated way to track form completions, 404 error pages, external link clicks and file downloads.
-
-By sending custom properties alongside custom events or pageviews, you can create your own metrics to collect and analyze data that Plausible doesn’t automatically track.
-
-And you can follow the visitor journey from a landing page to a conversion with our multi-step funnel analysis.
+You can track goal conversions to see which pages and referral sources drive signups, purchases, downloads and other actions. Revenue tracking, funnel analysis, form completions, file downloads and more are all available.
 
 [You can read more about events, properties and funnels here](goal-conversions.md).

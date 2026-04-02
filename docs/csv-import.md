@@ -10,7 +10,7 @@ Plausible Analytics allows you to import your historical stats from various anal
 We have a simple [Google Analytics import tool](google-analytics-import.md).
 :::
 
-The rest of this article is focused importing your historical stats into Plausible using CSV files.
+The rest of this article is focused on importing your historical stats into Plausible using CSV files.
 
 ## How to import your historical stats via CSV files
 

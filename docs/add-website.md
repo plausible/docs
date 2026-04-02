@@ -4,7 +4,7 @@ title: Add your website details
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Once you have an account, you can enter the domain name of the website you want to track. Please, remove `https` and `www` from the URL, just keep the `hostname`. For example, if your site is `https://www.yourdomain.com` then the part to enter in the "**Domain**" field is `yourdomain.com`.
+Once you have an account, you can enter the domain name of the website you want to track. For example, if your site is `https://www.yourdomain.com`, enter `yourdomain.com` in the "**Domain**" field. Remove `https://` and `www.` from the URL.
 
 Does your site operate on multiple subdomains such as `docs.yourdomain.com` and `app.yourdomain.com`? Simply add your main domain name (`yourdomain.com`) to your Plausible account and use the same tracking snippet on all your subdomains. This keeps the visitor session [active between the main site and its subdomains](subdomain-hostname-filter.md).
 
@@ -14,8 +14,8 @@ If you'd like to track a particular subdomain independently from the rest of you
     <img alt="Add your website details to Plausible Analytics" src={useBaseUrl('img/v2/website-details.webp')} />
 </div>
 
-:::tip Domain doesn't necessarily need to match the actual domain
-You don't necessarily need to install our snippet on the same domain as the domain you have added to your Plausible account. Think of the domain field in Plausible more like a site ID rather than an exact match. This allows you more flexibility in your setup all depending on your situation.
+:::tip Advanced: the domain field works like a site ID
+In some setups, you may want to track traffic under a different domain than where the snippet is installed. For example, you can use one Plausible site to aggregate stats from multiple domains. In that case, the domain field acts as an identifier rather than an exact match.
 :::
 
 ## Select your reporting timezone
