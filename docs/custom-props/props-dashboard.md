@@ -14,9 +14,9 @@ To configure a property, go to the [site settings](website-settings.md) in your 
 
 As soon as you've recorded at least one custom event or one pageview with a custom property attached to it, you'll be able to see an option to filter by that property in your Plausible dashboard.
 
-At the bottom of your dashboard, in the "**Goal Conversions**" section you can switch to the "**Properties**" tab. There you can select a specific custom property to see the related data. After you filter the dashboard by one particular custom property, you can segment your stats even further by adding additional custom properties to the filter. Simply keep clicking on further custom properties to segment the stats even further.
+At the bottom of your dashboard, in the "**Goals**" section you can switch to the "**Properties**" tab. There you can select a specific custom property to see the related data. After you filter the dashboard by one particular custom property, you can segment your stats even further by adding additional custom properties to the filter. Keep clicking on custom properties to add more segments.
 
-Clicking on any of your custom events in the "**Goals**" tab of the "**Goal Conversions**" section will also take you to the "**Properties**" tab to display the properties attached to that specific custom event.
+Clicking on any of your custom events in the "**Goals**" section will also take you to the "**Properties**" tab to display the properties attached to that specific custom event.
 
 <img alt="Custom Property Filter" src={useBaseUrl('img/custom-props-breakdown.png')} />
 

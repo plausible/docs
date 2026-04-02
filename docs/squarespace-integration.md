@@ -58,7 +58,7 @@ Click on the "**+ Add goal**" button to go to the goal creation form. Select `Pa
 
 ### 4. Your goal should now be ready and tracking
 
-Your goal should now be set up. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who completed the form submission. Goal conversions are listed at the very bottom of the dashboard. The goal will show up in your dashboard as soon as it has been completed at least once.
+Your goal should now be set up. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who completed the form submission. Goals are listed at the bottom of your dashboard. The goal will show up in your dashboard as soon as it has been completed at least once.
 
 ## Tracking orders on your Squarespace site
 

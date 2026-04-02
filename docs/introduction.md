@@ -5,7 +5,7 @@ slug: /
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-[Plausible Analytics](https://plausible.io/) is an easy to use, open source, lightweight and privacy-friendly alternative to Google Analytics. Plausible is trusted by thousands of paying subscribers to deliver their website and business insights. We're completely independent, self-funded and bootstrapped. Read more [about us](https://plausible.io/about).
+[Plausible Analytics](https://plausible.io/) gives you simple, privacy-friendly website analytics without cookies or personal data. It's trusted by thousands of subscribers as an alternative to Google Analytics that's easy to set up and understand. We're completely independent, self-funded and bootstrapped. Read more [about us](https://plausible.io/about).
 
 ## New to Plausible? Start here
 

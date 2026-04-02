@@ -25,7 +25,7 @@ You can enable "**File downloads**" as an optional measurement when adding a new
 
 <img alt="Enable outbound file downloads tracking during onboarding" src={useBaseUrl('img/onboarding-enable-file-downloads-tracking.png')} />
 
-After you enable file downloads tracking on your site, all the file downloads will start being tracked and will be displayed in the "**Goal Conversions**" report of your Plausible Analytics dashboard. You'll see the "**File Download**" goal as soon as the first file download has been tracked.
+After you enable file downloads tracking on your site, all the file downloads will start being tracked and will be displayed in the "**Goals**" report of your Plausible Analytics dashboard. You'll see the "**File Download**" goal as soon as the first file download has been tracked.
 
 Heads up: File download tracking only works for clicks that happen on your tracked pages. If you share a direct link to a file in an email or elsewhere, those opens won't be counted. Visitors need to arrive at your site first and click the link from there.
 
@@ -35,7 +35,7 @@ The quickest way to start tracking file downloads is to use our [official WordPr
 
 ## See all the file download clicks in your dashboard
 
-Click on "**File Download**" goal in the "**Goal Conversions**" report of your Plausible dashboard to see the full list of all clicks on all files and have your dashboard filtered by file download clicks only. You can see:
+Click on "**File Download**" goal in the "**Goals**" report of your Plausible dashboard to see the full list of all clicks on all files and have your dashboard filtered by file download clicks only. You can see:
 
 * The number of total file download clicks
 * The number of unique file download clicks

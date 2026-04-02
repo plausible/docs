@@ -4,7 +4,7 @@ title: Ecommerce revenue and attribution tracking
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-You can assign dynamic monetary values to custom events to track revenue attribution. Revenue attribution helps you determine which marketing campaigns and landing pages result in the most revenue for your business or ecommerce store.
+Track which marketing campaigns and landing pages drive the most revenue by assigning monetary values to your custom events.
 
 When you create a new custom event, you can optionally assign a monetary value to it. Our revenue tracking supports multi-currencies too. You can send data in any local currency that the purchase is made in. When using revenue tracking, you'll be able to see these metrics in your dashboard:
 

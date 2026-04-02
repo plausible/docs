@@ -58,7 +58,7 @@ Paddle calculates a pro-rated charge based on what you've already paid and the t
 
 ## How does it work when I downgrade?
 
-If you downgrade to a lower tier, you'll see a negative immediate payment amount. This is a credit balance that automatically reduces your future payments until it's used up.
+If you downgrade to a lower tier, the unused portion of your current billing period is added as a credit to your account. This credit is applied automatically to future payments until it's used up.
 
 ## How do I update my payment method?
 

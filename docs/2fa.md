@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Two-factor authentication (2FA) is an extra layer of security for your Plausible Analytics account designed to ensure that you're the only one who can access your account even if your password gets stolen. With 2FA enabled, when you log in to your Plausible account on a new device for the first time, you need both your account password and the verification code that's displayed on your trusted devices.
 
-To enable the 2FA on your Plausible account, you are required to insert the security code provided by your authenticator app.  There are numerous third-party authenticator apps available including Ente ([Android](https://play.google.com/store/apps/details) and [iOS](https://apps.apple.com/us/app/ente-authenticator/id6444121398)), some operating systems offer built-in options and many password managers including [Bitwarden](https://bitwarden.com) also support 2FA functionality.
+To enable the 2FA on your Plausible account, you are required to insert the security code provided by your authenticator app.  There are numerous third-party authenticator apps available including Ente ([Android](https://play.google.com/store/apps/details?id=io.ente.auth) and [iOS](https://apps.apple.com/us/app/ente-authenticator/id6444121398)), some operating systems offer built-in options and many password managers including [Bitwarden](https://bitwarden.com) also support 2FA functionality.
 
 ## How to enable 2FA
 
