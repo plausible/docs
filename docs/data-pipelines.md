@@ -44,6 +44,8 @@ And thanks to the members of our community, there are also some third-party solu
 
 * [Applausible](https://apps.apple.com/us/app/applausible/id6737839249): Instantly view Plausible Analytics' visitor counts, top pages, and more data on your iOS app or home widgets. Optimized for both iPhone and iPad.
 
+* [Arbory](https://apps.apple.com/app/id6760103214): Native iOS companion app with a full dashboard, interactive charts, home screen and lock screen widgets, and traffic spike notifications. Connects directly to your Plausible instance.
+
 ## Linux
 
 [Tally](https://flathub.org/apps/com.cassidyjames.plausible): hybrid native + web app that wraps the Plausible web app in a native UI, integrating better with desktop operating systems.
