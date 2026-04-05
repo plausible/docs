@@ -33,7 +33,7 @@ The quickest way to start tracking outbound link clicks is to use our [official 
 
 ## See all the outbound link clicks in your dashboard
 
-Click on "**Outbound Link: Click**" goal in the "**Goal Conversions**" report of your Plausible dashboard to see the full list of all clicks on all external links and have your dashboard filtered by external clicks only. You can see:
+Click on "**Outbound Link: Click**" goal in the "**Goals**" report of your Plausible dashboard to see the full list of all clicks on all external links and have your dashboard filtered by external clicks only. You can see:
 
 * The number of total external link clicks
 * The number of unique external link clicks

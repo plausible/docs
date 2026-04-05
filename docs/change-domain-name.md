@@ -22,7 +22,7 @@ Here's how to change the domain name of a site in your Plausible account:
   <img alt="Change domain name in Plausible" src={useBaseUrl('img/v2/change-domain.webp')} />
 </div>
 
-- Type in your new domain name. Please, remove `https` and `www` from the domain, just keep the hostname (`yourdomain.com`). For example, if your new domain is `https://www.yourdomain.com` then the part to enter in the "**Domain**" field is `yourdomain.com`
+- Type in your new domain name. For example, if your new domain is `https://www.yourdomain.com`, enter `yourdomain.com` in the "**Domain**" field. Remove `https://` and `www.` from the URL.
 
 - Click on the "**Change domain**" button to proceed with the domain name change
 

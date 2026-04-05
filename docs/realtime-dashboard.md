@@ -16,4 +16,4 @@ The realtime dashboard will look familiar to you. All the same reports and metri
 
 In the top chart, you can see the number of current visitors (defined as those that visited your site in the last 5 minutes), the number of unique visitors in the previous 30 minutes and the total number of page views in the last 30 minutes. In the graph itself, you can choose to display the number of unique visitors or page views in the previous 30 minutes.
 
-Top Sources, Top Pages, Locations and Devices reports all show the traffic in the last 5 minutes. The Goal Conversions report shows the number of conversions in the previous 30 minutes.
+Top Sources, Top Pages, Locations and Devices reports all show the traffic in the last 5 minutes. The Goals report shows the number of conversions in the previous 30 minutes.

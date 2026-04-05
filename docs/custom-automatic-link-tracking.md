@@ -83,6 +83,6 @@ Click on the "**+ Add goal**" button to go to the goal creation form.
 
 Select `Custom event` as the goal trigger and enter this exact name: `Cloaked Link: Click`.
 
-Next, click on the "**Add goal**" button and you'll be taken back to the Goals page. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who have completed your new custom event. Goal conversions are listed at the very bottom of the dashboard. Note that at least one click is required for this to show in your dashboard.
+Next, click on the "**Add goal**" button and you'll be taken back to the Goals page. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who have completed your new custom event. Goals are listed at the bottom of your dashboard. Note that at least one click is required for this to show in your dashboard.
 
 That's it. You're now tracking all link clicks on your site with custom URL matching rules!

@@ -22,7 +22,7 @@ Once SSO is configured and your users have valid identities with your chosen ide
 
 <img alt="SSO Login Form" src={useBaseUrl('img/sso-login-form.png')} />
 
-After entering the e-mail, they are redirected to identity provider's portal. The provider validates their identity if they haven't logged in there yet or uses an already validated identity from an existing session. The identity information (e-mail, name) is then securely sent back to Plausible. At that point, their account is automatically created in Plausible—no manual setup needed.
+After entering the email, they are redirected to identity provider's portal. The provider validates their identity if they haven't logged in there yet or uses an already validated identity from an existing session. The identity information (email, name) is then securely sent back to Plausible. At that point, their account is automatically created in Plausible—no manual setup needed.
 
 ### Provisioning
 
@@ -42,7 +42,7 @@ Standard and SSO users can coexist on the same team as long as the "Force Single
 
 Once "Force Single Sign-On" is enabled, only SSO users are allowed to access the team. If there are still standard users among members, they are locked out of the team until they provision their account through identity provider.
 
-There's an exception made for team Owners who retain the ability to log in using e-mail and password, even after using SSO. This is to allow for troubleshooting issues with SSO configuration or a malfunctioning identity provider. 
+There's an exception made for team Owners who retain the ability to log in using email and password, even after using SSO. This is to allow for troubleshooting issues with SSO configuration or a malfunctioning identity provider. 
 
 To enable "Force SSO," Owners must first activate two-factor authentication (2FA) for added security.
 
@@ -50,7 +50,7 @@ By not enforcing SSO immediately, you can safely transition your team without ca
 
 ### Other
 
-- **Changing name and e-mail of your SSO account**: The name and e-mail address can only be updated via identity provider.
+- **Changing name and email of your SSO account**: The name and email address can only be updated via identity provider.
 - **SSO initiated from IdP**: Identity providers often support starting login directly from their portal. While this is sometimes convenient, we explicitly do not support it for security reasons. Users must always start logging in from Plausible's login form.
 
 ## Configuring SSO
@@ -109,7 +109,7 @@ Step-by-step instructions for commonly used identity providers:
   It's pretty common for "**SSO URL / Sign-on URL / Login URL**" and "**Entity ID / Issuer Identifier**" to contain very similar URLs. It's easy to mistake one for the other. This can result in weird behaviour when trying to log in via SSO login form, like browser downloading a file instead of redirecting to identity provider's portal.
   :::
 
-- Enter domain name used in e-mail addresses of identities that should be allowed to log in to this team through SSO and click "**Add Domain**"
+- Enter domain name used in email addresses of identities that should be allowed to log in to this team through SSO and click "**Add Domain**"
 
   <img alt="Adding SSO domain" src={useBaseUrl('img/sso-add-domain.png')} />
 
@@ -135,13 +135,13 @@ From that point on, SSO should be fully functional and it should be possible to 
 
 ### Enabling SSO Enforcement
 
-While this step is not strictly necessary to use SSO, it's pretty crucial in ensuring only members provisioned through identity provider have access to the team.
+While this step is not strictly necessary to use SSO, it's important for ensuring only members provisioned through identity provider have access to the team.
 
 SSO enforcement can be enabled from "**SSO Policy**" section of SSO configuration.
 
 <img alt="SSO policy with force SSO disabled" src={useBaseUrl('img/sso-policy-disabled.png')} />
 
-There are conditions that have to be met before "Force Single Sing-On" can be enabled though.
+There are conditions that have to be met before "Force Single Sign-On" can be enabled though.
 
 - At least one SSO domain must be verified
 - At least one user must have successfully logged in through identity provider
@@ -175,7 +175,7 @@ The ownership of every added domain must be verified using one of three methods:
 
 <img alt="SSO domain verification" src={useBaseUrl('img/sso-domain-verification.png')} />
 
-Once started, the verification process is retried in the background over the following hours until it succeeds. Once it's verified or fails after too many attempts, you will be notified by e-mail. Verification can be immediately retried by canceling the running process and kicking off verification again.
+Once started, the verification process is retried in the background over the following hours until it succeeds. Once it's verified or fails after too many attempts, you will be notified by email. Verification can be immediately retried by canceling the running process and kicking off verification again.
 
 <img alt="Canceling SSO domain verification" src={useBaseUrl('img/sso-domain-verification-cancel.png')} />
 
