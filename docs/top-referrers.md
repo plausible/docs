@@ -8,6 +8,8 @@ The "**Top Sources**" report displays acquisition channels, referral sources and
 
 You can click on any individual entry within the "**Top Sources**" report to segment your audience by that source and view the best performing landing pages or highest converting goals. Click the "**Details**" button to access additional insights such as the visit duration and bounce rate for the individual entry. In the "**Details**" view, you can sort and arrange your data in ascending or descending order by clicking any metric heading.
 
+These metrics help you assess traffic quality beyond raw visitor counts. A source with a high bounce rate or very short visit duration may be sending visitors who aren't finding what they expected. A source with a low bounce rate and longer visit duration suggests strong alignment between that audience and your content.
+
 Using [the "**Filter**" button on the top of your dashboard](filters-segments.md), you can filter the stats by multiple channels, sources or UTM tags simultaneously for more powerful traffic segmentation. You can also exclude traffic from a specific channel, referral source or UTM tag.
 
 <img alt="Top Referrers - multiple filters" src={useBaseUrl('img/top-referrers-filtering-multiple-filters.png')} />

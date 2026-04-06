@@ -48,4 +48,10 @@ Next, click on the "**Add goal**" button to return to the goals page. When you n
 
 Scroll Depth goals only display the "Uniques" and "CR (conversion rate)" metrics, and not the "Total" metric like the pageview goals and custom event goals do. This is because scrolling is an action that gets measured continuously during a pageview and it's not possible to count the total number of "scroll depth events" that occurred.
 
+## What's a good scroll depth?
+
+This varies by content type and page length. For most pages, an average above 50% suggests visitors are engaging meaningfully with your content. Blog posts and long-form articles typically see 50-70%. Landing pages often run lower since visitors make quick decisions near the top of the page.
+
+If your scroll depth is low on a page with an important call-to-action, the most direct fix is moving that element higher. If it's low on a long article, the content itself may not be holding attention past the introduction.
+
 If you'd like to learn more about what scroll depth is, what's a good metric to have, and more, you can check out our blog post [here](https://plausible.io/blog/scroll-depth-tracking).
