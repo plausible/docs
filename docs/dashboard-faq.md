@@ -60,3 +60,7 @@ For more details, see our full [troubleshooting guide](troubleshoot-integration.
 ## How quickly will I see data after installing the script?
 
 Data appears in real-time. As soon as the first visit is counted after installing the Plausible snippet, your dashboard will start displaying stats with no delays. If you see a blinking green dot instead of the dashboard, it means we haven't recorded any visits yet. Our testing tool will launch automatically to help you verify the installation.
+
+## Where can I learn what each metric means?
+
+See the [metrics definitions page](metrics-definitions.md) for a full explanation of every metric in your dashboard, including typical ranges and guidance on how to interpret them.

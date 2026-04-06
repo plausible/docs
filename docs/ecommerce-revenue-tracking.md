@@ -14,6 +14,8 @@ When you create a new custom event, you can optionally assign a monetary value t
 * Total revenue
 * Average revenue
 
+Total revenue shows your overall performance. Average revenue helps you identify which sources or campaigns drive high-value customers rather than just high volume. A source sending fewer but higher-value orders can be worth more than a high-volume source with a low average order value.
+
 <img alt="Ecommerce revenue goal top graph" src={useBaseUrl('img/plausible-ecommerce-revenue-top-graph.png')} />
 
 The revenue metrics are fully filterable. For instance, you can see the total or average revenue for a particular custom event per any dimension such as a specific date, referral source, marketing campaign, entry page, country or device.
