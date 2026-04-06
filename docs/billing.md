@@ -68,4 +68,50 @@ In your account settings, go to the "**Subscription**" section. Under "**Next bi
     <img alt="Update Plausible billing information" src={useBaseUrl('img/v2/account-settings-update-billing-info.webp')} />
 </div>
 
+## Why did my payment fail?
+
+**Wrong or expired card details**
+
+Double-check that the card number, expiry date and CVV are entered correctly and that the card hasn't expired.
+
+**Billing address mismatch**
+
+The address you enter at checkout must match what's on file with your card issuer. Even a small difference can cause the payment to fail.
+
+**3DS authorization not completed**
+
+If your card details are correct but your bank declined the payment, the most likely cause is a missing 3DS (3D Secure) authorization. On the first payment of a recurring subscription, most banks require you to explicitly approve the charge via your banking app or a one-time code. If this authorization isn't completed within a few minutes, the bank declines the payment. This only applies to the first payment. Subsequent renewals don't require it.
+
+**Insufficient funds or spending limits**
+
+Make sure the card has enough balance to cover the charge. Some cards also have daily or monthly spending limits that can cause a decline even when funds are available.
+
+**Card blocked for online or international transactions**
+
+Some banks disable online or international payments by default. Check your banking app or contact your bank to confirm these are enabled.
+
+**Prepaid cards**
+
+Paddle does not support prepaid cards for recurring subscriptions. Use a regular credit or debit card instead.
+
+**Payment flagged by fraud prevention**
+
+Paddle's fraud protection may block a payment if it detects suspicious patterns. Common triggers include inconsistencies between your location, the card's issuing country and the billing address, or multiple payment attempts across different countries or IP addresses. If you're browsing with a VPN active, your IP location may not match your billing details and trigger a block. Try disabling your VPN before retrying.
+
+**Too many failed attempts**
+
+After several declined attempts, your bank or Paddle may temporarily block further payment attempts on that card. If this happens, wait before retrying or use a different payment method.
+
+**Browser extensions**
+
+Ad blockers and privacy extensions can interfere with the payment form. Try disabling them or completing the checkout in a different browser.
+
+**What to try**
+
+- Review all card details and make sure they're correct, including the billing address
+- Check your banking app for any pending 3DS approval and complete it
+- Confirm your bank hasn't blocked online or international transactions
+- Disable any VPN or browser extensions before attempting payment
+- If your card details are correct and no 3DS prompt was issued, try subscribing using a different email address
+
 Have a billing question not covered here? [Contact us](https://plausible.io/contact).
