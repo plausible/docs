@@ -1,12 +1,15 @@
 ---
-title: Hostname or subdomain tracking
+title: Hostname, subdomain and multi-domain tracking
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Does your site operate on a single domain name with multiple subdomains such as `docs.yourdomain.com`, `app.yourdomain.com` and `www.yourdomain.com`?
+This page covers two common multi-domain setups:
 
-Plausible helps you simplify cross-subdomain tracking. You can view the visitor journey end-to-end from the landing on your primary domain name to a conversion on the subdomain. The original referral source will stay attributed to that visitor even when the visitor moves from one of your subdomains to another.
+- **Subdomains** such as `docs.yourdomain.com`, `app.yourdomain.com` and `www.yourdomain.com` under a single domain
+- **Separate domains** such as country or language variants like `example.de` and `example.nl`
+
+Plausible helps you simplify tracking across both. You can view the visitor journey end-to-end from the landing on your primary domain name to a conversion on the subdomain. The original referral source will stay attributed to that visitor even when the visitor moves from one of your subdomains to another.
 
 Here's how to track the user journey across your domain name and its subdomains.
 
@@ -78,6 +81,34 @@ You can group your hostnames when adding them to the allow list:
 Once added to the allow list, we will start blocking traffic from all the **other** hostnames within a few minutes. You can add up to 30 different hostnames. 
 
 You can see the list of all the hostnames that you're allowing the traffic from at any time. Click on the "Remove" button next to a hostname to remove it from the allow list.
+
+## Tracking multiple country or language domains
+
+If you're running the same site across multiple country or language domains (for example, `example.de` for Germany and `example.nl` for the Netherlands), there are two ways to handle tracking depending on whether you want individual dashboards per domain.
+
+:::note
+Because Plausible is cookieless and doesn't track users across domains, a visitor who visits both `example.de` and `example.nl` will count as a unique visitor on each domain separately. This applies to any combined view as well.
+:::
+
+### Individual dashboards per domain, plus a global combined view
+
+This is the recommended approach for most localization setups:
+
+1. [Add each domain](add-website.md) as its own site in your Plausible account (`example.de`, `example.nl`, etc.)
+2. Install the tracking snippet for each site on the corresponding domain
+3. Each site gets its own dedicated dashboard with individual stats
+4. Your [Consolidated View](consolidated-views.md) automatically combines all your sites into one global dashboard with no extra configuration needed
+
+When you add more country domains in the future, just add them as new sites and they'll appear in the consolidated view automatically.
+
+### One dashboard for all domains
+
+If you'd rather have a single dashboard covering all domains and don't need separate per-domain dashboards:
+
+1. Add one site to Plausible and use it as a shared identifier (for example, `example.com`)
+2. Install the same tracking snippet on all your country domains, each pointing to this same site
+3. Your dashboard shows combined traffic from all domains by default
+4. Use the hostname filter described above to view stats for each country domain individually
 
 ## When to add a subdomain as a dedicated site
 

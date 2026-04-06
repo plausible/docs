@@ -15,7 +15,7 @@ If you'd like to track a particular subdomain independently from the rest of you
 </div>
 
 :::tip Advanced: the domain field works like a site ID
-In some setups, you may want to track traffic under a different domain than where the snippet is installed. For example, you can use one Plausible site to aggregate stats from multiple domains. In that case, the domain field acts as an identifier rather than an exact match.
+In some setups, you may want to track traffic under a different domain than where the snippet is installed. For example, if you run country-specific domains (`example.de`, `example.nl`) you can point them all at a single Plausible site to collect stats in one place. This is only recommended if you want everything in one dashboard without separate per-domain dashboards. In that case, the domain field acts as an identifier rather than an exact match. [See how to track multiple country or language domains](subdomain-hostname-filter.md#tracking-multiple-country-or-language-domains).
 :::
 
 ## Select your reporting timezone
