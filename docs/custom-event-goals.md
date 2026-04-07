@@ -167,7 +167,9 @@ Click on the "**+ Add goal**" button to go to the goal creation form.
 
 Select `Custom event` as the goal trigger and enter the name of the custom event you are triggering. The name must match the one you added as a CSS class name on your site for conversions to appear in your analytics dashboard. So in our example where you added a CSS class name `plausible-event-name=Button+Click`, the goal to add to your Plausible account is `Button Click` (plus is replaced by a space).
 
-When creating a custom event goal, you can optionally narrow it down using custom properties. This lets you turn a broad goal into a more specific one by matching only events with certain property values. This allows you to track something like “Purchase (Business – yearly)” as its own goal, rather than grouping all purchases together.
+### Narrow goals with custom properties
+
+When creating a custom event goal, you can optionally narrow it down using custom properties. This lets you turn a broad goal into a more specific one by matching only events with certain property values, letting you track something like “Purchase (Business – yearly)” as its own goal rather than grouping all purchases together.
 
 <img alt="Add your custom event goal" src={useBaseUrl('img/custom-events-in-plausible-setup-modal.png')} />
 
@@ -189,9 +191,9 @@ To edit a custom event goal, start by locating the custom event goal you want to
 
 From the pop up, you can select a new custom event from the dropdown menu that matches the updated custom event you want to track. You can also edit the display name.
 
-<img alt="Edit custom even goal popup" src={useBaseUrl('img/edit-custom-event-goal-popup.png')} />
+<img alt="Edit custom event goal popup" src={useBaseUrl('img/edit-custom-event-goal-popup.png')} />
 
-Once you’ve made the necessary changes, simply click "Update goal," and your updated settings will be applied immediately. The changes will be reflected in your Plausible Analytics dashboard, with the goal now tracking based on the new settings you’ve configured.
+Once you’ve made the necessary changes, click "Update goal" and your updated settings will be applied immediately.
 
 ## Enhanced goal conversion tracking
 
