@@ -20,9 +20,11 @@ Select `Pageview` as the goal trigger and enter the pathname of the page you wou
 
 <img alt="Add your pageview goal" src={useBaseUrl('img/add-pageview-goal.png')} />
 
-Next, you'll see the Display Name which gets self-populated. You can optionally edit it. You can also edit this later at any time. 
+Next, you'll see the Display Name field, pre-filled based on the pathname. You can optionally edit it now or at any time later.
 
-When creating a pageview goal, you can optionally narrow it down using custom properties. This lets you turn a broad goal into a more specific one by matching only events with certain property values. For example, you can create a pageview goal for /dashboard that only counts visits where account_type = trial, letting you measure dashboard engagement specifically from trial users.
+### Narrow goals with custom properties
+
+When creating a pageview goal, you can optionally narrow it down using custom properties. This lets you turn a broad goal into a more specific one by matching only events with certain property values. For example, you can create a pageview goal for `/dashboard` that only counts visits where `account_type = trial`, letting you measure dashboard engagement specifically from trial users.
 
 Then click the "**Add goal**" button and you’ll be taken back to the goals page. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who reached the specified page or group of pages. Goals are listed at the bottom of your dashboard.
 
@@ -52,9 +54,9 @@ To edit a Pageview Goal, start by locating the pageview goal you want to update 
 
 From the pop up, you can select a new page path from the dropdown menu that matches the updated page you want to track.
 
-You can also give it a new display name, say, if the original name of the goal is too long or doesn’t quite fit your needs. This allows you to make the goal name more personalized and descriptive, which not only helps in organizing your reports but also helps your funnels look cleaner.
+You can also give it a new display name to keep your reports and funnels easy to read.
 
 <img alt="Edit pageview goal popup" src={useBaseUrl('img/edit-pageview-goal-popup.png')} />
 
-Once you’ve made the necessary changes, simply click "Update goal" and your updated settings will be applied immediately. The changes will be reflected in your Plausible Analytics dashboard, with the goal now tracking based on the new settings you’ve configured.
+Once you’ve made the necessary changes, click "Update goal" and your updated settings will be applied immediately.
 
