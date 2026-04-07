@@ -8,21 +8,19 @@ module.exports = {
       'plausible-script',
       'integration-guides',
       'troubleshoot-integration',
+      'landing-page',
       'your-plausible-experience',
     ],
     'Website Settings': [
-      'landing-page',
       'website-settings',
       'change-domain-name',
       'general',
-      'users-roles',
       'visibility',
       'shared-links',
       'embed-dashboard',
       'email-reports',
       'traffic-spikes',
       'slack-reports',
-      'transfer-ownership',
       'reset-site-data',
       'delete-site-data',
       'excluding',
@@ -54,7 +52,7 @@ module.exports = {
         ],
       },
     ],
-    'Events, Funnels and Ecommerce': [
+    'Goals and Events': [
       'goal-conversions',
       'funnel-analysis',
       'ecommerce-revenue-tracking',
@@ -84,13 +82,7 @@ module.exports = {
         ],
       },
     ],
-    'API': [
-      'stats-api',
-      'stats-api-playground',
-      'events-api',
-      'sites-api',
-    ],
-    Adblockers: [
+    'Bypass Adblockers': [
       { type: 'doc', id: 'proxy/introduction', label: 'Overview' },
       {
         type: 'category',
@@ -107,6 +99,12 @@ module.exports = {
         ],
       },
     ],
+    'API': [
+      'stats-api',
+      'stats-api-playground',
+      'events-api',
+      'sites-api',
+    ],
     'Account Settings': [
       '2fa',
       'change-email',
@@ -115,15 +113,7 @@ module.exports = {
       'dashboard-appearance',
       'delete-account',
     ],
-    'Billing and Subscription': [
-      'trial-to-paid',
-      'subscription-plans',
-      'change-plan',
-      'cancel-subscription',
-      'download-invoices',
-      'billing',
-    ],
-    'Team and Organization': [
+    'Team': [
       'users-roles',
       'transfer-ownership',
       {
@@ -137,6 +127,13 @@ module.exports = {
         ],
       }
     ],
-    Contribute: ['contribute', 'plausible-analytics-reviews', 'authors'],
+    'Billing': [
+      'trial-to-paid',
+      'subscription-plans',
+      'change-plan',
+      'cancel-subscription',
+      'download-invoices',
+      'billing',
+    ],
   },
 }

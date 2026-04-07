@@ -1,5 +1,5 @@
 ---
-title: Get the most out of your Plausible experience
+title: Feature Overview
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
