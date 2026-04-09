@@ -16,7 +16,9 @@ You can follow the visitor journey from a landing page to a conversion with our 
 
 ## How funnel conversions are counted
 
-To be counted as converted, visitors need to complete all the steps you've defined in your funnel. They must take the steps in the correct order but they can also visit other pages or trigger other events in between those steps.
+To be counted as converted, visitors need to complete all the steps you've defined in your funnel. They must take the steps in the correct order.
+
+Depending on your funnel settings, visitors may be allowed to visit other pages or trigger other events between those steps (default setting), or they may be required to follow the steps exactly with no other activity in between.
 
 Funnels also work across your main domain and its subdomains ([see more](subdomain-hostname-filter.md)), and you don't need to worry about visitors briefly leaving your site to complete actions on external services like Stripe's payment page or other third-party gateways. Plausible treats the returning visit as part of the same session, so your funnel will accurately track the full visitor journey.
 
@@ -26,17 +28,19 @@ It is quick and easy to create a funnel. Here's how:
 
 * Go into your [site settings](website-settings.md) and click on "**Funnels**" in the left-hand sidebar
 
-* Click on the "**Add funnel**" button to create a funnel
+* Click the "**Add funnel**" button to create a funnel.
 
    <img alt="Add funnel" src={useBaseUrl('img/add-funnel.png')} />
 
-* Give your funnel a name in the "**Funnel name**" field
+* Give your funnel a name in the "**Funnel name**" field.
 
-* Define your funnel by adding a set of specific steps that you expect a visitor to take before a conversion, a purchase or a sign up. These steps consist of [pageviews goals](pageview-goals.md) and [custom events](custom-event-goals.md). You need to add a minimum of 2 steps and a maximum of 8 steps to create a funnel.
+* Define your funnel by adding a set of specific steps that you expect a visitor to take before a conversion, a purchase or a sign up. You can use any combination of all the three goal types in Plausible to define your funnel: [pageviews goals](pageview-goals.md), [custom events](custom-event-goals.md), [scroll depth goals](https://plausible.io/docs/scroll-depth#scroll-depth-goals). You need to add a minimum of 2 steps and a maximum of 8 steps to create a funnel.
 
 <img alt="Define funnel" src={useBaseUrl('img/define-funnel.png')} />
 
-* Click on the "**Save**" button after you've specified the user journey you want to analyse
+* You can leave the “Allow other activity between funnel steps” setting enabled if you want to allow other activity (like visiting other pages or triggering other events) between funnel steps. Or disable this option to make the funnel strict and only count visitors who follow the steps exactly with no other activity in between. This affects your funnel conversion rates.
+
+* Click the "**Save**" button after you've specified the user journey you want to analyse.
 
 <img alt="Goals and funnels" src={useBaseUrl('img/goals-and-funnels.png')} />
 
