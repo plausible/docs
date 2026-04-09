@@ -16,9 +16,7 @@ You can follow the visitor journey from a landing page to a conversion with our 
 
 ## How funnel conversions are counted
 
-To be counted as converted, visitors need to complete all the steps you've defined in your funnel. They must take the steps in the correct order.
-
-Depending on your funnel settings, visitors may be allowed to visit other pages or trigger other events between those steps (default setting), or they may be required to follow the steps exactly with no other activity in between.
+To be counted as converted, visitors need to complete all the steps you've defined in your funnel. They must take the steps in the correct order but they can also visit other pages or trigger other events in between those steps, unless you define otherwise in your funnel setting.
 
 Funnels also work across your main domain and its subdomains ([see more](subdomain-hostname-filter.md)), and you don't need to worry about visitors briefly leaving your site to complete actions on external services like Stripe's payment page or other third-party gateways. Plausible treats the returning visit as part of the same session, so your funnel will accurately track the full visitor journey.
 
@@ -26,7 +24,7 @@ Funnels also work across your main domain and its subdomains ([see more](subdoma
 
 It is quick and easy to create a funnel. Here's how:
 
-* Go into your [site settings](website-settings.md) and click on "**Funnels**" in the left-hand sidebar
+* Go into your [site settings](website-settings.md) and click on "**Funnels**" in the left-hand sidebar.
 
 * Click the "**Add funnel**" button to create a funnel.
 
@@ -34,7 +32,7 @@ It is quick and easy to create a funnel. Here's how:
 
 * Give your funnel a name in the "**Funnel name**" field.
 
-* Define your funnel by adding a set of specific steps that you expect a visitor to take before a conversion, a purchase or a sign up. You can use any combination of all the three goal types in Plausible to define your funnel: [pageviews goals](pageview-goals.md), [custom events](custom-event-goals.md), [scroll depth goals](https://plausible.io/docs/scroll-depth#scroll-depth-goals). You need to add a minimum of 2 steps and a maximum of 8 steps to create a funnel.
+* Define your funnel by adding a set of specific steps in correct order that you expect a visitor to take before a conversion, a purchase or a sign up. You can use any combination out of all the three goal types in Plausible to define your funnel: [pageviews goals](pageview-goals.md), [custom events](custom-event-goals.md) and [scroll depth goals](https://plausible.io/docs/scroll-depth#scroll-depth-goals). You need to add a minimum of 2 steps and a maximum of 8 steps to create a funnel.
 
 <img alt="Define funnel" src={useBaseUrl('img/define-funnel.png')} />
 
@@ -48,9 +46,9 @@ That's it! Funnels are listed at the bottom of your dashboard and will appear as
 
 ## What's next?
 
-- Track [ecommerce revenue](ecommerce-revenue-tracking.md) alongside your funnels to see which paths generate the most sales
-- Use [filters and segments](filters-segments.md) to compare funnel performance across different traffic sources or campaigns
-- Add [custom properties](custom-props/introduction.md) to your events for deeper breakdowns within each funnel step
+- Track [ecommerce revenue](ecommerce-revenue-tracking.md) alongside your funnels to see which paths generate the most sales.
+- Use [filters and segments](filters-segments.md) to compare funnel performance across different traffic sources or campaigns.
+- Add [custom properties](custom-props/introduction.md) to your events for deeper breakdowns within each funnel step.
 
 To learn about in-depth funnel marketing, [head to our blog](https://plausible.io/blog/funnels-conversion-optimization).
 
@@ -58,10 +56,10 @@ To learn about in-depth funnel marketing, [head to our blog](https://plausible.i
 
 It is also quick and easy to edit any of your existing funnels. Here's how:
 
-* Go into your [site settings](website-settings.md) and click on "**Funnels**" in the left-hand sidebar
+* Go into your [site settings](website-settings.md) and click on "**Funnels**" in the left-hand sidebar.
 
-* Click on the edit icon on the right-hand side of the funnel that you'd like to edit
+* Click on the edit icon on the right-hand side of the funnel that you'd like to edit.
 
-* Change the funnel name and/or edit the steps of your funnel
+* Change the funnel name and/or edit the steps of your funnel.
 
-* Click on the "**Update Funnel**" button
+* Click the "**Update Funnel**" button.
