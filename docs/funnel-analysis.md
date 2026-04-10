@@ -1,13 +1,13 @@
 ---
-title: Increase conversions using funnel analysis
+title: Funnel analysis
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-You can follow the visitor journey from a landing page to a conversion with our multi-step funnel analysis. The insights from the marketing funnel allow you to uncover possible issues, optimize your site and increase the conversion rate.
+You can follow the visitor journey from a landing page to a conversion with our multi-step funnel analysis. Use it to find where visitors drop off and improve your conversion rate.
 
-* Funnels allow you to analyze the user flow through your website and the different pages
 * You can go beyond pageviews and use any custom events to build a funnel
+* Choose between two funnel types: sequential (visitors can take other actions between steps) or strict order (steps must happen in exact consecutive order)
 * With the conversion rate you understand the percentage of visitors who started the user flow and ended with a conversion event. End-to-end funnel conversion rates vary widely but even small improvements at a high-traffic step can have a large impact on total conversions
 * With the percentage drop-off between the individual funnel steps, you can spot where you lose the most visitors. A step with an unusually large drop-off is usually the best place to start optimizing
 * You can get more granular by [using filters](filters-segments.md) to segment your audience. Filter conversion funnels by marketing campaign, referral source, landing page, device or location for more insights
@@ -16,13 +16,17 @@ You can follow the visitor journey from a landing page to a conversion with our 
 
 ## How funnel conversions are counted
 
-To be counted as converted, visitors need to complete all the steps you've defined in your funnel. They must take the steps in the correct order but they can also visit other pages or trigger other events in between those steps, unless you define otherwise in your funnel setting.
+To be counted as converted, visitors need to complete all the steps you've defined in your funnel, in the correct order. Plausible offers two funnel types that differ in how strictly that order is enforced.
+
+**Sequential funnel (default):** Visitors must complete the steps in order, but they can visit other pages or trigger other events in between. This is the more flexible option and suits most use cases.
+
+**Strict order funnel:** Every step must happen in exact consecutive order with no other actions in between. Use this when you want to measure a tightly defined path and any detour should disqualify the visitor.
 
 Funnels also work across your main domain and its subdomains ([see more](subdomain-hostname-filter.md)), and you don't need to worry about visitors briefly leaving your site to complete actions on external services like Stripe's payment page or other third-party gateways. Plausible treats the returning visit as part of the same session, so your funnel will accurately track the full visitor journey.
 
 ## How to set up the conversion funnel analysis
 
-It is quick and easy to create a funnel. Here's how:
+Here's how:
 
 * Go into your [site settings](website-settings.md) and click on "**Funnels**" in the left-hand sidebar.
 
@@ -36,30 +40,30 @@ It is quick and easy to create a funnel. Here's how:
 
 <img alt="Define funnel" src={useBaseUrl('img/define-funnel.png')} />
 
-* You can leave the “Allow other activity between funnel steps” setting enabled if you want to allow other activity (like visiting other pages or triggering other events) between funnel steps. Or disable this option to make the funnel strict and only count visitors who follow the steps exactly with no other activity in between. This affects your funnel conversion rates.
+* By default, the "**Allow other activity in between funnel steps**" option is enabled, which creates a sequential funnel. Disable it to use strict order mode instead.
 
-* Click the "**Save**" button after you've specified the user journey you want to analyse.
+* Click on the "**Save**" button after you've specified the user journey you want to analyse
 
 <img alt="Goals and funnels" src={useBaseUrl('img/goals-and-funnels.png')} />
 
-That's it! Funnels are listed at the bottom of your dashboard and will appear as soon as the first visit has been tracked on the funnel steps. You can then make changes to your site or to your campaign, test different options and check the funnel again to see how your improvements have affected the conversions.
-
-## What's next?
-
-- Track [ecommerce revenue](ecommerce-revenue-tracking.md) alongside your funnels to see which paths generate the most sales.
-- Use [filters and segments](filters-segments.md) to compare funnel performance across different traffic sources or campaigns.
-- Add [custom properties](custom-props/introduction.md) to your events for deeper breakdowns within each funnel step.
-
-To learn about in-depth funnel marketing, [head to our blog](https://plausible.io/blog/funnels-conversion-optimization).
+Funnels appear at the bottom of your dashboard as soon as the first visit is tracked on the funnel steps.
 
 ## How to edit existing funnels
 
-It is also quick and easy to edit any of your existing funnels. Here's how:
+Here's how to edit any of your existing funnels:
 
 * Go into your [site settings](website-settings.md) and click on "**Funnels**" in the left-hand sidebar.
 
 * Click on the edit icon on the right-hand side of the funnel that you'd like to edit.
 
-* Change the funnel name and/or edit the steps of your funnel.
+* Change the funnel name, edit the steps of your funnel and switch between sequential and strict order by toggling the "**Allow other activity in between funnel steps**" option
 
-* Click the "**Update Funnel**" button.
+* Click on the "**Update Funnel**" button
+
+## What's next?
+
+- Track [ecommerce revenue](ecommerce-revenue-tracking.md) alongside your funnels to see which paths generate the most sales
+- Use [filters and segments](filters-segments.md) to compare funnel performance across different traffic sources or campaigns
+- Add [custom properties](custom-props/introduction.md) to your events for deeper breakdowns within each funnel step
+
+To learn about in-depth funnel marketing, [head to our blog](https://plausible.io/blog/funnels-conversion-optimization).
