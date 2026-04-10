@@ -1,6 +1,6 @@
 ---
-title: Proxying Plausible through Vercel with Next.js
+title: Proxying Plausible with Next.js
 ---
 
-We've removed old proxying instructions due to them being out of date. [See our general proxying guide](/proxy/introduction).
+[next-plausible](https://github.com/4lejandrito/next-plausible) supports proxying out of the box. See https://github.com/4lejandrito/next-plausible#proxy-the-analytics-script.
 

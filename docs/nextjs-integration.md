@@ -15,7 +15,7 @@ import PlausibleProvider from 'next-plausible'
 
 export default Home() {
     return (
-        <PlausibleProvider domain="example.com">
+        <PlausibleProvider src="https://plausible.io/js/pa-XXXXX.js">
             <h1>My Site</h1>
             ...
         </PlausibleProvider>

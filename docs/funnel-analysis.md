@@ -28,11 +28,11 @@ Funnels also work across your main domain and its subdomains ([see more](subdoma
 
 * Go into your [site settings](website-settings.md) and click on "**Funnels**" in the left-hand sidebar
 
-* Click on the "**Add funnel**" button to create a funnel
+* Click the "**Add funnel**" button to create a funnel.
 
    <img alt="Add funnel" src={useBaseUrl('img/add-funnel.png')} />
 
-* Give your funnel a name in the "**Funnel name**" field
+* Give your funnel a name in the "**Funnel name**" field.
 
 * Define your funnel by adding the steps you expect a visitor to take before a conversion, a purchase or a sign up. These steps consist of [pageviews goals](pageview-goals.md) and [custom events](custom-event-goals.md). You need to add a minimum of 2 steps and a maximum of 8 steps to create a funnel.
 
@@ -50,7 +50,7 @@ Funnels appear at the bottom of your dashboard as soon as the first visit is tra
 
 * Go into your [site settings](website-settings.md) and click on "**Funnels**" in the left-hand sidebar
 
-* Click on the edit icon on the right-hand side of the funnel that you'd like to edit
+* Click on the edit icon on the right-hand side of the funnel that you'd like to edit.
 
 * Change the funnel name, edit the steps of your funnel and switch between sequential and strict order by toggling the "**Allow other activity in between funnel steps**" option
 
