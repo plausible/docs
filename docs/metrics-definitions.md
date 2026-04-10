@@ -141,9 +141,7 @@ If the same goal is completed multiple times by the same visitor, all the comple
 
 ### Funnels
 
-You can follow the visitor journey from a landing page to a conversion with [funnel analysis](funnel-analysis.md).
-
-Think of a funnel like a leaky pipe. Visitors enter at the top (for example, a landing page) and you can see exactly at which step most people drop off before reaching the end goal (such as a completed signup). This helps you focus improvements where they'll have the most impact.
+Funnel analysis lets you follow the visitor journey across multiple steps and see exactly where visitors drop off. You can use pageview goals or custom events as steps, and choose between sequential or strict order mode. See [funnel analysis](funnel-analysis.md) for details.
 
 ### Custom Properties (or Custom Dimensions)
 
