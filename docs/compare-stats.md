@@ -4,21 +4,21 @@ title: Compare your stats over time
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-You can gain valuable insights and a fresh perspective on your website traffic by comparing stats over time. Our comparison feature allows you to analyze the stats of a specified date range and compare them to another period.
+You can compare your website stats over time to get valuable insights and spot trends more easily. The comparison feature lets you analyze one date range alongside another.
 
-"**Previous period**", "**Year over year**" and "**Custom period**" comparisons are all available. The comparison is matched by day of the week by default to avoid any discrepancies caused by the weekend. You can also optionally match by date.
+You can choose between “**Previous period**”, “**Year over year**” and “**Custom period**”. By default, we match days of the week (for example, Monday to Monday) to avoid differences caused by weekends, but you can switch to matching exact dates instead.
 
-You can choose between different chart intervals to display the comparison the way you want and segment your audience any way you wish to analyze that segment over time. And if you've [imported your historical Google Analytics stats](google-analytics-import.md), you can compare against those too.
+You can also change the chart interval to view the comparison the way you prefer, [segment your audience](filters-segments.md) to focus on specific traffic, and compare against [imported Google Analytics stats](google-analytics-import.md) if available.
 
 ## How to compare two different date ranges
 
 Here's how to track your progress and identify trends by comparing your stats:
 
-- Select your primary date range using the date picker in the top right of your dashboard or by using one of our [keyboard shortcuts](keyboard-shortcuts.md)
+- Select your primary date range using the date picker in the top right of your dashboard or by using one of our [keyboard shortcuts](keyboard-shortcuts.md).
 
-- Then select "**Compare**" in the date picker or press the "**X**" key [on your keyboard](keyboard-shortcuts.md) to enable the comparison feature
+- Then select "**Compare**" in the date picker or press the "**X**" key [on your keyboard](keyboard-shortcuts.md) to enable the comparison feature.
 
-- This will enable a new comparison drop-down. "**Previous period**" is our default option but you can also compare trends "**Year over year**" or a completely "**Custom period**" too
+- This will enable a new comparison drop-down. "**Previous period**" is our default option but you can also compare trends "**Year over year**" or a completely "**Custom period**" too.
 
 <div class="browser">
     <video autoPlay loop muted controls width="100%">
@@ -77,3 +77,13 @@ Your primary date range will be compared to the same period of the previous cale
 Your primary date range will be compared to whatever custom period you select. The custom period can be the same amount of time as the primary date range but it can be longer or shorter too.
 
 You can compare whatever primary date range you want with whatever custom period you want. This is useful for seasonal holidays, marketing campaigns or any other unique goals and objectives that you have.
+
+Custom period comparison is useful when you want more flexibility than fixed comparisons. For example:
+
+#### Compare marketing campaigns of different lengths
+Campaigns don’t always run for the same number of days. With custom period, you can compare any date range against another, even if one is shorter or longer. This helps you understand which campaign performed better without being limited by equal timeframes.
+
+#### See how today (so far) is trending against a full previous day
+When viewing “Today”, your data only includes activity up to the current hour. You can compare it against a full previous day to see if today is trending in a similar way. This is especially useful for spotting early patterns and performance changes throughout the day.
+
+Note: this is only possible with custom period comparison. If you use “previous period”, it will compare today’s data only up to the current hour with the same time range from the previous day, to keep the comparison consistent.

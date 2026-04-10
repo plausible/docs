@@ -28,15 +28,15 @@ Funnels also work across your main domain and its subdomains ([see more](subdoma
 
 Here's how:
 
-* Go into your [site settings](website-settings.md) and click on "**Funnels**" in the left-hand sidebar
+* Go into your [site settings](website-settings.md) and click on "**Funnels**" in the left-hand sidebar.
 
-* Click on the "**Add funnel**" button to create a funnel
+* Click the "**Add funnel**" button to create a funnel.
 
    <img alt="Add funnel" src={useBaseUrl('img/add-funnel.png')} />
 
-* Give your funnel a name in the "**Funnel name**" field
+* Give your funnel a name in the "**Funnel name**" field.
 
-* Define your funnel by adding a set of specific steps that you expect a visitor to take before a conversion, a purchase or a sign up. These steps consist of [pageviews goals](pageview-goals.md) and [custom events](custom-event-goals.md). You need to add a minimum of 2 steps and a maximum of 8 steps to create a funnel.
+* Define your funnel by adding a set of specific steps in correct order that you expect a visitor to take before a conversion, a purchase or a sign up. You can use any combination out of all the three goal types in Plausible to define your funnel: [pageviews goals](pageview-goals.md), [custom events](custom-event-goals.md) and [scroll depth goals](https://plausible.io/docs/scroll-depth#scroll-depth-goals). You need to add a minimum of 2 steps and a maximum of 8 steps to create a funnel.
 
 <img alt="Define funnel" src={useBaseUrl('img/define-funnel.png')} />
 
@@ -52,9 +52,9 @@ Funnels appear at the bottom of your dashboard as soon as the first visit is tra
 
 Here's how to edit any of your existing funnels:
 
-* Go into your [site settings](website-settings.md) and click on "**Funnels**" in the left-hand sidebar
+* Go into your [site settings](website-settings.md) and click on "**Funnels**" in the left-hand sidebar.
 
-* Click on the edit icon on the right-hand side of the funnel that you'd like to edit
+* Click on the edit icon on the right-hand side of the funnel that you'd like to edit.
 
 * Change the funnel name, edit the steps of your funnel and switch between sequential and strict order by toggling the "**Allow other activity in between funnel steps**" option
 
