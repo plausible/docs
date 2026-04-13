@@ -6,7 +6,11 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Is the billing based per account or per website?
 
-Billing is based on total usage across all the sites in your account. Check your usage numbers at any time in the "**Subscription**" section of your account settings. For details on how usage is calculated, see [Choose the right subscription](subscription-plans.md).
+Billing is based on total usage across all the sites in a team. Each team has its own subscription and is billed separately. Check your usage numbers at any time in the "**Subscription**" section of your account settings. For details on how usage is calculated, see [Choose the right subscription](subscription-plans.md).
+
+## Can I manage multiple clients with separate billing for each?
+
+Yes. You can create a separate team for each client, add their sites to the respective team and invite the client to their own team. Each team has its own subscription and billing, so each client can be billed independently. You can be a member of multiple teams using a single Plausible login and switch between them from the menu in the top right of your account. See [Teams and roles](users-roles.md) for details.
 
 ## How do I get an invoice?
 

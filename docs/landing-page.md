@@ -10,11 +10,15 @@ When you log into your Plausible Analytics account, you are met with the ["**My 
     <img alt="Plausible Analytics" src={useBaseUrl('img/v2/list-of-sites.webp')} />
 </div>
 
-In the top right, you can access your account settings or log out of your account. Further down the "**My Sites**" page, you have the search box on the left so you can quickly find any site. And, the sorting option and the "**+ Add a website**" button on the right so you can [add a new site](add-website.md) to your account.
+In the top right, you can access your account settings, switch between teams or log out of your account. Further down the "**My Sites**" page, you have the search box on the left so you can quickly find any site. And, the sorting option and the "**+ Add a website**" button on the right so you can [add a new site](add-website.md) to your account.
 
 The rest of the "**My Sites**" page features all your sites. To give you a quick overview, we display the number of visitors in the last 24 hours next to each site. There's also a graph of each site for a quick overview of the traffic and a comparison to the previous 24 hour period so you can see the trend.
 
 If you have multiple websites, there's also [the consolidated view](consolidated-views.md) which gives you an overview of traffic across all your websites. This allows you to quickly see the total number of visitors and other key metrics across all your properties in one place.
+
+## Switch between teams
+
+If you are a member of multiple teams, clicking on your profile picture in the top right lists all the teams you belong to. Selecting a team switches your context to that team's sites, settings and subscription. This makes it easy to manage separate client accounts or organizations from a single Plausible login.
 
 ## Your profile picture
 

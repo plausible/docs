@@ -10,7 +10,7 @@ Plausible gives you full control over your subscription. Choose a plan, pick mon
 
 ## How usage is calculated
 
-Your subscription tier is based on the total number of **pageviews** and **[custom events](custom-event-goals.md)** across all the sites in your account.
+Your subscription tier is based on the total number of **pageviews** and **[custom events](custom-event-goals.md)** across all the sites in a team. Each team has its own subscription, so if you are a member of multiple teams, each is billed independently.
 
 Custom events include outbound link clicks, file downloads, 404 error tracking and any manually tracked events. Adding a [pageview goal](pageview-goals.md) does not count towards your usage.
 
