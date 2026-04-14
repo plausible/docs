@@ -30,19 +30,13 @@ Funnels also work across your main domain and its subdomains ([see more](subdoma
 
 * Click the "**Add funnel**" button to create a funnel.
 
-   <img alt="Add funnel" src={useBaseUrl('img/add-funnel.png')} />
-
 * Give your funnel a name in the "**Funnel name**" field.
 
 * Define your funnel by adding the steps you expect a visitor to take before a conversion, a purchase or a sign up. These steps consist of [pageviews goals](pageview-goals.md) and [custom events](custom-event-goals.md). You need to add a minimum of 2 steps and a maximum of 8 steps to create a funnel.
 
-<img alt="Define funnel" src={useBaseUrl('img/define-funnel.png')} />
-
 * By default, the "**Allow other activity in between funnel steps**" option is enabled, which creates a sequential funnel. Disable it to use strict order mode instead.
 
 * Click on the "**Save**" button after you've specified the user journey you want to analyse
-
-<img alt="Goals and funnels" src={useBaseUrl('img/goals-and-funnels.png')} />
 
 Funnels appear at the bottom of your dashboard as soon as the first visit is tracked on the funnel steps.
 
