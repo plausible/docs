@@ -12,7 +12,7 @@ Teams also work well for agency and freelance workflows. You can create one team
 
 ### Creating a new team
 
-Log in to your Plausible Analytics account and in the top right menu, click on your account name and choose "**Create a Team**". Note that you may not see this option if you're already a member of an existing team or if you haven't added any sites to your account.
+Log in to your Plausible Analytics account and in the top right menu, click on your account name and choose "**Create a team**". Note that the "Create a team" button appears when you are viewing "My personal sites" and have sites there that you own.
 
 <img alt="Create a team" src={useBaseUrl('img/create-new-team.png')} />
 
@@ -22,6 +22,14 @@ Log in to your Plausible Analytics account and in the top right menu, click on y
 * Click on the "Create Team" button to finish the process
 
 <img alt="Create a team button" src={useBaseUrl('img/create-team-button.png')} />
+
+### Creating multiple teams
+
+You can create more than one team. All sites you own that are not part of any team are listed under "My personal sites".
+
+When you are viewing "My personal sites", the profile menu in the top right shows a "Create a team" button. Creating a team moves all the sites you own in "My personal sites" into that new team, leaving "My personal sites" empty of sites you own.
+
+If you then add more sites to your account, they appear in "My personal sites" again. The "Create a team" button becomes available once more, letting you create another team. You can repeat this process to create as many teams as you need.
 
 ### Inviting team members and assigning roles
 
