@@ -72,15 +72,6 @@ module.exports = {
           'custom-props/props-dashboard',
         ],
       },
-      {
-        type: 'category',
-        label: 'Custom events CMS guides',
-        items: [
-          'webflow-integration',
-          'shopify-integration',
-          'carrd-integration',
-        ],
-      },
     ],
     'Bypass Adblockers': [
       { type: 'doc', id: 'proxy/introduction', label: 'Overview' },
