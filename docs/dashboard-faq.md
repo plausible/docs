@@ -47,6 +47,51 @@ Plausible does not use any data sampling by default. We collect and store 100% o
 
 However, on some dashboard views that have a lot of data such as those with more than 10 million pageviews, we apply limited data sampling to make the dashboard load as fast as possible.
 
+## Why do my numbers differ from Google Analytics?
+
+Plausible and Google Analytics are designed differently, so their numbers will rarely match exactly. Some difference is normal and expected.
+
+**When Plausible reports higher numbers than GA**
+
+This is the more common case. Plausible doesn't use cookies and doesn't require a consent banner, so it captures visitors that GA misses when people decline consent. Plausible also counts visitors who use adblockers that block the GA script but not Plausible's script.
+
+**When Plausible reports lower numbers than GA**
+
+GA may be counting more events per visit than actual pageviews. This can happen due to duplicate tag firing, additional event types being counted as views, or configuration differences in how GA is set up.
+
+**A useful diagnostic**
+
+Compare the unique visitor or active user counts between the two tools, not just pageviews. If those are close, both tools are finding roughly the same audience and the pageview difference is a counting methodology issue, not a tracking gap. If unique visitors also differ significantly, it may point to a setup issue. Check our [troubleshooting guide](troubleshoot-integration.md) to verify your Plausible installation is working correctly.
+
+## Why do my numbers differ from my email marketing tool?
+
+If you send a campaign in MailChimp, ConvertKit or a similar tool and the click count doesn't match the visits in Plausible, a few things are usually going on:
+
+- **Bot and security scanner clicks.** Email security tools automatically click links in emails to check for malicious content. These show up as clicks in your email tool but Plausible filters them as non-human traffic.
+- **Email client prefetching.** Some email clients preload linked content before the recipient actually clicks. This registers as a click in the email tool but the visitor never lands on your site.
+- **Total clicks vs unique visitors.** Email tools often report total link clicks, meaning one person clicking the same link twice counts as two clicks. Plausible counts unique visitors, so that same person counts as one.
+
+## Why do my numbers differ from my ad platform?
+
+Discrepancies between Plausible and platforms like Facebook Ads or Google Ads are common, and usually larger than differences with other tools.
+
+- **Click fraud and bots.** Paid traffic attracts automated click fraud. Ad platforms filter some of it but Plausible filters aggressively for non-human traffic, so Plausible's visit count will often be lower than the click count reported by the ad platform.
+- **Not every click becomes a visit.** Someone can click an ad and close the tab before the page finishes loading. The ad platform records the click, Plausible records nothing.
+- **View-through attribution.** Ad platforms like Facebook count conversions from people who saw an ad but never clicked it. Plausible only records actual visits to your site.
+- **Attribution windows.** Ad platforms attribute a visit or conversion to a campaign days after the original click. Plausible records when the visit actually happened, so the numbers reflect different things.
+- **UTM tags.** Without UTM tags on your ad links, Plausible counts the visits but can't connect them to the specific campaign in the traffic sources breakdown.
+
+## Why do my numbers differ from my server logs or hosting dashboard?
+
+Server logs and hosting dashboards (Cloudflare, Netlify, Squarespace and similar) measure traffic at the infrastructure level, which is very different from what Plausible measures.
+
+- **Every request is counted.** Server logs record requests for every image, CSS file, JavaScript file, font and API call, not just page visits. This inflates their numbers significantly compared to Plausible.
+- **Bots and crawlers.** Search engine crawlers, scrapers and monitoring tools all appear in server logs. Plausible filters non-human traffic out.
+- **JavaScript is required.** Plausible works by running a small script in the visitor's browser. Server logs record all requests regardless of whether a real person loaded the page.
+- **CDN caching can go the other direction.** If your site uses a CDN and pages are served from cache, those visits never reach your origin server. In this case, server logs may actually show *fewer* visits than Plausible.
+
+For a broader look at why numbers differ across analytics tools, see our [blog post on the topic](https://plausible.io/blog/why-analytics-numbers-dont-match).
+
 ## Why don't I see my own visits?
 
 If you've just installed Plausible and aren't seeing your own visits, there are a few common reasons:
