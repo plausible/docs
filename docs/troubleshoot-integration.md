@@ -95,6 +95,20 @@ Using WordPress and integrated Plausible using our official WordPress plugin? Ou
 
 If the verification tool has confirmed that the tracking is working fine, then you have nothing to worry about. If you'd like to track those who use adblockers too, take a look at [our proxy solution](/proxy/introduction.md).
 
+## Are some of your visitors not being counted due to blockers?
+
+Some visitors use tools that may block analytics scripts, including browser extensions, privacy-focused browsers, network-level blockers such as Pi-hole, or corporate firewalls. These visitors won't be counted in your dashboard.
+
+You have two options:
+
+**Accept that some visitors won't be counted.** For most sites this is a small share of traffic. Plausible is blocked less than most analytics tools. For example, Firefox and Safari have built-in tracking protection that blocks Google Analytics but not Plausible.
+
+**Set up a proxy.** A proxy serves the Plausible script as a first-party request from your own domain, bypassing most blockers. Options include:
+
+- The [WordPress plugin](wordpress-integration.md) has a one-click proxy built in
+- Self-setup guides for [Cloudflare](proxy/guides/cloudflare.md), [Netlify](proxy/guides/netlify.md), [Vercel](proxy/guides/vercel.md) and [other platforms](proxy/introduction.md)
+- A managed proxy where we handle the setup for you. See [proxy introduction](proxy/introduction.md) for details
+
 ## I don't see my own referral source
 
 All referral sources are counted only when they start a new session on your site. This is why you don't see all your own referral sources if you for instance click to test several different UTM tagged links at the same time. Only the first one appears in the "**Top Sources**" report. You would need to start a new session (such as by waiting 30 minutes or using a different device, browser or IP address) to have the subsequent sources counted too.

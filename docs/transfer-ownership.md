@@ -14,6 +14,13 @@ Note that subscriptions are not transferred with the site. The new owner is resp
 Use [teams](users-roles.md) to invite another team owner, then have them remove you from the team.
 :::
 
+## Before you transfer
+
+- Finish setup first: goals, email reports, spike notifications, funnels. The client becomes the owner and controls settings after the transfer.
+- Make sure the recipient already has a Plausible account. You'll need their email address to initiate the transfer.
+- Let the client know. They'll receive an email invitation and have 48 hours to accept. If they don't have an active subscription that fits the usage, they'll be guided to subscribe before the transfer completes.
+- You'll keep Guest Editor access after the transfer by default. They can change your role or remove you at any time.
+
 ## Transfer to a different user
 
 <img alt="Transfer ownership of a site to a different user" src={useBaseUrl('img/new-transfer-ownership-different-user.png')} />

@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Plausible allows you to create a team for your organization, invite team members to view stats and change your site settings, and to manage your Plausible subscription and invoices as well. You can also invite external collaborators as guests and give them access to specific sites only.
 
-Teams also work well for agency and freelance workflows. You can create one team per client, add that client's sites to their team and invite the client as a member of their own team. Each team has its own subscription and billing, so each client can be billed independently. You can be a member of multiple teams with a single Plausible login and switch between them from the menu in the top right of your account.
+Teams also work well for agency and freelance workflows. You can create one team per client, add that client's sites to their team and invite the client as a member of their own team. Each team has its own subscription and billing, so each client can be billed independently. You can be a member of multiple teams with a single Plausible login and switch between them from the menu in the top right of your account. For a full overview of agency workflows and white-labeling options, see [Plausible for freelancers and agencies](https://plausible.io/for-freelancers-agencies) and [white-label analytics](https://plausible.io/white-label-web-analytics).
 
 ## Working with your team
 

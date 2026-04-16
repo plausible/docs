@@ -41,6 +41,7 @@ module.exports = {
       'metrics-definitions',
       'keyboard-shortcuts',
       'looker-studio',
+      'bot-traffic-filtering',
       'dashboard-faq',
       {
         type: 'category',
@@ -106,6 +107,7 @@ module.exports = {
     ],
     'Team': [
       'users-roles',
+      'agencies-and-freelancers',
       'transfer-ownership',
       {
         type: 'category',
@@ -124,7 +126,10 @@ module.exports = {
       'change-plan',
       'cancel-subscription',
       'download-invoices',
+      'invoice-email',
       'billing',
+      'nonprofit-and-education-pricing',
+      'compliance',
     ],
   },
 }

@@ -11,6 +11,17 @@ This page covers two common multi-domain setups:
 
 Plausible helps you simplify tracking across both. You can view the visitor journey end-to-end from the landing on your primary domain name to a conversion on the subdomain. The original referral source will stay attributed to that visitor even when the visitor moves from one of your subdomains to another.
 
+## Which setup should I use?
+
+| You want... | Do this |
+|---|---|
+| One dashboard for your main domain and all its subdomains | Add the root domain and use the same snippet on all subdomains |
+| Separate dashboards per subdomain | Add each subdomain as its own site |
+| Sessions preserved as visitors move between subdomains | Use a single site with the root domain |
+| Completely independent tracking for separate products on different domains | Add them as separate sites |
+
+Whatever you choose, [Consolidated Views](consolidated-views.md) let you combine any of your sites into a single global dashboard at any time.
+
 Here's how to track the user journey across your domain name and its subdomains.
 
 ## How to track the user journey across domain and subdomains
