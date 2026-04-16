@@ -1,7 +1,7 @@
 ---
-title: How to add the script to your WordPress site
+title: WordPress integration
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
+The best way to add Plausible to your WordPress site is our official WordPress plugin. It gives you a Plausible configuration page directly in your WordPress dashboard, with options for the proxy, goal tracking and more.
 
-The best way to integrate Plausible Analytics with your WordPress website and get a nice Plausible configuration page directly in your WordPress dashboard is to install our official Plausible Analytics WordPress plugin. Learn more about the [Plausible WordPress plugin here](https://plausible.io/wordpress-analytics-plugin).
+For installation, setup and troubleshooting common issues, visit the [Plausible WordPress plugin page](https://plausible.io/wordpress-analytics-plugin).

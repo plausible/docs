@@ -33,4 +33,6 @@ Your subscription renews automatically and you can change or [cancel](cancel-sub
 
 :::tip
 Not sure which tier fits? Check your current usage in the "**Subscription**" section. You can also see [Choose the right subscription](subscription-plans.md) for guidance on how usage is calculated.
+
+Dealing with a traffic spike? You can upgrade now to restore access and downgrade again once traffic drops. See [Traffic spikes and overages](subscription-plans.md#traffic-spikes-and-overages) for how it works.
 :::

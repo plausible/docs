@@ -20,16 +20,16 @@ Check your current usage in the "**Subscription**" section of your account setti
     <img alt="Plausible subscription" src={useBaseUrl('img/v2/account-settings-subscription.webp')} />
 </div>
 
-## Plans
+## Which plan should I choose?
 
-Each plan offers different features, site limits and team member access:
+All plans start at the same pageview tiers. The difference is features and team size.
 
-- **Starter** - Essential features for solo projects and new sites
-- **Growth** - Team access and sharing tools for growing projects
-- **Business** - Advanced marketing features, more sites and larger teams
-- **Enterprise** - Custom plan with tailored limits. [Contact us](https://plausible.io/contact) to discuss
+- **Starter**: one site, solo use, no team or sharing needed
+- **Growth**: multiple sites, or need to share dashboards with clients or invite team members
+- **Business**: need funnels, revenue tracking, custom properties, Stats API or Looker Studio
+- **Enterprise**: large scale, SSO, Sites API, managed proxy or raw data exports. [Contact us](https://plausible.io/contact) to discuss
 
-Compare features and pricing on [our website](https://plausible.io/#pricing) or in your account settings. Save 2 months by choosing yearly billing.
+Compare full features and pricing on [our website](https://plausible.io/#pricing) or in your account settings. Save 2 months by choosing yearly billing.
 
 ## Traffic spikes and overages
 

@@ -28,11 +28,11 @@ If paying via PayPal, make sure a valid card is linked to your PayPal account. P
 
 ## How do I add my VAT number?
 
-During checkout, you can add your company address and VAT ID. Paddle handles all sales taxes. If you're eligible, no VAT will be charged.
-
-If you didn't add it during checkout, open any Paddle invoice and click "**Add address & VAT Number**". [More on Paddle's VAT handling →](https://paddle.com/support/which-countries-does-paddle-charge-vat-for/)
+If you're purchasing on behalf of a business, click "**Add VAT number**" on the second step of the checkout, where you also add your payment details. Paddle handles all sales tax calculations and will apply the correct rate based on your details.
 
 <img class="border" alt="Add VAT number at checkout" src={useBaseUrl('img/v2/add-vat-number-during-checkout.webp')} />
+
+If you missed this step, open any Paddle invoice and click "**Add address & VAT Number**". Paddle will automatically refund the VAT on your original payment and apply the correct rate to future payments. [More on Paddle's VAT handling →](https://paddle.com/support/which-countries-does-paddle-charge-vat-for/)
 
 ## How do I change my VAT number?
 

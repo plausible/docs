@@ -22,6 +22,8 @@ To be counted as converted, visitors need to complete all the steps you've defin
 
 **Strict order funnel:** Every step must happen in exact consecutive order with no other actions in between. Use this when you want to measure a tightly defined path and any detour should disqualify the visitor.
 
+Funnels in Plausible are always linear. Each funnel follows one defined path from start to finish. Branching or conditional paths are not supported. If you need to compare two different paths, create two separate funnels.
+
 Funnels also work across your main domain and its subdomains ([see more](subdomain-hostname-filter.md)), and you don't need to worry about visitors briefly leaving your site to complete actions on external services like Stripe's payment page or other third-party gateways. Plausible treats the returning visit as part of the same session, so your funnel will accurately track the full visitor journey.
 
 ## How to set up the conversion funnel analysis
