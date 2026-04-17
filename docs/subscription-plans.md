@@ -31,6 +31,8 @@ All plans start at the same pageview tiers. The difference is features and team 
 
 Compare full features and pricing on [our website](https://plausible.io/#pricing) or in your account settings. Save 2 months by choosing yearly billing.
 
+Nonprofits, educational institutions and open-source projects are eligible for a 15% discount on Business plans with annual billing. See [nonprofit and education pricing](nonprofit-and-education-pricing.md) for details.
+
 ## Traffic spikes and overages
 
 You will never be charged extra for an occasional traffic spike. No surprise fees, no stats interruption, no unexpected charges.
