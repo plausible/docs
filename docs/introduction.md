@@ -27,7 +27,6 @@ slug: /
 <h3>Stats dashboard</h3>
 <p>One dashboard with all your essential stats. No sub-menus, no custom reports to build.</p>
 <ul>
-<li><a href="guided-tour">Dashboard tour</a>: what each section shows and how to navigate it</li>
 <li><a href="filters-segments">Filters and segments</a>: drill into any slice of your traffic</li>
 <li><a href="compare-stats">Compare periods</a>: benchmark against previous time ranges</li>
 <li><a href="consolidated-views">Consolidated view</a>: all your sites in one dashboard</li>
@@ -42,8 +41,7 @@ slug: /
 <h3>Website settings</h3>
 <p>Manage your site configuration and data.</p>
 <ul>
-<li><a href="website-settings">Website settings</a>: overview of all site configuration</li>
-<li><a href="excluding">Excluding pages and traffic</a>: filter out internal visits and bots</li>
+<li><a href="excluding">Excluding pages and traffic</a>: filter out internal visits</li>
 <li><a href="embed-dashboard">Embed dashboard</a>: embed your stats on any page</li>
 <li><a href="traffic-spikes">Traffic spike notifications</a>: get alerted when traffic spikes</li>
 <li><a href="google-analytics-import">Import from Google Analytics</a>: bring in your historical data</li>
