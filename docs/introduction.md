@@ -64,7 +64,7 @@ slug: /
 </div>
 
 <div class="docs-card">
-<h3>Team and account</h3>
+<h3>Team and sharing</h3>
 <p>Manage access, sharing and notifications for your team.</p>
 <ul>
 <li><a href="users-roles">Users and roles</a>: invite team members and set permissions</li>
@@ -116,8 +116,6 @@ slug: /
 </div>
 
 </div>
-
----
 
 This page covers the most common topics. Browse the full sidebar or use the search box to find anything not listed here.
 
