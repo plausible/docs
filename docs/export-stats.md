@@ -12,8 +12,8 @@ You can export your stats directly from the top chart of your Plausible dashboar
 
 1. Select the date range in the top right of your Plausible dashboard to view the specific time period
 2. [Filter your dashboard](filters-segments.md) by any metric that you wish to create a specific audience segment. Do include a goal in the filter (such as external link clicks, file downloads or custom events) if you're looking to export specific conversion metrics
-3. If applicable, click on the "**Import**" icon on the right-hand side of the top chart of your Plausible dashboard to choose whether you want your imported data to be included in the export
-4. Then click on the "**Download**" icon on the right-hand side of the top chart of your Plausible dashboard to download the stats for your chosen view and segment
+3. If applicable, open the options menu (the **⋮** icon in the top right of the chart) and toggle "**Include imported data**" to choose whether you want your imported data to be included in the export
+4. Then open the options menu and click "**Export stats**" to download the stats for your chosen view and segment
 
 <img alt="Exporting your website stats" src={useBaseUrl('img/download-website-stats.png')} />
 

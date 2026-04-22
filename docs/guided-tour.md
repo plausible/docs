@@ -27,7 +27,7 @@ Here you can enter "[Site Settings](website-settings.md)" but also switch to a d
 
 ## Set a different chart interval
 
-You can **set a different unit of time the stats on the chart are grouped by** in the top right of the chart itself. The available interval options depend on the date range you've selected. For example, if you select "Today", you can display the stats by minute or by hour.
+You can **set a different unit of time the stats on the chart are grouped by** in the options menu (the **⋮** icon in the top right of the chart). Click it and select "**Graph interval**". The available interval options depend on the date range you've selected. For example, if you select "Today", you can display the stats by minute or by hour.
 
 <div class="browser">
     <img alt="Today intervals in top graph" src={useBaseUrl('img/v2/intervals-minutes-hours.webp')} />

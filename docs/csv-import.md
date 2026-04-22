@@ -44,7 +44,7 @@ No data export/import is needed in this case either. We have an easy way to [cha
 
 4. Make sure to select all the CSV files that you've exported and click on the "**Confirm import**" button. If you don't select all the exported files, some data may be missing from your import.
 
-5. Imported data will be displayed alongside your native Plausible data in the same Plausible dashboard. An icon is shown in the top-right of the dashboard when imported data has been included. Clicking this icon will stop the imported data from being displayed and the icon will then appear with a strike-through.
+5. Imported data will be displayed alongside your native Plausible data in the same Plausible dashboard. You can turn this off by opening the options menu (the **⋮** icon in the top right of the chart) and toggling off "**Include imported data**".
 
 ## Multiple imports into the same Plausible dashboard
 
@@ -78,7 +78,7 @@ There are several exceptions to this though, because some properties are aggrega
   * `Outbound Link: Click` and `File Download` goals with the `url` property
   * `404` goals with the `path` property
 
-By default, imported data is always included in the view, unless you choose to exclude it manually by clicking on the imported icon in the top right of the dashboard main graph.
+By default, imported data is always included in the view, unless you choose to exclude it manually by opening the options menu (the **⋮** icon in the top right of the chart) and toggling off "**Include imported data**".
 
 <img alt="Stats include imported data" src={useBaseUrl('img/stats-include-imported-data.png')} />
 
