@@ -46,7 +46,7 @@ First, filter the dashboard in any way you want to [segment your audience](filte
 
 ### Choose a chart interval
 
-In the top right of the chart itself, you can choose the unit of time the stats on the chart are grouped by. This gives you a more granular comparison view. The available interval options depend on the date range you've selected. For example, if you select "Last 30 days" as your primary date range, you can display the stats by day or by week.
+In the options menu (the **⋮** icon in the top right of the chart), you can choose the unit of time the stats on the chart are grouped by under "**Graph interval**". This gives you a more granular comparison view. The available interval options depend on the date range you've selected. For example, if you select "Last 30 days" as your primary date range, you can display the stats by day or by week.
 
 ## Match day of the week or match exact date
 
