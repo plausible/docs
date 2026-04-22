@@ -24,9 +24,9 @@ You can also change the chart interval, [segment your audience](filters-segments
 
 - Choose your comparison option from the drop-down.
 
-<div class=”browser”>
-    <video autoPlay loop muted controls width=”100%”>
-        <source src={useBaseUrl('/video/compare-stats-over-time.mp4')} type=”video/mp4” />
+<div class="browser">
+    <video autoPlay loop muted controls width="100%">
+        <source src={useBaseUrl('/video/compare-stats-over-time.mp4')} type="video/mp4" />
     </video>
 </div>
 
@@ -38,14 +38,14 @@ The comparison appears in three places across your dashboard:
 
 As with everything else on the dashboard, we'll save your comparison preference for your next visit.
 
-<div class=”browser”>
-    <img alt=”Comparison chart” src={useBaseUrl('img/v2/comparison-chart.webp')} />
+<div class="browser">
+    <img alt="Comparison chart" src={useBaseUrl('img/v2/comparison-chart.webp')} />
 </div>
 
 - Want to disable the comparison and get back to the regular view? Press the “**X**” key on your keyboard or choose “**Disable comparison**” in the comparison drop-down
 
-<div class=”browser”>
-    <img alt=”Disable comparison” src={useBaseUrl('img/v2/disable-comparison.webp')} />
+<div class="browser">
+    <img alt="Disable comparison" src={useBaseUrl('img/v2/disable-comparison.webp')} />
 </div>
 
 ### Segment your audience
