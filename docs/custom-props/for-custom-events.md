@@ -2,62 +2,62 @@
 title: Attach custom properties to custom events
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
+## Send custom properties with custom events
 
-## Tag properties to custom events you want to track
+When you track a custom event, you can include property key-value pairs alongside it. This lets you capture additional context about the event, for example which pricing plan a visitor selected when clicking a sign-up button, or which content variation they were shown.
 
-Let's say you have a contact form both in the header and footer of your site. In addition to tracking submissions, you might want to know which section of your site the form was submitted on. Instead of creating separate goals for each form, you can send a custom property instead.
+### Using HTML class attributes
 
-Similarly to how you define an event name inside the `class` attribute, you can use the format `plausible-event-<property>=<value>` to define custom properties. Following the same example, your code might look something like this:
+If you're using Plausible's class-based event tracking, add properties using the format `plausible-event-<property>=<value>` on the same element:
 
 ```html
-<body>
-  <!-- header -->
-  <form class="plausible-event-name=Form+Submit plausible-event-position=header">...</form>
-
-  <!-- footer -->
-  <form class="plausible-event-name=Form+Submit plausible-event-position=footer">...</form>
-</body>
+<button class="plausible-event-name=Sign+Up plausible-event-plan=starter">...</button>
+<button class="plausible-event-name=Sign+Up plausible-event-plan=pro">...</button>
 ```
 
-Now, both form submissions would trigger the same `Form Submit` event, but the `position` property will be different.
+Both buttons trigger the same `Sign Up` event, but the `plan` property will differ between them.
 
-:::tip To represent a space character in property values, you can use a `+` sign
-This is because you can't include the space character in the `class` attribute
+:::tip
+To represent a space in a property value, use a `+` sign. Space characters are not valid in class attributes.
 :::
 
-You can add up to 30 classes for custom properties. Simply separate them with a space character like in the above example.
+You can add up to 30 properties per event by separating each class with a space.
 
-:::note
-If you don't see a `plausible.init` call in your snippet, [upgrade your script](/script-update-guide)
-:::
+## Using the JavaScript method
 
-## Using custom properties in goals and funnels
-
-When [creating a goal from a custom event](goal-conversions.md), you can attach up to three custom properties to that goal.
-
-This allows you to define more precise goals. For example, you can create a single goal for `Form Submit` and limit it to specific property values such as `position=header` or `method=HTTP`.
-
-Goals with custom properties can also be [used inside funnels](funnel-analysis.md). This makes it possible to build funnels that track specific variations of the same event, such as different form locations, buttons or interaction types.
-
-<details>
-
-<summary>
-
-## Tag custom properties using the manual method
-
-</summary>
-
-This is an alternative option for those who are sending custom events manually with JavaScript, for example:
+If you're triggering events manually with JavaScript, pass properties as a second argument:
 
 ```js
-plausible('Download')
+plausible('Sign Up', {props: {plan: 'pro', variation: 'homepage-cta'}})
 ```
 
-All you have to do is add the second argument to this function call with the custom properties as follows:
+---
 
-```js
-plausible('Download', {props: {method: 'HTTP', position: 'footer'}})
-```
+## Create property-filtered goals
 
-</details>
+When you [create a goal from a custom event](goal-conversions.md) in your site settings, you can optionally attach up to three property constraints to that goal definition.
+
+A property-filtered goal only counts an event when both the event name and the property values match. For example, you can create a `Pro Sign Up` goal that only fires when a `Sign Up` event includes `plan=pro`. A separate `Starter Sign Up` goal would match `plan=starter`.
+
+This is distinct from simply sending properties with your events:
+
+- **Sending a property with an event** records raw data. You can filter and analyze it in the dashboard after the fact.
+- **Attaching a property to a goal** makes the property part of the goal's definition. The goal only counts when that specific property value is present. It becomes a discrete conversion metric, not a filtered view of existing data.
+
+---
+
+## Use property-filtered goals in funnels
+
+Funnels in Plausible are built from goals, not raw events. Each funnel step must map to a defined goal.
+
+If you want a funnel step to represent a specific variation of an event rather than all instances of it, you need a goal with the property constraint built in.
+
+For example, a funnel that tracks:
+
+1. Visitor views the pricing page
+2. Visitor clicks the Pro plan sign-up button
+3. Visitor completes registration
+
+Step 2 requires a goal that matches only `Sign Up` events where `plan=pro`. Without the property constraint on the goal, that step would count any sign-up button click on the site regardless of which plan was selected.
+
+Once you've created property-filtered goals, you can [add them as funnel steps](funnel-analysis.md) the same way as any other goal.
