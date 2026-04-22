@@ -4,40 +4,48 @@ title: Compare your stats over time
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-You can compare your website stats over time to get valuable insights and spot trends more easily. The comparison feature lets you analyze one date range alongside another.
+You can compare your website stats over time to spot trends and measure progress. The comparison feature lets you analyze one date range alongside another.
 
-You can choose between “**Previous period**”, “**Year over year**” and “**Custom period**”. By default, we match days of the week (for example, Monday to Monday) to avoid differences caused by weekends, but you can switch to matching exact dates instead.
+Once enabled, the comparison drop-down gives you these options:
 
-You can also change the chart interval to view the comparison the way you prefer, [segment your audience](filters-segments.md) to focus on specific traffic, and compare against [imported Google Analytics stats](google-analytics-import.md) if available.
+- **Previous period** — compares against the period immediately before your selected date range
+- **Year over year** — compares against the same period in the previous calendar year
+- **Custom period** — compare against any date range you choose
+- **Match day of week** — aligns the comparison by day of the week to avoid weekend/weekday skew
+- **Match exact date** — aligns by calendar date instead
+
+You can also change the chart interval, [segment your audience](filters-segments.md) to focus on specific traffic, and compare against [imported Google Analytics stats](google-analytics-import.md) if available.
 
 ## How to compare two different date ranges
 
-Here's how to track your progress and identify trends by comparing your stats:
-
 - Select your primary date range using the date picker in the top right of your dashboard or by using one of our [keyboard shortcuts](keyboard-shortcuts.md).
 
-- Then select "**Compare**" in the date picker or press the "**X**" key [on your keyboard](keyboard-shortcuts.md) to enable the comparison feature.
+- Then select “**Compare**” in the date picker or press the “**X**” key [on your keyboard](keyboard-shortcuts.md) to enable the comparison feature.
 
-- This will enable a new comparison drop-down. "**Previous period**" is our default option but you can also compare trends "**Year over year**" or a completely "**Custom period**" too.
+- Choose your comparison option from the drop-down.
 
-<div class="browser">
-    <video autoPlay loop muted controls width="100%">
-        <source src={useBaseUrl('/video/compare-stats-over-time.mp4')} type="video/mp4" />
+<div class=”browser”>
+    <video autoPlay loop muted controls width=”100%”>
+        <source src={useBaseUrl('/video/compare-stats-over-time.mp4')} type=”video/mp4” />
     </video>
 </div>
 
-- The comparison uses "**Match day of the week**" by default to align the comparison by day of the week. You can select "**Match exact date**" in the comparison drop-down to match by date instead
+The comparison appears in three places across your dashboard:
 
-- The comparison will be shown on the top chart of your Plausible dashboard. You can see the stats for both the primary and the secondary date ranges in the chart. You can hover over to see the percent changes in the tooltip. As with everything else on the dashboard, we'll save your comparison preference for your next visit to save you a click or two
+- **Metric cards** at the top show percentage changes (with up/down arrows) against the comparison period
+- **The main chart** shows both date ranges as separate lines so you can see trends side by side. Hover over any point to see the values and percent change in the tooltip
+- **Breakdown tables** (Sources, Pages, Countries, etc.) show comparison data in a tooltip when you hover over a row
 
-<div class="browser">
-    <img alt="Comparison chart" src={useBaseUrl('img/v2/comparison-chart.webp')} />
+As with everything else on the dashboard, we'll save your comparison preference for your next visit.
+
+<div class=”browser”>
+    <img alt=”Comparison chart” src={useBaseUrl('img/v2/comparison-chart.webp')} />
 </div>
 
-- Want to disable the comparison and get back to the regular view? Press the "**X**" key on your keyboard or choose "**Disable comparison**" in the comparison drop-down
+- Want to disable the comparison and get back to the regular view? Press the “**X**” key on your keyboard or choose “**Disable comparison**” in the comparison drop-down
 
-<div class="browser">
-    <img alt="Disable comparison" src={useBaseUrl('img/v2/disable-comparison.webp')} />
+<div class=”browser”>
+    <img alt=”Disable comparison” src={useBaseUrl('img/v2/disable-comparison.webp')} />
 </div>
 
 ### Segment your audience
@@ -46,11 +54,11 @@ First, filter the dashboard in any way you want to [segment your audience](filte
 
 ### Choose a chart interval
 
-In the options menu (the **⋮** icon in the top right of the chart), you can choose the unit of time the stats on the chart are grouped by under "**Graph interval**". This gives you a more granular comparison view. The available interval options depend on the date range you've selected. For example, if you select "Last 30 days" as your primary date range, you can display the stats by day or by week.
+In the options menu (the **⋮** icon in the top right of the chart), you can choose the unit of time the stats on the chart are grouped by under "**Graph interval**". This gives you a more granular comparison view. The available interval options depend on the date range you've selected. For example, if you select "Last 28 days" as your primary date range, you can display the stats by day or by week.
 
 ## Match day of the week or match exact date
 
-Our comparison matches by day of the week by default. This means that your primary date range will be compared to the secondary date range starting with the same day of the week. This helps you eliminate discrepancies due to the weekend or weekday differences.
+The comparison can be aligned by day of the week or by exact calendar date. Matching by day of the week means your primary date range is compared to the secondary date range starting with the same day of the week. This helps you eliminate discrepancies due to weekend or weekday differences.
 
 The alternative option in the comparison drop-down is to "**Match exact date**". When choosing Sunday January 1st to January 7th 2023 as the primary date range and matching by exact date, the year over year comparison will be against Saturday January 1st to January 7th 2022.
 
@@ -66,7 +74,7 @@ Here are the details on the available comparison options:
 
 ### Previous period
 
-This is the default comparison mode. Your primary date range will be compared to the same amount of time in the period before it. If you select "**Last 7 days**" as your primary date range, the stats are compared to the previous seven days before it.
+Your primary date range will be compared to the same amount of time in the period before it. If you select "**Last 7 days**" as your primary date range, the stats are compared to the previous seven days before it.
 
 ### Year over year
 

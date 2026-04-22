@@ -33,7 +33,7 @@ You can **set a different unit of time the stats on the chart are grouped by** i
     <img alt="Today intervals in top graph" src={useBaseUrl('img/v2/intervals-minutes-hours.webp')} />
 </div>
 
-Or if you select "Last 30 days", you can display the stats by day or by week. You can display the stats by days, weeks or months if you choose a wider timeframe.
+Or if you select "Last 28 days", you can display the stats by day or by week. You can display the stats by days, weeks or months if you choose a wider timeframe.
 
 <div class="browser">
     <img alt="Last 30 days intervals in top graph" src={useBaseUrl('img/v2/intervals-days-weeks-months.webp')} />
