@@ -552,3 +552,65 @@ html[data-theme='dark'] {
 .DocSearch-Commands-Key svg path {
   stroke-width: 2 !important;
 }
+
+/* Docs home page card grid */
+.docs-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 1.5rem 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .docs-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.docs-card {
+  border: 1px solid var(--zinc-200);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+}
+
+[data-theme='dark'] .docs-card {
+  border-color: var(--zinc-700);
+}
+
+.docs-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.docs-card > p {
+  color: var(--zinc-500);
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+}
+
+[data-theme='dark'] .docs-card > p {
+  color: var(--zinc-400);
+}
+
+.docs-card ul,
+.docs-card ol {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.875rem;
+}
+
+.docs-card ul li,
+.docs-card ol li {
+  margin-bottom: 0.3rem;
+}
+
+.docs-card ul li:last-child,
+.docs-card ol li:last-child {
+  margin-bottom: 0;
+}
+
+.docs-card-full {
+  grid-column: 1 / -1;
+}
