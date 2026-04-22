@@ -4,6 +4,10 @@ title: Exclude internal traffic from your analytics
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+:::tip Bot traffic is filtered automatically
+Plausible automatically filters out bots, crawlers and referrer spam. You don't need to configure anything for this. See [bot and spam traffic filtering](bot-traffic-filtering.md) for details.
+:::
+
 By default, Plausible Analytics tracks every visitor to your website. You might not want your office traffic to be counted. Or when you're working on your site, you might not want to record your own visits and page views. 
 
 Here's how to block your internal traffic from your Plausible Analytics stats dashboard. You can block recording visitors from specific IP addresses, hostnames, countries or pages. 
