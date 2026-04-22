@@ -4,11 +4,11 @@ title: Introduction to custom properties
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-You can attach custom properties (also known as [custom dimensions](https://plausible.io/blog/custom-dimensions-analytics) in Google Analytics) when sending pageviews or custom events to Plausible in order to create custom metrics. Custom properties allow you to collect and analyze metrics that we don't track automatically. 
+Custom properties let you collect and analyze metrics that Plausible doesn't track automatically. You can attach them to pageviews or custom events to create your own segments and filters. If you're coming from Google Analytics, custom properties are equivalent to [custom dimensions](https://plausible.io/blog/custom-dimensions-analytics).
 
 For example, say you want to track your blog posts by `author`. Every time a visitor lands on one of the posts, you can send a pageview with the property `author=...`. You can then filter your Plausible dashboard by a specific author to see all the relevant stats for the posts published by that particular writer.
 
-Some other examples of stats you can get by sending custom properties:
+Other examples:
 
 * Filter content by the publication date, page type, ID, tag or category
 * Filter visitors by login status or user role
@@ -35,7 +35,7 @@ Note that you must ensure that no personally identifiable information (PII) is s
 
 Plausible will display `(none)` in your dashboard when you send a custom property key with no value, or `null`/`undefined` as a value. Also, when you send one event with a property (e.g. `author`) and another event with the same name, but without the `author` property, then you will also see the `(none)` value because the property has not been sent with every event.
 
-When you filter your dashboard by a particular custom event and look at the "**Properties**" tab, you shouldn't see the `(none)` value there if all the relevant events have been sent with the property included. However, if you're viewing the "**Properties**" tab without any custom event filter, it returns all the events in your dashboard (including all regular pageviews) and many of these events may not have a property attached. Hence you see the `(none)` value.
+When you filter your dashboard by a particular custom event and look at the "**Properties**" tab, you should only see `(none)` if some of those events were sent without the property. However, if you're viewing the "**Properties**" tab without any custom event filter, it returns all the events in your dashboard (including all regular pageviews) and many of these events may not have a property attached. This is why you see the `(none)` value.
 
 ## Accepted values
 
