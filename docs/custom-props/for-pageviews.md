@@ -26,13 +26,7 @@ plausible.init({
 
 You're now tracking custom properties alongside pageviews.
 
-<details>
-
-<summary>
-
 ## Advanced: Dynamically setting custom properties
-
-</summary>
 
 To include dynamic data for custom properties, set `customProperties` to be a function. This function will be called for every event.
 
@@ -53,5 +47,3 @@ plausible.init({
   }
 })
 ```
-
-</details>

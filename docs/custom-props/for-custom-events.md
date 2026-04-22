@@ -2,8 +2,6 @@
 title: Attach custom properties to custom events
 ---
 
-## Send custom properties with custom events
-
 When you track a custom event, you can include property key-value pairs alongside it. This lets you capture additional context about the event, for example which pricing plan a visitor selected when clicking a sign-up button, or which content variation they were shown.
 
 ### Using HTML class attributes
@@ -23,15 +21,13 @@ To represent a space in a property value, use a `+` sign. Space characters are n
 
 You can add up to 30 properties per event by separating each class with a space.
 
-## Using the JavaScript method
+### Using the JavaScript method
 
 If you're triggering events manually with JavaScript, pass properties as a second argument:
 
 ```js
 plausible('Sign Up', {props: {plan: 'pro', variation: 'homepage-cta'}})
 ```
-
----
 
 ## Create property-filtered goals
 
@@ -43,8 +39,6 @@ This is distinct from simply sending properties with your events:
 
 - **Sending a property with an event** records raw data. You can filter and analyze it in the dashboard after the fact.
 - **Attaching a property to a goal** makes the property part of the goal's definition. The goal only counts when that specific property value is present. It becomes a discrete conversion metric, not a filtered view of existing data.
-
----
 
 ## Use property-filtered goals in funnels
 
