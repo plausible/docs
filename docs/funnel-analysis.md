@@ -34,7 +34,7 @@ Funnels also work across your main domain and its subdomains ([see more](subdoma
 
 * Give your funnel a name in the "**Funnel name**" field.
 
-* Define your funnel by adding the steps you expect a visitor to take before a conversion, a purchase or a sign up. These steps consist of [pageviews goals](pageview-goals.md) and [custom events](custom-event-goals.md). You need to add a minimum of 2 steps and a maximum of 8 steps to create a funnel.
+* Define your funnel by adding the steps you expect a visitor to take before a conversion, a purchase or a sign up. These steps consist of [pageview goals](pageview-goals.md) and [custom event goals](custom-event-goals.md). You need to add a minimum of 2 steps and a maximum of 8 steps to create a funnel. If you want a step to match only a specific variation of a custom event, use a [property-filtered goal](/custom-props/for-custom-events#create-property-filtered-goals).
 
 * By default, the "**Allow other activity in between funnel steps**" option is enabled, which creates a sequential funnel. Disable it to use strict order mode instead.
 
@@ -56,6 +56,6 @@ Funnels appear at the bottom of your dashboard as soon as the first visit is tra
 
 - Track [ecommerce revenue](ecommerce-revenue-tracking.md) alongside your funnels to see which paths generate the most sales
 - Use [filters and segments](filters-segments.md) to compare funnel performance across different traffic sources or campaigns
-- Add [custom properties](custom-props/introduction.md) to your events for deeper breakdowns within each funnel step
+- Use [property-filtered goals](/custom-props/for-custom-events#create-property-filtered-goals) as funnel steps to track specific event variations, such as a sign-up for a particular plan
 
 To learn more about conversion funnel optimization, [head to our blog](https://plausible.io/blog/funnels-conversion-optimization).

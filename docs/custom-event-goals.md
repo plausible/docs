@@ -169,7 +169,7 @@ Select `Custom event` as the goal trigger and enter the name of the custom event
 
 ### Narrow goals with custom properties
 
-When creating a custom event goal, you can optionally narrow it down using custom properties. This lets you turn a broad goal into a more specific one by matching only events with certain property values, letting you track something like “Purchase (Business – yearly)” as its own goal rather than grouping all purchases together.
+When creating a custom event goal, you can optionally narrow it down using custom properties. This lets you turn a broad goal into a more specific one by matching only events with certain property values, letting you track something like “Purchase (Business – yearly)” as its own goal rather than grouping all purchases together. [Learn how to set up property-filtered goals](/custom-props/for-custom-events#create-property-filtered-goals).
 
 <img alt="Add your custom event goal" src={useBaseUrl('img/custom-events-in-plausible-setup-modal.png')} />
 
@@ -203,7 +203,7 @@ You can also send dynamic monetary values alongside custom events to track reven
 
 ### Attach custom properties
 
-Custom properties can be attached to events to capture dynamic elements and to further break down goal conversions. You can use custom properties to create your custom metrics to collect and analyze data that Plausible doesn't automatically track. [Learn more here](/custom-props/for-custom-events).
+You can attach custom properties to events to collect additional context alongside goal conversions. [See how to set up custom properties](/custom-props/for-custom-events).
 
 #### Automatically attached properties
 
