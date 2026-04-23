@@ -37,3 +37,29 @@ export default PlausibleButton() {
     )
 }
 ```
+
+## Nextjs 13+ (app Router)
+
+Add a next/script to your root layout `app/layout.js`
+
+```
+import Script from 'next/script'
+export default function RootLayout({children}) {
+  return (
+    <html lang="en">
+      {process.env.NODE_ENV === 'production' && (
+        <Script
+          defer
+          data-domain="example.com"
+          src="https://plausible.io/js/script.js"
+        />
+      )}
+      <body>
+        {/* Layout UI */}
+        <main>{children}</main>
+      </body>
+    </html>
+  )
+}
+```
+     
