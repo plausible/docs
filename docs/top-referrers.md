@@ -91,7 +91,7 @@ Are you running paid marketing campaigns on Facebook, Google and other ad platfo
 
 Here's an example of how to tag your links: `yourdomain.com?utm_source=adwords&utm_medium=ppc&utm_campaign=novemberoffer&utm_content=sustainability&utm_term=discount`
 
-Use the [Plausible UTM builder](https://plausible.io/utm-builder) to generate tagged links without doing it manually.
+Use the [Plausible UTM builder](https://plausible.io/utm-builder) to generate tagged links without doing it manually. Already have a link and want to check it for issues? Use the [UTM checker](https://plausible.io/utm-checker) to validate and clean it up.
 
 To isolate your UTM-tagged clicks from other clicks, you can segment the traffic by using the "**UTM Medium**", "**UTM Source**" (here you can also see any traffic tagged with "ref" and "source" parameters), "**UTM Campaign**", "**UTM Content**" and "**UTM Term**" sections in the "**Campaigns**" tab of the "**Top Sources**" report.
 
