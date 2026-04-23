@@ -23,8 +23,11 @@ Plausible supports the following goal types:
 | [Funnel analysis](funnel-analysis.md) | Follow the visitor journey from a landing page to a conversion in order to uncover possible issues, optimize your site and increase the conversion rate                                   |
 | [Ecommerce revenue tracking](ecommerce-revenue-tracking.md)          | Assign dynamic monetary values to goals and custom events to track revenue attribution   |
 | [Custom properties](/custom-props/introduction)  | Send custom data with pageviews and custom events to create custom metrics  |
+
 Outbound link clicks, form submissions and file downloads are enabled by default when you add a new site. To review or change these at any time, go to Site Settings > General > "Review installation".
 
+| Goal                | Explanation                                                                                        |
+|--------------------------|----------------------------------------------------------------------------------------------------|
 | [Outbound link clicks](outbound-link-click-tracking.md) | Automatically measure clicks on external links     |
 | [Form submissions](form-submissions-tracking.md) | Automatically measure when a visitor completes a form     |
 | [File downloads](file-downloads-tracking.md)  | Automatically measure when a visitor clicks a link leading to a file |
