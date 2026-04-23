@@ -17,9 +17,13 @@ There are two core goal types: **pageview goals** (no code changes required) and
 Plausible supports the following goal types:
 
 <table>
+  <colgroup>
+    <col width="220" />
+    <col />
+  </colgroup>
   <thead>
     <tr>
-      <th style={{width: ‘220px’}}>Goal</th>
+      <th>Goal</th>
       <th>Explanation</th>
     </tr>
   </thead>
