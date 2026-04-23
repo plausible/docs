@@ -16,15 +16,53 @@ There are two core goal types: **pageview goals** (no code changes required) and
 
 Plausible supports the following goal types:
 
-| Goal                | Explanation                                                                                        |
-|--------------------------|----------------------------------------------------------------------------------------------------|
-| [Pageview goals](pageview-goals.md) | Measure how many people visit a specific page or section of your site. Use these to track the "thank you" page or the order confirmation page. Since pageviews are collected automatically, you don’t need to change your website’s code to measure pageview goals. This makes them the easiest way to start tracking conversions on your site  |
-| [Custom event goals](custom-event-goals.md) | Measure button clicks, purchases, subscriptions, clicks on video or audio elements and pretty much any other action that you wish  |
-| [Funnel analysis](funnel-analysis.md) | Follow the visitor journey from a landing page to a conversion in order to uncover possible issues, optimize your site and increase the conversion rate                                   |
-| [Ecommerce revenue tracking](ecommerce-revenue-tracking.md)          | Assign dynamic monetary values to goals and custom events to track revenue attribution   |
-| [Custom properties](/custom-props/introduction)  | Send custom data with pageviews and custom events to create custom metrics  |
-| [Outbound link clicks](outbound-link-click-tracking.md) | Automatically measure clicks on external links     |
-| [Form submissions](form-submissions-tracking.md) | Automatically measure when a visitor completes a form     |
-| [File downloads](file-downloads-tracking.md)  | Automatically measure when a visitor clicks a link leading to a file |
-| [404 error pages](error-pages-tracking-404.md)  | Automatically measure page not found errors |
-| [Pretty URLs clicks](custom-automatic-link-tracking.md)  | Automatically track clicks on cloaked affiliate links and other pretty URLs |
+<table>
+  <thead>
+    <tr>
+      <th style={{width: ‘220px’}}>Goal</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="pageview-goals">Pageview goals</a></td>
+      <td>Measure how many people visit a specific page or section of your site. Use these to track the "thank you" page or the order confirmation page. Since pageviews are collected automatically, you don’t need to change your website’s code to measure pageview goals. This makes them the easiest way to start tracking conversions on your site</td>
+    </tr>
+    <tr>
+      <td><a href="custom-event-goals">Custom event goals</a></td>
+      <td>Measure button clicks, purchases, subscriptions, clicks on video or audio elements and pretty much any other action that you wish</td>
+    </tr>
+    <tr>
+      <td><a href="funnel-analysis">Funnel analysis</a></td>
+      <td>Follow the visitor journey from a landing page to a conversion in order to uncover possible issues, optimize your site and increase the conversion rate</td>
+    </tr>
+    <tr>
+      <td><a href="ecommerce-revenue-tracking">Ecommerce revenue tracking</a></td>
+      <td>Assign dynamic monetary values to goals and custom events to track revenue attribution</td>
+    </tr>
+    <tr>
+      <td><a href="/custom-props/introduction">Custom properties</a></td>
+      <td>Send custom data with pageviews and custom events to create custom metrics</td>
+    </tr>
+    <tr>
+      <td><a href="outbound-link-click-tracking">Outbound link clicks</a></td>
+      <td>Automatically measure clicks on external links</td>
+    </tr>
+    <tr>
+      <td><a href="form-submissions-tracking">Form submissions</a></td>
+      <td>Automatically measure when a visitor completes a form</td>
+    </tr>
+    <tr>
+      <td><a href="file-downloads-tracking">File downloads</a></td>
+      <td>Automatically measure when a visitor clicks a link leading to a file</td>
+    </tr>
+    <tr>
+      <td><a href="error-pages-tracking-404">404 error pages</a></td>
+      <td>Automatically measure page not found errors</td>
+    </tr>
+    <tr>
+      <td><a href="custom-automatic-link-tracking">Pretty URLs clicks</a></td>
+      <td>Automatically track clicks on cloaked affiliate links and other pretty URLs</td>
+    </tr>
+  </tbody>
+</table>
