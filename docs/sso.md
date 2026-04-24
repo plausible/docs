@@ -66,11 +66,11 @@ The configuration process consists of four major stages:
 
 ### Initiating SSO Setup in Plausible
 
-- Go to the "**Configuration**" section of "**Single Sign-On**" under "**Team Settings**"
+- Go to the **Configuration** section of **Single Sign-On** under **Team Settings**
 
   <img alt="Starting SSO configuration" src={useBaseUrl('img/sso-start-config.png')} />
 
-- Click "**Start Configuring SSO**" button
+- Click **Start Configuring SSO** button
 
   <img alt="SSO configuration parameters for IdP" src={useBaseUrl('img/sso-sp-config-params.png')} />
 
@@ -97,19 +97,19 @@ Step-by-step instructions for commonly used identity providers:
 
 ### Finishing SAML SSO Setup in Plausible
 
-- Go back to "**Configuration**" section of "**Single Sign-On**" under "**Team Settings**" and click "**Start Configuring**"
+- Go back to **Configuration** section of **Single Sign-On** under **Team Settings** and click **Start Configuring**
 
   <img alt="SSO configuration parameters for IdP" src={useBaseUrl('img/sso-sp-config-params.png')} />
 
-- Fill the form with parameters obtained after configuring identity provider and click "**Save**"
+- Fill the form with parameters obtained after configuring identity provider and click **Save**
 
   <img alt="SSO configuration parameters for SP" src={useBaseUrl('img/sso-idp-config-params.png')} />
 
   :::tip Make sure to not mix up the inputs!
-  It's pretty common for "**SSO URL / Sign-on URL / Login URL**" and "**Entity ID / Issuer Identifier**" to contain very similar URLs. It's easy to mistake one for the other. This can result in weird behaviour when trying to log in via SSO login form, like browser downloading a file instead of redirecting to identity provider's portal.
+  It's pretty common for **SSO URL / Sign-on URL / Login URL** and **Entity ID / Issuer Identifier** to contain very similar URLs. It's easy to mistake one for the other. This can result in weird behaviour when trying to log in via SSO login form, like browser downloading a file instead of redirecting to identity provider's portal.
   :::
 
-- Enter domain name used in email addresses of identities that should be allowed to log in to this team through SSO and click "**Add Domain**"
+- Enter domain name used in email addresses of identities that should be allowed to log in to this team through SSO and click **Add Domain**
 
   <img alt="Adding SSO domain" src={useBaseUrl('img/sso-add-domain.png')} />
 
@@ -117,12 +117,12 @@ Step-by-step instructions for commonly used identity providers:
 
   <img alt="Verifying SSO domain" src={useBaseUrl('img/sso-verify-domain.png')} />
 
-- Scroll to "**SSO Domains**" and wait until "**Status**" changes to "validated"
+- Scroll to **SSO Domains** and wait until **Status** changes to "validated"
 
   <img alt="Pending SSO domain" src={useBaseUrl('img/sso-domains-table-pending.png')} />
 
   :::tip Validation taking too long?
-  You can click "**Cancel**" at any time and then click "**Verify**", optionally review verification instructions and then kick off verification again by clicking "**Run Verification Now**"
+  You can click **Cancel** at any time and then click **Verify**, optionally review verification instructions and then kick off verification again by clicking **Run Verification Now**
   :::
 
 - Once the verification succeeds, the domain is marked as verified
@@ -137,7 +137,7 @@ From that point on, SSO should be fully functional and it should be possible to 
 
 While this step is not strictly necessary to use SSO, it's important for ensuring only members provisioned through identity provider have access to the team.
 
-SSO enforcement can be enabled from "**SSO Policy**" section of SSO configuration.
+SSO enforcement can be enabled from **SSO Policy** section of SSO configuration.
 
 <img alt="SSO policy with force SSO disabled" src={useBaseUrl('img/sso-policy-disabled.png')} />
 
@@ -148,7 +148,7 @@ There are conditions that have to be met before "Force Single Sign-On" can be e
 - All Owners must have 2FA enabled
 
 :::tip What if not all Owners can enable 2FA at the time of setup?
-It might happen in a team with multiple Owners that some of them might be away and not able to enable 2FA right away. One way to resolve this is temporarily changing their role to "**Admin**". Once they are back, they can log in through identity provider, enable 2FA and ask to have their role changed back to "**Owner**".
+It might happen in a team with multiple Owners that some of them might be away and not able to enable 2FA right away. One way to resolve this is temporarily changing their role to **Admin**. Once they are back, they can log in through identity provider, enable 2FA and ask to have their role changed back to **Owner**.
 :::
 
 If any of those conditions are not met, the switch is disabled and the reason is outlined once you hover over it.
@@ -158,7 +158,7 @@ If any of those conditions are not met, the switch is disabled and the reason is
 Once all conditions are met and you enable enforcement, logging in through identity provider will be the only way to access the team.
 
 :::tip Owners can still use standard login in case of emergency
-Providing this fallback is important to provide a way to resolve issues with misconfigured or malfunctioning identity provider. Please note, however, that Owners must still log in at least once through identity provider in order to access the team with "**Force Single Sign-On**" enabled.
+Providing this fallback is important to provide a way to resolve issues with misconfigured or malfunctioning identity provider. Please note, however, that Owners must still log in at least once through identity provider in order to access the team with **Force Single Sign-On** enabled.
 :::
 
 ## SSO Domains
@@ -195,7 +195,7 @@ You have to put `<meta name="plausible-sso-verification" content="<domain identi
 
 ## SSO Policy
 
-SSO policy can be configured from "**Configuration**" section of "**Single Sign-On**" under "**Team Settings**".
+SSO policy can be configured from **Configuration** section of **Single Sign-On** under **Team Settings**.
 
 <img alt="SSO policy with force SSO disabled" src={useBaseUrl('img/sso-policy-disabled.png')} />
 
@@ -211,10 +211,10 @@ SSO account session timeout in Plausible is always counted relative to the time 
 
 ## Team Management
 
-- Team members who have already provisioned their accounts through SSO are distinctly labeled as such on members list under "**Team Settings**"
+- Team members who have already provisioned their accounts through SSO are distinctly labeled as such on members list under **Team Settings**
 
 <img alt="Team members list with labels" src={useBaseUrl('img/sso-team-members-list.png')} />
 
-- All team members' active SSO sessions can be viewed and optionally logged out in "**Sessions**" section of "**Single Sign-On**" under "**Team Settings**"
+- All team members' active SSO sessions can be viewed and optionally logged out in **Sessions** section of **Single Sign-On** under **Team Settings**
 
 <img alt="SSO sessions" src={useBaseUrl('img/sso-sessions.png')} />

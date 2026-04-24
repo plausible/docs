@@ -6,9 +6,9 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 To integrate your website with Plausible Analytics, you need to insert a Plausible tracking snippet into the header section of your site. Place the snippet within the `<head> … </head>` tags.
 
-We display your snippet during the process of adding a new site to your account. For sites that you've already added to your account, you can find your JavaScript snippet by [logging into your Plausible account](https://plausible.io/sites). Here you'll find the list of websites you've added to Plausible.
+We display your snippet during the process of adding a new site to your account. For sites that you've already added to your account, you can find your JavaScript snippet by [the Sites page](https://plausible.io/sites), which lists all the websites you've added to Plausible.
 
-Click on the menu icon on the right-hand side of the site you'd like to get the snippet for and choose "**Settings**" to enter the [site settings](website-settings.md). Then scroll down to the "**Site Installation**" area of the "**General**" section. Click on the "**Review Installation**" button to get the installation details including your snippet.
+Click on the menu icon on the right-hand side of the site you'd like to get the snippet for and choose **Settings** to enter the [site settings](website-settings.md). Then scroll down to the **Site Installation** area of the **General** section. Click on the **Review Installation** button to get the installation details including your snippet.
 
 There you can also enable any [optional enhanced measurements](script-extensions.md).
 

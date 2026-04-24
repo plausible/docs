@@ -26,22 +26,22 @@ Use [teams](users-roles.md) to invite another team owner, then have them remove 
 <img alt="Transfer ownership of a site to a different user" src={useBaseUrl('img/new-transfer-ownership-different-user.png')} />
 
 1. Go to [site settings](website-settings.md) for the site you want to transfer
-2. Click "**Danger Zone**" in the left sidebar
-3. Under "**Transfer Site Ownership**", enter the recipient's email address
-4. Click "**Request transfer**"
+2. Click **Danger Zone** in the left sidebar
+3. Under **Transfer Site Ownership**, enter the recipient's email address
+4. Click **Request transfer**
 
 The recipient will get an email notification. They need to log in (or register for a Plausible account) and accept the request within 48 hours. If they don't have an active subscription, they'll need to upgrade before accepting.
 
-After the transfer, you keep "**Guest Editor**" access to the site. The new owner can [change your role or remove your access](users-roles.md) at any time.
+After the transfer, you keep **Guest Editor** access to the site. The new owner can [change your role or remove your access](users-roles.md) at any time.
 
 ## Transfer to a team
 
 <img alt="Transfer ownership of a site to a team" src={useBaseUrl('img/new-transfer-site-ownership-team.png')} />
 
 1. Go to site settings for the site you want to transfer
-2. Click "**Danger Zone**" in the left sidebar
-3. Under "**Change Teams**", select the destination team
-4. Click "**Change team**"
+2. Click **Danger Zone** in the left sidebar
+3. Under **Change Teams**, select the destination team
+4. Click **Change team**
 
 The destination team must have an active subscription with a plan that supports the transfer.
 
@@ -50,9 +50,9 @@ The destination team must have an active subscription with a plan that supports 
 If a site is currently part of a team but you want it to appear under **My Personal Sites**, you can transfer the ownership to yourself.
 
 1. Go to site settings for the site you want to move
-2. Click "**Danger Zone**" in the left sidebar
-3. Under "**Transfer Site Ownership**", enter the email address of your own Plausible account
-4. Click "**Request transfer**"
+2. Click **Danger Zone** in the left sidebar
+3. Under **Transfer Site Ownership**, enter the email address of your own Plausible account
+4. Click **Request transfer**
 
 You’ll receive an email invitation to accept the transfer. Once accepted, the site will move from the team to your **My Personal Sites** section.
 

@@ -20,9 +20,9 @@ It's technically not possible to embed a password-protected dashboard. When you 
 
 ## 2. Generate the embed code
 
-In the "**Visibility**" area of your website settings there's the "**Embed dashboard**" section where you can generate the embed code.
+In the **Visibility** area of your website settings there's the **Embed dashboard** section where you can generate the embed code.
 
-Enter your shared link URL, select the theme of the embed dashboard (light, dark or system), optionally choose a custom background color and click on the "**Generate embed code**" button.
+Enter your shared link URL, select the theme of the embed dashboard (light, dark or system), optionally choose a custom background color and click on the **Generate embed code** button.
 
 :::tip You can set the background color as `transparent` in the embed code
 It's much more convenient than figuring out the hex code for your background color

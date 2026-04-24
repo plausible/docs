@@ -27,7 +27,7 @@ Here you can enter "[Site Settings](website-settings.md)" but also switch to a d
 
 ## Set a different chart interval
 
-You can **set a different unit of time the stats on the chart are grouped by** in the options menu (the **⋮** icon in the top right of the chart). Click it and select "**Graph interval**". The available interval options depend on the date range you've selected. For example, if you select "Today", you can display the stats by minute or by hour.
+You can **set a different unit of time the stats on the chart are grouped by** in the options menu (the **⋮** icon in the top right of the chart). Click it and select **Graph interval**. The available interval options depend on the date range you've selected. For example, if you select "Today", you can display the stats by minute or by hour.
 
 <div class="browser">
     <img alt="Today intervals in top graph" src={useBaseUrl('img/v2/intervals-minutes-hours.webp')} />
@@ -53,7 +53,7 @@ Select "Compare" in the date picker or press the "X" key on your keyboard to ena
 
 ## Realtime dashboard
 
-By clicking on the number of "**current visitors**" (defined as those that visited the site in the last 5 minutes) or by selecting "**Realtime**" in the date picker in the top right, you can see the realtime dashboard that tells you what's happening on your site live in that moment.
+By clicking on the number of **current visitors** (defined as those that visited the site in the last 5 minutes) or by selecting **Realtime** in the date picker in the top right, you can see the realtime dashboard that tells you what's happening on your site live in that moment.
 
 The realtime dashboard also includes a pageview graph for the last 30 minutes. It's updated every 30 seconds so you don’t have to refresh it to stay up to date.
 
@@ -63,7 +63,7 @@ The realtime dashboard also includes a pageview graph for the last 30 minutes. I
 
 You can go granular and click on any of the entries in any of the reports to filter your Plausible dashboard by it. You can mix and match filters too. This is an easy way for you to segment your audience. For instance you can drill down to see traffic coming from a specific marketing campaign to a specific landing page over time.
 
-You can also use the "**Filter**" button on the top of your dashboard which gives you extra functionality. It allows you to filter the dashboard by multiple sources, countries, pages and more, all at once. You can also search for any metric, exclude segments of your audience and group pages with options such as "**is not**", "**contains**" and "**does not contain**". [Learn more about filtering here](filters-segments.md).
+You can also use the **Filter** button on the top of your dashboard which gives you extra functionality. It allows you to filter the dashboard by multiple sources, countries, pages and more, all at once. You can also search for any metric, exclude segments of your audience and group pages with options such as "is not", "contains" and "does not contain". [Learn more about filtering here](filters-segments.md).
 
 <div class="browser">
     <video autoPlay loop muted controls width="100%">
@@ -73,15 +73,15 @@ You can also use the "**Filter**" button on the top of your dashboard which give
 
 ## Detailed metrics and Sorting
 
-You can click the "**Details**" button in any report to get an expanded view and see the full list with additional metrics such as "**Visitors**", "**Bounce Rate**", "**Visit Duration**", "**Scroll Depth**", "**Unique Conversions**", "**Total Conversions**", "**Conversion Rate**" and more, depending on the report type.
+You can click the expand icon in the top right of any section to get an expanded view and see the full list with additional metrics such as **Visitors**, **Bounce Rate**, **Visit Duration**, **Scroll Depth**, **Unique Conversions**, **Total Conversions**, **Conversion Rate** and more, depending on the section.
 
 You can sort any report by such performance metrics by clicking on any metric heading to sort and arrange your data in ascending or descending order.
 
-## Top Sources
+## Sources
 
-See all the acquisition channels and sources of traffic ranked by the number of unique visitors. You can click on the "**Details**" button to see the full list which also includes additional metrics such as the bounce rate and visit duration of the individual referral.
+See all the acquisition channels and sources of traffic ranked by the number of unique visitors. You can click the expand icon in the top right to see the full list which also includes additional metrics such as the bounce rate and visit duration of the individual referral.
 
-You can use the "**Campaigns**" dropdown section in the Top Sources report to view your campaigns separately from other traffic sources. These are visitors coming from UTM tagged links such as those in your emails, social media or in your paid advertising campaigns. Click on "**Medium**", "**Source**", "**Campaign**", "**Term**" and "**Content**" to explore these.
+You can use the **Campaigns** tab to view your campaigns separately from other traffic sources. These are visitors coming from UTM tagged links such as those in your emails, social media or in your paid advertising campaigns. Click on **Medium**, **Source**, **Campaign**, **Term** and **Content** to explore these.
 
 :::tip Referral sources are counted per session
 UTM parameters and other referral sources are only recorded when they start a new session. [Read more about how sources are counted](top-referrers.md).
@@ -91,9 +91,9 @@ UTM parameters and other referral sources are only recorded when they start a ne
 
 ## Top Pages
 
-See all the most visited pages on your site ranked by the number of unique visitors. You can click on the "**Details**" button to see the full list with additional metrics. The number of pageviews, bounce rate, time on page and scroll depth for the individual pages are included too.
+See all the most visited pages on your site ranked by the number of unique visitors. You can click the expand icon in the top right to see the full list with additional metrics. The number of pageviews, bounce rate, time on page and scroll depth for the individual pages are included too.
 
-You can also get insights into the visitor flow by looking at the "**Entry pages**" and "**Exit pages**". Click on the "**Details**" button to see the full list with additional metrics. For "**Entry pages**" details include visit duration for visits that started on a specific page and for "**Exit pages**" details include the exit rate percentage. [Read more here](top-pages.md).
+You can also get insights into the visitor flow by looking at the **Entry pages** and **Exit pages**. Click the expand icon in the top right to see the full list with additional metrics. For **Entry pages** this includes visit duration for visits that started on a specific page and for **Exit pages** this includes the exit rate percentage. [Read more here](top-pages.md).
 
 :::tip Looking for the definitions of the metrics you have access to?
 [See this list](metrics-definitions.md)
@@ -101,7 +101,7 @@ You can also get insights into the visitor flow by looking at the "**Entry pages
 
 ## Locations
 
-See the list of countries, regions and cities your traffic is coming from. You can click on the "**Details**" button to see the full list ranked by the number of visitors. [Read more here](countries.md).
+See the list of countries, regions and cities your traffic is coming from. You can click the expand icon in the top right to see the full list ranked by the number of visitors. [Read more here](countries.md).
 
 :::tip Want a quicker way to navigate the dashboard?
 You can use the keyboard shortcuts to do so. Here's [the full list of shortcuts we support](keyboard-shortcuts.md)

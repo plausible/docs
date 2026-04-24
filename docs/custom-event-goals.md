@@ -159,11 +159,11 @@ var toTag = [
 
 When you send custom events to Plausible, they won't show up in your dashboard automatically. You'll have to configure the goal for the conversion numbers to show up.
 
-To configure a goal, go to [your website's settings](website-settings.md) in your Plausible account and visit the "**Goals**" section. You should see a list of current goals with a prompt to add a goal.
+To configure a goal, go to [your website's settings](website-settings.md) in your Plausible account and visit the **Goals** section. You should see a list of current goals with a prompt to add a goal.
 
 <img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
 
-Click on the "**+ Add goal**" button to go to the goal creation form.
+Click on the **+ Add goal** button to go to the goal creation form.
 
 Select `Custom event` as the goal trigger and enter the name of the custom event you are triggering. The name must match the one you added as a CSS class name on your site for conversions to appear in your analytics dashboard. So in our example where you added a CSS class name `plausible-event-name=Button+Click`, the goal to add to your Plausible account is `Button Click` (plus is replaced by a space).
 
@@ -173,9 +173,9 @@ When creating a custom event goal, you can optionally narrow it down using custo
 
 <img alt="Add your custom event goal" src={useBaseUrl('img/custom-events-in-plausible-setup-modal.png')} />
 
-Next, click on the "**Add goal**" button and you'll be taken back to the Goals page. When you navigate back to your Plausible dashboard, you should see the number of visitors who triggered the custom event. Custom events are listed at the bottom of your dashboard and will appear as soon as the first conversion has been tracked.
+Next, click on the **Add goal** button and you'll be taken back to the Goals page. When you navigate back to your Plausible dashboard, you should see the number of visitors who triggered the custom event. Custom events are listed at the bottom of your dashboard and will appear as soon as the first conversion has been tracked.
 
-If you happen to be sending events to Plausible already, you might see the following message under the "**Add goal**" button:
+If you happen to be sending events to Plausible already, you might see the following message under the **Add goal** button:
 
 <img alt="Add all custom event goals in a single action" src={useBaseUrl('img/add-all-event-goals.png')} />
 

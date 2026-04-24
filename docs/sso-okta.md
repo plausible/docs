@@ -11,11 +11,11 @@ Before configuring Okta, you have to [initiate SSO setup in Plausible](sso#initi
 
   <img alt="Okta applications list" src={useBaseUrl('img/sso-okta-applications-empty.png')} />
 
-- Click **Create App Integration**, pick **SAML 2.0** and click "**Next**"
+- Click **Create App Integration**, pick **SAML 2.0** and click **Next**
 
   <img alt="Okta app integration selection" src={useBaseUrl('img/sso-okta-app-integration-select.png')} />
 
-- Put "Plausible" in the App name field, optionally upload a [logo](/img/plausible_logo.png) and click "**Next**"
+- Put "Plausible" in the App name field, optionally upload a [logo](/img/plausible_logo.png) and click **Next**
 
   <img alt="Google Workspace app details" src={useBaseUrl('img/sso-okta-app-name-logo.png')} />
 
@@ -23,7 +23,7 @@ Before configuring Okta, you have to [initiate SSO setup in Plausible](sso#initi
 
   <img alt="Okta service provider configuration details" src={useBaseUrl('img/sso-okta-sp-details.png')} />
 
-- Scroll down to **Attribute Statements**, click "**Add Another**" two times and set the following mappings:
+- Scroll down to **Attribute Statements**, click **Add Another** two times and set the following mappings:
 
   - `first_name`: `user.firstName`
   - `last_name`: `user.lastName`
@@ -33,16 +33,16 @@ Before configuring Okta, you have to [initiate SSO setup in Plausible](sso#initi
 
   <img alt="Okta attribute statements" src={useBaseUrl('img/sso-okta-attr-statements.png')} />
 
-- Scroll down and click "**Next**"
-- Click "**Finish**" in the final setup wizard step
+- Scroll down and click **Next**
+- Click **Finish** in the final setup wizard step
 
   <img alt="Okta feedback step" src={useBaseUrl('img/sso-okta-feedback.png')} />
 
-- Go to "**Assignments**" tab and give People or Groups access to Plausible
+- Go to **Assignments** tab and give People or Groups access to Plausible
 
   <img alt="Okta assignments" src={useBaseUrl('img/sso-okta-assignments.png')} />
 
-- Go back to "**Sign On**" tab and click "**More details**" under SAML 2.0 settings
+- Go back to **Sign On** tab and click **More details** under SAML 2.0 settings
 
   <img alt="Okta app overview" src={useBaseUrl('img/sso-okta-app-overview.png')} />
 

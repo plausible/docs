@@ -14,21 +14,21 @@ Here's how you can import your historical Google Analytics stats into your Plaus
 
 1. Go to the Plausible Analytics [site settings](website-settings.md) for the website you'd like to import the data for.
 
-2. In the "**Imports & Exports**" section, find the "**Import Data**" panel. You can link your Google account to your Plausible account by clicking on the "**Google Analytics**" button.
+2. In the **Imports & Exports** section, find the **Import Data** panel. You can link your Google account to your Plausible account by clicking on the **Google Analytics** button.
 
 <img alt="Import Google Analytics data into Plausible" src={useBaseUrl('img/import-google-analytics-data.png')} />
 
-3. After linking Plausible to your Google account, you'll see a drop-down selection menu listing all the existing Google Analytics properties associated with the connected Google account. Select the property that you'd like to import and click on the "**Continue**" button.
+3. After linking Plausible to your Google account, you'll see a drop-down selection menu listing all the existing Google Analytics properties associated with the connected Google account. Select the property that you'd like to import and click on the **Continue** button.
 
-4. On the next screen, you can click on the "**Confirm import**" button to start the data import process. The import should take no more than a few minutes for most sites but if you have a site with a lot of historical data, it may take up to a couple of hours to complete due to Google's API limits. You'll receive an email when the import has been completed. 
+4. On the next screen, you can click on the **Confirm import** button to start the data import process. The import should take no more than a few minutes for most sites but if you have a site with a lot of historical data, it may take up to a couple of hours to complete due to Google's API limits. You'll receive an email when the import has been completed. 
 
-5. Once you have received the email, the imported data will be visible in your Plausible dashboard alongside the native data. You can turn this off by opening the options menu (the **⋮** icon in the top right of the chart) and toggling off "**Include imported data**".
+5. Once you have received the email, the imported data will be visible in your Plausible dashboard alongside the native data. You can turn this off by opening the options menu (the **⋮** icon in the top right of the chart) and toggling off **Include imported data**.
 
 ## Import multiple Google Analytics properties into the same Plausible dashboard
 
 If you'd like to import multiple Google Analytics properties into the same Plausible dashboard, please go through the process above again and choose a different property to import. You can import a maximum of 5 different properties into the same Plausible dashboard. 
 
-In the "**Imports & Exports**" section, you can see the overview of all your existing imports to that specific Plausible dashboard. For each import, we list the Google Analytics property ID, the number of pageviews imported and the time range that the import covers.
+In the **Imports & Exports** section, you can see the overview of all your existing imports to that specific Plausible dashboard. For each import, we list the Google Analytics property ID, the number of pageviews imported and the time range that the import covers.
 
 ## How much data is imported?
 
@@ -54,7 +54,7 @@ If you have strict data retention limits in place in Google Analytics (for insta
 
 ## How do I delete the imported data?
 
-Data you have imported can be deleted by returning to your site's "**Imports & Exports**" settings page and clicking the "**Delete Import**" button in the "**Existing Imports**" section. This action won't affect the native data you have collected using our script directly.
+Data you have imported can be deleted by returning to your site's **Imports & Exports** settings page and clicking the **Delete Import** button in the **Existing Imports** section. This action won't affect the native data you have collected using our script directly.
 
 <img alt="Delete Google Analytics data from Plausible" src={useBaseUrl('img/delete-google-analytics-data.png')} />
 
@@ -80,7 +80,7 @@ To get the number of unique visitors in a longer period of time (say one month) 
 
 ### UTM sources
 
-Google Analytics aggregates UTM source under the "**source**" dimension and they don't expose a separate "**UTM source**" dimension from their API. This is why we cannot show UTM sources imported from Google Analytics.
+Google Analytics aggregates UTM source under the **source** dimension and they don't expose a separate **UTM source** dimension from their API. This is why we cannot show UTM sources imported from Google Analytics.
 
 ### Goals
 
@@ -92,7 +92,7 @@ We can import your traffic split between the different browsers but you can't dr
 
 ### Exit pages
 
-Google Analytics API does not expose this information so you cannot see the Exit Pages report for imported data. 
+Google Analytics API does not expose this information so you cannot see the **Exit Pages** tab for imported data. 
 
 ### Scroll Depth
 

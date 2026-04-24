@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 The Plausible script offers enhanced measurements and configuration options to tailor tracking to your needs.
 
-You can enable optional measurements for form submissions, outbound link clicks and file downloads when adding a new site to your Plausible account, or later in the "**Site installation**" area under "**General**" in your [site settings](website-settings.md).
+You can enable optional measurements for form submissions, outbound link clicks and file downloads when adding a new site to your Plausible account, or later in the **Site installation** area under **General** in your [site settings](website-settings.md).
 
 There are also additional measurement options that you can set up manually if needed.
 
@@ -82,9 +82,9 @@ It's especially helpful to redact and aggregate multiple pages whose URLs contai
 
 By default, Plausible strips all query parameters for privacy purposes [except for](top-referrers.md) `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term`.
 
-This means that pages like `yoursite.com/blog/index.php?article=some_article&page=11` will be reported as `yoursite.com/blog/index.php` in the "**Top Pages**" report of your Plausible dashboard.
+This means that pages like `yoursite.com/blog/index.php?article=some_article&page=11` will be reported as `yoursite.com/blog/index.php` in the **Top Pages** tab of your Plausible dashboard.
 
-By using the manual script extension, you can also track custom query parameters and get the complete page URLs in your "**Top Pages**" report. Learn here [how to do that](custom-query-params.md).
+By using the manual script extension, you can also track custom query parameters and get the complete page URLs in your **Top Pages** tab. Learn here [how to do that](custom-query-params.md).
 
 :::tip Want to track outbound link clicks or file downloads cloaked with pretty URLs?
 See these [step-by-step instructions](custom-automatic-link-tracking.md) for how to do that.

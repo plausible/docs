@@ -20,7 +20,7 @@ You can also change the chart interval, [segment your audience](filters-segments
 
 - Select your primary date range using the date picker in the top right of your dashboard or by using one of our [keyboard shortcuts](keyboard-shortcuts.md).
 
-- Then select “**Compare**” in the date picker or press the “**X**” key [on your keyboard](keyboard-shortcuts.md) to enable the comparison feature.
+- Then select **Compare** in the date picker or press `X` [on your keyboard](keyboard-shortcuts.md) to enable the comparison feature.
 
 - Choose your comparison option from the drop-down.
 
@@ -42,7 +42,7 @@ As with everything else on the dashboard, we'll save your comparison preference 
     <img alt="Comparison chart" src={useBaseUrl('img/v2/comparison-chart.webp')} />
 </div>
 
-- Want to disable the comparison and get back to the regular view? Press the “**X**” key on your keyboard or choose “**Disable comparison**” in the comparison drop-down
+- Want to disable the comparison and get back to the regular view? Press `X` on your keyboard or choose **Disable comparison** in the comparison drop-down
 
 <div class="browser">
     <img alt="Disable comparison" src={useBaseUrl('img/v2/disable-comparison.webp')} />
@@ -54,15 +54,15 @@ First, filter the dashboard in any way you want to [segment your audience](filte
 
 ### Choose a chart interval
 
-In the options menu (the **⋮** icon in the top right of the chart), you can choose the unit of time the stats on the chart are grouped by under "**Graph interval**". This gives you a more granular comparison view. The available interval options depend on the date range you've selected. For example, if you select "Last 28 days" as your primary date range, you can display the stats by day or by week.
+In the options menu (the **⋮** icon in the top right of the chart), you can choose the unit of time the stats on the chart are grouped by under **Graph interval**. This gives you a more granular comparison view. The available interval options depend on the date range you've selected. For example, if you select "Last 28 days" as your primary date range, you can display the stats by day or by week.
 
 ## Match day of the week or match exact date
 
 The comparison can be aligned by day of the week or by exact calendar date. Matching by day of the week means your primary date range is compared to the secondary date range starting with the same day of the week. This helps you eliminate discrepancies due to weekend or weekday differences.
 
-The alternative option in the comparison drop-down is to "**Match exact date**". When choosing Sunday January 1st to January 7th 2023 as the primary date range and matching by exact date, the year over year comparison will be against Saturday January 1st to January 7th 2022.
+The alternative option in the comparison drop-down is to **Match exact date**. When choosing Sunday January 1st to January 7th 2023 as the primary date range and matching by exact date, the year over year comparison will be against Saturday January 1st to January 7th 2022.
 
-But when "**Match day of the week**" is selected, the comparison will be against Sunday January 2nd to January 8th 2022 instead. It's still compared to the same amount of time but the secondary date range is aligned by day of the week to get more accurate data.
+But when **Match day of the week** is selected, the comparison will be against Sunday January 2nd to January 8th 2022 instead. It's still compared to the same amount of time but the secondary date range is aligned by day of the week to get more accurate data.
 
 <div class="browser">
     <img alt="Match exact date" src={useBaseUrl('img/v2/comparison-match-exact-date.webp')} />
@@ -74,11 +74,11 @@ Here are the details on the available comparison options:
 
 ### Previous period
 
-Your primary date range will be compared to the same amount of time in the period before it. If you select "**Last 7 days**" as your primary date range, the stats are compared to the previous seven days before it.
+Your primary date range will be compared to the same amount of time in the period before it. If you select **Last 7 days** as your primary date range, the stats are compared to the previous seven days before it.
 
 ### Year over year
 
-Your primary date range will be compared to the same period of the previous calendar year. If you select January 1st to January 7th 2023 as your primary date range and choose "**Match exact date**", a comparison to January 1st to January 7th 2022 will be shown.
+Your primary date range will be compared to the same period of the previous calendar year. If you select January 1st to January 7th 2023 as your primary date range and choose **Match exact date**, a comparison to January 1st to January 7th 2022 will be shown.
 
 ### Custom period
 

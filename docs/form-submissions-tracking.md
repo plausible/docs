@@ -16,7 +16,7 @@ All detected form submissions are grouped under one goal, and you can analyze wh
 
 ## Enable "Form submissions" for your site
 
-You can enable "**Form submissions**" as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
+You can enable **Form submissions** as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the **Site Installation** area of the **General** section in your [site settings](website-settings.md).
 
 <!-- TODO -->
 <img alt="Enable form submissions tracking during onboarding" src={useBaseUrl('img/plausible-analytics-automatic-form-submission.png')}/>
@@ -29,7 +29,7 @@ The quickest way to start tracking form submissions is to use our [official Word
 
 ## See all the form submissions in your dashboard
 
-Click on "**Form: Submission**" goal in the "**Goals**" report of your Plausible dashboard to see the full list of all form submissions and have your dashboard filtered by them. You can see:
+Click on **Form: Submission** goal in the **Goals** tab of your Plausible dashboard to see the full list of all form submissions and have your dashboard filtered by them. You can see:
 
 * The number of total form submissions
 * The number of unique form submissions

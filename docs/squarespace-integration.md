@@ -8,15 +8,15 @@ Here's how to add Plausible Analytics to your Squarespace site
 
 ## How to add Plausible to your Squarespace website 
 
-* On your site's settings page, click on "**Advanced**"  and then click on "**Code Injection**"
+* On your site's settings page, click on **Advanced**  and then click on **Code Injection**
 
-* You can use the "**[Custom Code](https://university.Squarespace.com/lesson/custom-code-in-the-head-and-body-tags)**" feature in Squarespace to add Plausible tracking code to your website. Site-wide JavaScript code injection is a premium Squarespace feature so you need to upgrade your Squarespace account to a paid subscription plan.
+* You can use the **[Custom Code](https://university.Squarespace.com/lesson/custom-code-in-the-head-and-body-tags)** feature in Squarespace to add Plausible tracking code to your website. Site-wide JavaScript code injection is a premium Squarespace feature so you need to upgrade your Squarespace account to a paid subscription plan.
 
-* [Paste your Plausible snippet](https://plausible.io/docs/plausible-script) in the "**Header Code**" section. We display your snippet during the process of adding a new site to your account. You can also see the snippet within the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
+* [Paste your Plausible snippet](https://plausible.io/docs/plausible-script) in the **Header Code** section. We display your snippet during the process of adding a new site to your account. You can also see the snippet within the **Site Installation** area of the **General** section in your [site settings](website-settings.md).
 
 <img alt="Add Plausible Analytics script to Squarespace" src={useBaseUrl('img/add-plausible-script-to-Squarespace.png')} />
 
-* Do click on the "**Save**" 
+* Do click on the **Save** 
 
 Now you can go to your Squarespace website and verify that Plausible script has been added and to your Plausible account to see whether the stats are being tracked. See here [how to verify the integration](troubleshoot-integration.md).
 
@@ -26,7 +26,7 @@ The easiest way to track form submissions on your Squarespace site is to track t
 
 ### 1. Create a "Thank you" page
 
-* First you'll need to create a "thank you" page by clicking on the "Pages" panel and creating the page by clicking on the "+" button in the "**Not Linked**" section. 
+* First you'll need to create a "thank you" page by clicking on the "Pages" panel and creating the page by clicking on the "+" button in the **Not Linked** section. 
 
 <img alt="Create the form submission thank you page in Squarespace" src={useBaseUrl('img/create-a-thank-you-page-in-Squarespace.png')} />
 
@@ -36,7 +36,7 @@ The easiest way to track form submissions on your Squarespace site is to track t
 
 ### 2. Set the redirect URL on form submission
 
-* Go to the page that contains your form, and click on "**Edit**". Now click on the form to select it and click on the pencil icon to edit it.
+* Go to the page that contains your form, and click on **Edit**. Now click on the form to select it and click on the pencil icon to edit it.
 
 <img alt="Edit the form in Squarespace" src={useBaseUrl('img/Edit-form-squarespace.png')} />
 
@@ -48,11 +48,11 @@ The easiest way to track form submissions on your Squarespace site is to track t
 
 When you send custom events to Plausible, they won't show up in your dashboard automatically. You'll have to configure the goal for the conversion numbers to show up.
 
-To configure a goal, go to [your website's settings](website-settings.md) in your Plausible account and visit the "**Goals**" section. You should see an empty list with a prompt to add a goal.
+To configure a goal, go to [your website's settings](website-settings.md) in your Plausible account and visit the **Goals** section. You should see an empty list with a prompt to add a goal.
 
 <img alt="Add your first Squarespace goal" src={useBaseUrl('img/add-goal-squarespace.png')} />
 
-Click on the "**+ Add goal**" button to go to the goal creation form. Select `Pageview` as the goal trigger and enter the and enter the page path that you want to track ( i.e. **/thank-you**)
+Click on the **+ Add goal** button to go to the goal creation form. Select `Pageview` as the goal trigger and enter the and enter the page path that you want to track ( i.e. **/thank-you**)
 
 <img alt="Thank you pageview goal in Squarespace" src={useBaseUrl('img/thank-you-pageview-goal-squarespace.png')} />
 

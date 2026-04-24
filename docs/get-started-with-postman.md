@@ -8,7 +8,7 @@ Postman is a simple interface that you can use for [our stats API](stats-api.md)
 
 1) Log in to your [Postman](https://www.postman.com/) account.
 
-2) Go to "**My Workspace**" and then "**Collections**" to create a new collection. Feel free to give it a descriptive name such as "**Plausible Stats API**".
+2) Go to **My Workspace** and then **Collections** to create a new collection. Feel free to give it a descriptive name such as **Plausible Stats API**.
 
 <img alt="Create a new collection" src={useBaseUrl('img/how-to-get-started-with-the-stats-api-using-postman-1.png')} />
 

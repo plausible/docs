@@ -14,9 +14,9 @@ Here’s how you can add your site to Search Console and then integrate the Sear
 
 ## Add your site to the Google Search Console
 
-_If your site is already set up on Google Search Console, you can skip to the "**[Allow Plausible Analytics to access your Search Console](#allow-plausible-analytics-to-access-your-search-console)**" step._
+_If your site is already set up on Google Search Console, you can skip to the **[Allow Plausible Analytics to access your Search Console](#allow-plausible-analytics-to-access-your-search-console)** step._
 
-Head over to [Google Search Console](https://search.google.com/search-console/) and click on the "**Start now**" button. If you don’t have any sites set up on Google Search Console already, you will be taken straight to the form to add a new domain. Otherwise, you can open the drop down on the top left and select "**Add property**".
+Head over to [Google Search Console](https://search.google.com/search-console/) and click on the **Start now** button. If you don’t have any sites set up on Google Search Console already, you will be taken straight to the form to add a new domain. Otherwise, you can open the drop down on the top left and select **Add property**.
 
 You can either create a domain property or a URL prefix property on Google Search Console. Check out [their documentation](https://support.google.com/webmasters/answer/34592?hl=en) to understand the difference between these options. Plausible Analytics works with both options, so it’s completely up to you.
 
@@ -36,9 +36,9 @@ Follow the provided instructions depending on which verification method you’ve
 
 ## Allow Plausible Analytics to access your Search Console
 
-Open the [site settings area](website-settings.md) for your website in your Plausible account and go into the section called "**Integrations**":
+Open the [site settings area](website-settings.md) for your website in your Plausible account and go into the section called **Integrations**:
 
-In the "**Google Search Console Integration**" module, click on the "**Continue with Google**" button which will take you through to Google’s authentication flow to get the necessary permissions.
+In the **Google Search Console Integration** module, click on the **Continue with Google** button which will take you through to Google’s authentication flow to get the necessary permissions.
 
 <div class="browser">
     <img alt="Continue with Google" src={useBaseUrl('img/v2/continue-with-google.webp')} />
@@ -62,7 +62,7 @@ You then need to grant Plausible Analytics a permission to view your Search Cons
 
 Next up, you are back in Plausible Analytics site settings where you should see a select box where you can choose which property from Google Search Console to integrate your Plausible Analytics dashboard with. Properties that start with `sc-domain:` represent domain properties and others are URL prefix properties in Search Console.
 
-Once you’ve selected your property, click on the "**Save**" button. At that point, the integration should be fully functional.
+Once you’ve selected your property, click on the **Save** button. At that point, the integration should be fully functional.
 
 <div class="browser">
     <img alt="Choose which property from Google Search Console to integrate with" src={useBaseUrl('img/v2/choose-property.webp')} />
@@ -70,7 +70,7 @@ Once you’ve selected your property, click on the "**Save**" button. At that po
 
 ### I get the "Invalid Grant" error
 
-Google may return the "**invalid_grant**" error message for several reasons:
+Google may return the **invalid_grant** error message for several reasons:
 
 - Google has a limit of 50 live tokens. When you try to add the 51st site, the site you added first will be disconnected from your Plausible account and so on. This is a limitation on Google's side so if you have more than 50 different sites in your Search Console, you will need to split them between different Google accounts to get them into Plausible at the same time
 - Your permissions for the specific site may have been changed or revoked in your Google account. Please check your Search Console account and make sure you still have the user permission to the site in question
@@ -83,7 +83,7 @@ Please make sure you tick the "View Search Console data for your verified sites"
 
 ## Check your search query data in Plausible Analytics
 
-Look at your site’s "**Top Sources**" report in your Plausible Analytics dashboard, click on "**Google**" in the list and you should see the keyword terms coming through. If you click on the "**Details**" button, you can also see the number of impressions, CTR and position for each keyword term. And you can also [filter your dashboard](filters-segments.md) by page, country or device and see the Search Console keyword terms for that segment of your audience only.
+In the **Sources** tab in your Plausible Analytics dashboard, click on **Google** and you should see the keyword terms coming through. Click the expand icon in the top right to also see the number of impressions, CTR and position for each keyword term. And you can also [filter your dashboard](filters-segments.md) by page, country or device and see the Search Console keyword terms for that segment of your audience only.
 
 <div class="browser">
     <video autoPlay loop muted controls width="100%">
@@ -97,7 +97,7 @@ Search query data isn't live. It's delayed by approximately 24-36 hours even on 
 
 So if you go back two days in your Plausible Analytics dashboard and click on Google in the referral sources you should be able to see the search queries for that day. We get the search query data directly from Google Search Console so as soon as they show up there they show up in Plausible Analytics too.
 
-Note that "**Top Sources**" will only show keywords that have sent visitors to your site. We don't display keywords that have had impressions in Google's search results but no clicks to your site. Search phrases and keywords must have at least one click for them to show up in Plausible.
+Note that **Sources** will only show keywords that have sent visitors to your site. We don't display keywords that have had impressions in Google's search results but no clicks to your site. Search phrases and keywords must have at least one click for them to show up in Plausible.
 
 ### Search query number doesn't add up to the total number of Google visitors
 
@@ -105,7 +105,7 @@ Google samples its keyword data heavily. The sampling is why your keyword visito
 
 ## Plausible Analytics will be listed in your Google account settings
 
-You can check if Plausible Analytics is integrated with and has the right permissions to your Search Console properties in your Google account within the section "**Apps with access to your account**". Here's the [direct link to that section](https://myaccount.google.com/permissions). Here's how it looks.
+You can check if Plausible Analytics is integrated with and has the right permissions to your Search Console properties in your Google account within the section **Apps with access to your account**. Here's the [direct link to that section](https://myaccount.google.com/permissions). Here's how it looks.
 
 <div class="browser">
     <img alt="Third-party apps with account access" src={useBaseUrl('img/v2/third-party-apps.webp')} />
@@ -113,6 +113,6 @@ You can check if Plausible Analytics is integrated with and has the right permis
 
 ## Remove the Google Search Console integration
 
-If you'd like to remove the Google Search Console integration, click on the "**Unlink Google account**" button in the "**Google Search Console Integration**" module within the "**Integrations**" section of your website settings.
+If you'd like to remove the Google Search Console integration, click on the **Unlink Google account** button in the **Google Search Console Integration** module within the **Integrations** section of your website settings.
 
 P.S. If you want to learn more about analyzing organic search traffic in Plausible, visit our [blog post](https://plausible.io/blog/seo-dead#analyzing-organic-search-traffic).

@@ -4,7 +4,7 @@ title: Get traffic spike or drop notifications through email
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Within the "**Email reports**" section of your website settings you can decide to enable traffic spike or drop notifications to be sent directly through email. 
+Within the **Email reports** section of your website settings you can decide to enable traffic spike or drop notifications to be sent directly through email. 
 
 This will help notify you when your site has an unusually high or low volume of traffic. 
 
@@ -12,7 +12,7 @@ This will help notify you when your site has an unusually high or low volume of 
 
 ## Set the current visitor threshold for the traffic spike notifications
 
-You need to set the "**Current visitor threshold**" for your traffic spike notifications and click on the "**Save threshold**" button. The default threshold is at 10 current visitors, but you can set it as low or as high as you want depending on your usual traffic numbers. 
+You need to set the **Current visitor threshold** for your traffic spike notifications and click on the **Save threshold** button. The default threshold is at 10 current visitors, but you can set it as low or as high as you want depending on your usual traffic numbers. 
 
 You will get the traffic spike notification when your site reaches the threshold you've set. You'll get the notification for an individual website no more than twice in a 24-hour period.
 
@@ -22,7 +22,7 @@ All the stats are embedded directly into the email and there's no need to go to 
 
 ## Set the unique visitor threshold for the traffic drop notifications
 
-You need to set the "**12 hour visitor threshold**" for your traffic drop notifications and click on the "**Save threshold**" button. The default threshold is at 1 unique visitor in the last 12 hours, but you can set it as high as you want depending on your usual traffic numbers. 
+You need to set the **12 hour visitor threshold** for your traffic drop notifications and click on the **Save threshold** button. The default threshold is at 1 unique visitor in the last 12 hours, but you can set it as high as you want depending on your usual traffic numbers. 
 
 You will get the traffic drop notification when your site falls below the threshold you've set. You'll get the notification for an individual website no more than twice in a 24-hour period.
 
@@ -30,7 +30,7 @@ You will get the traffic drop notification when your site falls below the thresh
 
 ## Set traffic spike or drop notifications to be sent to multiple recipients
 
-Traffic spike or drop notifications can be set to be sent to multiple recipients. Enable the notifications, add an individual recipient into the "**Notification recipients**" field and click on the "**Add recipient**" button. 
+Traffic spike or drop notifications can be set to be sent to multiple recipients. Enable the notifications, add an individual recipient into the **Notification recipients** field and click on the **Add recipient** button. 
 
 You can set the notifications to be sent to as many people as you want. You can remove individual recipients or completely stop the notifications at any time.
 

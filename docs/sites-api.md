@@ -30,7 +30,7 @@ Each request must be authenticated with an API key using the Bearer Token method
 
 To create a new sites API key, log in to your Plausible Analytics account. In the top-right menu, click on your account name and go to settings.
 
-Next, go to the "**API Keys**" section in the left-hand sidebar. Click the "**New API Key**" button, choose "**Sites API**" and save the key as it will only be shown once. After saving the key, click on "**Create API Key**" to confirm its creation.
+Next, go to the **API Keys** section in the left-hand sidebar. Click the **New API Key** button, choose **Sites API** and save the key as it will only be shown once. After saving the key, click on **Create API Key** to confirm its creation.
 
 After creating an API key, you can authenticate your request by sending the key in the Authorization header of your request.
 
