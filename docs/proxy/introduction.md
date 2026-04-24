@@ -61,6 +61,12 @@ All you need to do is set up a CNAME record using the instructions we'll send yo
 
 Managed proxy is available on our [Enterprise plans](https://plausible.io/enterprise-web-analytics). [Contact us for details](https://plausible.io/contact).
 
+### A note on visitor IP addresses
+
+When your proxy forwards events to Plausible, the request must include the visitor's real IP address in the `X-Forwarded-For` header. If this header is missing or contains a server, CDN, or hosting provider IP instead, Plausible's bot filtering will drop the event. The API returns HTTP 202 either way, so there is no obvious error.
+
+Most CDN-level proxies (such as Cloudflare Workers or Vercel rewrites) handle this automatically. If you are writing your own proxy function, you need to set the header explicitly. See the [Events API reference](/docs/events-api#request-headers) for details and instructions on how to check whether events are being dropped.
+
 ### Manual proxy
 
 * [Cloudflare](/docs/proxy/guides/cloudflare)

@@ -55,6 +55,10 @@ Used to explicitly set the IP address of the client. If not set, the remote IP o
 1. If sending the event from your visitors' device, this header does not need to be set
 2. If sending the event from a backend server or proxy, make sure to override this header with the correct IP address of the client.
 
+:::warning
+If you forward a server, hosting provider, or CDN IP address instead of the actual visitor IP, Plausible's bot filtering will drop the event. The API still returns HTTP 202 with no obvious error, but the event is not recorded. You can confirm this by checking for `x-plausible-dropped: 1` in the response headers.
+:::
+
 The raw value of the IP address is not stored in our database. The IP address is used to calculate the *user_id* which identifies a [unique visitor](https://plausible.io/data-policy#how-we-count-unique-users-without-cookies) in Plausible. It is also used to fill the Location report with country, region and city data of the visitor.
 
 If the header contains a comma-separated list (as it should if the request is sent through a chain of proxies), then the first valid IP address from the list is used. Both IPv4 and IPv6 addresses are supported. More information about the header format can be found on [MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Forwarded-For).
@@ -152,7 +156,11 @@ By marking a custom event as non-interactive, it will not be counted towards bou
 
 ### Debugging
 
-By default, the API returns HTTP 202 Accepted. However, if you want to debug a request and see if the `X-Forwarded-For` header is set correctly, you can add the `X-Debug-Request` header to your request. If set to `true`, the API will return an HTTP 200 OK and the IP address which we will use for unique visitor counting.
+The API always returns HTTP 202 Accepted, even when an event is dropped. To debug your setup, there are two tools:
+
+**Check if events are being dropped:** Inspect the response headers for `x-plausible-dropped: 1`. When present, the event was rejected by bot filtering. The most common cause is `X-Forwarded-For` containing a server or CDN IP instead of the actual visitor IP.
+
+**Check which IP address Plausible sees:** Add the `X-Debug-Request: true` header to your request. The API will return HTTP 200 with the IP address it will use for unique visitor counting. Use this to confirm that `X-Forwarded-For` is being forwarded correctly from your proxy.
 
 E.g: Add this header to your request and log the response.
 
