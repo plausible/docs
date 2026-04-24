@@ -10,11 +10,11 @@ Since pageviews are collected automatically, you don’t need to change your web
 
 Do you run a store and want to track purchases? Do you have a contact form and want to track form submissions? Use pageview goals to track the "thank you" page or the order confirmation page.
 
-To get started with "**Pageview Goals**", go to [your website's settings](website-settings.md) in Plausible Analytics and visit the "**Goals**" section. You should see an empty list with a prompt to add a goal.
+To get started with **Pageview Goals**, go to [your website's settings](website-settings.md) in Plausible Analytics and visit the **Goals** section. You should see an empty list with a prompt to add a goal.
 
 <img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
 
-Click the "**+ Add goal**" button to go to the goal creation form.
+Click the **+ Add goal** button to go to the goal creation form.
 
 Select `Pageview` as the goal trigger and enter the pathname of the page you would like your visitors to hit, or select the same from the dropdown. The pathname must match the page path you can see in your Plausible Analytics dashboard.
 
@@ -26,7 +26,7 @@ Next, you'll see the Display Name field, pre-filled based on the pathname. You c
 
 When creating a pageview goal, you can optionally narrow it down using custom properties. This lets you turn a broad goal into a more specific one by matching only events with certain property values. For example, you can create a pageview goal for `/dashboard` that only counts visits where `account_type = trial`, letting you measure dashboard engagement specifically from trial users.
 
-Then click the "**Add goal**" button and you’ll be taken back to the goals page. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who reached the specified page or group of pages. Goals are listed at the bottom of your dashboard.
+Then click the **Add goal** button and you’ll be taken back to the goals page. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who reached the specified page or group of pages. Goals are listed at the bottom of your dashboard.
 
 ## How to group your pages
 

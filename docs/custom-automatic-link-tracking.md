@@ -75,14 +75,14 @@ where `\/` stands for a forward slash (escaped with `\`) and `.*` will match any
 
 ## 2. Create a custom event goal in your Plausible Analytics account
 
-You'll have to configure the goal for the click numbers to show up in your Plausible dashboard. To configure a goal, go to [your website's settings](website-settings.md) in your Plausible Analytics account and visit the "**Goals**" section. You should see an empty list with a prompt to add a goal.
+You'll have to configure the goal for the click numbers to show up in your Plausible dashboard. To configure a goal, go to [your website's settings](website-settings.md) in your Plausible Analytics account and visit the **Goals** section. You should see an empty list with a prompt to add a goal.
 
 <img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
 
-Click on the "**+ Add goal**" button to go to the goal creation form.
+Click on the **+ Add goal** button to go to the goal creation form.
 
 Select `Custom event` as the goal trigger and enter this exact name: `Cloaked Link: Click`.
 
-Next, click on the "**Add goal**" button and you'll be taken back to the Goals page. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who have completed your new custom event. Goals are listed at the bottom of your dashboard. Note that at least one click is required for this to show in your dashboard.
+Next, click on the **Add goal** button and you'll be taken back to the Goals page. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who have completed your new custom event. Goals are listed at the bottom of your dashboard. Note that at least one click is required for this to show in your dashboard.
 
 That's it. You're now tracking all link clicks on your site with custom URL matching rules!

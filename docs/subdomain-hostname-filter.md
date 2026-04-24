@@ -40,17 +40,17 @@ Here's how to track the user journey across your domain name and its subdomains.
 
 You can also filter your dashboard by hostname. Your dashboard will show all traffic across all your domains by default but filtering by a subdomain allows you to segment your traffic and view stats from a specific subdomain only.
 
-Filtering by hostname comes in handy also if you have pages with identical page paths on different sites (say `yourdomain.com/best-page/` and `docs.yourdomain.com/best-page/`). These identical page paths will be listed under one entry (`/best-page/`) in the "**Top Pages**" report on your global dashboard with the stats combined into that one entry. When filtering by hostname, you can see the number of visitors and pageviews on `yourdomain.com/best-page/` separately from the number of visitors and pageviews on `docs.yourdomain.com/best-page/`.
+Filtering by hostname comes in handy also if you have pages with identical page paths on different sites (say `yourdomain.com/best-page/` and `docs.yourdomain.com/best-page/`). These identical page paths will be listed under one entry (`/best-page/`) in the **Top Pages** tab on your global dashboard with the stats combined into that one entry. When filtering by hostname, you can see the number of visitors and pageviews on `yourdomain.com/best-page/` separately from the number of visitors and pageviews on `docs.yourdomain.com/best-page/`.
 
-To filter by hostname, click on [the "**Filter**" button](filters-segments.md) in the top-right of your dashboard and choose the "**Hostname**" entry within the menu.
+To filter by hostname, click on [the **Filter** button](filters-segments.md) in the top-right of your dashboard and choose the **Hostname** entry within the menu.
 
 <img alt="Filter by subdomain" src={useBaseUrl('img/filter-by-hostname-or-subdomain.png')} />
 
 We'll show you the list of all the hostnames we have recorded in the chosen time range:
 
-* You can filter your traffic by one or more specific hostnames from the list ("**is**")
-* You can exclude the traffic from one or multiple hostnames (**is not**)
-* You can segment by all hostnames that contain any particular word (**contains**)
+* You can filter your traffic by one or more specific hostnames from the list ("is")
+* You can exclude the traffic from one or multiple hostnames ("is not")
+* You can segment by all hostnames that contain any particular word ("contains")
 
 <img alt="List of subdomains" src={useBaseUrl('img/list-of-hostnames-and-subdomains.png')} />
 
@@ -81,8 +81,8 @@ You can [exclude your internal traffic](https://plausible.io/docs/excluding) by 
 If you prefer to only record traffic from specific hostnames (and block all the other traffic), you can do so in your site settings: 
 
 * Visit the [site settings area](website-settings.md) for the dashboard in question
-* Choose "**Hostnames**" in the "**Shields**" entry in the left-hand menu
-* Then click on the "**Add Hostname**" button to add a new hostname to your allow list
+* Choose **Hostnames** in the **Shields** entry in the left-hand menu
+* Then click on the **Add Hostname** button to add a new hostname to your allow list
 
 You can group your hostnames when adding them to the allow list:
 
@@ -125,4 +125,4 @@ If you'd rather have a single dashboard covering all domains and don't need sepa
 
 If you don't want to track visitors of a specific subdomain together with those of your other sites in the same dashboard, you should add that subdomain as a separate site to your Plausible account.
 
-For example, if your subdomain is `https://blog.yourdomain.com` then the part to enter in the "**Domain**" field when adding a new site is `blog.yourdomain.com`. This would give you one dedicated and standalone dashboard for that particular subdomain.
+For example, if your subdomain is `https://blog.yourdomain.com` then the part to enter in the **Domain** field when adding a new site is `blog.yourdomain.com`. This would give you one dedicated and standalone dashboard for that particular subdomain.

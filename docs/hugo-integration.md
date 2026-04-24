@@ -8,7 +8,7 @@ There are several simple ways to integrate Plausible Analytics with your Hugo do
 
 ## Option 1 - recommended setup: Plausible Analytics community plugin
 
-* "**[A Hugo plugin for Plausible Analytics](https://github.com/divinerites/plausible-hugo)**". Built and maintained by Divinerites.
+* **[A Hugo plugin for Plausible Analytics](https://github.com/divinerites/plausible-hugo)**. Built and maintained by Divinerites.
 
 You'll find included a [detailed documentation](https://github.com/divinerites/plausible-hugo/blob/master/README.md) for using it.
 

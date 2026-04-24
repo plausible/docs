@@ -1,18 +1,18 @@
 ---
-title: Your sites landing page
+title: The Sites page
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-When you log into your Plausible Analytics account, you are met with the ["**My Sites**" landing page](https://plausible.io/sites), where we list all the websites you have access to.
+When you log into your Plausible Analytics account, you are met with [the **Sites page**](https://plausible.io/sites), which lists all the websites you have access to.
 
 <div class="browser">
     <img alt="Plausible Analytics" src={useBaseUrl('img/v2/list-of-sites.webp')} />
 </div>
 
-In the top right, you can access your account settings, switch between teams or log out of your account. Further down the "**My Sites**" page, you have the search box on the left so you can quickly find any site. And, the sorting option and the "**+ Add a website**" button on the right so you can [add a new site](add-website.md) to your account.
+In the top right, you can access your account settings, switch between teams or log out of your account. Further down the Sites page, you have the search box on the left so you can quickly find any site. And, the sorting option and the **+ Add a website** button on the right so you can [add a new site](add-website.md) to your account.
 
-The rest of the "**My Sites**" page features all your sites. To give you a quick overview, we display the number of visitors in the last 24 hours next to each site. There's also a graph of each site for a quick overview of the traffic and a comparison to the previous 24 hour period so you can see the trend.
+The rest of the Sites page features all your sites. To give you a quick overview, we display the number of visitors in the last 24 hours next to each site. There's also a graph of each site for a quick overview of the traffic and a comparison to the previous 24 hour period so you can see the trend.
 
 If you have multiple websites, there's also [the consolidated view](consolidated-views.md) which gives you an overview of traffic across all your websites. This allows you to quickly see the total number of visitors and other key metrics across all your properties in one place.
 
@@ -30,15 +30,15 @@ We use a proxy for this request to ensure your information is not exposed to Gra
 
 ## Website settings
 
-You can click on any website to enter [its stats dashboard](guided-tour.md) or you can click on the menu icon on the right-hand side of the domain name and choose "**Settings**" to enter the [website settings section](website-settings.md). That's where you can add team members, create custom events, set up funnels and more.
+You can click on any website to enter [its stats dashboard](guided-tour.md) or you can click on the menu icon on the right-hand side of the domain name and choose **Settings** to enter the [website settings section](website-settings.md). That's where you can add team members, create custom events, set up funnels and more.
 
-There are a couple of keyboard shortcuts that you can use on the "**My Sites**" page. You can press `/` to start a search or press the `Esc` key to clear the search. For more shortcuts that you can use on the dashboard itself, take a look at [this list](keyboard-shortcuts.md).
+There are a couple of keyboard shortcuts that you can use on the Sites page. You can press `/` to start a search or press the `Esc` key to clear the search. For more shortcuts that you can use on the dashboard itself, take a look at [this list](keyboard-shortcuts.md).
 
 ## Pin your most-used sites for quick access
 
-You can pin sites that you want to feature at the top of your sites page. You can pin up to nine sites. The most recently pinned site will automatically appear at the top of your list, helping you organize your dashboards by how often you use them.
+You can pin sites that you want to feature at the top of the Sites page. You can pin up to nine sites. The most recently pinned site will automatically appear at the top of your list, helping you organize your dashboards by how often you use them.
 
-To pin a site, click on the menu icon on the right-hand side of the domain name and then choose "**Pin Site**". To unpin a site, click on the menu icon on any of your pinned sites and then choose "**Unpin Site**".
+To pin a site, click on the menu icon on the right-hand side of the domain name and then choose **Pin Site**. To unpin a site, click on the menu icon on any of your pinned sites and then choose **Unpin Site**.
 
 <div class="browser">
     <video autoPlay loop muted controls width="100%">

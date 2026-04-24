@@ -8,7 +8,7 @@ You can add Plausible Analytics tracking code to your Discourse community by add
 
 ## Step 1: Get your Plausible snippet
 
-We display your snippet during the process of adding a new site to your account. You can also see the snippet within the "**Site Installation**" area of the "**General** section in your [site settings](website-settings.md).
+We display your snippet during the process of adding a new site to your account. You can also see the snippet within the **Site Installation** area of the **General** section in your [site settings](website-settings.md).
 
 ## Step 2: Install snippet in Discourse
 
@@ -24,7 +24,7 @@ We display your snippet during the process of adding a new site to your account.
 
 * Note: If you're using a proxy, see [relevant instructions](/proxy/introduction.md).
 
-* After adding your code, click on the "**Save**" button at the bottom and go back to the component screen. If it saved properly, you should see the `head` section called out as a 'custom section' under the CSS/HTML header.
+* After adding your code, click on the **Save** button at the bottom and go back to the component screen. If it saved properly, you should see the `head` section called out as a 'custom section' under the CSS/HTML header.
 
 Discourse will automatically add a nonce to the script to satisfy the Content Security Policy headers so no further action is necessary for that.
 

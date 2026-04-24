@@ -11,7 +11,7 @@ Our managed proxy lets you send analytics through your own domain name as a firs
 
 ## Step 1: Get your snippet
 
-In the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md) you can see
+In the **Site Installation** area of the **General** section in your [site settings](website-settings.md) you can see
 the snippet specific for your site. It will look similar to the following:
 
 ```html

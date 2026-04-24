@@ -10,15 +10,15 @@ Here's how to add Plausible Analytics to your Shopify store and set up the track
 
 * Log in to your Shopify account and click on Sales Channels > Online Store > Themes in the left-hand side menu.
 
-* Click on the icon with three dots next to your current theme and choose "**Edit code**" from the drop-down menu.
+* Click on the icon with three dots next to your current theme and choose **Edit code** from the drop-down menu.
 
 <img alt="Add Plausible to Shopify" src={useBaseUrl('img/add-custom-code-to-shopify.png')} />
 
-* In the "**Layout**" folder, select your "**theme.liquid**" file and [paste your Plausible snippet](https://plausible.io/docs/plausible-script) in the "**Head Code**" section. We display your snippet during the process of adding a new site to your account. You can also see the snippet within the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
+* In the **Layout** folder, select your **theme.liquid** file and [paste your Plausible snippet](https://plausible.io/docs/plausible-script) in the **Head Code** section. We display your snippet during the process of adding a new site to your account. You can also see the snippet within the **Site Installation** area of the **General** section in your [site settings](website-settings.md).
 
 <img alt="Add Plausible Analytics script to Shopify" src={useBaseUrl('img/add-plausible-script-to-shopify.png')} />
 
-* Do click on the "**Save Changes**" to publish your changes.
+* Do click on the **Save Changes** to publish your changes.
 
 ## Track checkouts and revenue attribution
 
@@ -31,17 +31,17 @@ To create the custom pixel, follow these steps:
 
 <img alt="Shopify Settings" src={useBaseUrl('img/shopify-settings-revenue-metrics.png')} />
 
-* Open the "**Customer events**" section, and click on "**Add custom pixel**"
-* Choose a name for your pixel (e.g. "**Plausible**")
-* Copy and paste the snippet into the "**Code**" block according to your tracking needs [as instructed below](#snippet-options-for-the-custom-pixel)
-* Click "**Save**" at the top, then connect the pixel
+* Open the **Customer events** section, and click on **Add custom pixel**
+* Choose a name for your pixel (e.g. **Plausible**)
+* Copy and paste the snippet into the **Code** block according to your tracking needs [as instructed below](#snippet-options-for-the-custom-pixel)
+* Click **Save** at the top, then connect the pixel
 * That's it - your custom Plausible pixel should now be tracking!
 
 <img alt="Shopify add pixel" src={useBaseUrl('img/shopify-add-pixel.png')} />
 
 ## Snippet options for the custom pixel
 
-The code that will end up in your pixel depends on what you want to track. The first code block (**Setup block**) is required for everything else to work. Everything that follows the "**Setup block**" is optional. You can copy and paste the code blocks that you're interested in, one after another.
+The code that will end up in your pixel depends on what you want to track. The first code block (**Setup block**) is required for everything else to work. Everything that follows the **Setup block** is optional. You can copy and paste the code blocks that you're interested in, one after another.
 
 ### Setup block [Required]
 
@@ -90,7 +90,7 @@ analytics.subscribe('page_viewed', async (event) => {
 
 You can then group all visits to checkout pages into one set of pages in your Plausible dashboard to better analyze your marketing campaigns and performance.
 
-Click on the "**Filter**" button on the top right of your dashboard and then choose "**Page**". Here you can combine URLs to analyze them as one group. Filter by "**contains**" `thank_you` to combine all the purchase confirmations or by "**contains**" `checkouts` to group all the checkouts.
+Click on the **Filter** button on the top right of your dashboard and then choose **Page**. Here you can combine URLs to analyze them as one group. Filter by "contains" `thank_you` to combine all the purchase confirmations or by "contains" `checkouts` to group all the checkouts.
 
 Doing this will segment your dashboard by the traffic that went through the checkout process and successfully placed orders. You'll be able to see the referral sources and landing pages that drove the most conversions. You'll also be able to see the location and device details of the buyers too.
 
@@ -100,7 +100,7 @@ If you'd like to see these grouped order confirmations or checkout page visits p
 
 ### Track started checkouts
 
-Send a custom event called "**Begin Checkout**" to Plausible every time the checkout process is started. The total price of the shopping cart will be recorded under this event.
+Send a custom event called **Begin Checkout** to Plausible every time the checkout process is started. The total price of the shopping cart will be recorded under this event.
 
 ```javascript
 // Track started checkouts
@@ -121,7 +121,7 @@ In order to see this information on your Plausible dashboard, you should:
 
 ### Track payment info added during checkout
 
-Send a custom event called "**Add Payment Info**" to Plausible every time payment information is submitted by a customer during the checkout. The total price of the shopping cart will be recorded under this event.
+Send a custom event called **Add Payment Info** to Plausible every time payment information is submitted by a customer during the checkout. The total price of the shopping cart will be recorded under this event.
 
 ```javascript
 // Track payment info added during checkout
@@ -142,7 +142,7 @@ In order to see this information on your Plausible dashboard, you should:
 
 ### Track completed checkouts (purchases)
 
-Send a custom event called "**Purchase**" to Plausible every time a checkout is completed. The total amount paid by the customer will be recorded under this event.
+Send a custom event called **Purchase** to Plausible every time a checkout is completed. The total amount paid by the customer will be recorded under this event.
 
 ```javascript
 // Track completed checkouts
@@ -163,7 +163,7 @@ In order to see this information on your Plausible dashboard, you should:
 
 ### Track "Add to Cart"
 
-Send a custom event "**Add to Cart**" to Plausible when an item gets added to the shopping cart. Each "**Add to Cart**" event also captures the following information:
+Send a custom event **Add to Cart** to Plausible when an item gets added to the shopping cart. Each **Add to Cart** event also captures the following information:
 
 * `productTitle` (custom property) - title of the product added to cart
 * `quantity` (custom property) - number of items added to cart
@@ -193,7 +193,7 @@ In order to see this information on your Plausible dashboard, you should:
 
 ### Track site searches
 
-Send a custom event called "**Search**" to Plausible when a site search is performed. This event also includes a `searchQuery` custom property, containing the string value that was used for the search.
+Send a custom event called **Search** to Plausible when a site search is performed. This event also includes a `searchQuery` custom property, containing the string value that was used for the search.
 
 ```javascript
 // Track site searches
@@ -214,7 +214,7 @@ In order to see this information on your Plausible dashboard, you should:
 
 Should you need something more specific that's not covered by the tracking snippets we've listed above, even with a tiny bit of coding experience, it's pretty straight forward to implement your own custom tracking pixel.
 
-Simply put, you're working with two APIs (application programming interfaces) - Plausible and Shopify. You just need to plug the right pieces together. The "**Add to Cart**" event is a really good and elaborate example, using both revenue attribution and custom properties. Let's see how it works.
+Simply put, you're working with two APIs (application programming interfaces) - Plausible and Shopify. You just need to plug the right pieces together. The **Add to Cart** event is a really good and elaborate example, using both revenue attribution and custom properties. Let's see how it works.
 
 ```javascript
 analytics.subscribe('product_added_to_cart', async (event) => {
@@ -304,23 +304,23 @@ To represent a space character in goal names, you can use a `+` sign. For exampl
 
 <img alt="Modify Plausible script" src={useBaseUrl('img/modify-plausible-script-shopify.png')} />
 
-Do click on the "**Save**" button to save your changes.
+Do click on the **Save** button to save your changes.
 
 ### 3. Create a custom event goal in your Plausible account
 
 When you send custom events to Plausible, they won't show up in your dashboard automatically. You'll have to configure the goal for the conversion numbers to show up.
 
-To configure a goal, go to [your website's settings](website-settings.md) in your Plausible account and visit the "**Goals**" section. You should see an empty list with a prompt to add a goal.
+To configure a goal, go to [your website's settings](website-settings.md) in your Plausible account and visit the **Goals** section. You should see an empty list with a prompt to add a goal.
 
 <img alt="Add your first Shopify goal" src={useBaseUrl('img/add-goal-shopify.png')} />
 
-Click on the "**+ Add goal**" button to go to the goal creation form. Select `Custom event` as the goal trigger and enter the name of the custom event you are triggering. The name must be an exact match to the one you added to your site for the conversions to show up in your dashboard.
+Click on the **+ Add goal** button to go to the goal creation form. Select `Custom event` as the goal trigger and enter the name of the custom event you are triggering. The name must be an exact match to the one you added to your site for the conversions to show up in your dashboard.
 
 So in our example where we added a goal name `plausible-event-name=Form+Submit` to the Shopify site, the goal to add in the Plausible account is `Form Submit` (plus is replaced by a space).
 
 <img alt="Add your custom event goal" src={useBaseUrl('img/form-submission-custom-event-goal-shopify.png')} />
 
-Next, click on the "**Add goal**" button and you'll be taken back to the Goals page.
+Next, click on the **Add goal** button and you'll be taken back to the Goals page.
 
 ### 4. Your goal should now be ready and tracking
 

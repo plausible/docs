@@ -14,7 +14,7 @@ Your subscription tier is based on the total number of **pageviews** and **[cust
 
 Custom events include outbound link clicks, file downloads, 404 error tracking and any manually tracked events. Adding a [pageview goal](pageview-goals.md) does not count towards your usage.
 
-Check your current usage in the "**Subscription**" section of your account settings and pick a tier that matches.
+Check your current usage in the **Subscription** section of your account settings and pick a tier that matches.
 
 <div class="browser">
     <img alt="Plausible subscription" src={useBaseUrl('img/v2/account-settings-subscription.webp')} />

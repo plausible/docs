@@ -14,7 +14,7 @@ See how to [invite team members and set user roles](users-roles.md)
 
 ## How to create a shared link
 
-Go to the "**Visibility**" area of your website settings and find the "**Shared links**" section. Click the "**Add shared link**" button. A modal will open up where you will find the following options.
+Go to the **Visibility** area of your website settings and find the **Shared links** section. Click the **Add shared link** button. A modal will open up where you will find the following options.
 
 <img alt="share stats with collaborators" src={useBaseUrl('img/shared-links-in-plausible-analytics.png')} />
 

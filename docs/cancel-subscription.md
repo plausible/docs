@@ -4,9 +4,9 @@ title: Cancel your subscription plan
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Log in to your Plausible account. In the top right menu, click your account name → "**Account Settings**".
+Log in to your Plausible account. In the top right menu, click your account name → **Account Settings**.
 
-Go to the "**Subscription**" section and click "**Cancel plan**".
+Go to the **Subscription** section and click **Cancel plan**.
 
 <div class="browser">
     <img alt="Cancel your Plausible subscription" src={useBaseUrl('img/v2/account-settings-cancel-subscription.webp')} />
@@ -32,6 +32,6 @@ You can delete your data at any time, before or after canceling, either for indi
 
 **Resubscribing**
 
-If you resubscribe at any time within the retention period, your dashboards unlock automatically, data collection resumes and all your historical data will still be there. You can resubscribe from the "**Subscription**" section in your account settings.
+If you resubscribe at any time within the retention period, your dashboards unlock automatically, data collection resumes and all your historical data will still be there. You can resubscribe from the **Subscription** section in your account settings.
 
 Want to switch plans instead of canceling? See [Change your subscription plan](change-plan.md).

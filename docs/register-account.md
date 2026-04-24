@@ -8,7 +8,7 @@ To use Plausible Analytics, you need to [register an account](https://plausible.
 
 You can test all the different features and use Plausible on multiple sites during the trial. Plausible is so lightweight that you can run it alongside Google Analytics without any negative impact on your site's performance.
 
-Fill in your full name and email address, choose your account password and click on the "**Start my free trial**" button.
+Fill in your full name and email address, choose your account password and click on the **Start my free trial** button.
 
 <div class="browser">
     <img alt="Register for an account with Plausible Analytics" src={useBaseUrl('img/v2/register-account.webp')} />
@@ -16,7 +16,7 @@ Fill in your full name and email address, choose your account password and click
 
 ## Verify your email address
 
-We'll send you an email to verify your email address. Look for an email with the subject line "**Your Plausible email verification code**".
+We'll send you an email to verify your email address. Look for an email with the subject line **Your Plausible email verification code**.
 
 Please enter the four digit code that we sent to you through email to activate your Plausible Analytics account.
 

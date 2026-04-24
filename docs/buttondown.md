@@ -10,33 +10,33 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Newsletter signups won’t show up automatically in your Plausible dashboard. You’ll have to configure the goal for them to show up.
 
-To configure a goal, go to your website’s settings in your Plausible Analytics account and visit the "**Goals**" section. You should see a prompt to add a goal.
+To configure a goal, go to your website’s settings in your Plausible Analytics account and visit the **Goals** section. You should see a prompt to add a goal.
 
 <img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
 
-Click on the "**+ Add goal**" button to go to the goal creation form.
+Click on the **+ Add goal** button to go to the goal creation form.
 
 Select `Custom event` as the goal trigger and enter this exact name: `Subscribe`.
 
 <img alt="Add Subscribe goal" src={useBaseUrl('img/add-a-subscribe-goal.png')} />
 
-Next, click on the "**Add goal**" button, and you’ll be taken back to the Goals page. After you've completed this process, all the newsletter signups will start being tracked and will be displayed in the "**Goals**" report of your Plausible Analytics dashboard. 
+Next, click on the **Add goal** button, and you’ll be taken back to the Goals page. After you've completed this process, all the newsletter signups will start being tracked and will be displayed in the **Goals** tab of your Plausible Analytics dashboard. 
 
-You'll see "**Subscribe**" goal as soon as the first subscriber has been tracked. That's all you need to do. Plausible will automatically record new goals (including which page your subscriber is on) whenever you get a new subscriber.
+You'll see **Subscribe** goal as soon as the first subscriber has been tracked. That's all you need to do. Plausible will automatically record new goals (including which page your subscriber is on) whenever you get a new subscriber.
 
 ## How to track outbound link clicks
 
 Outbound link clicks won’t show up automatically in your Plausible dashboard. You’ll have to configure the goal for them to show up.
 
-To configure a goal, go to your website’s settings in your Plausible Analytics account and visit the "**Goals**" section like you just did above. Click on the "**+ Add goal**" button to go to the goal creation form.
+To configure a goal, go to your website’s settings in your Plausible Analytics account and visit the **Goals** section like you just did above. Click on the **+ Add goal** button to go to the goal creation form.
 
 Select `Custom event` as the goal trigger and enter this exact name: `Outbound Link: Click`.
 
 <img alt="Add Outbound Link Click goal" src={useBaseUrl('img/outbound-link-click-goal.png')} />
 
-Next, click on the "**Add goal**" button to be taken back to the Goals page. After you've completed this process, all the external link clicks will start being tracked and will be displayed in the "**Goals**" report of your Plausible Analytics dashboard. 
+Next, click on the **Add goal** button to be taken back to the Goals page. After you've completed this process, all the external link clicks will start being tracked and will be displayed in the **Goals** tab of your Plausible Analytics dashboard. 
 
-You'll see "**Outbound Link: Click**" goal as soon as the first external link click has been tracked. That's all you need to do. Plausible will automatically record new external link clicks.
+You'll see **Outbound Link: Click** goal as soon as the first external link click has been tracked. That's all you need to do. Plausible will automatically record new external link clicks.
 
 ## Verify that the stats are being tracked
 

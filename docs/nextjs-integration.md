@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 You can add the script directly to your head through "next/head" or react-helmet. However there is a simpler way that also provides custom events functionality:
 
-"**[Next-Plausible](https://github.com/4lejandrito/next-plausible)**" built and maintained by [4lejandrito](https://github.com/4lejandrito). It supports:
+**[Next-Plausible](https://github.com/4lejandrito/next-plausible)** built and maintained by [4lejandrito](https://github.com/4lejandrito). It supports:
 
 ## Serving the Plausible script
 

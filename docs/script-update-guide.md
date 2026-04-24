@@ -10,7 +10,7 @@ Previously, managing different script extensions could be cumbersome for Plausib
 
 ## Getting the new snippet
 
-You can see the new snippet within the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
+You can see the new snippet within the **Site Installation** area of the **General** section in your [site settings](website-settings.md).
 
 Your Plausible tracking snippet should be inserted into [the Header (`<head>`) section of your site](plausible-script.md). Place the tracking script within the `<head> … </head>` tags.
 

@@ -4,7 +4,7 @@ title: Consolidated View
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-If you have multiple websites in your Plausible account, the "**Consolidated View**" gives you an overview of traffic across all of them. This allows you to quickly see the total number of visitors and other key metrics across all your properties in one place.
+If you have multiple websites in your Plausible account, the **Consolidated View** gives you an overview of traffic across all of them. This allows you to quickly see the total number of visitors and other key metrics across all your properties in one place.
 
 It looks just like any other Plausible dashboard, but the data includes all your sites instead of just one. This way you can get detailed insights into individual site performance and a holistic view of your whole network too.
 
@@ -25,13 +25,13 @@ It looks just like any other Plausible dashboard, but the data includes all your
 
 ## A holistic view of your whole network
 
-Your consolidated view will appear automatically on [the /sites page](landing-page.md) if you have a [team](/users-roles#creating-a-new-team) with at least two sites.
+Your consolidated view will appear automatically on [the Sites page](landing-page.md) if you have a [team](/users-roles#creating-a-new-team) with at least two sites.
 
 The consolidated view requires no setup, configuration or ongoing maintenance. Your consolidated dashboard automatically includes the stats from all of the sites in your team.
 
 When you add a new site to your team, it will automatically be included in the consolidated view. When you remove a site from your team, all the data from that site including historical stats will automatically be removed from the consolidated view too.
 
-Just like a regular site, a consolidated view has its own settings. You can access the settings directly from the /sites page, or the site picker menu on the top left of the consolidated dashboard.
+Just like a regular site, a consolidated view has its own settings. You can access the settings directly from the Sites page, or the site picker menu on the top left of the consolidated dashboard.
 
 <div class="browser">
     <img alt="Consolidated traffic view" src={useBaseUrl('img/v2/consolidated-view-settings.webp')} />

@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Is the billing based per account or per website?
 
-Billing is based on total usage across all the sites in a team. Each team has its own subscription and is billed separately. Check your usage numbers at any time in the "**Subscription**" section of your account settings. For details on how usage is calculated, see [Choose the right subscription](subscription-plans.md).
+Billing is based on total usage across all the sites in a team. Each team has its own subscription and is billed separately. Check your usage numbers at any time in the **Subscription** section of your account settings. For details on how usage is calculated, see [Choose the right subscription](subscription-plans.md).
 
 ## Can I manage multiple clients with separate billing for each?
 
@@ -28,11 +28,11 @@ If paying via PayPal, make sure a valid card is linked to your PayPal account. P
 
 ## How do I add my VAT number?
 
-If you're purchasing on behalf of a business, click "**Add VAT number**" on the second step of the checkout, where you also add your payment details. Paddle handles all sales tax calculations and will apply the correct rate based on your details.
+If you're purchasing on behalf of a business, click **Add VAT number** on the second step of the checkout, where you also add your payment details. Paddle handles all sales tax calculations and will apply the correct rate based on your details.
 
 <img class="border" alt="Add VAT number at checkout" src={useBaseUrl('img/v2/add-vat-number-during-checkout.webp')} />
 
-If you missed this step, open any Paddle invoice and click "**Add address & VAT Number**". Paddle will automatically refund the VAT on your original payment and apply the correct rate to future payments. [More on Paddle's VAT handling →](https://paddle.com/support/which-countries-does-paddle-charge-vat-for/)
+If you missed this step, open any Paddle invoice and click **Add address & VAT Number**. Paddle will automatically refund the VAT on your original payment and apply the correct rate to future payments. [More on Paddle's VAT handling →](https://paddle.com/support/which-countries-does-paddle-charge-vat-for/)
 
 ## How do I change my VAT number?
 
@@ -40,7 +40,7 @@ Paddle does not allow editing the VAT number on an existing subscription. To upd
 
 ## How do I change my billing address?
 
-Open any invoice and click "**Edit business address**" to update your street address, city or postal code.
+Open any invoice and click **Edit business address** to update your street address, city or postal code.
 
 ## How do I change the country on my subscription?
 
@@ -66,7 +66,7 @@ If you downgrade to a lower tier, the unused portion of your current billing per
 
 ## How do I update my payment method?
 
-In your account settings, go to the "**Subscription**" section. Under "**Next bill amount**", click "**Update billing info**".
+In your account settings, go to the **Subscription** section. Under **Next bill amount**, click **Update billing info**.
 
 <div class="browser">
     <img alt="Update Plausible billing information" src={useBaseUrl('img/v2/account-settings-update-billing-info.webp')} />

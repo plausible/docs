@@ -24,9 +24,9 @@ The only permission that will be asked for is to make an external API request, w
 
 ## Insert your Plausible Stats API key
 
-After authorizing your Google account, you will be prompted to enter your Plausible Analytics Stats API key. You can create a new API key for our Stats API by going to your Plausible Analytics account, navigating to "**Account Settings**" and clicking on the section called "**API Keys**".
+After authorizing your Google account, you will be prompted to enter your Plausible Analytics Stats API key. You can create a new API key for our Stats API by going to your Plausible Analytics account, navigating to **Account Settings** and clicking on the section called **API Keys**.
 
-Click the "**New API Key**" button and be sure to save the result as you will only see the key once. However, you can always delete the key and create a new one if you no longer remember what it is.
+Click the **New API Key** button and be sure to save the result as you will only see the key once. However, you can always delete the key and create a new one if you no longer remember what it is.
 
 <img alt="Create your Plausible stats API key" src={useBaseUrl('img/create-stats-api-key-looker.png')} />
 
@@ -40,19 +40,19 @@ This means you have successfully linked your Plausible Analytics account to Look
 
 You can select one or more of your Plausible sites to create a custom report. Simply tick the box next to each site that you want to include data for.
 
-At this stage, you can check to "**Allow "Plausible Site(s)" to be modified in reports**". This default option in Looker Studio lets you add a dropdown in your report to switch between your Plausible sites. If you don’t check it, you won’t have this feature.
+At this stage, you can check **Allow "Plausible Site(s)" to be modified in reports**. This default option in Looker Studio lets you add a dropdown in your report to switch between your Plausible sites. If you don’t check it, you won’t have this feature.
 
-You also have the ability to choose whether or not you want to constantly pull data in real-time by checking the "**Data Refreshed in Real-time**" box. Looker Studio doesn’t refresh automatically, so this option ensures it fetches fresh data whenever you make changes to your report, like reordering tables or adding metrics.
+You also have the ability to choose whether or not you want to constantly pull data in real-time by checking the **Data Refreshed in Real-time** box. Looker Studio doesn’t refresh automatically, so this option ensures it fetches fresh data whenever you make changes to your report, like reordering tables or adding metrics.
 
 If this box is not checked, the connector will by default cache data for 6 hours. This will make your reports quicker and will limit the number of API requests used by the connector which for most Plausible plans are limited to 600 per hour. If you have special needs for more API requests per hour, please [contact us](https://plausible.io/contact) to request more capacity.
 
-Once these options are configured, you can click "**Connect**" and you will see a list of all available fields for data and metrics that you can pull from Plausible.
+Once these options are configured, you can click **Connect** and you will see a list of all available fields for data and metrics that you can pull from Plausible.
 
 <img alt="Configure the Plausible Looker Studio connector" src={useBaseUrl('img/choose-site-and-connect-looker.png')} />
 
 ## Create your custom reports
 
-Finally, you can either click on "**Create Report**" or "**Explore**" to begin using your Plausible data in Looker Studio. Explore is best for ad-hoc data exploration while reports are best for creating set reports that you can share with others.
+Finally, you can either click on **Create Report** or **Explore** to begin using your Plausible data in Looker Studio. Explore is best for ad-hoc data exploration while reports are best for creating set reports that you can share with others.
 
 That's it! You're ready to start creating your custom reports using the Plausible Analytics data.
 

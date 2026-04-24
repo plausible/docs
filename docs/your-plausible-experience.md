@@ -28,7 +28,7 @@ To minimize the amount of traffic that falls within the "direct / none" referral
 
 `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term` query parameters are all valid and supported by Plausible Analytics. [Learn more here](top-referrers.md).
 
-You'll then be able to follow the visitor journey from a paid ad click to a conversion on your site directly in your Plausible dashboard. All the UTM tagged clicks will be displayed in the Campaign tabs of your Top Sources report and all the conversions will be in the Goals section. You can then [filter your Plausible dashboard](filters-segments.md) by a specific goal to see conversion rate for all the individual sources of traffic, landing pages and so on.
+You'll then be able to follow the visitor journey from a paid ad click to a conversion on your site directly in your Plausible dashboard. All the UTM tagged clicks will be displayed in the **Campaigns** tab and all the conversions will be in the Goals section. You can then [filter your Plausible dashboard](filters-segments.md) by a specific goal to see conversion rate for all the individual sources of traffic, landing pages and so on.
 
 Read also our guide on [how to use UTM parameters to track your campaigns and understand the dark traffic](https://plausible.io/blog/utm-tracking-tags).
 

@@ -10,8 +10,8 @@ To enable the 2FA on your Plausible account, you are required to insert the secu
 
 ## How to enable 2FA
 
-* Log in to your Plausible Analytics account and in the top right menu, click on your account name and choose "**Account Settings**" to enter your account settings.
-* In the "**Security**" section, find “**Two-Factor Authentication (2FA)**” and click on the “**Enable 2FA**” button.
+* Log in to your Plausible Analytics account and in the top right menu, click on your account name and choose **Account Settings** to enter your account settings.
+* In the **Security** section, find “**Two-Factor Authentication (2FA)**” and click on the “**Enable 2FA**” button.
 <img alt="Enable 2FA" src={useBaseUrl('img/enable-2FA.png')} />
 * Link your Plausible account to your authenticator app by scanning the QR code or pasting the code manually. Then click on the “**Proceed**” button.
 * Enter the verification code from your authenticator application and click on the “**Verify**” button.
@@ -24,18 +24,18 @@ To enable the 2FA on your Plausible account, you are required to insert the secu
 To improve your account security, you can require all your team members to enable two-factor authentication (2FA):
 
 * First, set up a team if you haven’t already. Here’s [how to create one](users-roles.md).
-* In the top-right menu, click your account name, select the team you want to manage, then open "**Team Settings**".
-* In the "**General**" section of "**Team Settings**", you’ll find the "**Force Two-Factor Authentication (2FA)**" option.
-* Click "**Enforce 2FA**" to make it mandatory for all team members.
+* In the top-right menu, click your account name, select the team you want to manage, then open **Team Settings**.
+* In the **General** section of **Team Settings**, you’ll find the **Force Two-Factor Authentication (2FA)** option.
+* Click **Enforce 2FA** to make it mandatory for all team members.
 <img alt="Enforce 2FA" src={useBaseUrl('img/enforce-2fa.png')} />
 * Confirm by clicking OK. All members, including you, will need to set up 2FA before they can access the team sites.
-* To remove the requirement later, click "**Stop Forcing 2FA**".
+* To remove the requirement later, click **Stop Forcing 2FA**.
 
 ## How to generate new recovery codes
 
 Have you lost your recovery codes? You can generate new codes at any time. You can use a recovery code to log in to your Plausible account if you lose access to your authenticator app or your trusted device.
 
-* In your Plausible account settings "**Security**" section, find “**Two-Factor Authentication (2FA)**” and click the “**Generate new**” link.
+* In your Plausible account settings **Security** section, find “**Two-Factor Authentication (2FA)**” and click the “**Generate new**” link.
 <img alt="Generate new 2FA recovery codes" src={useBaseUrl('img/generate-new-recovery-codes-2FA.png')} />
 * Confirm your account password and click the “**Generate New Codes**” button.
 <img alt="Generate new 2FA recovery codes" src={useBaseUrl('img/enter-password-to-generate-new-codes-2FA.png')} />
@@ -45,7 +45,7 @@ Note that when you generate new recovery codes, your old recovery codes will bec
 
 ## How to disable 2FA
 
-* In your Plausible account settings "**Security**" section, find “**Two-Factor Authentication (2FA)**” and click on the “**Disable 2FA**” button.
+* In your Plausible account settings **Security** section, find “**Two-Factor Authentication (2FA)**” and click on the “**Disable 2FA**” button.
 <img alt="Disable 2FA" src={useBaseUrl('img/disable-2FA.png')} />
 * Then enter your account password and click the “**Disable 2FA**” button to complete the process.
 

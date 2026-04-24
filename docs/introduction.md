@@ -31,7 +31,7 @@ slug: /
 <li><a href="compare-stats">Compare periods</a>: benchmark against previous time ranges</li>
 <li><a href="consolidated-views">Consolidated view</a>: all your sites in one dashboard</li>
 <li><a href="realtime-dashboard">Real-time dashboard</a>: live view of current visitors</li>
-<li><a href="top-referrers">Top referrers and UTM campaigns</a>: where traffic comes from</li>
+<li><a href="top-referrers">Channels, sources and campaigns</a>: where traffic comes from</li>
 <li><a href="scroll-depth">Scroll depth</a>: see how far visitors read down your pages</li>
 <li><a href="google-search-console-integration">Google Search Console</a>: see search queries alongside your stats</li>
 </ul>

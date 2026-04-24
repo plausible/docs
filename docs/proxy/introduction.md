@@ -43,7 +43,7 @@ https://<yourdomain.com>/api/event    -> https://plausible.io/api/event
 
 When the browser requests a file at `https://yourdomain.com/js/script.js` it will actually be fetched from `https://plausible.io/js/pa-XXXXX.js`. The analytics will work exactly the same but the script will be served without being flagged.
 
-In this case, `/js/pa-XXXXX.js` is the script location specific for your site. You can find it in the "**Site Installation**" area of the "**General**" section in your [site settings](website-settings.md).
+In this case, `/js/pa-XXXXX.js` is the script location specific for your site. You can find it in the **Site Installation** area of the **General** section in your [site settings](website-settings.md).
 
 :::tip Using WordPress?
 The quickest way to enable a proxy is to use our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin)

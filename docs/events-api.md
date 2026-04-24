@@ -43,7 +43,7 @@ curl -i -X POST https://plausible.io/api/event \
 The raw value of User-Agent is used to calculate the *user_id* which identifies a [unique visitor](https://plausible.io/data-policy#how-we-count-unique-users-without-cookies)
 in Plausible.
 
-User-Agent is also used to populate the _Devices_ report in your Plausible dashboard. The device data is derived from the open source database [device-detector](https://github.com/matomo-org/device-detector). If your User-Agent is not showing up in your dashboard, it's probably because it is not recognized as one in the _device-detector_ database.
+User-Agent is also used to populate the **Browsers**, **Operating Systems** and **Devices** tabs in your Plausible dashboard. The device data is derived from the open source database [device-detector](https://github.com/matomo-org/device-detector). If your User-Agent is not showing up in your dashboard, it's probably because it is not recognized as one in the _device-detector_ database.
 
 The header is required but bear in mind that browsers and some HTTP libraries automatically add a default User-Agent header to HTTP requests. In case of browsers, we would not recommend overriding the header manually unless you have a specific reason to.
 

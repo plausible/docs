@@ -12,8 +12,8 @@ You can export your stats directly from the top chart of your Plausible dashboar
 
 1. Select the date range in the top right of your Plausible dashboard to view the specific time period
 2. [Filter your dashboard](filters-segments.md) by any metric that you wish to create a specific audience segment. Do include a goal in the filter (such as external link clicks, file downloads or custom events) if you're looking to export specific conversion metrics
-3. If applicable, open the options menu (the **⋮** icon in the top right of the chart) and toggle "**Include imported data**" to choose whether you want your imported data to be included in the export
-4. Then open the options menu and click "**Export stats**" to download the stats for your chosen view and segment
+3. If applicable, open the options menu (the **⋮** icon in the top right of the chart) and toggle **Include imported data** to choose whether you want your imported data to be included in the export
+4. Then open the options menu and click **Export stats** to download the stats for your chosen view and segment
 
 <img alt="Exporting your website stats" src={useBaseUrl('img/download-website-stats.png')} />
 
@@ -30,7 +30,7 @@ Note that for the export to be as quick as possible, the individual CSV files ar
 Here's how to export all the native data collected for a particular Plausible dashboard to date. This export method is slower, cannot be segmented and is best suited for data portability purposes. It also doesn't include any data that you imported from external sources.
 
 1. Go to the Plausible Analytics [site settings](website-settings.md) for the website for which you'd like to export the data
-2. In the "**Imports & Exports**" section, find the "**Export Data**" panel and click on the "**Export to CSV**" button
+2. In the **Imports & Exports** section, find the **Export Data** panel and click on the **Export to CSV** button
 3. Your export will be queued and we'll email you when it's ready for download. You'll have 24 hours to download the data after the export is ready
 
 ## Use the stats API

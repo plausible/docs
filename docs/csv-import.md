@@ -18,11 +18,11 @@ Here's how you can import your historical stats into your Plausible dashboard by
 
 1. Go to the Plausible Analytics [site settings](website-settings.md) for the website you'd like to import the data to.
 
-2. Go into the "**Imports & Exports**" section, find the "**Import Data**" panel and click on the "**CSV**" button to import your CSV files.
+2. Go into the **Imports & Exports** section, find the **Import Data** panel and click on the **CSV** button to import your CSV files.
 
 <img alt="Import CSV" src={useBaseUrl('img/import-csv.png')} />
 
-3. Select all the CSV files that you'd like to import and click on the "**Confirm import**" button. When importing your stats from different analytics tools, please ensure that each CSV file follows our CSV format guidelines. The guidelines are listed at the end of this document.
+3. Select all the CSV files that you'd like to import and click on the **Confirm import** button. When importing your stats from different analytics tools, please ensure that each CSV file follows our CSV format guidelines. The guidelines are listed at the end of this document.
 
 <img alt="Select CSV and import" src={useBaseUrl('img/select-csv-to-import.png')} />
 
@@ -38,19 +38,19 @@ No data export/import is needed in this case either. We have an easy way to [cha
 
 1. First you need to export your stats. Go to the Plausible [site settings](website-settings.md) for the website you'd like to export the data for.
 
-2. Go into the "**Imports & Exports**" section, find the "**Export Data**" panel and click on the "**Export to CSV**" button to export all the data. Note that only native data can be exported. Any data imported from external sources such as Google Analytics will be excluded from the export.
+2. Go into the **Imports & Exports** section, find the **Export Data** panel and click on the **Export to CSV** button to export all the data. Note that only native data can be exported. Any data imported from external sources such as Google Analytics will be excluded from the export.
 
-3. Then go to the site you'd like to import the data to. In the "**Imports & Exports**" section, find the "**Import Data**" panel and click on the "**CSV**" button to import your CSV files.
+3. Then go to the site you'd like to import the data to. In the **Imports & Exports** section, find the **Import Data** panel and click on the **CSV** button to import your CSV files.
 
-4. Make sure to select all the CSV files that you've exported and click on the "**Confirm import**" button. If you don't select all the exported files, some data may be missing from your import.
+4. Make sure to select all the CSV files that you've exported and click on the **Confirm import** button. If you don't select all the exported files, some data may be missing from your import.
 
-5. Imported data will be displayed alongside your native Plausible data in the same Plausible dashboard. You can turn this off by opening the options menu (the **⋮** icon in the top right of the chart) and toggling off "**Include imported data**".
+5. Imported data will be displayed alongside your native Plausible data in the same Plausible dashboard. You can turn this off by opening the options menu (the **⋮** icon in the top right of the chart) and toggling off **Include imported data**.
 
 ## Multiple imports into the same Plausible dashboard
 
 If you'd like to make several imports into the same Plausible dashboard, please go through the process above again and choose different CSV files to import. You can import a maximum of 5 different properties into one Plausible dashboard. You can import using both of our import methods (CSV files and Google Analytics import) into the same Plausible dashboard.
 
-In the "**Imports & Exports**" section, you can see the overview of all your existing imports to that specific Plausible dashboard. For each import, we list the ID, the number of pageviews imported and the time range that the import covers.
+In the **Imports & Exports** section, you can see the overview of all your existing imports to that specific Plausible dashboard. For each import, we list the ID, the number of pageviews imported and the time range that the import covers.
 
 ## How much data is imported?
 
@@ -58,7 +58,7 @@ Data is imported in aggregate for each date, from your first import visitor unti
 
 ## How can I delete imported data?
 
-Data you have imported can be deleted by returning to your site's "**Imports & Exports**" settings page and clicking the "**Delete Import**" button in the "**Existing Imports**" section. This action won't affect the native data you have collected using our script directly.
+Data you have imported can be deleted by returning to your site's **Imports & Exports** settings page and clicking the **Delete Import** button in the **Existing Imports** section. This action won't affect the native data you have collected using our script directly.
 
 ## How does imported data differ from native data?
 
@@ -78,7 +78,7 @@ There are several exceptions to this though, because some properties are aggrega
   * `Outbound Link: Click` and `File Download` goals with the `url` property
   * `404` goals with the `path` property
 
-By default, imported data is always included in the view, unless you choose to exclude it manually by opening the options menu (the **⋮** icon in the top right of the chart) and toggling off "**Include imported data**".
+By default, imported data is always included in the view, unless you choose to exclude it manually by opening the options menu (the **⋮** icon in the top right of the chart) and toggling off **Include imported data**.
 
 <img alt="Stats include imported data" src={useBaseUrl('img/stats-include-imported-data.png')} />
 

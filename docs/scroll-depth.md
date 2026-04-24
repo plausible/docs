@@ -16,7 +16,7 @@ You can find scroll depth data in:
 
 <img alt="Scroll depth metric in Plausible" src={useBaseUrl('img/scroll-depth-top-graph.png')} />
 
-2.  **The expanded Top Pages report**, where pages can be sorted by scroll depth for deeper analysis.
+2.  **The expanded Top Pages tab**, where pages can be sorted by scroll depth for deeper analysis.
 
 <img alt="Scroll depth metric in Top Pages details" src={useBaseUrl('img/scroll-depth-top-pages-details.png')} />
 
@@ -30,9 +30,9 @@ Plausible tracks scrolling at all percentages (1% to 100%), unlike many other to
 
 You can also set up a Scroll Depth goal with a specific scroll depth percentage threshold to see how many visitors scroll to and beyond your desired scroll depth mark.
 
-To get started with "**Scroll Depth Goals**", go to [your website's settings](website-settings.md) in Plausible Analytics and visit the "**Goals**" section. You should see an empty list with a prompt to add a goal.
+To get started with **Scroll Depth Goals**, go to [your website's settings](website-settings.md) in Plausible Analytics and visit the **Goals** section. You should see an empty list with a prompt to add a goal.
 
-Click on the "**+ Add goal**" button to go to the goal creation form.
+Click on the **+ Add goal** button to go to the goal creation form.
 
 Select `Scroll Depth` as the goal trigger, select the scroll depth percentage threshold (from 1% to 100%) and enter the pathname of the page you would like to track. The pathname must match the page path you can see in your Plausible Analytics dashboard.
 
@@ -44,7 +44,7 @@ Do you want to analyze the scroll depth for a specific section of your site? You
 
 You can for instance group all of your blog posts by using `/blog*` (if your blog subdirectory is named `blog`) or your Woocommerce checkout pages by using `/checkout/order-received/*`. 
 
-Next, click on the "**Add goal**" button to return to the goals page. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who reached the particular scroll depth on the specified pages. Goals are listed at the bottom of your dashboard.
+Next, click on the **Add goal** button to return to the goals page. When you navigate back to your Plausible Analytics dashboard, you should see the number of visitors who reached the particular scroll depth on the specified pages. Goals are listed at the bottom of your dashboard.
 
 Scroll Depth goals only display the "Uniques" and "CR (conversion rate)" metrics, and not the "Total" metric like the pageview goals and custom event goals do. This is because scrolling is an action that gets measured continuously during a pageview and it's not possible to count the total number of "scroll depth events" that occurred.
 

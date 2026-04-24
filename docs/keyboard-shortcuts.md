@@ -31,5 +31,5 @@ We've tried to make Plausible as usable and accessible as possible with just a k
 | X           | [Enable comparison](compare-stats.md) |
 | 0           | [Consolidated View](consolidated-views.md) |
 | 1-9         | [Switch between sites](landing-page.md#pin-your-most-used-sites-for-quick-access) |
-| /           | Search on the sites page or the Details view |
+| /           | Search on the sites page or the expanded view |
 | Esc         | Clear all filters |

@@ -22,7 +22,7 @@ The revenue metrics are fully filterable. For instance, you can see the total or
 
 You can add multiple filters to [create audience segments](filters-segments.md) too. This allows you to see the conversions and revenue from for instance the audience segment that's located in Germany, Austria and Switzerland, that were referred by a particular UTM campaign and are using Mac OS.
 
-When the revenue goal filter is applied on the dashboard, you will also find the "Revenue" column appear in all the individual reports (when expanded using the "Details" option). This is useful in seeing the breakdown of your revenue by individual traffic sources, entry or exit pages, locations, browser types and properties. You can also sort your reports by revenue in either ascending or descending order.
+When the revenue goal filter is applied on the dashboard, you will also find the "Revenue" column appear in all the individual reports (when expanded using the expand icon in the top right). This is useful in seeing the breakdown of your revenue by individual traffic sources, entry or exit pages, locations, browser types and properties. You can also sort your reports by revenue in either ascending or descending order.
 
 ## Clean referral source attribution
 
@@ -38,7 +38,7 @@ If you want to track ecommerce revenue, here's how to enable it:
 
 ### Step 1: Add a new custom event and specify the currency of your choice
 
-Go to your [site settings](website-settings.md) and in the "**Goals**" section click on the "**Add goal**" button. Choose "**Custom event**" as the goal trigger, enter the goal name in the "**Event name**" field, switch to "**Enable Revenue Tracking**" and set the base currency of your choice. This currency will be used for total and average revenue metrics in the dashboard. Note that the currency for a specific event cannot be changed later.
+Go to your [site settings](website-settings.md) and in the **Goals** section click on the **Add goal** button. Choose **Custom event** as the goal trigger, enter the goal name in the **Event name** field, switch to **Enable Revenue Tracking** and set the base currency of your choice. This currency will be used for total and average revenue metrics in the dashboard. Note that the currency for a specific event cannot be changed later.
 
 <img alt="Add goal and choose your currency" src={useBaseUrl('img/plausible-ecommerce-currency-goal.png')} />
 
