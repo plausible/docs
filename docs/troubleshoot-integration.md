@@ -109,6 +109,14 @@ You have two options:
 - Self-setup guides for [Cloudflare](proxy/guides/cloudflare.md), [Netlify](proxy/guides/netlify.md), [Vercel](proxy/guides/vercel.md) and [other platforms](proxy/introduction.md)
 - A managed proxy where we handle the setup for you. See [proxy introduction](proxy/introduction.md) for details
 
+## Are your events being silently dropped by the API?
+
+If you are using the [Events API](events-api.md) or a proxy for server-side tracking, Plausible always returns HTTP 202 Accepted, even when an event is not recorded. To check whether an event was actually counted, inspect the response headers for `x-plausible-dropped: 1`. When that header is present, the event was rejected by bot filtering and will not appear in your dashboard.
+
+The most common cause is a misconfigured `X-Forwarded-For` header. If your proxy or backend is forwarding its own server or CDN IP address instead of the actual visitor's IP, Plausible's bot filter will drop the event. Make sure `X-Forwarded-For` is set to the real client IP before the request reaches Plausible.
+
+To confirm what IP address Plausible is seeing, add the `X-Debug-Request: true` header to your request. The API will return HTTP 200 with the IP it will use for unique visitor counting, so you can verify that `X-Forwarded-For` is being passed through correctly.
+
 ## I don't see my own referral source
 
 All referral sources are counted only when they start a new session on your site. This is why you don't see all your own referral sources if you for instance click to test several different UTM tagged links at the same time. Only the first one appears in the **Sources** tab. You would need to start a new session (such as by waiting 30 minutes or using a different device, browser or IP address) to have the subsequent sources counted too.
