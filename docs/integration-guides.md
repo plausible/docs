@@ -10,7 +10,7 @@ We've put together several guides that cover popular website builders and conten
 
 ## Official integrations
 
-These are built and maintained by the Plausible team.
+These are built and maintained by the Plausible team. Unlike community plugins, official integrations stay current as the product evolves and are supported directly by us.
 
 ### Add the snippet to the header of your site
 
@@ -18,15 +18,19 @@ To integrate your website with Plausible, you can manually insert our tracking s
 
 ### WordPress plugin
 
-Using WordPress? We have an official WordPress plugin that makes the integration nice and easy. [Here's how to get started with our WordPress plugin](https://plausible.io/wordpress-analytics-plugin).
+The [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) handles installation, event tracking and dashboard access without any code. Built specifically for WordPress: supports WooCommerce revenue tracking, automatic form tracking, author and category stats, proxy mode and more. If your site runs on WordPress, this is the recommended setup.
 
-### Google Tag Manager (GTM)
+### Google Tag Manager template
 
-Using GTM? You can use our Google Tag Manager template. See how to integrate Plausible into your site with [Google Tag Manager](https://plausible.io/gtm-template).
+The [official GTM template](https://plausible.io/gtm-template) is available in the Google Tag Manager community gallery. Install Plausible and configure event tracking from the GTM dashboard with no code changes. Works well for agencies managing multiple sites from a single GTM account.
+
+### Looker Studio connector
+
+The [official Looker Studio connector](https://plausible.io/looker-studio-connector) connects your Plausible data to Google's free data visualization tool. Build custom dashboards, branded client reports and views that blend Plausible data with other sources like ad spend or CRM data. Available on the [Business plan](subscription-plans.md).
 
 ### NPM package
 
-[NPM package](https://www.npmjs.com/package/@plausible-analytics/tracker): A lightweight library to add Plausible tracking to your site through an easy-to-install NPM package.
+The [official NPM package](https://www.npmjs.com/package/@plausible-analytics/tracker) lets you add Plausible to any JavaScript project via your package manager. Built and maintained by the Plausible team. Useful for React, Vue, Next.js and other framework-based setups where installing via a script tag is impractical.
 
 ### Run Plausible as a first-party connection
 
