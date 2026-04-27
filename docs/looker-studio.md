@@ -4,11 +4,11 @@ title: Looker Studio Connector
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-In order to focus on simplicity and speed, Plausible Analytics does not support the native ability to create custom reports directly in our dashboard. However, there are some advanced uses where creating custom reports is necessary.
+Plausible keeps its dashboard intentionally simple. For cases where you need more flexibility, such as custom client reports, branded dashboards or views that combine Plausible data with ad spend or CRM data, we have an official connector for Google Looker Studio (formerly Data Studio).
 
-For this reason, we have created an official integration with the free data visualization tool, Google Looker Studio (formerly known as Data Studio). You can use our Looker Studio connector to build custom reports with your Plausible Analytics data.
+Looker Studio is Google's free data visualization tool. The Plausible connector lets you pull your analytics data directly into Looker Studio and build any report layout you need.
 
-Here's how to get started with our official Looker Studio connector. 
+The connector is available on the Business plan. Here's how to get started.
 
 <img alt="Plausible Analytics Looker Studio template" src={useBaseUrl('img/plausible-looker-studio.png')} />
 
