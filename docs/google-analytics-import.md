@@ -6,8 +6,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Plausible Analytics allows you to import your historical stats from Google Analytics 4 (GA4). You can import multiple Google Analytics properties into the same Plausible dashboard without having any gaps in the data and without any double-counting. You can also segment the imported data and export it using our regular exporting methods ([CSV](export-stats.md) and [stats API](stats-api.md)).
 
-Note that Google shut down the Universal Analytics (UA) user interface and the API on July 1st 2024, deleting all your historical stats. This is why it's no longer possible to import data from UA but only from GA4.
-
 Here's how you can import your historical Google Analytics stats into your Plausible dashboard.
 
 ## How to import your historical stats from Google Analytics to Plausible Analytics 
