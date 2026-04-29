@@ -45,7 +45,7 @@ Plausible supports the following goal types:
       <td>Assign dynamic monetary values to goals and custom events to track revenue attribution</td>
     </tr>
     <tr>
-      <td><a href="/custom-props/introduction">Custom properties</a></td>
+      <td><a href="custom-props/introduction">Custom properties</a></td>
       <td>Send custom data with pageviews and custom events to create custom metrics</td>
     </tr>
     <tr>
