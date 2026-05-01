@@ -15,6 +15,14 @@ We use multiple layers to filter non-human traffic:
 
 In [a server log comparison we ran](https://plausible.io/blog/server-log-analysis), we saw 18x more pageviews in server logs than in Plausible, which illustrates how much non-human traffic Plausible excludes. In a [separate test comparing Plausible to Google Analytics](https://plausible.io/blog/testing-bot-traffic-filtering-google-analytics), we ran three bot traffic scenarios against both tools. GA4 recorded all of them as legitimate traffic. Plausible rejected all three.
 
+## VPN users and bot filtering
+
+Most visitors using VPNs or Tor are tracked normally. When a visit comes through a VPN or Tor network, it typically appears under the "Anonymous VPN Service" entry in the [Countries report](countries.md).
+
+However, some VPN IP addresses fall within ranges we classify as data center infrastructure. When that happens, those visits are filtered out along with automated traffic from the same ranges. Distinguishing between a real visitor using a VPN and automated traffic from a data center is difficult at the IP level.
+
+This is a tradeoff of aggressive bot filtering. It keeps automated traffic out of your stats but can occasionally result in some VPN visits not being recorded.
+
 ## Why you might still see some bot traffic
 
 No filter is perfect. Bots emerge constantly and there is always a gap between when a new bot appears and when we identify and block it. If you see a sudden spike from an unfamiliar source with a very high bounce rate and short session duration, it may be bot traffic we haven't classified yet.
