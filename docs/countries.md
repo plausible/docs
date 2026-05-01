@@ -11,7 +11,9 @@ Click on any country to see the list of regions within that country where your v
 ## Visitors using VPNs and similar services 
 
 To improve the location accuracy, visitors using VPN services or the Tor browser are grouped under the "Anonymous VPN Service" entry in the **Countries** tab. This method reduces the noise caused by analytics tools recording VPN server locations instead of actual user locations, while also making it easier to view the percentage of visitors using VPNs.
- 
+
+Note that some VPN visits may not be recorded at all. If a VPN IP address falls within ranges we classify as data center infrastructure, that visit will be filtered alongside automated traffic from the same ranges. This is a tradeoff of aggressive bot filtering. See [bot and spam traffic filtering](bot-traffic-filtering.md) for more details.
+
 You can use the **Filter** button on the top of your dashboard to segment the traffic by multiple countries, regions or cities at the same time. This allows you to group specific geographical regions and display only that traffic.
 
 <img alt="Countries - multiple filters" src={useBaseUrl('img/countries-filtering-multiple-filters.png')} />

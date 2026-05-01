@@ -95,6 +95,12 @@ Using WordPress and integrated Plausible using our official WordPress plugin? Ou
 
 If the verification tool has confirmed that the tracking is working fine, then you have nothing to worry about. If you'd like to track those who use adblockers too, take a look at [our proxy solution](/proxy/introduction.md).
 
+## Are some of your visitors using a VPN that gets filtered as bot traffic?
+
+Most visitors using VPNs or Tor are tracked normally and appear under the "Anonymous VPN Service" entry in the [Countries report](countries.md). However, some VPN IP addresses fall within ranges we classify as data center infrastructure. When that happens, those visits are filtered out along with automated traffic from the same ranges.
+
+This is a tradeoff of aggressive bot filtering. It keeps automated traffic out of your stats but can occasionally result in some VPN visits not being recorded. See [bot and spam traffic filtering](bot-traffic-filtering.md) for more details.
+
 ## Are some of your visitors not being counted due to blockers?
 
 Some visitors use tools that may block analytics scripts, including browser extensions, privacy-focused browsers, network-level blockers such as Pi-hole, or corporate firewalls. These visitors won't be counted in your dashboard.
