@@ -92,6 +92,10 @@ Note that you need to be an owner or an admin of a team to remove team members.
 * To remove yourself from a team, go to the **General** option of the **Team Settings**
 * Click on the **Leave Team** button. Note that after leaving a team, you won't have access to the dashboards and collected stats of the sites that the team owns
 
+:::tip Someone already left and took the account with them?
+See [Transfer account ownership](transfer-account-ownership.md) for how to recover access.
+:::
+
 ### Deleting a team
 
 * In the top right menu, click on your account name, make sure you have chosen the team you'd like to delete and then click on the **Team Settings**
