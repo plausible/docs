@@ -56,6 +56,12 @@ If the spike is temporary, you can upgrade to restore access and downgrade again
 
 We're not able to make exceptions to keep dashboards unlocked beyond the grace period. See [Choose the right subscription](subscription-plans.md#traffic-spikes-and-overages) for the full details.
 
+## My traffic spiked temporarily. Do I need to upgrade?
+
+A single month over your limit requires no action. If usage drops back within your tier the following month, nothing happens.
+
+If you've received an over-limit notice (two consecutive months above your tier), you have two options. If your traffic has already returned to normal, do nothing: your dashboard will automatically unlock at the start of your next billing cycle. If you need access restored now, upgrade to the appropriate tier and downgrade again once traffic drops. Downgrades are pro-rated, so any unused credit carries forward.
+
 ## How does pro-rating work when I upgrade?
 
 Paddle calculates a pro-rated charge based on what you've already paid and the time remaining on your current billing cycle. You only pay the difference.
