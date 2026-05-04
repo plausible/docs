@@ -104,6 +104,7 @@ module.exports = {
       'reset-password',
       'dashboard-appearance',
       'delete-account',
+      'transfer-account-ownership',
     ],
     'Team': [
       'users-roles',

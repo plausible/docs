@@ -10,8 +10,8 @@ This is useful for consultants and agencies working with clients. You set up the
 
 Note that subscriptions are not transferred with the site. The new owner is responsible for having an active [Plausible subscription](subscription-plans.md).
 
-:::tip Leaving the company?
-Use [teams](users-roles.md) to invite another team owner, then have them remove you from the team.
+:::tip Leaving the company or need to recover a whole account?
+See [Transfer account ownership](transfer-account-ownership.md).
 :::
 
 ## Before you transfer
