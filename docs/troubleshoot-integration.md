@@ -16,6 +16,10 @@ Our testing tool will launch automatically from the blinking green dot screen to
     <img alt="Integration verification tool" src={useBaseUrl('img/v2/integration-verification-tool.webp')} />
 </div>
 
+As soon as the first visit is recorded, the verification screen disappears and your dashboard loads automatically with the first stats.
+
+The testing tool does not affect your tracking in any way. If you have verified that real visits are being recorded correctly, you can safely ignore any error or warning the tool shows.
+
 ### Launch the Plausible testing tool from your site settings
 
 Have you made any changes to your integration? You can launch our testing tool at any time from your [site settings](website-settings.md) to verify whether the changes you made have worked.
