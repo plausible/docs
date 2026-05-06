@@ -15,6 +15,14 @@ Plausible publishes its security practices, data policy and legal documents publ
 
 Plausible does not process personal data or track individual users. There are no cookies, no cross-site tracking and no persistent user identifiers. Because of this, Plausible is typically classified as a low-risk service in vendor security assessments and GDPR impact analyses.
 
+The specific reasons it falls into this category:
+
+- No personal data is collected. Plausible does not store IP addresses, device fingerprints or any other persistent identifiers.
+- No cookies are set. There is nothing to consent to and no cookie banner is required.
+- All data is processed and stored in the EU on servers owned and operated by European companies. Data never leaves the EU.
+- No data is shared with or sold to third parties.
+- A DPA is in place automatically for all customers, covering GDPR processor obligations.
+
 ## Security questionnaires
 
 If your organization requires a vendor security review, the documents above are designed to answer the questions typically asked in those reviews. We recommend going through them before sending a questionnaire, as most topics are already covered.
