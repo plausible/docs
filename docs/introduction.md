@@ -3,7 +3,7 @@ title: Welcome
 slug: /
 ---
 
-[Plausible Analytics](https://plausible.io/) is a simple, privacy-friendly alternative to Google Analytics. No cookies, no personal data collection, no consent banners required. One lightweight script, one easy-to-read dashboard. Explore the [live demo](https://plausible.io/plausible.io) to see what it looks like.
+[Plausible Analytics](https://plausible.io/) is a simple, privacy-friendly alternative to Google Analytics. No cookies, no personal data collection, no consent banners required. One lightweight script, one easy-to-read dashboard. Running since 2019 and used by 17,000+ teams. Explore the [live demo](https://plausible.io/plausible.io) to see what it looks like.
 
 <div class="docs-card-grid">
 
