@@ -91,5 +91,6 @@ There's a third-party Plausible plugin for Magento that supports custom events a
 - Set up a [funnel](funnel-analysis.md) to follow the purchase journey from landing page to checkout
 - Use [custom properties](custom-props/introduction.md) to break down revenue by product name, category or coupon code
 - [Filter and segment](filters-segments.md) your dashboard to see revenue by source, campaign, country or device
+- Use the [ad cost calculator](https://plausible.io/ad-cost-calculator) to calculate your CPC, CPM and CPA by dividing your ad spend by the conversions Plausible records
 
 Learn more about tracking [ecommerce revenue attribution](https://plausible.io/blog/ecommerce-revenue-attribution) on our blog.
