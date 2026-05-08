@@ -82,7 +82,7 @@ Google Analytics aggregates UTM source under the **source** dimension and they d
 
 ### Goals
 
-It's possible to import your goal conversion data from Google Analytics 4. When your import finishes, you will not see your goal data show up automatically. You need to go to your site settings and [add the goals you want to show up on your dashboard](custom-event-goals.md#3-create-a-custom-event-goal-in-your-plausible-account). Note that ecommerce revenue numbers cannot be imported. 
+It's possible to import your goal conversion data from Google Analytics 4. When your import finishes, you will not see your goal data show up automatically. You need to go to your site settings and [add the goals you want to show up on your dashboard](custom-event-goals.md#create-a-custom-event-goal-in-your-plausible-account). Note that ecommerce revenue numbers cannot be imported. 
 
 ### Browser versions
 

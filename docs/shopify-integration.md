@@ -118,7 +118,7 @@ analytics.subscribe('checkout_started', async (event) => {
 
 In order to see this information on your Plausible dashboard, you should:
 
-* [Set up a revenue goal](ecommerce-revenue-tracking#step-3-add-a-new-custom-event-and-specify-the-currency-of-your-choice) called `Begin Checkout` with your desired reporting currency
+* [Set up a revenue goal](ecommerce-revenue-tracking#step-1-add-a-new-custom-event-and-specify-the-currency-of-your-choice) called `Begin Checkout` with your desired reporting currency
 
 ### Track payment info added during checkout
 
@@ -139,7 +139,7 @@ analytics.subscribe('payment_info_submitted', async (event) => {
 
 In order to see this information on your Plausible dashboard, you should:
 
-* [Set up a revenue goal](ecommerce-revenue-tracking#step-3-add-a-new-custom-event-and-specify-the-currency-of-your-choice) called `Add Payment Info` with your desired reporting currency
+* [Set up a revenue goal](ecommerce-revenue-tracking#step-1-add-a-new-custom-event-and-specify-the-currency-of-your-choice) called `Add Payment Info` with your desired reporting currency
 
 ### Track completed checkouts (purchases)
 
@@ -160,7 +160,7 @@ analytics.subscribe('checkout_completed', async (event) => {
 
 In order to see this information on your Plausible dashboard, you should:
 
-* [Set up a revenue goal](ecommerce-revenue-tracking#step-3-add-a-new-custom-event-and-specify-the-currency-of-your-choice) called `Purchase` with your desired reporting currency
+* [Set up a revenue goal](ecommerce-revenue-tracking#step-1-add-a-new-custom-event-and-specify-the-currency-of-your-choice) called `Purchase` with your desired reporting currency
 
 ### Track "Add to Cart"
 
@@ -189,7 +189,7 @@ analytics.subscribe('product_added_to_cart', async (event) => {
 
 In order to see this information on your Plausible dashboard, you should:
 
-1. [Set up a revenue goal](ecommerce-revenue-tracking#step-3-add-a-new-custom-event-and-specify-the-currency-of-your-choice) called `Add to Cart` with your desired reporting currency
+1. [Set up a revenue goal](ecommerce-revenue-tracking#step-1-add-a-new-custom-event-and-specify-the-currency-of-your-choice) called `Add to Cart` with your desired reporting currency
 2. [Set up two custom properties](/custom-props/props-dashboard#1-configure-custom-properties-in-your-site-settings) called `productTitle`, and `quantity`
 
 ### Track site searches
@@ -208,7 +208,7 @@ analytics.subscribe('search_submitted', async (event) => {
 
 In order to see this information on your Plausible dashboard, you should:
 
-1. [Set up a custom event goal](/custom-event-goals#step-4-create-a-custom-event-goal-in-your-plausible-account) called `Search`
+1. [Set up a custom event goal](/custom-event-goals#create-a-custom-event-goal-in-your-plausible-account) called `Search`
 2. [Set up a custom property](/custom-props/props-dashboard#1-configure-custom-properties-in-your-site-settings) called `searchQuery`
 
 ### Customize your own tracking pixel
@@ -248,10 +248,10 @@ This function sends events to Plausible. It is initialized within the setup bloc
 
 The `plausible` function takes two arguments:
 
-1. an event name which can be whatever you like - just make sure to [set up a goal](/custom-event-goals#step-4-create-a-custom-event-goal-in-your-plausible-account) with the same name to see it on your dashboard.
+1. an event name which can be whatever you like - just make sure to [set up a goal](/custom-event-goals#create-a-custom-event-goal-in-your-plausible-account) with the same name to see it on your dashboard.
 2. an object where a few options can be passed:
 
-* [Object] `revenue` - allows you to attribute a monetary value to your Plausible event. The object needs to contain two keys: `amount` and `currency`. Note that you can only attribute a single monetary value to one event. The revenue option is ignored until you've [set up a revenue goal](ecommerce-revenue-tracking#step-3-add-a-new-custom-event-and-specify-the-currency-of-your-choice) in your Plausible dashboard. That's because currency conversion into your desired reporting currency happens at the time of receiving the event.
+* [Object] `revenue` - allows you to attribute a monetary value to your Plausible event. The object needs to contain two keys: `amount` and `currency`. Note that you can only attribute a single monetary value to one event. The revenue option is ignored until you've [set up a revenue goal](ecommerce-revenue-tracking#step-1-add-a-new-custom-event-and-specify-the-currency-of-your-choice) in your Plausible dashboard. That's because currency conversion into your desired reporting currency happens at the time of receiving the event.
 * [Object] `props` - here you can pass any value under any key you'd like. The key you choose will become the name of the custom property that you need to [configure in your site settings](/custom-props/props-dashboard#1-configure-custom-properties-in-your-site-settings). Note that you are responsible for ensuring that no [personally identifiable information](/custom-props/introduction#personally-identifiable-information) is tracked.
 * [String] `u` - this field stands for the `url` of the page where this customer event happened. You will most likely want to just keep it the same as in the example. It's important to always pass this option because otherwise the url will become the location of the pixel which has nothing to do with the real location where the event happened.
 
