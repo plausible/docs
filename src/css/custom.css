@@ -436,9 +436,15 @@ html[data-theme='dark'] {
   --ifm-footer-background-color: var(--zinc-800);
 }
 
+.footer__logo-image {
+  display: block;
+  margin: 0 auto 0.75rem;
+}
+
 .footer__copyright {
   padding-top: 2rem;
-  text-align: left;
+  text-align: center;
+  color: var(--zinc-400);
 }
 
 /* Search modal */
