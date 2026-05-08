@@ -9,6 +9,7 @@ module.exports = {
   scripts: [
     {src: '/docs/js/tracking.js', defer: true}
   ],
+  plugins: ['@docsearch/docusaurus-adapter'],
   themeConfig: {
     docs: {
       sidebar: {
@@ -19,10 +20,14 @@ module.exports = {
     colorMode: {
       defaultMode: 'light',
     },
-    algolia: {
+    docsearch: {
       appId: '7M80VX1X5C',
-      apiKey: '00c4f9109050cbf666dd95a6e6ca373a',
+      apiKey: '4efe2db213efafd96489778446fceb76',
       indexName: 'plausible',
+      askAi: {
+        assistantId: 'b481521d-d374-4dec-b344-12d1ceaf3b6c',
+        agentStudio: true,
+      },
     },
     navbar: {
       logo: {
