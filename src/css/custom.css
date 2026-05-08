@@ -436,6 +436,14 @@ html[data-theme='dark'] {
   --ifm-footer-background-color: var(--zinc-800);
 }
 
+[class*="footerLogoLink"] {
+  opacity: 1 !important;
+}
+
+[class*="footerLogoLink"]:hover {
+  opacity: 0.6 !important;
+}
+
 .footer__logo-image {
   display: block;
   margin: 0 auto 0.75rem;
