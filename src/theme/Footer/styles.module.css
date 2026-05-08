@@ -1,0 +1,35 @@
+.ctaBanner {
+  background-color: var(--zinc-100);
+  padding: 1.25rem 2rem;
+  text-align: center;
+  border-top: 1px solid var(--zinc-200);
+}
+
+[data-theme='dark'] .ctaBanner {
+  background-color: var(--zinc-800);
+  border-top: 1px solid var(--zinc-700);
+}
+
+.ctaText {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--zinc-700);
+}
+
+[data-theme='dark'] .ctaText {
+  color: var(--zinc-300);
+}
+
+.ctaLink {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.ctaLink:hover {
+  text-decoration: underline;
+}
+
+[data-theme='dark'] .ctaLink {
+  color: var(--ifm-color-primary-light);
+}
