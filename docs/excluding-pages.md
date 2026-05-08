@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: someSidebar
 title: Exclude specific pages from being tracked
 ---
 

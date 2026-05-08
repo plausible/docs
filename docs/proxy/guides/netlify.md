@@ -37,7 +37,11 @@ Replace `https://plausible.io/js/pa-XXXXX.js` with script location from step 1.
 Note that:
 
 - The source paths identified here **must be** used when configuring the HTML script tag in the next section.
-- You can use whatever paths you like here (for example, here prefixing with `/your-subdirectory/`). Do choose a generic or irrelevant name. If you choose something like analytics, stats or plausible, it might get blocked.
+- You can use whatever paths you like here (for example, here prefixing with `/your-subdirectory/`).
+
+:::warning
+Avoid names like `analytics`, `stats` or `plausible` in your paths as they may get blocked.
+:::
 
 ## Step 3: Update your snippet
 
@@ -59,6 +63,8 @@ Deploy these changes to your Netlify site. You can verify the proxy is working b
 
 ## Troubleshooting
 
-If your `<script>` tag's `src` attribute is being manipulated to some unrecognised CDN URL, it's because you have the `Asset optimization` JS settings enabled in Netlify. Both the `Bundle JS` and `Minify JS` options must be de-selected to avoid interference with the proxied Plausible URL. 
+:::warning
+If your `<script>` tag's `src` attribute is being rewritten to an unrecognised CDN URL, you have `Asset optimization` JS settings enabled in Netlify. Both the `Bundle JS` and `Minify JS` options must be de-selected to avoid interference with the proxied Plausible URL.
+:::
 
-Prefer not to disable the `Asset optimization`? Try to use the absolute URL in the `src` attribute of your `<script>` (`https://yourdomain.com/your-subdirectory/js/script.js`).
+Prefer not to disable `Asset optimization`? Use the absolute URL in the `src` attribute instead: `https://yourdomain.com/your-subdirectory/js/script.js`.

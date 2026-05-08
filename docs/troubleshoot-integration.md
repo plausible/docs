@@ -18,7 +18,9 @@ Our testing tool will launch automatically from the blinking green dot screen to
 
 As soon as the first visit is recorded, the verification screen disappears and your dashboard loads automatically with the first stats.
 
-The testing tool does not affect your tracking in any way. If you have verified that real visits are being recorded correctly, you can safely ignore any error or warning the tool shows.
+:::note
+The testing tool does not affect your tracking. If real visits are being recorded correctly, you can safely ignore any error or warning the tool shows.
+:::
 
 ### Launch the Plausible testing tool from your site settings
 
@@ -38,7 +40,9 @@ We've put together [many integration guides](integration-guides.md) that cover p
 
 ## Have you cleared the cache of your site?
 
-If you are using caching on your site, the latest version of your site where our snippet is integrated may not be showing to all your visitors yet. Do purge the cache to ensure that you're presenting the latest version of your site to all your visitors.
+:::tip
+If you're using caching, your visitors may still be seeing an older version of your site without the Plausible snippet. Purge your cache to make sure everyone gets the updated version.
+:::
 
 ## Have you implemented Plausible using Google Tag Manager?
 
@@ -50,7 +54,9 @@ If it does, you would need to add our domain name (plausible.io) specifically to
 
 ## Are you running on localhost?
 
-Our script automatically disables itself when running on localhost as most people don't want those stats to be counted. If you do want to track stats on localhost, [see our configuration guide](script-extensions.md).
+:::note
+The Plausible script automatically disables itself on localhost. To enable tracking in local development, [see our configuration guide](script-extensions.md).
+:::
 
 ## Are you running a Google AMP page?
 
@@ -58,11 +64,15 @@ To track Google AMP pages with Plausible, you need to declare an AMP-analytics o
 
 ## Did you insert multiple Plausible snippets into your site?
 
-This may affect the accuracy of the tracking and can result in the stats being counted twice. Please make sure to only insert one snippet.
+:::warning
+Multiple snippets on the same page will cause stats to be counted twice. Make sure only one Plausible snippet is present.
+:::
 
 ## Are you using an older version of our script?
 
-In some cases when you’re using a custom proxy implementation, you may not be using the latest version of our tracking script. This doesn’t necessarily mean that the tracking won’t work but our automated verification tool won’t be able to confirm whether your integration is working correctly. Please update the script you're proxying to the latest version of our script.
+:::note
+If you’re using a custom proxy, you may not be serving the latest version of the tracking script. Tracking may still work, but the automated verification tool won’t be able to confirm it. Update the proxied script to the latest version.
+:::
 
 If you're using [our WordPress plugin](https://plausible.io/wordpress-analytics-plugin) with the built-in proxy enabled, you'll need to:
 
@@ -75,7 +85,9 @@ This ensures the changes are fully applied and the latest version of our script 
 
 ## Has some other plugin altered our snippet?
 
-Are you using WP Rocket, SiteGround Optimizer or other performance optimization plugins? Or some type of consent banner plugin that determines which scripts can run when? These plugins may affect our tracking as they try to optimize our script. If you're on WordPress, we recommend you use [our official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) to avoid these issues as we've built-in resolutions to the most common plugin conflicts.
+:::warning
+Performance optimization plugins (WP Rocket, SiteGround Optimizer) and consent banner plugins can interfere with the Plausible script. On WordPress, use [our official WordPress plugin](https://plausible.io/wordpress-analytics-plugin), which has built-in fixes for the most common conflicts.
+:::
 
 Do you experience an issue even when using our plugin? Do check your integration manually using the steps below to identify which plugin is in question. Then please whitelist our script location and our domain name in the settings of the individual plugin to stop it from altering our snippet.
 

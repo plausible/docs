@@ -275,6 +275,11 @@ html[data-theme='dark'] {
   margin-bottom: calc(var(--ifm-leading) * 1.5);
 }
 
+.table-col1-nowrap td:first-child,
+.table-col1-nowrap th:first-child {
+  white-space: nowrap;
+}
+
 .markdown > p:has(+ img),
 .markdown > p:has(+ video),
 .markdown > p:has(+ .gallery),

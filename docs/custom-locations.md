@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: someSidebar
 title: Specify a custom location to aggregate pages that contain identifiers
 ---
 

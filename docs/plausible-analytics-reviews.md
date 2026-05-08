@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: someSidebar
 title: Plausible Analytics reviews and in media
 ---
 

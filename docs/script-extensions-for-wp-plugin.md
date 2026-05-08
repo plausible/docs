@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: someSidebar
 title: How to use script extensions with the WordPress plugin
 ---
 

@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: someSidebar
 title: Verify that the integration is working
 --- 
 

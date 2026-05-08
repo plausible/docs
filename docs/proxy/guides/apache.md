@@ -10,7 +10,7 @@ Our managed proxy lets you send analytics through your own domain name as a firs
 
 ## Step 1: Enable the required modules
 
-```
+```bash
 sudo a2enmod proxy
 sudo a2enmod proxy_http
 sudo a2enmod ssl
@@ -32,7 +32,7 @@ the snippet specific for your site. It will look similar to the following:
 Your snippet will have a different script location than the example above. Look for the `https://plausible.io/js/pa-XXXXX.js` part in your snippet - that's the personalized location for your site's script. Mark it down for subsequent steps.
 
 ## Step 3: Update your config
-```
+``` title="apache-vhost.conf"
 <VirtualHost *:80>
   ServerName website.com
 

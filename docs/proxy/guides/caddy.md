@@ -28,7 +28,7 @@ Your snippet will have a different script location than the example above. Look 
 
 Add the following to your Caddyfile:
 
-```
+``` title="Caddyfile"
 @plausible path /js/script.js /api/event
 handle @plausible {
 	# Use path from step 1

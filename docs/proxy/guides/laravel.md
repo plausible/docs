@@ -29,7 +29,7 @@ php artisan make:controller PlausibleProxyController
 
 Add the following code to the controller, replacing `https://plausible.io/js/pa-XXXXX.js` with the script location from Step 1.
 
-```php
+```php title="app/Http/Controllers/PlausibleProxyController.php"
 <?php
 
 namespace App\Http\Controllers;
@@ -74,25 +74,27 @@ class PlausibleProxyController extends Controller
 
 Add the following routes to your `routes/web.php` file:
 
-```php
+```php title="routes/web.php"
 use App\Http\Controllers\PlausibleProxyController;
 
 Route::get('/js/script.js', [PlausibleProxyController::class, 'script'])->name('plausible.script');
 Route::post('/api/event', [PlausibleProxyController::class, 'event'])->name('plausible.event');
 ```
 
-Note that:
-
-- You can use whatever paths you like here. Do choose generic names. If you choose something like `analytics`, `stats` or `plausible`, it may get blocked.
+:::warning
+Use generic path names. Paths like `/analytics`, `/stats` or `/plausible` may get blocked by adblockers.
+:::
 
 
 ## Step 4: Exempt the event route from CSRF
 
-The Plausible script sends POST requests to the event endpoint, which Laravel's CSRF protection will block by default.
+:::warning
+Laravel's CSRF protection will block POST requests to the event endpoint by default. This step is required for tracking to work.
+:::
 
 In your `bootstrap/app.php` file, add the event route to the CSRF exceptions:
 
-```php
+```php title="bootstrap/app.php"
 ->withMiddleware(function (Middleware $middleware) {
     $middleware->validateCsrfTokens(except: [
         'api/event', // Add this line
@@ -104,7 +106,7 @@ In your `bootstrap/app.php` file, add the event route to the CSRF exceptions:
 
 Add the script tags to your application's HTML `<head>`, configuring the `src` and `endpoint` to match the named route from Step 3:
 
-```blade
+```blade title="layout.blade.php"
 <script async src="{{ route('plausible.script') }}"></script>
 <script>
   window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};

@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: someSidebar
 title: Serve the script from your domain as a first-party connection
 ---
 

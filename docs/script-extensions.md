@@ -16,6 +16,8 @@ There are also additional measurement options that you can set up manually if ne
 
 Here's the list of our optional measurements:
 
+<div class="table-col1-nowrap">
+
 | Optional Measurement | Explanation                                                                                                                                                                                 |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Outbound links       | Automatically [track clicks on outbound links](outbound-link-click-tracking.md)                                                                                                             |
@@ -26,6 +28,8 @@ Here's the list of our optional measurements:
 | Custom events        | Allows you to [track custom events](custom-event-goals.md) such as link clicks, form submits and any other HTML element clicks                                                              |
 | Custom properties    | Allows you to attach [custom properties](/custom-props/introduction) (also known as custom dimensions in Google Analytics) when sending a pageview or custom event to create custom metrics |
 | Ecommerce revenue    | Allows you to assign dynamic [monetary values](ecommerce-revenue-tracking.md) to custom events and track revenue attribution                                                                |
+
+</div>
 
 <details>
 
@@ -62,7 +66,7 @@ To do so, add update `plausible.init` to disable `autoCapturePageviews`: `plausi
 
 Additionally, add a javascript listener that triggers pageviews on turbolinks navigation:
 
-```javascript
+```javascript title="app.js"
 document.addEventListener("turbo:load", function () {
   plausible("pageview");
 });
