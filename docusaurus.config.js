@@ -117,6 +117,9 @@ module.exports = {
         },
       ],
     },
+    metadata: [
+      {name: 'twitter:site', content: '@PlausibleHQ'},
+    ],
     prism: {
       additionalLanguages: ['bash', 'json'],
     },
