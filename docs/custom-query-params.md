@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: someSidebar
 title: Tracking custom query parameters
 ---
 

@@ -25,7 +25,7 @@ Your snippet will have a different script location than the example above. Look 
 
 ## Step 2: Update your Nginx config
 
-```
+```nginx title="nginx.conf"
 # Only needed if you cache the plausible script. Speeds things up.
 #
 # Note: to use the `proxy_cache` setup, you'll need to make sure the `/var/run/nginx-cache`

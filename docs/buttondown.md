@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: someSidebar
 title: How to add the script to Buttondown
 ---
 

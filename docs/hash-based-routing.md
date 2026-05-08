@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: someSidebar
 title: Hashed page paths
 ---
 

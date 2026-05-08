@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: someSidebar
 title: Tracking clicks on cloaked affiliate links and other pretty URLs
 ---
 

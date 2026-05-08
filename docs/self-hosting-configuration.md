@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: someSidebar
 title: Plausible Community Edition (CE)
 ---
 

@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: someSidebar
 title: Stop tracking UTM tags and other query parameters
 ---
 

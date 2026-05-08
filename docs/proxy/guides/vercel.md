@@ -37,7 +37,7 @@ Add a special `vercel.json` file in your application root:
 
 Add the following JSON to rewrite calls within your application to Plausible's resources:
 
-```json
+```json title="vercel.json"
 {
   "rewrites": [
     {
@@ -57,7 +57,11 @@ Replace `https://plausible.io/js/pa-XXXXX.js` with script location from step 1.
 Note that:
 
 - The source paths identified here **must be** used when configuring the HTML script tag in the next section.
-- You can use whatever paths you like here (for example, here prefixing with `/your-subdirectory/`). Do choose a generic or irrelevant name. If you choose something like analytics, stats or plausible, it might get blocked.
+- You can use whatever paths you like here (for example, here prefixing with `/your-subdirectory/`).
+
+:::warning
+Avoid names like `analytics`, `stats` or `plausible` in your paths as they may get blocked.
+:::
 
 ## Step 4: Update your snippet
 

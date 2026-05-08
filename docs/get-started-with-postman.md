@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: someSidebar
 title: How to get started with the Stats API using Postman
 ---
 

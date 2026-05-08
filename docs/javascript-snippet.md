@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: someSidebar
 title: Where do I find my JavaScript snippet?
 ---
 

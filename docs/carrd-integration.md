@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: someSidebar
 title: Adding Plausible to Carrd (and tracking custom events)
 ---
 

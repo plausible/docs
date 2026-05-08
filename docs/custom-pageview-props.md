@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: someSidebar
 title: Custom properties for pageviews
 ---
 

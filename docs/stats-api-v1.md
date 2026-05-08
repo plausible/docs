@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: someSidebar
 title: Stats API v1 reference (legacy)
 ---
 

@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: someSidebar
 title: Proxying Plausible through Deno Deploy
 ---
 

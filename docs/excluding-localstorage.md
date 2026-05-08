@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: someSidebar
 title: Opt out and exclude your visits from the analytics by setting a localStorage flag in your browser
 ---
 

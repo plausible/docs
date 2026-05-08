@@ -1,4 +1,5 @@
 ---
+displayed_sidebar: someSidebar
 title: Tracking checkouts, purchases and revenue attribution on Shopify
 ---
 

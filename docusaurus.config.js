@@ -10,6 +10,12 @@ module.exports = {
     {src: '/docs/js/tracking.js', defer: true}
   ],
   themeConfig: {
+    docs: {
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: true,
+      },
+    },
     colorMode: {
       defaultMode: 'light',
     },
@@ -116,6 +122,7 @@ module.exports = {
         docs: {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
+          showLastUpdateTime: true,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
