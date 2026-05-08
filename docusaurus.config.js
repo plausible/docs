@@ -45,11 +45,7 @@ module.exports = {
           target: '_self',
           activeBasePath: '/docs'
         },
-        {
-          href: 'https://github.com/plausible/docs',
-          label: 'GitHub',
-          position: 'right',
-        },
+
       ],
     },
     footer: {
