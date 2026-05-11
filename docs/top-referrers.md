@@ -59,6 +59,8 @@ With Plausible, there's no need for you to manually exclude unwanted referral so
 
 Referral sources are counted only when they start a new session on your site. This prevents external domains such as payment gateways showing up in the list of sources when for instance visitors briefly leave your site to make a payment before returning back. The source that brought the visitor to your site in the first place will be the one attributed for that conversion.
 
+If you expect UTM attribution but nothing appears in the **Campaigns** tab, see [UTM parameters not appearing in Campaigns](troubleshoot-integration.md#utm-parameters-are-in-the-url-but-not-showing-in-the-campaigns-tab).
+
 ### Consolidation of duplicate sources
 
 UTM tags are case-sensitive, which may lead to duplicated or miscategorized traffic sources all depending on how the different links are tagged. To mitigate this issue, the **Sources** tab consolidates each source into a single entry, disregarding capitalization or naming differences in UTM tags.
