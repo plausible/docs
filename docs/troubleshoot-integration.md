@@ -145,6 +145,18 @@ All referral sources are counted only when they start a new session on your site
 
 This same mechanism is what keeps payment gateways and other external domains out of your referral sources. [Learn more about how referral attribution works](top-referrers.md).
 
+## UTM parameters are in the URL but not showing in the Campaigns tab
+
+UTM parameters are only attributed to the first pageview of a new session. If a visitor already has an active session on your site, pageviews with UTM parameters will not update the attribution for that session. A session stays active for 30 minutes after the last pageview.
+
+Common reasons this happens during testing:
+
+- You visited the site earlier in the same browser, even without UTM parameters
+- Another device on the same network visited the site recently, sharing your IP address
+- You tested multiple UTM links without waiting 30 minutes between each
+
+To reliably test UTM attribution, use a network and device combination that has not visited your site in the past 30 minutes. Mobile data on a phone that has not visited the site recently is the most reliable option. Check the **Campaigns** tab after the visit to confirm attribution.
+
 <details>
 
 <summary>
