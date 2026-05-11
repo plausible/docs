@@ -166,7 +166,7 @@ Step-by-step guides for popular website builders and content management systems.
 
 ### Data pipelines, warehouses and other ways of viewing Plausible stats elsewhere
 
-[See this list](data-pipelines.md) for data pipelines, warehouses and other ways of viewing Plausible stats elsewhere. For instance, our [stats API](stats-api.md), [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) and [official Google Looker Studio connector](looker-studio.md).
+[See this list](data-pipelines.md) for data pipelines, warehouses, MCP servers and other ways of viewing Plausible stats elsewhere. For instance, our [stats API](stats-api.md), [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) and [official Google Looker Studio connector](looker-studio.md).
 
 ---
 
