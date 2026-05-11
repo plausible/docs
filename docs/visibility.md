@@ -11,7 +11,7 @@ Your website stats are private by default. Making them public will give you acce
 Switch this on to make your website stats public and get access to your public stats dashboard URL. Like this:
 
 <div class="browser">
-<img alt="Make your stats private again" src={useBaseUrl('img/public-visibility.png')} />
+<img alt="Make your stats public" src={useBaseUrl('img/public-visibility.png')} />
 </div>
 
 ## Want to make your stats private again?
