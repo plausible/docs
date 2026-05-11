@@ -45,7 +45,6 @@ If you don't upgrade within a week of our notice, your dashboards will be tempor
 
 If the higher traffic turns out to be temporary, you can upgrade to restore access and then downgrade again once your traffic drops. Downgrades are pro-rated too, so you won't lose out. You're never locked into a higher plan when your usage no longer requires it. This works the same way on both monthly and yearly billing.
 
-We're not able to make exceptions to keep dashboards unlocked beyond the grace period, so if you're consistently above your tier, upgrading is the quickest way to restore access.
 
 <div class="browser">
     <img alt="Plausible pageview limit exceeded" src={useBaseUrl('img/v2/pageview-limit-exceeded.webp')} />
