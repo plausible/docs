@@ -1,5 +1,6 @@
 ---
 title: Change your subscription plan
+description: "How to upgrade or downgrade your Plausible subscription plan. Change your tier or billing frequency at any time with no long-term contracts."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

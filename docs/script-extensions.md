@@ -1,5 +1,6 @@
 ---
 title: Enable optional measurements
+description: "Enable optional Plausible measurements for outbound links, file downloads, form submissions and more. Available during setup or later in your site settings."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

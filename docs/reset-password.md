@@ -1,5 +1,6 @@
 ---
 title: Change or reset your account password
+description: "How to change or reset your Plausible Analytics password. Covers updating from account settings and recovering access when you've forgotten your password."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

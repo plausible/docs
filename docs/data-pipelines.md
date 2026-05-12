@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
 title: Viewing Plausible stats elsewhere
+description: "Access your Plausible analytics outside the dashboard: via the Stats API, embedded iframe, WordPress plugin, Looker Studio and other integrations."
 ---
 
 If you're looking to access your Plausible dashboard, metrics and stats outside of the plausible.io website itself, here are some options:

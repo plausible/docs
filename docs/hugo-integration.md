@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
 title: How to add the script to your Hugo site
+description: "Integrate Plausible Analytics with your Hugo site using the community plugin or by adding the script directly to your theme."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

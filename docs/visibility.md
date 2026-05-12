@@ -1,5 +1,6 @@
 ---
 title: Open up your website stats to the public
+description: "Make your Plausible stats dashboard publicly accessible with a shareable URL. Switch back to private any time from your site settings."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

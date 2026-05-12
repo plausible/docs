@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
 title: Plausible Analytics reviews and in media
+description: "Plausible Analytics reviews, independent research and media coverage. See what users, publications and researchers say about switching from Google Analytics."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

@@ -1,6 +1,66 @@
 ---
-title: Check if Plausible is installed correctly
+title: Troubleshooting Plausible Analytics
+description: "Troubleshoot your Plausible Analytics installation. Diagnose why visits aren't being recorded, fix common snippet errors and confirm real-time data is flowing."
 ---
+
+<head>
+  <script type="application/ld+json">{`
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is Plausible not recording any data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The most common causes are: the snippet has not been added to the site, the cache has not been cleared after adding the snippet, or a performance optimization plugin or ad blocker is interfering with the script. Use the built-in testing tool from your site settings to diagnose the issue."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why are my own visits not showing in the dashboard?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your visits may be blocked by a browser extension, ad blocker or VPN. The WordPress plugin also excludes logged-in admin visits by default. You can whitelist the Plausible script in your ad blocker settings, or set up a proxy to capture visits from users with blockers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why are UTM parameters not appearing in the Campaigns tab?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "UTM parameters are only attributed to the first pageview of a new session. If a visitor already has an active session on your site, UTM parameters will not update the attribution. A session stays active for 30 minutes after the last pageview."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do I not see my own referral source?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Referral sources are counted only when they start a new session. If you click multiple UTM-tagged links in the same session, only the first one is recorded. Wait 30 minutes or use a different device or browser to start a new session."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the Plausible script work on localhost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The Plausible script automatically disables itself on localhost. To enable tracking in local development, see the script extensions configuration guide."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why are some visitors not being counted?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Some visitors use browser extensions, privacy-focused browsers, network-level blockers such as Pi-hole, or corporate firewalls that block analytics scripts. You can accept this as a small share of traffic or set up a proxy to serve the Plausible script as a first-party request from your own domain."
+          }
+        }
+      ]
+    }
+  `}</script>
+</head>
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 

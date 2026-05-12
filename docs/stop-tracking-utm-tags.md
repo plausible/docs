@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
 title: Stop tracking UTM tags and other query parameters
+description: "How to stop Plausible from tracking UTM tags and other query parameters by stripping them from the URL before the pageview is recorded."
 ---
 
 By default, Plausible strips all query parameters for privacy purposes [except for](top-referrers.md) `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term`. If you prefer to stop tracking these parameters as well, please follow these instructions:

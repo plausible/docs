@@ -1,3 +1,8 @@
+---
+title: Proxying Plausible through Laravel
+description: "How to proxy Plausible Analytics through a Laravel application. Route the analytics script and events through your own domain as a first-party connection."
+---
+
 # Proxying Plausible through Laravel
 
 :::tip Don't want to manage your own proxy? We can handle it for you

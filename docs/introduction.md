@@ -1,6 +1,7 @@
 ---
-title: Welcome
+title: Plausible Analytics documentation
 slug: /
+description: "Plausible Analytics documentation. No cookies, no personal data, no consent banners. Get started with setup guides, dashboard explanations and feature references."
 ---
 
 [Plausible Analytics](https://plausible.io/) is a simple, privacy-friendly alternative to Google Analytics. No cookies, no personal data collection, no consent banners required. One lightweight script, one easy-to-read dashboard. Running since 2018 and used by 17,000+ teams. Explore the [live demo](https://plausible.io/plausible.io) to see what it looks like.

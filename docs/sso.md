@@ -1,5 +1,6 @@
 ---
 title: Single Sign-On (SSO)
+description: "How SSO works with Plausible Analytics. Supports SAML 2.0 and identity providers including Google Workspace, Okta and Microsoft Entra ID. Enterprise plan only."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

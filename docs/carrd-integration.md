@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
 title: Adding Plausible to Carrd (and tracking custom events)
+description: "Add Plausible Analytics to a Carrd site and track custom events like button clicks using an Embed component. Cookie-free and simple."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

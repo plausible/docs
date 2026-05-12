@@ -1,5 +1,6 @@
 ---
 title: Segment your traffic by custom properties
+description: "Configure custom properties in Plausible site settings and use them to filter and segment your dashboard by any metadata you're sending with pageviews or events."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

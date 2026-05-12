@@ -1,5 +1,6 @@
 ---
 title: Choose between dark or light theme
+description: "Switch between light, dark or system theme in Plausible Analytics. The setting is per account and can be changed any time from your account preferences."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

@@ -1,5 +1,6 @@
 ---
 title: Realtime dashboard
+description: "See who is on your site right now. The Plausible realtime dashboard updates every 30 seconds and shows current visitors, top pages and traffic sources."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

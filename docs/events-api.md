@@ -1,5 +1,6 @@
 ---
-title: Events API reference
+title: Plausible Events API reference
+description: "Reference for the Plausible Events API. Send pageviews and custom events server-side or from mobile apps without the JavaScript snippet."
 ---
 
 import {Required, Optional} from '../src/js/api-helpers.tsx';

@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
-title: Plausible Community Edition (CE)
+title: "Self-hosting Plausible: Community Edition (CE)"
+description: "Plausible Community Edition is a free, self-hosted, AGPL-licensed release of Plausible Analytics. Get started with the CE setup guide on GitHub."
 ---
 
 Plausible Community Edition (CE) is our "free as in beer", self-hosted and AGPL-licensed release. Check out the [getting started guide to self-hosting Plausible Community Edition](https://github.com/plausible/community-edition/).

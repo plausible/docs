@@ -1,5 +1,6 @@
 ---
 title: The Sites page
+description: "The Plausible Sites page lists all your tracked websites with 24-hour visitor counts and trend graphs. Switch teams, search sites and add new properties from here."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

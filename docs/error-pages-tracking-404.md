@@ -1,6 +1,50 @@
 ---
 title: 404 error pages tracking
+description: "Find broken links and missing pages on your site. Add a small code snippet to your 404 template and Plausible will start tracking error page visits automatically."
 ---
+
+<head>
+  <script type="application/ld+json">{`
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is my 404 goal showing zero conversions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The most common causes are: the tracking code was added to the main layout instead of the dedicated 404 template, or the goal name in Plausible does not exactly match the event name in the code. The default event name is '404'. Visit a broken URL on your site and check the Plausible realtime view to confirm the event fires."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do 404 error page visits count toward my billable pageviews?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. If you use the 404 error pages tracking feature, those visits count toward your billable monthly pageviews."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I disable 404 error page tracking?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Go to the Site Installation area in the General section of your site settings and update your optional measurements. Your snippet will change, so insert the newest snippet into your site and remove the custom code from your 404 page template. Plausible will automatically remove the '404' goal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where do I see which 404 pages are being visited?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "After setting up the 404 goal, open your Plausible dashboard and filter by the '404' goal. The Top Pages report shows which URLs are generating the most 404 visits. Click any URL to filter the dashboard by that specific page."
+          }
+        }
+      ]
+    }
+  `}</script>
+</head>
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -42,7 +86,7 @@ To configure a goal, go to [your website's settings](website-settings.md) in you
 
 Click on the **+ Add goal** button to go to the goal creation form.
 
-Select `Custom event` as the goal trigger and enter `404` as the name of the custom event you are triggering.
+Select `Custom event` as the goal trigger and enter `404` as the name of the custom event you are triggering. The 404 goal works the same way as any other [custom event goal](custom-event-goals.md).
 
 After clicking on the **Add goal** button the goal will be created and you'll be taken back to the Goals page.
 
@@ -67,3 +111,41 @@ You can control what data is collected in the **Site Installation** area of the 
 When making changes to your optional measurements, your snippet will change so do ensure to insert the newest snippet into your site for 404 error pages tracking to stop. You should also remove the code that you inserted into your 404 error page template.
 
 After you disable 404 error pages tracking, we will automatically remove the goal called `404` from your site.
+
+## Why 404 tracking matters
+
+Every 404 visit is a visitor who landed somewhere broken. The impact depends on the cause.
+
+**Broken backlinks:** An external site links to a URL that no longer exists. These visitors never see your real content. If the linking page has high traffic, the 404 is worth fixing with a redirect.
+
+**Broken internal links:** Navigation, blog posts or footer links pointing to deleted or renamed pages. These affect both visitors and SEO crawlers.
+
+**Post-migration issues:** A site redesign or CMS migration often breaks URL structures. High volumes of 404s after a migration indicate incomplete redirects.
+
+**Typos and direct traffic:** Someone manually typing a URL incorrectly. Usually low volume and not worth acting on unless it is a consistently misspelled page name.
+
+404s also affect your SEO. Crawlers that repeatedly hit 404 pages waste crawl budget on your site and may reduce how frequently they visit your working pages. Fixing high-traffic 404s with proper 301 redirects passes any link equity from the broken URL to the correct destination.
+
+## Analyzing and acting on 404 data
+
+Once you have the 404 goal set up, open your Plausible dashboard and filter by the `404` goal. The Top Pages report will show which URLs are generating the most 404 visits.
+
+**Prioritize by volume.** A URL generating 50 visits per month is worth fixing. One generating one visit per year is not.
+
+**Check the referrer.** Filter by a specific 404 URL, then look at the Top Sources report to see where those visitors are coming from. If most come from a single external site, contact them to update the link. If most come from organic search, the page was indexed but deleted without a redirect.
+
+**Set up redirects for high-traffic 404s.** Most hosting platforms and CMS tools support redirect rules. Add a 301 redirect from the broken URL to the closest equivalent page. If no equivalent exists, redirect to the relevant category page or the homepage rather than leaving the visitor on a 404.
+
+**Use the `contains` filter to spot patterns.** If many 404 URLs share a path prefix (for example `/old-blog/` or `/products/legacy/`), you can add a wildcard redirect rule that covers the whole group rather than setting up individual redirects.
+
+## Troubleshooting: 404 goal showing zero conversions
+
+If you have set up the 404 goal but see no data, check the following.
+
+**Code not in the right template.** Most platforms have a dedicated 404 error page template (often called `404.html`, `error.html` or similar). Confirm your custom code is in that specific template and not just added to the main layout. Visit a broken URL on your site to verify the 404 page loads correctly.
+
+**Goal name mismatch.** The goal name in your Plausible site settings must match the event name in your code exactly. The code uses `404` as the event name by default. Check your site settings to confirm the goal is named `404`.
+
+**Testing with a real 404 URL.** After adding the code, visit a URL on your site that does not exist (for example `/this-page-does-not-exist-test`). Open your Plausible dashboard and check the realtime view. You should see a `404` conversion appear within a few seconds. If it does not appear, open your browser's Network tab and look for a request to `plausible.io/api/event` to confirm the event is firing. For more general script troubleshooting steps, see [troubleshooting your integration](troubleshoot-integration.md).
+
+**Caching.** If your site is behind a CDN or caching layer, the 404 page template may be cached without the new code. Purge your cache after making the change.

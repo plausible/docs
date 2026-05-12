@@ -1,5 +1,6 @@
 ---
 title: Filter and segment your audience
+description: "Slice your Plausible data by source, page, location, device or goal. Combine multiple filters into reusable audience segments for faster analysis."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

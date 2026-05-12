@@ -1,5 +1,6 @@
 ---
 title: Change your account email address
+description: "How to change the email address on your Plausible Analytics account. Requires your current password and email verification to confirm the change."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

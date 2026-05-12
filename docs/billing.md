@@ -1,6 +1,66 @@
 ---
 title: Billing FAQ
+description: "Answers to common billing questions for Plausible Analytics. Covers invoices, usage calculation, multiple clients, VAT and subscription management."
 ---
+
+<head>
+  <script type="application/ld+json">{`
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is billing based per account or per website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Billing is based on total usage across all the sites in a team. Each team has its own subscription and is billed separately."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if I exceed my pageview limit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A single month over your limit requires no action. If usage exceeds your tier for two consecutive months, you will be notified to upgrade. Even while dashboards are temporarily locked, stats continue to be collected in the background."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What payment methods does Plausible accept?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Plausible accepts credit and debit cards, PayPal, Apple Pay and Google Pay. All payment processing is handled by Paddle. Wire transfers, manual invoicing and cryptocurrency are not accepted."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get an invoice?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Paddle emails an invoice automatically after each payment. You can also download invoices in your account settings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I add my VAT number?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Click 'Add VAT number' on the second step of checkout where you enter your payment details. If you missed this step, open any Paddle invoice and click 'Add address and VAT Number'. Paddle will automatically refund the VAT on your original payment and apply the correct rate going forward."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why did my payment fail?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Common causes include wrong or expired card details, a billing address mismatch, an incomplete 3DS authorization, insufficient funds, or a card blocked for online transactions. Ad blockers and privacy browser extensions can also interfere with the payment form."
+          }
+        }
+      ]
+    }
+  `}</script>
+</head>
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
