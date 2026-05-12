@@ -1,5 +1,6 @@
 ---
 title: Register for an account
+description: "Sign up for Plausible Analytics. Includes a free 30-day trial with no credit card required. Start tracking your website without cookies or personal data collection."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

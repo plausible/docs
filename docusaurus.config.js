@@ -118,8 +118,10 @@ module.exports = {
         },
       ],
     },
+    image: 'img/plausible-analytics.png',
     metadata: [
       {name: 'twitter:site', content: '@PlausibleHQ'},
+      {name: 'twitter:card', content: 'summary_large_image'},
     ],
     prism: {
       additionalLanguages: ['bash', 'json'],

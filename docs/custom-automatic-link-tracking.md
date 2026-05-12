@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
 title: Tracking clicks on cloaked affiliate links and other pretty URLs
+description: "Automatically track clicks on cloaked affiliate links and pretty URLs in Plausible by matching link patterns. No manual tagging per link required."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

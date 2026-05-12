@@ -1,5 +1,6 @@
 ---
 title: Top devices, browsers and operating systems
+description: "Break down your Plausible traffic by device type, browser and operating system. Filter by multiple devices and sort by bounce rate or visit duration."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

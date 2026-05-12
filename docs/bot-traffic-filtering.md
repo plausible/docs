@@ -1,5 +1,6 @@
 ---
 title: Bot and spam traffic filtering
+description: "Plausible automatically filters bots, crawlers, referrer spam and data center traffic, blocking around 2 billion bot visits per month with no configuration needed."
 ---
 
 Plausible automatically filters out bots, crawlers, referrer spam and other non-human traffic. Our filtering systems block approximately 2 billion bot visits per month across our network, on top of the bots that never trigger the script at all because they don't execute JavaScript.

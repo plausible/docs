@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
 title: How to add the script to your site using Google Tag Manager
+description: "Deploy Plausible Analytics via Google Tag Manager using the official GTM template. No manual code editing required."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

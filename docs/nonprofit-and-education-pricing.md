@@ -1,5 +1,6 @@
 ---
 title: Discount for nonprofits and educational institutions
+description: "Plausible offers a 15% discount for nonprofits, educational institutions and open-source projects on Business annual plans. Here's how to apply."
 ---
 
 We offer a 15% introductory discount to nonprofits, educational institutions and open-source projects to help make Plausible more accessible.

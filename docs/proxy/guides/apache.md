@@ -1,5 +1,6 @@
 ---
 title: Proxying Plausible through Apache HTTP Server
+description: "How to proxy Plausible Analytics through Apache HTTP Server. Configure reverse proxy rules to serve analytics as a first-party connection from your domain."
 ---
 
 If you're already running Apache HTTP Server as your main web server or reverse proxy, you can also configure it to proxy your analytics. Start by adjusting your configuration as shown in the next step.

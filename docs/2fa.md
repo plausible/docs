@@ -1,5 +1,6 @@
 ---
 title: Enable two-factor authentication (2FA)
+description: "How to enable two-factor authentication (2FA) on your Plausible Analytics account using an authenticator app for an extra layer of login security."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

@@ -1,5 +1,6 @@
 ---
 title: Consolidated View
+description: "Plausible's Consolidated View combines traffic from all your sites into one dashboard. Useful for managing multiple domains, brands or country variants."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

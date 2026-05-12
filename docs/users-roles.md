@@ -1,5 +1,6 @@
 ---
 title: Invite team members or external guests and assign roles
+description: "How to create teams, invite members and assign roles in Plausible Analytics. Covers owner, admin, viewer, billing and guest roles with per-site access control."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

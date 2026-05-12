@@ -1,5 +1,6 @@
 ---
 title: Configuring Microsoft Entra (Azure)
+description: "How to configure Microsoft Entra ID (Azure AD) as a SAML identity provider for Plausible SSO. Step-by-step setup in the Entra admin center."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

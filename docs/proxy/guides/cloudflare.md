@@ -1,5 +1,6 @@
 ---
 title: Proxying Plausible through Cloudflare
+description: "How to proxy Plausible Analytics through Cloudflare Workers. Set up a first-party analytics connection using a free Cloudflare account in a few steps."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

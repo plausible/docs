@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
 title: How to add the script to your Discourse community
+description: "Add Plausible Analytics to Discourse via a theme component. Uses hash-based routing support for accurate tracking of forum page views."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

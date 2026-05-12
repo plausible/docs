@@ -1,5 +1,6 @@
 ---
 title: Funnel analysis
+description: "Map the visitor journey from landing page to conversion in Plausible. Spot drop-off points across multi-step funnels using pageviews or custom events."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -51,6 +52,62 @@ Funnels appear at the bottom of your dashboard as soon as the first visit is tra
 * Change the funnel name, edit the steps of your funnel and switch between sequential and strict order by toggling the **Allow other activity in between funnel steps** option
 
 * Click on the **Update Funnel** button
+
+## When to use funnel analysis
+
+Use funnels when you want to measure how many visitors complete a specific multi-step sequence and where most of them drop off. Good candidates:
+
+- A signup or onboarding flow (landing page → signup form → confirmation)
+- An ecommerce checkout (product page → cart → checkout → order confirmation)
+- A content conversion (blog post → email capture → thank you page)
+- A trial-to-paid flow (trial signup → feature usage → upgrade page)
+
+If you just want to count how many people reached a single page or clicked a button, a [pageview goal](pageview-goals.md) or [custom event goal](custom-event-goals.md) is simpler. Funnels are most useful when the journey between steps matters.
+
+## Funnel examples
+
+**SaaS trial signup**
+
+A typical SaaS funnel might look like:
+1. Pricing page (`/pricing`)
+2. Registration page (`/register`)
+3. Onboarding step one (`/onboarding/step-1`)
+4. Dashboard (`/app/dashboard`)
+
+This shows you how many visitors who viewed pricing actually made it to the dashboard. A big drop between step 1 and 2 means the pricing page is not convincing. A big drop between 3 and 4 means onboarding is losing people.
+
+**Ecommerce checkout**
+
+1. Product page (use a wildcard like `/products/*`)
+2. Cart (`/cart`)
+3. Checkout (`/checkout`)
+4. Order confirmation (`/checkout/order-confirmed`)
+
+Set this funnel to **non-sequential** if visitors might skip the cart and go directly to checkout.
+
+**Content to email signup**
+
+1. Blog post (use `/blog/*` to cover all posts)
+2. Email signup page (`/newsletter`)
+3. Thank you page (`/newsletter/confirmed`)
+
+## Interpreting funnel results
+
+**Drop-off rate by step**
+
+The drop-off between each step tells you where friction is highest. A funnel where 1,000 people enter step 1 but only 10 reach step 4 is expected: most funnels have large drops. Focus on the step with the *largest proportional* drop rather than the lowest absolute number.
+
+**What counts as a normal drop-off**
+
+There is no universal benchmark. A pricing → signup funnel might convert at 5-15%. A cart → purchase funnel might be 40-70%. Compare your current funnel against previous periods using the date range selector rather than industry averages.
+
+**Using filters to diagnose drop-off**
+
+Filter your funnel by traffic source, country or device to see whether drop-off is concentrated in a specific segment. For example: if mobile users drop off at step 2 at twice the rate of desktop users, the issue is likely a UX problem on mobile at that step.
+
+**Zero conversions on a step**
+
+If a step shows 0 conversions, check that the goal for that step is set up correctly and that the page URL in the funnel matches exactly what Plausible records. Use the Top Pages report to confirm the exact URL format being recorded.
 
 ## What's next?
 

@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
 title: Opt out and exclude your visits from the analytics by setting a localStorage flag in your browser
+description: "Exclude your own visits from Plausible tracking by setting a localStorage flag in your browser's developer console. No IP address or server changes needed."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

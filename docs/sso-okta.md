@@ -1,5 +1,6 @@
 ---
 title: Configuring Okta
+description: "How to configure Okta as a SAML 2.0 identity provider for Plausible SSO. Step-by-step setup guide for the Okta admin console."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

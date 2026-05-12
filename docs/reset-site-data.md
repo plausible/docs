@@ -1,5 +1,6 @@
 ---
 title: Reset your site data
+description: "How to reset all collected stats for a site in Plausible Analytics. The site stays in your account but all historical data is permanently cleared."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

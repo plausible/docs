@@ -1,5 +1,6 @@
 ---
 title: Change your reporting timezone
+description: "Change the reporting timezone in Plausible Analytics so daily stats match your audience's location. Set day boundaries independently of where your traffic comes from."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

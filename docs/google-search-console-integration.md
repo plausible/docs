@@ -1,5 +1,6 @@
 ---
-title: Search Console integration
+title: Google Search Console integration
+description: "See Google Search Console keyword data inside Plausible Analytics. Connect your property to view search terms alongside your traffic stats."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

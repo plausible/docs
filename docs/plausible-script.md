@@ -1,5 +1,6 @@
 ---
-title: Add the snippet to your website
+title: Add the Plausible tracking script
+description: "Add the Plausible tracking snippet to your site's header. One lightweight script, no cookies, no personal data. Works with WordPress, GTM and most site builders."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

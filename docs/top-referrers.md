@@ -1,5 +1,6 @@
 ---
-title: Acquisition channels, referral sources and paid campaigns 
+title: Traffic sources, referrers and UTM campaigns
+description: "See which channels, referrers and UTM campaigns send traffic to your site. Plausible groups sources into channels and shows bounce rate and visit duration per source."
 --- 
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -43,7 +44,7 @@ We align our channel lists and definitions closely with Google Analytics to make
 
 Please note that channel groupings and definitions may evolve as the market changes. We will keep this list updated to reflect any adjustments.
 
-<img alt="Sources - channels" src={useBaseUrl('img/top-sources-channels.png')} />
+<img alt="Channels tab in Plausible Analytics showing traffic breakdown by acquisition channel such as Organic Search, Organic Social and Direct" src={useBaseUrl('img/top-sources-channels.png')} />
 
 ## Sources
 
@@ -51,7 +52,7 @@ In the **Sources** tab, you can see the full list of your referral sources such 
 
 Note that browsers only send the domain name of the referrer and not the actual URL. If `thatblog.com/one-post/` sends you visitors, you will see `thatblog.com` in your sources list but won’t see the exact post URL itself. [See more here](https://plausible.io/blog/referrer-policy).
 
-<img alt="Sources - sources" src={useBaseUrl('img/top-sources-sources.png')} />
+<img alt="Sources tab in Plausible Analytics listing referral sources such as Google, Facebook and Reddit ranked by unique visitors" src={useBaseUrl('img/top-sources-sources.png')} />
 
 ### No need to manually exclude unwanted sources
 
@@ -93,7 +94,7 @@ Are you running paid marketing campaigns on Facebook, Google and other ad platfo
 
 Here's an example of how to tag your links: `yourdomain.com?utm_source=adwords&utm_medium=ppc&utm_campaign=novemberoffer&utm_content=sustainability&utm_term=discount`
 
-Use the [Plausible UTM builder](https://plausible.io/utm-builder) to generate tagged links without doing it manually. Already have a link and want to check it for issues? Use the [UTM checker](https://plausible.io/utm-checker) to validate and clean it up. Once your campaigns are running, use the [ad cost calculator](https://plausible.io/ad-cost-calculator) to calculate your CPC, CPM and CPA from your campaign numbers.
+Use the [Plausible UTM builder](https://plausible.io/utm-builder) to generate tagged links without doing it manually. Already have a link and want to check it for issues? Use the [UTM checker](https://plausible.io/utm-checker) to validate and clean it up. Once your campaigns are running, use the [ad cost calculator](https://plausible.io/ad-cost-calculator) to calculate your CPC, CPM and CPA from your campaign numbers. For naming conventions, session attribution rules and troubleshooting tips, see the [UTM tagging guide](manual-link-tagging.md).
 
 To isolate your UTM-tagged clicks from other clicks, you can segment the traffic by using the **UTM Medium**, **UTM Source** (here you can also see any traffic tagged with "ref" and "source" parameters), **UTM Campaign**, **UTM Content** and **UTM Term** sections in the **Campaigns** tab.
 
@@ -115,7 +116,7 @@ Filter your dashboard by a specific goal to see the number of conversions, conve
 
 Due to Plausible’s privacy-first approach, which avoids using cookies or long-term identifiers, conversion attribution relies on last-click attribution. This means the referral source of the visit that leads to the purchase is credited for the conversion.
 
-<img alt="Custom goal conversion rate" src={useBaseUrl('img/custom-goal-conversion-rate.png')} />
+<img alt="Plausible Analytics referral sources report filtered by a custom goal showing conversion rate per traffic source" src={useBaseUrl('img/custom-goal-conversion-rate.png')} />
 
 ## How to reduce the volume of dark traffic
 

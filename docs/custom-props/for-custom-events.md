@@ -1,5 +1,6 @@
 ---
-title: Attach custom properties to custom events
+title: Custom properties for events
+description: "Add key-value properties to custom events in Plausible to capture extra context: like which pricing plan a visitor chose or which content variation they saw."
 ---
 
 When you track a custom event, you can include property key-value pairs alongside it. This lets you capture additional context about the event, for example which pricing plan a visitor selected when clicking a sign-up button, or which content variation they were shown.

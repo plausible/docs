@@ -1,5 +1,6 @@
 ---
 title: Upgrade from trial to a paid subscription
+description: "How to upgrade your Plausible free trial to a paid plan. All stats collected during the trial are kept. Nothing resets when you subscribe."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

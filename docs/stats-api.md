@@ -1,5 +1,6 @@
 ---
-title: Stats API reference
+title: Plausible Stats API reference
+description: "Complete reference for the Plausible Stats API v2. Query historical and real-time analytics data via a single HTTP endpoint using POST requests."
 toc_max_heading_level: 4
 ---
 

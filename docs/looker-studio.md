@@ -1,5 +1,6 @@
 ---
-title: Looker Studio Connector
+title: Plausible Looker Studio connector
+description: "Connect Plausible Analytics to Google Looker Studio using the official connector. Build custom reports and branded dashboards on the Business plan."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

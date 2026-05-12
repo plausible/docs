@@ -1,5 +1,6 @@
 ---
 title: Delete your account
+description: "How to permanently delete your Plausible Analytics account. Deleting your account removes all sites and collected stats. This action cannot be undone."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

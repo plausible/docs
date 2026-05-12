@@ -1,5 +1,6 @@
 ---
 title: Your website settings section
+description: "Manage your Plausible Analytics site settings. Change your domain, configure access, set up email or Slack reports, exclude traffic and control dashboard visibility."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

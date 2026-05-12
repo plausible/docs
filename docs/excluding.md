@@ -1,5 +1,6 @@
 ---
 title: Exclude internal traffic from your analytics
+description: "Block your own visits and office traffic from Plausible Analytics by excluding specific IP addresses, hostnames, countries, or pages from being recorded."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

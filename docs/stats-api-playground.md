@@ -1,5 +1,6 @@
 ---
 title: Stats API playground
+description: "Interactive playground for building and testing Plausible Stats API v2 queries. Run queries live against your own site data directly in the browser."
 ---
 
 import { ApiV2Playground, ExamplesTip } from '../src/js/apiv2-playground.tsx';

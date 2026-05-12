@@ -1,5 +1,6 @@
 ---
 title: Export your website stats
+description: "Export your Plausible stats as CSV files directly from the dashboard. Filter by date range, audience segment or goal, including data imported from other tools."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

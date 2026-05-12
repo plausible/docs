@@ -1,5 +1,6 @@
 ---
-title: All metrics and their definitions
+title: Metrics definitions
+description: "Definitions for every metric in Plausible: unique visitors, sessions, pageviews, bounce rate, visit duration, conversion rate and more. All in one place."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -111,7 +112,7 @@ For example, a link in your email newsletter might look like:
 https://yoursite.com/blog/post?utm_source=newsletter&utm_medium=email&utm_campaign=april-launch
 ```
 
-Read more about [tagging your links](top-referrers.md).
+Read more about [tagging your links with UTM parameters](manual-link-tagging.md).
 
 ### Referrer Drilldown
 

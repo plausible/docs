@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
 title: Tracking custom query parameters
+description: "Plausible strips most query parameters by default for privacy. Here's how to preserve specific parameters you need to see in your Top Pages report."
 ---
 
 Query parameters `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term` are valid and supported by Plausible out of the box. The parameters themselves are stripped from the page paths so they are not shown in the **Top Pages** tab but they are used for source attribution of  marketing campaigns. You can check all the clicks on links with UTM tags in the **Campaigns** tab. Read more about [tagging links with query parameters here](top-referrers.md).

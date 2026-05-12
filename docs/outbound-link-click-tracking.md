@@ -1,5 +1,6 @@
 ---
-title: Outbound link click tracking
+title: Outbound link tracking
+description: "See which external links visitors click and which pages drive those clicks. Enable outbound link tracking in Plausible without writing any custom code."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

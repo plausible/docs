@@ -1,5 +1,6 @@
 ---
 title: Hostname, subdomain and multi-domain tracking
+description: "Track subdomains and multiple domains in Plausible: one dashboard or separate, with sessions preserved across subdomains and referral source attribution intact."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

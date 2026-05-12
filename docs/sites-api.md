@@ -1,5 +1,6 @@
 ---
 title: Site provisioning API reference
+description: "Reference for the Plausible Sites API. Create, update and delete sites programmatically. Useful for agencies, SaaS platforms and white-label deployments."
 ---
 
 import {Required, Optional} from '../src/js/api-helpers.tsx';

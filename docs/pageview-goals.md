@@ -1,5 +1,6 @@
 ---
 title: Pageview goals
+description: "Track conversions by monitoring visits to specific pages in Plausible. No code changes needed. Just set a pathname and start measuring."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

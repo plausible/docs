@@ -1,5 +1,6 @@
 ---
 title: Top countries, regions and cities
+description: "See where your visitors come from, down to city level. Plausible groups VPN traffic separately and lets you filter or block traffic by country or region."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

@@ -1,5 +1,6 @@
 ---
-title: Choose the right subscription
+title: Plausible pricing and subscription plans
+description: "How Plausible subscription tiers work. Usage is based on total pageviews and custom events across all sites in a team. Compare plans and billing options."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

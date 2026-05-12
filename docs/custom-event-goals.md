@@ -1,5 +1,6 @@
 ---
-title: Custom events
+title: Custom event tracking
+description: "Track button clicks, signups and any custom action in Plausible using CSS class names or JavaScript. No tag manager needed for most use cases."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -187,7 +188,7 @@ That's it. You can now check out your goal conversions on the dashboard.
 
 To edit a custom event goal, start by locating the custom event goal you want to update in the Goals list. Click on the "Edit goal" button next to it, which will bring up the goal editing form.
 
-<img alt="Edit goal button" src={useBaseUrl('img/edit-goal-button.png')} />
+<img alt="Edit goal button next to a custom event goal in the Plausible site settings Goals list" src={useBaseUrl('img/edit-goal-button.png')} />
 
 From the pop up, you can select a new custom event from the dropdown menu that matches the updated custom event you want to track. You can also edit the display name.
 
