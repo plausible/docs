@@ -366,12 +366,22 @@ html[data-theme='dark'] {
   --ra-admonition-icon-color: var(--ifm-color-gray-900);
 }
 
+.alert--warning a,
+.alert--warning a:hover {
+  color: var(--indigo-700);
+}
+
 [data-theme='dark'] .alert--warning {
   color: var(--ifm-color-gray-900);
 }
 
 [data-theme='dark'] .alert--warning svg {
   fill: var(--ifm-color-gray-900);
+}
+
+[data-theme='dark'] .alert--warning a,
+[data-theme='dark'] .alert--warning a:hover {
+  color: var(--indigo-700);
 }
 
 .code-button {
