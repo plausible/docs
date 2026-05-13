@@ -60,6 +60,8 @@ The amount of time visitors spend on your site. Visitors who only view one page 
 
 **Typical ranges:** 1-3 minutes is common for most sites. Documentation and content-heavy sites often run higher.
 
+If your average visit duration looks lower than expected, a high bounce rate is usually the reason. Every bounced session adds 0 seconds to the average. See the Bounce Rate section above for how to improve it.
+
 ### Views Per Visit (or Pages / Session)
 
 Views per visit (also known as pages per session) shows the average number of pageviews per visit. Repeated views of a single page are included.

@@ -92,10 +92,12 @@ module.exports = {
       },
     ],
     'API': [
+      'data-access',
       'stats-api',
       'stats-api-playground',
       'events-api',
       'sites-api',
+      'data-pipelines',
     ],
     'Account Settings': [
       '2fa',

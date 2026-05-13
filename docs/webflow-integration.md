@@ -72,9 +72,7 @@ Make sure to change the `elementId` line in the code below to include the ID att
 
 Also do change the `classes` line to include the goal name in this format: `plausible-event-name=Goal+Name`. The goal name is completely up to you. It's the name under which the goal conversions will appear in your Plausible dashboard. We've used `Button+Click` goal name in our example.
 
-:::tip To represent a space character in goal names, you can use a `+` sign
-For example: `plausible-event-name=Form+Submit` will display as `Form Submit` in your Plausible dashboard
-:::
+To represent a space in a goal name, use a `+` sign. For example: `plausible-event-name=Form+Submit` will display as `Form Submit` in your Plausible dashboard.
 
 ```html
 <script>
@@ -147,3 +145,23 @@ If you want to trigger multiple custom events on the same site, you don't need t
 ```
 
 <img alt="track multiple elements in Webflow" src={useBaseUrl('img/track-multiple-elements-webflow.png')} />
+
+## Custom event not showing up?
+
+### Did you publish your changes?
+
+After adding or editing custom code in Webflow, you must click **Save Changes** and then **Publish** your site. Changes that are only saved in the editor are not live yet and will not trigger any events.
+
+### Does the goal name match exactly?
+
+The goal name you create in your Plausible site settings must match the event name in your code exactly, including capitalisation. The `+` sign in `plausible-event-name=Button+Click` becomes a space, so the goal to create in Plausible is `Button Click`.
+
+### Are you using CSS class names directly in Webflow?
+
+Webflow replaces the `=` sign with `-` when saving CSS class names. If you added `plausible-event-name=Signup` as a class, Webflow will render it as `plausible-event-name-Signup` and the event name will not be read correctly.
+
+Use a double dash instead: `plausible-event-name--Signup`. Plausible treats `--` and `=` identically. Alternatively, use the JavaScript approach shown above, which avoids this issue entirely.
+
+### Anything else?
+
+See the [full custom event troubleshooting guide](custom-event-goals.md#custom-event-not-showing-up) for additional checks including how to verify events are firing in your browser's Network tab.

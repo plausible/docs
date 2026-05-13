@@ -109,6 +109,28 @@ Filter your funnel by traffic source, country or device to see whether drop-off 
 
 If a step shows 0 conversions, check that the goal for that step is set up correctly and that the page URL in the funnel matches exactly what Plausible records. Use the Top Pages report to confirm the exact URL format being recorded.
 
+## Troubleshooting funnels
+
+### Funnel shows no data
+
+The funnel only counts visitors after it was created. If the goals used as funnel steps have not been triggered since you saved the funnel, the funnel will show no data. Trigger each step on your site, then check the dashboard.
+
+Also confirm that each goal used as a step is set up correctly in your site settings. A goal with a name mismatch or a page URL that does not match what Plausible records will produce zero entries at that step. Use the Top Pages or Goals reports to verify the exact values being recorded.
+
+### Numbers seem lower than expected
+
+Check whether you chose strict order when sequential would be more appropriate. In strict order mode, any other page load or event between two steps disqualifies the visitor from that point in the funnel. If your visitors normally do other things between steps, strict order will produce much lower conversion numbers than sequential. Switch to sequential unless you specifically need to enforce an exact uninterrupted path.
+
+### You need more than 8 steps
+
+Funnels are limited to 8 steps. If your flow is longer, split it into two funnels at a logical midpoint. For example, an acquisition-to-activation flow can be split into an acquisition funnel (landing page to signup) and an activation funnel (signup to first key action). Compare the two completion rates to find where the bigger drop-off is.
+
+### A step shows zero conversions
+
+If one step shows zero while earlier steps have data, the goal for that step is likely misconfigured or has not fired yet since the funnel was created. See the [custom event troubleshooting guide](custom-event-goals.md#custom-event-not-showing-up) for how to verify events are firing correctly.
+
+---
+
 ## What's next?
 
 - Track [ecommerce revenue](ecommerce-revenue-tracking.md) alongside your funnels to see which paths generate the most sales
