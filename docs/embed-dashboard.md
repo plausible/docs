@@ -29,7 +29,9 @@ Enter your shared link URL, select the theme of the embed dashboard (light, dark
 It's much more convenient than figuring out the hex code for your background color
 :::
 
+<div class="browser">
 <img alt="Generate embed code" src={useBaseUrl('img/embed-dashboard.png')} />
+</div>
 
 ## 3. Paste the embed code into your website
 

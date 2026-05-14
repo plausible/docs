@@ -39,15 +39,7 @@ The comparison appears in three places across your dashboard:
 
 As with everything else on the dashboard, we'll save your comparison preference for your next visit.
 
-<div class="browser">
-    <img alt="Comparison chart" src={useBaseUrl('img/v2/comparison-chart.webp')} />
-</div>
-
 - Want to disable the comparison and get back to the regular view? Press `X` on your keyboard or choose **Disable comparison** in the comparison drop-down
-
-<div class="browser">
-    <img alt="Disable comparison" src={useBaseUrl('img/v2/disable-comparison.webp')} />
-</div>
 
 ### Segment your audience
 

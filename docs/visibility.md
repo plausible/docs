@@ -5,16 +5,16 @@ description: "Make your Plausible stats dashboard publicly accessible with a sha
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Within the **Visibility** section of your website settings you can choose to be transparent and make your website stats public so anyone with your stats dashboard link can view them.
+Within the **Visibility** section of your website settings, you can choose to be transparent and make your website stats public so anyone with your stats dashboard link can view them.
 
 Your website stats are private by default. Making them public will give you access to your public stats dashboard URL, so you can share it with the world. Some website owners link to their public stats dashboard from their footer or their **About** page. It's really up to you.
 
 Switch this on to make your website stats public and get access to your public stats dashboard URL. Like this:
 
-<img alt="Make your stats private again" src={useBaseUrl('img/public-visibility.png')} />
+<div class="browser">
+<img alt="Make your stats public" src={useBaseUrl('img/public-visibility.png')} />
+</div>
 
 ## Want to make your stats private again?
 
-If you wish to make your website stats private again, switch it off. Your stats dashboard URL will become private again. Like this:
-
-<img alt="Make your website stats public" src={useBaseUrl('img/visibility.png')} />
+If you wish to make your website stats private again, simply switch off the same toggle as shown above. Your stats dashboard URL will become private again.
