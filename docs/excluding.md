@@ -22,15 +22,13 @@ You can use our [official WordPress plugin](https://plausible.io/wordpress-analy
 
 * Choose **IP Addresses** in the **Shields** entry in the left-hand menu
 
-<img alt="Shields exclude traffic by IP" src={useBaseUrl('img/shields-exclude-tracking-by-IP.png')} />
-
 * Click on the **Add IP Address** button to add a new address to the block list
-
-<img alt="Shields click to add IP address" src={useBaseUrl('img/shields-click-to-add-IP-address.png')} />
 
 * You can manually insert an IP address (both IPv4 and IPv6 addresses are acceptable) or you can click to block your current public IP address which our system will find and display for you
 
+<div class="browser">
 <img alt="Shields add IP to blocklist" src={useBaseUrl('img/shields-add-ip-to-blocklist.png')} />
+</div>
 
 * You can also add a description to help you identify which device or location you have blocked
 
@@ -42,26 +40,10 @@ You can use our [official WordPress plugin](https://plausible.io/wordpress-analy
 
 * You can click on the **Remove** button next to that IP address to remove it from the blocklist
 
+<div class="browser">
 <img alt="Shields IP blocked" src={useBaseUrl('img/shields-ip-blocked.png')} />
+</div>
  
-
-## Exclude visits by hostname
-
-If you prefer to only record traffic from specific hostnames (and block all the other traffic), you can do so in your site settings: 
-
-* Visit the site settings area for the dashboard in question
-* Choose **Hostnames** in the **Shields** entry in the left-hand menu
-* Then click on the **Add Hostname** button to add a new hostname to your allow list
-
-You can group your hostnames when adding them to the allow list:
-
-* `*.yourdomain.com` will record all traffic on all subdomains of `yourdomain.com` but won't record traffic of `yourdomain.com` itself
-* `*yourdomain.com` will record all traffic on all subdomains of `yourdomain.com` and `yourdomain.com` traffic itself will be recorded too
-   
-Once added to the allow list, we will start blocking traffic from all the other hostnames within a few minutes. You can add up to 30 different hostnames. 
-
-You can see the list of all the hostnames that you're allowing the traffic from at any time. Click on the "Remove" button next to a hostname to remove it from the allow list.
-
 ## Exclude visits by country
 
 If you prefer to block traffic from specific countries from being recorded in your dashboard, you can do so in your site settings as well: 
@@ -87,8 +69,25 @@ Once added to the block list, we will start blocking traffic from that specific 
 
 You can see the list of all the pages that you're blocking the traffic from. Click on the "Remove" button next to that page to remove it from the blocklist.
 
+## Exclude visits by hostname
+
+If you prefer to only record traffic from specific hostnames (and block all the other traffic), you can do so in your site settings: 
+
+* Visit the site settings area for the dashboard in question
+* Choose **Hostnames** in the **Shields** entry in the left-hand menu
+* Then click on the **Add Hostname** button to add a new hostname to your allow list
+
+You can group your hostnames when adding them to the allow list:
+
+* `*.yourdomain.com` will record all traffic on all subdomains of `yourdomain.com` but won't record traffic of `yourdomain.com` itself
+* `*yourdomain.com` will record all traffic on all subdomains of `yourdomain.com` and `yourdomain.com` traffic itself will be recorded too
+   
+Once added to the allow list, we will start blocking traffic from all the other hostnames within a few minutes. You can add up to 30 different hostnames. 
+
+You can see the list of all the hostnames that you're allowing the traffic from at any time. Click on the "Remove" button next to a hostname to remove it from the allow list.
+
 ## Exclude visits by browser
 
 Do you use VPNs or often change your IP addresses? And do none of our other blocking options work for your use case? 
 
-You can then set a special `localStorage` flag in your browser so you don't need to frequently block new IP addresses. [Here's how](excluding-localstorage.md)
+You can then set a special `localStorage` flag in your browser so you don't need to frequently block new IP addresses. [Here's how](excluding-localstorage.md).
