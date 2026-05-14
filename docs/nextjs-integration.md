@@ -1,5 +1,7 @@
 ---
+displayed_sidebar: someSidebar
 title: How to add the script to your NextJS site
+description: "Add Plausible Analytics to a Next.js app using the next-plausible package. Covers script setup, custom events and proxying."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -10,7 +12,7 @@ You can add the script directly to your head through "next/head" or react-helmet
 
 ## Serving the Plausible script
 
-```jsx
+```jsx title="pages/index.jsx"
 import PlausibleProvider from 'next-plausible'
 
 export default Home() {
@@ -25,7 +27,7 @@ export default Home() {
 
 ## Sending custom events
 
-```jsx
+```jsx title="components/PlausibleButton.jsx"
 import {usePlausible} from 'next-plausible'
 
 export default PlausibleButton() {

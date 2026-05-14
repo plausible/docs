@@ -1,5 +1,6 @@
 ---
-title: Stats API reference
+title: Plausible Stats API reference
+description: "Complete reference for the Plausible Stats API v2. Query historical and real-time analytics data via a single HTTP endpoint using POST requests."
 toc_max_heading_level: 4
 ---
 
@@ -194,7 +195,7 @@ It's useful to be able to group data by time, which can be done via the followin
 
 Note that:
 - `time` dimensions are not usable in filters. Set [`date_range`](#date_range) instead.
-- If no data falls into a given time bucket, no values are returned. [See `include.time_labels` option](#time-labels) for a workaround.
+- If no data falls into a given time bucket, no values are returned. [See `include.time_labels` option](#include.time_labels) for a workaround.
 - These dates and timestamps are reported in sites Reporting Timezone.
 
 [See example](#example-timeseries)
@@ -288,7 +289,7 @@ When not specified, the default ordering is:
 
 [See full query example](#example-custom-properties)
 
-### include <Optional />
+### include <Optional /> {#include}
 
 Default: `{}`
 
@@ -298,7 +299,7 @@ Additional options for the query as to what data to include.
 
 Default: `false`
 
-If true, tries to include imported data in the result. See [imported stats](#imported-stats) for more details, [query example](#example-imports).
+If true, tries to include imported data in the result. See [imported stats](#include.imports) for more details, [query example](#example-imports).
 
 <details>
   <summary>Read more on limitations of including imported data</summary>
@@ -344,7 +345,7 @@ rows for this query.
 
 [See example](#example-pagination)
 
-### pagination <Optional />
+### pagination <Optional /> {#pagination}
 
 Default: `{ "limit": 10000, "offset: 0 }`
 

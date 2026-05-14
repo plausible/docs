@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /docs/search
+
+Sitemap: https://plausible.io/docs/sitemap.xml

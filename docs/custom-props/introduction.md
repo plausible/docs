@@ -1,5 +1,6 @@
 ---
-title: Introduction to custom properties
+title: Custom properties
+description: "Custom properties in Plausible let you attach your own metadata to pageviews and events, then filter and segment your dashboard by author, category, login status, and more."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

@@ -1,5 +1,6 @@
 ---
 title: Invoice email and billing access
+description: "How to change your Plausible invoice email address and give your accounting team billing access via the Billing role in team settings."
 ---
 
 Plausible and Paddle use separate email addresses. Your Plausible email is for logging in and viewing your stats. Your Paddle email is where invoices are sent.

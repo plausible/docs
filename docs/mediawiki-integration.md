@@ -1,5 +1,7 @@
 ---
+displayed_sidebar: someSidebar
 title: How to add Plausible to your MediaWiki instance
+description: "Install the Plausible extension for MediaWiki to add privacy-first, cookie-free analytics tracking to your wiki."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

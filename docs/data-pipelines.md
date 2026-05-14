@@ -1,40 +1,54 @@
 ---
+displayed_sidebar: someSidebar
 title: Viewing Plausible stats elsewhere
+description: "Access your Plausible analytics outside the dashboard: via the Stats API, embedded iframe, WordPress plugin, Looker Studio and other integrations."
 ---
 
-If you're looking to access your Plausible dashboard, metrics and stats outside of the plausible.io website itself, here are some options:
+If you're looking to access your Plausible stats outside of the plausible.io website, here are the available options.
 
-## Stats API
+## Official integrations
+
+These integrations are built and maintained by Plausible.
+
+### Stats API
 
 The Plausible Stats API offers a way to retrieve your stats programmatically. [Learn more here](stats-api.md).
 
-## Embedded dashboard
+### Embedded dashboard
 
-You can embed your Plausible stats dashboard into any other website using an HTML iframe. This is useful in case you want to showcase your stats on your own website or if you want to offer Plausible-powered web analytics dashboard (without our branding) directly in your user interface. [Learn more here](embed-dashboard.md).
+You can embed your Plausible stats dashboard into any other website using an HTML iframe. This is useful if you want to showcase your stats on your own website or offer a Plausible-powered analytics dashboard directly in your user interface. [Learn more here](embed-dashboard.md).
 
-## WordPress plugin
+### WordPress plugin
 
 By using our official WordPress plugin, you can view your Plausible stats dashboard directly in your WordPress dashboard without needing to visit our website. [Learn more here](https://plausible.io/wordpress-analytics-plugin).
 
-## Looker Studio
+### Looker Studio
 
 We have an official Plausible connector for [Looker Studio (formerly Google Data Studio)](looker-studio.md).
 
-And thanks to the members of our community, there are also some third-party solutions:
+---
 
-## Airbyte connector
+## Community integrations
+
+These integrations are built and maintained by third parties, not by Plausible. We do not provide support for them.
+
+### Airbyte connector
 
 [Airbyte connector](https://docs.airbyte.com/integrations/sources/plausible/): A Plausible API connector for Airbyte, an open-source data integration platform.
 
-## Fivetran connector
+### Fivetran connector
 
-[Fivetran Plausible Connector](https://github.com/imgly/fivetran-plausible-connector): A Google Cloud Function–based solution for ingesting Plausible data into Fivetran. This custom connector pulls hourly stats from the Plausible API and creates a `timeseries` table in any destination supported by Fivetran.
+[Fivetran Plausible Connector](https://github.com/imgly/fivetran-plausible-connector): A Google Cloud Function based solution for ingesting Plausible data into Fivetran. This custom connector pulls hourly stats from the Plausible API and creates a `timeseries` table in any destination supported by Fivetran.
 
-## GA Insights
+### MCP server (Claude and other AI tools)
+
+[Plausible MCP](https://github.com/getsentry/plausible-mcp): An MCP server built by the Sentry team that lets you query your Plausible data through AI tools like Claude. Ask natural language questions about traffic, conversions, top pages and goal performance.
+
+### GA Insights
 
 [GA Insights](https://www.ga-insights.com/plausible-slack) allows you to extend Plausible Analytics with automated reporting, monitoring and goal tracking straight in Slack.
 
-## Apple platforms (iOS, iPadOS, macOS, tvOS, etc.)
+### Apple platforms (iOS, iPadOS, macOS, tvOS, etc.)
 
 * [Charsible](https://fruitfulapps.com/charsible): Charsible is an iOS app offering a range of widgets to help you keep an eye on your Plausible Analytics data wherever you are.
 
@@ -46,11 +60,11 @@ And thanks to the members of our community, there are also some third-party solu
 
 * [Arbory](https://apps.apple.com/app/id6760103214): Native iOS companion app with a full dashboard, interactive charts, home screen and lock screen widgets, and traffic spike notifications. Connects directly to your Plausible instance.
 
-## Linux
+### Linux
 
 [Tally](https://flathub.org/apps/com.cassidyjames.plausible): hybrid native + web app that wraps the Plausible web app in a native UI, integrating better with desktop operating systems.
 
-## Windows
+### Windows
 
 [Wizible](https://xakpc.dev/apps/wizible) brings Plausible to your Windows desktop. Monitor your stats anytime, right from the Widgets panel.
 

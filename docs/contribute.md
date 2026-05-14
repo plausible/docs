@@ -1,5 +1,7 @@
 ---
+displayed_sidebar: someSidebar
 title: How to contribute
+description: "Contribute to Plausible Analytics. Share your experience, submit feature ideas, report bugs or help with development on GitHub. Ways to support an open source project."
 ---
 
 Thank you for being interested in contributing to Plausible Analytics! We’re very happy that you want to help us improve and grow our open source project! Here are some ways you can help us build better Plausible:

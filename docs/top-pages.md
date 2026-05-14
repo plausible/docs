@@ -1,5 +1,6 @@
 ---
 title: Top content, landing pages and exit pages
+description: "See your most visited pages, top entry and exit pages in Plausible. Filter, group and sort by pageviews, bounce rate, time on page or scroll depth."
 --- 
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

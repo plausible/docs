@@ -1,5 +1,7 @@
 ---
+displayed_sidebar: someSidebar
 title: Adding Plausible to Squarespace
+description: "Add Plausible Analytics to a Squarespace site using Code Injection. Privacy-first, cookie-free tracking without touching your theme files."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

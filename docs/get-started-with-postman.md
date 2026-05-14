@@ -1,5 +1,7 @@
 ---
+displayed_sidebar: someSidebar
 title: How to get started with the Stats API using Postman
+description: "Step-by-step guide to querying the Plausible Stats API using Postman. Covers authentication with Bearer tokens and making your first API request."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

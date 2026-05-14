@@ -1,5 +1,6 @@
 ---
 title: Get reports and traffic spike notifications into your Slack channel
+description: "Send Plausible Analytics weekly reports, monthly summaries, and traffic spike alerts directly to a Slack channel using Slack's email integration."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

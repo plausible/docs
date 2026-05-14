@@ -1,5 +1,6 @@
 ---
 title: Form submissions tracking
+description: "Plausible can automatically detect and record form submissions across your site without custom code. See which pages and sources drive the most form completions."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

@@ -1,5 +1,7 @@
 ---
+displayed_sidebar: someSidebar
 title: How to add the script to Buttondown
+description: "Track your Buttondown newsletter archives, link clicks and subscriber conversions in Plausible Analytics. Setup guide with goal configuration."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

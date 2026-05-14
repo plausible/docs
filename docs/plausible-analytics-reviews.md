@@ -1,12 +1,38 @@
 ---
+displayed_sidebar: someSidebar
 title: Plausible Analytics reviews and in media
+description: "Plausible Analytics reviews, independent research and media coverage. See what users, publications and researchers say about switching from Google Analytics."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-We don't do any paid ads, retargeting or any other surveillance based marketing. People that enjoy using Plausible Analytics sharing how they use it and what they find useful is the best way for us to spread the word and get even more sites to consider removing privacy-intrusive analytics. 
+We don't do any paid ads, retargeting or any other surveillance based marketing. People who enjoy using Plausible sharing how they use it is the best way for us to spread the word and get more sites to consider removing privacy-intrusive analytics.
 
-Plausible Analytics is trusted by thousands of subscribers to deliver their website and business insights. Here's a list of some people and organizations who use Plausible Analytics and what they think about it along some other Plausible mentions in the media:
+## Independent research and notable coverage
+
+**[The Average Level of GA4 Inaccuracy compared to Plausible](https://www.orbitmedia.com/blog/inaccurate-google-analytics-traffic-sources/)** — Andy Crestodina, Orbit Media
+
+One of the few independent head-to-head accuracy studies by a researcher with no stake in either product. Crestodina tested GA4 against Plausible across a large dataset and found GA4 traffic data to be significantly less accurate. Worth reading if you're deciding whether switching tools means accepting lower data quality.
+
+---
+
+**[Plausible judged to be the fastest-growing open-source startup](https://techcrunch.com/2020/10/21/study-finds-most-big-open-source-startups-outside-bay-area-many-european-and-avoiding-vc/)** — TechCrunch
+
+---
+
+**[Featured in the ThoughtWorks Tech Radar](https://www.thoughtworks.com/radar/techniques/privacy-focused-web-analytics)**
+
+ThoughtWorks publishes a widely-read guide to emerging technology techniques. Plausible was listed as a recommended approach under privacy-focused web analytics.
+
+---
+
+> "We recommend Plausible because it's privacy-focused, provides more reliable data compared to Google Analytics, and it's extremely lightweight, so it doesn't harm your site performance." — [David Ramos, Ghost](https://ghost.org/blog/subscription-business-metrics/)
+
+Ghost is one of the largest open source publishing platforms. Their recommendation reflects a choice they made for their own users, not a sponsored placement.
+
+---
+
+## Reviews and community mentions
 
 * [We've put together a list of people tweeting about using Plausible](https://twitter.com/PlausibleHQ/timelines/1311218983912308736)
 
@@ -18,8 +44,6 @@ Plausible Analytics is trusted by thousands of subscribers to deliver their webs
 
 * [Is it Plausible to stop using Google Analytics?](https://www.wholegraindigital.com/blog/plausible-vs-google-analytics/) by Tom Greenwood of Wholegrain Digital
 
-* [The Average Level of GA4 Inaccuracy compared to Plausible](https://www.orbitmedia.com/blog/inaccurate-google-analytics-traffic-sources/) by Andy Crestodina of Orbit Media
-
 * [Meet your new analytics dashboard](https://www.prezly.com/news/meet-your-new-analytics-dashboard) by Kate Bystrova of Prezly
 
 * [Why we use Plausible.io Web Analytics](https://www.sanechoice.cloud/why-we-use-plausible-io-web-analytics/) by Bradley Porter of SaneChoice
@@ -27,10 +51,6 @@ Plausible Analytics is trusted by thousands of subscribers to deliver their webs
 * [Taking on the Major Players, Plausible Analytics Offers an Alternative, Privacy-Conscious Stats Service](https://wptavern.com/taking-on-the-major-players-plausible-analytics-offers-an-alternative-privacy-conscious-stats-service) by Justin Tadlock of WordPress Tavern
 
 * [DITCH Google Analytics. Use Plausible on your website!](https://www.youtube.com/watch?v=P0T6VjTS7_Y) video review by TechHut
-
-* [Featured in the Tech Radar by ThoughtWorks: "An opinionated guide to technology frontiers"](https://www.thoughtworks.com/radar/techniques/privacy-focused-web-analytics) 
-
-* ["We recommend Plausible because it's privacy-focused, provides more reliable data compared to Google Analytics, and it's extremely lightweight, so it doesn't harm your site performance"](https://ghost.org/blog/subscription-business-metrics/) by David Ramos of Ghost
 
 * [Migrating all analytics to Plausible across your websites](https://gingeleski.com/plausible-analytics/) by Randy Gingeleski, a senior staff security engineer for HBO Max
 

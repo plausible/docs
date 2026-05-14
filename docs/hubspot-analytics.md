@@ -1,5 +1,7 @@
 ---
+displayed_sidebar: someSidebar
 title: How to add Plausible Analytics to your HubSpot site
+description: "Add Plausible Analytics to your HubSpot website by injecting the tracking script site-wide. Works across all pages without cookies."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

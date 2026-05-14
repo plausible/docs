@@ -1,5 +1,6 @@
 ---
 title: Delete your site data and your stats
+description: "How to delete a site and all its stats from your Plausible account. Use the Danger Zone in website settings to permanently remove a site."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

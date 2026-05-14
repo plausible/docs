@@ -1,5 +1,6 @@
 ---
 title: Get traffic spike or drop notifications through email
+description: "Get an email alert when your site traffic spikes or drops below a threshold. Set custom visitor limits in Plausible and receive notifications up to twice per day."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

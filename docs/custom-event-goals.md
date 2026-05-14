@@ -1,5 +1,6 @@
 ---
-title: Custom events
+title: Custom event tracking
+description: "Track button clicks, signups and any custom action in Plausible using CSS class names or JavaScript. No tag manager needed for most use cases."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -13,9 +14,7 @@ Custom events let you measure button clicks, subscription signups or any other a
 - **Using CSS class names**: add a class to any HTML element you want to track. No JavaScript required. This is the easiest approach for most use cases and is covered in the first section below.
 - **Using JavaScript**: call the `plausible()` function directly for more advanced tracking needs such as dynamic values, conditional logic or tracking non-click interactions. See the [manual JavaScript approach](#trigger-custom-events-manually-with-a-javascript-function) section.
 
-:::tip Quick start options
 If you're using WordPress or Google Tag Manager, you can set up custom events with our [WordPress plugin](https://plausible.io/wordpress-analytics-plugin) or [GTM template](https://plausible.io/gtm-template) without writing code. Plausible also offers automated tracking for [outbound link clicks](outbound-link-click-tracking.md), [file downloads](file-downloads-tracking.md) and [form submissions](form-submissions-tracking.md) straight from your site settings, [pageview goals](pageview-goals.md) for tracking visits to specific pages and [404 error pages](error-pages-tracking-404.md) with a small snippet of code.
-:::
 
 ## Add a CSS class name to the element you want to track on your site
 
@@ -27,9 +26,7 @@ For instance, if you're using WordPress, you can click on any block element you 
 
 You can then click on "Advanced" and add a CSS class name in the "Additional CSS class(es)" field. Add the CSS class name in this format: `plausible-event-name=MyEventName`. For instance, if you want to track clicks on a button, you could use: `plausible-event-name=Button+Click`.
 
-:::tip To represent a space character in the event names, you can use a `+` sign
-For example: `plausible-event-name=Button+Click` will display as `Button Click` in your dashboard
-:::
+To represent a space in an event name, use a `+` sign. For example: `plausible-event-name=Button+Click` will display as `Button Click` in your dashboard.
 
 <img alt="Add a CSS class name in the 'Additional CSS class(es)' field" src={useBaseUrl('img/wordpress-css-class-name.png')} />
 
@@ -187,7 +184,7 @@ That's it. You can now check out your goal conversions on the dashboard.
 
 To edit a custom event goal, start by locating the custom event goal you want to update in the Goals list. Click on the "Edit goal" button next to it, which will bring up the goal editing form.
 
-<img alt="Edit goal button" src={useBaseUrl('img/edit-goal-button.png')} />
+<img alt="Edit goal button next to a custom event goal in the Plausible site settings Goals list" src={useBaseUrl('img/edit-goal-button.png')} />
 
 From the pop up, you can select a new custom event from the dropdown menu that matches the updated custom event you want to track. You can also edit the display name.
 
@@ -234,6 +231,44 @@ plausible.init({
 ### Create funnels to optimize your conversion rate
 
 After you have the custom events in place, you can start creating [marketing funnels](funnel-analysis.md) to uncover possible issues, optimize your site and increase the conversion rate.
+
+## Custom event not showing up?
+
+### Have you created the goal in your site settings?
+
+Sending an event from your site is not enough. You must also create a matching goal in your [site settings](website-settings.md) under **Goals**. Until you do, the event is received by Plausible but nothing appears in your dashboard. See the [Create a custom event goal](#create-a-custom-event-goal-in-your-plausible-account) section above for the steps.
+
+### Does the goal name match exactly?
+
+The goal name in your Plausible site settings must match the event name your site is sending, character for character including capitalisation.
+
+The most common mismatch comes from the `+` sign in CSS class names. The class `plausible-event-name=Button+Click` sends the event name `Button Click` (plus replaced by space). If you created a goal called `Button+Click` instead of `Button Click`, nothing will be counted.
+
+### Has the event fired at least once after you created the goal?
+
+Past events are not backfilled. If you set up the goal after events were already being sent, the counter starts from zero at the moment the goal was created. Trigger the event on your site after creating the goal and then check the dashboard.
+
+### Did your CMS replace the equals sign?
+
+Webflow and some other site builders replace `=` with `-` when saving CSS class names. If you added `plausible-event-name=Signup` but the rendered HTML shows `plausible-event-name-Signup`, the event name will not be read correctly.
+
+Use a double dash instead of the equals sign: `plausible-event-name--Signup`. Plausible treats `--` and `=` identically.
+
+### How to verify the event is actually being sent
+
+Open your browser developer tools and go to the **Network** tab. Trigger the action you are tracking and look for a request to `plausible.io/api/event`. If you see the request, check the response headers for `x-plausible-dropped: 1`. When that header is present, the event reached Plausible but was rejected by bot filtering. The most common cause is the request coming from localhost or a staging domain not added to your Plausible account.
+
+If you see no request at all, the CSS class name was not added correctly or the Plausible script is not loading on that page.
+
+### GTM events not firing
+
+If you set up custom events through [Google Tag Manager](https://plausible.io/gtm-template), use GTM's built-in **Preview** mode to confirm the tag is firing. Check that your trigger conditions match the actual interaction and that the tag is published, not just saved as a draft.
+
+### Custom properties showing as (none)
+
+If you see `(none)` for a custom property value, the property name in your code does not match what you entered in the goal settings, or the value is not being passed at the moment the event fires. Check that the property is defined before the `plausible()` call and that the name matches exactly.
+
+---
 
 <details>
 

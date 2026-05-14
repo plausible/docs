@@ -1,5 +1,7 @@
 ---
+displayed_sidebar: someSidebar
 title: Single-page application support
+description: "Plausible works out of the box with React, Vue, Angular and other pushState-based SPAs. No extra configuration needed to track page navigation."
 ---
 
 Plausible Analytics integrates automatically with modern `pushState` based frontend routers. If you're running a single-page application

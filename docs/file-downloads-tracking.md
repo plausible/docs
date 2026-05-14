@@ -1,5 +1,6 @@
 ---
 title: File downloads tracking
+description: "See which files visitors download and from which pages. Plausible automatically detects common file extensions. Enable it without writing custom code."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

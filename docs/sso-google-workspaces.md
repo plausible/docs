@@ -1,5 +1,6 @@
 ---
 title: Configuring Google Workspaces
+description: "How to configure Google Workspace as a SAML identity provider for Plausible SSO. Step-by-step setup in the Google Admin console."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

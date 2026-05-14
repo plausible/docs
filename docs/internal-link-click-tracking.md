@@ -1,5 +1,7 @@
 ---
+displayed_sidebar: someSidebar
 title: Internal link click tracking
+description: "Track internal link clicks in Plausible using CSS class names and custom event goals. No JavaScript required for most setups."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

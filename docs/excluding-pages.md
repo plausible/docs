@@ -1,5 +1,7 @@
 ---
+displayed_sidebar: someSidebar
 title: Exclude specific pages from being tracked
+description: "Stop Plausible from recording traffic on specific pages or sections of your site by configuring page exclusions in your site settings."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

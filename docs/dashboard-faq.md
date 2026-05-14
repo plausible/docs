@@ -1,5 +1,6 @@
 ---
 title: Dashboard FAQ
+description: "Answers to common questions about Plausible dashboard numbers: why metrics don't add up, how unique visitors are counted and how sessions are defined."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

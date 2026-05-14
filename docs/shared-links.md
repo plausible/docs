@@ -1,5 +1,6 @@
 ---
 title: Share your stats with a private and secure link
+description: "Create a private shared link to your Plausible dashboard so partners, clients, or advertisers can view your stats without needing a Plausible account."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

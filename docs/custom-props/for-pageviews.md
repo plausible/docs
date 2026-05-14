@@ -1,5 +1,6 @@
 ---
 title: Attach custom properties to pageviews
+description: "How to send custom properties with every pageview in Plausible by updating your tracking snippet, so you can segment traffic by author, category, user role, and more."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

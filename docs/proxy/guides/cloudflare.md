@@ -1,5 +1,6 @@
 ---
 title: Proxying Plausible through Cloudflare
+description: "How to proxy Plausible Analytics through Cloudflare Workers. Set up a first-party analytics connection using a free Cloudflare account in a few steps."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -21,7 +22,7 @@ In your Cloudflare account, click on the "Compute (Workers" > 'Workers & Pages' 
 
 ## Step 2 (Optional): You can change your service name
 
-This is optional but you can change the service name to give your worker a more meaningful name. Do avoid words like 'plausible', 'analytics', 'tracking', 'stats', etc. as they may be blocked. It's also fine to keep the random name that Cloudflare generates by default. Then click on the 'Deploy' button.
+This is optional but you can change the service name to give your worker a more meaningful name. It's also fine to keep the random name that Cloudflare generates by default. Then click on the 'Deploy' button.
 
 <img alt="Deploy CloudFlare worker" src={useBaseUrl('img/deploy-cloudflare-worker.png')} />
 
@@ -46,7 +47,9 @@ Next click on the 'Edit Code' button, remove the default code that Cloudflare pr
 
 <img alt="Edit CloudFlare worker" src={useBaseUrl('img/edit-worker-code.png')} />
 
-We recommend you change the folder name in the first two lines in the code below. This makes your proxy more difficult to discover and block. We especially recommend you change the folder name in the two lines if you're not hosting your site on the Cloudflare CDN.
+:::tip
+Change the folder name in the first two lines of the code below. This makes your proxy harder to discover and block, especially if you're not hosting your site on the Cloudflare CDN.
+:::
 
 In the **ProxyScript** line, change `https://plausible.io/js/pa-XXXXX.js` to your script location from step 3.
 
@@ -54,9 +57,11 @@ In the **ScriptName** line, change the `/js/` to whatever you wish. Say `/your-f
 
 In the **Endpoint** line, change the `/api/` to whatever you want. It can be the same as above but you can also choose something different. If you choose `/your-folder-name/`, then the full location would be `/your-folder-name/event`.
 
-Do avoid words like 'plausible', 'analytics', 'tracking', 'stats', etc. as they may be blocked.
+:::warning
+Avoid words like 'plausible', 'analytics', 'tracking', 'stats' in path names as they may be blocked.
+:::
 
-```js
+```js title="cloudflare-worker.js"
 const ProxyScript = 'https://plausible.io/js/pa-XXXXX.js'
 const ScriptName = '/js/script.js';
 const Endpoint = '/api/event';

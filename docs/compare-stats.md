@@ -1,5 +1,6 @@
 ---
 title: Compare your stats over time
+description: "Compare any two date ranges in Plausible: previous period, year over year or a custom range. Align by day of week to avoid skew in your comparisons."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

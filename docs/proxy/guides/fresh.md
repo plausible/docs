@@ -1,5 +1,7 @@
 ---
+displayed_sidebar: someSidebar
 title: Proxying Plausible through Fresh
+description: "How to proxy Plausible Analytics through the Deno Fresh framework. Serve analytics as a first-party connection from your own domain using Fresh routes."
 ---
 
 :::tip Don't want to manage your own proxy? We can handle it for you

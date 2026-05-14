@@ -1,5 +1,6 @@
 ---
-title: Introduction to the dashboard
+title: Dashboard overview
+description: "A guided tour of the Plausible Analytics dashboard. Understand what each metric means, how to filter data and navigate the single-page stats view with no setup required."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -11,7 +12,7 @@ Here’s what you can discover on your Plausible dashboard. You can also explore
 ## Top Graph
 
 <div class="browser">
-    <img alt="Top Graph" src={useBaseUrl('img/v2/top-graph.webp')} />
+    <img alt="Plausible Analytics top graph showing unique visitors, total visits, pageviews, bounce rate and visit duration" src={useBaseUrl('img/v2/top-graph.webp')} />
 </div>
 
 See the number of unique visitors, total visits (sessions), total page views, views per visit, the bounce rate (the percentage of sessions that had one page view only) and the visit duration. You can **click on a particular metric to display it in the top graph**.
@@ -30,10 +31,14 @@ Here you can enter "[Site Settings](website-settings.md)" but also switch to a d
 You can **set a different unit of time the stats on the chart are grouped by** in the options menu (the **⋮** icon in the top right of the chart). Click it and select **Graph interval**. The available interval options depend on the date range you've selected. For example, if you select "Today", you can display the stats by minute or by hour.
 
 <div class="browser">
-    <img alt="intervals in top graph" src={useBaseUrl('img/v2/chart-intervals.webp')} />
+    <img alt="Plausible Analytics graph interval options for Today view showing minute and hour groupings" src={useBaseUrl('img/v2/intervals-minutes-hours.webp')} />
 </div>
 
 Or if you select "Last 28 days", you can display the stats by day or by week. You can display the stats by days, weeks or months if you choose a wider timeframe.
+
+<div class="browser">
+    <img alt="Plausible Analytics graph interval options for Last 30 days view showing day, week and month groupings" src={useBaseUrl('img/v2/intervals-days-weeks-months.webp')} />
+</div>
 
 ## Compare your stats over time
 
@@ -80,7 +85,7 @@ See all the acquisition channels and sources of traffic ranked by the number of 
 You can use the **Campaigns** tab to view your campaigns separately from other traffic sources. These are visitors coming from UTM tagged links such as those in your emails, social media or in your paid advertising campaigns. Click on **Medium**, **Source**, **Campaign**, **Term** and **Content** to explore these.
 
 :::tip Referral sources are counted per session
-UTM parameters and other referral sources are only recorded when they start a new session. [Read more about how sources are counted](top-referrers.md).
+UTM parameters and other referral sources are only recorded when they start a new session. [Read more about how sources are counted](top-referrers.md). If your UTM link returns a 202 response but nothing appears in the **Campaigns** tab, see [UTM parameters not appearing in Campaigns](troubleshoot-integration.md#utm-parameters-are-in-the-url-but-not-showing-in-the-campaigns-tab).
 :::
 
 [Read more here](top-referrers.md).
@@ -110,7 +115,7 @@ You can see the device, browser and operating system your visitors are using. Cl
 ## Goals, properties and funnels
 
 <div class="browser">
-    <img alt="Goal Conversions" src={useBaseUrl('img/v2/dashboard-goal-conversions.webp')} />
+    <img alt="Goal conversions section in the Plausible Analytics dashboard showing conversion counts and conversion rate by goal" src={useBaseUrl('img/v2/dashboard-goal-conversions.webp')} />
 </div>
 
 You can track goal conversions to see which pages and referral sources drive signups, purchases, downloads and other actions. Revenue tracking, funnel analysis, form completions, file downloads and more are all available.

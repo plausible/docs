@@ -1,5 +1,7 @@
 ---
+displayed_sidebar: someSidebar
 title: How to add the script to your Wix site
+description: "Add Plausible Analytics to a Wix site using the Custom Code feature. Cookie-free visitor tracking that works across all pages."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

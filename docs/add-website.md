@@ -1,5 +1,6 @@
 ---
 title: Add your website details
+description: "Add your website to Plausible Analytics. Set your domain, configure timezone, and handle subdomains. Your first step before installing the tracking snippet."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

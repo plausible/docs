@@ -1,5 +1,7 @@
 ---
+displayed_sidebar: someSidebar
 title: Hashed page paths
+description: "Using hash-based URLs on your site? Enable hashed page path tracking in Plausible with a one-line config change to track each view as a separate page."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

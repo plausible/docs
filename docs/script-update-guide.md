@@ -1,5 +1,7 @@
 ---
+displayed_sidebar: someSidebar
 title: Update your Plausible script
+description: "Migrating from the old Plausible tracking script to the updated version: what changed, how to get the new snippet and how to adjust your existing setup."
 ---
 
 In October 2025, we introduced an updated version of the Plausible tracking script. This guide walks you through what’s new and how to smoothly transition from the old script.

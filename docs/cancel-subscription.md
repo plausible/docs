@@ -1,5 +1,6 @@
 ---
 title: Cancel your subscription plan
+description: "How to cancel your Plausible subscription. Your stats and dashboard remain accessible until the end of your billing period after cancellation."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

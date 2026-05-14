@@ -1,5 +1,7 @@
 ---
+displayed_sidebar: someSidebar
 title: Our team
+description: "Meet the team behind Plausible Analytics: the people designing, building and maintaining the privacy-first Google Analytics alternative."
 ---
 
 Plausible Analytics is designed, developed and maintained by the following people:

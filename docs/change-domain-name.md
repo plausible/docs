@@ -1,5 +1,6 @@
 ---
 title: Change your domain name
+description: "How to update your site's domain name in Plausible without losing historical stats. Use this when your domain changes, not when transferring to another account."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

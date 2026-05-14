@@ -1,6 +1,50 @@
 ---
 title: Import stats from Google Analytics
+description: "Import your historical Google Analytics 4 data into Plausible Analytics. No gaps, no double-counting, and full support for segmenting and exporting."
 ---
+
+<head>
+  <script type="application/ld+json">{`
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why are the numbers lower in Plausible than in Google Analytics?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GA4 uses modeled data and consent mode to estimate traffic for users who declined cookies. Plausible does not use modeled data and only counts real visits it received. If consent mode was enabled in GA4, GA4 will show higher numbers for users who rejected tracking."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why are the numbers higher in Plausible than in Google Analytics?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Plausible does not require cookie consent and is not blocked by most browser-level tracking protection. GA4 is blocked by Safari ITP, Firefox Enhanced Tracking Protection and many ad blockers. Plausible natively captures more traffic, particularly from privacy-conscious users."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is data missing after the import appears to complete?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check the date range of your import in your Plausible site settings. If your GA4 property had a data retention limit, some older data may have already been deleted by Google before the import ran. If the import failed partway through, delete the import and start again."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I import multiple Google Analytics properties into the same Plausible dashboard?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. You can import up to 5 different Google Analytics properties into the same Plausible dashboard. The import tool automatically handles date ranges to avoid double-counting."
+          }
+        }
+      ]
+    }
+  `}</script>
+</head>
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -48,7 +92,7 @@ This isn't recommended as the native data is superior to the imported data but i
 
 How long time frame we can import the data for also depends on the data retention limits in Google Analytics. If there are no data retention limits in your Google Analytics account, we can import all the data.
 
-If you have strict data retention limits in place in Google Analytics (for instance GA4 properties have data retention limit of up to 14 months), we can only show the metrics in the top chart of your Plausible dashboard for periods outside of your data retention limit as Google automatically deletes all the other stats.
+If you have strict data retention limits in place in Google Analytics (for instance GA4 properties have data retention limit of up to 14 months), we can only show the metrics in the top chart of your Plausible dashboard for periods outside of your data retention limit as Google automatically deletes all the other stats. Note that how much data you can import may also depend on your [Plausible subscription plan](subscription-plans.md).
 
 ## How do I delete the imported data?
 
@@ -82,7 +126,7 @@ Google Analytics aggregates UTM source under the **source** dimension and they d
 
 ### Goals
 
-It's possible to import your goal conversion data from Google Analytics 4. When your import finishes, you will not see your goal data show up automatically. You need to go to your site settings and [add the goals you want to show up on your dashboard](custom-event-goals.md#3-create-a-custom-event-goal-in-your-plausible-account). Note that ecommerce revenue numbers cannot be imported. 
+It's possible to import your goal conversion data from Google Analytics 4. When your import finishes, you will not see your goal data show up automatically. You need to go to your site settings and [add the goals you want to show up on your dashboard](custom-event-goals.md#create-a-custom-event-goal-in-your-plausible-account). Note that ecommerce revenue numbers cannot be imported. 
 
 ### Browser versions
 
@@ -103,3 +147,61 @@ We can't display hourly graph interval on the daily view.
 ### Consolidated view
 
 Imported data is not included in the [consolidated view](consolidated-views.md) dashboard. The consolidated view only reflects data collected natively by Plausible.
+
+## Before you import: migration planning
+
+**Do you need to import at all?**
+
+If you are starting fresh with Plausible and do not need to reference historical trends, you can skip the import entirely. Plausible will start building its own clean dataset from day one.
+
+Import is most useful when you need to compare current performance against a historical baseline, report on year-over-year trends or fill in data for a period before you installed Plausible.
+
+**Running GA and Plausible in parallel**
+
+Install Plausible alongside your existing Google Analytics setup. Run both for at least 2-4 weeks before removing GA. This lets you verify that Plausible is tracking correctly and gives you a period of overlap to compare the two datasets. Do not import data that overlaps with your Plausible native data. The import tool handles date ranges to avoid double-counting, but the metrics from the two sources are calculated differently and will not match exactly.
+
+**GA4 data retention limits**
+
+GA4 has a default data retention limit of 2 months for event-level data (14 months on paid plans). If you want to import historical data, do it before that retention window closes. Once GA deletes the data, it cannot be recovered. Check your GA4 property settings under Data Settings → Data Retention to see how much history is available.
+
+**Mapping GA goals to Plausible goals**
+
+GA4 custom events and conversions do not import directly as Plausible goals. After importing, you will need to recreate your goals in Plausible. Make a list of your key GA4 conversion events before you start, then set up equivalent [custom event goals](custom-event-goals.md) or [pageview goals](pageview-goals.md) in Plausible.
+
+## What to expect from imported data
+
+Imported GA4 data and native Plausible data use different counting methods. The numbers will not match, even for the same time period. This is expected.
+
+**Unique visitors**
+
+Plausible counts unique visitors using a daily hash of IP address and User-Agent. GA4 uses device-based identifiers and cookies. Imported data calculates unique visitors by summing daily uniques, which can overcount visitors who return across multiple days. For periods measured in weeks or months, this difference can be significant. See the [metrics definitions](metrics-definitions.md) page for how Plausible defines each metric.
+
+**Sessions and bounce rate**
+
+GA4 defines sessions and engagement differently from Plausible. GA4 uses an "engaged session" model; Plausible uses a simpler session model with a 30-minute inactivity timeout. Bounce rates from imported data will likely differ from what Plausible records natively.
+
+**Traffic sources**
+
+Imported data maps GA4 sources to Plausible's source fields where possible, but some source attribution will be less granular than what Plausible captures natively. UTM parameters are imported but some GA4-specific channel groupings have no direct equivalent.
+
+**What imported data does not support**
+
+As noted in the import steps above, imported data does not appear in consolidated views, does not support advanced filtering by custom properties and does not include scroll depth, exit pages or hourly breakdown. Treat imported data as a rough historical reference, not a like-for-like comparison with native Plausible data.
+
+## Troubleshooting data discrepancies
+
+**Numbers are much lower in Plausible than in GA4**
+
+GA4 uses modeled data and consent mode to estimate traffic for users who declined cookies. Plausible does not use modeled data. If you had consent mode enabled in GA4, GA4 will show higher numbers for users who rejected tracking. Plausible only counts real visits it received.
+
+**Numbers are higher in Plausible than in GA4**
+
+Plausible does not require cookie consent and is not blocked by most browser-level tracking protection. GA4 is blocked by Safari ITP, Firefox Enhanced Tracking Protection and many ad blockers. Plausible natively captures more traffic, particularly from privacy-conscious users.
+
+**Import appears to complete but data is missing**
+
+Check the date range of your import in your Plausible site settings. If your GA4 property had a data retention limit, some older data may have already been deleted by Google before the import ran. If the import failed partway through, delete the import and start again.
+
+**Imported data and native data show a gap or overlap**
+
+The import tool sets the end date of the import to one day before your first Plausible native data point. If you see a gap, check that Plausible was correctly installed and recording data before you ran the import. If you see overlap, delete the import and re-run it after confirming your Plausible installation date.

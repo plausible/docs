@@ -1,5 +1,6 @@
 ---
 title: Feature Overview
+description: "Get the most out of Plausible Analytics. Set up goal tracking, UTM campaigns, team access, Search Console integration and scheduled reports from one dashboard."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

@@ -1,5 +1,6 @@
 ---
 title: Proxying Plausible through WordPress
+description: "How to proxy Plausible Analytics on WordPress using the official plugin. No technical setup required. The plugin handles proxying automatically."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

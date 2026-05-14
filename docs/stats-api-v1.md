@@ -1,5 +1,7 @@
 ---
+displayed_sidebar: someSidebar
 title: Stats API v1 reference (legacy)
+description: "Reference for the legacy Plausible Stats API v1. Use the v2 API for new integrations. Documents endpoints, authentication and query parameters."
 ---
 
 import {Required, Optional} from '../src/js/api-helpers.tsx';

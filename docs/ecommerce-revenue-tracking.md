@@ -1,5 +1,6 @@
 ---
 title: Ecommerce revenue and attribution tracking
+description: "Assign revenue values to custom events in Plausible to see which campaigns and pages drive the most sales. Supports multiple currencies and clean referral attribution."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -31,6 +32,16 @@ Plausible automatically excludes unwanted referral sources such as payment proce
 Referral sources are counted only when they start a new session on your site. This means that when visitors briefly leave your site to complete a payment on an external gateway before returning, the payment processor won't show up as a referral source. The original source that brought the visitor to your site will remain the one attributed for that conversion.
 
 This ensures your revenue is attributed to the marketing campaigns, referral sources and landing pages that actually drove the sale rather than the payment gateway the visitor passed through along the way.
+
+## Before you start: what you need
+
+Revenue tracking in Plausible is built on top of custom events. Before setting up revenue tracking, you need:
+
+1. The Plausible snippet installed on your site
+2. A conversion event to attach the revenue value to (typically a purchase confirmation, form submission or upgrade click)
+3. Access to the revenue amount at the point the event fires: from your checkout page, a thank you page or a server-side callback
+
+If you are tracking revenue on an order confirmation page, the revenue amount needs to be available in the page's JavaScript at the time the event fires. Most ecommerce platforms expose this via a data layer or template variable.
 
 ## How to track ecommerce revenue
 
@@ -68,6 +79,26 @@ Custom events and revenue goals are listed at the bottom of your dashboard and w
 This lets you track product names, coupon codes, if customers are logged in and more. [Learn more](/custom-props/introduction.md).
 :::
 
+## Revenue tracking strategies
+
+**One purchase event vs. per-product events**
+
+The simplest approach is a single `Purchase` event with the total order value. This gives you clean revenue totals, referral attribution and conversion rates without complex setup.
+
+If you need to break down revenue by product type, category or subscription tier, use custom properties alongside the revenue event. For example:
+
+```js
+plausible('Purchase', {revenue: {currency: 'USD', amount: 49.00}, props: {plan: 'Pro'}})
+```
+
+This lets you filter the revenue report by `plan` to compare revenue from different product lines.
+
+**Where to fire the event**
+
+Fire the revenue event on your order confirmation or thank you page, not on the checkout button click. Firing on button click captures intent but not completed purchases, which inflates revenue figures and makes attribution misleading.
+
+For subscription upgrades, fire on the confirmation page after payment is processed, not when the user selects a plan.
+
 ## Integrating with WooCommerce
 
 If you're running WooCommerce, you can use our WordPress plugin. [Plausible WordPress plugin](https://wordpress.org/plugins/plausible-analytics/) has a built-in support for tracking of WooCommerce store activity including:
@@ -86,10 +117,31 @@ If you're using Shopify, you can track sales and revenue by making a few changes
 
 There's a third-party Plausible plugin for Magento that supports custom events and revenue goals tracking. [Take a look](https://github.com/Pixel-Open/magento-plausible).
 
+## Troubleshooting revenue tracking
+
+**Revenue not showing in the dashboard**
+
+- Check that the goal name in your Plausible site settings matches the event name exactly (case-sensitive)
+- Confirm the `revenue` object uses the correct format: `{currency: 'USD', amount: 49.00}`. The amount must be a number, not a string
+- Use your browser's Network tab to verify the event is being sent. Look for a request to `plausible.io/api/event` and check the payload includes the revenue data
+- If you are using a proxy, confirm the proxied endpoint is receiving and forwarding the full event payload
+
+**Revenue amount is wrong**
+
+- Check that the amount is in the major currency unit (49.00 for $49, not 4900 for cents)
+- If you see duplicate revenue, check for multiple Plausible snippets on the page or the event firing more than once on page load
+- For multi-currency stores, Plausible records each transaction in the currency you specify. If you mix currencies in the same goal, totals will be summed as if they are the same currency. Use separate goals per currency or convert to a base currency before sending
+
+**Currency code format**
+
+Use standard ISO 4217 codes: USD, EUR, GBP, SEK and so on. Incorrect codes will cause the event to be recorded without revenue data.
+
 ## What's next?
 
 - Set up a [funnel](funnel-analysis.md) to follow the purchase journey from landing page to checkout
 - Use [custom properties](custom-props/introduction.md) to break down revenue by product name, category or coupon code
 - [Filter and segment](filters-segments.md) your dashboard to see revenue by source, campaign, country or device
+- Query revenue data programmatically using the [Stats API](stats-api.md)
+- Use the [ad cost calculator](https://plausible.io/ad-cost-calculator) to calculate your CPC, CPM and CPA by dividing your ad spend by the conversions Plausible records
 
 Learn more about tracking [ecommerce revenue attribution](https://plausible.io/blog/ecommerce-revenue-attribution) on our blog.

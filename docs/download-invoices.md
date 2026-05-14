@@ -1,5 +1,6 @@
 ---
 title: Download your invoices
+description: "How to download invoices for your Plausible subscription. Find past invoices in account settings and add company address or VAT number via Paddle."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

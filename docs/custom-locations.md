@@ -1,5 +1,7 @@
 ---
+displayed_sidebar: someSidebar
 title: Specify a custom location to aggregate pages that contain identifiers
+description: "How to send Plausible a custom URL instead of the real page URL. Useful for redacting user IDs, UUIDs or other personal data from your Top Pages report."
 ---
 
 By default, Plausible tracks pages using their complete URLs as they are on your website. In some cases, you might want to provide Plausible with a custom URL to use instead of the actual URL of a page.

@@ -1,5 +1,6 @@
 ---
 title: Transfer account ownership
+description: "How to transfer ownership of a Plausible account when someone leaves your organization. Covers both scenarios: with and without access to the original email."
 ---
 
 Plausible accounts are tied to the email address used to register. If the person who created the account has left your organization, there are two paths to regain control depending on whether you can still reach that email address.

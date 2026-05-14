@@ -1,5 +1,6 @@
 ---
 title: Transfer ownership of a site
+description: "How to transfer a site in Plausible Analytics to another user or team. Useful for agencies handing off client sites after setup is complete."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
