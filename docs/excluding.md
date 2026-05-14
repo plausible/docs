@@ -52,6 +52,10 @@ If you prefer to block traffic from specific countries from being recorded in yo
 * Choose **Countries** in the **Shields** entry in the left-hand menu
 * Then click on the **Add Country** button to add a new country to your block list
 
+<div class="browser">
+<img alt="Shields country blocked" src={useBaseUrl('img/block-traffic-from-countries-from-being-recorded.png')} />
+</div>
+
 Once added to the block list, we will start blocking traffic from that specific country within a few minutes. You can block up to 30 different countries. 
 
 You can see the list of all the countries that you're blocking the traffic from. Click on the "Remove" button next to that country to remove it from the blocklist.
@@ -64,6 +68,10 @@ If you prefer to permanently block traffic from specific pages or sections of yo
 * Choose **Pages** in the **Shields** entry in the left-hand menu
 * Then click on the **Add Page** button to add a new page to your block list
 * You can group different pages or dynamic URLs by using asterisks. For instance, if you'd like to block all the blog traffic from being recorded you can add something like (`/blog/*`)
+
+<div class="browser">
+<img alt="Shields pages blocked" src={useBaseUrl('img/block-traffic-from-pages-from-being-recorded.png')} />
+</div>
 
 Once added to the block list, we will start blocking traffic from that specific page within a few minutes. You can block up to 30 different pages. 
 
@@ -81,7 +89,11 @@ You can group your hostnames when adding them to the allow list:
 
 * `*.yourdomain.com` will record all traffic on all subdomains of `yourdomain.com` but won't record traffic of `yourdomain.com` itself
 * `*yourdomain.com` will record all traffic on all subdomains of `yourdomain.com` and `yourdomain.com` traffic itself will be recorded too
-   
+
+<div class="browser">
+<img alt="Shields hostnames allowed" src={useBaseUrl('img/allowlist-hostname-traffic-to-record-in-analytics.png')} />
+</div>
+
 Once added to the allow list, we will start blocking traffic from all the other hostnames within a few minutes. You can add up to 30 different hostnames. 
 
 You can see the list of all the hostnames that you're allowing the traffic from at any time. Click on the "Remove" button next to a hostname to remove it from the allow list.
