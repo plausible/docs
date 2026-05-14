@@ -8,7 +8,9 @@ Within the **Email reports** section of your website settings you can decide to 
 
 This will help notify you when your site has an unusually high or low volume of traffic. 
 
+<div class="browser">
 <img alt="Get traffic spike notifications via email" src={useBaseUrl('img/traffic-spike-notifications.png')} />
+</div>
 
 ## Set the current visitor threshold for the traffic spike notifications
 
