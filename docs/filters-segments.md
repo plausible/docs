@@ -34,10 +34,6 @@ When you’re trying to understand and analyze your traffic, the **Filter** butt
 
 You can filter your stats by multiple sources, countries, pages and more, all at once. This is useful if you want to group specific geographical regions, separate organic search traffic from other sources or segment your audience to your needs.
 
-<div class="browser">
-    <img alt="Multiple filters" src={useBaseUrl('img/v2/filter-segments-multiple-filters.webp')} />
-</div>
-
 ### Search for any metric
 
 You can search for any metric such as a particular country, referral source or page on your site. Start typing to discover the specific page (or another metric) you're looking for. No need to scroll through the long list of countries or pages.
@@ -52,10 +48,6 @@ You can exclude specific segments of traffic and only display the traffic that i
 
 Click on the **Filter** button, then select **Country** as your metric, choose "is not" (or "does not contain" as an alternative) and then select (or type) the name of the country you want to exclude. You can do the same for referral sources or any of the other metrics.
 
-<div class="browser">
-    <img alt="Exclude traffic" src={useBaseUrl('img/v2/exclude-traffic.webp')} />
-</div>
-
 ### Group relevant pages, marketing campaigns and more
 
 Want to group all your blog posts and analyze the traffic to the blog separately from the rest of your site? Or exclude traffic that has visited a specific section of your site such as your logged in pages or your order confirmation page? Or do you want to group all the traffic from a specific set of marketing campaigns?
@@ -66,10 +58,6 @@ You can group pages, sources, campaigns and more by using the **Filter** button.
 Would you like your grouped pages to be permanently displayed in your dashboard? You can do so by using [pageview goals](pageview-goals.md).
 :::
 
-<div class="browser">
-    <img alt="Filter contains" src={useBaseUrl('img/v2/filter-contains.webp')} />
-</div>
-
 ### Filter by subdomain or hostname
 
 Want to filter by hostname so you can segment your stats to a specific subdomain only? You can do so by using the **Filter** button and choosing the **Hostname** entry within the menu.
@@ -77,10 +65,6 @@ Want to filter by hostname so you can segment your stats to a specific subdomain
 You can choose to segment your traffic by any one specific hostname from the list, you can exclude any one specific hostname or even segment by hostnames that contain any specific word.
 
 Learn more on how Plausible [handles cross-subdomain tracking here](subdomain-hostname-filter.md).
-
-<div class="browser">
-    <img alt="List of subdomains" src={useBaseUrl('img/v2/list-of-hostnames-and-subdomains.webp')} />
-</div>
 
 ## How to save a segment
 
