@@ -21,11 +21,15 @@ Here's how you can import your historical stats into your Plausible dashboard by
 
 2. Go into the **Imports & Exports** section, find the **Import Data** panel and click on the **CSV** button to import your CSV files.
 
+<div class="browser">
 <img alt="Import CSV" src={useBaseUrl('img/import-csv.png')} />
+</div>
 
 3. Select all the CSV files that you'd like to import and click on the **Confirm import** button. When importing your stats from different analytics tools, please ensure that each CSV file follows our CSV format guidelines. The guidelines are listed at the end of this document.
 
+<div class="browser">
 <img alt="Select CSV and import" src={useBaseUrl('img/select-csv-to-import.png')} />
+</div>
 
 :::tip Want to transfer a site ownership to another Plausible account?
 No data export/import is needed in this case. We have a way to [transfer site ownership](transfer-ownership.md) with a couple of clicks.
@@ -81,11 +85,11 @@ There are several exceptions to this though, because some properties are aggrega
 
 By default, imported data is always included in the view, unless you choose to exclude it manually by opening the options menu (the **⋮** icon in the top right of the chart) and toggling off **Include imported data**.
 
+<div class="browser">
 <img alt="Stats include imported data" src={useBaseUrl('img/stats-include-imported-data.png')} />
+</div>
 
-Whenever imported data cannot be included due to the applied filters, you will see a warning bubble in the corresponding report. Note that this does not affect displaying native data in any way.
-
-<img alt="Imported data is excluded due to applied filters" src={useBaseUrl('img/imported-data-is-excluded-due-to-filters.png')} />
+Whenever imported data cannot be included due to the applied filters, you will see a warning bubble stating “Imported data is excluded due to applied filters” in the corresponding report. Note that this does not affect displaying native data in any way.
 
 ### Goals and custom properties
 
