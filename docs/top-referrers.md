@@ -13,7 +13,9 @@ These metrics help you assess traffic quality beyond raw visitor counts. A sourc
 
 Using [the **Filter** button on the top of your dashboard](filters-segments.md), you can filter the stats by multiple channels, sources or UTM tags simultaneously for more powerful traffic segmentation. You can also exclude traffic from a specific channel, referral source or UTM tag.
 
+<div class="browser">
 <img alt="Top Referrers - multiple filters" src={useBaseUrl('img/top-referrers-filtering-multiple-filters.png')} />
+</div>
 
 ## Channels
 
@@ -44,7 +46,9 @@ We align our channel lists and definitions closely with Google Analytics to make
 
 Please note that channel groupings and definitions may evolve as the market changes. We will keep this list updated to reflect any adjustments.
 
+<div class="browser">
 <img alt="Channels tab in Plausible Analytics showing traffic breakdown by acquisition channel such as Organic Search, Organic Social and Direct" src={useBaseUrl('img/top-sources-channels.png')} />
+</div>
 
 ## Sources
 
@@ -52,7 +56,9 @@ In the **Sources** tab, you can see the full list of your referral sources such 
 
 Note that browsers only send the domain name of the referrer and not the actual URL. If `thatblog.com/one-post/` sends you visitors, you will see `thatblog.com` in your sources list but won’t see the exact post URL itself. [See more here](https://plausible.io/blog/referrer-policy).
 
+<div class="browser">
 <img alt="Sources tab in Plausible Analytics listing referral sources such as Google, Facebook and Reddit ranked by unique visitors" src={useBaseUrl('img/top-sources-sources.png')} />
+</div>
 
 ### No need to manually exclude unwanted sources
 
@@ -116,7 +122,9 @@ Filter your dashboard by a specific goal to see the number of conversions, conve
 
 Due to Plausible’s privacy-first approach, which avoids using cookies or long-term identifiers, conversion attribution relies on last-click attribution. This means the referral source of the visit that leads to the purchase is credited for the conversion.
 
+<div class="browser">
 <img alt="Plausible Analytics referral sources report filtered by a custom goal showing conversion rate per traffic source" src={useBaseUrl('img/custom-goal-conversion-rate.png')} />
+</div>
 
 ## How to reduce the volume of dark traffic
 
