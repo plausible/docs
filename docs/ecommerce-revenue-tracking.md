@@ -17,7 +17,9 @@ When you create a new custom event, you can optionally assign a monetary value t
 
 Total revenue shows your overall performance. Average revenue helps you identify which sources or campaigns drive high-value customers rather than just high volume. A source sending fewer but higher-value orders can be worth more than a high-volume source with a low average order value.
 
+<div class="browser">
 <img alt="Ecommerce revenue goal top graph" src={useBaseUrl('img/plausible-ecommerce-revenue-top-graph.png')} />
+</div>
 
 The revenue metrics are fully filterable. For instance, you can see the total or average revenue for a particular custom event per any dimension such as a specific date, referral source, marketing campaign, entry page, country or device.
 
@@ -51,7 +53,9 @@ If you want to track ecommerce revenue, here's how to enable it:
 
 Go to your [site settings](website-settings.md) and in the **Goals** section click on the **Add goal** button. Choose **Custom event** as the goal trigger, enter the goal name in the **Event name** field, switch to **Enable Revenue Tracking** and set the base currency of your choice. This currency will be used for total and average revenue metrics in the dashboard. Note that the currency for a specific event cannot be changed later.
 
+<div class="browser">
 <img alt="Add goal and choose your currency" src={useBaseUrl('img/plausible-ecommerce-currency-goal.png')} />
+</div>
 
 ### Step 2: Send the revenue data from your site
 
@@ -73,7 +77,9 @@ Or using the [Events API](events-api.md) directly.
 
 Custom events and revenue goals are listed at the bottom of your dashboard and will appear as soon as the first conversion has been tracked.
 
+<div class="browser">
 <img alt="Ecommerce revenue tracking goal" src={useBaseUrl('img/plausible-ecommerce-revenue-goal.png')} />
+</div>
 
 :::tip You can add more details to your revenue tracking by using custom properties
 This lets you track product names, coupon codes, if customers are logged in and more. [Learn more](/custom-props/introduction.md).

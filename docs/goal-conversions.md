@@ -5,8 +5,6 @@ description: "Track signups, purchases, clicks and other key actions in Plausibl
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-<img alt="Goal conversions overview in Plausible Analytics showing a list of configured goals with conversion counts and conversion rates" src={useBaseUrl('img/goal-display.png')} />
-
 Goals allow you to track actions that you want your visitors to take on your site. Actions such as signing up to a newsletter, clicking on a **Download** button, registering for a trial account, purchasing a product, clicking on an external link, downloading a file or completing a checkout form of an ecommerce store.
 
 By setting up custom events or pageviews as goals, you can track the number of conversions, conversion rate, referrer sources and entry pages that are driving conversions and the top pages that people convert on. You can also follow the visitor journey using funnels. For definitions of conversion rate, unique conversions and total conversions, see the [metrics definitions page](metrics-definitions.md).
