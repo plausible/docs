@@ -15,11 +15,15 @@ You can find scroll depth data in:
 
 1.  **The top row of metrics** when a page filter is applied. Click on it to see trends over time.
 
+<div class="browser">
 <img alt="Scroll depth metric in Plausible" src={useBaseUrl('img/scroll-depth-top-graph.png')} />
+</div>
 
 2.  **The expanded Top Pages tab**, where pages can be sorted by scroll depth for deeper analysis.
 
+<div class="browser">
 <img alt="Scroll depth metric in Top Pages details" src={useBaseUrl('img/scroll-depth-top-pages-details.png')} />
+</div>
 
 If there's insufficient data, scroll depth will display as "-" until more traffic is recorded.
 
@@ -39,7 +43,9 @@ Select `Scroll Depth` as the goal trigger, select the scroll depth percentage th
 
 When creating a scroll depth goal, you can optionally narrow it down using custom properties. This lets you turn a broad goal into a more specific one by matching only events with certain property values. For example, you could create a 75% scroll depth goal for blog posts that only counts when author = jane_doe, letting you measure deep engagement specifically with that author’s content.
 
+<div class="browser">
 <img alt="Scroll depth goals" src={useBaseUrl('img/scroll-depth-goal.png')} />
+</div>
 
 Do you want to analyze the scroll depth for a specific section of your site? You can use an asterisk (`*`) to match patterns in your page path URLs. Asterisks can be placed on either end or in the middle of any page path URL.
 
