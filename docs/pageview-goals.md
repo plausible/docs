@@ -13,15 +13,15 @@ Do you run a store and want to track purchases? Do you have a contact form and w
 
 To get started with **Pageview Goals**, go to [your website's settings](website-settings.md) in Plausible Analytics and visit the **Goals** section. You should see an empty list with a prompt to add a goal.
 
-<img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
-
 Click the **+ Add goal** button to go to the goal creation form.
 
 Select `Pageview` as the goal trigger and enter the pathname of the page you would like your visitors to hit, or select the same from the dropdown. The pathname must match the page path you can see in your Plausible Analytics dashboard.
 
-<img alt="Add your pageview goal" src={useBaseUrl('img/add-pageview-goal.png')} />
-
 Next, you'll see the Display Name field, pre-filled based on the pathname. You can optionally edit it now or at any time later.
+
+<div class="browser">
+<img alt="Add your pageview goal" src={useBaseUrl('img/add-pageview-goal.png')} />
+</div>
 
 ### Narrow goals with custom properties
 
@@ -49,15 +49,14 @@ Now that you're tracking pageview goals, you can:
 
 ## Edit a Pageview Goal
 
-To edit a Pageview Goal, start by locating the pageview goal you want to update in the Goals list in your website's settings. Click on the "Edit goal" button next to it, which will bring up the goal editing form.
+To edit a Pageview Goal, start by locating the pageview goal you want to update in the Goals list in your website's settings. Click on the button with the pencil icon next to it, which will bring up the goal editing form.
 
+<div class="browser">
 <img alt="Edit goal button" src={useBaseUrl('img/edit-goal-button.png')} />
+</div>
 
-From the pop up, you can select a new page path from the dropdown menu that matches the updated page you want to track.
+The goal editing form is exactly the same as the one you see when adding a new goal. From the pop up, you can select a new page path from the dropdown menu that matches the updated page you want to track.
 
-You can also give it a new display name to keep your reports and funnels easy to read.
-
-<img alt="Edit pageview goal popup" src={useBaseUrl('img/edit-pageview-goal-popup.png')} />
+You can also give it a new display name to keep your reports and funnels easy to read. Or add a custom property to narrow down your goal to specific visitors.
 
 Once you’ve made the necessary changes, click "Update goal" and your updated settings will be applied immediately.
-
