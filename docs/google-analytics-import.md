@@ -58,7 +58,9 @@ Here's how you can import your historical Google Analytics stats into your Plaus
 
 2. In the **Imports & Exports** section, find the **Import Data** panel. You can link your Google account to your Plausible account by clicking on the **Google Analytics** button.
 
+<div class="browser">
 <img alt="Import Google Analytics data into Plausible" src={useBaseUrl('img/import-google-analytics-data.png')} />
+</div>
 
 3. After linking Plausible to your Google account, you'll see a drop-down selection menu listing all the existing Google Analytics properties associated with the connected Google account. Select the property that you'd like to import and click on the **Continue** button.
 
@@ -96,9 +98,11 @@ If you have strict data retention limits in place in Google Analytics (for insta
 
 ## How do I delete the imported data?
 
-Data you have imported can be deleted by returning to your site's **Imports & Exports** settings page and clicking the **Delete Import** button in the **Existing Imports** section. This action won't affect the native data you have collected using our script directly.
+Data you have imported can be deleted by returning to your site's **Imports & Exports** settings page and clicking the bin icon in the Imports section. This action won't affect the native data you have collected using our script directly.
 
+<div class="browser">
 <img alt="Delete Google Analytics data from Plausible" src={useBaseUrl('img/delete-google-analytics-data.png')} />
+</div>
 
 ## Can I delete my Google Analytics account after a successful import?
 
@@ -110,9 +114,7 @@ We have taken many steps to make the imported data feel as fast, easy, and strai
 
 ### Filtering 
 
-Simple filtering of imported data is possible but we're unable to look at how some metrics interact with each other which makes [the more advanced segmenting](filters-segments.md) limited. Whenever imported data cannot be included due to the applied filters, you will see a warning bubble in the corresponding report.
-
-<img alt="Imported data is excluded due to applied filters" src={useBaseUrl('img/imported-data-is-excluded-due-to-filters.png')} />
+Simple filtering of imported data is possible but we're unable to look at how some metrics interact with each other which makes [the more advanced segmenting](filters-segments.md) limited. Whenever imported data cannot be included due to the applied filters, you will see a warning bubble stating “Imported data is excluded due to applied filters” in the corresponding report.
 
 ### Unique visitors
 
