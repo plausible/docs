@@ -45,8 +45,7 @@ Note that when you generate new recovery codes, your old recovery codes will bec
 
 ## How to disable 2FA
 
-* In your Plausible account settings **Security** section, find “**Two-Factor Authentication (2FA)**” and click on the “**Disable 2FA**” button.
-<img alt="Disable 2FA" src={useBaseUrl('img/disable-2FA.png')} />
+* In your Plausible account settings **Security** section, find “**Two-Factor Authentication (2FA)**” and click on the “**Disable 2FA**” button (also visible in the screenshot above).
 * Then enter your account password and click the “**Disable 2FA**” button to complete the process.
 
 Note that once you turn off the 2FA, verification codes from the authenticator application and saved recovery codes will become invalid.
