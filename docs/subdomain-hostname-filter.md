@@ -45,15 +45,15 @@ Filtering by hostname comes in handy also if you have pages with identical page 
 
 To filter by hostname, click on [the **Filter** button](filters-segments.md) in the top-right of your dashboard and choose the **Hostname** entry within the menu.
 
-<img alt="Filter by subdomain" src={useBaseUrl('img/filter-by-hostname-or-subdomain.png')} />
-
 We'll show you the list of all the hostnames we have recorded in the chosen time range:
 
 * You can filter your traffic by one or more specific hostnames from the list ("is")
 * You can exclude the traffic from one or multiple hostnames ("is not")
 * You can segment by all hostnames that contain any particular word ("contains")
 
+<div class="browser">
 <img alt="List of subdomains" src={useBaseUrl('img/list-of-hostnames-and-subdomains.png')} />
+</div>
 
 :::tip Want to filter your traffic by a subfolder or directory?
 You can do this by using the filter button or by setting up a pageview goal. [See how here](pageview-goals.md#how-to-group-your-pages)
