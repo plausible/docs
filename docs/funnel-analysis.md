@@ -13,7 +13,9 @@ You can follow the visitor journey from a landing page to a conversion with our 
 * With the percentage drop-off between the individual funnel steps, you can spot where you lose the most visitors. A step with an unusually large drop-off is usually the best place to start optimizing
 * You can get more granular by [using filters](filters-segments.md) to segment your audience. Filter conversion funnels by marketing campaign, referral source, landing page, device or location
 
+<div class="browser">
 <img alt="Funnel analysis" src={useBaseUrl('img/funnel-analysis.png')} />
+</div>
 
 ## How funnel conversions are counted
 
