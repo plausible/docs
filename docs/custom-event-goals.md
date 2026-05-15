@@ -22,13 +22,17 @@ Tag the site element you want to track with a CSS class name. How to do this var
 
 For instance, if you're using WordPress, you can click on any block element you want to track such as a button. This will open up the block menu on the right-hand side of your screen.
 
+<div class="browser">
 <img alt="Click on any WordPress block element you want to track such as a button" src={useBaseUrl('img/wordpress-button-css-class-name.png')} />
+</div>
 
 You can then click on "Advanced" and add a CSS class name in the "Additional CSS class(es)" field. Add the CSS class name in this format: `plausible-event-name=MyEventName`. For instance, if you want to track clicks on a button, you could use: `plausible-event-name=Button+Click`.
 
 To represent a space in an event name, use a `+` sign. For example: `plausible-event-name=Button+Click` will display as `Button Click` in your dashboard.
 
+<div class="browser">
 <img alt="Add a CSS class name in the 'Additional CSS class(es)' field" src={useBaseUrl('img/wordpress-css-class-name.png')} />
+</div>
 
 ### You can also add class names directly in HTML
 
@@ -158,8 +162,6 @@ When you send custom events to Plausible, they won't show up in your dashboard a
 
 To configure a goal, go to [your website's settings](website-settings.md) in your Plausible account and visit the **Goals** section. You should see a list of current goals with a prompt to add a goal.
 
-<img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
-
 Click on the **+ Add goal** button to go to the goal creation form.
 
 Select `Custom event` as the goal trigger and enter the name of the custom event you are triggering. The name must match the one you added as a CSS class name on your site for conversions to appear in your analytics dashboard. So in our example where you added a CSS class name `plausible-event-name=Button+Click`, the goal to add to your Plausible account is `Button Click` (plus is replaced by a space).
@@ -168,13 +170,17 @@ Select `Custom event` as the goal trigger and enter the name of the custom event
 
 When creating a custom event goal, you can optionally narrow it down using custom properties. This lets you turn a broad goal into a more specific one by matching only events with certain property values, letting you track something like “Purchase (Business – yearly)” as its own goal rather than grouping all purchases together. [Learn how to set up property-filtered goals](/custom-props/for-custom-events#create-property-filtered-goals).
 
+<div class="browser">
 <img alt="Add your custom event goal" src={useBaseUrl('img/custom-events-in-plausible-setup-modal.png')} />
+</div>
 
 Next, click on the **Add goal** button and you'll be taken back to the Goals page. When you navigate back to your Plausible dashboard, you should see the number of visitors who triggered the custom event. Custom events are listed at the bottom of your dashboard and will appear as soon as the first conversion has been tracked.
 
 If you happen to be sending events to Plausible already, you might see the following message under the **Add goal** button:
 
+<div class="browser">
 <img alt="Add all custom event goals in a single action" src={useBaseUrl('img/add-all-event-goals.png')} />
+</div>
 
 You can click the link to automatically add all the goals you've been sending so far. If you end up not wanting to see some of them on the dashboard, you can simply remove them from the list.
 
@@ -184,11 +190,11 @@ That's it. You can now check out your goal conversions on the dashboard.
 
 To edit a custom event goal, start by locating the custom event goal you want to update in the Goals list. Click on the "Edit goal" button next to it, which will bring up the goal editing form.
 
+<div class="browser">
 <img alt="Edit goal button next to a custom event goal in the Plausible site settings Goals list" src={useBaseUrl('img/edit-goal-button.png')} />
+</div>
 
-From the pop up, you can select a new custom event from the dropdown menu that matches the updated custom event you want to track. You can also edit the display name.
-
-<img alt="Edit custom event goal popup" src={useBaseUrl('img/edit-custom-event-goal-popup.png')} />
+From the pop up, you can select a new custom event from the dropdown menu that matches the updated custom event you want to track. You can also edit the display name. Or add custom properties to filter the goal by specific values.
 
 Once you’ve made the necessary changes, click "Update goal" and your updated settings will be applied immediately.
 
