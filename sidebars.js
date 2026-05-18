@@ -40,16 +40,14 @@ module.exports = {
       'subdomain-hostname-filter',
       'metrics-definitions',
       'keyboard-shortcuts',
-      'looker-studio',
       'bot-traffic-filtering',
       'dashboard-faq',
       {
         type: 'category',
-        label: 'Import & Export',
+        label: 'Import',
         items: [
           'google-analytics-import',
           'csv-import',
-          'export-stats',
         ],
       },
     ],
@@ -91,12 +89,14 @@ module.exports = {
         ],
       },
     ],
-    'API': [
+    'Data access': [
       'data-access',
       'stats-api',
       'stats-api-playground',
       'events-api',
       'sites-api',
+      'export-stats',
+      'looker-studio',
       'data-pipelines',
     ],
     'Account Settings': [

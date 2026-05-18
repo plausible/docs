@@ -17,6 +17,7 @@ Plausible gives you several ways to access your stats outside the dashboard. The
 | Pipe data into a data warehouse or BI tool | [Warehouse connectors](#data-warehouse-connectors) |
 | Get event-level data for warehousing or compliance | [Scheduled raw exports](#scheduled-raw-event-exports) |
 | Query data in natural language through AI tools | [MCP server](#mcp-server) |
+| View stats from a mobile or desktop app | [Mobile and desktop apps](data-pipelines.md) |
 
 ---
 
