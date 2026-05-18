@@ -26,15 +26,15 @@ This is a tradeoff of aggressive bot filtering. It keeps automated traffic out o
 
 ## Why you might still see some bot traffic
 
-No filter is perfect. Bots emerge constantly and there is always a gap between when a new bot appears and when we identify and block it. If you see a sudden spike from an unfamiliar source with a very high bounce rate and short session duration, it may be bot traffic we haven't classified yet.
+No filter is perfect. Bots emerge constantly and there is always a gap between when a new bot appears and when we identify and block it. If you see a sudden spike from an unfamiliar source with a very high bounce rate and near-zero visit duration, it may be bot traffic we haven't classified yet. Check time on page, scroll depth and goal conversions for stronger signals.
 
 ## Investigating a suspicious traffic spike
 
 If you see an unexpected spike in your dashboard, run through these steps to confirm whether it is bot traffic and block it.
 
-### 1. Check bounce rate and session duration
+### 1. Check bounce rate and visit duration
 
-Apply a [filter](filters-segments.md) to isolate the traffic source, country or page that spiked. Bot traffic almost always shows a near-100% bounce rate and zero or near-zero session duration. If the filtered view shows normal engagement metrics, the traffic is more likely real.
+Apply a [filter](filters-segments.md) to isolate the traffic source, country or page that spiked. Bot traffic almost always shows a near-100% bounce rate. Visit duration will also read as zero since bounced visits count as 0 seconds in Plausible. If the filtered view shows meaningful time on page, scroll depth and goal conversions, the traffic is more likely real. Note that low-quality traffic is not the same as bot traffic: real visitors can arrive from the wrong source or with expectations the page does not meet, producing low engagement without being automated. Plausible's filters target non-human visits only.
 
 ### 2. Identify the source
 
@@ -63,14 +63,6 @@ Shields rules take effect immediately and apply going forward. They do not remov
 
 If you have applied Shields rules and the traffic continues, or if the spike is large enough to affect your subscription tier, [contact us](https://plausible.io/contact) with the dates, source and any patterns you've noticed. We'll investigate and update our filters if needed.
 
-## What you can do
-
-- **Block by IP, hostname or country.** Use [Shields](excluding.md) to block visits from specific IP addresses, hostnames or countries from being recorded.
-- **Filter by page.** Use [page exclusions](excluding-pages.md) to exclude specific URLs from your stats.
-- **Filter your dashboard view.** Use [filters and segments](filters-segments.md) to narrow down traffic when analyzing your data.
-
 ## How Plausible improves bot filtering over time
 
 We continuously monitor incoming traffic patterns. When we identify new sources of non-human traffic or trends that look automated, we update our filtering rules. The filtering improves over time without any action needed on your end.
-
-If you notice something in your dashboard that looks like unfiltered bot traffic, [contact us](https://plausible.io/contact) with the dates, source and any patterns you've noticed. We'll investigate and update our filters if needed.

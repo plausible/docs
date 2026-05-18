@@ -272,7 +272,7 @@ If you set up custom events through [Google Tag Manager](https://plausible.io/gt
 
 ### Custom properties showing as (none)
 
-If you see `(none)` for a custom property value, the property name in your code does not match what you entered in the goal settings, or the value is not being passed at the moment the event fires. Check that the property is defined before the `plausible()` call and that the name matches exactly.
+`(none)` can appear for several reasons, including sending a `null` or `undefined` value, sending the property with some events but not all, or viewing the Properties tab without a custom event filter applied. See [Custom Properties: (none) values](/custom-props/introduction#none-values) for the full explanation. For troubleshooting: confirm the property value is not `null` or `undefined` at the moment the event fires, and that the property name is spelled exactly the same way in every event call.
 
 ---
 

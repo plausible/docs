@@ -110,10 +110,12 @@ description: "Plausible Analytics documentation. No cookies, no personal data, n
 <h3>API</h3>
 <p>Query your data, send events and manage sites programmatically.</p>
 <ul>
+<li><a href="/docs/data-access">Accessing your data</a>: choose the right method for your use case</li>
 <li><a href="/docs/stats-api">Stats API</a>: query your analytics data programmatically</li>
 <li><a href="/docs/events-api">Events API</a>: send custom events from your backend or server</li>
 <li><a href="/docs/sites-api">Sites API</a>: manage sites and goals via API</li>
-<li><a href="/docs/stats-api-playground">API playground</a>: explore queries interactively</li>
+<li><a href="/docs/stats-api-playground">Stats API playground</a>: try Stats API queries interactively</li>
+<li><a href="/docs/data-pipelines">Viewing stats elsewhere</a>: access your data from third-party tools, apps and AI</li>
 </ul>
 </div>
 
