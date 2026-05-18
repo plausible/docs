@@ -77,6 +77,7 @@ module.exports = {
           title: 'Explore',
           items: [
             { label: 'vs Google Analytics', href: 'https://plausible.io/vs-google-analytics' },
+            { label: 'Migrate from GA4', href: 'https://plausible.io/migrate-from-google-analytics' },
             { label: 'vs Matomo', href: 'https://plausible.io/vs-matomo' },
             { label: 'vs Cloudflare', href: 'https://plausible.io/vs-cloudflare-web-analytics' },
             { label: 'GA4 accuracy comparison', href: 'https://plausible.io/most-accurate-web-analytics' },
