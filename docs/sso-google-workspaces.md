@@ -9,9 +9,6 @@ Before configuring Google Workspaces, you have to [initiate SSO setup in Plausib
 
 - Sign in to your Google Workspace Admin console as an Admin
 - Go to **Apps** > **Web and mobile apps**
-
-  <img alt="Google Workspace apps list" src={useBaseUrl('img/sso-google-apps-list.png')} />
-
 - Click **Add app** > **Add custom SAML app**
 
   <img alt="Google Workspace apps list add custom SAML app" src={useBaseUrl('img/sso-google-apps-list-add.png')} />
@@ -52,4 +49,3 @@ Before configuring Google Workspaces, you have to [initiate SSO setup in Plausib
   <img alt="Google Workspace IdP config" src={useBaseUrl('img/sso-google-idp-config.png')} />
 
 - Keep this page open while moving on to [Finishing SAML SSO Setup in Plausible](sso#finishing-saml-sso-setup-in-plausible)
-
