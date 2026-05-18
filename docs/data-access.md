@@ -110,9 +110,9 @@ For cases where aggregated stats are not enough, Plausible offers scheduled raw 
 - You need event-level data for data warehousing, internal analytics or compliance reporting
 - Aggregated stats from the CSV export or Stats API do not meet your needs
 
-Raw event exports are not self-serve and are not real-time. [Contact us](https://plausible.io/contact) to discuss your needs.
+Raw event exports are not self-serve and are not real-time. They are part of our [Enterprise plans](https://plausible.io/enterprise-web-analytics). [Contact us](https://plausible.io/contact) to discuss your needs.
 
-[Export your stats](export-stats.md)
+[Scheduled raw event exports](raw-data-export.md)
 
 ---
 

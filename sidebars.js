@@ -96,6 +96,7 @@ module.exports = {
       'events-api',
       'sites-api',
       'export-stats',
+      'raw-data-export',
       'looker-studio',
       'data-pipelines',
     ],

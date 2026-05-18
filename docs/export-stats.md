@@ -42,14 +42,6 @@ As an alternative to exporting as CSV files or if you prefer a programmatic way 
 
 ## Scheduled raw event data exports
 
-If you need access to event level data, we offer scheduled raw event data exports for Enterprise customers.
+If you need event-level data rather than aggregated stats, Plausible offers scheduled raw event exports as part of our [Enterprise plans](https://plausible.io/enterprise-web-analytics). These cover advanced use cases such as data warehousing, internal analytics and compliance reporting.
 
-This option complements our self serve export options and APIs and is intended for advanced use cases such as data warehousing, internal analytics or compliance reporting.
-
-Scheduled raw event exports are configured with our team. We agree on the event data fields and schema, the export format, the delivery interval such as daily or weekly and the secure delivery method.
-
-Once set up, the exports are delivered automatically on the agreed schedule.
-
-Scheduled raw event exports are not self serve and are not real time. They are intentionally scoped to keep Plausible fast, privacy friendly and predictable. This is part of our [Enterprise offerings](https://plausible.io/enterprise-web-analytics), please [contact us](https://plausible.io/contact) to discuss your needs.
-
-If you only need aggregated data, occasional exports or self serve access, our standard export options as listed above are usually the best option.
+[See full details, use cases and how to get started →](raw-data-export.md)

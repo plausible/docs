@@ -34,6 +34,27 @@ Compare full features and pricing on [our website](https://plausible.io/#pricing
 
 Nonprofits, educational institutions and open-source projects are eligible for a 15% discount on Business plans with annual billing. See [nonprofit and education pricing](nonprofit-and-education-pricing.md) for details.
 
+## Enterprise-only features
+
+Enterprise includes everything in Business plus a set of additional features and higher limits. The features below are not available on any lower plan and cannot be purchased as add-ons.
+
+- **SSO (Single Sign-On)**: log in via your existing identity provider using SAML 2.0. See [SSO documentation](sso.md).
+- **Sites API**: create and manage sites programmatically. See [Sites API documentation](sites-api.md).
+- **Managed proxy**: we handle the proxy setup and maintenance for you. See [proxy options](proxy/introduction.md).
+- **Scheduled raw event exports**: event-level data delivered automatically on an agreed schedule. See [raw event exports](raw-data-export.md).
+
+If you are on Growth and need SSO, for example, an upgrade to Enterprise is required. There is no add-on option.
+
+Limits that can be increased on Enterprise beyond standard plan tiers:
+
+- Monthly pageview volume
+- Number of sites
+- Number of team members
+- API rate limits
+- Data retention
+
+[Learn more about Enterprise plans](https://plausible.io/enterprise-web-analytics) or [contact us](https://plausible.io/contact) to discuss your needs.
+
 ## Traffic spikes and overages
 
 You will never be charged extra for an occasional traffic spike. No surprise fees, no stats interruption, no unexpected charges.
