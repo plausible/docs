@@ -21,7 +21,9 @@ SSO is available on our [Enterprise plan](https://plausible.io/enterprise-web-an
 
 Once SSO is configured and your users have valid identities with your chosen identity provider, they can log in using a dedicated SSO login form.
 
+<div class="browser">
 <img alt="SSO Login Form" src={useBaseUrl('img/sso-login-form.png')} />
+</div>
 
 After entering the email, they are redirected to identity provider's portal. The provider validates their identity if they haven't logged in there yet or uses an already validated identity from an existing session. The identity information (email, name) is then securely sent back to Plausible. At that point, their account is automatically created in Plausible—no manual setup needed.
 
@@ -67,15 +69,14 @@ The configuration process consists of four major stages:
 
 ### Initiating SSO Setup in Plausible
 
-- Go to the **Configuration** section of **Single Sign-On** under **Team Settings**
+- Go to the **Configuration** section of **Single Sign-On** under **Team Settings**.
 
-  <img alt="Starting SSO configuration" src={useBaseUrl('img/sso-start-config.png')} />
+  <div class="browser">
+  <img alt="SSO configuration parameters for IdP" src={useBaseUrl('img/sso-start-config.png')} />
+  </div>
+- Click the **Start Configuring SSO** button.
 
-- Click **Start Configuring SSO** button
-
-  <img alt="SSO configuration parameters for IdP" src={useBaseUrl('img/sso-sp-config-params.png')} />
-
-- Open identity provider's administrative dashboard and follow further instructions.
+- Open identity provider's administrative dashboard and follow further instructions. 
 
 ### Configuring SAML SSO in Identity Provider
 
@@ -98,49 +99,57 @@ Step-by-step instructions for commonly used identity providers:
 
 ### Finishing SAML SSO Setup in Plausible
 
-- Go back to **Configuration** section of **Single Sign-On** under **Team Settings** and click **Start Configuring**
+- Go back to **Configuration** section of **Single Sign-On** under **Team Settings** and click **Start Configuring**.
 
+  <div class="browser">
   <img alt="SSO configuration parameters for IdP" src={useBaseUrl('img/sso-sp-config-params.png')} />
+  </div>
 
-- Fill the form with parameters obtained after configuring identity provider and click **Save**
+- Fill the form with parameters obtained after configuring identity provider and click **Save**.
 
+  <div class="browser">
   <img alt="SSO configuration parameters for SP" src={useBaseUrl('img/sso-idp-config-params.png')} />
+  </div>
 
   :::tip Make sure to not mix up the inputs!
   It's pretty common for **SSO URL / Sign-on URL / Login URL** and **Entity ID / Issuer Identifier** to contain very similar URLs. It's easy to mistake one for the other. This can result in weird behaviour when trying to log in via SSO login form, like browser downloading a file instead of redirecting to identity provider's portal.
   :::
 
-- Enter domain name used in email addresses of identities that should be allowed to log in to this team through SSO and click **Add Domain**
+- Enter domain name used in email addresses of identities that should be allowed to log in to this team through SSO and click **Add Domain**.
 
+  <div class="browser">
   <img alt="Adding SSO domain" src={useBaseUrl('img/sso-add-domain.png')} />
+  </div>
 
-- Verify ownership of the domain using one of three methods. After publishing updated page or DNS record, click **Continue**
+- Verify ownership of the domain using one of three methods. After publishing updated page or DNS record, click **Continue**.
 
+  <div class="browser">
   <img alt="Verifying SSO domain" src={useBaseUrl('img/sso-verify-domain.png')} />
+  </div>
 
-- Scroll to **SSO Domains** and wait until **Status** changes to "validated"
-
-  <img alt="Pending SSO domain" src={useBaseUrl('img/sso-domains-table-pending.png')} />
+- Scroll to **SSO Domains** and wait until **Status** changes to "validated".
 
   :::tip Validation taking too long?
   You can click **Cancel** at any time and then click **Verify**, optionally review verification instructions and then kick off verification again by clicking **Run Verification Now**
   :::
 
-- Once the verification succeeds, the domain is marked as verified
+- Once the verification succeeds, the domain is marked as verified.
 
+  <div class="browser">
   <img alt="Verified SSO domain" src={useBaseUrl('img/sso-domains-table-verified.png')} />
+  </div>
 
 From that point on, SSO should be fully functional and it should be possible to log in using an identity email configured at identity provider.
 
+<div class="browser">
 <img alt="Standard login form with a link to SSO login" src={useBaseUrl('img/sso-standard-login.png')} />
+</div>
 
 ### Enabling SSO Enforcement
 
 While this step is not strictly necessary to use SSO, it's important for ensuring only members provisioned through identity provider have access to the team.
 
 SSO enforcement can be enabled from **SSO Policy** section of SSO configuration.
-
-<img alt="SSO policy with force SSO disabled" src={useBaseUrl('img/sso-policy-disabled.png')} />
 
 There are conditions that have to be met before "Force Single Sign-On" can be enabled though.
 
@@ -154,7 +163,9 @@ It might happen in a team with multiple Owners that some of them might be away a
 
 If any of those conditions are not met, the switch is disabled and the reason is outlined once you hover over it.
 
+<div class="browser">
 <img alt="SSO policy with force SSO disabled and a tooltip" src={useBaseUrl('img/sso-policy-disabled-tooltip.png')} />
+</div>
 
 Once all conditions are met and you enable enforcement, logging in through identity provider will be the only way to access the team.
 
@@ -174,13 +185,15 @@ The ownership of every added domain must be verified using one of three methods:
 - [Publishing a file or exposing a route](#file-or-route-verification) from the web page under the domain
 - [Adding a META HTML tag](#meta-tag-verification) to the web page under the domain
 
+<div class="browser">
 <img alt="SSO domain verification" src={useBaseUrl('img/sso-domain-verification.png')} />
+</div>
 
 Once started, the verification process is retried in the background over the following hours until it succeeds. Once it's verified or fails after too many attempts, you will be notified by email. Verification can be immediately retried by canceling the running process and kicking off verification again.
 
+<div class="browser">
 <img alt="Canceling SSO domain verification" src={useBaseUrl('img/sso-domain-verification-cancel.png')} />
-
-<img alt="Retrying SSO domain verification" src={useBaseUrl('img/sso-domain-verification-retry.png')} />
+</div>
 
 ### DNS Record Verification
 
@@ -198,7 +211,9 @@ You have to put `<meta name="plausible-sso-verification" content="<domain identi
 
 SSO policy can be configured from **Configuration** section of **Single Sign-On** under **Team Settings**.
 
+<div class="browser">
 <img alt="SSO policy with force SSO disabled" src={useBaseUrl('img/sso-policy-disabled.png')} />
+</div>
 
 Following settings are available:
 
@@ -214,8 +229,12 @@ SSO account session timeout in Plausible is always counted relative to the time 
 
 - Team members who have already provisioned their accounts through SSO are distinctly labeled as such on members list under **Team Settings**
 
+<div class="browser">
 <img alt="Team members list with labels" src={useBaseUrl('img/sso-team-members-list.png')} />
+</div>
 
 - All team members' active SSO sessions can be viewed and optionally logged out in **Sessions** section of **Single Sign-On** under **Team Settings**
 
+<div class="browser">
 <img alt="SSO sessions" src={useBaseUrl('img/sso-sessions.png')} />
+</div>
