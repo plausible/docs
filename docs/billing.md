@@ -84,8 +84,6 @@ Credit/debit card, PayPal, Apple Pay and Google Pay. All payment processing is h
 
 If paying via PayPal, make sure a valid card is linked to your PayPal account. Paddle requires this for recurring subscriptions.
 
-<img class="border" alt="Apple Pay & Google Pay payment methods" src={useBaseUrl('img/v2/plausible-apple-pay.webp')} />
-
 ## How do I add my VAT number?
 
 If you're purchasing on behalf of a business, click **Add VAT number** on the second step of the checkout, where you also add your payment details. Paddle handles all sales tax calculations and will apply the correct rate based on your details.
