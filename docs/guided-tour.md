@@ -81,7 +81,7 @@ See all the acquisition channels and sources of traffic ranked by the number of 
 You can use the **Campaigns** tab to view your campaigns separately from other traffic sources. These are visitors coming from UTM tagged links such as those in your emails, social media or in your paid advertising campaigns. Click on **Medium**, **Source**, **Campaign**, **Term** and **Content** to explore these.
 
 :::tip Referral sources are counted per session
-UTM parameters and other referral sources are only recorded when they start a new session. [Read more about how sources are counted](top-referrers.md). If your UTM link returns a 202 response but nothing appears in the **Campaigns** tab, see [UTM parameters not appearing in Campaigns](troubleshoot-integration.md#utm-parameters-are-in-the-url-but-not-showing-in-the-campaigns-tab).
+UTM parameters and other referral sources are only recorded when they start a new session. [Read more about how sources are counted](top-referrers.md). If your UTM link returns a 202 response but nothing appears in the **Campaigns** tab, see [UTM parameters not appearing in Campaigns](troubleshoot-integration.md#utm-parameters-not-appearing-in-campaigns).
 :::
 
 [Read more here](top-referrers.md).
