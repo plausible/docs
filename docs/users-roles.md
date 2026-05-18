@@ -15,14 +15,14 @@ Teams also work well for agency and freelance workflows. You can create one team
 
 Log in to your Plausible Analytics account and in the top right menu, click on your account name and choose **Create a team**. Note that the "Create a team" button appears when you are viewing "My personal sites" and have sites there that you own.
 
-<img alt="Create a team" src={useBaseUrl('img/create-new-team.png')} />
-
 * Give the name to your team.
 * Invite individual team members. You can invite any email address. It doesn't necessarily need to be an email address from your company. You can invite existing Plausible users or people who don't have a Plausible account. You can also turn any existing guest into a team member. 
 * Assign individual team members their roles
 * Click on the "Create Team" button to finish the process
 
+<div class="browser">
 <img alt="Create a team button" src={useBaseUrl('img/create-team-button.png')} />
+</div>
 
 ### Creating multiple teams
 
@@ -34,7 +34,9 @@ If you then add more sites to your account, they appear in "My personal sites" a
 
 ### Inviting team members and assigning roles
 
+<div class="browser">
 <img alt="Invite team member" src={useBaseUrl('img/invite-team-member.png')} />
+</div>
 
 * In the top right menu, click on your account name, make sure you have chosen the team you'd like to manage and then click on the **Team Settings**
 * You can invite new team members within the **General** option of the **Team Settings**
@@ -61,7 +63,9 @@ That's it. The team member now has a different role.
 
 Note that you need to be an owner or an admin of a team to change team member roles.
 
+<div class="browser">
 <img alt="Change roles, delete team member" src={useBaseUrl('img/change-roles-remove-users.png')} />
+</div>
 
 ### Removing a team member
 
@@ -105,13 +109,17 @@ See [Transfer account ownership](transfer-account-ownership.md) for how to recov
 
 Note that you need to be an owner to delete a team. 
 
+<div class="browser">
 <img alt="Delete team" src={useBaseUrl('img/delete-team.png')} />
+</div>
 
 ## Working with external collaborators
 
 You can also invite external collaborators as guests and give them access to specific sites only. This is useful when working with consultants, freelancers and other individuals who don't need access to all your sites. Here's how to invite guests.
 
+<div class="browser">
 <img alt="Invite collabs" src={useBaseUrl('img/invite-collabs.png')} />
+</div>
 
 ### Inviting external collaborators as guests to individual sites
 
@@ -131,8 +139,6 @@ Our [private and secure shared links](shared-links.md) are a great way to share 
 :::
 
 ### Adjusting the guest roles
-
-<img alt="Change guest roles or remove guests" src={useBaseUrl('img/change-roles-remove-users.png')} />
 
 You can change the guest role at any time:
 
