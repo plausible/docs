@@ -1,81 +1,56 @@
 ---
-title: Adblockers and using a proxy for analytics
-description: "Why some adblockers block Plausible and how to use a proxy to serve analytics as a first-party connection from your own domain to avoid being blocked."
+title: Bypass adblockers with a proxy
+description: "Some adblockers block Plausible. A proxy routes analytics through your own domain to capture those visits. Choose between one-click, self-setup and managed options."
 ---
 
-A frequently asked question we get is, "why do adblockers block Plausible?". It's assumed that by being privacy-first, we would not be placed in the same category as Google Analytics, Facebook Pixel, or other _surveillance capitalism_ tools.
+Some visitors use adblockers or privacy tools that block analytics scripts. Plausible is blocked far less than Google Analytics. Firefox and Safari do not block it by default, but some blocklist maintainers block all analytics regardless of privacy practices.
 
-It's a good question. We're not blocked to the same extent as Google Analytics (neither Firefox nor Safari blocks Plausible), but we're blocked by some blocklist maintainers who have taken the stance that they want to block every tracking script and don't want to have the responsibility to judge what's good and what's bad.
+A proxy routes the Plausible script through your own domain as a first-party request, making it indistinguishable from your own files. This bypasses most blockers and lets you count visits that would otherwise be missed.
 
-We have great respect for open source contributors and blocklist maintainers who usually offer their free time and coding skills to do something for the common good. We believe we're on the same side and have started a dialogue hoping that they will have a change of heart.
+## Which option fits you
 
-## Giving site owners a choice
+### No proxy (default)
 
-Site owners feel unfairly targeted and an innocent casualty of this arms race between blocklist maintainers and the adtech industry. Site owners want some data to figure out what's going on and learn what they can do to improve. It's unfortunate for them to lose valuable, privacy-friendly insights that help them create a better user experience.
+Run the default script from plausible.io. This is the simplest setup and works well for most sites. Expect some visitors with strict blockers to be missed, typically between 5% and 25% depending on your audience.
 
-Plausible isn't tracking people in the way that Google Analytics is, so it's important not to confuse the two. We've put a lot of effort into giving site owners some actionable data in a [privacy-friendly way](https://plausible.io/privacy-focused-web-analytics). Plausible is simply doing web analytics the way it was at the start before surveillance capitalism became the default business model of the web:
+**Use this when:** accuracy gaps from adblockers are acceptable for your use case.
 
-* No cookies and other persistent identifiers.
-* No connection to the adtech, and surveillance capitalism.
-* No personal data is collected, and all stats are in aggregate only.
-* No cross-site or cross-device tracking.
-* You 100% own your website data, and it isn't sent to, shared with or sold to any third-parties.
-* Open source web analytics software that can be self-hosted.
-* You can see [how the dashboard looks](https://plausible.io/plausible.io).
+[Script installation →](../plausible-script.md)
 
-## Options for dealing with missing data as a site owner
+---
 
-This section has been introduced after hearing from so many site owners who expect privacy-first analytics not to be blocked. We wanted to give a choice to people that use Plausible Analytics.
+### WordPress one-click proxy
 
-### Not concerned about missing data?
+The official WordPress plugin includes a built-in proxy you can enable with a single toggle in your plugin settings. No CNAME records, no server configuration, no maintenance.
 
-Simply run our default script. The easiest way to get started with Plausible Analytics is to [install the script](/docs/plausible-script.md) from our main domain.
+**Use this when:** your site runs on WordPress.
 
-This is the simplest way to install Plausible Analytics but it will also be blocked by a portion of your visitors. In [our testing](https://markosaric.com/google-analytics-blocking/), between 6% and 26% of people block scripts all depending on the type of the site and the audience. In more extreme cases, with very tech-savvy referral sources these numbers can get [up to 60%](https://plausible.io/blog/google-analytics-adblockers-missing-data).
+[WordPress plugin →](../wordpress-integration.md)
 
-### Are you concerned about missing data?
+---
 
-Proxy our script. This is the option for those who want to get more accurate stats. A proxy basically maps certain URLs from your domain to the Plausible domain:
+### Self-setup proxy
 
-```
-https://<yourdomain.com>/js/script.js -> https://plausible.io/js/pa-XXXX.js
-https://<yourdomain.com>/api/event    -> https://plausible.io/api/event
-```
+Route requests through your own infrastructure using a Cloudflare Worker, Vercel rewrite, Netlify redirect or reverse proxy. Requires developer access but is free and gives you full control.
 
-When the browser requests a file at `https://yourdomain.com/js/script.js` it will actually be fetched from `https://plausible.io/js/pa-XXXXX.js`. The analytics will work exactly the same but the script will be served without being flagged.
+**Use this when:** you are not on WordPress, have developer access, and want to manage the proxy yourself.
 
-In this case, `/js/pa-XXXXX.js` is the script location specific for your site. You can find it in the **Site Installation** area of the **General** section in your [site settings](website-settings.md).
+Guides: [Cloudflare](guides/cloudflare.md) · [Vercel](guides/vercel.md) · [Netlify](guides/netlify.md) · [Nginx](guides/nginx.md) · [Apache](guides/apache.md) · [Caddy](guides/caddy.md) · [Laravel](guides/laravel.md)
 
-:::tip Using WordPress?
-The quickest way to enable a proxy is to use our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin)
-:::
+---
 
-## How to proxy requests to Plausible
+### Managed proxy (Enterprise)
 
-You can proxy requests to Plausible in several ways depending on your setup. If you'd rather not handle it yourself, we also offer a managed proxy option.
+We handle the proxy for you. You set up a CNAME record pointing to our infrastructure, update the snippet on your site, and we take care of everything else. No ongoing maintenance on your end.
 
-### Managed proxy
+**Use this when:** you are not on WordPress and want the proxy without managing it yourself, or your infrastructure makes self-setup impractical.
 
-Don't want to manage your own proxy? We can handle it for you. Our managed proxy lets you send analytics through your own domain name as a first-party connection. This helps bypass adblockers and count more traffic without any setup or maintenance on your end.
+Available on [Enterprise plans](https://plausible.io/enterprise-web-analytics). [Contact us to discuss →](https://plausible.io/contact)
 
-All you need to do is set up a CNAME record using the instructions we'll send you and update the snippet on your site. We'll take care of everything else.
+---
 
-Managed proxy is available on our [Enterprise plans](https://plausible.io/enterprise-web-analytics). [Contact us for details](https://plausible.io/contact).
+## A note on IP forwarding
 
-### A note on visitor IP addresses
+When your proxy forwards requests to Plausible, the real visitor IP must be passed in the `X-Forwarded-For` header. If this header is missing or contains your server's IP instead of the visitor's, Plausible's bot filter will drop the event silently. The API returns HTTP 202 either way.
 
-When your proxy forwards events to Plausible, the request must include the visitor's real IP address in the `X-Forwarded-For` header. If this header is missing or contains a server, CDN, or hosting provider IP instead, Plausible's bot filtering will drop the event. The API returns HTTP 202 either way, so there is no obvious error.
-
-Most CDN-level proxies (such as Cloudflare Workers or Vercel rewrites) handle this automatically. If you are writing your own proxy function, you need to set the header explicitly. See the [Events API reference](/docs/events-api#request-headers) for details and instructions on how to check whether events are being dropped.
-
-### Manual proxy
-
-* [Cloudflare](/docs/proxy/guides/cloudflare)
-* [Vercel](/docs/proxy/guides/vercel)
-* [Netlify](/docs/proxy/guides/netlify)
-* [Fresh](/docs/proxy/guides/fresh)
-* [Nginx](/docs/proxy/guides/nginx)
-* [Apache](/docs/proxy/guides/apache)
-* [Caddy](/docs/proxy/guides/caddy)
-* [Laravel](/docs/proxy/guides/laravel)
-* [Send events directly to our API](/docs/events-api)
+Most CDN-level proxies such as Cloudflare Workers or Vercel rewrites handle this automatically. If you are writing a custom proxy function, set the header explicitly. See the [Events API reference](../events-api.md#request-headers) for how to verify which IP Plausible is receiving.
