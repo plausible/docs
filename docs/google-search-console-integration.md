@@ -88,7 +88,7 @@ In the **Sources** tab in your Plausible Analytics dashboard, click on **Google*
 
 <div class="browser">
     <video autoPlay loop muted controls width="100%">
-        <source src={useBaseUrl('/video/google-search-query-referrers.mp4')} type="video/mp4" />
+        <source src={useBaseUrl('/video/google-search-terms-in-plausible.mp4')} type="video/mp4" />
     </video>
 </div>
 
