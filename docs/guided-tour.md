@@ -42,12 +42,6 @@ You can also **compare your stats over time**. Our comparison feature allows you
 
 Select "Compare" in the date picker or press the "X" key on your keyboard to enable the comparison feature. Learn more on [how the comparison works here](compare-stats.md).
 
-<div class="browser">
-    <video autoPlay loop muted controls width="100%">
-        <source src={useBaseUrl('/video/compare-stats-over-time.mp4')} type="video/mp4" />
-    </video>
-</div>
-
 ## Realtime dashboard
 
 By clicking on the number of **current visitors** (defined as those that visited the site in the last 5 minutes) or by selecting **Realtime** in the date picker in the top right, you can see the realtime dashboard that tells you what's happening on your site live in that moment.
@@ -61,12 +55,6 @@ The realtime dashboard also includes a pageview graph for the last 30 minutes. I
 You can go granular and click on any of the entries in any of the reports to filter your Plausible dashboard by it. You can mix and match filters too. This is an easy way for you to segment your audience. For instance you can drill down to see traffic coming from a specific marketing campaign to a specific landing page over time.
 
 You can also use the **Filter** button on the top of your dashboard which gives you extra functionality. It allows you to filter the dashboard by multiple sources, countries, pages and more, all at once. You can also search for any metric, exclude segments of your audience and group pages with options such as "is not", "contains" and "does not contain". [Learn more about filtering here](filters-segments.md).
-
-<div class="browser">
-    <video autoPlay loop muted controls width="100%">
-        <source src={useBaseUrl('/video/filtering-multiple-filters.mp4')} type="video/mp4" />
-    </video>
-</div>
 
 ## Detailed metrics and Sorting
 

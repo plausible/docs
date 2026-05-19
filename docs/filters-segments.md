@@ -17,12 +17,6 @@ Your current filters will be displayed on the top of your dashboard. You can cli
 
 You can remove all your filters by hitting the `Esc` key on your keyboard or by selecting **Clear all filters** in the filters menu (`***`).
 
-<div class="browser">
-    <video autoPlay loop muted controls width="100%">
-        <source src={useBaseUrl('/video/filtering-multiple-filters.mp4')} type="video/mp4" />
-    </video>
-</div>
-
 ## Use the "Filter" button for more powerful segmenting and matching
 
 <div class="browser">
@@ -73,7 +67,7 @@ Click on any metric in the dashboard or use the **Filter** button to filter your
 
 <div class="browser">
     <video autoPlay loop muted controls width="100%">
-        <source src={useBaseUrl('/video/create-segment.mp4')} type="video/mp4" />
+        <source src={useBaseUrl('/video/create-segment-in-plausible.mp4')} type="video/mp4" />
     </video>
 </div>
 
@@ -94,12 +88,6 @@ Note that the **Segments** heading will only be visible in the **Filter** button
 ### How to edit or delete a previously saved segment
 
 Open a previously saved segment and click its name in the top line of your Plausible dashboard. Then, select **Edit segment** to add or remove filters.
-
-<div class="browser">
-    <video autoPlay loop muted controls width="100%">
-        <source src={useBaseUrl('/video/edit-segment.mp4')} type="video/mp4" />
-    </video>
-</div>
 
 To save your changes, click the **Update segment** button. Use the arrow next to this button to save the existing segment as a brand new segment (**Save as a new segment**) or to delete the existing segment (**Delete segment**).
 
