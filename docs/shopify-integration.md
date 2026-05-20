@@ -14,11 +14,11 @@ Here's how to add Plausible Analytics to your Shopify store and set up the track
 
 * Click on the icon with three dots next to your current theme and choose **Edit code** from the drop-down menu.
 
+<div class="browser">
 <img alt="Add Plausible to Shopify" src={useBaseUrl('img/add-custom-code-to-shopify.png')} />
+</div>
 
 * In the **Layout** folder, select your **theme.liquid** file and [paste your Plausible snippet](https://plausible.io/docs/plausible-script) in the **Head Code** section. We display your snippet during the process of adding a new site to your account. You can also see the snippet within the **Site Installation** area of the **General** section in your [site settings](website-settings.md).
-
-<img alt="Add Plausible Analytics script to Shopify" src={useBaseUrl('img/add-plausible-script-to-shopify.png')} />
 
 * Do click on the **Save Changes** to publish your changes.
 
@@ -31,7 +31,9 @@ To create the custom pixel, follow these steps:
 * Go to your Shopify admin page
 * Click on the Settings button at the bottom left
 
+<div class="browser">
 <img alt="Shopify Settings" src={useBaseUrl('img/shopify-settings-revenue-metrics.png')} />
+</div>
 
 * Open the **Customer events** section, and click on **Add custom pixel**
 * Choose a name for your pixel (e.g. **Plausible**)
@@ -39,7 +41,9 @@ To create the custom pixel, follow these steps:
 * Click **Save** at the top, then connect the pixel
 * That's it - your custom Plausible pixel should now be tracking!
 
+<div class="browser">
 <img alt="Shopify add pixel" src={useBaseUrl('img/shopify-add-pixel.png')} />
+</div>
 
 ## Snippet options for the custom pixel
 
@@ -97,8 +101,6 @@ Click on the **Filter** button on the top right of your dashboard and then choos
 Doing this will segment your dashboard by the traffic that went through the checkout process and successfully placed orders. You'll be able to see the referral sources and landing pages that drove the most conversions. You'll also be able to see the location and device details of the buyers too.
 
 If you'd like to see these grouped order confirmations or checkout page visits permanently in your dashboard, you can add them as [pageview goals](pageview-goals.md).
-
-<img alt="Shopify thank you page tracking" src={useBaseUrl('img/shopify-thank-you-page-goal.png')} />
 
 ### Track started checkouts
 
@@ -270,7 +272,9 @@ Here's how you can track particular form submissions and button clicks on your S
 
 Your form or button element should have an ID attribute assigned by default. You can find this ID by selecting the element you want to track (do make sure you select your form element and not just the "Submit" button) and clicking on the settings gear.
 
+<div class="browser">
 <img alt="Shopify form ID" src={useBaseUrl('img/shopify-form-id.png')} />
+</div>
 
 ### 2. Trigger custom events with JavaScript on your site
 
@@ -304,8 +308,10 @@ To represent a space character in goal names, you can use a `+` sign. For exampl
 </script>
 ```
 
+<div class="browser">
 <img alt="Modify Plausible script" src={useBaseUrl('img/modify-plausible-script-shopify.png')} />
-
+</div>
+    
 Do click on the **Save** button to save your changes.
 
 ### 3. Create a custom event goal in your Plausible account
@@ -314,13 +320,9 @@ When you send custom events to Plausible, they won't show up in your dashboard a
 
 To configure a goal, go to [your website's settings](website-settings.md) in your Plausible account and visit the **Goals** section. You should see an empty list with a prompt to add a goal.
 
-<img alt="Add your first Shopify goal" src={useBaseUrl('img/add-goal-shopify.png')} />
-
 Click on the **+ Add goal** button to go to the goal creation form. Select `Custom event` as the goal trigger and enter the name of the custom event you are triggering. The name must be an exact match to the one you added to your site for the conversions to show up in your dashboard.
 
 So in our example where we added a goal name `plausible-event-name=Form+Submit` to the Shopify site, the goal to add in the Plausible account is `Form Submit` (plus is replaced by a space).
-
-<img alt="Add your custom event goal" src={useBaseUrl('img/form-submission-custom-event-goal-shopify.png')} />
 
 Next, click on the **Add goal** button and you'll be taken back to the Goals page.
 
@@ -356,7 +358,9 @@ If you want to trigger multiple custom events on the same site, you don't need t
 </script>
 ```
 
+<div class="browser">
 <img alt="track multiple elements in Shopify" src={useBaseUrl('img/track-multiple-elements-shopify.png')} />
+</div>
 </details>
 
 ## What's next?
