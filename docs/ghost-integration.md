@@ -12,17 +12,19 @@ In Ghost you can inject code across your entire site or on an individual post or
 
 * In the **Menu**, click **Settings**, and then **Code Injection**.
 
+<div class="browser">
 <img alt="Ghost code injection" src={useBaseUrl('img/ghost-code-injection.png')} />
+</div>
 
 * Add your Plausible Analytics script to the **Site Header** text box. Code added into the **Site Header** field is injected into the `<head>` tag on every page of your site.
-
-<img alt="Add Plausible script to Ghost" src={useBaseUrl('img/add-plausible-script-to-ghosts.png')} />
 
 * After adding your code, click on the **Save** button.
 
 Now you can go to your website and verify whether Plausible Analytics script has been added and to your Plausible Analytics account to see whether the stats are being tracked. See here [how to verify the integration](troubleshoot-integration.md).
 
+<div class="browser">
 <img alt="Ghost Portal flows" src={useBaseUrl('img/portal-ghost.png')} />
+</div>
 
 The Sign In/Sign up flows are part of Ghost's [Portal](https://ghost.org/help/setting-up-portal/) app and it's an unified experience for all Ghost sites. You cannot customize these flows by adding an ID or CSS class.
 
