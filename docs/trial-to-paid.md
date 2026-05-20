@@ -1,6 +1,6 @@
 ---
 title: Upgrade from trial to a paid subscription
-description: "How to upgrade your Plausible free trial to a paid plan. All stats collected during the trial are kept. Nothing resets when you subscribe."
+description: "Upgrade your Plausible free trial to a paid subscription. All stats are preserved, nothing resets. Change or cancel any time."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -67,3 +67,5 @@ Your subscription starts immediately and renews automatically. You can [change](
 - [Set up email reports](email-reports.md) to receive a weekly or monthly summary of your stats by email
 - [Create shared links](shared-links.md) to give read-only dashboard access to clients or stakeholders without requiring a Plausible account
 - [Set up goals](goal-conversions.md) to start tracking conversions if you have not already done so
+
+Have questions before upgrading? Check the [Billing FAQ](billing.md) or [contact us](https://plausible.io/contact).

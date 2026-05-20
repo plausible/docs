@@ -7,6 +7,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 You can follow the visitor journey from a landing page to a conversion with our multi-step funnel analysis. Use it to find where visitors drop off and improve your conversion rate.
 
+**Funnel analysis is a Business plan feature.** [Compare plans →](https://plausible.io/#pricing)
+
 * You can go beyond pageviews and use any custom events to build a funnel
 * Choose between two funnel types: sequential (visitors can take other actions between steps) or strict order (steps must happen in exact consecutive order)
 * With the conversion rate you understand the percentage of visitors who started the user flow and ended with a conversion event

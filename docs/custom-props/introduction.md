@@ -7,6 +7,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Custom properties let you collect and analyze metrics that Plausible doesn't track automatically. You can attach them to pageviews or custom events to create your own segments and filters. If you're coming from Google Analytics, custom properties are equivalent to [custom dimensions](https://plausible.io/blog/custom-dimensions-analytics).
 
+**Custom properties are a Business plan feature.** [Compare plans →](https://plausible.io/#pricing)
+
 For example, say you want to track your blog posts by `author`. Every time a visitor lands on one of the posts, you can send a pageview with the property `author=...`. You can then filter your Plausible dashboard by a specific author to see all the relevant stats for the posts published by that particular writer.
 
 Other examples:

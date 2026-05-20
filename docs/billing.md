@@ -1,6 +1,6 @@
 ---
 title: Billing FAQ
-description: "Answers to common billing questions for Plausible Analytics. Covers invoices, usage calculation, multiple clients, VAT and subscription management."
+description: "Common billing questions for Plausible Analytics. Pageview-based pricing, no per-seat fees. 30-day free trial, no credit card required."
 ---
 
 <head>
@@ -183,3 +183,5 @@ Ad blockers and privacy extensions can interfere with the payment form. Try disa
 - If your card details are correct and no 3DS prompt was issued, try subscribing using a different email address
 
 Have a billing question not covered here? [Contact us](https://plausible.io/contact).
+
+Not yet subscribed? [Start a free trial](https://plausible.io/register). 30 days free, no credit card required.

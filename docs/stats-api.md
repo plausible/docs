@@ -12,6 +12,8 @@ import { SiteContextProvider } from '../src/js/sites.tsx';
 
 Plausible Stats API is a powerful single endpoint HTTP interface to **view historical and real-time stats**. In a nutshell, the endpoint `/api/v2/query` accepts both simple and complex stats queries in the POST request body and returns the metrics as JSON.
 
+**Stats API is a Business plan feature.** [Compare plans →](https://plausible.io/#pricing)
+
 [Try it now for your own site!](#examples)
 
 :::tip[Not what you need?]
