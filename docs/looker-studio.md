@@ -9,7 +9,7 @@ Plausible keeps its dashboard intentionally simple. For cases where you need mor
 
 Looker Studio is Google's free data visualization tool. The Plausible connector lets you pull your analytics data directly into Looker Studio and build any report layout you need.
 
-The connector is available on the Business plan. Here's how to get started.
+**Looker Studio connector is a Business plan feature.** [Compare plans →](https://plausible.io/#pricing)
 
 <div class="browser">
 <img alt="Plausible Analytics Looker Studio template" src={useBaseUrl('img/plausible-looker-studio.png')} />

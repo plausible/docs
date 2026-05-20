@@ -1,13 +1,13 @@
 ---
 title: Plausible pricing and subscription plans
-description: "How Plausible subscription tiers work. Usage is based on total pageviews and custom events across all sites in a team. Compare plans and billing options."
+description: "Compare Plausible subscription plans. 30-day free trial, no credit card required. All tiers priced by pageviews, not seats."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Plausible gives you full control over your subscription. Choose a plan, pick monthly or yearly billing and upgrade or downgrade as your needs change. No long-term contracts.
 
-[View plans and pricing →](https://plausible.io/#pricing)
+[View plans and pricing →](https://plausible.io/#pricing) · [Start free trial →](https://plausible.io/register)
 
 ## How usage is calculated
 
@@ -31,6 +31,8 @@ All plans start at the same pageview tiers. The difference is features and team 
 - **Enterprise**: large scale, SSO, Sites API, managed proxy or raw data exports. [Contact us](https://plausible.io/contact) to discuss
 
 Compare full features and pricing on [our website](https://plausible.io/#pricing) or in your account settings. Save 2 months by choosing yearly billing.
+
+All plans include a 30-day free trial. No credit card required. You can switch plans during or after your trial.
 
 Nonprofits, educational institutions and open-source projects are eligible for a 15% discount on Business plans with annual billing. See [nonprofit and education pricing](nonprofit-and-education-pricing.md) for details.
 
@@ -81,3 +83,7 @@ Everything is self-serve in your account settings:
 - **[Download invoices](download-invoices.md)** - get invoices, add VAT numbers and change billing address.
 
 Have a question? Check the [Billing FAQ](billing.md) or [contact us](https://plausible.io/contact).
+
+---
+
+**Not yet subscribed?** [Start a free trial](https://plausible.io/register). 30 days free, no credit card required. For enterprise needs, [contact us](https://plausible.io/contact).
