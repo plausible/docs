@@ -18,7 +18,9 @@ We display your snippet during the process of adding a new site to your account.
 
 * Go to the editor of your Carrd website and add an **Embed** component.
 
+<div class="browser">
 <img alt="Add embed element to Carrd" src={useBaseUrl('img/add-embed-element-to-carrd.png')} />
+</div>
 
 * In the element's settings make sure:
 
@@ -31,7 +33,9 @@ We display your snippet during the process of adding a new site to your account.
 
 * Do click on the **Done** button and then **Publish** your changes. After you change the tracking snippet on your site, all the hash-based page paths on your Carrd website will start being tracked and will be displayed in the **Top Pages** tab of your Plausible Analytics dashboard.
 
+<div class="browser">
 <img alt="Add Plausible Analytics script to Carrd" src={useBaseUrl('img/add-plausible-script-to-carrd.png')} />
+</div>
 
 Now you can go to your Carrd website and verify that Plausible script has been added and to your Plausible account to see whether the stats are being tracked. See here [how to verify the integration](troubleshoot-integration.md).
 
@@ -53,7 +57,9 @@ If you're on a higher plan, like Pro Plus, you'll be able to set these IDs yours
 
 To be sure of your element's ID, you can use your browser's dev tool to inspect the element.
 
+<div class="browser">
 <img alt="Confirm element ID in Carrd" src={useBaseUrl('img/confirm-element-id-carrd.png')} />
+</div>
 
 ### 2. Trigger custom events with JavaScript on your site
 
@@ -83,7 +89,9 @@ Also do change the `classes` line to include the goal name in this format: `plau
 </script>
 ```
 
+<div class="browser">
 <img alt="Modify Plausible script Carrd" src={useBaseUrl('img/modify-plausible-script-carrd.png')} />
+</div>
 
 Do click on the **Save Changes** button and then **Publish** your changes.
 
@@ -96,8 +104,6 @@ To configure a goal, go to [your website's settings](website-settings.md) in you
 Click on the **+ Add goal** button to go to the goal creation form. Select `Custom event` as the goal trigger and enter the name of the custom event you are triggering. The name must be an exact match to the one you added to your site for the conversions to show up in your dashboard.
 
 So in our example where we added a goal name `plausible-event-name=Button+Click` to the Carrd site, the goal to add in the Plausible account is `Button Click` (plus is replaced by a space).
-
-<img alt="Add your custom event goal" src={useBaseUrl('img/button-click-custom-event-goal-carrd.png')} />
 
 Next, click on the **Add goal** button and you'll be taken back to the Goals page.
 
@@ -133,7 +139,9 @@ If you want to trigger multiple custom events on the same site, you don't need t
 </script>
 ```
 
+<div class="browser">
 <img alt="track multiple elements in Carrd" src={useBaseUrl('img/track-multiple-elements-carrd.png')} />
+</div>
 
 ## What's next?
 
