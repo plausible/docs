@@ -40,6 +40,10 @@ Plausible supports the following goal types:
       <td>Follow the visitor journey from a landing page to a conversion in order to uncover possible issues, optimize your site and increase the conversion rate</td>
     </tr>
     <tr>
+      <td><a href="user-journeys">User journeys</a></td>
+      <td>Explore the paths visitors actually take on your site. Start from any page or event to see what they did next, or work backwards from a conversion to see what led them there</td>
+    </tr>
+    <tr>
       <td><a href="ecommerce-revenue-tracking">Ecommerce revenue tracking</a></td>
       <td>Assign dynamic monetary values to goals and custom events to track revenue attribution</td>
     </tr>

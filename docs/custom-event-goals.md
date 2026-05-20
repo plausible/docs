@@ -236,7 +236,7 @@ plausible.init({
 
 ### Create funnels to optimize your conversion rate
 
-After you have the custom events in place, you can start creating [marketing funnels](funnel-analysis.md) to uncover possible issues, optimize your site and increase the conversion rate.
+After you have the custom events in place, you can start creating [marketing funnels](funnel-analysis.md) to uncover possible issues, optimize your site and increase the conversion rate. You can also use the [Explore tab](user-journeys.md) to trace the visitor paths that lead to your custom events.
 
 ## Custom event not showing up?
 
