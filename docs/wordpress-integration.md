@@ -19,3 +19,9 @@ Having trouble with the plugin? Jump to the relevant section:
 - **WP Rocket or another caching plugin is interfering**: add the Plausible script to the exclusion list in your caching plugin's settings
 
 For a full diagnostic walkthrough, see the [troubleshooting guide](troubleshoot-integration.md).
+
+## What's next?
+
+- [Enable enhanced measurements](script-extensions.md) in the plugin settings to automatically track outbound links, file downloads and form submissions without writing code
+- [Set up goals](goal-conversions.md) to measure signups, purchases or any other key action on your site
+- [Import your Google Analytics history](google-analytics-import.md) to keep your stats continuous if you're switching from GA

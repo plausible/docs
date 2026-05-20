@@ -358,3 +358,10 @@ If you want to trigger multiple custom events on the same site, you don't need t
 
 <img alt="track multiple elements in Shopify" src={useBaseUrl('img/track-multiple-elements-shopify.png')} />
 </details>
+
+## What's next?
+
+- [Create goals](custom-event-goals.md) in your Plausible site settings to match the custom events you set up. They won't appear in your dashboard until you do
+- [Add revenue tracking](ecommerce-revenue-tracking.md) to your checkout events to see revenue attribution per source and campaign
+- [Build a funnel](funnel-analysis.md) from product page to checkout to order confirmation to find where visitors drop off
+- [Invite your team](users-roles.md) so colleagues can access the dashboard directly

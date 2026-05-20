@@ -134,3 +134,9 @@ If you want to trigger multiple custom events on the same site, you don't need t
 ```
 
 <img alt="track multiple elements in Carrd" src={useBaseUrl('img/track-multiple-elements-carrd.png')} />
+
+## What's next?
+
+- [Create goals](custom-event-goals.md) in your Plausible site settings to match the custom events you set up. They won't appear in your dashboard until you do
+- [Verify the integration is working](troubleshoot-integration.md) to confirm events are firing correctly
+- [Filter your dashboard by goal](filters-segments.md) to see which sources are driving the most conversions

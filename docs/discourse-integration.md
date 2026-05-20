@@ -31,3 +31,9 @@ We display your snippet during the process of adding a new site to your account.
 Discourse will automatically add a nonce to the script to satisfy the Content Security Policy headers so no further action is necessary for that.
 
 Now you can go to your Discourse community and verify whether Plausible Analytics script has been added and to your Plausible Analytics account to see whether the stats are being tracked. See here [how to verify the integration](troubleshoot-integration.md).
+
+## What's next?
+
+- [Set up goals](goal-conversions.md) to track key actions on your forum such as new topic creation or sign-ups
+- [Invite your team](users-roles.md) so moderators and community managers can access the stats directly
+- [Create a shared link](shared-links.md) for read-only dashboard access without requiring a Plausible account

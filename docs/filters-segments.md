@@ -92,3 +92,10 @@ Open a previously saved segment and click its name in the top line of your Plaus
 To save your changes, click the **Update segment** button. Use the arrow next to this button to save the existing segment as a brand new segment (**Save as a new segment**) or to delete the existing segment (**Delete segment**).
 
 P.S. We've written an in-depth guide on effective use of audience segmentation, you can [read it here](https://plausible.io/audience-segmentation).
+
+## What's next?
+
+- [Set up goals](goal-conversions.md) so you can filter your dashboard by conversion and see which sources and campaigns drive the most signups or purchases
+- [Compare two time periods](compare-stats.md) alongside your segment filters to understand how a specific audience's behavior has changed over time
+- [Export filtered stats](export-stats.md) to CSV to share a specific segment's data outside the dashboard
+- [Create a shared link](shared-links.md) pre-filtered to a specific segment for stakeholders who only need to see part of your data

@@ -55,7 +55,7 @@ Once you have identified the source, use [Shields](excluding.md) to stop it bein
 - **By country**: if the traffic is concentrated in one country you don't operate in, block that country
 - **By hostname**: if a specific hostname or referrer domain is the source, block it
 - **By IP address**: if the traffic is coming from a known IP or range, block that IP
-- **By page**: if only specific pages are being hit, use [page exclusions](excluding-pages.md)
+- **By page**: if only specific pages are being hit, use [page exclusions](top-pages.md#block-traffic-from-specific-pages-or-sections)
 
 Shields rules take effect immediately and apply going forward. They do not remove historical data already recorded.
 

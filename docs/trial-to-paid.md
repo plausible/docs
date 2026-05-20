@@ -60,3 +60,10 @@ If you skip this step, you can add these details later by opening any invoice fr
 </div>
 
 Your subscription starts immediately and renews automatically. You can [change](change-plan.md) or [cancel](cancel-subscription.md) your plan at any time.
+
+## What's next?
+
+- [Invite your team](users-roles.md) so colleagues can access the dashboard directly without sharing your login credentials
+- [Set up email reports](email-reports.md) to receive a weekly or monthly summary of your stats by email
+- [Create shared links](shared-links.md) to give read-only dashboard access to clients or stakeholders without requiring a Plausible account
+- [Set up goals](goal-conversions.md) to start tracking conversions if you have not already done so

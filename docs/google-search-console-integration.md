@@ -117,3 +117,9 @@ You can check if Plausible Analytics is integrated with and has the right permis
 If you'd like to remove the Google Search Console integration, click on the **Unlink Google account** button in the **Google Search Console Integration** module within the **Integrations** section of your website settings.
 
 P.S. If you want to learn more about analyzing organic search traffic in Plausible, visit our [blog post](https://plausible.io/blog/seo-dead#analyzing-organic-search-traffic).
+
+## What's next?
+
+- [Set up goals](goal-conversions.md) so you can see which search keywords and landing pages drive the most signups or purchases
+- [Use filters and segments](filters-segments.md) to isolate your organic search audience and see their full behavior across your site
+- [Compare two time periods](compare-stats.md) to track how your search traffic has changed since your last content or SEO update
