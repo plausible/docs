@@ -14,13 +14,13 @@ Newsletter signups won’t show up automatically in your Plausible dashboard. Yo
 
 To configure a goal, go to your website’s settings in your Plausible Analytics account and visit the **Goals** section. You should see a prompt to add a goal.
 
-<img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
-
 Click on the **+ Add goal** button to go to the goal creation form.
 
 Select `Custom event` as the goal trigger and enter this exact name: `Subscribe`.
 
+<div class="browser">
 <img alt="Add Subscribe goal" src={useBaseUrl('img/add-a-subscribe-goal.png')} />
+</div>
 
 Next, click on the **Add goal** button, and you’ll be taken back to the Goals page. After you've completed this process, all the newsletter signups will start being tracked and will be displayed in the **Goals** tab of your Plausible Analytics dashboard. 
 
@@ -34,8 +34,6 @@ To configure a goal, go to your website’s settings in your Plausible Analytics
 
 Select `Custom event` as the goal trigger and enter this exact name: `Outbound Link: Click`.
 
-<img alt="Add Outbound Link Click goal" src={useBaseUrl('img/outbound-link-click-goal.png')} />
-
 Next, click on the **Add goal** button to be taken back to the Goals page. After you've completed this process, all the external link clicks will start being tracked and will be displayed in the **Goals** tab of your Plausible Analytics dashboard. 
 
 You'll see **Outbound Link: Click** goal as soon as the first external link click has been tracked. That's all you need to do. Plausible will automatically record new external link clicks.
@@ -45,7 +43,3 @@ You'll see **Outbound Link: Click** goal as soon as the first external link clic
 And that's it. You are now using Plausible Analytics to count your Buttondown archive stats including outbound link clicks and new subscribers. 
 
 Now you can go to your Buttondown site and verify whether Plausible Analytics script has been added and to your Plausible Analytics account to see whether the stats are being tracked. See here [how to verify the integration](troubleshoot-integration.md).
-
-The stats will look like this:
-
-<img alt="Plausible dashboard for your Buttondown newsletter" src={useBaseUrl('img/buttondown-dashboard.png')} />
