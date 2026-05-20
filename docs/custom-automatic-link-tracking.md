@@ -79,7 +79,9 @@ where `\/` stands for a forward slash (escaped with `\`) and `.*` will match any
 
 You'll have to configure the goal for the click numbers to show up in your Plausible dashboard. To configure a goal, go to [your website's settings](website-settings.md) in your Plausible Analytics account and visit the **Goals** section. You should see an empty list with a prompt to add a goal.
 
+<div class="browser">
 <img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
+</div>
 
 Click on the **+ Add goal** button to go to the goal creation form.
 
