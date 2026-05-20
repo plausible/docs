@@ -154,7 +154,7 @@ Step-by-step guides for popular website builders and content management systems.
 | [Google AMP Pages](https://github.com/plausible/analytics/discussions/220#discussioncomment-904022) | Declare an AMP-analytics object on your AMP pages to track with Plausible |
 | [Google Chrome extensions](https://gist.github.com/Joelkw/31b798f69c714c00e9e097b1fd4bb3c8) | Instructions for tracking Chrome browser extensions with Plausible |
 | [DNT and offline](https://github.com/ian/analytics/tree/main/packages/plausible) | Add Do Not Track and offline functionality via the analytics library |
-| [Segment](google-tag-manager.md) | No official integration, but you can integrate via Google Tag Manager |
+| [Segment](https://plausible.io/gtm-template) | No official integration, but you can integrate via Google Tag Manager |
 
 ### Monitoring and automation
 

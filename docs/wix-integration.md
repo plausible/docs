@@ -17,3 +17,9 @@ Site-wide JavaScript code injection is a premium Wix feature so you need to upgr
 * Paste your Plausible tracking code, give it a name, choose which pages to add the code to (**All Pages**), select **Load code once per visit** ([read more about this here](https://support.wix.com/en/article/custom-code-loading-options)), select **Head** as the place for the code and click the **Apply** button.
 
 Now you can go to your website and verify whether Plausible Analytics script has been added and to your Plausible Analytics account to see whether the stats are being tracked. See here [how to verify the integration](troubleshoot-integration.md).
+
+## What's next?
+
+- [Set up goals](goal-conversions.md) to track form submissions, button clicks or any conversion that matters to your site
+- [Invite your team](users-roles.md) or [share the dashboard](shared-links.md) with your clients or collaborators
+- [Import your Google Analytics history](google-analytics-import.md) if you're switching from GA and want to keep your historical data

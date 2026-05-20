@@ -69,3 +69,9 @@ In Squarespace, all completed orders are being redirected to a page with the fol
 `https://yourwebsite.com/commerce/orders/977f8aa0-f618-47d0-8787-ee37b1457cc0`
 
 To track completed orders, you can set up a pageview goal. Since the ID (in our example `/977f8aa0-f618-47d0-8787-ee37b1457cc0`) changes with every order, you will need to group those dynamic pages. You can use asterisks (*) to do so. Asterisks can be placed on either end or in the middle of any page path URL. For the example above, you can set up a pageview goal `/commerce/orders/*` to group all of the dynamically created order completion pages.
+
+## What's next?
+
+- [Add revenue tracking](ecommerce-revenue-tracking.md) to your order confirmation goal to measure revenue per source and campaign
+- [Build a funnel](funnel-analysis.md) from your product page to the order confirmation page to see where visitors drop off
+- [Invite your team](users-roles.md) or [share the dashboard](shared-links.md) with your client or collaborators

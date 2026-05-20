@@ -40,3 +40,10 @@ We've put together [several other guides and plugins](integration-guides.md) tha
 ## How to check if Plausible Analytics is installed correctly
 
 After adding the Plausible snippet to your website, you can use our testing tool to verify that the snippet is installed correctly and the integration is working. Have some issues with the integration? Take a look at [our guide to troubleshooting your Plausible Analytics integration](troubleshoot-integration.md).
+
+## What's next?
+
+- [Verify the snippet is installed correctly](troubleshoot-integration.md) before assuming data is being collected
+- [Set up goals](goal-conversions.md) to track signups, button clicks, purchases or any other conversion that matters to your site
+- [Import your Google Analytics history](google-analytics-import.md) so your Plausible dashboard starts with your full data record
+- [Invite your team](users-roles.md) so colleagues can access the dashboard without sharing your login

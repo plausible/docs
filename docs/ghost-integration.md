@@ -29,3 +29,9 @@ The Sign In/Sign up flows are part of Ghost's [Portal](https://ghost.org/help/se
 However, you can bypass this and customize your sign up flows by using a custom theme on the "[Creator plan](https://ghost.org/pricing/)" or higher. 
 
 If you're using a custom theme, you can simply add the tagged events extension to your script and CSS class to the element that you want to track as explained in [this doc](https://plausible.io/docs/custom-event-goals).
+
+## What's next?
+
+- [Verify the integration](troubleshoot-integration.md) to confirm the snippet is firing and stats are being collected
+- [Set up a pageview goal](pageview-goals.md) for your newsletter signup confirmation page to track how many visitors become subscribers
+- [Invite your team](users-roles.md) or [create a shared link](shared-links.md) for collaborators who need read access to your stats

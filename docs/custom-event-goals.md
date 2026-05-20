@@ -362,3 +362,10 @@ Example: Tracking audio and video elements
 The same code also applies for `<video>` elements. Feel free to replace `Media Played` with a more suitable name for your custom event.
 
 </details>
+
+## What's next?
+
+- [Attach custom properties](/custom-props/for-custom-events) to your events to track additional context like plan type, product name or coupon code alongside conversions
+- [Add revenue values](ecommerce-revenue-tracking.md) to purchase or checkout events to track ecommerce revenue attribution
+- [Build a funnel](funnel-analysis.md) using your custom events as steps to see where visitors drop off between landing and converting
+- [Filter your dashboard by goal](filters-segments.md) to see which sources and pages drive the most conversions for each event

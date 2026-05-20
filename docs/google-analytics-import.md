@@ -207,3 +207,10 @@ Check the date range of your import in your Plausible site settings. If your GA4
 **Imported data and native data show a gap or overlap**
 
 The import tool sets the end date of the import to one day before your first Plausible native data point. If you see a gap, check that Plausible was correctly installed and recording data before you ran the import. If you see overlap, delete the import and re-run it after confirming your Plausible installation date.
+
+## What's next?
+
+- [Set up goals in Plausible](goal-conversions.md) to replace the GA4 conversions you were tracking. Imported goal data will appear once you recreate matching goals in your site settings
+- [Compare date ranges](compare-stats.md) that span your imported history and your native Plausible data together
+- [Filter and segment](filters-segments.md) your imported data by source, page or country to reproduce the key reports you used in GA4
+- [Export to CSV](export-stats.md) or use the [Stats API](stats-api.md) for reporting outside the dashboard
