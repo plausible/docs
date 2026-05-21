@@ -1,6 +1,6 @@
 ---
 title: Funnel analysis
-description: "Map the visitor journey from landing page to conversion in Plausible. Spot drop-off points across multi-step funnels using pageviews or custom events."
+description: "Map the visitor journey from landing page to conversion with Plausible's funnel analytics. Spot drop-off points across multi-step funnels using pageviews or custom events."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
