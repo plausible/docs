@@ -32,6 +32,12 @@ Ghost is one of the largest open source publishing platforms. Their recommendati
 
 ---
 
+**[We removed advertising cookies — here's what happened](https://blog.sentry.io/we-removed-advertising-cookies-heres-what-happened/)** — Matt Henderson, Sentry
+
+Sentry, one of the most widely used developer monitoring tools, documented their switch from GA4 to Plausible as part of going fully cookieless in 2023. Two years later they published a follow-up confirming [they haven't put a single cookie back](https://blog.sentry.io/two-years-without-cookies-on-the-site/).
+
+---
+
 ## Reviews and community mentions
 
 * [We've put together a list of people tweeting about using Plausible](https://twitter.com/PlausibleHQ/timelines/1311218983912308736)
@@ -91,5 +97,17 @@ Ghost is one of the largest open source publishing platforms. Their recommendati
 * [De-Google-ing your website analytics](https://changelog.com/podcast/396) by The Changelog podcast
 
 * [Google Analytics vs Plausible Analytics: Website Analytics Review for Small Businesses](https://boujeebrands.io/posts/plausible-analytics-vs-google-analytics/) by James Walker on boujeebrands.io
+
+* [My analytics setup](https://simonwillison.net/2023/Feb/17/analytics/) by Simon Willison, co-creator of Django
+
+* [How we use analytics as a privacy-focused OSS company](https://www.getunleash.io/blog/how-we-use-analytics-as-a-privacy-focused-oss-company) by Ivar Østhus, CTO and co-founder of Unleash
+
+* [Moving from Google Analytics to Plausible](https://macarthur.me/posts/moving-from-google-analytics-to-plausible/) by Alex MacArthur, creator of TypeIt
+
+* [Why I switched from Google Analytics to Plausible Analytics](https://mattolpinski.com/articles/why-i-switched-from-google-analytics-to-plausible-analytics/) by Matt Olpinski, Senior Product Designer at Instacart
+
+* [Plausible.io: An easy and ethical Google Analytics alternative](https://pipwerks.com/plausible-io-an-easy-and-ethical-google-analytics-alternative/) by Philip Hutchison, creator of PDFObject
+
+* [Switching to Plausible Analytics](https://crystalidea.com/blog/switching-to-plausible-analytics) by CrystalIDEA
 
 Let us know about any other reviews that you've published and we will feature them. Thanks for your support!
