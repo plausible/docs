@@ -34,6 +34,14 @@ You can use our [official WordPress plugin](https://plausible.io/wordpress-analy
 * You can also add a description to help you identify which device or location you have blocked
 
 * You need to add one IP address at a time and it has to be the full IP address as IP ranges are not supported. You can block up to 30 different IP addresses per website
+
+:::note Block both IPv4 and IPv6 if your device uses both
+Most modern devices and networks have both an IPv4 address (e.g. `203.0.113.5`) and an IPv6 address (e.g. `2001:db8::1`). Your browser or network proxy may send visits using either one depending on the connection.
+
+If you block only your IPv4 address but your browser sends a request over IPv6, that visit will still be recorded. To reliably exclude your traffic, check whether your device has both address types and add each one separately.
+
+The **block your current IP** button captures whichever address your browser is currently using. Click it, then visit a site like [whatismyipaddress.com](https://whatismyipaddress.com) to check whether you also have a second address type, and add that manually if so.
+:::
   
 * Once added to the block list, we will start blocking traffic from that specific IP address within a few minutes
 
