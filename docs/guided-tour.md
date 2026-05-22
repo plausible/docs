@@ -60,7 +60,7 @@ You can also use the **Filter** button on the top of your dashboard which gives 
 
 You can click the expand icon in the top right of any section to get an expanded view and see the full list with additional metrics such as **Visitors**, **Bounce Rate**, **Visit Duration**, **Scroll Depth**, **Unique Conversions**, **Total Conversions**, **Conversion Rate** and more, depending on the section.
 
-You can sort any report by such performance metrics by clicking on any metric heading to sort and arrange your data in ascending or descending order.
+You can sort any report by such performance metrics by clicking on any metric heading to sort and arrange your data in ascending or descending order. See [metric definitions](metrics-definitions.md) for a full list of what each number means.
 
 ## Sources
 
@@ -80,17 +80,9 @@ See all the most visited pages on your site ranked by the number of unique visit
 
 You can also get insights into the visitor flow by looking at the **Entry pages** and **Exit pages**. Click the expand icon in the top right to see the full list with additional metrics. For **Entry pages** this includes visit duration for visits that started on a specific page and for **Exit pages** this includes the exit rate percentage. [Read more here](top-pages.md).
 
-:::tip Looking for the definitions of the metrics you have access to?
-[See this list](metrics-definitions.md)
-:::
-
 ## Locations
 
 See the list of countries, regions and cities your traffic is coming from. You can click the expand icon in the top right to see the full list ranked by the number of visitors. [Read more here](countries.md).
-
-:::tip Want a quicker way to navigate the dashboard?
-You can use the keyboard shortcuts to do so. Here's [the full list of shortcuts we support](keyboard-shortcuts.md)
-:::
 
 ## Devices
 
@@ -105,3 +97,5 @@ You can see the device, browser and operating system your visitors are using. Cl
 You can track goal conversions to see which pages and referral sources drive signups, purchases, downloads and other actions. Revenue tracking, funnel analysis, form completions, file downloads and more are all available.
 
 [You can read more about events, properties and funnels here](goal-conversions.md).
+
+You can also use [keyboard shortcuts](keyboard-shortcuts.md) to navigate the dashboard faster.

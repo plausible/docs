@@ -86,9 +86,7 @@ Route::get('/js/script.js', [PlausibleProxyController::class, 'script'])->name('
 Route::post('/api/event', [PlausibleProxyController::class, 'event'])->name('plausible.event');
 ```
 
-:::warning
 Use generic path names. Paths like `/analytics`, `/stats` or `/plausible` may get blocked by adblockers.
-:::
 
 
 ## Step 4: Exempt the event route from CSRF

@@ -65,6 +65,7 @@ module.exports = {
             { label: 'Lightweight script', href: 'https://plausible.io/lightweight-web-analytics' },
             { label: 'Privacy focused', href: 'https://plausible.io/privacy-focused-web-analytics' },
             { label: 'Open source', href: 'https://plausible.io/open-source-website-analytics' },
+            { label: 'No cookie banner', href: 'https://plausible.io/cookieless-web-analytics' },
             { label: 'Visitor segmentation', href: 'https://plausible.io/audience-segmentation' },
             { label: 'Ecommerce', href: 'https://plausible.io/for-ecommerce' },
             { label: 'SaaS', href: 'https://plausible.io/for-saas' },
