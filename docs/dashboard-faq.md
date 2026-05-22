@@ -95,7 +95,7 @@ For a broader look at why numbers differ across analytics tools, see our [blog p
 
 If you've just installed Plausible and aren't seeing your own visits, there are a few common reasons:
 
-- **WordPress plugin**: Our [official WordPress plugin](/wordpress-analytics-plugin) excludes logged-in admin visits by default. If the verification tool confirms the tracking is working, you have nothing to worry about.
+- **WordPress plugin**: Our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) excludes logged-in admin visits by default. If the verification tool confirms the tracking is working, you have nothing to worry about.
 - **Shields**: The [Shields feature](excluding.md) lets you block visits based on IP addresses, hostnames, countries or specific pages. Check whether you have any rules that might be excluding your own visits.
 - **Adblockers**: If you're using a browser extension or network-level adblocker, it may be blocking the Plausible script. Consider setting up a [proxy](proxy/introduction.md) to serve the script as a first-party connection.
 
