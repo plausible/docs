@@ -109,7 +109,7 @@ For subscription upgrades, fire on the confirmation page after payment is proces
 
 ## Integrating with WooCommerce
 
-If you're running WooCommerce, you can use our [WordPress plugin](/wordpress-analytics-plugin). It has built-in support for tracking of WooCommerce store activity including:
+If you're running WooCommerce, you can use our [WordPress plugin](https://plausible.io/wordpress-analytics-plugin). It has built-in support for tracking of WooCommerce store activity including:
 
 * Tracking of several custom events including actions such as add to cart, complete purchase and revenue
 * Tracking of several custom properties including product name and product category
