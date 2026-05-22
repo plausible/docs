@@ -9,18 +9,6 @@ Plausible gives you full control over your subscription. Choose a plan, pick mon
 
 [View plans and pricing →](https://plausible.io/#pricing) · [Start free trial →](https://plausible.io/register)
 
-## How usage is calculated
-
-Your subscription tier is based on the total number of **pageviews** and **[custom events](custom-event-goals.md)** across all the sites in a team. Each team has its own subscription, so if you are a member of multiple teams, each is billed independently.
-
-Custom events include outbound link clicks, file downloads, 404 error tracking and any manually tracked events. Adding a [pageview goal](pageview-goals.md) does not count towards your usage.
-
-Check your current usage in the **Subscription** section of your account settings and pick a tier that matches.
-
-<div class="browser">
-    <img alt="Plausible subscription" src={useBaseUrl('img/v2/account-settings-subscription.webp')} />
-</div>
-
 ## Which plan should I choose?
 
 All plans start at the same pageview tiers. The difference is features and team size.
@@ -32,20 +20,18 @@ All plans start at the same pageview tiers. The difference is features and team 
 
 Compare full features and pricing on [our website](https://plausible.io/#pricing) or in your account settings. Save 2 months by choosing yearly billing.
 
-All plans include a 30-day free trial. No credit card required. You can switch plans during or after your trial.
+All plans include a 30-day free trial, no credit card required. During the trial you have access to all Business plan features and limits, so you can explore the full product before choosing a plan.
 
 Nonprofits, educational institutions and open-source projects are eligible for a 15% discount on Business plans with annual billing. See [nonprofit and education pricing](nonprofit-and-education-pricing.md) for details.
 
 ## Enterprise-only features
 
-Enterprise includes everything in Business plus a set of additional features and higher limits. The features below are not available on any lower plan and cannot be purchased as add-ons.
+Enterprise includes everything in Business plus additional features and higher limits. The features below are not available on any lower plan and cannot be purchased as add-ons. If you need any of them, upgrading to Enterprise is required.
 
 - **SSO (Single Sign-On)**: log in via your existing identity provider using SAML 2.0. See [SSO documentation](sso.md).
 - **Sites API**: create and manage sites programmatically. See [Sites API documentation](sites-api.md).
 - **Managed proxy**: we handle the proxy setup and maintenance for you. See [proxy options](proxy/introduction.md).
 - **Scheduled raw event exports**: event-level data delivered automatically on an agreed schedule. See [raw event exports](raw-data-export.md).
-
-If you are on Growth and need SSO, for example, an upgrade to Enterprise is required. There is no add-on option.
 
 Limits that can be increased on Enterprise beyond standard plan tiers:
 
@@ -55,7 +41,19 @@ Limits that can be increased on Enterprise beyond standard plan tiers:
 - API rate limits
 - Data retention
 
-[Learn more about Enterprise plans](https://plausible.io/enterprise-web-analytics) or [contact us](https://plausible.io/contact) to discuss your needs.
+Enterprise plans are not self-serve like Growth or Business. [Contact us](https://plausible.io/contact) with your requirements and we will set up a custom plan tailored to your needs. Every Enterprise plan starts with Business plan features and limits and is then customized from there.
+
+## How usage is calculated
+
+Your subscription tier is based on the total number of **pageviews** and **[custom events](custom-event-goals.md)** across all the sites in a team. Each team has its own subscription, so if you are a member of multiple teams, each is billed independently.
+
+Custom events include outbound link clicks, file downloads, form submissions, 404 error tracking and any manually tracked events. Adding a [pageview goal](pageview-goals.md) does not count towards your usage.
+
+Check your current usage in the **Subscription** section of your account settings and pick a tier that matches.
+
+<div class="browser">
+    <img alt="Plausible subscription" src={useBaseUrl('img/v2/account-settings-subscription.webp')} />
+</div>
 
 ## Traffic spikes and overages
 

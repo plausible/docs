@@ -31,12 +31,8 @@ Here's how you can import your historical stats into your Plausible dashboard by
 <img alt="Select CSV and import" src={useBaseUrl('img/select-csv-to-import.png')} />
 </div>
 
-:::tip Want to transfer a site ownership to another Plausible account?
-No data export/import is needed in this case. We have a way to [transfer site ownership](transfer-ownership.md) with a couple of clicks.
-:::
-
-:::tip Or want to change the domain name of your Plausible site?
-No data export/import is needed in this case either. We have an easy way to [change your domain name](change-domain-name.md).
+:::tip No data import needed for ownership transfers or domain changes
+To [transfer site ownership](transfer-ownership.md) to another account, or to [change your site's domain name](change-domain-name.md), use the dedicated options in your site settings. No export or import required.
 :::
 
 ## How to migrate from Plausible CE to our managed hosting (or vice-versa)
