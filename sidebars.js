@@ -89,7 +89,7 @@ module.exports = {
         ],
       },
     ],
-    'Data access': [
+    'APIs & Data Access': [
       'data-access',
       'stats-api',
       'stats-api-playground',
