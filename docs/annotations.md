@@ -24,7 +24,7 @@ Annotations show up as markers along the bottom of the main traffic chart. When 
 
 ## Add an annotation
 
-Open the options menu (the **⋮** icon in the top right of the chart) and select **Add annotation**. Choose the date the event occurred, write a short note describing it and select whether it should be personal or shared with your team. Save it and the annotation will appear on the chart immediately.
+Hover over the date on the chart where you want to place the annotation. Right-click to open the context menu and select **Add annotation**. Write a short note describing the event and choose whether it should be personal or shared with your team. Save it and the annotation will appear on the chart immediately.
 
 :::tip
 Annotate events as they happen rather than after the fact. A note added on the day of a deployment is more useful than one added a week later when you're trying to explain a traffic change.
@@ -32,7 +32,7 @@ Annotate events as they happen rather than after the fact. A note added on the d
 
 ## Edit or delete an annotation
 
-Hover over an annotation marker on the chart to see the note. From there you can edit the text or delete the annotation entirely. You can always edit or delete your own annotations. Only team members with editor access or above can add, edit or delete team annotations.
+Hover over the date on the chart where an annotation exists. Right-click to open the context menu and choose to edit the note or delete the annotation entirely. You can always edit or delete your own annotations. Only team members with editor access or above can add, edit or delete team annotations.
 
 ## Practical uses
 
@@ -46,9 +46,3 @@ Annotations are most useful when your team is making changes that affect traffic
 - **A/B tests:** start and end dates for experiments that affect traffic or conversion behavior
 
 Annotating these events means future you (and your teammates) can read the chart without having to dig through Slack, commit history or email threads to understand what changed.
-
-## Annotations and date ranges
-
-Annotations are not filtered by your active [filters or segments](filters-segments.md). They are tied to a date, not a subset of traffic. An annotation will appear on the chart as long as its date falls within the selected time range, regardless of what filters are active.
-
-When [comparing two periods](compare-stats.md), annotations from both date ranges appear on their respective sides of the chart.
