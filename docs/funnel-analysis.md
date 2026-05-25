@@ -64,7 +64,7 @@ Use funnels when you want to measure how many visitors complete a specific multi
 - A content conversion (blog post → email capture → thank you page)
 - A trial-to-paid flow (trial signup → feature usage → upgrade page)
 
-If you just want to count how many people reached a single page or clicked a button, a [pageview goal](pageview-goals.md) or [custom event goal](custom-event-goals.md) is simpler. Funnels are most useful when the journey between steps matters.
+If you just want to count how many people reached a single page or clicked a button, a [pageview goal](pageview-goals.md) or [custom event goal](custom-event-goals.md) is simpler. Funnels are most useful when the journey between steps matters. If you do not have a specific path in mind and want to discover what visitors actually do, use [user journeys](user-journeys.md) instead.
 
 ## Funnel examples
 
