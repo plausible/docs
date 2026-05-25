@@ -97,6 +97,7 @@ description: "Plausible Analytics documentation. No cookies, no personal data, n
 <ul>
 <li><a href="/docs/goal-conversions">Goal conversions</a>: set up and measure conversion goals</li>
 <li><a href="/docs/funnel-analysis">Funnel analysis</a>: follow the visitor journey step by step</li>
+<li><a href="/docs/user-journeys">User journeys</a>: explore the paths visitors take on your site</li>
 <li><a href="/docs/ecommerce-revenue-tracking">Ecommerce revenue tracking</a>: attribute revenue to traffic sources</li>
 <li><a href="/docs/outbound-link-click-tracking">Outbound link clicks</a>: track clicks to external sites</li>
 <li><a href="/docs/file-downloads-tracking">File downloads</a>: see which files get downloaded</li>
