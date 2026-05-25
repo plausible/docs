@@ -53,8 +53,8 @@ description: "Plausible Analytics documentation. No cookies, no personal data, n
 </div>
 
 <div class="docs-card">
-<h3>Account settings</h3>
-<p>Manage your personal account and preferences.</p>
+<h3><a href="/docs/account-settings">Account settings</a></h3>
+<p>Manage your personal account and preferences. For site-specific settings (timezone, goals, reports, access), see <a href="/docs/website-settings">website settings</a>.</p>
 <ul>
 <li><a href="/docs/2fa">Two-factor authentication</a>: secure your account</li>
 <li><a href="/docs/change-email">Change email</a>: update your login address</li>
@@ -69,6 +69,7 @@ description: "Plausible Analytics documentation. No cookies, no personal data, n
 <h3>Team and sharing</h3>
 <p>Manage access, sharing and notifications for your team.</p>
 <ul>
+<li><a href="/docs/team-settings">Team settings</a>: subscription, API keys, SSO and team configuration</li>
 <li><a href="/docs/users-roles">Users and roles</a>: invite team members and set permissions</li>
 <li><a href="/docs/agencies-and-freelancers">Agencies and freelancers</a>: manage multiple client sites</li>
 <li><a href="/docs/shared-links">Shared links</a>: share your dashboard publicly or with specific people</li>

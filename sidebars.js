@@ -101,6 +101,7 @@ module.exports = {
       'data-pipelines',
     ],
     'Account Settings': [
+      'account-settings',
       '2fa',
       'change-email',
       'login-management',
@@ -110,6 +111,7 @@ module.exports = {
       'transfer-account-ownership',
     ],
     'Team': [
+      'team-settings',
       'users-roles',
       'agencies-and-freelancers',
       'transfer-ownership',
