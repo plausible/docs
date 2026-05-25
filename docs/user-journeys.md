@@ -47,7 +47,7 @@ You can explore journeys in two directions.
 
 By default, the list shows the 10 most visited pages and most triggered events. If the page or event you want to explore is not visible, click **More** to expand the list or use the search box to find it by name.
 
-**Grouped pages** are shown with a folder icon. Plausible automatically groups pages that share the same directory, so `/blog/post-1` and `/blog/post-2` appear together as `/blog`. This keeps the list readable and makes patterns easier to spot. You can still select any individual page within a group if you want to look at a specific URL.
+**Grouped pages** are shown with a folder icon. Plausible automatically groups pages that share the same directory, so `/blog/post-1` and `/blog/post-2` appear together as `/blog`. This keeps the list readable and makes patterns easier to spot. Selecting a group lets you explore journeys across all pages in that section at once. For example, selecting `/docs` shows what visitors did before or after visiting any documentation page, and selecting `/blog` shows paths around any blog post. This is much more useful than analysing one page at a time when you want to understand how a whole section of your site fits into the visitor journey. You can still select any individual page within a group if you want to drill into a specific URL.
 
 **Goals and custom events** are shown with a cursor icon, so you can tell at a glance whether an item is a page or an event.
 

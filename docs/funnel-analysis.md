@@ -138,6 +138,6 @@ If one step shows zero while earlier steps have data, the goal for that step is 
 - Track [ecommerce revenue](ecommerce-revenue-tracking.md) alongside your funnels to see which paths generate the most sales
 - Use [filters and segments](filters-segments.md) to compare funnel performance across different traffic sources or campaigns
 - Use [property-filtered goals](/custom-props/for-custom-events#create-property-filtered-goals) as funnel steps to track specific event variations, such as a sign-up for a particular plan
-- Explore open-ended visitor paths with [user journeys](user-journeys.md) — useful when you want to discover flows rather than measure a predefined sequence
+- Explore open-ended visitor paths with [user journeys](user-journeys.md): useful when you want to discover flows rather than measure a predefined sequence
 
 To learn more about conversion funnel optimization, [head to our blog](https://plausible.io/blog/funnels-conversion-optimization).
