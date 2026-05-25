@@ -41,7 +41,7 @@ description: "Plausible Analytics documentation. No cookies, no personal data, n
 
 <div class="docs-card">
 <h3>Website settings</h3>
-<p>Manage your site configuration and data.</p>
+<p>Manage your site configuration and data. For personal account settings (email, password, 2FA, appearance), see <a href="/docs/account-settings">account settings</a>.</p>
 <ul>
 <li><a href="/docs/excluding">Excluding pages and traffic</a>: filter out internal visits</li>
 <li><a href="/docs/embed-dashboard">Embed dashboard</a>: embed your stats on any page</li>
@@ -53,7 +53,7 @@ description: "Plausible Analytics documentation. No cookies, no personal data, n
 </div>
 
 <div class="docs-card">
-<h3><a href="/docs/account-settings">Account settings</a></h3>
+<h3>Account settings</h3>
 <p>Manage your personal account and preferences. For site-specific settings (timezone, goals, reports, access), see <a href="/docs/website-settings">website settings</a>.</p>
 <ul>
 <li><a href="/docs/2fa">Two-factor authentication</a>: secure your account</li>
