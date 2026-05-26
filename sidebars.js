@@ -54,6 +54,7 @@ module.exports = {
     'Goals and Events': [
       'goal-conversions',
       'funnel-analysis',
+      'user-journeys',
       'ecommerce-revenue-tracking',
       'outbound-link-click-tracking',
       'file-downloads-tracking',

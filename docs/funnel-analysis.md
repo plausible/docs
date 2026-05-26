@@ -66,7 +66,7 @@ Use funnels when you want to measure how many visitors complete a specific multi
 - A content conversion (blog post → email capture → thank you page)
 - A trial-to-paid flow (trial signup → feature usage → upgrade page)
 
-If you just want to count how many people reached a single page or clicked a button, a [pageview goal](pageview-goals.md) or [custom event goal](custom-event-goals.md) is simpler. Funnels are most useful when the journey between steps matters.
+If you just want to count how many people reached a single page or clicked a button, a [pageview goal](pageview-goals.md) or [custom event goal](custom-event-goals.md) is simpler. Funnels are most useful when the journey between steps matters. If you do not have a specific path in mind and want to discover what visitors actually do, use [user journeys](user-journeys.md) instead.
 
 ## Funnel examples
 
@@ -140,5 +140,6 @@ If one step shows zero while earlier steps have data, the goal for that step is 
 - Track [ecommerce revenue](ecommerce-revenue-tracking.md) alongside your funnels to see which paths generate the most sales
 - Use [filters and segments](filters-segments.md) to compare funnel performance across different traffic sources or campaigns
 - Use [property-filtered goals](/custom-props/for-custom-events#create-property-filtered-goals) as funnel steps to track specific event variations, such as a sign-up for a particular plan
+- Explore open-ended visitor paths with [user journeys](user-journeys.md): useful when you want to discover flows rather than measure a predefined sequence
 
 To learn more about conversion funnel optimization, [head to our blog](https://plausible.io/blog/funnels-conversion-optimization).

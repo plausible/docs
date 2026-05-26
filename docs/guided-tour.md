@@ -96,6 +96,8 @@ You can see the device, browser and operating system your visitors are using. Cl
 
 You can track goal conversions to see which pages and referral sources drive signups, purchases, downloads and other actions. Revenue tracking, funnel analysis, form completions, file downloads and more are all available.
 
+The **Explore** tab sits alongside Goals, Properties and Funnels. Use it to trace the paths visitors take across your site, starting from any page or event and following what they did next. [Read more about user journeys](user-journeys.md).
+
 [You can read more about events, properties and funnels here](goal-conversions.md).
 
 You can also use [keyboard shortcuts](keyboard-shortcuts.md) to navigate the dashboard faster.
