@@ -114,7 +114,7 @@ For example, a link in your email newsletter might look like:
 https://yoursite.com/blog/post?utm_source=newsletter&utm_medium=email&utm_campaign=april-launch
 ```
 
-Read more about [tagging your links with UTM parameters](manual-link-tagging.md).
+Read more about [tagging your links with UTM parameters](https://plausible.io/blog/utm-tracking-tags).
 
 ### Referrer Drilldown
 

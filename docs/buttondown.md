@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
-title: How to add the script to Buttondown
+title: Adding Plausible to Buttondown
+sidebar_label: Buttondown
 description: "Track your Buttondown newsletter archives, link clicks and subscriber conversions in Plausible Analytics. Setup guide with goal configuration."
 ---
 

@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
 title: Proxying Plausible with Next.js
+sidebar_label: Next.js
 description: "How to proxy Plausible Analytics in a Next.js project using the next-plausible package, which includes built-in proxy support."
 ---
 

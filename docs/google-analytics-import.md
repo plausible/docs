@@ -1,5 +1,6 @@
 ---
 title: Import stats from Google Analytics
+sidebar_label: Google Analytics
 description: "Import your historical Google Analytics 4 data into Plausible Analytics. No gaps, no double-counting, and full support for segmenting and exporting."
 ---
 

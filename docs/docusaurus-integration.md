@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
-title: How to add the script to your Docusaurus site
+title: Adding Plausible to Docusaurus
+sidebar_label: Docusaurus
 description: "Add Plausible Analytics to a Docusaurus documentation site using the community plugin. Privacy-friendly stats with no cookies."
 ---
 

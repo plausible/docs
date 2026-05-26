@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
-title: How to add the script to your Hugo site
+title: Adding Plausible to Hugo
+sidebar_label: Hugo
 description: "Integrate Plausible Analytics with your Hugo site using the community plugin or by adding the script directly to your theme."
 ---
 

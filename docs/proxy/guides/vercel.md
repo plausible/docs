@@ -1,5 +1,6 @@
 ---
 title: Proxying Plausible through Vercel
+sidebar_label: Vercel
 description: "How to proxy Plausible Analytics through Vercel. Use Vercel rewrites to serve the analytics script and events as a first-party connection from your domain."
 ---
 

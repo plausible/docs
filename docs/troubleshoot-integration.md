@@ -1,5 +1,6 @@
 ---
 title: Troubleshooting Plausible Analytics
+sidebar_label: Troubleshooting
 description: "Troubleshoot your Plausible Analytics installation. Diagnose why visits aren't being recorded, fix common snippet errors and confirm real-time data is flowing."
 ---
 

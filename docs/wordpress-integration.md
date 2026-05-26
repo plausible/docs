@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
-title: WordPress integration
+title: Adding Plausible to WordPress
+sidebar_label: WordPress
 description: "Add Plausible Analytics to your WordPress site using the official plugin. Cookie-free, privacy-first tracking with proxy and goal tracking support."
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Plausible Looker Studio connector
+sidebar_label: Looker Studio connector
 description: "Connect Plausible Analytics to Google Looker Studio using the official connector. Build custom reports and branded dashboards on the Business plan."
 ---
 

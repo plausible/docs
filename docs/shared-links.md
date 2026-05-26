@@ -1,5 +1,6 @@
 ---
 title: Share your stats with a private and secure link
+sidebar_label: Shared links
 description: "Create a private shared link to your Plausible dashboard so partners, clients, or advertisers can view your stats without needing a Plausible account."
 ---
 

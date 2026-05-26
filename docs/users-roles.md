@@ -1,5 +1,6 @@
 ---
 title: Invite team members or external guests and assign roles
+sidebar_label: Invite members
 description: "How to create teams, invite members and assign roles in Plausible Analytics. Covers owner, admin, viewer, billing and guest roles with per-site access control and role-based access control (RBAC)."
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Add the Plausible tracking script
+sidebar_label: Add the tracking script
 description: "Add the Plausible tracking snippet to your site's header. One lightweight script, no cookies, no personal data. Works with WordPress, GTM and most site builders."
 ---
 

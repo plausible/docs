@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
-title: Adding Plausible to Webflow (and tracking custom events)
+title: Adding Plausible to Webflow
+sidebar_label: Webflow
 description: "Add Plausible Analytics to Webflow via Custom Code and track button clicks or form submissions as custom events. No cookies needed."
 ---
 

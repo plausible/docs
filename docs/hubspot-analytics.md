@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
-title: How to add Plausible Analytics to your HubSpot site
+title: Adding Plausible to HubSpot
+sidebar_label: HubSpot
 description: "Add Plausible Analytics to your HubSpot website by injecting the tracking script site-wide. Works across all pages without cookies."
 ---
 

@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
-title: How to add the script to your Discourse community
+title: Adding Plausible to Discourse
+sidebar_label: Discourse
 description: "Add Plausible Analytics to Discourse via a theme component. Uses hash-based routing support for accurate tracking of forum page views."
 ---
 

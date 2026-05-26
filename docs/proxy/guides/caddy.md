@@ -1,5 +1,6 @@
 ---
 title: Proxying Plausible through Caddy
+sidebar_label: Caddy
 description: "How to proxy Plausible Analytics through Caddy. Configure Caddy as a reverse proxy to serve analytics as a first-party connection from your own domain."
 ---
 

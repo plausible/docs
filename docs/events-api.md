@@ -1,5 +1,6 @@
 ---
 title: Plausible Events API reference
+sidebar_label: Events API reference
 description: "Reference for the Plausible Events API. Send pageviews and custom events server-side or from mobile apps without the JavaScript snippet."
 ---
 

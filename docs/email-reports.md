@@ -1,5 +1,6 @@
 ---
 title: Set reports to be sent through email
+sidebar_label: Email reports
 description: "Set up weekly and monthly Plausible Analytics reports delivered by email. Stats are embedded directly in the message, no login or attachments required."
 ---
 

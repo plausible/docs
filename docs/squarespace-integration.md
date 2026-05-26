@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
 title: Adding Plausible to Squarespace
+sidebar_label: Squarespace
 description: "Add Plausible Analytics to a Squarespace site using Code Injection. Privacy-first, cookie-free tracking without touching your theme files."
 ---
 

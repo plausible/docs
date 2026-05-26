@@ -1,5 +1,6 @@
 ---
 title: "Integration guides: WordPress, Shopify, Next.js and more"
+sidebar_label: Integration guides
 description: "Install Plausible Analytics on WordPress, Shopify, Webflow, Squarespace, Ghost, Next.js and more. Official guides and community integrations for popular platforms."
 ---
 

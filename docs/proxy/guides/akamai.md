@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
 title: Proxying Plausible through Akamai
+sidebar_label: Akamai
 description: "Instructions for proxying Plausible Analytics through Akamai have moved. See the general proxy guide for up-to-date setup instructions."
 ---
 
