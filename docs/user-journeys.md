@@ -32,7 +32,7 @@ Each column shows the next step in the path:
 * **1 step after:** what visitors did immediately after the starting point
 * **2 steps after:** what visitors did after that, narrowed to those who followed the path so far
 
-Click any item in a column to select it and load the next step. You can go upto a maximum of "20 steps after". The conversion rate in the top right updates to reflect the share of starting-point visitors who reached the selected item.
+Click any item in a column to select it and load the next step. You can go upto a maximum of 20 steps. The conversion rate in the top right updates to reflect the share of starting-point visitors who reached the selected item.
 
 To clear your selection and start over, click the **refresh icon** in the top right corner.
 
