@@ -12,16 +12,11 @@ The **Explore** tab lets you map the paths visitors actually take on your site. 
 * Individual pages within a group are also selectable if you want to drill into a specific URL
 * Shows "No further action" at each step so you can see how many visitors dropped off
 * Displays the conversion rate for the full journey you are exploring
-* A refresh button clears your selection so you can start over with one click
 * All existing dashboard filters apply, so you can narrow journeys by traffic source, country, device or any other dimension
-
-<div class="browser">
-<img alt="User journeys" src={useBaseUrl('img/user-journeys.png')} />
-</div>
 
 ## How to use user journeys
 
-Open the **Explore** tab from the navigation bar at the top of your dashboard, alongside Goals, Properties and Funnels.
+Open the **Explore** tab from the report navigation bar, alongside Goals, Properties and Funnels.
 
 You will see a list of your most visited pages and most triggered events. Select one to begin exploring the journey.
 
@@ -69,10 +64,6 @@ This makes user journeys useful not just for understanding overall behaviour but
 ## Conversion rate
 
 The conversion rate shown in the top right is the percentage of visitors at the starting point who completed the full journey you have selected. The number in parentheses is the raw visitor count.
-
-For example: a conversion rate of 9% (16) means 16 out of the starting-point visitors followed the complete selected path.
-
-The header also updates to describe the journey length, for example "2-step user journey" when you have selected a starting point and one additional step.
 
 ## When to use user journeys
 
