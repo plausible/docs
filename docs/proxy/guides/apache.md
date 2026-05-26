@@ -1,5 +1,6 @@
 ---
 title: Proxying Plausible through Apache HTTP Server
+sidebar_label: Apache
 description: "How to proxy Plausible Analytics through Apache HTTP Server. Configure reverse proxy rules to serve analytics as a first-party connection from your domain."
 ---
 

@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
-title: How to add the script to your Ghost site
+title: Adding Plausible to Ghost
+sidebar_label: Ghost
 description: "Add Plausible Analytics to Ghost using code injection. Tracks your entire site with one snippet. No cookies, no personal data collected."
 ---
 

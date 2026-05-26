@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
-title: How to add the script to your NextJS site
+title: Adding Plausible to Next.js
+sidebar_label: Next.js
 description: "Add Plausible Analytics to a Next.js app using the next-plausible package. Covers script setup, custom events and proxying."
 ---
 

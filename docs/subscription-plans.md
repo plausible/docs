@@ -1,5 +1,6 @@
 ---
 title: Plausible pricing and subscription plans
+sidebar_label: Pricing and plans
 description: "Compare Plausible subscription plans. 30-day free trial, no credit card required. All tiers priced by pageviews, not seats."
 ---
 

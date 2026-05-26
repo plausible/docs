@@ -1,5 +1,6 @@
 ---
 title: Embed the dashboard without our branding into your user interface
+sidebar_label: Embed the dashboard
 description: "Embed a Plausible analytics dashboard into your own site or product using an iframe. Unbranded, scoped to a segment and requires no Plausible account to view."
 ---
 

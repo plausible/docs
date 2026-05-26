@@ -1,5 +1,5 @@
 ---
-title: Login management 
+title: Login management
 description: "How to view and remotely end active sessions on your Plausible Analytics account. Sessions expire automatically after 14 days of inactivity."
 ---
 

@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
-title: Specify a custom location to aggregate pages that contain identifiers
+title: Redact sensitive data from page URLs
+sidebar_label: Redact sensitive data from page URLs
 description: "How to send Plausible a custom URL instead of the real page URL. Useful for redacting user IDs, UUIDs or other personal data from your Top Pages report."
 ---
 

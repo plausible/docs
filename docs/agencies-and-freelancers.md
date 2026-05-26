@@ -1,5 +1,6 @@
 ---
 title: Using Plausible as an agency or freelancer
+sidebar_label: Agencies and freelancers
 description: "How agencies and freelancers use Plausible Analytics to manage multiple clients. Covers team structures, per-client billing and site ownership transfer on handoff."
 ---
 

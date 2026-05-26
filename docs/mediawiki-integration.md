@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
-title: How to add Plausible to your MediaWiki instance
+title: Adding Plausible to MediaWiki
+sidebar_label: MediaWiki
 description: "Install the Plausible extension for MediaWiki to add privacy-first, cookie-free analytics tracking to your wiki."
 ---
 

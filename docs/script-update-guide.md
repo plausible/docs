@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
 title: Update your Plausible script
+sidebar_label: Update your script
 description: "Migrating from the old Plausible tracking script to the updated version: what changed, how to get the new snippet and how to adjust your existing setup."
 ---
 

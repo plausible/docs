@@ -1,5 +1,6 @@
 ---
 title: Accessing your Plausible data
+sidebar_label: Accessing your data
 description: "Choose the right way to access your Plausible data outside the dashboard: Stats API, Events API, Sites API, CSV export, Looker Studio or data warehouse connectors."
 ---
 

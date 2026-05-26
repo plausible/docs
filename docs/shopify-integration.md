@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
-title: Tracking checkouts, purchases and revenue attribution on Shopify
+title: Shopify ecommerce tracking
+sidebar_label: Shopify
 description: "Track add to cart, checkout, purchase and revenue attribution in Plausible Analytics on your Shopify store. No cookies required."
 ---
 

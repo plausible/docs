@@ -1,5 +1,6 @@
 ---
-title: Your account settings section
+title: Plausible account settings
+sidebar_label: Account settings
 description: "Manage your Plausible Analytics account settings. Update your email, secure your account with 2FA, manage active sessions, and set your dashboard preferences."
 ---
 

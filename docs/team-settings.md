@@ -1,5 +1,6 @@
 ---
-title: Your team settings section
+title: Plausible team settings
+sidebar_label: Team settings
 description: "Manage your Plausible Analytics team settings. Control team membership, subscription, API keys, Single Sign-On and more."
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Import stats using CSV files
+sidebar_label: CSV files
 description: "Import historical analytics data into Plausible using CSV files. Works with any analytics tool that can export CSVs, including multiple properties into one dashboard."
 ---
 
