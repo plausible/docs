@@ -3,6 +3,7 @@ name: Docusaurus site CI
 on:
   push:
     branches: [ master, upgrade ]
+  workflow_dispatch:
 
 jobs:
   build:
