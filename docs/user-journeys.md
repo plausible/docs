@@ -24,7 +24,7 @@ The **Explore** tab lets you map the paths visitors actually take on your site. 
 
 Open the **Explore** tab from the report navigation bar, alongside Goals, Properties and Funnels.
 
-You will see a list of your most visited pages and most triggered events. Select one to begin exploring the journey.
+You'll see a list of your most visited pages and most triggered events. Select one to begin exploring the journey. Scroll down and click on "Show 10 more" to see the expanded list, or use the search bar to search for the exact page or event and set it as the starting or end point.
 
 Each column shows the next step in the path:
 
@@ -32,7 +32,7 @@ Each column shows the next step in the path:
 * **1 step after:** what visitors did immediately after the starting point
 * **2 steps after:** what visitors did after that, narrowed to those who followed the path so far
 
-Click any item in a column to select it and load the next step. The conversion rate in the top right updates to reflect the share of starting-point visitors who reached the selected item.
+Click any item in a column to select it and load the next step. You can go up to a maximum of 20 steps. The conversion rate in the top right updates to reflect the share of starting-point visitors who reached the selected item.
 
 To clear your selection and start over, click the **refresh icon** in the top right corner.
 
