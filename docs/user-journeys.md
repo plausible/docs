@@ -7,12 +7,18 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 The **Explore** tab lets you map the paths visitors actually take on your site. Pick any page, goal or custom event as a starting point and see what they did next. Or work backwards from a conversion to see what led visitors there.
 
+**User journeys is a Business plan feature.** [Compare plans →](https://plausible.io/#pricing)
+
 * Works with all your pages, pageview goals and custom events. No extra setup required.
 * Pages from the same directory are automatically grouped to reduce noise and surface patterns more clearly
 * Individual pages within a group are also selectable if you want to drill into a specific URL
 * Shows "No further action" at each step so you can see how many visitors dropped off
 * Displays the conversion rate for the full journey you are exploring
 * All existing dashboard filters apply, so you can narrow journeys by traffic source, country, device or any other dimension
+
+<div class="browser">
+<img alt="User journeys" src={useBaseUrl('img/user-journeys.png')} />
+</div>
 
 ## How to use user journeys
 
