@@ -43,7 +43,7 @@ You can do so by using [the "Filter" button](filters-segments.md) on the top of 
 
 Now that you're tracking pageview goals, you can:
 
-- Build a [conversion funnel](funnel-analysis.md) to follow the visitor journey from landing page to conversion
+- Build a [conversion funnel](funnel-analysis.md) to measure drop-off across a defined sequence of steps
 - Add [custom events](custom-event-goals.md) for more specific tracking like button clicks
 - Use [filters and segments](filters-segments.md) to analyse which sources and campaigns drive the most conversions
 - Explore [user journeys](user-journeys.md) to see the paths visitors take before and after converting

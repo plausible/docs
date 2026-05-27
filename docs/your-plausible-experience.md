@@ -19,7 +19,7 @@ Plausible allows you to track custom event goals like signups, purchases and any
 
 You can also enable some automated goals. Here are instructions on how to track [404 error pages](error-pages-tracking-404.md), [file downloads](file-downloads-tracking.md), [outbound link clicks](outbound-link-click-tracking.md) and [form submissions](form-submissions-tracking.md) in your Plausible dashboard.
 
-After you've set up some events, you can create your first [marketing funnel](funnel-analysis.md).
+After you've set up some events, you can create your first [marketing funnel](funnel-analysis.md) to measure drop-off across a defined sequence of steps. Or use [user journeys](user-journeys.md) to explore the paths visitors actually take, without defining a sequence in advance.
 
 See full details on our [goal conversions and behavior analytics](goal-conversions.md).
 
@@ -29,7 +29,7 @@ To minimize the amount of traffic that falls within the "direct / none" referral
 
 `ref`, `source`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` and `utm_term` query parameters are all valid and supported by Plausible Analytics. [Learn more here](top-referrers.md).
 
-You'll then be able to follow the visitor journey from a paid ad click to a conversion on your site directly in your Plausible dashboard. All the UTM tagged clicks will be displayed in the **Campaigns** tab and all the conversions will be in the Goals section. You can then [filter your Plausible dashboard](filters-segments.md) by a specific goal to see conversion rate for all the individual sources of traffic, landing pages and so on.
+You'll then be able to attribute conversions back to the paid ad click that brought the visitor to your site, directly in your Plausible dashboard. All the UTM tagged clicks will be displayed in the **Campaigns** tab and all the conversions will be in the Goals section. You can then [filter your Plausible dashboard](filters-segments.md) by a specific goal to see conversion rate for all the individual sources of traffic, landing pages and so on.
 
 Read also our guide on [how to use UTM parameters to track your campaigns and understand the dark traffic](https://plausible.io/blog/utm-tracking-tags).
 

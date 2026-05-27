@@ -144,7 +144,11 @@ If the same goal is completed multiple times by the same visitor, all the comple
 
 ### Funnels
 
-Funnel analysis lets you follow the visitor journey across multiple steps and see exactly where visitors drop off. You can use pageview goals or custom events as steps, and choose between sequential or strict order mode. See [funnel analysis](funnel-analysis.md) for details.
+Funnel analysis lets you define a sequence of steps and see exactly where visitors drop off. You can use pageview goals or custom events as steps, and choose between sequential or strict order mode. See [funnel analysis](funnel-analysis.md) for details.
+
+### User Journeys
+
+User journeys let you explore the paths visitors actually take on your site. Pick any page, goal or event as a starting point and see what they did next, or work backwards from a conversion to see what led them there. Unlike funnels, there is no predefined sequence: you discover flows rather than measure them. See [user journeys](user-journeys.md) for details.
 
 ### Custom Properties (or Custom Dimensions)
 
