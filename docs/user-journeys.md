@@ -5,11 +5,11 @@ description: "Explore the paths visitors take on your site. Start from any page 
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-The **Explore** tab lets you map the paths visitors actually take on your site. Pick any page, goal or custom event as a starting point and see what they did next. Or work backwards from a conversion to see what led visitors there.
+The **Explore** tab lets you map the paths visitors actually take on your site. Pick any page, goal or event as a starting point and see what they did next. Or work backwards from a conversion to see what led visitors there.
 
 **User journeys is a Business plan feature.** [Compare plans →](https://plausible.io/#pricing)
 
-* Works with all your pages, pageview goals and custom events. No extra setup required.
+* Works with your pages and events. No extra setup required.
 * Pages from the same directory are automatically grouped to reduce noise and surface patterns more clearly
 * Individual pages within a group are also selectable if you want to drill into a specific URL
 * Shows "No further action" at each step so you can see how many visitors dropped off
@@ -50,7 +50,7 @@ By default, the list shows the 10 most visited pages and most triggered events. 
 
 **Grouped pages** are shown with a folder icon. Plausible automatically groups pages that share the same directory, so `/blog/post-1` and `/blog/post-2` appear together as `/blog`. This keeps the list readable and makes patterns easier to spot. Selecting a group lets you explore journeys across all pages in that section at once. For example, selecting `/docs` shows what visitors did before or after visiting any documentation page, and selecting `/blog` shows paths around any blog post. This is much more useful than analysing one page at a time when you want to understand how a whole section of your site fits into the visitor journey. You can still select any individual page within a group if you want to drill into a specific URL.
 
-**Goals and custom events** are shown with a cursor icon, so you can tell at a glance whether an item is a page or an event.
+**Goals and custom events** are shown with a cursor icon, so you can tell at a glance whether an item is a page or an event. Revenue goals and property-filtered goals are not included at this stage.
 
 **No further action** appears at every step and shows how many visitors did not trigger any recorded page or event after that point. This is your drop-off count.
 
