@@ -113,7 +113,7 @@ If you're running WooCommerce, you can use our [WordPress plugin](https://plausi
 
 * Tracking of several custom events including actions such as add to cart, complete purchase and revenue
 * Tracking of several custom properties including product name and product category
-* A purchase funnel looking at the user journey from viewing a product to completing a purchase
+* A purchase funnel tracking drop-off from viewing a product to completing a purchase
 
 All this is done automatically for you by our plugin and you don't need to manually set up any custom events nor make any changes to the code of your store. Check here to learn more about [WooCommerce site tracking with Plausible](https://plausible.io/blog/woocommerce-analytics-plugin).
 
@@ -146,7 +146,8 @@ Use standard ISO 4217 codes: USD, EUR, GBP, SEK and so on. Incorrect codes will 
 
 ## What's next?
 
-- Set up a [funnel](funnel-analysis.md) to follow the purchase journey from landing page to checkout
+- Set up a [funnel](funnel-analysis.md) to measure drop-off from landing page to checkout
+- Explore open-ended purchase paths with [user journeys](user-journeys.md) to see what visitors do before buying
 - Use [custom properties](custom-props/introduction.md) to break down revenue by product name, category or coupon code
 - [Filter and segment](filters-segments.md) your dashboard to see revenue by source, campaign, country or device
 - Query revenue data programmatically using the [Stats API](stats-api.md)

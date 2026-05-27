@@ -10,7 +10,7 @@ This page covers two common multi-domain setups:
 - **Subdomains** such as `docs.yourdomain.com`, `app.yourdomain.com` and `www.yourdomain.com` under a single domain
 - **Separate domains** such as country or language variants like `example.de` and `example.nl`
 
-Plausible helps you simplify tracking across both. You can view the visitor journey end-to-end from the landing on your primary domain name to a conversion on the subdomain. The original referral source will stay attributed to that visitor even when the visitor moves from one of your subdomains to another.
+Plausible helps you simplify tracking across both. You can trace traffic from a landing on your primary domain all the way to a conversion on the subdomain. The original referral source will stay attributed to that visitor even when the visitor moves from one of your subdomains to another.
 
 ## Which setup should I use?
 
@@ -23,9 +23,9 @@ Plausible helps you simplify tracking across both. You can view the visitor jour
 
 Whatever you choose, [Consolidated Views](consolidated-views.md) let you combine any of your sites into a single global dashboard at any time.
 
-Here's how to track the user journey across your domain name and its subdomains.
+Here's how to set up tracking across your domain name and its subdomains.
 
-## How to track the user journey across domain and subdomains
+## How to set up tracking across domain and subdomains
 
 1. [Add your domain name](add-website.md) (`yourdomain.com`) as a site to your Plausible account
 
@@ -33,7 +33,7 @@ Here's how to track the user journey across your domain name and its subdomains.
 
 3. Insert that same tracking snippet on both the main domain name and all of its subdomains. This keeps the visitor session active between your primary site and its subdomains
 
-4. Set up [custom events](custom-event-goals.md) or [pageview goals](pageview-goals.md) for the actions you want to track. You can even follow the user journey [in a funnel](funnel-analysis.md). Any conversions that happen on your subdomains will be attributed to the original referral source that brought the visitor to your main domain. There's no need to filter out internal referral sources as this eliminates the issue where you might see your subdomains as a major source of traffic
+4. Set up [custom events](custom-event-goals.md) or [pageview goals](pageview-goals.md) for the actions you want to track. You can even measure multi-step conversion paths [with funnels](funnel-analysis.md). Any conversions that happen on your subdomains will be attributed to the original referral source that brought the visitor to your main domain. There's no need to filter out internal referral sources as this eliminates the issue where you might see your subdomains as a major source of traffic
   
 5. Click on any specific referral source in your dashboard to see the number of conversions and the conversion rate (CR) of that referral source for any of your goal completions regardless of the hostname. Or click on any goal in your dashboard to see the number of conversions and the CR of that specific goal for any referral source or landing page
 

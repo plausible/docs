@@ -1,11 +1,11 @@
 ---
 title: Funnel analysis
-description: "Map the visitor journey from landing page to conversion with Plausible's funnel analytics. Spot drop-off points across multi-step funnels using pageviews or custom events."
+description: "Measure drop-off across multi-step conversion paths with Plausible's funnel analytics. Define a sequence of steps and see exactly how many visitors complete each one."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-You can follow the visitor journey from a landing page to a conversion with our multi-step funnel analysis. Use it to find where visitors drop off and improve your conversion rate.
+Define a sequence of steps and measure how many visitors complete each one. Use funnel analysis to find where people drop off and improve your conversion rate.
 
 **Funnel analysis is a Business plan feature.** [Compare plans →](https://plausible.io/#pricing)
 
@@ -29,7 +29,7 @@ To be counted as converted, visitors need to complete all the steps you've defin
 
 Funnels in Plausible are always linear. Each funnel follows one defined path from start to finish. Branching or conditional paths are not supported. If you need to compare two different paths, create two separate funnels.
 
-Funnels also work across your main domain and its subdomains ([see more](subdomain-hostname-filter.md)), and you don't need to worry about visitors briefly leaving your site to complete actions on external services like Stripe's payment page or other third-party gateways. Plausible treats the returning visit as part of the same session, so your funnel will accurately track the full visitor journey.
+Funnels also work across your main domain and its subdomains ([see more](subdomain-hostname-filter.md)), and you don't need to worry about visitors briefly leaving your site to complete actions on external services like Stripe's payment page or other third-party gateways. Plausible treats the returning visit as part of the same session, so your funnel will accurately track the complete conversion sequence.
 
 ## How to set up the conversion funnel analysis
 
@@ -43,7 +43,7 @@ Funnels also work across your main domain and its subdomains ([see more](subdoma
 
 * By default, the **Allow other activity in between funnel steps** option is enabled, which creates a sequential funnel. Disable it to use strict order mode instead.
 
-* Click on the **Save** button after you've specified the user journey you want to analyse
+* Click on the **Save** button after you've defined the steps you want to measure
 
 Funnels appear at the bottom of your dashboard as soon as the first visit is tracked on the funnel steps.
 
@@ -66,7 +66,7 @@ Use funnels when you want to measure how many visitors complete a specific multi
 - A content conversion (blog post → email capture → thank you page)
 - A trial-to-paid flow (trial signup → feature usage → upgrade page)
 
-If you just want to count how many people reached a single page or clicked a button, a [pageview goal](pageview-goals.md) or [custom event goal](custom-event-goals.md) is simpler. Funnels are most useful when the journey between steps matters. If you do not have a specific path in mind and want to discover what visitors actually do, use [user journeys](user-journeys.md) instead.
+If you just want to count how many people reached a single page or clicked a button, a [pageview goal](pageview-goals.md) or [custom event goal](custom-event-goals.md) is simpler. Funnels are most useful when the sequence of steps matters. If you do not have a specific path in mind and want to discover what visitors actually do, use [user journeys](user-journeys.md) instead.
 
 ## Funnel examples
 
