@@ -4,7 +4,9 @@ title: Scheduled raw event exports
 description: "Get event-level data from Plausible delivered automatically on a schedule. For data warehousing, compliance and internal analytics where aggregated stats are not enough."
 ---
 
-**Scheduled raw event exports are an Enterprise plan feature.** [Contact us →](https://plausible.io/contact)
+import PlanFeatureNote from '@site/src/components/PlanFeatureNote';
+
+<PlanFeatureNote feature="raw-data-export" plan="enterprise" label="Scheduled raw event exports" />
 
 The Stats API and CSV export give you aggregated data: totals, breakdowns and time series across your sites. For cases where you need the underlying event-level data, Plausible offers scheduled raw event exports.
 

@@ -5,6 +5,7 @@ description: "Add the Plausible tracking snippet to your site's header. One ligh
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import CtaBox from '@site/src/components/CtaBox';
 
 To integrate your website with Plausible Analytics, you need to insert a Plausible tracking snippet into the header section of your site. Place the snippet within the `<head> … </head>` tags.
 
@@ -13,6 +14,12 @@ We display your snippet during the process of adding a new site to your account.
 Click on the menu icon on the right-hand side of the site you'd like to get the snippet for and choose **Settings** to enter the [site settings](website-settings.md). Then scroll down to the **Site Installation** area of the **General** section. Click on the **Review Installation** button to get the installation details including your snippet.
 
 There you can also enable any [optional enhanced measurements](script-extensions.md).
+
+<CtaBox
+  headline="Need your site-specific snippet? Add your site to Plausible first"
+  link="https://plausible.io/register"
+  linkText="Create free account"
+/>
 
 <div class="browser">
     <img alt="Add script extensions and verify your installation" src={useBaseUrl('img/v2/add-script-extensions-verify-installation.webp')} />

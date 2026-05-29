@@ -3,9 +3,19 @@ title: Bypass adblockers with a proxy
 description: "Some adblockers block Plausible. A proxy routes analytics through your own domain to capture those visits. Choose between one-click, self-setup and managed options."
 ---
 
+import CtaBox from '@site/src/components/CtaBox';
+
 Some visitors use adblockers or privacy tools that block analytics scripts. Plausible is blocked far less than Google Analytics. Firefox and Safari do not block it by default, but some blocklist maintainers block all analytics regardless of privacy practices.
 
 A proxy routes the Plausible script through your own domain as a first-party request, making it indistinguishable from your own files. This bypasses most blockers and lets you count visits that would otherwise be missed.
+
+<CtaBox
+  headline="Need proxying without managing it yourself? Ask about the managed proxy option"
+  link="https://plausible.io/enterprise-web-analytics"
+  linkText="Enterprise plan"
+  secondaryLink="https://plausible.io/contact"
+  secondaryText="Contact us"
+/>
 
 ## Which option fits you
 

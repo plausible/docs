@@ -4,10 +4,11 @@ description: "Measure drop-off across multi-step conversion paths with Plausible
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import PlanFeatureNote from '@site/src/components/PlanFeatureNote';
 
 Define a sequence of steps and measure how many visitors complete each one. Use funnel analysis to find where people drop off and improve your conversion rate.
 
-**Funnel analysis is a Business plan feature.** [Compare plans →](https://plausible.io/#pricing)
+<PlanFeatureNote feature="funnel-analysis" plan="business" label="Funnel analysis" />
 
 * You can go beyond pageviews and use any custom events to build a funnel
 * Choose between two funnel types: sequential (visitors can take other actions between steps) or strict order (steps must happen in exact consecutive order)

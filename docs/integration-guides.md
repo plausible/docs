@@ -5,8 +5,15 @@ description: "Install Plausible Analytics on WordPress, Shopify, Webflow, Square
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import CtaBox from '@site/src/components/CtaBox';
 
 Installing Plausible on a website can be a slightly different process depending on what tools you're using to manage your site.
+
+<CtaBox
+  headline="Don't have a Plausible account yet? Create one first, then follow the guide for your platform"
+  link="https://plausible.io/register"
+  linkText="Create free account"
+/>
 
 We've put together several guides that cover popular website builders and content management systems (CMS). These can help you set up and start counting your site visitors in no time. Thanks to the members of our community, there are also third-party integrations and plugins for various frameworks.
 
