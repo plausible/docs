@@ -1,7 +1,9 @@
 ---
-title: Compliance and security documentation
+title: Security and compliance overview
 description: "Where to find Plausible's security, privacy and GDPR compliance documents. Covers data policy, DPA, security overview and how Plausible is classified in vendor reviews."
 ---
+
+For a single page with all compliance and legal documentation for vendor reviews, see [plausible.io/compliance](https://plausible.io/compliance).
 
 Plausible publishes its security practices, data policy and legal documents publicly. Most compliance and security review questions can be answered directly from those pages without needing to contact us.
 
