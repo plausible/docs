@@ -4,12 +4,19 @@ description: "See Google Search Console keyword data inside Plausible Analytics.
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import CtaBox from '@site/src/components/CtaBox';
 
 In 2012, [Google stopped including](https://webmasters.googleblog.com/2012/03/upcoming-changes-in-googles-http.html) search terms in the `Referer` header when people click on a Google search. They only send Google as the referrer source instead. This means that Plausible can't automatically access search terms that lead users to your site.
 
 However, you can still access your search terms by setting up your site on Google Search Console. Once you’ve done that, you can enable the Search Console integration in Plausible to get all your important search results stats under one roof.
 
-This integration is privacy-friendly and requires no Google code to be placed on your site. Google is basically just sending us the information they've already collected on their search results.
+This integration is privacy-friendly and requires no Google code to be placed on your site. Google is basically just sending us the information they’ve already collected on their search results.
+
+<CtaBox
+  headline="See SEO queries and website analytics in one dashboard"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+/>
 
 Here’s how you can add your site to Search Console and then integrate the Search Console data into your Plausible dashboard:
 

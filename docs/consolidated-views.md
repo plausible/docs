@@ -4,8 +4,9 @@ description: "Plausible's Consolidated View combines traffic from all your sites
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import PlanFeatureNote from '@site/src/components/PlanFeatureNote';
 
-**Consolidated View is a Business plan feature.** [Compare plans →](https://plausible.io/#pricing)
+<PlanFeatureNote feature="consolidated-views" plan="business" label="Consolidated View" />
 
 If you have multiple websites in your Plausible account, the **Consolidated View** gives you an overview of traffic across all of them. This allows you to quickly see the total number of visitors and other key metrics across all your properties in one place.
 

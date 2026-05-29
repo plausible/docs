@@ -48,10 +48,19 @@ description: "Import your historical Google Analytics 4 data into Plausible Anal
 </head>
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import CtaBox from '@site/src/components/CtaBox';
 
 Plausible Analytics allows you to import your historical stats from Google Analytics 4 (GA4). You can import multiple Google Analytics properties into the same Plausible dashboard without having any gaps in the data and without any double-counting. You can also segment the imported data and export it using our regular exporting methods ([CSV](export-stats.md) and [stats API](stats-api.md)).
 
 Here's how you can import your historical Google Analytics stats into your Plausible dashboard.
+
+<CtaBox
+  headline="Migrating from Google Analytics? Bring your historical data with you"
+  link="https://plausible.io/migrate-from-google-analytics"
+  linkText="Migration guide"
+  secondaryLink="https://plausible.io/register"
+  secondaryText="Start free trial"
+/>
 
 ## How to import your historical stats from Google Analytics to Plausible Analytics 
 

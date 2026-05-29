@@ -4,6 +4,7 @@ description: "Track button clicks, signups and any custom action in Plausible us
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import CtaBox from '@site/src/components/CtaBox';
 
 :::note
 If you use the custom events feature, then these count towards your billable monthly pageviews.
@@ -15,6 +16,12 @@ Custom events let you measure button clicks, subscription signups or any other a
 - **Using JavaScript**: call the `plausible()` function directly for more advanced tracking needs such as dynamic values, conditional logic or tracking non-click interactions. See the [manual JavaScript approach](#trigger-custom-events-manually-with-a-javascript-function) section.
 
 If you're using WordPress or Google Tag Manager, you can set up custom events with our [WordPress plugin](https://plausible.io/wordpress-analytics-plugin) or [GTM template](https://plausible.io/gtm-template) without writing code. Plausible also offers automated tracking for [outbound link clicks](outbound-link-click-tracking.md), [file downloads](file-downloads-tracking.md) and [form submissions](form-submissions-tracking.md) straight from your site settings, [pageview goals](pageview-goals.md) for tracking visits to specific pages and [404 error pages](error-pages-tracking-404.md) with a small snippet of code.
+
+<CtaBox
+  headline="Testing this workflow for your site? Custom events work during the free trial, no credit card required"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+/>
 
 ## Add a CSS class name to the element you want to track on your site
 

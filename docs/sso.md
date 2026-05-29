@@ -4,14 +4,15 @@ description: "How SSO works with Plausible Analytics. Supports SAML 2.0 and iden
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import PlanFeatureNote from '@site/src/components/PlanFeatureNote';
+
+<PlanFeatureNote feature="sso" plan="enterprise" label="SSO" />
 
 Your team can sign in to Plausible Analytics using single sign-on (SSO). This removes the need for manual account creation, simplifies access management and gives you more control over who can log in.
 
 SSO works by logging in through an identity provider (IdP). We support the SAML 2.0 protocol, which is compatible with most IdPs including Google Workspace, Okta and Microsoft Entra ID (Azure AD).
 
 User accounts are provisioned just-in-time. As long as the IdP session is active and the email matches, users can log in to Plausible automatically.
-
-SSO is available on our [Enterprise plan](https://plausible.io/enterprise-web-analytics). [Contact us](https://plausible.io/contact) to learn more.
 
 :::tip What is SAML?
 **Security Assertion Markup Language (SAML)** is an XML-based protocol for secure exchange of information between an authority (Identity Provider or IdP) and a consumer (Service Provider or SP - in this case, Plausible).

@@ -5,10 +5,17 @@ description: "Compare Plausible subscription plans. 30-day free trial, no credit
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import CtaBox from '@site/src/components/CtaBox';
 
 Plausible gives you full control over your subscription. Choose a plan, pick monthly or yearly billing and upgrade or downgrade as your needs change. No long-term contracts.
 
-[View plans and pricing →](https://plausible.io/#pricing) · [Start free trial →](https://plausible.io/register)
+<CtaBox
+  headline="30-day free trial, no credit card required. Choose a plan when you're ready"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+  secondaryLink="https://plausible.io/#pricing"
+  secondaryText="View plans and pricing"
+/>
 
 ## Which plan should I choose?
 
@@ -82,7 +89,3 @@ Everything is self-serve in your account settings:
 - **[Download invoices](download-invoices.md)** - get invoices, add VAT numbers and change billing address.
 
 Have a question? Check the [Billing FAQ](billing.md) or [contact us](https://plausible.io/contact).
-
----
-
-**Not yet subscribed?** [Start a free trial](https://plausible.io/register). 30 days free, no credit card required. For enterprise needs, [contact us](https://plausible.io/contact).

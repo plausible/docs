@@ -4,10 +4,11 @@ description: "Explore the paths visitors take on your site. Start from any page 
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import PlanFeatureNote from '@site/src/components/PlanFeatureNote';
 
 The **Explore** tab lets you map the paths visitors actually take on your site. Pick any page, goal or event as a starting point and see what they did next. Or work backwards from a conversion to see what led visitors there.
 
-**User journeys is a Business plan feature.** [Compare plans →](https://plausible.io/#pricing)
+<PlanFeatureNote feature="user-journeys" plan="business" label="User journeys" />
 
 * Works with your pages and events. No extra setup required.
 * Pages from the same directory are automatically grouped to reduce noise and surface patterns more clearly

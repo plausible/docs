@@ -4,10 +4,11 @@ description: "Assign revenue values to custom events in Plausible to see which c
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import PlanFeatureNote from '@site/src/components/PlanFeatureNote';
 
 Track which marketing campaigns and landing pages drive the most revenue by assigning monetary values to your custom events.
 
-**Revenue tracking is a Business plan feature.** [Compare plans →](https://plausible.io/#pricing)
+<PlanFeatureNote feature="ecommerce-revenue-tracking" plan="business" label="Revenue tracking" />
 
 When you create a new custom event, you can optionally assign a monetary value to it. Our revenue tracking supports multi-currencies too. You can send data in any local currency that the purchase is made in. When using revenue tracking, you'll be able to see these metrics in your dashboard:
 

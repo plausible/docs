@@ -4,8 +4,9 @@ description: "Reference for the Plausible Sites API. Create, update and delete s
 ---
 
 import {Required, Optional} from '../src/js/api-helpers.tsx';
+import PlanFeatureNote from '@site/src/components/PlanFeatureNote';
 
-**Sites API is an Enterprise plan feature.** [Contact us →](https://plausible.io/contact)
+<PlanFeatureNote feature="sites-api" plan="enterprise" label="Sites API" />
 
 The Plausible Site provisioning API offers a way to create and manage sites in your Plausible account programmatically. This is useful if you run many websites or if you're [offering a web analytics dashboard powered by Plausible to your customers](https://plausible.io/white-label-web-analytics). The Site API allows these operations:
 

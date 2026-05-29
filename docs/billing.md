@@ -63,6 +63,7 @@ description: "Common billing questions for Plausible Analytics. Pageview-based p
 </head>
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import CtaBox from '@site/src/components/CtaBox';
 
 ## Is the billing based per account or per website?
 
@@ -184,4 +185,8 @@ Ad blockers and privacy extensions can interfere with the payment form. Try disa
 
 Have a billing question not covered here? [Contact us](https://plausible.io/contact).
 
-Not yet subscribed? [Start a free trial](https://plausible.io/register). 30 days free, no credit card required.
+<CtaBox
+  headline="Not yet subscribed? 30 days free, no credit card required"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+/>
