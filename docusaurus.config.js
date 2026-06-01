@@ -45,7 +45,10 @@ module.exports = {
           target: '_self',
           activeBasePath: '/docs'
         },
-
+        {
+          type: 'custom-LoginStatus',
+          position: 'right',
+        },
       ],
     },
     footer: {
@@ -84,6 +87,7 @@ module.exports = {
             { label: 'vs Cloudflare', href: 'https://plausible.io/vs-cloudflare-web-analytics' },
             { label: 'GA4 accuracy comparison', href: 'https://plausible.io/most-accurate-web-analytics' },
             { label: 'Why pay for analytics?', href: 'https://plausible.io/paid-analytics-vs-free-ga' },
+            { label: 'Is Plausible right for you?', href: 'https://plausible.io/when-not-to-use-plausible' },
             { label: 'WordPress plugin', href: 'https://plausible.io/wordpress-analytics-plugin' },
             { label: 'Google Tag Manager', href: 'https://plausible.io/gtm-template' },
             { label: 'Looker Studio', href: 'https://plausible.io/looker-studio-connector' },
@@ -116,6 +120,7 @@ module.exports = {
             { label: 'Terms', href: 'https://plausible.io/terms' },
             { label: 'DPA', href: 'https://plausible.io/dpa' },
             { label: 'Security', href: 'https://plausible.io/security' },
+            { label: 'Compliance', href: 'https://plausible.io/compliance' },
             { label: 'Imprint', href: 'https://plausible.io/imprint' },
           ],
         },

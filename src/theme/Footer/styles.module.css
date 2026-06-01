@@ -1,35 +1,227 @@
+/* ── CTA banner ─────────────────────────────────────────────────────────── */
+
 .ctaBanner {
-  background-color: var(--zinc-100);
-  padding: 1.25rem 2rem;
-  text-align: center;
-  border-top: 1px solid var(--zinc-200);
+  background-color: #f9fafb;
+  padding: 3rem 1.5rem;
+  border-top: 1px solid #e5e7eb;
 }
 
 [data-theme='dark'] .ctaBanner {
-  background-color: var(--zinc-800);
-  border-top: 1px solid var(--zinc-700);
+  background-color: #18181b;
+  border-top: 1px solid #27272a;
+}
+
+.ctaInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .ctaInner {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .ctaText {
+  flex: 1;
+}
+
+.ctaHeading {
   margin: 0;
-  font-size: 0.95rem;
-  color: var(--zinc-700);
+  font-size: 1.875rem;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
 }
 
-[data-theme='dark'] .ctaText {
-  color: var(--zinc-300);
+[data-theme='dark'] .ctaHeading {
+  color: #f4f4f5;
 }
 
-.ctaLink {
-  color: var(--ifm-color-primary);
+.ctaAccent {
+  display: block;
+  font-size: 1.875rem;
+  font-weight: 800;
+  color: #4f46e5;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.ctaButtons {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.ctaPrimary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 6px;
+  background-color: #4f46e5;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: background-color 0.15s ease;
+  white-space: nowrap;
+}
+
+.ctaPrimary:hover {
+  background-color: #4338ca;
+  color: #ffffff !important;
+}
+
+.ctaSecondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 6px;
+  border: none;
+  background-color: #ffffff;
+  color: #4f46e5 !important;
+  text-decoration: none !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  transition: color 0.15s ease;
+  white-space: nowrap;
+}
+
+.ctaSecondary:hover {
+  color: #4338ca !important;
+}
+
+[data-theme='dark'] .ctaSecondary {
+  background-color: #27272a;
+  color: #818cf8 !important;
+}
+
+[data-theme='dark'] .ctaSecondary:hover {
+  color: #a5b4fc !important;
+}
+
+/* ── Footer ─────────────────────────────────────────────────────────────── */
+
+.footer {
+  background-color: #1f2937;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.footerInner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 3rem;
+}
+
+@media (max-width: 996px) {
+  .footerInner {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footerBrand {
+  padding-right: 2rem;
+}
+
+.footerLogoLink {
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.15s ease;
+}
+
+.footerLogoLink:hover {
+  opacity: 0.7;
+}
+
+.footerLogo {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.footerTagline {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #9ca3af;
+}
+
+.footerTaglineLink {
+  color: #d1d5db !important;
+  text-decoration: none !important;
+}
+
+.footerTaglineLink:hover {
+  color: #ffffff !important;
+}
+
+.footerLinkGroups {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 640px) {
+  .footerLinkGroups {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footerLinkPair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 480px) {
+  .footerLinkPair {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footerCol {
+  min-width: 0;
+}
+
+.footerColTitle {
+  margin: 0 0 1rem;
+  font-size: 0.75rem;
   font-weight: 600;
-  text-decoration: none;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #9ca3af;
 }
 
-.ctaLink:hover {
-  text-decoration: underline;
+.footerColList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-[data-theme='dark'] .ctaLink {
-  color: var(--ifm-color-primary-light);
+.footerColList li {
+  margin-bottom: 0.75rem;
+}
+
+.footerLink {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #d1d5db !important;
+  text-decoration: none !important;
+  transition: color 0.15s ease;
+}
+
+.footerLink:hover {
+  color: #ffffff !important;
 }
