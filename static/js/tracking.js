@@ -7,3 +7,18 @@ plausible.init({
     browser_language: navigator.language || navigator.userLanguage
   }
 })
+
+document.addEventListener('click', function(e) {
+  var a = e.target.closest('a');
+  if (!a) return;
+  var href = a.getAttribute('href') || '';
+  var button = null;
+  if (href.indexOf('plausible.io/register') !== -1) {
+    button = 'Start free trial';
+  } else if (href.indexOf('plausible.io/plausible.io') !== -1) {
+    button = 'View live demo';
+  }
+  if (button) {
+    plausible('CTA Click', {props: {position: 'Inline', type: 'Docs', button: button}});
+  }
+});

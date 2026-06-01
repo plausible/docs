@@ -7,9 +7,11 @@ export default function PlanFeatureNote({ feature, plan, label }) {
   const link = isBusiness ? 'https://plausible.io/#pricing' : 'https://plausible.io/contact';
   const linkText = isBusiness ? 'Compare plans →' : 'Contact us →';
 
+  const button = isBusiness ? 'Compare plans' : 'Contact us';
+
   const track = () => {
     if (typeof window !== 'undefined' && window.plausible) {
-      window.plausible('Plan Feature Click', { props: { feature } });
+      window.plausible('CTA Click', { props: { position: 'Inline', type: 'Docs', button } });
     }
   };
 
