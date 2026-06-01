@@ -49,7 +49,7 @@ Limits that can be increased on Enterprise beyond standard plan tiers:
 - API rate limits
 - Data retention
 
-Enterprise plans are not self-serve like Growth or Business. [Contact us](https://plausible.io/contact) with your requirements and we will set up a custom plan tailored to your needs. Every Enterprise plan starts with Business plan features and limits and is then customized from there.
+Enterprise plans are not self-serve like Growth or Business. [Contact us](https://plausible.io/contact) with your requirements and we will set up a custom plan tailored to your needs. You do not need to take every Enterprise feature. If you only need higher limits, we can set those up without the rest.
 
 ## How usage is calculated
 
