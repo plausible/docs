@@ -73,7 +73,7 @@ If pageviews exceed your tier for **two consecutive months**, we'll notify you a
 
 If you don't upgrade within a week of our notice, your dashboards will be temporarily locked. Even while locked, your stats continue to be collected in the background and you still have full access to your site settings and account settings. Dashboards are automatically unlocked at the start of the next billing cycle if your usage drops back within your subscription limits. You can also unlock them at any time by upgrading to the appropriate tier.
 
-If the higher traffic turns out to be temporary, you can upgrade to restore access and then downgrade again once your traffic drops. Downgrades are pro-rated too, so you won't lose out. You're never locked into a higher plan when your usage no longer requires it. This works the same way on both monthly and yearly billing.
+If the higher traffic turns out to be temporary, you can upgrade to restore access and then downgrade again once your traffic drops. Downgrades are pro-rated too, so you won't lose out. You're never locked into a higher plan when your usage no longer requires it. This works the same way on both monthly and yearly billing. See [billing FAQ](billing.md#what-happens-if-i-exceed-my-pageview-limit) for step-by-step guidance if your dashboard is currently locked.
 
 
 <div class="browser">
