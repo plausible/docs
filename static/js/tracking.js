@@ -4,7 +4,8 @@ window.plausible=window.plausible||function(){(window.plausible.q=window.plausib
 
 plausible.init({
   customProperties: {
-    browser_language: navigator.language || navigator.userLanguage
+    browser_language: navigator.language || navigator.userLanguage,
+    logged_in: document.cookie.includes('logged_in=true')
   }
 })
 
