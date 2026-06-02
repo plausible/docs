@@ -105,7 +105,7 @@ See [Transfer account ownership](transfer-account-ownership.md) for how to recov
 ### Deleting a team
 
 * In the top right menu, click on your account name, make sure you have chosen the team you'd like to delete and then click on the **Team Settings**
-* To delete the team, go to the **Danger Zone** option of the **Team Settings**
+* To delete the team, go to the **Danger zone** option of the **Team Settings**
 * Click on the **Delete Team** button. Note that deleting the team deletes all dashboards and collected stats of the sites that the team owns
 
 Note that you need to be an owner to delete a team. 
