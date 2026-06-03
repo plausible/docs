@@ -13,7 +13,7 @@ Plausible allows you to transfer ownership of a site to a different user or to a
 
 This is useful for consultants and agencies working with clients. You set up the site, add custom events, email reports, traffic spike notifications and so on. When your job is done, you transfer ownership to your client.
 
-Note that subscriptions are not transferred with the site. The new owner is responsible for having an active [Plausible subscription](subscription-plans.md).
+Note that subscriptions are not transferred with the site. The new owner is responsible for having an active [Plausible subscription](subscription-plans.md). Once transferred, the site counts toward the limits of whichever account or team becomes the new owner.
 
 :::tip Leaving the company or need to recover a whole account?
 See [Transfer account ownership](transfer-account-ownership.md).
@@ -29,9 +29,9 @@ See [Transfer account ownership](transfer-account-ownership.md).
 ## Transfer to a different user
 
 1. Go to [site settings](website-settings.md) for the site you want to transfer
-2. Click **Danger Zone** in the left sidebar
-3. Under **Transfer Site Ownership**, enter the recipient's email address
-4. Click **Request transfer**
+2. Click **Danger zone** in the left sidebar
+3. Under **Transfer site**, select **Another Plausible account** and enter the recipient's email address
+4. Click **Send transfer request**
 
 The recipient will get an email notification. They need to log in (or register for a Plausible account) and accept the request within 48 hours. If they don't have an active subscription, they'll need to upgrade before accepting.
 
@@ -39,22 +39,20 @@ After the transfer, you keep **Guest Editor** access to the site. The new owner 
 
 ## Transfer to a team
 
-1. Go to site settings for the site you want to transfer
-2. Click **Danger Zone** in the left sidebar
-3. Under **Change Teams**, select the destination team
-4. Click **Change team**
+1. Go to [site settings](website-settings.md) for the site you want to transfer
+2. Click **Danger zone** in the left sidebar
+3. Under **Transfer site**, select **Team** and choose a destination from the dropdown. Only teams you belong to are listed.
+4. Click **Move site**
 
 The destination team must have an active subscription with a plan that supports the transfer.
 
 ## Transfer a site from a team to your personal sites
 
-If a site is currently part of a team but you want it to appear under **My Personal Sites**, you can transfer the ownership to yourself.
+If a site is currently part of a team but you want it to appear under **My personal sites**, you can transfer the ownership to yourself.
 
-1. Go to site settings for the site you want to move
-2. Click **Danger Zone** in the left sidebar
-3. Under **Transfer Site Ownership**, enter the email address of your own Plausible account
-4. Click **Request transfer**
+1. Go to [site settings](website-settings.md) for the site you want to move
+2. Click **Danger zone** in the left sidebar
+3. Under **Transfer site**, select **My personal sites** 
+4. Click **Move site**
 
-You’ll receive an email invitation to accept the transfer. Once accepted, the site will move from the team to your **My Personal Sites** section.
-
-Note that subscriptions are not transferred with the site. You will need an active subscription on the account that accepts the transfer. Once transferred, the site will count toward the limits of whichever account becomes the new owner.
+The site moves immediately to your **My personal sites** section. Your personal account must have an active subscription that supports the additional site.
