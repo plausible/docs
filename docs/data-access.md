@@ -13,6 +13,7 @@ Plausible gives you several ways to access your stats outside the dashboard. The
 | Query stats programmatically or build a custom dashboard | [Stats API](#stats-api) |
 | Send pageviews or events server-side (mobile app, no JS snippet) | [Events API](#events-api) |
 | Create and manage sites programmatically | [Sites API](#sites-api) |
+| Embed analytics into my own product for my customers | [White-label integration guide](white-label.md) |
 | Download stats as a spreadsheet, one-off | [CSV export](#csv-export) |
 | Build a custom report in Google's visualization tool | [Looker Studio](#looker-studio) |
 | Pipe data into a data warehouse or BI tool | [Warehouse connectors](#data-warehouse-connectors) |

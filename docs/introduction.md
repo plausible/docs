@@ -123,6 +123,7 @@ import CtaBox from '@site/src/components/CtaBox';
 <p>Query your data, send events and manage sites programmatically.</p>
 <ul>
 <li><a href="/docs/data-access">Accessing your data</a>: choose the right method for your use case</li>
+<li><a href="/docs/white-label">White-label integration guide</a>: embed Plausible into your own product</li>
 <li><a href="/docs/stats-api">Stats API</a>: query your analytics data programmatically</li>
 <li><a href="/docs/events-api">Events API</a>: send custom events from your backend or server</li>
 <li><a href="/docs/sites-api">Sites API</a>: manage sites and goals via API</li>
