@@ -29,6 +29,7 @@ module.exports = {
       'guided-tour',
       'consolidated-views',
       'compare-stats',
+      'annotations',
       'filters-segments',
       'google-search-console-integration',
       'realtime-dashboard',
