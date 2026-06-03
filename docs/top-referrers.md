@@ -24,6 +24,7 @@ In the **Channels** tab, you can view a breakdown of your sources categorized in
 | Channel                             | Definition                     |
 | :---------------------------------- | :----------------------------- |
 | Affiliates                          | `Medium` is "affiliate"             |
+| AI Assistants                       | `Source` is a known AI assistant tool such as ChatGPT, Claude, Perplexity, Google Gemini and others |
 | Audio                               | `Medium` is "audio"                 |
 | Cross-network                       | `Medium` is "cross-network"          |
 | Direct                              | `Source` is "(direct)" **AND** `Medium` is "(not set)" or "(none)"             |
@@ -42,7 +43,7 @@ In the **Channels** tab, you can view a breakdown of your sources categorized in
 | Referral                            | `Medium` is "referral", "app" or "link"            |
 | SMS                                 | `Source` is "sms" **OR** `Medium` is "sms"         |
 
-We align our channel lists and definitions closely with Google Analytics to make your transition to Plausible as seamless as possible. However, we strive to stay more up-to-date with newer sites and platforms. For example, in Plausible, Temu is categorized as a shopping site, Perplexity as a search site and Discord as a social site.
+We align our channel lists and definitions closely with Google Analytics to make your transition to Plausible as seamless as possible.
 
 Please note that channel groupings and definitions may evolve as the market changes. We will keep this list updated to reflect any adjustments.
 
