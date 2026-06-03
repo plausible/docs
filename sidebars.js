@@ -92,6 +92,7 @@ module.exports = {
     ],
     'APIs & Data Access': [
       'data-access',
+      'white-label',
       'stats-api',
       'stats-api-playground',
       'events-api',
