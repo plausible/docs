@@ -91,3 +91,5 @@ For measuring a specific predefined path with drop-off rates at each step, [funn
 * Set up [pageview goals](pageview-goals.md) or [custom event goals](custom-event-goals.md) to use as starting or end points in your journeys
 * Use [funnel analysis](funnel-analysis.md) to measure drop-off across a fixed multi-step sequence
 * Use [filters and segments](filters-segments.md) to explore journeys for a specific audience, such as visitors from a particular country or traffic source
+
+To learn more about website user journey analytics, [head to our blog](https://plausible.io/blog/website-journey-analytics).
