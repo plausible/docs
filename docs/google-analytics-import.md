@@ -23,7 +23,7 @@ description: "Import your historical Google Analytics 4 data into Plausible Anal
           "name": "Why are the numbers higher in Plausible than in Google Analytics?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Plausible does not require cookie consent and is not blocked by most browser-level tracking protection. GA4 is blocked by Safari ITP, Firefox Enhanced Tracking Protection and many ad blockers. Plausible natively captures more traffic, particularly from privacy-conscious users."
+            "text": "Plausible does not require cookie consent and is blocked far less often than Google Analytics by browser-level tracking protection. GA4 is blocked by Safari ITP, Firefox Enhanced Tracking Protection and many ad blockers. Plausible natively captures more traffic, particularly from privacy-conscious users."
           }
         },
         {
@@ -208,7 +208,7 @@ GA4 uses modeled data and consent mode to estimate traffic for users who decline
 
 **Numbers are higher in Plausible than in GA4**
 
-Plausible does not require cookie consent and is not blocked by most browser-level tracking protection. GA4 is blocked by Safari ITP, Firefox Enhanced Tracking Protection and many ad blockers. Plausible natively captures more traffic, particularly from privacy-conscious users.
+Plausible does not require cookie consent and is blocked far less often than Google Analytics by browser-level tracking protection. GA4 is blocked by Safari ITP, Firefox Enhanced Tracking Protection and many ad blockers. Plausible natively captures more traffic, particularly from privacy-conscious users.
 
 **Import appears to complete but data is missing**
 

@@ -11,7 +11,7 @@ If you use the form submissions tracking feature, then these count towards your 
 
 Plausible can automatically detect and track when visitors submit forms on your website. This feature helps you measure engagement with contact forms, signup forms, and other key conversion points without adding custom code.
 
-When Form submissions tracking is enabled, Plausible automatically detects all forms across your site and records submissions as a single goal. This means you don’t need to configure individual goals for each form — Plausible handles it for you.
+When Form submissions tracking is enabled, Plausible automatically detects all forms across your site and records submissions as a single goal. This means you don’t need to configure individual goals for each form: Plausible handles it for you.
 
 All detected form submissions are grouped under one goal, and you can analyze where conversions happen by filtering results by page path or referrer. For example, if the same form appears on multiple pages, Plausible will show how many submissions occurred on each specific page.
 
