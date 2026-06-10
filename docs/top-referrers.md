@@ -21,10 +21,10 @@ Using [the **Filter** button on the top of your dashboard](filters-segments.md),
 
 In the **Channels** tab, you can view a breakdown of your sources categorized into high-level groups such as **Organic Social**, **Paid Search** and **Email**. By clicking on any individual channel, you can see a detailed list of the specific sources within that channel that are driving traffic to your site. Below are the definitions and descriptions for each channel:
 
-| Channel                             | Definition                     |
-| :---------------------------------- | :----------------------------- |
+| <div style={{minWidth: '200px'}}>Channel</div> | Definition |
+| :--- | :--- |
 | Affiliates                          | `Medium` is "affiliate"             |
-| AI Assistants                       | `Source` is a known AI assistant tool such as ChatGPT, Claude, Perplexity, Google Gemini and others |
+| AI Assistants                       | `Source` is a known AI assistant tool such as ChatGPT, Claude, Perplexity, Gemini, Copilot and others |
 | Audio                               | `Medium` is "audio"                 |
 | Cross-network                       | `Medium` is "cross-network"          |
 | Direct                              | `Source` is "(direct)" **AND** `Medium` is "(not set)" or "(none)"             |
