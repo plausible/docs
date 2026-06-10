@@ -5,9 +5,16 @@ sidebar_label: Hugo
 description: "Integrate Plausible Analytics with your Hugo site using the community plugin or by adding the script directly to your theme."
 ---
 
+import CtaBox from '@site/src/components/CtaBox';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 There are several simple ways to integrate Plausible Analytics with your Hugo documentation site. Let's take a look at them:
+
+<CtaBox
+  headline="Add privacy-first analytics to your Hugo site"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+/>
 
 ## Option 1 - recommended setup: Plausible Analytics community plugin
 

@@ -5,9 +5,16 @@ sidebar_label: Webflow
 description: "Add Plausible Analytics to Webflow via Custom Code and track button clicks or form submissions as custom events. No cookies needed."
 ---
 
+import CtaBox from '@site/src/components/CtaBox';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Here's how to add Plausible Analytics to your Webflow site and set up the tracking of custom events such as button clicks and form submissions.
+
+<CtaBox
+  headline="Add privacy-first analytics to your Webflow site"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+/>
 
 ## How to add Plausible to your Webflow website
 

@@ -5,9 +5,16 @@ sidebar_label: Squarespace
 description: "Add Plausible Analytics to a Squarespace site using Code Injection. Privacy-first, cookie-free tracking without touching your theme files."
 ---
 
+import CtaBox from '@site/src/components/CtaBox';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Here's how to add Plausible Analytics to your Squarespace site
+
+<CtaBox
+  headline="Add privacy-first analytics to your Squarespace site"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+/>
 
 ## How to add Plausible to your Squarespace website 
 

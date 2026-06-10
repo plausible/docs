@@ -3,9 +3,16 @@ title: Filter and segment your audience
 description: "Slice your Plausible data by source, page, location, device or goal. Combine multiple filters into reusable audience segments for faster analysis."
 ---
 
+import CtaBox from '@site/src/components/CtaBox';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Plausible Analytics allows you to easily segment your audience to analyze and understand the different trends. A segment is made up of one or more filters. You can save any segment for quick and convenient access.
+
+<CtaBox
+  headline="Segment your traffic in a simple privacy-first dashboard"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+/>
 
 ## How to filter your dashboard
 

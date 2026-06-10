@@ -5,9 +5,16 @@ sidebar_label: Discourse
 description: "Add Plausible Analytics to Discourse via a theme component. Uses hash-based routing support for accurate tracking of forum page views."
 ---
 
+import CtaBox from '@site/src/components/CtaBox';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 You can add Plausible Analytics tracking code to your Discourse community by adding a component. Since Discourse uses hash-based routing for the post threads, you should to use [our special hash-based script](hash-based-routing.md) on Discourse forums. You may also want to add some of the other options like file-downloads.
+
+<CtaBox
+  headline="Add privacy-first analytics to your Discourse forum"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+/>
 
 ## Step 1: Get your Plausible snippet
 
