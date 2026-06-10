@@ -3,6 +3,7 @@ title: Pageview goals
 description: "Track conversions by monitoring visits to specific pages in Plausible. No code changes needed. Just set a pathname and start measuring."
 ---
 
+import CtaBox from '@site/src/components/CtaBox';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Pageview goals allow you to measure how many people visit a specific section of your site (for instance dynamically created checkout pages for ecommerce) and get referral sources and other details for those conversions. 
@@ -10,6 +11,12 @@ Pageview goals allow you to measure how many people visit a specific section of 
 Since pageviews are collected automatically, you don’t need to change your website’s code to measure pageview goals. This makes pageview goals the easiest way to start tracking any type of conversion on your site. 
 
 Do you run a store and want to track purchases? Do you have a contact form and want to track form submissions? Use pageview goals to track the "thank you" page or the order confirmation page.
+
+<CtaBox
+  headline="Track pageview goals in a simple privacy-first dashboard"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+/>
 
 To get started with **Pageview Goals**, go to [your website's settings](website-settings.md) in Plausible Analytics and visit the **Goals** section. You should see an empty list with a prompt to add a goal.
 

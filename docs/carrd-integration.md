@@ -5,9 +5,16 @@ sidebar_label: Carrd
 description: "Add Plausible Analytics to a Carrd site and track custom events like button clicks using an Embed component. Cookie-free and simple."
 ---
 
+import CtaBox from '@site/src/components/CtaBox';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Here's how to add Plausible Analytics to your Carrd site and set up the tracking of custom events such as button clicks.
+
+<CtaBox
+  headline="Add privacy-first analytics to your Carrd site"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+/>
 
 ## How to add Plausible to your Carrd website
 

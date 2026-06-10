@@ -4,6 +4,7 @@ sidebar_label: CSV files
 description: "Import historical analytics data into Plausible using CSV files. Works with any analytics tool that can export CSVs, including multiple properties into one dashboard."
 ---
 
+import CtaBox from '@site/src/components/CtaBox';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Plausible Analytics allows you to import your historical stats from various analytics tools using CSV files. You can import multiple different properties into the same Plausible dashboard using CSVs. 
@@ -13,6 +14,12 @@ We have a simple [Google Analytics import tool](google-analytics-import.md).
 :::
 
 The rest of this article is focused on importing your historical stats into Plausible using CSV files.
+
+<CtaBox
+  headline="Import your historical stats and keep your history in one place"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+/>
 
 ## How to import your historical stats via CSV files
 

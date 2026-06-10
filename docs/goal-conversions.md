@@ -3,6 +3,7 @@ title: Goal conversions
 description: "Track signups, purchases, clicks and other key actions in Plausible. Set up pageview or custom event goals to measure conversions and referral sources."
 ---
 
+import CtaBox from '@site/src/components/CtaBox';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Goals allow you to track actions that you want your visitors to take on your site. Actions such as signing up to a newsletter, clicking on a **Download** button, registering for a trial account, purchasing a product, clicking on an external link, downloading a file or completing a checkout form of an ecommerce store.
@@ -73,3 +74,9 @@ Plausible supports the following goal types:
     </tr>
   </tbody>
 </table>
+
+<CtaBox
+  headline="Track goals and conversions without cookies or personal data"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+/>

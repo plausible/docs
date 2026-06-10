@@ -5,11 +5,18 @@ sidebar_label: Ghost
 description: "Add Plausible Analytics to Ghost using code injection. Tracks your entire site with one snippet. No cookies, no personal data collected."
 ---
 
+import CtaBox from '@site/src/components/CtaBox';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 You can use the **[Ghost code injection](https://ghost.org/integrations/plausible/)** feature to add Plausible Analytics tracking code to your Ghost website same way you would add Google Analytics code or any other JavaScript code. 
 
 In Ghost you can inject code across your entire site or on an individual post or page. Since Plausible needs to track analytics across your entire site, use the global code injection feature which can be found in the Ghost Admin settings menu.
+
+<CtaBox
+  headline="Privacy-first analytics for your Ghost publication"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+/>
 
 * In the **Menu**, click **Settings**, and then **Code Injection**.
 

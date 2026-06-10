@@ -5,9 +5,16 @@ sidebar_label: Shopify
 description: "Track add to cart, checkout, purchase and revenue attribution in Plausible Analytics on your Shopify store. No cookies required."
 ---
 
+import CtaBox from '@site/src/components/CtaBox';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Here's how to add Plausible Analytics to your Shopify store and set up the tracking of events such as add to cart, checkout, purchase, revenue attribution and more.
+
+<CtaBox
+  headline="Privacy-first analytics for your Shopify store"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+/>
 
 ## Add Plausible snippet to Shopify
 

@@ -5,11 +5,18 @@ sidebar_label: Next.js
 description: "Add Plausible Analytics to a Next.js app using the next-plausible package. Covers script setup, custom events and proxying."
 ---
 
+import CtaBox from '@site/src/components/CtaBox';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 You can add the script directly to your head through "next/head" or react-helmet. However there is a simpler way that also provides custom events functionality:
 
 **[Next-Plausible](https://github.com/4lejandrito/next-plausible)** built and maintained by [4lejandrito](https://github.com/4lejandrito). It supports:
+
+<CtaBox
+  headline="Add privacy-first analytics to your Next.js app"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+/>
 
 ## Serving the Plausible script
 

@@ -5,9 +5,17 @@ sidebar_label: WordPress
 description: "Add Plausible Analytics to your WordPress site using the official plugin. Cookie-free, privacy-first tracking with proxy and goal tracking support."
 ---
 
+import CtaBox from '@site/src/components/CtaBox';
+
 The best way to add Plausible to your WordPress site is our official WordPress plugin. It gives you a Plausible configuration page directly in your WordPress dashboard, with options for the proxy, goal tracking and more.
 
 For full installation instructions, setup options and feature details, visit the [Plausible WordPress plugin page](https://plausible.io/wordpress-analytics-plugin).
+
+<CtaBox
+  headline="Privacy-first analytics for your WordPress site, no cookies and no consent banner"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+/>
 
 ## Common issues
 
