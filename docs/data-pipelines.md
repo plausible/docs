@@ -20,7 +20,7 @@ You can embed your Plausible stats dashboard into any other website using an HTM
 
 ### WordPress plugin
 
-By using our official WordPress plugin, you can view your Plausible stats dashboard directly in your WordPress dashboard without needing to visit our website. [Learn more here](https://plausible.io/wordpress-analytics-plugin).
+By using our official WordPress plugin, you can view your Plausible stats dashboard directly in your WordPress dashboard without needing to visit our website. [Learn more here](wordpress-integration.md#view-your-stats-inside-wordpress).
 
 ### Looker Studio
 
