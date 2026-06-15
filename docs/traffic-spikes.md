@@ -38,4 +38,6 @@ Traffic spike or drop notifications can be set to be sent to multiple recipients
 
 You can set the notifications to be sent to as many people as you want. You can remove individual recipients or completely stop the notifications at any time.
 
-P.S. If you're dealing with a traffic drop and need some tips on how to investigate it using your Plausible dashboard, take a look at our [blog post](https://plausible.io/blog/drop-in-website-traffic).
+P.S. If you're dealing with a traffic drop or spike and need some tips on how to investigate it using your Plausible dashboard, take a look at the following blog posts: 
+* [How to investigate a drop in your website traffic?](https://plausible.io/blog/drop-in-website-traffic)
+* [How to investigate a spike in your website traffic?](https://plausible.io/blog/spike-in-website-traffic)
