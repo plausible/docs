@@ -88,7 +88,7 @@ See the list of countries, regions and cities your traffic is coming from. You c
 
 You can see the device, browser and operating system your visitors are using. Click on the individual browser or operating system to drill down and see browser versions and OS versions too. [Read more here](devices.md).
 
-## Goals, properties and funnels
+## Goals, properties, funnels and journeys
 
 <div class="browser">
     <img alt="Goal conversions section in the Plausible Analytics dashboard showing conversion counts and conversion rate by goal" src={useBaseUrl('img/v2/dashboard-goal-conversions.webp')} />

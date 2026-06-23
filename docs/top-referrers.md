@@ -119,7 +119,7 @@ This is why we recommend using UTM tags when tagging your paid ad campaigns. Whe
 
 Goals and custom events allow you to track actions that you want your visitors to take on your site. Actions such as registering for a trial account, purchasing a product or completing a checkout form of an ecommerce store. By [setting up goals and custom events](goal-conversions.md), you'll be able to attribute conversions back to the paid ad click that brought the visitor to your site. 
 
-Filter your dashboard by a specific goal to see the number of conversions, conversion rate (CR), referrer sources, marketing campaigns and entry pages that are driving conversions. You can also track [ecommerce revenue](ecommerce-revenue-tracking.md) and [set up funnels](funnel-analysis.md). This works even if your site operates [across multiple subdomains](subdomain-hostname-filter.md).
+Filter your dashboard by a specific goal to see the number of conversions, conversion rate (CR), referrer sources, marketing campaigns and entry pages that are driving conversions. You can also track [ecommerce revenue](ecommerce-revenue-tracking.md), [set up funnels](funnel-analysis.md) and [explore user journeys](user-journeys.md). This works even if your site operates [across multiple subdomains](subdomain-hostname-filter.md).
 
 Due to Plausible’s privacy-first approach, which avoids using cookies or long-term identifiers, conversion attribution relies on last-click attribution. This means the referral source of the visit that leads to the purchase is credited for the conversion.
 

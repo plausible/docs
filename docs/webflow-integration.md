@@ -187,4 +187,5 @@ See the [full custom event troubleshooting guide](custom-event-goals.md#custom-e
 - [Create goals](custom-event-goals.md) in your Plausible site settings to match the custom events you set up. They won't show in your dashboard until you do
 - [Attach custom properties](/custom-props/for-custom-events) to your events to track additional context like button label or plan type
 - [Build a funnel](funnel-analysis.md) using your custom events as steps to see where visitors drop off
+- [Explore user journeys](user-journeys.md) to see the paths visitors actually take before and after converting
 - [Create a shared link](shared-links.md) to give clients read-only access to the dashboard without a Plausible account

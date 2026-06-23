@@ -23,7 +23,7 @@ All plans start at the same pageview tiers. The difference is features and team 
 
 - **Starter**: one site, solo use, no team or sharing needed
 - **Growth**: multiple sites, or need to share dashboards with clients or invite team members
-- **Business**: need funnels, revenue tracking, custom properties, Stats API or Looker Studio (build custom dashboards and blend Plausible data with other sources like ad spend or CRM data)
+- **Business**: need funnels, user journeys, revenue tracking, custom properties, Stats API or Looker Studio (build custom dashboards and blend Plausible data with other sources like ad spend or CRM data)
 - **Enterprise**: large scale, SSO, Sites API, managed proxy or raw data exports. [Contact us](https://plausible.io/contact) to discuss
 
 Compare full features and pricing on [our website](https://plausible.io/#pricing) or in your account settings. Save 2 months by choosing yearly billing.

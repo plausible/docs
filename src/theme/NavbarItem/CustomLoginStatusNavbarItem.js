@@ -39,7 +39,7 @@ export default function CustomLoginStatusNavbarItem({ mobile }) {
     return (
       <a
         href="https://plausible.io/sites"
-        className="button button--primary"
+        className="button button--primary navbarLoginStatusDesktop"
         style={{ ...btnStyle, order: 999, marginLeft: '1rem' }}
       >
         My dashboard
@@ -48,7 +48,7 @@ export default function CustomLoginStatusNavbarItem({ mobile }) {
   }
 
   return (
-    <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', order: 999, marginLeft: '1rem' }}>
+    <div className="navbarLoginStatusDesktop" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', order: 999, marginLeft: '1rem' }}>
       <a href="https://plausible.io/login" className="navbar__item navbar__link" style={{ fontWeight: 500 }}>
         Log in
       </a>

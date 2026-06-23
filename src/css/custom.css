@@ -129,6 +129,12 @@ html[data-theme='dark'] {
 }
 
 @media (max-width: 996px) {
+  /* The desktop login/dashboard navbar item overlaps the search icon on mobile.
+     The hamburger menu already serves these links, so hide the top-bar variant. */
+  .navbarLoginStatusDesktop {
+    display: none !important;
+  }
+
   .navbar__toggle {
     margin-right: 1rem;
   }
