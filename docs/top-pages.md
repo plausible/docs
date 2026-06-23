@@ -9,6 +9,12 @@ Your **Top Pages** tab shows which pages your visitors are visiting the most oft
 
 You can also see the traffic flow by looking at the **Entry Pages** and **Exit Pages** tabs. You can click the expand icon in the top right to see the full list with additional details. For entry pages, details include visit duration for visits that started on a specific page and for exit pages, details include the exit rate percentage. Click on any metric heading to sort and arrange your data in ascending or descending order.
 
+## Break down by full URL
+
+By default the **Top Pages**, **Entry Pages** and **Exit Pages** tabs group your pages by their path, so `/pricing` is one entry no matter which hostname it was viewed on. To change this, open the options menu (the **⋮** icon in the top right of the report) and under **Break down by** switch from **Path** to **URL**. We'll save this choice and make it your default view on subsequent visits, the same as your other dashboard preferences.
+
+This is useful when you run [one dashboard across several subdomains](subdomain-hostname-filter.md). Pages that share a path on different subdomains (say `yourdomain.com/best-page/` and `docs.yourdomain.com/best-page/`) are combined into a single `/best-page/` entry when grouped by path. Breaking down by URL splits them apart so you can see each one separately without applying a [hostname filter](subdomain-hostname-filter.md#filtering-traffic-by-hostname).
+
 ## Search for pages
 
 You can search for pages by using [the **Filter** button](filters-segments.md) on the top of your dashboard.

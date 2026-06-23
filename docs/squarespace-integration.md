@@ -88,4 +88,5 @@ To track completed orders, you can set up a pageview goal. Since the ID (in our 
 
 - [Add revenue tracking](ecommerce-revenue-tracking.md) to your order confirmation goal to measure revenue per source and campaign
 - [Build a funnel](funnel-analysis.md) from your product page to the order confirmation page to see where visitors drop off
+- [Explore user journeys](user-journeys.md) to see the paths visitors actually take before and after ordering
 - [Invite your team](users-roles.md) or [share the dashboard](shared-links.md) with your client or collaborators
