@@ -150,7 +150,7 @@ Valid dimensions include:
 
 :::warning
 
-Mixing session metrics `bounce_rate`, `views_per_visit` and `visit_duration` with event dimensions is not allowed.
+Mixing session metrics `bounce_rate`, `views_per_visit` and `visit_duration` with event dimensions is not allowed, with the exception of `event:page` and `event:hostname` (when used together with `event:page`).
 :::
 
 
@@ -162,7 +162,9 @@ Values of these dimensions are determined by the first pageview in a session.
 | Dimension | Example | Description |
 | --- | --- | --- |
 | `visit:entry_page` | /home | Page on which the visit session started (landing page). |
+| `visit:entry_page_hostname` | example.com | Hostname of the entry page. |
 | `visit:exit_page` | /home | Page on which the visit session ended (last page viewed). |
+| `visit:exit_page_hostname` | example.com | Hostname of the exit page. |
 | `visit:source` | Twitter | Visit source, populated from an url query parameter tag (`utm_source`, `source` or `ref`) or the Referer HTTP header. |
 | `visit:referrer` | t.co/fzWTE9OTPt | Raw `Referer` header without `http://`, `http://` or `www.`. |
 | `visit:channel` | Organic Search | Acquisition channel for visit. |
