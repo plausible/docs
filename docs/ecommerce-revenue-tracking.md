@@ -110,13 +110,7 @@ For subscription upgrades, fire on the confirmation page after payment is proces
 
 ## Integrating with WooCommerce
 
-If you're running WooCommerce, you can use our [WordPress plugin](https://plausible.io/wordpress-analytics-plugin). It has built-in support for tracking of WooCommerce store activity including:
-
-* Tracking of several custom events including actions such as add to cart, complete purchase and revenue
-* Tracking of several custom properties including product name and product category
-* A purchase funnel tracking drop-off from viewing a product to completing a purchase
-
-All this is done automatically for you by our plugin and you don't need to manually set up any custom events nor make any changes to the code of your store. Check here to learn more about [WooCommerce site tracking with Plausible](https://plausible.io/blog/woocommerce-analytics-plugin).
+If you're running WooCommerce, our [WordPress plugin](wordpress-integration.md#track-ecommerce-revenue) tracks store activity automatically, including add to cart, completed purchases, revenue, product properties and a purchase funnel. You don't need to set up any custom events or change your store's code.
 
 ## Integrating with Shopify
 
