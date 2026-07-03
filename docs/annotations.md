@@ -15,8 +15,8 @@ When you spot a spike or a drop, annotations tell you why it happened. The conte
 
 There are two types of annotations:
 
-- **Personal annotations** are visible only to you. Use these for notes that are relevant to your own workflow but not worth surfacing to the whole team.
-- **Team annotations** are visible to all team members who have access to the dashboard, as well as anyone viewing through a [shared link](shared-links.md).
+- **Personal notes** are visible only to you. Use these for notes that are relevant to your own workflow but not worth surfacing to the whole team.
+- **Site notes** are visible to all team members who have access to the dashboard, as well as anyone viewing through a [shared link](shared-links.md).
 
 ## Where annotations appear
 
@@ -24,15 +24,11 @@ Annotations show up as markers along the bottom of the main traffic chart. When 
 
 ## Add an annotation
 
-Hover over the date on the chart where you want to place the annotation. Right-click to open the context menu and select **Add annotation**. Write a short note describing the event and choose whether it should be personal or shared with your team. Save it and the annotation will appear on the chart immediately.
-
-:::tip
-Annotate events as they happen rather than after the fact. A note added on the day of a deployment is more useful than one added a week later when you're trying to explain a traffic change.
-:::
+Hover over the date on the chart where you want to place the annotation. Right-click to open the context menu and select **Add note**. Write a short note describing the event and choose whether it should be personal or shared with your team. Save it and the annotation will appear on the chart immediately.
 
 ## Edit or delete an annotation
 
-Hover over the date on the chart where an annotation exists. Right-click to open the context menu and choose to edit the note or delete the annotation entirely. You can always edit or delete your own annotations. Only team members with editor access or above can add, edit or delete team annotations.
+Hover over the date on the chart where an annotation exists. Right-click to open the context menu and choose to edit the note or delete the annotation entirely. You can always edit or delete your personal annotations. Only team members with editor access or above can add, edit or delete site-wide annotations.
 
 ## Practical uses
 
@@ -46,3 +42,7 @@ Annotations are most useful when your team is making changes that affect traffic
 - **A/B tests:** start and end dates for experiments that affect traffic or conversion behavior
 
 Annotating these events means future you (and your teammates) can read the chart without having to dig through Slack, commit history or email threads to understand what changed.
+
+:::tip
+Annotate events as they happen rather than after the fact. A note added on the day of a deployment is more useful than one added a week later when you're trying to explain a traffic change.
+:::
