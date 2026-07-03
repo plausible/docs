@@ -28,7 +28,7 @@ Hover over the date on the chart where you want to place the annotation. Right-c
 
 ## Edit or delete an annotation
 
-Hover over the date on the chart where an annotation exists. Right-click to open the context menu and choose to edit the note or delete the annotation entirely. You can always edit or delete your personal annotations. Only team members with editor access or above can add, edit or delete site-wide annotations.
+Hover over the date on the chart where an annotation exists. Right-click to open the context menu and choose to edit the note or delete the annotation entirely. You can always edit or delete your personal annotations. Only team members with editor access or above can add, edit or delete team annotations.
 
 ## Practical uses
 
