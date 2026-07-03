@@ -1,5 +1,6 @@
 ---
 title: Share your stats with a private and secure link
+sidebar_label: Shared links
 description: "Create a private shared link to your Plausible dashboard so partners, clients, or advertisers can view your stats without needing a Plausible account."
 ---
 
@@ -17,7 +18,9 @@ See how to [invite team members and set user roles](users-roles.md)
 
 Go to the **Visibility** area of your website settings and find the **Shared links** section. Click the **Add shared link** button. A modal will open up where you will find the following options.
 
+<div class="browser">
 <img alt="share stats with collaborators" src={useBaseUrl('img/shared-links-in-plausible-analytics.png')} />
+</div>
 
 ## Shared link options
 

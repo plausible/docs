@@ -3,6 +3,7 @@ title: Pageview goals
 description: "Track conversions by monitoring visits to specific pages in Plausible. No code changes needed. Just set a pathname and start measuring."
 ---
 
+import CtaBox from '@site/src/components/CtaBox';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Pageview goals allow you to measure how many people visit a specific section of your site (for instance dynamically created checkout pages for ecommerce) and get referral sources and other details for those conversions. 
@@ -11,17 +12,23 @@ Since pageviews are collected automatically, you don’t need to change your web
 
 Do you run a store and want to track purchases? Do you have a contact form and want to track form submissions? Use pageview goals to track the "thank you" page or the order confirmation page.
 
-To get started with **Pageview Goals**, go to [your website's settings](website-settings.md) in Plausible Analytics and visit the **Goals** section. You should see an empty list with a prompt to add a goal.
+<CtaBox
+  headline="Track pageview goals in a simple privacy-first dashboard"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+/>
 
-<img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
+To get started with **Pageview Goals**, go to [your website's settings](website-settings.md) in Plausible Analytics and visit the **Goals** section. You should see an empty list with a prompt to add a goal.
 
 Click the **+ Add goal** button to go to the goal creation form.
 
 Select `Pageview` as the goal trigger and enter the pathname of the page you would like your visitors to hit, or select the same from the dropdown. The pathname must match the page path you can see in your Plausible Analytics dashboard.
 
-<img alt="Add your pageview goal" src={useBaseUrl('img/add-pageview-goal.png')} />
-
 Next, you'll see the Display Name field, pre-filled based on the pathname. You can optionally edit it now or at any time later.
+
+<div class="browser">
+<img alt="Add your pageview goal" src={useBaseUrl('img/add-pageview-goal.png')} />
+</div>
 
 ### Narrow goals with custom properties
 
@@ -43,21 +50,21 @@ You can do so by using [the "Filter" button](filters-segments.md) on the top of 
 
 Now that you're tracking pageview goals, you can:
 
-- Build a [conversion funnel](funnel-analysis.md) to follow the visitor journey from landing page to conversion
+- Build a [conversion funnel](funnel-analysis.md) to measure drop-off across a defined sequence of steps
 - Add [custom events](custom-event-goals.md) for more specific tracking like button clicks
 - Use [filters and segments](filters-segments.md) to analyse which sources and campaigns drive the most conversions
+- Explore [user journeys](user-journeys.md) to see the paths visitors take before and after converting
 
 ## Edit a Pageview Goal
 
-To edit a Pageview Goal, start by locating the pageview goal you want to update in the Goals list in your website's settings. Click on the "Edit goal" button next to it, which will bring up the goal editing form.
+To edit a Pageview Goal, start by locating the pageview goal you want to update in the Goals list in your website's settings. Click on the button with the pencil icon next to it, which will bring up the goal editing form.
 
+<div class="browser">
 <img alt="Edit goal button" src={useBaseUrl('img/edit-goal-button.png')} />
+</div>
 
-From the pop up, you can select a new page path from the dropdown menu that matches the updated page you want to track.
+The goal editing form is exactly the same as the one you see when adding a new goal. From the pop up, you can select a new page path from the dropdown menu that matches the updated page you want to track.
 
-You can also give it a new display name to keep your reports and funnels easy to read.
-
-<img alt="Edit pageview goal popup" src={useBaseUrl('img/edit-pageview-goal-popup.png')} />
+You can also give it a new display name to keep your reports and funnels easy to read. Or add a custom property to narrow down your goal to specific visitors.
 
 Once you’ve made the necessary changes, click "Update goal" and your updated settings will be applied immediately.
-

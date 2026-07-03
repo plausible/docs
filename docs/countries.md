@@ -17,7 +17,9 @@ Note that some VPN visits may not be recorded at all. If a VPN IP address falls 
 
 You can use the **Filter** button on the top of your dashboard to segment the traffic by multiple countries, regions or cities at the same time. This allows you to group specific geographical regions and display only that traffic.
 
+<div class="browser">
 <img alt="Countries - multiple filters" src={useBaseUrl('img/countries-filtering-multiple-filters.png')} />
+</div>
 
 ## How to block traffic from specific countries
 
@@ -29,9 +31,7 @@ If you prefer to permanently block traffic from specific countries from being re
 * Choose **Countries** in the **Shields** entry in the left-hand menu
 * Then click on the **Add Country** button to add a new country to your block list
 
-<img alt="Block countries" src={useBaseUrl('img/block-countries.png')} />
-
-Once added to the block list, we will start blocking traffic from that specific country within a few minutes. You can block up to 30 different countries. 
+Once added to the block list, we will start blocking traffic from that specific country within a few minutes. You can block up to 30 different countries. More details [here](https://plausible.io/docs/excluding#exclude-visits-by-country).
 
 You can see the list of all the countries that you're blocking the traffic from. Click on the "Remove" button next to that country to remove it from the blocklist.
 

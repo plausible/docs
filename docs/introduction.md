@@ -4,7 +4,17 @@ slug: /
 description: "Plausible Analytics documentation. No cookies, no personal data, no consent banners. Get started with setup guides, dashboard explanations and feature references."
 ---
 
-[Plausible Analytics](https://plausible.io/) is a simple, privacy-friendly alternative to Google Analytics. No cookies, no personal data collection, no consent banners required. One lightweight script, one easy-to-read dashboard. Running since 2018 and used by 17,000+ teams. Explore the [live demo](https://plausible.io/plausible.io) to see what it looks like.
+import CtaBox from '@site/src/components/CtaBox';
+
+[Plausible Analytics](https://plausible.io/) is a simple, privacy-friendly alternative to Google Analytics. No cookies, no personal data collection, no consent banners required. One lightweight script, one easy-to-read dashboard. Running since 2018 and used by 19,000+ teams. Explore the [live demo](https://plausible.io/plausible.io) to see what it looks like.
+
+<CtaBox
+  headline="Setting up Plausible for the first time? Start a free trial, then follow the guides below"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+  secondaryLink="https://plausible.io/plausible.io"
+  secondaryText="View live demo"
+/>
 
 <div class="docs-card-grid">
 
@@ -41,7 +51,7 @@ description: "Plausible Analytics documentation. No cookies, no personal data, n
 
 <div class="docs-card">
 <h3>Website settings</h3>
-<p>Manage your site configuration and data.</p>
+<p>Manage your site configuration and data. For personal account settings (email, password, 2FA, appearance), see <a href="/docs/account-settings">account settings</a>.</p>
 <ul>
 <li><a href="/docs/excluding">Excluding pages and traffic</a>: filter out internal visits</li>
 <li><a href="/docs/embed-dashboard">Embed dashboard</a>: embed your stats on any page</li>
@@ -54,7 +64,7 @@ description: "Plausible Analytics documentation. No cookies, no personal data, n
 
 <div class="docs-card">
 <h3>Account settings</h3>
-<p>Manage your personal account and preferences.</p>
+<p>Manage your personal account and preferences. For site-specific settings (timezone, goals, reports, access), see <a href="/docs/website-settings">website settings</a>.</p>
 <ul>
 <li><a href="/docs/2fa">Two-factor authentication</a>: secure your account</li>
 <li><a href="/docs/change-email">Change email</a>: update your login address</li>
@@ -69,6 +79,7 @@ description: "Plausible Analytics documentation. No cookies, no personal data, n
 <h3>Team and sharing</h3>
 <p>Manage access, sharing and notifications for your team.</p>
 <ul>
+<li><a href="/docs/team-settings">Team settings</a>: subscription, API keys, SSO and team configuration</li>
 <li><a href="/docs/users-roles">Users and roles</a>: invite team members and set permissions</li>
 <li><a href="/docs/agencies-and-freelancers">Agencies and freelancers</a>: manage multiple client sites</li>
 <li><a href="/docs/shared-links">Shared links</a>: share your dashboard publicly or with specific people</li>
@@ -96,7 +107,8 @@ description: "Plausible Analytics documentation. No cookies, no personal data, n
 <p>Track what matters beyond pageviews: signups, purchases, clicks, form completions.</p>
 <ul>
 <li><a href="/docs/goal-conversions">Goal conversions</a>: set up and measure conversion goals</li>
-<li><a href="/docs/funnel-analysis">Funnel analysis</a>: follow the visitor journey step by step</li>
+<li><a href="/docs/funnel-analysis">Funnel analysis</a>: measure drop-off across a defined sequence of steps</li>
+<li><a href="/docs/user-journeys">User journeys</a>: explore the paths visitors take on your site</li>
 <li><a href="/docs/ecommerce-revenue-tracking">Ecommerce revenue tracking</a>: attribute revenue to traffic sources</li>
 <li><a href="/docs/outbound-link-click-tracking">Outbound link clicks</a>: track clicks to external sites</li>
 <li><a href="/docs/file-downloads-tracking">File downloads</a>: see which files get downloaded</li>
@@ -110,10 +122,13 @@ description: "Plausible Analytics documentation. No cookies, no personal data, n
 <h3>API</h3>
 <p>Query your data, send events and manage sites programmatically.</p>
 <ul>
+<li><a href="/docs/data-access">Accessing your data</a>: choose the right method for your use case</li>
+<li><a href="/docs/white-label">White-label integration guide</a>: embed Plausible into your own product</li>
 <li><a href="/docs/stats-api">Stats API</a>: query your analytics data programmatically</li>
 <li><a href="/docs/events-api">Events API</a>: send custom events from your backend or server</li>
 <li><a href="/docs/sites-api">Sites API</a>: manage sites and goals via API</li>
-<li><a href="/docs/stats-api-playground">API playground</a>: explore queries interactively</li>
+<li><a href="/docs/stats-api-playground">Stats API playground</a>: try Stats API queries interactively</li>
+<li><a href="/docs/data-pipelines">Viewing stats elsewhere</a>: access your data from third-party tools, apps and AI</li>
 </ul>
 </div>
 

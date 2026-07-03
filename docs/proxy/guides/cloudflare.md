@@ -1,5 +1,6 @@
 ---
 title: Proxying Plausible through Cloudflare
+sidebar_label: Cloudflare
 description: "How to proxy Plausible Analytics through Cloudflare Workers. Set up a first-party analytics connection using a free Cloudflare account in a few steps."
 ---
 
@@ -18,13 +19,17 @@ Step 0: Sign up for a free Cloudflare account if you don't have an account alrea
 
 In your Cloudflare account, click on the "Compute (Workers" > 'Workers & Pages' section in the sidebar to get the 'Overview' page. Choose "Start with Hello World!" and then click on "Get Started" to start configuring your proxy.
 
+<div class="browser">
 <img alt="Create CloudFlare worker" src={useBaseUrl('img/create-cloudflare-worker.png')} />
+</div>
 
 ## Step 2 (Optional): You can change your service name
 
 This is optional but you can change the service name to give your worker a more meaningful name. It's also fine to keep the random name that Cloudflare generates by default. Then click on the 'Deploy' button.
 
+<div class="browser">
 <img alt="Deploy CloudFlare worker" src={useBaseUrl('img/deploy-cloudflare-worker.png')} />
+</div>
 
 ## Step 3: Get your snippet
 
@@ -45,7 +50,9 @@ Your snippet will have a different script location than the example above. Look 
 
 Next click on the 'Edit Code' button, remove the default code that Cloudflare presents and paste the code that we present below instead.
 
+<div class="browser">
 <img alt="Edit CloudFlare worker" src={useBaseUrl('img/edit-worker-code.png')} />
+</div>
 
 :::tip
 Change the folder name in the first two lines of the code below. This makes your proxy harder to discover and block, especially if you're not hosting your site on the Cloudflare CDN.
@@ -101,9 +108,11 @@ async function postData(event) {
 }
 ```
 
-Once you've added the above code to the worker, you can click on the 'Save and Deploy' button on the top right. On the confirmation message, do confirm that you want to save and deploy your worker by clicking on the 'Save and Deploy' button again.
+Once you've added the above code to the worker, you can click on the blue 'Save and Deploy' button on the top right. On the confirmation message, do confirm that you want to save and deploy your worker by clicking on the 'Save and Deploy' button again.
 
+<div class="browser">
 <img alt="Paste Plausible code to CloudFlare worker" src={useBaseUrl('img/paste-plausible-code-to-cloudflare-worker.png')} />
+</div>
 
 ## Step 4: Make sure the script is accessible
 

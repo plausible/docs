@@ -5,7 +5,9 @@ description: "See which external links visitors click and which pages drive thos
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+<div class="browser">
 <img alt="Outbound link click tracking" src={useBaseUrl('img/outbound-link-click-tracking.png')} />
+</div>
 
 :::note
 If you use the outbound link click tracking feature, then these count towards your billable monthly pageviews.
@@ -24,7 +26,9 @@ Outbound link click tracking is essential for many site owners and Plausible hel
 
 By default, **Outbound links** is enabled when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the **Site Installation** area of the **General** section in your [site settings](website-settings.md).
 
+<div class="browser">
 <img alt="Enable outbound link clicks tracking during onboarding" src={useBaseUrl('img/onboarding-enable-outbound-link-clicks-tracking.png')} />
+</div>
 
 After you enable outbound link click tracking, we will automatically add a new goal called `Outbound Link: Click` to your site.
 

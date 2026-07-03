@@ -1,5 +1,6 @@
 ---
 title: Navigate the dashboard using keyboard shortcuts
+sidebar_label: Keyboard shortcuts
 description: "Full list of Plausible keyboard shortcuts for switching date ranges, enabling comparisons and navigating your dashboard without touching the mouse."
 ---
 

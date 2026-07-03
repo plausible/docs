@@ -1,5 +1,6 @@
 ---
 title: Import stats from Google Analytics
+sidebar_label: Google Analytics
 description: "Import your historical Google Analytics 4 data into Plausible Analytics. No gaps, no double-counting, and full support for segmenting and exporting."
 ---
 
@@ -22,7 +23,7 @@ description: "Import your historical Google Analytics 4 data into Plausible Anal
           "name": "Why are the numbers higher in Plausible than in Google Analytics?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Plausible does not require cookie consent and is not blocked by most browser-level tracking protection. GA4 is blocked by Safari ITP, Firefox Enhanced Tracking Protection and many ad blockers. Plausible natively captures more traffic, particularly from privacy-conscious users."
+            "text": "Plausible does not require cookie consent and is blocked far less often than Google Analytics by browser-level tracking protection. GA4 is blocked by Safari ITP, Firefox Enhanced Tracking Protection and many ad blockers. Plausible natively captures more traffic, particularly from privacy-conscious users."
           }
         },
         {
@@ -47,10 +48,19 @@ description: "Import your historical Google Analytics 4 data into Plausible Anal
 </head>
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import CtaBox from '@site/src/components/CtaBox';
 
 Plausible Analytics allows you to import your historical stats from Google Analytics 4 (GA4). You can import multiple Google Analytics properties into the same Plausible dashboard without having any gaps in the data and without any double-counting. You can also segment the imported data and export it using our regular exporting methods ([CSV](export-stats.md) and [stats API](stats-api.md)).
 
 Here's how you can import your historical Google Analytics stats into your Plausible dashboard.
+
+<CtaBox
+  headline="Migrating from Google Analytics? Bring your historical data with you"
+  link="https://plausible.io/migrate-from-google-analytics"
+  linkText="Migration guide"
+  secondaryLink="https://plausible.io/register"
+  secondaryText="Start free trial"
+/>
 
 ## How to import your historical stats from Google Analytics to Plausible Analytics 
 
@@ -58,7 +68,9 @@ Here's how you can import your historical Google Analytics stats into your Plaus
 
 2. In the **Imports & Exports** section, find the **Import Data** panel. You can link your Google account to your Plausible account by clicking on the **Google Analytics** button.
 
+<div class="browser">
 <img alt="Import Google Analytics data into Plausible" src={useBaseUrl('img/import-google-analytics-data.png')} />
+</div>
 
 3. After linking Plausible to your Google account, you'll see a drop-down selection menu listing all the existing Google Analytics properties associated with the connected Google account. Select the property that you'd like to import and click on the **Continue** button.
 
@@ -96,9 +108,11 @@ If you have strict data retention limits in place in Google Analytics (for insta
 
 ## How do I delete the imported data?
 
-Data you have imported can be deleted by returning to your site's **Imports & Exports** settings page and clicking the **Delete Import** button in the **Existing Imports** section. This action won't affect the native data you have collected using our script directly.
+Data you have imported can be deleted by returning to your site's **Imports & Exports** settings page and clicking the bin icon in the Imports section. This action won't affect the native data you have collected using our script directly.
 
+<div class="browser">
 <img alt="Delete Google Analytics data from Plausible" src={useBaseUrl('img/delete-google-analytics-data.png')} />
+</div>
 
 ## Can I delete my Google Analytics account after a successful import?
 
@@ -110,9 +124,7 @@ We have taken many steps to make the imported data feel as fast, easy, and strai
 
 ### Filtering 
 
-Simple filtering of imported data is possible but we're unable to look at how some metrics interact with each other which makes [the more advanced segmenting](filters-segments.md) limited. Whenever imported data cannot be included due to the applied filters, you will see a warning bubble in the corresponding report.
-
-<img alt="Imported data is excluded due to applied filters" src={useBaseUrl('img/imported-data-is-excluded-due-to-filters.png')} />
+Simple filtering of imported data is possible but we're unable to look at how some metrics interact with each other which makes [the more advanced segmenting](filters-segments.md) limited. Whenever imported data cannot be included due to the applied filters, you will see a warning bubble stating “Imported data is excluded due to applied filters” in the corresponding report.
 
 ### Unique visitors
 
@@ -196,7 +208,7 @@ GA4 uses modeled data and consent mode to estimate traffic for users who decline
 
 **Numbers are higher in Plausible than in GA4**
 
-Plausible does not require cookie consent and is not blocked by most browser-level tracking protection. GA4 is blocked by Safari ITP, Firefox Enhanced Tracking Protection and many ad blockers. Plausible natively captures more traffic, particularly from privacy-conscious users.
+Plausible does not require cookie consent and is blocked far less often than Google Analytics by browser-level tracking protection. GA4 is blocked by Safari ITP, Firefox Enhanced Tracking Protection and many ad blockers. Plausible natively captures more traffic, particularly from privacy-conscious users.
 
 **Import appears to complete but data is missing**
 
@@ -205,3 +217,10 @@ Check the date range of your import in your Plausible site settings. If your GA4
 **Imported data and native data show a gap or overlap**
 
 The import tool sets the end date of the import to one day before your first Plausible native data point. If you see a gap, check that Plausible was correctly installed and recording data before you ran the import. If you see overlap, delete the import and re-run it after confirming your Plausible installation date.
+
+## What's next?
+
+- [Set up goals in Plausible](goal-conversions.md) to replace the GA4 conversions you were tracking. Imported goal data will appear once you recreate matching goals in your site settings
+- [Compare date ranges](compare-stats.md) that span your imported history and your native Plausible data together
+- [Filter and segment](filters-segments.md) your imported data by source, page or country to reproduce the key reports you used in GA4
+- [Export to CSV](export-stats.md) or use the [Stats API](stats-api.md) for reporting outside the dashboard

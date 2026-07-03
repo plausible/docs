@@ -4,14 +4,15 @@ description: "How SSO works with Plausible Analytics. Supports SAML 2.0 and iden
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import PlanFeatureNote from '@site/src/components/PlanFeatureNote';
+
+<PlanFeatureNote feature="sso" plan="enterprise" label="SSO" />
 
 Your team can sign in to Plausible Analytics using single sign-on (SSO). This removes the need for manual account creation, simplifies access management and gives you more control over who can log in.
 
 SSO works by logging in through an identity provider (IdP). We support the SAML 2.0 protocol, which is compatible with most IdPs including Google Workspace, Okta and Microsoft Entra ID (Azure AD).
 
 User accounts are provisioned just-in-time. As long as the IdP session is active and the email matches, users can log in to Plausible automatically.
-
-SSO is available on our [Enterprise plan](https://plausible.io/enterprise-web-analytics). [Contact us](https://plausible.io/contact) to learn more.
 
 :::tip What is SAML?
 **Security Assertion Markup Language (SAML)** is an XML-based protocol for secure exchange of information between an authority (Identity Provider or IdP) and a consumer (Service Provider or SP - in this case, Plausible).
@@ -21,9 +22,11 @@ SSO is available on our [Enterprise plan](https://plausible.io/enterprise-web-an
 
 Once SSO is configured and your users have valid identities with your chosen identity provider, they can log in using a dedicated SSO login form.
 
+<div class="browser">
 <img alt="SSO Login Form" src={useBaseUrl('img/sso-login-form.png')} />
+</div>
 
-After entering the email, they are redirected to identity provider's portal. The provider validates their identity if they haven't logged in there yet or uses an already validated identity from an existing session. The identity information (email, name) is then securely sent back to Plausible. At that point, their account is automatically created in Plausible—no manual setup needed.
+After entering the email, they are redirected to identity provider's portal. The provider validates their identity if they haven't logged in there yet or uses an already validated identity from an existing session. The identity information (email, name) is then securely sent back to Plausible. At that point, their account is automatically created in Plausible. No manual setup needed.
 
 ### Provisioning
 
@@ -31,13 +34,13 @@ When someone logs in through SSO, we will first check if there's an existing tea
 
 By default, new members are assigned the Viewer role, but you can change it as needed.
 
-A user signing in through SSO can only belong to one team. Team assignment is based on the domain in their email address. Each SSO domain must be unique—a single domain can't be linked to more than one team at once.
+A user signing in through SSO can only belong to one team. Team assignment is based on the domain in their email address. Each SSO domain must be unique: a single domain can't be linked to more than one team at once.
 
 You can read more about domains at [SSO Domains](#sso-domains).
 
 ### Security
 
-When you configure SSO for your team for the first time, existing members can still log in using their email and password. However, once a member signs in via your identity provider, their account becomes SSO-only—they can no longer use standard login credentials.
+When you configure SSO for your team for the first time, existing members can still log in using their email and password. However, once a member signs in via your identity provider, their account becomes SSO-only: they can no longer use standard login credentials.
 
 Standard and SSO users can coexist on the same team as long as the "Force Single Sign-On" option is disabled.
 
@@ -67,15 +70,14 @@ The configuration process consists of four major stages:
 
 ### Initiating SSO Setup in Plausible
 
-- Go to the **Configuration** section of **Single Sign-On** under **Team Settings**
+- Go to the **Configuration** section of **Single Sign-On** under **Team Settings**.
 
-  <img alt="Starting SSO configuration" src={useBaseUrl('img/sso-start-config.png')} />
+  <div class="browser">
+  <img alt="SSO configuration parameters for IdP" src={useBaseUrl('img/sso-start-config.png')} />
+  </div>
+- Click the **Start Configuring SSO** button.
 
-- Click **Start Configuring SSO** button
-
-  <img alt="SSO configuration parameters for IdP" src={useBaseUrl('img/sso-sp-config-params.png')} />
-
-- Open identity provider's administrative dashboard and follow further instructions.
+- Open identity provider's administrative dashboard and follow further instructions. 
 
 ### Configuring SAML SSO in Identity Provider
 
@@ -98,49 +100,57 @@ Step-by-step instructions for commonly used identity providers:
 
 ### Finishing SAML SSO Setup in Plausible
 
-- Go back to **Configuration** section of **Single Sign-On** under **Team Settings** and click **Start Configuring**
+- Go back to **Configuration** section of **Single Sign-On** under **Team Settings** and click **Start Configuring**.
 
+  <div class="browser">
   <img alt="SSO configuration parameters for IdP" src={useBaseUrl('img/sso-sp-config-params.png')} />
+  </div>
 
-- Fill the form with parameters obtained after configuring identity provider and click **Save**
+- Fill the form with parameters obtained after configuring identity provider and click **Save**.
 
+  <div class="browser">
   <img alt="SSO configuration parameters for SP" src={useBaseUrl('img/sso-idp-config-params.png')} />
+  </div>
 
   :::tip Make sure to not mix up the inputs!
   It's pretty common for **SSO URL / Sign-on URL / Login URL** and **Entity ID / Issuer Identifier** to contain very similar URLs. It's easy to mistake one for the other. This can result in weird behaviour when trying to log in via SSO login form, like browser downloading a file instead of redirecting to identity provider's portal.
   :::
 
-- Enter domain name used in email addresses of identities that should be allowed to log in to this team through SSO and click **Add Domain**
+- Enter domain name used in email addresses of identities that should be allowed to log in to this team through SSO and click **Add Domain**.
 
+  <div class="browser">
   <img alt="Adding SSO domain" src={useBaseUrl('img/sso-add-domain.png')} />
+  </div>
 
-- Verify ownership of the domain using one of three methods. After publishing updated page or DNS record, click **Continue**
+- Verify ownership of the domain using one of three methods. After publishing updated page or DNS record, click **Continue**.
 
+  <div class="browser">
   <img alt="Verifying SSO domain" src={useBaseUrl('img/sso-verify-domain.png')} />
+  </div>
 
-- Scroll to **SSO Domains** and wait until **Status** changes to "validated"
-
-  <img alt="Pending SSO domain" src={useBaseUrl('img/sso-domains-table-pending.png')} />
+- Scroll to **SSO Domains** and wait until **Status** changes to "validated".
 
   :::tip Validation taking too long?
   You can click **Cancel** at any time and then click **Verify**, optionally review verification instructions and then kick off verification again by clicking **Run Verification Now**
   :::
 
-- Once the verification succeeds, the domain is marked as verified
+- Once the verification succeeds, the domain is marked as verified.
 
+  <div class="browser">
   <img alt="Verified SSO domain" src={useBaseUrl('img/sso-domains-table-verified.png')} />
+  </div>
 
 From that point on, SSO should be fully functional and it should be possible to log in using an identity email configured at identity provider.
 
+<div class="browser">
 <img alt="Standard login form with a link to SSO login" src={useBaseUrl('img/sso-standard-login.png')} />
+</div>
 
 ### Enabling SSO Enforcement
 
 While this step is not strictly necessary to use SSO, it's important for ensuring only members provisioned through identity provider have access to the team.
 
 SSO enforcement can be enabled from **SSO Policy** section of SSO configuration.
-
-<img alt="SSO policy with force SSO disabled" src={useBaseUrl('img/sso-policy-disabled.png')} />
 
 There are conditions that have to be met before "Force Single Sign-On" can be enabled though.
 
@@ -154,7 +164,9 @@ It might happen in a team with multiple Owners that some of them might be away a
 
 If any of those conditions are not met, the switch is disabled and the reason is outlined once you hover over it.
 
+<div class="browser">
 <img alt="SSO policy with force SSO disabled and a tooltip" src={useBaseUrl('img/sso-policy-disabled-tooltip.png')} />
+</div>
 
 Once all conditions are met and you enable enforcement, logging in through identity provider will be the only way to access the team.
 
@@ -164,7 +176,7 @@ Providing this fallback is important to provide a way to resolve issues with mis
 
 ## SSO Domains
 
-Before it's possible to log in through SSO, you need to add at least one domain and verify its ownership using one of the three available methods. SSO will not work—even if SAML is fully configured—until a domain is added and verified.
+Before it's possible to log in through SSO, you need to add at least one domain and verify its ownership using one of the three available methods. SSO will not work until a domain is added and verified, even if SAML is fully configured.
 
 When someone tries to log in via SSO, Plausible checks the domain part of their email address (the part after the “@”) against your configured domains. If a match is found, the user is redirected to the appropriate identity provider for authentication.
 
@@ -174,13 +186,15 @@ The ownership of every added domain must be verified using one of three methods:
 - [Publishing a file or exposing a route](#file-or-route-verification) from the web page under the domain
 - [Adding a META HTML tag](#meta-tag-verification) to the web page under the domain
 
+<div class="browser">
 <img alt="SSO domain verification" src={useBaseUrl('img/sso-domain-verification.png')} />
+</div>
 
 Once started, the verification process is retried in the background over the following hours until it succeeds. Once it's verified or fails after too many attempts, you will be notified by email. Verification can be immediately retried by canceling the running process and kicking off verification again.
 
+<div class="browser">
 <img alt="Canceling SSO domain verification" src={useBaseUrl('img/sso-domain-verification-cancel.png')} />
-
-<img alt="Retrying SSO domain verification" src={useBaseUrl('img/sso-domain-verification-retry.png')} />
+</div>
 
 ### DNS Record Verification
 
@@ -198,7 +212,9 @@ You have to put `<meta name="plausible-sso-verification" content="<domain identi
 
 SSO policy can be configured from **Configuration** section of **Single Sign-On** under **Team Settings**.
 
+<div class="browser">
 <img alt="SSO policy with force SSO disabled" src={useBaseUrl('img/sso-policy-disabled.png')} />
+</div>
 
 Following settings are available:
 
@@ -207,15 +223,19 @@ Following settings are available:
 - **Session timeout (minutes)**: Session timeout for users logged in through SSO. Maximum is 12 hours. Default is 360 minutes (6 hours).
 
 :::tip Session timeouts in Plausible and in identity provider are different things
-SSO account session timeout in Plausible is always counted relative to the time of last login, not user activity. Unlike standard accounts, simply staying active won’t extend the session. However, this doesn’t mean users need to manually log in again when the session expires. When the timeout is reached, Plausible automatically redirects to your identity provider. If the user's session is still valid there, they’re seamlessly returned to Plausible—right back to the last page they visited. Plausible's session timeout is typically shorter than the one configured at your identity provider. This helps keep user access in sync. For example, if a user's identity is removed at the provider level, their Plausible session will expire shortly after, limiting unauthorized access.
+SSO account session timeout in Plausible is always counted relative to the time of last login, not user activity. Unlike standard accounts, simply staying active won’t extend the session. However, this doesn’t mean users need to manually log in again when the session expires. When the timeout is reached, Plausible automatically redirects to your identity provider. If the user's session is still valid there, they’re seamlessly returned to Plausible, right back to the last page they visited. Plausible's session timeout is typically shorter than the one configured at your identity provider. This helps keep user access in sync. For example, if a user's identity is removed at the provider level, their Plausible session will expire shortly after, limiting unauthorized access.
 :::
 
 ## Team Management
 
 - Team members who have already provisioned their accounts through SSO are distinctly labeled as such on members list under **Team Settings**
 
+<div class="browser">
 <img alt="Team members list with labels" src={useBaseUrl('img/sso-team-members-list.png')} />
+</div>
 
 - All team members' active SSO sessions can be viewed and optionally logged out in **Sessions** section of **Single Sign-On** under **Team Settings**
 
+<div class="browser">
 <img alt="SSO sessions" src={useBaseUrl('img/sso-sessions.png')} />
+</div>

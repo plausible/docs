@@ -1,25 +1,21 @@
 ---
 title: Plausible pricing and subscription plans
-description: "How Plausible subscription tiers work. Usage is based on total pageviews and custom events across all sites in a team. Compare plans and billing options."
+sidebar_label: Pricing and plans
+description: "Compare Plausible subscription plans. 30-day free trial, no credit card required. All tiers priced by pageviews, not seats."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import CtaBox from '@site/src/components/CtaBox';
 
 Plausible gives you full control over your subscription. Choose a plan, pick monthly or yearly billing and upgrade or downgrade as your needs change. No long-term contracts.
 
-[View plans and pricing →](https://plausible.io/#pricing)
-
-## How usage is calculated
-
-Your subscription tier is based on the total number of **pageviews** and **[custom events](custom-event-goals.md)** across all the sites in a team. Each team has its own subscription, so if you are a member of multiple teams, each is billed independently.
-
-Custom events include outbound link clicks, file downloads, 404 error tracking and any manually tracked events. Adding a [pageview goal](pageview-goals.md) does not count towards your usage.
-
-Check your current usage in the **Subscription** section of your account settings and pick a tier that matches.
-
-<div class="browser">
-    <img alt="Plausible subscription" src={useBaseUrl('img/v2/account-settings-subscription.webp')} />
-</div>
+<CtaBox
+  headline="30-day free trial, no credit card required. Choose a plan when you're ready"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+  secondaryLink="https://plausible.io/#pricing"
+  secondaryText="View plans and pricing"
+/>
 
 ## Which plan should I choose?
 
@@ -27,12 +23,45 @@ All plans start at the same pageview tiers. The difference is features and team 
 
 - **Starter**: one site, solo use, no team or sharing needed
 - **Growth**: multiple sites, or need to share dashboards with clients or invite team members
-- **Business**: need funnels, revenue tracking, custom properties, Stats API or Looker Studio (build custom dashboards and blend Plausible data with other sources like ad spend or CRM data)
+- **Business**: need funnels, user journeys, revenue tracking, custom properties, Stats API or Looker Studio (build custom dashboards and blend Plausible data with other sources like ad spend or CRM data)
 - **Enterprise**: large scale, SSO, Sites API, managed proxy or raw data exports. [Contact us](https://plausible.io/contact) to discuss
 
 Compare full features and pricing on [our website](https://plausible.io/#pricing) or in your account settings. Save 2 months by choosing yearly billing.
 
+All plans include a 30-day free trial, no credit card required. During the trial you have access to all Business plan features and limits, so you can explore the full product before choosing a plan.
+
 Nonprofits, educational institutions and open-source projects are eligible for a 15% discount on Business plans with annual billing. See [nonprofit and education pricing](nonprofit-and-education-pricing.md) for details.
+
+## Enterprise-only features
+
+Enterprise includes everything in Business plus additional features and higher limits. The features below are not available on any lower plan and cannot be purchased as add-ons. If you need any of them, upgrading to Enterprise is required.
+
+- **SSO (Single Sign-On)**: log in via your existing identity provider using SAML 2.0. See [SSO documentation](sso.md).
+- **Sites API**: create and manage sites programmatically. See [Sites API documentation](sites-api.md).
+- **Managed proxy**: we handle the proxy setup and maintenance for you. See [proxy options](proxy/introduction.md).
+- **Scheduled raw event exports**: event-level data delivered automatically on an agreed schedule. See [raw event exports](raw-data-export.md).
+
+Limits that can be increased on Enterprise beyond standard plan tiers:
+
+- Monthly pageview volume
+- Number of sites
+- Number of team members
+- API rate limits
+- Data retention
+
+Enterprise plans are not self-serve like Growth or Business. [Contact us](https://plausible.io/contact) with your requirements and we will set up a custom plan tailored to your needs. You do not need to take every Enterprise feature. If you only need higher limits, we can set those up without the rest.
+
+## How usage is calculated
+
+Your subscription tier is based on the total number of **pageviews** and **[custom events](custom-event-goals.md)** across all the sites in a team. Each team has its own subscription, so if you are a member of multiple teams, each is billed independently.
+
+Custom events include outbound link clicks, file downloads, form submissions, 404 error tracking and any manually tracked events. Adding a [pageview goal](pageview-goals.md) does not count towards your usage.
+
+Check your current usage in the **Subscription** section of your account settings and pick a tier that matches.
+
+<div class="browser">
+    <img alt="Plausible subscription" src={useBaseUrl('img/v2/account-settings-subscription.webp')} />
+</div>
 
 ## Traffic spikes and overages
 
@@ -44,7 +73,7 @@ If pageviews exceed your tier for **two consecutive months**, we'll notify you a
 
 If you don't upgrade within a week of our notice, your dashboards will be temporarily locked. Even while locked, your stats continue to be collected in the background and you still have full access to your site settings and account settings. Dashboards are automatically unlocked at the start of the next billing cycle if your usage drops back within your subscription limits. You can also unlock them at any time by upgrading to the appropriate tier.
 
-If the higher traffic turns out to be temporary, you can upgrade to restore access and then downgrade again once your traffic drops. Downgrades are pro-rated too, so you won't lose out. You're never locked into a higher plan when your usage no longer requires it. This works the same way on both monthly and yearly billing.
+If the higher traffic turns out to be temporary, you can upgrade to restore access and then downgrade again once your traffic drops. Downgrades are pro-rated too, so you won't lose out. You're never locked into a higher plan when your usage no longer requires it. This works the same way on both monthly and yearly billing. See [billing FAQ](billing.md#what-happens-if-i-exceed-my-pageview-limit) for step-by-step guidance if your dashboard is currently locked.
 
 
 <div class="browser">

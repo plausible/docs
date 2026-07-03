@@ -25,29 +25,19 @@ You can also change the chart interval, [segment your audience](filters-segments
 
 - Choose your comparison option from the drop-down.
 
-<div class="browser">
-    <video autoPlay loop muted controls width="100%">
-        <source src={useBaseUrl('/video/compare-stats-over-time.mp4')} type="video/mp4" />
-    </video>
-</div>
-
 The comparison appears in three places across your dashboard:
 
 - **Metric cards** at the top show percentage changes (with up/down arrows) against the comparison period
 - **The main chart** shows both date ranges as separate lines so you can see trends side by side. Hover over any point to see the values and percent change in the tooltip
 - **Breakdown tables** (Sources, Pages, Countries, etc.) show comparison data in a tooltip when you hover over a row
 
+<div class="browser">
+    <img alt="Match exact date" src={useBaseUrl('img/v2/stats-comparison-in-plausible-analytics.webp')} />
+</div> 
+
 As with everything else on the dashboard, we'll save your comparison preference for your next visit.
 
-<div class="browser">
-    <img alt="Comparison chart" src={useBaseUrl('img/v2/comparison-chart.webp')} />
-</div>
-
-- Want to disable the comparison and get back to the regular view? Press `X` on your keyboard or choose **Disable comparison** in the comparison drop-down
-
-<div class="browser">
-    <img alt="Disable comparison" src={useBaseUrl('img/v2/disable-comparison.webp')} />
-</div>
+- Want to disable the comparison and get back to the regular view? Press `X` on your keyboard or choose **Disable comparison** in the comparison drop-down.
 
 ### Segment your audience
 

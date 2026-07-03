@@ -1,17 +1,21 @@
 ---
 title: Plausible Looker Studio connector
+sidebar_label: Looker Studio connector
 description: "Connect Plausible Analytics to Google Looker Studio using the official connector. Build custom reports and branded dashboards on the Business plan."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import PlanFeatureNote from '@site/src/components/PlanFeatureNote';
 
 Plausible keeps its dashboard intentionally simple. For cases where you need more flexibility, such as custom client reports, branded dashboards or views that combine Plausible data with ad spend or CRM data, we have an official connector for Google Looker Studio (formerly Data Studio).
 
 Looker Studio is Google's free data visualization tool. The Plausible connector lets you pull your analytics data directly into Looker Studio and build any report layout you need.
 
-The connector is available on the Business plan. Here's how to get started.
+<PlanFeatureNote feature="looker-studio" plan="business" label="Looker Studio connector" />
 
+<div class="browser">
 <img alt="Plausible Analytics Looker Studio template" src={useBaseUrl('img/plausible-looker-studio.png')} />
+</div>
 
 ## Connect to Looker Studio
 
@@ -19,7 +23,9 @@ Connecting your Plausible Analytics account to Looker Studio is simple and can b
 
 Once you have selected the data source, you will be prompted to authorize the connector to access your Google account.
 
+<div class="browser">
 <img alt="Authorize the Plausible connector" src={useBaseUrl('img/source-looker.png')} />
+</div>
 
 The only permission that will be asked for is to make an external API request, which is how the connector pulls data from [the Plausible Analytics Stats API](stats-api.md).
 
@@ -29,11 +35,15 @@ After authorizing your Google account, you will be prompted to enter your Plausi
 
 Click the **New API Key** button and be sure to save the result as you will only see the key once. However, you can always delete the key and create a new one if you no longer remember what it is.
 
+<div class="browser">
 <img alt="Create your Plausible stats API key" src={useBaseUrl('img/create-stats-api-key-looker.png')} />
+</div>
 
 Simply paste your API key into Looker Studio when prompted. After that, you'll see a dropdown menu showing all the sites linked to your Plausible account.
 
+<div class="browser">
 <img alt="Insert your Plausible API key" src={useBaseUrl('img/plausible-api-looker.png')} />
+</div>
 
 This means you have successfully linked your Plausible Analytics account to Looker Studio.
 
@@ -49,7 +59,9 @@ If this box is not checked, the connector will by default cache data for 6 hours
 
 Once these options are configured, you can click **Connect** and you will see a list of all available fields for data and metrics that you can pull from Plausible.
 
+<div class="browser">
 <img alt="Configure the Plausible Looker Studio connector" src={useBaseUrl('img/choose-site-and-connect-looker.png')} />
+</div>
 
 ## Create your custom reports
 
@@ -60,5 +72,3 @@ That's it! You're ready to start creating your custom reports using the Plausibl
 You can explore this [simple report](https://lookerstudio.google.com/s/gm8gS_IpBiQ) and this [advanced report](https://lookerstudio.google.com/s/ltrWC2jaK4Q) that we’ve created in Looker Studio which you can use as a template to start building your own custom reports.
 
 If you need some help on how to use Looker Studio, take a look at [our Looker Studio beginner's guide](https://plausible.io/blog/google-looker-studio-guide).
-
-<img alt="Create your custom reports" src={useBaseUrl('img/create-report-looker.png')} />

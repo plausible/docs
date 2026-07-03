@@ -1,6 +1,6 @@
 ---
 title: Billing FAQ
-description: "Answers to common billing questions for Plausible Analytics. Covers invoices, usage calculation, multiple clients, VAT and subscription management."
+description: "Common billing questions for Plausible Analytics. Pageview-based pricing, no per-seat fees. 30-day free trial, no credit card required."
 ---
 
 <head>
@@ -63,6 +63,7 @@ description: "Answers to common billing questions for Plausible Analytics. Cover
 </head>
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import CtaBox from '@site/src/components/CtaBox';
 
 ## Is the billing based per account or per website?
 
@@ -83,8 +84,6 @@ The invoice email goes to your Paddle email address, which may differ from your 
 Credit/debit card, PayPal, Apple Pay and Google Pay. All payment processing is handled by Paddle. We're not able to accept wire transfers, manual invoicing or cryptocurrency.
 
 If paying via PayPal, make sure a valid card is linked to your PayPal account. Paddle requires this for recurring subscriptions.
-
-<img class="border" alt="Apple Pay & Google Pay payment methods" src={useBaseUrl('img/v2/plausible-apple-pay.webp')} />
 
 ## How do I add my VAT number?
 
@@ -185,3 +184,9 @@ Ad blockers and privacy extensions can interfere with the payment form. Try disa
 - If your card details are correct and no 3DS prompt was issued, try subscribing using a different email address
 
 Have a billing question not covered here? [Contact us](https://plausible.io/contact).
+
+<CtaBox
+  headline="Not yet subscribed? 30 days free, no credit card required"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+/>

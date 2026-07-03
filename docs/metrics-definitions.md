@@ -60,6 +60,8 @@ The amount of time visitors spend on your site. Visitors who only view one page 
 
 **Typical ranges:** 1-3 minutes is common for most sites. Documentation and content-heavy sites often run higher.
 
+If your average visit duration looks lower than expected, a high bounce rate is usually the reason. Every bounced session adds 0 seconds to the average. See the Bounce Rate section above for how to improve it.
+
 ### Views Per Visit (or Pages / Session)
 
 Views per visit (also known as pages per session) shows the average number of pageviews per visit. Repeated views of a single page are included.
@@ -112,7 +114,7 @@ For example, a link in your email newsletter might look like:
 https://yoursite.com/blog/post?utm_source=newsletter&utm_medium=email&utm_campaign=april-launch
 ```
 
-Read more about [tagging your links with UTM parameters](manual-link-tagging.md).
+Read more about [tagging your links with UTM parameters](https://plausible.io/blog/utm-tracking-tags).
 
 ### Referrer Drilldown
 
@@ -142,7 +144,11 @@ If the same goal is completed multiple times by the same visitor, all the comple
 
 ### Funnels
 
-Funnel analysis lets you follow the visitor journey across multiple steps and see exactly where visitors drop off. You can use pageview goals or custom events as steps, and choose between sequential or strict order mode. See [funnel analysis](funnel-analysis.md) for details.
+Funnel analysis lets you define a sequence of steps and see exactly where visitors drop off. You can use pageview goals or custom events as steps, and choose between sequential or strict order mode. See [funnel analysis](funnel-analysis.md) for details.
+
+### User Journeys
+
+User journeys let you explore the paths visitors actually take on your site. Pick any page, goal or event as a starting point and see what they did next, or work backwards from a conversion to see what led them there. Unlike funnels, there is no predefined sequence: you discover flows rather than measure them. See [user journeys](user-journeys.md) for details.
 
 ### Custom Properties (or Custom Dimensions)
 

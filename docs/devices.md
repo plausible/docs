@@ -11,7 +11,9 @@ You can click the expand icon in the top right to see the full list with additio
 
 You can use the **Filter** button on the top of your dashboard to segment the traffic by multiple devices at the same time. Filter button also allows you to filter out traffic from specific devices.
 
+<div class="browser">
 <img alt="Screen sizes - multiple filters" src={useBaseUrl('img/devices-filtering-multiple-filters.png')} />
+</div>
 
 ## Screen size
 

@@ -1,11 +1,19 @@
 ---
 title: "Integration guides: WordPress, Shopify, Next.js and more"
+sidebar_label: Integration guides
 description: "Install Plausible Analytics on WordPress, Shopify, Webflow, Squarespace, Ghost, Next.js and more. Official guides and community integrations for popular platforms."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import CtaBox from '@site/src/components/CtaBox';
 
 Installing Plausible on a website can be a slightly different process depending on what tools you're using to manage your site.
+
+<CtaBox
+  headline="Don't have a Plausible account yet? Create one first, then follow the guide for your platform"
+  link="https://plausible.io/register"
+  linkText="Create free account"
+/>
 
 We've put together several guides that cover popular website builders and content management systems (CMS). These can help you set up and start counting your site visitors in no time. Thanks to the members of our community, there are also third-party integrations and plugins for various frameworks.
 
@@ -154,7 +162,7 @@ Step-by-step guides for popular website builders and content management systems.
 | [Google AMP Pages](https://github.com/plausible/analytics/discussions/220#discussioncomment-904022) | Declare an AMP-analytics object on your AMP pages to track with Plausible |
 | [Google Chrome extensions](https://gist.github.com/Joelkw/31b798f69c714c00e9e097b1fd4bb3c8) | Instructions for tracking Chrome browser extensions with Plausible |
 | [DNT and offline](https://github.com/ian/analytics/tree/main/packages/plausible) | Add Do Not Track and offline functionality via the analytics library |
-| [Segment](google-tag-manager.md) | No official integration, but you can integrate via Google Tag Manager |
+| [Segment](https://plausible.io/gtm-template) | No official integration, but you can integrate via Google Tag Manager |
 
 ### Monitoring and automation
 

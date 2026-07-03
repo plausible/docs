@@ -1,11 +1,14 @@
 ---
 title: Funnel analysis
-description: "Map the visitor journey from landing page to conversion in Plausible. Spot drop-off points across multi-step funnels using pageviews or custom events."
+description: "Measure drop-off across multi-step conversion paths with Plausible's funnel analytics. Define a sequence of steps and see exactly how many visitors complete each one."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import PlanFeatureNote from '@site/src/components/PlanFeatureNote';
 
-You can follow the visitor journey from a landing page to a conversion with our multi-step funnel analysis. Use it to find where visitors drop off and improve your conversion rate.
+Define a sequence of steps and measure how many visitors complete each one. Use funnel analysis to find where people drop off and improve your conversion rate.
+
+<PlanFeatureNote feature="funnel-analysis" plan="business" label="Funnel analysis" />
 
 * You can go beyond pageviews and use any custom events to build a funnel
 * Choose between two funnel types: sequential (visitors can take other actions between steps) or strict order (steps must happen in exact consecutive order)
@@ -13,7 +16,9 @@ You can follow the visitor journey from a landing page to a conversion with our 
 * With the percentage drop-off between the individual funnel steps, you can spot where you lose the most visitors. A step with an unusually large drop-off is usually the best place to start optimizing
 * You can get more granular by [using filters](filters-segments.md) to segment your audience. Filter conversion funnels by marketing campaign, referral source, landing page, device or location
 
+<div class="browser">
 <img alt="Funnel analysis" src={useBaseUrl('img/funnel-analysis.png')} />
+</div>
 
 ## How funnel conversions are counted
 
@@ -25,7 +30,7 @@ To be counted as converted, visitors need to complete all the steps you've defin
 
 Funnels in Plausible are always linear. Each funnel follows one defined path from start to finish. Branching or conditional paths are not supported. If you need to compare two different paths, create two separate funnels.
 
-Funnels also work across your main domain and its subdomains ([see more](subdomain-hostname-filter.md)), and you don't need to worry about visitors briefly leaving your site to complete actions on external services like Stripe's payment page or other third-party gateways. Plausible treats the returning visit as part of the same session, so your funnel will accurately track the full visitor journey.
+Funnels also work across your main domain and its subdomains ([see more](subdomain-hostname-filter.md)), and you don't need to worry about visitors briefly leaving your site to complete actions on external services like Stripe's payment page or other third-party gateways. Plausible treats the returning visit as part of the same session, so your funnel will accurately track the complete conversion sequence.
 
 ## How to set up the conversion funnel analysis
 
@@ -39,7 +44,7 @@ Funnels also work across your main domain and its subdomains ([see more](subdoma
 
 * By default, the **Allow other activity in between funnel steps** option is enabled, which creates a sequential funnel. Disable it to use strict order mode instead.
 
-* Click on the **Save** button after you've specified the user journey you want to analyse
+* Click on the **Save** button after you've defined the steps you want to measure
 
 Funnels appear at the bottom of your dashboard as soon as the first visit is tracked on the funnel steps.
 
@@ -62,7 +67,7 @@ Use funnels when you want to measure how many visitors complete a specific multi
 - A content conversion (blog post → email capture → thank you page)
 - A trial-to-paid flow (trial signup → feature usage → upgrade page)
 
-If you just want to count how many people reached a single page or clicked a button, a [pageview goal](pageview-goals.md) or [custom event goal](custom-event-goals.md) is simpler. Funnels are most useful when the journey between steps matters.
+If you just want to count how many people reached a single page or clicked a button, a [pageview goal](pageview-goals.md) or [custom event goal](custom-event-goals.md) is simpler. Funnels are most useful when the sequence of steps matters. If you do not have a specific path in mind and want to discover what visitors actually do, use [user journeys](user-journeys.md) instead.
 
 ## Funnel examples
 
@@ -109,10 +114,33 @@ Filter your funnel by traffic source, country or device to see whether drop-off 
 
 If a step shows 0 conversions, check that the goal for that step is set up correctly and that the page URL in the funnel matches exactly what Plausible records. Use the Top Pages report to confirm the exact URL format being recorded.
 
+## Troubleshooting funnels
+
+### Funnel shows no data
+
+The funnel only counts visitors after it was created. If the goals used as funnel steps have not been triggered since you saved the funnel, the funnel will show no data. Trigger each step on your site, then check the dashboard.
+
+Also confirm that each goal used as a step is set up correctly in your site settings. A goal with a name mismatch or a page URL that does not match what Plausible records will produce zero entries at that step. Use the Top Pages or Goals reports to verify the exact values being recorded.
+
+### Numbers seem lower than expected
+
+Check whether you chose strict order when sequential would be more appropriate. In strict order mode, any other page load or event between two steps disqualifies the visitor from that point in the funnel. If your visitors normally do other things between steps, strict order will produce much lower conversion numbers than sequential. Switch to sequential unless you specifically need to enforce an exact uninterrupted path.
+
+### You need more than 8 steps
+
+Funnels are limited to 8 steps. If your flow is longer, split it into two funnels at a logical midpoint. For example, an acquisition-to-activation flow can be split into an acquisition funnel (landing page to signup) and an activation funnel (signup to first key action). Compare the two completion rates to find where the bigger drop-off is.
+
+### A step shows zero conversions
+
+If one step shows zero while earlier steps have data, the goal for that step is likely misconfigured or has not fired yet since the funnel was created. See the [custom event troubleshooting guide](custom-event-goals.md#custom-event-not-showing-up) for how to verify events are firing correctly.
+
+---
+
 ## What's next?
 
 - Track [ecommerce revenue](ecommerce-revenue-tracking.md) alongside your funnels to see which paths generate the most sales
 - Use [filters and segments](filters-segments.md) to compare funnel performance across different traffic sources or campaigns
 - Use [property-filtered goals](/custom-props/for-custom-events#create-property-filtered-goals) as funnel steps to track specific event variations, such as a sign-up for a particular plan
+- Explore open-ended visitor paths with [user journeys](user-journeys.md): useful when you want to discover flows rather than measure a predefined sequence
 
 To learn more about conversion funnel optimization, [head to our blog](https://plausible.io/blog/funnels-conversion-optimization).

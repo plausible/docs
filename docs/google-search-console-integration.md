@@ -4,12 +4,19 @@ description: "See Google Search Console keyword data inside Plausible Analytics.
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import CtaBox from '@site/src/components/CtaBox';
 
 In 2012, [Google stopped including](https://webmasters.googleblog.com/2012/03/upcoming-changes-in-googles-http.html) search terms in the `Referer` header when people click on a Google search. They only send Google as the referrer source instead. This means that Plausible can't automatically access search terms that lead users to your site.
 
 However, you can still access your search terms by setting up your site on Google Search Console. Once you’ve done that, you can enable the Search Console integration in Plausible to get all your important search results stats under one roof.
 
-This integration is privacy-friendly and requires no Google code to be placed on your site. Google is basically just sending us the information they've already collected on their search results.
+This integration is privacy-friendly and requires no Google code to be placed on your site. Google is basically just sending us the information they’ve already collected on their search results.
+
+<CtaBox
+  headline="See SEO queries and website analytics in one dashboard"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+/>
 
 Here’s how you can add your site to Search Console and then integrate the Search Console data into your Plausible dashboard:
 
@@ -88,7 +95,7 @@ In the **Sources** tab in your Plausible Analytics dashboard, click on **Google*
 
 <div class="browser">
     <video autoPlay loop muted controls width="100%">
-        <source src={useBaseUrl('/video/google-search-query-referrers.mp4')} type="video/mp4" />
+        <source src={useBaseUrl('/video/google-search-terms-in-plausible.mp4')} type="video/mp4" />
     </video>
 </div>
 
@@ -117,3 +124,9 @@ You can check if Plausible Analytics is integrated with and has the right permis
 If you'd like to remove the Google Search Console integration, click on the **Unlink Google account** button in the **Google Search Console Integration** module within the **Integrations** section of your website settings.
 
 P.S. If you want to learn more about analyzing organic search traffic in Plausible, visit our [blog post](https://plausible.io/blog/seo-dead#analyzing-organic-search-traffic).
+
+## What's next?
+
+- [Set up goals](goal-conversions.md) so you can see which search keywords and landing pages drive the most signups or purchases
+- [Use filters and segments](filters-segments.md) to isolate your organic search audience and see their full behavior across your site
+- [Compare two time periods](compare-stats.md) to track how your search traffic has changed since your last content or SEO update

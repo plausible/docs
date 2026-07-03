@@ -1,8 +1,10 @@
 ---
 title: Import stats using CSV files
+sidebar_label: CSV files
 description: "Import historical analytics data into Plausible using CSV files. Works with any analytics tool that can export CSVs, including multiple properties into one dashboard."
 ---
 
+import CtaBox from '@site/src/components/CtaBox';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Plausible Analytics allows you to import your historical stats from various analytics tools using CSV files. You can import multiple different properties into the same Plausible dashboard using CSVs. 
@@ -13,6 +15,12 @@ We have a simple [Google Analytics import tool](google-analytics-import.md).
 
 The rest of this article is focused on importing your historical stats into Plausible using CSV files.
 
+<CtaBox
+  headline="Import your historical stats and keep your history in one place"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+/>
+
 ## How to import your historical stats via CSV files
 
 Here's how you can import your historical stats into your Plausible dashboard by using CSV files.
@@ -21,18 +29,14 @@ Here's how you can import your historical stats into your Plausible dashboard by
 
 2. Go into the **Imports & Exports** section, find the **Import Data** panel and click on the **CSV** button to import your CSV files.
 
+<div class="browser">
 <img alt="Import CSV" src={useBaseUrl('img/import-csv.png')} />
+</div>
 
 3. Select all the CSV files that you'd like to import and click on the **Confirm import** button. When importing your stats from different analytics tools, please ensure that each CSV file follows our CSV format guidelines. The guidelines are listed at the end of this document.
 
-<img alt="Select CSV and import" src={useBaseUrl('img/select-csv-to-import.png')} />
-
-:::tip Want to transfer a site ownership to another Plausible account?
-No data export/import is needed in this case. We have a way to [transfer site ownership](transfer-ownership.md) with a couple of clicks.
-:::
-
-:::tip Or want to change the domain name of your Plausible site?
-No data export/import is needed in this case either. We have an easy way to [change your domain name](change-domain-name.md).
+:::tip No data import needed for ownership transfers or domain changes
+To [transfer site ownership](transfer-ownership.md) to another account, or to [change your site's domain name](change-domain-name.md), use the dedicated options in your site settings. No export or import required.
 :::
 
 ## How to migrate from Plausible CE to our managed hosting (or vice-versa)
@@ -81,11 +85,11 @@ There are several exceptions to this though, because some properties are aggrega
 
 By default, imported data is always included in the view, unless you choose to exclude it manually by opening the options menu (the **⋮** icon in the top right of the chart) and toggling off **Include imported data**.
 
+<div class="browser">
 <img alt="Stats include imported data" src={useBaseUrl('img/stats-include-imported-data.png')} />
+</div>
 
-Whenever imported data cannot be included due to the applied filters, you will see a warning bubble in the corresponding report. Note that this does not affect displaying native data in any way.
-
-<img alt="Imported data is excluded due to applied filters" src={useBaseUrl('img/imported-data-is-excluded-due-to-filters.png')} />
+Whenever imported data cannot be included due to the applied filters, you will see a warning bubble stating “Imported data is excluded due to applied filters” in the corresponding report. Note that this does not affect displaying native data in any way.
 
 ### Goals and custom properties
 

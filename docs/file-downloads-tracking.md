@@ -5,7 +5,9 @@ description: "See which files visitors download and from which pages. Plausible 
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+<div class="browser">
 <img alt="Track file downloads" src={useBaseUrl('img/track-file-downloads.png')} />
+</div>
 
 :::note
 If you use the file downloads tracking feature, then these count towards your billable monthly pageviews.
@@ -24,7 +26,9 @@ File downloads tracking is essential for many site owners and Plausible helps yo
 
 You can enable **File downloads** as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the **Site Installation** area of the **General** section in your [site settings](website-settings.md).
 
+<div class="browser">
 <img alt="Enable outbound file downloads tracking during onboarding" src={useBaseUrl('img/onboarding-enable-file-downloads-tracking.png')} />
+</div>
 
 After you enable file downloads tracking on your site, all the file downloads will start being tracked and will be displayed in the **Goals** tab of your Plausible Analytics dashboard. You'll see the **File Download** goal as soon as the first file download has been tracked.
 

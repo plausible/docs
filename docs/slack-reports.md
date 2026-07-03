@@ -1,5 +1,6 @@
 ---
 title: Get reports and traffic spike notifications into your Slack channel
+sidebar_label: Slack reports
 description: "Send Plausible Analytics weekly reports, monthly summaries, and traffic spike alerts directly to a Slack channel using Slack's email integration."
 ---
 
@@ -19,7 +20,7 @@ You can read about additional options [Slack gives you for your email here](http
 
 Now go into your Plausible account. 
 
-Within the **Email reports** section of your website settings you can decide to enable weekly (every Monday) and/or monthly (every 1st day of the month) reports to be sent to your new Slack channel email address. 
+Within the **Email reports** section of your website settings you can decide to enable weekly (every Monday) and/or monthly (every 1st day of the month) reports to be sent to your new Slack channel email address. Full explanation of the email report settings is available in the [email reports section of the docs](https://plausible.io/docs/email-reports).
 
 Add your Slack channel email address as an individual recipient into the **Report recipients** field and click on the **Add recipient** button. 
 
@@ -27,11 +28,9 @@ You can set the reports to be sent to as many Slack email addresses as you want.
 
 All the stats will display in your Slack channel and there's no need to go to the Plausible Analytics website to view them.
 
-<img alt="Set reports to be sent to your new Slack channel email address" src={useBaseUrl('img/email-reports.png')} />
+## Enable traffic spike/drop notifications to be sent to your Slack channel email address
 
-## Enable traffic spike notifications to be sent to your Slack channel email address
-
-Within the **Email reports** section of your website settings in your Plausible account, you can decide to enable traffic spike notifications to be sent directly to your Slack channel email address. 
+Within the **Email reports** section of your website settings in your Plausible account, you can decide to enable traffic spike/drop notifications to be sent directly to your Slack channel email address. Full explanation of the traffic spike/drop notifications is available in the [traffic spikes section of the Plausible Analytics documentation](https://plausible.io/docs/traffic-spikes).
 
 This will help notify you when your site has an unusually high number of current visitors. The email will include the number of current visitors and the top referral sources of current visitors. 
 
@@ -44,5 +43,3 @@ All the stats will display in your Slack channel and there's no need to go to th
 You also need to set the **Current visitor threshold** for your traffic spike notifications and click on the **Save threshold** button. The default threshold is at 10 current visitors but you can set it as low or as high as you want depending on your usual traffic numbers. 
 
 You will get the traffic spike notification when your site reaches the threshold you've set. You'll get the notification for an individual website no more than twice in a 24 hour period.
-
-<img alt="Get traffic spike notifications to your Slack channel email address" src={useBaseUrl('img/traffic-spike-notifications.png')} />

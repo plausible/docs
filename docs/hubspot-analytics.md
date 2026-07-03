@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
-title: How to add Plausible Analytics to your HubSpot site
+title: Adding Plausible to HubSpot
+sidebar_label: HubSpot
 description: "Add Plausible Analytics to your HubSpot website by injecting the tracking script site-wide. Works across all pages without cookies."
 ---
 
@@ -23,3 +24,9 @@ In HubSpot you can inject code across your entire site or on an individual post 
 * After adding your code, click on the **Save** button.
 
 Now you can go to your website and verify whether Plausible Analytics script has been added and to your Plausible Analytics account to see whether the stats are being tracked. See here [how to verify the integration](troubleshoot-integration.md).
+
+## What's next?
+
+- [Set up pageview goals](pageview-goals.md) for your thank-you pages to track form submission conversions without writing any code
+- [Set up custom event goals](custom-event-goals.md) to track button clicks and other interactions across your HubSpot pages
+- [Invite your team](users-roles.md) so marketing colleagues can access the dashboard directly

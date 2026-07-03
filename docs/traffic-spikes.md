@@ -1,5 +1,6 @@
 ---
 title: Get traffic spike or drop notifications through email
+sidebar_label: Traffic spike & drop alerts
 description: "Get an email alert when your site traffic spikes or drops below a threshold. Set custom visitor limits in Plausible and receive notifications up to twice per day."
 ---
 
@@ -8,8 +9,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 Within the **Email reports** section of your website settings you can decide to enable traffic spike or drop notifications to be sent directly through email. 
 
 This will help notify you when your site has an unusually high or low volume of traffic. 
-
-<img alt="Get traffic spike notifications via email" src={useBaseUrl('img/traffic-spike-notifications.png')} />
 
 ## Set the current visitor threshold for the traffic spike notifications
 
@@ -21,13 +20,17 @@ The email will include the number of current visitors, the top referral sources,
 
 All the stats are embedded directly into the email and there's no need to go to the Plausible Analytics website to view them. There are no attachments, no PDFs and no links to click on in the email either.
 
+<div class="browser">
+<img alt="Get traffic spike notifications via email" src={useBaseUrl('img/traffic-spike-notifications.png')} />
+</div>
+
 ## Set the unique visitor threshold for the traffic drop notifications
 
-You need to set the **12 hour visitor threshold** for your traffic drop notifications and click on the **Save threshold** button. The default threshold is at 1 unique visitor in the last 12 hours, but you can set it as high as you want depending on your usual traffic numbers. 
+You need to set the **12 hour visitor threshold** for your traffic drop notifications and click on the **Save threshold** button, as shown in the screenshot above. 
+
+The default threshold is at 1 unique visitor in the last 12 hours, but you can set it as high as you want depending on your usual traffic numbers. 
 
 You will get the traffic drop notification when your site falls below the threshold you've set. You'll get the notification for an individual website no more than twice in a 24-hour period.
-
-<img alt="Get traffic drop notifications via email" src={useBaseUrl('img/traffic-drop-notifications.png')} />
 
 ## Set traffic spike or drop notifications to be sent to multiple recipients
 
@@ -35,6 +38,8 @@ Traffic spike or drop notifications can be set to be sent to multiple recipients
 
 You can set the notifications to be sent to as many people as you want. You can remove individual recipients or completely stop the notifications at any time.
 
-P.S. If you're dealing with a traffic drop and need some tips on how to investigate it using your Plausible dashboard, take a look at our [blog post](https://plausible.io/blog/drop-in-website-traffic).
-
 Once you've identified the cause of a spike or drop, you can [add an annotation](annotations.md) to the chart so you and your team have a permanent record of what happened and when.
+
+P.S. If you're dealing with a traffic drop or spike and need some tips on how to investigate it, take a look at the following blog posts: 
+* [How to investigate a drop in your website traffic?](https://plausible.io/blog/drop-in-website-traffic)
+* [How to investigate a spike in your website traffic?](https://plausible.io/blog/spike-in-website-traffic)

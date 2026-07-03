@@ -1,5 +1,6 @@
 ---
 title: Proxying Plausible through Laravel
+sidebar_label: Laravel
 description: "How to proxy Plausible Analytics through a Laravel application. Route the analytics script and events through your own domain as a first-party connection."
 ---
 
@@ -86,9 +87,7 @@ Route::get('/js/script.js', [PlausibleProxyController::class, 'script'])->name('
 Route::post('/api/event', [PlausibleProxyController::class, 'event'])->name('plausible.event');
 ```
 
-:::warning
 Use generic path names. Paths like `/analytics`, `/stats` or `/plausible` may get blocked by adblockers.
-:::
 
 
 ## Step 4: Exempt the event route from CSRF

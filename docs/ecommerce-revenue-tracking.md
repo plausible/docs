@@ -4,8 +4,11 @@ description: "Assign revenue values to custom events in Plausible to see which c
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import PlanFeatureNote from '@site/src/components/PlanFeatureNote';
 
 Track which marketing campaigns and landing pages drive the most revenue by assigning monetary values to your custom events.
+
+<PlanFeatureNote feature="ecommerce-revenue-tracking" plan="business" label="Revenue tracking" />
 
 When you create a new custom event, you can optionally assign a monetary value to it. Our revenue tracking supports multi-currencies too. You can send data in any local currency that the purchase is made in. When using revenue tracking, you'll be able to see these metrics in your dashboard:
 
@@ -17,7 +20,9 @@ When you create a new custom event, you can optionally assign a monetary value t
 
 Total revenue shows your overall performance. Average revenue helps you identify which sources or campaigns drive high-value customers rather than just high volume. A source sending fewer but higher-value orders can be worth more than a high-volume source with a low average order value.
 
+<div class="browser">
 <img alt="Ecommerce revenue goal top graph" src={useBaseUrl('img/plausible-ecommerce-revenue-top-graph.png')} />
+</div>
 
 The revenue metrics are fully filterable. For instance, you can see the total or average revenue for a particular custom event per any dimension such as a specific date, referral source, marketing campaign, entry page, country or device.
 
@@ -51,7 +56,9 @@ If you want to track ecommerce revenue, here's how to enable it:
 
 Go to your [site settings](website-settings.md) and in the **Goals** section click on the **Add goal** button. Choose **Custom event** as the goal trigger, enter the goal name in the **Event name** field, switch to **Enable Revenue Tracking** and set the base currency of your choice. This currency will be used for total and average revenue metrics in the dashboard. Note that the currency for a specific event cannot be changed later.
 
+<div class="browser">
 <img alt="Add goal and choose your currency" src={useBaseUrl('img/plausible-ecommerce-currency-goal.png')} />
+</div>
 
 ### Step 2: Send the revenue data from your site
 
@@ -73,7 +80,9 @@ Or using the [Events API](events-api.md) directly.
 
 Custom events and revenue goals are listed at the bottom of your dashboard and will appear as soon as the first conversion has been tracked.
 
+<div class="browser">
 <img alt="Ecommerce revenue tracking goal" src={useBaseUrl('img/plausible-ecommerce-revenue-goal.png')} />
+</div>
 
 :::tip You can add more details to your revenue tracking by using custom properties
 This lets you track product names, coupon codes, if customers are logged in and more. [Learn more](/custom-props/introduction.md).
@@ -101,13 +110,13 @@ For subscription upgrades, fire on the confirmation page after payment is proces
 
 ## Integrating with WooCommerce
 
-If you're running WooCommerce, you can use our WordPress plugin. [Plausible WordPress plugin](https://wordpress.org/plugins/plausible-analytics/) has a built-in support for tracking of WooCommerce store activity including:
+If you're running WooCommerce, you can use our [WordPress plugin](https://plausible.io/wordpress-analytics-plugin). It has built-in support for tracking of WooCommerce store activity including:
 
 * Tracking of several custom events including actions such as add to cart, complete purchase and revenue
 * Tracking of several custom properties including product name and product category
-* A purchase funnel looking at the user journey from viewing a product to completing a purchase
+* A purchase funnel tracking drop-off from viewing a product to completing a purchase
 
-All this is done automatically for you by our plugin and you don't need to manually set up any custom events nor make any changes to the code of your store. Check here for [more details about our WordPress plugin](https://plausible.io/wordpress-analytics-plugin). Check here to learn more about [WooCommerce site tracking with Plausible](https://plausible.io/blog/woocommerce-analytics-plugin).
+All this is done automatically for you by our plugin and you don't need to manually set up any custom events nor make any changes to the code of your store. Check here to learn more about [WooCommerce site tracking with Plausible](https://plausible.io/blog/woocommerce-analytics-plugin).
 
 ## Integrating with Shopify
 
@@ -138,7 +147,8 @@ Use standard ISO 4217 codes: USD, EUR, GBP, SEK and so on. Incorrect codes will 
 
 ## What's next?
 
-- Set up a [funnel](funnel-analysis.md) to follow the purchase journey from landing page to checkout
+- Set up a [funnel](funnel-analysis.md) to measure drop-off from landing page to checkout
+- Explore open-ended purchase paths with [user journeys](user-journeys.md) to see what visitors do before buying
 - Use [custom properties](custom-props/introduction.md) to break down revenue by product name, category or coupon code
 - [Filter and segment](filters-segments.md) your dashboard to see revenue by source, campaign, country or device
 - Query revenue data programmatically using the [Stats API](stats-api.md)

@@ -26,3 +26,5 @@ Don't see this email in your inbox? Please check your spam folder and whether yo
 <div class="browser">
     <img alt="Activate your Plausible Analytics account" src={useBaseUrl('img/v2/activate-your-account.webp')} />
 </div>
+
+Once verified, your 30-day trial starts immediately. [Register your account →](https://plausible.io/register)

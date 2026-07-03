@@ -1,5 +1,6 @@
 ---
 title: Proxying Plausible through Nginx
+sidebar_label: Nginx
 description: "How to proxy Plausible Analytics through Nginx. Configure reverse proxy rules in your existing Nginx setup to serve analytics from your own domain."
 ---
 

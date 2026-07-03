@@ -1,9 +1,11 @@
 ---
 title: Add the Plausible tracking script
+sidebar_label: Add the tracking script
 description: "Add the Plausible tracking snippet to your site's header. One lightweight script, no cookies, no personal data. Works with WordPress, GTM and most site builders."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import CtaBox from '@site/src/components/CtaBox';
 
 To integrate your website with Plausible Analytics, you need to insert a Plausible tracking snippet into the header section of your site. Place the snippet within the `<head> … </head>` tags.
 
@@ -12,6 +14,12 @@ We display your snippet during the process of adding a new site to your account.
 Click on the menu icon on the right-hand side of the site you'd like to get the snippet for and choose **Settings** to enter the [site settings](website-settings.md). Then scroll down to the **Site Installation** area of the **General** section. Click on the **Review Installation** button to get the installation details including your snippet.
 
 There you can also enable any [optional enhanced measurements](script-extensions.md).
+
+<CtaBox
+  headline="Need your site-specific snippet? Add your site to Plausible first"
+  link="https://plausible.io/register"
+  linkText="Create free account"
+/>
 
 <div class="browser">
     <img alt="Add script extensions and verify your installation" src={useBaseUrl('img/v2/add-script-extensions-verify-installation.webp')} />
@@ -40,3 +48,10 @@ We've put together [several other guides and plugins](integration-guides.md) tha
 ## How to check if Plausible Analytics is installed correctly
 
 After adding the Plausible snippet to your website, you can use our testing tool to verify that the snippet is installed correctly and the integration is working. Have some issues with the integration? Take a look at [our guide to troubleshooting your Plausible Analytics integration](troubleshoot-integration.md).
+
+## What's next?
+
+- [Verify the snippet is installed correctly](troubleshoot-integration.md) before assuming data is being collected
+- [Set up goals](goal-conversions.md) to track signups, button clicks, purchases or any other conversion that matters to your site
+- [Import your Google Analytics history](google-analytics-import.md) so your Plausible dashboard starts with your full data record
+- [Invite your team](users-roles.md) so colleagues can access the dashboard without sharing your login

@@ -3,12 +3,15 @@ name: Docusaurus site CI
 on:
   push:
     branches: [ master, upgrade ]
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
 
     - uses: actions/setup-node@v3
       with:

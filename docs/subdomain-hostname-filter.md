@@ -10,7 +10,7 @@ This page covers two common multi-domain setups:
 - **Subdomains** such as `docs.yourdomain.com`, `app.yourdomain.com` and `www.yourdomain.com` under a single domain
 - **Separate domains** such as country or language variants like `example.de` and `example.nl`
 
-Plausible helps you simplify tracking across both. You can view the visitor journey end-to-end from the landing on your primary domain name to a conversion on the subdomain. The original referral source will stay attributed to that visitor even when the visitor moves from one of your subdomains to another.
+Plausible helps you simplify tracking across both. You can trace traffic from a landing on your primary domain all the way to a conversion on the subdomain. The original referral source will stay attributed to that visitor even when the visitor moves from one of your subdomains to another.
 
 ## Which setup should I use?
 
@@ -23,9 +23,9 @@ Plausible helps you simplify tracking across both. You can view the visitor jour
 
 Whatever you choose, [Consolidated Views](consolidated-views.md) let you combine any of your sites into a single global dashboard at any time.
 
-Here's how to track the user journey across your domain name and its subdomains.
+Here's how to set up tracking across your domain name and its subdomains.
 
-## How to track the user journey across domain and subdomains
+## How to set up tracking across domain and subdomains
 
 1. [Add your domain name](add-website.md) (`yourdomain.com`) as a site to your Plausible account
 
@@ -33,7 +33,7 @@ Here's how to track the user journey across your domain name and its subdomains.
 
 3. Insert that same tracking snippet on both the main domain name and all of its subdomains. This keeps the visitor session active between your primary site and its subdomains
 
-4. Set up [custom events](custom-event-goals.md) or [pageview goals](pageview-goals.md) for the actions you want to track. You can even follow the user journey [in a funnel](funnel-analysis.md). Any conversions that happen on your subdomains will be attributed to the original referral source that brought the visitor to your main domain. There's no need to filter out internal referral sources as this eliminates the issue where you might see your subdomains as a major source of traffic
+4. Set up [custom events](custom-event-goals.md) or [pageview goals](pageview-goals.md) for the actions you want to track. You can even measure multi-step conversion paths [with funnels](funnel-analysis.md) or trace the paths visitors actually take [with user journeys](user-journeys.md). Any conversions that happen on your subdomains will be attributed to the original referral source that brought the visitor to your main domain. There's no need to filter out internal referral sources as this eliminates the issue where you might see your subdomains as a major source of traffic
   
 5. Click on any specific referral source in your dashboard to see the number of conversions and the conversion rate (CR) of that referral source for any of your goal completions regardless of the hostname. Or click on any goal in your dashboard to see the number of conversions and the CR of that specific goal for any referral source or landing page
 
@@ -41,11 +41,12 @@ Here's how to track the user journey across your domain name and its subdomains.
 
 You can also filter your dashboard by hostname. Your dashboard will show all traffic across all your domains by default but filtering by a subdomain allows you to segment your traffic and view stats from a specific subdomain only.
 
-Filtering by hostname comes in handy also if you have pages with identical page paths on different sites (say `yourdomain.com/best-page/` and `docs.yourdomain.com/best-page/`). These identical page paths will be listed under one entry (`/best-page/`) in the **Top Pages** tab on your global dashboard with the stats combined into that one entry. When filtering by hostname, you can see the number of visitors and pageviews on `yourdomain.com/best-page/` separately from the number of visitors and pageviews on `docs.yourdomain.com/best-page/`.
+If you run one dashboard across several subdomains, pages that share a path are grouped together by default. For example `yourdomain.com/best-page/` and `docs.yourdomain.com/best-page/` appear as a single `/best-page/` entry in the **Top Pages** tab with their stats combined. You have two ways to tell them apart:
+
+* **[Break the Pages report down by URL](top-pages.md#break-down-by-full-url)** to see every subdomain's pages side by side, no filter needed.
+* **Filter by hostname** (see below) to focus on one subdomain at a time and view its stats on their own.
 
 To filter by hostname, click on [the **Filter** button](filters-segments.md) in the top-right of your dashboard and choose the **Hostname** entry within the menu.
-
-<img alt="Filter by subdomain" src={useBaseUrl('img/filter-by-hostname-or-subdomain.png')} />
 
 We'll show you the list of all the hostnames we have recorded in the chosen time range:
 
@@ -53,7 +54,9 @@ We'll show you the list of all the hostnames we have recorded in the chosen time
 * You can exclude the traffic from one or multiple hostnames ("is not")
 * You can segment by all hostnames that contain any particular word ("contains")
 
+<div class="browser">
 <img alt="List of subdomains" src={useBaseUrl('img/list-of-hostnames-and-subdomains.png')} />
+</div>
 
 :::tip Want to filter your traffic by a subfolder or directory?
 You can do this by using the filter button or by setting up a pageview goal. [See how here](pageview-goals.md#how-to-group-your-pages)

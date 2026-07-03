@@ -17,7 +17,9 @@ Here's how to change your Plausible account password:
 * If you have enabled the two-factor authentication (2FA), you'll also need to verify the password change by inserting the security code provided by your authenticator app.
 * Note that after you successfully change your password, we will automatically log out any of your active sessions on your other devices.
 
+<div class="browser">
 <img alt="Change your account password" src={useBaseUrl('img/account-settings-reset-password.png')} />
+</div>
 
 ## How to reset your Plausible account password
 
@@ -27,5 +29,3 @@ Forgot your Plausible account password? Here's how to reset your Plausible accou
 * Enter the email address you registered on your account and click on the **Send reset link** button.
 * Look for an email with the subject line **Plausible password reset** and click on the link within that email to change your account password.
 * Note that after you successfully reset your password, we will automatically log out [any of your active sessions](login-management.md) on your other devices.
-
-<img alt="Reset your account password" src={useBaseUrl('img/reset-password.png')} />

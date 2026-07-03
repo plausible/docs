@@ -13,15 +13,18 @@ These metrics help you assess traffic quality beyond raw visitor counts. A sourc
 
 Using [the **Filter** button on the top of your dashboard](filters-segments.md), you can filter the stats by multiple channels, sources or UTM tags simultaneously for more powerful traffic segmentation. You can also exclude traffic from a specific channel, referral source or UTM tag.
 
+<div class="browser">
 <img alt="Top Referrers - multiple filters" src={useBaseUrl('img/top-referrers-filtering-multiple-filters.png')} />
+</div>
 
 ## Channels
 
 In the **Channels** tab, you can view a breakdown of your sources categorized into high-level groups such as **Organic Social**, **Paid Search** and **Email**. By clicking on any individual channel, you can see a detailed list of the specific sources within that channel that are driving traffic to your site. Below are the definitions and descriptions for each channel:
 
-| Channel                             | Definition                     |
-| :---------------------------------- | :----------------------------- |
+| <div style={{minWidth: '200px'}}>Channel</div> | Definition |
+| :--- | :--- |
 | Affiliates                          | `Medium` is "affiliate"             |
+| AI Assistants                       | `Source` is a known AI assistant tool such as ChatGPT, Claude, Perplexity, Gemini, Copilot and others |
 | Audio                               | `Medium` is "audio"                 |
 | Cross-network                       | `Medium` is "cross-network"          |
 | Direct                              | `Source` is "(direct)" **AND** `Medium` is "(not set)" or "(none)"             |
@@ -40,11 +43,13 @@ In the **Channels** tab, you can view a breakdown of your sources categorized in
 | Referral                            | `Medium` is "referral", "app" or "link"            |
 | SMS                                 | `Source` is "sms" **OR** `Medium` is "sms"         |
 
-We align our channel lists and definitions closely with Google Analytics to make your transition to Plausible as seamless as possible. However, we strive to stay more up-to-date with newer sites and platforms. For example, in Plausible, Temu is categorized as a shopping site, Perplexity as a search site and Discord as a social site.
+We align our channel lists and definitions closely with Google Analytics to make your transition to Plausible as seamless as possible.
 
 Please note that channel groupings and definitions may evolve as the market changes. We will keep this list updated to reflect any adjustments.
 
+<div class="browser">
 <img alt="Channels tab in Plausible Analytics showing traffic breakdown by acquisition channel such as Organic Search, Organic Social and Direct" src={useBaseUrl('img/top-sources-channels.png')} />
+</div>
 
 ## Sources
 
@@ -52,7 +57,9 @@ In the **Sources** tab, you can see the full list of your referral sources such 
 
 Note that browsers only send the domain name of the referrer and not the actual URL. If `thatblog.com/one-post/` sends you visitors, you will see `thatblog.com` in your sources list but won’t see the exact post URL itself. [See more here](https://plausible.io/blog/referrer-policy).
 
+<div class="browser">
 <img alt="Sources tab in Plausible Analytics listing referral sources such as Google, Facebook and Reddit ranked by unique visitors" src={useBaseUrl('img/top-sources-sources.png')} />
+</div>
 
 ### No need to manually exclude unwanted sources
 
@@ -60,7 +67,7 @@ With Plausible, there's no need for you to manually exclude unwanted referral so
 
 Referral sources are counted only when they start a new session on your site. This prevents external domains such as payment gateways showing up in the list of sources when for instance visitors briefly leave your site to make a payment before returning back. The source that brought the visitor to your site in the first place will be the one attributed for that conversion.
 
-If you expect UTM attribution but nothing appears in the **Campaigns** tab, see [UTM parameters not appearing in Campaigns](troubleshoot-integration.md#utm-parameters-are-in-the-url-but-not-showing-in-the-campaigns-tab).
+If you expect UTM attribution but nothing appears in the **Campaigns** tab, see [UTM parameters not appearing in Campaigns](troubleshoot-integration.md#utm-parameters-not-appearing-in-campaigns).
 
 ### Consolidation of duplicate sources
 
@@ -94,7 +101,7 @@ Are you running paid marketing campaigns on Facebook, Google and other ad platfo
 
 Here's an example of how to tag your links: `yourdomain.com?utm_source=adwords&utm_medium=ppc&utm_campaign=novemberoffer&utm_content=sustainability&utm_term=discount`
 
-Use the [Plausible UTM builder](https://plausible.io/utm-builder) to generate tagged links without doing it manually. Already have a link and want to check it for issues? Use the [UTM checker](https://plausible.io/utm-checker) to validate and clean it up. Once your campaigns are running, use the [ad cost calculator](https://plausible.io/ad-cost-calculator) to calculate your CPC, CPM and CPA from your campaign numbers. For naming conventions, session attribution rules and troubleshooting tips, see the [UTM tagging guide](manual-link-tagging.md).
+Use the [Plausible UTM builder](https://plausible.io/utm-builder) to generate tagged links without doing it manually. Already have a link and want to check it for issues? Use the [UTM checker](https://plausible.io/utm-checker) to validate and clean it up. Once your campaigns are running, use the [ad cost calculator](https://plausible.io/ad-cost-calculator) to calculate your CPC, CPM and CPA from your campaign numbers. For naming conventions, session attribution rules and troubleshooting tips, see our [UTM tracking guide](https://plausible.io/blog/utm-tracking-tags).
 
 To isolate your UTM-tagged clicks from other clicks, you can segment the traffic by using the **UTM Medium**, **UTM Source** (here you can also see any traffic tagged with "ref" and "source" parameters), **UTM Campaign**, **UTM Content** and **UTM Term** sections in the **Campaigns** tab.
 
@@ -110,13 +117,15 @@ This is why we recommend using UTM tags when tagging your paid ad campaigns. Whe
 
 ### How to track conversion attribution
 
-Goals and custom events allow you to track actions that you want your visitors to take on your site. Actions such as registering for a trial account, purchasing a product or completing a checkout form of an ecommerce store. By [setting up goals and custom events](goal-conversions.md), you'll be able to follow the visitor journey from a paid ad click to a conversion on your site. 
+Goals and custom events allow you to track actions that you want your visitors to take on your site. Actions such as registering for a trial account, purchasing a product or completing a checkout form of an ecommerce store. By [setting up goals and custom events](goal-conversions.md), you'll be able to attribute conversions back to the paid ad click that brought the visitor to your site. 
 
-Filter your dashboard by a specific goal to see the number of conversions, conversion rate (CR), referrer sources, marketing campaigns and entry pages that are driving conversions. You can also track [ecommerce revenue](ecommerce-revenue-tracking.md) and [set up funnels](funnel-analysis.md). This works even if your site operates [across multiple subdomains](subdomain-hostname-filter.md).
+Filter your dashboard by a specific goal to see the number of conversions, conversion rate (CR), referrer sources, marketing campaigns and entry pages that are driving conversions. You can also track [ecommerce revenue](ecommerce-revenue-tracking.md), [set up funnels](funnel-analysis.md) and [explore user journeys](user-journeys.md). This works even if your site operates [across multiple subdomains](subdomain-hostname-filter.md).
 
 Due to Plausible’s privacy-first approach, which avoids using cookies or long-term identifiers, conversion attribution relies on last-click attribution. This means the referral source of the visit that leads to the purchase is credited for the conversion.
 
+<div class="browser">
 <img alt="Plausible Analytics referral sources report filtered by a custom goal showing conversion rate per traffic source" src={useBaseUrl('img/custom-goal-conversion-rate.png')} />
+</div>
 
 ## How to reduce the volume of dark traffic
 

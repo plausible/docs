@@ -1,11 +1,19 @@
 ---
 title: Embed the dashboard without our branding into your user interface
+sidebar_label: Embed the dashboard
 description: "Embed a Plausible analytics dashboard into your own site or product using an iframe. Unbranded, scoped to a segment and requires no Plausible account to view."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import CtaBox from '@site/src/components/CtaBox';
 
 You can embed your Plausible stats dashboard into any other website using an HTML iframe. This is useful in case you want to showcase your stats on your own website or if you want to [offer Plausible-powered web analytics dashboard (without our branding)](https://plausible.io/white-label-web-analytics) directly in your user interface.
+
+<CtaBox
+  headline="Offer clients a branded analytics dashboard powered by Plausible"
+  link="https://plausible.io/white-label-web-analytics"
+  linkText="White-label analytics"
+/>
 
 ## 1. Create a shared link
 
@@ -29,7 +37,9 @@ Enter your shared link URL, select the theme of the embed dashboard (light, dark
 It's much more convenient than figuring out the hex code for your background color
 :::
 
+<div class="browser">
 <img alt="Generate embed code" src={useBaseUrl('img/embed-dashboard.png')} />
+</div>
 
 ## 3. Paste the embed code into your website
 

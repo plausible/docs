@@ -1,5 +1,6 @@
 ---
 title: Set reports to be sent through email
+sidebar_label: Email reports
 description: "Set up weekly and monthly Plausible Analytics reports delivered by email. Stats are embedded directly in the message, no login or attachments required."
 ---
 
@@ -9,7 +10,9 @@ Within the **Email reports** section of your website settings you can decide to 
 
 All the stats are embedded directly into the email and there's no need to go to the Plausible Analytics website to view them. There are no attachments, no PDFs and no links to click on in the email reports either.
 
+<div class="browser">
 <img alt="Set reports to be sent via email" src={useBaseUrl('img/email-reports.png')} />
+</div>
 
 ## Set email reports to be sent to multiple recipients
 

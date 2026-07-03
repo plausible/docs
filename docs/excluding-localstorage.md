@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
-title: Opt out and exclude your visits from the analytics by setting a localStorage flag in your browser
+title: Exclude yourself via localStorage
+sidebar_label: Exclude yourself via localStorage
 description: "Exclude your own visits from Plausible tracking by setting a localStorage flag in your browser's developer console. No IP address or server changes needed."
 ---
 

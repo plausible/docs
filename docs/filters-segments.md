@@ -3,9 +3,16 @@ title: Filter and segment your audience
 description: "Slice your Plausible data by source, page, location, device or goal. Combine multiple filters into reusable audience segments for faster analysis."
 ---
 
+import CtaBox from '@site/src/components/CtaBox';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Plausible Analytics allows you to easily segment your audience to analyze and understand the different trends. A segment is made up of one or more filters. You can save any segment for quick and convenient access.
+
+<CtaBox
+  headline="Segment your traffic in a simple privacy-first dashboard"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+/>
 
 ## How to filter your dashboard
 
@@ -16,12 +23,6 @@ You can mix and match filters too. So you can click on a referral source, then c
 Your current filters will be displayed on the top of your dashboard. You can click on the name of the existing filter to edit it or on the `x` icon to remove it.
 
 You can remove all your filters by hitting the `Esc` key on your keyboard or by selecting **Clear all filters** in the filters menu (`***`).
-
-<div class="browser">
-    <video autoPlay loop muted controls width="100%">
-        <source src={useBaseUrl('/video/filtering-multiple-filters.mp4')} type="video/mp4" />
-    </video>
-</div>
 
 ## Use the "Filter" button for more powerful segmenting and matching
 
@@ -34,10 +35,6 @@ When you’re trying to understand and analyze your traffic, the **Filter** butt
 ### Filter by multiple sources, countries, pages and more
 
 You can filter your stats by multiple sources, countries, pages and more, all at once. This is useful if you want to group specific geographical regions, separate organic search traffic from other sources or segment your audience to your needs.
-
-<div class="browser">
-    <img alt="Multiple filters" src={useBaseUrl('img/v2/filter-segments-multiple-filters.webp')} />
-</div>
 
 ### Search for any metric
 
@@ -53,10 +50,6 @@ You can exclude specific segments of traffic and only display the traffic that i
 
 Click on the **Filter** button, then select **Country** as your metric, choose "is not" (or "does not contain" as an alternative) and then select (or type) the name of the country you want to exclude. You can do the same for referral sources or any of the other metrics.
 
-<div class="browser">
-    <img alt="Exclude traffic" src={useBaseUrl('img/v2/exclude-traffic.webp')} />
-</div>
-
 ### Group relevant pages, marketing campaigns and more
 
 Want to group all your blog posts and analyze the traffic to the blog separately from the rest of your site? Or exclude traffic that has visited a specific section of your site such as your logged in pages or your order confirmation page? Or do you want to group all the traffic from a specific set of marketing campaigns?
@@ -67,10 +60,6 @@ You can group pages, sources, campaigns and more by using the **Filter** button.
 Would you like your grouped pages to be permanently displayed in your dashboard? You can do so by using [pageview goals](pageview-goals.md).
 :::
 
-<div class="browser">
-    <img alt="Filter contains" src={useBaseUrl('img/v2/filter-contains.webp')} />
-</div>
-
 ### Filter by subdomain or hostname
 
 Want to filter by hostname so you can segment your stats to a specific subdomain only? You can do so by using the **Filter** button and choosing the **Hostname** entry within the menu.
@@ -79,17 +68,13 @@ You can choose to segment your traffic by any one specific hostname from the lis
 
 Learn more on how Plausible [handles cross-subdomain tracking here](subdomain-hostname-filter.md).
 
-<div class="browser">
-    <img alt="List of subdomains" src={useBaseUrl('img/v2/list-of-hostnames-and-subdomains.webp')} />
-</div>
-
 ## How to save a segment
 
 Click on any metric in the dashboard or use the **Filter** button to filter your audience to a desired segment. After completing your segment, click on the **Save as segment** button that is visible in the filters menu (`***`) that you see when your dashboard is filtered.
 
 <div class="browser">
     <video autoPlay loop muted controls width="100%">
-        <source src={useBaseUrl('/video/create-segment.mp4')} type="video/mp4" />
+        <source src={useBaseUrl('/video/create-segment-in-plausible.mp4')} type="video/mp4" />
     </video>
 </div>
 
@@ -111,12 +96,13 @@ Note that the **Segments** heading will only be visible in the **Filter** button
 
 Open a previously saved segment and click its name in the top line of your Plausible dashboard. Then, select **Edit segment** to add or remove filters.
 
-<div class="browser">
-    <video autoPlay loop muted controls width="100%">
-        <source src={useBaseUrl('/video/edit-segment.mp4')} type="video/mp4" />
-    </video>
-</div>
-
 To save your changes, click the **Update segment** button. Use the arrow next to this button to save the existing segment as a brand new segment (**Save as a new segment**) or to delete the existing segment (**Delete segment**).
 
 P.S. We've written an in-depth guide on effective use of audience segmentation, you can [read it here](https://plausible.io/audience-segmentation).
+
+## What's next?
+
+- [Set up goals](goal-conversions.md) so you can filter your dashboard by conversion and see which sources and campaigns drive the most signups or purchases
+- [Compare two time periods](compare-stats.md) alongside your segment filters to understand how a specific audience's behavior has changed over time
+- [Export filtered stats](export-stats.md) to CSV to share a specific segment's data outside the dashboard
+- [Create a shared link](shared-links.md) pre-filtered to a specific segment for stakeholders who only need to see part of your data

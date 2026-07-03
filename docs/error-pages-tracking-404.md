@@ -48,7 +48,9 @@ description: "Find broken links and missing pages on your site. Add a small code
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+<div class="browser">
 <img alt="How to track 404 error pages" src={useBaseUrl('img/track-404-error-pages.png')} />
+</div>
 
 :::note
 If you use the 404 error pages tracking feature, then these count towards your billable monthly pageviews.
@@ -82,13 +84,15 @@ The quickest way to start tracking 404 error pages is to use our [official WordP
 
 To configure a goal, go to [your website's settings](website-settings.md) in your Plausible account and visit the **Goals** section. You should see a list of current goals with a prompt to add a goal.
 
-<img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
-
 Click on the **+ Add goal** button to go to the goal creation form.
 
 Select `Custom event` as the goal trigger and enter `404` as the name of the custom event you are triggering. The 404 goal works the same way as any other [custom event goal](custom-event-goals.md).
 
-After clicking on the **Add goal** button the goal will be created and you'll be taken back to the Goals page.
+<div class="browser">
+<img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
+</div>
+
+After clicking on the **Add goal** button, the goal will be created and you'll be taken back to the Goals page.
 
 ## Step 3: See all the visits on 404 error pages in your dashboard
 

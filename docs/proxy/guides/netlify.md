@@ -1,5 +1,6 @@
 ---
 title: Proxying Plausible through Netlify
+sidebar_label: Netlify
 description: "How to proxy Plausible Analytics through Netlify. Use Netlify redirects to serve the analytics script and events as a first-party connection from your domain."
 ---
 

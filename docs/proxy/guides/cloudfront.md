@@ -1,6 +1,7 @@
 ---
 displayed_sidebar: someSidebar
 title: Proxying Plausible through CloudFront
+sidebar_label: CloudFront
 description: "Instructions for proxying Plausible Analytics through CloudFront have moved. See the general proxy guide for up-to-date setup instructions."
 ---
 

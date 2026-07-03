@@ -3,13 +3,12 @@ title: Goal conversions
 description: "Track signups, purchases, clicks and other key actions in Plausible. Set up pageview or custom event goals to measure conversions and referral sources."
 ---
 
+import CtaBox from '@site/src/components/CtaBox';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-
-<img alt="Goal conversions overview in Plausible Analytics showing a list of configured goals with conversion counts and conversion rates" src={useBaseUrl('img/goal-display.png')} />
 
 Goals allow you to track actions that you want your visitors to take on your site. Actions such as signing up to a newsletter, clicking on a **Download** button, registering for a trial account, purchasing a product, clicking on an external link, downloading a file or completing a checkout form of an ecommerce store.
 
-By setting up custom events or pageviews as goals, you can track the number of conversions, conversion rate, referrer sources and entry pages that are driving conversions and the top pages that people convert on. You can also follow the visitor journey using funnels. For definitions of conversion rate, unique conversions and total conversions, see the [metrics definitions page](metrics-definitions.md).
+By setting up custom events or pageviews as goals, you can track the number of conversions, conversion rate, referrer sources and entry pages that are driving conversions and the top pages that people convert on. You can also measure drop-off across a defined sequence of steps using funnels, or explore the paths visitors actually take using user journeys. For definitions of conversion rate, unique conversions and total conversions, see the [metrics definitions page](metrics-definitions.md).
 
 Once a goal is configured, it appears in the **Goals** section of your dashboard after the first conversion is recorded. Then you can click on the particular goal to filter your dashboard by it and get all the insights on the traffic that has converted on that specific goal.
 
@@ -39,7 +38,11 @@ Plausible supports the following goal types:
     </tr>
     <tr>
       <td><a href="funnel-analysis">Funnel analysis</a></td>
-      <td>Follow the visitor journey from a landing page to a conversion in order to uncover possible issues, optimize your site and increase the conversion rate</td>
+      <td>Define a sequence of steps and measure how many visitors complete each one. See where people drop off to uncover issues and improve your conversion rate</td>
+    </tr>
+    <tr>
+      <td><a href="user-journeys">User journeys</a></td>
+      <td>Explore the paths visitors actually take on your site. Start from any page or event to see what they did next, or work backwards from a conversion to see what led them there</td>
     </tr>
     <tr>
       <td><a href="ecommerce-revenue-tracking">Ecommerce revenue tracking</a></td>
@@ -71,3 +74,9 @@ Plausible supports the following goal types:
     </tr>
   </tbody>
 </table>
+
+<CtaBox
+  headline="Track goals and conversions without cookies or personal data"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+/>

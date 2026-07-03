@@ -129,6 +129,12 @@ html[data-theme='dark'] {
 }
 
 @media (max-width: 996px) {
+  /* The desktop login/dashboard navbar item overlaps the search icon on mobile.
+     The hamburger menu already serves these links, so hide the top-bar variant. */
+  .navbarLoginStatusDesktop {
+    display: none !important;
+  }
+
   .navbar__toggle {
     margin-right: 1rem;
   }
@@ -366,12 +372,22 @@ html[data-theme='dark'] {
   --ra-admonition-icon-color: var(--ifm-color-gray-900);
 }
 
+.alert--warning a,
+.alert--warning a:hover {
+  color: var(--indigo-700);
+}
+
 [data-theme='dark'] .alert--warning {
   color: var(--ifm-color-gray-900);
 }
 
 [data-theme='dark'] .alert--warning svg {
   fill: var(--ifm-color-gray-900);
+}
+
+[data-theme='dark'] .alert--warning a,
+[data-theme='dark'] .alert--warning a:hover {
+  color: var(--indigo-700);
 }
 
 .code-button {
@@ -433,7 +449,28 @@ html[data-theme='dark'] {
 
 /* footer */
 .footer--dark {
-  --ifm-footer-background-color: var(--zinc-800);
+  --ifm-footer-background-color: #1f2937;
+  --ifm-footer-link-color: #d1d5db;
+  --ifm-footer-link-hover-color: #ffffff;
+  --ifm-footer-title-color: #9ca3af;
+}
+
+.footer__title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #9ca3af;
+}
+
+.footer__link-item {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  color: #d1d5db;
+}
+
+.footer__link-item:hover {
+  color: #ffffff;
 }
 
 [class*="footerLogoLink"] {
@@ -441,7 +478,7 @@ html[data-theme='dark'] {
 }
 
 [class*="footerLogoLink"]:hover {
-  opacity: 0.6 !important;
+  opacity: 0.7 !important;
 }
 
 .footer__logo-image {
@@ -450,9 +487,10 @@ html[data-theme='dark'] {
 }
 
 .footer__copyright {
-  padding-top: 2rem;
+  padding-top: 1rem;
   text-align: center;
-  color: var(--zinc-400);
+  font-size: 0.875rem;
+  color: #9ca3af;
 }
 
 /* Search modal */
@@ -632,4 +670,120 @@ html[data-theme='dark'] {
 
 .docs-card-full {
   grid-column: 1 / -1;
+}
+
+/* Inline CTA box */
+.cta-box {
+  margin: 1.5rem 0;
+  padding: 1.25rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--ifm-color-primary-lighter);
+  background-color: var(--ifm-color-primary-lightest);
+}
+
+.cta-box p {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--ifm-font-color-base);
+}
+
+.cta-box-actions {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.cta-box-primary {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.9rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #ffffff !important;
+  background-color: var(--ifm-color-primary);
+  text-decoration: none !important;
+  border: none;
+  transition: background-color 0.15s ease;
+}
+
+.cta-box-primary:hover {
+  background-color: var(--ifm-color-primary-dark);
+  color: #ffffff !important;
+}
+
+.cta-box-secondary {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.9rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ifm-color-primary) !important;
+  background-color: var(--ifm-background-color);
+  text-decoration: none !important;
+  border: 1px solid var(--ifm-color-primary-lighter);
+  transition: background-color 0.15s ease;
+}
+
+.cta-box-secondary:hover {
+  background-color: var(--ifm-color-primary-lightest);
+}
+
+[data-theme='dark'] .cta-box {
+  background-color: rgba(99, 102, 241, 0.08);
+  border-color: rgba(99, 102, 241, 0.25);
+}
+
+[data-theme='dark'] .cta-box-secondary {
+  background-color: rgba(255, 255, 255, 0.06);
+  border-color: rgba(99, 102, 241, 0.4);
+}
+
+/* Plan feature notice */
+.plan-feature-note {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  margin: 1.25rem 0;
+  border-radius: 0.375rem;
+  border-left: 3px solid var(--ifm-color-primary);
+  background-color: var(--ifm-color-primary-lightest);
+  font-size: 0.875rem;
+}
+
+.plan-feature-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.1rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: var(--ifm-color-primary);
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.plan-feature-text {
+  color: var(--ifm-font-color-base);
+  font-weight: 500;
+}
+
+.plan-feature-link {
+  font-weight: 600;
+  white-space: nowrap;
+  text-decoration: none !important;
+}
+
+.plan-feature-link:hover {
+  text-decoration: underline !important;
+}
+
+[data-theme='dark'] .plan-feature-note {
+  background-color: rgba(99, 102, 241, 0.08);
+  border-left-color: var(--ifm-color-primary-light);
 }

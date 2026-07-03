@@ -4,6 +4,22 @@ window.plausible=window.plausible||function(){(window.plausible.q=window.plausib
 
 plausible.init({
   customProperties: {
-    browser_language: navigator.language || navigator.userLanguage
+    browser_language: navigator.language || navigator.userLanguage,
+    logged_in: document.cookie.includes('logged_in=true')
   }
 })
+
+document.addEventListener('click', function(e) {
+  var a = e.target.closest('a');
+  if (!a) return;
+  var href = a.getAttribute('href') || '';
+  var button = null;
+  if (href.indexOf('plausible.io/register') !== -1) {
+    button = 'Start free trial';
+  } else if (href.indexOf('plausible.io/plausible.io') !== -1) {
+    button = 'View live demo';
+  }
+  if (button) {
+    plausible('CTA Click', {props: {position: 'Inline', type: 'Docs', button: button}});
+  }
+});

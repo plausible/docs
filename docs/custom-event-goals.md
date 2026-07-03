@@ -4,6 +4,7 @@ description: "Track button clicks, signups and any custom action in Plausible us
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import CtaBox from '@site/src/components/CtaBox';
 
 :::note
 If you use the custom events feature, then these count towards your billable monthly pageviews.
@@ -14,9 +15,13 @@ Custom events let you measure button clicks, subscription signups or any other a
 - **Using CSS class names**: add a class to any HTML element you want to track. No JavaScript required. This is the easiest approach for most use cases and is covered in the first section below.
 - **Using JavaScript**: call the `plausible()` function directly for more advanced tracking needs such as dynamic values, conditional logic or tracking non-click interactions. See the [manual JavaScript approach](#trigger-custom-events-manually-with-a-javascript-function) section.
 
-:::tip Quick start options
 If you're using WordPress or Google Tag Manager, you can set up custom events with our [WordPress plugin](https://plausible.io/wordpress-analytics-plugin) or [GTM template](https://plausible.io/gtm-template) without writing code. Plausible also offers automated tracking for [outbound link clicks](outbound-link-click-tracking.md), [file downloads](file-downloads-tracking.md) and [form submissions](form-submissions-tracking.md) straight from your site settings, [pageview goals](pageview-goals.md) for tracking visits to specific pages and [404 error pages](error-pages-tracking-404.md) with a small snippet of code.
-:::
+
+<CtaBox
+  headline="Testing this workflow for your site? Custom events work during the free trial, no credit card required"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+/>
 
 ## Add a CSS class name to the element you want to track on your site
 
@@ -24,15 +29,17 @@ Tag the site element you want to track with a CSS class name. How to do this var
 
 For instance, if you're using WordPress, you can click on any block element you want to track such as a button. This will open up the block menu on the right-hand side of your screen.
 
+<div class="browser">
 <img alt="Click on any WordPress block element you want to track such as a button" src={useBaseUrl('img/wordpress-button-css-class-name.png')} />
+</div>
 
 You can then click on "Advanced" and add a CSS class name in the "Additional CSS class(es)" field. Add the CSS class name in this format: `plausible-event-name=MyEventName`. For instance, if you want to track clicks on a button, you could use: `plausible-event-name=Button+Click`.
 
-:::tip To represent a space character in the event names, you can use a `+` sign
-For example: `plausible-event-name=Button+Click` will display as `Button Click` in your dashboard
-:::
+To represent a space in an event name, use a `+` sign. For example: `plausible-event-name=Button+Click` will display as `Button Click` in your dashboard.
 
+<div class="browser">
 <img alt="Add a CSS class name in the 'Additional CSS class(es)' field" src={useBaseUrl('img/wordpress-css-class-name.png')} />
+</div>
 
 ### You can also add class names directly in HTML
 
@@ -162,8 +169,6 @@ When you send custom events to Plausible, they won't show up in your dashboard a
 
 To configure a goal, go to [your website's settings](website-settings.md) in your Plausible account and visit the **Goals** section. You should see a list of current goals with a prompt to add a goal.
 
-<img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
-
 Click on the **+ Add goal** button to go to the goal creation form.
 
 Select `Custom event` as the goal trigger and enter the name of the custom event you are triggering. The name must match the one you added as a CSS class name on your site for conversions to appear in your analytics dashboard. So in our example where you added a CSS class name `plausible-event-name=Button+Click`, the goal to add to your Plausible account is `Button Click` (plus is replaced by a space).
@@ -172,13 +177,17 @@ Select `Custom event` as the goal trigger and enter the name of the custom event
 
 When creating a custom event goal, you can optionally narrow it down using custom properties. This lets you turn a broad goal into a more specific one by matching only events with certain property values, letting you track something like “Purchase (Business – yearly)” as its own goal rather than grouping all purchases together. [Learn how to set up property-filtered goals](/custom-props/for-custom-events#create-property-filtered-goals).
 
+<div class="browser">
 <img alt="Add your custom event goal" src={useBaseUrl('img/custom-events-in-plausible-setup-modal.png')} />
+</div>
 
 Next, click on the **Add goal** button and you'll be taken back to the Goals page. When you navigate back to your Plausible dashboard, you should see the number of visitors who triggered the custom event. Custom events are listed at the bottom of your dashboard and will appear as soon as the first conversion has been tracked.
 
 If you happen to be sending events to Plausible already, you might see the following message under the **Add goal** button:
 
+<div class="browser">
 <img alt="Add all custom event goals in a single action" src={useBaseUrl('img/add-all-event-goals.png')} />
+</div>
 
 You can click the link to automatically add all the goals you've been sending so far. If you end up not wanting to see some of them on the dashboard, you can simply remove them from the list.
 
@@ -188,11 +197,11 @@ That's it. You can now check out your goal conversions on the dashboard.
 
 To edit a custom event goal, start by locating the custom event goal you want to update in the Goals list. Click on the "Edit goal" button next to it, which will bring up the goal editing form.
 
+<div class="browser">
 <img alt="Edit goal button next to a custom event goal in the Plausible site settings Goals list" src={useBaseUrl('img/edit-goal-button.png')} />
+</div>
 
-From the pop up, you can select a new custom event from the dropdown menu that matches the updated custom event you want to track. You can also edit the display name.
-
-<img alt="Edit custom event goal popup" src={useBaseUrl('img/edit-custom-event-goal-popup.png')} />
+From the pop up, you can select a new custom event from the dropdown menu that matches the updated custom event you want to track. You can also edit the display name. Or add custom properties to filter the goal by specific values.
 
 Once you’ve made the necessary changes, click "Update goal" and your updated settings will be applied immediately.
 
@@ -234,7 +243,45 @@ plausible.init({
 
 ### Create funnels to optimize your conversion rate
 
-After you have the custom events in place, you can start creating [marketing funnels](funnel-analysis.md) to uncover possible issues, optimize your site and increase the conversion rate.
+After you have the custom events in place, you can start creating [marketing funnels](funnel-analysis.md) to uncover possible issues, optimize your site and increase the conversion rate. You can also use the [Explore tab](user-journeys.md) to trace the visitor paths that lead to your custom events.
+
+## Custom event not showing up?
+
+### Have you created the goal in your site settings?
+
+Sending an event from your site is not enough. You must also create a matching goal in your [site settings](website-settings.md) under **Goals**. Until you do, the event is received by Plausible but nothing appears in your dashboard. See the [Create a custom event goal](#create-a-custom-event-goal-in-your-plausible-account) section above for the steps.
+
+### Does the goal name match exactly?
+
+The goal name in your Plausible site settings must match the event name your site is sending, character for character including capitalisation.
+
+The most common mismatch comes from the `+` sign in CSS class names. The class `plausible-event-name=Button+Click` sends the event name `Button Click` (plus replaced by space). If you created a goal called `Button+Click` instead of `Button Click`, nothing will be counted.
+
+### Has the event fired at least once after you created the goal?
+
+Past events are not backfilled. If you set up the goal after events were already being sent, the counter starts from zero at the moment the goal was created. Trigger the event on your site after creating the goal and then check the dashboard.
+
+### Did your CMS replace the equals sign?
+
+Webflow and some other site builders replace `=` with `-` when saving CSS class names. If you added `plausible-event-name=Signup` but the rendered HTML shows `plausible-event-name-Signup`, the event name will not be read correctly.
+
+Use a double dash instead of the equals sign: `plausible-event-name--Signup`. Plausible treats `--` and `=` identically.
+
+### How to verify the event is actually being sent
+
+Open your browser developer tools and go to the **Network** tab. Trigger the action you are tracking and look for a request to `plausible.io/api/event`. If you see the request, check the response headers for `x-plausible-dropped: 1`. When that header is present, the event reached Plausible but was rejected by bot filtering. The most common cause is the request coming from localhost or a staging domain not added to your Plausible account.
+
+If you see no request at all, the CSS class name was not added correctly or the Plausible script is not loading on that page.
+
+### GTM events not firing
+
+If you set up custom events through [Google Tag Manager](https://plausible.io/gtm-template), use GTM's built-in **Preview** mode to confirm the tag is firing. Check that your trigger conditions match the actual interaction and that the tag is published, not just saved as a draft.
+
+### Custom properties showing as (none)
+
+`(none)` can appear for several reasons, including sending a `null` or `undefined` value, sending the property with some events but not all, or viewing the Properties tab without a custom event filter applied. See [Custom Properties: (none) values](/custom-props/introduction#none-values) for the full explanation. For troubleshooting: confirm the property value is not `null` or `undefined` at the moment the event fires, and that the property name is spelled exactly the same way in every event call.
+
+---
 
 <details>
 
@@ -322,3 +369,10 @@ Example: Tracking audio and video elements
 The same code also applies for `<video>` elements. Feel free to replace `Media Played` with a more suitable name for your custom event.
 
 </details>
+
+## What's next?
+
+- [Attach custom properties](/custom-props/for-custom-events) to your events to track additional context like plan type, product name or coupon code alongside conversions
+- [Add revenue values](ecommerce-revenue-tracking.md) to purchase or checkout events to track ecommerce revenue attribution
+- [Build a funnel](funnel-analysis.md) using your custom events as steps to see where visitors drop off between landing and converting
+- [Filter your dashboard by goal](filters-segments.md) to see which sources and pages drive the most conversions for each event

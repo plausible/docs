@@ -1,24 +1,36 @@
 ---
 displayed_sidebar: someSidebar
-title: Adding Plausible to Webflow (and tracking custom events)
+title: Adding Plausible to Webflow
+sidebar_label: Webflow
 description: "Add Plausible Analytics to Webflow via Custom Code and track button clicks or form submissions as custom events. No cookies needed."
 ---
 
+import CtaBox from '@site/src/components/CtaBox';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Here's how to add Plausible Analytics to your Webflow site and set up the tracking of custom events such as button clicks and form submissions.
+
+<CtaBox
+  headline="Add privacy-first analytics to your Webflow site"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+/>
 
 ## How to add Plausible to your Webflow website
 
 * On your project's page, click on the Webflow logo (**W**) in the left-hand side menu and choose **Project Settings**.
 
+<div class="browser">
 <img alt="Add custom code to Webflow" src={useBaseUrl('img/add-custom-code-to-webflow.png')} />
+</div>
 
 * You can use the **[Custom Code](https://university.webflow.com/lesson/custom-code-in-the-head-and-body-tags)** feature in Webflow to add Plausible tracking code to your website. Site-wide JavaScript code injection is a premium Webflow feature so you need to upgrade your Webflow account to a paid subscription plan.
 
 * Choose **Custom Code** from the menu and [paste your Plausible snippet](https://plausible.io/docs/plausible-script) in the **Head Code** section. We display your snippet during the process of adding a new site to your account. You can also see the snippet within the **Site Installation** area of the **General** section in your [site settings](website-settings.md).
 
+<div class="browser">
 <img alt="Add Plausible Analytics script to Webflow" src={useBaseUrl('img/add-plausible-script-to-webflow.png')} />
+</div>
 
 * Do click on the **Save Changes** button and then **Publish** your changes.
 
@@ -32,25 +44,25 @@ The easiest way to track form submissions on your Webflow site is to track the "
 
 First you'll need to create a "thank you" page by clicking on the "Pages" panel and creating the page by clicking on the "Create New Page" button.
 
+<div class="browser">
 <img alt="Create the form submission thank you page in Webflow" src={useBaseUrl('img/create-a-thank-you-page-in-webflow.png')} />
+</div>
 
 ### 2. Set the redirect URL on form submission
 
 Go to the page that contains your form, select the form and click on the gear icon to access the form settings. In the "Redirect URL" field type in the path to the thank you page ( i.e. **/thank-you** )
 
+<div class="browser">
 <img alt="Add redirect URL to your form in Webflow" src={useBaseUrl('img/add-redirect-url-to-form-in-webflow.png')} />
+</div>
 
 ### 3. Create a pageview goal in your Plausible account
 
-When you send custom events to Plausible, they won't show up in your dashboard automatically. You'll have to configure the goal for the conversion numbers to show up.
-
 To configure a goal, go to [your website's settings](website-settings.md) in your Plausible account and visit the **Goals** section. You should see an empty list with a prompt to add a goal.
 
-<img alt="Add your first Webflow goal" src={useBaseUrl('img/add-goal-webflow.png')} />
+Click on the **+ Add goal** button to go to the goal creation form. Select `Pageview` as the goal trigger and enter the page path that you want to track ( i.e. **/thank-you**).
 
-Click on the **+ Add goal** button to go to the goal creation form. Select `Pageview` as the goal trigger and enter the and enter the page path that you want to track ( i.e. **/thank-you**)
-
-<img alt="Thank you pageview goal in Webflow" src={useBaseUrl('img/thank-you-pageview-goal-webflow.png')} />
+[Here's more information](https://plausible.io/docs/pageview-goals) about creating pageview goals in your Plausible account.
 
 ### 4. Your goal should now be ready and tracking
 
@@ -62,7 +74,9 @@ Your goal should now be set up. When you navigate back to your Plausible Analyti
 
 In Webflow, link and button elements don't have a default ID. You'll need to assign an ID by selecting the element and clicking on the settings gear. In the **Designer View**, you'll be able to set the ID.
 
+<div class="browser">
 <img alt="Add an ID to link and button elements in Webflow" src={useBaseUrl('img/add-id-to-link-and-button-webflow.png')} />
+</div>
 
 ### 2. Trigger custom events with JavaScript on your site
 
@@ -72,9 +86,7 @@ Make sure to change the `elementId` line in the code below to include the ID att
 
 Also do change the `classes` line to include the goal name in this format: `plausible-event-name=Goal+Name`. The goal name is completely up to you. It's the name under which the goal conversions will appear in your Plausible dashboard. We've used `Button+Click` goal name in our example.
 
-:::tip To represent a space character in goal names, you can use a `+` sign
-For example: `plausible-event-name=Form+Submit` will display as `Form Submit` in your Plausible dashboard
-:::
+To represent a space in a goal name, use a `+` sign. For example: `plausible-event-name=Form+Submit` will display as `Form Submit` in your Plausible dashboard.
 
 ```html
 <script>
@@ -96,7 +108,9 @@ For example: `plausible-event-name=Form+Submit` will display as `Form Submit` in
 </script>
 ```
 
+<div class="browser">
 <img alt="Modify Plausible script webflow" src={useBaseUrl('img/modify-plausible-script-webflow.png')} />
+</div>
 
 Do click on the **Save Changes** button and then **Publish** your changes.
 
@@ -110,9 +124,7 @@ Click on the **+ Add goal** button to go to the goal creation form. Select `Cust
 
 So in our example where we added a goal name `plausible-event-name=Button+Click` to the Webflow site, the goal to add in the Plausible account is `Button Click` (plus is replaced by a space).
 
-<img alt="Add your custom event goal" src={useBaseUrl('img/button-click-custom-event-goal-webflow.png')} />
-
-Next, click on the **Add goal** button and you'll be taken back to the Goals page.
+Next, click on the **Add goal** button and you'll be taken back to the Goals page. Here's more information on [creating a custom event goal](https://plausible.io/docs/custom-event-goals#create-a-custom-event-goal-in-your-plausible-account).
 
 ### 4. Your goal should now be ready and tracking
 
@@ -146,4 +158,34 @@ If you want to trigger multiple custom events on the same site, you don't need t
 </script>
 ```
 
+<div class="browser">
 <img alt="track multiple elements in Webflow" src={useBaseUrl('img/track-multiple-elements-webflow.png')} />
+</div>
+
+## Custom event not showing up?
+
+### Did you publish your changes?
+
+After adding or editing custom code in Webflow, you must click **Save Changes** and then **Publish** your site. Changes that are only saved in the editor are not live yet and will not trigger any events.
+
+### Does the goal name match exactly?
+
+The goal name you create in your Plausible site settings must match the event name in your code exactly, including capitalisation. The `+` sign in `plausible-event-name=Button+Click` becomes a space, so the goal to create in Plausible is `Button Click`.
+
+### Are you using CSS class names directly in Webflow?
+
+Webflow replaces the `=` sign with `-` when saving CSS class names. If you added `plausible-event-name=Signup` as a class, Webflow will render it as `plausible-event-name-Signup` and the event name will not be read correctly.
+
+Use a double dash instead: `plausible-event-name--Signup`. Plausible treats `--` and `=` identically. Alternatively, use the JavaScript approach shown above, which avoids this issue entirely.
+
+### Anything else?
+
+See the [full custom event troubleshooting guide](custom-event-goals.md#custom-event-not-showing-up) for additional checks including how to verify events are firing in your browser's Network tab.
+
+## What's next?
+
+- [Create goals](custom-event-goals.md) in your Plausible site settings to match the custom events you set up. They won't show in your dashboard until you do
+- [Attach custom properties](/custom-props/for-custom-events) to your events to track additional context like button label or plan type
+- [Build a funnel](funnel-analysis.md) using your custom events as steps to see where visitors drop off
+- [Explore user journeys](user-journeys.md) to see the paths visitors actually take before and after converting
+- [Create a shared link](shared-links.md) to give clients read-only access to the dashboard without a Plausible account

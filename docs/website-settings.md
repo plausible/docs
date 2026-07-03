@@ -1,9 +1,14 @@
 ---
-title: Your website settings section
+title: Plausible website settings
+sidebar_label: Website settings
 description: "Manage your Plausible Analytics site settings. Change your domain, configure access, set up email or Slack reports, exclude traffic and control dashboard visibility."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+
+Plausible has two separate settings areas. [**Account settings**](account-settings.md) (click your name in the top-right menu) control your personal account: email address, password, two-factor authentication, and dashboard appearance. **Site settings** control each individual site: timezone, goals, traffic exclusions, reports, shared links, and who has access.
+
+If you are looking for something site-specific and cannot find it in account settings, you are in the right place.
 
 Your website settings let you manage your domain, control who has access, configure what data is collected, and set up reports and notifications. Common tasks include [changing your domain](change-domain-name.md), [managing users and roles](users-roles.md), [controlling dashboard visibility](visibility.md), setting up [email](email-reports.md) or [Slack reports](slack-reports.md), and [excluding your own traffic](excluding.md).
 
