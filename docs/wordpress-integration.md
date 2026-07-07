@@ -82,10 +82,6 @@ Enable **File downloads** to track downloads of PDFs, documents, media and other
 
 Enable **Outbound links** to track clicks on links pointing to other sites. An **Outbound Link: Click** goal appears. [Full reference](outbound-link-click-tracking.md).
 
-### Cloaked affiliate links
-
-Enable **Cloaked affiliate links** and enter the URL slugs you use for cloaked links, such as `/recommends/`. Clicks appear as a **Cloaked Link: Click** goal. [Full reference](custom-automatic-link-tracking.md).
-
 ### Form completions
 
 Enable **Form completions** to track successful form submissions. Tested with Contact Form 7, WPForms, Ninja Forms and Elementor, and works with most other form plugins. A **WP Form Completions** goal appears. [Full reference](form-submissions-tracking.md).
@@ -106,7 +102,11 @@ Enable **Logged-in user status** to record whether a visitor is logged in, as a 
 
 Enable **Hash-based routing** if your site uses hash URLs such as `/#contact`. The hash is preserved in your **Top Pages** report. [Full reference](hash-based-routing.md).
 
-### Query parameters
+## Cloaked affiliate links
+
+Enable **Cloaked affiliate links** and enter the URL slugs you use for cloaked links, such as `/recommends/`. Clicks appear as a **Cloaked Link: Click** goal. [Full reference](custom-automatic-link-tracking.md).
+
+## Query parameters
 
 Enable **Query parameters** and enter the parameters you want to keep, such as `lang`. Matching values appear in the **Properties** tab. [Full reference](custom-query-params.md).
 
