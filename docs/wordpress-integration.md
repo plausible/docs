@@ -58,6 +58,17 @@ Your site is now being tracked. You can confirm tracking from your [site setting
 Plugin tokens are site-specific and always start with `plausible-plugin-`. Make sure the token was created for the exact site you are connecting, and generate a new one if in doubt.
 :::
 
+## Multilingual sites with WPML
+
+If you run [WPML](https://wpml.org/) in **different domain per language** mode, you can connect each language domain to its own Plausible dashboard. Other WPML setups (a language directory like `/fr/` or a language subdomain) are tracked as a single site and need no extra steps.
+
+1. [Add each language domain as its own site](add-website.md) in your Plausible account, for example `example.com`, `example.fr` and `example.de`.
+2. In the plugin settings, open the **Language Domains** dropdown and select a language domain.
+3. Its **Domain Name** is already filled in. Create a [plugin token](#connect-with-a-plugin-token) for that site, paste it into **Plugin Token** and click **Connect**.
+4. Repeat for each language domain.
+
+With **View stats in WordPress** enabled, the WordPress toolbar links to the dashboard that matches the language domain you're viewing.
+
 ## The settings screen
 
 The full settings screen has a few options pre-enabled. Keep them as-is or turn off anything you don't need.
