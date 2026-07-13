@@ -40,6 +40,7 @@ import CtaBox from '@site/src/components/CtaBox';
 <ul>
 <li><a href="/docs/filters-segments">Filters and segments</a>: drill into any slice of your traffic</li>
 <li><a href="/docs/compare-stats">Compare periods</a>: benchmark against previous time ranges</li>
+<li><a href="/docs/annotations">Annotations</a>: mark events like deployments or campaigns directly on the chart</li>
 <li><a href="/docs/consolidated-views">Consolidated view</a>: all your sites in one dashboard</li>
 <li><a href="/docs/realtime-dashboard">Real-time dashboard</a>: live view of current visitors</li>
 <li><a href="/docs/top-referrers">Channels, sources and campaigns</a>: where traffic comes from</li>
