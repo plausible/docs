@@ -26,6 +26,8 @@ The time format (24-hour or 12-hour am/pm) is displayed based on your browser's 
 Here you can enter "[Site Settings](website-settings.md)" but also switch to a different [pinned site](landing-page.md#access-your-pinned-sites-from-the-site-switcher-list) that you have added to your Plausible account
 :::
 
+You can also **add annotations** to the chart to mark important events like a deployment, a campaign launch or an outage. Annotations appear as markers on the chart so you and your team always have context for traffic changes. [Learn more about annotations here](annotations.md).
+
 ## Set a different chart interval
 
 You can **set a different unit of time the stats on the chart are grouped by** in the options menu (the **⋮** icon in the top right of the chart). Click it and select **Graph interval**. The available interval options depend on the date range you've selected. For example, if you select "Today", you can display the stats by minute or by hour.
