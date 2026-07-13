@@ -5,10 +5,6 @@ description: "How to send custom properties with every pageview in Plausible by 
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-:::tip Using WordPress?
-The quickest way to start tracking custom properties is to use our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin)
-:::
-
 ## Add your custom properties to your Plausible snippet
 
 You can add custom properties by updating your Plausible snippet.
