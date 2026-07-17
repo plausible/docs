@@ -3,6 +3,8 @@ title: Annotations
 description: "Add annotations to mark important events directly on your Plausible traffic chart. Deployments, campaigns, outages: see the context behind every spike or drop."
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 Annotations let you pin notes to specific dates directly on your traffic chart. A product launch, a campaign going live, a site outage, a big press mention: anything that might explain a change in your data.
 
 When you spot a spike or a drop, annotations tell you why it happened. The context is right there on the chart.
@@ -18,6 +20,10 @@ There are two types of annotations:
 
 Annotations show up as markers along the bottom of the main traffic chart. When the date of an annotation falls within your selected time range, the marker appears on the chart. Hover over a marker to read the note attached to it.
 
+<div class="browser">
+<img alt="Annotations on the traffic chart" src={useBaseUrl('img/annotations-on-traffic-chart.png')} />
+</div>
+
 ## Add an annotation
 
 Hover over the date on the chart where you want to place the annotation. Right-click to open the context menu and select **Add note**. Write a short note describing the event and choose whether it should be personal or shared with your team. Save it and the annotation will appear on the chart immediately.
@@ -25,6 +31,10 @@ Hover over the date on the chart where you want to place the annotation. Right-c
 ## Edit or delete an annotation
 
 Hover over the date on the chart where an annotation exists. Right-click to open the context menu and choose to edit the note or delete the annotation entirely. You can always edit or delete your personal annotations. Only team members with editor access or above can add, edit or delete site annotations.
+
+<div class="browser">
+<img alt="Edit or delete an annotation" src={useBaseUrl('img/edit-delete-annotation.png')} />
+</div>
 
 ## Practical uses
 
