@@ -36,7 +36,7 @@ Before requesting raw exports, check whether a simpler option covers your needs:
 | Query stats programmatically | [Stats API](stats-api.md) |
 | Build a custom dashboard or embed stats | [Stats API](stats-api.md) |
 | Download data for a spreadsheet | [CSV export](export-stats.md) |
-| Visualize in Google's tools | [Looker Studio](looker-studio.md) |
+| Visualize in Google's tools | [Data Studio](looker-studio.md) |
 | Pipe aggregated stats into a warehouse | [Airbyte or Fivetran connectors](data-pipelines.md) |
 
 ## How to get it

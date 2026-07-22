@@ -91,7 +91,7 @@ module.exports = {
             { label: 'How to choose', href: 'https://plausible.io/privacy-friendly-web-analytics' },
             { label: 'WordPress plugin', href: 'https://plausible.io/wordpress-analytics-plugin' },
             { label: 'Google Tag Manager', href: 'https://plausible.io/gtm-template' },
-            { label: 'Looker Studio', href: 'https://plausible.io/looker-studio-connector' },
+            { label: 'Data Studio', href: 'https://plausible.io/looker-studio-connector' },
             { label: 'NPM package', href: 'https://www.npmjs.com/package/@plausible-analytics/tracker' },
           ],
         },

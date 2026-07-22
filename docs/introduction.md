@@ -46,7 +46,7 @@ import CtaBox from '@site/src/components/CtaBox';
 <li><a href="/docs/top-referrers">Channels, sources and campaigns</a>: where traffic comes from</li>
 <li><a href="/docs/scroll-depth">Scroll depth</a>: see how far visitors read down your pages</li>
 <li><a href="/docs/google-search-console-integration">Google Search Console</a>: see search queries alongside your stats</li>
-<li><a href="/docs/looker-studio">Looker Studio connector</a>: custom reports and dashboards with your Plausible data</li>
+<li><a href="/docs/looker-studio">Data Studio connector</a>: custom reports and dashboards with your Plausible data</li>
 </ul>
 </div>
 
