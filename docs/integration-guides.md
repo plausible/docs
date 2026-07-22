@@ -33,9 +33,9 @@ The [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin)
 
 The [official GTM template](https://plausible.io/gtm-template) is available in the Google Tag Manager community gallery. Install Plausible and configure event tracking from the GTM dashboard with no code changes. Works well for agencies managing multiple sites from a single GTM account.
 
-### Looker Studio connector
+### Data Studio connector
 
-The [official Looker Studio connector](https://plausible.io/looker-studio-connector) connects your Plausible data to Google's free data visualization tool. Build custom dashboards, branded client reports and views that blend Plausible data with other sources like ad spend or CRM data. Available on the [Business plan](subscription-plans.md).
+The [official Data Studio connector](https://plausible.io/looker-studio-connector) connects your Plausible data to Google's free data visualization tool. Build custom dashboards, branded client reports and views that blend Plausible data with other sources like ad spend or CRM data. Available on the [Business plan](subscription-plans.md).
 
 ### NPM package
 
@@ -175,7 +175,7 @@ Step-by-step guides for popular website builders and content management systems.
 
 ### Data pipelines, warehouses and other ways of viewing Plausible stats elsewhere
 
-[See this list](data-pipelines.md) for data pipelines, warehouses, MCP servers and other ways of viewing Plausible stats elsewhere. For instance, our [stats API](stats-api.md), [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) and [official Google Looker Studio connector](looker-studio.md).
+[See this list](data-pipelines.md) for data pipelines, warehouses, MCP servers and other ways of viewing Plausible stats elsewhere. For instance, our [stats API](stats-api.md), [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) and [official Google Data Studio connector](looker-studio.md).
 
 ---
 

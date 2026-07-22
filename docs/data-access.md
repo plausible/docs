@@ -1,7 +1,7 @@
 ---
 title: Accessing your Plausible data
 sidebar_label: Accessing your data
-description: "Choose the right way to access your Plausible data outside the dashboard: Stats API, Events API, Sites API, CSV export, Looker Studio or data warehouse connectors."
+description: "Choose the right way to access your Plausible data outside the dashboard: Stats API, Events API, Sites API, CSV export, Data Studio or data warehouse connectors."
 ---
 
 Plausible gives you several ways to access your stats outside the dashboard. The right option depends on whether you want to query data, send data, manage sites or export for offline use.
@@ -15,7 +15,7 @@ Plausible gives you several ways to access your stats outside the dashboard. The
 | Create and manage sites programmatically | [Sites API](#sites-api) |
 | Embed analytics into my own product for my customers | [White-label integration guide](white-label.md) |
 | Download stats as a spreadsheet, one-off | [CSV export](#csv-export) |
-| Build a custom report in Google's visualization tool | [Looker Studio](#looker-studio) |
+| Build a custom report in Google's visualization tool | [Data Studio](#looker-studio) |
 | Pipe data into a data warehouse or BI tool | [Warehouse connectors](#data-warehouse-connectors) |
 | Get event-level data for warehousing or compliance | [Scheduled raw exports](#scheduled-raw-event-exports) |
 | Query data in natural language through AI tools | [MCP server](#mcp-server) |
@@ -79,16 +79,16 @@ The quick export is limited to 300 entries per report. For a full historical exp
 
 ---
 
-## Looker Studio
+## Data Studio
 
-The official Plausible connector for Google Looker Studio pulls your analytics data into Google's free data visualization platform. Use it to build custom reports, combine Plausible data with ad spend or CRM data and share branded dashboards with clients as a live link.
+The official Plausible connector for Google Data Studio pulls your analytics data into Google's free data visualization platform. Use it to build custom reports, combine Plausible data with ad spend or CRM data and share branded dashboards with clients as a live link.
 
 **Use this when:**
 - You need custom report layouts beyond what the Plausible dashboard offers
 - You want to share a client report without giving access to your Plausible account
 - You want to blend Plausible data with data from Google Ads, Search Console or other sources
 
-[Looker Studio connector](looker-studio.md)
+[Data Studio connector](looker-studio.md)
 
 ---
 

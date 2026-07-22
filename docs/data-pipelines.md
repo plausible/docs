@@ -1,7 +1,7 @@
 ---
 displayed_sidebar: someSidebar
 title: Viewing Plausible stats elsewhere
-description: "Access your Plausible analytics outside the dashboard: via the Stats API, embedded iframe, WordPress plugin, Looker Studio and other integrations."
+description: "Access your Plausible analytics outside the dashboard: via the Stats API, embedded iframe, WordPress plugin, Data Studio and other integrations."
 ---
 
 If you're looking to access your Plausible stats outside of the plausible.io website, here are the available options.
@@ -22,9 +22,9 @@ You can embed your Plausible stats dashboard into any other website using an HTM
 
 By using our official WordPress plugin, you can view your Plausible stats dashboard directly in your WordPress dashboard without needing to visit our website. [Learn more here](https://plausible.io/wordpress-analytics-plugin).
 
-### Looker Studio
+### Data Studio
 
-We have an official Plausible connector for [Looker Studio (formerly Google Data Studio)](looker-studio.md).
+We have an official Plausible connector for [Data Studio](looker-studio.md).
 
 ---
 
