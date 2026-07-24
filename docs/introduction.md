@@ -6,7 +6,7 @@ description: "Plausible Analytics documentation. No cookies, no personal data, n
 
 import CtaBox from '@site/src/components/CtaBox';
 
-[Plausible Analytics](https://plausible.io/) is a simple, privacy-friendly alternative to Google Analytics. No cookies, no personal data collection, no consent banners required. One lightweight script, one easy-to-read dashboard. Running since 2018 and used by 19,000+ teams. Explore the [live demo](https://plausible.io/plausible.io) to see what it looks like.
+[Plausible Analytics](https://plausible.io/) is a simple, privacy-friendly alternative to Google Analytics. No cookies, no personal data collection, no consent banners required. One lightweight script, one easy-to-read dashboard. Running since 2018 and used by 20,000+ teams. Explore the [live demo](https://plausible.io/plausible.io) to see what it looks like.
 
 <CtaBox
   headline="Setting up Plausible for the first time? Start a free trial, then follow the guides below"
