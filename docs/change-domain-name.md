@@ -55,7 +55,7 @@ First and foremost, you'll need to make sure your stats are still tracking. Whet
   <tr>
     <td><b>WordPress plugin</b></td>
     <td>If your website is on WordPress, you're most likely using the plugin as that's the recommended installation method.</td>
-    <td>Update the site domain in your plugin settings</td>
+    <td>Update the site domain in your <a href="wordpress-integration#connect-with-a-plugin-token">plugin settings</a></td>
   </tr>
   <tr>
     <td><b>NPM package</b></td>

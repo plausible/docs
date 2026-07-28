@@ -26,10 +26,6 @@ You can enable **Form submissions** as an optional measurement when adding a new
 
 After you enable form submissions tracking, we will automatically add a new goal called `Form: Submission` to your site.
 
-:::tip Using WordPress?
-The quickest way to start tracking form submissions is to use our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin)
-:::
-
 ## See all the form submissions in your dashboard
 
 Click on **Form: Submission** goal in the **Goals** tab of your Plausible dashboard to see the full list of all form submissions and have your dashboard filtered by them. You can see:

@@ -33,7 +33,7 @@ You can add your main domain name as a site to your Plausible account and use th
 
 Installing Plausible on a site can be a slightly different process depending on what tools you're using to manage your site.
 
-- Are you using WordPress? We recommend you integrate Plausible by using our plugin. It's very lightweight, excludes your visits by default and allows you to see the stats directly in your WordPress dashboard. It also avoids conflicts with WP Rocket and similar plugins. [See more here](https://plausible.io/wordpress-analytics-plugin)
+- Are you using WordPress? Use our [official plugin](wordpress-integration.md) instead of adding the snippet manually. It excludes your own visits by default, lets you see the stats directly in your WordPress dashboard and avoids conflicts with WP Rocket and similar caching plugins.
 
 - Are you using Google Tag Manager? We have a guide on [how to integrate Plausible with our GTM template](https://plausible.io/gtm-template)
 

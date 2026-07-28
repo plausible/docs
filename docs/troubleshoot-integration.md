@@ -187,6 +187,8 @@ Plausible is privacy-first and compliant with GDPR and ePrivacy regulations. You
 
 ## WordPress plugin issues
 
+These cover the most common plugin problems. For full setup and every plugin setting, see [Adding Plausible to WordPress](wordpress-integration.md).
+
 ### Admin visits are not showing
 
 Our WordPress plugin excludes logged-in administrator visits by default. This is intentional. If you want to track your own visits, go to the "Track analytics for user roles" section in the plugin settings and enable the Administrator role.
@@ -205,6 +207,14 @@ Skipping any step often leaves a stale script in place that the verification too
 ### Stats stopped after migrating or cloning your WordPress site
 
 The proxy creates a randomly named file in `/wp-content/uploads/`. When you migrate or clone your site, that file path may no longer match what the plugin expects. To fix this, disable the proxy, clear all caches, re-enable the proxy and clear all caches again. This forces the plugin to generate a fresh proxy file at the correct path.
+
+### Proxy script is slow
+
+The plugin notifies you if the proxy takes too long (over 500ms) to send pageviews. This usually means the speed module failed to install automatically. To install it manually:
+
+1. Access your server using (S)FTP, SSH or your host's file manager
+2. Go to the plugin directory, usually `wp-content/plugins/plausible-analytics`
+3. Open the `mu-plugin` directory inside it and copy `plausible-proxy-speed-module.php` to `wp-content/mu-plugins` (create the `mu-plugins` folder first if it doesn't exist)
 
 ### Plugin token showing as invalid
 

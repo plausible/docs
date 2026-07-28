@@ -34,10 +34,6 @@ After you enable file downloads tracking on your site, all the file downloads wi
 
 Heads up: File download tracking only works for clicks that happen on your tracked pages. If you share a direct link to a file in an email or elsewhere, those opens won't be counted. Visitors need to arrive at your site first and click the link from there.
 
-:::tip Using WordPress?
-The quickest way to start tracking file downloads is to use our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin)
-:::
-
 ## See all the file download clicks in your dashboard
 
 Click on **File Download** goal in the **Goals** tab of your Plausible dashboard to see the full list of all clicks on all files and have your dashboard filtered by file download clicks only. You can see:
