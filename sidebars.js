@@ -130,6 +130,7 @@ module.exports = {
       }
     ],
     'Billing': [
+      'trial',
       'trial-to-paid',
       'subscription-plans',
       'change-plan',
