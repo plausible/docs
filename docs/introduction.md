@@ -94,7 +94,8 @@ import CtaBox from '@site/src/components/CtaBox';
 <h3>Billing</h3>
 <p>Manage your subscription, invoices and plan.</p>
 <ul>
-<li><a href="/docs/trial-to-paid">Trial to paid</a>: what happens when your trial ends</li>
+<li><a href="/docs/trial">How the free trial works</a>: no credit card, no automatic charges</li>
+<li><a href="/docs/trial-to-paid">Trial to paid</a>: upgrade to a subscription</li>
 <li><a href="/docs/subscription-plans">Subscription plans</a>: what's included at each tier</li>
 <li><a href="/docs/change-plan">Change plan</a>: upgrade or downgrade your subscription</li>
 <li><a href="/docs/download-invoices">Download invoices</a>: access your billing history</li>
