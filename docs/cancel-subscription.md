@@ -29,7 +29,7 @@ One month after locking, Plausible stops collecting data. If you haven't removed
 
 Your data is not deleted immediately. How long it is kept depends on your plan. Retention periods are listed on the [pricing page](https://plausible.io/#pricing).
 
-You can delete your data at any time, before or after canceling, either for individual sites or your entire account, from your site or account settings.
+You can delete individual sites at any time, before or after canceling, from your site settings. To delete your entire account or team, you'll first need to cancel any active subscription.
 
 **Resubscribing**
 
