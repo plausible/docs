@@ -25,14 +25,16 @@ Your dashboard is locked. You can still log in, access your account settings and
 
 One month after locking, Plausible stops collecting data. If you haven't removed the Plausible snippet from your site, any data it sends will be dropped automatically from that point.
 
-**Your data**
+**Data retention**
 
-Your data is not deleted immediately. How long it is kept depends on your plan. Retention periods are listed on the [pricing page](https://plausible.io/#pricing).
+Data retention limits apply to active subscriptions only. Once you cancel and your paid period ends, we may delete your sites and stats. We'll email you before that happens so you have time to export your data or resubscribe.
 
 You can delete individual sites at any time, before or after canceling, from your site settings. To delete your entire account or team, you'll first need to cancel any active subscription.
 
 **Resubscribing**
 
-If you resubscribe at any time within the retention period, your dashboards unlock automatically, data collection resumes and all your historical data will still be there. You can resubscribe from the **Subscription** section in your account settings.
+You can resubscribe at any time from the **Subscription** section in your account settings. Your dashboards unlock automatically and data collection resumes immediately.
+
+If you resubscribe before your data is deleted, your historical stats will still be there. Deleted data cannot be recovered, so if you're coming back, resubscribe or export your data before the deletion date in our email.
 
 Want to switch plans instead of canceling? See [Change your subscription plan](change-plan.md).
