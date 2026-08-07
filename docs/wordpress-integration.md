@@ -48,6 +48,8 @@ To manage everything from WordPress without visiting your Plausible account, gen
 2. Click **Create Plugin Token** and copy the token.
 3. Back in the plugin, paste it into the **Plugin Token** field and click **Connect**.
 
+If clicking the link in step 1 does nothing, see [token link doesn't do anything](troubleshoot-integration.md#token-link-doesnt-do-anything) to create the token manually.
+
 <div class="browser">
   <img alt="Add your Plausible plugin token in WordPress" src={useBaseUrl('img/add-wordpress-token.png')} />
 </div>
