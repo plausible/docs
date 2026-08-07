@@ -117,7 +117,7 @@ Find your symptom and jump straight to the right section:
 
 - **[Blinking green dot, nothing recorded yet](#no-data-recorded-yet)**: snippet not loading, cache issue or site not reachable
 - **[Tracking was working, then it stopped](#tracking-stopped-working)**: cache, plugin update or script change
-- **[WordPress plugin issues](#wordpress-plugin-issues)**: admin exclusion, proxy not working or cache conflict
+- **[WordPress plugin issues](#wordpress-plugin-issues)**: admin exclusion, proxy not working, cache conflict or invalid/unresponsive token link
 - **[My own visits are not showing](#my-own-visits-are-not-showing)**: ad blocker, VPN or WordPress admin exclusion
 - **[Some visitors are not being counted](#some-visitors-are-not-being-counted)**: browser extensions or network-level blockers
 - **[Numbers seem lower than expected](#numbers-seem-lower-than-expected)**: methodology differences, bot filtering or blockers
@@ -219,6 +219,16 @@ The plugin notifies you if the proxy takes too long (over 500ms) to send pagevie
 ### Plugin token showing as invalid
 
 Plugin tokens are site-specific. Make sure the token you are pasting was created for the exact domain you are trying to connect. Tokens always start with `plausible-plugin-`. If in doubt, create a new token in your Plausible site settings and connect it again.
+
+### Token link doesn't do anything
+
+Some browser privacy settings, extensions or ad blockers silently block the click. If nothing happens when you click the token link in the plugin settings, create the token manually instead:
+
+1. Go to `https://plausible.io/YOURDOMAIN.COM/settings/integrations?new_token=WordPress`, replacing `YOURDOMAIN.COM` with your site's domain.
+2. Click **Create Plugin Token** and copy the token.
+3. Back in the plugin, paste it into the **Plugin Token** field and click **Connect**.
+
+This opens the same page the link normally would, so the rest of the steps are identical.
 
 ### WP Rocket or another caching plugin is interfering
 
