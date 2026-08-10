@@ -257,6 +257,15 @@ html[data-theme='dark'] {
   font-weight: 500;
 }
 
+/* Give anchor-linked headings clearance from the sticky navbar.
+   Docusaurus's default scroll-margin-top (navbar height + 0.5rem) leaves
+   headings flush against the navbar, which reads as landing on the wrong
+   section for short chapters. Needs .markdown prefix to out-specificity
+   the theme's own anchorTargetStickyNavbar_* rule regardless of CSS order. */
+.markdown .anchor {
+  scroll-margin-top: calc(var(--ifm-navbar-height) + 1.5rem);
+}
+
 @media (min-width: 997px) {
   .col.docItemCol_VOVn {
     max-width: calc(75% - var(--ifm-spacing-horizontal)) !important;
