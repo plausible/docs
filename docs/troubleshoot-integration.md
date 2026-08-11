@@ -83,15 +83,17 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 After you've [added the Plausible snippet to your site](plausible-script.md), the dashboard starts displaying stats in real-time as soon as the first visit is counted. There are no delays with data in Plausible.
 
-After you add the snippet, your dashboard opens immediately. A banner at the top of the dashboard shows a spinner while Plausible checks your installation.
+After you add the snippet, your dashboard opens immediately. A banner at the top shows the progress and result of the installation check. Plausible first checks whether it can reach your site and detect the installation, then confirms if visits are being counted correctly.
 
-Our testing tool launches automatically to send test traffic to your site. This test traffic won't be recorded in your dashboard. When the check finishes, the banner displays a status message indicating whether Plausible has been installed correctly.
+Our testing tool launches automatically in the backgroundto send test traffic to your site. This test traffic won't be recorded in your dashboard. When the check finishes, the banner displays a status message indicating whether Plausible has been installed correctly.
+
+If the check fails, the banner explains the problem and lets you check again, try another URL, review the installation instructions or verify the installation manually.
 
 <div class="browser">
     <img alt="Successful installation status in the dashboard banner" src={useBaseUrl('img/v2/integration-verification-tool.webp')} />
 </div>
 
-Your dashboard remains visible while the check runs, and real visits appear in your stats as soon as they are recorded.
+Real visits appear in your stats as soon as they are recorded.
 
 The testing tool does not affect your tracking. If real visits are being recorded correctly, you can safely ignore any error or warning the tool shows.
 
@@ -115,7 +117,7 @@ Before diving deeper, make sure you have done each of these:
 
 Find your symptom and jump straight to the right section:
 
-- **[Spinner in the dashboard banner, nothing recorded yet](#no-data-recorded-yet)**: installation check in progress, snippet not loading, cache issue or site not reachable
+- **[Installation check is still running or shows an error](#no-data-recorded-yet)**: site unreachable, snippet not loading, cache issue or incorrect URL
 - **[Tracking was working, then it stopped](#tracking-stopped-working)**: cache, plugin update or script change
 - **[WordPress plugin issues](#wordpress-plugin-issues)**: admin exclusion, proxy not working or cache conflict
 - **[My own visits are not showing](#my-own-visits-are-not-showing)**: ad blocker, VPN or WordPress admin exclusion
