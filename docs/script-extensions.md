@@ -17,7 +17,7 @@ There are also additional tracking options that you can set up manually if neede
   <img alt="Manage default and additional tracking in Plausible site settings" src={useBaseUrl('img/v2/tracking-settings.png')} />
 </div>
 
-Here's the list of our optional measurements, organized as they appear in your site settings:
+Here's the list of our optional measurements:
 
 <div class="table-col1-nowrap">
 
