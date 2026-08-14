@@ -1,32 +1,36 @@
 ---
 title: Enable optional measurements
-description: "Enable optional Plausible measurements for outbound links, file downloads, form submissions and more. Available during setup or later in your site settings."
+description: "Enable optional Plausible measurements for outbound links, file downloads, form submissions and more from your site settings."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 The Plausible script offers enhanced measurements and configuration options to tailor tracking to your needs.
 
-You can enable optional measurements for form submissions, outbound link clicks and file downloads when adding a new site to your Plausible account, or later in the **Site installation** area under **General** in your [site settings](website-settings.md).
+You can manage these measurements in the **Tracking** area under **General** in your [site settings](website-settings.md).
 
-There are also additional measurement options that you can set up manually if needed.
+Under **Default tracking**, you can enable or disable automatic tracking for outbound links, file downloads and form submissions. Your changes take effect automatically without needing to update the snippet on your site.
+
+There are also additional tracking options that you can set up manually if needed. You can find links to their setup instructions by expanding **Additional tracking**.
 
 <div class="browser">
-  <img alt="Enable optional enhanced measurements" src={useBaseUrl('img/v2/onboarding-enable-enhanced-tracking.webp')} />
+  <img alt="Manage default and additional tracking in Plausible site settings" src={useBaseUrl('img/v2/tracking-settings.png')} />
 </div>
 
-Here's the list of our optional measurements:
+Here's the list of our default and additional tracking options:
 
 <div class="table-col1-nowrap">
 
-| Optional Measurement | Explanation                                                                                                                                                                                 |
+| Tracking option      | Explanation                                                                                                                                                                                 |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Default tracking** |                                                                                                                                                                                             |
 | Outbound links       | Automatically [track clicks on outbound links](outbound-link-click-tracking.md)                                                                                                             |
 | File downloads       | Automatically [track file downloads](file-downloads-tracking.md)                                                                                                                            |
 | Form submissions     | Automatically [track form submissions](form-submissions-tracking.md)                                                                                                                        |
+| **Additional tracking** |                                                                                                                                                                                          |
+| Custom event tracking | Allows you to [track custom events](custom-event-goals.md) such as link clicks, form submits and any other HTML element clicks                                                             |
 | 404 error pages      | Allows you to set up [404 error pages tracking](error-pages-tracking-404.md)                                                                                                                |
 | Hashed page paths    | Allows you to set up page paths that use a `#` in the URL ([hash-based routing](hash-based-routing.md))                                                                                     |
-| Custom events        | Allows you to [track custom events](custom-event-goals.md) such as link clicks, form submits and any other HTML element clicks                                                              |
 | Custom properties    | Allows you to attach [custom properties](/custom-props/introduction) (also known as custom dimensions in Google Analytics) when sending a pageview or custom event to create custom metrics |
 | Ecommerce revenue    | Allows you to assign dynamic [monetary values](ecommerce-revenue-tracking.md) to custom events and track revenue attribution                                                                |
 
