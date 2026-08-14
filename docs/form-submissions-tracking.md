@@ -15,13 +15,14 @@ When Form submissions tracking is enabled, Plausible automatically detects all f
 
 All detected form submissions are grouped under one goal, and you can analyze where conversions happen by filtering results by page path or referrer. For example, if the same form appears on multiple pages, Plausible will show how many submissions occurred on each specific page.
 
+**Form submissions** is an [optional enhanced measurement](script-extensions.md). If you want to track form submissions, here's how to enable it:
+
 ## Enable "Form submissions" for your site
 
-You can enable **Form submissions** as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the **Site Installation** area of the **General** section in your [site settings](website-settings.md).
+By default, **Form submissions** is enabled when adding a new site to your Plausible account. You can enable or disable it by going to the **General** section of your [site settings](website-settings.md). In the **Tracking** area, use the **Form submissions** toggle under **Default tracking**. Your changes take effect automatically without needing to update the snippet on your site.
 
-<!-- TODO -->
 <div class="browser">
-<img alt="Enable form submissions tracking during onboarding" src={useBaseUrl('img/plausible-analytics-automatic-form-submission.png')}/>
+<img alt="Enable form submission tracking in Plausible site settings" src={useBaseUrl('img/v2/enable-form-submission-tracking.png')} />
 </div>
 
 After you enable form submissions tracking, we will automatically add a new goal called `Form: Submission` to your site.
@@ -42,4 +43,4 @@ To analyze a specific form, click on its URL to filter your dashboard by that fo
 
 ## Other automated goals
 
-Plausible also offers automated tracking for [outbound link clicks](outbound-link-click-tracking.md) and [file downloads](file-downloads-tracking.md). These can be enabled from the "Site Installation" area in your site settings without any code changes. You can also track [404 error pages](error-pages-tracking-404.md) with a small snippet of code.
+Plausible also offers automated tracking for [outbound link clicks](outbound-link-click-tracking.md) and [file downloads](file-downloads-tracking.md). These can be enabled under **Default tracking** in the **Tracking** area of your site settings without any code changes. You can also track [404 error pages](error-pages-tracking-404.md) with a small snippet of code.

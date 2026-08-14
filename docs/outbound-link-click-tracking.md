@@ -24,10 +24,10 @@ Outbound link click tracking is essential for many site owners and Plausible hel
 
 ## Enable "Outbound links" for your site
 
-By default, **Outbound links** is enabled when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the **Site Installation** area of the **General** section in your [site settings](website-settings.md).
+By default, **Outbound links** is enabled when adding a new site to your Plausible account. You can enable or disable it by going to the **General** section of your [site settings](website-settings.md). In the **Tracking** area, use the **Outbound links** toggle under **Default tracking**. Your changes take effect automatically without needing to update the snippet on your site.
 
 <div class="browser">
-<img alt="Enable outbound link clicks tracking during onboarding" src={useBaseUrl('img/onboarding-enable-outbound-link-clicks-tracking.png')} />
+<img alt="Enable outbound link tracking in Plausible site settings" src={useBaseUrl('img/v2/enable-outbound-link-tracking.png')} />
 </div>
 
 After you enable outbound link click tracking, we will automatically add a new goal called `Outbound Link: Click` to your site.
@@ -56,12 +56,10 @@ Check out this blog post for more details on the value of [tracking outbound lin
 
 ## Other automated goals
 
-Plausible also offers automated tracking for [file downloads](file-downloads-tracking.md) and [form submissions](form-submissions-tracking.md). These can be enabled from the "Site Installation" area in your site settings without any code changes. You can also track [404 error pages](error-pages-tracking-404.md) with a small snippet of code.
+Plausible also offers automated tracking for [file downloads](file-downloads-tracking.md) and [form submissions](form-submissions-tracking.md). These can be enabled under **Default tracking** in the **Tracking** area of your site settings without any code changes. You can also track [404 error pages](error-pages-tracking-404.md) with a small snippet of code.
 
 ## How to disable "Outbound links" tracking for your site
 
-You can control what data is collected in the **Site Installation** area of the **General** section in your [site settings](website-settings.md).
-
-When making changes to your optional measurements, your snippet will change so do ensure to insert the newest snippet into your site for outbound link click tracking to stop.
+Go to the **General** section of your [site settings](website-settings.md). In the **Tracking** area, switch off **Outbound links** under **Default tracking**. Your changes take effect automatically without needing to update the snippet on your site.
 
 After you disable outbound link click tracking, we will automatically remove the goal called `Outbound Link: Click` from your site.
