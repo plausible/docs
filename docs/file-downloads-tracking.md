@@ -24,10 +24,10 @@ File downloads tracking is essential for many site owners and Plausible helps yo
 
 ## Enable "File downloads" for your site
 
-You can enable **File downloads** as an optional measurement when adding a new site to your Plausible account. If the site has already been added to your account, you can control what data is collected in the **Site Installation** area of the **General** section in your [site settings](website-settings.md).
+By default, **File downloads** is enabled when adding a new site to your Plausible account. You can enable or disable it by going to the **General** section of your [site settings](website-settings.md). In the **Tracking** area, use the **File downloads** toggle under **Default tracking**. Your changes take effect automatically without needing to update the snippet on your site.
 
 <div class="browser">
-<img alt="Enable outbound file downloads tracking during onboarding" src={useBaseUrl('img/onboarding-enable-file-downloads-tracking.png')} />
+<img alt="Enable file download tracking in Plausible site settings" src={useBaseUrl('img/v2/enable-file-download-tracking.png')} />
 </div>
 
 After you enable file downloads tracking on your site, all the file downloads will start being tracked and will be displayed in the **Goals** tab of your Plausible Analytics dashboard. You'll see the **File Download** goal as soon as the first file download has been tracked.
@@ -80,10 +80,10 @@ Learn more about [effectively optimizing for file downloads](https://plausible.i
 
 ## Other automated goals
 
-Plausible also offers automated tracking for [outbound link clicks](outbound-link-click-tracking.md) and [form submissions](form-submissions-tracking.md). These can be enabled from the "Site Installation" area in your site settings without any code changes. You can also track [404 error pages](error-pages-tracking-404.md) with a small snippet of code.
+Plausible also offers automated tracking for [outbound link clicks](outbound-link-click-tracking.md) and [form submissions](form-submissions-tracking.md). These can be enabled under **Default tracking** in the **Tracking** area of your site settings without any code changes. You can also track [404 error pages](error-pages-tracking-404.md) with a small snippet of code.
 
 ## How to disable "File downloads" tracking for your site
 
-You can control what data is collected in the **Site Installation** area of the **General** section in your [site settings](website-settings.md).
+Go to the **General** section of your [site settings](website-settings.md). In the **Tracking** area, switch off **File downloads** under **Default tracking**. Your changes take effect automatically without needing to update the snippet on your site.
 
 After you disable file downloads tracking, we will automatically remove the goal called `File Download` from your site.

@@ -7,7 +7,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 The Plausible script offers enhanced measurements and configuration options to tailor tracking to your needs.
 
-You can manage these measurements in the **Tracking** area under **General** in your [site settings](website-settings.md).
+You can manage these optional measurements in the **Tracking** area under **General** in your [site settings](website-settings.md).
 
 Under **Default tracking**, you can enable or disable automatic tracking for outbound links, file downloads and form submissions. Your changes take effect automatically without needing to update the snippet on your site.
 
@@ -17,11 +17,11 @@ There are also additional tracking options that you can set up manually if neede
   <img alt="Manage default and additional tracking in Plausible site settings" src={useBaseUrl('img/v2/tracking-settings.png')} />
 </div>
 
-Here's the list of our default and additional tracking options:
+Here's the list of our optional measurements, organized as they appear in your site settings:
 
 <div class="table-col1-nowrap">
 
-| Tracking option      | Explanation                                                                                                                                                                                 |
+| Optional Measurement | Explanation                                                                                                                                                                                 |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Default tracking** |                                                                                                                                                                                             |
 | Outbound links       | Automatically [track clicks on outbound links](outbound-link-click-tracking.md)                                                                                                             |

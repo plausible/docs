@@ -12,5 +12,5 @@ For instance, if you select **(GMT+01:00) Amsterdam, Berlin…** then the beginn
 The best practice is to set the timezone that reflects the location of your audience or if the audience is very broad and spread across the world to set the timezone of your location.
 
 <div class="browser">
-    <img alt="Plausible Analytics" src={useBaseUrl('img/v2/reporting-timezone.webp')} />
+    <img alt="Change the reporting timezone in Plausible site settings" src={useBaseUrl('img/v2/reporting-timezone.png')} />
 </div>
