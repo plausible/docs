@@ -11,7 +11,7 @@ To integrate your website with Plausible Analytics, you need to insert a Plausib
 
 We display your snippet during the process of adding a new site to your account. For sites that you've already added to your account, you can find your JavaScript snippet by [the Sites page](https://plausible.io/sites), which lists all the websites you've added to Plausible.
 
-Click on the menu icon on the right-hand side of the site you'd like to get the snippet for and choose **Settings** to enter the [site settings](website-settings.md). Then scroll down to the **Site Installation** area of the **General** section. Click on the **Review Installation** button to get the installation details including your snippet.
+Click on the menu icon on the right-hand side of the site you'd like to get the snippet for and choose **Settings** to enter the [site settings](website-settings.md). In the **General** section, scroll down to the **Tracking** area and click **Review** next to **Site installation** to get the installation details including your snippet.
 
 There you can also enable any [optional enhanced measurements](script-extensions.md).
 
@@ -22,7 +22,7 @@ There you can also enable any [optional enhanced measurements](script-extensions
 />
 
 <div class="browser">
-    <img alt="Add script extensions and verify your installation" src={useBaseUrl('img/v2/add-script-extensions-verify-installation.webp')} />
+    <img alt="Review your Plausible installation and copy the tracking snippet" src={useBaseUrl('img/v2/add-script-extensions-verify-installation.webp')} />
 </div>
 
 :::tip Want to track visitors across your domain and its subdomains?
