@@ -1,7 +1,7 @@
 ---
 title: Embed the dashboard without our branding into your user interface
 sidebar_label: Embed the dashboard
-description: "Embed a Plausible analytics dashboard into your own site or product using an iframe. Unbranded, scoped to a segment and requires no Plausible account to view."
+description: "Embed a Plausible analytics dashboard into your own site or product using an iframe. Unbranded, scoped to one site or segment and requires no Plausible account to view."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -24,7 +24,7 @@ Want your embed to be limited to only include the stats of a specific segment of
 See our [shared link docs](shared-links.md) to see how.
 
 :::info Make sure to keep the password field blank
-It's technically not possible to embed a password-protected dashboard. When you try to embed a password-protected dashboard, the browser will show a "refused to connect" error message.
+It's technically not possible to embed a password-protected dashboard. The browser will show a "refused to connect" error message, so protect access through the application where you place the embed.
 :::
 
 ## 2. Generate the embed code

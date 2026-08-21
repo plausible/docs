@@ -202,4 +202,4 @@ Most plugin problems come down to caching, admin exclusion, an invalid token or 
 
 - [Set up goals](goal-conversions.md) to measure signups, purchases or any other key action
 - [Import your Google Analytics history](google-analytics-import.md) to keep your stats continuous if you're switching from GA
-- [Connect Looker Studio](looker-studio.md) for custom reporting across your data sources
+- [Connect Data Studio](looker-studio.md) for custom reporting across your data sources
