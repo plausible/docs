@@ -21,6 +21,10 @@ Log in to your Plausible Analytics account and in the top right menu, click on y
 * Assign individual team members their roles
 * Click on the "Create Team" button to finish the process
 
+:::note Nothing is saved until you click "Create Team"
+Adding people to the member list does not send any invitations yet. The team is only created and the invitations are only sent when you click the "Create Team" button. If you refresh or leave the page before clicking it, the member list is discarded and you'll need to start over.
+:::
+
 <div class="browser">
 <img alt="Create a team button" src={useBaseUrl('img/create-team-button.png')} />
 </div>
