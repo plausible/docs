@@ -10,14 +10,14 @@ Define a sequence of steps and measure how many visitors complete each one. Use 
 
 <PlanFeatureNote feature="funnel-analysis" plan="business" label="Funnel analysis" />
 
-* You can go beyond pageviews and use any custom events to build a funnel
-* Choose between two funnel types: sequential (visitors can take other actions between steps) or strict order (steps must happen in exact consecutive order)
-* With the conversion rate you understand the percentage of visitors who started the user flow and ended with a conversion event
-* With the percentage drop-off between the individual funnel steps, you can spot where you lose the most visitors. A step with an unusually large drop-off is usually the best place to start optimizing
-* You can get more granular by [using filters](filters-segments.md) to segment your audience. Filter conversion funnels by marketing campaign, referral source, landing page, device or location
+- You can go beyond pageviews and use any custom events to build a funnel
+- Choose between two funnel types: sequential (visitors can take other actions between steps) or strict order (steps must happen in exact consecutive order)
+- With the conversion rate you understand the percentage of visitors who started the user flow and ended with a conversion event
+- With the percentage drop-off between the individual funnel steps, you can spot where you lose the most visitors. A step with an unusually large drop-off is usually the best place to start optimizing
+- You can get more granular by [using filters](filters-segments.md) to segment your audience. Filter conversion funnels by marketing campaign, referral source, landing page, device or location
 
 <div class="browser">
-<img alt="Funnel analysis" src={useBaseUrl('img/funnel-analysis.png')} />
+<img alt="Funnel analysis" src={useBaseUrl('img/v2/funnel-analysis.webp')} />
 </div>
 
 ## How funnel conversions are counted
@@ -34,29 +34,29 @@ Funnels also work across your main domain and its subdomains ([see more](subdoma
 
 ## How to set up the conversion funnel analysis
 
-* Go into your [site settings](website-settings.md) and click on **Funnels** in the left-hand sidebar
+- Go into your [site settings](website-settings.md) and click on **Funnels** in the left-hand sidebar
 
-* Click the **Add funnel** button to create a funnel.
+- Click the **Add funnel** button to create a funnel.
 
-* Give your funnel a name in the **Funnel name** field.
+- Give your funnel a name in the **Funnel name** field.
 
-* Define your funnel by adding the steps you expect a visitor to take before a conversion, a purchase or a sign up. These steps consist of [pageview goals](pageview-goals.md) and [custom event goals](custom-event-goals.md). You need to add a minimum of 2 steps and a maximum of 8 steps to create a funnel. If you want a step to match only a specific variation of a custom event, use a [property-filtered goal](/custom-props/for-custom-events#create-property-filtered-goals).
+- Define your funnel by adding the steps you expect a visitor to take before a conversion, a purchase or a sign up. These steps consist of [pageview goals](pageview-goals.md) and [custom event goals](custom-event-goals.md). You need to add a minimum of 2 steps and a maximum of 8 steps to create a funnel. If you want a step to match only a specific variation of a custom event, use a [property-filtered goal](/custom-props/for-custom-events#create-property-filtered-goals).
 
-* By default, the **Allow other activity in between funnel steps** option is enabled, which creates a sequential funnel. Disable it to use strict order mode instead.
+- By default, the **Allow other activity in between funnel steps** option is enabled, which creates a sequential funnel. Disable it to use strict order mode instead.
 
-* Click on the **Save** button after you've defined the steps you want to measure
+- Click on the **Save** button after you've defined the steps you want to measure
 
 Funnels appear at the bottom of your dashboard as soon as the first visit is tracked on the funnel steps.
 
 ## How to edit existing funnels
 
-* Go into your [site settings](website-settings.md) and click on **Funnels** in the left-hand sidebar
+- Go into your [site settings](website-settings.md) and click on **Funnels** in the left-hand sidebar
 
-* Click on the edit icon on the right-hand side of the funnel that you'd like to edit.
+- Click on the edit icon on the right-hand side of the funnel that you'd like to edit.
 
-* Change the funnel name, edit the steps of your funnel and switch between sequential and strict order by toggling the **Allow other activity in between funnel steps** option
+- Change the funnel name, edit the steps of your funnel and switch between sequential and strict order by toggling the **Allow other activity in between funnel steps** option
 
-* Click on the **Update Funnel** button
+- Click on the **Update Funnel** button
 
 ## When to use funnel analysis
 
@@ -74,6 +74,7 @@ If you just want to count how many people reached a single page or clicked a but
 **SaaS trial signup**
 
 A typical SaaS funnel might look like:
+
 1. Pricing page (`/pricing`)
 2. Registration page (`/register`)
 3. Onboarding step one (`/onboarding/step-1`)
@@ -100,7 +101,7 @@ Set this funnel to **non-sequential** if visitors might skip the cart and go dir
 
 **Drop-off rate by step**
 
-The drop-off between each step tells you where friction is highest. A funnel where 1,000 people enter step 1 but only 10 reach step 4 is expected: most funnels have large drops. Focus on the step with the *largest proportional* drop rather than the lowest absolute number.
+The drop-off between each step tells you where friction is highest. A funnel where 1,000 people enter step 1 but only 10 reach step 4 is expected: most funnels have large drops. Focus on the step with the _largest proportional_ drop rather than the lowest absolute number.
 
 **What counts as a normal drop-off**
 
