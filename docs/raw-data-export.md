@@ -45,9 +45,9 @@ Delivery to Google Cloud Storage goes through GCS's S3-compatible endpoint using
 
 ## Historical data and backfills
 
-Daily exports start after setup. Historical backfills are not included by default. Because backfills are prepared manually, only short backfills may be possible case by case.
+Daily exports start after setup. During setup, we can include a one-time backfill covering up to the 30 days immediately before the first scheduled export. Earlier historical data cannot be included.
 
-If you need historical data, include the date range when contacting us so we can confirm what is possible.
+If you need this backfill, include the requested start date when contacting us.
 
 ## When to use it
 
@@ -72,4 +72,4 @@ Before requesting raw exports, check whether a simpler option covers your needs:
 
 ## How to get it
 
-Raw event data exports are part of our [Enterprise plans](https://plausible.io/enterprise-web-analytics) and are not self-serve. [Contact us](https://plausible.io/contact) to discuss your data volume, export format, storage provider and any historical date range you need.
+Raw event data exports are part of our [Enterprise plans](https://plausible.io/enterprise-web-analytics) and are not self-serve. [Contact us](https://plausible.io/contact) to discuss your data volume, export format, storage provider and whether you need the optional 30-day backfill.
