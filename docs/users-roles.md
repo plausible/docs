@@ -51,11 +51,11 @@ If you then add more sites to your account, they appear in "My personal sites" a
 
 When managing team members, you can choose between five different roles:
 
-1. **Owner** gets access to everything and can manage the team, sites, API keys, 2FA enforcement, SSO and the subscription itself. An owner can also delete a team 
-2. **Admin** can manage team members, sites and API keys
-3. **Editor** gets access to all your stats dashboards and can change the site settings
-4. **Billing** can manage your Plausible subscription, payments and invoices 
-5. **Viewer** can view the stats dashboards of the sites that the team owns 
+1. **Owner** can manage the team, sites, their own API keys, 2FA enforcement, SSO and the subscription. An owner can also delete the team
+2. **Admin** can manage team members, sites and their own API keys
+3. **Editor** can view all stats dashboards, change site settings and manage their own API keys
+4. **Billing** can manage the subscription, payments, invoices and their own API keys
+5. **Viewer** can view the stats dashboards of sites that the team owns but cannot create API keys
 
 You can change the role of a team member at any time:
 
@@ -67,6 +67,12 @@ You can change the role of a team member at any time:
 That's it. The team member now has a different role.
 
 Note that you need to be an owner or an admin of a team to change team member roles.
+
+### API key access by role
+
+Owner, Admin, Editor and Billing team members can create their own API keys for the selected team. Viewer team members cannot create API keys. Guest Viewers and Guest Editors cannot create keys for a team where they only have access to individual sites.
+
+API keys are scoped to the team selected when they are created. They do not automatically include sites in other teams or sites where the key owner is only a guest. See [Stats API authentication](stats-api.md#authentication) for examples and the full access rules.
 
 <div class="browser">
 <img alt="Change roles, delete team member" src={useBaseUrl('img/change-roles-remove-users.png')} />
@@ -168,3 +174,22 @@ You can remove a guest from having access to a site at any time:
 That's it. The guest has now been removed from the specific site.
 
 Note that you need to be an owner or an admin of the team that owns the site to remove a guest.
+
+## How the team member limit is counted
+
+The team member limit includes both full team members and guests who can log in to individual sites. It is based on unique email addresses, not the number of roles or sites.
+
+The following count toward the limit:
+
+- Team members
+- Guest Viewers and Guest Editors
+- Pending invitations to join the team or an individual site
+
+The same person counts once even if they are a member of the team and a guest on multiple sites.
+
+The following do not count toward the limit:
+
+- Email report recipients
+- People who view a shared link or an embedded dashboard based on a shared link
+
+Email report recipients and shared-link viewers do not get team or site login access. If they are also invited as a team member or site guest, they count from the invitation. See [pricing and subscription plans](subscription-plans.md) for the limits included with each plan.

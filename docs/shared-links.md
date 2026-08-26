@@ -10,6 +10,8 @@ Shared links are useful for specific use cases such as if you want to share your
 
 People that you send your shared link to can view the stats dashboard without having a Plausible Analytics account and without needing to log in. They can only view the specific dashboard that you shared and can't see any other sites that you have added to your Plausible account.
 
+People who view a shared link do not count toward your [team member limit](users-roles.md#how-the-team-member-limit-is-counted).
+
 :::tip Want to share the stats with your team members instead?
 See how to [invite team members and set user roles](users-roles.md)
 :::

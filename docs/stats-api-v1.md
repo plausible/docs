@@ -14,8 +14,7 @@ The Plausible Stats API offers a way to retrieve your stats programmatically. It
 
 The API accepts GET requests with query parameters and returns standard HTTP responses along with a JSON-encoded body. All API requests must be made over HTTPS. Calls made over plain HTTP will fail. API requests without authentication will also fail.
 
-Each request must be authenticated with an API key using the Bearer Token method. You can obtain an API key for your account by going to your user
-settings page [plausible.io/settings](https://plausible.io/settings).
+Each request must be authenticated with an API key using the Bearer Token method. API keys are scoped to the team selected when they are created. See [Stats API authentication](stats-api.md#authentication) for setup instructions, role restrictions and site access rules.
 
 API keys have a rate limit of 600 requests per hour by default. If you have special needs for more requests, please contact us to request more capacity.
 
