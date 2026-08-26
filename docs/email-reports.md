@@ -18,4 +18,4 @@ All the stats are embedded directly into the email and there's no need to go to 
 
 Email reports can be set to be sent to multiple recipients. Enable the weekly and/or monthly report, add an individual recipient into the **Report recipients** field and click on the **Add recipient** button. 
 
-You can set the email reports to be sent to as many people as you want. You can remove individual report recipients or completely stop the scheduled email reports at any time.
+You can set the email reports to be sent to as many people as you want. Email report recipients do not count toward your [team member limit](users-roles.md#how-the-team-member-limit-is-counted). You can remove individual report recipients or completely stop the scheduled email reports at any time.

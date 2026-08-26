@@ -12,7 +12,7 @@ import CodeBlock from '@theme/CodeBlock';
 import { SiteContextProvider } from '../src/js/sites.tsx';
 import PlanFeatureNote from '@site/src/components/PlanFeatureNote';
 
-Plausible Stats API is a powerful single endpoint HTTP interface to **view historical and real-time stats**. In a nutshell, the endpoint `/api/v2/query` accepts both simple and complex stats queries in the POST request body and returns the metrics as JSON.
+Plausible Stats API is a read-only HTTP interface for **viewing historical and real-time stats**. The `/api/v2/query` endpoint accepts simple and complex stats queries in the POST request body and returns the metrics as JSON.
 
 :::tip[Not what you need?]
 Take a look at our [Events API Reference](events-api.md) if you want to record pageviews or custom events for your sites, or [Sites API Reference](sites-api.md) if you want to manage your sites over the API.
@@ -22,11 +22,33 @@ Take a look at our [Events API Reference](events-api.md) if you want to record p
 
 ## Authentication
 
-To create a new stats API key, log in to your Plausible Analytics account. In the top-right menu, click on your account name and go to settings.
+API keys are scoped to one team. The team selected in the top-right menu when you create the key determines which sites it can query. A key does not inherit access to every site its owner can view across Plausible.
 
-Next, go to the **API Keys** section in the left-hand sidebar. Click the **New API Key** button, choose **Stats API** and save the key as it will only be shown once. After saving the key, click on **Create API Key** to confirm its creation.
+To create a Stats API key:
+
+1. Log in to your Plausible account and select the team whose sites you want to query.
+2. Click your account name, open the settings and go to **API Keys**.
+3. Click **New API Key**, choose **Stats API** and save the key because it will only be shown once.
+4. Click **Create API Key** to confirm its creation.
 
 After creating an API key, you can authenticate your request by sending the key in the Authorization header of your request.
+
+### Who can create a Stats API key?
+
+| Role in the selected team | Can create a key for that team? |
+| --- | --- |
+| Owner, Admin, Editor or Billing | Yes |
+| Viewer | No |
+| Guest Viewer or Guest Editor for an individual site | No |
+
+### Which sites can a key access?
+
+A Stats API key can query sites owned by the team it was created for. It cannot query:
+
+- Sites owned by another team
+- Sites where the key owner is only a Guest Viewer or Guest Editor
+
+For example, suppose you are a Guest Viewer for a client's site. A Stats API key that you create under **My personal sites** cannot query that client's site. The client team would need to create a key scoped to their team.
 
 ### Example curl request
 

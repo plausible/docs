@@ -25,9 +25,10 @@ See [users and roles](users-roles.md) for full details on inviting people and ma
 See the [billing section](trial-to-paid.md) for details on plans, invoices and payment.
 
 **API keys**
-- Create and manage API keys for the Stats API and Sites API
+- Create and manage your API keys for the Stats API and Sites API
+- Each key is scoped to the team selected in the top-right menu when it is created
 
-See the [Stats API](stats-api.md) and [Sites API](sites-api.md) docs for how to use them.
+See [Stats API authentication](stats-api.md#authentication) for role restrictions and site access rules, or the [Sites API](sites-api.md) docs for how to use a Sites API key.
 
 **Single Sign-On (SSO)**
 - Configure SSO for your team via Google Workspaces, Microsoft Entra or Okta

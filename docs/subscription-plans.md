@@ -57,6 +57,8 @@ Your subscription tier is based on the total number of **pageviews** and **[cust
 
 Custom events include outbound link clicks, file downloads, form submissions, 404 error tracking and any manually tracked events. Adding a [pageview goal](pageview-goals.md) does not count towards your usage.
 
+Team member limits are calculated separately from traffic. Full team members, site guests and pending invitations count toward the limit. Email report recipients and people who view shared links do not. See [how the team member limit is counted](users-roles.md#how-the-team-member-limit-is-counted) for the full rules.
+
 Check your current usage in the **Subscription** section of your account settings and pick a tier that matches.
 
 <div class="browser">
