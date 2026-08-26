@@ -39,7 +39,7 @@ Enterprise includes everything in Business plus additional features and higher l
 - **SSO (Single Sign-On)**: log in via your existing identity provider using SAML 2.0. See [SSO documentation](sso.md).
 - **Sites API**: create and manage sites programmatically. See [Sites API documentation](sites-api.md).
 - **Managed proxy**: we handle the proxy setup and maintenance for you. See [proxy options](proxy/introduction.md).
-- **Scheduled raw event exports**: event-level data delivered automatically on an agreed schedule. See [raw event exports](raw-data-export.md).
+- **Scheduled raw event data exports**: event- and session-level data delivered daily to your S3-compatible object storage. See [raw event data exports](raw-data-export.md).
 
 Limits that can be increased on Enterprise beyond standard plan tiers:
 

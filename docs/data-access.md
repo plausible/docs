@@ -17,7 +17,7 @@ Plausible gives you several ways to access your stats outside the dashboard. The
 | Download stats as a spreadsheet, one-off | [CSV export](#csv-export) |
 | Build a custom report in Google's visualization tool | [Data Studio](#data-studio) |
 | Pipe data into a data warehouse or BI tool | [Warehouse connectors](#data-warehouse-connectors) |
-| Get event-level data for warehousing or compliance | [Scheduled raw exports](#scheduled-raw-event-exports) |
+| Get event-level data for warehousing or compliance | [Scheduled raw event data exports](#scheduled-raw-event-data-exports) |
 | Query data in natural language through AI tools | [MCP server](#mcp-server) |
 | View stats from a mobile or desktop app | [Mobile and desktop apps](data-pipelines.md) |
 
@@ -104,17 +104,17 @@ For the full list of community connectors, apps and integrations, see [Viewing P
 
 ---
 
-## Scheduled raw event exports
+## Scheduled raw event data exports
 
-For cases where aggregated stats are not enough, Plausible offers scheduled raw event data exports. These give you access to event-level data delivered automatically on an agreed schedule, in a format and schema configured with our team.
+For cases where aggregated stats are not enough, Plausible offers scheduled raw event data exports. These give you access to event- and session-level data delivered daily to your S3-compatible object storage, in a format and schema configured with our team.
 
 **Use this when:**
 - You need event-level data for data warehousing, internal analytics or compliance reporting
 - Aggregated stats from the CSV export or Stats API do not meet your needs
 
-Raw event exports are not self-serve and are not real-time. They are part of our [Enterprise plans](https://plausible.io/enterprise-web-analytics). [Contact us](https://plausible.io/contact) to discuss your needs.
+Raw event data exports are not self-serve and are not real-time. They are part of our [Enterprise plans](https://plausible.io/enterprise-web-analytics). [Contact us](https://plausible.io/contact) to discuss your needs.
 
-[Scheduled raw event exports](raw-data-export.md)
+[Scheduled raw event data exports](raw-data-export.md)
 
 ---
 
