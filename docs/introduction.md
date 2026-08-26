@@ -98,7 +98,7 @@ import CtaBox from '@site/src/components/CtaBox';
 <li><a href="/docs/trial-to-paid">Trial to paid</a>: upgrade to a subscription</li>
 <li><a href="/docs/subscription-plans">Subscription plans</a>: what's included at each tier</li>
 <li><a href="/docs/change-plan">Change plan</a>: upgrade or downgrade your subscription</li>
-<li><a href="/docs/download-invoices">Download invoices</a>: access your billing history</li>
+<li><a href="/docs/download-invoices">View and save invoices</a>: access your billing history</li>
 <li><a href="/docs/nonprofit-and-education-pricing">Nonprofit and education pricing</a>: discounted plans</li>
 <li><a href="/docs/compliance">Compliance</a>: GDPR, CCPA and data processing</li>
 </ul>
