@@ -88,6 +88,6 @@ Everything is self-serve in your account settings:
 
 - **[Change your plan](change-plan.md)** - switch tiers, change billing frequency or move between plans. All changes are pro-rated.
 - **[Cancel your subscription](cancel-subscription.md)** - you keep access to your stats until the end of the current billing period.
-- **[Download invoices](download-invoices.md)** - get invoices, add VAT numbers and change billing address.
+- **[View and save invoices](download-invoices.md)** - access invoices, save them as PDFs, add VAT numbers and change your billing address.
 
 Have a question? Check the [Billing FAQ](billing.md) or [contact us](https://plausible.io/contact).

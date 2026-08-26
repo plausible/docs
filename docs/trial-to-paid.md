@@ -52,7 +52,7 @@ During checkout, you can add your company address and VAT ID. Paddle handles VAT
 
 <img class="border" alt="Add VAT number at checkout" src={useBaseUrl('img/v2/add-vat-number-during-checkout.webp')} />
 
-If you skip this step, you can add these details later by opening any invoice from Paddle and clicking **Add address & VAT Number**. More on managing invoices in [Download your invoices](download-invoices.md).
+If you skip this step, you can add these details later by opening any invoice from Paddle and clicking **Add address & VAT Number**. More on managing invoices in [View and save your invoices](download-invoices.md).
 
 <div class="gallery two-column">
     <img class="border" alt="Edit invoice to add business details" src={useBaseUrl('img/v2/edit-invoice-to-add-business-details-1.webp')} />

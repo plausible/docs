@@ -13,6 +13,6 @@ To change your Plausible login email instead, see [change your account email](ch
 
 ## Give your accounting team billing access
 
-You can add a team member with the Billing role. A Billing member can view and download all past invoices and manage your subscription and payment details directly within Plausible.
+You can add a team member with the Billing role. A Billing member can view all past invoices, save them as PDFs and manage your subscription and payment details directly within Plausible.
 
 To add a billing member, go to your team settings and invite them with the Billing role. See [users and roles](users-roles.md) for details.
