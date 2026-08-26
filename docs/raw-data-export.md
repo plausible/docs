@@ -1,22 +1,53 @@
 ---
 displayed_sidebar: someSidebar
-title: Scheduled raw event exports
-description: "Get event-level data from Plausible delivered automatically on a schedule. For data warehousing, compliance and internal analytics where aggregated stats are not enough."
+title: Scheduled raw event data exports
+description: "Get event-level data from Plausible delivered automatically every day. For data warehousing, compliance and internal analytics where aggregated stats are not enough."
 ---
 
 import PlanFeatureNote from '@site/src/components/PlanFeatureNote';
 
-<PlanFeatureNote feature="raw-data-export" plan="enterprise" label="Scheduled raw event exports" />
+<PlanFeatureNote feature="raw-data-export" plan="enterprise" label="Scheduled raw event data exports" />
 
-The Stats API and CSV export give you aggregated data: totals, breakdowns and time series across your sites. For cases where you need the underlying event-level data, Plausible offers scheduled raw event exports.
+The Stats API and CSV export give you aggregated data: totals, breakdowns and time series across your sites. For cases where you need the underlying event-level data, Plausible offers scheduled raw event data exports.
 
 ## What it is
 
-A scheduled raw export delivers event-level data from your Plausible account automatically, on an agreed schedule. Setup is configured with our team: we agree on the event data fields and schema, the export format (CSV or Parquet), the delivery interval (daily, weekly or other) and the delivery destination. We support uploading directly to your S3 bucket or Google Cloud Storage bucket. Once configured, exports are delivered automatically with no action needed on your end.
+A scheduled raw export delivers event- and session-level data from your Plausible account to your object storage every day.
 
-Unlike the Stats API, which returns pre-aggregated results, raw exports give you individual event records. This lets you run your own aggregations, apply custom attribution models, join analytics data with other business data, and meet compliance requirements that call for event-level audit trails.
+Setup is configured with our team: we agree on the data fields and schema, the delivery destination and whether the export uses CSV, Parquet or JSON Lines (JSONL).
+
+We can deliver to any S3-compatible object storage service, including AWS S3 and Google Cloud Storage. Once configured, exports are delivered daily with no action needed on your end.
+
+Unlike the Stats API, which returns pre-aggregated results, raw exports give you individual event records.
+
+This lets you run your own aggregations, apply custom attribution models, join analytics data with other business data, and meet compliance requirements that call for event-level audit trails.
 
 Raw exports are intentionally scoped to keep Plausible fast, privacy-friendly and predictable. They are not real-time and not self-serve.
+
+## Explore an example export
+
+Download an example export for plausible.io covering July 2026:
+
+- [events.parquet](https://edlvc.upcloudobjects.com/plausible-io-example/2026-07/events.parquet) contains the individual event records
+- [sessions.parquet](https://edlvc.upcloudobjects.com/plausible-io-example/2026-07/sessions.parquet) contains the sessions those events belong to
+
+Use these files to inspect the Parquet schema and example values before planning how you will load the data into your own systems.
+
+## What's included
+
+Alongside the event-level file, exports include a companion session-level file, so you get both individual events and the sessions they belong to.
+
+Custom properties are delivered as a single JSON object per row rather than a fixed set of columns, so you don't need to declare property names in advance and can change your instrumentation over time without breaking the export schema.
+
+Plausible-generated identifiers are an anonymous session ID and a daily-rotating anonymous user ID used for unique-visitor calculations.
+
+Delivery to Google Cloud Storage goes through GCS's S3-compatible endpoint using static (HMAC) credentials, the same as an S3 bucket. Authenticating with a native GCP service account isn't supported out of the box.
+
+## Historical data and backfills
+
+Daily exports start after setup. Historical backfills are not included by default. Because backfills are prepared manually, only short backfills may be possible case by case.
+
+If you need historical data, include the date range when contacting us so we can confirm what is possible.
 
 ## When to use it
 
@@ -41,4 +72,4 @@ Before requesting raw exports, check whether a simpler option covers your needs:
 
 ## How to get it
 
-Raw event exports are part of our [Enterprise plans](https://plausible.io/enterprise-web-analytics) and are not self-serve. [Contact us](https://plausible.io/contact) to discuss your data volume, delivery schedule and format requirements.
+Raw event data exports are part of our [Enterprise plans](https://plausible.io/enterprise-web-analytics) and are not self-serve. [Contact us](https://plausible.io/contact) to discuss your data volume, export format, storage provider and any historical date range you need.
