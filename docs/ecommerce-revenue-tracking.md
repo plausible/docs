@@ -30,6 +30,8 @@ You can add multiple filters to [create audience segments](filters-segments.md) 
 
 When the revenue goal filter is applied on the dashboard, you will also find the "Revenue" column appear in all the individual reports (when expanded using the expand icon in the top right). This is useful in seeing the breakdown of your revenue by individual traffic sources, entry or exit pages, locations, browser types and properties. You can also sort your reports by revenue in either ascending or descending order.
 
+Revenue also appears on any [funnel](funnel-analysis.md) step that uses a revenue-enabled goal. The step shows its total revenue alongside the visitor count, and you can hover over it to see the exact revenue and revenue per visitor. If you enable a date comparison, the funnel shows revenue for both periods.
+
 ## Clean referral source attribution
 
 Plausible automatically excludes unwanted referral sources such as payment processors like PayPal, Stripe and Paddle to keep your data clean.
