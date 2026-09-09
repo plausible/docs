@@ -25,11 +25,12 @@ You can also change the chart interval, [segment your audience](filters-segments
 
 - Choose your comparison option from the drop-down.
 
-The comparison appears in three places across your dashboard:
+The comparison appears in four places across your dashboard:
 
 - **Metric cards** at the top show percentage changes (with up/down arrows) against the comparison period
 - **The main chart** shows both date ranges as separate lines so you can see trends side by side. Hover over any point to see the values and percent change in the tooltip
 - **Breakdown tables** (Sources, Pages, Countries, etc.) show comparison data in a tooltip when you hover over a row
+- **Funnels** show the comparison-period value alongside each step, with changes in step completion and the overall funnel conversion rate. Revenue is also shown for both periods when the funnel contains a revenue-enabled goal
 
 <div class="browser">
     <img alt="Match exact date" src={useBaseUrl('img/v2/stats-comparison-in-plausible-analytics.webp')} />
