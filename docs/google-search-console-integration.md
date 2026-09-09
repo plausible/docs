@@ -12,6 +12,8 @@ However, you can still access your search terms by setting up your site on Googl
 
 This integration is privacy-friendly and requires no Google code to be placed on your site. Google is basically just sending us the information they’ve already collected on their search results.
 
+Plausible doesn't store this Search Console data. We fetch search query, clicks, impressions, CTR and position data from the Google Search Console API whenever you view the report, and don't save any of it in our database. We only store the authorization details and the property you've selected, which is what's needed to keep the integration running.
+
 <CtaBox
   headline="See SEO queries and website analytics in one dashboard"
   link="https://plausible.io/register"
@@ -122,6 +124,8 @@ You can check if Plausible Analytics is integrated with and has the right permis
 ## Remove the Google Search Console integration
 
 If you'd like to remove the Google Search Console integration, click on the **Unlink Google account** button in the **Google Search Console Integration** module within the **Integrations** section of your website settings.
+
+Since Plausible doesn't store any Search Console data, disconnecting means the search query stats immediately stop appearing in your dashboard. They'll come back once you reconnect the integration.
 
 P.S. If you want to learn more about analyzing organic search traffic in Plausible, visit our [blog post](https://plausible.io/blog/seo-dead#analyzing-organic-search-traffic).
 

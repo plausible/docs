@@ -83,15 +83,17 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 After you've [added the Plausible snippet to your site](plausible-script.md), the dashboard starts displaying stats in real-time as soon as the first visit is counted. There are no delays with data in Plausible.
 
-If you see the dashboard with graphs and numbers, everything is working. Do you keep seeing a blinking green dot instead? That means we're listening for incoming visits but haven't recorded any yet.
+After you add the snippet, your dashboard opens immediately. A banner at the top shows the progress and result of the installation check. Plausible first checks whether it can reach your site and detect the installation, then confirms if visits are being counted correctly.
 
-Our testing tool launches automatically from the blinking green dot screen to send test traffic to your site. This test traffic won't be recorded in your dashboard, but you'll see a status message indicating whether Plausible has been installed correctly.
+Our testing tool launches automatically in the backgroundto send test traffic to your site. This test traffic won't be recorded in your dashboard. When the check finishes, the banner displays a status message indicating whether Plausible has been installed correctly.
+
+If the check fails, the banner explains the problem and lets you check again, try another URL, review the installation instructions or verify the installation manually.
 
 <div class="browser">
-    <img alt="Integration verification tool" src={useBaseUrl('img/v2/integration-verification-tool.webp')} />
+    <img alt="Successful installation status in the dashboard banner" src={useBaseUrl('img/v2/integration-verification-tool.webp')} />
 </div>
 
-As soon as the first visit is recorded, the verification screen disappears and your dashboard loads automatically.
+Real visits appear in your stats as soon as they are recorded.
 
 The testing tool does not affect your tracking. If real visits are being recorded correctly, you can safely ignore any error or warning the tool shows.
 
@@ -115,9 +117,9 @@ Before diving deeper, make sure you have done each of these:
 
 Find your symptom and jump straight to the right section:
 
-- **[Blinking green dot, nothing recorded yet](#no-data-recorded-yet)**: snippet not loading, cache issue or site not reachable
+- **[Installation check is still running or shows an error](#no-data-recorded-yet)**: site unreachable, snippet not loading, cache issue or incorrect URL
 - **[Tracking was working, then it stopped](#tracking-stopped-working)**: cache, plugin update or script change
-- **[WordPress plugin issues](#wordpress-plugin-issues)**: admin exclusion, proxy not working or cache conflict
+- **[WordPress plugin issues](#wordpress-plugin-issues)**: admin exclusion, proxy not working, cache conflict or invalid/unresponsive token link
 - **[My own visits are not showing](#my-own-visits-are-not-showing)**: ad blocker, VPN or WordPress admin exclusion
 - **[Some visitors are not being counted](#some-visitors-are-not-being-counted)**: browser extensions or network-level blockers
 - **[Numbers seem lower than expected](#numbers-seem-lower-than-expected)**: methodology differences, bot filtering or blockers
@@ -187,6 +189,8 @@ Plausible is privacy-first and compliant with GDPR and ePrivacy regulations. You
 
 ## WordPress plugin issues
 
+These cover the most common plugin problems. For full setup and every plugin setting, see [Adding Plausible to WordPress](wordpress-integration.md).
+
 ### Admin visits are not showing
 
 Our WordPress plugin excludes logged-in administrator visits by default. This is intentional. If you want to track your own visits, go to the "Track analytics for user roles" section in the plugin settings and enable the Administrator role.
@@ -206,9 +210,27 @@ Skipping any step often leaves a stale script in place that the verification too
 
 The proxy creates a randomly named file in `/wp-content/uploads/`. When you migrate or clone your site, that file path may no longer match what the plugin expects. To fix this, disable the proxy, clear all caches, re-enable the proxy and clear all caches again. This forces the plugin to generate a fresh proxy file at the correct path.
 
+### Proxy script is slow
+
+The plugin notifies you if the proxy takes too long (over 500ms) to send pageviews. This usually means the speed module failed to install automatically. To install it manually:
+
+1. Access your server using (S)FTP, SSH or your host's file manager
+2. Go to the plugin directory, usually `wp-content/plugins/plausible-analytics`
+3. Open the `mu-plugin` directory inside it and copy `plausible-proxy-speed-module.php` to `wp-content/mu-plugins` (create the `mu-plugins` folder first if it doesn't exist)
+
 ### Plugin token showing as invalid
 
 Plugin tokens are site-specific. Make sure the token you are pasting was created for the exact domain you are trying to connect. Tokens always start with `plausible-plugin-`. If in doubt, create a new token in your Plausible site settings and connect it again.
+
+### Token link doesn't do anything
+
+Some browser privacy settings, extensions or ad blockers silently block the click. If nothing happens when you click the token link in the plugin settings, create the token manually instead:
+
+1. Go to `https://plausible.io/YOURDOMAIN.COM/settings/integrations?new_token=WordPress`, replacing `YOURDOMAIN.COM` with your site's domain.
+2. Click **Create Plugin Token** and copy the token.
+3. Back in the plugin, paste it into the **Plugin Token** field and click **Connect**.
+
+This opens the same page the link normally would, so the rest of the steps are identical.
 
 ### WP Rocket or another caching plugin is interfering
 

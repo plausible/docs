@@ -39,7 +39,7 @@ Enterprise includes everything in Business plus additional features and higher l
 - **SSO (Single Sign-On)**: log in via your existing identity provider using SAML 2.0. See [SSO documentation](sso.md).
 - **Sites API**: create and manage sites programmatically. See [Sites API documentation](sites-api.md).
 - **Managed proxy**: we handle the proxy setup and maintenance for you. See [proxy options](proxy/introduction.md).
-- **Scheduled raw event exports**: event-level data delivered automatically on an agreed schedule. See [raw event exports](raw-data-export.md).
+- **Scheduled raw event data exports**: event- and session-level data delivered daily to your S3-compatible object storage. See [raw event data exports](raw-data-export.md).
 
 Limits that can be increased on Enterprise beyond standard plan tiers:
 
@@ -56,6 +56,8 @@ Enterprise plans are not self-serve like Growth or Business. [Contact us](https:
 Your subscription tier is based on the total number of **pageviews** and **[custom events](custom-event-goals.md)** across all the sites in a team. Each team has its own subscription, so if you are a member of multiple teams, each is billed independently.
 
 Custom events include outbound link clicks, file downloads, form submissions, 404 error tracking and any manually tracked events. Adding a [pageview goal](pageview-goals.md) does not count towards your usage.
+
+Team member limits are calculated separately from traffic. Full team members, site guests and pending invitations count toward the limit. Email report recipients and people who view shared links do not. See [how the team member limit is counted](users-roles.md#how-the-team-member-limit-is-counted) for the full rules.
 
 Check your current usage in the **Subscription** section of your account settings and pick a tier that matches.
 
@@ -86,6 +88,6 @@ Everything is self-serve in your account settings:
 
 - **[Change your plan](change-plan.md)** - switch tiers, change billing frequency or move between plans. All changes are pro-rated.
 - **[Cancel your subscription](cancel-subscription.md)** - you keep access to your stats until the end of the current billing period.
-- **[Download invoices](download-invoices.md)** - get invoices, add VAT numbers and change billing address.
+- **[View and save invoices](download-invoices.md)** - access invoices, save them as PDFs, add VAT numbers and change your billing address.
 
 Have a question? Check the [Billing FAQ](billing.md) or [contact us](https://plausible.io/contact).

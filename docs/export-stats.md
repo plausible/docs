@@ -42,6 +42,8 @@ As an alternative to exporting as CSV files or if you prefer a programmatic way 
 
 ## Scheduled raw event data exports
 
-If you need event-level data rather than aggregated stats, Plausible offers scheduled raw event exports as part of our [Enterprise plans](https://plausible.io/enterprise-web-analytics). These cover advanced use cases such as data warehousing, internal analytics and compliance reporting.
+If you need event-level data rather than aggregated stats, Plausible offers scheduled raw event data exports as part of our [Enterprise plans](https://plausible.io/enterprise-web-analytics). These cover advanced use cases such as data warehousing, internal analytics and compliance reporting.
+
+Exports are delivered daily to your S3-compatible object storage. See the full guide for example Parquet files, supported formats and the policy on historical backfills.
 
 [See full details, use cases and how to get started →](raw-data-export.md)

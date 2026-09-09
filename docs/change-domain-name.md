@@ -17,10 +17,10 @@ Here's how to change the domain name of a site in your Plausible account:
 
 - Go to the **General** section of the [website settings](website-settings.md) in your Plausible account
 
-- Click on the **Change domain** button in the **Site domain** section
+- In the **Site details** area, click **Change** next to **Site domain**
 
 <div class="browser">
-  <img alt="Change domain name in Plausible" src={useBaseUrl('img/v2/change-domain.webp')} />
+  <img alt="Change the site domain in Plausible site settings" src={useBaseUrl('img/v2/change-domain.png')} />
 </div>
 
 - Type in your new domain name. For example, if your new domain is `https://www.yourdomain.com`, enter `yourdomain.com` in the **Domain** field. Remove `https://` and `www.` from the URL.
@@ -55,7 +55,7 @@ First and foremost, you'll need to make sure your stats are still tracking. Whet
   <tr>
     <td><b>WordPress plugin</b></td>
     <td>If your website is on WordPress, you're most likely using the plugin as that's the recommended installation method.</td>
-    <td>Update the site domain in your plugin settings</td>
+    <td>Update the site domain in your <a href="wordpress-integration#connect-with-a-plugin-token">plugin settings</a></td>
   </tr>
   <tr>
     <td><b>NPM package</b></td>

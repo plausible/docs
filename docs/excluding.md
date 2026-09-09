@@ -11,7 +11,7 @@ Plausible automatically filters out bots, crawlers and referrer spam. You don't 
 
 By default, Plausible Analytics tracks every visitor to your website. You might not want your office traffic to be counted. Or when you're working on your site, you might not want to record your own visits and page views.
 
-Here's how to block your internal traffic from your Plausible Analytics stats dashboard. You can block recording visitors from specific IP addresses, hostnames, countries or pages. If you're on WordPress, our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) can exclude views from admins and other user roles without any manual configuration.
+Here's how to block your internal traffic from your Plausible Analytics stats dashboard. You can block recording visitors from specific IP addresses, hostnames, countries or pages. If you're on WordPress, our [official WordPress plugin](wordpress-integration.md#exclude-admins-and-other-roles) can exclude views from admins and other user roles without any manual configuration.
 
 ## Exclude visits by IP address
 

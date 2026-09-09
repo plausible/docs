@@ -74,10 +74,6 @@ Add this code to your 404 page. For instance, if you're using WordPress, your 40
 
 You can place this code anywhere in the `<head>` or `<body>` section of your 404 page template.
 
-:::tip Using WordPress?
-The quickest way to start tracking 404 error pages is to use our [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin)
-:::
-
 ## Step 2: Create a `404` goal on your site
 
 404 events won't show up in your dashboard automatically. You'll have to configure the goal for the conversion numbers to show up.

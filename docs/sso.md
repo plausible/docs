@@ -200,6 +200,8 @@ Once started, the verification process is retried in the background over the fol
 
 A DNS record of type TXT must be configured for the root domain with `plausible-sso-verification=<domain identifier>` for content. DNS record update takes some time and verification might have to be retried a couple times before it succeeds.
 
+The record is only checked during the verification process itself. Once the domain is verified, we don't check the record again, so you're free to remove it. Leaving it in place is harmless and means the domain can be re-verified without touching DNS again if you ever remove and re-add it. The same applies to the file, route and META tag verification methods below.
+
 ### File or Route Verification
 
 You have to either upload a file named `plausible-sso-verification` to the public root folder of the web page under the verified domain or expose a route at `https://<domain>/plausible-sso-verification` with `<domain identifier>` as its only content. The verification should be immediate unless there's aggressive web service caching involved.

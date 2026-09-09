@@ -32,11 +32,13 @@ Each request must be authenticated with an API key using the Bearer Token method
 
 ## Authentication
 
-To create a new sites API key, log in to your Plausible Analytics account. In the top-right menu, click on your account name and go to settings.
+When you create a Sites API key, it is scoped to the team selected in the top-right menu. It can manage only the sites owned by that team. It does not include sites owned by other teams or sites where the key owner is only a Guest Viewer or Guest Editor.
 
-Next, go to the **API Keys** section in the left-hand sidebar. Click the **New API Key** button, choose **Sites API** and save the key as it will only be shown once. After saving the key, click on **Create API Key** to confirm its creation.
+To create a new Sites API key, log in to your Plausible account and select the team whose sites you want to manage. Click your account name, open the settings and go to **API Keys**. Click **New API Key**, choose **Sites API** and save the key because it will only be shown once. Click **Create API Key** to confirm its creation.
 
 After creating an API key, you can authenticate your request by sending the key in the Authorization header of your request.
+
+The [API key role restrictions](stats-api.md#who-can-create-a-stats-api-key) are the same for Stats API and Sites API keys. If the key owner leaves or is removed from the team, the key can no longer access that team's sites.
 
 ## Endpoints
 
@@ -54,15 +56,15 @@ curl -X GET https://plausible.io/api/v1/sites \
     "sites": [
         {
             "domain": "test-domain1.com",
-            "timezone": "Europe/London",
+            "timezone": "Europe/London"
         },
         {
             "domain": "test-domain2.com",
-            "timezone": "Europe/London",
+            "timezone": "Europe/London"
         },
         {
             "domain": "test-domain3.com",
-            "timezone": "Europe/London",
+            "timezone": "Europe/London"
         }
     ],
     "meta": {
@@ -113,17 +115,17 @@ curl -X GET https://plausible.io/api/v1/sites/teams \
         {
             "id": "4d3dae3b-2a44-4aaa-baac-6bb55234a435",
             "name": "My Personal Sites",
-            "api_available": false,
+            "api_available": false
         },
         {
             "id": "ef828bca-8a1b-49f6-b829-dee1c9f7d628",
             "name": "Some Team",
-            "api_available": true,
+            "api_available": true
         },
         {
             "id": "59e4d5b3-fc1c-464d-95f2-dbe6983396be",
             "name": "Another Team",
-            "api_available": true,
+            "api_available": true
         }
     ],
     "meta": {

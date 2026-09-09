@@ -6,7 +6,7 @@ description: "Plausible Analytics documentation. No cookies, no personal data, n
 
 import CtaBox from '@site/src/components/CtaBox';
 
-[Plausible Analytics](https://plausible.io/) is a simple, privacy-friendly alternative to Google Analytics. No cookies, no personal data collection, no consent banners required. One lightweight script, one easy-to-read dashboard. Running since 2018 and used by 19,000+ teams. Explore the [live demo](https://plausible.io/plausible.io) to see what it looks like.
+[Plausible Analytics](https://plausible.io/) is a simple, privacy-friendly alternative to Google Analytics. No cookies, no personal data collection, no consent banners required. One lightweight script, one easy-to-read dashboard. Running since 2018 and used by 21,000+ teams. Explore the [live demo](https://plausible.io/plausible.io) to see what it looks like.
 
 <CtaBox
   headline="Setting up Plausible for the first time? Start a free trial, then follow the guides below"
@@ -94,10 +94,11 @@ import CtaBox from '@site/src/components/CtaBox';
 <h3>Billing</h3>
 <p>Manage your subscription, invoices and plan.</p>
 <ul>
-<li><a href="/docs/trial-to-paid">Trial to paid</a>: what happens when your trial ends</li>
+<li><a href="/docs/trial">How the free trial works</a>: no credit card, no automatic charges</li>
+<li><a href="/docs/trial-to-paid">Trial to paid</a>: upgrade to a subscription</li>
 <li><a href="/docs/subscription-plans">Subscription plans</a>: what's included at each tier</li>
 <li><a href="/docs/change-plan">Change plan</a>: upgrade or downgrade your subscription</li>
-<li><a href="/docs/download-invoices">Download invoices</a>: access your billing history</li>
+<li><a href="/docs/download-invoices">View and save invoices</a>: access your billing history</li>
 <li><a href="/docs/nonprofit-and-education-pricing">Nonprofit and education pricing</a>: discounted plans</li>
 <li><a href="/docs/compliance">Compliance</a>: GDPR, CCPA and data processing</li>
 </ul>

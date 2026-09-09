@@ -18,10 +18,6 @@ Instructions below can be used to start tracking every `<a>` (i.e. link) element
 
 Here's how to automatically track clicks on cloaked affiliate links and other pretty URLs:
 
-:::tip Our WordPress plugin can track cloaked affiliate links automatically
-On WordPress? Check out our WordPress plugin which can track cloaked affiliate links automatically. [See more here](https://plausible.io/wordpress-analytics-plugin).
-:::
-
 ## 1. Add the JavaScript that will be sending the link click events to Plausible
 
 You need to add the following code to all of the pages where you want to track your links. You should insert the code below into your HTML page `<head>` section just under the custom event snippet.

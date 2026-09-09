@@ -5,7 +5,7 @@ description: "Sign up for Plausible Analytics. Includes a free 30-day trial with
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-To use Plausible Analytics, you need to [register an account](https://plausible.io/register). To explore the product, we offer you a free 30-day trial. No credit card is required to sign up for the trial.
+To use Plausible Analytics, you need to [register an account](https://plausible.io/register). To explore the product, we offer you a free 30-day trial. No credit card is required to sign up for the trial, so there are no automatic charges when the trial ends. See [how the free trial works](trial.md) for details.
 
 You can test all the different features and use Plausible on multiple sites during the trial. Plausible is so lightweight that you can run it alongside Google Analytics without any negative impact on your site's performance.
 

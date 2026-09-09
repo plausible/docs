@@ -38,7 +38,7 @@ description: "Common billing questions for Plausible Analytics. Pageview-based p
           "name": "How do I get an invoice?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Paddle emails an invoice automatically after each payment. You can also download invoices in your account settings."
+            "text": "Paddle emails an invoice automatically after each payment. You can also open past invoices from your account settings and use your browser's Print command to save them as PDFs."
           }
         },
         {
@@ -75,7 +75,7 @@ Yes. You can create a separate team for each client, add their sites to the resp
 
 ## How do I get an invoice?
 
-Paddle (our payment processor) emails you an invoice automatically after each payment. You can also download invoices in your account settings. See [Download your invoices](download-invoices.md).
+Paddle (our payment processor) emails you an invoice automatically after each payment. You can also open past invoices from your account settings. Paddle opens each invoice in a browser tab, so use your browser's **Print** command and select **Save as PDF** to save a copy. See [View and save your invoices](download-invoices.md).
 
 The invoice email goes to your Paddle email address, which may differ from your Plausible login email. To change it, [contact us](https://plausible.io/contact) with your current and desired invoice email.
 

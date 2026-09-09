@@ -1,6 +1,6 @@
 ---
 title: Add your website details
-description: "Add your website to Plausible Analytics. Set your domain, configure timezone, and handle subdomains. Your first step before installing the tracking snippet."
+description: "Add your website to Plausible Analytics. Set your domain and handle subdomains. Your first step before installing the tracking snippet."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -18,13 +18,3 @@ If you'd like to track a particular subdomain independently from the rest of you
 :::tip Advanced: the domain field works like a site ID
 In some setups, you may want to track traffic under a different domain than where the snippet is installed. For example, if you run country-specific domains (`example.de`, `example.nl`) you can point them all at a single Plausible site to collect stats in one place. This is only recommended if you want everything in one dashboard without separate per-domain dashboards. In that case, the domain field acts as an identifier rather than an exact match. [See how to track multiple country or language domains](subdomain-hostname-filter.md#tracking-multiple-country-or-language-domains).
 :::
-
-## Select your reporting timezone
-
-You need to select your reporting timezone too. This sets the day boundary of your reports regardless of where your traffic is coming from.
-
-For instance, if you select **(GMT+01:00) Amsterdam, Berlin…** then the beginning and the end of each day of your reporting is calculated based on the time in Amsterdam, even if your visitors come from London or New York.
-
-The best practice is to set the timezone that reflects the location of your audience or if the audience is very broad and spread across the world to set the timezone of your location.
-
-Click on the **Add snippet** button to go to the next step where we will provide you with the tracking snippet that you need to [insert into your site](plausible-script.md) to start counting your stats.

@@ -4,7 +4,6 @@ module.exports = {
       'introduction',
       'register-account',
       'add-website',
-      'script-extensions',
       'plausible-script',
       'integration-guides',
       'troubleshoot-integration',
@@ -15,6 +14,7 @@ module.exports = {
       'website-settings',
       'change-domain-name',
       'general',
+      'script-extensions',
       'visibility',
       'shared-links',
       'embed-dashboard',
@@ -130,6 +130,7 @@ module.exports = {
       }
     ],
     'Billing': [
+      'trial',
       'trial-to-paid',
       'subscription-plans',
       'change-plan',

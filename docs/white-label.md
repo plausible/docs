@@ -7,7 +7,7 @@ description: "Step-by-step guide to embedding Plausible analytics into your own 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import CtaBox from '@site/src/components/CtaBox';
 
-This guide is for teams embedding Plausible into their own product: SaaS platforms that want to give their users an analytics dashboard, agencies building client portals, or any product where analytics is a feature rather than an internal tool.
+This guide is for teams embedding Plausible into their own product: SaaS platforms that want to give their users an analytics dashboard, agencies building client portals or any product where analytics is a feature rather than an internal tool.
 
 <CtaBox
   headline="Overview of white-label analytics options"
@@ -30,7 +30,7 @@ Start with a [free 30-day trial](https://plausible.io/register) to explore the p
 
 ## Step 1: Provision sites with the Sites API
 
-For automated integrations, the Sites API is where you start. It lets you create a Plausible site for each of your customers programmatically, configure goals and custom events, and generate the shared links you need to embed dashboards.
+For automated integrations, the Sites API is where you start. It lets you create a Plausible site for each of your customers programmatically, configure goals and custom events and generate the shared links you need to embed dashboards.
 
 The domain you register with Plausible does not have to match where the tracking script is installed. Treat it as a site identifier, not a real hostname. This gives you flexibility for multi-tenant setups where the same domain might serve multiple customers.
 
@@ -53,7 +53,7 @@ You have two options. Use one or combine them.
 
 The fastest integration. Embed the Plausible dashboard directly into your UI as an iframe, with no Plausible branding visible to your customers. You get a complete, production-ready analytics product without building a dashboard yourself.
 
-The embedded dashboard supports light, dark or system themes, a custom background color and custom CSS overrides to match your product's design.
+The embedded dashboard supports light, dark or system themes and a custom background color. Manual width mode lets the iframe fill a container defined by your product.
 
 **How it works:**
 
@@ -62,11 +62,13 @@ The embedded dashboard supports light, dark or system themes, a custom backgroun
 3. Generate the embed code in your site's Visibility settings, or construct the iframe URL directly
 4. Embed the iframe in your product
 
+Each shared link is scoped to one site. Your application is responsible for showing the correct shared link to each customer and protecting the surrounding page with its own access controls.
+
 :::info Keep the shared link password field blank
 Password-protected shared links cannot be embedded. The browser will refuse to load them in an iframe.
 :::
 
-See [embed dashboard](embed-dashboard.md) for full details and CSS customization options.
+See [embed dashboard](embed-dashboard.md) for full details and layout controls.
 
 ### Option B: Stats API for a fully custom UI
 
