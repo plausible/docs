@@ -5,7 +5,14 @@ description: "Export your Plausible stats as CSV files directly from the dashboa
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-There are a couple of different ways you can export your stats.
+Choose an export method based on what you need:
+
+| Option | Best for |
+|---|---|
+| [Dashboard export](#export-specific-time-ranges-or-audience-segments) | Downloading CSV reports for a specific date range, audience segment or goal, including imported data. |
+| [Site settings export](#export-all-stats-to-date) | Saving all native Plausible stats for a site. Excludes imported data. |
+| [Stats API](#use-the-stats-api) | Querying aggregated stats programmatically for custom reports or integrations. |
+| [Scheduled raw event data exports](#scheduled-raw-event-data-exports) | Receiving daily event-level data in your own storage for warehousing or custom analysis. |
 
 :::note Exporting after your trial or subscription ends
 If you no longer have an active trial or subscription, you can still export your stats from **Site Settings → Imports & Exports** before your dashboards and stats are deleted. Dashboard exports and the Stats API are unavailable without an active trial or subscription.
