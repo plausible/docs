@@ -7,6 +7,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 There are a couple of different ways you can export your stats.
 
+:::note Exporting after your trial or subscription ends
+If you no longer have an active trial or subscription, you can still export your stats from **Site Settings → Imports & Exports** before your dashboards and stats are deleted. Dashboard exports and the Stats API are unavailable without an active trial or subscription.
+
+Open your [Sites page](https://plausible.io/sites), click the **Settings** icon next to your website and follow the [Export all stats to date](#export-all-stats-to-date) instructions below. Request and download your export before deletion.
+:::
+
 ## Export specific time ranges or audience segments
 
 You can export your stats directly from the top chart of your Plausible dashboard. This is the quickest and most convenient option when you want to export specific audience segments or time ranges for reporting purposes. It also allows you to export any of the data that you imported into Plausible from external sources such as Google Analytics. Here's how to do it:
@@ -32,7 +38,7 @@ Note that for the export to be as quick as possible, the individual CSV files ar
 
 Here's how to export all the native data collected for a particular Plausible dashboard to date. This export method is slower, cannot be segmented and is best suited for data portability purposes. It also doesn't include any data that you imported from external sources.
 
-1. Go to the Plausible Analytics [site settings](website-settings.md) for the website for which you'd like to export the data
+1. Open your [Sites page](https://plausible.io/sites) and click the **Settings** icon next to the website you'd like to export. This opens its [site settings](website-settings.md), even if its dashboard is locked
 2. In the **Imports & Exports** section, find the **Export Data** panel and click on the **Export to CSV** button
 3. Your export will be queued and we'll email you when it's ready for download. You'll have 24 hours to download the data after the export is ready
 
