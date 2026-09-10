@@ -13,9 +13,13 @@ This also means there's nothing to cancel. If you don't want to continue after t
 
 ## What happens when the trial ends
 
-If you haven't subscribed by the end of the trial, your dashboard is locked and we stop counting your stats. You can still log in to your account.
+If you haven't subscribed by the end of the trial, your dashboard is locked. You can still log in to your account.
 
-[Upgrade to a paid subscription](trial-to-paid.md) to unlock your dashboard. All stats collected during your trial are kept. Nothing is reset when you upgrade.
+We don't keep your website analytics data indefinitely after your trial ends.
+
+If you don't subscribe, we'll stop collecting new stats and eventually delete your dashboards and all their stats permanently. We'll email you before deletion so you have time to [subscribe](trial-to-paid.md) or [export your stats](export-stats.md).
+
+Subscribe before deletion to unlock your dashboards and keep your historical stats. Deleted stats cannot be recovered.
 
 ## Delete your account at any time
 
