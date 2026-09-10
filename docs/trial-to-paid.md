@@ -1,13 +1,13 @@
 ---
 title: Upgrade from trial to a paid subscription
-description: "Upgrade your Plausible free trial to a paid subscription. All stats are preserved, nothing resets. Change or cancel any time."
+description: "Upgrade your Plausible free trial to a paid subscription. Choose your plan and set up billing. Change or cancel any time."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Log in to your Plausible account. In the top right, click the **X trial days left** button, then click **Upgrade** in the **Subscription** section.
 
-All stats collected during your trial are kept. Nothing is reset when you upgrade.
+Subscribe before your dashboards and stats are deleted to keep your historical stats. Nothing is reset when you upgrade. See [what happens when your trial ends](trial.md#what-happens-when-the-trial-ends).
 
 <div class="browser">
     <img alt="Upgrade your trial account to a paid subscription" src={useBaseUrl('img/v2/account-settings-free-trial-upgrade.webp')} />
