@@ -109,6 +109,8 @@ Paddle does not allow changing the country on an existing subscription due to ta
 
 No surprise fees. An occasional traffic spike won't trigger extra charges or stop your stats from being counted. A single month over your limit requires no action. If traffic drops back within your tier the following month, nothing happens.
 
+You'll see an early notice in **Account Settings → Subscription** when you exceed your monthly pageview limit, even before the month ends, or if you exceeded it in the previous month. This is a heads-up so you can plan ahead if higher traffic continues. A single month over your limit still requires no upgrade.
+
 If usage exceeds your tier for **two consecutive months**, we'll notify you to upgrade. The change is pro-rated so you only pay the difference. If you don't upgrade within a week, your dashboards are temporarily locked. Even while locked, stats continue to be collected in the background and you still have access to your site settings and account settings. Dashboards are automatically unlocked at the start of the next billing cycle if your usage drops back within limits. You can also unlock them at any time by upgrading to the appropriate tier.
 
 If the spike is temporary, you can upgrade to restore access and downgrade again when traffic drops. Downgrades are pro-rated too, so you won't lose out. You're never locked into a higher plan when your usage no longer requires it. This works the same way on both monthly and yearly billing.
@@ -119,7 +121,7 @@ We're not able to make exceptions to keep dashboards unlocked beyond the grace p
 
 A single month over your limit requires no action. If usage drops back within your tier the following month, nothing happens.
 
-If you've received an over-limit notice (two consecutive months above your tier), you have two options. If your traffic has already returned to normal, do nothing: your dashboard will automatically unlock at the start of your next billing cycle. If you need access restored now, upgrade to the appropriate tier and downgrade again once traffic drops. Downgrades are pro-rated, so any unused credit carries forward.
+If you've been asked to upgrade after two consecutive months above your tier, you have two options. If your traffic has already returned to normal, do nothing: your dashboard will automatically unlock at the start of your next billing cycle. If you need access restored now, upgrade to the appropriate tier and downgrade again once traffic drops. Downgrades are pro-rated, so any unused credit carries forward.
 
 ## How does pro-rating work when I upgrade?
 
