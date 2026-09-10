@@ -71,6 +71,8 @@ You will never be charged extra for an occasional traffic spike. No surprise fee
 
 A single month over your limit requires no action. If your traffic drops back within your tier the following month, nothing happens and no upgrade is needed. This is common with seasonal traffic, viral posts or one-off campaigns.
 
+In **Account Settings → Subscription**, we'll show an early notice when you exceed your monthly pageview limit, even if you use the whole month's allowance in a single day. You'll also see a notice if you exceeded your limit in the previous month. No upgrade is required for a single month over your limit. These notices give you time to plan ahead or arrange budget approval if higher traffic continues.
+
 If pageviews exceed your tier for **two consecutive months**, we'll notify you and ask you to upgrade to a tier that fits your new traffic levels. The upgrade is pro-rated so you only pay the difference for the remaining time on your current billing cycle.
 
 If you don't upgrade within a week of our notice, your dashboards will be temporarily locked. Even while locked, your stats continue to be collected in the background and you still have full access to your site settings and account settings. Dashboards are automatically unlocked at the start of the next billing cycle if your usage drops back within your subscription limits. You can also unlock them at any time by upgrading to the appropriate tier.
