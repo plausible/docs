@@ -5,6 +5,8 @@ description: "Where to find Plausible's security, privacy and GDPR compliance do
 
 For a single page with all compliance and legal documentation for vendor reviews, see [plausible.io/compliance](https://plausible.io/compliance).
 
+For procurement questions about purchasing, payment-recipient details and supplier documentation, see [Purchasing and vendor information](https://plausible.io/procurement).
+
 Plausible publishes its security practices, data policy and legal documents publicly. Most compliance and security review questions can be answered directly from those pages without needing to contact us.
 
 ## Where to find the relevant documents
@@ -30,4 +32,4 @@ The specific reasons it falls into this category:
 
 If your organization requires a vendor security review, the documents above are designed to answer the questions typically asked in those reviews. We recommend going through them before sending a questionnaire, as most topics are already covered.
 
-If there are specific questions that are not answered by those pages, [contact us](https://plausible.io/contact) and include the specific questions. We will do our best to help.
+If these pages don't answer your questions, [contact us](https://plausible.io/contact) and we'll be happy to help.

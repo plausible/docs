@@ -30,7 +30,7 @@ description: "Common billing questions for Plausible Analytics. Pageview-based p
           "name": "What payment methods does Plausible accept?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Plausible accepts credit and debit cards, PayPal, Apple Pay and Google Pay. All payment processing is handled by Paddle. Wire transfers, manual invoicing and cryptocurrency are not accepted."
+            "text": "Plausible accepts credit and debit cards, PayPal, Apple Pay and Google Pay. All payment processing is handled by Paddle. Cryptocurrency is not accepted. Paddle automatically emails you an invoice after every payment."
           }
         },
         {
@@ -73,6 +73,10 @@ Billing is based on total usage across all the sites in a team. Each team has it
 
 Yes. You can create a separate team for each client, add their sites to the respective team and invite the client to their own team. Each team has its own subscription and billing, so each client can be billed independently. You can be a member of multiple teams using a single Plausible login and switch between them from the menu in the top right of your account. See [Teams and roles](users-roles.md) for details.
 
+## Where can I find vendor details and purchasing documents?
+
+See our [Purchasing and vendor information](https://plausible.io/procurement) page for Plausible company details, Paddle payment-recipient information, tax documents and our standard purchasing process.
+
 ## How do I get an invoice?
 
 Paddle (our payment processor) emails you an invoice automatically after each payment. You can also open past invoices from your account settings. Paddle opens each invoice in a browser tab, so use your browser's **Print** command and select **Save as PDF** to save a copy. See [View and save your invoices](download-invoices.md).
@@ -81,7 +85,9 @@ The invoice email goes to your Paddle email address, which may differ from your 
 
 ## What payment methods do you accept?
 
-Credit/debit card, PayPal, Apple Pay and Google Pay. All payment processing is handled by Paddle. We're not able to accept wire transfers, manual invoicing or cryptocurrency.
+Credit/debit card, PayPal, Apple Pay and Google Pay. All payment processing is handled by Paddle. We're not able to accept cryptocurrency.
+
+Paddle automatically emails you an invoice after every payment. Our [purchasing and vendor information](https://plausible.io/procurement) page covers company details and purchasing documents.
 
 If paying via PayPal, make sure a valid card is linked to your PayPal account. Paddle requires this for recurring subscriptions.
 
