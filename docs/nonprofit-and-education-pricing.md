@@ -3,21 +3,23 @@ title: Discount for nonprofits and educational institutions
 description: "Plausible offers a 15% discount for nonprofits, educational institutions and open-source projects on Business annual plans. Here's how to apply."
 ---
 
-We offer a 15% introductory discount to nonprofits, educational institutions and open-source projects to help make Plausible more accessible.
+Our 15% discount is available only to nonprofits, educational institutions and open-source projects choosing a Business plan with annual billing.
 
 ## What's included
 
-The discount is 15% off your first payment on a Business plan with annual billing. Combined with annual billing, you also get 2 months free.
+The discount is 15% off a Business plan with annual billing. Combined with annual billing, you also get 2 months free.
 
-The discount applies to Business plans on annual billing only. It does not apply to monthly billing or to Starter plans.
+The discount applies to Business plans with annual billing only. Monthly payments and all other plans are excluded.
+
+Your discount continues on renewals for as long as you stay on the same plan. If you upgrade or downgrade your plan for any reason, the discount ends and regular prices apply to your new plan.
 
 ## How to apply
 
 1. Start your free 30-day trial. No credit card required.
-2. Decide which pageview tier you need.
-3. [Contact us](https://plausible.io/contact) to request a discount code. Let us know your preferred tier.
-4. We'll send you a one-time code to use at checkout.
+2. Choose the Business pageview tier you need with annual billing.
+3. If you meet the eligibility requirements below and are choosing a Business plan with annual billing, [contact us](https://plausible.io/contact) with your organization or project name, type, website and preferred Business pageview tier.
+4. We'll send you a discount code to use at checkout.
 
 ## Who qualifies
 
-We offer this to nonprofits, educational institutions and open-source projects. We don't have a formal verification process. If your project doesn't fit neatly into those categories but you think it qualifies, reach out and we'll consider it.
+Only nonprofits, educational institutions and open-source projects qualify for this discount. If your organization or project does not fall into one of these categories, it is not eligible.
