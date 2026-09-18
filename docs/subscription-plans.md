@@ -30,7 +30,7 @@ Compare full features and pricing on [our website](https://plausible.io/#pricing
 
 All plans include a 30-day free trial, no credit card required. During the trial you have access to all Business plan features and limits, so you can explore the full product before choosing a plan.
 
-Nonprofits, educational institutions and open-source projects are eligible for a 15% discount on Business plans with annual billing. See [nonprofit and education pricing](nonprofit-and-education-pricing.md) for details.
+Our 15% discount is available only to nonprofits, educational institutions and open-source projects. It applies to Business plans with annual billing only. See [nonprofit and education pricing](nonprofit-and-education-pricing.md) for eligibility and how to apply.
 
 ## Enterprise-only features
 

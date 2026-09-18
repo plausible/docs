@@ -65,4 +65,4 @@ If you have applied Shields rules and the traffic continues, or if the spike is 
 
 ## How Plausible improves bot filtering over time
 
-We continuously monitor incoming traffic patterns. When we identify new sources of non-human traffic or trends that look automated, we update our filtering rules. The filtering improves over time without any action needed on your end.
+Bot filtering is not perfect. False positives (real visits filtered out) and false negatives (bot visits recorded) can happen. We continuously review traffic patterns and improve our filtering to keep bots out of your analytics without filtering out real visitors. These improvements apply automatically, with no action needed on your end.
