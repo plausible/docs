@@ -13,7 +13,7 @@ integration packages listed [here](/docs/integration-guides). However, if there'
 
 ### Unique visitor tracking
 
-**Important!** Special care should be taken with two key headers which are used for [unique visitor counting](https://plausible.io/data-policy#how-we-count-unique-users-without-cookies):
+**Important!** Special care should be taken with two key headers which are used for [unique visitor counting](https://plausible.io/data-policy#how-we-count-unique-visitors-without-cookies):
 1. The _User-Agent_ header
 2. The _X-Forwarded-For_ header
 
@@ -22,7 +22,7 @@ If these headers are not sent exactly as required, unique visitor counting will 
 ## Endpoints
 ### POST /api/event
 
-Records a pageview or custom event. When using this endpoint, it's crucial to send the HTTP headers correctly, since these are used for [unique user counting](https://plausible.io/data-policy#how-we-count-unique-users-without-cookies).
+Records a pageview or custom event. When using this endpoint, it's crucial to send the HTTP headers correctly, since these are used for unique user counting.
 
 ```bash title="Try it yourself"
 curl -i -X POST https://plausible.io/api/event \
@@ -42,7 +42,7 @@ curl -i -X POST https://plausible.io/api/event \
 
 **User-Agent** <Required />
 
-The raw value of User-Agent is used to calculate the *user_id* which identifies a [unique visitor](https://plausible.io/data-policy#how-we-count-unique-users-without-cookies)
+The raw value of User-Agent is used to calculate the *user_id* which identifies a unique visitor
 in Plausible.
 
 User-Agent is also used to populate the **Browsers**, **Operating Systems** and **Devices** tabs in your Plausible dashboard. The device data is derived from the open source database [device-detector](https://github.com/matomo-org/device-detector). If your User-Agent is not showing up in your dashboard, it's probably because it is not recognized as one in the _device-detector_ database.
@@ -61,7 +61,7 @@ Used to explicitly set the IP address of the client. If not set, the remote IP o
 If you forward a server, hosting provider, or CDN IP address instead of the actual visitor IP, Plausible's bot filtering will drop the event. The API still returns HTTP 202 with no obvious error, but the event is not recorded. You can confirm this by checking for `x-plausible-dropped: 1` in the response headers.
 :::
 
-The raw value of the IP address is not stored in our database. The IP address is used to calculate the *user_id* which identifies a [unique visitor](https://plausible.io/data-policy#how-we-count-unique-users-without-cookies) in Plausible. It is also used to fill the Location report with country, region and city data of the visitor.
+The raw value of the IP address is not stored in our database. The IP address is used to calculate the *user_id* which identifies a unique visitor in Plausible. It is also used to fill the Location report with country, region and city data of the visitor.
 
 If the header contains a comma-separated list (as it should if the request is sent through a chain of proxies), then the first valid IP address from the list is used. Both IPv4 and IPv6 addresses are supported. More information about the header format can be found on [MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Forwarded-For).
 

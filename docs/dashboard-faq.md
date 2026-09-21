@@ -17,7 +17,7 @@ This happens because visitors can view more than a single page or trigger more t
 
 This is why adding up unique visitor numbers and comparing them to the total is misleading. Since visitors aren't limited to a single pageview or action on your site, you shouldn't expect these numbers to be equal.
 
-There's another situation where differences might occur. If you manually tally the unique visitors for each day in a month, you may not get the same result as the number of unique visitors you see in the report for that month. This discrepancy is due to sessions that overlap with [our daily reset](https://plausible.io/data-policy#how-we-count-unique-users-without-cookies). Consider this: If someone visits your site 5 minutes before our daily reset and they continue being engaged with your site until 5 minutes after the reset, their session will count as one unique visitor on each of the two days. However, in the monthly view, that visitor will be counted as one unique visitor only.
+There's another situation where differences might occur. If you manually tally the unique visitors for each day in a month, you may not get the same result as the number of unique visitors you see in the report for that month. This discrepancy is due to sessions that overlap with [our daily reset](https://plausible.io/data-policy#how-we-count-unique-visitors-without-cookies). Consider this: If someone visits your site 5 minutes before our daily reset and they continue being engaged with your site until 5 minutes after the reset, their session will count as one unique visitor on each of the two days. However, in the monthly view, that visitor will be counted as one unique visitor only.
 
 ## Unique visitors or Total visits greater than Pageviews on a minute-interval graph?
 
