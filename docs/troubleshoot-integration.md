@@ -55,7 +55,7 @@ description: "Troubleshoot your Plausible Analytics installation. Diagnose why v
           "name": "Why are Events API events not appearing in the dashboard?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Plausible always returns HTTP 202 Accepted, even when an event is not recorded. Check the response headers for x-plausible-dropped: 1. The most common cause is a misconfigured X-Forwarded-For header forwarding a server IP instead of the real visitor IP."
+            "text": "Plausible can return HTTP 202 Accepted even when an event is not recorded. Check the response headers for x-plausible-dropped: 1. Bot filtering and site exclusion rules can cause events to be dropped. The most common cause is a misconfigured X-Forwarded-For header forwarding a server IP instead of the real visitor IP."
           }
         },
         {
@@ -250,6 +250,12 @@ If the verification tool has already confirmed that tracking is working, the res
 
 See the [WordPress plugin issues](#wordpress-plugin-issues) section above for admin exclusion, proxy problems and cache conflicts.
 
+### Is your visit being filtered out?
+
+Open your browser’s developer tools, select **Network** and reload the page. Find the event request to `/api/event` or your proxy’s equivalent and check its response headers.
+
+If you see `x-plausible-dropped: 1`, your event reached Plausible but was not recorded, even if the response says **202 Accepted**. Check your site’s exclusion rules. If you use a VPN, try temporarily disconnecting it: some VPN IP ranges overlap with data centers and are filtered out.
+
 ---
 
 ## Some visitors are not being counted
@@ -310,7 +316,7 @@ This same mechanism keeps payment gateways and other redirect domains out of you
 
 ## Events API events not appearing
 
-If you are using the [Events API](events-api.md) or a proxy for server-side tracking, Plausible always returns HTTP 202 Accepted, even when an event is not recorded. To check whether an event was actually counted, inspect the response headers for `x-plausible-dropped: 1`. When that header is present, the event was rejected by bot filtering.
+If you are using the [Events API](events-api.md) or a proxy for server-side tracking, Plausible can return HTTP 202 Accepted even when an event is not recorded. To check whether an event was dropped, inspect the response headers for `x-plausible-dropped: 1`. When that header is present, the event was not recorded. Bot filtering and site exclusion rules can cause events to be dropped.
 
 The most common cause is a misconfigured `X-Forwarded-For` header. If your proxy or backend forwards its own server IP instead of the real visitor's IP, Plausible's bot filter will drop the event. Make sure `X-Forwarded-For` is set to the real client IP before the request reaches Plausible.
 
