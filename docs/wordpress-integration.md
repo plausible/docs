@@ -60,6 +60,24 @@ Your site is now being tracked. You can confirm tracking from your [site setting
 Plugin tokens are site-specific and always start with `plausible-plugin-`. Make sure the token was created for the exact site you are connecting, and generate a new one if in doubt.
 :::
 
+## WordPress multisite networks
+
+You can track a WordPress multisite network in one Plausible dashboard. Install the plugin once through **Network Admin → Plugins**, then either **Network Activate** it or activate it individually on the sites you want to track.
+
+To send traffic from those sites to one dashboard:
+
+1. [Add your network's main domain](add-website.md) as a site in Plausible, for example `example.com`.
+2. Open the Plausible plugin settings in each WordPress site's dashboard.
+3. Enter the same main domain in **Domain Name** on every site, exactly as added to Plausible. For example, use `example.com` for both `blog.example.com` and `example.com/shop/`.
+4. [Connect each site with a plugin token](#connect-with-a-plugin-token) created for that same Plausible site.
+5. Visit each site while logged out of WordPress and check that its traffic appears in your Plausible dashboard.
+
+Network activation makes the plugin active across the network, but does not copy its connection settings to each site. Connecting only the main WordPress site is not enough. Configure each site you want included, including any sites you add later.
+
+The shared dashboard combines traffic from all configured sites. For subdomains or mapped domains, [filter by hostname](subdomain-hostname-filter.md#filtering-traffic-by-hostname) to see one site's traffic. For subdirectory sites, [filter by page path](pageview-goals.md#how-to-group-your-pages). Pages with the same path on different hostnames are grouped by default; [break the Pages report down by URL](top-pages.md#break-down-by-full-url) to tell them apart.
+
+One shared dashboard is optional. If you want separate dashboards for sites on different domains or subdomains, add each as its own site in Plausible and connect each WordPress site using its corresponding domain and plugin token.
+
 ## Multilingual sites with WPML
 
 If you run [WPML](https://wpml.org/) in **different domain per language** mode, you can connect each language domain to its own Plausible dashboard. Other WPML setups (a language directory like `/fr/` or a language subdomain) are tracked as a single site and need no extra steps.
@@ -69,7 +87,7 @@ If you run [WPML](https://wpml.org/) in **different domain per language** mode, 
 3. Its **Domain Name** is already filled in. Create a [plugin token](#connect-with-a-plugin-token) for that site, paste it into **Plugin Token** and click **Connect**.
 4. Repeat for each language domain.
 
-With **View stats in WordPress** enabled, the WordPress toolbar links to the dashboard that matches the language domain you're viewing.
+With **View stats in WordPress** enabled, the WordPress toolbar includes a separate dashboard link for each configured language domain.
 
 ## The settings screen
 
