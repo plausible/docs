@@ -27,7 +27,7 @@ To integrate your website with Plausible, you can manually insert our tracking s
 
 ### WordPress plugin
 
-The [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) handles installation, event tracking and dashboard access without any code. Built specifically for WordPress: supports WooCommerce revenue tracking, automatic form tracking, author and category stats, proxy mode and more. If your site runs on WordPress, this is the recommended setup.
+The [official WordPress plugin](wordpress-integration.md) handles installation, event tracking and dashboard access without any code. Built specifically for WordPress: supports WooCommerce revenue tracking, automatic form tracking, author and category stats, proxy mode and more. If your site runs on WordPress, this is the recommended setup.
 
 ### Google Tag Manager template
 
@@ -102,7 +102,7 @@ Step-by-step guides for popular website builders and content management systems.
 | [Statamic](https://statamic.com/addons/jack-whiting/plausible) | Plugin | A wrapper around the Plausible API that fetches analytics into your dashboard |
 | [Sylius](https://github.com/Setono/sylius-plausible-plugin) | Plugin | Integrates Plausible seamlessly into your Sylius store |
 | [TYPO3](https://extensions.typo3.org/extension/plausibleio) | Plugin | TYPO3 extension for Plausible |
-| [WordPress](https://plausible.io/wordpress-analytics-plugin) | Plugin | Our official WordPress plugin (listed above in official integrations) |
+| [WordPress](wordpress-integration.md) | Plugin | Our official WordPress plugin (listed above in official integrations) |
 
 ### JavaScript frameworks and frontend libraries
 
@@ -175,7 +175,7 @@ Step-by-step guides for popular website builders and content management systems.
 
 ### Data pipelines, warehouses and other ways of viewing Plausible stats elsewhere
 
-[See this list](data-pipelines.md) for data pipelines, warehouses, MCP servers and other ways of viewing Plausible stats elsewhere. For instance, our [stats API](stats-api.md), [official WordPress plugin](https://plausible.io/wordpress-analytics-plugin) and [official Google Data Studio connector](looker-studio.md).
+[See this list](data-pipelines.md) for data pipelines, warehouses, MCP servers and other ways of viewing Plausible stats elsewhere. For instance, our [stats API](stats-api.md), [official WordPress plugin](wordpress-integration.md) and [official Google Data Studio connector](looker-studio.md).
 
 ---
 

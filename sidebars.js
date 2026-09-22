@@ -6,6 +6,7 @@ module.exports = {
       'add-website',
       'plausible-script',
       'integration-guides',
+      'wordpress-integration',
       'troubleshoot-integration',
       'landing-page',
       'your-plausible-experience',
