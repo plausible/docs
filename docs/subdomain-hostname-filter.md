@@ -25,6 +25,8 @@ Whatever you choose, [Consolidated Views](consolidated-views.md) let you combine
 
 Here's how to set up tracking across your domain name and its subdomains.
 
+Using WordPress multisite? Follow the [multisite setup instructions](wordpress-integration.md#wordpress-multisite-networks) to connect each WordPress site to a shared Plausible dashboard or use separate dashboards.
+
 ## How to set up tracking across domain and subdomains
 
 1. [Add your domain name](add-website.md) (`yourdomain.com`) as a site to your Plausible account
