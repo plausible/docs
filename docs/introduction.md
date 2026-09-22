@@ -82,6 +82,7 @@ import CtaBox from '@site/src/components/CtaBox';
 <ul>
 <li><a href="/docs/team-settings">Team settings</a>: subscription, API keys, SSO and team configuration</li>
 <li><a href="/docs/users-roles">Users and roles</a>: invite team members and set permissions</li>
+<li><a href="/docs/transfer-account-ownership">Recover access</a>: what to do when your owner is unavailable</li>
 <li><a href="/docs/agencies-and-freelancers">Agencies and freelancers</a>: manage multiple client sites</li>
 <li><a href="/docs/shared-links">Shared links</a>: share your dashboard publicly or with specific people</li>
 <li><a href="/docs/email-reports">Email reports</a>: scheduled reports delivered to your inbox</li>

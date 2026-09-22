@@ -30,4 +30,4 @@ If you are not part of a team, your subscription and API keys are managed here. 
 
 **Danger zone**
 - [Delete account](delete-account.md): permanently remove your account and all associated data
-- [Transfer account ownership](transfer-account-ownership.md): hand over account control when someone leaves your organization
+- [Recover access when an owner is unavailable](transfer-account-ownership.md): regain control when your owner is on leave, cannot be reached or has left your organization

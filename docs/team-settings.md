@@ -18,6 +18,8 @@ To open team settings, click your account name in the top-right menu, select you
 
 See [users and roles](users-roles.md) for full details on inviting people and managing access.
 
+We recommend keeping at least two team owners, each using their own Plausible account, so someone can manage your sites and subscription if one owner is unavailable. If your only owner is on leave, cannot be reached or has left your organization, see [how to recover access](transfer-account-ownership.md).
+
 **Subscription**
 - View and manage the team subscription
 - Upgrade, downgrade or cancel the plan
