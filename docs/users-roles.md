@@ -14,6 +14,16 @@ Teams also work well for agency and freelance workflows. You can create one team
 
 ### Creating a new team
 
+:::tip Keep at least two team owners
+We recommend giving at least two people in your organization the **Owner** role, each using their own Plausible account. If one owner is on leave, unavailable or leaves the organization, another can continue managing the team, sites and subscription.
+
+An existing owner can add another owner in **Team Settings → General**. If you invite someone new, make sure they accept the invitation.
+
+Giving someone access as an Admin, Editor or Guest does not make them an owner. Admins cannot promote themselves or other members to Owner.
+
+If your only owner is already unavailable, see [how to recover access](transfer-account-ownership.md).
+:::
+
 Log in to your Plausible Analytics account and in the top right menu, click on your account name and choose **Create a team**. Note that the "Create a team" button appears when you are viewing "My personal sites" and have sites there that you own.
 
 * Give the name to your team.
@@ -66,7 +76,7 @@ You can change the role of a team member at any time:
 
 That's it. The team member now has a different role.
 
-Note that you need to be an owner or an admin of a team to change team member roles.
+You need to be an owner or an admin of a team to change team member roles. Only owners can grant the **Owner** role or change another owner's role. Admins cannot promote themselves or other members to Owner.
 
 ### API key access by role
 
@@ -108,8 +118,8 @@ Note that you need to be an owner or an admin of a team to remove team members.
 * To remove yourself from a team, go to the **General** option of the **Team Settings**
 * Click on the **Leave Team** button. Note that after leaving a team, you won't have access to the dashboards and collected stats of the sites that the team owns
 
-:::tip Someone already left and took the account with them?
-See [Transfer account ownership](transfer-account-ownership.md) for how to recover access.
+:::tip Is your only owner unavailable?
+See [Recover access when an owner is unavailable](transfer-account-ownership.md) for what to do if they are on leave, cannot be reached or have left your organization.
 :::
 
 ### Deleting a team
