@@ -11,7 +11,7 @@ We use multiple layers to filter non-human traffic:
 
 - **User-Agent filtering.** We block known bots and crawlers by their User-Agent header, including search engine crawlers, scrapers and monitoring tools.
 - **Referrer spam filtering.** We filter out traffic from known referrer spam domains.
-- **Data center IP filtering.** We filter traffic from approximately 32,000 known data center IP ranges commonly used by bots and automated tools.
+- **Data center IP filtering.** We filter traffic from approximately 40,800 known data center IP ranges commonly used by bots and automated tools.
 - **Traffic pattern detection.** We use our own algorithm to detect and exclude unnatural traffic patterns that don't match human browsing behavior.
 
 In [a server log comparison we ran](https://plausible.io/blog/server-log-analysis), we saw 18x more pageviews in server logs than in Plausible, which illustrates how much non-human traffic Plausible excludes. In a [separate test comparing Plausible to Google Analytics](https://plausible.io/blog/testing-bot-traffic-filtering-google-analytics), we ran three bot traffic scenarios against both tools. GA4 recorded all of them as legitimate traffic. Plausible rejected all three.

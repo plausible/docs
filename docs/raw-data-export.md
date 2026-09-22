@@ -47,6 +47,8 @@ Delivery to Google Cloud Storage goes through GCS's S3-compatible endpoint using
 
 Daily exports start after setup. During setup, we can include a one-time backfill covering up to the 30 days immediately before the first scheduled export. Earlier historical data cannot be included.
 
+This backfill is intended to cover data collected during the free trial when new subscribers set up scheduled exports. We do not offer raw data exports of your full history.
+
 If you need this backfill, include the requested start date when contacting us.
 
 ## When to use it
