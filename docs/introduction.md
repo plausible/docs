@@ -25,7 +25,7 @@ import CtaBox from '@site/src/components/CtaBox';
 <li><a href="/docs/register-account">Register for an account</a></li>
 <li><a href="/docs/add-website">Add your website</a></li>
 <li><a href="/docs/plausible-script">Add the script to your site</a></li>
-<li><a href="https://plausible.io/wordpress-analytics-plugin">WordPress</a>: install via plugin</li>
+<li><a href="/docs/wordpress-integration">WordPress</a>: install via plugin</li>
 <li><a href="https://plausible.io/gtm-template">Google Tag Manager</a>: deploy without touching your code</li>
 <li><a href="/docs/integration-guides">All installation guides</a>: Shopify, Webflow, Squarespace, Wix, Next.js, Ghost, Hugo and more</li>
 <li><a href="/docs/troubleshoot-integration">Verify the integration is working</a></li>
