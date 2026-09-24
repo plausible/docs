@@ -286,7 +286,9 @@ Plausible and Google Analytics will never show identical numbers. They measure d
 
 **Some visitors use blockers.** Ad blockers, privacy browsers and network-level tools like Pi-hole block some analytics scripts. Plausible is blocked far less than GA4, but not by zero. If you want to close this gap, [set up a proxy](/proxy/introduction.md).
 
-**Bot filtering removes automated traffic.** Plausible filters known bots and crawlers aggressively. If GA4 is counting traffic that Plausible is not, it is likely that GA4 is including automated traffic that Plausible correctly excludes. See [bot and spam traffic filtering](bot-traffic-filtering.md) for details.
+**Bot filtering removes automated traffic.** Plausible excludes traffic from data center IP ranges and other automated sources before it reaches your stats. GA4 filters bots differently and is likely to record much of this traffic as real visits. 
+
+In [a test we ran](https://plausible.io/blog/testing-bot-traffic-filtering-google-analytics), GA4 counted every bot scenario as legitimate traffic while Plausible rejected all of them. See [bot and spam traffic filtering](bot-traffic-filtering.md) for how our filtering works and [why analytics tools never show the same numbers](https://plausible.io/blog/why-analytics-numbers-dont-match) for the other common causes.
 
 **Imported GA data behaves differently.** If you imported historical data from Google Analytics, that data was collected under GA's methodology and may show gaps or anomalies when viewed alongside native Plausible data. See [metrics definitions](metrics-definitions.md) for how each metric is calculated.
 
