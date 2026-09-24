@@ -11,7 +11,7 @@ Define a sequence of steps and measure how many visitors complete each one. Use 
 <PlanFeatureNote feature="funnel-analysis" plan="business" label="Funnel analysis" />
 
 - You can go beyond pageviews and use any custom events to build a funnel
-- Choose between two funnel types: sequential (visitors can take other actions between steps) or strict order (steps must happen in exact consecutive order)
+- Choose between three funnel types: sequential (all steps are required, with other activity allowed between them), flexible (only the first and last steps are required) or strict (all steps must happen in exact consecutive order)
 - With the conversion rate you understand the percentage of visitors who started the user flow and ended with a conversion event
 - With the percentage drop-off between the individual funnel steps, you can spot where you lose the most visitors. A step with an unusually large drop-off is usually the best place to start optimizing
 - Revenue-enabled goals show the revenue generated at the relevant funnel steps, including revenue per visitor in the step details
@@ -24,13 +24,15 @@ Define a sequence of steps and measure how many visitors complete each one. Use 
 
 ## How funnel conversions are counted
 
-To be counted as converted, visitors need to complete all the steps you've defined in your funnel, in the correct order. Plausible offers two funnel types that differ in how strictly that order is enforced.
+Your funnel type determines which steps visitors need to complete to count as converted
 
-**Sequential funnel (default):** Visitors must complete the steps in order, but they can visit other pages or trigger other events in between. This is the more flexible option.
+**Sequential funnel (default):** Visitors must complete all the steps in order, but they can visit other pages or trigger other events in between.
 
-**Strict order funnel:** Every step must happen in exact consecutive order with no other actions in between. Use this when you want to measure a tightly defined path and any detour should disqualify the visitor.
+**Flexible funnel:** Visitors must complete the first step and then the last step, but can skip any or all of the middle steps. Other pages and events are allowed in between. For example, in a "View product → View details → Purchase" funnel, visitors who view a product and then purchase count as converted whether or not they view the details. Use this to measure conversion from start to finish while accounting for visitors who take different paths along the way.
 
-Funnels in Plausible are always linear. Each funnel follows one defined path from start to finish. Branching or conditional paths are not supported. If you need to compare two different paths, create two separate funnels.
+**Strict funnel:** Every step must happen in exact consecutive order with no other actions in between. Use this when you want to measure a tightly defined path and any detour should disqualify the visitor.
+
+Each funnel has one defined list of steps. Flexible funnels let visitors skip middle steps, but branching or conditional paths are not supported. If you need to compare two different paths, create two separate funnels.
 
 Funnels also work across your main domain and its subdomains ([see more](subdomain-hostname-filter.md)), and you don't need to worry about visitors briefly leaving your site to complete actions on external services like Stripe's payment page or other third-party gateways. Plausible treats the returning visit as part of the same session, so your funnel will accurately track the complete conversion sequence.
 
@@ -44,7 +46,7 @@ Funnels also work across your main domain and its subdomains ([see more](subdoma
 
 - Define your funnel by adding the steps you expect a visitor to take before a conversion, a purchase or a sign up. These steps consist of [pageview goals](pageview-goals.md) and [custom event goals](custom-event-goals.md), including revenue-enabled goals. You need to add a minimum of 2 steps and a maximum of 8 steps to create a funnel. If you want a step to match only a specific variation of a custom event, use a [property-filtered goal](/custom-props/for-custom-events#create-property-filtered-goals).
 
-- By default, the **Allow other activity in between funnel steps** option is enabled, which creates a sequential funnel. Disable it to use strict order mode instead.
+- Under **Funnel type**, choose **Sequential**, **Flexible** or **Strict**. Sequential is selected by default. Choose Flexible if visitors can skip middle steps, or Strict if every step must follow the previous one without other activity in between.
 
 - Click on the **Save** button after you've defined the steps you want to measure
 
@@ -56,7 +58,7 @@ Funnels appear at the bottom of your dashboard as soon as the first visit is tra
 
 - Click on the edit icon on the right-hand side of the funnel that you'd like to edit.
 
-- Change the funnel name, edit the steps of your funnel and switch between sequential and strict order by toggling the **Allow other activity in between funnel steps** option
+- Change the funnel name, edit the steps of your funnel or choose **Sequential**, **Flexible** or **Strict** under **Funnel type**
 
 - Click on the **Update Funnel** button
 
@@ -91,7 +93,7 @@ This shows you how many visitors who viewed pricing actually made it to the dash
 3. Checkout (`/checkout`)
 4. Order confirmation (`/checkout/order-confirmed`)
 
-Set this funnel to **non-sequential** if visitors might skip the cart and go directly to checkout.
+Choose **Flexible** if visitors might skip the cart and go directly to checkout. Visitors who view a product and then reach the order confirmation count as converted, even if they skip the cart or checkout steps in your funnel.
 
 **Content to email signup**
 
@@ -103,7 +105,9 @@ Set this funnel to **non-sequential** if visitors might skip the cart and go dir
 
 **Drop-off rate by step**
 
-The drop-off between each step tells you where friction is highest. A funnel where 1,000 people enter step 1 but only 10 reach step 4 is expected: most funnels have large drops. Focus on the step with the _largest proportional_ drop rather than the lowest absolute number.
+In sequential and strict funnels, the drop-off between steps helps you spot possible friction. Focus on the step with the _largest proportional_ drop rather than the lowest absolute number.
+
+In a flexible funnel, the overall conversion rate measures how many visitors completed the first step and then the last, regardless of the middle steps. Middle-step counts still show visitors who followed the defined sequence up to that point. The last step can therefore have more visitors than a middle step. A visitor missing from a middle step may have skipped it and still converted, so a drop there does not necessarily mean a lost conversion.
 
 **What counts as a normal drop-off**
 
@@ -131,7 +135,9 @@ Also confirm that each goal used as a step is set up correctly in your site sett
 
 ### Numbers seem lower than expected
 
-Check whether you chose strict order when sequential would be more appropriate. In strict order mode, any other page load or event between two steps disqualifies the visitor from that point in the funnel. If your visitors normally do other things between steps, strict order will produce much lower conversion numbers than sequential. Switch to sequential unless you specifically need to enforce an exact uninterrupted path.
+Check your **Funnel type**. In a strict funnel, any other page load or event between two steps breaks the required sequence. Choose **Sequential** if visitors should complete every step but can do other things in between.
+
+Sequential funnels still require every step. If visitors can convert without completing the middle steps, choose **Flexible** to include them in the final conversion count.
 
 ### You need more than 8 steps
 
