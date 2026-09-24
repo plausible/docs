@@ -144,7 +144,7 @@ If the same goal is completed multiple times by the same visitor, all the comple
 
 ### Funnels
 
-Funnel analysis lets you define a sequence of steps and see exactly where visitors drop off. You can use pageview goals or custom events as steps, and choose between sequential or strict order mode. See [funnel analysis](funnel-analysis.md) for details.
+Funnel analysis lets you define a sequence of steps and measure conversion and drop-off. You can use pageview goals or custom events as steps, and choose between sequential, flexible or strict funnels. See [funnel analysis](funnel-analysis.md) for details.
 
 ### User Journeys
 
