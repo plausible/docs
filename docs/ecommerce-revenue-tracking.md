@@ -135,7 +135,7 @@ There's a third-party Plausible plugin for Magento that supports custom events a
 
 - Check that the amount is in the major currency unit (49.00 for $49, not 4900 for cents)
 - If you see duplicate revenue, check for multiple Plausible snippets on the page or the event firing more than once on page load
-- For multi-currency stores, Plausible records each transaction in the currency you specify. If you mix currencies in the same goal, totals will be summed as if they are the same currency. Use separate goals per currency or convert to a base currency before sending
+- For multi-currency stores, send each purchase’s actual amount and currency. Plausible automatically converts the amount into the goal’s reporting currency for total and average revenue.
 
 **Currency code format**
 
