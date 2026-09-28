@@ -51,6 +51,8 @@ Limits that can be increased on Enterprise beyond standard plan tiers:
 
 Enterprise plans are not self-serve like Growth or Business. [Contact us](https://plausible.io/contact) with your requirements and we will set up a custom plan tailored to your needs. You do not need to take every Enterprise feature. If you only need higher limits, we can set those up without the rest.
 
+Every custom plan is shown as **Enterprise** in the **Subscription** section of your account settings, including plans that only raise a limit such as the number of sites or team members. The Enterprise-only features listed above are part of your plan only if they were added to it.
+
 ## How usage is calculated
 
 Your subscription tier is based on the total number of **pageviews** and **[custom events](custom-event-goals.md)** across all the sites in a team. Each team has its own subscription, so if you are a member of multiple teams, each is billed independently.

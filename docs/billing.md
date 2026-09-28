@@ -121,7 +121,7 @@ If usage exceeds your tier for **two consecutive months**, we'll notify you to u
 
 If the spike is temporary, you can upgrade to restore access and downgrade again when traffic drops. Downgrades are pro-rated too, so you won't lose out. You're never locked into a higher plan when your usage no longer requires it. This works the same way on both monthly and yearly billing.
 
-We're not able to make exceptions to keep dashboards unlocked beyond the grace period. See [Choose the right subscription](subscription-plans.md#traffic-spikes-and-overages) for the full details.
+If the spike was caused by bot traffic, see [what to do about bot traffic](bot-traffic-filtering.md#5-contact-us-if-the-pattern-continues). See [Choose the right subscription](subscription-plans.md#traffic-spikes-and-overages) for the full details.
 
 ## My traffic spiked temporarily. Do I need to upgrade?
 
@@ -137,9 +137,15 @@ Paddle calculates a pro-rated charge based on what you've already paid and the t
 
 If you downgrade to a lower tier, the unused portion of your current billing period is added as a credit to your account. This credit is applied automatically to future payments until it's used up.
 
+## Why does my subscription say Enterprise?
+
+If we set up a custom plan for you, for example to raise your site or team member limit, it's shown as **Enterprise** in your account settings. 
+
+It includes the limits and features we set up for you. Enterprise-only features such as SSO are included only if they were added to your plan. See [Enterprise-only features](subscription-plans.md#enterprise-only-features), and [contact us](https://plausible.io/contact) if you'd like to add them.
+
 ## How do I update my payment method?
 
-In your account settings, go to the **Subscription** section. Under **Next bill amount**, click **Update billing info**.
+In your account settings, go to the **Subscription** section. Under **Current plan**, click **Billing details**.
 
 <div class="browser">
     <img alt="Update Plausible billing information" src={useBaseUrl('img/v2/account-settings-update-billing-info.webp')} />
