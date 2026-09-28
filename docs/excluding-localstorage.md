@@ -63,10 +63,8 @@ To allow anyone on your site (usually beta testers or internal users) to exclude
 
 We have created a downloadable version of such a page for you to use freely on your site. There are two versions of this example, one with a CSS stylesheet included if you want to use our style, and another without any styling if you'd like to bring your own.
 
-*Note*: With this method, similar to above, the page would need to be visited and enabled per domain and per browser, for every user. (And the page must be made available on the same domain as that which you wish to exclude analytics for)
-
 :::note
-The exclusion takes full effect from the next page load. The page where it's turned on was already counted when it loaded, so time spent on that page may still be recorded.
+With this method, similar to above, the page needs to be visited and the exclusion enabled per domain and per browser, for every user. The page must also be made available on the same domain you wish to exclude analytics for. The exclusion takes full effect from the next page load: the page where it's turned on was already counted when it loaded, so time spent on that page may still be recorded.
 :::
 
 ### Preview
