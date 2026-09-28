@@ -61,7 +61,7 @@ Shields rules take effect immediately and apply going forward. They do not remov
 
 ### 5. Contact us if the pattern continues
 
-If you have applied Shields rules and the traffic continues, or if the spike is large enough to affect your subscription tier, [contact us](https://plausible.io/contact) with the dates, source and any patterns you've noticed. We'll investigate and update our filters if needed.
+If the traffic continues, or if the spike is large enough to affect your subscription tier, [contact us](https://plausible.io/contact) with the dates, source and any patterns you've noticed. We'll investigate and update our filters if needed. If bot traffic pushed you over your plan's limit and your usage is back to normal, you may not need to upgrade.
 
 ## How Plausible improves bot filtering over time
 
