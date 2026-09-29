@@ -50,6 +50,10 @@ A Stats API key can query sites owned by the team it was created for. It cannot 
 
 For example, suppose you are a Guest Viewer for a client's site. A Stats API key that you create under **My personal sites** cannot query that client's site. The client team would need to create a key scoped to their team.
 
+:::note
+A Stats API key can also use the read-only endpoints of the [Sites API](sites-api.md), for example to [list the sites](sites-api.md#get-apiv1sites) owned by its team. Creating, changing or deleting sites needs a Sites API key.
+:::
+
 ### Example curl request
 
 In the following request, replace `YOUR-KEY` with a reference to your stats API key and `site_id` value with your domain as you've added it to your Plausible account.

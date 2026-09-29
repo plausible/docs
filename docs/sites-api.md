@@ -30,6 +30,10 @@ The Plausible Site provisioning API offers a way to create and manage sites in y
 
 Each request must be authenticated with an API key using the Bearer Token method. Sites API is available on [Enterprise plans](https://plausible.io/enterprise-web-analytics). Please [contact us](https://plausible.io/contact) to discuss your needs and to get an API key with permissions for the endpoints listed in this document.
 
+:::note
+The read-only endpoints (listing sites, teams, goals, custom properties and guests, and getting a site by domain) also work with a [Stats API key](stats-api.md) on any plan that includes the Stats API.
+:::
+
 ## Authentication
 
 When you create a Sites API key, it is scoped to the team selected in the top-right menu. It can manage only the sites owned by that team. It does not include sites owned by other teams or sites where the key owner is only a Guest Viewer or Guest Editor.
