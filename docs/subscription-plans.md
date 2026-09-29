@@ -30,6 +30,8 @@ Compare full features and pricing on [our website](https://plausible.io/#pricing
 
 All plans include a 30-day free trial, no credit card required. During the trial you have access to all Business plan features and limits, so you can explore the full product before choosing a plan.
 
+Not sure which plan fits? When you [choose a plan](https://plausible.io/billing/choose-plan) in your account, the page shows your billable pageviews over the last 30 days, selects the pageview tier that covers them and marks the plan that fits your usage and the features you've been using as **Recommended**. On a trial, it's worth checking near the end, once it covers a full month of your traffic.
+
 Our 15% discount is available only to nonprofits, educational institutions and open-source projects. It applies to Business plans with annual billing only. See [nonprofit and education pricing](nonprofit-and-education-pricing.md) for eligibility and how to apply.
 
 ## Enterprise-only features
