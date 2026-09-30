@@ -9,7 +9,7 @@ Our 15% discount is available only to nonprofits, educational institutions and o
 
 The discount is 15% off a Business plan with annual billing. Combined with annual billing, you also get 2 months free.
 
-The discount applies to Business plans with annual billing only. Monthly payments and all other plans are excluded.
+The discount applies to new subscriptions to Business plans with annual billing only. Existing subscriptions, monthly payments and all other plans are excluded.
 
 Your discount continues on renewals for as long as you stay on the same plan. If you upgrade or downgrade your plan for any reason, the discount ends and regular prices apply to your new plan.
 
