@@ -18,11 +18,11 @@ In [a server log comparison we ran](https://plausible.io/blog/server-log-analysi
 
 ## VPN users and bot filtering
 
-Most visitors using VPNs or Tor are tracked normally. When a visit comes through a VPN or Tor network, it typically appears under the "Anonymous VPN Service" entry in the [Countries report](countries.md).
+Most visitors using VPNs, Tor or Apple's iCloud Private Relay are tracked normally. When a visit comes through a VPN, iCloud Private Relay or Tor network, it typically appears under the "Anonymous VPN Service" entry in the [Countries report](countries.md).
 
-However, some VPN IP addresses fall within ranges we classify as data center infrastructure. When that happens, those visits are filtered out along with automated traffic from the same ranges. Distinguishing between a real visitor using a VPN and automated traffic from a data center is difficult at the IP level.
+However, some VPN and iCloud Private Relay IP addresses fall within ranges we classify as data center infrastructure. When that happens, those visits are filtered out along with automated traffic from the same ranges. Distinguishing between a real visitor using a VPN and automated traffic from a data center is difficult at the IP level.
 
-This is a tradeoff of aggressive bot filtering. It keeps automated traffic out of your stats but can occasionally result in some VPN visits not being recorded.
+This is a tradeoff of aggressive bot filtering. It keeps automated traffic out of your stats but can occasionally result in some of these visits not being recorded. If you test your own site while connected to a VPN or with iCloud Private Relay turned on in Safari, your visit may be filtered for this reason.
 
 ## Why you might still see some bot traffic
 
@@ -48,16 +48,20 @@ Look at the **Sources** tab to see where the spike is coming from. Common patter
 
 Look at the **Pages** tab filtered to the spike period. Bots often hit a single page repeatedly or target unusual paths like `/wp-admin`, `/xmlrpc.php` or random URL strings.
 
+Filter by **Hostname** too. If the spike was recorded on websites that aren't yours, those pageviews were sent to your dashboard from other sites.
+
 ### 4. Block it using Shields
 
 Once you have identified the source, use [Shields](excluding.md) to stop it being recorded:
 
 - **By country**: if the traffic is concentrated in one country you don't operate in, block that country
-- **By hostname**: if a specific hostname or referrer domain is the source, block it
+- **By hostname**: if the spike was recorded on hostnames that aren't yours, add your own hostnames to the [allow list](excluding.md#exclude-visits-by-hostname) so only visits on your site are recorded
 - **By IP address**: if the traffic is coming from a known IP or range, block that IP
 - **By page**: if only specific pages are being hit, use [page exclusions](top-pages.md#block-traffic-from-specific-pages-or-sections)
 
 Shields rules take effect immediately and apply going forward. They do not remove historical data already recorded.
+
+To leave visits on other hostnames out of your reports for past dates, [filter your dashboard by hostname](filters-segments.md#filter-by-subdomain-or-hostname).
 
 ### 5. Contact us if the pattern continues
 
