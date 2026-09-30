@@ -71,7 +71,7 @@ description: "Troubleshoot your Plausible Analytics installation. Diagnose why v
           "name": "Why is the WordPress plugin proxy not recording stats?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "After enabling or changing the proxy, you must clear all caches. The correct sequence is: disable the proxy, clear all caches, re-enable the proxy, clear all caches again. If you recently migrated or cloned your WordPress site, the proxy file path may be stale. The same reset sequence will regenerate it."
+            "text": "After enabling or changing the proxy, you must clear all caches. The correct sequence is: disable the proxy, clear all caches, re-enable the proxy, clear all caches again. If you recently migrated or cloned your WordPress site, the proxy file path may be stale or still point to your old server. The same reset sequence will regenerate it."
           }
         }
       ]
@@ -208,7 +208,7 @@ Skipping any step often leaves a stale script in place that the verification too
 
 ### Stats stopped after migrating or cloning your WordPress site
 
-The proxy creates a randomly named file in `/wp-content/uploads/`. When you migrate or clone your site, that file path may no longer match what the plugin expects. To fix this, disable the proxy, clear all caches, re-enable the proxy and clear all caches again. This forces the plugin to generate a fresh proxy file at the correct path.
+The proxy creates a randomly named file in `/wp-content/uploads/` and saves its full address. When you migrate or clone your site, that file path may no longer match what the plugin expects, or the address may still point to your old server. If the old server is offline, your pages can take a long time to load while browsers wait for the script. To fix this, disable the proxy, clear all caches, re-enable the proxy and clear all caches again. This forces the plugin to generate a fresh proxy file at the correct path on your new host.
 
 ### Proxy script is slow
 
