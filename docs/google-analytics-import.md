@@ -84,6 +84,8 @@ If you'd like to import multiple Google Analytics properties into the same Plaus
 
 In the **Imports & Exports** section, you can see the overview of all your existing imports to that specific Plausible dashboard. For each import, we list the Google Analytics property ID, the number of pageviews imported and the time range that the import covers.
 
+Each import brings in the whole Google Analytics property. It can't be split by hostname, so if one property tracked several sites, the data for all of them goes into the one Plausible site you import it into.
+
 ## How much data is imported?
 
 Data is imported in aggregate for each date, from your first Google Analytics visitor until your first Plausible Analytics visitor. This is to avoid double-counting visits. 

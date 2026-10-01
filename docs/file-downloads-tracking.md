@@ -62,6 +62,8 @@ Our **File downloads** tracking captures a file download event each time a link 
 
 Note that clicks on download links within `svg` elements are not tracked.
 
+A link is detected as a file download by the file extension at the end of its path, such as `/files/report.pdf`. Some CMSs serve files from addresses without an extension, such as `/web/content/1234`, so clicks on those links aren't detected. To track them, [add a CSS class name](custom-event-goals.md#add-a-css-class-name-to-the-element-you-want-to-track-on-your-site) to the link and track it as a custom event.
+
 ## What if I want to track a different file type?
 
 You can also specify a custom list of file types to track with a `file-types` attribute tag. With this, you can track other file types not present in our default list. Say you only want to track `.js` and `.py` files, you can pass the following argument to `plausible.init`:

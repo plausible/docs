@@ -82,6 +82,8 @@ Once added to the block list, we will start blocking traffic from that specific 
 
 You can see the list of all the pages that you're blocking the traffic from. Click on the "Remove" button next to that page to remove it from the blocklist.
 
+Page rules match the page path only, not the query string. A rule for `/pricing` blocks `/pricing?ref=newsletter` too, and you can't block a page based on its query parameters here.
+
 ## Exclude visits by hostname
 
 If you prefer to only record traffic from specific hostnames (and block all the other traffic), you can do so in your site settings: 

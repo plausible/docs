@@ -304,6 +304,8 @@ Common causes during testing:
 - Another device on the same network visited the site recently
 - You tested multiple UTM links without waiting 30 minutes between each
 
+If your campaign link points to a URL that redirects, for example to another subdomain, the redirect must keep the query string. If it drops it, the UTM parameters never reach the page where Plausible runs. The visit is then attributed to its referrer, or shows as **Direct / None** when there's no referrer.
+
 To test UTM attribution reliably, use a device and network combination that has not visited your site in the past 30 minutes. Mobile data on a phone that hasn't visited the site recently is the most reliable option. Check the **Campaigns** tab after the visit to confirm attribution.
 
 ---
