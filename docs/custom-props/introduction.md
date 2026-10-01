@@ -37,6 +37,10 @@ Note that you must ensure that no personally identifiable information (PII) is s
 
 If you're confused whether the information you're sending to us qualifies as PII, look at the [explanations and examples](https://plausible.io/blog/pii-examples) in our guide.
 
+:::note
+Specific custom property values can't be deleted on their own once they've been recorded. If personal data was sent by mistake, the only way to remove it is to [reset your site data](/reset-site-data), which clears all the stats collected for that site.
+:::
+
 ## `(none)` values
 
 Plausible will display `(none)` in your dashboard when you send a custom property key with no value, or `null`/`undefined` as a value. Also, when you send one event with a property (e.g. `author`) and another event with the same name, but without the `author` property, then you will also see the `(none)` value because the property has not been sent with every event.

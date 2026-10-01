@@ -97,7 +97,7 @@ If you're purchasing on behalf of a business, click **Add VAT number** on the se
 
 <img class="border" alt="Add VAT number at checkout" src={useBaseUrl('img/v2/add-vat-number-during-checkout.webp')} />
 
-If you missed this step, open any Paddle invoice and click **Add address & VAT Number**. Paddle will automatically refund the VAT on your original payment and apply the correct rate to future payments. [More on Paddle's VAT handling →](https://paddle.com/support/which-countries-does-paddle-charge-vat-for/)
+If you missed this step, open any Paddle invoice and click **Add address & VAT Number**. Paddle will automatically refund the VAT on your original payment and apply the correct rate to future payments. Other invoices that were already issued stay as they were. [More on Paddle's VAT handling →](https://paddle.com/support/which-countries-does-paddle-charge-vat-for/)
 
 ## How do I change my VAT number?
 
@@ -196,6 +196,10 @@ Ad blockers and privacy extensions can interfere with the payment form. Try disa
 - Confirm your bank hasn't blocked online or international transactions
 - Disable any VPN or browser extensions before attempting payment
 - If your card details are correct and no 3DS prompt was issued, try subscribing using a different email address
+
+**Change plan button missing on an Enterprise plan**
+
+If you're on a custom (**Enterprise**) plan, the **Change plan** button is hidden in the **Subscription** section while a payment is past due or your subscription is paused. Update your payment method under **Billing details** so Paddle can charge your card again. Once the payment goes through, the **Change plan** button is back.
 
 Have a billing question not covered here? [Contact us](https://plausible.io/contact).
 
