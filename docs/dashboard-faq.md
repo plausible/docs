@@ -62,6 +62,12 @@ GA may be counting more events per visit than actual pageviews. This can happen 
 
 Compare the unique visitor or active user counts between the two tools, not just pageviews. If those are close, both tools are finding roughly the same audience and the pageview difference is a counting methodology issue, not a tracking gap. If unique visitors also differ significantly, it may point to a setup issue. Check our [troubleshooting guide](troubleshoot-integration.md) to verify your Plausible installation is working correctly.
 
+**When Direct / None is higher than in GA**
+
+Plausible credits each visit to the source it came from. When someone first finds you through a Google search and comes back a few days later by typing your address or using a bookmark, that second visit shows as **Direct / None**, and so does any conversion or [revenue](ecommerce-revenue-tracking.md) from it. Without cookies, nothing links the two visits. GA4 usually credits a direct visit to the last non-direct source it remembers for that browser, so the same purchase can show under Organic Search there.
+
+This means Direct / None, along with the conversions and revenue credited to it, is often higher in Plausible than in GA4, even when the totals are close. To bring more of these visits under a named source, [tag the links you control](top-referrers.md#tag-all-the-links-that-you-control).
+
 ## Why do my numbers differ from my email marketing tool?
 
 If you send a campaign in MailChimp, ConvertKit or a similar tool and the click count doesn't match the visits in Plausible, a few things are usually going on:

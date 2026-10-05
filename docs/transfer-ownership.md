@@ -24,7 +24,7 @@ See [Recover access when an owner is unavailable](transfer-account-ownership.md)
 - Finish setup first: goals, email reports, spike notifications, funnels. The client becomes the owner and controls settings after the transfer.
 - Make sure the recipient already has a Plausible account. You'll need their email address to initiate the transfer.
 - Let the client know. They'll receive an email invitation and have 48 hours to accept. If they don't have an active subscription that fits the usage, they'll be guided to subscribe before the transfer completes.
-- You'll keep Guest Editor access after the transfer by default. They can change your role or remove you at any time.
+- You'll keep Guest Editor access after the transfer by default, unless the recipient accepts without members. They can change your role or remove you at any time.
 
 ## Transfer to a different user
 
@@ -36,6 +36,10 @@ See [Recover access when an owner is unavailable](transfer-account-ownership.md)
 The recipient will get an email notification. They need to log in (or register for a Plausible account) and accept the request within 48 hours. If they don't have an active subscription, they'll need to upgrade before accepting.
 
 After the transfer, you keep **Guest Editor** access to the site. The new owner can [change your role or remove your access](users-roles.md) at any time.
+
+### If accepting goes over your team member limit
+
+Everyone with access to the site, including the previous owner, moves with it and counts toward the new owner's [team member limit](users-roles.md#how-the-team-member-limit-is-counted). If that's the only limit the transfer goes over, click the arrow on **Accept** and choose **Accept without members**. The site joins your account on its own, and nobody else keeps access. To bring them along, choose **Upgrade to accept** instead.
 
 ## Transfer to a team
 
