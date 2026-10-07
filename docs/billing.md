@@ -30,7 +30,7 @@ description: "Common billing questions for Plausible Analytics. Pageview-based p
           "name": "What payment methods does Plausible accept?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Plausible accepts credit and debit cards, PayPal, Apple Pay and Google Pay. All payment processing is handled by Paddle. Cryptocurrency is not accepted. Paddle automatically emails you an invoice after every payment."
+            "text": "Plausible accepts credit and debit cards, PayPal, Apple Pay and Google Pay. All payment processing is handled by Paddle. Larger annual plans can also be paid by invoice and bank transfer on request. Cryptocurrency is not accepted. Paddle automatically emails you an invoice after every payment."
           }
         },
         {
@@ -85,7 +85,7 @@ The invoice email goes to your Paddle email address, which may differ from your 
 
 ## What payment methods do you accept?
 
-Credit/debit card, PayPal, Apple Pay and Google Pay. All payment processing is handled by Paddle. We're not able to accept cryptocurrency.
+Credit/debit card, PayPal, Apple Pay and Google Pay. All payment processing is handled by Paddle. Larger annual plans can also be paid by invoice and bank transfer on request. We're not able to accept cryptocurrency.
 
 Paddle automatically emails you an invoice after every payment. Our [purchasing and vendor information](https://plausible.io/procurement) page covers company details and purchasing documents.
 
