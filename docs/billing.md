@@ -46,7 +46,7 @@ description: "Common billing questions for Plausible Analytics. Pageview-based p
           "name": "How do I add my VAT number?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Click 'Add VAT number' on the second step of checkout where you enter your payment details. If you missed this step, open any Paddle invoice and click 'Add address and VAT Number'. Paddle will automatically refund the VAT on your original payment and apply the correct rate going forward."
+            "text": "Click 'Add VAT number' on the second step of checkout where you enter your payment details. If you missed this step, open any Paddle invoice and click 'Add address and VAT Number'. Paddle will automatically refund the VAT on your original payment and apply the correct rate going forward. UK businesses are the exception: Paddle still charges UK VAT, which you can reclaim on your VAT return."
           }
         },
         {
@@ -97,7 +97,7 @@ If you're purchasing on behalf of a business, click **Add VAT number** on the se
 
 <img class="border" alt="Add VAT number at checkout" src={useBaseUrl('img/v2/add-vat-number-during-checkout.webp')} />
 
-If you missed this step, open any Paddle invoice and click **Add address & VAT Number**. Paddle will automatically refund the VAT on your original payment and apply the correct rate to future payments. Other invoices that were already issued stay as they were. [More on Paddle's VAT handling →](https://paddle.com/support/which-countries-does-paddle-charge-vat-for/)
+If you missed this step, open any Paddle invoice and click **Add address & VAT Number**. Paddle will automatically refund the VAT on your original payment and apply the correct rate to future payments. UK businesses are the exception: Paddle still charges UK VAT, which you can reclaim on your VAT return. Other invoices that were already issued stay as they were. [More on Paddle's VAT handling →](https://paddle.com/support/which-countries-does-paddle-charge-vat-for/)
 
 ## How do I change my VAT number?
 

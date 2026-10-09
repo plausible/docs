@@ -36,7 +36,7 @@ You have three options depending on how much access the client needs:
 - [Email reports](email-reports.md): schedule weekly or monthly reports sent directly to clients
 - [Traffic spike notifications](traffic-spikes.md): get alerted when a client site has unusual traffic
 
-Standard plans include up to 10 sites. If you need more than 10, an Enterprise plan combines your monthly usage tier with a site allowance from one of our preset tiers, which can scale to thousands of sites. 
+Standard plans include up to 10 sites: one on Starter, up to 3 on Growth and up to 10 on Business. If you need more than 10, an Enterprise plan combines your monthly usage tier with a site allowance from one of our preset tiers, which can scale to thousands of sites. 
 
 Within your site allowance, you don't need a plan change every time you onboard a client. [Contact us](https://plausible.io/contact) with your total number of sites and combined monthly usage for a quote.
 
