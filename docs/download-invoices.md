@@ -17,7 +17,7 @@ To save a PDF copy, use your browser's **Print** command and select **Save as PD
 
 ## Add your company address and VAT number
 
-Open any invoice from Paddle and click **Add address & VAT Number**. Paddle handles VAT and sales taxes. If you provide a valid VAT ID, no VAT will be charged on future payments. Your company details and VAT number are added to invoices from then on. Other invoices that were already issued stay as they were. [More on Paddle's VAT handling →](https://paddle.com/support/which-countries-does-paddle-charge-vat-for/)
+Open any invoice from Paddle and click **Add address & VAT Number**. Paddle handles VAT and sales taxes. If you provide a valid VAT ID, no VAT will be charged on future payments. UK businesses are the exception: Paddle still charges UK VAT, which you can reclaim on your VAT return. Your company details and VAT number are added to invoices from then on. Other invoices that were already issued stay as they were. [More on Paddle's VAT handling →](https://paddle.com/support/which-countries-does-paddle-charge-vat-for/)
 
 ## Change your billing address
 

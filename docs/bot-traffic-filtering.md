@@ -22,7 +22,7 @@ Most visitors using VPNs, Tor or Apple's iCloud Private Relay are tracked normal
 
 However, some VPN and iCloud Private Relay IP addresses fall within ranges we classify as data center infrastructure. When that happens, those visits are filtered out along with automated traffic from the same ranges. Distinguishing between a real visitor using a VPN and automated traffic from a data center is difficult at the IP level.
 
-This is a tradeoff of aggressive bot filtering. It keeps automated traffic out of your stats but can occasionally result in some of these visits not being recorded. If you test your own site while connected to a VPN or with iCloud Private Relay turned on in Safari, your visit may be filtered for this reason.
+This is a tradeoff of aggressive bot filtering. It keeps automated traffic out of your stats but can occasionally result in some of these visits not being recorded. If you test your own site while connected to a VPN or with iCloud Private Relay turned on in Safari, your visit may be filtered for this reason. The same can occasionally happen to an office or home connection whose IP address falls in one of these ranges.
 
 ## Why you might still see some bot traffic
 
