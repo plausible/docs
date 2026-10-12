@@ -21,7 +21,6 @@ You can **choose a different time range** that you want to analyze in the date p
 
 The time format (24-hour or 12-hour am/pm) is displayed based on your browser's language setting.
 
-
 :::tip Click on the site name in the top left side of the dashboard
 Here you can enter "[Site Settings](website-settings.md)" but also switch to a different [pinned site](landing-page.md#access-your-pinned-sites-from-the-site-switcher-list) that you have added to your Plausible account
 :::
@@ -33,7 +32,7 @@ You can also **add annotations** to the chart to mark important events like a de
 You can **set a different unit of time the stats on the chart are grouped by** in the options menu (the **⋮** icon in the top right of the chart). Click it and select **Graph interval**. The available interval options depend on the date range you've selected. For example, if you select "Today", you can display the stats by minute or by hour.
 
 <div class="browser">
-    <img alt="Plausible Analytics graph interval options for Today view showing minute and hour groupings" src={useBaseUrl('img/v2/chart-intervals.webp')} />
+    <img alt="Plausible Analytics graph interval options for Today view showing minute and hour groupings" src={useBaseUrl('img/v2/chart-interval.webp')} />
 </div>
 
 Or if you select "Last 28 days", you can display the stats by day or by week. You can display the stats by days, weeks or months if you choose a wider timeframe.
