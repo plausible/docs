@@ -60,6 +60,8 @@ These integrations are built and maintained by third parties, not by Plausible. 
 
 * [Arbory](https://apps.apple.com/app/id6760103214): Native iOS companion app with a full dashboard, interactive charts, home screen and lock screen widgets, and traffic spike notifications. Connects directly to your Plausible instance.
 
+* [PulseKit](https://www.pulsekit.io/en/integrations/plausible_cloud): iPhone home screen and lock screen widgets for your Plausible stats. Track unique visitors, pageviews, bounce rate, average visit duration and realtime visitors. Connect a site once and glance any time, no dashboard needed.
+
 ### Linux
 
 [Tally](https://flathub.org/apps/com.cassidyjames.plausible): hybrid native + web app that wraps the Plausible web app in a native UI, integrating better with desktop operating systems.
