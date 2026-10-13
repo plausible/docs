@@ -7,14 +7,6 @@ export default function PlanFeatureNote({ feature, plan, label }) {
   const link = isBusiness ? 'https://plausible.io/#pricing' : 'https://plausible.io/contact';
   const linkText = isBusiness ? 'Compare plans →' : 'Contact us →';
 
-  const button = isBusiness ? 'Compare plans' : 'Contact us';
-
-  const track = () => {
-    if (typeof window !== 'undefined' && window.plausible) {
-      window.plausible('CTA Click', { props: { position: 'Inline', type: 'Docs', button } });
-    }
-  };
-
   return (
     <div className="plan-feature-note">
       <span className="plan-feature-badge">{planLabel}</span>
@@ -25,7 +17,7 @@ export default function PlanFeatureNote({ feature, plan, label }) {
         href={link}
         className="plan-feature-link"
         style={{ color: 'var(--ifm-color-primary)' }}
-        onClick={track}
+        data-cta-position="Inline"
       >
         {linkText}
       </a>

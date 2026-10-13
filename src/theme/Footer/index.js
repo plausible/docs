@@ -53,14 +53,14 @@ export default function Footer() {
               <a
                 href="https://plausible.io/register"
                 className={styles.ctaPrimary}
-                onClick={() => window.plausible && window.plausible('CTA Click', {props: {position: 'Bottom', type: 'Docs', button: 'Start free trial'}})}
+                data-cta-position="Bottom"
               >
                 Start free trial
               </a>
               <a
                 href="https://plausible.io/plausible.io"
                 className={styles.ctaSecondary}
-                onClick={() => window.plausible && window.plausible('CTA Click', {props: {position: 'Bottom', type: 'Docs', button: 'View live demo'}})}
+                data-cta-position="Bottom"
               >
                 View live demo
               </a>

@@ -70,6 +70,7 @@ Step-by-step guides for popular website builders and content management systems.
 | [Ghost](ghost-integration.md) | Guide | How to add the script to your Ghost site |
 | [HubSpot](hubspot-analytics.md) | Guide | How to add the script to your HubSpot site |
 | [Hugo](hugo-integration.md) | Guide | How to add the script to your Hugo site |
+| [Odoo](odoo-integration.md) | Guide | Connect your Odoo website to Plausible Cloud |
 | [NextJS](nextjs-integration.md) | Guide | Simple integration for Plausible Analytics and NextJS with custom events |
 | [Shopify](shopify-integration.md) | Guide | How to add the script to your Shopify store |
 | [Squarespace](squarespace-integration.md) | Guide | How to add the script to your Squarespace site |

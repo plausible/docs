@@ -17,7 +17,7 @@ export default function CustomLoginStatusNavbarItem({ mobile }) {
     return (
       <>
         <a href="https://plausible.io/register" className="navbar__item navbar__link"
-          onClick={() => window.plausible && window.plausible('CTA Click', { props: { position: 'Nav', type: 'Docs', button: 'Start free trial' } })}>
+          data-cta-position="Nav">
           Start free trial
         </a>
         <a href="https://plausible.io/login" className="navbar__item navbar__link">
@@ -56,7 +56,7 @@ export default function CustomLoginStatusNavbarItem({ mobile }) {
         href="https://plausible.io/register"
         className="button button--primary"
         style={btnStyle}
-        onClick={() => window.plausible && window.plausible('CTA Click', { props: { position: 'Nav', type: 'Docs', button: 'Start free trial' } })}
+        data-cta-position="Nav"
       >
         Start free trial
       </a>

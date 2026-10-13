@@ -13,9 +13,10 @@ You can add the script directly to your head through "next/head" or react-helmet
 **[Next-Plausible](https://github.com/4lejandrito/next-plausible)** built and maintained by [4lejandrito](https://github.com/4lejandrito). It supports:
 
 <CtaBox
-  headline="Add privacy-first analytics to your Next.js app"
+  headline="Add privacy-friendly analytics to your Next.js app. Try Plausible free for 30 days, no credit card required."
   link="https://plausible.io/register"
   linkText="Start free trial"
+  platform="Next.js"
 />
 
 ## Serving the Plausible script

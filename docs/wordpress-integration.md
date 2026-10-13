@@ -13,9 +13,10 @@ The best way to add Plausible to your WordPress site is our official plugin. It 
 This page covers everything the plugin can do. If you only want a quick start, the first two sections (install and connect) are all you need.
 
 <CtaBox
-  headline="Privacy-first analytics for your WordPress site, no cookies and no consent banner"
+  headline="Get privacy-friendly analytics for your WordPress site with our official plugin. Try Plausible free for 30 days, no credit card required."
   link="https://plausible.io/register"
   linkText="Start free trial"
+  platform="WordPress"
 />
 
 ## Install the plugin
