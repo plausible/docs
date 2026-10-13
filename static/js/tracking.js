@@ -9,17 +9,30 @@ plausible.init({
   }
 })
 
-document.addEventListener('click', function(e) {
-  var a = e.target.closest('a');
-  if (!a) return;
-  var href = a.getAttribute('href') || '';
-  var button = null;
-  if (href.indexOf('plausible.io/register') !== -1) {
-    button = 'Start free trial';
-  } else if (href.indexOf('plausible.io/plausible.io') !== -1) {
-    button = 'View live demo';
-  }
-  if (button) {
-    plausible('CTA Click', {props: {position: 'Inline', type: 'Docs', button: button}});
-  }
-});
+// One delegated handler also covers Markdown links and client-side navigation.
+if (!window.plausibleDocsCtaTracking) {
+  window.plausibleDocsCtaTracking = true;
+  document.addEventListener('click', function(e) {
+    var a = e.target.closest && e.target.closest('a');
+    if (!a) return;
+    var url;
+    try { url = new URL(a.getAttribute('href'), window.location.href); }
+    catch (_) { return; }
+    if (url.origin !== 'https://plausible.io') return;
+    var path = url.pathname.replace(/\/$/, '') || '/';
+    var button;
+    if (path === '/register') button = 'Start free trial';
+    else if (path === '/plausible.io') button = 'View live demo';
+    else if (path === '/' && url.hash === '#pricing') button = 'See pricing';
+    else if (path === '/contact') button = 'Contact us';
+    else return;
+    var props = {
+      position: a.getAttribute('data-cta-position') || 'Inline',
+      type: 'Docs',
+      button: button
+    };
+    var platform = a.getAttribute('data-cta-platform');
+    if (platform) props.platform = platform;
+    window.plausible && window.plausible('CTA Click', {props: props});
+  });
+}

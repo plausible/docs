@@ -16,9 +16,9 @@ Click on the menu icon on the right-hand side of the site you'd like to get the 
 There you can also enable any [optional enhanced measurements](script-extensions.md).
 
 <CtaBox
-  headline="Need your site-specific snippet? Add your site to Plausible first"
+  headline="Add your website to Plausible to get your tracking snippet. Try it free for 30 days, no credit card required."
   link="https://plausible.io/register"
-  linkText="Create free account"
+  linkText="Start free trial"
 />
 
 <div class="browser">

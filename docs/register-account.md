@@ -28,3 +28,13 @@ Don't see this email in your inbox? Please check your spam folder and whether yo
 </div>
 
 Once verified, your 30-day trial starts immediately. [Register your account →](https://plausible.io/register)
+
+## Next: connect your website
+
+After verification, [add your website](add-website.md), then use the guide for your setup:
+
+- [WordPress: install and connect the official plugin](wordpress-integration.md)
+- [Google Tag Manager: use the official template](https://plausible.io/gtm-template)
+- [Other platforms and installation methods](integration-guides.md)
+
+Finish by checking that your site is receiving traffic. Creating an account alone does not start collecting visits.
