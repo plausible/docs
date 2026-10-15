@@ -20,9 +20,9 @@ Any metric you click on in your dashboard creates a new filter. Click on any ref
 
 You can mix and match filters too. So you can click on a referral source, then click on a country and then a goal to see all the traffic sent by the chosen referral source that is based in the selected country and that has converted on the selected goal.
 
-Your current filters will be displayed on the top of your dashboard. You can click on the name of the existing filter to edit it or on the `x` icon to remove it.
+Your current filters appear as pills at the top of your dashboard. Each pill shows the dimension, operator and selected values. Click the operator or values to edit that part of the filter. Your changes apply immediately. Click the `x` icon to remove the filter.
 
-You can remove all your filters by hitting the `Esc` key on your keyboard or by selecting **Clear all filters** in the filters menu (`***`).
+You can remove all your filters by hitting the `Esc` key on your keyboard or by clicking the **bin** icon next to the filter pills.
 
 ## Use the "Filter" button for more powerful segmenting and matching
 
@@ -30,7 +30,11 @@ You can remove all your filters by hitting the `Esc` key on your keyboard or by 
     <img alt="Using the custom filter" src={useBaseUrl('img/v2/custom-filter.webp')} />
 </div>
 
-When you’re trying to understand and analyze your traffic, the **Filter** button is a powerful tool. It allows you to search, select multiple entries and it includes options "is", "is not", "contains" and "does not contain" to give you more flexibility when matching and segmenting your audience. Click on the **Filter** button on the top right of your dashboard to start adding filters.
+When you’re trying to understand and analyze your traffic, the **Filter** button gives you more control. Click it and choose a dimension such as **Page**, **Source**, **Location** or **Goal**. Some dimensions are grouped in submenus. For example, **Page** contains **Page**, **Entry page** and **Exit page**.
+
+Choosing a dimension adds a filter pill and opens its value list. Search for a value or select multiple values from the list. Changes apply immediately, so there is no separate apply step. Click **Done** or click outside the list when you are finished.
+
+To change how values are matched, click the operator in the filter pill. Depending on the dimension, you can choose "is", "is not", "contains" or "does not contain".
 
 ### Filter by multiple sources, countries, pages and more
 
@@ -48,7 +52,7 @@ You can search for any metric such as a particular country, referral source or p
 
 You can exclude specific segments of traffic and only display the traffic that isn't part of the excluded segment. You can, for instance, exclude traffic from the United States so your dashboard only shows the visitors that aren't based in the USA.
 
-Click on the **Filter** button, then select **Country** as your metric, choose "is not" (or "does not contain" as an alternative) and then select (or type) the name of the country you want to exclude. You can do the same for referral sources or any of the other metrics.
+Click on the **Filter** button, open **Location** and select **Country**. Then select or type the name of the countries you want to exclude. Click the operator in the filter pill and choose "is not" or "does not contain." You can do the same for referral sources or any of the other dimensions.
 
 ### Group relevant pages, marketing campaigns and more
 
@@ -70,7 +74,7 @@ Learn more on how Plausible [handles cross-subdomain tracking here](subdomain-ho
 
 ## How to save a segment
 
-Click on any metric in the dashboard or use the **Filter** button to filter your audience to a desired segment. After completing your segment, click on the **Save as segment** button that is visible in the filters menu (`***`) that you see when your dashboard is filtered.
+Click on any metric in the dashboard or use the **Filter** button to filter your audience to a desired segment. After completing your segment, click the **Save as segment** (star icon) option next to the filter pills.
 
 <div class="browser">
     <video autoPlay loop muted controls width="100%">
@@ -84,19 +88,19 @@ Choose the type of segment you want to create, give it a recognizable name and c
 
 ### How to open a previously saved segment
 
-Click the **Filter** button in the top-right corner of your dashboard to view your saved segments under the **Segments** heading. You can also search for specific segments. Click on a segment to open it in your dashboard.
+Click the **Filter** button and open **Segment** to view your saved segments. Click on a segment to open it in your dashboard.
 
 <div class="browser">
     <img alt="Open a Segment" src={useBaseUrl('img/v2/open-segments.webp')} />
 </div>
 
-Note that the **Segments** heading will only be visible in the **Filter** button after you save your first segment.
+The **Segment** entry is only visible after you save your first segment.
 
 ### How to edit or delete a previously saved segment
 
-Open a previously saved segment and click its name in the top line of your Plausible dashboard. Then, select **Edit segment** to add or remove filters.
+Open a previously saved segment and click its pill at the top of your Plausible dashboard. From this menu, you can view its filters, switch to another segment, edit, duplicate or delete the segment.
 
-To save your changes, click the **Update segment** button. Use the arrow next to this button to save the existing segment as a brand new segment (**Save as a new segment**) or to delete the existing segment (**Delete segment**).
+Select **Edit segment** to add, remove or change filters. Click **Save** to update the segment or **Cancel** to return to the saved version.
 
 P.S. We've written an in-depth guide on effective use of audience segmentation, you can [read it here](https://plausible.io/audience-segmentation).
 
