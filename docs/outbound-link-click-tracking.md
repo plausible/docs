@@ -46,7 +46,7 @@ Click on **Outbound Link: Click** goal in the **Goals** tab of your Plausible da
 
 Click on a particular external URL to filter the dashboard by those clicks only and get the full overview of that specific URL.
 
-Want to group external link clicks by the domain name or any other keyword? In the **Filter** button in the top right of your dashboard, choose **Property**. Then select **url** (this includes all the external link click URLs we have recorded) and use the "contains" option. Add whatever domain or keyword you want to group the external link clicks by and click on the **Apply Filter** button.
+Want to group external link clicks by the domain name or any other keyword? In the **Filter** button in the top right of your dashboard, choose **Property**. Then select **url** (this includes all the external link click URLs we have recorded) and use the "contains" option. Add whatever domain or keyword you want to group the external link clicks by and click the **Done** button.
 
 :::tip Are you using cloaked affiliate links on your site?
 Here's how to automatically [track clicks on cloaked affiliate links](custom-automatic-link-tracking.md)
