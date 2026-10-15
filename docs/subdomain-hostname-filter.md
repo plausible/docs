@@ -57,7 +57,7 @@ We'll show you the list of all the hostnames we have recorded in the chosen time
 * You can segment by all hostnames that contain any particular word ("contains")
 
 <div class="browser">
-<img alt="List of subdomains" src={useBaseUrl('img/list-of-hostnames-and-subdomains.png')} />
+<img alt="List of subdomains" src={useBaseUrl('img/v2/list-of-hostnames-and-subdomains.webp')} />
 </div>
 
 :::tip Want to filter your traffic by a subfolder or directory?
