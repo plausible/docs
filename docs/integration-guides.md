@@ -75,6 +75,7 @@ Step-by-step guides for popular website builders and content management systems.
 | [Shopify](shopify-integration.md) | Guide | How to add the script to your Shopify store |
 | [Squarespace](squarespace-integration.md) | Guide | How to add the script to your Squarespace site |
 | [Webflow](webflow-integration.md) | Guide | How to add the script to your Webflow site |
+| [WeInc](weinc-integration.md) | Guide | How to turn on the Plausible add-on in your WeInc site |
 | [Wix](wix-integration.md) | Guide | How to add the script to your Wix site |
 | [Craft CMS](https://plugins.craftcms.com/plausible) | Plugin | Dashboard widgets to display analytics data from Plausible |
 | [DatoCMS](https://www.datocms.com/marketplace/plugins/i/datocms-plugin-plausible) | Plugin | Provides a link to Plausible for the current record on the sidebar |
