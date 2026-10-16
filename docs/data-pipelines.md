@@ -60,6 +60,8 @@ These integrations are built and maintained by third parties, not by Plausible. 
 
 * [Arbory](https://apps.apple.com/app/id6760103214): Native iOS companion app with a full dashboard, interactive charts, home screen and lock screen widgets, and traffic spike notifications. Connects directly to your Plausible instance.
 
+* [Verceltics](https://apps.apple.com/app/id6761645656): Native iPhone and iPad app that shows your Plausible stats next to Vercel, Cloudflare, Google Search Console and other site services. Connects to Plausible Cloud with a Stats API key.
+
 ### Linux
 
 [Tally](https://flathub.org/apps/com.cassidyjames.plausible): hybrid native + web app that wraps the Plausible web app in a native UI, integrating better with desktop operating systems.
