@@ -18,7 +18,7 @@ Note that some VPN visits may not be recorded at all. If a VPN IP address falls 
 You can use the **Filter** button on the top of your dashboard to segment the traffic by multiple countries, regions or cities at the same time. This allows you to group specific geographical regions and display only that traffic.
 
 <div class="browser">
-<img alt="Countries - multiple filters" src={useBaseUrl('img/countries-filtering-multiple-filters.png')} />
+<img alt="Countries - multiple filters" src={useBaseUrl('img/v2/countries-filtering-multiple-filters.webp')} />
 </div>
 
 ## How to block traffic from specific countries
