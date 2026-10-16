@@ -77,9 +77,7 @@ Learn more on how Plausible [handles cross-subdomain tracking here](subdomain-ho
 Click on any metric in the dashboard or use the **Filter** button to filter your audience to a desired segment. After completing your segment, click the **Save as segment** (star icon) option next to the filter pills.
 
 <div class="browser">
-    <video autoPlay loop muted controls width="100%">
-        <source src={useBaseUrl('/video/create-segment-in-plausible.mp4')} type="video/mp4" />
-    </video>
+    <img alt="Save filtered dashboard as a segment" src={useBaseUrl('img/save-filtered-dashboard-as-segment.png')} />
 </div>
 
 Segments can be saved either as "personal segments" (these are visible only to you) or as "site segments" (these are visible to all the team members that have access to your dashboard).
