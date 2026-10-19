@@ -61,6 +61,8 @@ In the **Imports & Exports** section, you can see the overview of all your exist
 
 Data is imported in aggregate for each date, from your first import visitor until your first Plausible Analytics visitor. This is to avoid double-counting visits. We also have measures in place to detect and avoid double-counting visitors if you import multiple properties into the same Plausible dashboard.
 
+This means an import can't fill a gap that comes after your first Plausible data, such as months when the script wasn't installed between two periods of native stats. The import page then shows **Dates Conflict**, even for dates where your dashboard shows no visits. To fill such a gap, you can export your stats, [reset your site's stats](reset-site-data.md) and import everything again, the exported files and the data for the gap. Your native stats then become imported data, with the [differences](#how-does-imported-data-differ-from-native-data) described below.
+
 ## How can I delete imported data?
 
 Data you have imported can be deleted by returning to your site's **Imports & Exports** settings page and clicking the **Delete Import** button in the **Existing Imports** section. This action won't affect the native data you have collected using our script directly.

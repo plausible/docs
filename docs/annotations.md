@@ -36,6 +36,10 @@ Hover over the date on the chart where an annotation exists. Right-click to open
 <img alt="Edit or delete an annotation" src={useBaseUrl('img/edit-delete-annotation.png')} />
 </div>
 
+## Limits
+
+Each site can have up to 500 annotations. Personal notes and site notes from all team members count towards the same limit. Each note can be up to 255 characters long. 
+
 ## Practical uses
 
 Annotations are most useful when your team is making changes that affect traffic. Some common things worth marking:
