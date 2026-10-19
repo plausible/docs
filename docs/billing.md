@@ -67,7 +67,7 @@ import CtaBox from '@site/src/components/CtaBox';
 
 ## Is the billing based per account or per website?
 
-Billing is based on total usage across all the sites in a team. Each team has its own subscription and is billed separately. Check your usage numbers at any time in the **Subscription** section of your account settings. For details on how usage is calculated, see [Choose the right subscription](subscription-plans.md).
+Billing is based on total usage across all the sites in a team. Each team has its own subscription and is billed separately. Check your usage numbers at any time in the **Subscription** section of your account settings. For details on how usage is calculated, see [Choose the right subscription](subscription-plans.md). Traffic you block with [Shields](excluding.md) (by IP address, country, page or hostname) isn't recorded and doesn't count towards your usage.
 
 ## Can I manage multiple clients with separate billing for each?
 

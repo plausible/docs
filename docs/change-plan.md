@@ -32,6 +32,15 @@ Click **Confirm plan change** to apply.
 
 Your subscription renews automatically and you can change or [cancel](cancel-subscription.md) at any time.
 
+## Why a plan shows "Your usage exceeds this plan"
+
+You can't choose a plan that includes less than your account uses. Hover over the message to see which limit it is: sites, team members or monthly pageviews.
+
+- **Sites or team members:** remove the sites or team members above the plan's limit, then choose the plan.
+- **Monthly pageviews:** we look at your last two complete billing cycles. The plan stays unavailable while both of them went over its pageview limit, with some leeway above it. As soon as one of the two cycles fits, you can choose it. On a trial, your pageviews over the last 30 days are used instead.
+
+If a one-off traffic spike or bot traffic is keeping you from the plan that fits your usual traffic, [contact us](https://plausible.io/contact).
+
 :::tip
 Not sure which tier fits? Check your current usage in the **Subscription** section. You can also see [Choose the right subscription](subscription-plans.md) for guidance on how usage is calculated.
 

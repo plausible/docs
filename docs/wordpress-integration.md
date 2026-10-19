@@ -61,6 +61,8 @@ Your site is now being tracked. You can confirm tracking from your [site setting
 Plugin tokens are site-specific and always start with `plausible-plugin-`. Make sure the token was created for the exact site you are connecting, and generate a new one if in doubt.
 :::
 
+Your plugin tokens for a site are listed under **Site Settings** > **Integrations** > **Plugin tokens**, with when each was last used. To revoke one, click the delete icon next to it. Creating a new token doesn't revoke the older ones, so revoke any you no longer use.
+
 ## WordPress multisite networks
 
 You can track a WordPress multisite network in one Plausible dashboard. Install the plugin once through **Network Admin → Plugins**, then either **Network Activate** it or activate it individually on the sites you want to track.

@@ -13,6 +13,10 @@ By default, Plausible Analytics tracks every visitor to your website. You might 
 
 Here's how to block your internal traffic from your Plausible Analytics stats dashboard. You can block recording visitors from specific IP addresses, hostnames, countries or pages. If you're on WordPress, our [official WordPress plugin](wordpress-integration.md#exclude-admins-and-other-roles) can exclude views from admins and other user roles without any manual configuration.
 
+:::note
+Visits blocked by IP address, country, page or hostname are dropped before they reach your stats. They aren't stored and don't count towards your plan's monthly pageview usage.
+:::
+
 ## Exclude visits by IP address
 
 * Go into the [site settings](website-settings.md) of the website you'd like to block your activity from

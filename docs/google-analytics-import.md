@@ -218,7 +218,7 @@ Check the date range of your import in your Plausible site settings. If your GA4
 
 **Imported data and native data show a gap or overlap**
 
-The import tool sets the end date of the import to one day before your first Plausible native data point. If you see a gap, check that Plausible was correctly installed and recording data before you ran the import. If you see overlap, delete the import and re-run it after confirming your Plausible installation date.
+The import tool sets the end date of the import to one day before your first Plausible native data point, so it can't fill a gap that comes after that date (months when the script wasn't installed between two periods of native stats, for example; see [CSV imports](csv-import.md#how-much-data-is-imported) for a way around it). If you see a gap, check that Plausible was correctly installed and recording data before you ran the import. If you see overlap, delete the import and re-run it after confirming your Plausible installation date.
 
 ## What's next?
 

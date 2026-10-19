@@ -32,6 +32,8 @@ To improve your account security, you can require all your team members to enabl
 * Confirm by clicking OK. All members, including you, will need to set up 2FA before they can access the team sites.
 * To remove the requirement later, click **Stop Forcing 2FA**.
 
+Team members who don't have 2FA yet get an email asking them to set it up. The next time they open the team's sites, they're taken to the 2FA setup and can't skip it. They keep access to their account and to any other teams they belong to.
+
 ## How to generate new recovery codes
 
 Have you lost your recovery codes? You can generate new codes at any time. You can use a recovery code to log in to your Plausible account if you lose access to your authenticator app or your trusted device.
