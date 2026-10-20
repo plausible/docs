@@ -29,8 +29,8 @@ You can export your stats directly from the top chart of your Plausible dashboar
 3. If applicable, open the options menu (the **⋮** icon in the top right of the chart) and toggle **Include imported data** to choose whether you want your imported data to be included in the export
 4. Then open the options menu and click **Export stats** to download the stats for your chosen view and segment
 
-<div class="browser">
-<img alt="Exporting your website stats" src={useBaseUrl('img/v2/export-website-stats.webp')} />
+<div class="browser screenshot-padded">
+<img alt="Plausible dashboard options menu with the Export stats button" src={useBaseUrl('img/plausible-export-dashboard-stats.webp')} width="1088" height="531" loading="lazy" decoding="async" />
 </div>
 
 This will export a ZIP file which includes CSV files of the individual reports. You can then use these CSV files to import your stats into Excel or other data analysis tools.

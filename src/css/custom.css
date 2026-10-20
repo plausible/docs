@@ -796,3 +796,13 @@ html[data-theme='dark'] {
   background-color: rgba(99, 102, 241, 0.08);
   border-left-color: var(--ifm-color-primary-light);
 }
+/* Tight 2x captures: breathing room inside the existing browser frame. */
+.browser.screenshot-padded img {
+  box-sizing: border-box;
+  padding: 16px;
+  height: auto;
+  background: #fafafa;
+}
+@media (max-width: 600px) {
+  .browser.screenshot-padded img { padding: 8px; }
+}

@@ -27,10 +27,10 @@ Here's how you can import your historical stats into your Plausible dashboard by
 
 1. Go to the Plausible Analytics [site settings](website-settings.md) for the website you'd like to import the data to.
 
-2. Go into the **Imports & Exports** section, find the **Import Data** panel and click on the **CSV** button to import your CSV files.
+2. Go into the **Imports & Exports** section, find the **Import Data** panel and click on **Import from CSV** to import your CSV files.
 
 <div class="browser">
-<img alt="Import CSV" src={useBaseUrl('img/import-csv.png')} />
+<img alt="Import from CSV button in the Import data panel under Plausible site settings, Imports & Exports" src={useBaseUrl('img/import-csv.png')} />
 </div>
 
 3. Select all the CSV files that you'd like to import and click on the **Confirm import** button. When importing your stats from different analytics tools, please ensure that each CSV file follows our CSV format guidelines. The guidelines are listed at the end of this document.
@@ -45,7 +45,7 @@ To [transfer site ownership](transfer-ownership.md) to another account, or to [c
 
 2. Go into the **Imports & Exports** section, find the **Export Data** panel and click on the **Export to CSV** button to export all the data. Note that only native data can be exported. Any data imported from external sources such as Google Analytics will be excluded from the export.
 
-3. Then go to the site you'd like to import the data to. In the **Imports & Exports** section, find the **Import Data** panel and click on the **CSV** button to import your CSV files.
+3. Then go to the site you'd like to import the data to. In the **Imports & Exports** section, find the **Import Data** panel and click on **Import from CSV** to import your CSV files.
 
 4. Make sure to select all the CSV files that you've exported and click on the **Confirm import** button. If you don't select all the exported files, some data may be missing from your import.
 
@@ -87,8 +87,8 @@ There are several exceptions to this though, because some properties are aggrega
 
 By default, imported data is always included in the view, unless you choose to exclude it manually by opening the options menu (the **⋮** icon in the top right of the chart) and toggling off **Include imported data**.
 
-<div class="browser">
-<img alt="Stats include imported data" src={useBaseUrl('img/stats-include-imported-data.png')} />
+<div class="browser screenshot-padded" style={{maxWidth: '265px'}}>
+<img alt="Plausible dashboard options with Include imported data switched on" src={useBaseUrl('img/plausible-include-imported-data.webp')} width="245" height="253" loading="lazy" decoding="async" />
 </div>
 
 Whenever imported data cannot be included due to the applied filters, you will see a warning bubble stating “Imported data is excluded due to applied filters” in the corresponding report. Note that this does not affect displaying native data in any way.

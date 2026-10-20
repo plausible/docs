@@ -21,10 +21,10 @@ You can search for pages by using [the **Filter** button](filters-segments.md) o
 
 ## Group pages
 
-Do you want to group all your blog posts and analyze the traffic to the blog separately from the rest of your site? The **Page** menu within the filter button includes option for "contains". Put any specific keyword to group all of your pages that contain that keyword. The **Filter** button also allows you to segment the dashboard by grouping multiple unrelated pages at the same time.
+Do you want to group all your blog posts and analyze the traffic to the blog separately from the rest of your site? The **Page** menu within the filter button includes option for "contains". Put any specific keyword to group all of your pages that contain that keyword. The **Filter** button also allows you to segment the dashboard by grouping multiple unrelated pages at the same time. To do this, choose **Page** in the **Page** submenu, use the **is** operator, select the page paths you want to include, and click **Done**. The example below groups `/register` and `/docs/register-account`; a visitor who viewed either page is included.
 
-<div class="browser">
-<img alt="Top Pages - multiple filters" src={useBaseUrl('img/v2/top-pages-filtering-multiple-filters.webp')} />
+<div class="browser screenshot-padded">
+<img alt="Plausible dashboard grouping two pages with a Page filter, including scroll depth and time on page" src={useBaseUrl('img/v2/top-pages-filtering-multiple-filters.webp')} width="1088" height="981" loading="lazy" decoding="async" />
 </div>
 
 :::note

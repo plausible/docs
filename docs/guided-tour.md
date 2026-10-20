@@ -11,8 +11,8 @@ Here’s what you can discover on your Plausible dashboard. You can also explore
 
 ## Top Graph
 
-<div class="browser">
-    <img alt="Plausible Analytics top graph showing unique visitors, total visits, pageviews, bounce rate and visit duration" src={useBaseUrl('img/v2/top-graph.webp')} />
+<div class="browser screenshot-padded">
+    <img alt="Plausible Analytics overview graph with visitors, visits, pageviews, views per visit, bounce rate and visit duration" src={useBaseUrl('img/v2/top-graph.webp')} width="1088" height="531" loading="lazy" decoding="async" />
 </div>
 
 See the number of unique visitors, total visits (sessions), total page views, views per visit, the bounce rate (the percentage of sessions that had one page view only) and the visit duration. You can **click on a particular metric to display it in the top graph**.
@@ -29,10 +29,10 @@ You can also **add annotations** to the chart to mark important events like a de
 
 ## Set a different chart interval
 
-You can **set a different unit of time the stats on the chart are grouped by** in the options menu (the **⋮** icon in the top right of the chart). Click it and select **Graph interval**. The available interval options depend on the date range you've selected. For example, if you select "Today", you can display the stats by minute or by hour.
+You can **set a different unit of time the stats on the chart are grouped by** in the options menu (the **⋮** icon in the top right of the chart). Open the menu and choose an option under **Graph interval**. The available interval options depend on the date range you've selected. For example, if you select "Today", you can display the stats by minute or by hour.
 
-<div class="browser">
-    <img alt="Plausible Analytics graph interval options for Today view showing minute and hour groupings" src={useBaseUrl('img/v2/chart-interval.webp')} />
+<div class="browser screenshot-padded">
+    <img alt="Plausible graph interval menu showing minute and hour groupings for a single day" src={useBaseUrl('img/v2/chart-interval.webp')} width="1088" height="531" loading="lazy" decoding="async" />
 </div>
 
 Or if you select "Last 28 days", you can display the stats by day or by week. You can display the stats by days, weeks or months if you choose a wider timeframe.

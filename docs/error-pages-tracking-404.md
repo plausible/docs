@@ -38,7 +38,7 @@ description: "Find broken links and missing pages on your site. Add a small code
           "name": "Where do I see which 404 pages are being visited?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "After setting up the 404 goal, open your Plausible dashboard and filter by the '404' goal. The Top Pages report shows which URLs are generating the most 404 visits. Click any URL to filter the dashboard by that specific page."
+            "text": "After setting up the 404 goal, open your Plausible dashboard and filter by the '404' goal. The 404 Pages report shows which paths are generating the most 404 visits. Click any URL to filter the dashboard by that specific page."
           }
         }
       ]
@@ -49,7 +49,7 @@ description: "Find broken links and missing pages on your site. Add a small code
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <div class="browser">
-<img alt="How to track 404 error pages" src={useBaseUrl('img/track-404-error-pages.png')} />
+<img alt="Plausible 404 Pages report listing missing page paths with visitor counts, event counts and conversion rates" src={useBaseUrl('img/track-404-error-pages.png')} />
 </div>
 
 :::note
@@ -80,12 +80,12 @@ You can place this code anywhere in the `<head>` or `<body>` section of your 404
 
 To configure a goal, go to [your website's settings](website-settings.md) in your Plausible account and visit the **Goals** section. You should see a list of current goals with a prompt to add a goal.
 
-Click on the **+ Add goal** button to go to the goal creation form.
+Click **Add goal**, then select **Custom event** to open the goal creation form.
 
-Select `Custom event` as the goal trigger and enter `404` as the name of the custom event you are triggering. The 404 goal works the same way as any other [custom event goal](custom-event-goals.md).
+Enter `404` in **Event name** and select it from the dropdown. Keep **Display name** as `404`. The 404 goal works the same way as any other [custom event goal](custom-event-goals.md).
 
-<div class="browser">
-<img alt="Add your first goal" src={useBaseUrl('img/goal-conversions.png')} />
+<div class="browser screenshot-padded" style={{maxWidth: '480px'}}>
+  <img alt="Create a 404 custom event goal in Plausible with Event name and Display name both set to 404" src={useBaseUrl('img/plausible-create-404-goal.webp')} width="896" height="1048" loading="lazy" decoding="async" />
 </div>
 
 After clicking on the **Add goal** button, the goal will be created and you'll be taken back to the Goals page.
@@ -128,7 +128,7 @@ Every 404 visit is a visitor who landed somewhere broken. The impact depends on 
 
 ## Analyzing and acting on 404 data
 
-Once you have the 404 goal set up, open your Plausible dashboard and filter by the `404` goal. The Top Pages report will show which URLs are generating the most 404 visits.
+Once you have the 404 goal set up, open your Plausible dashboard and filter by the `404` goal. The **404 Pages** report will show which paths are generating the most 404 visits.
 
 **Prioritize by volume.** A URL generating 50 visits per month is worth fixing. One generating one visit per year is not.
 

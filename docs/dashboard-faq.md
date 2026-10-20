@@ -7,10 +7,10 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Numbers not 'adding up'
 
-It's common to see that the numbers in your dashboard aren't _adding up_. In the example below, there are 27 unique users in total but when you add together the unique users in the **Top Pages** tab, it adds up to 53 users.
+It's common to see that the numbers in your dashboard aren't _adding up_. The **Unique visitors** metric counts each visitor once for the selected period. The **Top Pages** report counts visitors separately for each page, so someone who visits several pages appears in several rows. Adding those rows can therefore give a higher number than the dashboard's total unique visitors.
 
-<div class="browser">
-<img alt="Numbers not adding up" src={useBaseUrl('img/numbers-not-adding-up.png')} />
+<div class="browser screenshot-padded">
+<img alt="Plausible dashboard with total unique visitors above a Top Pages report listing visitors for each page" src={useBaseUrl('img/plausible-unique-visitors-by-page.webp')} width="1088" height="981" loading="lazy" decoding="async" />
 </div>
 
 This happens because visitors can view more than a single page or trigger more than a single custom event on your site. Imagine a single visitor triggering two pageviews: `/page1` and `/page2`. In this case your Plausible dashboard would show 1 unique visitor in total. However, the **Top Pages** tab would show one unique visitor for `/page1` and one unique visitor for `/page2`.
