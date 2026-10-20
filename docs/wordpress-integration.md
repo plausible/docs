@@ -46,13 +46,14 @@ In the **Domain Name** field, enter your domain exactly as added to your Plausib
 To manage everything from WordPress without visiting your Plausible account, generate a plugin token:
 
 1. Click the token link in the plugin settings. It takes you to plausible.io.
-2. Click **Create Plugin Token** and copy the token.
-3. Back in the plugin, paste it into the **Plugin Token** field and click **Connect**.
+2. Enter a description such as `WordPress`, if it isn't already filled in, and click **Create plugin token**.
+3. Copy the token displayed on the next screen. It won't be shown again after you close the modal.
+4. Back in the plugin, paste it into the **Plugin Token** field and click **Connect**.
 
 If clicking the link in step 1 does nothing, see [token link doesn't do anything](troubleshoot-integration.md#token-link-doesnt-do-anything) to create the token manually.
 
-<div class="browser">
-  <img alt="Add your Plausible plugin token in WordPress" src={useBaseUrl('img/add-wordpress-token.png')} />
+<div class="browser" style={{maxWidth: '448px'}}>
+  <img alt="Create a Plausible plugin token for WordPress: enter WordPress as the description, then click Create plugin token" src={useBaseUrl('img/plausible-create-wordpress-plugin-token.webp')} width="896" height="556" loading="lazy" decoding="async" />
 </div>
 
 Your site is now being tracked. You can confirm tracking from your [site settings](website-settings.md) at any time.

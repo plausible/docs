@@ -5,8 +5,10 @@ description: "How to reset all collected stats for a site in Plausible Analytics
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Within the **Danger zone** section of [your website settings](website-settings.md) you can reset your website stats. This removes all the stats you've collected until that point. Click on the **Reset** button to reset your stats from Plausible Analytics.
+Within the **Danger zone** section of [your website settings](website-settings.md), find **Reset stats** and click **Reset [your domain] stats**. Confirm the reset when prompted.
 
 <div class="browser">
-<img alt="Reset your site data" src={useBaseUrl('img/reset-website-data-plausible-analytics.png')} />
+  <img alt="Plausible site settings: Reset stats removes collected analytics while keeping the site configuration" src={useBaseUrl('img/plausible-reset-stats.webp')} width="1622" height="344" decoding="async" />
 </div>
+
+This permanently removes all the stats you've collected until that point while keeping the site and its configuration in your account. The separate **Delete site** action removes both the stats and the site settings.

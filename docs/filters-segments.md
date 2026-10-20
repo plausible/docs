@@ -27,7 +27,7 @@ You can remove all your filters by hitting the `Esc` key on your keyboard or by 
 ## Use the "Filter" button for more powerful segmenting and matching
 
 <div class="browser">
-    <img alt="Using the custom filter" src={useBaseUrl('img/v2/custom-filter.webp')} />
+    <img alt="Plausible Filter menu with segments, pages, sources, locations, devices, goals and custom properties" src={useBaseUrl('img/v2/custom-filter.webp')} width="1088" height="531" loading="lazy" decoding="async" />
 </div>
 
 When you’re trying to understand and analyze your traffic, the **Filter** button gives you more control. Click it and choose a dimension such as **Page**, **Source**, **Location** or **Goal**. Some dimensions are grouped in submenus. For example, **Page** contains **Page**, **Entry page** and **Exit page**.
@@ -42,10 +42,10 @@ You can filter your stats by multiple sources, countries, pages and more, all at
 
 ### Search for any metric
 
-You can search for any metric such as a particular country, referral source or page on your site. Start typing to discover the specific page (or another metric) you're looking for. No need to scroll through the long list of countries or pages.
+After choosing a filter dimension, type in its search field to find a particular country, referral source or page on your site. Select the matching values you want to include, then click **Done**. You can select multiple values without scrolling through the full list.
 
 <div class="browser">
-    <img alt="Search for any metric" src={useBaseUrl('img/v2/filter-typing.webp')} />
+    <img alt="Page filter search for dashboard, with matching page paths and checkboxes for selecting multiple pages" src={useBaseUrl('img/v2/filter-typing.webp')} />
 </div>
 
 ### Exclude specific segments of traffic
@@ -77,7 +77,7 @@ Learn more on how Plausible [handles cross-subdomain tracking here](subdomain-ho
 Click on any metric in the dashboard or use the **Filter** button to filter your audience to a desired segment. After completing your segment, click the **Save as segment** (star icon) option next to the filter pills.
 
 <div class="browser">
-    <img alt="Save filtered dashboard as a segment" src={useBaseUrl('img/save-filtered-dashboard-as-segment.png')} />
+    <img alt="Save as segment star button beside the active Entry page and Channel filters" src={useBaseUrl('img/save-filtered-dashboard-as-segment.png')} />
 </div>
 
 Segments can be saved either as "personal segments" (these are visible only to you) or as "site segments" (these are visible to all the team members that have access to your dashboard).
@@ -89,7 +89,7 @@ Choose the type of segment you want to create, give it a recognizable name and c
 Click the **Filter** button and open **Segment** to view your saved segments. Click on a segment to open it in your dashboard.
 
 <div class="browser">
-    <img alt="Open a Segment" src={useBaseUrl('img/v2/open-segments.webp')} />
+    <img alt="Saved segments listed in the Segment submenu of the Plausible Filter menu" src={useBaseUrl('img/v2/open-segments.webp')} />
 </div>
 
 The **Segment** entry is only visible after you save your first segment.
