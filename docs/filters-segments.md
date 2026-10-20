@@ -26,7 +26,7 @@ You can remove all your filters by hitting the `Esc` key on your keyboard or by 
 
 ## Use the "Filter" button for more powerful segmenting and matching
 
-<div class="browser">
+<div class="browser screenshot-padded">
     <img alt="Plausible Filter menu with segments, pages, sources, locations, devices, goals and custom properties" src={useBaseUrl('img/v2/custom-filter.webp')} width="1088" height="531" loading="lazy" decoding="async" />
 </div>
 

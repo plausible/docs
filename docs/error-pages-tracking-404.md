@@ -84,7 +84,7 @@ Click **Add goal**, then select **Custom event** to open the goal creation form.
 
 Enter `404` in **Event name** and select it from the dropdown. Keep **Display name** as `404`. The 404 goal works the same way as any other [custom event goal](custom-event-goals.md).
 
-<div class="browser" style={{maxWidth: '448px'}}>
+<div class="browser screenshot-padded" style={{maxWidth: '480px'}}>
   <img alt="Create a 404 custom event goal in Plausible with Event name and Display name both set to 404" src={useBaseUrl('img/plausible-create-404-goal.webp')} width="896" height="1048" loading="lazy" decoding="async" />
 </div>
 

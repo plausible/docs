@@ -52,8 +52,8 @@ To manage everything from WordPress without visiting your Plausible account, gen
 
 If clicking the link in step 1 does nothing, see [token link doesn't do anything](troubleshoot-integration.md#token-link-doesnt-do-anything) to create the token manually.
 
-<div class="browser" style={{maxWidth: '448px'}}>
-  <img alt="Create a Plausible plugin token for WordPress: enter WordPress as the description, then click Create plugin token" src={useBaseUrl('img/plausible-create-wordpress-plugin-token.webp')} width="896" height="556" loading="lazy" decoding="async" />
+<div class="browser screenshot-padded" style={{maxWidth: '480px'}}>
+  <img alt="Create a Plausible plugin token for WordPress: enter WordPress as the description, then click Create plugin token" src={useBaseUrl('img/plausible-create-wordpress-plugin-token.webp')} width="896" height="548" loading="lazy" decoding="async" />
 </div>
 
 Your site is now being tracked. You can confirm tracking from your [site settings](website-settings.md) at any time.

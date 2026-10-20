@@ -15,13 +15,13 @@ You can find scroll depth data in:
 
 1.  **The top row of metrics** when a page filter is applied. Click a page in **Top Pages**, then click the **Scroll depth** metric above the graph to see scroll depth trends over time.
 
-<div class="browser">
+<div class="browser screenshot-padded">
 <img alt="Scroll depth and time on page in the Plausible dashboard filtered to a single page" src={useBaseUrl('img/scroll-depth-top-graph.webp')} width="1088" height="531" loading="lazy" decoding="async" />
 </div>
 
 2.  **The expanded Top Pages tab**. Click the expand icon in the top right of the report, then click the **Scroll depth** column heading to sort pages by their scroll depth.
 
-<div class="browser">
+<div class="browser screenshot-padded">
 <img alt="Plausible Top Pages report showing scroll depth percentages alongside visitors, pageviews, bounce rate and time on page" src={useBaseUrl('img/plausible-scroll-depth-pages.webp')} width="880" height="618" loading="lazy" decoding="async" />
 </div>
 

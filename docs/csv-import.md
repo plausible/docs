@@ -87,7 +87,7 @@ There are several exceptions to this though, because some properties are aggrega
 
 By default, imported data is always included in the view, unless you choose to exclude it manually by opening the options menu (the **⋮** icon in the top right of the chart) and toggling off **Include imported data**.
 
-<div class="browser" style={{maxWidth: '265px'}}>
+<div class="browser screenshot-padded" style={{maxWidth: '265px'}}>
 <img alt="Plausible dashboard options with Include imported data switched on" src={useBaseUrl('img/plausible-include-imported-data.webp')} width="245" height="253" loading="lazy" decoding="async" />
 </div>
 

@@ -72,7 +72,7 @@ The configuration process consists of four major stages:
 
 - Go to the **Configuration** section of **Single Sign-On** under **Team Settings**.
 
-  <div class="browser">
+  <div class="browser screenshot-padded">
   <img alt="Plausible Single Sign-On settings with Start Configuring SSO" src={useBaseUrl('img/plausible-sso-start-configuration.webp')} width="811" height="234" loading="lazy" decoding="async" />
   </div>
 - Click the **Start Configuring SSO** button.
@@ -102,13 +102,13 @@ Step-by-step instructions for commonly used identity providers:
 
 - Go back to **Configuration** section of **Single Sign-On** under **Team Settings** and click **Start Configuring**.
 
-  <div class="browser">
+  <div class="browser screenshot-padded">
   <img alt="Plausible SAML service-provider settings with ACS URL, Entity ID and required identity attributes" src={useBaseUrl('img/plausible-sso-service-provider-settings.webp')} width="811" height="570" loading="lazy" decoding="async" />
   </div>
 
 - Enter your identity provider's **SSO URL / Sign-on URL / Login URL**, **Entity ID / Issuer / Identifier**, and **Signing Certificate in PEM format**, then click **Save**. Use the values from your provider, not the example values in the screenshot.
 
-  <div class="browser">
+  <div class="browser screenshot-padded">
   <img alt="Plausible SSO form for the identity provider's sign-on URL, Entity ID and PEM signing certificate" src={useBaseUrl('img/plausible-sso-identity-provider-settings.webp')} width="811" height="602" loading="lazy" decoding="async" />
   </div>
 
@@ -118,13 +118,13 @@ Step-by-step instructions for commonly used identity providers:
 
 - Enter domain name used in email addresses of identities that should be allowed to log in to this team through SSO and click **Add Domain**.
 
-  <div class="browser">
+  <div class="browser screenshot-padded">
   <img alt="Plausible SSO form for adding an email domain" src={useBaseUrl('img/plausible-sso-add-domain.webp')} width="811" height="320" loading="lazy" decoding="async" />
   </div>
 
 - Verify ownership of the domain by adding the displayed DNS TXT record, publishing the verification file or route, or adding the HTML meta tag. Use the verification value shown for your domain. After publishing the record or page change, click **Continue**.
 
-  <div class="browser">
+  <div class="browser screenshot-padded">
   <img alt="Plausible SSO domain ownership verification using DNS, a file or an HTML meta tag" src={useBaseUrl('img/plausible-sso-verify-domain.webp')} width="811" height="685" loading="lazy" decoding="async" />
   </div>
 
@@ -136,7 +136,7 @@ Step-by-step instructions for commonly used identity providers:
 
 - Once the verification succeeds, the domain is marked as verified.
 
-  <div class="browser">
+  <div class="browser screenshot-padded">
   <img alt="Plausible SSO domains table showing verified and pending sample domains" src={useBaseUrl('img/plausible-sso-domain-statuses.webp')} width="811" height="372" loading="lazy" decoding="async" />
   </div>
 
@@ -164,7 +164,7 @@ It might happen in a team with multiple Owners that some of them might be away a
 
 If any of those conditions are not met, the switch is disabled and the reason is outlined once you hover over it.
 
-<div class="browser">
+<div class="browser screenshot-padded">
 <img alt="Disabled Force Single Sign-On switch explaining that all Owners must enable 2FA" src={useBaseUrl('img/plausible-sso-policy-requirements.webp')} width="811" height="446" loading="lazy" decoding="async" />
 </div>
 
@@ -186,13 +186,13 @@ The ownership of every added domain must be verified using one of three methods:
 - [Publishing a file or exposing a route](#file-or-route-verification) from the web page under the domain
 - [Adding a META HTML tag](#meta-tag-verification) to the web page under the domain
 
-<div class="browser">
+<div class="browser screenshot-padded">
 <img alt="Plausible SSO domain verification instructions with Run Verification Now" src={useBaseUrl('img/plausible-sso-retry-verification.webp')} width="811" height="685" loading="lazy" decoding="async" />
 </div>
 
 Once started, the verification process is retried in the background over the following hours until it succeeds. Once it's verified or fails after too many attempts, you will be notified by email. Verification can be immediately retried by canceling the running process and kicking off verification again.
 
-<div class="browser">
+<div class="browser screenshot-padded">
 <img alt="Plausible SSO domains table with Cancel for an ongoing verification" src={useBaseUrl('img/plausible-sso-cancel-verification.webp')} width="811" height="372" loading="lazy" decoding="async" />
 </div>
 
@@ -214,7 +214,7 @@ You have to put `<meta name="plausible-sso-verification" content="<domain identi
 
 SSO policy can be configured from **Configuration** section of **Single Sign-On** under **Team Settings**.
 
-<div class="browser">
+<div class="browser screenshot-padded">
 <img alt="Plausible SSO policy controls for enforcement, default role and session timeout" src={useBaseUrl('img/plausible-sso-policy.webp')} width="811" height="446" loading="lazy" decoding="async" />
 </div>
 
@@ -232,12 +232,12 @@ SSO account session timeout in Plausible is always counted relative to the time 
 
 - Team members who have already provisioned their accounts through SSO are distinctly labeled as such on members list under **Team Settings**
 
-<div class="browser">
+<div class="browser screenshot-padded">
 <img alt="Plausible team members with an SSO label beside a provisioned member" src={useBaseUrl('img/plausible-sso-team-members.webp')} width="811" height="302" loading="lazy" decoding="async" />
 </div>
 
 - All team members' active SSO sessions can be viewed and optionally logged out in **Sessions** section of **Single Sign-On** under **Team Settings**
 
-<div class="browser">
+<div class="browser screenshot-padded">
 <img alt="Plausible SSO session management showing a sample user and device" src={useBaseUrl('img/plausible-sso-sessions.webp')} width="811" height="227" loading="lazy" decoding="async" />
 </div>

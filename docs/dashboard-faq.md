@@ -9,7 +9,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 It's common to see that the numbers in your dashboard aren't _adding up_. The **Unique visitors** metric counts each visitor once for the selected period. The **Top Pages** report counts visitors separately for each page, so someone who visits several pages appears in several rows. Adding those rows can therefore give a higher number than the dashboard's total unique visitors.
 
-<div class="browser">
+<div class="browser screenshot-padded">
 <img alt="Plausible dashboard with total unique visitors above a Top Pages report listing visitors for each page" src={useBaseUrl('img/plausible-unique-visitors-by-page.webp')} width="1088" height="981" loading="lazy" decoding="async" />
 </div>
 
