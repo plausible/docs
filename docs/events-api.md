@@ -29,7 +29,7 @@ curl -i -X POST https://plausible.io/api/event \
   -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.284' \
   -H 'X-Forwarded-For: 127.0.0.1' \
   -H 'Content-Type: application/json' \
-  --data '{"name":"pageview","url":"http://plausible.io","domain":"plausible.io"}'
+  --data '{"name":"pageview","url":"http://dummy.site","domain":"dummy.site"}'
 ```
 
 ```json title="Response 202 Accepted"
@@ -133,7 +133,7 @@ Custom properties for the event. These can be attached to both pageviews and cus
 The value corresponding to the `props` key in the request body is expected to be a JSON object with a maximum of 30 key-value pairs. If you include more than 30 items in the `props` object, the exceeding items will be discarded. For example, if you're using the `text/plain` content type, your request body might look like this:
 
 ```
-'{"name":"pageview","url":"http://plausible.io","domain":"plausible.io","props":{"author":"John Doe","logged_in":"false"}}'
+'{"name":"pageview","url":"http://dummy.site","domain":"dummy.site","props":{"author":"John Doe","logged_in":"false"}}'
 ```
 <hr / >
 
@@ -146,7 +146,7 @@ The value corresponding to the `revenue` key in the request body is expected to 
 For example, to track a purchase of US$ 1.322,22, your request body might look like this:
 
 ```json
-{"name":"Purchase","url":"http://plausible.io","domain":"plausible.io","revenue":{"currency":"USD","amount":"1322.22"}}
+{"name":"Purchase","url":"http://dummy.site","domain":"dummy.site","revenue":{"currency":"USD","amount":"1322.22"}}
 ```
 <hr / >
 

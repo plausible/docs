@@ -65,7 +65,7 @@ curl \
 --header 'Authorization: Bearer YOUR-KEY' \
 --header 'Content-Type: application/json' \
 --url 'https://plausible.io/api/v2/query' \
---data '{ "site_id": "plausible.io", "metrics": ["visitors"], "date_range": "7d" }'
+--data '{ "site_id": "dummy.site", "metrics": ["visitors"], "date_range": "7d" }'
 ```
 
 API keys have a rate limit of 600 requests per hour by default. If you have special needs for more requests, [please contact us](https://plausible.io/contact) to request more capacity.
