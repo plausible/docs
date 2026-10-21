@@ -115,11 +115,7 @@ Google samples its keyword data heavily. The sampling is why your keyword visito
 
 ## Plausible Analytics will be listed in your Google account settings
 
-You can check if Plausible Analytics is integrated with and has the right permissions to your Search Console properties in your Google account within the section **Apps with access to your account**. Here's the [direct link to that section](https://myaccount.google.com/permissions). Here's how it looks.
-
-<div class="browser">
-    <img alt="Third-party apps with account access" src={useBaseUrl('img/v2/third-party-apps.webp')} />
-</div>
+Open your Google Account's [connections page](https://myaccount.google.com/connections) and select **Plausible Analytics**. Under the section describing Plausible's access to your Google Account, open **See details** to review its Search Console permissions. Google's [linked-apps guide](https://support.google.com/accounts/answer/13533235) explains how to review or remove access.
 
 ## Remove the Google Search Console integration
 

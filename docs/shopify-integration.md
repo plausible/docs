@@ -286,6 +286,8 @@ Your form or button element should have an ID attribute assigned by default. You
 
 ### 2. Trigger custom events with JavaScript on your site
 
+Keep your [current Plausible tracking snippet](plausible-script.md) installed. Add the code below alongside it; it does not replace your tracking snippet.
+
 Here's the code you will need to insert in the `<head>` section of the page where the element ID that you want to track is located. You can do this the same way as you've inserted the Plausible snippet into your site.
 
 Make sure to change the `elementId` line in the code below to include the ID attribute of the element you want to track (`ContactForm` in our example).
@@ -316,9 +318,6 @@ To represent a space character in goal names, you can use a `+` sign. For exampl
 </script>
 ```
 
-<div class="browser">
-<img alt="Modify Plausible script" src={useBaseUrl('img/modify-plausible-script-shopify.png')} />
-</div>
     
 Do click on the **Save** button to save your changes.
 
@@ -366,9 +365,6 @@ If you want to trigger multiple custom events on the same site, you don't need t
 </script>
 ```
 
-<div class="browser">
-<img alt="track multiple elements in Shopify" src={useBaseUrl('img/track-multiple-elements-shopify.png')} />
-</div>
 </details>
 
 ## What's next?

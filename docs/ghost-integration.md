@@ -18,13 +18,9 @@ In Ghost you can inject code across your entire site or on an individual post or
   linkText="Start free trial"
 />
 
-* In the **Menu**, click **Settings**, and then **Code Injection**.
+* In Ghost Admin, open **Settings → Advanced → Code Injection**. You can also follow [Ghost's current code injection guide](https://ghost.org/help/code-injection-styles/).
 
-<div class="browser">
-<img alt="Ghost code injection" src={useBaseUrl('img/ghost-code-injection.png')} />
-</div>
-
-* Add your Plausible Analytics script to the **Site Header** text box. Code added into the **Site Header** field is injected into the `<head>` tag on every page of your site.
+* Paste your [Plausible tracking snippet](plausible-script.md) to the **Site Header** text box. Code added into the **Site Header** field is injected into the `<head>` tag on every page of your site.
 
 * After adding your code, click on the **Save** button.
 
@@ -38,7 +34,7 @@ The Sign In/Sign up flows are part of Ghost's [Portal](https://ghost.org/help/se
 
 However, you can bypass this and customize your sign up flows by using a custom theme on the "[Creator plan](https://ghost.org/pricing/)" or higher. 
 
-If you're using a custom theme, you can simply add the tagged events extension to your script and CSS class to the element that you want to track as explained in [this doc](https://plausible.io/docs/custom-event-goals).
+If you're using a custom theme, you can keep your Plausible tracking snippet installed and add the event CSS class to the element that you want to track as explained in [this doc](https://plausible.io/docs/custom-event-goals).
 
 ## What's next?
 

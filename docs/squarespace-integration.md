@@ -18,9 +18,9 @@ Here's how to add Plausible Analytics to your Squarespace site
 
 ## How to add Plausible to your Squarespace website 
 
-* On your site's settings page, click on **Advanced**  and then click on **Code Injection**
+* Open the **Code Injection** panel for your site. See [Squarespace's code injection guide](https://support.squarespace.com/hc/en-us/articles/205815908-Customize-parts-of-your-site-with-code-injection) for the navigation for your site version.
 
-* You can use the **[Custom Code](https://university.Squarespace.com/lesson/custom-code-in-the-head-and-body-tags)** feature in Squarespace to add Plausible tracking code to your website. Site-wide JavaScript code injection is a premium Squarespace feature so you need to upgrade your Squarespace account to a paid subscription plan.
+* You can use the **[Custom Code](https://support.squarespace.com/hc/en-us/articles/205815908-Customize-parts-of-your-site-with-code-injection)** feature in Squarespace to add Plausible tracking code to your website. Site-wide JavaScript code injection is a premium Squarespace feature so you need to upgrade your Squarespace account to a paid subscription plan.
 
 * [Paste your Plausible snippet](https://plausible.io/docs/plausible-script) in the **Header Code** section. We display your snippet during the process of adding a new site to your account. You can also see the snippet within the **Site Installation** area of the **General** section in your [site settings](website-settings.md).
 
@@ -54,15 +54,9 @@ The easiest way to track form submissions on your Squarespace site is to track t
 <img alt="Edit the form in Squarespace" src={useBaseUrl('img/Edit-form-squarespace.png')} />
 </div>
 
-* In the "Content" section, click on "Post-submit". Make sure you select the "Redirect" option and in the "Redirect URL" field type in the path to the thank you page ( i.e. **/thank-you** ).
+* In the **Content** tab, open **Edit Post-Submit**, choose **Redirect**, then click **Attach Link**. Select your thank-you page or enter its URL, then click **Save**. See [Squarespace's form block guide](https://support.squarespace.com/hc/en-us/articles/206566737-Form-blocks) for the current controls.
 
-<div class="browser">
-<img alt="Add redirect URL to your form in Squarespace" src={useBaseUrl('img/add-redirect-url-to-form-in-Squarespace.png')} />
-</div>
-
-<div class="browser">
-<img alt="Add redirect URL to your form in Squarespace" src={useBaseUrl('img/redirect-url.png')} />
-</div>
+Test the redirect while logged out of Squarespace or in a private browser window. Post-submit redirects do not work while you are logged into your site.
 
 ### 3. Create a pageview goal in your Plausible account
 
