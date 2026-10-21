@@ -37,13 +37,15 @@ We display your snippet during the process of adding a new site to your account.
 
 * Then paste your Plausible tracking script in the **Code** field
 
-* In the snippet, update `plausible.init()` to `plausible.init({ hashBasedRouting: true })`. This allows plausible to track hashed page paths that Carrd uses during navigation.
+* In your copied snippet, set `hashBasedRouting` to `true` in the `plausible.init()` call. Keep the rest of your snippet, including its site-specific script URL, unchanged:
+
+```js
+plausible.init({ hashBasedRouting: true });
+```
+
+If your `plausible.init()` call already contains other options, keep them and add `hashBasedRouting: true`. This allows Plausible to track hashed page paths that Carrd uses during navigation.
 
 * Do click on the **Done** button and then **Publish** your changes. After you change the tracking snippet on your site, all the hash-based page paths on your Carrd website will start being tracked and will be displayed in the **Top Pages** tab of your Plausible Analytics dashboard.
-
-<div class="browser">
-<img alt="Add Plausible Analytics script to Carrd" src={useBaseUrl('img/add-plausible-script-to-carrd.png')} />
-</div>
 
 Now you can go to your Carrd website and verify that Plausible script has been added and to your Plausible account to see whether the stats are being tracked. See here [how to verify the integration](troubleshoot-integration.md).
 
@@ -71,6 +73,8 @@ To be sure of your element's ID, you can use your browser's dev tool to inspect 
 
 ### 2. Trigger custom events with JavaScript on your site
 
+Keep your [current Plausible tracking snippet](plausible-script.md) installed. Add the code below alongside it; it does not replace your tracking snippet.
+
 Here's the code you will need to insert in the `<head>` section of the page where the element ID that you want to track is located. You can use the **Custom Code** feature to do this similarly to how you've inserted the Plausible snippet into your site.
 
 Make sure to change the `elementId` line in the code below to include the ID attribute of the element you want to track (`buttons01` in our example).
@@ -97,11 +101,7 @@ Also do change the `classes` line to include the goal name in this format: `plau
 </script>
 ```
 
-<div class="browser">
-<img alt="Modify Plausible script Carrd" src={useBaseUrl('img/modify-plausible-script-carrd.png')} />
-</div>
-
-Do click on the **Save Changes** button and then **Publish** your changes.
+Click **Done**, then **Publish** your changes.
 
 ### 3. Create a custom event goal in your Plausible account
 
@@ -146,10 +146,6 @@ If you want to trigger multiple custom events on the same site, you don't need t
     })
 </script>
 ```
-
-<div class="browser">
-<img alt="track multiple elements in Carrd" src={useBaseUrl('img/track-multiple-elements-carrd.png')} />
-</div>
 
 ## What's next?
 

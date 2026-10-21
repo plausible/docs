@@ -6,7 +6,6 @@ description: "Add Plausible Analytics to Webflow via Custom Code and track butto
 ---
 
 import CtaBox from '@site/src/components/CtaBox';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Here's how to add Plausible Analytics to your Webflow site and set up the tracking of custom events such as button clicks and form submissions.
 
@@ -18,19 +17,11 @@ Here's how to add Plausible Analytics to your Webflow site and set up the tracki
 
 ## How to add Plausible to your Webflow website
 
-* On your project's page, click on the Webflow logo (**W**) in the left-hand side menu and choose **Project Settings**.
+* Open your site's **Site settings** from the Webflow Dashboard, then select **Custom code**.
 
-<div class="browser">
-<img alt="Add custom code to Webflow" src={useBaseUrl('img/add-custom-code-to-webflow.png')} />
-</div>
-
-* You can use the **[Custom Code](https://university.webflow.com/lesson/custom-code-in-the-head-and-body-tags)** feature in Webflow to add Plausible tracking code to your website. Site-wide JavaScript code injection is a premium Webflow feature so you need to upgrade your Webflow account to a paid subscription plan.
+* You can use the **[Custom Code](https://help.webflow.com/hc/en-us/articles/33961357265299-Custom-code-in-head-and-body-tags)** feature in Webflow to add Plausible tracking code to your website. Your site or Workspace needs a plan that supports custom code; see Webflow's requirements in the linked guide.
 
 * Choose **Custom Code** from the menu and [paste your Plausible snippet](https://plausible.io/docs/plausible-script) in the **Head Code** section. We display your snippet during the process of adding a new site to your account. You can also see the snippet within the **Site Installation** area of the **General** section in your [site settings](website-settings.md).
-
-<div class="browser">
-<img alt="Add Plausible Analytics script to Webflow" src={useBaseUrl('img/add-plausible-script-to-webflow.png')} />
-</div>
 
 * Do click on the **Save Changes** button and then **Publish** your changes.
 
@@ -44,17 +35,9 @@ The easiest way to track form submissions on your Webflow site is to track the "
 
 First you'll need to create a "thank you" page by clicking on the "Pages" panel and creating the page by clicking on the "Create New Page" button.
 
-<div class="browser">
-<img alt="Create the form submission thank you page in Webflow" src={useBaseUrl('img/create-a-thank-you-page-in-webflow.png')} />
-</div>
-
 ### 2. Set the redirect URL on form submission
 
-Go to the page that contains your form, select the form and click on the gear icon to access the form settings. In the "Redirect URL" field type in the path to the thank you page ( i.e. **/thank-you** )
-
-<div class="browser">
-<img alt="Add redirect URL to your form in Webflow" src={useBaseUrl('img/add-redirect-url-to-form-in-webflow.png')} />
-</div>
+Select your form and open its **Settings** panel. Set the post-submit redirect to your thank-you page, either by selecting the page or entering its path, such as `/thank-you`. Save and publish your changes. See [Webflow's form settings guide](https://help.webflow.com/hc/en-us/articles/33961347548563-How-do-I-add-forms-in-Webflow) for the current controls.
 
 ### 3. Create a pageview goal in your Plausible account
 
@@ -72,13 +55,11 @@ Your goal should now be set up. When you navigate back to your Plausible Analyti
 
 ### 1. Set an ID to the element you want to track
 
-In Webflow, link and button elements don't have a default ID. You'll need to assign an ID by selecting the element and clicking on the settings gear. In the **Designer View**, you'll be able to set the ID.
-
-<div class="browser">
-<img alt="Add an ID to link and button elements in Webflow" src={useBaseUrl('img/add-id-to-link-and-button-webflow.png')} />
-</div>
+Select the link or button in Webflow and open its **Element settings**. Set its **ID** to a unique value, such as `button-click`. Use that same value in the code below.
 
 ### 2. Trigger custom events with JavaScript on your site
+
+Keep your [current Plausible tracking snippet](plausible-script.md) installed. Add the code below alongside it; it does not replace your tracking snippet.
 
 Here's the code you will need to insert in the `<head>` section of the page where the element ID that you want to track is located. You can use the **Custom Code** feature to do this similarly to how you've inserted the Plausible snippet into your site.
 
@@ -107,10 +88,6 @@ To represent a space in a goal name, use a `+` sign. For example: `plausible-eve
     })
 </script>
 ```
-
-<div class="browser">
-<img alt="Modify Plausible script webflow" src={useBaseUrl('img/modify-plausible-script-webflow.png')} />
-</div>
 
 Do click on the **Save Changes** button and then **Publish** your changes.
 
@@ -157,10 +134,6 @@ If you want to trigger multiple custom events on the same site, you don't need t
     })
 </script>
 ```
-
-<div class="browser">
-<img alt="track multiple elements in Webflow" src={useBaseUrl('img/track-multiple-elements-webflow.png')} />
-</div>
 
 ## Custom event not showing up?
 
