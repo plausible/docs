@@ -166,6 +166,10 @@ The API always returns HTTP 202 Accepted, even when an event is dropped. To debu
 
 E.g: Add this header to your request and log the response.
 
+**Test the path your real events take.** Run the `X-Debug-Request` check from the same place your production events are sent (your server, worker, edge function or retry job), not only with a one-off test request. `X-Forwarded-For` can be set correctly in your code and still reach us with a different IP: a proxy, CDN, load balancer or hosting provider along the way may replace the header or add its own address to it. If the header contains a comma-separated list, Plausible uses the first valid IP address in it, so make sure the visitor's IP comes first. Also check that the visitor's original `User-Agent` is forwarded, not your server's or HTTP library's default.
+
+Dropped events can't be added to your stats afterwards, so it's worth running these checks whenever you set up or change your integration.
+
 :::tip Want to monitor the status of our API?
 You can can use GET https://plausible.io/api/health endpoint to do so
 :::
