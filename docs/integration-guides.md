@@ -31,7 +31,7 @@ The [official WordPress plugin](wordpress-integration.md) handles installation, 
 
 ### Google Tag Manager template
 
-The [official GTM template](https://plausible.io/gtm-template) is available in the Google Tag Manager community gallery. Install Plausible and configure event tracking from the GTM dashboard with no code changes. Works well for agencies managing multiple sites from a single GTM account.
+The [official GTM template](https://plausible.io/gtm-template) is available in the Google Tag Manager community gallery. Install Plausible and configure event tracking from the GTM dashboard with no code changes, including reusing events you already send to GA4. Works well for agencies managing multiple sites from a single GTM account.
 
 ### Data Studio connector
 
