@@ -50,6 +50,8 @@ Revenue tracking in Plausible is built on top of custom events. Before setting u
 
 If you are tracking revenue on an order confirmation page, the revenue amount needs to be available in the page's JavaScript at the time the event fires. Most ecommerce platforms expose this via a data layer or template variable.
 
+If your site uses Google Tag Manager and already pushes a GA4 `purchase` event, you can send that revenue to Plausible without changing your site. See [our GTM guide](https://plausible.io/gtm-template#reuse-events-from-your-existing-data-layer-optional).
+
 ## How to track ecommerce revenue
 
 If you want to track ecommerce revenue, here's how to enable it:
