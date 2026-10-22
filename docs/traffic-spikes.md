@@ -38,6 +38,8 @@ Traffic spike or drop notifications can be set to be sent to multiple recipients
 
 You can set the notifications to be sent to as many people as you want. You can remove individual recipients or completely stop the notifications at any time.
 
+For a regular summary of your website stats, set up [weekly or monthly email reports](email-reports.md). You can use scheduled reports and traffic alerts together.
+
 Once you've identified the cause of a spike or drop, you can [add an annotation](annotations.md) to the chart so you and your team have a permanent record of what happened and when.
 
 P.S. If you're dealing with a traffic drop or spike and need some tips on how to investigate it, take a look at the following blog posts: 
