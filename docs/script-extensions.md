@@ -46,7 +46,7 @@ Here's the list of our optional measurements:
 
 ### `plausible.init()` configuration
 
-Additionally, `plausible.init()` can be called with different options further enhance its behavior. Supported options are:
+Additionally, `plausible.init()` can be called with different options to further enhance its behavior. Supported options are:
 
 | Option               | Type                              | Default                            | Description                                                                              |
 | -------------------- | --------------------------------- | ---------------------------------- | ---------------------------------------------------------------------------------------- |
@@ -67,7 +67,7 @@ By default, the Plausible script triggers a pageview when it's first loaded. It 
 
 One of the use-cases for this is when you use [Turbo](https://turbo.hotwired.dev/) (formerly [Turbolinks](https://github.com/turbolinks/turbolinks)). In that case, you want to manually trigger Plausible pageviews on the `turbo:load` or `turbolinks:load` browser event depending which library you use.
 
-To do so, add update `plausible.init` to disable `autoCapturePageviews`: `plausible.init({ autoCapturePageviews: false })`
+To do so, add or update `plausible.init` to disable `autoCapturePageviews`: `plausible.init({ autoCapturePageviews: false })`
 
 Additionally, add a javascript listener that triggers pageviews on turbolinks navigation:
 
