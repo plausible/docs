@@ -46,7 +46,7 @@ description: "Common billing questions for Plausible Analytics. Pageview-based p
           "name": "How do I add my VAT number?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Click 'Add VAT number' on the second step of checkout where you enter your payment details. If you missed this step, open any Paddle invoice and click 'Add address and VAT Number'. Paddle will automatically refund the VAT on your original payment and apply the correct rate going forward. UK businesses are the exception: Paddle still charges UK VAT, which you can reclaim on your VAT return."
+            "text": "Click 'Add VAT number' on the second step of checkout where you enter your payment details. If you missed this step, open your most recent Paddle invoice and click 'Add address and VAT Number'. Once Paddle accepts a valid VAT number, no VAT is charged on future payments. UK businesses are the exception: Paddle still charges UK VAT, which you can reclaim on your VAT return."
           }
         },
         {
@@ -54,7 +54,7 @@ description: "Common billing questions for Plausible Analytics. Pageview-based p
           "name": "Why did my payment fail?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Common causes include wrong or expired card details, a billing address mismatch, an incomplete 3DS authorization, insufficient funds, or a card blocked for online transactions. Ad blockers and privacy browser extensions can also interfere with the payment form."
+            "text": "Common causes include wrong or expired card details, a billing address mismatch, an incomplete 3DS authorization, insufficient funds, or a card blocked for online transactions. Ad blockers and privacy browser extensions can also interfere with the payment form. A failed renewal is retried automatically 3, 5 and 7 days after the first failure, and you keep access to your stats in the meantime."
           }
         }
       ]
@@ -97,11 +97,11 @@ If you're purchasing on behalf of a business, click **Add VAT number** on the se
 
 <img class="border" alt="Add VAT number at checkout" src={useBaseUrl('img/v2/add-vat-number-during-checkout.webp')} />
 
-If you missed this step, open any Paddle invoice and click **Add address & VAT Number**. Paddle will automatically refund the VAT on your original payment and apply the correct rate to future payments. UK businesses are the exception: Paddle still charges UK VAT, which you can reclaim on your VAT return. Other invoices that were already issued stay as they were. [More on Paddle's VAT handling →](https://paddle.com/support/which-countries-does-paddle-charge-vat-for/)
+If you missed this step, open your most recent Paddle invoice and click **Add address & VAT Number**. Once Paddle accepts a valid VAT number, no VAT is charged on future payments. UK businesses are the exception: Paddle still charges UK VAT, which you can reclaim on your VAT return. Other invoices that were already issued stay as they were. [More on Paddle's VAT handling →](https://paddle.com/support/which-countries-does-paddle-charge-vat-for/)
 
 ## How do I change my VAT number?
 
-Paddle does not allow editing the VAT number on an existing subscription. To update it, let your current subscription run until the end of the billing period, cancel it and resubscribe from the same Plausible account with the correct VAT details. All your Plausible data, sites and settings stay unchanged during this process.
+Paddle does not allow editing the VAT number on an existing subscription. To update it, cancel your subscription in your account settings a day or two before your next renewal, then subscribe again right away from the same Plausible account with the correct VAT details. All your Plausible data, sites and settings stay unchanged during this process.
 
 ## How do I change my billing address?
 
@@ -109,7 +109,7 @@ Open any invoice and click **Edit business address** to update your street addre
 
 ## How do I change the country on my subscription?
 
-Paddle does not allow changing the country on an existing subscription due to tax regulations. To switch countries, let your current subscription run until the end of the billing period, cancel it and resubscribe from the same Plausible account with the new country. All your Plausible data, sites and settings stay unchanged during this process.
+Paddle does not allow changing the country on an existing subscription due to tax regulations. To switch countries, cancel your subscription in your account settings a day or two before your next renewal, then subscribe again right away from the same Plausible account with the new country. All your Plausible data, sites and settings stay unchanged during this process.
 
 ## What happens if I exceed my pageview limit?
 
@@ -152,6 +152,10 @@ In your account settings, go to the **Subscription** section. Under **Current pl
 </div>
 
 ## Why did my payment fail?
+
+**Failed renewals are retried automatically**
+
+If a renewal payment fails, Paddle retries it 3, 5 and 7 days after the first failure. You keep full access to your stats in the meantime. To pay right away, update your card under **Billing details** in the **Subscription** section of your account settings and Paddle charges it again. If all the retries fail, your subscription is paused and your dashboards are locked until you update your payment details.
 
 **Wrong or expired card details**
 
