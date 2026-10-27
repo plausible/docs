@@ -65,6 +65,8 @@ The raw value of the IP address is not stored in our database. The IP address is
 
 If the header contains a comma-separated list (as it should if the request is sent through a chain of proxies), then the first valid IP address from the list is used. Both IPv4 and IPv6 addresses are supported. More information about the header format can be found on [MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Forwarded-For).
 
+If the request also carries a `CF-Connecting-IP` header, Plausible uses that address instead of `X-Forwarded-For`. When your proxy runs on Cloudflare (a Worker, for example), Cloudflare can fill this header with the proxy's own outgoing address, so set `CF-Connecting-IP` to the visitor's IP address as well.
+
 <hr / >
 
 **Content-Type** <Required />
@@ -162,11 +164,11 @@ The API always returns HTTP 202 Accepted, even when an event is dropped. To debu
 
 **Check if events are being dropped:** Inspect the response headers for `x-plausible-dropped: 1`. When present, the event was rejected by bot filtering. The most common cause is `X-Forwarded-For` containing a server or CDN IP instead of the actual visitor IP.
 
-**Check which IP address Plausible sees:** Add the `X-Debug-Request: true` header to your request. The API will return HTTP 200 with the IP address it will use for unique visitor counting. Use this to confirm that `X-Forwarded-For` is being forwarded correctly from your proxy.
+**Check which IP address Plausible sees:** Add the `X-Debug-Request: true` header to your request. The API will return HTTP 200 with the IP address it will use for unique visitor counting. Use this to confirm that `X-Forwarded-For` is being forwarded correctly from your proxy. Requests sent with this header are not recorded in your stats, so use it on separate test requests rather than on your real events.
 
 E.g: Add this header to your request and log the response.
 
-**Test the path your real events take.** Run the `X-Debug-Request` check from the same place your production events are sent (your server, worker, edge function or retry job), not only with a one-off test request. `X-Forwarded-For` can be set correctly in your code and still reach us with a different IP: a proxy, CDN, load balancer or hosting provider along the way may replace the header or add its own address to it. If the header contains a comma-separated list, Plausible uses the first valid IP address in it, so make sure the visitor's IP comes first. Also check that the visitor's original `User-Agent` is forwarded, not your server's or HTTP library's default.
+**Test the path your real events take.** Send an `X-Debug-Request` test request from the same place your production events are sent (your server, worker, edge function or retry job), not only from your own computer. `X-Forwarded-For` can be set correctly in your code and still reach us with a different IP: a proxy, CDN, load balancer or hosting provider along the way may replace the header or add its own address to it. If the header contains a comma-separated list, Plausible uses the first valid IP address in it, so make sure the visitor's IP comes first. Also check that the visitor's original `User-Agent` is forwarded, not your server's or HTTP library's default.
 
 Dropped events can't be added to your stats afterwards, so it's worth running these checks whenever you set up or change your integration.
 

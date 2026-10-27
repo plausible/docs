@@ -63,4 +63,4 @@ Available on [Enterprise plans](https://plausible.io/enterprise-web-analytics). 
 
 When your proxy forwards requests to Plausible, the real visitor IP must be passed in the `X-Forwarded-For` header. If this header is missing or contains your server's IP instead of the visitor's, Plausible's bot filter will drop the event silently. The API returns HTTP 202 either way.
 
-Most CDN-level proxies such as Cloudflare Workers or Vercel rewrites handle this automatically. If you are writing a custom proxy function, set the header explicitly. See the [Events API reference](../events-api.md#request-headers) for how to verify which IP Plausible is receiving.
+Most CDN-level proxies such as Cloudflare Workers or Vercel rewrites handle this automatically. If you are writing a custom proxy function, set the header explicitly. If your proxy runs on Cloudflare, also set the `CF-Connecting-IP` header to the visitor's IP address, as Plausible reads it before `X-Forwarded-For`. See the [Events API reference](../events-api.md#request-headers) for how to verify which IP Plausible is receiving.
