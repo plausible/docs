@@ -43,9 +43,7 @@ This is distinct from simply sending properties with your events:
 
 ## Use property-filtered goals in funnels
 
-Funnels in Plausible are built from goals, not raw events. Each funnel step must map to a defined goal.
-
-If you want a funnel step to represent a specific variation of an event rather than all instances of it, you need a goal with the property constraint built in.
+When you pick an event as a funnel step, it counts every time that event happens. To count only one variation of it, such as sign-ups for one plan, create a goal with that property filter and use it as the step.
 
 For example, a funnel that tracks:
 
@@ -55,4 +53,4 @@ For example, a funnel that tracks:
 
 Step 2 requires a goal that matches only `Sign Up` events where `plan=pro`. Without the property constraint on the goal, that step would count any sign-up button click on the site regardless of which plan was selected.
 
-Once you've created property-filtered goals, you can [add them as funnel steps](funnel-analysis.md) the same way as any other goal.
+Once you've created property-filtered goals, you can [add them as funnel steps](funnel-analysis.md) the same way as any page or event.
