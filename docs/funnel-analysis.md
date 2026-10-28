@@ -10,7 +10,7 @@ Define a sequence of steps and measure how many visitors complete each one. Use 
 
 <PlanFeatureNote feature="funnel-analysis" plan="business" label="Funnel analysis" />
 
-- You can go beyond pageviews and use any custom events to build a funnel
+- Build a funnel from any pages and events on your site
 - Choose between three funnel types: sequential (all steps are required, with other activity allowed between them), flexible (only the first and last steps are required) or strict (all steps must happen in exact consecutive order)
 - With the conversion rate you understand the percentage of visitors who started the user flow and ended with a conversion event
 - With the percentage drop-off between the individual funnel steps, you can spot where you lose the most visitors. A step with an unusually large drop-off is usually the best place to start optimizing
@@ -44,11 +44,11 @@ Funnels also work across your main domain and its subdomains ([see more](subdoma
 
 - Give your funnel a name in the **Funnel name** field.
 
-- Define your funnel by adding the steps you expect a visitor to take before a conversion, a purchase or a sign up. These steps consist of [pageview goals](pageview-goals.md) and [custom event goals](custom-event-goals.md), including revenue-enabled goals. You need to add a minimum of 2 steps and a maximum of 8 steps to create a funnel. If you want a step to match only a specific variation of a custom event, use a [property-filtered goal](/custom-props/for-custom-events#create-property-filtered-goals).
+- Define your funnel by adding the steps you expect a visitor to take before a conversion, a purchase or a sign up. For each step, start typing and pick a page or event, such as `/pricing` or `Signup`. The list shows what visitors did on your site in the last 30 days and any goals you've set up. You need 2 to 8 steps. To match a group of pages like `/blog/*`, a scroll depth, a specific property value or revenue, [set up a goal](goal-conversions.md) first and then pick it here. If you want a step to match only a specific variation of a custom event, use a [property-filtered goal](/custom-props/for-custom-events#create-property-filtered-goals).
 
 - Under **Funnel type**, choose **Sequential**, **Flexible** or **Strict**. Sequential is selected by default. Choose Flexible if visitors can skip middle steps, or Strict if every step must follow the previous one without other activity in between.
 
-- Click on the **Save** button after you've defined the steps you want to measure
+- Click on the **Add funnel** button after you've defined the steps you want to measure
 
 Funnels appear at the bottom of your dashboard as soon as the first visit is tracked on the funnel steps.
 
@@ -60,7 +60,7 @@ Funnels appear at the bottom of your dashboard as soon as the first visit is tra
 
 - Change the funnel name, edit the steps of your funnel or choose **Sequential**, **Flexible** or **Strict** under **Funnel type**
 
-- Click on the **Update Funnel** button
+- Click on the **Update funnel** button
 
 ## When to use funnel analysis
 
@@ -123,15 +123,15 @@ Filter your funnel by traffic source, country or device to see whether drop-off 
 
 **Zero conversions on a step**
 
-If a step shows 0 conversions, check that the goal for that step is set up correctly and that the page URL in the funnel matches exactly what Plausible records. Use the Top Pages report to confirm the exact URL format being recorded.
+If a step shows 0 conversions, check that the step is set up correctly and that the page URL in the funnel matches exactly what Plausible records. Use the Top Pages report to confirm the exact URL format being recorded.
 
 ## Troubleshooting funnels
 
 ### Funnel shows no data
 
-The funnel only counts visitors after it was created. If the goals used as funnel steps have not been triggered since you saved the funnel, the funnel will show no data. Trigger each step on your site, then check the dashboard.
+If a funnel shows no data, check the date range first. The funnel uses the same date range as your dashboard, so pick a period when visitors went through the steps.
 
-Also confirm that each goal used as a step is set up correctly in your site settings. A goal with a name mismatch or a page URL that does not match what Plausible records will produce zero entries at that step. Use the Top Pages or Goals reports to verify the exact values being recorded.
+Then confirm each step matches what Plausible records. A page path or event name that is slightly different from what your site sends will produce zero entries at that step. Use the Top Pages or Goals reports to verify the exact values.
 
 ### Numbers seem lower than expected
 
@@ -145,7 +145,7 @@ Funnels are limited to 8 steps. If your flow is longer, split it into two funnel
 
 ### A step shows zero conversions
 
-If one step shows zero while earlier steps have data, the goal for that step is likely misconfigured or has not fired yet since the funnel was created. See the [custom event troubleshooting guide](custom-event-goals.md#custom-event-not-showing-up) for how to verify events are firing correctly.
+If one step shows zero while earlier steps have data, that step is likely misconfigured or has not fired in the selected date range. See the [custom event troubleshooting guide](custom-event-goals.md#custom-event-not-showing-up) for how to verify events are firing correctly.
 
 ---
 
