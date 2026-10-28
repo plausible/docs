@@ -46,6 +46,10 @@ Funnels also work across your main domain and its subdomains ([see more](subdoma
 
 - Define your funnel by adding the steps you expect a visitor to take before a conversion, a purchase or a sign up. For each step, start typing and pick a page or event, such as `/pricing` or `Signup`. The list shows what visitors did on your site in the last 30 days and any goals you've set up. You need 2 to 8 steps. To match a group of pages like `/blog/*`, a scroll depth, a specific property value or revenue, [set up a goal](goal-conversions.md) first and then pick it here. If you want a step to match only a specific variation of a custom event, use a [property-filtered goal](/custom-props/for-custom-events#create-property-filtered-goals).
 
+<div class="browser screenshot-padded" style={{maxWidth: '480px'}}>
+<img alt="Plausible Add funnel form with a searchable list of custom events and pages to pick as funnel steps" src={useBaseUrl('img/plausible-funnel-step-picker.webp')} width="592" height="766" loading="lazy" decoding="async" />
+</div>
+
 - Under **Funnel type**, choose **Sequential**, **Flexible** or **Strict**. Sequential is selected by default. Choose Flexible if visitors can skip middle steps, or Strict if every step must follow the previous one without other activity in between.
 
 - Click on the **Add funnel** button after you've defined the steps you want to measure
