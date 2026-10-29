@@ -26,7 +26,7 @@ All plans start at the same pageview tiers. The difference is features and team 
 - **Business**: need funnels, user journeys, revenue tracking, custom properties, a [consolidated view](consolidated-views.md) of several sites, Stats API or Data Studio (build custom dashboards and blend Plausible data with other sources like ad spend or CRM data)
 - **Enterprise**: large scale, SSO, Sites API, managed proxy or raw data exports. [Contact us](https://plausible.io/contact) to discuss
 
-Compare full features and pricing on [our website](https://plausible.io/#pricing) or in your account settings. Save 2 months by choosing yearly billing.
+Compare full features and pricing on [our website](https://plausible.io/#pricing) or in the **Subscription** section of your settings. Save 2 months by choosing yearly billing.
 
 All plans include a 30-day free trial, no credit card required. During the trial you have access to all Business plan features and limits, so you can explore the full product before choosing a plan.
 
@@ -52,7 +52,7 @@ Limits that can be increased on Enterprise beyond standard plan tiers:
 
 Enterprise plans are not self-serve like Growth or Business. [Contact us](https://plausible.io/contact) with your requirements and we will set up a custom plan tailored to your needs. You do not need to take every Enterprise feature. If you only need higher limits, we can set those up without the rest.
 
-Every custom plan is shown as **Enterprise** in the **Subscription** section of your account settings, including plans that only raise a limit such as the number of sites or team members. The Enterprise-only features listed above are part of your plan only if they were added to it.
+Every custom plan is shown as **Enterprise** in the **Subscription** section of your settings, including plans that only raise a limit such as the number of sites or team members. The Enterprise-only features listed above are part of your plan only if they were added to it.
 
 ## How usage is calculated
 
@@ -62,7 +62,7 @@ Custom events include outbound link clicks, file downloads, form submissions, 40
 
 Team member limits are calculated separately from traffic. Full team members, site guests and pending invitations count toward the limit. Email report recipients and people who view shared links do not. See [how the team member limit is counted](users-roles.md#how-the-team-member-limit-is-counted) for the full rules.
 
-Check your current usage in the **Subscription** section of your account settings and pick a tier that matches.
+Check your current usage in the **Subscription** section of your settings and pick a tier that matches.
 
 <div class="browser">
     <img alt="Plausible subscription" src={useBaseUrl('img/v2/account-settings-subscription.webp')} />
@@ -74,11 +74,11 @@ You will never be charged extra for an occasional traffic spike. No surprise fee
 
 A single month over your limit requires no action. If your traffic drops back within your tier the following month, nothing happens and no upgrade is needed. This is common with seasonal traffic, viral posts or one-off campaigns.
 
-In **Account Settings → Subscription**, we'll show an early notice when you exceed your monthly pageview limit, even if you use the whole month's allowance in a single day. You'll also see a notice if you exceeded your limit in the previous month. No upgrade is required for a single month over your limit. These notices give you time to plan ahead or arrange budget approval if higher traffic continues.
+In the **Subscription** section of your settings, we'll show an early notice when you exceed your monthly pageview limit, even if you use the whole month's allowance in a single day. You'll also see a notice if you exceeded your limit in the previous month. No upgrade is required for a single month over your limit. These notices give you time to plan ahead or arrange budget approval if higher traffic continues.
 
 If pageviews exceed your tier for **two consecutive months**, we'll notify you and ask you to upgrade to a tier that fits your new traffic levels. The upgrade is pro-rated so you only pay the difference for the remaining time on your current billing cycle.
 
-If you don't upgrade within a week of our notice, your dashboards will be temporarily locked. Even while locked, your stats continue to be collected in the background and you still have full access to your site settings and account settings. Dashboards are automatically unlocked at the start of the next billing cycle if your usage drops back within your subscription limits. You can also unlock them at any time by upgrading to the appropriate tier.
+If you don't upgrade within a week of our notice, your dashboards will be temporarily locked. Even while locked, your stats continue to be collected in the background and you still have full access to your site, team and account settings. Dashboards are automatically unlocked at the start of the next billing cycle if your usage drops back within your subscription limits. You can also unlock them at any time by upgrading to the appropriate tier.
 
 If the higher traffic turns out to be temporary, you can upgrade to restore access and then downgrade again once your traffic drops. Downgrades are pro-rated too, so you won't lose out. You're never locked into a higher plan when your usage no longer requires it. This works the same way on both monthly and yearly billing. See [billing FAQ](billing.md#what-happens-if-i-exceed-my-pageview-limit) for step-by-step guidance if your dashboard is currently locked.
 
@@ -89,7 +89,7 @@ If the higher traffic turns out to be temporary, you can upgrade to restore acce
 
 ## Managing your subscription
 
-Everything is self-serve in your account settings:
+Everything is self-serve in the **Subscription** section of your settings:
 
 - **[Change your plan](change-plan.md)** - switch tiers, change billing frequency or move between plans. All changes are pro-rated.
 - **[Cancel your subscription](cancel-subscription.md)** - you keep access to your stats until the end of the current billing period.

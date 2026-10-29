@@ -15,7 +15,7 @@ Subscribe before your dashboards and stats are deleted to keep your historical s
 
 ## Choose your tier and plan
 
-Our subscription tiers are based on total pageviews and [custom events](custom-event-goals.md) across all the sites in your account. Check your current usage in the **Subscription** section and pick a tier that matches. You can get 2 free months with an annual subscription.
+Our subscription tiers are based on total pageviews and [custom events](custom-event-goals.md) across all the sites in your team. Check your current usage in the **Subscription** section and pick a tier that matches. You can get 2 free months with an annual subscription.
 
 Next, choose a plan:
 

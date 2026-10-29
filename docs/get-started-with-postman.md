@@ -18,7 +18,7 @@ Postman is a simple interface that you can use for [our stats API](stats-api.md)
 <img alt="Select the Bearer Token type for authorization" src={useBaseUrl('img/how-to-get-started-with-the-stats-api-using-postman-2.png')} />
 </div>
 
-4) In the Token field, you should paste your Plausible Stats API key. You can obtain the Stats API key for your account by going to [your Plausible account settings](https://plausible.io/settings).
+4) In the Token field, you should paste your Plausible Stats API key. You can obtain a Stats API key in the **API Keys** section of [your Plausible settings](https://plausible.io/settings/api-keys). Select the team whose sites you want to query first, because each key is scoped to one team.
 
 5) Once that's done, go ahead and save the collection at the top right:
 

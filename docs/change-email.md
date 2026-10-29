@@ -5,7 +5,7 @@ description: "How to change the email address on your Plausible Analytics accoun
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Log in to your Plausible Analytics account and in the top right menu, click on your account name and choose **Account Settings** to enter your account settings.
+Log in to your Plausible Analytics account and in the top right menu, click on your account name and choose **Account settings** to enter your account settings.
 
 <div class="browser">
 <img alt="Access your account's settings" src={useBaseUrl('img/account-settings-change-email.png')} />

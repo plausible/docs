@@ -11,7 +11,7 @@ To enable the 2FA on your Plausible account, you are required to insert the secu
 
 ## How to enable 2FA
 
-* Log in to your Plausible Analytics account and in the top right menu, click on your account name and choose **Account Settings** to enter your account settings.
+* Log in to your Plausible Analytics account and in the top right menu, click on your account name and choose **Account settings** to enter your account settings.
 * In the **Security** section, find “**Two-Factor Authentication (2FA)**” and click on the “**Enable 2FA**” button.
 
 * Link your Plausible account to your authenticator app by scanning the QR code or pasting the code manually. Then click on the “**Proceed**” button.
@@ -25,8 +25,8 @@ To enable the 2FA on your Plausible account, you are required to insert the secu
 To improve your account security, you can require all your team members to enable two-factor authentication (2FA):
 
 * First, set up a team if you haven’t already. Here’s [how to create one](users-roles.md).
-* In the top-right menu, click your account name, select the team you want to manage, then open **Team Settings**.
-* In the **General** section of **Team Settings**, you’ll find the **Force Two-Factor Authentication (2FA)** option.
+* In the top-right menu, click your account name, select the team you want to manage, then open **Team settings**.
+* In the **General** section of **Team settings**, you’ll find the **Force Two-Factor Authentication (2FA)** option.
 * Click **Enforce 2FA** to make it mandatory for all team members.
 <div class="browser"><img alt="Enforce 2FA" src={useBaseUrl('img/enforce-2fa.png')} /></div>
 * Confirm by clicking OK. All members, including you, will need to set up 2FA before they can access the team sites.

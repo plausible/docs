@@ -31,7 +31,7 @@ Once verified, your 30-day trial starts immediately. [Register your account →]
 
 ## Next: connect your website
 
-After verification, [add your website](add-website.md), then use the guide for your setup:
+After verification, [add your website](add-website.md). Plausible then offers to [set up a team](users-roles.md#creating-a-new-team) so you can invite colleagues or clients. You can skip any of these steps and come back to them later. Then use the guide for your setup:
 
 - [WordPress: install and connect the official plugin](wordpress-integration.md)
 - [Google Tag Manager: use the official template](https://plausible.io/gtm-template)
