@@ -306,6 +306,8 @@ List of tuples `[dimension_or_metric, direction]`, where:
 - `dimension_or_metric` needs to be listed in query [`metrics`](#metrics) or [`dimensions`](#dimensions) respectively.
 - `direction` can be one of `"asc"` or `"desc"`
 
+`event:goal` can't be used in `order_by`. Order goal breakdowns by a metric instead, such as `["visitors", "desc"]`.
+
 For example:
 
 ```json

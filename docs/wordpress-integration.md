@@ -31,6 +31,8 @@ Then install the plugin from your WordPress dashboard:
 
 You can also install it from the [official plugin directory](https://wordpress.org/plugins/plausible-analytics/). After activation, the plugin walks you through a Get Started guide. Every option there is also available later in the plugin settings screen, described below.
 
+The plugin tracks the pages WordPress itself serves. A standalone HTML file uploaded to your media library (`wp-content/uploads`) is served outside your theme, so it needs the snippet pasted into its own `<head>`: you'll find the snippet in the **Site Installation** area of the **General** section in your [site settings](website-settings.md).
+
 <div class="browser">
   <img alt="Activate the Plausible Analytics WordPress plugin" src={useBaseUrl('img/activate-our-wordpress-plugin.png')} />
 </div>
