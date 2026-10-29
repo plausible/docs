@@ -37,7 +37,7 @@ Note that you must ensure that no personally identifiable information (PII) is s
 
 If you're confused whether the information you're sending to us qualifies as PII, look at the [explanations and examples](https://plausible.io/blog/pii-examples) in our guide.
 
-Specific custom property values can't be deleted on their own once they've been recorded.
+Specific custom property values can't be deleted on their own once they've been recorded. You can [reset your site data](/reset-site-data) to clear all the stats for a site.
 
 ## `(none)` values
 
