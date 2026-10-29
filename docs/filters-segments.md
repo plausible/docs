@@ -20,7 +20,7 @@ Any metric you click on in your dashboard creates a new filter. Click on any ref
 
 You can mix and match filters too. So you can click on a referral source, then click on a country and then a goal to see all the traffic sent by the chosen referral source that is based in the selected country and that has converted on the selected goal.
 
-Your current filters appear as pills at the top of your dashboard. Each pill shows the dimension, operator and selected values. Click the operator or values to edit that part of the filter. Your changes apply immediately. Click the `x` icon to remove the filter.
+Your current filters appear as pills at the top of your dashboard. Each pill shows the dimension, operator and selected values. Click the operator or values to edit that part of the filter. Your changes apply immediately. Click the `x` icon to remove the filter. With several long filters, the row of pills scrolls sideways: swipe on a trackpad, or hold Shift while using the mouse wheel, to reach the others.
 
 You can remove all your filters by hitting the `Esc` key on your keyboard or by clicking the **bin** icon next to the filter pills.
 

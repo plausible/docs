@@ -33,13 +33,17 @@ You can export your stats directly from the top chart of your Plausible dashboar
 <img alt="Plausible dashboard options menu with the Export stats button" src={useBaseUrl('img/plausible-export-dashboard-stats.webp')} width="1088" height="531" loading="lazy" decoding="async" />
 </div>
 
-This will export a ZIP file which includes CSV files of the individual reports. You can then use these CSV files to import your stats into Excel or other data analysis tools.
+### What the dashboard export contains
+
+The ZIP file holds one CSV file per dashboard report: visitors, pages, entry pages, exit pages, channels, sources, referrers, UTM tags, countries, regions, cities, browsers, operating systems, devices, custom properties and conversions. All of them follow the date range and filters you selected.
+
+The visitors file follows the interval of your top chart, such as one row per day. The other files hold totals for the whole date range, with one row per page, source and so on. To keep the export quick, each of these files has the top 300 entries, and the pages and exit pages files have the top 100. For a full data export, refer to the instructions below.
 
 :::tip
-If you exported data for outbound link clicks, file downloads, or 404 errors and want details like URLs, visitors, events, and conversion rates, check the "custom_props.csv" file. The "conversions.csv" file only shows summary data.
+If you exported data for outbound link clicks, file downloads or 404 errors and want details like URLs, visitors, events and conversion rates, check the "custom_props.csv" file. The "conversions.csv" file only shows summary data.
 :::
 
-Note that for the export to be as quick as possible, the individual CSV files are limited to 300 entries each, while page reports are limited to 100 entries each with this method. For a full data export, refer to the instructions below.
+You can open these CSV files in Excel or other data analysis tools.
 
 ## Export all stats to date
 
@@ -47,7 +51,11 @@ Here's how to export all the native data collected for a particular Plausible da
 
 1. Open your [Sites page](https://plausible.io/sites) and click the **Settings** icon next to the website you'd like to export. This opens its [site settings](website-settings.md), even if its dashboard is locked
 2. In the **Imports & Exports** section, find the **Export Data** panel and click on the **Export to CSV** button
-3. Your export will be queued and we'll email you when it's ready for download. You'll have 24 hours to download the data after the export is ready
+3. Your export will be queued and we'll email you when it's ready for download. The email says how long the download link stays valid
+
+### What the export contains
+
+The ZIP file holds one CSV file per report: visitors, sources, pages, entry pages, exit pages, locations, devices, browsers, operating systems, custom events and custom properties. Each file has one row per day for each item, such as one row per page per day with the full page path, so you get a complete list of every page that was visited. The files use the same format as our [CSV import](csv-import.md), so you can import them into another Plausible site.
 
 ## Use the stats API
 
