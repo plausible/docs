@@ -8,7 +8,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Account settings control your personal Plausible account, not individual sites. This is where you update your login details, secure your account, and set your personal preferences. For site-specific settings like timezone, goals, traffic exclusions, reports and shared links, see [website settings](website-settings.md) instead.
 
-To open your account settings, click your account name in the top-right menu and choose **Account Settings**.
+To open your account settings, click your account name in the top-right menu and choose **Account settings**.
 
 ## What's in account settings
 
@@ -23,7 +23,7 @@ To open your account settings, click your account name in the top-right menu and
 
 **Subscription and API keys**
 
-If you are not part of a team, your subscription and API keys are managed here. If you are part of a team, these move to [team settings](team-settings.md) instead.
+When you're viewing **My personal sites**, your subscription and API keys are managed here. When you've selected a team in the top right menu, they're in [team settings](team-settings.md) instead.
 
 - [Subscription plans](subscription-plans.md): what's included at each tier
 - [Stats API keys](stats-api.md): create and manage keys for API access

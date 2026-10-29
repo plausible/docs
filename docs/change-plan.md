@@ -5,7 +5,7 @@ description: "How to upgrade or downgrade your Plausible subscription plan. Chan
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Log in to your Plausible account. In the top right menu, click your account name → **Account Settings**.
+Log in to your Plausible account. In the top right menu, click your account name and open the settings.
 
 Go to the **Subscription** section and click the **Change plan** button.
 

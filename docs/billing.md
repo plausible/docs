@@ -38,7 +38,7 @@ description: "Common billing questions for Plausible Analytics. Pageview-based p
           "name": "How do I get an invoice?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Paddle emails an invoice automatically after each payment. You can also open past invoices from your account settings and use your browser's Print command to save them as PDFs."
+            "text": "Paddle emails an invoice automatically after each payment. You can also open past invoices from the Subscription section of your settings and use your browser's Print command to save them as PDFs."
           }
         },
         {
@@ -67,7 +67,7 @@ import CtaBox from '@site/src/components/CtaBox';
 
 ## Is the billing based per account or per website?
 
-Billing is based on total usage across all the sites in a team. Each team has its own subscription and is billed separately. Check your usage numbers at any time in the **Subscription** section of your account settings. For details on how usage is calculated, see [Choose the right subscription](subscription-plans.md). Traffic you block with [Shields](excluding.md) (by IP address, country, page or hostname) isn't recorded and doesn't count towards your usage.
+Billing is based on total usage across all the sites in a team. Each team has its own subscription and is billed separately. Check your usage numbers at any time in the **Subscription** section of your settings. For details on how usage is calculated, see [Choose the right subscription](subscription-plans.md). Traffic you block with [Shields](excluding.md) (by IP address, country, page or hostname) isn't recorded and doesn't count towards your usage.
 
 ## Can I manage multiple clients with separate billing for each?
 
@@ -79,7 +79,7 @@ See our [Purchasing and vendor information](https://plausible.io/procurement) pa
 
 ## How do I get an invoice?
 
-Paddle (our payment processor) emails you an invoice automatically after each payment. You can also open past invoices from your account settings. Paddle opens each invoice in a browser tab, so use your browser's **Print** command and select **Save as PDF** to save a copy. See [View and save your invoices](download-invoices.md).
+Paddle (our payment processor) emails you an invoice automatically after each payment. You can also open past invoices from the **Subscription** section of your settings. Paddle opens each invoice in a browser tab, so use your browser's **Print** command and select **Save as PDF** to save a copy. See [View and save your invoices](download-invoices.md).
 
 The invoice email goes to your Paddle email address, which may differ from your Plausible login email. To change it, [contact us](https://plausible.io/contact) with your current and desired invoice email.
 
@@ -101,7 +101,7 @@ If you missed this step, open your most recent Paddle invoice and click **Add ad
 
 ## How do I change my VAT number?
 
-Paddle does not allow editing the VAT number on an existing subscription. To update it, cancel your subscription in your account settings a day or two before your next renewal, then subscribe again right away from the same Plausible account with the correct VAT details. All your Plausible data, sites and settings stay unchanged during this process.
+Paddle does not allow editing the VAT number on an existing subscription. To update it, cancel your subscription in the **Subscription** section of your settings a day or two before your next renewal, then subscribe again right away from the same Plausible account with the correct VAT details. All your Plausible data, sites and settings stay unchanged during this process.
 
 ## How do I change my billing address?
 
@@ -109,15 +109,15 @@ Open any invoice and click **Edit business address** to update your street addre
 
 ## How do I change the country on my subscription?
 
-Paddle does not allow changing the country on an existing subscription due to tax regulations. To switch countries, cancel your subscription in your account settings a day or two before your next renewal, then subscribe again right away from the same Plausible account with the new country. All your Plausible data, sites and settings stay unchanged during this process.
+Paddle does not allow changing the country on an existing subscription due to tax regulations. To switch countries, cancel your subscription in the **Subscription** section of your settings a day or two before your next renewal, then subscribe again right away from the same Plausible account with the new country. All your Plausible data, sites and settings stay unchanged during this process.
 
 ## What happens if I exceed my pageview limit?
 
 No surprise fees. An occasional traffic spike won't trigger extra charges or stop your stats from being counted. A single month over your limit requires no action. If traffic drops back within your tier the following month, nothing happens.
 
-You'll see an early notice in **Account Settings → Subscription** when you exceed your monthly pageview limit, even before the month ends, or if you exceeded it in the previous month. This is a heads-up so you can plan ahead if higher traffic continues. A single month over your limit still requires no upgrade.
+You'll see an early notice in the **Subscription** section of your settings when you exceed your monthly pageview limit, even before the month ends, or if you exceeded it in the previous month. This is a heads-up so you can plan ahead if higher traffic continues. A single month over your limit still requires no upgrade.
 
-If usage exceeds your tier for **two consecutive months**, we'll notify you to upgrade. The change is pro-rated so you only pay the difference. If you don't upgrade within a week, your dashboards are temporarily locked. Even while locked, stats continue to be collected in the background and you still have access to your site settings and account settings. Dashboards are automatically unlocked at the start of the next billing cycle if your usage drops back within limits. You can also unlock them at any time by upgrading to the appropriate tier.
+If usage exceeds your tier for **two consecutive months**, we'll notify you to upgrade. The change is pro-rated so you only pay the difference. If you don't upgrade within a week, your dashboards are temporarily locked. Even while locked, stats continue to be collected in the background and you still have access to your site, team and account settings. Dashboards are automatically unlocked at the start of the next billing cycle if your usage drops back within limits. You can also unlock them at any time by upgrading to the appropriate tier.
 
 If the spike is temporary, you can upgrade to restore access and downgrade again when traffic drops. Downgrades are pro-rated too, so you won't lose out. You're never locked into a higher plan when your usage no longer requires it. This works the same way on both monthly and yearly billing.
 
@@ -139,13 +139,13 @@ If you downgrade to a lower tier, the unused portion of your current billing per
 
 ## Why does my subscription say Enterprise?
 
-If we set up a custom plan for you, for example to raise your site or team member limit, it's shown as **Enterprise** in your account settings. 
+If we set up a custom plan for you, for example to raise your site or team member limit, it's shown as **Enterprise** in the **Subscription** section of your settings. 
 
 It includes the limits and features we set up for you. Enterprise-only features such as SSO are included only if they were added to your plan. See [Enterprise-only features](subscription-plans.md#enterprise-only-features), and [contact us](https://plausible.io/contact) if you'd like to add them.
 
 ## How do I update my payment method?
 
-In your account settings, go to the **Subscription** section. Under **Current plan**, click **Billing details**.
+In your settings, go to the **Subscription** section. Under **Current plan**, click **Billing details**.
 
 <div class="browser">
     <img alt="Update Plausible billing information" src={useBaseUrl('img/v2/account-settings-update-billing-info.webp')} />
@@ -155,7 +155,7 @@ In your account settings, go to the **Subscription** section. Under **Current pl
 
 **Failed renewals are retried automatically**
 
-If a renewal payment fails, Paddle retries it 3, 5 and 7 days after the first failure. You keep full access to your stats in the meantime. To pay right away, update your card under **Billing details** in the **Subscription** section of your account settings and Paddle charges it again. If all the retries fail, your subscription is paused and your dashboards are locked until you update your payment details.
+If a renewal payment fails, Paddle retries it 3, 5 and 7 days after the first failure. You keep full access to your stats in the meantime. To pay right away, update your card under **Billing details** in the **Subscription** section of your settings and Paddle charges it again. If all the retries fail, your subscription is paused and your dashboards are locked until you update your payment details.
 
 **Wrong or expired card details**
 

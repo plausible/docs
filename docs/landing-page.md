@@ -19,7 +19,7 @@ If you have multiple websites, there's also [the consolidated view](consolidated
 
 ## Switch between teams
 
-If you are a member of multiple teams, clicking on your profile picture in the top right lists all the teams you belong to. Selecting a team switches your context to that team's sites, settings and subscription. This makes it easy to manage separate client accounts or organizations from a single Plausible login.
+If you are a member of multiple teams, clicking on your profile picture in the top right lists all the teams you belong to. Selecting a team switches your context to that team's sites, settings and subscription. New sites you add go into the team you have selected. This makes it easy to manage separate client accounts or organizations from a single Plausible login.
 
 ## Your profile picture
 

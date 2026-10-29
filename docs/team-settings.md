@@ -6,7 +6,7 @@ description: "Manage your Plausible Analytics team settings. Control team member
 
 Team settings control things that are shared across everyone on your team: membership, the subscription, API keys, and Single Sign-On. They are separate from [account settings](account-settings.md), which control your personal login and preferences.
 
-To open team settings, click your account name in the top-right menu, select your team, then choose **Team Settings**.
+To open team settings, click your account name in the top-right menu, select your team, then choose **Team settings**.
 
 ## What's in team settings
 
@@ -22,6 +22,7 @@ We recommend keeping at least two team owners, each using their own Plausible ac
 
 **Subscription**
 - View and manage the team subscription
+- Visible to team owners and members with the Billing role
 - Upgrade, downgrade or cancel the plan
 
 See the [billing section](trial-to-paid.md) for details on plans, invoices and payment.

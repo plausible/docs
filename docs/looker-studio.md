@@ -31,7 +31,7 @@ The only permission that will be asked for is to make an external API request, w
 
 ## Insert your Plausible Stats API key
 
-After authorizing your Google account, you will be prompted to enter your Plausible Analytics Stats API key. You can create a new API key for our Stats API by going to your Plausible Analytics account, navigating to **Account Settings** and clicking on the section called **API Keys**.
+After authorizing your Google account, you will be prompted to enter your Plausible Analytics Stats API key. You can create a new API key for our Stats API by going to your Plausible Analytics account, selecting the team whose sites you want to query, opening the settings and clicking on the section called **API Keys**.
 
 Click the **New API Key** button and be sure to save the result as you will only see the key once. However, you can always delete the key and create a new one if you no longer remember what it is.
 

@@ -70,7 +70,7 @@ The configuration process consists of four major stages:
 
 ### Initiating SSO Setup in Plausible
 
-- Go to the **Configuration** section of **Single Sign-On** under **Team Settings**.
+- Go to the **Configuration** section of **Single Sign-On** under **Team settings**.
 
   <div class="browser screenshot-padded">
   <img alt="Plausible Single Sign-On settings with Start Configuring SSO" src={useBaseUrl('img/plausible-sso-start-configuration.webp')} width="811" height="234" loading="lazy" decoding="async" />
@@ -100,7 +100,7 @@ Step-by-step instructions for commonly used identity providers:
 
 ### Finishing SAML SSO Setup in Plausible
 
-- Go back to **Configuration** section of **Single Sign-On** under **Team Settings** and click **Start Configuring**.
+- Go back to **Configuration** section of **Single Sign-On** under **Team settings** and click **Start Configuring**.
 
   <div class="browser screenshot-padded">
   <img alt="Plausible SAML service-provider settings with ACS URL, Entity ID and required identity attributes" src={useBaseUrl('img/plausible-sso-service-provider-settings.webp')} width="811" height="570" loading="lazy" decoding="async" />
@@ -212,7 +212,7 @@ You have to put `<meta name="plausible-sso-verification" content="<domain identi
 
 ## SSO Policy
 
-SSO policy can be configured from **Configuration** section of **Single Sign-On** under **Team Settings**.
+SSO policy can be configured from **Configuration** section of **Single Sign-On** under **Team settings**.
 
 <div class="browser screenshot-padded">
 <img alt="Plausible SSO policy controls for enforcement, default role and session timeout" src={useBaseUrl('img/plausible-sso-policy.webp')} width="811" height="446" loading="lazy" decoding="async" />
@@ -230,13 +230,13 @@ SSO account session timeout in Plausible is always counted relative to the time 
 
 ## Team Management
 
-- Team members who have already provisioned their accounts through SSO are distinctly labeled as such on members list under **Team Settings**
+- Team members who have already provisioned their accounts through SSO are distinctly labeled as such on members list under **Team settings**
 
 <div class="browser screenshot-padded">
 <img alt="Plausible team members with an SSO label beside a provisioned member" src={useBaseUrl('img/plausible-sso-team-members.webp')} width="811" height="302" loading="lazy" decoding="async" />
 </div>
 
-- All team members' active SSO sessions can be viewed and optionally logged out in **Sessions** section of **Single Sign-On** under **Team Settings**
+- All team members' active SSO sessions can be viewed and optionally logged out in **Sessions** section of **Single Sign-On** under **Team settings**
 
 <div class="browser screenshot-padded">
 <img alt="Plausible SSO session management showing a sample user and device" src={useBaseUrl('img/plausible-sso-sessions.webp')} width="811" height="227" loading="lazy" decoding="async" />

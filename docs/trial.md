@@ -23,4 +23,4 @@ Subscribe before deletion to unlock your dashboards and keep your historical sta
 
 ## Delete your account at any time
 
-You can [delete your account](delete-account.md) with a few clicks at any point, during or after the trial. Go to **Account Settings**, scroll to the **Danger zone** section and click **Delete Account**. This removes all your sites and collected stats.
+You can [delete your account](delete-account.md) with a few clicks at any point, during or after the trial. Go to **Account settings**, scroll to the **Danger zone** section and click **Delete Account**. This removes all your sites and collected stats.

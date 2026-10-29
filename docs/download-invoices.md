@@ -1,18 +1,18 @@
 ---
 title: View and save your invoices
-description: "How to view invoices for your Plausible subscription and save them as PDFs. Find past invoices in account settings and add company address or VAT number via Paddle."
+description: "How to view invoices for your Plausible subscription and save them as PDFs. Find past invoices in your settings and add company address or VAT number via Paddle."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Our payment processor Paddle sends an invoice by email automatically after each payment. You can also view past invoices from your Plausible account.
 
-Log in and go to your account name → **Account Settings**. Scroll down in the **Subscription** section to see a list of all invoices. Select an invoice to open it in a new browser tab.
+Log in to your Plausible account. In the top right menu, click your account name and open the settings. Scroll down in the **Subscription** section to see a list of all invoices. Select an invoice to open it in a new browser tab.
 
 To save a PDF copy, use your browser's **Print** command and select **Save as PDF** as the destination.
 
 <div class="browser">
-    <img alt="Invoice list in Plausible account settings" src={useBaseUrl('img/v2/download-invoice.webp')} />
+    <img alt="Invoice list in Plausible settings" src={useBaseUrl('img/v2/download-invoice.webp')} />
 </div>
 
 ## Add your company address and VAT number

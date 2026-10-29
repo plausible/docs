@@ -5,7 +5,7 @@ description: "How to cancel your Plausible subscription. Your stats and dashboar
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Log in to your Plausible account. In the top right menu, click your account name → **Account Settings**.
+Log in to your Plausible account. In the top right menu, click your account name and open the settings.
 
 Go to the **Subscription** section and click **Cancel plan**.
 
@@ -21,7 +21,7 @@ Your stats keep being counted and you have full access to your dashboard.
 
 **Once the billing period ends**
 
-Your dashboard is locked. You can still log in, access your account settings and site settings, but you cannot view your stats. You can export your collected data at any time from the site settings of any locked site.
+Your dashboard is locked. You can still log in and access your account, team and site settings, but you cannot view your stats. You can export your collected data at any time from the site settings of any locked site.
 
 One month after locking, Plausible stops collecting data. If you haven't removed the Plausible snippet from your site, any data it sends will be dropped automatically from that point.
 
@@ -33,7 +33,7 @@ You can delete individual sites at any time, before or after canceling, from you
 
 **Resubscribing**
 
-You can resubscribe at any time from the **Subscription** section in your account settings. Your dashboards unlock automatically and data collection resumes immediately.
+You can resubscribe at any time from the **Subscription** section of your settings. Your dashboards unlock automatically and data collection resumes immediately.
 
 If you resubscribe before your data is deleted, your historical stats will still be there. Deleted data cannot be recovered, so if you're coming back, resubscribe or export your data before the deletion date in our email.
 

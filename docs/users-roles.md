@@ -24,19 +24,24 @@ Giving someone access as an Admin, Editor or Guest does not make them an owner. 
 If your only owner is already unavailable, see [how to recover access](transfer-account-ownership.md).
 :::
 
-Log in to your Plausible Analytics account and in the top right menu, click on your account name and choose **Create a team**. Note that the "Create a team" button appears when you are viewing "My personal sites" and have sites there that you own.
+There are two places to create a team:
+
+* **When you sign up.** Right after the step where you add your website, Plausible asks you to set up a team. If you added a site, the team name is suggested from its domain and the site moves into the new team. This step is optional. Click **Skip** to continue without a team and create one later.
+* **From your account.** In the top right menu, click on your account name and choose **Create a team**. Note that the "Create a team" button appears when you are viewing "My personal sites" and have sites there that you own.
+
+On the team setup page:
 
 * Give the name to your team.
 * Invite individual team members. You can invite any email address. It doesn't necessarily need to be an email address from your company. You can invite existing Plausible users or people who don't have a Plausible account. You can also turn any existing guest into a team member. 
 * Assign individual team members their roles
-* Click on the "Create Team" button to finish the process
+* Click on the **Create team** button to finish the process. Click **Cancel** to leave without creating a team
 
-:::note Nothing is saved until you click "Create Team"
-Adding people to the member list does not send any invitations yet. The team is only created and the invitations are only sent when you click the "Create Team" button. If you refresh or leave the page before clicking it, the member list is discarded and you'll need to start over.
+:::note Nothing is saved until you click "Create team"
+Adding people to the member list does not send any invitations yet. The team is only created and the invitations are only sent when you click the **Create team** button. If you refresh or leave the page before clicking it, the member list is discarded and you'll need to start over.
 :::
 
-<div class="browser">
-<img alt="Create a team button" src={useBaseUrl('img/create-team-button.png')} />
+<div class="browser screenshot-padded" style={{maxWidth: '480px'}}>
+<img alt="Plausible team setup page with a team name, a team member invite and the Create team button" src={useBaseUrl('img/plausible-team-setup-create-team.webp')} width="464" height="410" loading="lazy" decoding="async" />
 </div>
 
 ### Creating multiple teams
@@ -45,7 +50,7 @@ You can create more than one team. All sites you own that are not part of any te
 
 When you are viewing "My personal sites", the profile menu in the top right shows a "Create a team" button. Creating a team moves all the sites you own in "My personal sites" into that new team, leaving "My personal sites" empty of sites you own.
 
-If you then add more sites to your account, they appear in "My personal sites" again. The "Create a team" button becomes available once more, letting you create another team. You can repeat this process to create as many teams as you need.
+New sites are added to the team you're currently viewing. To start another team, select "My personal sites" in the top right menu first, then add the site. It appears in "My personal sites". The "Create a team" button becomes available once more, letting you create another team. You can repeat this process to create as many teams as you need.
 
 ### Inviting team members and assigning roles
 
@@ -53,8 +58,8 @@ If you then add more sites to your account, they appear in "My personal sites" a
 <img alt="Invite team member" src={useBaseUrl('img/invite-team-member.png')} />
 </div>
 
-* In the top right menu, click on your account name, make sure you have chosen the team you'd like to manage and then click on the **Team Settings**
-* You can invite new team members within the **General** option of the **Team Settings**
+* In the top right menu, click on your account name, make sure you have chosen the team you'd like to manage and then click on the **Team settings**
+* You can invite new team members within the **General** option of the **Team settings**
 * We will email the invited person to notify them about your invitation. They will need to register for a Plausible account with the email address that was invited (or log in to their existing Plausible account registered with that email address) and accept your invitation. All invitations expire after 48 hours
 
 ### Managing team member roles
@@ -69,8 +74,8 @@ When managing team members, you can choose between five different roles:
 
 You can change the role of a team member at any time:
 
-* In the top right menu, click on your account name, make sure you have chosen the team you'd like to manage and then click on the **Team Settings**
-* You can adjust roles of existing members within the **General** option of the **Team Settings**
+* In the top right menu, click on your account name, make sure you have chosen the team you'd like to manage and then click on the **Team settings**
+* You can adjust roles of existing members within the **General** option of the **Team settings**
 * Click on the current role next to the name of the person you'd like to change the role for
 * Choose a new role for the user
 
@@ -92,8 +97,8 @@ API keys are scoped to the team selected when they are created. They do not auto
 
 You can remove a team member from having access to a site at any time:
 
-* In the top right menu, click on your account name, make sure you have chosen the team you'd like to manage and then click on the **Team Settings**
-* You can delete existing members within the **General** option of the **Team Settings**
+* In the top right menu, click on your account name, make sure you have chosen the team you'd like to manage and then click on the **Team settings**
+* You can delete existing members within the **General** option of the **Team settings**
 * Click on the current role next to the name of the person you'd like to remove
 * Click **Remove member** 
 
@@ -103,9 +108,9 @@ Note that you need to be an owner or an admin of a team to remove team members.
 
 ### Changing the name of a team
 
-* In the top right menu, click on your account name, make sure you have chosen the team you'd like to manage and then click on the **Team Settings**
-* You can change the name of a team within the **General** option of the **Team Settings**
-* Enter the new name for the team and click on the **Change Name** button
+* In the top right menu, click on your account name, make sure you have chosen the team you'd like to manage and then click on the **Team settings**
+* You can change the name of a team within the **General** option of the **Team settings**
+* Enter the new name for the team and click on the **Change name** button
 
 ### Improving team security
 
@@ -114,9 +119,9 @@ Note that you need to be an owner or an admin of a team to remove team members.
 
 ### Leaving a team
 
-* In the top right menu, click on your account name, make sure you have chosen the team you'd like to leave and then click on the **Team Settings**
-* To remove yourself from a team, go to the **General** option of the **Team Settings**
-* Click on the **Leave Team** button. Note that after leaving a team, you won't have access to the dashboards and collected stats of the sites that the team owns
+* In the top right menu, click on your account name, make sure you have chosen the team you'd like to leave and then click on the **Team settings**
+* To remove yourself from a team, go to the **General** option of the **Team settings**
+* Click on the **Leave team** button. Note that after leaving a team, you won't have access to the dashboards and collected stats of the sites that the team owns
 
 :::tip Is your only owner unavailable?
 See [Recover access when an owner is unavailable](transfer-account-ownership.md) for what to do if they are on leave, cannot be reached or have left your organization.
@@ -124,9 +129,9 @@ See [Recover access when an owner is unavailable](transfer-account-ownership.md)
 
 ### Deleting a team
 
-* In the top right menu, click on your account name, make sure you have chosen the team you'd like to delete and then click on the **Team Settings**
-* To delete the team, go to the **Danger zone** option of the **Team Settings**
-* Click on the **Delete Team** button. Note that deleting the team deletes all dashboards and collected stats of the sites that the team owns
+* In the top right menu, click on your account name, make sure you have chosen the team you'd like to delete and then click on the **Team settings**
+* To delete the team, go to the **Danger zone** option of the **Team settings**
+* Click on the **Delete team** button. Note that deleting the team deletes all dashboards and collected stats of the sites that the team owns
 
 Note that you need to be an owner to delete a team. 
 
