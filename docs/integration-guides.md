@@ -164,6 +164,7 @@ Step-by-step guides for popular website builders and content management systems.
 | [Google Chrome extensions](https://gist.github.com/Joelkw/31b798f69c714c00e9e097b1fd4bb3c8) | Instructions for tracking Chrome browser extensions with Plausible |
 | [DNT and offline](https://github.com/ian/analytics/tree/main/packages/plausible) | Add Do Not Track and offline functionality via the analytics library |
 | [Segment](https://www.twilio.com/docs/segment/connections/destinations/catalog/google-tag-manager) | No official integration, but you can connect it through our [Google Tag Manager template](https://plausible.io/gtm-template) |
+| [Stripe, Paddle, Lemon Squeezy and Polar](ecommerce-revenue-tracking.md#track-payments-from-stripe-paddle-lemon-squeezy-and-polar) | Send revenue from hosted and overlay checkouts to Plausible |
 
 ### Monitoring and automation
 
