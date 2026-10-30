@@ -65,7 +65,7 @@ Note that browsers only send the domain name of the referrer and not the actual 
 
 With Plausible, there's no need for you to manually exclude unwanted referral sources like payment processors such as PayPal, Stripe or Paddle to keep your data clean.
 
-Referral sources are counted only when they start a new session on your site. This prevents external domains such as payment gateways showing up in the list of sources when for instance visitors briefly leave your site to make a payment before returning back. The source that brought the visitor to your site in the first place will be the one attributed for that conversion.
+Referral sources are counted only when they start a new visit on your site. A visit continues as long as there are fewer than 30 minutes between a visitor's events. When visitors briefly leave to pay on an external gateway and come back, the gateway doesn't show up as a source, and the original source keeps the credit. If a visitor spends more than 30 minutes on the payment page, their return starts a new visit.
 
 If you expect UTM attribution but nothing appears in the **Campaigns** tab, see [UTM parameters not appearing in Campaigns](troubleshoot-integration.md#utm-parameters-not-appearing-in-campaigns).
 

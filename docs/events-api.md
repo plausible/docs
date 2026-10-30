@@ -73,6 +73,42 @@ If the request also carries a `CF-Connecting-IP` header, Plausible uses that add
 
 Must be either *application/json* or *text/plain*. In case of *text/plain*, the request body is still interpreted as JSON.
 
+### How server-side events are attributed
+
+Plausible doesn't use cookies or persistent IDs. An event sent from your server joins a visitor's existing visit only when all of these are true:
+
+- It carries that visitor's own `User-Agent` and IP address (`X-Forwarded-For`)
+- Its `url` is on the same site (domain) the visitor is browsing
+- It arrives within 30 minutes of that visitor's last event
+
+If there's no matching visit, the event **starts a new visit**. If its `User-Agent` and IP don't match any visitor's, it also counts as a new visitor. Its source then comes from the `referrer` and any UTM tags in the `url` you send. If you send neither, it's counted as Direct / None.
+
+This decides where to send a revenue event from:
+
+- **Good:** from the request handler that renders your thank-you or success page. The visitor's browser is making that request, so you can forward its `User-Agent` and IP. Don't pass the request's `Referer` header as `referrer` for purchase events: if no visit is matched, the payment provider would become the source.
+- **Not suitable:** payment provider webhooks, scheduled jobs and retries. They run on the provider's or your servers, often minutes or days later, with no visitor headers. Their events can't be linked to the visit that led to the payment. They add visitors credited to Direct / None, or are dropped as data-center traffic.
+
+Example (Node.js, run while handling the visitor's request to `/thank-you`):
+
+```js
+await fetch('https://plausible.io/api/event', {
+  method: 'POST',
+  headers: {
+    'User-Agent': req.get('User-Agent'),
+    'X-Forwarded-For': req.ip, // make sure this is the visitor's IP, not your proxy's
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    name: 'Purchase',
+    url: 'https://example.com/thank-you',
+    domain: 'example.com',
+    revenue: {amount: '49.00', currency: 'EUR'}
+  })
+})
+```
+
+Visitors who block analytics scripts have no visit to join. A purchase sent from your server for them is still counted, with its revenue, but credited to Direct / None.
+
 ### Request body JSON parameters
 <hr / >
 
