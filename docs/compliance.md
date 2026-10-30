@@ -28,6 +28,10 @@ The specific reasons it falls into this category:
 - No data is shared with or sold to third parties.
 - A DPA is in place automatically for all customers, covering GDPR processor obligations.
 
+## Letting visitors opt out
+
+If your privacy policy needs to offer visitors a way to object to analytics, you can add a ready-made opt-out page to your site and link to it from the policy. [See how](excluding-localstorage.md).
+
 ## Security questionnaires
 
 If your organization requires a vendor security review, the documents above are designed to answer the questions typically asked in those reviews. We recommend going through them before sending a questionnaire, as most topics are already covered.
