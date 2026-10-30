@@ -9,6 +9,8 @@ The **Countries**, **Regions** and **Cities** tabs show where in the world your 
 
 Click on any country to see the list of regions within that country where your visitors are coming from. Click on any region to see the list of cities within that region. You can also switch directly between the **Countries**, **Regions** and **Cities** tabs.
 
+Location is recorded only as country, region and city, never as an exact location. It's looked up from the visitor's IP address, which isn't stored.
+
 ## Visitors using VPNs and similar services 
 
 To improve the location accuracy, visitors using VPN services or the Tor browser are grouped under the "Anonymous VPN Service" entry in the **Countries** tab. This method reduces the noise caused by analytics tools recording VPN server locations instead of actual user locations, while also making it easier to view the percentage of visitors using VPNs.

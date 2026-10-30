@@ -21,11 +21,11 @@ The **Devices** tab shows the devices used by your website visitors. Devices are
 
 ## Browser
 
-The **Browsers** tab shows what browsers people use when visiting your website. We only show the brand of the browser and when you click on the brand you can see the version number too. This is derived from the User-Agent HTTP header. The full User-Agent is discarded.
+The **Browsers** tab shows what browsers people use when visiting your website. We only show the brand of the browser and when you click on the brand you can see the version number too. Versions are stored as the major and minor version only, such as Chrome 153.0. This is derived from the User-Agent HTTP header. The full User-Agent is discarded.
 
 ## Operating system
 
-The **Operating Systems** tab shows what operating systems people use when visiting your website. We show the brand of the operating system and when you click on the brand you can see the version numbers too. This is derived from the User-Agent HTTP header. The full User-Agent is discarded.
+The **Operating Systems** tab shows what operating systems people use when visiting your website. We show the brand of the operating system and when you click on the brand you can see the version numbers too. Versions are stored as the major and minor version only, such as macOS 10.15. This is derived from the User-Agent HTTP header. The full User-Agent is discarded.
 
 :::info Windows and macOS have stopped reporting their latest versions
 This means that Plausible and other analytics tools are not able to report the latest versions, which for Windows are above 10, and for macOS above 10.15. Visitors with the new versions will be grouped in the last known version

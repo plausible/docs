@@ -113,4 +113,4 @@ You can see the list of all the hostnames that you're allowing the traffic from 
 
 Do you use VPNs or often change your IP addresses? And do none of our other blocking options work for your use case? 
 
-You can then set a special `localStorage` flag in your browser so you don't need to frequently block new IP addresses. [Here's how](excluding-localstorage.md).
+You can then set a special `localStorage` flag in your browser so you don't need to frequently block new IP addresses. [Here's how](excluding-localstorage.md#excluding-your-own-visits).

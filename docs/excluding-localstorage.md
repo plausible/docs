@@ -1,80 +1,55 @@
 ---
 displayed_sidebar: someSidebar
-title: Exclude yourself via localStorage
-sidebar_label: Exclude yourself via localStorage
-description: "Exclude your own visits from Plausible tracking by setting a localStorage flag in your browser's developer console. No IP address or server changes needed."
+title: Let visitors opt out of being counted
+sidebar_label: Visitor opt-out
+description: "Give your visitors a way to opt out of Plausible Analytics with a ready-made opt-out page you link from your privacy policy. No cookies or server changes needed."
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-:::tip You can exclude internal traffic by IP address too
-This is the easiest way to exclude your own visits from being traffic. [See how here](excluding.md)
-:::
+Plausible doesn't use cookies or store personal data, so there's nothing for your visitors to consent to. Some privacy guidelines still expect visitors to have a way to object to analytics. An opt-out page on your site gives them one. Link to it from your privacy policy.
 
-To prevent counting your visits, you can set a special `localStorage` flag in the browser. Here's how.
+## How the opt-out works
 
-## To exclude your visits from being counted
+The opt-out page sets a `plausible_ignore` flag in the visitor's browser `localStorage`. While the flag is set, the Plausible script doesn't send any pageviews or events from that browser.
 
-Visit the website you'd like to exclude your visits from and open the developer tools in your browser. Right-click anywhere on your page and click **Inspect** (the wording may vary depending on your web browser) to open the developer tools. Alternatively, press `F12` on Firefox or Chrome or `Option+Command+i` on Safari. Then click the "Console" tab.
+* The choice stays in place until the visitor turns counting back on or clears their browser data
+* It applies per browser and per domain. A visitor who uses several browsers or devices needs to opt out on each of them
+* The opt-out page must be on the same domain as the site it opts out of. If you track several subdomains, each needs its own opt-out page
+* The opt-out takes full effect from the next page load. The opt-out page itself was already counted when it loaded, so time spent on that page may still be recorded
 
-In Firefox, it looks like this:
+## Add an opt-out page to your site
 
-<img alt="Browser web console" src={useBaseUrl('img/browser-console.png')} />
+We have created a ready-made opt-out page you can use freely on your site. Visitors click one button to opt out, and the same button turns counting back on. There are two versions: one with a CSS stylesheet if you want to use our style, and one without any styling if you'd like to bring your own.
 
-Then paste the following command and hit enter:
+<img alt="Opt-out page screenshot" src={useBaseUrl('img/exclusion-page-example.png')} />
+
+For the styled version, download the <a target="_blank" download="index.html" href="/docs/exclusion-examples/exclude.html">HTML file</a> and the <a target="_blank" download="plausible-exclusion.css" href="/docs/exclusion-examples/plausible-exclusion.css">CSS file</a> and make both available together on your website. If you'd prefer a light theme, delete the `dark` class from line 1 of the HTML file.
+
+For the unstyled version, download the <a target="_blank" download="index.html" href="/docs/exclusion-examples/exclude-bare.html">HTML file</a> and make it available on your website with any CSS you choose to add.
+
+Then add a link to the page in your privacy policy, for instance: "You can opt out of being counted in our analytics on [this page]."
+
+## Check that the opt-out works
+
+Opt out on the page, then visit another page on your site and open the developer tools in your browser (right-click and choose **Inspect**, or press `F12` on Firefox or Chrome or `Option+Command+i` on Safari). In the **Console** tab you should see the message "Ignoring Event: localStorage flag". You may need to enable the "Warnings" filter to see it.
+
+<img alt="Browser web console check" src={useBaseUrl('img/check-the-exclusion.png')} />
+
+## Excluding your own visits
+
+To keep your own visits or your team's out of your stats, [block your IP addresses](excluding.md) in your site settings. That works across all your browsers and devices at once.
+
+If your IP address changes often or you use a VPN, you can set the same flag yourself instead. Open the **Console** tab in your browser's developer tools on your site, then paste this command and hit enter:
 
 ```html
 localStorage.plausible_ignore=true
 ```
 
-It will look something like this when you paste the command:
-
-<img alt="Browser web console enter the command" src={useBaseUrl('img/exclude-yourself.png')} />
-
-And you will get this message when you hit enter:
-
-<img alt="Browser web console true" src={useBaseUrl('img/exclude-yourself-true.png')} />
-
-Note that you have to follow this process for every domain and subdomain you'd like to exclude your visits from. If you use multiple browsers, you also need to follow the same process on every browser you'd like not to be counted.
-
-## Return to your site to ensure the exclusion works
-
-There are two ways you can check to ensure that you have excluded your visits:
-
-* 1: Reload your site multiple times and make sure that the total page views number in your Plausible dashboard does not increase. This isn't very reliable if there are other people visiting your site at the same time.
-
-* 2: Reload your site and open the browser console again. If you have excluded yourself, you should see a message saying "Ignoring Event: localStorage flag". You may need to ensure the "Warnings" filter (in the top right in Firefox and top-center under a dropdown in Chrome) is enabled before this message is visible.
-
-<img alt="Browser web console check" src={useBaseUrl('img/check-the-exclusion.png')} />
-
-## To re-enable counting of your visits
-
-To re-enable counting of your visits, you need to visit the website you'd like to enable the counting of your visits for. Open the web console in your browser and then click the "Console" tab.
-
-Then paste the following command and hit enter:
+Do this for every domain, subdomain and browser you want to exclude. To be counted again, run:
 
 ```html
 delete localStorage.plausible_ignore
 ```
 
-## Allow anyone on your site to exclude themselves
-
-To allow anyone on your site (usually beta testers or internal users) to exclude themselves from analytics, you could have them follow the steps above on every device, or you could provide a page on your website to do this automatically.
-
-We have created a downloadable version of such a page for you to use freely on your site. There are two versions of this example, one with a CSS stylesheet included if you want to use our style, and another without any styling if you'd like to bring your own.
-
-:::note
-With this method, similar to above, the page needs to be visited and the exclusion enabled per domain and per browser, for every user. The page must also be made available on the same domain you wish to exclude analytics for. The exclusion takes full effect from the next page load: the page where it's turned on was already counted when it loaded, so time spent on that page may still be recorded.
-:::
-
-### Preview
-
-<img alt="Exclusion page screenshot" src={useBaseUrl('img/exclusion-page-example.png')} />
-
-### Download and Deploy
-
-For the styled version of this page, you'll need to download a <a target="_blank" download="index.html" href="/docs/exclusion-examples/exclude.html">HTML file</a> and a <a target="_blank" download="plausible-exclusion.css" href="/docs/exclusion-examples/plausible-exclusion.css">CSS file</a> and make both available together on your website.
-
-(If you'd prefer a light-theme for this page, you can delete the `dark` class from line 1 of the above HTML file)
-
-For the unstyled/bare version, you'll just need to download a <a target="_blank" download="index.html" href="/docs/exclusion-examples/exclude-bare.html">HTML file</a>, and make it available on your website with any CSS you choose to add.
+You can also use the opt-out page above instead of the console.

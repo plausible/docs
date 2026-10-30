@@ -25,6 +25,7 @@ module.exports = {
       'reset-site-data',
       'delete-site-data',
       'excluding',
+      'excluding-localstorage',
     ],
     'Stats Dashboard': [
       'guided-tour',
