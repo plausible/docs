@@ -37,7 +37,7 @@ Installing Plausible on a site can be a slightly different process depending on 
 
 - Are you using Google Tag Manager? We have a guide on [how to integrate Plausible with our GTM template](https://plausible.io/gtm-template)
 
-- Are you using NPM? We have an NPM library: [@plausible-analytics/tracker](https://www.npmjs.com/package/@plausible-analytics/tracker)
+- Are you using NPM? We have an NPM library: [@plausible-analytics/tracker](npm-package.md). It bundles the tracker into your own code, so the script on your site only changes when you update the package
 
 - If you'd like to serve our snippet as a first-party connection from your domain name, we offer a way to proxy our script. See [full details here](/proxy/introduction.md)
 

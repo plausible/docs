@@ -27,6 +27,10 @@ By default, **Form submissions** is enabled when adding a new site to your Plaus
 
 After you enable form submissions tracking, we will automatically add a new goal called `Form: Submission` to your site.
 
+:::note Using the NPM package?
+The NPM package doesn't read your site settings. Set `formSubmissions: true` in `init` instead. [More details](npm-package.md#enable-optional-measurements-in-your-code).
+:::
+
 ## See all the form submissions in your dashboard
 
 Click on **Form: Submission** goal in the **Goals** tab of your Plausible dashboard to see the full list of all form submissions and have your dashboard filtered by them. You can see:

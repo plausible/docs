@@ -143,6 +143,10 @@ If you use caching, visitors may still see an older version of your site without
 
 Follow [our GTM guide](https://plausible.io/gtm-template) for the correct setup using our official template.
 
+### Are you using the NPM package?
+
+The NPM package doesn't read your site settings. Outbound links, file downloads and form submissions only work once you turn them on in `init`. `init` also has to run in the browser, not during server-side rendering. [See the NPM package guide](npm-package.md).
+
 ### Does your site use a Content Security Policy?
 
 If it does, add `plausible.io` to the allowed domains list. [More details here](https://github.com/plausible/docs/issues/20).

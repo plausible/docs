@@ -39,7 +39,7 @@ The [official Data Studio connector](https://plausible.io/looker-studio-connecto
 
 ### NPM package
 
-The [official NPM package](https://www.npmjs.com/package/@plausible-analytics/tracker) lets you add Plausible to any JavaScript project via your package manager. Built and maintained by the Plausible team. Useful for React, Vue, Next.js and other framework-based setups where installing via a script tag is impractical.
+The [official NPM package](npm-package.md) lets you add Plausible to any JavaScript project via your package manager. Built and maintained by the Plausible team. Useful for React, Vue, Next.js and other framework-based setups where installing via a script tag is impractical. The tracker is bundled into your own build, so the code running on your site only changes when you update the package. You can [pin an exact version](npm-package.md#pin-a-version-and-review-updates) and review any changes before they go live.
 
 ### Run Plausible as a first-party connection
 
