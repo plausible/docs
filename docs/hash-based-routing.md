@@ -20,6 +20,8 @@ plausible.init({
 })
 ```
 
+Using the [NPM package](npm-package.md)? Pass `hashBasedRouting: true` to `init` in your code.
+
 Your Plausible tracking snippet should be inserted into [the Header (`<head>`) section of your site](plausible-script.md). Place the tracking script within the `<head> … </head>` tags.
 
 After you change the tracking snippet on your site, all the hash-based page paths will start being tracked and will be displayed in the **Top Pages** tab of your Plausible Analytics dashboard.

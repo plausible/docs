@@ -45,6 +45,8 @@ Route requests through your own infrastructure using a Cloudflare Worker, Vercel
 
 **Use this when:** you are not on WordPress, have developer access, and want to manage the proxy yourself.
 
+Using the [NPM package](../npm-package.md)? The tracker is already part of your own code, so you only need to proxy the event endpoint and set `endpoint` in `init`.
+
 Guides: [Cloudflare](guides/cloudflare.md) · [Vercel](guides/vercel.md) · [Netlify](guides/netlify.md) · [Nginx](guides/nginx.md) · [Apache](guides/apache.md) · [Caddy](guides/caddy.md) · [Laravel](guides/laravel.md)
 
 ---

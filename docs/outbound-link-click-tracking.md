@@ -32,6 +32,10 @@ By default, **Outbound links** is enabled when adding a new site to your Plausib
 
 After you enable outbound link click tracking, we will automatically add a new goal called `Outbound Link: Click` to your site.
 
+:::note Using the NPM package?
+The NPM package doesn't read your site settings. Set `outboundLinks: true` in `init` instead. [More details](npm-package.md#enable-optional-measurements-in-your-code).
+:::
+
 ## See all the outbound link clicks in your dashboard
 
 Click on **Outbound Link: Click** goal in the **Goals** tab of your Plausible dashboard to see the full list of all clicks on all external links and have your dashboard filtered by external clicks only. You can see:

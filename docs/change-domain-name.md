@@ -59,7 +59,7 @@ First and foremost, you'll need to make sure your stats are still tracking. Whet
   </tr>
   <tr>
     <td><b>NPM package</b></td>
-    <td>You're using the [@plausible-analytics/tracker](https://www.npmjs.com/package/@plausible-analytics/tracker) library</td>
+    <td>You're using the <a href="npm-package">@plausible-analytics/tracker</a> library</td>
     <td>Update the init options, e.g. `init({ domain: "your_new_domain.com", ... })`</td>
   </tr>
   <tr>

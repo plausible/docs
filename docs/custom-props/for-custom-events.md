@@ -30,6 +30,8 @@ If you're triggering events manually with JavaScript, pass properties as a secon
 plausible('Sign Up', {props: {plan: 'pro', variation: 'homepage-cta'}})
 ```
 
+With the [NPM package](../npm-package.md#track-custom-events), pass the same object to `track`.
+
 ## Create property-filtered goals
 
 When you [create a goal from a custom event](goal-conversions.md) in your site settings, you can optionally attach up to three property constraints to that goal definition.
