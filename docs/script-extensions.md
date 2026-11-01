@@ -95,6 +95,10 @@ This means that pages like `yoursite.com/blog/index.php?article=some_article&pag
 
 By using the manual script extension, you can also track custom query parameters and get the complete page URLs in your **Top Pages** tab. Learn here [how to do that](custom-query-params.md).
 
+#### Stop tracking UTM tags and other query parameters
+
+If you'd rather not record UTM tags, click IDs or the referring page's address, you can remove them with `transformRequest` before anything is sent. Learn here [how to do that](stop-tracking-utm-tags.md).
+
 :::tip Want to track outbound link clicks or file downloads cloaked with pretty URLs?
 See these [step-by-step instructions](custom-automatic-link-tracking.md) for how to do that.
 :::
