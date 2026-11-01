@@ -17,6 +17,15 @@ module.exports = {
       'change-domain-name',
       'general',
       'script-extensions',
+      {
+        type: 'category',
+        label: 'Advanced tracking',
+        items: [
+          'custom-locations',
+          'custom-query-params',
+          'stop-tracking-utm-tags',
+        ],
+      },
       'visibility',
       'shared-links',
       'embed-dashboard',

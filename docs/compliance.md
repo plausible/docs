@@ -32,6 +32,10 @@ The specific reasons it falls into this category:
 
 If your privacy policy needs to offer visitors a way to object to analytics, you can add a ready-made opt-out page to your site and link to it from the policy. [See how](excluding-localstorage.md).
 
+## Keeping campaign parameters out of your stats
+
+Plausible records UTM tags and the address of the referring page by default. If your review needs them left out, you can remove them in the tracking snippet before anything is sent. [See how](stop-tracking-utm-tags.md).
+
 ## Security questionnaires
 
 If your organization requires a vendor security review, the documents above are designed to answer the questions typically asked in those reviews. We recommend going through them before sending a questionnaire, as most topics are already covered.
