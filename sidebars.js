@@ -8,6 +8,7 @@ module.exports = {
       'integration-guides',
       'npm-package',
       'wordpress-integration',
+      'google-tag-manager-integration',
       'troubleshoot-integration',
       'landing-page',
       'your-plausible-experience',

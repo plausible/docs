@@ -36,14 +36,6 @@ description: "Troubleshoot your Plausible Analytics installation. Diagnose why v
         },
         {
           "@type": "Question",
-          "name": "Why are UTM parameters not appearing in the Campaigns tab?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "UTM parameters are only attributed to the first pageview of a new session. If a visitor already has an active session on your site, UTM parameters will not update the attribution. A session stays active for 30 minutes after the last pageview."
-          }
-        },
-        {
-          "@type": "Question",
           "name": "Why are some visitors not being counted?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -52,26 +44,10 @@ description: "Troubleshoot your Plausible Analytics installation. Diagnose why v
         },
         {
           "@type": "Question",
-          "name": "Why are Events API events not appearing in the dashboard?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Plausible can return HTTP 202 Accepted even when an event is not recorded. Check the response headers for x-plausible-dropped: 1. Bot filtering and site exclusion rules can cause events to be dropped. The most common cause is a misconfigured X-Forwarded-For header forwarding a server IP instead of the real visitor IP."
-          }
-        },
-        {
-          "@type": "Question",
           "name": "Why are my Plausible numbers lower than Google Analytics?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Plausible and Google Analytics measure differently by design. Plausible counts unique visitors by IP and user agent without cookies, applies aggressive bot filtering, and is not affected by cookie consent losses. A 10-20% difference is normal. Larger gaps usually reflect GA4 counting bot traffic or consent-bypassed sessions that Plausible correctly excludes."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Why is the WordPress plugin proxy not recording stats?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "After enabling or changing the proxy, you must clear all caches. The correct sequence is: disable the proxy, clear all caches, re-enable the proxy, clear all caches again. If you recently migrated or cloned your WordPress site, the proxy file path may be stale or still point to your old server. The same reset sequence will regenerate it."
           }
         }
       ]
@@ -119,13 +95,13 @@ Find your symptom and jump straight to the right section:
 
 - **[Installation check is still running or shows an error](#no-data-recorded-yet)**: site unreachable, snippet not loading, cache issue or incorrect URL
 - **[Tracking was working, then it stopped](#tracking-stopped-working)**: cache, plugin update or script change
-- **[WordPress plugin issues](#wordpress-plugin-issues)**: admin exclusion, proxy not working, cache conflict or invalid/unresponsive token link
+- **[WordPress plugin issues](wordpress-integration.md#troubleshooting)**: admin exclusion, proxy not working, cache conflict or invalid/unresponsive token link
 - **[My own visits are not showing](#my-own-visits-are-not-showing)**: ad blocker, VPN or WordPress admin exclusion
 - **[Some visitors are not being counted](#some-visitors-are-not-being-counted)**: browser extensions or network-level blockers
 - **[Numbers seem lower than expected](#numbers-seem-lower-than-expected)**: methodology differences, bot filtering or blockers
-- **[UTM parameters not appearing in Campaigns](#utm-parameters-not-appearing-in-campaigns)**: active session when UTM link was visited
-- **[Referral source is missing](#referral-source-is-missing)**: session attribution logic
-- **[Events API events not appearing](#events-api-events-not-appearing)**: bot filtering or misconfigured IP forwarding
+- **[UTM parameters not appearing in Campaigns](top-referrers.md#utm-parameters-not-appearing-in-campaigns)**: active session when UTM link was visited
+- **[Referral source is missing](top-referrers.md#no-need-to-manually-exclude-unwanted-sources)**: session attribution logic
+- **[Events API events not appearing](events-api.md#debugging)**: bot filtering or misconfigured IP forwarding
 
 ---
 
@@ -135,19 +111,19 @@ Find your symptom and jump straight to the right section:
 
 We've put together [many integration guides](integration-guides.md) covering WordPress, Ghost and other popular platforms. Check that the snippet is in the `<head>` of every page you want to track.
 
-### Have you cleared your cache?
+### Have you cleared your cache? {#have-you-cleared-the-cache-of-your-site}
 
 If you use caching, visitors may still see an older version of your site without the snippet. Purge your cache after adding or changing the snippet.
 
 ### Are you using Google Tag Manager?
 
-Follow [our GTM guide](https://plausible.io/gtm-template) for the correct setup using our official template.
+Follow [our GTM guide](google-tag-manager-integration.md) for the correct setup using our official template. It has its own [troubleshooting section](google-tag-manager-integration.md#troubleshooting).
 
 ### Are you using the NPM package?
 
 The NPM package doesn't read your site settings. Outbound links, file downloads and form submissions only work once you turn them on in `init`. `init` also has to run in the browser, not during server-side rendering. [See the NPM package guide](npm-package.md).
 
-### Does your site use a Content Security Policy?
+### Does your site use a Content Security Policy? {#does-your-site-use-a-content-security-policy-csp}
 
 If it does, add `plausible.io` to the allowed domains list. [More details here](https://github.com/plausible/docs/issues/20).
 
@@ -193,52 +169,15 @@ Plausible is privacy-first and compliant with GDPR and ePrivacy regulations. You
 
 ## WordPress plugin issues
 
-These cover the most common plugin problems. For full setup and every plugin setting, see [Adding Plausible to WordPress](wordpress-integration.md).
+Fixes for the WordPress plugin are on the [WordPress page](wordpress-integration.md#troubleshooting):
 
-### Admin visits are not showing
-
-Our WordPress plugin excludes logged-in administrator visits by default. This is intentional. If you want to track your own visits, go to the "Track analytics for user roles" section in the plugin settings and enable the Administrator role.
-
-### Proxy not recording stats after setup
-
-After enabling or changing the proxy, you must clear your cache. The correct sequence is:
-
-1. Disable the proxy
-2. Clear all caches (WordPress, hosting, Cloudflare)
-3. Re-enable the proxy
-4. Clear all caches again
-
-Skipping any step often leaves a stale script in place that the verification tool cannot confirm.
-
-### Stats stopped after migrating or cloning your WordPress site
-
-The proxy creates a randomly named file in `/wp-content/uploads/` and saves its full address. When you migrate or clone your site, that file path may no longer match what the plugin expects, or the address may still point to your old server. If the old server is offline, your pages can take a long time to load while browsers wait for the script. To fix this, disable the proxy, clear all caches, re-enable the proxy and clear all caches again. This forces the plugin to generate a fresh proxy file at the correct path on your new host.
-
-### Proxy script is slow
-
-The plugin notifies you if the proxy takes too long (over 500ms) to send pageviews. This usually means the speed module failed to install automatically. To install it manually:
-
-1. Access your server using (S)FTP, SSH or your host's file manager
-2. Go to the plugin directory, usually `wp-content/plugins/plausible-analytics`
-3. Open the `mu-plugin` directory inside it and copy `plausible-proxy-speed-module.php` to `wp-content/mu-plugins` (create the `mu-plugins` folder first if it doesn't exist)
-
-### Plugin token showing as invalid
-
-Plugin tokens are site-specific. Make sure the token you are pasting was created for the exact domain you are trying to connect. Tokens always start with `plausible-plugin-`. If in doubt, create a new token in your Plausible site settings and connect it again.
-
-### Token link doesn't do anything
-
-Some browser privacy settings, extensions or ad blockers silently block the click. If nothing happens when you click the token link in the plugin settings, create the token manually instead:
-
-1. Go to `https://plausible.io/YOURDOMAIN.COM/settings/integrations?new_token=WordPress`, replacing `YOURDOMAIN.COM` with your site's domain.
-2. Click **Create Plugin Token** and copy the token.
-3. Back in the plugin, paste it into the **Plugin Token** field and click **Connect**.
-
-This opens the same page the link normally would, so the rest of the steps are identical.
-
-### WP Rocket or another caching plugin is interfering
-
-Performance and caching plugins can minify, combine or delay the Plausible script in ways that break tracking. If you see errors in the browser console related to the Plausible script, add the script URL to the exclusion list in your caching plugin's settings. Our official WordPress plugin includes fixes for the most common conflicts, so make sure you are using it rather than the manual snippet.
+- <a id="admin-visits-are-not-showing"></a>[Admin visits are not showing](wordpress-integration.md#admin-visits-are-not-showing)
+- <a id="proxy-not-recording-stats-after-setup"></a>[Proxy not recording stats after setup](wordpress-integration.md#proxy-not-recording-stats-after-setup)
+- <a id="stats-stopped-after-migrating-or-cloning-your-wordpress-site"></a>[Stats stopped after migrating or cloning your WordPress site](wordpress-integration.md#stats-stopped-after-migrating-or-cloning-your-wordpress-site)
+- <a id="proxy-script-is-slow"></a>[Proxy script is slow](wordpress-integration.md#proxy-script-is-slow)
+- <a id="plugin-token-showing-as-invalid"></a>[Plugin token showing as invalid](wordpress-integration.md#plugin-token-showing-as-invalid)
+- <a id="token-link-doesnt-do-anything"></a>[Token link doesn't do anything](wordpress-integration.md#token-link-doesnt-do-anything)
+- <a id="wp-rocket-or-another-caching-plugin-is-interfering"></a>[WP Rocket or another caching plugin is interfering](wordpress-integration.md#wp-rocket-or-another-caching-plugin-is-interfering)
 
 ---
 
@@ -252,7 +191,7 @@ If the verification tool has already confirmed that tracking is working, the res
 
 ### Are you on WordPress?
 
-See the [WordPress plugin issues](#wordpress-plugin-issues) section above for admin exclusion, proxy problems and cache conflicts.
+The plugin excludes logged-in administrators by default. See [WordPress troubleshooting](wordpress-integration.md#admin-visits-are-not-showing) to track your own visits.
 
 ### Is your visit being filtered out?
 
@@ -278,7 +217,7 @@ You have two options:
 
 ### Are some VPN visitors being filtered as bots?
 
-Most VPN and Tor visitors are tracked normally and appear under "Anonymous VPN Service" in the [Countries report](countries.md). Some VPN IP ranges overlap with data center infrastructure, so those visits are filtered along with bot traffic. This is a tradeoff of aggressive bot filtering. See [bot and spam traffic filtering](bot-traffic-filtering.md) for details.
+Some VPN and iCloud Private Relay IP ranges overlap with data centers, so those visits are filtered with bot traffic. See [VPN users and bot filtering](bot-traffic-filtering.md#vpn-users-and-bot-filtering).
 
 ---
 
@@ -300,35 +239,19 @@ In [a test we ran](https://plausible.io/blog/testing-bot-traffic-filtering-googl
 
 ## UTM parameters not appearing in Campaigns
 
-UTM parameters are only attributed to the first pageview of a new session. If a visitor already has an active session on your site, pageviews with UTM parameters will not update the attribution. A session stays active for 30 minutes after the last pageview.
-
-Common causes during testing:
-
-- You visited the site earlier in the same browser, even without UTM parameters
-- Another device on the same network visited the site recently
-- You tested multiple UTM links without waiting 30 minutes between each
-
-If your campaign link points to a URL that redirects, for example to another subdomain, the redirect must keep the query string. If it drops it, the UTM parameters never reach the page where Plausible runs. The visit is then attributed to its referrer, or shows as **Direct / None** when there's no referrer.
-
-To test UTM attribution reliably, use a device and network combination that has not visited your site in the past 30 minutes. Mobile data on a phone that hasn't visited the site recently is the most reliable option. Check the **Campaigns** tab after the visit to confirm attribution.
+UTM parameters only count on the first pageview of a new visit, so testing in a browser that already has an active visit won't show them. See [UTM parameters not appearing in Campaigns](top-referrers.md#utm-parameters-not-appearing-in-campaigns) for how to test them reliably.
 
 ---
 
 ## Referral source is missing
 
-Referral sources are only counted when they start a new session. If you click several UTM-tagged links in the same session, only the first one is recorded. Wait 30 minutes or use a different device, browser or IP address to start a new session before testing again.
-
-This same mechanism keeps payment gateways and other redirect domains out of your referral sources. [Learn more about how referral attribution works](top-referrers.md).
+Referral sources only count when they start a new visit, which also keeps payment gateways out of your sources. See [how referral attribution works](top-referrers.md#no-need-to-manually-exclude-unwanted-sources).
 
 ---
 
 ## Events API events not appearing
 
-If you are using the [Events API](events-api.md) or a proxy for server-side tracking, Plausible can return HTTP 202 Accepted even when an event is not recorded. To check whether an event was dropped, inspect the response headers for `x-plausible-dropped: 1`. When that header is present, the event was not recorded. Bot filtering and site exclusion rules can cause events to be dropped.
-
-The most common cause is a misconfigured `X-Forwarded-For` header. If your proxy or backend forwards its own server IP instead of the real visitor's IP, Plausible's bot filter will drop the event. Make sure `X-Forwarded-For` is set to the real client IP before the request reaches Plausible.
-
-To confirm which IP address Plausible is seeing, add `X-Debug-Request: true` to your request. The API will return HTTP 200 with the IP it will use for unique visitor counting, so you can verify the header is being passed through correctly.
+The Events API returns 202 Accepted even when an event is dropped, usually because `X-Forwarded-For` carries a server IP instead of the visitor's. See [debugging the Events API](events-api.md#debugging) for how to check.
 
 ---
 
@@ -336,7 +259,7 @@ To confirm which IP address Plausible is seeing, add `X-Debug-Request: true` to 
 
 <summary>
 
-## How to manually check your integration
+## How to manually check your integration {#how-to-manually-check-your-integration}
 
 </summary>
 

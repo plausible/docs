@@ -35,8 +35,8 @@ The NPM package doesn't read your site settings. Set `formSubmissions: true` in 
 
 Click on **Form: Submission** goal in the **Goals** tab of your Plausible dashboard to see the full list of all form submissions and have your dashboard filtered by them. You can see:
 
-* The number of total form submissions
-* The number of unique form submissions
+* The number of total form submissions (the **Events** column), including repeat submissions by the same visitor
+* The number of unique form submissions (the **Visitors** column), counting each visitor once
 * The conversion rate
 * Top referral sources that lead to submissions
 * Top pages that drive the submissions

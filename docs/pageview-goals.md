@@ -38,7 +38,7 @@ Then click the **Add goal** button and you’ll be taken back to the goals page.
 
 ## How to group your pages
 
-Do you want to analyze the total traffic to specific sections of your site or to group your dynamically created pages? You can use an asterisk (`*`) to match patterns in your page path URLs. Asterisks can be placed on either end or in the middle of any page path URL.
+Do you want to analyze the total traffic to specific sections of your site or to group your dynamically created pages? You can use an asterisk (`*`) to match patterns in your page path URLs. Asterisks can be placed on either end or in the middle of any page path URL. An asterisk stands for any part of the path, slashes included, so `/*products/*` matches `/products/shoes` as well as `/fr/products/shoes`.
 
 You can for instance group all of your blog posts by creating a pageview goal `/blog*` (if your blog subdirectory is named `blog`) or track Woocommerce checkout pages for your ecommerce by creating a pageview goal `/checkout/order-received/*`. 
 

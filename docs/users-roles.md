@@ -188,7 +188,17 @@ You can remove a guest from having access to a site at any time:
 
 That's it. The guest has now been removed from the specific site.
 
-Note that you need to be an owner or an admin of the team that owns the site to remove a guest.
+Note that you need to be an owner or an admin of the team that owns the site to remove a guest. Guests can also [leave a site themselves](#leaving-a-site-youre-a-guest-on).
+
+### Leaving a site you're a guest on
+
+If you've been invited to someone else's site as a guest, you can remove yourself at any time:
+
+* In the top right menu, click on your account name and choose **Account settings**
+* Click on **Guest sites** in the left-hand sidebar. You'll see every site you're a guest on, who owns it and your role
+* Click **Leave** next to the site and confirm
+
+That's it. You no longer have access to the dashboard and stats of that site. To get access again, the owner or an admin needs to invite you again.
 
 ## How the team member limit is counted
 

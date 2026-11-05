@@ -88,6 +88,8 @@ When setting up SAML SSO for any other identity provider, please keep the follow
 - The `NameID` attribute must be a persistent and unique value that **does not change** between user sessions. This value identifies the user. This is the default for most identity provider services. For self-hosted IdP instances, you have to ensure it's configured properly.
 - **ACS URL / Single Sign-On URL / Reply URL**: Enter the URL you have obtained in the previous stage. This URL is unique to your workspace and is an entry point for accepting identity information obtained from identity provider. Some identity providers also call it **Consumer URL**.
 - **Entity ID / Issuer / Identifier**: Enter the ID you have obtained in the previous stage. This is a unique value identifying your team. Some identity providers also call it **Audience** or **SP Entity ID**
+- **Service provider metadata**: Plausible doesn't publish a metadata URL or XML file. Enter the ACS URL and Entity ID above by hand.
+- **Relay State**: Leave it empty. Plausible sets the relay state itself for each login, since logins always start from Plausible's login form.
 - **Attributes**: Some identity providers also expose them under **Attributes & Claims** or **Attributes Statements**. Make sure you have created and properly mapped following attributes in your identity provider:
   - `email`
   - at least one of `first_name` or `last_name`

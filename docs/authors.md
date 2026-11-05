@@ -18,6 +18,7 @@ Plausible is built and run by a small, fully remote team. No office, no outside 
 * Hricha - Content and community
 * Artur - Product engineer
 * Sanne - Product designer
+* Vini - Product engineer
 
 ## Contributors
 

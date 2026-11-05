@@ -136,11 +136,11 @@ The percentage of visitors that take a desired action such as subscribing to a n
 
 ### Unique Conversions
 
-When a visitor converts for a particular goal they'll be counted as a unique conversion.
+When a visitor converts for a particular goal they'll be counted as a unique conversion. In the Goals report this is the **Uniques** column. When you open a goal's breakdown, such as the file URLs under File Downloads, it's the **Visitors** column.
 
 ### Total Conversions
 
-If the same goal is completed multiple times by the same visitor, all the completed conversions will be counted within the total conversions.
+If the same goal is completed multiple times by the same visitor, all the completed conversions will be counted within the total conversions. In the Goals report this is the **Total** column. In a goal's breakdown it's the **Events** column.
 
 ### Funnels
 

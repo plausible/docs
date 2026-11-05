@@ -26,7 +26,7 @@ This is a tradeoff of aggressive bot filtering. It keeps automated traffic out o
 
 ## Why you might still see some bot traffic
 
-No filter is perfect. Bots emerge constantly and there is always a gap between when a new bot appears and when we identify and block it. If you see a sudden spike from an unfamiliar source with a very high bounce rate and near-zero visit duration, it may be bot traffic we haven't classified yet. Check time on page, scroll depth and goal conversions for stronger signals.
+No filter is perfect. Bots emerge constantly and there is always a gap between when a new bot appears and when we identify and block it. A visit that shows in your dashboard has already passed these filters: it didn't come from a known data center IP range or match a traffic pattern we exclude. That's why a new kind of automated traffic can be hard to tell apart from real visitors at first. Our filtering is updated continuously as bot traffic evolves, and improvements apply to every site automatically. If you see a sudden spike from an unfamiliar source with a very high bounce rate and near-zero visit duration, it may be bot traffic we haven't classified yet. Check time on page, scroll depth and goal conversions for stronger signals.
 
 ## Investigating a suspicious traffic spike
 
