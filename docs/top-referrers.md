@@ -67,7 +67,7 @@ With Plausible, there's no need for you to manually exclude unwanted referral so
 
 Referral sources are counted only when they start a new visit on your site. A visit continues as long as there are fewer than 30 minutes between a visitor's events. When visitors briefly leave to pay on an external gateway and come back, the gateway doesn't show up as a source, and the original source keeps the credit. If a visitor spends more than 30 minutes on the payment page, their return starts a new visit.
 
-If you expect UTM attribution but nothing appears in the **Campaigns** tab, see [UTM parameters not appearing in Campaigns](troubleshoot-integration.md#utm-parameters-not-appearing-in-campaigns).
+If you expect UTM attribution but nothing appears in the **Campaigns** tab, see [UTM parameters not appearing in Campaigns](#utm-parameters-not-appearing-in-campaigns).
 
 ### Consolidation of duplicate sources
 
@@ -128,6 +128,21 @@ Due to Plausible’s privacy-first approach, which avoids using cookies or long-
 <div class="browser">
 <img alt="Plausible Analytics referral sources report filtered by a custom goal showing conversion rate per traffic source" src={useBaseUrl('img/v2/custom-goal-conversion-rate.webp')} />
 </div>
+
+### UTM parameters not appearing in Campaigns
+
+
+UTM parameters are only attributed to the first pageview of a new session. If a visitor already has an active session on your site, pageviews with UTM parameters will not update the attribution. A session stays active for 30 minutes after the last pageview.
+
+Common causes during testing:
+
+- You visited the site earlier in the same browser, even without UTM parameters
+- Another device on the same network visited the site recently
+- You tested multiple UTM links without waiting 30 minutes between each
+
+If your campaign link points to a URL that redirects, for example to another subdomain, the redirect must keep the query string. If it drops it, the UTM parameters never reach the page where Plausible runs. The visit is then attributed to its referrer, or shows as **Direct / None** when there's no referrer.
+
+To test UTM attribution reliably, use a device and network combination that has not visited your site in the past 30 minutes. Mobile data on a phone that hasn't visited the site recently is the most reliable option. Check the **Campaigns** tab after the visit to confirm attribution.
 
 ## How to reduce the volume of dark traffic
 

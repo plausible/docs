@@ -40,8 +40,8 @@ The NPM package doesn't read your site settings. Set `outboundLinks: true` in `i
 
 Click on **Outbound Link: Click** goal in the **Goals** tab of your Plausible dashboard to see the full list of all clicks on all external links and have your dashboard filtered by external clicks only. You can see:
 
-* The number of total external link clicks
-* The number of unique external link clicks
+* The number of total external link clicks (the **Events** column), including repeat clicks by the same visitor
+* The number of unique external link clicks (the **Visitors** column), counting each visitor once
 * The conversion rate
 * Top referral sources that lead to clicks
 * Top pages that drive the clicks

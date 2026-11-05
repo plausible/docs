@@ -21,6 +21,11 @@ To open your account settings, click your account name in the top-right menu and
 - [Login management](login-management.md): view and remotely end active sessions
 - [Reset password](reset-password.md): change your account password
 
+**Guest sites**
+
+Shown when you've been invited to sites owned by other teams.
+- [Leave a site you're a guest on](users-roles.md#leaving-a-site-youre-a-guest-on): see the sites you have guest access to and remove yourself from any of them
+
 **Subscription and API keys**
 
 When you're viewing **My personal sites**, your subscription and API keys are managed here. When you've selected a team in the top right menu, they're in [team settings](team-settings.md) instead.

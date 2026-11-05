@@ -15,7 +15,7 @@ Custom events let you measure button clicks, subscription signups or any other a
 - **Using CSS class names**: add a class to any HTML element you want to track. No JavaScript required. This is the easiest approach for most use cases and is covered in the first section below.
 - **Using JavaScript**: call the `plausible()` function directly for more advanced tracking needs such as dynamic values, conditional logic or tracking non-click interactions. See the [manual JavaScript approach](#trigger-custom-events-manually-with-a-javascript-function) section.
 
-If you're using WordPress or Google Tag Manager, you can set up custom events with our [WordPress plugin](wordpress-integration.md#track-custom-events-with-css-class-names) or [GTM template](https://plausible.io/gtm-template) without writing code. Plausible also offers automated tracking for [outbound link clicks](outbound-link-click-tracking.md), [file downloads](file-downloads-tracking.md) and [form submissions](form-submissions-tracking.md) straight from your site settings, [pageview goals](pageview-goals.md) for tracking visits to specific pages and [404 error pages](error-pages-tracking-404.md) with a small snippet of code.
+If you're using WordPress or Google Tag Manager, you can set up custom events with our [WordPress plugin](wordpress-integration.md#track-custom-events-with-css-class-names) or [GTM template](google-tag-manager-integration.md#create-custom-event-tags) without writing code. Plausible also offers automated tracking for [outbound link clicks](outbound-link-click-tracking.md), [file downloads](file-downloads-tracking.md) and [form submissions](form-submissions-tracking.md) straight from your site settings, [pageview goals](pageview-goals.md) for tracking visits to specific pages and [404 error pages](error-pages-tracking-404.md) with a small snippet of code.
 
 <CtaBox
   headline="Testing this workflow for your site? Custom events work during the free trial, no credit card required"
@@ -275,7 +275,7 @@ If you see no request at all, the CSS class name was not added correctly or the 
 
 ### GTM events not firing
 
-If you set up custom events through [Google Tag Manager](https://plausible.io/gtm-template), use GTM's built-in **Preview** mode to confirm the tag is firing. Check that your trigger conditions match the actual interaction and that the tag is published, not just saved as a draft.
+If you set up custom events through [Google Tag Manager](google-tag-manager-integration.md), use GTM's built-in **Preview** mode to confirm the tag is firing. Check that your trigger conditions match the actual interaction and that the tag is published, not just saved as a draft.
 
 ### Custom properties showing as (none)
 

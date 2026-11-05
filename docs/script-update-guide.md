@@ -106,7 +106,7 @@ plausible.init({
 
 If you were already using these features, no additional steps are required. See:
 - [Custom events](/custom-event-goals)
-- [Ecommerce revenue and attribution tracking](docs/ecommerce-revenue-tracking.md)
+- [Ecommerce revenue and attribution tracking](ecommerce-revenue-tracking.md)
 
 ### 10. Removed: `data-exclude` and `data-include`
 
@@ -118,4 +118,4 @@ The new script no longer supports sending stats to multiple dashboards simultane
 
 ## Google tag manager {#gtm}
 
-If you previously installed Plausible through Google Tag Manager, remove the old tag and reinstall it [using tag manager gallery](https://plausible.io/gtm-template) instructions.
+If you previously installed Plausible through Google Tag Manager, remove the old tag and reinstall it [using tag manager gallery](google-tag-manager-integration.md) instructions.

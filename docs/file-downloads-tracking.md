@@ -42,8 +42,8 @@ The NPM package doesn't read your site settings. Set `fileDownloads: true` in `i
 
 Click on **File Download** goal in the **Goals** tab of your Plausible dashboard to see the full list of all clicks on all files and have your dashboard filtered by file download clicks only. You can see:
 
-* The number of total file download clicks
-* The number of unique file download clicks
+* The number of total file download clicks (the **Events** column), including repeat clicks by the same visitor
+* The number of unique file download clicks (the **Visitors** column), counting each visitor once
 * The conversion rate
 * Top referral sources that lead to clicks
 * Top pages that drive the clicks

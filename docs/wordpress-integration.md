@@ -48,7 +48,7 @@ To manage everything from WordPress without visiting your Plausible account, gen
 3. Copy the token displayed on the next screen. It won't be shown again after you close the modal.
 4. Back in the plugin, paste it into the **Plugin Token** field and click **Connect**.
 
-If clicking the link in step 1 does nothing, see [token link doesn't do anything](troubleshoot-integration.md#token-link-doesnt-do-anything) to create the token manually.
+If clicking the link in step 1 does nothing, see [token link doesn't do anything](#token-link-doesnt-do-anything) to create the token manually.
 
 <div class="browser screenshot-padded" style={{maxWidth: '480px'}}>
   <img alt="Create a Plausible plugin token for WordPress: enter WordPress as the description, then click Create plugin token" src={useBaseUrl('img/plausible-create-wordpress-plugin-token.webp')} width="896" height="548" loading="lazy" decoding="async" />
@@ -212,11 +212,57 @@ In the **Bypass adblockers** section, turn on **Enable proxy**. If you use a cac
   <img alt="Enable the proxy in the Plausible WordPress plugin" src={useBaseUrl('img/plausible-wordpress-plugin-proxy.png')} />
 </div>
 
-The proxy uses WordPress' API with a randomly generated endpoint under `yourdomain.com/wp-json` and creates a randomly named file in `/wp-content/uploads/`. If stats stop after enabling the proxy or after a site migration, see [WordPress plugin issues](troubleshoot-integration.md#wordpress-plugin-issues).
+The proxy uses WordPress' API with a randomly generated endpoint under `yourdomain.com/wp-json` and creates a randomly named file in `/wp-content/uploads/`. If stats stop after enabling the proxy or after a site migration, see [troubleshooting](#troubleshooting).
 
 ## Troubleshooting
 
-Most plugin problems come down to caching, admin exclusion, an invalid token or a proxy reset. For step-by-step fixes, see [WordPress plugin issues](troubleshoot-integration.md#wordpress-plugin-issues).
+
+### Admin visits are not showing
+
+Our WordPress plugin excludes logged-in administrator visits by default. This is intentional. If you want to track your own visits, go to the "Track analytics for user roles" section in the plugin settings and enable the Administrator role.
+
+### Proxy not recording stats after setup {#proxy-not-recording-stats-after-setup}
+
+After enabling or changing the proxy, you must clear your cache. The correct sequence is:
+
+1. Disable the proxy
+2. Clear all caches (WordPress, hosting, Cloudflare)
+3. Re-enable the proxy
+4. Clear all caches again
+
+Skipping any step often leaves a stale script in place that the verification tool cannot confirm.
+
+### Stats stopped after migrating or cloning your WordPress site
+
+The proxy creates a randomly named file in `/wp-content/uploads/` and saves its full address. When you migrate or clone your site, that file path may no longer match what the plugin expects, or the address may still point to your old server. If the old server is offline, your pages can take a long time to load while browsers wait for the script. To fix this, disable the proxy, clear all caches, re-enable the proxy and clear all caches again. This forces the plugin to generate a fresh proxy file at the correct path on your new host.
+
+### Proxy script is slow {#proxy-script-is-slow}
+
+The plugin notifies you if the proxy takes too long (over 500ms) to send pageviews. This usually means the speed module failed to install automatically. To install it manually:
+
+1. Access your server using (S)FTP, SSH or your host's file manager
+2. Go to the plugin directory, usually `wp-content/plugins/plausible-analytics`
+3. Open the `mu-plugin` directory inside it and copy `plausible-proxy-speed-module.php` to `wp-content/mu-plugins` (create the `mu-plugins` folder first if it doesn't exist)
+
+### Plugin token showing as invalid {#plugin-token-showing-as-invalid}
+
+Plugin tokens are site-specific. Make sure the token you are pasting was created for the exact domain you are trying to connect. Tokens always start with `plausible-plugin-`. If in doubt, create a new token in your Plausible site settings and connect it again.
+
+### Token link doesn't do anything
+
+Some browser privacy settings, extensions or ad blockers silently block the click. If nothing happens when you click the token link in the plugin settings, create the token manually instead:
+
+1. Go to `https://plausible.io/YOURDOMAIN.COM/settings/integrations?new_token=WordPress`, replacing `YOURDOMAIN.COM` with your site's domain.
+2. Click **Create Plugin Token** and copy the token.
+3. Back in the plugin, paste it into the **Plugin Token** field and click **Connect**.
+
+This opens the same page the link normally would, so the rest of the steps are identical.
+
+### WP Rocket or another caching plugin is interfering
+
+Performance and caching plugins can minify, combine or delay the Plausible script in ways that break tracking. If you see errors in the browser console related to the Plausible script, add the script URL to the exclusion list in your caching plugin's settings. The plugin includes fixes for the most common conflicts, so use it rather than adding the snippet by hand as well.
+
+For problems that aren't specific to the plugin, such as no stats at all or your own visits missing, see [troubleshooting](troubleshoot-integration.md).
 
 ## What's next?
 

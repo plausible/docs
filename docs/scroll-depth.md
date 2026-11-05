@@ -47,7 +47,7 @@ When creating a scroll depth goal, you can optionally narrow it down using custo
 <img alt="Add goal form with a 90% scroll threshold for /blog/remove-google-analytics and an optional custom property" src={useBaseUrl('img/scroll-depth-goal.png')} />
 </div>
 
-Do you want to analyze the scroll depth for a specific section of your site? You can use an asterisk (`*`) to match patterns in your page path URLs. Asterisks can be placed on either end or in the middle of any page path URL.
+Do you want to analyze the scroll depth for a specific section of your site? You can use an asterisk (`*`) to match patterns in your page path URLs. Asterisks can be placed on either end or in the middle of any page path URL. An asterisk stands for any part of the path, slashes included, so `/*blog/*` matches `/blog/my-post` as well as `/fr/blog/my-post`.
 
 You can for instance group all of your blog posts by using `/blog*` (if your blog subdirectory is named `blog`) or your Woocommerce checkout pages by using `/checkout/order-received/*`. 
 

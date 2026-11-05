@@ -31,7 +31,7 @@ The [official WordPress plugin](wordpress-integration.md) handles installation, 
 
 ### Google Tag Manager template
 
-The [official GTM template](https://plausible.io/gtm-template) is available in the Google Tag Manager community gallery. Install Plausible and configure event tracking from the GTM dashboard with no code changes, including reusing events you already send to GA4. Works well for agencies managing multiple sites from a single GTM account.
+The [official GTM template](google-tag-manager-integration.md) is available in the Google Tag Manager community gallery. Install Plausible and configure event tracking from the GTM dashboard with no code changes, including reusing events you already send to GA4. Works well for agencies managing multiple sites from a single GTM account.
 
 ### Data Studio connector
 
@@ -163,7 +163,7 @@ Step-by-step guides for popular website builders and content management systems.
 | [Google AMP Pages](https://github.com/plausible/analytics/discussions/220#discussioncomment-904022) | Declare an AMP-analytics object on your AMP pages to track with Plausible |
 | [Google Chrome extensions](https://gist.github.com/Joelkw/31b798f69c714c00e9e097b1fd4bb3c8) | Instructions for tracking Chrome browser extensions with Plausible |
 | [DNT and offline](https://github.com/ian/analytics/tree/main/packages/plausible) | Add Do Not Track and offline functionality via the analytics library |
-| [Segment](https://www.twilio.com/docs/segment/connections/destinations/catalog/google-tag-manager) | No official integration, but you can connect it through our [Google Tag Manager template](https://plausible.io/gtm-template) |
+| [Segment](https://www.twilio.com/docs/segment/connections/destinations/catalog/google-tag-manager) | No official integration, but you can connect it through our [Google Tag Manager template](google-tag-manager-integration.md) |
 | [Stripe, Paddle, Lemon Squeezy and Polar](ecommerce-revenue-tracking.md#track-payments-from-stripe-paddle-lemon-squeezy-and-polar) | Send revenue from hosted and overlay checkouts to Plausible |
 
 ### Monitoring and automation

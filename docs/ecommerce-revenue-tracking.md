@@ -52,7 +52,7 @@ If you are tracking revenue on an order confirmation page, the revenue amount ne
 
 If you plan to send revenue from your server with the Events API, first read [how server-side events are attributed](events-api.md#how-server-side-events-are-attributed). Payment provider webhooks can't be linked to the visit that led to the payment.
 
-If your site uses Google Tag Manager and already pushes a GA4 `purchase` event, you can send that revenue to Plausible without changing your site. See [our GTM guide](https://plausible.io/gtm-template#reuse-events-from-your-existing-data-layer-optional).
+If your site uses Google Tag Manager and already pushes a GA4 `purchase` event, you can send that revenue to Plausible without changing your site. See [our GTM guide](google-tag-manager-integration.md#example-purchases-with-revenue).
 
 ## How to track ecommerce revenue
 

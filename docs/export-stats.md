@@ -55,7 +55,7 @@ Here's how to export all the native data collected for a particular Plausible da
 
 ### What the export contains
 
-The ZIP file holds one CSV file per report: visitors, sources, pages, entry pages, exit pages, locations, devices, browsers, operating systems, custom events and custom properties. Each file has one row per day for each item, such as one row per page per day with the full page path, so you get a complete list of every page that was visited. The files use the same format as our [CSV import](csv-import.md), so you can import them into another Plausible site.
+The ZIP file holds one CSV file per report: visitors, sources, pages, entry pages, exit pages, locations, devices, browsers, operating systems, custom events and custom properties. Each file has one row per day for each item, such as one row per page per day with the full page path, so you get a complete list of every page that was visited. Visitors are counted per day, so adding them up across days gives a higher number than your dashboard shows for that period. Pageviews and visits can be added up. Scroll depth and time on page are stored as totals with their own visits columns: for a page's average over a period, add up `total_scroll_depth` and divide it by the sum of `total_scroll_depth_visits`. The same goes for `total_time_on_page` (in seconds) and `total_time_on_page_visits`. The files use the same format as our [CSV import](csv-import.md), so you can import them into another Plausible site.
 
 ## Use the stats API
 
