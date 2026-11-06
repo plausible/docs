@@ -14,6 +14,8 @@ The package is a good fit when:
 
 If none of these apply to you, [the script tag](plausible-script.md) is simpler. It picks up changes you make in your site settings automatically.
 
+The package needs a browser to run, so it doesn't work in React Native or other native mobile apps. For those, use the [Events API](events-api.md#tracking-mobile-apps).
+
 ## Install the package
 
 ```bash

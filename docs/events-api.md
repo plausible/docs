@@ -194,6 +194,42 @@ Whether the event is interactive. By default, Plausible will assume all events a
 
 By marking a custom event as non-interactive, it will not be counted towards bounce rate calculations.
 
+### Tracking mobile apps
+
+The Events API works for iOS, Android and cross-platform apps built with React Native, Expo or similar frameworks, where our [script](/docs/plausible-script) and [NPM package](/docs/npm-package) can't run because there's no browser.
+
+1. Add your app to your Plausible account as a new site. The domain doesn't need to be a real domain name, so you can use your app's name.
+2. Send a `pageview` event each time a screen is shown, and custom events for the actions you want to count. Name your screens like page paths in the `url` (for example `app://localhost/settings`), and they appear in your **Top Pages** report like any other page.
+3. Send the requests from the app itself. Plausible then uses the device's IP address, so you don't need to set `X-Forwarded-For`.
+
+Set the `User-Agent` header to one that describes the device, such as the device's web view user agent. Without it, requests carry your HTTP library's default user agent, which leaves the **Devices**, **Browsers** and **Operating Systems** reports with little to show.
+
+Here's an example in React Native:
+
+```js
+const PLAUSIBLE_DOMAIN = 'myapp' // the name you added your app with in Plausible
+
+export function trackScreen(screenName, props) {
+  return fetch('https://plausible.io/api/event', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'User-Agent': deviceUserAgent // for example from getUserAgent() in react-native-device-info
+    },
+    body: JSON.stringify({
+      name: 'pageview',
+      url: `app://localhost/${screenName}`,
+      domain: PLAUSIBLE_DOMAIN,
+      props
+    })
+  })
+}
+```
+
+Call it whenever the visible screen changes, for example from your navigation library's state change listener. Since apps don't have a referrer, visits are counted under Direct / None unless you send a `referrer` or UTM tags in the `url`.
+
+Community-built SDKs for some platforms are listed in our [integration guides](/docs/integration-guides#mobile-and-native-app-sdks).
+
 ### Debugging
 
 The API always returns HTTP 202 Accepted, even when an event is dropped. To debug your setup, there are two tools:

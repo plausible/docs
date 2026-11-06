@@ -49,7 +49,7 @@ Annotations are most useful when your team is making changes that affect traffic
 - **SEO changes:** publishing new content, updating meta data or restructuring URLs
 - **Technical incidents:** a downtime period, a tracking issue or a misconfigured redirect
 - **External coverage:** a press mention, a viral post or a spike from an unexpected source
-- **A/B tests:** start and end dates for experiments that affect traffic or conversion behavior
+- **A/B tests:** start and end dates for experiments that affect traffic or conversion behavior ([how to measure A/B tests](ab-testing.md))
 
 Annotating these events means future you (and your teammates) can read the chart without having to dig through Slack, commit history or email threads to understand what changed.
 

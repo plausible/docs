@@ -99,6 +99,8 @@ If you're purchasing on behalf of a business, click **Add VAT number** on the se
 
 If you missed this step, open your most recent Paddle invoice and click **Add address & VAT Number**. Once Paddle accepts a valid VAT number, no VAT is charged on future payments. UK businesses are the exception: Paddle still charges UK VAT, which you can reclaim on your VAT return. Other invoices that were already issued stay as they were. [More on Paddle's VAT handling →](https://paddle.com/support/which-countries-does-paddle-charge-vat-for/)
 
+Paddle checks EU VAT numbers against the EU's [VIES database](https://ec.europa.eu/taxation_customs/vies/). If your number shows as invalid, check it there first: a number that isn't registered in VIES for trade between EU countries can't be accepted, even when it's valid in your own country.
+
 ## How do I change my VAT number?
 
 Paddle does not allow editing the VAT number on an existing subscription. To update it, cancel your subscription in the **Subscription** section of your settings a day or two before your next renewal, then subscribe again right away from the same Plausible account with the correct VAT details. All your Plausible data, sites and settings stay unchanged during this process.

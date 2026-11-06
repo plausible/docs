@@ -163,7 +163,7 @@ If you use a custom proxy, you may not be serving the latest version of the trac
 
 Are you using Cookiebot or a similar consent management platform that only loads the Plausible script after the user gives consent? Our testing tool cannot verify the integration in that case. Use [the manual verification process](#how-to-manually-check-your-integration) instead.
 
-Plausible is privacy-first and compliant with GDPR and ePrivacy regulations. Your legal team may confirm that consent is not required. See [our data policy](https://plausible.io/data-policy) and [this legal assessment](https://plausible.io/blog/legal-assessment-gdpr-eprivacy) for details.
+Plausible is privacy-first and compliant with GDPR and ePrivacy regulations. Your legal team may confirm that consent is not required. See [our data policy](https://plausible.io/data-policy) and [this legal assessment](https://plausible.io/blog/legal-assessment-gdpr-eprivacy) for details. To load Plausible for every visitor while your banner keeps other tools blocked, follow [our consent management platform guide](consent-management-platforms.md).
 
 ---
 
