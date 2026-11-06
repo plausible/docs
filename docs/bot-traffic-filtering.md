@@ -9,6 +9,7 @@ Plausible automatically filters out bots, crawlers, referrer spam and other non-
 
 We use multiple layers to filter non-human traffic:
 
+- **Automated browser detection.** Our script doesn't send pageviews or events from browsers that report being controlled by automation tools such as Selenium or Playwright.
 - **User-Agent filtering.** We block known bots and crawlers by their User-Agent header, including search engine crawlers, scrapers and monitoring tools.
 - **Referrer spam filtering.** We filter out traffic from known referrer spam domains.
 - **Data center IP filtering.** We filter traffic from approximately 40,800 known data center IP ranges commonly used by bots and automated tools.
