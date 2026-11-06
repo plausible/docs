@@ -136,7 +136,7 @@ To get the number of unique visitors in a longer period of time (say one month) 
 
 ### UTM sources
 
-The GA4 importer uses GA4's session source for Plausible's **source** dimension. It does not populate a separate **UTM source** field, so imported traffic is not available in the UTM source report. Other campaign fields are imported where available; see [Traffic sources](#traffic-sources) below.
+The GA4 importer uses GA4's session source for Plausible's **source** dimension. It does not populate a separate **UTM source** field, so imported traffic is not available in the UTM source report. Other campaign fields are imported where available; see "Traffic sources" under [what to expect from imported data](#what-to-expect-from-imported-data) below.
 
 ### Goals
 
