@@ -37,6 +37,7 @@ module.exports = {
       'delete-site-data',
       'excluding',
       'excluding-localstorage',
+      'consent-management-platforms',
     ],
     'Stats Dashboard': [
       'guided-tour',
@@ -76,6 +77,7 @@ module.exports = {
       'error-pages-tracking-404',
       'pageview-goals',
       'custom-event-goals',
+      'core-web-vitals',
       {
         type: 'category',
         label: 'Custom properties',
@@ -84,6 +86,9 @@ module.exports = {
           'custom-props/for-pageviews',
           'custom-props/for-custom-events',
           'custom-props/props-dashboard',
+          'browser-language',
+          'screen-resolution',
+          'ab-testing',
         ],
       },
     ],

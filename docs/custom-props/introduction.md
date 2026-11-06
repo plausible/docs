@@ -16,10 +16,11 @@ Other examples:
 
 * Filter content by the publication date, page type, ID, tag or category
 * Filter visitors by login status or user role
-* Filter visitors by language they're viewing your website in
+* Filter visitors by their browser language or the language they're viewing your website in ([ready-made snippet](../browser-language.md))
 * Filter visitors by how many prefer or use the dark mode
 * Filter visitors by level completions or high score if you're a game developer
-* Filter by the segment that saw a particular variation of your site which is useful for A/B testing
+* Filter visitors by their exact screen resolution, such as `1920x1080` ([ready-made snippet](../screen-resolution.md))
+* Compare how each variant of an A/B test converts ([A/B testing guide](../ab-testing.md))
 
 ## Personally identifiable information
 

@@ -29,6 +29,7 @@ import CtaBox from '@site/src/components/CtaBox';
 <li><a href="/docs/google-tag-manager-integration">Google Tag Manager</a>: deploy without touching your code</li>
 <li><a href="/docs/npm-package">NPM package</a>: bundle the tracker into your JavaScript app</li>
 <li><a href="/docs/integration-guides">All installation guides</a>: Shopify, Webflow, Squarespace, Wix, Next.js, Ghost, Hugo and more</li>
+<li><a href="/docs/consent-management-platforms">Consent management platforms</a>: run Plausible alongside Cookiebot, OneTrust and other cookie banners</li>
 <li><a href="/docs/troubleshoot-integration">Verify the integration is working</a></li>
 <li><a href="/docs/guided-tour">Dashboard tour</a>: understand what you're looking at</li>
 <li><a href="/docs/your-plausible-experience">Get the most out of Plausible</a>: reports, Search Console, team features and more</li>
@@ -119,6 +120,7 @@ import CtaBox from '@site/src/components/CtaBox';
 <li><a href="/docs/form-submissions-tracking">Form submissions</a>: track form completions without extra setup</li>
 <li><a href="/docs/error-pages-tracking-404">404 error pages</a>: catch broken links and missing pages</li>
 <li><a href="/docs/custom-props/introduction">Custom properties</a>: attach metadata to events and pageviews</li>
+<li><a href="/docs/ab-testing">A/B tests</a>: compare how each variant converts</li>
 </ul>
 </div>
 

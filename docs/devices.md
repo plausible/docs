@@ -19,6 +19,8 @@ You can use the **Filter** button on the top of your dashboard to segment the tr
 
 The **Devices** tab shows the devices used by your website visitors. Devices are categorized into desktop, mobile or tablet. This is derived from the User-Agent HTTP header. The full User-Agent is discarded.
 
+To see exact resolutions such as `1920x1080`, you can [track screen resolution](screen-resolution.md) with a custom property.
+
 ## Browser
 
 The **Browsers** tab shows what browsers people use when visiting your website. We only show the brand of the browser and when you click on the brand you can see the version number too. Versions are stored as the major and minor version only, such as Chrome 153.0. This is derived from the User-Agent HTTP header. The full User-Agent is discarded.
