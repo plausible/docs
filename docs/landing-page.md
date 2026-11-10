@@ -60,6 +60,6 @@ Pinned sites remain fixed at the top regardless of the selected sorting option.
 
 Your pinned sites will also show up in the site switcher list that you can see within each dashboard by clicking on the site name in the top left. You can navigate between the sites in the site switcher list using keyboard shortcuts 1 to 9.
 
-<div class="browser">
-    <img alt="Pinned sites in the site switcher" src={useBaseUrl('img/v2/pinned-site-switcher.webp')} />
+<div class="browser screenshot-padded" style={{maxWidth: '400px'}}>
+<img alt="Plausible site switcher with the pinned site plausible.io first and keyboard shortcuts" src={useBaseUrl('img/plausible-site-switcher-pinned-sites.webp')} width="352" height="213" loading="lazy" decoding="async" />
 </div>

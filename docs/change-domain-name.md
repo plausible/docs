@@ -19,8 +19,8 @@ Here's how to change the domain name of a site in your Plausible account:
 
 - In the **Site details** area, click **Change** next to **Site domain**
 
-<div class="browser">
-  <img alt="Change the site domain in Plausible site settings" src={useBaseUrl('img/v2/change-domain.png')} />
+<div class="browser screenshot-padded">
+<img alt="Plausible site settings with the Change link next to Site domain" src={useBaseUrl('img/plausible-site-settings-change-domain.webp')} width="1136" height="840" loading="lazy" decoding="async" />
 </div>
 
 - Type in your new domain name. For example, if your new domain is `https://www.yourdomain.com`, enter `yourdomain.com` in the **Domain** field. Remove `https://` and `www.` from the URL.
