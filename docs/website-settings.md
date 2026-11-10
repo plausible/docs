@@ -18,14 +18,14 @@ You can access your website settings using these two methods:
 
 Click on your site name in the top left side of your Plausible Analytics dashboard and select **Site Settings** in the dropdown menu.
 
-<div class="browser">
-    <img alt="Plausible Analytics site settings" src={useBaseUrl('img/v2/pinned-site-switcher.webp')} />
+<div class="browser screenshot-padded" style={{maxWidth: '400px'}}>
+<img alt="Plausible site switcher open with the Site settings button" src={useBaseUrl('img/plausible-site-switcher-site-settings-menu.webp')} width="352" height="213" loading="lazy" decoding="async" />
 </div>
 
 ## From the Sites page
 
 Hover over your website name and click on the **Settings** icon on the right hand side of your domain name in your [Sites page](https://plausible.io/sites) to enter your website settings section.
 
-<div class="browser">
-    <img alt="Plausible Analytics" src={useBaseUrl('img/v2/sites-settings.webp')} />
+<div class="browser screenshot-padded" style={{maxWidth: '420px'}}>
+<img alt="Plausible site card on the Sites page with the Settings icon" src={useBaseUrl('img/plausible-sites-card-settings.webp')} width="384" height="232" loading="lazy" decoding="async" />
 </div>

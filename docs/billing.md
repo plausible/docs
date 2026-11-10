@@ -157,8 +157,8 @@ It includes the limits and features we set up for you. Enterprise-only features 
 
 In your settings, go to the **Subscription** section. Under **Current plan**, click **Billing details**.
 
-<div class="browser">
-    <img alt="Update Plausible billing information" src={useBaseUrl('img/v2/account-settings-update-billing-info.webp')} />
+<div class="browser screenshot-padded">
+<img alt="Plausible subscription settings with the Billing details button under Current plan" src={useBaseUrl('img/plausible-subscription-billing-details.webp')} width="1136" height="332" loading="lazy" decoding="async" />
 </div>
 
 ## Why did my payment fail?
