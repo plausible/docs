@@ -34,6 +34,8 @@ When someone logs in through SSO, we will first check if there's an existing tea
 
 By default, new members are assigned the Viewer role, but you can change it as needed.
 
+SSO users count towards your team member limit, so new users can't be added while the team is at its limit.
+
 A user signing in through SSO can only belong to one team. Team assignment is based on the domain in their email address. Each SSO domain must be unique: a single domain can't be linked to more than one team at once.
 
 You can read more about domains at [SSO Domains](#sso-domains).
@@ -56,6 +58,8 @@ By not enforcing SSO immediately, you can safely transition your team without ca
 
 - **Changing name and email of your SSO account**: The name and email address can only be updated via identity provider.
 - **SSO initiated from IdP**: Identity providers often support starting login directly from their portal. While this is sometimes convenient, we explicitly do not support it for security reasons. Users must always start logging in from Plausible's login form.
+- **"Session expired." when logging in**: More than 10 minutes passed at the identity provider before returning to Plausible. Signing in again fixes it.
+- **Removed or deprovisioned SSO users**: They can log in with their email and password by using **Forgot password** on the login page to set a new password.
 
 ## Configuring SSO
 

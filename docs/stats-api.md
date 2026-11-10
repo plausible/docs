@@ -68,7 +68,7 @@ curl \
 --data '{ "site_id": "dummy.site", "metrics": ["visitors"], "date_range": "7d" }'
 ```
 
-API keys have a rate limit of 600 requests per hour by default. If you have special needs for more requests, [please contact us](https://plausible.io/contact) to request more capacity.
+The Stats API has a rate limit of 600 requests per hour by default. If you have special needs for more requests, [please contact us](https://plausible.io/contact) to request more capacity.
 
 ## Request structure
 
