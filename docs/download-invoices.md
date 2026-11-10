@@ -5,7 +5,7 @@ description: "How to view invoices for your Plausible subscription and save them
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Our payment processor Paddle sends an invoice by email automatically after each payment. You can also view past invoices from your Plausible account.
+Our payment processor Paddle sends an invoice by email automatically after each payment. You can also view past invoices from your Plausible account. Paddle doesn't issue credit notes or receipts for refunds, so a refund has no separate document.
 
 Log in to your Plausible account. In the top right menu, click your account name and open the settings. Scroll down in the **Subscription** section to see a list of all invoices. Select an invoice to open it in a new browser tab.
 
@@ -23,7 +23,7 @@ Open any invoice from Paddle and click **Add address & VAT Number**. Paddle hand
 
 Open any invoice and click **Edit business address** to update your address.
 
-Changing the **country** on an existing subscription isn't possible due to tax regulations. To switch countries, wait for your current subscription to expire, cancel, then resubscribe from the same account with the new country. No data is lost in this process.
+Changing the **country** on an existing subscription isn't possible due to tax regulations. To switch countries, cancel your subscription a day or two before your next renewal, then subscribe again right away from the same account with the new country (see [How do I change the country on my subscription?](billing.md#how-do-i-change-the-country-on-my-subscription)). No data is lost in this process.
 
 ## Change the email address for invoices
 

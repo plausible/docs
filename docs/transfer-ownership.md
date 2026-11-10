@@ -13,7 +13,7 @@ Plausible allows you to transfer ownership of a site to a different user or to a
 
 This is useful for consultants and agencies working with clients. You set up the site, add custom events, email reports, traffic spike notifications and so on. When your job is done, you transfer ownership to your client.
 
-Note that subscriptions are not transferred with the site. The new owner is responsible for having an active [Plausible subscription](subscription-plans.md). Once transferred, the site counts toward the limits of whichever account or team becomes the new owner.
+A site keeps all its stats when you transfer or move it. Note that subscriptions are not transferred with the site. The new owner is responsible for having an active [Plausible subscription](subscription-plans.md). Once transferred, the site counts toward the limits of whichever account or team becomes the new owner.
 
 :::tip Is the current owner unavailable or leaving the organization?
 See [Recover access when an owner is unavailable](transfer-account-ownership.md) for guidance on team access and account recovery.

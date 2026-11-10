@@ -131,6 +131,10 @@ A single month over your limit requires no action. If usage drops back within yo
 
 If you've been asked to upgrade after two consecutive months above your tier, you have two options. If your traffic has already returned to normal, do nothing: your dashboard will automatically unlock at the start of your next billing cycle. If you need access restored now, upgrade to the appropriate tier and downgrade again once traffic drops. Downgrades are pro-rated, so any unused credit carries forward.
 
+## Why is my renewal higher than my plan price?
+
+If a renewal looks higher than the price of your plan, the difference is usually the VAT that Paddle adds based on your billing details. Your plan price stays the same. If you're purchasing on behalf of a business, see [How do I add my VAT number?](#how-do-i-add-my-vat-number).
+
 ## How does pro-rating work when I upgrade?
 
 Paddle calculates a pro-rated charge based on what you've already paid and the time remaining on your current billing cycle. You only pay the difference.
@@ -138,6 +142,10 @@ Paddle calculates a pro-rated charge based on what you've already paid and the t
 ## How does it work when I downgrade?
 
 If you downgrade to a lower tier, the unused portion of your current billing period is added as a credit to your account. This credit is applied automatically to future payments until it's used up.
+
+## How long does a refund take?
+
+Refunds are processed by Paddle and can take a few business days to show on your card. Paddle can refund payments up to 120 days old for card payments and up to 179 days old for PayPal.
 
 ## Why does my subscription say Enterprise?
 
@@ -158,6 +166,10 @@ In your settings, go to the **Subscription** section. Under **Current plan**, cl
 **Failed renewals are retried automatically**
 
 If a renewal payment fails, Paddle retries it 3, 5 and 7 days after the first failure. You keep full access to your stats in the meantime. To pay right away, update your card under **Billing details** in the **Subscription** section of your settings and Paddle charges it again. If all the retries fail, your subscription is paused and your dashboards are locked until you update your payment details.
+
+**Bank approval but no subscription**
+
+If your bank shows the payment as approved but no subscription was created, no charge was taken. The approval is a temporary hold that your bank releases. Check the causes below and try again.
 
 **Wrong or expired card details**
 

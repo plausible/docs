@@ -257,9 +257,9 @@ The goal name in your Plausible site settings must match the event name your sit
 
 The most common mismatch comes from the `+` sign in CSS class names. The class `plausible-event-name=Button+Click` sends the event name `Button Click` (plus replaced by space). If you created a goal called `Button+Click` instead of `Button Click`, nothing will be counted.
 
-### Has the event fired at least once after you created the goal?
+### Has the event fired at least once?
 
-Past events are not backfilled. If you set up the goal after events were already being sent, the counter starts from zero at the moment the goal was created. Trigger the event on your site after creating the goal and then check the dashboard.
+Goals count every matching event in the selected date range, including events your site sent before you created the goal. If the goal still shows nothing, check the date range, then trigger the event on your site and check the dashboard again.
 
 ### Did your CMS replace the equals sign?
 

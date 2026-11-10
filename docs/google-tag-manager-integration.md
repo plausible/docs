@@ -9,7 +9,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 If you already use Google Tag Manager, you can add Plausible with our official template from the GTM template gallery. It handles pageviews, custom events, file downloads, form submissions and more, with no changes to your site's code.
 
-GTM is optional. You can also add [the Plausible script](plausible-script.md) to your site directly, or check our [integration guides](integration-guides.md) for instructions specific to your platform.
+GTM is optional. You can also add [the Plausible script](plausible-script.md) to your site directly, or check our [integration guides](integration-guides.md) for instructions specific to your platform. Some platforms only accept a set list of analytics integrations, such as Kit (ConvertKit) landing pages. There, Google Tag Manager with our template is the way to add Plausible.
 
 ## Before you begin
 
@@ -64,6 +64,8 @@ The tag has a **Type** option with two choices:
 Create a tag with the type **Initialization** and paste your script ID into the **Script ID** field.
 
 Under **Triggering**, choose **All Pages** (Page View) so Plausible loads on every page.
+
+If the Plausible snippet is already in your site's code, remove it when the tag goes live so pageviews aren't counted twice. Switching to GTM loses no data, as your stats belong to the site rather than the installation method.
 
 That's all a basic installation needs. Save the tag, then [test](#test-your-setup) and [publish](#publish-your-container) your container.
 

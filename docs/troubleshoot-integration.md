@@ -151,6 +151,10 @@ The [Shields feature](excluding.md) lets you block visits by IP address, hostnam
 
 ## Tracking stopped working
 
+### Is there an ongoing incident?
+
+Check our [status page](https://plausible.io/status) to see if there's an outage affecting Plausible.
+
 ### Have you cleared your cache after a change?
 
 After updating your snippet, proxy settings or plugin, clear your cache. On WordPress, the proxy requires a specific reset sequence. See [WordPress plugin issues](#wordpress-plugin-issues) below.

@@ -10,3 +10,5 @@ Within the **Danger zone** section of [your website settings](website-settings.m
 <div class="browser">
 <img alt="Delete your site data and your stats" src={useBaseUrl('img/reset-website-data-plausible-analytics.png')} />
 </div>
+
+Deleting a site is permanent and its stats can't be recovered. If you add the same domain again later, it's created as a new site without the old stats.

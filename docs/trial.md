@@ -19,8 +19,14 @@ We don't keep your website analytics data indefinitely after your trial ends.
 
 If you don't subscribe, we'll stop collecting new stats and eventually delete your dashboards and all their stats permanently. We'll email you before deletion so you have time to [subscribe](trial-to-paid.md) or [export your stats](export-stats.md).
 
+After your trial ends, we keep recording stats for a few more days, and the email we send when the trial expires says how many. Recording stops at midnight UTC on the last of those days.
+
+Automatic deletion removes your sites and stats, but your login stays until you [delete your account](delete-account.md).
+
 Subscribe before deletion to unlock your dashboards and keep your historical stats. Deleted stats cannot be recovered.
 
 ## Delete your account at any time
 
 You can [delete your account](delete-account.md) with a few clicks at any point, during or after the trial. Go to **Account settings**, scroll to the **Danger zone** section and click **Delete Account**. This removes all your sites and collected stats.
+
+To start a new 30-day trial, [delete your account](delete-account.md) and sign up again with the same email.

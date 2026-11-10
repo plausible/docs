@@ -19,6 +19,8 @@ Go to the **Subscription** section and click **Cancel plan**.
 
 Your stats keep being counted and you have full access to your dashboard.
 
+The **Subscription** section may still say **Renews on**, but your subscription ends without renewing.
+
 **Once the billing period ends**
 
 Your dashboard is locked. You can still log in and access your account, team and site settings, but you cannot view your stats. You can export your collected data at any time from the site settings of any locked site.
@@ -33,7 +35,7 @@ You can delete individual sites at any time, before or after canceling, from you
 
 **Resubscribing**
 
-You can resubscribe at any time from the **Subscription** section of your settings. Your dashboards unlock automatically and data collection resumes immediately.
+You can resubscribe at any time from the **Subscription** section of your settings. Your dashboards unlock automatically and data collection resumes immediately. If you subscribe again from the same account before your paid period ends, you keep your current plan and its limits.
 
 If you resubscribe before your data is deleted, your historical stats will still be there. Deleted data cannot be recovered, so if you're coming back, resubscribe or export your data before the deletion date in our email.
 
