@@ -29,6 +29,14 @@ This is a tradeoff of aggressive bot filtering. It keeps automated traffic out o
 
 No filter is perfect. Bots emerge constantly and there is always a gap between when a new bot appears and when we identify and block it. A visit that shows in your dashboard has already passed these filters: it didn't come from a known data center IP range or match a traffic pattern we exclude. That's why a new kind of automated traffic can be hard to tell apart from real visitors at first. Our filtering is updated continuously as bot traffic evolves, and improvements apply to every site automatically. If you see a sudden spike from an unfamiliar source with a very high bounce rate and near-zero visit duration, it may be bot traffic we haven't classified yet. Check time on page, scroll depth and goal conversions for stronger signals.
 
+## AI crawlers
+
+Plausible counts people, so AI crawlers don't inflate your visitor numbers. Crawlers such as GPTBot, ClaudeBot and PerplexityBot fetch your pages as HTML or markdown to train models or answer questions. They don't run JavaScript, so they never load our script. Events sent through the [Events API](events-api.md) go through the same User-Agent and data center IP filtering.
+
+What you do see is the people who click through from AI tools. Visits referred by ChatGPT, Claude, Perplexity, Gemini, Copilot and others show in the **Sources** report and are grouped as **AI Assistants** in the [Channels report](top-referrers.md#channels).
+
+To see how often AI crawlers request your pages, check your server logs or your CDN or hosting provider's analytics. They record every request, including those that never run JavaScript.
+
 ## Investigating a suspicious traffic spike
 
 If you see an unexpected spike in your dashboard, run through these steps to confirm whether it is bot traffic and block it.
@@ -63,6 +71,8 @@ Once you have identified the source, use [Shields](excluding.md) to stop it bein
 Shields rules take effect immediately and apply going forward. They do not remove historical data already recorded.
 
 To leave visits on other hostnames out of your reports for past dates, [filter your dashboard by hostname](filters-segments.md#filter-by-subdomain-or-hostname).
+
+For a spike that was recorded on your own hostname, [save a segment](filters-segments.md#how-to-save-a-segment) that [leaves out](filters-segments.md#exclude-specific-segments-of-traffic) the source, country or pages the bot traffic came from. Open that segment when you look at or compare the dates around the spike. Keep in mind that the segment also leaves out any real visits that match it. Then [add an annotation](annotations.md) on the days of the spike, so you and your team know why those numbers jumped when you look back months later.
 
 ### 5. Contact us if the pattern continues
 

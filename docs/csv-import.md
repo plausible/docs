@@ -93,6 +93,10 @@ By default, imported data is always included in the view, unless you choose to e
 
 Whenever imported data cannot be included due to the applied filters, you will see a warning bubble stating “Imported data is excluded due to applied filters” in the corresponding report. Note that this does not affect displaying native data in any way.
 
+### Channels
+
+CSV files don't have a column for channels, so days imported from CSV show as "(not set)" in the **Channels** report. Sources, referrers and UTM tags are imported as usual. The same applies to CSV files exported from Plausible. A direct [import from Google Analytics](google-analytics-import.md) brings in channels too.
+
 ### Goals and custom properties
 
 You can import your goals and custom events. However, there is a limited support for importing custom properties along with them.

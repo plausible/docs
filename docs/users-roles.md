@@ -27,10 +27,11 @@ If your only owner is already unavailable, see [how to recover access](transfer-
 There are two places to create a team:
 
 * **When you sign up.** Right after the step where you add your website, Plausible asks you to set up a team. If you added a site, the team name is suggested from its domain and the site moves into the new team. This step is optional. Click **Skip** to continue without a team and create one later.
-* **From your account.** In the top right menu, click on your account name and choose **Create a team**. Note that the "Create a team" button appears when you are viewing "My personal sites" and have sites there that you own.
+* **From your account.** In the top right menu, click on your account name and choose **Create new team**.
 
 On the team setup page:
 
+* If you're viewing "My personal sites", choose what happens to your personal sites. **Move into this team** (selected by default) moves your sites into the new team with their stats, guests and subscription. **Start with an empty team** leaves your personal sites and subscription where they are. If you're viewing another team, the new team always starts empty.
 * Give the name to your team.
 * Invite individual team members. You can invite any email address. It doesn't necessarily need to be an email address from your company. You can invite existing Plausible users or people who don't have a Plausible account. You can also turn any existing guest into a team member. 
 * Assign individual team members their roles
@@ -48,9 +49,9 @@ Adding people to the member list does not send any invitations yet. The team is 
 
 You can create more than one team. All sites you own that are not part of any team are listed under "My personal sites".
 
-When you are viewing "My personal sites", the profile menu in the top right shows a "Create a team" button. Creating a team moves all the sites you own in "My personal sites" into that new team, leaving "My personal sites" empty of sites you own.
+To create another team, choose **Create new team** in the top right menu and select **Start with an empty team** if you're asked what should happen to your personal sites. Your existing teams, sites and subscriptions stay as they are. You can create as many teams as you need.
 
-New sites are added to the team you're currently viewing. To start another team, select "My personal sites" in the top right menu first, then add the site. It appears in "My personal sites". The "Create a team" button becomes available once more, letting you create another team. You can repeat this process to create as many teams as you need.
+New sites are added to the team you're currently viewing, so switch to the new team in the top right menu before adding its sites. Each team has its own subscription.
 
 ### Inviting team members and assigning roles
 

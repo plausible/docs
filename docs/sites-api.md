@@ -436,6 +436,7 @@ curl -X PUT https://plausible.io/api/v1/sites/goals \
     "goal_type": "event",
     "event_name": "Signup"
   }'
+```
 
 ```json title="Response 200 OK"
 {
@@ -494,6 +495,7 @@ curl -X DELETE https://plausible.io/api/v1/sites/goals/1 \
   -d '{
     "site_id": "test-domain.com"
   }'
+```
 
 ```json title="Response 200 OK"
 {
@@ -714,6 +716,29 @@ curl -X DELETE https://plausible.io/api/v1/sites/guests/test@example.com \
     "deleted": "true"
 }
 ```
+
+## Add the same goals and custom properties to many sites
+
+Goals and custom properties are set up per site. If you run many sites that track the same events, such as a network of client sites or one site per customer, you can add them to every site in one go with a short script instead of one site at a time.
+
+Put your domains in a list, then call [PUT /api/v1/sites/goals](#put-apiv1sitesgoals) and [PUT /api/v1/sites/custom-props](#put-apiv1sitescustom-props) for each one:
+
+```bash title="Add a goal and a custom property to several sites"
+for site in site1.com site2.com site3.com; do
+  curl -X PUT https://plausible.io/api/v1/sites/goals \
+    -H "Authorization: Bearer ${TOKEN}" \
+    -H "Content-Type: application/json" \
+    -d "{\"site_id\": \"$site\", \"goal_type\": \"event\", \"event_name\": \"Signup\"}"
+
+  curl -X PUT https://plausible.io/api/v1/sites/custom-props \
+    -H "Authorization: Bearer ${TOKEN}" \
+    -F "site_id=$site" \
+    -F "property=plan"
+  echo
+done
+```
+
+To get the domains of your team's sites, call [GET /api/v1/sites](#get-apiv1sites). With a Sites API key, it lists only the sites of the team the key belongs to, which are the ones the key can change. Both endpoints find or create, so running the script again leaves sites that already have the goal or property as they are. Run the same calls right after [creating a new site](#post-apiv1sites) to give it the setup your other sites have.
 
 ## Pagination
 

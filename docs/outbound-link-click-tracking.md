@@ -58,6 +58,29 @@ Here's how to automatically [track clicks on cloaked affiliate links](custom-aut
 
 Check out this blog post for more details on the value of [tracking outbound link clicks](https://plausible.io/blog/track-outbound-link-clicks).
 
+## Leave out clicks to your own subdomains
+
+A link counts as outbound when it leads to a different hostname. That includes your own subdomains: a click from `www.yoursite.com` to `shop.yoursite.com` is recorded as an outbound link click.
+
+To leave those clicks out, add a `transformRequest` option to the `plausible.init` call in your snippet. Replace `yoursite.com` with your own domain:
+
+```javascript
+plausible.init({
+  // ... Other initialization options
+  transformRequest: function (payload) {
+    if (payload.n === 'Outbound Link: Click' && payload.p && payload.p.url) {
+      var host = new URL(payload.p.url).hostname
+      if (host === 'yoursite.com' || host.endsWith('.yoursite.com')) {
+        return null
+      }
+    }
+    return payload
+  }
+})
+```
+
+Returning `null` drops the event before it's sent. Clicks to all other sites are recorded as before. Clicks that were already recorded stay in your stats: to leave them out of your reports, filter by the **url** property with "does not contain" and your domain.
+
 ## Other automated goals
 
 Plausible also offers automated tracking for [file downloads](file-downloads-tracking.md) and [form submissions](form-submissions-tracking.md). These can be enabled under **Default tracking** in the **Tracking** area of your site settings without any code changes. You can also track [404 error pages](error-pages-tracking-404.md) with a small snippet of code.
