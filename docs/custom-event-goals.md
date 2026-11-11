@@ -377,3 +377,5 @@ The same code also applies for `<video>` elements. Feel free to replace `Media P
 - [Build a funnel](funnel-analysis.md) using your custom events as steps to see where visitors drop off between landing and converting
 - [Filter your dashboard by goal](filters-segments.md) to see which sources and pages drive the most conversions for each event
 - [Track Core Web Vitals](core-web-vitals.md) as a custom event to see how each page scores on LCP, INP and CLS
+- [Count visitors who stay longer than a set time](time-spent-tracking.md), such as five minutes on a page, as a goal
+- [Track impressions and clicks](content-impressions-tracking.md) on banners and other blocks to compare how often they're seen with how often they're clicked

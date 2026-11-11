@@ -23,7 +23,7 @@ These are built and maintained by the Plausible team. Unlike community plugins, 
 
 ### Add the snippet to the header of your site
 
-To integrate your website with Plausible, you can manually insert our tracking snippet into the header section of your site. See [the details here](plausible-script.md).
+To integrate your website with Plausible, you can manually insert our tracking snippet into the header section of your site. This also works for sites made of plain HTML files, where you add the snippet to each page. See [the details here](plausible-script.md).
 
 ### WordPress plugin
 
@@ -160,7 +160,7 @@ Step-by-step guides for popular website builders and content management systems.
 
 | Configuration | Details |
 | --- | --- |
-| [Google AMP Pages](https://github.com/plausible/analytics/discussions/220#discussioncomment-904022) | Declare an AMP-analytics object on your AMP pages to track with Plausible |
+| [Google AMP pages](amp-pages.md) | Add an `amp-analytics` block to your AMP pages to track them with Plausible |
 | [Google Chrome extensions](https://gist.github.com/Joelkw/31b798f69c714c00e9e097b1fd4bb3c8) | Instructions for tracking Chrome browser extensions with Plausible |
 | [DNT and offline](https://github.com/ian/analytics/tree/main/packages/plausible) | Add Do Not Track and offline functionality via the analytics library |
 | [Segment](https://www.twilio.com/docs/segment/connections/destinations/catalog/google-tag-manager) | No official integration, but you can connect it through our [Google Tag Manager template](google-tag-manager-integration.md) |
