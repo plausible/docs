@@ -79,6 +79,8 @@ module.exports = {
       'pageview-goals',
       'custom-event-goals',
       'core-web-vitals',
+      'time-spent-tracking',
+      'content-impressions-tracking',
       {
         type: 'category',
         label: 'Custom properties',

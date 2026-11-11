@@ -133,7 +133,7 @@ The Plausible script automatically disables itself on localhost. To enable track
 
 ### Are you running a Google AMP page?
 
-To track AMP pages you need to declare an AMP-analytics object. [See the instructions here](https://github.com/plausible/analytics/discussions/220#discussioncomment-904022).
+AMP pages don't allow our script. To track them, add an `amp-analytics` block instead. [See the instructions here](amp-pages.md).
 
 ### Do you have multiple Plausible snippets on the page?
 

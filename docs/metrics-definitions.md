@@ -76,6 +76,8 @@ Unlike visit duration which measures the whole session, time on page is scoped t
 
 To measure this accurately, our script sends an `engagement` event each time a visitor navigates to a new page or switches tabs. This means time spent on a page in an inactive tab is not counted, and visitors who bounce are included rather than ignored.
 
+To count the visitors who spent a set amount of time on a page, such as five minutes, as a goal, see [time spent goals](time-spent-tracking.md).
+
 ### Scroll Depth
 
 Measures how far visitors scroll down a webpage. It represents the percentage of a page's total height that visitors have reached on average. You can learn how we calculate it [here](http://plausible.io/docs/scroll-depth).
