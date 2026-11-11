@@ -45,6 +45,28 @@ Installing Plausible on a site can be a slightly different process depending on 
 
 We've put together [several other guides and plugins](integration-guides.md) that cover popular website builders, content management systems (CMS) and frameworks. These can help you set up and start counting your site visitors in no time.
 
+## Sites made of plain HTML files
+
+If you write your site's pages by hand as HTML files, each page has its own `<head>` section, so there's no single header to add the snippet to. Paste the snippet into the `<head>` of every page you want to count, for example right below the `<title>` line:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My site</title>
+    <!-- Paste your Plausible snippet here -->
+  </head>
+  <body>
+    ...
+  </body>
+</html>
+```
+
+Then upload the files to your web host as usual. Pages without the snippet aren't counted, so add it to every new page you create too. Your site doesn't need any JavaScript of its own: the snippet is all Plausible needs.
+
+If you use a static site generator such as Hugo, Jekyll or Eleventy, add the snippet once to the layout or template that all your pages share instead.
+
 ## How to check if Plausible Analytics is installed correctly
 
 After adding the Plausible snippet to your website, you can use our testing tool to verify that the snippet is installed correctly and the integration is working. Have some issues with the integration? Take a look at [our guide to troubleshooting your Plausible Analytics integration](troubleshoot-integration.md).

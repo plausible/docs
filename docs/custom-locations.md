@@ -101,6 +101,36 @@ _Et voilà!_ From now on, your pageviews will automatically appear as coming fro
 
 Plus, if you trigger other events on the page, you can reuse the `url` variable we generated to keep your data consistent!
 
+### Merging pages with and without a trailing slash
+
+If your site serves the same page at `/pricing` and `/pricing/`, or at `/` and `/index.html`, the **Top Pages** report lists them as separate pages. The best fix is a [301 redirect](https://ahrefs.com/blog/trailing-slash/) so each page has a single address. If you can't change how your site handles its URLs, you can merge them in your snippet instead:
+
+```javascript
+function transformRequest(payload) {
+  var url = new URL(payload.u)
+  // Count /index.html as the folder it's in
+  url.pathname = url.pathname.replace(/\/index\.html?$/, '/')
+  // Remove the trailing slash from every path except the homepage
+  if (url.pathname.length > 1) {
+    url.pathname = url.pathname.replace(/\/+$/, '')
+  }
+  payload.u = url.toString()
+  return payload
+}
+
+// At the end, update plausible.init call
+plausible.init({
+  transformRequest: transformRequest
+})
+```
+
+This works on the address already in each event, so you don't need to disable automatic pageviews and it also works in single-page applications. Query parameters such as UTM tags are kept.
+
+A few things to keep in mind:
+
+* It applies to every event, so your goals, filters and funnels see the merged paths too. Update any [pageview goal](pageview-goals.md) that ends with a slash, such as `/thank-you/`, to the path without it.
+* It only changes pageviews sent after you add it. To combine older stats, [filter](filters-segments.md) by **Page** and select both versions of the path.
+
 ### Redacting identifiers from URLs
 
 If you have a web application, you likely have URLs with identifiers in them, such as `https://yourapp.com/project/123456/settings`. This is great for your users as they can easily bookmark pages within your app.

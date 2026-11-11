@@ -71,7 +71,7 @@ Billing is based on total usage across all the sites in a team. Each team has it
 
 ## Can I manage multiple clients with separate billing for each?
 
-Yes. You can create a separate team for each client, add their sites to the respective team and invite the client to their own team. Each team has its own subscription and billing, so each client can be billed independently. You can be a member of multiple teams using a single Plausible login and switch between them from the menu in the top right of your account. See [Teams and roles](users-roles.md) for details.
+Yes. You can create a separate team for each client, add their sites to the respective team and invite the client to their own team. When you create the team, choose **Start with an empty team** if you're asked, so your own sites and subscription stay where they are ([how to create a team](users-roles.md#creating-a-new-team)). Each team has its own subscription and billing, so each client can be billed independently. You can be a member of multiple teams using a single Plausible login and switch between them from the menu in the top right of your account. See [Teams and roles](users-roles.md) for details.
 
 ## Where can I find vendor details and purchasing documents?
 

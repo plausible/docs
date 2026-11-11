@@ -258,6 +258,10 @@ Some browser privacy settings, extensions or ad blockers silently block the clic
 
 This opens the same page the link normally would, so the rest of the steps are identical.
 
+### Connect button stays greyed out
+
+If the plugin's settings page looks unstyled and the **Connect** button stays greyed out after you paste your plugin token, your browser isn't loading the plugin's settings scripts. An ad blocker or privacy extension is the usual cause. Open your WordPress admin in a private window with extensions turned off, or in another browser, then paste the token and click **Connect**.
+
 ### WP Rocket or another caching plugin is interfering
 
 Performance and caching plugins can minify, combine or delay the Plausible script in ways that break tracking. If you see errors in the browser console related to the Plausible script, add the script URL to the exclusion list in your caching plugin's settings. The plugin includes fixes for the most common conflicts, so use it rather than adding the snippet by hand as well.

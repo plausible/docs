@@ -60,7 +60,7 @@ Plausible Analytics records the URL path of each page view as the visitors are b
 
 * In some cases, you might want to provide Plausible with a custom URL to use instead of the actual URL of a page. This is especially helpful to redact and aggregate multiple pages whose URLs contain user identifiers. This is helpful both from the privacy and analytics perspective. Here's [how you can aggregate page URLs](custom-locations.md).
 
-* Do you see identical page paths with and without a trailing slash (`/some_article` and `/some_article/`) in the **Top Pages** tab? This points to a duplicate content issue on the site and can be solved [with a 301 redirect](https://ahrefs.com/blog/trailing-slash/).
+* Do you see identical page paths with and without a trailing slash (`/some_article` and `/some_article/`) in the **Top Pages** tab? This points to a duplicate content issue on the site and can be solved [with a 301 redirect](https://ahrefs.com/blog/trailing-slash/). If you can't add redirects, you can [merge them in your snippet](custom-locations.md#merging-pages-with-and-without-a-trailing-slash).
 
 * If your website is a single-page application with `pushState` routing, Plausible Analytics will track page views automatically with no extra work. If you're using a frontend framework that uses the URL hash for routing, you can enable [hash-based routing in our script](hash-based-routing.md).
 

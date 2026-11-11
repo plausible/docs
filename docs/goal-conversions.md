@@ -75,6 +75,17 @@ Plausible supports the following goal types:
   </tbody>
 </table>
 
+## Test a goal without counting your test conversions
+
+A goal doesn't store data of its own. It shows the events Plausible has already recorded, so removing a goal and adding it again brings back every conversion it showed before. Conversions can't be deleted for a single goal. [Resetting your stats](reset-site-data.md) clears the data for the whole site.
+
+To keep your test clicks out of a new custom event goal:
+
+* **Test with a temporary event name.** Send the event as `Signup test` while you check that it fires. Once it works, change your code to the real name, such as `Signup`, and [edit the goal](custom-event-goals.md#edit-a-custom-event-goal) to use it. Your test conversions stay with the old name and don't show in the goal.
+* **Test on a separate site.** Add your staging site to Plausible as its own site and run your tests there before you set up the goal on your live site.
+
+Pageview goals work without code changes, so there's usually nothing to test. [Exclude your own visits](excluding.md) if you don't want to count yourself when you check the page.
+
 <CtaBox
   headline="Track goals and conversions without cookies or personal data"
   link="https://plausible.io/register"
