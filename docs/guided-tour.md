@@ -17,7 +17,7 @@ Here’s what you can discover on your Plausible dashboard. You can also explore
 
 See the number of unique visitors, total visits (sessions), total page views, views per visit, the bounce rate (the percentage of sessions that had one page view only) and the visit duration. You can **click on a particular metric to display it in the top graph**.
 
-You can **choose a different time range** that you want to analyze in the date picker in the top right. The dotted line towards the right-end of a graph indicates the current, incomplete day/week/month. The current day is included in the time ranges "Month to date", "Year to date", and "All time." All other time ranges don't include the current day.
+You can **choose a different time range** that you want to analyze in the date picker in the top right. The dashed line at the right end of the graph leads to the current hour, day, week or month, which is still in progress, so its number keeps growing. Each point sits at the start of its interval: on an hourly graph, the point at 14:00 shows the visits from 14:00 to 14:59. Today, Realtime, Last 24 Hours, Month to Date, Year to Date and All time include today. The other time ranges end with yesterday or with the last full month.
 
 The time format (24-hour or 12-hour am/pm) is displayed based on your browser's language setting.
 
