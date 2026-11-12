@@ -116,10 +116,13 @@ import CtaBox from '@site/src/components/CtaBox';
 <li><a href="/docs/user-journeys">User journeys</a>: explore the paths visitors take on your site</li>
 <li><a href="/docs/ecommerce-revenue-tracking">Ecommerce revenue tracking</a>: attribute revenue to traffic sources</li>
 <li><a href="/docs/outbound-link-click-tracking">Outbound link clicks</a>: track clicks to external sites</li>
+<li><a href="/docs/email-phone-link-tracking">Email and phone link clicks</a>: count clicks on mailto: and tel: links</li>
 <li><a href="/docs/file-downloads-tracking">File downloads</a>: see which files get downloaded</li>
 <li><a href="/docs/form-submissions-tracking">Form submissions</a>: track form completions without extra setup</li>
+<li><a href="/docs/content-impressions-tracking">Content impressions and clicks</a>: see how many visitors saw and clicked a banner or call to action</li>
 <li><a href="/docs/error-pages-tracking-404">404 error pages</a>: catch broken links and missing pages</li>
 <li><a href="/docs/custom-props/introduction">Custom properties</a>: attach metadata to events and pageviews</li>
+<li><a href="/docs/site-search">Site search</a>: see what visitors search for on your site</li>
 <li><a href="/docs/ab-testing">A/B tests</a>: compare how each variant converts</li>
 </ul>
 </div>

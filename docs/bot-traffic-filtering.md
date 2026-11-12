@@ -65,10 +65,10 @@ Once you have identified the source, use [Shields](excluding.md) to stop it bein
 
 - **By country**: if the traffic is concentrated in one country you don't operate in, block that country
 - **By hostname**: if the spike was recorded on hostnames that aren't yours, add your own hostnames to the [allow list](excluding.md#exclude-visits-by-hostname) so only visits on your site are recorded
-- **By IP address**: if the traffic is coming from a known IP or range, block that IP
+- **By IP address**: if the traffic comes from a few known IP addresses, block them. Shields blocks full addresses one at a time, not ranges
 - **By page**: if only specific pages are being hit, use [page exclusions](top-pages.md#block-traffic-from-specific-pages-or-sections)
 
-Shields rules take effect immediately and apply going forward. They do not remove historical data already recorded.
+Shields rules take effect within a few minutes and apply going forward. They do not remove historical data already recorded.
 
 To leave visits on other hostnames out of your reports for past dates, [filter your dashboard by hostname](filters-segments.md#filter-by-subdomain-or-hostname).
 
