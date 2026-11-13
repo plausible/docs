@@ -77,7 +77,7 @@ Plausible supports the following goal types:
 
 ## Test a goal without counting your test conversions
 
-A goal doesn't store data of its own. It shows the events Plausible has already recorded, so removing a goal and adding it again brings back every conversion it showed before. Conversions can't be deleted for a single goal. [Resetting your stats](reset-site-data.md) clears the data for the whole site.
+A goal doesn't store data of its own. It shows the events Plausible has already recorded, so removing a goal and adding it again brings back every conversion it showed before. Conversions can't be deleted for a single goal. [Resetting your stats](reset-site-data.md) clears the stats for the whole site from your dashboard.
 
 To keep your test clicks out of a new custom event goal:
 
