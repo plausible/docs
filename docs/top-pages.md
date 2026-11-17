@@ -48,7 +48,7 @@ If you prefer to permanently block traffic from specific pages or sections from 
 
 Once added to the block list, we will start blocking traffic from that specific page within a few minutes. You can block up to 30 different pages. 
 
-You can see the list of all the pages that you're blocking the traffic from. Click on the "Remove" button next to that page to remove it from the blocklist.
+You can see the list of all the pages that you're blocking the traffic from. Click the trash icon next to that page to remove it from the blocklist.
 
 More details [here](https://plausible.io/docs/excluding#exclude-visits-by-page-or-section).
 

@@ -76,7 +76,7 @@ Here's how you can import your historical Google Analytics stats into your Plaus
 
 4. On the next screen, you can click on the **Confirm import** button to start the data import process. The import should take no more than a few minutes for most sites but if you have a site with a lot of historical data, it may take up to a couple of hours to complete due to Google's API limits. You'll receive an email when the import has been completed. 
 
-5. Once you have received the email, the imported data will be visible in your Plausible dashboard alongside the native data. You can turn this off by opening the options menu (the **⋮** icon in the top right of the chart) and toggling off **Include imported data**.
+5. Once you have received the email, the imported data will be visible in your Plausible dashboard alongside the native data. You can turn this off by opening the options menu (the **⋮** icon in the top bar, to the right of the date picker) and toggling off **Include imported data**.
 
 ## Import multiple Google Analytics properties into the same Plausible dashboard
 
@@ -214,7 +214,7 @@ Check the selected GA4 property, the date range and the import status in your Pl
 
 **Imported data and native data show a gap or overlap**
 
-The import tool sets the end date of the import to one day before your first Plausible native data point, so it can't fill a gap that comes after that date (months when the script wasn't installed between two periods of native stats, for example; see [CSV imports](csv-import.md#how-much-data-is-imported) for a way around it). If you see a gap, check that Plausible was correctly installed and recording data before you ran the import. If you see overlap, delete the import and re-run it after confirming your Plausible installation date.
+The import tool ends the import on the date of your first Plausible native data point, so it can't fill a gap that comes after that date (months when the script wasn't installed between two periods of native stats, for example; see [CSV imports](csv-import.md#how-much-data-is-imported) for a way around it). If you see a gap, check that Plausible was correctly installed and recording data before you ran the import. If you see overlap, delete the import and re-run it after confirming your Plausible installation date.
 
 ## What's next?
 

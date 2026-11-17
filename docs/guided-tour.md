@@ -29,7 +29,7 @@ You can also **add annotations** to the chart to mark important events like a de
 
 ## Set a different chart interval
 
-You can **set a different unit of time the stats on the chart are grouped by** in the options menu (the **⋮** icon in the top right of the chart). Open the menu and choose an option under **Graph interval**. The available interval options depend on the date range you've selected. For example, if you select "Today", you can display the stats by minute or by hour.
+You can **set a different unit of time the stats on the chart are grouped by** in the options menu (the **⋮** icon in the top bar, to the right of the date picker). Open the menu and choose an option under **Graph interval**. The available interval options depend on the date range you've selected. For example, if you select "Today", you can display the stats by minute or by hour.
 
 <div class="browser screenshot-padded">
     <img alt="Plausible graph interval menu showing minute and hour groupings for a single day" src={useBaseUrl('img/plausible-dashboard-graph-interval-menu.webp')} width="1104" height="545" loading="lazy" decoding="async" />

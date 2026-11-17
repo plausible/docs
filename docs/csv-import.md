@@ -49,7 +49,7 @@ To [transfer site ownership](transfer-ownership.md) to another account, or to [c
 
 4. Make sure to select all the CSV files that you've exported and click on the **Confirm import** button. If you don't select all the exported files, some data may be missing from your import.
 
-5. Imported data will be displayed alongside your native Plausible data in the same Plausible dashboard. You can turn this off by opening the options menu (the **⋮** icon in the top right of the chart) and toggling off **Include imported data**.
+5. Imported data will be displayed alongside your native Plausible data in the same Plausible dashboard. You can turn this off by opening the options menu (the **⋮** icon in the top bar, to the right of the date picker) and toggling off **Include imported data**.
 
 ## Multiple imports into the same Plausible dashboard
 
@@ -61,7 +61,7 @@ In the **Imports & Exports** section, you can see the overview of all your exist
 
 Data is imported in aggregate for each date, from your first import visitor until your first Plausible Analytics visitor. This is to avoid double-counting visits. We also have measures in place to detect and avoid double-counting visitors if you import multiple properties into the same Plausible dashboard.
 
-This means an import can't fill a gap that comes after your first Plausible data, such as months when the script wasn't installed between two periods of native stats. The import page then shows **Dates Conflict**, even for dates where your dashboard shows no visits. To fill such a gap, you can export your stats, [reset your site's stats](reset-site-data.md) and import everything again, the exported files and the data for the gap. Your native stats then become imported data, with the [differences](#how-does-imported-data-differ-from-native-data) described below.
+This means an import can't fill a gap that comes after your first Plausible data, such as months when the script wasn't installed between two periods of native stats. The import page then shows **Dates Conflict**, even for dates where your dashboard shows no visits. To fill such a gap, you can export your stats, [reset your site's stats](reset-site-data.md) and import everything again, the exported files and the data for the gap. This works when the data for the gap is in CSV files too. A Google Analytics import picks the longest stretch of dates that no other import covers, so it can't be aimed at just the gap. Your native stats then become imported data, with the [differences](#how-does-imported-data-differ-from-native-data) described below.
 
 ## How can I delete imported data?
 
@@ -85,7 +85,7 @@ There are several exceptions to this though, because some properties are aggrega
   * `Outbound Link: Click` and `File Download` goals with the `url` property
   * `404` goals with the `path` property
 
-By default, imported data is always included in the view, unless you choose to exclude it manually by opening the options menu (the **⋮** icon in the top right of the chart) and toggling off **Include imported data**.
+By default, imported data is always included in the view, unless you choose to exclude it manually by opening the options menu (the **⋮** icon in the top bar, to the right of the date picker) and toggling off **Include imported data**.
 
 <div class="browser screenshot-padded" style={{maxWidth: '265px'}}>
 <img alt="Plausible dashboard options with Include imported data switched on" src={useBaseUrl('img/plausible-include-imported-data.webp')} width="245" height="253" loading="lazy" decoding="async" />

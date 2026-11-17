@@ -30,7 +30,7 @@ We have an official Plausible connector for [Data Studio](looker-studio.md).
 
 ## Community integrations
 
-These integrations are built and maintained by third parties, not by Plausible. We do not provide support for them.
+These integrations are built and maintained by third parties, not by Plausible. We do not provide support for them. Apps and tools that connect to plausible.io read the stats from your Plausible account, so they need an active Plausible subscription behind them. Buying an app doesn't replace your subscription.
 
 ### Airbyte connector
 
