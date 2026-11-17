@@ -37,7 +37,7 @@ If you prefer to permanently block traffic from specific countries from being re
 
 Once added to the block list, we will start blocking traffic from that specific country within a few minutes. You can block up to 30 different countries. More details [here](https://plausible.io/docs/excluding#exclude-visits-by-country).
 
-You can see the list of all the countries that you're blocking the traffic from. Click on the "Remove" button next to that country to remove it from the blocklist.
+You can see the list of all the countries that you're blocking the traffic from. Click the trash icon next to that country to remove it from the blocklist.
 
 ## How location reporting works
 

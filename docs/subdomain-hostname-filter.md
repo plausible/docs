@@ -97,7 +97,7 @@ You can group your hostnames when adding them to the allow list:
    
 Once added to the allow list, we will start blocking traffic from all the **other** hostnames within a few minutes. You can add up to 30 different hostnames. 
 
-You can see the list of all the hostnames that you're allowing the traffic from at any time. Click on the "Remove" button next to a hostname to remove it from the allow list.
+You can see the list of all the hostnames that you're allowing the traffic from at any time. Click the trash icon next to a hostname to remove it from the allow list.
 
 ## Tracking multiple country or language domains
 
