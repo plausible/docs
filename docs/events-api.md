@@ -67,6 +67,8 @@ If the header contains a comma-separated list (as it should if the request is se
 
 If the request also carries a `CF-Connecting-IP` header, Plausible uses that address instead of `X-Forwarded-For`. When your proxy runs on Cloudflare (a Worker, for example), Cloudflare can fill this header with the proxy's own outgoing address, so set `CF-Connecting-IP` to the visitor's IP address as well.
 
+If you relay browser requests through a proxy, forward the browser's other headers too. See [what your proxy must forward](proxy/introduction.md#what-your-proxy-must-forward).
+
 <hr / >
 
 **Content-Type** <Required />
