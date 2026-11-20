@@ -2,44 +2,80 @@ name: Docusaurus site CI
 
 on:
   push:
-    branches: [ master, upgrade ]
+    branches: [ master ]
   workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
 
 jobs:
   build:
+    name: Build
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       with:
         fetch-depth: 0
+        persist-credentials: false
 
-    - uses: actions/setup-node@v3
+    - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
       with:
-        node-version: '21'
+        node-version-file: .tool-versions
         cache: 'npm'
-    - run: npm install
+    - run: npm ci
     - run: npm run build
 
+    - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+      with:
+        name: site
+        path: build/
+        retention-days: 1
+        if-no-files-found: error
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment: production
+    permissions: {}
+    steps:
+    - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+      with:
+        name: site
+        path: build/
+
     - name: Tailscale
-      uses: tailscale/github-action@v2
+      uses: tailscale/github-action@064b10558093f38325e838ddea35486bdc6b1d5c # v4.4.0
       with:
         oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
         oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
-        version: '1.50.1'
         tags: tag:static-sites
 
     - name: Deploy to Static Sites Host
-      uses: burnett01/rsync-deployments@6.0.0
-      with:
-        switches: -avzr --delete
-        path: build/
-        remote_path: /var/www/docs/
-        remote_host: ${{ secrets.DEPLOY_STATIC_SITE_HOST }}
-        remote_user: ${{ secrets.DEPLOY_STATIC_SITE_USER }}
-        remote_key: ${{ secrets.DEPLOY_STATIC_SITE_KEY }}
+      env:
+        DEPLOY_HOST: ${{ secrets.DEPLOY_STATIC_SITE_HOST }}
+        DEPLOY_USER: ${{ secrets.DEPLOY_STATIC_SITE_USER }}
+        DEPLOY_KNOWN_HOSTS: ${{ vars.DEPLOY_STATIC_SITE_KNOWN_HOSTS }}
+      run: |
+        test -n "$DEPLOY_KNOWN_HOSTS" || { echo "::error::DEPLOY_STATIC_SITE_KNOWN_HOSTS is not set"; exit 1; }
+        install -m 700 -d ~/.ssh
+        printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > ~/.ssh/known_hosts
+        rsync -avzr --delete \
+          -e "ssh -o BatchMode=yes -o HostKeyAlias=static-sites -o StrictHostKeyChecking=yes" \
+          build/ "$DEPLOY_USER@$DEPLOY_HOST:/var/www/docs/"
 
     - name: Purge BunnyCDN cache
-      uses: eayllon/bunnycdn-purge-cache@253ab627f8e743b4d7f96e7020e8bc04377ac49d
-      with:
-        accessKey: ${{ secrets.BUNNY_API_KEY }}
-        zoneID: ${{ secrets.BUNNY_ZONE_ID }}
+      env:
+        BUNNY_API_KEY: ${{ secrets.BUNNY_API_KEY }}
+        BUNNY_ZONE_ID: ${{ secrets.BUNNY_ZONE_ID }}
+      run: |
+        printf 'AccessKey: %s\n' "$BUNNY_API_KEY" |
+          curl -sS --fail-with-body --proto '=https' --max-time 60 -X POST -H @- \
+            "https://api.bunny.net/pullzone/$BUNNY_ZONE_ID/purgeCache"
