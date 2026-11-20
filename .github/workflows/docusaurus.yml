@@ -76,4 +76,6 @@ jobs:
         BUNNY_API_KEY: ${{ secrets.BUNNY_API_KEY }}
         BUNNY_ZONE_ID: ${{ secrets.BUNNY_ZONE_ID }}
       run: |
-        curl -sS --fail-with-body -X POST -H "AccessKey: $BUNNY_API_KEY" "https://api.bunny.net/pullzone/$BUNNY_ZONE_ID/purgeCache"
+        printf 'AccessKey: %s\n' "$BUNNY_API_KEY" |
+          curl -sS --fail-with-body --proto '=https' --max-time 60 -X POST -H @- \
+            "https://api.bunny.net/pullzone/$BUNNY_ZONE_ID/purgeCache"
