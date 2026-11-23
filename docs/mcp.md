@@ -10,11 +10,7 @@ Plausible's official MCP server lets a compatible AI assistant query your analyt
 
 You need a Plausible account that is a member of the team whose sites you want to query, and an AI assistant that supports connecting to Plausible's remote MCP server through OAuth. Any team role works: owner, admin, editor, billing or viewer. Guest access to a single site is not enough.
 
-The integration also works during the free trial. Your assistant may have its own subscription or administrator requirements for connections.
-
 Looking for visits that AI assistants send to your website? That is a different feature. See the **AI Assistants** channel in your [Sources report](top-referrers.md#channels).
-
-{/* LAUNCH CHECK: Verify each assistant's setup and a successful stats query end to end before release; provider documentation alone does not confirm compatibility. */}
 
 ## Connect to Plausible
 
@@ -81,7 +77,7 @@ Sign in to Plausible when Cursor prompts you. See [Cursor's MCP documentation](h
 - “Which sources drove the most signup conversions last month?”
 - “Summarize last week's traffic and highlight the biggest changes.”
 
-Conversion questions require the relevant [goals](goal-conversions.md) to be configured. Questions about [custom properties](custom-props/introduction.md) and [revenue](ecommerce-revenue-tracking.md) need a plan that includes those features, the same as in your dashboard. Specify the site, date range and metric when you need an exact comparison. AI-generated explanations can make mistakes; check important results against the dashboard using the same dates and filters.
+Conversion questions require the relevant [goals](goal-conversions.md) to be configured. Questions about [custom properties](custom-props/introduction.md) and [revenue](ecommerce-revenue-tracking.md) need a plan that includes those features, the same as in your dashboard. Specify the site, date range and metric when you need an exact comparison.
 
 ## Request limits
 
@@ -94,7 +90,7 @@ This is a shared, team-wide budget for API requests and MCP tool calls. All API 
 
 One question can require several MCP tool calls, so the allowance counts requests rather than questions. Anything else that uses the team's API keys draws on the same allowance, including [Data Studio](looker-studio.md) reports. A report set to refresh in real time can use up the requests your assistant needs.
 
-When the allowance is used up, requests are temporarily limited until capacity becomes available again. A separate short-term limit also prevents too many requests arriving at once. For higher hourly limits, [contact us](https://plausible.io/contact).
+If your team needs more requests, upgrading from Starter or Growth to Business doubles the hourly limit from 300 to 600. For more than 600 requests per hour, [contact us about an Enterprise plan](https://plausible.io/contact).
 
 ## What the connection can access
 
@@ -140,7 +136,7 @@ Custom properties and revenue metrics follow the team's plan. If the plan does n
 
 ### The assistant says there are too many requests
 
-This can mean the team has used its hourly [request allowance](#request-limits), or too many requests arrived in a short period. Pause and try again. If the hourly allowance is exhausted, wait for capacity to become available. API keys and Data Studio reports share the same team allowance, so their activity can also affect your assistant.
+If several requests reach Plausible at once, wait a moment and try again. This can happen even when your team has requests left for the hour. If your team has used its full [hourly allowance](#request-limits), you can try again once requests are available again. Queries from API keys and Data Studio reports count toward the same limit.
 
 ### The results differ from the dashboard
 
