@@ -68,7 +68,7 @@ curl \
 --data '{ "site_id": "dummy.site", "metrics": ["visitors"], "date_range": "7d" }'
 ```
 
-The Stats API has a rate limit of 600 requests per hour by default. If you have special needs for more requests, [please contact us](https://plausible.io/contact) to request more capacity.
+Business plans include a shared, team-wide limit of 600 requests per hour for API requests and MCP tool calls. All API keys and MCP connections for the team use the same allowance. If you have special needs for more requests, [please contact us](https://plausible.io/contact) to request more capacity.
 
 ## Request structure
 

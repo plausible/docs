@@ -16,7 +16,7 @@ The API accepts GET requests with query parameters and returns standard HTTP res
 
 Each request must be authenticated with an API key using the Bearer Token method. API keys are scoped to the team selected when they are created. See [Stats API authentication](stats-api.md#authentication) for setup instructions, role restrictions and site access rules.
 
-API keys have a rate limit of 600 requests per hour by default. If you have special needs for more requests, please contact us to request more capacity.
+Business plans include 600 requests per hour, shared across all API keys and MCP connections for the team. If you have special needs for more requests, please contact us to request more capacity.
 
 The easiest way to explore the API is by using our Postman collection. Just define your `TOKEN` and `SITE_ID` variables, and you'll have an executable API reference ready to go.
 

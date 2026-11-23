@@ -116,6 +116,7 @@ module.exports = {
     ],
     'APIs & Data Access': [
       'data-access',
+      'mcp',
       'white-label',
       'stats-api',
       'stats-api-playground',

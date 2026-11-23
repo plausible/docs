@@ -21,6 +21,10 @@ To open your account settings, click your account name in the top-right menu and
 - [Login management](login-management.md): view and remotely end active sessions
 - [Reset password](reset-password.md): change your account password
 
+**Connected apps**
+
+- [AI integration (MCP)](mcp.md): connect an assistant to your stats and revoke its access from Connected apps
+
 **Guest sites**
 
 Shown when you've been invited to sites owned by other teams.
