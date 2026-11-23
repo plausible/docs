@@ -49,12 +49,12 @@ To pin a site, click on the menu icon on the right-hand side of the domain name 
 
 ## Sorting sites
 
-You can sort your sites too. Available sorting options include:
+To change the order of your sites, use the sort menu to the right of the search box. It shows the order you're using, which is **Most visitors** by default. Click it to choose another:
 
-- **Visitors (last 24 hours)** – sorts sites by the number of visitors in the past day
-- **Domain name** – sorts alphabetically (ascending or descending)
+- **Most visitors** and **Fewest visitors** sort your sites by the number of visitors in the last 24 hours
+- **Name A-Z** and **Name Z-A** sort your sites alphabetically by domain name
 
-Pinned sites remain fixed at the top regardless of the selected sorting option.
+Your choice is saved, so the Sites page keeps the same order the next time you log in. Pinned sites stay at the top whichever order you choose.
 
 ## Access your pinned sites from the site switcher list
 
