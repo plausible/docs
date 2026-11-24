@@ -13,7 +13,7 @@ Go to the **Subscription** section and click the **Change plan** button.
     <img alt="Change Plausible Plan" src={useBaseUrl('img/v2/account-settings-change-plan.webp')} />
 </div>
 
-Select your new plan, tier and billing frequency (monthly or yearly), then click **Preview changes**.
+Select your new plan, tier and billing frequency (monthly or yearly), then click the button under that plan, such as **Upgrade to Business** or **Change billing interval**.
 
 <div class="browser">
     <img alt="Preview plan changes" src={useBaseUrl('img/v2/preview-plan-changes.webp')} />
@@ -21,8 +21,8 @@ Select your new plan, tier and billing frequency (monthly or yearly), then click
 
 You'll see a summary of the change:
 
-- **Immediate charge** - a pro-rated amount reflecting what you've already paid and the time remaining on your current cycle. A negative amount means you have a credit balance that will automatically reduce your upcoming payments until it's used up.
-- **Next renewal** - the date and amount of your next regular payment.
+- **Due now** - a pro-rated amount reflecting what you've already paid and the time remaining on your current cycle. A negative amount means you have a credit balance that will automatically reduce your upcoming payments until it's used up.
+- **Next payment** - the date and amount of your next regular payment.
 
 Click **Confirm plan change** to apply.
 
