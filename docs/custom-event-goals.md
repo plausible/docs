@@ -195,7 +195,7 @@ That's it. You can now check out your goal conversions on the dashboard.
 
 ## Edit a Custom Event Goal
 
-To edit a custom event goal, start by locating the custom event goal you want to update in the Goals list. Click on the "Edit goal" button next to it, which will bring up the goal editing form.
+To edit a custom event goal, start by locating the custom event goal you want to update in the Goals list. Click the pencil icon next to it, which will bring up the goal editing form.
 
 <div class="browser">
 <img alt="Edit goal button next to a custom event goal in the Plausible site settings Goals list" src={useBaseUrl('img/edit-goal-button.png')} />

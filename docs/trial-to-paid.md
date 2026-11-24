@@ -5,7 +5,7 @@ description: "Upgrade your Plausible free trial to a paid subscription. Choose y
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Log in to your Plausible account. In the top right, click the **X trial days left** button, then click **Upgrade** in the **Subscription** section.
+Log in to your Plausible account. In the top right, next to **X trial days left**, click **Choose a plan**. This opens the **Subscription** section of your settings, where you click **Choose a plan** again.
 
 Subscribe before your dashboards and stats are deleted to keep your historical stats. Nothing is reset when you upgrade. See [what happens when your trial ends](trial.md#what-happens-when-the-trial-ends).
 
@@ -34,7 +34,7 @@ Not sure which tier or plan to pick? See [Choose the right subscription](subscri
 
 ## Pay and subscribe
 
-Billing is handled by [Paddle](https://paddle.com), our payment processor. Click **Pay securely via Paddle**, choose your location, then pick a payment method. You can pay by credit/debit card, PayPal, Apple Pay or Google Pay.
+Billing is handled by [Paddle](https://paddle.com), our payment processor. In Paddle's checkout, choose your location, then pick a payment method. You can pay by credit/debit card, PayPal, Apple Pay or Google Pay.
 
 <div class="browser">
     <img alt="Choose your location" src={useBaseUrl('img/v2/location.webp')} />

@@ -101,6 +101,10 @@ If you missed this step, open your most recent Paddle invoice and click **Add ad
 
 Paddle checks EU VAT numbers against the EU's [VIES database](https://ec.europa.eu/taxation_customs/vies/). If your number shows as invalid, check it there first: a number that isn't registered in VIES for trade between EU countries can't be accepted, even when it's valid in your own country.
 
+## How do I get a US sales tax exemption?
+
+Paddle, our reseller and merchant of record, handles sales tax. If your organization is exempt from US sales tax, email your state exemption certificate to Paddle at [assist@paddle.com](mailto:assist@paddle.com). Paddle reviews it and, once it accepts the certificate, refunds the sales tax charged and stops charging it on future payments. If you send the certificate to us instead, we forward it to Paddle.
+
 ## How do I change my VAT number?
 
 Paddle does not allow editing the VAT number on an existing subscription. To update it, cancel your subscription in the **Subscription** section of your settings a day or two before your next renewal, then subscribe again right away from the same Plausible account with the correct VAT details. All your Plausible data, sites and settings stay unchanged during this process.

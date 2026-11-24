@@ -95,8 +95,8 @@ With **View stats in WordPress** enabled, the WordPress toolbar includes a separ
 
 The full settings screen has a few options pre-enabled. Keep them as-is or turn off anything you don't need.
 
-<div class="browser">
-  <img alt="Plausible Analytics WordPress plugin settings" src={useBaseUrl('img/plausible-analytics-wordpress-plugin-settings.png')} />
+<div class="browser screenshot-padded">
+<img alt="Plausible Analytics WordPress plugin settings with the connection to your Plausible account and the Enhanced measurements toggles" src={useBaseUrl('img/plausible-analytics-wordpress-plugin-settings.webp')} width="800" height="800" loading="lazy" decoding="async" />
 </div>
 
 ## Enhanced measurements

@@ -15,7 +15,7 @@ Choose an export method based on what you need:
 | [Scheduled raw event data exports](#scheduled-raw-event-data-exports) | Receiving daily event-level data in your own storage for warehousing or custom analysis. |
 
 :::note Exporting after your trial or subscription ends
-If you no longer have an active trial or subscription, you can still export your stats from **Site Settings → Imports & Exports** before your dashboards and stats are deleted. Dashboard exports and the Stats API are unavailable without an active trial or subscription.
+If you no longer have an active trial or subscription, you can still export your stats from **Site Settings → Imports & exports** before your dashboards and stats are deleted. Dashboard exports and the Stats API are unavailable without an active trial or subscription.
 
 Open your [Sites page](https://plausible.io/sites), click the **Settings** icon next to your website and follow the [Export all stats to date](#export-all-stats-to-date) instructions below. Request and download your export before deletion.
 :::
@@ -50,7 +50,7 @@ You can open these CSV files in Excel or other data analysis tools.
 Here's how to export all the native data collected for a particular Plausible dashboard to date. This export method is slower, cannot be segmented and is best suited for data portability purposes. It also doesn't include any data that you imported from external sources.
 
 1. Open your [Sites page](https://plausible.io/sites) and click the **Settings** icon next to the website you'd like to export. This opens its [site settings](website-settings.md), even if its dashboard is locked
-2. In the **Imports & Exports** section, find the **Export Data** panel and click on the **Export to CSV** button
+2. In the **Imports & exports** section, find the **Export data** panel and click **Prepare download**
 3. Your export will be queued and we'll email you when it's ready for download. The email says how long the download link stays valid
 
 ### What the export contains

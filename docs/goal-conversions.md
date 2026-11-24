@@ -75,6 +75,12 @@ Plausible supports the following goal types:
   </tbody>
 </table>
 
+## Edit a goal
+
+To change a goal, go to the **Goals** section of your [site settings](website-settings.md) and click the pencil icon next to the goal. The edit form is the same as the one for adding a goal: you can change the page path or event name, the display name and any custom properties, then click **Update goal**. See the steps for [pageview goals](pageview-goals.md#edit-a-pageview-goal) and [custom event goals](custom-event-goals.md#edit-a-custom-event-goal).
+
+If a goal shows no conversions because its page path or event name doesn't match what your site sends, edit it to match. Conversions recorded before the change then show in the goal too.
+
 ## Test a goal without counting your test conversions
 
 A goal doesn't store data of its own. It shows the events Plausible has already recorded, so removing a goal and adding it again brings back every conversion it showed before. Conversions can't be deleted for a single goal. [Resetting your stats](reset-site-data.md) clears the stats for the whole site from your dashboard.
