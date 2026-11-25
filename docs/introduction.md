@@ -128,9 +128,10 @@ import CtaBox from '@site/src/components/CtaBox';
 </div>
 
 <div class="docs-card">
-<h3>API</h3>
+<h3>APIs and data access</h3>
 <p>Query your data, send events and manage sites programmatically.</p>
 <ul>
+<li><a href="/docs/mcp">AI integration (MCP)</a>: connect your assistant and ask questions about your stats</li>
 <li><a href="/docs/data-access">Accessing your data</a>: choose the right method for your use case</li>
 <li><a href="/docs/white-label">White-label integration guide</a>: embed Plausible into your own product</li>
 <li><a href="/docs/stats-api">Stats API</a>: query your analytics data programmatically</li>

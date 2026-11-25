@@ -47,6 +47,10 @@ If you'd like to serve the script as a first-party connection from your domain n
 
 ## Reports, notifications and sharing
 
+### Explore your stats with AI
+
+Ask your AI assistant questions about traffic, top pages and goal conversions with our [AI integration (MCP)](mcp.md).
+
 ### Enable email and Slack reports and notifications for traffic spikes
 
 You can decide to enable weekly (every Monday) and/or monthly (every 1st day of the month) reports to be sent directly through email. [See instructions here](email-reports.md).

@@ -92,6 +92,7 @@ module.exports = {
             { label: 'WordPress plugin', href: 'https://plausible.io/wordpress-analytics-plugin' },
             { label: 'Google Tag Manager', href: 'https://plausible.io/gtm-template' },
             { label: 'Data Studio', href: 'https://plausible.io/looker-studio-connector' },
+            { label: 'AI integration (MCP)', href: 'https://plausible.io/mcp-server' },
             { label: 'NPM package', href: 'https://www.npmjs.com/package/@plausible-analytics/tracker' },
           ],
         },

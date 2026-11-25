@@ -10,6 +10,10 @@ If you're looking to access your Plausible stats outside of the plausible.io web
 
 These integrations are built and maintained by Plausible.
 
+### AI integration (MCP)
+
+Ask your AI assistant questions about your traffic, top pages and conversions with Plausible's official MCP server. [See the setup guide](mcp.md).
+
 ### Stats API
 
 The Plausible Stats API offers a way to retrieve your stats programmatically. [Learn more here](stats-api.md).
@@ -39,10 +43,6 @@ These integrations are built and maintained by third parties, not by Plausible. 
 ### Fivetran connector
 
 [Fivetran Plausible Connector](https://github.com/imgly/fivetran-plausible-connector): A Google Cloud Function based solution for ingesting Plausible data into Fivetran. This custom connector pulls hourly stats from the Plausible API and creates a `timeseries` table in any destination supported by Fivetran.
-
-### MCP server (Claude and other AI tools)
-
-[Plausible MCP](https://github.com/getsentry/plausible-mcp): An MCP server built by the Sentry team that lets you query your Plausible data through AI tools like Claude. Ask natural language questions about traffic, conversions, top pages and goal performance.
 
 ### GA Insights
 

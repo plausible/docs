@@ -1,7 +1,7 @@
 ---
 title: Accessing your Plausible data
 sidebar_label: Accessing your data
-description: "Choose the right way to access your Plausible data outside the dashboard: Stats API, Events API, Sites API, CSV export, Data Studio or data warehouse connectors."
+description: "Choose the right way to access your Plausible data outside the dashboard: Stats API, Events API, Sites API, CSV export, Data Studio, MCP server or data warehouse connectors."
 ---
 
 Plausible gives you several ways to access your stats outside the dashboard. The right option depends on whether you want to query data, send data, manage sites or export for offline use.
@@ -120,10 +120,12 @@ Raw event data exports are not self-serve and are not real-time. They are part o
 
 ## MCP server
 
-The [Plausible MCP server](https://github.com/getsentry/plausible-mcp), built by the Sentry team, lets you query your Plausible data through AI tools such as Claude. Ask natural language questions about traffic, top pages, conversions and goal performance without writing API queries. It requires a Stats API key to connect.
+Plausible's official [MCP server](mcp.md) lets you ask questions about your analytics through a compatible AI assistant. Connect through OAuth, select the team you want to use and start exploring your stats. You do not need an API key.
+
+It provides read-only access to your analytics and is included on all plans.
 
 **Use this when:**
-- You want to explore your analytics data conversationally through an AI tool
-- You need quick answers without building a dashboard or writing code
+- You want to explore traffic, top pages and goal conversions through a conversation
+- You want to compare periods or summarize your stats without writing API queries
 
-This is a community-built tool, not an official Plausible integration.
+[Connect your AI assistant](mcp.md)

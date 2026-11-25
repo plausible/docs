@@ -26,6 +26,8 @@ All plans start at the same pageview tiers. The difference is features and team 
 - **Business**: need funnels, user journeys, revenue tracking, custom properties, a [consolidated view](consolidated-views.md) of several sites, Stats API or Data Studio (build custom dashboards and blend Plausible data with other sources like ad spend or CRM data)
 - **Enterprise**: large scale, SSO, Sites API, managed proxy or raw data exports. [Contact us](https://plausible.io/contact) to discuss
 
+[AI integration (MCP)](mcp.md) is included on all plans. Starter and Growth include 300 requests per hour and Business includes 600. API requests and MCP tool calls share this team-wide allowance across all keys and connections. See [request limits](mcp.md#request-limits).
+
 Compare full features and pricing on [our website](https://plausible.io/#pricing) or in the **Subscription** section of your settings. Save 2 months by choosing yearly billing.
 
 All plans include a 30-day free trial, no credit card required. During the trial you have access to all Business plan features and limits, so you can explore the full product before choosing a plan.

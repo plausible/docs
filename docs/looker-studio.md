@@ -55,7 +55,7 @@ At this stage, you can check **Allow "Plausible Site(s)" to be modified in repor
 
 Check the **Data Refreshed in Real-time** box to bypass the connector's six-hour cache and fetch current data for report queries.
 
-If this box is not checked, the connector caches data for six hours. This makes reports quicker and limits the number of API requests. Stats API keys are limited to 600 requests per hour by default. If you need more capacity, please [contact us](https://plausible.io/contact).
+If this box is not checked, the connector caches data for six hours. This makes reports quicker and limits the number of API requests. Business plans include 600 requests per hour, shared across the team's API requests and MCP tool calls. The allowance is per team, not per API key. If you need more capacity, please [contact us](https://plausible.io/contact).
 
 Once these options are configured, you can click **Connect** and you will see a list of all available fields for data and metrics that you can pull from Plausible.
 
