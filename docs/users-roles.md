@@ -90,6 +90,8 @@ Owner, Admin, Editor and Billing team members can create their own API keys for 
 
 API keys are scoped to the team selected when they are created. They do not automatically include sites in other teams or sites where the key owner is only a guest. See [Stats API authentication](stats-api.md#authentication) for examples and the full access rules.
 
+Any Plausible team member can [connect an AI assistant](mcp.md), including Viewers. If you only have guest access to a site, ask the team owner to add you as a member.
+
 <div class="browser">
 <img alt="Change roles, delete team member" src={useBaseUrl('img/change-roles-remove-users.png')} />
 </div>

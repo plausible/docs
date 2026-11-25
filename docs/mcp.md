@@ -4,27 +4,24 @@ sidebar_label: "AI integration (MCP)"
 description: "Connect to Plausible's official read-only MCP server using OAuth, choose your team and ask questions about your stats. Included with every plan."
 ---
 
-Plausible's official MCP server lets a compatible AI assistant query your analytics. It is included on all plans, at no extra charge.
+You can connect your AI assistant (like Claude, ChatGPT, etc.) to Plausible and ask questions about your stats. We use MCP (Model Context Protocol), a standard that lets AI assistants connect to other apps. Our integration is included on all plans, at no extra charge.
 
 ## Before you connect
 
-You need a Plausible account that is a member of the team whose sites you want to query, and an AI assistant that supports connecting to Plausible's remote MCP server through OAuth. Any team role works: owner, admin, editor, billing or viewer. Guest access to a single site is not enough.
+You’ll need to be a member of the Plausible team whose stats you want to use. Any team role works. If you only have guest access to a site, ask the team owner to add you as a member.
+
+Your AI assistant needs to support custom MCP connections through OAuth. You don’t need a Plausible API key.
 
 Looking for visits that AI assistants send to your website? That is a different feature. See the **AI Assistants** channel in your [Sources report](top-referrers.md#channels).
 
 ## Connect to Plausible
 
+Jump to the setup steps for [Claude](#connect-in-claude), [ChatGPT](#connect-in-chatgpt), [Grok](#connect-in-grok) or [Cursor](#connect-in-cursor). For other assistants, follow these steps:
+
 1. Open your assistant's settings for adding an MCP server or external connection. The name and location of this setting depend on your assistant.
 2. Add the server URL: `https://plausible.io/mcp`.
 3. Follow the authorization flow to sign in to Plausible, select the team you want to use and approve access.
-4. Return to your assistant and make sure the connection is available in the conversation you want to use.
-5. Ask your first question and include a date range.
-
-Your assistant can look up the sites in the team you selected. If the team has several sites, name the one you mean. For example, replace example.com with your site:
-
-> Show the top 10 traffic sources for example.com over the last 30 days, ranked by visitors.
-
-You do not need to create or paste an API key.
+4. Return to your assistant and [try your first question](#try-your-first-question).
 
 ### Connect in Claude
 
@@ -37,6 +34,8 @@ Start the setup on the web or in Claude Desktop.
 
 The Free plan allows one custom connector. On Team and Enterprise plans, an owner needs to add the connector first, then members can connect their own accounts. See [Claude's connector guide](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp) for current availability and setup options.
 
+[Try your first question](#try-your-first-question).
+
 ### Connect in ChatGPT
 
 1. On the ChatGPT website, go to **Plugins**.
@@ -46,6 +45,8 @@ The Free plan allows one custom connector. On Team and Enterprise plans, an owne
 
 Availability depends on your ChatGPT plan and workspace permissions. On Business, admins and owners can create and publish custom connections. On Enterprise and Edu, admins can also authorize selected members to create and test connections; only admins and owners can publish them for the workspace. See [OpenAI's connection guide](https://help.openai.com/en/articles/12584461-connecting-custom-mcp-servers-in-chatgpt) for current requirements.
 
+[Try your first question](#try-your-first-question).
+
 ### Connect in Grok
 
 1. Go to [grok.com/connectors](https://grok.com/connectors).
@@ -53,6 +54,8 @@ Availability depends on your ChatGPT plan and workspace permissions. On Business
 3. Enter the server URL `https://plausible.io/mcp` and complete the sign-in.
 
 On Grok Business and Enterprise, an admin needs to provision the connector before members can use it. See [Grok's connector guide](https://docs.x.ai/grok/connectors) for details.
+
+[Try your first question](#try-your-first-question).
 
 ### Connect in Cursor
 
@@ -69,6 +72,14 @@ In Cursor, add the following server configuration to `~/.cursor/mcp.json` for ac
 ```
 
 Sign in to Plausible when Cursor prompts you. See [Cursor's MCP documentation](https://cursor.com/docs/mcp) for configuration options.
+
+[Try your first question](#try-your-first-question).
+
+## Try your first question
+
+Enable the Plausible connection in your chat if your assistant asks you to. Include a date range and name the site if your team has more than one. Try this prompt with your own domain in place of `example.com`:
+
+> Show the top 10 traffic sources for example.com over the last 30 days, ranked by visitors.
 
 ## Questions to try
 
@@ -140,7 +151,9 @@ If several requests reach Plausible at once, wait a moment and try again. This c
 
 ### The results differ from the dashboard
 
-Compare the site, date range, timezone, filters and metric. Visitors, visits and pageviews are different metrics. Ask the assistant to show the dates, filters and metrics it used.
+Visitors, visits and pageviews are different metrics. To see what your assistant used, try asking:
+
+> Show me the site, exact dates, time zone, filters and metric you used for this answer so I can compare it with my Plausible dashboard.
 
 ### My team's stats are locked
 
