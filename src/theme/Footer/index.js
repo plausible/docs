@@ -43,7 +43,7 @@ export default function Footer() {
   return (
     <>
       {!loggedIn && (
-        <div className={styles.ctaBanner}>
+        <div className={`${styles.ctaBanner} logged-out-only`}>
           <div className={styles.ctaInner}>
             <div className={styles.ctaText}>
               <h2 className={styles.ctaHeading}>Ready to ditch Google Analytics?</h2>

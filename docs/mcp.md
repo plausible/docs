@@ -4,7 +4,17 @@ sidebar_label: "AI integration (MCP)"
 description: "Connect to Plausible's official read-only MCP server using OAuth, choose your team and ask questions about your stats. Included with every plan."
 ---
 
+import CtaBox from '@site/src/components/CtaBox';
+
 You can connect your AI assistant (like Claude, ChatGPT, etc.) to Plausible and ask questions about your stats. We use MCP (Model Context Protocol), a standard that lets AI assistants connect to other apps. Our integration is included on all plans, at no extra charge.
+
+<CtaBox
+  headline="No Plausible account yet? Start a free trial and ask your AI assistant about your stats. No credit card required"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+  secondaryLink="https://plausible.io/mcp-server"
+  secondaryText="See what you can ask"
+/>
 
 ## Before you connect
 

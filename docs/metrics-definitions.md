@@ -3,9 +3,18 @@ title: Metrics definitions
 description: "Definitions for every metric in Plausible: unique visitors, sessions, pageviews, bounce rate, visit duration, conversion rate and more. All in one place."
 ---
 
+import CtaBox from '@site/src/components/CtaBox';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 These are the metrics you'll find across your Plausible dashboard. They're grouped by category to help you understand how they relate to each other.
+
+<CtaBox
+  headline="See these metrics on a real dashboard"
+  link="https://plausible.io/plausible.io"
+  linkText="View live demo"
+  secondaryLink="https://plausible.io/register"
+  secondaryText="Start free trial"
+/>
 
 ---
 

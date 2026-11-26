@@ -3,6 +3,7 @@ title: Export your website stats
 description: "Export your Plausible stats as CSV files directly from the dashboard. Filter by date range, audience segment or goal, including data imported from other tools."
 ---
 
+import CtaBox from '@site/src/components/CtaBox';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Choose an export method based on what you need:
@@ -13,6 +14,12 @@ Choose an export method based on what you need:
 | [Site settings export](#export-all-stats-to-date) | Saving all native Plausible stats for a site. Excludes imported data. |
 | [Stats API](#use-the-stats-api) | Querying aggregated stats programmatically for custom reports or integrations. |
 | [Scheduled raw event data exports](#scheduled-raw-event-data-exports) | Receiving daily event-level data in your own storage for warehousing or custom analysis. |
+
+<CtaBox
+  headline="Own your website stats and export them as CSV. Try Plausible free for 30 days, no credit card required"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+/>
 
 :::note Exporting after your trial or subscription ends
 If you no longer have an active trial or subscription, you can still export your stats from **Site Settings → Imports & exports** before your dashboards and stats are deleted. Dashboard exports and the Stats API are unavailable without an active trial or subscription.

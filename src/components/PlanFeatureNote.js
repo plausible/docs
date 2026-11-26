@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function PlanFeatureNote({ feature, plan, label }) {
+  // Logged-in users go straight to the plan picker in their account instead of the public pricing section.
+  const [loggedIn, setLoggedIn] = useState(false);
+  useEffect(() => {
+    setLoggedIn(document.cookie.includes('logged_in=true'));
+  }, []);
+
   const isBusiness = plan === 'business';
   const planLabel = isBusiness ? 'Business' : 'Enterprise';
   const article = isBusiness ? 'a' : 'an';
-  const link = isBusiness ? 'https://plausible.io/#pricing' : 'https://plausible.io/contact';
+  const pricingLink = loggedIn ? 'https://plausible.io/billing/choose-plan' : 'https://plausible.io/#pricing';
+  const link = isBusiness ? pricingLink : 'https://plausible.io/contact';
   const linkText = isBusiness ? 'Compare plans →' : 'Contact us →';
 
   return (

@@ -4,7 +4,17 @@ sidebar_label: Accessing your data
 description: "Choose the right way to access your Plausible data outside the dashboard: Stats API, Events API, Sites API, CSV export, Data Studio, MCP server or data warehouse connectors."
 ---
 
+import CtaBox from '@site/src/components/CtaBox';
+
 Plausible gives you several ways to access your stats outside the dashboard. The right option depends on whether you want to query data, send data, manage sites or export for offline use.
+
+<CtaBox
+  headline="Your stats are not locked inside the dashboard. Try Plausible free for 30 days, no credit card required"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+  secondaryLink="https://plausible.io/plausible.io"
+  secondaryText="View live demo"
+/>
 
 ## Quick reference
 

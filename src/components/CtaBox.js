@@ -9,7 +9,7 @@ export default function CtaBox({ headline, link, linkText, secondaryLink, second
   if (loggedIn) return null;
 
   return (
-    <div className="cta-box">
+    <div className="cta-box logged-out-only">
       <p>{headline}</p>
       <div className="cta-box-actions">
         <a href={link} className="cta-box-primary" style={{color: '#ffffff'}} data-cta-position="Inline" data-cta-platform={platform}>
