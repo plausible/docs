@@ -5,6 +5,7 @@ description: "Complete reference for the Plausible Stats API v2. Query historica
 toc_max_heading_level: 4
 ---
 
+import CtaBox from '@site/src/components/CtaBox';
 import { ApiV2Example, ExamplesTip } from '../src/js/apiv2-example.tsx';
 import { Required, Optional } from '../src/js/api-helpers.tsx';
 import { getExampleCode, EXAMPLE_RESPONSE_META } from '../src/js/examples.tsx';
@@ -19,6 +20,12 @@ Take a look at our [Events API Reference](events-api.md) if you want to record p
 :::
 
 <PlanFeatureNote feature="stats-api" plan="business" label="Stats API" />
+
+<CtaBox
+  headline="The Stats API is included in the 30-day free trial. No credit card required"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+/>
 
 ## Authentication
 

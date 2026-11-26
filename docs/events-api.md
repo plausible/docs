@@ -4,12 +4,19 @@ sidebar_label: Events API reference
 description: "Reference for the Plausible Events API. Send pageviews and custom events server-side or from mobile apps without the JavaScript snippet."
 ---
 
+import CtaBox from '@site/src/components/CtaBox';
 import {Required, Optional} from '../src/js/api-helpers.tsx';
 
 The Plausible Events API can be used to record pageviews and custom events. This is useful when tracking Android or iOS mobile apps, or for server side tracking.
 
 In most cases we recommend installing Plausible through our provided [script](/docs/plausible-script) or one of the many
 integration packages listed [here](/docs/integration-guides). However, if there's no easy way for you to integrate with Plausible, you can still do so by sending events directly to our API.
+
+<CtaBox
+  headline="Record pageviews and events from your server or mobile app. Try Plausible free for 30 days, no credit card required"
+  link="https://plausible.io/register"
+  linkText="Start free trial"
+/>
 
 ### Unique visitor tracking
 

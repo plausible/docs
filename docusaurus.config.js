@@ -9,6 +9,14 @@ module.exports = {
   scripts: [
     {src: '/docs/js/tracking.js', defer: true}
   ],
+  // Hide logged-out CTAs before first paint so logged-in visitors never see them flash
+  headTags: [
+    {
+      tagName: 'script',
+      attributes: {},
+      innerHTML: "if (document.cookie.includes('logged_in=true')) document.documentElement.classList.add('logged-in')",
+    },
+  ],
   plugins: ['@docsearch/docusaurus-adapter'],
   themeConfig: {
     docs: {

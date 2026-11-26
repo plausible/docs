@@ -681,6 +681,11 @@ html[data-theme='dark'] {
   grid-column: 1 / -1;
 }
 
+/* Set in <head> before first paint, see headTags in docusaurus.config.js */
+.logged-in .logged-out-only {
+  display: none !important;
+}
+
 /* Inline CTA box */
 .cta-box {
   margin: 1.5rem 0;

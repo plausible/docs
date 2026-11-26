@@ -24,6 +24,7 @@ if (!window.plausibleDocsCtaTracking) {
     if (path === '/register') button = 'Start free trial';
     else if (path === '/plausible.io') button = 'View live demo';
     else if (path === '/' && url.hash === '#pricing') button = 'See pricing';
+    else if (path === '/billing/choose-plan' && a.hasAttribute('data-cta-position')) button = 'See pricing';
     else if (path === '/contact') button = 'Contact us';
     else return;
     var props = {
